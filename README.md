@@ -2,7 +2,7 @@
 
 <img src="reports/en/figures/qiushi-engine-logo.png" alt="Qiushi Engine" width="260">
 
-**From exact algorithm search to a structural lower-bound proof.**
+**Long-horizon autonomous mathematical research: from algorithm search to structural proof.**
 
 [English report](reports/en/main.pdf) ·
 [中文报告](reports/zh/main.pdf) ·
@@ -11,16 +11,19 @@
 [Downloads](https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research/releases/latest) ·
 [中文](README.zh-CN.md)
 
-This project presents a **structural proof that exact bilinear multiplication
-of two 3 × 3 matrices over the binary field requires at least 21 products**.
-It also documents how Qiushi Engine's research moved from algorithm search
-to an algebraic explanation of why a 20-product algorithm cannot exist.
+This project documents **Qiushi Engine's long-horizon autonomous mathematical
+research** on 3 × 3 matrix multiplication over the binary field. Its outcome
+is a **structural proof that every exact bilinear algorithm requires at least
+21 products**, accompanied by the research trajectory, intermediate findings,
+programs, and certificates from which the argument developed.
 
-The scientific report was completed on **9 September 2026**. Qiushi Engine
-independently carried out the mathematical research end to end: developing
-research routes, conducting computations, checking claims, and constructing
-the proof. The report follows how ideas accumulated, how evidence changed
-the reasoning, and how earlier explorations made the final argument possible.
+Qiushi Engine independently carried out the mathematical research end to end:
+developing research routes, conducting computations, testing and correcting
+claims, and constructing the proof. The report explains how accumulated
+evidence and research memory informed changes of representation, turning
+algorithm search into an algebraic explanation of why a 20-product algorithm
+cannot exist. Both the result and the process that produced it are open to
+inspection and reuse.
 
 ## The Question and the Contribution
 
