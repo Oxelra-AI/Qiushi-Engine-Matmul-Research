@@ -1,0 +1,218 @@
+{
+  "iteration": 40,
+  "field": "F2",
+  "restricted_family": "fixed BILR a0 conjugation g(X)=a0 X a0^{-1}; one size-12 (g^k plus cyclic) free triple orbit; at most 10 cube terms arranged in g-orbits of nominal lengths 1,2,4; zero/degenerate cube slots allowed",
+  "restricted_rank22_partitions_tested": 12,
+  "restricted_native_status_counts": {
+    "UNSAT": 12
+  },
+  "restricted_drat_verified_count": 12,
+  "restricted_drat_patterns": [
+    [
+      4,
+      4,
+      2
+    ],
+    [
+      4,
+      4,
+      1,
+      1
+    ],
+    [
+      4,
+      2,
+      2,
+      2
+    ],
+    [
+      4,
+      2,
+      2,
+      1,
+      1
+    ],
+    [
+      4,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      4,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    [
+      2,
+      2,
+      2,
+      2,
+      1,
+      1
+    ],
+    [
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  ],
+  "positive_control": "BILR rank-23 mod-2 pattern (4,4,2,1) SAT, direct all-729 Brent check zero errors",
+  "positive_control_pattern": [
+    4,
+    4,
+    2,
+    1
+  ],
+  "positive_control_status": "SAT",
+  "positive_control_brent_errors": 0,
+  "broader_H_family": "fixed tau(A,B,C)=(gB,gC,gA) orbits of nominal lengths 1,2,3,4,6,12; covers more than cube-residual family but still not all three-sided equivariant or characteristic-zero cases",
+  "broader_fixed_dims": {
+    "1": 3,
+    "2": 5,
+    "3": 9,
+    "4": 9,
+    "6": 15,
+    "12": 27
+  },
+  "broader_probe_results": [
+    {
+      "pattern": [
+        12,
+        6,
+        4
+      ],
+      "status": "TIMEOUT",
+      "solve_sec": 600.106,
+      "param_dims": [
+        27,
+        15,
+        9
+      ]
+    }
+  ],
+  "broader_drat_results": [
+    {
+      "pattern": [
+        12,
+        4,
+        4,
+        2
+      ],
+      "status": "UNSAT",
+      "drat_status": "VERIFIED",
+      "solve_sec": 37.059,
+      "drat_verify_sec": 29.56
+    },
+    {
+      "pattern": [
+        12,
+        4,
+        4,
+        1,
+        1
+      ],
+      "status": "UNSAT",
+      "drat_status": "VERIFIED",
+      "solve_sec": 53.981,
+      "drat_verify_sec": 47.033
+    }
+  ],
+  "scope_warning": "This excludes only stated F2 restricted subfamilies; it is not a general F2 rank-22 lower bound and has no direct characteristic-zero consequence.",
+  "artifact_hashes": {
+    "scripts/z4_cyclic_sat_f2.py": {
+      "bytes": 17445,
+      "sha256": "1585360bdb99b5b2f3030eede3ce5b45a72833ec47025356907d3cfe6ad19087"
+    },
+    "scripts/z4_cyclic_sat_f2_drat.py": {
+      "bytes": 4987,
+      "sha256": "ca74703ed525c66e3b8d816da352bfaf8702884743d86365354f934dfdc38890"
+    },
+    "scripts/collect_z4_drat_receipts.py": {
+      "bytes": 2894,
+      "sha256": "ef6ff07f4305a571e18ac1bb8a6d79b008c061b4257225582f0762fbb6f8aa24"
+    },
+    "scripts/z4xcyclic_general_f2.py": {
+      "bytes": 7121,
+      "sha256": "dbb2040a9a1a0b780f6211b73c4bad052fe78fcd09c6ab60dcec8651554d9b0e"
+    },
+    "scripts/z4xcyclic_general_drat.py": {
+      "bytes": 3637,
+      "sha256": "8fb33f4d27a028c18533b8492274cc8bedee93f12b79e82ab6c295a53b39ef10"
+    },
+    "data/z4_cyclic_f2/z4_cyclic_positive_control_p4_4_2_1.json": {
+      "bytes": 14531,
+      "sha256": "9939241ef00f4fd1609805e4df157c0ed8f532976494448293461acbbf548bb7"
+    },
+    "data/z4_cyclic_f2/z4_cyclic_f2_results_padded.json": {
+      "bytes": 7197,
+      "sha256": "a89519d3eb0ab4c15482661bd5a1c83f85531cb8ab09783b68ab9fd8c36d7431"
+    },
+    "data/z4_cyclic_f2_drat/z4_cyclic_drat_receipts_all12.json": {
+      "bytes": 20940,
+      "sha256": "7b6a8627d3eb87ec7885ad594734d91a75b89fed4a7d32e5d0e1d38662fd6de6"
+    },
+    "data/z4_cyclic_f2_drat/tool_versions.json": {
+      "bytes": 2423,
+      "sha256": "c845870584274703f06f7d2bd824ed33d014992ab873d592cc0b4d57606167e1"
+    },
+    "data/z4xcyclic_general_f2/z4xcyclic_general_results.json": {
+      "bytes": 664,
+      "sha256": "5ad1e4dbeb83b62513374c5f27c9c5d5ab0cab1ba638a41b916aff8a09b1eae8"
+    },
+    "data/z4xcyclic_general_f2_drat/z4xcyclic_general_drat_results.json": {
+      "bytes": 6322,
+      "sha256": "1b11075db0eff6d04f237c5944174ba0284ce6bc129c24addd1631a2dbfb8d37"
+    }
+  }
+}

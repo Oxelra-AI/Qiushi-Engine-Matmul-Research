@@ -1,0 +1,41 @@
+{
+  "build_sec": 48.256,
+  "constraint_summary": {
+    "contraction_lower_bounds": 255,
+    "contraction_weight_definitions": 255,
+    "lex_aux_vars": 0,
+    "lex_maps_used": 0,
+    "skipped_by_minL": 159899,
+    "trace_cut_size_hist": {},
+    "trace_dependency_cuts": 0,
+    "wang_by_dim": {
+      "1": 255,
+      "2": 10795,
+      "3": 96057,
+      "4": 141054,
+      "5": 9138
+    },
+    "wang_rows": 257299
+  },
+  "core": "E11 quotient core",
+  "field": "F2",
+  "hint_added": false,
+  "hint_source": "data/review/summary.json",
+  "meaning": "255-variable distinct A-support model with complete/threshold Wang rows, contraction lower bounds, optional sound trace-dependency cuts, and optional whole-support lex symmetry. FEASIBLE is only an A-support candidate needing B/C completion; INFEASIBLE still needs proof-producing replay.",
+  "parameters": {
+    "lex_map_limit": 64,
+    "lex_symmetry": "none",
+    "max_size5_cuts": null,
+    "min_L": 15,
+    "seed": 5301,
+    "solver_time": 60.0,
+    "trace_cuts": "none",
+    "workers": 8
+  },
+  "rank_s": 19,
+  "schema": "distinct_trace_cut_cpsat_v1",
+  "solve_sec": 57.982,
+  "solver": "OR-Tools CP-SAT",
+  "status": "UNKNOWN",
+  "total_elapsed_sec": 106.238
+}

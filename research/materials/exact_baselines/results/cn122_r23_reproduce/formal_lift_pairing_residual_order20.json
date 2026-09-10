@@ -1,0 +1,1787 @@
+{
+  "scheme": "data/cn122_r23_reproduce/scheme.qmm",
+  "rank": 23,
+  "jacobian_rank": 527,
+  "kernel_dim": 94,
+  "cokernel_dim": 202,
+  "rescaling_rank": 46,
+  "rescaling_J_rank": 0,
+  "stabilizer_pullback_rank": 26,
+  "stabilizer_pullback_J_rank": 0,
+  "combined_symmetry_rank": 70,
+  "residual_dim_corrected": 24,
+  "effective_second_order_quadrics": 15,
+  "sphere_search": {
+    "starts": 80,
+    "n_distinct_zeros": 60,
+    "best_records": [
+      {
+        "trial": 30,
+        "success": true,
+        "loss": 4.502896818497781e-25,
+        "nit": 116
+      },
+      {
+        "trial": 2,
+        "success": true,
+        "loss": 1.749433372176112e-24,
+        "nit": 88
+      },
+      {
+        "trial": 75,
+        "success": true,
+        "loss": 2.4954578331022563e-24,
+        "nit": 128
+      },
+      {
+        "trial": 67,
+        "success": true,
+        "loss": 6.4021320409903385e-24,
+        "nit": 78
+      },
+      {
+        "trial": 27,
+        "success": true,
+        "loss": 1.6446510874774794e-23,
+        "nit": 72
+      },
+      {
+        "trial": 11,
+        "success": true,
+        "loss": 2.2306294408093538e-23,
+        "nit": 111
+      },
+      {
+        "trial": 32,
+        "success": true,
+        "loss": 3.1293496124983614e-23,
+        "nit": 109
+      },
+      {
+        "trial": 31,
+        "success": true,
+        "loss": 6.744447921031068e-23,
+        "nit": 84
+      },
+      {
+        "trial": 70,
+        "success": true,
+        "loss": 6.744760890956849e-23,
+        "nit": 82
+      },
+      {
+        "trial": 43,
+        "success": true,
+        "loss": 1.0701964578046822e-22,
+        "nit": 91
+      }
+    ]
+  },
+  "base_projective_pairing": {
+    "uv": {
+      "min_singular_col_normalized": 0.10967016873941807,
+      "max_singular_col_normalized": 2.0256780236565324,
+      "condition_col_normalized": 18.47063834167746,
+      "min_pair_column_norm": 1.0,
+      "max_pair_column_norm": 4.58257569495584
+    },
+    "uw": {
+      "min_singular_col_normalized": 0.1189860734835788,
+      "max_singular_col_normalized": 2.062430465605182,
+      "condition_col_normalized": 17.333376967766036,
+      "min_pair_column_norm": 1.0,
+      "max_pair_column_norm": 4.58257569495584
+    },
+    "vw": {
+      "min_singular_col_normalized": 0.10029341936247116,
+      "max_singular_col_normalized": 1.8113322747760012,
+      "condition_col_normalized": 18.060330241904033,
+      "min_pair_column_norm": 1.0,
+      "max_pair_column_norm": 4.47213595499958
+    }
+  },
+  "directions": [
+    {
+      "index": 0,
+      "residual_coordinates": [
+        0.16016453214288437,
+        -0.07859492766803794,
+        0.2679663783617609,
+        -0.0016904911198610982,
+        -0.3684646161362107,
+        -0.0529962475632127,
+        -0.06217536180531613,
+        -0.04803011118976298,
+        0.16693399936969713,
+        0.29447103476884334,
+        0.07991095342332555,
+        0.2764138875611647,
+        0.03690078677472781,
+        0.14015337815277473,
+        -0.05356955283699543,
+        -0.19368810019142718,
+        -0.13050869017786557,
+        -0.24424089709854635,
+        0.05569275721359848,
+        -0.2751514274447682,
+        0.3787867646761791,
+        0.3804621774888268,
+        -0.11526969624296401,
+        0.18931404326960147
+      ],
+      "second_order_cokernel_norm": 6.07736703583876e-11,
+      "formal_lift": {
+        "order2_cokernel_norm": 6.077367033191977e-11,
+        "orders": [
+          {
+            "order": 3,
+            "pre_cokernel_norm": 0.0023407259043866043,
+            "post_cokernel_norm": 0.0022756986296950327,
+            "linear_solve_residual_norm": 0.002275698630792703,
+            "allowed_kernel_correction_norm": 668573.5767300584,
+            "coefficient_norm": 668573.5767300659,
+            "next_particular_norm": 122884.23292220982
+          }
+        ],
+        "kernel_obstruction_map_rank": 10,
+        "allowed_kernel_dim": 24,
+        "obstruction_kernel_dim": 94,
+        "cokernel_dim": 202,
+        "status": "fails_order_3"
+      },
+      "pairing_min_singular_derivative_at_0": {
+        "uv": -0.0005396834226734093,
+        "uw": -0.00040598279051062836,
+        "vw": -0.0003513930943443988
+      },
+      "path_samples": [
+        {
+          "t": 0.001,
+          "brent_residual_norm": 0.13299715376543478,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.1092660826615473,
+              "max_singular_col_normalized": 2.0372029213569083,
+              "condition_col_normalized": 18.644421688175306,
+              "min_pair_column_norm": 0.9895866671345409,
+              "max_pair_column_norm": 4.65257754957627
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.11831116043799418,
+              "max_singular_col_normalized": 2.0597028259449885,
+              "condition_col_normalized": 17.409201450817147,
+              "min_pair_column_norm": 0.9843580889611783,
+              "max_pair_column_norm": 4.65178084406081
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.09953459789631948,
+              "max_singular_col_normalized": 1.8137136745913718,
+              "condition_col_normalized": 18.221942047534387,
+              "min_pair_column_norm": 0.9801371882712419,
+              "max_pair_column_norm": 4.445606403764884
+            }
+          }
+        },
+        {
+          "t": 0.003,
+          "brent_residual_norm": 10.807957279145866,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.09945775193694387,
+              "max_singular_col_normalized": 2.1313341972696254,
+              "condition_col_normalized": 21.429543255923274,
+              "min_pair_column_norm": 0.9170671421888026,
+              "max_pair_column_norm": 5.346234763667245
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.10278668190438091,
+              "max_singular_col_normalized": 2.0415717028276212,
+              "condition_col_normalized": 19.862220133993905,
+              "min_pair_column_norm": 0.8730828615127753,
+              "max_pair_column_norm": 5.285037019325862
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.08619571144119786,
+              "max_singular_col_normalized": 1.8385398446040482,
+              "condition_col_normalized": 21.329829684836323,
+              "min_pair_column_norm": 0.8716456184009055,
+              "max_pair_column_norm": 6.182149868316128
+            }
+          }
+        },
+        {
+          "t": 0.01,
+          "brent_residual_norm": 1801.818757573995,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.1624381568545014,
+              "max_singular_col_normalized": 2.0135859668876783,
+              "condition_col_normalized": 12.396015849227355,
+              "min_pair_column_norm": 0.9921180260839615,
+              "max_pair_column_norm": 277.10329930182127
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.2407320001496156,
+              "max_singular_col_normalized": 2.052318264688919,
+              "condition_col_normalized": 8.525323859783484,
+              "min_pair_column_norm": 0.8390974138406592,
+              "max_pair_column_norm": 422.4415174015179
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.16846881962436872,
+              "max_singular_col_normalized": 1.7961871107858038,
+              "condition_col_normalized": 10.66183709715972,
+              "min_pair_column_norm": 1.3717239681816098,
+              "max_pair_column_norm": 634.5686704043161
+            }
+          }
+        },
+        {
+          "t": 0.03,
+          "brent_residual_norm": 894008.2683082855,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.22856280980296792,
+              "max_singular_col_normalized": 1.8273126022899495,
+              "condition_col_normalized": 7.994794095615032,
+              "min_pair_column_norm": 74.1297736562845,
+              "max_pair_column_norm": 22352.686666601945
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.29683142550722225,
+              "max_singular_col_normalized": 1.835877137203973,
+              "condition_col_normalized": 6.1849150037495075,
+              "min_pair_column_norm": 116.26964514178073,
+              "max_pair_column_norm": 34096.77433609628
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.16815065189219688,
+              "max_singular_col_normalized": 1.6174470715806208,
+              "condition_col_normalized": 9.619035391058626,
+              "min_pair_column_norm": 26.581384412805196,
+              "max_pair_column_norm": 51317.060669354585
+            }
+          }
+        },
+        {
+          "t": 0.1,
+          "brent_residual_norm": 1223060916.0542212,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.24522540639617477,
+              "max_singular_col_normalized": 1.8177032932649744,
+              "condition_col_normalized": 7.4123775345217595,
+              "min_pair_column_norm": 10015.194167732467,
+              "max_pair_column_norm": 2758750.915236431
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.3039343064344719,
+              "max_singular_col_normalized": 1.800651633814835,
+              "condition_col_normalized": 5.924476426957925,
+              "min_pair_column_norm": 16366.910951450538,
+              "max_pair_column_norm": 4209135.299330422
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.17877874200798494,
+              "max_singular_col_normalized": 1.6180268050415547,
+              "condition_col_normalized": 9.050442949024037,
+              "min_pair_column_norm": 3261.552056811133,
+              "max_pair_column_norm": 6337735.273868726
+            }
+          }
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "residual_coordinates": [
+        -0.23210608974289512,
+        -0.04382848282726325,
+        0.2770605029925096,
+        0.27351047395840067,
+        0.07807837255167951,
+        0.04704651996001863,
+        -0.3448645955311539,
+        0.1841134795109987,
+        0.2245939921053554,
+        -0.13526179702806862,
+        -0.1489697634719709,
+        -0.001998274592816986,
+        0.3862467899683777,
+        0.10387042304244225,
+        -0.38312818614483485,
+        0.062475468216018036,
+        -0.12193640490941082,
+        0.29446888849601843,
+        -0.2717243746528427,
+        0.045406404260586154,
+        0.0004908523853904178,
+        0.11158894967128352,
+        0.19740346777895948,
+        0.03161272211375783
+      ],
+      "second_order_cokernel_norm": 1.6921817957937666e-11,
+      "formal_lift": {
+        "order2_cokernel_norm": 1.692182671388902e-11,
+        "orders": [
+          {
+            "order": 3,
+            "pre_cokernel_norm": 0.0013600667253857973,
+            "post_cokernel_norm": 4.641415024924719e-05,
+            "linear_solve_residual_norm": 4.6414150756886e-05,
+            "allowed_kernel_correction_norm": 297072.26474287873,
+            "coefficient_norm": 297072.26474290725,
+            "next_particular_norm": 25098.54751135785
+          }
+        ],
+        "kernel_obstruction_map_rank": 9,
+        "allowed_kernel_dim": 24,
+        "obstruction_kernel_dim": 94,
+        "cokernel_dim": 202,
+        "status": "fails_order_3"
+      },
+      "pairing_min_singular_derivative_at_0": {
+        "uv": 0.0003143210008244024,
+        "uw": 0.000114552489161035,
+        "vw": -0.0004945508373654928
+      },
+      "path_samples": [
+        {
+          "t": 0.001,
+          "brent_residual_norm": 0.0014745068085635275,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.10987982478897282,
+              "max_singular_col_normalized": 2.028080354942722,
+              "condition_col_normalized": 18.45725872641047,
+              "min_pair_column_norm": 0.9980978554166025,
+              "max_pair_column_norm": 4.566611707853005
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.11905929587246929,
+              "max_singular_col_normalized": 2.06385451687037,
+              "condition_col_normalized": 17.334677664153784,
+              "min_pair_column_norm": 1.0002384979780081,
+              "max_pair_column_norm": 4.566920271238526
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.10033520790770664,
+              "max_singular_col_normalized": 1.8116494931215208,
+              "condition_col_normalized": 18.05596989232301,
+              "min_pair_column_norm": 0.9876443124360886,
+              "max_pair_column_norm": 4.461941546747838
+            }
+          }
+        },
+        {
+          "t": 0.003,
+          "brent_residual_norm": 0.11948123747406658,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.1108742236676636,
+              "max_singular_col_normalized": 2.0460167014479778,
+              "condition_col_normalized": 18.453492919875995,
+              "min_pair_column_norm": 0.9832156312659394,
+              "max_pair_column_norm": 4.590455740612992
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.11920537741154219,
+              "max_singular_col_normalized": 2.0775361514587805,
+              "condition_col_normalized": 17.428208328944233,
+              "min_pair_column_norm": 1.0144955167648997,
+              "max_pair_column_norm": 4.474329040351851
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.09994196786539482,
+              "max_singular_col_normalized": 1.8148344676297694,
+              "condition_col_normalized": 18.15888266352779,
+              "min_pair_column_norm": 0.911929432412836,
+              "max_pair_column_norm": 4.390036889632089
+            }
+          }
+        },
+        {
+          "t": 0.01,
+          "brent_residual_norm": 15.29684276370254,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.08916080096548927,
+              "max_singular_col_normalized": 2.125542649808566,
+              "condition_col_normalized": 23.839429735846384,
+              "min_pair_column_norm": 0.9058471944545278,
+              "max_pair_column_norm": 20.45850778492227
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.11730485889980001,
+              "max_singular_col_normalized": 2.1414570872787775,
+              "condition_col_normalized": 18.255484959135213,
+              "min_pair_column_norm": 1.4228532074700981,
+              "max_pair_column_norm": 20.536103714213997
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.099663665783809,
+              "max_singular_col_normalized": 1.7900647707129271,
+              "condition_col_normalized": 17.961056887029883,
+              "min_pair_column_norm": 0.7099276686571927,
+              "max_pair_column_norm": 20.088030124465618
+            }
+          }
+        },
+        {
+          "t": 0.03,
+          "brent_residual_norm": 3214.7658129879565,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.13954304228742723,
+              "max_singular_col_normalized": 1.7865566664059216,
+              "condition_col_normalized": 12.802907526740153,
+              "min_pair_column_norm": 7.319681132361832,
+              "max_pair_column_norm": 558.3688231607206
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.17691944327557882,
+              "max_singular_col_normalized": 1.9317473281501312,
+              "condition_col_normalized": 10.918796105078977,
+              "min_pair_column_norm": 15.231854172961514,
+              "max_pair_column_norm": 569.3257881255213
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.178205478374058,
+              "max_singular_col_normalized": 1.6949009865963771,
+              "condition_col_normalized": 9.510936487815123,
+              "min_pair_column_norm": 4.471063536685233,
+              "max_pair_column_norm": 452.7909902634679
+            }
+          }
+        },
+        {
+          "t": 0.1,
+          "brent_residual_norm": 4141880.0785160656,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.17932281696119334,
+              "max_singular_col_normalized": 1.7555347763838223,
+              "condition_col_normalized": 9.789801466055108,
+              "min_pair_column_norm": 918.2958056991041,
+              "max_pair_column_norm": 67721.3306548975
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.16834185960009493,
+              "max_singular_col_normalized": 1.912845438580474,
+              "condition_col_normalized": 11.36286270761497,
+              "min_pair_column_norm": 1309.416619879941,
+              "max_pair_column_norm": 66893.65397400156
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.2862808425602378,
+              "max_singular_col_normalized": 1.6842876009952494,
+              "condition_col_normalized": 5.883340240068107,
+              "min_pair_column_norm": 228.4602323924553,
+              "max_pair_column_norm": 51581.125009342395
+            }
+          }
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "residual_coordinates": [
+        -0.28964738976169896,
+        -0.09062758352960296,
+        0.1977930986676484,
+        -0.03578363294807923,
+        -0.2802748519087412,
+        0.011410601462456562,
+        -0.02654372233993996,
+        0.03095126093288382,
+        0.13418331178841386,
+        -0.10197022067974162,
+        -0.3120398808582105,
+        -0.2138634813505894,
+        -0.5174770601982723,
+        0.22730019631260306,
+        -0.1553105424556565,
+        0.20771471891286303,
+        0.15907014416739815,
+        0.021068233625618934,
+        -0.03797440197267517,
+        0.05267593054626288,
+        -0.21867678769460044,
+        -0.022476088713165053,
+        0.38628560658156197,
+        0.03757947801152857
+      ],
+      "second_order_cokernel_norm": 1.870525793554375e-12,
+      "formal_lift": {
+        "order2_cokernel_norm": 1.870518643971219e-12,
+        "orders": [
+          {
+            "order": 3,
+            "pre_cokernel_norm": 0.0005461513745552867,
+            "post_cokernel_norm": 2.321100555612217e-13,
+            "linear_solve_residual_norm": 2.3211043501513693e-13,
+            "allowed_kernel_correction_norm": 0.0691569085420249,
+            "coefficient_norm": 0.09976368019912754,
+            "next_particular_norm": 0.00870766214589561
+          },
+          {
+            "order": 4,
+            "pre_cokernel_norm": 0.0001664597725468109,
+            "post_cokernel_norm": 5.087378243677871e-14,
+            "linear_solve_residual_norm": 5.087375955423929e-14,
+            "allowed_kernel_correction_norm": 0.01460247602552867,
+            "coefficient_norm": 0.017001637748264225,
+            "next_particular_norm": 0.0018192410670624499
+          },
+          {
+            "order": 5,
+            "pre_cokernel_norm": 1.3903857717082108e-05,
+            "post_cokernel_norm": 9.551585283610823e-15,
+            "linear_solve_residual_norm": 9.551596046555913e-15,
+            "allowed_kernel_correction_norm": 0.0021998314551422635,
+            "coefficient_norm": 0.0028546272070306914,
+            "next_particular_norm": 0.0002903973137921156
+          },
+          {
+            "order": 6,
+            "pre_cokernel_norm": 1.663472006724274e-06,
+            "post_cokernel_norm": 2.891320559570418e-15,
+            "linear_solve_residual_norm": 2.891321647153461e-15,
+            "allowed_kernel_correction_norm": 0.0006612661855532019,
+            "coefficient_norm": 0.0007222212735815514,
+            "next_particular_norm": 0.00013063464810725373
+          },
+          {
+            "order": 7,
+            "pre_cokernel_norm": 9.781970329706826e-07,
+            "post_cokernel_norm": 7.916110661840431e-16,
+            "linear_solve_residual_norm": 7.916107445233359e-16,
+            "allowed_kernel_correction_norm": 0.00011279469469273012,
+            "coefficient_norm": 0.00017259216215382498,
+            "next_particular_norm": 2.6227069898251403e-05
+          },
+          {
+            "order": 8,
+            "pre_cokernel_norm": 2.1157692377410656e-07,
+            "post_cokernel_norm": 1.6624303288216422e-16,
+            "linear_solve_residual_norm": 1.6624321010702045e-16,
+            "allowed_kernel_correction_norm": 1.9235105753797817e-05,
+            "coefficient_norm": 3.252458283833247e-05,
+            "next_particular_norm": 5.670953666949871e-06
+          },
+          {
+            "order": 9,
+            "pre_cokernel_norm": 5.0644757189475354e-08,
+            "post_cokernel_norm": 1.50155059954501e-17,
+            "linear_solve_residual_norm": 1.5015427548025213e-17,
+            "allowed_kernel_correction_norm": 3.404624213865312e-06,
+            "coefficient_norm": 6.614467592356182e-06,
+            "next_particular_norm": 1.1872388924514752e-06
+          },
+          {
+            "order": 10,
+            "pre_cokernel_norm": 1.2218459865162594e-08,
+            "post_cokernel_norm": 6.5820464381429525e-18,
+            "linear_solve_residual_norm": 6.58206851047415e-18,
+            "allowed_kernel_correction_norm": 8.81878748775325e-07,
+            "coefficient_norm": 1.4789341822038392e-06,
+            "next_particular_norm": 1.6906882028110024e-07
+          },
+          {
+            "order": 11,
+            "pre_cokernel_norm": 1.7307808174986152e-09,
+            "post_cokernel_norm": 1.3039301719460797e-18,
+            "linear_solve_residual_norm": 1.3039318122522542e-18,
+            "allowed_kernel_correction_norm": 1.4839526572530124e-07,
+            "coefficient_norm": 2.249564866389181e-07,
+            "next_particular_norm": 2.5077020276891752e-08
+          },
+          {
+            "order": 12,
+            "pre_cokernel_norm": 2.0047432890954759e-10,
+            "post_cokernel_norm": 2.7520708402893157e-19,
+            "linear_solve_residual_norm": 2.752070877588715e-19,
+            "allowed_kernel_correction_norm": 6.725698584755054e-08,
+            "coefficient_norm": 7.17799351578507e-08,
+            "next_particular_norm": 1.2199591445406757e-08
+          },
+          {
+            "order": 13,
+            "pre_cokernel_norm": 8.488306854274203e-11,
+            "post_cokernel_norm": 6.052030635287033e-20,
+            "linear_solve_residual_norm": 6.051991897535968e-20,
+            "allowed_kernel_correction_norm": 2.8027000453937387e-08,
+            "coefficient_norm": 3.056702121371738e-08,
+            "next_particular_norm": 5.038511269719068e-09
+          },
+          {
+            "order": 14,
+            "pre_cokernel_norm": 3.248348155677003e-11,
+            "post_cokernel_norm": 2.943237790316394e-20,
+            "linear_solve_residual_norm": 2.9432369370349274e-20,
+            "allowed_kernel_correction_norm": 8.451720042413948e-09,
+            "coefficient_norm": 9.839622324582772e-09,
+            "next_particular_norm": 1.5667597590576569e-09
+          },
+          {
+            "order": 15,
+            "pre_cokernel_norm": 9.930652773471276e-12,
+            "post_cokernel_norm": 6.218175437328974e-21,
+            "linear_solve_residual_norm": 6.2181805937658305e-21,
+            "allowed_kernel_correction_norm": 2.2654493209663493e-09,
+            "coefficient_norm": 2.754450356871457e-09,
+            "next_particular_norm": 4.733755848409651e-10
+          },
+          {
+            "order": 16,
+            "pre_cokernel_norm": 3.2434399266861444e-12,
+            "post_cokernel_norm": 2.049314620740058e-21,
+            "linear_solve_residual_norm": 2.0493154449319304e-21,
+            "allowed_kernel_correction_norm": 4.879228352623402e-10,
+            "coefficient_norm": 6.798184592183171e-10,
+            "next_particular_norm": 1.1016140683334141e-10
+          },
+          {
+            "order": 17,
+            "pre_cokernel_norm": 9.113072135055458e-13,
+            "post_cokernel_norm": 5.809021583352947e-22,
+            "linear_solve_residual_norm": 5.80903540790195e-22,
+            "allowed_kernel_correction_norm": 8.67373659935319e-11,
+            "coefficient_norm": 1.40210221506839e-10,
+            "next_particular_norm": 1.8585750467885472e-11
+          },
+          {
+            "order": 18,
+            "pre_cokernel_norm": 1.9625667464748428e-13,
+            "post_cokernel_norm": 8.297876447599891e-23,
+            "linear_solve_residual_norm": 8.297891783469662e-23,
+            "allowed_kernel_correction_norm": 1.8623049861561152e-11,
+            "coefficient_norm": 2.63106082521993e-11,
+            "next_particular_norm": 3.6635694105377026e-12
+          },
+          {
+            "order": 19,
+            "pre_cokernel_norm": 3.6055312326165236e-14,
+            "post_cokernel_norm": 1.5673929727984204e-23,
+            "linear_solve_residual_norm": 1.5673893018845135e-23,
+            "allowed_kernel_correction_norm": 3.2594808351512314e-12,
+            "coefficient_norm": 4.903667621336681e-12,
+            "next_particular_norm": 9.637114098591012e-13
+          },
+          {
+            "order": 20,
+            "pre_cokernel_norm": 8.123707441376405e-15,
+            "post_cokernel_norm": 4.1811747436640336e-24,
+            "linear_solve_residual_norm": 4.181169207980312e-24,
+            "allowed_kernel_correction_norm": 3.986474116571183e-13,
+            "coefficient_norm": 1.0429091237080709e-12,
+            "next_particular_norm": 2.448412615158378e-13
+          }
+        ],
+        "kernel_obstruction_map_rank": 10,
+        "allowed_kernel_dim": 24,
+        "obstruction_kernel_dim": 94,
+        "cokernel_dim": 202,
+        "status": "lifted_to_order_20"
+      },
+      "pairing_min_singular_derivative_at_0": {
+        "uv": -0.000235860901781626,
+        "uw": -0.0007572054722126964,
+        "vw": -0.0004024965379045842
+      },
+      "path_samples": [
+        {
+          "t": 0.001,
+          "brent_residual_norm": 4.789462691493525e-15,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.10966993204948364,
+              "max_singular_col_normalized": 2.025680610237305,
+              "condition_col_normalized": 18.470701790198135,
+              "min_pair_column_norm": 0.9999441564414602,
+              "max_pair_column_norm": 4.582650171109634
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.11898531516993394,
+              "max_singular_col_normalized": 2.062448071400887,
+              "condition_col_normalized": 17.33363540244705,
+              "min_pair_column_norm": 0.9999943137804941,
+              "max_pair_column_norm": 4.582650180493247
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.1002930162275197,
+              "max_singular_col_normalized": 1.8113440531967617,
+              "condition_col_normalized": 18.06052027678216,
+              "min_pair_column_norm": 0.9999135140330965,
+              "max_pair_column_norm": 4.472047145433253
+            }
+          }
+        },
+        {
+          "t": 0.003,
+          "brent_residual_norm": 4.899172032301029e-15,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.10966945369519451,
+              "max_singular_col_normalized": 2.025685778304748,
+              "condition_col_normalized": 18.470829479416924,
+              "min_pair_column_norm": 0.9998324810237966,
+              "max_pair_column_norm": 4.5827991668290675
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.11898379189523423,
+              "max_singular_col_normalized": 2.062483273984398,
+              "condition_col_normalized": 17.334153174412396,
+              "min_pair_column_norm": 0.9999831420492211,
+              "max_pair_column_norm": 4.582799251235298
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.10029220612753775,
+              "max_singular_col_normalized": 1.8113676061651627,
+              "condition_col_normalized": 18.06090100223457,
+              "min_pair_column_norm": 0.9997405574135281,
+              "max_pair_column_norm": 4.471869678375575
+            }
+          }
+        },
+        {
+          "t": 0.01,
+          "brent_residual_norm": 5.2133679089433564e-15,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.10966772721615207,
+              "max_singular_col_normalized": 2.0257038130257423,
+              "condition_col_normalized": 18.471284711072162,
+              "min_pair_column_norm": 0.999441739804349,
+              "max_pair_column_norm": 4.583321111194836
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.11897839069289455,
+              "max_singular_col_normalized": 2.062606388310883,
+              "condition_col_normalized": 17.335974846347145,
+              "min_pair_column_norm": 0.999946149268399,
+              "max_pair_column_norm": 4.58332204724274
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.10028933057567288,
+              "max_singular_col_normalized": 1.8114500006721344,
+              "condition_col_normalized": 18.062240422527424,
+              "min_pair_column_norm": 0.9991353701893969,
+              "max_pair_column_norm": 4.471250139868358
+            }
+          }
+        },
+        {
+          "t": 0.03,
+          "brent_residual_norm": 6.106724739924258e-15,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.10966234646279684,
+              "max_singular_col_normalized": 2.0257548813904527,
+              "condition_col_normalized": 18.472656720670244,
+              "min_pair_column_norm": 0.9983263859238547,
+              "max_pair_column_norm": 4.5848164055055465
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.11896236232108512,
+              "max_singular_col_normalized": 2.062957328381261,
+              "condition_col_normalized": 17.341260614960216,
+              "min_pair_column_norm": 0.9998585475585704,
+              "max_pair_column_norm": 4.584824783724988
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.1002807704702341,
+              "max_singular_col_normalized": 1.8116850577954495,
+              "condition_col_normalized": 18.06612623038436,
+              "min_pair_column_norm": 0.9974076469479881,
+              "max_pair_column_norm": 4.469493696980735
+            }
+          }
+        },
+        {
+          "t": 0.1,
+          "brent_residual_norm": 1.974308236015423e-14,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.10963827969553874,
+              "max_singular_col_normalized": 2.0259282282872237,
+              "condition_col_normalized": 18.478292745135622,
+              "min_pair_column_norm": 0.994434802354854,
+              "max_pair_column_norm": 4.59010028183522
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.11889936047056474,
+              "max_singular_col_normalized": 2.0641759805700026,
+              "condition_col_normalized": 17.360698765751724,
+              "min_pair_column_norm": 0.9997638235150408,
+              "max_pair_column_norm": 4.590191583032525
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.10024680727919509,
+              "max_singular_col_normalized": 1.8125033997984346,
+              "condition_col_normalized": 18.08041022942978,
+              "min_pair_column_norm": 0.9913768904626422,
+              "max_pair_column_norm": 4.463505054302197
+            }
+          }
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "residual_coordinates": [
+        -0.20985414106677858,
+        -0.16356061568886002,
+        -0.08487696531963515,
+        0.250351420914918,
+        0.3680836549862025,
+        0.29181615543293754,
+        -0.35711031341432425,
+        0.20892084378155087,
+        -0.058412978036917876,
+        -0.08983941490243223,
+        0.2871613955103342,
+        0.19587412299730467,
+        0.33760663584327155,
+        -0.04271697025660331,
+        0.17084166777131055,
+        -0.030534969488373854,
+        0.2245224586277759,
+        -0.11096517399883335,
+        0.08393230414500724,
+        -0.1359120279379433,
+        0.14879251759096995,
+        -0.0592818723150551,
+        0.27268515393138903,
+        0.0320383061396858
+      ],
+      "second_order_cokernel_norm": 5.706283152679776e-11,
+      "formal_lift": {
+        "order2_cokernel_norm": 5.7062838522049664e-11,
+        "orders": [
+          {
+            "order": 3,
+            "pre_cokernel_norm": 0.0005530645333579637,
+            "post_cokernel_norm": 0.00022361794810632794,
+            "linear_solve_residual_norm": 0.000223617950877037,
+            "allowed_kernel_correction_norm": 1763209.504619064,
+            "coefficient_norm": 1763209.5046190661,
+            "next_particular_norm": 221735.17241335183
+          }
+        ],
+        "kernel_obstruction_map_rank": 10,
+        "allowed_kernel_dim": 24,
+        "obstruction_kernel_dim": 94,
+        "cokernel_dim": 202,
+        "status": "fails_order_3"
+      },
+      "pairing_min_singular_derivative_at_0": {
+        "uv": 0.000918678606104395,
+        "uw": -0.0008663151151305781,
+        "vw": -0.000416955764082072
+      },
+      "path_samples": [
+        {
+          "t": 0.001,
+          "brent_residual_norm": 0.17990616266029083,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.11101849335479949,
+              "max_singular_col_normalized": 2.0348650956234384,
+              "condition_col_normalized": 18.329064231850957,
+              "min_pair_column_norm": 0.9837639816868915,
+              "max_pair_column_norm": 4.5270937818896835
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.12064383511058654,
+              "max_singular_col_normalized": 2.078127617087408,
+              "condition_col_normalized": 17.225311307308164,
+              "min_pair_column_norm": 1.002801187034501,
+              "max_pair_column_norm": 4.5247351727975635
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.10098185547246234,
+              "max_singular_col_normalized": 1.8059010362807633,
+              "condition_col_normalized": 17.883421014909267,
+              "min_pair_column_norm": 0.9608543106699113,
+              "max_pair_column_norm": 4.432024283952166
+            }
+          }
+        },
+        {
+          "t": 0.003,
+          "brent_residual_norm": 16.240952027300253,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.12611127396448424,
+              "max_singular_col_normalized": 2.047819648939771,
+              "condition_col_normalized": 16.238196511411683,
+              "min_pair_column_norm": 0.8888270327108654,
+              "max_pair_column_norm": 10.241936655556074
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.125935771909232,
+              "max_singular_col_normalized": 2.0841967284110403,
+              "condition_col_normalized": 16.54968002191801,
+              "min_pair_column_norm": 1.065914874579434,
+              "max_pair_column_norm": 13.156625443161538
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.09536014209687046,
+              "max_singular_col_normalized": 1.7290134331025666,
+              "condition_col_normalized": 18.13140579579012,
+              "min_pair_column_norm": 0.8707110544036184,
+              "max_pair_column_norm": 10.226513088591465
+            }
+          }
+        },
+        {
+          "t": 0.01,
+          "brent_residual_norm": 6070.899538110453,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.15991293997627248,
+              "max_singular_col_normalized": 1.7752096526986316,
+              "condition_col_normalized": 11.101100717440584,
+              "min_pair_column_norm": 3.82581450821534,
+              "max_pair_column_norm": 346.23995622301516
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.20738350071466688,
+              "max_singular_col_normalized": 1.9413418474413109,
+              "condition_col_normalized": 9.361120054156808,
+              "min_pair_column_norm": 3.737271739413031,
+              "max_pair_column_norm": 1071.6319598315042
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.2314730673556835,
+              "max_singular_col_normalized": 1.82897209083604,
+              "condition_col_normalized": 7.901446642280961,
+              "min_pair_column_norm": 4.838308625170438,
+              "max_pair_column_norm": 270.4818308347621
+            }
+          }
+        },
+        {
+          "t": 0.03,
+          "brent_residual_norm": 3772862.201185634,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.11698467185023954,
+              "max_singular_col_normalized": 1.78888058045725,
+              "condition_col_normalized": 15.291580958121797,
+              "min_pair_column_norm": 221.6865715345942,
+              "max_pair_column_norm": 26521.473595822245
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.21894550553811049,
+              "max_singular_col_normalized": 1.78396448266925,
+              "condition_col_normalized": 8.147984030477057,
+              "min_pair_column_norm": 173.62094418877598,
+              "max_pair_column_norm": 86270.75742225225
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.24033733778089686,
+              "max_singular_col_normalized": 1.7668576915720575,
+              "condition_col_normalized": 7.351573866490984,
+              "min_pair_column_norm": 224.9613071962049,
+              "max_pair_column_norm": 20057.398017948675
+            }
+          }
+        },
+        {
+          "t": 0.1,
+          "brent_residual_norm": 4881692854.233464,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.11308117842393034,
+              "max_singular_col_normalized": 1.7920136759182395,
+              "condition_col_normalized": 15.847143626326165,
+              "min_pair_column_norm": 27948.323653133433,
+              "max_pair_column_norm": 3222188.5044610607
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.21972015451586685,
+              "max_singular_col_normalized": 1.7704428872060296,
+              "condition_col_normalized": 8.05771728636837,
+              "min_pair_column_norm": 20451.070544676248,
+              "max_pair_column_norm": 10613644.59602109
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.2364523213870623,
+              "max_singular_col_normalized": 1.737025782110342,
+              "condition_col_normalized": 7.346198895069867,
+              "min_pair_column_norm": 26709.161882864086,
+              "max_pair_column_norm": 2486685.9046871946
+            }
+          }
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "residual_coordinates": [
+        0.23097275536917986,
+        0.11452117089198459,
+        -0.13944288085421563,
+        -0.3615914928718846,
+        0.30688020014946005,
+        -0.11120930650597553,
+        0.030554604706424654,
+        0.14811911162165317,
+        -0.14671519481467005,
+        0.0646511675310393,
+        -0.05729077752007813,
+        0.10385775235527427,
+        -0.023356710759141693,
+        -0.1894044915460594,
+        0.3468102154171914,
+        0.14706803159864684,
+        -0.14481556776161797,
+        -0.3055853549444831,
+        0.06011657625214179,
+        -0.4873500174461133,
+        -0.01277274731313523,
+        0.08067285937241006,
+        -0.19963151809645718,
+        -0.1839190795085494
+      ],
+      "second_order_cokernel_norm": 3.338736386668504e-11,
+      "formal_lift": {
+        "order2_cokernel_norm": 3.338736817792404e-11,
+        "orders": [
+          {
+            "order": 3,
+            "pre_cokernel_norm": 0.0005559277419972733,
+            "post_cokernel_norm": 0.00048117880576998434,
+            "linear_solve_residual_norm": 0.0004811788057699882,
+            "allowed_kernel_correction_norm": 1.7313184546504645,
+            "coefficient_norm": 1.7324420520302932,
+            "next_particular_norm": 0.10969314379634072
+          }
+        ],
+        "kernel_obstruction_map_rank": 10,
+        "allowed_kernel_dim": 24,
+        "obstruction_kernel_dim": 94,
+        "cokernel_dim": 202,
+        "status": "fails_order_3"
+      },
+      "pairing_min_singular_derivative_at_0": {
+        "uv": 5.10038039580607e-06,
+        "uw": -0.0012972335041577798,
+        "vw": -0.0007996416413053042
+      },
+      "path_samples": [
+        {
+          "t": 0.001,
+          "brent_residual_norm": 8.741944627373293e-13,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.10967017035204919,
+              "max_singular_col_normalized": 2.0256939822690487,
+              "condition_col_normalized": 18.470783584692395,
+              "min_pair_column_norm": 0.9998947575461566,
+              "max_pair_column_norm": 4.582628051328896
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.11898477399150263,
+              "max_singular_col_normalized": 2.0624156227753665,
+              "condition_col_normalized": 17.333441528599746,
+              "min_pair_column_norm": 0.9999823723585174,
+              "max_pair_column_norm": 4.582628062905245
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.1002926184775366,
+              "max_singular_col_normalized": 1.8113361070407312,
+              "condition_col_normalized": 18.060512673187727,
+              "min_pair_column_norm": 0.9999066282232751,
+              "max_pair_column_norm": 4.472146038696279
+            }
+          }
+        },
+        {
+          "t": 0.003,
+          "brent_residual_norm": 6.055306049749556e-11,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.10967015265591004,
+              "max_singular_col_normalized": 2.0257257946337206,
+              "condition_col_normalized": 18.47107663823021,
+              "min_pair_column_norm": 0.9996842968235066,
+              "max_pair_column_norm": 4.582732515201709
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.11898216146625604,
+              "max_singular_col_normalized": 2.062386039308054,
+              "condition_col_normalized": 17.33357348608058,
+              "min_pair_column_norm": 0.9999475285425925,
+              "max_pair_column_norm": 4.5827326193419875
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.10029100925786243,
+              "max_singular_col_normalized": 1.8113441109850763,
+              "condition_col_normalized": 18.060882270392288,
+              "min_pair_column_norm": 0.999719571581252,
+              "max_pair_column_norm": 4.472168324423326
+            }
+          }
+        },
+        {
+          "t": 0.01,
+          "brent_residual_norm": 7.3201630349048424e-09,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.1096698711971666,
+              "max_singular_col_normalized": 2.0258360378439138,
+              "condition_col_normalized": 18.47212927059818,
+              "min_pair_column_norm": 0.9989479347221281,
+              "max_pair_column_norm": 4.583095526701897
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.1189728757852934,
+              "max_singular_col_normalized": 2.062283570814364,
+              "condition_col_normalized": 17.334065073253353,
+              "min_pair_column_norm": 0.9998298891035831,
+              "max_pair_column_norm": 4.583096682088874
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.10028529909735219,
+              "max_singular_col_normalized": 1.8113756827422252,
+              "condition_col_normalized": 18.062225461219676,
+              "min_pair_column_norm": 0.9990615836835259,
+              "max_pair_column_norm": 4.472268571252133
+            }
+          }
+        },
+        {
+          "t": 0.03,
+          "brent_residual_norm": 5.921683274257541e-07,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.10966718727683208,
+              "max_singular_col_normalized": 2.0261416138731816,
+              "condition_col_normalized": 18.475367739291126,
+              "min_pair_column_norm": 0.9968461025999026,
+              "max_pair_column_norm": 4.584110341729474
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.11894513619607681,
+              "max_singular_col_normalized": 2.06200001853782,
+              "condition_col_normalized": 17.33572371667797,
+              "min_pair_column_norm": 0.9995305922131533,
+              "max_pair_column_norm": 4.584120703162792
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.10026832366803862,
+              "max_singular_col_normalized": 1.8114962638410275,
+              "condition_col_normalized": 18.066485980541604,
+              "min_pair_column_norm": 0.9971533786450555,
+              "max_pair_column_norm": 4.472745806855109
+            }
+          }
+        },
+        {
+          "t": 0.1,
+          "brent_residual_norm": 7.321388349669675e-05,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.10963568659448819,
+              "max_singular_col_normalized": 2.0271024322659748,
+              "condition_col_normalized": 18.489439846020765,
+              "min_pair_column_norm": 0.9895103858323023,
+              "max_pair_column_norm": 4.58740250824471
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.11883398538300928,
+              "max_singular_col_normalized": 2.0611151493045665,
+              "condition_col_normalized": 17.344492340818707,
+              "min_pair_column_norm": 0.9989063827978626,
+              "max_pair_column_norm": 4.587517159848425
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.10020130801527864,
+              "max_singular_col_normalized": 1.8122712468186848,
+              "condition_col_normalized": 18.08630328999648,
+              "min_pair_column_norm": 0.9901451508052775,
+              "max_pair_column_norm": 4.476650294842639
+            }
+          }
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "residual_coordinates": [
+        0.22262945988390057,
+        0.16610733288277219,
+        -0.07959913650825182,
+        -0.5022932778823991,
+        0.1858846040123266,
+        -0.18126667668712151,
+        0.12723966508013967,
+        0.015250518804242637,
+        0.342242267543728,
+        -0.23365308555674666,
+        -0.07804575681943769,
+        -0.03721618089220451,
+        -0.1559678740258857,
+        0.2702794832797248,
+        0.07777121523203824,
+        0.07629709352077743,
+        0.20319708357997943,
+        -0.2380011270761425,
+        -0.05029831468501788,
+        -0.17626576212783163,
+        0.08023023210234473,
+        0.21469324531510287,
+        0.025307353540195136,
+        0.32745493914790574
+      ],
+      "second_order_cokernel_norm": 4.791375475842197e-11,
+      "formal_lift": {
+        "order2_cokernel_norm": 4.791375640070632e-11,
+        "orders": [
+          {
+            "order": 3,
+            "pre_cokernel_norm": 0.005242722533176509,
+            "post_cokernel_norm": 0.005018255411420668,
+            "linear_solve_residual_norm": 0.005018255505374113,
+            "allowed_kernel_correction_norm": 12022106.215531643,
+            "coefficient_norm": 12022106.215531645,
+            "next_particular_norm": 1363181.9357078879
+          }
+        ],
+        "kernel_obstruction_map_rank": 11,
+        "allowed_kernel_dim": 24,
+        "obstruction_kernel_dim": 94,
+        "cokernel_dim": 202,
+        "status": "fails_order_3"
+      },
+      "pairing_min_singular_derivative_at_0": {
+        "uv": -0.0033553109094613953,
+        "uw": -0.003924275112643372,
+        "vw": -0.001903438412095837
+      },
+      "path_samples": [
+        {
+          "t": 0.001,
+          "brent_residual_norm": 36.73956073861394,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.09983776517796364,
+              "max_singular_col_normalized": 2.0110453274211877,
+              "condition_col_normalized": 20.143132449293535,
+              "min_pair_column_norm": 1.139296194926001,
+              "max_pair_column_norm": 6.4701267074008015
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.11449624094618498,
+              "max_singular_col_normalized": 2.103581371931858,
+              "condition_col_normalized": 18.372492883155648,
+              "min_pair_column_norm": 1.0909366078225646,
+              "max_pair_column_norm": 8.297576636738142
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.10395955190184801,
+              "max_singular_col_normalized": 1.808753776156457,
+              "condition_col_normalized": 17.398629977398972,
+              "min_pair_column_norm": 0.9938024119217366,
+              "max_pair_column_norm": 26.760794014695833
+            }
+          }
+        },
+        {
+          "t": 0.003,
+          "brent_residual_norm": 7563.065469089796,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.17662580116473622,
+              "max_singular_col_normalized": 1.783785805364197,
+              "condition_col_normalized": 10.099236881595157,
+              "min_pair_column_norm": 6.420784751175354,
+              "max_pair_column_norm": 315.51721506141837
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.2050762038884463,
+              "max_singular_col_normalized": 1.8935024478618674,
+              "condition_col_normalized": 9.233165096482189,
+              "min_pair_column_norm": 6.6320671119691665,
+              "max_pair_column_norm": 490.31869487211986
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.13169433211041212,
+              "max_singular_col_normalized": 1.84407205176384,
+              "condition_col_normalized": 14.00266831694606,
+              "min_pair_column_norm": 3.535010639404039,
+              "max_pair_column_norm": 2087.6051483080905
+            }
+          }
+        },
+        {
+          "t": 0.01,
+          "brent_residual_norm": 9617557.928762283,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.21761992109870257,
+              "max_singular_col_normalized": 1.66413196923469,
+              "condition_col_normalized": 7.646965226496498,
+              "min_pair_column_norm": 328.1155593279411,
+              "max_pair_column_norm": 38540.05114145447
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.2267717020226536,
+              "max_singular_col_normalized": 1.7288230910435138,
+              "condition_col_normalized": 7.623627973082864,
+              "min_pair_column_norm": 644.2142074269781,
+              "max_pair_column_norm": 60212.13026751713
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.24041698536280837,
+              "max_singular_col_normalized": 1.6760465228450774,
+              "condition_col_normalized": 6.971414770532081,
+              "min_pair_column_norm": 127.03743916687533,
+              "max_pair_column_norm": 257607.17541057683
+            }
+          }
+        },
+        {
+          "t": 0.03,
+          "brent_residual_norm": 7009943026.837597,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.22021033559640543,
+              "max_singular_col_normalized": 1.6493592561809043,
+              "condition_col_normalized": 7.489926627257851,
+              "min_pair_column_norm": 23271.8277686694,
+              "max_pair_column_norm": 3121156.1952871983
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.2277550075609555,
+              "max_singular_col_normalized": 1.7139461239459575,
+              "condition_col_normalized": 7.52539380934245,
+              "min_pair_column_norm": 50243.37091102145,
+              "max_pair_column_norm": 4876782.924037063
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.2415629753989435,
+              "max_singular_col_normalized": 1.6535515914170464,
+              "condition_col_normalized": 6.845219507195549,
+              "min_pair_column_norm": 8852.537424266258,
+              "max_pair_column_norm": 20866398.135120366
+            }
+          }
+        },
+        {
+          "t": 0.1,
+          "brent_residual_norm": 9674180197076.85,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.22043720416935178,
+              "max_singular_col_normalized": 1.6497703232960472,
+              "condition_col_normalized": 7.484082959193242,
+              "min_pair_column_norm": 2803844.0657955077,
+              "max_pair_column_norm": 385207385.7712174
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.22874362184071687,
+              "max_singular_col_normalized": 1.7148370584007526,
+              "condition_col_normalized": 7.496764476322145,
+              "min_pair_column_norm": 6125835.863411387,
+              "max_pair_column_norm": 601994283.1504884
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.24093844001444797,
+              "max_singular_col_normalized": 1.6522259305508504,
+              "condition_col_normalized": 6.857460895205323,
+              "min_pair_column_norm": 1057493.616444899,
+              "max_pair_column_norm": 2576314728.564169
+            }
+          }
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "residual_coordinates": [
+        0.12007387764760684,
+        0.215292363633416,
+        -0.2512584248973134,
+        -0.34079860014884306,
+        0.09561708081963056,
+        0.1641650733263997,
+        0.3802303045363982,
+        -0.020942584962722888,
+        0.032213758336607036,
+        -0.2915848711268582,
+        -0.2974457492904365,
+        0.08592052419459345,
+        -0.1952499481667264,
+        -0.07118341506936596,
+        -0.19428540428634822,
+        0.00398677105423064,
+        0.33191218366187863,
+        0.11000945506755332,
+        -0.022960474171891468,
+        0.19970650352927616,
+        0.06476632227985639,
+        0.03735948506059953,
+        -0.29264298596810223,
+        0.2491473973820425
+      ],
+      "second_order_cokernel_norm": 9.648140043454835e-11,
+      "formal_lift": {
+        "order2_cokernel_norm": 9.648140324988783e-11,
+        "orders": [
+          {
+            "order": 3,
+            "pre_cokernel_norm": 0.008960270318951986,
+            "post_cokernel_norm": 0.008752415801593737,
+            "linear_solve_residual_norm": 0.008752415801604073,
+            "allowed_kernel_correction_norm": 10310.180500703227,
+            "coefficient_norm": 10310.180501230772,
+            "next_particular_norm": 1039.2550783162262
+          }
+        ],
+        "kernel_obstruction_map_rank": 13,
+        "allowed_kernel_dim": 24,
+        "obstruction_kernel_dim": 94,
+        "cokernel_dim": 202,
+        "status": "fails_order_3"
+      },
+      "pairing_min_singular_derivative_at_0": {
+        "uv": -0.0032862186963994455,
+        "uw": -0.0012609707591287878,
+        "vw": -0.000523488754428092
+      },
+      "path_samples": [
+        {
+          "t": 0.001,
+          "brent_residual_norm": 3.2762673269518074e-05,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.10965787671312734,
+              "max_singular_col_normalized": 2.0256518486021675,
+              "condition_col_normalized": 18.472470098079814,
+              "min_pair_column_norm": 0.9997214450513392,
+              "max_pair_column_norm": 4.5823363938069495
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.1189821198313612,
+              "max_singular_col_normalized": 2.0624396524211672,
+              "condition_col_normalized": 17.334030149608676,
+              "min_pair_column_norm": 0.9997724372873704,
+              "max_pair_column_norm": 4.582336739986793
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.10028867109493587,
+              "max_singular_col_normalized": 1.8110679202679398,
+              "condition_col_normalized": 18.058549390424524,
+              "min_pair_column_norm": 0.9999317222010601,
+              "max_pair_column_norm": 4.472579804978319
+            }
+          }
+        },
+        {
+          "t": 0.003,
+          "brent_residual_norm": 0.0026713325335304193,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.10957347747226967,
+              "max_singular_col_normalized": 2.0254668225534607,
+              "condition_col_normalized": 18.485009961156486,
+              "min_pair_column_norm": 0.9989712400608196,
+              "max_pair_column_norm": 4.581178568844778
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.11895502973631768,
+              "max_singular_col_normalized": 2.0624261986626227,
+              "condition_col_normalized": 17.337864596682554,
+              "min_pair_column_norm": 0.9984297161535017,
+              "max_pair_column_norm": 4.58120778209148
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.10025081455673132,
+              "max_singular_col_normalized": 1.8090386811947852,
+              "condition_col_normalized": 18.04512700663456,
+              "min_pair_column_norm": 0.9992278723703301,
+              "max_pair_column_norm": 4.473627534863607
+            }
+          }
+        },
+        {
+          "t": 0.01,
+          "brent_residual_norm": 0.35414697375894016,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.10793753571197198,
+              "max_singular_col_normalized": 2.0237362707435804,
+              "condition_col_normalized": 18.74914280185031,
+              "min_pair_column_norm": 1.00129125331339,
+              "max_pair_column_norm": 4.57102412735915
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.11796708520528235,
+              "max_singular_col_normalized": 2.060458386140305,
+              "condition_col_normalized": 17.466383801505014,
+              "min_pair_column_norm": 0.984591486949006,
+              "max_pair_column_norm": 4.574671433503169
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.09953997562125433,
+              "max_singular_col_normalized": 1.793917768478696,
+              "condition_col_normalized": 18.022083663195602,
+              "min_pair_column_norm": 0.9919696188657142,
+              "max_pair_column_norm": 4.48321692710634
+            }
+          }
+        },
+        {
+          "t": 0.03,
+          "brent_residual_norm": 46.41854025670565,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.05368816231481232,
+              "max_singular_col_normalized": 2.012200841091516,
+              "condition_col_normalized": 37.479413605042666,
+              "min_pair_column_norm": 1.100473066898749,
+              "max_pair_column_norm": 7.563512909022119
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.09345750575746609,
+              "max_singular_col_normalized": 2.015070497834345,
+              "condition_col_normalized": 21.561355414980845,
+              "min_pair_column_norm": 0.8822026487947043,
+              "max_pair_column_norm": 20.379064255104105
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.08745259081204415,
+              "max_singular_col_normalized": 1.8358070637886912,
+              "condition_col_normalized": 20.992026042250313,
+              "min_pair_column_norm": 1.0161341031083175,
+              "max_pair_column_norm": 20.432244465879492
+            }
+          }
+        },
+        {
+          "t": 0.1,
+          "brent_residual_norm": 30978.753970917325,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.19568928008687544,
+              "max_singular_col_normalized": 1.776603164450697,
+              "condition_col_normalized": 9.078694365179235,
+              "min_pair_column_norm": 1.497036302991145,
+              "max_pair_column_norm": 408.968478826619
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.15802267114712307,
+              "max_singular_col_normalized": 1.9971593939399404,
+              "condition_col_normalized": 12.6384358613995,
+              "min_pair_column_norm": 1.3046449166747767,
+              "max_pair_column_norm": 1521.6961735161483
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.14682584708671456,
+              "max_singular_col_normalized": 1.8774791120320613,
+              "condition_col_normalized": 12.787115819759121,
+              "min_pair_column_norm": 2.8741020956297127,
+              "max_pair_column_norm": 1530.2540533232352
+            }
+          }
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "residual_coordinates": [
+        0.22644884216901498,
+        0.32733375453959856,
+        0.18041741733596267,
+        -0.05886515518722656,
+        -0.19263881036160976,
+        0.27951512529789946,
+        0.04218489290377796,
+        0.025847410088726232,
+        -0.05313456539151511,
+        -0.11328789482902137,
+        0.2110472044001582,
+        -0.14184180496557627,
+        0.025147296601816756,
+        0.06582313931687744,
+        -0.41962930247272145,
+        -0.3299236716516401,
+        -0.04005205132027532,
+        0.30861672819345304,
+        -0.31963834087238047,
+        -0.20888808804289996,
+        0.05063198485597625,
+        0.1605241181835057,
+        -0.04352438039937888,
+        0.21159795727684286
+      ],
+      "second_order_cokernel_norm": 3.0535046048055887e-11,
+      "formal_lift": {
+        "order2_cokernel_norm": 3.053505591815546e-11,
+        "orders": [
+          {
+            "order": 3,
+            "pre_cokernel_norm": 0.0002946874287917676,
+            "post_cokernel_norm": 0.00012521743897558074,
+            "linear_solve_residual_norm": 0.00012521743897590985,
+            "allowed_kernel_correction_norm": 30.76838720708843,
+            "coefficient_norm": 30.768440245264422,
+            "next_particular_norm": 2.6310761329936723
+          }
+        ],
+        "kernel_obstruction_map_rank": 11,
+        "allowed_kernel_dim": 24,
+        "obstruction_kernel_dim": 94,
+        "cokernel_dim": 202,
+        "status": "fails_order_3"
+      },
+      "pairing_min_singular_derivative_at_0": {
+        "uv": -0.002454944475413501,
+        "uw": 4.361580069334181e-05,
+        "vw": -0.00035340259517402384
+      },
+      "path_samples": [
+        {
+          "t": 0.001,
+          "brent_residual_norm": 1.454399561851933e-10,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.10966779601305088,
+              "max_singular_col_normalized": 2.0256667377185433,
+              "condition_col_normalized": 18.470935054420913,
+              "min_pair_column_norm": 0.9999242688109935,
+              "max_pair_column_norm": 4.5826319020945805
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.11898618597416241,
+              "max_singular_col_normalized": 2.0624486517074407,
+              "condition_col_normalized": 17.33351342277075,
+              "min_pair_column_norm": 0.9999044219261508,
+              "max_pair_column_norm": 4.582631865532707
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.10029310092063215,
+              "max_singular_col_normalized": 1.8113509064124034,
+              "condition_col_normalized": 18.060573357342218,
+              "min_pair_column_norm": 0.9999645893691432,
+              "max_pair_column_norm": 4.472265277444054
+            }
+          }
+        },
+        {
+          "t": 0.003,
+          "brent_residual_norm": 1.1782078112712288e-08,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.10966354395019914,
+              "max_singular_col_normalized": 2.025645001438181,
+              "condition_col_normalized": 18.47145303235937,
+              "min_pair_column_norm": 0.999751914108859,
+              "max_pair_column_norm": 4.5827470820202665
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.11898682442171464,
+              "max_singular_col_normalized": 2.062483016550948,
+              "condition_col_normalized": 17.333709228519865,
+              "min_pair_column_norm": 0.9997126350103351,
+              "max_pair_column_norm": 4.5827467487184395
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.10029267380949214,
+              "max_singular_col_normalized": 1.811381989374954,
+              "condition_col_normalized": 18.060960193520305,
+              "min_pair_column_norm": 0.9998932045316243,
+              "max_pair_column_norm": 4.472481168526468
+            }
+          }
+        },
+        {
+          "t": 0.01,
+          "brent_residual_norm": 1.455266737941821e-06,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.10965383965283645,
+              "max_singular_col_normalized": 2.0255776847330687,
+              "condition_col_normalized": 18.47247384264918,
+              "min_pair_column_norm": 0.9989302696668158,
+              "max_pair_column_norm": 4.58317985802685
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.11899340067697828,
+              "max_singular_col_normalized": 2.0625822278295938,
+              "condition_col_normalized": 17.33358502316207,
+              "min_pair_column_norm": 0.9990347122445312,
+              "max_pair_column_norm": 4.583176010278595
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.1002933780171001,
+              "max_singular_col_normalized": 1.8114257875345454,
+              "condition_col_normalized": 18.06127007932364,
+              "min_pair_column_norm": 0.9996373643977705,
+              "max_pair_column_norm": 4.4727876260394
+            }
+          }
+        },
+        {
+          "t": 0.03,
+          "brent_residual_norm": 0.00011807203666003528,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.10967002049471596,
+              "max_singular_col_normalized": 2.0254601566563926,
+              "condition_col_normalized": 18.468676740641094,
+              "min_pair_column_norm": 0.9947788787276485,
+              "max_pair_column_norm": 4.584686121908212
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.11904886422488795,
+              "max_singular_col_normalized": 2.062685376567377,
+              "condition_col_normalized": 17.326375938126414,
+              "min_pair_column_norm": 0.9970400050724489,
+              "max_pair_column_norm": 4.584649376526977
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.10031387015369757,
+              "max_singular_col_normalized": 1.8109980698300276,
+              "condition_col_normalized": 18.05331672534692,
+              "min_pair_column_norm": 0.9988547273045714,
+              "max_pair_column_norm": 4.4698150304600714
+            }
+          }
+        },
+        {
+          "t": 0.1,
+          "brent_residual_norm": 0.014710433799560977,
+          "pairing": {
+            "uv": {
+              "min_singular_col_normalized": 0.11017112850752445,
+              "max_singular_col_normalized": 2.025920600034219,
+              "condition_col_normalized": 18.38885221091162,
+              "min_pair_column_norm": 0.9675802762038052,
+              "max_pair_column_norm": 4.593788739405858
+            },
+            "uw": {
+              "min_singular_col_normalized": 0.11958069664819924,
+              "max_singular_col_normalized": 2.0609531008498143,
+              "condition_col_normalized": 17.234831027227084,
+              "min_pair_column_norm": 0.9894249405478068,
+              "max_pair_column_norm": 4.593505760451151
+            },
+            "vw": {
+              "min_singular_col_normalized": 0.10055266668964505,
+              "max_singular_col_normalized": 1.8042365539108471,
+              "condition_col_normalized": 17.943199452676954,
+              "min_pair_column_norm": 0.9957056065332648,
+              "max_pair_column_norm": 4.415596694182756
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "interpretation_warning": "Numerical formal lifts to finite order are evidence for higher-order compatibility only; they are not exact algebraic proof of a positive-dimensional component or of rank-22."
+}

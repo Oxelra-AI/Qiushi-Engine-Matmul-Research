@@ -1,0 +1,84 @@
+{
+  "scope": "Exact integer Jennrich commutator certificate for BILR on gl_3.",
+  "theorem": "For k cubes in gl_3 (dim 9) with sum w_i mu_i^2 = K (trace form), rank([H(X),H(Y)]) <= 2*max(0, k-9). Proof: for k = n+1 = 10, in any 9-vector basis, H(X) = diag(Mx) + u(y)v^T (diagonal + rank-1). The key identity y∘u(z) - z∘u(y) = -(α·z)u(y) + (α·y)u(z) shows the commutator column space ⊆ span(u(y),u(z)), hence rank ≤ 2.",
+  "bilr_cube_count": 11,
+  "gl3_dimension": 9,
+  "expected_max_comm_rank_for_10_cubes": 2,
+  "bilr_comm_rank": 4,
+  "bilr_rank_exceeds_10cube_bound": true,
+  "certificate": {
+    "x1": [
+      3,
+      0,
+      1,
+      3,
+      -1,
+      1,
+      1,
+      3,
+      -2
+    ],
+    "x2": [
+      -1,
+      3,
+      -1,
+      -1,
+      1,
+      0,
+      -1,
+      2,
+      1
+    ],
+    "minor_rows": [
+      1,
+      2,
+      3
+    ],
+    "minor_cols": [
+      1,
+      2,
+      6
+    ],
+    "exact_integer_determinant": 27993600,
+    "sub_matrix_integer": [
+      [
+        0,
+        72,
+        396
+      ],
+      [
+        216,
+        -72,
+        0
+      ],
+      [
+        0,
+        288,
+        -216
+      ]
+    ]
+  },
+  "multi_prime_verification": [
+    {
+      "prime": 65521,
+      "rank": 4,
+      "det_mod_p": 16133
+    },
+    {
+      "prime": 100003,
+      "rank": 4,
+      "det_mod_p": 92763
+    },
+    {
+      "prime": 1000003,
+      "rank": 4,
+      "det_mod_p": 993519
+    },
+    {
+      "prime": 32003,
+      "rank": 4,
+      "det_mod_p": 22978
+    }
+  ],
+  "conclusion": "The fixed BILR residual cubic on gl_3 has Waring rank >= 11 > 10, proved by the nonzero 3x3 minor of the Hessian commutator. This certificate is for the displayed BILR residual only. It does not by itself exclude all (10,4) cyclic decompositions or all internal frame choices over the same exterior planes; a rank-22 candidate would have to lie in the closed locus where all 3x3 commutator minors vanish identically in X,Y."
+}

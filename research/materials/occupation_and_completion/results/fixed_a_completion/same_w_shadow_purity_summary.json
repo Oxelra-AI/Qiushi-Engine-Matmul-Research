@@ -1,0 +1,579 @@
+{
+  "all_results": null,
+  "elapsed_sec": 1.451,
+  "interpretation": "A SAT verified core is a rank-19 E11 witness and lifts to full rank 22. UNSAT/TIMEOUT results are local fixed-A evidence; without proof logs, UNSAT is not a final theorem.",
+  "pool": "data/e11_flip_workspace/data/schemes_modp/e11core/mod2-rank21a.npy",
+  "purpose": "fixed-A exact B/C completion SAT on shadow+purity surviving same-W deletion supports",
+  "results_head": [
+    {
+      "cnf": "data/fixed_a_completion/same_w_shadow_purity/fixedA_000.cnf",
+      "cnf_meta": {
+        "cap3_purity_units": 36,
+        "caps": [
+          6,
+          3,
+          6,
+          5,
+          5,
+          4,
+          7,
+          7
+        ],
+        "num_clauses": 16641,
+        "num_vars": 4716,
+        "product_vars": 1539,
+        "rank": 19,
+        "semantics": "fixed A masks; variables are v_t,w_t and q_tbc=v_tb&w_tc; XOR over active terms equals E11 core entry",
+        "total_a_weight": 43,
+        "u_masks": [
+          128,
+          196,
+          216,
+          64,
+          36,
+          160,
+          3,
+          4,
+          3,
+          252,
+          1,
+          18,
+          192,
+          73,
+          16,
+          164,
+          17,
+          13,
+          72
+        ],
+        "v_vars": 171,
+        "w_vars": 171,
+        "xor_terms_total": 3483
+      },
+      "index": 0,
+      "returncode": 20,
+      "solve_sec": 0.989,
+      "solver_status": "UNSAT",
+      "support_record": {
+        "deleted_terms": [
+          15,
+          18
+        ],
+        "deleted_w": 320,
+        "pool_row": 12,
+        "purity": {
+          "caps": [
+            6,
+            3,
+            6,
+            5,
+            5,
+            4,
+            7,
+            7
+          ],
+          "n_clauses": 32,
+          "rejects_support": false,
+          "total_weight": 43,
+          "twosat_sat": true
+        },
+        "shadow": {
+          "aug_rank": 128,
+          "ok": true,
+          "rank": 128,
+          "tight": [
+            62,
+            78,
+            87,
+            151,
+            171,
+            174,
+            179,
+            250
+          ],
+          "tight_count": 8
+        },
+        "source": "same_w_deletion",
+        "u_masks": [
+          128,
+          196,
+          216,
+          64,
+          36,
+          160,
+          3,
+          4,
+          3,
+          252,
+          1,
+          18,
+          192,
+          73,
+          16,
+          164,
+          17,
+          13,
+          72
+        ]
+      }
+    },
+    {
+      "cnf": "data/fixed_a_completion/same_w_shadow_purity/fixedA_001.cnf",
+      "cnf_meta": {
+        "cap3_purity_units": 36,
+        "caps": [
+          3,
+          7,
+          10,
+          7,
+          6,
+          9,
+          6,
+          8
+        ],
+        "num_clauses": 20853,
+        "num_vars": 5769,
+        "product_vars": 1539,
+        "rank": 19,
+        "semantics": "fixed A masks; variables are v_t,w_t and q_tbc=v_tb&w_tc; XOR over active terms equals E11 core entry",
+        "total_a_weight": 56,
+        "u_masks": [
+          28,
+          124,
+          110,
+          192,
+          160,
+          173,
+          128,
+          36,
+          4,
+          164,
+          2,
+          216,
+          2,
+          182,
+          3,
+          108,
+          3,
+          18,
+          252
+        ],
+        "v_vars": 171,
+        "w_vars": 171,
+        "xor_terms_total": 4536
+      },
+      "index": 1,
+      "returncode": 20,
+      "solve_sec": 0.056,
+      "solver_status": "UNSAT",
+      "support_record": {
+        "deleted_terms": [
+          10,
+          15
+        ],
+        "deleted_w": 72,
+        "pool_row": 13,
+        "purity": {
+          "caps": [
+            3,
+            7,
+            10,
+            7,
+            6,
+            9,
+            6,
+            8
+          ],
+          "n_clauses": 41,
+          "rejects_support": false,
+          "total_weight": 56,
+          "twosat_sat": true
+        },
+        "shadow": {
+          "aug_rank": 153,
+          "ok": true,
+          "rank": 153,
+          "tight": [
+            51,
+            55,
+            57,
+            61,
+            62,
+            179,
+            185,
+            197,
+            237,
+            243,
+            247,
+            249,
+            250
+          ],
+          "tight_count": 13
+        },
+        "source": "same_w_deletion",
+        "u_masks": [
+          28,
+          124,
+          110,
+          192,
+          160,
+          173,
+          128,
+          36,
+          4,
+          164,
+          2,
+          216,
+          2,
+          182,
+          3,
+          108,
+          3,
+          18,
+          252
+        ]
+      }
+    },
+    {
+      "cnf": "data/fixed_a_completion/same_w_shadow_purity/fixedA_002.cnf",
+      "cnf_meta": {
+        "cap3_purity_units": 0,
+        "caps": [
+          6,
+          5,
+          7,
+          4,
+          8,
+          7,
+          6,
+          9
+        ],
+        "num_clauses": 19521,
+        "num_vars": 5445,
+        "product_vars": 1539,
+        "rank": 19,
+        "semantics": "fixed A masks; variables are v_t,w_t and q_tbc=v_tb&w_tc; XOR over active terms equals E11 core entry",
+        "total_a_weight": 52,
+        "u_masks": [
+          67,
+          32,
+          128,
+          4,
+          152,
+          180,
+          65,
+          9,
+          252,
+          144,
+          216,
+          148,
+          36,
+          227,
+          245,
+          32,
+          3,
+          22,
+          2
+        ],
+        "v_vars": 171,
+        "w_vars": 171,
+        "xor_terms_total": 4212
+      },
+      "index": 2,
+      "returncode": 20,
+      "solve_sec": 0.148,
+      "solver_status": "UNSAT",
+      "support_record": {
+        "deleted_terms": [
+          2,
+          14
+        ],
+        "deleted_w": 73,
+        "pool_row": 16,
+        "purity": {
+          "caps": [
+            6,
+            5,
+            7,
+            4,
+            8,
+            7,
+            6,
+            9
+          ],
+          "n_clauses": 41,
+          "rejects_support": false,
+          "total_weight": 52,
+          "twosat_sat": true
+        },
+        "shadow": {
+          "aug_rank": 104,
+          "ok": true,
+          "rank": 104,
+          "tight": [
+            103,
+            121,
+            143,
+            179
+          ],
+          "tight_count": 4
+        },
+        "source": "same_w_deletion",
+        "u_masks": [
+          67,
+          32,
+          128,
+          4,
+          152,
+          180,
+          65,
+          9,
+          252,
+          144,
+          216,
+          148,
+          36,
+          227,
+          245,
+          32,
+          3,
+          22,
+          2
+        ]
+      }
+    },
+    {
+      "cnf": "data/fixed_a_completion/same_w_shadow_purity/fixedA_003.cnf",
+      "cnf_meta": {
+        "cap3_purity_units": 36,
+        "caps": [
+          9,
+          10,
+          10,
+          5,
+          3,
+          10,
+          8,
+          6
+        ],
+        "num_clauses": 22473,
+        "num_vars": 6174,
+        "product_vars": 1539,
+        "rank": 19,
+        "semantics": "fixed A masks; variables are v_t,w_t and q_tbc=v_tb&w_tc; XOR over active terms equals E11 core entry",
+        "total_a_weight": 61,
+        "u_masks": [
+          14,
+          12,
+          109,
+          160,
+          32,
+          13,
+          182,
+          227,
+          255,
+          231,
+          3,
+          4,
+          2,
+          4,
+          96,
+          99,
+          195,
+          22,
+          97
+        ],
+        "v_vars": 171,
+        "w_vars": 171,
+        "xor_terms_total": 4941
+      },
+      "index": 3,
+      "returncode": 20,
+      "solve_sec": 0.068,
+      "solver_status": "UNSAT",
+      "support_record": {
+        "deleted_terms": [
+          5,
+          7
+        ],
+        "deleted_w": 384,
+        "pool_row": 21,
+        "purity": {
+          "caps": [
+            9,
+            10,
+            10,
+            5,
+            3,
+            10,
+            8,
+            6
+          ],
+          "n_clauses": 44,
+          "rejects_support": false,
+          "total_weight": 61,
+          "twosat_sat": true
+        },
+        "shadow": {
+          "aug_rank": 118,
+          "ok": true,
+          "rank": 118,
+          "tight": [
+            57,
+            71,
+            78,
+            135,
+            221,
+            249
+          ],
+          "tight_count": 6
+        },
+        "source": "same_w_deletion",
+        "u_masks": [
+          14,
+          12,
+          109,
+          160,
+          32,
+          13,
+          182,
+          227,
+          255,
+          231,
+          3,
+          4,
+          2,
+          4,
+          96,
+          99,
+          195,
+          22,
+          97
+        ]
+      }
+    },
+    {
+      "cnf": "data/fixed_a_completion/same_w_shadow_purity/fixedA_004.cnf",
+      "cnf_meta": {
+        "cap3_purity_units": 36,
+        "caps": [
+          3,
+          7,
+          10,
+          7,
+          6,
+          11,
+          6,
+          7
+        ],
+        "num_clauses": 21177,
+        "num_vars": 5850,
+        "product_vars": 1539,
+        "rank": 19,
+        "semantics": "fixed A masks; variables are v_t,w_t and q_tbc=v_tb&w_tc; XOR over active terms equals E11 core entry",
+        "total_a_weight": 57,
+        "u_masks": [
+          160,
+          2,
+          36,
+          224,
+          22,
+          13,
+          254,
+          32,
+          32,
+          36,
+          255,
+          108,
+          146,
+          12,
+          50,
+          252,
+          2,
+          204,
+          1
+        ],
+        "v_vars": 171,
+        "w_vars": 171,
+        "xor_terms_total": 4617
+      },
+      "index": 4,
+      "returncode": 20,
+      "solve_sec": 0.055,
+      "solver_status": "UNSAT",
+      "support_record": {
+        "deleted_terms": [
+          9,
+          14
+        ],
+        "deleted_w": 288,
+        "pool_row": 29,
+        "purity": {
+          "caps": [
+            3,
+            7,
+            10,
+            7,
+            6,
+            11,
+            6,
+            7
+          ],
+          "n_clauses": 44,
+          "rejects_support": false,
+          "total_weight": 57,
+          "twosat_sat": true
+        },
+        "shadow": {
+          "aug_rank": 150,
+          "ok": true,
+          "rank": 150,
+          "tight": [
+            46,
+            61,
+            86,
+            125,
+            157,
+            165,
+            205,
+            206,
+            221,
+            222,
+            239,
+            241
+          ],
+          "tight_count": 12
+        },
+        "source": "same_w_deletion",
+        "u_masks": [
+          160,
+          2,
+          36,
+          224,
+          22,
+          13,
+          254,
+          32,
+          32,
+          36,
+          255,
+          108,
+          146,
+          12,
+          50,
+          252,
+          2,
+          204,
+          1
+        ]
+      }
+    }
+  ],
+  "sat_verified": [],
+  "status_hist": {
+    "UNSAT": 5
+  },
+  "supports_generated": 5,
+  "supports_tested": 5,
+  "timeout_per_support_sec": 10.0
+}

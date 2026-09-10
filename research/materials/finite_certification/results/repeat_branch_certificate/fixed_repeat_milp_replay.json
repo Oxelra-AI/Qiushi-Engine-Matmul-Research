@@ -1,0 +1,74 @@
+{
+  "all_capacity_two_points_infeasible": true,
+  "capacity_two_points": [
+    1,
+    2,
+    3,
+    4,
+    32,
+    36
+  ],
+  "compact_constraints": {
+    "base_rows_without_fixed_equality": 12673,
+    "base_variables": 255,
+    "contraction_lower_bounds": 255,
+    "unconditional_quotient_cuts": 252,
+    "unique_wang_rows": 12165
+  },
+  "core": "E11",
+  "field": "F2",
+  "point_cap_distribution": {
+    "1": 249,
+    "2": 6
+  },
+  "rank_s": 19,
+  "results": [
+    {
+      "fixed_repeat_point": 1,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "solve_sec": 0.119,
+      "status": 2,
+      "success": false
+    },
+    {
+      "fixed_repeat_point": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "solve_sec": 0.297,
+      "status": 2,
+      "success": false
+    },
+    {
+      "fixed_repeat_point": 3,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "solve_sec": 3.993,
+      "status": 2,
+      "success": false
+    },
+    {
+      "fixed_repeat_point": 4,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "solve_sec": 0.08,
+      "status": 2,
+      "success": false
+    },
+    {
+      "fixed_repeat_point": 32,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "solve_sec": 0.075,
+      "status": 2,
+      "success": false
+    },
+    {
+      "fixed_repeat_point": 36,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "solve_sec": 0.079,
+      "status": 2,
+      "success": false
+    }
+  ],
+  "schema": "fixed_repeat_milp_replay_v1",
+  "solver": "scipy.optimize.milp/HiGHS",
+  "source": "data/quotient_rank_cuts/core_e11_multiset_quotient_sep_24r_fullstored.json",
+  "time_limit_per_fixed_point": 120.0,
+  "total_elapsed_sec": 47.412
+}

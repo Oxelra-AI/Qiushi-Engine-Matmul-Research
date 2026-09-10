@@ -1,0 +1,245 @@
+{
+  "all_ok": true,
+  "failure_count": 0,
+  "failures": [],
+  "files": {
+    "ag32": {
+      "exists": true,
+      "path": "assets/occupation/data/audit/ag32_cap.json",
+      "sha256": "8f7a80948ebdd0f2cbe65a037443914f97afc8b93cc375cdee1ea9691308979d"
+    },
+    "bundle": {
+      "exists": true,
+      "path": "assets/occupation/data/bundle_check/bundle_check_regenerate.json",
+      "sha256": "56610e7c26db816768df8fe1d77e93686151bb27330429ea651ffc52dc6210fc"
+    },
+    "coset_lemma": {
+      "exists": true,
+      "path": "assets/occupation/data/audit/coset_lemma.json",
+      "sha256": "54791745ca393c5c8d221add66d8649c5daaad7bb4f016f3574697655a3d234c"
+    },
+    "dim2_independent": {
+      "exists": true,
+      "path": "assets/occupation/data/dim2_independent/independent_semantics_summary.json",
+      "sha256": "b5ad24254eabadc0ed66c000fe3d2ef83a30c0444f4f856e785216569f76c95b"
+    },
+    "gl3": {
+      "exists": true,
+      "path": "assets/occupation/data/audit/gl3_invariance.json",
+      "sha256": "35f7cfd79dca96f8367d58faaa11680f5fbd227e5eff225e42fb16d327e178b5"
+    },
+    "lut_compare": {
+      "exists": true,
+      "path": "assets/occupation/data/wang_reexpand/reexpanded_lut_compare.json",
+      "sha256": "072bfef83352fe93aeeb34bfd94b45243695910a2c78a01800fbcf19f752f357"
+    },
+    "orbit491_t19": {
+      "exists": true,
+      "path": "assets/occupation/data/dim2_independent/orbit491_target19_long.json",
+      "sha256": "512944e1db84954157b98001c366033f83c7d162df779236cc9addc209649874"
+    },
+    "orbit_coverage": {
+      "exists": true,
+      "path": "assets/occupation/data/orbit_coverage/dim2_orbit_coverage.json",
+      "sha256": "243aef8ece68dd0c26c8db8a67e833ac152ed5e54d45f92a5e6d043f87dec9f4"
+    },
+    "peer_anchor": {
+      "exists": true,
+      "path": "assets/structural/data/theorem_review/certificate_anchored_transport_rerun.json",
+      "sha256": "623ae7168eec128ef81791741a0247d8ad8bb56117c3bd6b0bb126aae00584eb"
+    },
+    "peer_bundle": {
+      "exists": true,
+      "path": "assets/structural/data/peer_replay/peer_bundle_check_regenerate.json",
+      "sha256": "4f3f0f708ec44ac7a837ddfb3c818b898db217af6b5717809ab26a078bf182bd"
+    },
+    "peer_lifting": {
+      "exists": true,
+      "path": "assets/structural/data/transparent_lifting_batch/batch_transparent_lifting_verifier_manifest.json",
+      "sha256": "29af9296e982a8053eb5da31cde5060dd99d45954553e3e14888726dc58b2244"
+    },
+    "peer_quotient": {
+      "exists": true,
+      "path": "assets/structural/data/quotient_semantics/quotient_occupation_semantics.json",
+      "sha256": "3c465feab73a1598d200a6f888f286d8ccc87c5f28cd622fa872e5f80af42a14"
+    },
+    "peer_review_note": {
+      "exists": true,
+      "path": "assets/structural/notes/theorem_chain_review.md",
+      "sha256": "8d05c4b581be3c81a54f2819e8caa98e87b29b745e93f38f0bb85826818226cc"
+    },
+    "peer_tensor_action": {
+      "exists": true,
+      "path": "assets/structural/data/tensor_action/companion_tensor_action_check.json",
+      "sha256": "f5dab426258ed7027b8e30e5afba75d30ddc024412269ab4296d1b61c44fd727"
+    },
+    "peer_transparent": {
+      "exists": true,
+      "path": "assets/structural/data/transparent_unary_certs_484_491/batch_transparent_unary_dim2_certs_manifest.json",
+      "sha256": "66501fbbcfb33f8d1d5b621633c4d5a8d9da508bec6ffe0a6d2ddf505ecaa553"
+    },
+    "saturation": {
+      "exists": true,
+      "path": "assets/occupation/data/audit/saturation_proof.json",
+      "sha256": "06ad249a58bb74186bec00130197cddde5dab976edf0481517a3333dbf7ae008"
+    },
+    "t19_pilot489": {
+      "exists": true,
+      "path": "assets/occupation/data/encoder_target19_pilot/orbit_489/orbit_489_target_19_certificate.json",
+      "sha256": "6eea349c8f576afeefd0bc8f8183367ab6c79600d27970d7e9d4810f598f3b73"
+    },
+    "transpose": {
+      "exists": true,
+      "path": "assets/occupation/data/audit/transpose_convention.json",
+      "sha256": "5a3a45ff66c92b4cec7121c4ac6cc0e22871ade8f6a9695d30ccb95512ce9e3b"
+    },
+    "wang_verify": {
+      "exists": true,
+      "path": "assets/occupation/data/wang_verify/wang_verifier_rerun.json",
+      "sha256": "937351079a86b4c85466114c250a8ab33c2e22b8158c9d9e7ac8bbbaf51d1e74"
+    }
+  },
+  "meaning": "Consolidated check that the finite and proof-to-code surfaces for the R_F2(T_333)>=21 theorem have been closed well enough for Express packaging, modulo the standard trust in Wang verifier and DRAT checkers.",
+  "promotion_judgment": "ready_for_express",
+  "results": [
+    {
+      "certificate_sha256": "25595a883ce877eecd802139ff4e07646e154b2797ad6fe7f9ec737ab0c6135d",
+      "elapsed_sec": 3.270697593688965,
+      "name": "wang_verifier_rerun_ok",
+      "ok": true
+    },
+    {
+      "count": 8283458,
+      "name": "independent_lut_reexpansion_matches_stored_lut",
+      "ok": true,
+      "reexpanded_binary_sha256": "e3a30a5b86cef5ded515798c91d4ab27b73be29e75b7e9ffec784d654882245d",
+      "stored_lut_sha256": "542df1f30fc362b292438696d90b76fb532093a431f8309e283aac83ebd6ac02"
+    },
+    {
+      "generator_count": 13,
+      "name": "reexpansion_actions_and_coverage_ok",
+      "ok": true,
+      "subspace_count": 8283458
+    },
+    {
+      "all_high_cert_indices": [
+        484,
+        485,
+        486,
+        487,
+        488,
+        489,
+        490,
+        491
+      ],
+      "all_high_member_count": 32018,
+      "name": "all_high_dim2_orbit_coverage_ok",
+      "ok": true
+    },
+    {
+      "drat_elapsed_sec": 367.42238783836365,
+      "lut_sha256": "542df1f30fc362b292438696d90b76fb532093a431f8309e283aac83ebd6ac02",
+      "name": "primary_drat_bundle_regenerated_ok",
+      "ok": true
+    },
+    {
+      "coset_hyperplane_hist": {
+        "15": 1,
+        "17": 14
+      },
+      "dim1_count": 511,
+      "name": "line_and_coset_lut_values_ok",
+      "ok": true
+    },
+    {
+      "name": "independent_dim2_row_semantics_ok",
+      "ok": true,
+      "row_count_each": 29210
+    },
+    {
+      "max_multiplicities": {
+        "484": 1,
+        "485": 1,
+        "486": 2,
+        "487": 1,
+        "488": 1,
+        "489": 2,
+        "490": 1,
+        "491": 1
+      },
+      "name": "target19_occupation_witnesses_pass_independent_rows",
+      "ok": true
+    },
+    {
+      "cnf_clauses": 3934813,
+      "cnf_sha256": "f4f5550329eb71121e4c21fe759aa598d8713aaaeb3e08f68b00a0872cf4adc4",
+      "cnf_vars": 1879602,
+      "name": "same_encoder_target19_sat_pilot_orbit489",
+      "ok": true
+    },
+    {
+      "name": "transpose_convention_ok",
+      "ok": true,
+      "wrong_failures": 97025
+    },
+    {
+      "name": "saturation_record_ok",
+      "ok": true,
+      "product_identity_failures": null
+    },
+    {
+      "checks": 1400,
+      "name": "gl3_invariance_record_ok",
+      "ok": true
+    },
+    {
+      "h3_total": 49882,
+      "h4_total": 24778,
+      "name": "coset_lemma_record_ok",
+      "ok": true
+    },
+    {
+      "n_4_planes": 14,
+      "name": "ag32_cap_record_ok",
+      "ok": true
+    },
+    {
+      "drat_elapsed_sec": 362.3375232219696,
+      "name": "independently_replayed_primary_bundle_ok",
+      "ok": true,
+      "path": "assets/structural/data/peer_replay/peer_bundle_check_regenerate.json"
+    },
+    {
+      "affine_plane_instances": 1302,
+      "dim2_rows": 18011,
+      "name": "peer_certificate_anchored_transport_ok",
+      "ok": true
+    },
+    {
+      "name": "peer_transparent_unary_drat_certs_ok",
+      "ok": true,
+      "verified": [
+        484,
+        485,
+        486,
+        487,
+        488,
+        489,
+        490,
+        491
+      ]
+    },
+    {
+      "name": "peer_transparent_forward_lifting_ok",
+      "ok": true,
+      "total": 8
+    },
+    {
+      "action_count": 56448,
+      "name": "peer_tensor_action_and_quotient_semantics_ok",
+      "ok": true,
+      "used_unique_subspace_count": 18704
+    }
+  ],
+  "schema": "theorem_readiness_checker_v1"
+}

@@ -1,0 +1,437 @@
+{
+  "full_tensor": {
+    "A_flat_rank": 9,
+    "B_flat_rank": 9,
+    "C_flat_rank": 9,
+    "A_flat_shape": [
+      9,
+      81
+    ],
+    "B_flat_shape": [
+      9,
+      81
+    ],
+    "C_flat_shape": [
+      9,
+      81
+    ],
+    "nnz": 27,
+    "total_entries": 729,
+    "density": 0.037037037037037035
+  },
+  "cores": {
+    "mask_001_E11": {
+      "name": "mask_001_E11",
+      "mask": 1,
+      "mask_binary": "0b000000001",
+      "label": "E11",
+      "pivot": 0,
+      "pivot_label": "a00",
+      "free_bits": [],
+      "free_labels": [],
+      "core_shape": [
+        8,
+        9,
+        9
+      ],
+      "core_a_coordinates": [
+        "related analysis",
+        "related analysis",
+        "a10",
+        "a11",
+        "a12",
+        "a20",
+        "a21",
+        "a22"
+      ],
+      "core_a_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "removed_slice": {
+        "pivot": 0,
+        "removed_slice_rank": 3,
+        "removed_slice_nnz": 3,
+        "removed_slice_shape": [
+          9,
+          9
+        ]
+      },
+      "flattenings": {
+        "A_flat_rank": 8,
+        "B_flat_rank": 9,
+        "C_flat_rank": 9,
+        "A_flat_shape": [
+          8,
+          81
+        ],
+        "B_flat_shape": [
+          9,
+          72
+        ],
+        "C_flat_shape": [
+          9,
+          72
+        ]
+      },
+      "nonzero_stats": {
+        "nnz": 24,
+        "total_entries": 648,
+        "density": 0.037037037037037035
+      },
+      "A_slices": {
+        "A_slice_ranks": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "A_slice_rank_max": 3,
+        "A_slice_rank_min": 3,
+        "A_slice_rank_distribution": {
+          "3": 8
+        }
+      },
+      "B_slices": {
+        "B_slice_ranks": [
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "B_slice_rank_max": 3,
+        "B_slice_rank_min": 2,
+        "B_slice_rank_distribution": {
+          "2": 3,
+          "3": 6
+        }
+      },
+      "C_slices": {
+        "C_slice_ranks": [
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "C_slice_rank_max": 3,
+        "C_slice_rank_min": 2,
+        "C_slice_rank_distribution": {
+          "2": 3,
+          "3": 6
+        }
+      },
+      "forced_product_lower_bound": 3,
+      "cn122_restriction": {
+        "vanished_indices": [
+          2,
+          4
+        ],
+        "surviving_count": 21,
+        "raw_surviving_terms": 21,
+        "unique_triples": 21,
+        "duplicate_triples": {},
+        "effective_f2_length": 21,
+        "decomposition_verified": true
+      },
+      "wang_certified_lower_bound": 19,
+      "rank_upper_bound_from_cn122": 21,
+      "rank_dichotomy": "If R_F2(core) = 19 then R_F2(T) <= 19 + 3 = 22. If R_F2(core) >= 20 then R_F2(T) >= 21."
+    },
+    "mask_010_E12_E21": {
+      "name": "mask_010_E12_E21",
+      "mask": 10,
+      "mask_binary": "0b000001010",
+      "label": "E12+E21",
+      "pivot": 3,
+      "pivot_label": "a10",
+      "free_bits": [
+        1
+      ],
+      "free_labels": [
+        "related analysis"
+      ],
+      "core_shape": [
+        8,
+        9,
+        9
+      ],
+      "core_a_coordinates": [
+        "a00",
+        "related analysis",
+        "related analysis",
+        "a11",
+        "a12",
+        "a20",
+        "a21",
+        "a22"
+      ],
+      "core_a_indices": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "removed_slice": {
+        "pivot": 3,
+        "removed_slice_rank": 3,
+        "removed_slice_nnz": 3,
+        "removed_slice_shape": [
+          9,
+          9
+        ]
+      },
+      "flattenings": {
+        "A_flat_rank": 8,
+        "B_flat_rank": 9,
+        "C_flat_rank": 9,
+        "A_flat_shape": [
+          8,
+          81
+        ],
+        "B_flat_shape": [
+          9,
+          72
+        ],
+        "C_flat_shape": [
+          9,
+          72
+        ]
+      },
+      "nonzero_stats": {
+        "nnz": 27,
+        "total_entries": 648,
+        "density": 0.041666666666666664
+      },
+      "A_slices": {
+        "A_slice_ranks": [
+          3,
+          6,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "A_slice_rank_max": 6,
+        "A_slice_rank_min": 3,
+        "A_slice_rank_distribution": {
+          "3": 7,
+          "6": 1
+        }
+      },
+      "B_slices": {
+        "B_slice_ranks": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "B_slice_rank_max": 3,
+        "B_slice_rank_min": 3,
+        "B_slice_rank_distribution": {
+          "3": 9
+        }
+      },
+      "C_slices": {
+        "C_slice_ranks": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "C_slice_rank_max": 3,
+        "C_slice_rank_min": 3,
+        "C_slice_rank_distribution": {
+          "3": 9
+        }
+      },
+      "forced_product_lower_bound": 3,
+      "cn122_restriction": {
+        "vanished_indices": [],
+        "surviving_count": 23,
+        "raw_surviving_terms": 23,
+        "unique_triples": 23,
+        "duplicate_triples": {},
+        "effective_f2_length": 23,
+        "decomposition_verified": true
+      },
+      "wang_certified_lower_bound": 19,
+      "rank_upper_bound_from_cn122": 23,
+      "rank_dichotomy": "If R_F2(core) = 19 then R_F2(T) <= 19 + 3 = 22. If R_F2(core) >= 20 then R_F2(T) >= 21."
+    },
+    "mask_084_E13_E22_E31": {
+      "name": "mask_084_E13_E22_E31",
+      "mask": 84,
+      "mask_binary": "0b001010100",
+      "label": "E13+E22+E31",
+      "pivot": 6,
+      "pivot_label": "a20",
+      "free_bits": [
+        2,
+        4
+      ],
+      "free_labels": [
+        "related analysis",
+        "a11"
+      ],
+      "core_shape": [
+        8,
+        9,
+        9
+      ],
+      "core_a_coordinates": [
+        "a00",
+        "related analysis",
+        "related analysis",
+        "a10",
+        "a11",
+        "a12",
+        "a21",
+        "a22"
+      ],
+      "core_a_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8
+      ],
+      "removed_slice": {
+        "pivot": 6,
+        "removed_slice_rank": 3,
+        "removed_slice_nnz": 3,
+        "removed_slice_shape": [
+          9,
+          9
+        ]
+      },
+      "flattenings": {
+        "A_flat_rank": 8,
+        "B_flat_rank": 9,
+        "C_flat_rank": 9,
+        "A_flat_shape": [
+          8,
+          81
+        ],
+        "B_flat_shape": [
+          9,
+          72
+        ],
+        "C_flat_shape": [
+          9,
+          72
+        ]
+      },
+      "nonzero_stats": {
+        "nnz": 30,
+        "total_entries": 648,
+        "density": 0.046296296296296294
+      },
+      "A_slices": {
+        "A_slice_ranks": [
+          3,
+          3,
+          6,
+          3,
+          6,
+          3,
+          3,
+          3
+        ],
+        "A_slice_rank_max": 6,
+        "A_slice_rank_min": 3,
+        "A_slice_rank_distribution": {
+          "3": 6,
+          "6": 2
+        }
+      },
+      "B_slices": {
+        "B_slice_ranks": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "B_slice_rank_max": 3,
+        "B_slice_rank_min": 3,
+        "B_slice_rank_distribution": {
+          "3": 9
+        }
+      },
+      "C_slices": {
+        "C_slice_ranks": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "C_slice_rank_max": 3,
+        "C_slice_rank_min": 3,
+        "C_slice_rank_distribution": {
+          "3": 9
+        }
+      },
+      "forced_product_lower_bound": 3,
+      "cn122_restriction": {
+        "vanished_indices": [],
+        "surviving_count": 23,
+        "raw_surviving_terms": 23,
+        "unique_triples": 23,
+        "duplicate_triples": {},
+        "effective_f2_length": 23,
+        "decomposition_verified": true
+      },
+      "wang_certified_lower_bound": 19,
+      "rank_upper_bound_from_cn122": 23,
+      "rank_dichotomy": "If R_F2(core) = 19 then R_F2(T) <= 19 + 3 = 22. If R_F2(core) >= 20 then R_F2(T) >= 21."
+    }
+  }
+}

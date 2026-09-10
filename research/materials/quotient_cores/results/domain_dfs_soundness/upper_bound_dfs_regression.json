@@ -1,0 +1,394 @@
+{
+  "random_bruteforce_comparison": {
+    "examples_exercising_saturation_and_undo": [
+      {
+        "n": 9,
+        "rows": [
+          {
+            "cap": 1,
+            "pts": [
+              2,
+              6,
+              7
+            ]
+          },
+          {
+            "cap": 2,
+            "pts": [
+              1,
+              2,
+              4,
+              9
+            ]
+          },
+          {
+            "cap": 5,
+            "pts": [
+              2,
+              3,
+              4,
+              6,
+              7
+            ]
+          }
+        ],
+        "solution_count": 30,
+        "solutions": [
+          [
+            1,
+            2,
+            3,
+            5,
+            8
+          ],
+          [
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            1,
+            3,
+            4,
+            5,
+            7
+          ],
+          [
+            1,
+            3,
+            4,
+            5,
+            8
+          ],
+          [
+            1,
+            3,
+            4,
+            6,
+            8
+          ],
+          [
+            1,
+            3,
+            4,
+            7,
+            8
+          ],
+          [
+            1,
+            3,
+            5,
+            6,
+            8
+          ],
+          [
+            1,
+            3,
+            5,
+            6,
+            9
+          ],
+          [
+            1,
+            3,
+            5,
+            7,
+            8
+          ],
+          [
+            1,
+            3,
+            5,
+            7,
+            9
+          ]
+        ],
+        "stats": {
+          "calls": 91,
+          "global_shortage": 6,
+          "over_cap": 0,
+          "saturation_removals": 75
+        },
+        "target": 5,
+        "trial": 10
+      },
+      {
+        "n": 9,
+        "rows": [
+          {
+            "cap": 0,
+            "pts": [
+              3,
+              5,
+              6,
+              8
+            ]
+          },
+          {
+            "cap": 5,
+            "pts": [
+              1,
+              2,
+              5,
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "cap": 0,
+            "pts": [
+              1,
+              3,
+              4,
+              5,
+              7
+            ]
+          },
+          {
+            "cap": 1,
+            "pts": [
+              1
+            ]
+          },
+          {
+            "cap": 1,
+            "pts": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          }
+        ],
+        "solution_count": 0,
+        "solutions": [],
+        "stats": {
+          "calls": 2,
+          "global_shortage": 1,
+          "over_cap": 5,
+          "saturation_removals": 7
+        },
+        "target": 4,
+        "trial": 15
+      },
+      {
+        "n": 9,
+        "rows": [
+          {
+            "cap": 1,
+            "pts": [
+              5,
+              8
+            ]
+          },
+          {
+            "cap": 1,
+            "pts": [
+              1,
+              2,
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "cap": 7,
+            "pts": [
+              1,
+              2,
+              3,
+              5,
+              6,
+              7,
+              8,
+              9
+            ]
+          },
+          {
+            "cap": 0,
+            "pts": [
+              1
+            ]
+          }
+        ],
+        "solution_count": 0,
+        "solutions": [],
+        "stats": {
+          "calls": 8,
+          "global_shortage": 6,
+          "over_cap": 1,
+          "saturation_removals": 32
+        },
+        "target": 5,
+        "trial": 16
+      },
+      {
+        "n": 9,
+        "rows": [
+          {
+            "cap": 5,
+            "pts": [
+              1,
+              4,
+              5,
+              6,
+              8,
+              9
+            ]
+          },
+          {
+            "cap": 1,
+            "pts": [
+              7,
+              9
+            ]
+          },
+          {
+            "cap": 2,
+            "pts": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        ],
+        "solution_count": 0,
+        "solutions": [],
+        "stats": {
+          "calls": 21,
+          "global_shortage": 15,
+          "over_cap": 0,
+          "saturation_removals": 105
+        },
+        "target": 5,
+        "trial": 19
+      },
+      {
+        "n": 9,
+        "rows": [
+          {
+            "cap": 1,
+            "pts": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        ],
+        "solution_count": 0,
+        "solutions": [],
+        "stats": {
+          "calls": 6,
+          "global_shortage": 5,
+          "over_cap": 0,
+          "saturation_removals": 40
+        },
+        "target": 5,
+        "trial": 20
+      }
+    ],
+    "mismatches": [],
+    "total_bruteforce_solutions": 4996,
+    "total_sound_solutions": 4996,
+    "trials": 200,
+    "with_solutions": 144
+  },
+  "schema": "s0908_domain_dfs_soundness_v1",
+  "semantics": "Rows are upper bounds |S∩R|<=cap. Saturated rows remove future points in R; unused capacity creates no obligation.",
+  "toy": {
+    "bruteforce_solutions": [
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "interpretation": "The feasible support (1,3) is lost if one rejects on small_remain < cap-count after saturation removes point 2.",
+    "n": 3,
+    "peer_small_remain_test_simulation": {
+      "events": [
+        {
+          "cap": 1,
+          "count": 1,
+          "flawed_rejects_here": false,
+          "invalid_test_rhs_cap_minus_count": 0,
+          "pts": [
+            1,
+            2
+          ],
+          "remain_after_removing_2": 1,
+          "row": 0
+        },
+        {
+          "cap": 2,
+          "count": 0,
+          "flawed_rejects_here": true,
+          "invalid_test_rhs_cap_minus_count": 2,
+          "pts": [
+            2,
+            3
+          ],
+          "remain_after_removing_2": 1,
+          "row": 1
+        }
+      ],
+      "rejected": true
+    },
+    "rows": [
+      {
+        "cap": 1,
+        "pts": [
+          1,
+          2
+        ]
+      },
+      {
+        "cap": 2,
+        "pts": [
+          2,
+          3
+        ]
+      }
+    ],
+    "sound_dfs_solutions": [
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "sound_stats": {
+      "calls": 5,
+      "global_shortage": 0,
+      "over_cap": 0,
+      "saturation_removals": 2
+    },
+    "target": 2
+  }
+}

@@ -1,0 +1,1471 @@
+{
+  "annihilator_identity_analysis": {
+    "core": "E11",
+    "explanation": "For each U, D=U^perp and sum_{q in D nonzero} w(q)=2^(dim(D)-1)*(19-occ(U)); Wang occ(U)<=19-L(U) becomes the displayed annihilator-weight lower bound. The check ties every weight to the same Boolean support.",
+    "field": "F2",
+    "identity_checked_over_rows": 417199,
+    "identity_failure_count": 0,
+    "identity_failures_head": [],
+    "rank_s": 19,
+    "representation_term_summary_by_dim": {
+      "0": {
+        "annihilator_weight_terms_total": 255,
+        "average_annihilator_terms": 255.0,
+        "average_direct_terms": 0.0,
+        "direct_point_terms_total": 0,
+        "rows": 1
+      },
+      "1": {
+        "annihilator_weight_terms_total": 32385,
+        "average_annihilator_terms": 127.0,
+        "average_direct_terms": 1.0,
+        "direct_point_terms_total": 255,
+        "rows": 255
+      },
+      "2": {
+        "annihilator_weight_terms_total": 680085,
+        "average_annihilator_terms": 63.0,
+        "average_direct_terms": 3.0,
+        "direct_point_terms_total": 32385,
+        "rows": 10795
+      },
+      "3": {
+        "annihilator_weight_terms_total": 3011805,
+        "average_annihilator_terms": 31.0,
+        "average_direct_terms": 7.0,
+        "direct_point_terms_total": 680085,
+        "rows": 97155
+      },
+      "4": {
+        "annihilator_weight_terms_total": 3011805,
+        "average_annihilator_terms": 15.0,
+        "average_direct_terms": 15.0,
+        "direct_point_terms_total": 3011805,
+        "rows": 200787
+      },
+      "5": {
+        "annihilator_weight_terms_total": 680085,
+        "average_annihilator_terms": 7.0,
+        "average_direct_terms": 31.0,
+        "direct_point_terms_total": 3011805,
+        "rows": 97155
+      },
+      "6": {
+        "annihilator_weight_terms_total": 32385,
+        "average_annihilator_terms": 3.0,
+        "average_direct_terms": 63.0,
+        "direct_point_terms_total": 680085,
+        "rows": 10795
+      },
+      "7": {
+        "annihilator_weight_terms_total": 255,
+        "average_annihilator_terms": 1.0,
+        "average_direct_terms": 127.0,
+        "direct_point_terms_total": 32385,
+        "rows": 255
+      },
+      "8": {
+        "annihilator_weight_terms_total": 0,
+        "average_annihilator_terms": 0.0,
+        "average_direct_terms": 255.0,
+        "direct_point_terms_total": 255,
+        "rows": 1
+      }
+    },
+    "row_L_distribution_by_dim_head": {
+      "dim0_L19": 1,
+      "dim1_L17": 6,
+      "dim1_L18": 249,
+      "dim2_L15": 2,
+      "dim2_L16": 525,
+      "dim2_L17": 9830,
+      "dim2_L18": 438,
+      "dim3_L14": 1098,
+      "dim3_L15": 12801,
+      "dim3_L16": 58428,
+      "dim3_L17": 24828,
+      "dim4_L11": 13,
+      "dim4_L12": 8798,
+      "dim4_L13": 498,
+      "dim4_L14": 50424,
+      "dim4_L15": 117009,
+      "dim4_L16": 24045,
+      "dim5_L11": 852,
+      "dim5_L12": 46974,
+      "dim5_L13": 7632,
+      "dim5_L14": 29826,
+      "dim5_L15": 9090,
+      "dim5_L16": 48,
+      "dim5_L9": 2733,
+      "dim6_L12": 5460,
+      "dim6_L14": 192,
+      "dim6_L6": 428,
+      "dim6_L9": 4715,
+      "dim7_L3": 33,
+      "dim7_L6": 150,
+      "dim7_L9": 72,
+      "dim8_L0": 1
+    },
+    "schema": "annihilator_identity_analysis_v1",
+    "support": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      20,
+      24,
+      31,
+      32,
+      64,
+      73,
+      109,
+      127,
+      128,
+      141,
+      160,
+      182,
+      192,
+      219
+    ],
+    "support_size": 19,
+    "violating_rows_by_dual_dimension": {
+      "2": 6,
+      "3": 6
+    },
+    "violating_rows_stored": 12,
+    "violation_D_containments": [
+      {
+        "contained_count": 1,
+        "contained_dim6_violation_D_keys": [
+          148146
+        ],
+        "dim5_D_basis": [
+          34,
+          18,
+          9
+        ],
+        "dim5_D_key": 37896739
+      },
+      {
+        "contained_count": 1,
+        "contained_dim6_violation_D_keys": [
+          76594
+        ],
+        "dim5_D_basis": [
+          161,
+          18,
+          9
+        ],
+        "dim5_D_key": 37898771
+      },
+      {
+        "contained_count": 1,
+        "contained_dim6_violation_D_keys": [
+          221858
+        ],
+        "dim5_D_basis": [
+          35,
+          18,
+          9
+        ],
+        "dim5_D_key": 37896755
+      },
+      {
+        "contained_count": 1,
+        "contained_dim6_violation_D_keys": [
+          224930
+        ],
+        "dim5_D_basis": [
+          227,
+          18,
+          9
+        ],
+        "dim5_D_key": 37899827
+      },
+      {
+        "contained_count": 0,
+        "contained_dim6_violation_D_keys": [],
+        "dim5_D_basis": [
+          16,
+          5,
+          2
+        ],
+        "dim5_D_key": 8429827
+      },
+      {
+        "contained_count": 0,
+        "contained_dim6_violation_D_keys": [],
+        "dim5_D_basis": [
+          24,
+          5,
+          3
+        ],
+        "dim5_D_key": 12624259
+      }
+    ],
+    "violations": [
+      {
+        "D_basis": [
+          34,
+          18,
+          9
+        ],
+        "D_key": 37896739,
+        "D_nonzero": [
+          9,
+          18,
+          27,
+          34,
+          43,
+          48,
+          57
+        ],
+        "L": 12,
+        "annihilator_deficit": 4,
+        "annihilator_requirement": 48,
+        "annihilator_weight_sum": 44,
+        "basis8": [
+          128,
+          64,
+          50,
+          9,
+          4
+        ],
+        "cap": 7,
+        "codim_dual_k": 3,
+        "dim8": 5,
+        "excess": 1,
+        "key8": 4417584105477,
+        "key9": 571785121632262,
+        "occupancy": 8,
+        "outside_count": 11,
+        "q_weights": [
+          {
+            "B_dim": 3,
+            "C_dim": 3,
+            "q": 9,
+            "rank_Lq": 3,
+            "w": 4
+          },
+          {
+            "B_dim": 3,
+            "C_dim": 3,
+            "q": 18,
+            "rank_Lq": 3,
+            "w": 4
+          },
+          {
+            "B_dim": 3,
+            "C_dim": 3,
+            "q": 27,
+            "rank_Lq": 3,
+            "w": 4
+          },
+          {
+            "B_dim": 6,
+            "C_dim": 6,
+            "q": 34,
+            "rank_Lq": 6,
+            "w": 7
+          },
+          {
+            "B_dim": 9,
+            "C_dim": 9,
+            "q": 43,
+            "rank_Lq": 9,
+            "w": 9
+          },
+          {
+            "B_dim": 6,
+            "C_dim": 6,
+            "q": 48,
+            "rank_Lq": 6,
+            "w": 7
+          },
+          {
+            "B_dim": 9,
+            "C_dim": 9,
+            "q": 57,
+            "rank_Lq": 9,
+            "w": 9
+          }
+        ],
+        "sum_individual_contraction_ranks": 39
+      },
+      {
+        "D_basis": [
+          161,
+          18,
+          9
+        ],
+        "D_key": 37898771,
+        "D_nonzero": [
+          9,
+          18,
+          27,
+          161,
+          168,
+          179,
+          186
+        ],
+        "L": 12,
+        "annihilator_deficit": 4,
+        "annihilator_requirement": 48,
+        "annihilator_weight_sum": 44,
+        "basis8": [
+          137,
+          64,
+          41,
+          18,
+          4
+        ],
+        "cap": 7,
+        "codim_dual_k": 3,
+        "dim8": 5,
+        "excess": 1,
+        "key8": 4436873709717,
+        "key9": 571823700840742,
+        "occupancy": 8,
+        "outside_count": 11,
+        "q_weights": [
+          {
+            "B_dim": 3,
+            "C_dim": 3,
+            "q": 9,
+            "rank_Lq": 3,
+            "w": 4
+          },
+          {
+            "B_dim": 3,
+            "C_dim": 3,
+            "q": 18,
+            "rank_Lq": 3,
+            "w": 4
+          },
+          {
+            "B_dim": 3,
+            "C_dim": 3,
+            "q": 27,
+            "rank_Lq": 3,
+            "w": 4
+          },
+          {
+            "B_dim": 6,
+            "C_dim": 6,
+            "q": 161,
+            "rank_Lq": 6,
+            "w": 7
+          },
+          {
+            "B_dim": 6,
+            "C_dim": 6,
+            "q": 168,
+            "rank_Lq": 6,
+            "w": 7
+          },
+          {
+            "B_dim": 9,
+            "C_dim": 9,
+            "q": 179,
+            "rank_Lq": 9,
+            "w": 9
+          },
+          {
+            "B_dim": 9,
+            "C_dim": 9,
+            "q": 186,
+            "rank_Lq": 9,
+            "w": 9
+          }
+        ],
+        "sum_individual_contraction_ranks": 39
+      },
+      {
+        "D_basis": [
+          35,
+          18,
+          9
+        ],
+        "D_key": 37896755,
+        "D_nonzero": [
+          9,
+          18,
+          27,
+          35,
+          42,
+          49,
+          56
+        ],
+        "L": 12,
+        "annihilator_deficit": 4,
+        "annihilator_requirement": 48,
+        "annihilator_weight_sum": 44,
+        "basis8": [
+          128,
+          64,
+          41,
+          27,
+          4
+        ],
+        "cap": 7,
+        "codim_dual_k": 3,
+        "dim8": 5,
+        "excess": 1,
+        "key8": 4456201062405,
+        "key9": 571862355546118,
+        "occupancy": 8,
+        "outside_count": 11,
+        "q_weights": [
+          {
+            "B_dim": 3,
+            "C_dim": 3,
+            "q": 9,
+            "rank_Lq": 3,
+            "w": 4
+          },
+          {
+            "B_dim": 3,
+            "C_dim": 3,
+            "q": 18,
+            "rank_Lq": 3,
+            "w": 4
+          },
+          {
+            "B_dim": 3,
+            "C_dim": 3,
+            "q": 27,
+            "rank_Lq": 3,
+            "w": 4
+          },
+          {
+            "B_dim": 6,
+            "C_dim": 6,
+            "q": 35,
+            "rank_Lq": 6,
+            "w": 7
+          },
+          {
+            "B_dim": 9,
+            "C_dim": 9,
+            "q": 42,
+            "rank_Lq": 9,
+            "w": 9
+          },
+          {
+            "B_dim": 9,
+            "C_dim": 9,
+            "q": 49,
+            "rank_Lq": 9,
+            "w": 9
+          },
+          {
+            "B_dim": 6,
+            "C_dim": 6,
+            "q": 56,
+            "rank_Lq": 6,
+            "w": 7
+          }
+        ],
+        "sum_individual_contraction_ranks": 39
+      },
+      {
+        "D_basis": [
+          227,
+          18,
+          9
+        ],
+        "D_key": 37899827,
+        "D_nonzero": [
+          9,
+          18,
+          27,
+          227,
+          234,
+          241,
+          248
+        ],
+        "L": 12,
+        "annihilator_deficit": 4,
+        "annihilator_requirement": 48,
+        "annihilator_weight_sum": 44,
+        "basis8": [
+          137,
+          73,
+          41,
+          27,
+          4
+        ],
+        "cap": 7,
+        "codim_dual_k": 3,
+        "dim8": 5,
+        "excess": 1,
+        "key8": 4456201136277,
+        "key9": 571862355693862,
+        "occupancy": 8,
+        "outside_count": 11,
+        "q_weights": [
+          {
+            "B_dim": 3,
+            "C_dim": 3,
+            "q": 9,
+            "rank_Lq": 3,
+            "w": 4
+          },
+          {
+            "B_dim": 3,
+            "C_dim": 3,
+            "q": 18,
+            "rank_Lq": 3,
+            "w": 4
+          },
+          {
+            "B_dim": 3,
+            "C_dim": 3,
+            "q": 27,
+            "rank_Lq": 3,
+            "w": 4
+          },
+          {
+            "B_dim": 6,
+            "C_dim": 6,
+            "q": 227,
+            "rank_Lq": 6,
+            "w": 7
+          },
+          {
+            "B_dim": 9,
+            "C_dim": 9,
+            "q": 234,
+            "rank_Lq": 9,
+            "w": 9
+          },
+          {
+            "B_dim": 9,
+            "C_dim": 9,
+            "q": 241,
+            "rank_Lq": 9,
+            "w": 9
+          },
+          {
+            "B_dim": 6,
+            "C_dim": 6,
+            "q": 248,
+            "rank_Lq": 6,
+            "w": 7
+          }
+        ],
+        "sum_individual_contraction_ranks": 39
+      },
+      {
+        "D_basis": [
+          16,
+          5,
+          2
+        ],
+        "D_key": 8429827,
+        "D_nonzero": [
+          2,
+          5,
+          7,
+          16,
+          18,
+          21,
+          23
+        ],
+        "L": 12,
+        "annihilator_deficit": 4,
+        "annihilator_requirement": 48,
+        "annihilator_weight_sum": 44,
+        "basis8": [
+          128,
+          64,
+          32,
+          8,
+          5
+        ],
+        "cap": 7,
+        "codim_dual_k": 3,
+        "dim8": 5,
+        "excess": 1,
+        "key8": 5514872752133,
+        "key9": 573979698925574,
+        "occupancy": 8,
+        "outside_count": 11,
+        "q_weights": [
+          {
+            "B_dim": 3,
+            "C_dim": 3,
+            "q": 2,
+            "rank_Lq": 3,
+            "w": 6
+          },
+          {
+            "B_dim": 6,
+            "C_dim": 6,
+            "q": 5,
+            "rank_Lq": 6,
+            "w": 7
+          },
+          {
+            "B_dim": 6,
+            "C_dim": 6,
+            "q": 7,
+            "rank_Lq": 6,
+            "w": 7
+          },
+          {
+            "B_dim": 3,
+            "C_dim": 3,
+            "q": 16,
+            "rank_Lq": 3,
+            "w": 6
+          },
+          {
+            "B_dim": 3,
+            "C_dim": 3,
+            "q": 18,
+            "rank_Lq": 3,
+            "w": 4
+          },
+          {
+            "B_dim": 6,
+            "C_dim": 6,
+            "q": 21,
+            "rank_Lq": 6,
+            "w": 7
+          },
+          {
+            "B_dim": 6,
+            "C_dim": 6,
+            "q": 23,
+            "rank_Lq": 6,
+            "w": 7
+          }
+        ],
+        "sum_individual_contraction_ranks": 33
+      },
+      {
+        "D_basis": [
+          24,
+          5,
+          3
+        ],
+        "D_key": 12624259,
+        "D_nonzero": [
+          3,
+          5,
+          6,
+          24,
+          27,
+          29,
+          30
+        ],
+        "L": 12,
+        "annihilator_deficit": 4,
+        "annihilator_requirement": 48,
+        "annihilator_weight_sum": 44,
+        "basis8": [
+          128,
+          64,
+          32,
+          24,
+          7
+        ],
+        "cap": 7,
+        "codim_dual_k": 3,
+        "dim8": 5,
+        "excess": 1,
+        "key8": 7748255746053,
+        "key9": 578446464913414,
+        "occupancy": 8,
+        "outside_count": 11,
+        "q_weights": [
+          {
+            "B_dim": 3,
+            "C_dim": 3,
+            "q": 3,
+            "rank_Lq": 3,
+            "w": 6
+          },
+          {
+            "B_dim": 6,
+            "C_dim": 6,
+            "q": 5,
+            "rank_Lq": 6,
+            "w": 7
+          },
+          {
+            "B_dim": 6,
+            "C_dim": 6,
+            "q": 6,
+            "rank_Lq": 6,
+            "w": 7
+          },
+          {
+            "B_dim": 3,
+            "C_dim": 3,
+            "q": 24,
+            "rank_Lq": 3,
+            "w": 6
+          },
+          {
+            "B_dim": 3,
+            "C_dim": 3,
+            "q": 27,
+            "rank_Lq": 3,
+            "w": 4
+          },
+          {
+            "B_dim": 6,
+            "C_dim": 6,
+            "q": 29,
+            "rank_Lq": 6,
+            "w": 7
+          },
+          {
+            "B_dim": 6,
+            "C_dim": 6,
+            "q": 30,
+            "rank_Lq": 6,
+            "w": 7
+          }
+        ],
+        "sum_individual_contraction_ranks": 33
+      },
+      {
+        "D_basis": [
+          43,
+          18
+        ],
+        "D_key": 148146,
+        "D_nonzero": [
+          18,
+          43,
+          57
+        ],
+        "L": 12,
+        "annihilator_deficit": 2,
+        "annihilator_requirement": 24,
+        "annihilator_weight_sum": 22,
+        "basis8": [
+          128,
+          64,
+          33,
+          19,
+          9,
+          4
+        ],
+        "cap": 7,
+        "codim_dual_k": 2,
+        "dim8": 6,
+        "excess": 1,
+        "key8": 2261736359462918,
+        "key9": 292753848870637575,
+        "occupancy": 8,
+        "outside_count": 11,
+        "q_weights": [
+          {
+            "B_dim": 3,
+            "C_dim": 3,
+            "q": 18,
+            "rank_Lq": 3,
+            "w": 4
+          },
+          {
+            "B_dim": 9,
+            "C_dim": 9,
+            "q": 43,
+            "rank_Lq": 9,
+            "w": 9
+          },
+          {
+            "B_dim": 9,
+            "C_dim": 9,
+            "q": 57,
+            "rank_Lq": 9,
+            "w": 9
+          }
+        ],
+        "sum_individual_contraction_ranks": 21
+      },
+      {
+        "D_basis": [
+          42,
+          27
+        ],
+        "D_key": 221858,
+        "D_nonzero": [
+          27,
+          42,
+          49
+        ],
+        "L": 12,
+        "annihilator_deficit": 2,
+        "annihilator_requirement": 24,
+        "annihilator_weight_sum": 22,
+        "basis8": [
+          128,
+          64,
+          35,
+          17,
+          10,
+          4
+        ],
+        "cap": 7,
+        "codim_dual_k": 2,
+        "dim8": 6,
+        "excess": 1,
+        "key8": 2262831584512006,
+        "key9": 292756039320735751,
+        "occupancy": 8,
+        "outside_count": 11,
+        "q_weights": [
+          {
+            "B_dim": 3,
+            "C_dim": 3,
+            "q": 27,
+            "rank_Lq": 3,
+            "w": 4
+          },
+          {
+            "B_dim": 9,
+            "C_dim": 9,
+            "q": 42,
+            "rank_Lq": 9,
+            "w": 9
+          },
+          {
+            "B_dim": 9,
+            "C_dim": 9,
+            "q": 49,
+            "rank_Lq": 9,
+            "w": 9
+          }
+        ],
+        "sum_individual_contraction_ranks": 21
+      },
+      {
+        "D_basis": [
+          234,
+          27
+        ],
+        "D_key": 224930,
+        "D_nonzero": [
+          27,
+          234,
+          241
+        ],
+        "L": 12,
+        "annihilator_deficit": 2,
+        "annihilator_requirement": 24,
+        "annihilator_weight_sum": 22,
+        "basis8": [
+          131,
+          67,
+          35,
+          17,
+          10,
+          4
+        ],
+        "cap": 7,
+        "codim_dual_k": 2,
+        "dim8": 6,
+        "excess": 1,
+        "key8": 2262831584536630,
+        "key9": 292756039320784999,
+        "occupancy": 8,
+        "outside_count": 11,
+        "q_weights": [
+          {
+            "B_dim": 3,
+            "C_dim": 3,
+            "q": 27,
+            "rank_Lq": 3,
+            "w": 4
+          },
+          {
+            "B_dim": 9,
+            "C_dim": 9,
+            "q": 234,
+            "rank_Lq": 9,
+            "w": 9
+          },
+          {
+            "B_dim": 9,
+            "C_dim": 9,
+            "q": 241,
+            "rank_Lq": 9,
+            "w": 9
+          }
+        ],
+        "sum_individual_contraction_ranks": 21
+      },
+      {
+        "D_basis": [
+          179,
+          9
+        ],
+        "D_key": 76594,
+        "D_nonzero": [
+          9,
+          179,
+          186
+        ],
+        "L": 12,
+        "annihilator_deficit": 2,
+        "annihilator_requirement": 24,
+        "annihilator_weight_sum": 22,
+        "basis8": [
+          130,
+          64,
+          34,
+          18,
+          11,
+          4
+        ],
+        "cap": 7,
+        "codim_dual_k": 2,
+        "dim8": 6,
+        "excess": 1,
+        "key8": 2263933239429158,
+        "key9": 292758242630570055,
+        "occupancy": 8,
+        "outside_count": 11,
+        "q_weights": [
+          {
+            "B_dim": 3,
+            "C_dim": 3,
+            "q": 9,
+            "rank_Lq": 3,
+            "w": 4
+          },
+          {
+            "B_dim": 9,
+            "C_dim": 9,
+            "q": 179,
+            "rank_Lq": 9,
+            "w": 9
+          },
+          {
+            "B_dim": 9,
+            "C_dim": 9,
+            "q": 186,
+            "rank_Lq": 9,
+            "w": 9
+          }
+        ],
+        "sum_individual_contraction_ranks": 21
+      },
+      {
+        "D_basis": [
+          133,
+          18
+        ],
+        "D_key": 149586,
+        "D_nonzero": [
+          18,
+          133,
+          151
+        ],
+        "L": 12,
+        "annihilator_deficit": 2,
+        "annihilator_requirement": 24,
+        "annihilator_weight_sum": 22,
+        "basis8": [
+          129,
+          64,
+          32,
+          18,
+          8,
+          5
+        ],
+        "cap": 7,
+        "codim_dual_k": 2,
+        "dim8": 6,
+        "excess": 1,
+        "key8": 2823584649578518,
+        "key9": 293877545450868775,
+        "occupancy": 8,
+        "outside_count": 11,
+        "q_weights": [
+          {
+            "B_dim": 3,
+            "C_dim": 3,
+            "q": 18,
+            "rank_Lq": 3,
+            "w": 4
+          },
+          {
+            "B_dim": 9,
+            "C_dim": 9,
+            "q": 133,
+            "rank_Lq": 9,
+            "w": 9
+          },
+          {
+            "B_dim": 9,
+            "C_dim": 9,
+            "q": 151,
+            "rank_Lq": 9,
+            "w": 9
+          }
+        ],
+        "sum_individual_contraction_ranks": 21
+      },
+      {
+        "D_basis": [
+          87,
+          9
+        ],
+        "D_key": 75122,
+        "D_nonzero": [
+          9,
+          87,
+          94
+        ],
+        "L": 12,
+        "annihilator_deficit": 2,
+        "annihilator_requirement": 24,
+        "annihilator_weight_sum": 22,
+        "basis8": [
+          128,
+          66,
+          32,
+          18,
+          11,
+          6
+        ],
+        "cap": 7,
+        "codim_dual_k": 2,
+        "dim8": 6,
+        "excess": 1,
+        "key8": 3389833137899526,
+        "key9": 295010042427510791,
+        "occupancy": 8,
+        "outside_count": 11,
+        "q_weights": [
+          {
+            "B_dim": 3,
+            "C_dim": 3,
+            "q": 9,
+            "rank_Lq": 3,
+            "w": 4
+          },
+          {
+            "B_dim": 9,
+            "C_dim": 9,
+            "q": 87,
+            "rank_Lq": 9,
+            "w": 9
+          },
+          {
+            "B_dim": 9,
+            "C_dim": 9,
+            "q": 94,
+            "rank_Lq": 9,
+            "w": 9
+          }
+        ],
+        "sum_individual_contraction_ranks": 21
+      }
+    ]
+  },
+  "complete_core_table_meta": {
+    "by_dim8": {
+      "0": 1,
+      "1": 255,
+      "2": 10795,
+      "3": 97155,
+      "4": 200787,
+      "5": 97155,
+      "6": 10795,
+      "7": 255,
+      "8": 1
+    },
+    "by_full_lut_L": {
+      "0": 1,
+      "11": 865,
+      "12": 61232,
+      "13": 8130,
+      "14": 81540,
+      "15": 138902,
+      "16": 83046,
+      "17": 34664,
+      "18": 687,
+      "19": 1,
+      "3": 33,
+      "6": 578,
+      "9": 7520
+    },
+    "constraint_count": 417199,
+    "elapsed_sec": 35.757
+  },
+  "load_sec": 40.894,
+  "schema": "hybrid_annihilator_analysis_bundle_v1",
+  "support_analysis": {
+    "A_cols": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      20,
+      24,
+      31,
+      32,
+      64,
+      73,
+      109,
+      127,
+      128,
+      141,
+      160,
+      182,
+      192,
+      219
+    ],
+    "affine_dim": 891,
+    "complete_wang_violations": 12,
+    "label": "annihilator_analysis_support",
+    "linear_pass": true,
+    "max_excess": 1,
+    "quotient_rank_violations_size2": 0,
+    "saturated_contractions": 16,
+    "transversal_failures": 0,
+    "violations_by_L": {
+      "12": 12
+    },
+    "violations_by_dim8": {
+      "5": 6,
+      "6": 6
+    },
+    "violations_head": [
+      {
+        "L": 12,
+        "basis8": [
+          128,
+          64,
+          33,
+          19,
+          9,
+          4
+        ],
+        "basis9": [
+          256,
+          128,
+          66,
+          38,
+          18,
+          8,
+          1
+        ],
+        "cap": 7,
+        "dim8": 6,
+        "dim9": 7,
+        "excess": 1,
+        "key8": 2261736359462918,
+        "key9": 292753848870637575,
+        "occupancy": 8,
+        "point_count": 63
+      },
+      {
+        "L": 12,
+        "basis8": [
+          128,
+          64,
+          35,
+          17,
+          10,
+          4
+        ],
+        "basis9": [
+          256,
+          128,
+          70,
+          34,
+          20,
+          8,
+          1
+        ],
+        "cap": 7,
+        "dim8": 6,
+        "dim9": 7,
+        "excess": 1,
+        "key8": 2262831584512006,
+        "key9": 292756039320735751,
+        "occupancy": 8,
+        "point_count": 63
+      },
+      {
+        "L": 12,
+        "basis8": [
+          131,
+          67,
+          35,
+          17,
+          10,
+          4
+        ],
+        "basis9": [
+          262,
+          134,
+          70,
+          34,
+          20,
+          8,
+          1
+        ],
+        "cap": 7,
+        "dim8": 6,
+        "dim9": 7,
+        "excess": 1,
+        "key8": 2262831584536630,
+        "key9": 292756039320784999,
+        "occupancy": 8,
+        "point_count": 63
+      },
+      {
+        "L": 12,
+        "basis8": [
+          130,
+          64,
+          34,
+          18,
+          11,
+          4
+        ],
+        "basis9": [
+          260,
+          128,
+          68,
+          36,
+          22,
+          8,
+          1
+        ],
+        "cap": 7,
+        "dim8": 6,
+        "dim9": 7,
+        "excess": 1,
+        "key8": 2263933239429158,
+        "key9": 292758242630570055,
+        "occupancy": 8,
+        "point_count": 63
+      },
+      {
+        "L": 12,
+        "basis8": [
+          129,
+          64,
+          32,
+          18,
+          8,
+          5
+        ],
+        "basis9": [
+          258,
+          128,
+          64,
+          36,
+          16,
+          10,
+          1
+        ],
+        "cap": 7,
+        "dim8": 6,
+        "dim9": 7,
+        "excess": 1,
+        "key8": 2823584649578518,
+        "key9": 293877545450868775,
+        "occupancy": 8,
+        "point_count": 63
+      },
+      {
+        "L": 12,
+        "basis8": [
+          128,
+          66,
+          32,
+          18,
+          11,
+          6
+        ],
+        "basis9": [
+          256,
+          132,
+          64,
+          36,
+          22,
+          12,
+          1
+        ],
+        "cap": 7,
+        "dim8": 6,
+        "dim9": 7,
+        "excess": 1,
+        "key8": 3389833137899526,
+        "key9": 295010042427510791,
+        "occupancy": 8,
+        "point_count": 63
+      },
+      {
+        "L": 12,
+        "basis8": [
+          128,
+          64,
+          50,
+          9,
+          4
+        ],
+        "basis9": [
+          256,
+          128,
+          100,
+          18,
+          8,
+          1
+        ],
+        "cap": 7,
+        "dim8": 5,
+        "dim9": 6,
+        "excess": 1,
+        "key8": 4417584105477,
+        "key9": 571785121632262,
+        "occupancy": 8,
+        "point_count": 31
+      },
+      {
+        "L": 12,
+        "basis8": [
+          137,
+          64,
+          41,
+          18,
+          4
+        ],
+        "basis9": [
+          274,
+          128,
+          82,
+          36,
+          8,
+          1
+        ],
+        "cap": 7,
+        "dim8": 5,
+        "dim9": 6,
+        "excess": 1,
+        "key8": 4436873709717,
+        "key9": 571823700840742,
+        "occupancy": 8,
+        "point_count": 31
+      },
+      {
+        "L": 12,
+        "basis8": [
+          128,
+          64,
+          41,
+          27,
+          4
+        ],
+        "basis9": [
+          256,
+          128,
+          82,
+          54,
+          8,
+          1
+        ],
+        "cap": 7,
+        "dim8": 5,
+        "dim9": 6,
+        "excess": 1,
+        "key8": 4456201062405,
+        "key9": 571862355546118,
+        "occupancy": 8,
+        "point_count": 31
+      },
+      {
+        "L": 12,
+        "basis8": [
+          137,
+          73,
+          41,
+          27,
+          4
+        ],
+        "basis9": [
+          274,
+          146,
+          82,
+          54,
+          8,
+          1
+        ],
+        "cap": 7,
+        "dim8": 5,
+        "dim9": 6,
+        "excess": 1,
+        "key8": 4456201136277,
+        "key9": 571862355693862,
+        "occupancy": 8,
+        "point_count": 31
+      },
+      {
+        "L": 12,
+        "basis8": [
+          128,
+          64,
+          32,
+          8,
+          5
+        ],
+        "basis9": [
+          256,
+          128,
+          64,
+          16,
+          10,
+          1
+        ],
+        "cap": 7,
+        "dim8": 5,
+        "dim9": 6,
+        "excess": 1,
+        "key8": 5514872752133,
+        "key9": 573979698925574,
+        "occupancy": 8,
+        "point_count": 31
+      },
+      {
+        "L": 12,
+        "basis8": [
+          128,
+          64,
+          32,
+          24,
+          7
+        ],
+        "basis9": [
+          256,
+          128,
+          64,
+          48,
+          14,
+          1
+        ],
+        "cap": 7,
+        "dim8": 5,
+        "dim9": 6,
+        "excess": 1,
+        "key8": 7748255746053,
+        "key9": 578446464913414,
+        "occupancy": 8,
+        "point_count": 31
+      }
+    ],
+    "zero_domain_terms": 0
+  }
+}

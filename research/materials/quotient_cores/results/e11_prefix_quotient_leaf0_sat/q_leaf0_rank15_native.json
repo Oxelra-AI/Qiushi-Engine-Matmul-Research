@@ -1,0 +1,30 @@
+{
+  "allow_zero_a": false,
+  "cnf_clauses": 18492,
+  "cnf_path": "data/e11_prefix_quotient_leaf0_sat/q_leaf0_rank15_native.xor.cnf",
+  "cnf_sha256": "7f0dfcce2e5e5258b33ff1417014fc8c9740ec7c4d1e9353b4e529aaea41f17b",
+  "core": "data/e11_prefix_quotient_leaf0/q_leaf0.npy",
+  "core_shape": [
+    4,
+    9,
+    9
+  ],
+  "field": "F2",
+  "meaning": "SAT gives an exact E11 CPD after decode/verification; UNSAT for this prefix excludes every decomposition whose A multiset contains the prefix. Solver-only UNSAT should be upgraded to a plain-CNF DRAT proof before use as a durable subtree certificate.",
+  "mode": "native",
+  "native_xor_clauses": 324,
+  "prefix": [],
+  "prefix_size": 0,
+  "purpose": "exact E11 prefix-completion CPD SAT with variable remaining A and all B/C factors",
+  "rank": 15,
+  "solve": {
+    "command": "cryptominisat5 --verb 0 -t 4 --maxtime 300 data/e11_prefix_quotient_leaf0_sat/q_leaf0_rank15_native.xor.cnf",
+    "elapsed_sec": 300.8029942512512,
+    "returncode": 15,
+    "status": "UNKNOWN",
+    "stderr_tail": "",
+    "stdout_tail": "s INDETERMINATE\n"
+  },
+  "sort_free_a": true,
+  "vars": 6447
+}

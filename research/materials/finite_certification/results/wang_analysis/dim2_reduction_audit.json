@@ -1,0 +1,661 @@
+{
+  "current_lb_by_index": {
+    "478": 18,
+    "479": 19,
+    "480": 18,
+    "481": 18,
+    "482": 18,
+    "483": 18,
+    "484": 19,
+    "485": 19,
+    "486": 19,
+    "487": 19,
+    "488": 19,
+    "489": 19,
+    "490": 19,
+    "491": 19
+  },
+  "irrelevant_indices": [
+    478,
+    480
+  ],
+  "logic": {
+    "consequence": "after one rank>=2 pivot is chosen, either another term has the same A-direction and the one-dimensional quotient has length<=18, or an independent rank>=2 direction gives a two-dimensional quotient with length<=18",
+    "flattening_increment_sum": "sum_t(rank(a_t)-1) >= 7 for any length-20 full decomposition",
+    "needed_for_R_ge_21": "all relevant dim-2 orbits must have quotient rank lower bound at least 19; current occupation overlay leaves exactly the unresolved relevant indices listed above"
+  },
+  "records": [
+    {
+      "backtracking_proof_size": null,
+      "basis": [
+        1,
+        2
+      ],
+      "basis_hex": [
+        "0x1",
+        "0x2"
+      ],
+      "current_overlay_lb": 18,
+      "index": 478,
+      "nonzero_elements": [
+        1,
+        2,
+        3
+      ],
+      "nonzero_hex": [
+        "0x1",
+        "0x2",
+        "0x3"
+      ],
+      "nonzero_matrices": [
+        "1../.../...",
+        ".1./.../...",
+        "11./.../..."
+      ],
+      "occupation_feasible_at_old_lb": false,
+      "occupation_raise_status": "INFEASIBLE",
+      "occupation_support_size_tested": 17,
+      "old_lb": 17,
+      "proof_type": "degenerate",
+      "rank_ge2_count": 0,
+      "rank_hist": {
+        "1": 3
+      },
+      "rank_pattern": [
+        1,
+        1,
+        1
+      ],
+      "relevant_two_high_rank_generators": false
+    },
+    {
+      "backtracking_proof_size": null,
+      "basis": [
+        1,
+        10
+      ],
+      "basis_hex": [
+        "0x1",
+        "0xa"
+      ],
+      "current_overlay_lb": 19,
+      "index": 479,
+      "nonzero_elements": [
+        1,
+        10,
+        11
+      ],
+      "nonzero_hex": [
+        "0x1",
+        "0xa",
+        "0xb"
+      ],
+      "nonzero_matrices": [
+        "1../.../...",
+        ".1./1../...",
+        "11./1../..."
+      ],
+      "occupation_feasible_at_old_lb": false,
+      "occupation_raise_status": "INFEASIBLE",
+      "occupation_support_size_tested": 18,
+      "old_lb": 18,
+      "proof_type": "degenerate",
+      "rank_ge2_count": 2,
+      "rank_hist": {
+        "1": 1,
+        "2": 2
+      },
+      "rank_pattern": [
+        1,
+        2,
+        2
+      ],
+      "relevant_two_high_rank_generators": true
+    },
+    {
+      "backtracking_proof_size": 3293978,
+      "basis": [
+        1,
+        16
+      ],
+      "basis_hex": [
+        "0x1",
+        "0x10"
+      ],
+      "current_overlay_lb": 18,
+      "index": 480,
+      "nonzero_elements": [
+        1,
+        16,
+        17
+      ],
+      "nonzero_hex": [
+        "0x1",
+        "0x10",
+        "0x11"
+      ],
+      "nonzero_matrices": [
+        "1../.../...",
+        ".../.1./...",
+        "1../.1./..."
+      ],
+      "occupation_feasible_at_old_lb": true,
+      "occupation_raise_status": "OPTIMAL",
+      "occupation_support_size_tested": 18,
+      "old_lb": 18,
+      "proof_type": "backtracking",
+      "rank_ge2_count": 1,
+      "rank_hist": {
+        "1": 2,
+        "2": 1
+      },
+      "rank_pattern": [
+        1,
+        1,
+        2
+      ],
+      "relevant_two_high_rank_generators": false
+    },
+    {
+      "backtracking_proof_size": null,
+      "basis": [
+        1,
+        20
+      ],
+      "basis_hex": [
+        "0x1",
+        "0x14"
+      ],
+      "current_overlay_lb": 18,
+      "index": 481,
+      "nonzero_elements": [
+        1,
+        20,
+        21
+      ],
+      "nonzero_hex": [
+        "0x1",
+        "0x14",
+        "0x15"
+      ],
+      "nonzero_matrices": [
+        "1../.../...",
+        "..1/.1./...",
+        "1.1/.1./..."
+      ],
+      "occupation_feasible_at_old_lb": true,
+      "occupation_raise_status": "OPTIMAL",
+      "occupation_support_size_tested": 18,
+      "old_lb": 18,
+      "proof_type": "degenerate",
+      "rank_ge2_count": 2,
+      "rank_hist": {
+        "1": 1,
+        "2": 2
+      },
+      "rank_pattern": [
+        1,
+        2,
+        2
+      ],
+      "relevant_two_high_rank_generators": true
+    },
+    {
+      "backtracking_proof_size": 127,
+      "basis": [
+        1,
+        84
+      ],
+      "basis_hex": [
+        "0x1",
+        "0x54"
+      ],
+      "current_overlay_lb": 18,
+      "index": 482,
+      "nonzero_elements": [
+        1,
+        84,
+        85
+      ],
+      "nonzero_hex": [
+        "0x1",
+        "0x54",
+        "0x55"
+      ],
+      "nonzero_matrices": [
+        "1../.../...",
+        "..1/.1./1..",
+        "1.1/.1./1.."
+      ],
+      "occupation_feasible_at_old_lb": true,
+      "occupation_raise_status": "OPTIMAL",
+      "occupation_support_size_tested": 18,
+      "old_lb": 18,
+      "proof_type": "backtracking",
+      "rank_ge2_count": 2,
+      "rank_hist": {
+        "1": 1,
+        "3": 2
+      },
+      "rank_pattern": [
+        1,
+        3,
+        3
+      ],
+      "relevant_two_high_rank_generators": true
+    },
+    {
+      "backtracking_proof_size": null,
+      "basis": [
+        1,
+        160
+      ],
+      "basis_hex": [
+        "0x1",
+        "0xa0"
+      ],
+      "current_overlay_lb": 18,
+      "index": 483,
+      "nonzero_elements": [
+        1,
+        160,
+        161
+      ],
+      "nonzero_hex": [
+        "0x1",
+        "0xa0",
+        "0xa1"
+      ],
+      "nonzero_matrices": [
+        "1../.../...",
+        ".../..1/.1.",
+        "1../..1/.1."
+      ],
+      "occupation_feasible_at_old_lb": true,
+      "occupation_raise_status": "OPTIMAL",
+      "occupation_support_size_tested": 18,
+      "old_lb": 18,
+      "proof_type": "degenerate",
+      "rank_ge2_count": 2,
+      "rank_hist": {
+        "1": 1,
+        "2": 1,
+        "3": 1
+      },
+      "rank_pattern": [
+        1,
+        2,
+        3
+      ],
+      "relevant_two_high_rank_generators": true
+    },
+    {
+      "backtracking_proof_size": null,
+      "basis": [
+        10,
+        19
+      ],
+      "basis_hex": [
+        "0xa",
+        "0x13"
+      ],
+      "current_overlay_lb": 19,
+      "index": 484,
+      "nonzero_elements": [
+        10,
+        19,
+        25
+      ],
+      "nonzero_hex": [
+        "0xa",
+        "0x13",
+        "0x19"
+      ],
+      "nonzero_matrices": [
+        ".1./1../...",
+        "11./.1./...",
+        "1../11./..."
+      ],
+      "occupation_feasible_at_old_lb": false,
+      "occupation_raise_status": "INFEASIBLE",
+      "occupation_support_size_tested": 18,
+      "old_lb": 18,
+      "proof_type": "degenerate",
+      "rank_ge2_count": 3,
+      "rank_hist": {
+        "2": 3
+      },
+      "rank_pattern": [
+        2,
+        2,
+        2
+      ],
+      "relevant_two_high_rank_generators": true
+    },
+    {
+      "backtracking_proof_size": null,
+      "basis": [
+        10,
+        20
+      ],
+      "basis_hex": [
+        "0xa",
+        "0x14"
+      ],
+      "current_overlay_lb": 19,
+      "index": 485,
+      "nonzero_elements": [
+        10,
+        20,
+        30
+      ],
+      "nonzero_hex": [
+        "0xa",
+        "0x14",
+        "0x1e"
+      ],
+      "nonzero_matrices": [
+        ".1./1../...",
+        "..1/.1./...",
+        ".11/11./..."
+      ],
+      "occupation_feasible_at_old_lb": false,
+      "occupation_raise_status": "INFEASIBLE",
+      "occupation_support_size_tested": 18,
+      "old_lb": 18,
+      "proof_type": "degenerate",
+      "rank_ge2_count": 3,
+      "rank_hist": {
+        "2": 3
+      },
+      "rank_pattern": [
+        2,
+        2,
+        2
+      ],
+      "relevant_two_high_rank_generators": true
+    },
+    {
+      "backtracking_proof_size": null,
+      "basis": [
+        10,
+        68
+      ],
+      "basis_hex": [
+        "0xa",
+        "0x44"
+      ],
+      "current_overlay_lb": 19,
+      "index": 486,
+      "nonzero_elements": [
+        10,
+        68,
+        78
+      ],
+      "nonzero_hex": [
+        "0xa",
+        "0x44",
+        "0x4e"
+      ],
+      "nonzero_matrices": [
+        ".1./1../...",
+        "..1/.../1..",
+        ".11/1../1.."
+      ],
+      "occupation_feasible_at_old_lb": false,
+      "occupation_raise_status": "INFEASIBLE",
+      "occupation_support_size_tested": 18,
+      "old_lb": 18,
+      "proof_type": "degenerate",
+      "rank_ge2_count": 3,
+      "rank_hist": {
+        "2": 3
+      },
+      "rank_pattern": [
+        2,
+        2,
+        2
+      ],
+      "relevant_two_high_rank_generators": true
+    },
+    {
+      "backtracking_proof_size": null,
+      "basis": [
+        10,
+        84
+      ],
+      "basis_hex": [
+        "0xa",
+        "0x54"
+      ],
+      "current_overlay_lb": 19,
+      "index": 487,
+      "nonzero_elements": [
+        10,
+        84,
+        94
+      ],
+      "nonzero_hex": [
+        "0xa",
+        "0x54",
+        "0x5e"
+      ],
+      "nonzero_matrices": [
+        ".1./1../...",
+        "..1/.1./1..",
+        ".11/11./1.."
+      ],
+      "occupation_feasible_at_old_lb": false,
+      "occupation_raise_status": "INFEASIBLE",
+      "occupation_support_size_tested": 18,
+      "old_lb": 18,
+      "proof_type": "degenerate",
+      "rank_ge2_count": 3,
+      "rank_hist": {
+        "2": 1,
+        "3": 2
+      },
+      "rank_pattern": [
+        2,
+        3,
+        3
+      ],
+      "relevant_two_high_rank_generators": true
+    },
+    {
+      "backtracking_proof_size": null,
+      "basis": [
+        10,
+        96
+      ],
+      "basis_hex": [
+        "0xa",
+        "0x60"
+      ],
+      "current_overlay_lb": 19,
+      "index": 488,
+      "nonzero_elements": [
+        10,
+        96,
+        106
+      ],
+      "nonzero_hex": [
+        "0xa",
+        "0x60",
+        "0x6a"
+      ],
+      "nonzero_matrices": [
+        ".1./1../...",
+        ".../..1/1..",
+        ".1./1.1/1.."
+      ],
+      "occupation_feasible_at_old_lb": false,
+      "occupation_raise_status": "INFEASIBLE",
+      "occupation_support_size_tested": 18,
+      "old_lb": 18,
+      "proof_type": "degenerate",
+      "rank_ge2_count": 3,
+      "rank_hist": {
+        "2": 2,
+        "3": 1
+      },
+      "rank_pattern": [
+        2,
+        2,
+        3
+      ],
+      "relevant_two_high_rank_generators": true
+    },
+    {
+      "backtracking_proof_size": null,
+      "basis": [
+        10,
+        258
+      ],
+      "basis_hex": [
+        "0xa",
+        "0x102"
+      ],
+      "current_overlay_lb": 19,
+      "index": 489,
+      "nonzero_elements": [
+        10,
+        258,
+        264
+      ],
+      "nonzero_hex": [
+        "0xa",
+        "0x102",
+        "0x108"
+      ],
+      "nonzero_matrices": [
+        ".1./1../...",
+        ".1./.../..1",
+        ".../1../..1"
+      ],
+      "occupation_feasible_at_old_lb": false,
+      "occupation_raise_status": "INFEASIBLE",
+      "occupation_support_size_tested": 18,
+      "old_lb": 18,
+      "proof_type": "degenerate",
+      "rank_ge2_count": 3,
+      "rank_hist": {
+        "2": 3
+      },
+      "rank_pattern": [
+        2,
+        2,
+        2
+      ],
+      "relevant_two_high_rank_generators": true
+    },
+    {
+      "backtracking_proof_size": null,
+      "basis": [
+        10,
+        275
+      ],
+      "basis_hex": [
+        "0xa",
+        "0x113"
+      ],
+      "current_overlay_lb": 19,
+      "index": 490,
+      "nonzero_elements": [
+        10,
+        275,
+        281
+      ],
+      "nonzero_hex": [
+        "0xa",
+        "0x113",
+        "0x119"
+      ],
+      "nonzero_matrices": [
+        ".1./1../...",
+        "11./.1./..1",
+        "1../11./..1"
+      ],
+      "occupation_feasible_at_old_lb": false,
+      "occupation_raise_status": "INFEASIBLE",
+      "occupation_support_size_tested": 18,
+      "old_lb": 18,
+      "proof_type": "degenerate",
+      "rank_ge2_count": 3,
+      "rank_hist": {
+        "2": 1,
+        "3": 2
+      },
+      "rank_pattern": [
+        2,
+        3,
+        3
+      ],
+      "relevant_two_high_rank_generators": true
+    },
+    {
+      "backtracking_proof_size": null,
+      "basis": [
+        84,
+        163
+      ],
+      "basis_hex": [
+        "0x54",
+        "0xa3"
+      ],
+      "current_overlay_lb": 19,
+      "index": 491,
+      "nonzero_elements": [
+        84,
+        163,
+        247
+      ],
+      "nonzero_hex": [
+        "0x54",
+        "0xa3",
+        "0xf7"
+      ],
+      "nonzero_matrices": [
+        "..1/.1./1..",
+        "11./..1/.1.",
+        "111/.11/11."
+      ],
+      "occupation_feasible_at_old_lb": false,
+      "occupation_raise_status": "INFEASIBLE",
+      "occupation_support_size_tested": 18,
+      "old_lb": 18,
+      "proof_type": "degenerate",
+      "rank_ge2_count": 3,
+      "rank_hist": {
+        "3": 3
+      },
+      "rank_pattern": [
+        3,
+        3,
+        3
+      ],
+      "relevant_two_high_rank_generators": true
+    }
+  ],
+  "relevant_indices": [
+    479,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491
+  ],
+  "schema": "dim2_reduction_audit_v1",
+  "total_dim2_orbits": 14,
+  "unresolved_relevant_indices_current_lb_lt_19": [
+    481,
+    482,
+    483
+  ]
+}

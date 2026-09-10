@@ -1,0 +1,73 @@
+{
+  "A_multiset": [
+    400,
+    260,
+    73,
+    393,
+    292,
+    8,
+    265,
+    130,
+    219,
+    72,
+    392,
+    144,
+    284,
+    9,
+    256,
+    146,
+    448,
+    7,
+    32,
+    452,
+    56,
+    16
+  ],
+  "A_size": 22,
+  "elapsed_sec": 31.077121257781982,
+  "encoding": {
+    "base_vw_vars": 396,
+    "cnf_clauses": 933511,
+    "cnf_path": "data/tight_cnf_candidates/candidate2/candidate2_tight.cnf",
+    "cnf_vars": 232236,
+    "empty_clause_count": 0,
+    "factor_nullspace_linear_equations": 36,
+    "factor_nullspace_linear_equations_by_rank": {
+      "3": 36
+    },
+    "independence_nonzero_constraints": 7168,
+    "independence_nonzero_constraints_by_rank": {
+      "3": 14,
+      "9": 7154
+    },
+    "product_vars": 1782,
+    "rank": 22,
+    "tight_factor_rigidity": true,
+    "tight_lambda_count": 8,
+    "tight_lambdas": [
+      32,
+      102,
+      111,
+      157,
+      206,
+      234,
+      348,
+      395
+    ],
+    "tight_rank_hist": {
+      "3": 1,
+      "9": 7
+    },
+    "xor_terms_total": 4779
+  },
+  "returncode": 20,
+  "sat": false,
+  "schema": "full_fixed_a_completion_tight_v1",
+  "solver": "cadical",
+  "solver_command": [
+    "cadical",
+    "data/tight_cnf_candidates/candidate2/candidate2_tight.cnf"
+  ],
+  "stderr_tail": "",
+  "stdout_tail": "c --- [ run-time profiling ] -------------------------------------------------\nc \nc process time taken by individual solving procedures\nc (percentage relative to process time for solving)\nc \nc        24.62   80.14% simplify\nc        22.06   71.79% congruence\nc        21.68   70.57% preprocess\nc         6.04   19.66% search\nc         3.04    9.91% unstable\nc         2.74    8.93% stable\nc         0.46    1.50% elim\nc         0.45    1.46% factor\nc         0.39    1.27% subsume\nc         0.32    1.05% sweep\nc         0.25    0.80% fastelim\nc         0.24    0.79% parse\nc         0.18    0.59% walk\nc         0.11    0.37% vivify\nc         0.07    0.22% lucky\nc         0.05    0.16% backbone\nc         0.02    0.06% probe\nc         0.01    0.04% ternary\nc   =================================\nc        30.72   99.22% solve\nc \nc last line shows process time for solving\nc (percentage relative to total process time)\nc \nc --- [ statistics ] ---------------------------------------------------------\nc \nc chronological:             32055        22.89 %  of conflicts\nc conflicts:                140024      4557.89    per second\nc backbone:                2053509       883.71 %  of vars\nc decisions:                811916     26428.52    per second\nc eliminated:                12492         5.38 %  of all variables\nc factored:                    137         0.55 %  of variables\nc fixed:                      1845         0.79 %  of all variables\nc learned:                  136046        97.16 %  per conflict\nc learned_lits:            2749704       100.00 %  learned literals\nc minimized:                     0         0.00 %  learned literals\nc shrunken:                 606215        22.05 %  learned literals\nc minishrunken:             272583         9.91 %  learned literals\nc otfs:                       1657         1.18 %  of conflict\nc propagations:           26316980         0.86 M  per second\nc reduced:                   74055        52.89 %  per conflict\nc rephased:                     16      8751.50    interval\nc restarts:                   7217        19.40    interval\nc stabilizing:                   5        39.88 %  of conflicts\nc substituted:              194007        83.49 %  of all variables\nc sweep equivs:                 33         2.44 %  of swept variables\nc subsumed:                 674797        43.44 %  of all clauses\nc strengthened:              30657         1.97 %  of all clauses\nc ticks:                 256076805         9.90    propagation\nc vivified:                   1327         0.09 %  of all clauses\nc walked:                        4     35006.00    interval\nc weakened:                 466377         2.55    average size\nc congruence:                   11     12729.45    interval\nc \nc seconds are measured in process time for solving\nc \nc --- [ glue usage ] ---------------------------------------------------------\nc \nc focused glue 3 used 59877 clauses 17.88% accumulated 74.20% tier1\nc focused glue 4 used 32199 clauses 9.617% accumulated 83.81% tier2\nc \nc stable glue 3 used 54878 clauses 16.31% accumulated 61.60% tier1\nc stable glue 4 used 34864 clauses 10.36% accumulated 71.96%\nc stable glue 5 used 23221 clauses 6.901% accumulated 78.86% tier2\nc \nc \nc --- [ resources ] ----------------------------------------------------------\nc \nc total process time since initialization:        30.96    seconds\nc total real time since initialization:           30.97    seconds\nc maximum resident set size of process:         2411.91    MB\nc \nc --- [ shutting down ] ------------------------------------------------------\nc \nc exit 20"
+}

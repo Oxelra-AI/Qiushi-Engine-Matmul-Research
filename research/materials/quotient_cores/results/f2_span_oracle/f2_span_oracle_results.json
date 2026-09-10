@@ -1,0 +1,4747 @@
+{
+  "purpose": "Exact F2 oracle for the canonical rank-one-span formulation of R(T333)<=22.",
+  "field": "F2",
+  "canonical_statement": "R(T333)<=r iff the nine-dimensional UV-slice space L is contained in the span of r rank-one 9x9 matrices; for r=22, equivalently there is a 13D quotient subspace H<E/L such that rank-one matrices with Qx in H span Q^{-1}(H).",
+  "warning": "Seed-hyperplane exclusions and random trials are not a global lower bound; they test exact bounded families of H.",
+  "L_rank": 9,
+  "quotient_rows": 72,
+  "rank_one_total": 261121,
+  "distinct_quotient_images": 261121,
+  "quotient_collision_hist": {
+    "1": 261121
+  },
+  "rank_all_rank_one_quotient_images": 72,
+  "rank_one_in_L_count": 0,
+  "seed_results": [
+    {
+      "name": "cn122",
+      "qmm_path": "data/cn122_r23_reproduce/scheme.qmm",
+      "num_terms": 23,
+      "term_x_rank": 23,
+      "term_q_rank": 14,
+      "term_l_intersection_dim": 9,
+      "independent_q_term_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14
+      ],
+      "rankone_locus_in_term_qspan": {
+        "rankone_count": 29,
+        "rankone_qrank": 14,
+        "rankone_xspan_rank": 23,
+        "l_intersection_dim": 9
+      },
+      "rank23_positive_control_passes": true,
+      "hyperplane_scan": {
+        "num_hyperplanes": 16383,
+        "num_success_rank22": 0,
+        "success_examples": [],
+        "best_hyperplanes": [
+          {
+            "functional_mask": 16,
+            "rankone_count": 26,
+            "qrank": 13,
+            "xspan_rank": 21,
+            "l_intersection_dim": 8
+          },
+          {
+            "functional_mask": 8192,
+            "rankone_count": 25,
+            "qrank": 13,
+            "xspan_rank": 21,
+            "l_intersection_dim": 8
+          },
+          {
+            "functional_mask": 8,
+            "rankone_count": 24,
+            "qrank": 13,
+            "xspan_rank": 21,
+            "l_intersection_dim": 8
+          },
+          {
+            "functional_mask": 8200,
+            "rankone_count": 24,
+            "qrank": 13,
+            "xspan_rank": 21,
+            "l_intersection_dim": 8
+          },
+          {
+            "functional_mask": 2,
+            "rankone_count": 26,
+            "qrank": 13,
+            "xspan_rank": 20,
+            "l_intersection_dim": 7
+          }
+        ],
+        "histogram": [
+          {
+            "qrank": 6,
+            "xspan_rank": 6,
+            "l_intersection_dim": 0,
+            "rankone_count": 6,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 7,
+            "l_intersection_dim": 0,
+            "rankone_count": 7,
+            "num_hyperplanes": 17
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 7,
+            "l_intersection_dim": 0,
+            "rankone_count": 8,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 6,
+            "xspan_rank": 7,
+            "l_intersection_dim": 1,
+            "rankone_count": 8,
+            "num_hyperplanes": 6
+          },
+          {
+            "qrank": 6,
+            "xspan_rank": 7,
+            "l_intersection_dim": 1,
+            "rankone_count": 9,
+            "num_hyperplanes": 4
+          },
+          {
+            "qrank": 6,
+            "xspan_rank": 7,
+            "l_intersection_dim": 1,
+            "rankone_count": 10,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 8,
+            "l_intersection_dim": 0,
+            "rankone_count": 8,
+            "num_hyperplanes": 64
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 8,
+            "l_intersection_dim": 0,
+            "rankone_count": 9,
+            "num_hyperplanes": 19
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 8,
+            "l_intersection_dim": 0,
+            "rankone_count": 10,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 8,
+            "l_intersection_dim": 1,
+            "rankone_count": 8,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 8,
+            "l_intersection_dim": 1,
+            "rankone_count": 9,
+            "num_hyperplanes": 32
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 8,
+            "l_intersection_dim": 1,
+            "rankone_count": 10,
+            "num_hyperplanes": 19
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 8,
+            "l_intersection_dim": 1,
+            "rankone_count": 11,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 6,
+            "xspan_rank": 8,
+            "l_intersection_dim": 2,
+            "rankone_count": 9,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 9,
+            "l_intersection_dim": 0,
+            "rankone_count": 9,
+            "num_hyperplanes": 165
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 9,
+            "l_intersection_dim": 0,
+            "rankone_count": 10,
+            "num_hyperplanes": 70
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 9,
+            "l_intersection_dim": 0,
+            "rankone_count": 11,
+            "num_hyperplanes": 4
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 9,
+            "l_intersection_dim": 1,
+            "rankone_count": 9,
+            "num_hyperplanes": 16
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 9,
+            "l_intersection_dim": 1,
+            "rankone_count": 10,
+            "num_hyperplanes": 113
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 9,
+            "l_intersection_dim": 1,
+            "rankone_count": 11,
+            "num_hyperplanes": 65
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 9,
+            "l_intersection_dim": 1,
+            "rankone_count": 12,
+            "num_hyperplanes": 7
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 9,
+            "l_intersection_dim": 2,
+            "rankone_count": 10,
+            "num_hyperplanes": 10
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 9,
+            "l_intersection_dim": 2,
+            "rankone_count": 11,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 9,
+            "l_intersection_dim": 2,
+            "rankone_count": 12,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 9,
+            "l_intersection_dim": 2,
+            "rankone_count": 13,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 9,
+            "l_intersection_dim": 2,
+            "rankone_count": 14,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 10,
+            "l_intersection_dim": 0,
+            "rankone_count": 10,
+            "num_hyperplanes": 313
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 10,
+            "l_intersection_dim": 0,
+            "rankone_count": 11,
+            "num_hyperplanes": 172
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 10,
+            "l_intersection_dim": 0,
+            "rankone_count": 12,
+            "num_hyperplanes": 16
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 10,
+            "l_intersection_dim": 1,
+            "rankone_count": 10,
+            "num_hyperplanes": 58
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 10,
+            "l_intersection_dim": 1,
+            "rankone_count": 11,
+            "num_hyperplanes": 282
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 10,
+            "l_intersection_dim": 1,
+            "rankone_count": 12,
+            "num_hyperplanes": 174
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 10,
+            "l_intersection_dim": 1,
+            "rankone_count": 13,
+            "num_hyperplanes": 36
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 10,
+            "l_intersection_dim": 1,
+            "rankone_count": 14,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 10,
+            "l_intersection_dim": 2,
+            "rankone_count": 10,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 10,
+            "l_intersection_dim": 2,
+            "rankone_count": 11,
+            "num_hyperplanes": 32
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 10,
+            "l_intersection_dim": 2,
+            "rankone_count": 12,
+            "num_hyperplanes": 17
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 10,
+            "l_intersection_dim": 2,
+            "rankone_count": 13,
+            "num_hyperplanes": 10
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 10,
+            "l_intersection_dim": 2,
+            "rankone_count": 14,
+            "num_hyperplanes": 4
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 10,
+            "l_intersection_dim": 3,
+            "rankone_count": 13,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 11,
+            "l_intersection_dim": 0,
+            "rankone_count": 11,
+            "num_hyperplanes": 416
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 11,
+            "l_intersection_dim": 0,
+            "rankone_count": 12,
+            "num_hyperplanes": 253
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 11,
+            "l_intersection_dim": 0,
+            "rankone_count": 13,
+            "num_hyperplanes": 34
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 11,
+            "l_intersection_dim": 1,
+            "rankone_count": 11,
+            "num_hyperplanes": 145
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 11,
+            "l_intersection_dim": 1,
+            "rankone_count": 12,
+            "num_hyperplanes": 538
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 11,
+            "l_intersection_dim": 1,
+            "rankone_count": 13,
+            "num_hyperplanes": 348
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 11,
+            "l_intersection_dim": 1,
+            "rankone_count": 14,
+            "num_hyperplanes": 94
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 11,
+            "l_intersection_dim": 1,
+            "rankone_count": 15,
+            "num_hyperplanes": 5
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 11,
+            "l_intersection_dim": 2,
+            "rankone_count": 11,
+            "num_hyperplanes": 5
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 11,
+            "l_intersection_dim": 2,
+            "rankone_count": 12,
+            "num_hyperplanes": 77
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 11,
+            "l_intersection_dim": 2,
+            "rankone_count": 13,
+            "num_hyperplanes": 66
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 11,
+            "l_intersection_dim": 2,
+            "rankone_count": 14,
+            "num_hyperplanes": 33
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 11,
+            "l_intersection_dim": 2,
+            "rankone_count": 15,
+            "num_hyperplanes": 17
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 11,
+            "l_intersection_dim": 2,
+            "rankone_count": 16,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 11,
+            "l_intersection_dim": 3,
+            "rankone_count": 12,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 11,
+            "l_intersection_dim": 3,
+            "rankone_count": 13,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 11,
+            "l_intersection_dim": 3,
+            "rankone_count": 14,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 12,
+            "l_intersection_dim": 0,
+            "rankone_count": 12,
+            "num_hyperplanes": 348
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 12,
+            "l_intersection_dim": 0,
+            "rankone_count": 13,
+            "num_hyperplanes": 223
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 12,
+            "l_intersection_dim": 0,
+            "rankone_count": 14,
+            "num_hyperplanes": 28
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 12,
+            "l_intersection_dim": 1,
+            "rankone_count": 12,
+            "num_hyperplanes": 285
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 12,
+            "l_intersection_dim": 1,
+            "rankone_count": 13,
+            "num_hyperplanes": 731
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 12,
+            "l_intersection_dim": 1,
+            "rankone_count": 14,
+            "num_hyperplanes": 469
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 12,
+            "l_intersection_dim": 1,
+            "rankone_count": 15,
+            "num_hyperplanes": 116
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 12,
+            "l_intersection_dim": 1,
+            "rankone_count": 16,
+            "num_hyperplanes": 11
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 12,
+            "l_intersection_dim": 2,
+            "rankone_count": 12,
+            "num_hyperplanes": 21
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 12,
+            "l_intersection_dim": 2,
+            "rankone_count": 13,
+            "num_hyperplanes": 221
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 12,
+            "l_intersection_dim": 2,
+            "rankone_count": 14,
+            "num_hyperplanes": 224
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 12,
+            "l_intersection_dim": 2,
+            "rankone_count": 15,
+            "num_hyperplanes": 106
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 12,
+            "l_intersection_dim": 2,
+            "rankone_count": 16,
+            "num_hyperplanes": 45
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 12,
+            "l_intersection_dim": 2,
+            "rankone_count": 17,
+            "num_hyperplanes": 12
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 12,
+            "l_intersection_dim": 2,
+            "rankone_count": 18,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 12,
+            "l_intersection_dim": 3,
+            "rankone_count": 13,
+            "num_hyperplanes": 9
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 12,
+            "l_intersection_dim": 3,
+            "rankone_count": 14,
+            "num_hyperplanes": 9
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 12,
+            "l_intersection_dim": 3,
+            "rankone_count": 15,
+            "num_hyperplanes": 10
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 12,
+            "l_intersection_dim": 3,
+            "rankone_count": 16,
+            "num_hyperplanes": 4
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 12,
+            "l_intersection_dim": 3,
+            "rankone_count": 17,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 13,
+            "l_intersection_dim": 0,
+            "rankone_count": 13,
+            "num_hyperplanes": 140
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 13,
+            "l_intersection_dim": 0,
+            "rankone_count": 14,
+            "num_hyperplanes": 95
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 13,
+            "l_intersection_dim": 0,
+            "rankone_count": 15,
+            "num_hyperplanes": 10
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 13,
+            "l_intersection_dim": 1,
+            "rankone_count": 13,
+            "num_hyperplanes": 351
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 13,
+            "l_intersection_dim": 1,
+            "rankone_count": 14,
+            "num_hyperplanes": 680
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 13,
+            "l_intersection_dim": 1,
+            "rankone_count": 15,
+            "num_hyperplanes": 385
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 13,
+            "l_intersection_dim": 1,
+            "rankone_count": 16,
+            "num_hyperplanes": 76
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 13,
+            "l_intersection_dim": 1,
+            "rankone_count": 17,
+            "num_hyperplanes": 7
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 13,
+            "l_intersection_dim": 2,
+            "rankone_count": 13,
+            "num_hyperplanes": 82
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 13,
+            "l_intersection_dim": 2,
+            "rankone_count": 14,
+            "num_hyperplanes": 448
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 13,
+            "l_intersection_dim": 2,
+            "rankone_count": 15,
+            "num_hyperplanes": 448
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 13,
+            "l_intersection_dim": 2,
+            "rankone_count": 16,
+            "num_hyperplanes": 195
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 13,
+            "l_intersection_dim": 2,
+            "rankone_count": 17,
+            "num_hyperplanes": 80
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 13,
+            "l_intersection_dim": 2,
+            "rankone_count": 18,
+            "num_hyperplanes": 24
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 13,
+            "l_intersection_dim": 2,
+            "rankone_count": 19,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 13,
+            "l_intersection_dim": 3,
+            "rankone_count": 13,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 13,
+            "l_intersection_dim": 3,
+            "rankone_count": 14,
+            "num_hyperplanes": 37
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 13,
+            "l_intersection_dim": 3,
+            "rankone_count": 15,
+            "num_hyperplanes": 62
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 13,
+            "l_intersection_dim": 3,
+            "rankone_count": 16,
+            "num_hyperplanes": 43
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 13,
+            "l_intersection_dim": 3,
+            "rankone_count": 17,
+            "num_hyperplanes": 16
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 13,
+            "l_intersection_dim": 3,
+            "rankone_count": 18,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 13,
+            "l_intersection_dim": 3,
+            "rankone_count": 19,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 13,
+            "l_intersection_dim": 4,
+            "rankone_count": 15,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 13,
+            "l_intersection_dim": 4,
+            "rankone_count": 16,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 14,
+            "l_intersection_dim": 1,
+            "rankone_count": 14,
+            "num_hyperplanes": 202
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 14,
+            "l_intersection_dim": 1,
+            "rankone_count": 15,
+            "num_hyperplanes": 325
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 14,
+            "l_intersection_dim": 1,
+            "rankone_count": 16,
+            "num_hyperplanes": 149
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 14,
+            "l_intersection_dim": 1,
+            "rankone_count": 17,
+            "num_hyperplanes": 24
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 14,
+            "l_intersection_dim": 2,
+            "rankone_count": 14,
+            "num_hyperplanes": 161
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 14,
+            "l_intersection_dim": 2,
+            "rankone_count": 15,
+            "num_hyperplanes": 602
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 14,
+            "l_intersection_dim": 2,
+            "rankone_count": 16,
+            "num_hyperplanes": 517
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 14,
+            "l_intersection_dim": 2,
+            "rankone_count": 17,
+            "num_hyperplanes": 191
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 14,
+            "l_intersection_dim": 2,
+            "rankone_count": 18,
+            "num_hyperplanes": 73
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 14,
+            "l_intersection_dim": 2,
+            "rankone_count": 19,
+            "num_hyperplanes": 26
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 14,
+            "l_intersection_dim": 2,
+            "rankone_count": 20,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 14,
+            "l_intersection_dim": 3,
+            "rankone_count": 14,
+            "num_hyperplanes": 14
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 14,
+            "l_intersection_dim": 3,
+            "rankone_count": 15,
+            "num_hyperplanes": 126
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 14,
+            "l_intersection_dim": 3,
+            "rankone_count": 16,
+            "num_hyperplanes": 180
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 14,
+            "l_intersection_dim": 3,
+            "rankone_count": 17,
+            "num_hyperplanes": 119
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 14,
+            "l_intersection_dim": 3,
+            "rankone_count": 18,
+            "num_hyperplanes": 59
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 14,
+            "l_intersection_dim": 3,
+            "rankone_count": 19,
+            "num_hyperplanes": 21
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 14,
+            "l_intersection_dim": 3,
+            "rankone_count": 20,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 14,
+            "l_intersection_dim": 4,
+            "rankone_count": 15,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 14,
+            "l_intersection_dim": 4,
+            "rankone_count": 16,
+            "num_hyperplanes": 4
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 14,
+            "l_intersection_dim": 4,
+            "rankone_count": 17,
+            "num_hyperplanes": 6
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 14,
+            "l_intersection_dim": 4,
+            "rankone_count": 18,
+            "num_hyperplanes": 4
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 14,
+            "l_intersection_dim": 4,
+            "rankone_count": 19,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 15,
+            "l_intersection_dim": 2,
+            "rankone_count": 15,
+            "num_hyperplanes": 136
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 15,
+            "l_intersection_dim": 2,
+            "rankone_count": 16,
+            "num_hyperplanes": 360
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 15,
+            "l_intersection_dim": 2,
+            "rankone_count": 17,
+            "num_hyperplanes": 243
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 15,
+            "l_intersection_dim": 2,
+            "rankone_count": 18,
+            "num_hyperplanes": 67
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 15,
+            "l_intersection_dim": 2,
+            "rankone_count": 19,
+            "num_hyperplanes": 31
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 15,
+            "l_intersection_dim": 2,
+            "rankone_count": 20,
+            "num_hyperplanes": 16
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 15,
+            "l_intersection_dim": 2,
+            "rankone_count": 21,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 15,
+            "l_intersection_dim": 3,
+            "rankone_count": 15,
+            "num_hyperplanes": 49
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 15,
+            "l_intersection_dim": 3,
+            "rankone_count": 16,
+            "num_hyperplanes": 294
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 15,
+            "l_intersection_dim": 3,
+            "rankone_count": 17,
+            "num_hyperplanes": 335
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 15,
+            "l_intersection_dim": 3,
+            "rankone_count": 18,
+            "num_hyperplanes": 174
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 15,
+            "l_intersection_dim": 3,
+            "rankone_count": 19,
+            "num_hyperplanes": 76
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 15,
+            "l_intersection_dim": 3,
+            "rankone_count": 20,
+            "num_hyperplanes": 40
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 15,
+            "l_intersection_dim": 3,
+            "rankone_count": 21,
+            "num_hyperplanes": 10
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 15,
+            "l_intersection_dim": 4,
+            "rankone_count": 16,
+            "num_hyperplanes": 19
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 15,
+            "l_intersection_dim": 4,
+            "rankone_count": 17,
+            "num_hyperplanes": 46
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 15,
+            "l_intersection_dim": 4,
+            "rankone_count": 18,
+            "num_hyperplanes": 42
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 15,
+            "l_intersection_dim": 4,
+            "rankone_count": 19,
+            "num_hyperplanes": 19
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 15,
+            "l_intersection_dim": 4,
+            "rankone_count": 20,
+            "num_hyperplanes": 16
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 16,
+            "l_intersection_dim": 3,
+            "rankone_count": 16,
+            "num_hyperplanes": 54
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 16,
+            "l_intersection_dim": 3,
+            "rankone_count": 17,
+            "num_hyperplanes": 216
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 16,
+            "l_intersection_dim": 3,
+            "rankone_count": 18,
+            "num_hyperplanes": 194
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 16,
+            "l_intersection_dim": 3,
+            "rankone_count": 19,
+            "num_hyperplanes": 64
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 16,
+            "l_intersection_dim": 3,
+            "rankone_count": 20,
+            "num_hyperplanes": 50
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 16,
+            "l_intersection_dim": 3,
+            "rankone_count": 21,
+            "num_hyperplanes": 35
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 16,
+            "l_intersection_dim": 3,
+            "rankone_count": 22,
+            "num_hyperplanes": 6
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 16,
+            "l_intersection_dim": 4,
+            "rankone_count": 16,
+            "num_hyperplanes": 9
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 16,
+            "l_intersection_dim": 4,
+            "rankone_count": 17,
+            "num_hyperplanes": 86
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 16,
+            "l_intersection_dim": 4,
+            "rankone_count": 18,
+            "num_hyperplanes": 149
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 16,
+            "l_intersection_dim": 4,
+            "rankone_count": 19,
+            "num_hyperplanes": 103
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 16,
+            "l_intersection_dim": 4,
+            "rankone_count": 20,
+            "num_hyperplanes": 40
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 16,
+            "l_intersection_dim": 4,
+            "rankone_count": 21,
+            "num_hyperplanes": 31
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 16,
+            "l_intersection_dim": 4,
+            "rankone_count": 22,
+            "num_hyperplanes": 8
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 16,
+            "l_intersection_dim": 5,
+            "rankone_count": 17,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 16,
+            "l_intersection_dim": 5,
+            "rankone_count": 18,
+            "num_hyperplanes": 12
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 16,
+            "l_intersection_dim": 5,
+            "rankone_count": 19,
+            "num_hyperplanes": 5
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 16,
+            "l_intersection_dim": 5,
+            "rankone_count": 21,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 17,
+            "l_intersection_dim": 4,
+            "rankone_count": 17,
+            "num_hyperplanes": 11
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 17,
+            "l_intersection_dim": 4,
+            "rankone_count": 18,
+            "num_hyperplanes": 81
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 17,
+            "l_intersection_dim": 4,
+            "rankone_count": 19,
+            "num_hyperplanes": 102
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 17,
+            "l_intersection_dim": 4,
+            "rankone_count": 20,
+            "num_hyperplanes": 42
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 17,
+            "l_intersection_dim": 4,
+            "rankone_count": 21,
+            "num_hyperplanes": 40
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 17,
+            "l_intersection_dim": 4,
+            "rankone_count": 22,
+            "num_hyperplanes": 35
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 17,
+            "l_intersection_dim": 4,
+            "rankone_count": 23,
+            "num_hyperplanes": 4
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 17,
+            "l_intersection_dim": 5,
+            "rankone_count": 17,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 17,
+            "l_intersection_dim": 5,
+            "rankone_count": 18,
+            "num_hyperplanes": 14
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 17,
+            "l_intersection_dim": 5,
+            "rankone_count": 19,
+            "num_hyperplanes": 37
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 17,
+            "l_intersection_dim": 5,
+            "rankone_count": 20,
+            "num_hyperplanes": 40
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 17,
+            "l_intersection_dim": 5,
+            "rankone_count": 21,
+            "num_hyperplanes": 22
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 17,
+            "l_intersection_dim": 5,
+            "rankone_count": 22,
+            "num_hyperplanes": 12
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 17,
+            "l_intersection_dim": 5,
+            "rankone_count": 23,
+            "num_hyperplanes": 6
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 18,
+            "l_intersection_dim": 5,
+            "rankone_count": 18,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 18,
+            "l_intersection_dim": 5,
+            "rankone_count": 19,
+            "num_hyperplanes": 22
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 18,
+            "l_intersection_dim": 5,
+            "rankone_count": 20,
+            "num_hyperplanes": 37
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 18,
+            "l_intersection_dim": 5,
+            "rankone_count": 21,
+            "num_hyperplanes": 22
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 18,
+            "l_intersection_dim": 5,
+            "rankone_count": 22,
+            "num_hyperplanes": 20
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 18,
+            "l_intersection_dim": 5,
+            "rankone_count": 23,
+            "num_hyperplanes": 23
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 18,
+            "l_intersection_dim": 5,
+            "rankone_count": 24,
+            "num_hyperplanes": 6
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 18,
+            "l_intersection_dim": 6,
+            "rankone_count": 19,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 18,
+            "l_intersection_dim": 6,
+            "rankone_count": 20,
+            "num_hyperplanes": 6
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 18,
+            "l_intersection_dim": 6,
+            "rankone_count": 21,
+            "num_hyperplanes": 15
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 18,
+            "l_intersection_dim": 6,
+            "rankone_count": 22,
+            "num_hyperplanes": 7
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 18,
+            "l_intersection_dim": 6,
+            "rankone_count": 23,
+            "num_hyperplanes": 5
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 19,
+            "l_intersection_dim": 6,
+            "rankone_count": 20,
+            "num_hyperplanes": 4
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 19,
+            "l_intersection_dim": 6,
+            "rankone_count": 21,
+            "num_hyperplanes": 13
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 19,
+            "l_intersection_dim": 6,
+            "rankone_count": 22,
+            "num_hyperplanes": 9
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 19,
+            "l_intersection_dim": 6,
+            "rankone_count": 23,
+            "num_hyperplanes": 4
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 19,
+            "l_intersection_dim": 6,
+            "rankone_count": 24,
+            "num_hyperplanes": 11
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 19,
+            "l_intersection_dim": 6,
+            "rankone_count": 25,
+            "num_hyperplanes": 6
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 19,
+            "l_intersection_dim": 7,
+            "rankone_count": 21,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 19,
+            "l_intersection_dim": 7,
+            "rankone_count": 22,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 20,
+            "l_intersection_dim": 7,
+            "rankone_count": 22,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 20,
+            "l_intersection_dim": 7,
+            "rankone_count": 23,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 20,
+            "l_intersection_dim": 7,
+            "rankone_count": 24,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 20,
+            "l_intersection_dim": 7,
+            "rankone_count": 25,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 20,
+            "l_intersection_dim": 7,
+            "rankone_count": 26,
+            "num_hyperplanes": 5
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 21,
+            "l_intersection_dim": 8,
+            "rankone_count": 24,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 21,
+            "l_intersection_dim": 8,
+            "rankone_count": 25,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 21,
+            "l_intersection_dim": 8,
+            "rankone_count": 26,
+            "num_hyperplanes": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "serendipitous_8d34",
+      "qmm_path": "data/fmm_r23_schemes/serendipitous_8d34.qmm",
+      "num_terms": 23,
+      "term_x_rank": 23,
+      "term_q_rank": 14,
+      "term_l_intersection_dim": 9,
+      "independent_q_term_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        13,
+        16,
+        17
+      ],
+      "rankone_locus_in_term_qspan": {
+        "rankone_count": 29,
+        "rankone_qrank": 14,
+        "rankone_xspan_rank": 23,
+        "l_intersection_dim": 9
+      },
+      "rank23_positive_control_passes": true,
+      "hyperplane_scan": {
+        "num_hyperplanes": 16383,
+        "num_success_rank22": 0,
+        "success_examples": [],
+        "best_hyperplanes": [
+          {
+            "functional_mask": 128,
+            "rankone_count": 26,
+            "qrank": 13,
+            "xspan_rank": 21,
+            "l_intersection_dim": 8
+          },
+          {
+            "functional_mask": 4,
+            "rankone_count": 25,
+            "qrank": 13,
+            "xspan_rank": 21,
+            "l_intersection_dim": 8
+          },
+          {
+            "functional_mask": 2048,
+            "rankone_count": 24,
+            "qrank": 13,
+            "xspan_rank": 21,
+            "l_intersection_dim": 8
+          },
+          {
+            "functional_mask": 2052,
+            "rankone_count": 24,
+            "qrank": 13,
+            "xspan_rank": 21,
+            "l_intersection_dim": 8
+          },
+          {
+            "functional_mask": 3,
+            "rankone_count": 26,
+            "qrank": 13,
+            "xspan_rank": 20,
+            "l_intersection_dim": 7
+          }
+        ],
+        "histogram": [
+          {
+            "qrank": 6,
+            "xspan_rank": 6,
+            "l_intersection_dim": 0,
+            "rankone_count": 6,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 7,
+            "l_intersection_dim": 0,
+            "rankone_count": 7,
+            "num_hyperplanes": 17
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 7,
+            "l_intersection_dim": 0,
+            "rankone_count": 8,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 6,
+            "xspan_rank": 7,
+            "l_intersection_dim": 1,
+            "rankone_count": 8,
+            "num_hyperplanes": 6
+          },
+          {
+            "qrank": 6,
+            "xspan_rank": 7,
+            "l_intersection_dim": 1,
+            "rankone_count": 9,
+            "num_hyperplanes": 4
+          },
+          {
+            "qrank": 6,
+            "xspan_rank": 7,
+            "l_intersection_dim": 1,
+            "rankone_count": 10,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 8,
+            "l_intersection_dim": 0,
+            "rankone_count": 8,
+            "num_hyperplanes": 64
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 8,
+            "l_intersection_dim": 0,
+            "rankone_count": 9,
+            "num_hyperplanes": 19
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 8,
+            "l_intersection_dim": 0,
+            "rankone_count": 10,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 8,
+            "l_intersection_dim": 1,
+            "rankone_count": 8,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 8,
+            "l_intersection_dim": 1,
+            "rankone_count": 9,
+            "num_hyperplanes": 32
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 8,
+            "l_intersection_dim": 1,
+            "rankone_count": 10,
+            "num_hyperplanes": 19
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 8,
+            "l_intersection_dim": 1,
+            "rankone_count": 11,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 6,
+            "xspan_rank": 8,
+            "l_intersection_dim": 2,
+            "rankone_count": 9,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 9,
+            "l_intersection_dim": 0,
+            "rankone_count": 9,
+            "num_hyperplanes": 165
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 9,
+            "l_intersection_dim": 0,
+            "rankone_count": 10,
+            "num_hyperplanes": 70
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 9,
+            "l_intersection_dim": 0,
+            "rankone_count": 11,
+            "num_hyperplanes": 4
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 9,
+            "l_intersection_dim": 1,
+            "rankone_count": 9,
+            "num_hyperplanes": 16
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 9,
+            "l_intersection_dim": 1,
+            "rankone_count": 10,
+            "num_hyperplanes": 113
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 9,
+            "l_intersection_dim": 1,
+            "rankone_count": 11,
+            "num_hyperplanes": 65
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 9,
+            "l_intersection_dim": 1,
+            "rankone_count": 12,
+            "num_hyperplanes": 7
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 9,
+            "l_intersection_dim": 2,
+            "rankone_count": 10,
+            "num_hyperplanes": 10
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 9,
+            "l_intersection_dim": 2,
+            "rankone_count": 11,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 9,
+            "l_intersection_dim": 2,
+            "rankone_count": 12,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 9,
+            "l_intersection_dim": 2,
+            "rankone_count": 13,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 9,
+            "l_intersection_dim": 2,
+            "rankone_count": 14,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 10,
+            "l_intersection_dim": 0,
+            "rankone_count": 10,
+            "num_hyperplanes": 313
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 10,
+            "l_intersection_dim": 0,
+            "rankone_count": 11,
+            "num_hyperplanes": 172
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 10,
+            "l_intersection_dim": 0,
+            "rankone_count": 12,
+            "num_hyperplanes": 16
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 10,
+            "l_intersection_dim": 1,
+            "rankone_count": 10,
+            "num_hyperplanes": 58
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 10,
+            "l_intersection_dim": 1,
+            "rankone_count": 11,
+            "num_hyperplanes": 282
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 10,
+            "l_intersection_dim": 1,
+            "rankone_count": 12,
+            "num_hyperplanes": 174
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 10,
+            "l_intersection_dim": 1,
+            "rankone_count": 13,
+            "num_hyperplanes": 36
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 10,
+            "l_intersection_dim": 1,
+            "rankone_count": 14,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 10,
+            "l_intersection_dim": 2,
+            "rankone_count": 10,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 10,
+            "l_intersection_dim": 2,
+            "rankone_count": 11,
+            "num_hyperplanes": 32
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 10,
+            "l_intersection_dim": 2,
+            "rankone_count": 12,
+            "num_hyperplanes": 17
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 10,
+            "l_intersection_dim": 2,
+            "rankone_count": 13,
+            "num_hyperplanes": 10
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 10,
+            "l_intersection_dim": 2,
+            "rankone_count": 14,
+            "num_hyperplanes": 4
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 10,
+            "l_intersection_dim": 3,
+            "rankone_count": 13,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 11,
+            "l_intersection_dim": 0,
+            "rankone_count": 11,
+            "num_hyperplanes": 416
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 11,
+            "l_intersection_dim": 0,
+            "rankone_count": 12,
+            "num_hyperplanes": 253
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 11,
+            "l_intersection_dim": 0,
+            "rankone_count": 13,
+            "num_hyperplanes": 34
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 11,
+            "l_intersection_dim": 1,
+            "rankone_count": 11,
+            "num_hyperplanes": 145
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 11,
+            "l_intersection_dim": 1,
+            "rankone_count": 12,
+            "num_hyperplanes": 538
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 11,
+            "l_intersection_dim": 1,
+            "rankone_count": 13,
+            "num_hyperplanes": 348
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 11,
+            "l_intersection_dim": 1,
+            "rankone_count": 14,
+            "num_hyperplanes": 94
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 11,
+            "l_intersection_dim": 1,
+            "rankone_count": 15,
+            "num_hyperplanes": 5
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 11,
+            "l_intersection_dim": 2,
+            "rankone_count": 11,
+            "num_hyperplanes": 5
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 11,
+            "l_intersection_dim": 2,
+            "rankone_count": 12,
+            "num_hyperplanes": 77
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 11,
+            "l_intersection_dim": 2,
+            "rankone_count": 13,
+            "num_hyperplanes": 66
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 11,
+            "l_intersection_dim": 2,
+            "rankone_count": 14,
+            "num_hyperplanes": 33
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 11,
+            "l_intersection_dim": 2,
+            "rankone_count": 15,
+            "num_hyperplanes": 17
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 11,
+            "l_intersection_dim": 2,
+            "rankone_count": 16,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 11,
+            "l_intersection_dim": 3,
+            "rankone_count": 12,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 11,
+            "l_intersection_dim": 3,
+            "rankone_count": 13,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 11,
+            "l_intersection_dim": 3,
+            "rankone_count": 14,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 12,
+            "l_intersection_dim": 0,
+            "rankone_count": 12,
+            "num_hyperplanes": 348
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 12,
+            "l_intersection_dim": 0,
+            "rankone_count": 13,
+            "num_hyperplanes": 223
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 12,
+            "l_intersection_dim": 0,
+            "rankone_count": 14,
+            "num_hyperplanes": 28
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 12,
+            "l_intersection_dim": 1,
+            "rankone_count": 12,
+            "num_hyperplanes": 285
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 12,
+            "l_intersection_dim": 1,
+            "rankone_count": 13,
+            "num_hyperplanes": 731
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 12,
+            "l_intersection_dim": 1,
+            "rankone_count": 14,
+            "num_hyperplanes": 469
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 12,
+            "l_intersection_dim": 1,
+            "rankone_count": 15,
+            "num_hyperplanes": 116
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 12,
+            "l_intersection_dim": 1,
+            "rankone_count": 16,
+            "num_hyperplanes": 11
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 12,
+            "l_intersection_dim": 2,
+            "rankone_count": 12,
+            "num_hyperplanes": 21
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 12,
+            "l_intersection_dim": 2,
+            "rankone_count": 13,
+            "num_hyperplanes": 221
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 12,
+            "l_intersection_dim": 2,
+            "rankone_count": 14,
+            "num_hyperplanes": 224
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 12,
+            "l_intersection_dim": 2,
+            "rankone_count": 15,
+            "num_hyperplanes": 106
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 12,
+            "l_intersection_dim": 2,
+            "rankone_count": 16,
+            "num_hyperplanes": 45
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 12,
+            "l_intersection_dim": 2,
+            "rankone_count": 17,
+            "num_hyperplanes": 12
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 12,
+            "l_intersection_dim": 2,
+            "rankone_count": 18,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 12,
+            "l_intersection_dim": 3,
+            "rankone_count": 13,
+            "num_hyperplanes": 9
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 12,
+            "l_intersection_dim": 3,
+            "rankone_count": 14,
+            "num_hyperplanes": 9
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 12,
+            "l_intersection_dim": 3,
+            "rankone_count": 15,
+            "num_hyperplanes": 10
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 12,
+            "l_intersection_dim": 3,
+            "rankone_count": 16,
+            "num_hyperplanes": 4
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 12,
+            "l_intersection_dim": 3,
+            "rankone_count": 17,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 13,
+            "l_intersection_dim": 0,
+            "rankone_count": 13,
+            "num_hyperplanes": 140
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 13,
+            "l_intersection_dim": 0,
+            "rankone_count": 14,
+            "num_hyperplanes": 95
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 13,
+            "l_intersection_dim": 0,
+            "rankone_count": 15,
+            "num_hyperplanes": 10
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 13,
+            "l_intersection_dim": 1,
+            "rankone_count": 13,
+            "num_hyperplanes": 351
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 13,
+            "l_intersection_dim": 1,
+            "rankone_count": 14,
+            "num_hyperplanes": 680
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 13,
+            "l_intersection_dim": 1,
+            "rankone_count": 15,
+            "num_hyperplanes": 385
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 13,
+            "l_intersection_dim": 1,
+            "rankone_count": 16,
+            "num_hyperplanes": 76
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 13,
+            "l_intersection_dim": 1,
+            "rankone_count": 17,
+            "num_hyperplanes": 7
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 13,
+            "l_intersection_dim": 2,
+            "rankone_count": 13,
+            "num_hyperplanes": 82
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 13,
+            "l_intersection_dim": 2,
+            "rankone_count": 14,
+            "num_hyperplanes": 448
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 13,
+            "l_intersection_dim": 2,
+            "rankone_count": 15,
+            "num_hyperplanes": 448
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 13,
+            "l_intersection_dim": 2,
+            "rankone_count": 16,
+            "num_hyperplanes": 195
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 13,
+            "l_intersection_dim": 2,
+            "rankone_count": 17,
+            "num_hyperplanes": 80
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 13,
+            "l_intersection_dim": 2,
+            "rankone_count": 18,
+            "num_hyperplanes": 24
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 13,
+            "l_intersection_dim": 2,
+            "rankone_count": 19,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 13,
+            "l_intersection_dim": 3,
+            "rankone_count": 13,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 13,
+            "l_intersection_dim": 3,
+            "rankone_count": 14,
+            "num_hyperplanes": 37
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 13,
+            "l_intersection_dim": 3,
+            "rankone_count": 15,
+            "num_hyperplanes": 62
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 13,
+            "l_intersection_dim": 3,
+            "rankone_count": 16,
+            "num_hyperplanes": 43
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 13,
+            "l_intersection_dim": 3,
+            "rankone_count": 17,
+            "num_hyperplanes": 16
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 13,
+            "l_intersection_dim": 3,
+            "rankone_count": 18,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 13,
+            "l_intersection_dim": 3,
+            "rankone_count": 19,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 13,
+            "l_intersection_dim": 4,
+            "rankone_count": 15,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 13,
+            "l_intersection_dim": 4,
+            "rankone_count": 16,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 14,
+            "l_intersection_dim": 1,
+            "rankone_count": 14,
+            "num_hyperplanes": 202
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 14,
+            "l_intersection_dim": 1,
+            "rankone_count": 15,
+            "num_hyperplanes": 325
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 14,
+            "l_intersection_dim": 1,
+            "rankone_count": 16,
+            "num_hyperplanes": 149
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 14,
+            "l_intersection_dim": 1,
+            "rankone_count": 17,
+            "num_hyperplanes": 24
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 14,
+            "l_intersection_dim": 2,
+            "rankone_count": 14,
+            "num_hyperplanes": 161
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 14,
+            "l_intersection_dim": 2,
+            "rankone_count": 15,
+            "num_hyperplanes": 602
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 14,
+            "l_intersection_dim": 2,
+            "rankone_count": 16,
+            "num_hyperplanes": 517
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 14,
+            "l_intersection_dim": 2,
+            "rankone_count": 17,
+            "num_hyperplanes": 191
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 14,
+            "l_intersection_dim": 2,
+            "rankone_count": 18,
+            "num_hyperplanes": 73
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 14,
+            "l_intersection_dim": 2,
+            "rankone_count": 19,
+            "num_hyperplanes": 26
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 14,
+            "l_intersection_dim": 2,
+            "rankone_count": 20,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 14,
+            "l_intersection_dim": 3,
+            "rankone_count": 14,
+            "num_hyperplanes": 14
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 14,
+            "l_intersection_dim": 3,
+            "rankone_count": 15,
+            "num_hyperplanes": 126
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 14,
+            "l_intersection_dim": 3,
+            "rankone_count": 16,
+            "num_hyperplanes": 180
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 14,
+            "l_intersection_dim": 3,
+            "rankone_count": 17,
+            "num_hyperplanes": 119
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 14,
+            "l_intersection_dim": 3,
+            "rankone_count": 18,
+            "num_hyperplanes": 59
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 14,
+            "l_intersection_dim": 3,
+            "rankone_count": 19,
+            "num_hyperplanes": 21
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 14,
+            "l_intersection_dim": 3,
+            "rankone_count": 20,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 14,
+            "l_intersection_dim": 4,
+            "rankone_count": 15,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 14,
+            "l_intersection_dim": 4,
+            "rankone_count": 16,
+            "num_hyperplanes": 4
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 14,
+            "l_intersection_dim": 4,
+            "rankone_count": 17,
+            "num_hyperplanes": 6
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 14,
+            "l_intersection_dim": 4,
+            "rankone_count": 18,
+            "num_hyperplanes": 4
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 14,
+            "l_intersection_dim": 4,
+            "rankone_count": 19,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 15,
+            "l_intersection_dim": 2,
+            "rankone_count": 15,
+            "num_hyperplanes": 136
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 15,
+            "l_intersection_dim": 2,
+            "rankone_count": 16,
+            "num_hyperplanes": 360
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 15,
+            "l_intersection_dim": 2,
+            "rankone_count": 17,
+            "num_hyperplanes": 243
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 15,
+            "l_intersection_dim": 2,
+            "rankone_count": 18,
+            "num_hyperplanes": 67
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 15,
+            "l_intersection_dim": 2,
+            "rankone_count": 19,
+            "num_hyperplanes": 31
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 15,
+            "l_intersection_dim": 2,
+            "rankone_count": 20,
+            "num_hyperplanes": 16
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 15,
+            "l_intersection_dim": 2,
+            "rankone_count": 21,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 15,
+            "l_intersection_dim": 3,
+            "rankone_count": 15,
+            "num_hyperplanes": 49
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 15,
+            "l_intersection_dim": 3,
+            "rankone_count": 16,
+            "num_hyperplanes": 294
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 15,
+            "l_intersection_dim": 3,
+            "rankone_count": 17,
+            "num_hyperplanes": 335
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 15,
+            "l_intersection_dim": 3,
+            "rankone_count": 18,
+            "num_hyperplanes": 174
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 15,
+            "l_intersection_dim": 3,
+            "rankone_count": 19,
+            "num_hyperplanes": 76
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 15,
+            "l_intersection_dim": 3,
+            "rankone_count": 20,
+            "num_hyperplanes": 40
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 15,
+            "l_intersection_dim": 3,
+            "rankone_count": 21,
+            "num_hyperplanes": 10
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 15,
+            "l_intersection_dim": 4,
+            "rankone_count": 16,
+            "num_hyperplanes": 19
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 15,
+            "l_intersection_dim": 4,
+            "rankone_count": 17,
+            "num_hyperplanes": 46
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 15,
+            "l_intersection_dim": 4,
+            "rankone_count": 18,
+            "num_hyperplanes": 42
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 15,
+            "l_intersection_dim": 4,
+            "rankone_count": 19,
+            "num_hyperplanes": 19
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 15,
+            "l_intersection_dim": 4,
+            "rankone_count": 20,
+            "num_hyperplanes": 16
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 16,
+            "l_intersection_dim": 3,
+            "rankone_count": 16,
+            "num_hyperplanes": 54
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 16,
+            "l_intersection_dim": 3,
+            "rankone_count": 17,
+            "num_hyperplanes": 216
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 16,
+            "l_intersection_dim": 3,
+            "rankone_count": 18,
+            "num_hyperplanes": 194
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 16,
+            "l_intersection_dim": 3,
+            "rankone_count": 19,
+            "num_hyperplanes": 64
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 16,
+            "l_intersection_dim": 3,
+            "rankone_count": 20,
+            "num_hyperplanes": 50
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 16,
+            "l_intersection_dim": 3,
+            "rankone_count": 21,
+            "num_hyperplanes": 35
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 16,
+            "l_intersection_dim": 3,
+            "rankone_count": 22,
+            "num_hyperplanes": 6
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 16,
+            "l_intersection_dim": 4,
+            "rankone_count": 16,
+            "num_hyperplanes": 9
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 16,
+            "l_intersection_dim": 4,
+            "rankone_count": 17,
+            "num_hyperplanes": 86
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 16,
+            "l_intersection_dim": 4,
+            "rankone_count": 18,
+            "num_hyperplanes": 149
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 16,
+            "l_intersection_dim": 4,
+            "rankone_count": 19,
+            "num_hyperplanes": 103
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 16,
+            "l_intersection_dim": 4,
+            "rankone_count": 20,
+            "num_hyperplanes": 40
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 16,
+            "l_intersection_dim": 4,
+            "rankone_count": 21,
+            "num_hyperplanes": 31
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 16,
+            "l_intersection_dim": 4,
+            "rankone_count": 22,
+            "num_hyperplanes": 8
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 16,
+            "l_intersection_dim": 5,
+            "rankone_count": 17,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 16,
+            "l_intersection_dim": 5,
+            "rankone_count": 18,
+            "num_hyperplanes": 12
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 16,
+            "l_intersection_dim": 5,
+            "rankone_count": 19,
+            "num_hyperplanes": 5
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 16,
+            "l_intersection_dim": 5,
+            "rankone_count": 21,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 17,
+            "l_intersection_dim": 4,
+            "rankone_count": 17,
+            "num_hyperplanes": 11
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 17,
+            "l_intersection_dim": 4,
+            "rankone_count": 18,
+            "num_hyperplanes": 81
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 17,
+            "l_intersection_dim": 4,
+            "rankone_count": 19,
+            "num_hyperplanes": 102
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 17,
+            "l_intersection_dim": 4,
+            "rankone_count": 20,
+            "num_hyperplanes": 42
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 17,
+            "l_intersection_dim": 4,
+            "rankone_count": 21,
+            "num_hyperplanes": 40
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 17,
+            "l_intersection_dim": 4,
+            "rankone_count": 22,
+            "num_hyperplanes": 35
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 17,
+            "l_intersection_dim": 4,
+            "rankone_count": 23,
+            "num_hyperplanes": 4
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 17,
+            "l_intersection_dim": 5,
+            "rankone_count": 17,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 17,
+            "l_intersection_dim": 5,
+            "rankone_count": 18,
+            "num_hyperplanes": 14
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 17,
+            "l_intersection_dim": 5,
+            "rankone_count": 19,
+            "num_hyperplanes": 37
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 17,
+            "l_intersection_dim": 5,
+            "rankone_count": 20,
+            "num_hyperplanes": 40
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 17,
+            "l_intersection_dim": 5,
+            "rankone_count": 21,
+            "num_hyperplanes": 22
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 17,
+            "l_intersection_dim": 5,
+            "rankone_count": 22,
+            "num_hyperplanes": 12
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 17,
+            "l_intersection_dim": 5,
+            "rankone_count": 23,
+            "num_hyperplanes": 6
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 18,
+            "l_intersection_dim": 5,
+            "rankone_count": 18,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 18,
+            "l_intersection_dim": 5,
+            "rankone_count": 19,
+            "num_hyperplanes": 22
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 18,
+            "l_intersection_dim": 5,
+            "rankone_count": 20,
+            "num_hyperplanes": 37
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 18,
+            "l_intersection_dim": 5,
+            "rankone_count": 21,
+            "num_hyperplanes": 22
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 18,
+            "l_intersection_dim": 5,
+            "rankone_count": 22,
+            "num_hyperplanes": 20
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 18,
+            "l_intersection_dim": 5,
+            "rankone_count": 23,
+            "num_hyperplanes": 23
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 18,
+            "l_intersection_dim": 5,
+            "rankone_count": 24,
+            "num_hyperplanes": 6
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 18,
+            "l_intersection_dim": 6,
+            "rankone_count": 19,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 18,
+            "l_intersection_dim": 6,
+            "rankone_count": 20,
+            "num_hyperplanes": 6
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 18,
+            "l_intersection_dim": 6,
+            "rankone_count": 21,
+            "num_hyperplanes": 15
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 18,
+            "l_intersection_dim": 6,
+            "rankone_count": 22,
+            "num_hyperplanes": 7
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 18,
+            "l_intersection_dim": 6,
+            "rankone_count": 23,
+            "num_hyperplanes": 5
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 19,
+            "l_intersection_dim": 6,
+            "rankone_count": 20,
+            "num_hyperplanes": 4
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 19,
+            "l_intersection_dim": 6,
+            "rankone_count": 21,
+            "num_hyperplanes": 13
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 19,
+            "l_intersection_dim": 6,
+            "rankone_count": 22,
+            "num_hyperplanes": 9
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 19,
+            "l_intersection_dim": 6,
+            "rankone_count": 23,
+            "num_hyperplanes": 4
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 19,
+            "l_intersection_dim": 6,
+            "rankone_count": 24,
+            "num_hyperplanes": 11
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 19,
+            "l_intersection_dim": 6,
+            "rankone_count": 25,
+            "num_hyperplanes": 6
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 19,
+            "l_intersection_dim": 7,
+            "rankone_count": 21,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 19,
+            "l_intersection_dim": 7,
+            "rankone_count": 22,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 20,
+            "l_intersection_dim": 7,
+            "rankone_count": 22,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 20,
+            "l_intersection_dim": 7,
+            "rankone_count": 23,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 20,
+            "l_intersection_dim": 7,
+            "rankone_count": 24,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 20,
+            "l_intersection_dim": 7,
+            "rankone_count": 25,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 20,
+            "l_intersection_dim": 7,
+            "rankone_count": 26,
+            "num_hyperplanes": 5
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 21,
+            "l_intersection_dim": 8,
+            "rankone_count": 24,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 21,
+            "l_intersection_dim": 8,
+            "rankone_count": 25,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 21,
+            "l_intersection_dim": 8,
+            "rankone_count": 26,
+            "num_hyperplanes": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "naive_c88",
+      "qmm_path": "data/fmm_r23_schemes/naive_c88.qmm",
+      "num_terms": 23,
+      "term_x_rank": 23,
+      "term_q_rank": 14,
+      "term_l_intersection_dim": 9,
+      "independent_q_term_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        15,
+        16
+      ],
+      "rankone_locus_in_term_qspan": {
+        "rankone_count": 29,
+        "rankone_qrank": 14,
+        "rankone_xspan_rank": 23,
+        "l_intersection_dim": 9
+      },
+      "rank23_positive_control_passes": true,
+      "hyperplane_scan": {
+        "num_hyperplanes": 16383,
+        "num_success_rank22": 0,
+        "success_examples": [],
+        "best_hyperplanes": [
+          {
+            "functional_mask": 4096,
+            "rankone_count": 26,
+            "qrank": 13,
+            "xspan_rank": 21,
+            "l_intersection_dim": 8
+          },
+          {
+            "functional_mask": 132,
+            "rankone_count": 25,
+            "qrank": 13,
+            "xspan_rank": 21,
+            "l_intersection_dim": 8
+          },
+          {
+            "functional_mask": 8192,
+            "rankone_count": 25,
+            "qrank": 13,
+            "xspan_rank": 21,
+            "l_intersection_dim": 8
+          },
+          {
+            "functional_mask": 129,
+            "rankone_count": 24,
+            "qrank": 13,
+            "xspan_rank": 21,
+            "l_intersection_dim": 8
+          },
+          {
+            "functional_mask": 84,
+            "rankone_count": 26,
+            "qrank": 13,
+            "xspan_rank": 20,
+            "l_intersection_dim": 7
+          }
+        ],
+        "histogram": [
+          {
+            "qrank": 6,
+            "xspan_rank": 6,
+            "l_intersection_dim": 0,
+            "rankone_count": 6,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 6,
+            "xspan_rank": 6,
+            "l_intersection_dim": 0,
+            "rankone_count": 7,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 7,
+            "l_intersection_dim": 0,
+            "rankone_count": 7,
+            "num_hyperplanes": 13
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 7,
+            "l_intersection_dim": 0,
+            "rankone_count": 8,
+            "num_hyperplanes": 13
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 7,
+            "l_intersection_dim": 0,
+            "rankone_count": 9,
+            "num_hyperplanes": 6
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 7,
+            "l_intersection_dim": 0,
+            "rankone_count": 10,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 6,
+            "xspan_rank": 7,
+            "l_intersection_dim": 1,
+            "rankone_count": 7,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 6,
+            "xspan_rank": 7,
+            "l_intersection_dim": 1,
+            "rankone_count": 8,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 8,
+            "l_intersection_dim": 0,
+            "rankone_count": 8,
+            "num_hyperplanes": 46
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 8,
+            "l_intersection_dim": 0,
+            "rankone_count": 9,
+            "num_hyperplanes": 42
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 8,
+            "l_intersection_dim": 0,
+            "rankone_count": 10,
+            "num_hyperplanes": 27
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 8,
+            "l_intersection_dim": 0,
+            "rankone_count": 11,
+            "num_hyperplanes": 10
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 8,
+            "l_intersection_dim": 0,
+            "rankone_count": 12,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 8,
+            "l_intersection_dim": 1,
+            "rankone_count": 8,
+            "num_hyperplanes": 9
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 8,
+            "l_intersection_dim": 1,
+            "rankone_count": 9,
+            "num_hyperplanes": 10
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 8,
+            "l_intersection_dim": 1,
+            "rankone_count": 10,
+            "num_hyperplanes": 5
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 8,
+            "l_intersection_dim": 1,
+            "rankone_count": 11,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 6,
+            "xspan_rank": 8,
+            "l_intersection_dim": 2,
+            "rankone_count": 8,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 9,
+            "l_intersection_dim": 0,
+            "rankone_count": 9,
+            "num_hyperplanes": 136
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 9,
+            "l_intersection_dim": 0,
+            "rankone_count": 10,
+            "num_hyperplanes": 136
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 9,
+            "l_intersection_dim": 0,
+            "rankone_count": 11,
+            "num_hyperplanes": 77
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 9,
+            "l_intersection_dim": 0,
+            "rankone_count": 12,
+            "num_hyperplanes": 27
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 9,
+            "l_intersection_dim": 0,
+            "rankone_count": 13,
+            "num_hyperplanes": 8
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 9,
+            "l_intersection_dim": 1,
+            "rankone_count": 9,
+            "num_hyperplanes": 32
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 9,
+            "l_intersection_dim": 1,
+            "rankone_count": 10,
+            "num_hyperplanes": 34
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 9,
+            "l_intersection_dim": 1,
+            "rankone_count": 11,
+            "num_hyperplanes": 25
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 9,
+            "l_intersection_dim": 1,
+            "rankone_count": 12,
+            "num_hyperplanes": 7
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 9,
+            "l_intersection_dim": 2,
+            "rankone_count": 9,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 7,
+            "xspan_rank": 9,
+            "l_intersection_dim": 2,
+            "rankone_count": 10,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 10,
+            "l_intersection_dim": 0,
+            "rankone_count": 10,
+            "num_hyperplanes": 268
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 10,
+            "l_intersection_dim": 0,
+            "rankone_count": 11,
+            "num_hyperplanes": 294
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 10,
+            "l_intersection_dim": 0,
+            "rankone_count": 12,
+            "num_hyperplanes": 148
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 10,
+            "l_intersection_dim": 0,
+            "rankone_count": 13,
+            "num_hyperplanes": 55
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 10,
+            "l_intersection_dim": 0,
+            "rankone_count": 14,
+            "num_hyperplanes": 14
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 10,
+            "l_intersection_dim": 1,
+            "rankone_count": 10,
+            "num_hyperplanes": 120
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 10,
+            "l_intersection_dim": 1,
+            "rankone_count": 11,
+            "num_hyperplanes": 118
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 10,
+            "l_intersection_dim": 1,
+            "rankone_count": 12,
+            "num_hyperplanes": 85
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 10,
+            "l_intersection_dim": 1,
+            "rankone_count": 13,
+            "num_hyperplanes": 20
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 10,
+            "l_intersection_dim": 1,
+            "rankone_count": 14,
+            "num_hyperplanes": 8
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 10,
+            "l_intersection_dim": 1,
+            "rankone_count": 15,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 10,
+            "l_intersection_dim": 2,
+            "rankone_count": 10,
+            "num_hyperplanes": 8
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 10,
+            "l_intersection_dim": 2,
+            "rankone_count": 11,
+            "num_hyperplanes": 9
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 10,
+            "l_intersection_dim": 2,
+            "rankone_count": 12,
+            "num_hyperplanes": 9
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 10,
+            "l_intersection_dim": 2,
+            "rankone_count": 13,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 11,
+            "l_intersection_dim": 0,
+            "rankone_count": 11,
+            "num_hyperplanes": 343
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 11,
+            "l_intersection_dim": 0,
+            "rankone_count": 12,
+            "num_hyperplanes": 372
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 11,
+            "l_intersection_dim": 0,
+            "rankone_count": 13,
+            "num_hyperplanes": 215
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 11,
+            "l_intersection_dim": 0,
+            "rankone_count": 14,
+            "num_hyperplanes": 66
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 11,
+            "l_intersection_dim": 0,
+            "rankone_count": 15,
+            "num_hyperplanes": 11
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 11,
+            "l_intersection_dim": 1,
+            "rankone_count": 11,
+            "num_hyperplanes": 229
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 11,
+            "l_intersection_dim": 1,
+            "rankone_count": 12,
+            "num_hyperplanes": 315
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 11,
+            "l_intersection_dim": 1,
+            "rankone_count": 13,
+            "num_hyperplanes": 212
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 11,
+            "l_intersection_dim": 1,
+            "rankone_count": 14,
+            "num_hyperplanes": 87
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 11,
+            "l_intersection_dim": 1,
+            "rankone_count": 15,
+            "num_hyperplanes": 28
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 11,
+            "l_intersection_dim": 1,
+            "rankone_count": 16,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 11,
+            "l_intersection_dim": 2,
+            "rankone_count": 11,
+            "num_hyperplanes": 54
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 11,
+            "l_intersection_dim": 2,
+            "rankone_count": 12,
+            "num_hyperplanes": 55
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 11,
+            "l_intersection_dim": 2,
+            "rankone_count": 13,
+            "num_hyperplanes": 37
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 11,
+            "l_intersection_dim": 2,
+            "rankone_count": 14,
+            "num_hyperplanes": 13
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 11,
+            "l_intersection_dim": 2,
+            "rankone_count": 15,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 8,
+            "xspan_rank": 11,
+            "l_intersection_dim": 3,
+            "rankone_count": 13,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 12,
+            "l_intersection_dim": 0,
+            "rankone_count": 12,
+            "num_hyperplanes": 294
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 12,
+            "l_intersection_dim": 0,
+            "rankone_count": 13,
+            "num_hyperplanes": 291
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 12,
+            "l_intersection_dim": 0,
+            "rankone_count": 14,
+            "num_hyperplanes": 181
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 12,
+            "l_intersection_dim": 0,
+            "rankone_count": 15,
+            "num_hyperplanes": 52
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 12,
+            "l_intersection_dim": 0,
+            "rankone_count": 16,
+            "num_hyperplanes": 13
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 12,
+            "l_intersection_dim": 1,
+            "rankone_count": 12,
+            "num_hyperplanes": 343
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 12,
+            "l_intersection_dim": 1,
+            "rankone_count": 13,
+            "num_hyperplanes": 494
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 12,
+            "l_intersection_dim": 1,
+            "rankone_count": 14,
+            "num_hyperplanes": 375
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 12,
+            "l_intersection_dim": 1,
+            "rankone_count": 15,
+            "num_hyperplanes": 175
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 12,
+            "l_intersection_dim": 1,
+            "rankone_count": 16,
+            "num_hyperplanes": 54
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 12,
+            "l_intersection_dim": 1,
+            "rankone_count": 17,
+            "num_hyperplanes": 6
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 12,
+            "l_intersection_dim": 2,
+            "rankone_count": 12,
+            "num_hyperplanes": 103
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 12,
+            "l_intersection_dim": 2,
+            "rankone_count": 13,
+            "num_hyperplanes": 167
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 12,
+            "l_intersection_dim": 2,
+            "rankone_count": 14,
+            "num_hyperplanes": 97
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 12,
+            "l_intersection_dim": 2,
+            "rankone_count": 15,
+            "num_hyperplanes": 66
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 12,
+            "l_intersection_dim": 2,
+            "rankone_count": 16,
+            "num_hyperplanes": 15
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 12,
+            "l_intersection_dim": 2,
+            "rankone_count": 17,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 12,
+            "l_intersection_dim": 3,
+            "rankone_count": 12,
+            "num_hyperplanes": 11
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 12,
+            "l_intersection_dim": 3,
+            "rankone_count": 13,
+            "num_hyperplanes": 14
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 12,
+            "l_intersection_dim": 3,
+            "rankone_count": 14,
+            "num_hyperplanes": 10
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 12,
+            "l_intersection_dim": 3,
+            "rankone_count": 15,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 12,
+            "l_intersection_dim": 3,
+            "rankone_count": 16,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 13,
+            "l_intersection_dim": 0,
+            "rankone_count": 13,
+            "num_hyperplanes": 128
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 13,
+            "l_intersection_dim": 0,
+            "rankone_count": 14,
+            "num_hyperplanes": 131
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 13,
+            "l_intersection_dim": 0,
+            "rankone_count": 15,
+            "num_hyperplanes": 72
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 13,
+            "l_intersection_dim": 0,
+            "rankone_count": 16,
+            "num_hyperplanes": 19
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 13,
+            "l_intersection_dim": 0,
+            "rankone_count": 17,
+            "num_hyperplanes": 4
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 13,
+            "l_intersection_dim": 1,
+            "rankone_count": 13,
+            "num_hyperplanes": 405
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 13,
+            "l_intersection_dim": 1,
+            "rankone_count": 14,
+            "num_hyperplanes": 510
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 13,
+            "l_intersection_dim": 1,
+            "rankone_count": 15,
+            "num_hyperplanes": 375
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 13,
+            "l_intersection_dim": 1,
+            "rankone_count": 16,
+            "num_hyperplanes": 205
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 13,
+            "l_intersection_dim": 1,
+            "rankone_count": 17,
+            "num_hyperplanes": 66
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 13,
+            "l_intersection_dim": 1,
+            "rankone_count": 18,
+            "num_hyperplanes": 9
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 13,
+            "l_intersection_dim": 2,
+            "rankone_count": 13,
+            "num_hyperplanes": 190
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 13,
+            "l_intersection_dim": 2,
+            "rankone_count": 14,
+            "num_hyperplanes": 315
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 13,
+            "l_intersection_dim": 2,
+            "rankone_count": 15,
+            "num_hyperplanes": 280
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 13,
+            "l_intersection_dim": 2,
+            "rankone_count": 16,
+            "num_hyperplanes": 160
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 13,
+            "l_intersection_dim": 2,
+            "rankone_count": 17,
+            "num_hyperplanes": 49
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 13,
+            "l_intersection_dim": 2,
+            "rankone_count": 18,
+            "num_hyperplanes": 14
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 13,
+            "l_intersection_dim": 2,
+            "rankone_count": 19,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 13,
+            "l_intersection_dim": 3,
+            "rankone_count": 13,
+            "num_hyperplanes": 27
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 13,
+            "l_intersection_dim": 3,
+            "rankone_count": 14,
+            "num_hyperplanes": 45
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 13,
+            "l_intersection_dim": 3,
+            "rankone_count": 15,
+            "num_hyperplanes": 44
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 13,
+            "l_intersection_dim": 3,
+            "rankone_count": 16,
+            "num_hyperplanes": 23
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 13,
+            "l_intersection_dim": 3,
+            "rankone_count": 17,
+            "num_hyperplanes": 6
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 13,
+            "l_intersection_dim": 3,
+            "rankone_count": 18,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 13,
+            "l_intersection_dim": 4,
+            "rankone_count": 13,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 9,
+            "xspan_rank": 13,
+            "l_intersection_dim": 4,
+            "rankone_count": 14,
+            "num_hyperplanes": 4
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 14,
+            "l_intersection_dim": 1,
+            "rankone_count": 14,
+            "num_hyperplanes": 239
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 14,
+            "l_intersection_dim": 1,
+            "rankone_count": 15,
+            "num_hyperplanes": 305
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 14,
+            "l_intersection_dim": 1,
+            "rankone_count": 16,
+            "num_hyperplanes": 195
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 14,
+            "l_intersection_dim": 1,
+            "rankone_count": 17,
+            "num_hyperplanes": 116
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 14,
+            "l_intersection_dim": 1,
+            "rankone_count": 18,
+            "num_hyperplanes": 33
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 14,
+            "l_intersection_dim": 1,
+            "rankone_count": 19,
+            "num_hyperplanes": 8
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 14,
+            "l_intersection_dim": 2,
+            "rankone_count": 14,
+            "num_hyperplanes": 271
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 14,
+            "l_intersection_dim": 2,
+            "rankone_count": 15,
+            "num_hyperplanes": 435
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 14,
+            "l_intersection_dim": 2,
+            "rankone_count": 16,
+            "num_hyperplanes": 390
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 14,
+            "l_intersection_dim": 2,
+            "rankone_count": 17,
+            "num_hyperplanes": 239
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 14,
+            "l_intersection_dim": 2,
+            "rankone_count": 18,
+            "num_hyperplanes": 88
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 14,
+            "l_intersection_dim": 2,
+            "rankone_count": 19,
+            "num_hyperplanes": 28
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 14,
+            "l_intersection_dim": 2,
+            "rankone_count": 20,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 14,
+            "l_intersection_dim": 3,
+            "rankone_count": 14,
+            "num_hyperplanes": 70
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 14,
+            "l_intersection_dim": 3,
+            "rankone_count": 15,
+            "num_hyperplanes": 121
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 14,
+            "l_intersection_dim": 3,
+            "rankone_count": 16,
+            "num_hyperplanes": 145
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 14,
+            "l_intersection_dim": 3,
+            "rankone_count": 17,
+            "num_hyperplanes": 83
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 14,
+            "l_intersection_dim": 3,
+            "rankone_count": 18,
+            "num_hyperplanes": 36
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 14,
+            "l_intersection_dim": 3,
+            "rankone_count": 19,
+            "num_hyperplanes": 8
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 14,
+            "l_intersection_dim": 3,
+            "rankone_count": 20,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 14,
+            "l_intersection_dim": 4,
+            "rankone_count": 14,
+            "num_hyperplanes": 4
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 14,
+            "l_intersection_dim": 4,
+            "rankone_count": 15,
+            "num_hyperplanes": 9
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 14,
+            "l_intersection_dim": 4,
+            "rankone_count": 16,
+            "num_hyperplanes": 6
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 14,
+            "l_intersection_dim": 4,
+            "rankone_count": 17,
+            "num_hyperplanes": 6
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 14,
+            "l_intersection_dim": 4,
+            "rankone_count": 18,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 14,
+            "l_intersection_dim": 4,
+            "rankone_count": 19,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 15,
+            "l_intersection_dim": 2,
+            "rankone_count": 15,
+            "num_hyperplanes": 204
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 15,
+            "l_intersection_dim": 2,
+            "rankone_count": 16,
+            "num_hyperplanes": 326
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 15,
+            "l_intersection_dim": 2,
+            "rankone_count": 17,
+            "num_hyperplanes": 252
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 15,
+            "l_intersection_dim": 2,
+            "rankone_count": 18,
+            "num_hyperplanes": 162
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 15,
+            "l_intersection_dim": 2,
+            "rankone_count": 19,
+            "num_hyperplanes": 59
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 15,
+            "l_intersection_dim": 2,
+            "rankone_count": 20,
+            "num_hyperplanes": 21
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 15,
+            "l_intersection_dim": 2,
+            "rankone_count": 21,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 15,
+            "l_intersection_dim": 3,
+            "rankone_count": 15,
+            "num_hyperplanes": 107
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 15,
+            "l_intersection_dim": 3,
+            "rankone_count": 16,
+            "num_hyperplanes": 215
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 15,
+            "l_intersection_dim": 3,
+            "rankone_count": 17,
+            "num_hyperplanes": 230
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 15,
+            "l_intersection_dim": 3,
+            "rankone_count": 18,
+            "num_hyperplanes": 176
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 15,
+            "l_intersection_dim": 3,
+            "rankone_count": 19,
+            "num_hyperplanes": 92
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 15,
+            "l_intersection_dim": 3,
+            "rankone_count": 20,
+            "num_hyperplanes": 25
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 15,
+            "l_intersection_dim": 3,
+            "rankone_count": 21,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 15,
+            "l_intersection_dim": 4,
+            "rankone_count": 15,
+            "num_hyperplanes": 10
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 15,
+            "l_intersection_dim": 4,
+            "rankone_count": 16,
+            "num_hyperplanes": 39
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 15,
+            "l_intersection_dim": 4,
+            "rankone_count": 17,
+            "num_hyperplanes": 38
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 15,
+            "l_intersection_dim": 4,
+            "rankone_count": 18,
+            "num_hyperplanes": 40
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 15,
+            "l_intersection_dim": 4,
+            "rankone_count": 19,
+            "num_hyperplanes": 6
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 15,
+            "l_intersection_dim": 4,
+            "rankone_count": 20,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 15,
+            "l_intersection_dim": 4,
+            "rankone_count": 21,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 15,
+            "l_intersection_dim": 5,
+            "rankone_count": 17,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 10,
+            "xspan_rank": 15,
+            "l_intersection_dim": 5,
+            "rankone_count": 18,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 16,
+            "l_intersection_dim": 3,
+            "rankone_count": 16,
+            "num_hyperplanes": 96
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 16,
+            "l_intersection_dim": 3,
+            "rankone_count": 17,
+            "num_hyperplanes": 183
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 16,
+            "l_intersection_dim": 3,
+            "rankone_count": 18,
+            "num_hyperplanes": 183
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 16,
+            "l_intersection_dim": 3,
+            "rankone_count": 19,
+            "num_hyperplanes": 134
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 16,
+            "l_intersection_dim": 3,
+            "rankone_count": 20,
+            "num_hyperplanes": 60
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 16,
+            "l_intersection_dim": 3,
+            "rankone_count": 21,
+            "num_hyperplanes": 17
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 16,
+            "l_intersection_dim": 3,
+            "rankone_count": 22,
+            "num_hyperplanes": 4
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 16,
+            "l_intersection_dim": 4,
+            "rankone_count": 16,
+            "num_hyperplanes": 26
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 16,
+            "l_intersection_dim": 4,
+            "rankone_count": 17,
+            "num_hyperplanes": 90
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 16,
+            "l_intersection_dim": 4,
+            "rankone_count": 18,
+            "num_hyperplanes": 110
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 16,
+            "l_intersection_dim": 4,
+            "rankone_count": 19,
+            "num_hyperplanes": 98
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 16,
+            "l_intersection_dim": 4,
+            "rankone_count": 20,
+            "num_hyperplanes": 48
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 16,
+            "l_intersection_dim": 4,
+            "rankone_count": 21,
+            "num_hyperplanes": 17
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 16,
+            "l_intersection_dim": 4,
+            "rankone_count": 22,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 16,
+            "l_intersection_dim": 5,
+            "rankone_count": 16,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 16,
+            "l_intersection_dim": 5,
+            "rankone_count": 17,
+            "num_hyperplanes": 11
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 16,
+            "l_intersection_dim": 5,
+            "rankone_count": 18,
+            "num_hyperplanes": 6
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 16,
+            "l_intersection_dim": 5,
+            "rankone_count": 19,
+            "num_hyperplanes": 7
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 17,
+            "l_intersection_dim": 4,
+            "rankone_count": 17,
+            "num_hyperplanes": 29
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 17,
+            "l_intersection_dim": 4,
+            "rankone_count": 18,
+            "num_hyperplanes": 71
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 17,
+            "l_intersection_dim": 4,
+            "rankone_count": 19,
+            "num_hyperplanes": 95
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 17,
+            "l_intersection_dim": 4,
+            "rankone_count": 20,
+            "num_hyperplanes": 77
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 17,
+            "l_intersection_dim": 4,
+            "rankone_count": 21,
+            "num_hyperplanes": 44
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 17,
+            "l_intersection_dim": 4,
+            "rankone_count": 22,
+            "num_hyperplanes": 18
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 17,
+            "l_intersection_dim": 4,
+            "rankone_count": 23,
+            "num_hyperplanes": 4
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 17,
+            "l_intersection_dim": 5,
+            "rankone_count": 17,
+            "num_hyperplanes": 6
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 17,
+            "l_intersection_dim": 5,
+            "rankone_count": 18,
+            "num_hyperplanes": 22
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 17,
+            "l_intersection_dim": 5,
+            "rankone_count": 19,
+            "num_hyperplanes": 30
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 17,
+            "l_intersection_dim": 5,
+            "rankone_count": 20,
+            "num_hyperplanes": 37
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 17,
+            "l_intersection_dim": 5,
+            "rankone_count": 21,
+            "num_hyperplanes": 29
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 17,
+            "l_intersection_dim": 5,
+            "rankone_count": 22,
+            "num_hyperplanes": 11
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 17,
+            "l_intersection_dim": 5,
+            "rankone_count": 23,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 17,
+            "l_intersection_dim": 6,
+            "rankone_count": 17,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 11,
+            "xspan_rank": 17,
+            "l_intersection_dim": 6,
+            "rankone_count": 18,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 18,
+            "l_intersection_dim": 5,
+            "rankone_count": 18,
+            "num_hyperplanes": 6
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 18,
+            "l_intersection_dim": 5,
+            "rankone_count": 19,
+            "num_hyperplanes": 10
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 18,
+            "l_intersection_dim": 5,
+            "rankone_count": 20,
+            "num_hyperplanes": 19
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 18,
+            "l_intersection_dim": 5,
+            "rankone_count": 21,
+            "num_hyperplanes": 36
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 18,
+            "l_intersection_dim": 5,
+            "rankone_count": 22,
+            "num_hyperplanes": 30
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 18,
+            "l_intersection_dim": 5,
+            "rankone_count": 23,
+            "num_hyperplanes": 17
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 18,
+            "l_intersection_dim": 5,
+            "rankone_count": 24,
+            "num_hyperplanes": 4
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 18,
+            "l_intersection_dim": 6,
+            "rankone_count": 18,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 18,
+            "l_intersection_dim": 6,
+            "rankone_count": 19,
+            "num_hyperplanes": 4
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 18,
+            "l_intersection_dim": 6,
+            "rankone_count": 20,
+            "num_hyperplanes": 9
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 18,
+            "l_intersection_dim": 6,
+            "rankone_count": 21,
+            "num_hyperplanes": 15
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 18,
+            "l_intersection_dim": 6,
+            "rankone_count": 22,
+            "num_hyperplanes": 5
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 18,
+            "l_intersection_dim": 6,
+            "rankone_count": 23,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 19,
+            "l_intersection_dim": 6,
+            "rankone_count": 19,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 19,
+            "l_intersection_dim": 6,
+            "rankone_count": 20,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 19,
+            "l_intersection_dim": 6,
+            "rankone_count": 21,
+            "num_hyperplanes": 7
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 19,
+            "l_intersection_dim": 6,
+            "rankone_count": 22,
+            "num_hyperplanes": 14
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 19,
+            "l_intersection_dim": 6,
+            "rankone_count": 23,
+            "num_hyperplanes": 9
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 19,
+            "l_intersection_dim": 6,
+            "rankone_count": 24,
+            "num_hyperplanes": 7
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 19,
+            "l_intersection_dim": 6,
+            "rankone_count": 25,
+            "num_hyperplanes": 4
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 19,
+            "l_intersection_dim": 7,
+            "rankone_count": 20,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 19,
+            "l_intersection_dim": 7,
+            "rankone_count": 21,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 12,
+            "xspan_rank": 19,
+            "l_intersection_dim": 7,
+            "rankone_count": 22,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 20,
+            "l_intersection_dim": 7,
+            "rankone_count": 23,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 20,
+            "l_intersection_dim": 7,
+            "rankone_count": 24,
+            "num_hyperplanes": 8
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 20,
+            "l_intersection_dim": 7,
+            "rankone_count": 25,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 20,
+            "l_intersection_dim": 7,
+            "rankone_count": 26,
+            "num_hyperplanes": 3
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 21,
+            "l_intersection_dim": 8,
+            "rankone_count": 24,
+            "num_hyperplanes": 1
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 21,
+            "l_intersection_dim": 8,
+            "rankone_count": 25,
+            "num_hyperplanes": 2
+          },
+          {
+            "qrank": 13,
+            "xspan_rank": 21,
+            "l_intersection_dim": 8,
+            "rankone_count": 26,
+            "num_hyperplanes": 1
+          }
+        ]
+      }
+    }
+  ],
+  "random_H13": {
+    "trials_requested": 500,
+    "trials_done": 500,
+    "num_success_rank22": 0,
+    "success_examples": [],
+    "best_trials": [
+      {
+        "trial": 310,
+        "rankone_count": 16,
+        "qrank": 13,
+        "xspan_rank": 13,
+        "l_intersection_dim": 0
+      },
+      {
+        "trial": 362,
+        "rankone_count": 16,
+        "qrank": 13,
+        "xspan_rank": 13,
+        "l_intersection_dim": 0
+      },
+      {
+        "trial": 5,
+        "rankone_count": 15,
+        "qrank": 13,
+        "xspan_rank": 13,
+        "l_intersection_dim": 0
+      },
+      {
+        "trial": 77,
+        "rankone_count": 15,
+        "qrank": 13,
+        "xspan_rank": 13,
+        "l_intersection_dim": 0
+      },
+      {
+        "trial": 81,
+        "rankone_count": 15,
+        "qrank": 13,
+        "xspan_rank": 13,
+        "l_intersection_dim": 0
+      },
+      {
+        "trial": 105,
+        "rankone_count": 15,
+        "qrank": 13,
+        "xspan_rank": 13,
+        "l_intersection_dim": 0
+      },
+      {
+        "trial": 160,
+        "rankone_count": 15,
+        "qrank": 13,
+        "xspan_rank": 13,
+        "l_intersection_dim": 0
+      },
+      {
+        "trial": 188,
+        "rankone_count": 15,
+        "qrank": 13,
+        "xspan_rank": 13,
+        "l_intersection_dim": 0
+      },
+      {
+        "trial": 192,
+        "rankone_count": 15,
+        "qrank": 13,
+        "xspan_rank": 13,
+        "l_intersection_dim": 0
+      },
+      {
+        "trial": 201,
+        "rankone_count": 15,
+        "qrank": 13,
+        "xspan_rank": 13,
+        "l_intersection_dim": 0
+      }
+    ],
+    "histogram": [
+      {
+        "qrank": 13,
+        "xspan_rank": 13,
+        "l_intersection_dim": 0,
+        "rankone_count": 13,
+        "num_trials": 377
+      },
+      {
+        "qrank": 13,
+        "xspan_rank": 13,
+        "l_intersection_dim": 0,
+        "rankone_count": 14,
+        "num_trials": 105
+      },
+      {
+        "qrank": 13,
+        "xspan_rank": 13,
+        "l_intersection_dim": 0,
+        "rankone_count": 15,
+        "num_trials": 16
+      },
+      {
+        "qrank": 13,
+        "xspan_rank": 13,
+        "l_intersection_dim": 0,
+        "rankone_count": 16,
+        "num_trials": 2
+      }
+    ]
+  },
+  "elapsed_sec": 5.95
+}

@@ -1,0 +1,80 @@
+{
+  "L": 18,
+  "auxiliary_range_count": 2053,
+  "auxiliary_range_problem_head": [],
+  "auxiliary_ranges_disjoint_ordered": true,
+  "clauses_match_actual_file": true,
+  "cnf_path": "data/transparent_unary_pilot486/orbit486_transparent.cnf",
+  "cnf_sha256_meta": "ccd9ad2f46640e41ef9018bc9ea297d4c0b980f0814fd2c98294f53eb70ad389",
+  "cnf_sha256_recomputed": "ccd9ad2f46640e41ef9018bc9ea297d4c0b980f0814fd2c98294f53eb70ad389",
+  "core_path": "data/dim2_caplimited_cores_484_491/orbit486/orbit486_cap3_core.json",
+  "drat_verified_meta": true,
+  "file_clause_count": 958634,
+  "file_comment_count": 0,
+  "forward_lifting_established_for_file": true,
+  "forward_lifting_proof_by_clause_family": {
+    "cap0_rows": "For cap 0, every included u[p,ell] must be false because the row occupancy is zero; the emitted unit clauses -u[p,ell] are satisfied.",
+    "row_forward_clauses": "For each occupation row the same prefix-threshold implications force row y[i,j] values from the row literals.",
+    "row_terminal_clause": "If the occupation row satisfies sum_{p in S} x_p <= cap, then among row unary literals there are at most cap true values, so y[n,cap+1] is false and the terminal clause is satisfied.",
+    "total_exact_units": "The alleged quotient occupation has total L, so y[n,L] is true and y[n,L+1] is false.",
+    "total_forward_clauses": "For y[i,j] defined as prefix count >= j, clauses -input_i or y[i,1], -y[i-1,j] or y[i,j], and -input_i or -y[i-1,j-1] or y[i,j] are immediate monotonicity/increment implications.",
+    "total_reverse_clauses": "If prefix count for i is at least j, then either the previous prefix already had at least j or input_i is true; also either the previous prefix already had at least j or it had at least j-1. These are exactly the two reverse clause families.",
+    "u_monotonicity": "u[p,ell+1] => u[p,ell] holds for u[p,ell]=(ell<=x_p)."
+  },
+  "header": {
+    "clauses": 958634,
+    "raw": "p cnf 601675 958634",
+    "vars": 601675
+  },
+  "k": 7,
+  "meaning": "Clause-level reconstruction and forward-lifting proof record for one transparent unary-count CNF. If clauses_match_actual_file and auxiliary_ranges_disjoint_ordered are true, the DRAT UNSAT result applies to exactly the clause families whose lifting proof is recorded here.",
+  "meta_clause_count": 958634,
+  "meta_path": "data/transparent_unary_pilot486/orbit486_transparent.transparent_meta.json",
+  "meta_var_count": 601675,
+  "mismatches_head": [],
+  "reconstructed_clause_count": 958634,
+  "reconstructed_var_count": 601675,
+  "row_aux_total": 553649,
+  "row_record_count": 2139,
+  "sample_checks": {
+    "local_row_zero_sample_failures": [],
+    "note": "Samples support the clause-family proof; they are not the proof because the core rows are intentionally infeasible together.",
+    "sample_count": 5,
+    "total_clause_sample_failures": []
+  },
+  "schema": "s0908_transparent_cnf_lifting_verifier_v1",
+  "source": {
+    "core_path": "data/dim2_caplimited_cores_484_491/orbit486/orbit486_cap3_core.json",
+    "row_count": 2139,
+    "row_key": "shrunk_rows",
+    "row_sha256": "6ec2fe1b7be86cc7c52b33d223b342a7599739c5174a9e654adc938f18a4cd8b",
+    "source_index": 486
+  },
+  "stats_match_meta": true,
+  "stats_reconstructed": {
+    "row_atmost_terminal": 2052,
+    "row_cap0_units": 1566,
+    "row_prefix_increment": 238891,
+    "row_prefix_monotone": 389695,
+    "row_x_implies_ge1": 152856,
+    "total_lower_unit": 1,
+    "total_prefix_increment": 41130,
+    "total_prefix_monotone": 43415,
+    "total_reverse_prev_or_prevminus": 41148,
+    "total_reverse_prev_or_x": 43434,
+    "total_upper_unit": 1,
+    "total_x_implies_ge1": 2286,
+    "u_monotonicity": 2159
+  },
+  "total_counter_record": {
+    "aux_vars": 45740,
+    "clauses_after": 173574,
+    "clauses_before": 2159,
+    "end_var": 48026,
+    "kind": "total_exact_prefix",
+    "n_lits": 2286,
+    "name": "total_exact_prefix",
+    "start_var": 2287,
+    "target": 18
+  }
+}

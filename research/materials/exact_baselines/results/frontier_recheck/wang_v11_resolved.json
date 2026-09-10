@@ -1,0 +1,20 @@
+{
+  "schema": "wang_frontier_resolution_v1",
+  "resolution": "resolved_bound_unchanged",
+  "summary": "Wang arXiv:2603.07280v11 (last revised 2026-08-29) still states R_F2(<3,3,3>) >= 20 as the headline result.  The exact rank is placed in [20,23].  No public rank-22 decomposition or rank-21 lower-bound proof was found in the checked record.",
+  "official_latest_url": "https://arxiv.org/abs/2603.07280v11",
+  "official_latest_version": "v11",
+  "official_latest_revised": "2026-08-29",
+  "wang_bound_stated": 20,
+  "wang_interval_stated": [
+    20,
+    23
+  ],
+  "public_rank_21_found": false,
+  "public_rank_22_found": false,
+  "checked_date": "2026-09-09",
+  "evidence_file": "wang_latest_recheck.json",
+  "evidence_abs_v11_html_sha256": "6c1f40026498ba3024b01a52ecbd465f11b3e539d9f10b2ac21fe91b485caaa0",
+  "evidence_pdf_v11_sha256": "a61884b9f60db1e499638f4326e477ff90552722901ae6acd4a314d50b890cb3",
+  "note": "The raw wang_latest_recheck.json has conservative regex flags (frontier_recheck_result=needs_verification, false abstract flags, spurious near-21 flag).  This resolution is based on direct reading of the saved v11 abstract HTML and PDF text, which state 'the bilinear complexity of multiplying two 3x3 matrices over F_2 is at least 20' and place the exact rank in [20,23].  The Theorem 1 statement is R_F2(<3,3,3>) >= 20.  No 'at least 21' statement was found in the PDF text."
+}

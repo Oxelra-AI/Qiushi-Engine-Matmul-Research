@@ -1,0 +1,35 @@
+{
+  "schema": "s0908_lift_row_invalidation_v1",
+  "status": "invalid_for_proof_use",
+  "invalidated_artifacts": [
+    "scripts/dc_verified_export.py",
+    "data/quotient_lift/dc_verified_export.json",
+    "data/quotient_lift/rank2_dc_lift_rows.bin",
+    "data/quotient_lift/rank3_dc_lift_rows.bin",
+    "scripts/qcontaining_analysis.py",
+    "data/quotient_lift/qcontaining_analysis.json",
+    "data/quotient_lift/rank2_qcontaining_lift_rows.bin",
+    "data/quotient_lift/rank3_qcontaining_lift_rows.bin",
+    "scripts/full_merge.py",
+    "data/quotient_lift/full_merged_manifest.json",
+    "data/quotient_lift/rank2_full_merged_n19.bin",
+    "data/quotient_lift/rank3_full_merged_n19.bin",
+    "scripts/complete_closure_suite.py",
+    "data/quotient_lift/complete_closure_suite.json"
+  ],
+  "reasons": [
+    "analysis exporters encode quotient point p as bit p-1, while pair_prop_dfs.cpp and the native E11WANG1 quotient binaries use bit p; bit 0 is outside the DFS point domain.",
+    "analysis exporters use a lowest-set-pivot-bit section, whereas analysis quotient orbits, branch supports, and reconstructed quotient binaries use the highest-set-pivot-bit quotient convention; no coordinate transport was applied before merging rows.",
+    "Corrected subspace-basis reconstruction shows q-containing rows are exactly ordinary quotient rows and graph-family averaging adds zero stronger pure quotient occupation rows for both pivots across all quotient dimensions."
+  ],
+  "replacement_evidence": [
+    "data/quotient_lift/qidentity_all_dims_compare.json",
+    "data/quotient_lift/dc_all_dims.json",
+    "data/quotient_lift/peer_support_coordinate_check.json",
+    "data/quotient_lift/allrows_lift_bit_feasibility_rank2_maxdim9.json",
+    "data/quotient_lift/exact_lift_bit_dfs_peer.json",
+    "data/quotient_lift/minimized_lift_cut_peer.json",
+    "notes/lift_reconstruction_review.md"
+  ],
+  "current_conclusion": "The analysis merged branch closures do not establish R_F2(T333) >= 21. The corrected lift-bit mechanism remains useful: the peer rank-2 quotient Wang survivor is lift-bit infeasible, and the 12-point subset cut is valid for pivot 17 in the canonical quotient coordinates."
+}

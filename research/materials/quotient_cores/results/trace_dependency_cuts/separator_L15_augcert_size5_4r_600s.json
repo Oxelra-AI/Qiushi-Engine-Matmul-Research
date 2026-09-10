@@ -1,0 +1,66 @@
+{
+  "build_sec": 54.462,
+  "certificate_cut_summary": {
+    "aux_vars": 140,
+    "certificate_count": 17,
+    "guard_sizes": [
+      10,
+      5,
+      10,
+      5,
+      6,
+      4,
+      6,
+      9,
+      7,
+      5,
+      6,
+      11,
+      5,
+      6,
+      4,
+      4,
+      8
+    ],
+    "guarded_parity_cuts": 17,
+    "local_inconsistent_cuts": 104
+  },
+  "contraction_lower_bounds": 255,
+  "core": "E11 quotient core",
+  "elapsed_sec": 655.793,
+  "field": "F2",
+  "initial_rows": 257299,
+  "initial_rows_by_L": {
+    "15": 138902,
+    "16": 83046,
+    "17": 34664,
+    "18": 687
+  },
+  "local_trace_cut_size_hist": {
+    "5": 216576
+  },
+  "local_trace_cuts": 216576,
+  "meaning": "Adaptive exact Wang-row separation starting from high-L rows plus optional sound trace-family cuts. Solver statuses are search evidence unless converted to proof.",
+  "parameters": {
+    "cert_cut_path": "data/trace_dependency_cuts/trace_certificate_family_cuts_augmented.json",
+    "cert_cuts": true,
+    "hint_source": "data/distinct_line_cover/best_L15_hint_rounds.json",
+    "max_certs": null,
+    "max_rounds": 4,
+    "max_size5_cuts": null,
+    "seed": 5380,
+    "solver_time": 600.0,
+    "threshold_L": 15,
+    "trace_cuts": "size5",
+    "workers": 8
+  },
+  "rank_s": 19,
+  "rounds": [
+    {
+      "round": 0,
+      "solve_sec": 601.332,
+      "status": "UNKNOWN"
+    }
+  ],
+  "schema": "cert_trace_separator_v1"
+}

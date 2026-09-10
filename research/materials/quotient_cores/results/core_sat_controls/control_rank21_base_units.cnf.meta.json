@@ -1,0 +1,40 @@
+{
+  "base_vars": 546,
+  "branch_index": null,
+  "cnf_path": "data/core_sat_controls/control_rank21_base_units.cnf",
+  "core_nnz": 24,
+  "core_shape": [
+    8,
+    9,
+    9
+  ],
+  "cut_soundness_validation": null,
+  "known_pool": "data/e11_flip_workspace/data/schemes_modp/e11core/mod2-rank21a.npy",
+  "known_row": 0,
+  "known_units": true,
+  "known_validation": {
+    "bad_head": [],
+    "num_clauses": 101090,
+    "ok": true
+  },
+  "layers": [
+    "certified:Brent+Tseytin+XOR",
+    "certified:slice_capacity_ge3",
+    "certified:term_sort_u_integer_nondecreasing",
+    "control:known_base_units"
+  ],
+  "num_clauses": 101090,
+  "num_vars": 28766,
+  "problem": "E11 core CPD over F2",
+  "rank": 21,
+  "semantics": {
+    "Brent": "XOR_t u_t[s]*v_t[b]*w_t[c] = core[s,b,c] for all 648 entries",
+    "branch": "earlier quotient point orbits forbidden and one term fixed to branch representative; complete only across all branches with verified orbit cover",
+    "capacity": "rank(I3)=3 in each of the eight nonzero slices implies at least three active terms per slice",
+    "core_convention": "T333[1:9,:,:], a00 slice deleted",
+    "sort_u": "term permutation symmetry permits integer-nondecreasing u order"
+  },
+  "sha256": "14dea0b7436820b798ff019929a486884d1ce20c9d70564aed1ccd4cdc28f84f",
+  "slice_capacity_ge3": true,
+  "sort_u": true
+}

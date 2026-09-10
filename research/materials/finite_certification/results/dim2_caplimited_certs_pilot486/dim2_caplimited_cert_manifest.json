@@ -1,0 +1,74 @@
+{
+  "meaning": "Cap-limited occurrence-CNF DRAT certificate attempts for exactly the eight dim-2 orbit exclusions 484--491 needed by the shortened saturation route.",
+  "records": [
+    {
+      "active_row_count": 2139,
+      "all_row_count": 29210,
+      "all_row_sha256": "f572a6b5926f29b49b50f69116b76194ca0c8f9558672d75fed6b355ea0de4ca",
+      "attempted_raise_to": 19,
+      "basis": [
+        10,
+        68
+      ],
+      "cadical_returncode": null,
+      "cap_limit": 3,
+      "caplimited_row_count": 15733,
+      "caplimited_row_sha256": "2a06a1af74de1a0977065b5ef1fdf1c763fa8a69d0cfd90393d40c033bb33b8e",
+      "cnf_meta": {
+        "clauses": 631562,
+        "npts": 127,
+        "path": "data/dim2_caplimited_certs_pilot486/orbit486/orbit486_cap3_core.cnf",
+        "row_constraints_encoded": 2139,
+        "sha256": "f913734b6e2e3ff2b11696c413f1ca4470b0eaa15236828baa8c33cf74bf1f95",
+        "slot_exactly_one_clauses": 6804,
+        "slots": 18,
+        "unit_forbidden_literals": 1566,
+        "vars": 242193
+      },
+      "cnf_sha256": "f913734b6e2e3ff2b11696c413f1ca4470b0eaa15236828baa8c33cf74bf1f95",
+      "core_path": "data/dim2_caplimited_certs_pilot486/orbit486/orbit486_cap3_core.json",
+      "core_sha256": "dc0d00a6890500bd5c8907e495228d0f3f3c2485131bb535c8e75fd34a106013",
+      "drat_path": "data/dim2_caplimited_certs_pilot486/orbit486/orbit486_cap3_core.drat",
+      "drat_returncode": null,
+      "drat_sha256": "4a7065de7562122ab36d843903a655b3c85774804576e3c7e3daab64e79c8bed",
+      "drat_verified": false,
+      "elapsed_before_sat_sec": 1.2087774276733398,
+      "elapsed_sec": 303.0901765823364,
+      "extract_status": "INFEASIBLE",
+      "index": 486,
+      "old_lb": 18,
+      "plain_shrunk_solve": {
+        "branches": 2094,
+        "conflicts": 85,
+        "elapsed_sec": 0.10076236724853516,
+        "feasible": false,
+        "status": "INFEASIBLE"
+      },
+      "proof_log_path": "data/dim2_caplimited_certs_pilot486/orbit486/orbit486_cap3_proof_logs.json",
+      "quotient_dim": 7,
+      "rank_pattern": [
+        2,
+        2,
+        2
+      ],
+      "schema": "s0908_dim2_caplimited_cert_v1",
+      "shrink_removed_count": 0,
+      "shrunk_row_count": 2139,
+      "shrunk_row_sha256": "6ec2fe1b7be86cc7c52b33d223b342a7599739c5174a9e654adc938f18a4cd8b"
+    }
+  ],
+  "schema": "s0908_dim2_caplimited_cert_manifest_v1",
+  "summary": {
+    "drat_verified": [],
+    "extract_infeasible": [
+      486
+    ],
+    "failed_drat": [
+      486
+    ],
+    "plain_infeasible": [
+      486
+    ],
+    "total": 1
+  }
+}

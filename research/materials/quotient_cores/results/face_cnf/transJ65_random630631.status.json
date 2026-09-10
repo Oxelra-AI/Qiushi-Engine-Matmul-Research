@@ -1,0 +1,31 @@
+{
+  "cadical_elapsed_sec": 638.474,
+  "cadical_exit": 20,
+  "cadical_log": "data/face_cnf/transJ65_random630631.cadical.log",
+  "cadical_log_parse": {
+    "contains_sat": false,
+    "contains_unsat": true,
+    "contains_verified": false,
+    "tail": "151585 26014 1.4 8 6 2 3  9% 1553678 388980 14%\nc i 637.69 1091 10 14 8790  1 151586 26014 1.4 8 6 2 3  9% 1553678 388975 14%\nc } 637.70 1091 10 14 8790  1 151592 26015 1.4 8 6 2 3  9% 1553678 374205 14%\nc 0 637.70 1091 10 14 8790  1 151592 26015 1.4 8 6 2 3  9% 1553678 374205 14%\nc \nc --- [ closing proof ] ------------------------------------------------------\nc \nc DRAT proof file 'data/face_cnf/transJ65_random630631.drat' closed\nc DRAT 7983168 added clauses 40.65%\nc DRAT 11654867 deleted clauses 59.35%\nc DRAT 471124183 bytes (449.30 MB)\nc \nc --- [ result ] -------------------------------------------------------------\nc \ns UNSATISFIABLE\nc \nc --- [ run-time profiling ] -------------------------------------------------\nc \nc process time taken by individual solving procedures\nc (percentage relative to process time for solving)\nc \nc       538.44   84.66% search\nc       536.83   84.41% unstable\nc        96.33   15.15% simplify\nc        19.12    3.01% preprocess\nc        15.68    2.47% vivify\nc        15.21    2.39% fastelim\nc        13.27    2.09% factor\nc        12.26    1.93% elim\nc         9.42    1.48% subsume\nc         6.46    1.02% sweep\nc         6.19    0.97% congruence\nc         1.81    0.29% probe\nc         1.72    0.27% backbone\nc         1.71    0.27% parse\nc         1.61    0.25% lucky\nc         1.13    0.18% ternary\nc   =================================\nc       635.99   99.73% solve\nc \nc last line shows process time for solving\nc (percentage relative to total process time)\nc \nc --- [ statistics ] ---------------------------------------------------------\nc \nc chronological:             28482        18.79 %  of conflicts\nc conflicts:                151592       238.36    per second\nc backbone:               23967953       888.59 %  of vars\nc decisions:                222842       350.39    per second\nc eliminated:              2290402        84.91 %  of all variables\nc factored:                     40         0.01 %  of variables\nc fixed:                     32700         1.21 %  of all variables\nc learned:                  148071        97.68 %  per conflict\nc learned_lits:            3214048       100.00 %  learned literals\nc minimized:                     0         0.00 %  learned literals\nc shrunken:                1839244        57.23 %  learned literals\nc minishrunken:             139967         4.35 %  learned literals\nc otfs:                        797         0.53 %  of conflict\nc propagations:         2633050810         4.14 M  per second\nc reduced:                   42275        27.89 %  per conflict\nc rephased:                     16      9474.50    interval\nc restarts:                   8790        17.25    interval\nc subsumed:                1533914        11.60 %  of all clauses\nc strengthened:               7683         0.06 %  of all clauses\nc ticks:               14039543119         6.02    propagation\nc vivified:                   1837         0.01 %  of all clauses\nc weakened:                8830988         3.10    average size\nc \nc seconds are measured in process time for solving\nc \nc --- [ glue usage ] ---------------------------------------------------------\nc \nc focused glue 2 used 175951 clauses 30.38% accumulated 53.56% tier1\nc focused glue 3 used 95598 clauses 16.50% accumulated 70.07% tier2\nc \nc stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1\nc stable glue 3 used 0 clauses 0.000% accumulated 0.000%\nc stable glue 4 used 0 clauses 0.000% accumulated 0.000%\nc stable glue 5 used 0 clauses 0.000% accumulated 0.000%\nc stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2\nc \nc \nc --- [ resources ] ----------------------------------------------------------\nc \nc total process time since initialization:       637.70    seconds\nc total real time since initialization:          638.33    seconds\nc maximum resident set size of process:         1818.56    MB\nc \nc --- [ shutting down ] ------------------------------------------------------\nc \nc exit 20\n"
+  },
+  "cnf": "data/face_cnf/transJ65_random630631.cnf",
+  "drat": "data/face_cnf/transJ65_random630631.drat",
+  "drat_trim_elapsed_sec": 633.012,
+  "drat_trim_exit": 0,
+  "drat_trim_log": "data/face_cnf/transJ65_random630631.drat_trim.log",
+  "drat_trim_log_parse": {
+    "contains_sat": false,
+    "contains_unsat": false,
+    "contains_verified": true,
+    "tail": "\nc parsing input formula with 2697267 variables and 5284109 clauses\n\nc finished parsing\n\nc detected empty clause; start verification via backward checking\n\nc 88720 of 5284109 clauses in core                            \n\nc 176885 of 7983169 lemmas in core using 5159383 resolution steps\n\nc 176 RAT lemmas in core; 17132 redundant literals in core lemmas\n\ns VERIFIED\n\nc verification time: 632.867 seconds\n"
+  },
+  "hashes": {
+    "data/face_cnf/transJ65_random630631.cadical.log": "2baecb8978bf59da764dddd4af15a22fb5497fba616a74dd44fb3b31bde35035",
+    "data/face_cnf/transJ65_random630631.cnf": "d9e83ca246234cfa6f3c10b7c51a0154d5c7bf15244aaa5e9c6245c61635ca54",
+    "data/face_cnf/transJ65_random630631.drat": "7e08f9406db6072ca7f7d32e6a97272c378a444eb77020f927db951f4f99d97e",
+    "data/face_cnf/transJ65_random630631.drat_trim.log": "0c0b843d36ef73e980410f69a670ab855214c3b1eb767f5e8bbe5d6990fc8356",
+    "data/face_cnf/transJ65_random630631.input_core.cnf": "d4f8e42b332c1e38783d45afb659701cd931b49b219851822616bc7de14434ad",
+    "data/face_cnf/transJ65_random630631.meta.json": "dabf01eb70b8659345a53e9ded55357961d1e081cf119777eac400297d05a351"
+  },
+  "input_core_cnf": "data/face_cnf/transJ65_random630631.input_core.cnf"
+}

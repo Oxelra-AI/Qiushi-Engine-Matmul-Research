@@ -1,0 +1,95 @@
+{
+  "W_basis": [
+    19,
+    10
+  ],
+  "W_rref": [
+    19,
+    10
+  ],
+  "cadical": {
+    "command": [
+      "cadical",
+      "-q",
+      "--sat",
+      "--binary=false",
+      "-t",
+      "240",
+      "-w",
+      "data/encoder_target19_external/orbit_484/orbit_484_target_19.sol",
+      "data/encoder_target19_external/orbit_484/orbit_484_target_19.cnf"
+    ],
+    "elapsed_sec": 240.21049427986145,
+    "returncode": 0,
+    "stderr_tail": "",
+    "stdout_tail": ""
+  },
+  "cert_index": 484,
+  "cnf_clauses": 4308342,
+  "cnf_path": "data/encoder_target19_external/orbit_484/orbit_484_target_19.cnf",
+  "cnf_sha256": "7b10c19affa6c5f8a2669e46b64bfa411f5962a8a6145fe06451c6cbfb99d91c",
+  "cnf_variables": 2053680,
+  "copy_variables": 170,
+  "ok": false,
+  "raw_lb": 18,
+  "record_path": "data/encoder_target19_external/orbit_484/orbit_484_target19_external_sat_witness.json",
+  "row_meta": {
+    "W_rref": [
+      19,
+      10
+    ],
+    "cap_hist": {
+      "1": 84,
+      "10": 972,
+      "13": 116,
+      "16": 13,
+      "2": 1501,
+      "3": 4788,
+      "4": 8964,
+      "5": 6348,
+      "6": 600,
+      "7": 5728,
+      "8": 96
+    },
+    "free_bits": [
+      0,
+      1,
+      2,
+      5,
+      6,
+      7,
+      8
+    ],
+    "mask_popcount_hist": {
+      "1": 127,
+      "15": 11811,
+      "3": 2667,
+      "31": 2667,
+      "63": 127,
+      "7": 11811
+    },
+    "missing_lut_rows": 0,
+    "negative_cap_rows": 0,
+    "quotient_dim": 7,
+    "quotient_subspace_dim_hist": {
+      "1": 127,
+      "2": 2667,
+      "3": 11811,
+      "4": 11811,
+      "5": 2667,
+      "6": 127
+    },
+    "row_digest": "8f4c1f5cde446043800fbfe192b1169b035a6611c1d3d3e85feca984ac66a362",
+    "strict_subspaces": 29210,
+    "tautological_source_rows": 0,
+    "unique_rows": 29210
+  },
+  "sat": false,
+  "schema": "encoder_target19_external_orbit_v1",
+  "singleton_upper_bound_hist": {
+    "1": 84,
+    "2": 43
+  },
+  "target": 19,
+  "witness": null
+}

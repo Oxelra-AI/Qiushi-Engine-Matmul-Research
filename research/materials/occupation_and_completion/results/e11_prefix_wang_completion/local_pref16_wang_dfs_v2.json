@@ -1,0 +1,119 @@
+{
+  "allowed_counts_head": [
+    {
+      "allowed_count": 5,
+      "allowed_head": [
+        215,
+        216,
+        219,
+        252,
+        255
+      ],
+      "left": 3,
+      "partial": [],
+      "start": 1,
+      "zero_slack_constraints": 348
+    },
+    {
+      "allowed_count": 0,
+      "allowed_head": [],
+      "left": 2,
+      "partial": [
+        215
+      ],
+      "start": 215,
+      "zero_slack_constraints": 665
+    },
+    {
+      "allowed_count": 0,
+      "allowed_head": [],
+      "left": 2,
+      "partial": [
+        216
+      ],
+      "start": 216,
+      "zero_slack_constraints": 401
+    },
+    {
+      "allowed_count": 0,
+      "allowed_head": [],
+      "left": 2,
+      "partial": [
+        219
+      ],
+      "start": 219,
+      "zero_slack_constraints": 429
+    },
+    {
+      "allowed_count": 0,
+      "allowed_head": [],
+      "left": 2,
+      "partial": [
+        252
+      ],
+      "start": 252,
+      "zero_slack_constraints": 453
+    },
+    {
+      "allowed_count": 0,
+      "allowed_head": [],
+      "left": 2,
+      "partial": [
+        255
+      ],
+      "start": 255,
+      "zero_slack_constraints": 440
+    }
+  ],
+  "base_prefix_stats": {
+    "max_excess": 0,
+    "violation_count": 0
+  },
+  "best_partial_dead_end_recorded": {
+    "filled_remaining_terms": 1,
+    "partial_completion": [
+      215
+    ],
+    "reason": "no_allowed_next_point",
+    "stats_for_prefix_plus_partial_only": {
+      "max_excess": 0,
+      "violation_count": 0
+    },
+    "unfilled_remaining_terms": 2
+  },
+  "complete_wang_subtree_refuted": true,
+  "elapsed_sec": 0.12562942504882812,
+  "field": "F2",
+  "meaning": "If complete_wang_subtree_refuted is true, the prefix has no completion satisfying all 417,199 E11 Wang occupation inequalities. If survivors exist, they are A-side candidates only and still need fixed-A Brent solving.",
+  "nodes_by_depth": {
+    "0": 1,
+    "1": 5,
+    "2": 0,
+    "3": 0
+  },
+  "prefix": [
+    1,
+    2,
+    3,
+    4,
+    12,
+    16,
+    20,
+    28,
+    32,
+    36,
+    92,
+    97,
+    108,
+    130,
+    144,
+    195
+  ],
+  "prefix_size": 16,
+  "purpose": "exact small-h DFS for complete E11 Wang occupation completion of a prefix",
+  "rank": 19,
+  "record_truncated_or_node_limited": false,
+  "remaining_terms": 3,
+  "survivor_completions_head": [],
+  "survivor_count_recorded": 0
+}

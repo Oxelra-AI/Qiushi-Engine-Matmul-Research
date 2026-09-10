@@ -1,0 +1,23 @@
+{
+  "base_clauses": 110786,
+  "base_vars": 30908,
+  "elapsed_sec": 0.222,
+  "encoding": "AND variables for u_ts & v_out and u_ts & w_out; forward ORs into VLEAK/WLEAK; long clauses encode VLEAK & WLEAK => sum u_ts >= 5.",
+  "half_purity_statement": "For every slice s, if active terms leak on both v outside R_j and w outside C_i, then at least five terms are active in s.",
+  "input_cnf": "data/core_sat_controls/control_rank21_blockspread_units.cnf",
+  "output_cnf": "data/core_sat_controls/control_rank21_blockspread_halfpurity_units.cnf",
+  "rank": 21,
+  "stats": {
+    "and_definition_clauses": 6048,
+    "half_purity_cardinality_clauses": 47880,
+    "leak_or_forward_clauses": 2016,
+    "new_clauses": 55944,
+    "new_vars": 2032,
+    "slice_vleak_vars": 8,
+    "slice_wleak_vars": 8,
+    "y_v_leak_vars": 1008,
+    "y_w_leak_vars": 1008
+  },
+  "total_clauses": 166730,
+  "total_vars": 32940
+}

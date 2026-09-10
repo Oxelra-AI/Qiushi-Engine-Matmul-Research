@@ -1,0 +1,102 @@
+{
+  "T_stabilizer_count_fixing_pivot": 1152,
+  "T_stabilizer_no_transpose_count": 576,
+  "T_stabilizer_transpose_count": 576,
+  "capacity_two_labels": {
+    "1": "E12",
+    "2": "E13",
+    "3": "E12+E13",
+    "32": "E31",
+    "36": "E21+E31",
+    "4": "E21"
+  },
+  "capacity_two_matches_expected": true,
+  "capacity_two_points": [
+    1,
+    2,
+    3,
+    4,
+    32,
+    36
+  ],
+  "elapsed_sec": 2.722,
+  "expected_two_rulings_through_deleted_direction": {
+    "column_ruling": [
+      4,
+      32,
+      36
+    ],
+    "column_ruling_labels": {
+      "32": "E31",
+      "36": "E21+E31",
+      "4": "E21"
+    },
+    "row_ruling": [
+      1,
+      2,
+      3
+    ],
+    "row_ruling_labels": {
+      "1": "E12",
+      "2": "E13",
+      "3": "E12+E13"
+    }
+  },
+  "full_T_action_count": 56448,
+  "full_stabilizer_orbits_on_capacity_two": [
+    [
+      1,
+      2,
+      3,
+      4,
+      32,
+      36
+    ]
+  ],
+  "linearity_spotcheck_ok": true,
+  "maps_each_capacity_two_point_to_1": {
+    "1": {
+      "image_of_p": 1,
+      "perm_index": 16
+    },
+    "2": {
+      "image_of_p": 1,
+      "perm_index": 0
+    },
+    "3": {
+      "image_of_p": 1,
+      "perm_index": 8
+    },
+    "32": {
+      "image_of_p": 1,
+      "perm_index": 1
+    },
+    "36": {
+      "image_of_p": 1,
+      "perm_index": 97
+    },
+    "4": {
+      "image_of_p": 1,
+      "perm_index": 385
+    }
+  },
+  "no_transpose_orbits_on_capacity_two": [
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      4,
+      32,
+      36
+    ]
+  ],
+  "pivot": 1,
+  "pivot_label": "E11",
+  "schema": "induced_core_symmetry_v1",
+  "transpose_exchanges_rulings": true,
+  "unique_induced_core_stabilizer_count": 1152,
+  "unique_induced_no_transpose_count": 576,
+  "unique_induced_transpose_count": 576
+}

@@ -1,0 +1,36 @@
+# Recorded results and scientific inputs: Deformation and incidence
+
+[Topic overview](README.md) · [Coverage and use](../../../reproducibility/research-materials.md)
+
+These are historical scientific artifacts. The maintained theorem and replay entry
+point are in the report and proof package, not inferred from a saved status field.
+
+- [completion chart results](results/completion_chart/completion_chart_results.json)
+- [homotopy results](results/completion_chart/homotopy_results.json)
+- [complete core rescan and corrections](results/core_incidence/complete_core_rescan_and_corrections.json)
+- [flag local polytope](results/core_incidence/flag_local_polytope.json)
+- [pencil budget wang filter](results/core_incidence/pencil_budget_wang_filter.json)
+- [violation flag context](results/core_incidence/violation_flag_context.json)
+- [ky tangent at bilr](results/ky_tangent/ky_tangent_at_bilr.json)
+- [index uv](results/pairing_incidence_charts/index_uv.json)
+- [serendipitous 8d34 uv incidence charts](results/pairing_incidence_charts/serendipitous_8d34_uv_incidence_charts.json)
+- [pairing defect tangent cone](results/rank22_probes/pairing_defect_tangent_cone.json)
+- [rank22 jacobian analysis](results/rank22_probes/rank22_jacobian_analysis.json)
+- [rank22 jacobian probes](results/rank22_probes/rank22_jacobian_probes.json)
+- [orbit445 Smin tight space](results/s_tight_obstruction/orbit445_Smin_tight_space.json)
+- [koszul block bounds](results/semisimple_arrangement/koszul_block_bounds.json)
+- [pilot200](results/semisimple_arrangement/pilot200.json)
+- [semisimple arrangement blockrank](results/semisimple_arrangement/semisimple_arrangement_blockrank.json)
+- [semisimple arrangement blockrank v2](results/semisimple_arrangement/semisimple_arrangement_blockrank_v2.json)
+- [semisimple arrangement blockrank v3 weaker inputs](results/semisimple_arrangement/semisimple_arrangement_blockrank_v3_weaker_inputs.json)
+- [weight block pilot](results/semisimple_weight_blocks/weight_block_pilot.json)
+- [e11 pool shadow incidence](results/shadow_filter/e11_pool_shadow_incidence.json)
+- [invariant line and singularity](results/singular_stratum/invariant_line_and_singularity.json)
+- [singular stratum](results/singular_stratum/singular_stratum.json)
+- [singular stratum v2](results/singular_stratum/singular_stratum_v2.json)
+- [terracini jordan](results/terracini_jordan/terracini_jordan.json)
+- [sfree budget scan all620](results/v_sfree_obstruction/sfree_budget_scan_all620.json)
+- [sfree budget scan first50](results/v_sfree_obstruction/sfree_budget_scan_first50.json)
+- [sfree first20](results/v_sfree_obstruction/sfree_first20.json)
+- [vs smin all620 intcover](results/v_sfree_obstruction/vs_smin_all620_intcover.json)
+- [vs smin all620](results/vs_smin/vs_smin_all620.json)

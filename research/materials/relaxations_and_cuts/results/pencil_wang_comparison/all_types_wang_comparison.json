@@ -1,0 +1,170 @@
+{
+  "total_dual_lines": 10795,
+  "rank_type_summary": {
+    "(3, 3, 3)": {
+      "count": 50,
+      "L_distribution": {
+        "6": 50
+      },
+      "min_L": 6,
+      "max_L": 6,
+      "rank_type": [
+        3,
+        3,
+        3
+      ],
+      "max_rank": 3,
+      "min_rank": 3,
+      "wang_c10_lower": 3,
+      "pencil_c10_lower_if_applicable": 3,
+      "pencil_redundant_at_min_L": true
+    },
+    "(3, 3, 6)": {
+      "count": 378,
+      "L_distribution": {
+        "6": 378
+      },
+      "min_L": 6,
+      "max_L": 6,
+      "rank_type": [
+        3,
+        3,
+        6
+      ],
+      "max_rank": 6,
+      "min_rank": 3,
+      "wang_c10_lower": 0,
+      "pencil_c10_lower_if_applicable": 3,
+      "pencil_redundant_at_min_L": false
+    },
+    "(3, 6, 6)": {
+      "count": 1377,
+      "L_distribution": {
+        "9": 1377
+      },
+      "min_L": 9,
+      "max_L": 9,
+      "rank_type": [
+        3,
+        6,
+        6
+      ],
+      "max_rank": 6,
+      "min_rank": 3,
+      "wang_c10_lower": 3,
+      "pencil_c10_lower_if_applicable": 3,
+      "pencil_redundant_at_min_L": true
+    },
+    "(3, 6, 9)": {
+      "count": 1440,
+      "L_distribution": {
+        "9": 1440
+      },
+      "min_L": 9,
+      "max_L": 9,
+      "rank_type": [
+        3,
+        6,
+        9
+      ],
+      "max_rank": 9,
+      "min_rank": 3,
+      "wang_c10_lower": 0,
+      "pencil_c10_lower_if_applicable": 3,
+      "pencil_redundant_at_min_L": false
+    },
+    "(3, 9, 9)": {
+      "count": 468,
+      "L_distribution": {
+        "12": 468
+      },
+      "min_L": 12,
+      "max_L": 12,
+      "rank_type": [
+        3,
+        9,
+        9
+      ],
+      "max_rank": 9,
+      "min_rank": 3,
+      "wang_c10_lower": 3,
+      "pencil_c10_lower_if_applicable": 3,
+      "pencil_redundant_at_min_L": true
+    },
+    "(6, 6, 6)": {
+      "count": 2210,
+      "L_distribution": {
+        "9": 1898,
+        "12": 312
+      },
+      "min_L": 9,
+      "max_L": 12,
+      "rank_type": [
+        6,
+        6,
+        6
+      ],
+      "max_rank": 6,
+      "min_rank": 6,
+      "wang_c10_lower": 3,
+      "pencil_c10_lower_if_applicable": 6,
+      "pencil_redundant_at_min_L": false
+    },
+    "(6, 6, 9)": {
+      "count": 3168,
+      "L_distribution": {
+        "12": 3168
+      },
+      "min_L": 12,
+      "max_L": 12,
+      "rank_type": [
+        6,
+        6,
+        9
+      ],
+      "max_rank": 9,
+      "min_rank": 6,
+      "wang_c10_lower": 3,
+      "pencil_c10_lower_if_applicable": 6,
+      "pencil_redundant_at_min_L": false
+    },
+    "(6, 9, 9)": {
+      "count": 1512,
+      "L_distribution": {
+        "12": 1512
+      },
+      "min_L": 12,
+      "max_L": 12,
+      "rank_type": [
+        6,
+        9,
+        9
+      ],
+      "max_rank": 9,
+      "min_rank": 6,
+      "wang_c10_lower": 3,
+      "pencil_c10_lower_if_applicable": 6,
+      "pencil_redundant_at_min_L": false
+    },
+    "(9, 9, 9)": {
+      "count": 192,
+      "L_distribution": {
+        "14": 192
+      },
+      "min_L": 14,
+      "max_L": 14,
+      "rank_type": [
+        9,
+        9,
+        9
+      ],
+      "max_rank": 9,
+      "min_rank": 9,
+      "wang_c10_lower": 5,
+      "pencil_c10_lower_if_applicable": 9,
+      "pencil_redundant_at_min_L": false
+    }
+  },
+  "elapsed_sec": 4.6830010414123535,
+  "interpretation": "Wang c10 lower bound = min_L(D⊥) - max_rank_in_type. Pencil c10 lower bound = min_rank_in_type (under N^2=0 assumption). Pencil is redundant when Wang already implies at least as tight a bound. The comparison is conservative: pencil may need N^2=0 which may not hold for all rank types; and non-idempotent W may reduce the pencil bound."
+}

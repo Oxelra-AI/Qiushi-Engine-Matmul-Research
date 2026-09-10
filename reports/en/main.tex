@@ -1,0 +1,628 @@
+% Compile: latexmk -xelatex -interaction=nonstopmode -halt-on-error main.tex
+\documentclass[11pt,a4paper]{article}
+\input{latex/preamble}
+\input{latex/authors}
+
+\title{A Structural Proof of the Lower Bound 21\\
+for $3\times3$ Matrix Multiplication over $\mathbb{F}_2$}
+\newcommand{\ReportSubtitle}{Qiushi Engine's Research Trajectory from Algorithm Search to Algebraic Obstruction}
+\date{9 September 2026}
+\hypersetup{
+  pdftitle={A Structural Proof of the Lower Bound 21 for 3x3 Matrix Multiplication over F2},
+  pdfauthor={\ReportAuthorNames},
+  pdfsubject={Bilinear complexity, a structural lower-bound proof, and the documented Qiushi Engine research process}
+}
+\begin{document}
+\maketitle
+\thispagestyle{plain}
+\begin{abstract}
+We give a structural proof that every exact bilinear algorithm for $3\times3$
+matrix multiplication over the two-element field $\FF$ requires at least
+21 scalar multiplications. The argument combines certified finite premises
+with a short algebraic obstruction. Quotient occupation bounds, including
+eight strengthened two-dimensional bounds certified by CNF/DRAT proofs,
+force the high-rank first factors of a hypothetical 20-term decomposition
+into an affine row or column coset. Finite geometry then forces sixteen
+rank-one, one rank-two, and three rank-three first factors: the
+matrix-rank profile $(16,1,3)$, exactly saturating a $27\times27$ split
+flattening. Equality yields orthogonal-idempotent identities; a
+tensor-specific cross-factor product identity makes two invertible first
+factors impossible, contradicting the required three.
+
+Qiushi Engine independently developed the argument through sustained,
+end-to-end autonomous mathematical research, initially addressing rank-22
+construction and rank-23 optimality.
+Numerical experiments clarified exactness, quotient searches exposed the
+gap between supports and complete decompositions, and a return to the
+full tensor revealed the equality case that resolves the lower-bound
+argument. A documented research trajectory, reconstructed from Qiushi
+Engine's research memory, connects the evolving questions, experiments,
+corrections, and mathematical insights that led to the proof.
+Together with the accompanying notes, programs, results, and proof
+certificates, it makes both the argument and the research process
+available for examination and reuse. The result leaves
+$21\le R_{\FF}(\Tmmm)\le23$ and constrains zero-excess rank-22
+decompositions, whose existence remains open.
+\par\smallskip\noindent\textbf{Keywords}\quad
+Matrix multiplication; tensor rank; bilinear complexity; finite fields;
+computer-assisted proof; autonomous mathematical research
+\end{abstract}
+{\setstretch{1.05}\tableofcontents\par}
+\clearpage
+
+\section{Introduction}
+
+Ordinary multiplication of two $3\times3$ matrices uses 27 scalar
+multiplications. A bilinear algorithm reduces this count by multiplying selected
+linear combinations of entries from the two inputs, then combining the
+results. Constructing one such algorithm establishes an upper bound;
+proving a lower bound requires ruling out every shorter algorithm in the
+same model. The field matters: throughout this report the scalar arithmetic
+is over the two-element field, where addition is modulo two.
+
+The count measures algebraic complexity, not machine instructions or
+hardware throughput. The scientific question is which exact decompositions
+are possible. Our proof identifies a situation in which apparently separate
+constraints on the factors become an equality, and that equality imposes
+identities strong enough to rule out the proposed decomposition.
+
+The \emph{bilinear complexity} $R(T)$ of a tensor $T$ over a field $k$ is the minimum number of scalar multiplications in any bilinear algorithm that computes the multilinear map represented by $T$.  Equivalently, it is the tensor rank of~$T$: the minimum $r$ such that $T$ can be written as a sum of $r$ simple (rank-one) tensors. For the $3\times3$ matrix multiplication tensor~$\Tmmm$ over~$\FF$, the earlier baseline inherited by this research was
+\[
+  20\;\le\;R_{\FF}(\Tmmm)\;\le\;23.
+\]
+The upper bound~23 is achieved by Laderman's algorithm~\cite{laderman1976noncommutative}, adapted to~$\FF$, and by explicit 23-multiplication schemes found by SAT search~\cite{heule2019waysa}.  The lower bound~20 was proved by Wang~\cite{wangautomated} using an automated framework that combines orbit classification of linear restrictions on the first matrix factor with dynamic programming over four lower-bound techniques (flattening, forced product, degenerate reduction, and substitution with backtracking).  Wang's method produces a machine-checkable proof certificate with~496 representative subspaces; for the certificate used here, we re-ran Wang's verifier on the pinned file and independently re-expanded those 496 nodes to the complete lower-bound table with zero value mismatches.
+
+General lower-bound methods for matrix multiplication, including Bläser's quadratic rank bounds and Landsberg's asymptotic rank improvements~\cite{blaser1999focs,landsberg2012lower}, leave exact small tensors such as $\Tmmm$ unresolved. Over~$\FF$, the decomposition geometry differs from that over larger fields because the two-element field has no nontrivial scalar multiples.
+
+\begin{theorem}[Main result]\label{thm:main}
+  $R_{\FF}(\Tmmm)\ge 21$.  That is, every bilinear algorithm for $3\times 3$ matrix multiplication over~$\FF$ requires at least~21 scalar multiplications.
+\end{theorem}
+
+\noindent\textbf{The mechanism.}\quad
+The proof excludes length-20 decompositions by the interplay of two constraints that are individually insufficient but complementary at length~20.  Wang's quotient occupation bounds restrict how many factors of a decomposition can belong to any subspace of the factor space.  The split-flattening inequality forces the sum of ranks of all factors to be at least~27.  The length-20 caps used by the proof are exactly tight in three places: a line with $L=19$ has cap~1, an all-high two-plane after our raise to $L=19$ has cap~1, and an affine hyperplane in the normalized coset with $L=17$ has cap~3.  These three cap families force the rank sum to equal exactly~27---a zero-excess endpoint.  At zero excess the split-flattened terms form a direct-sum decomposition of a permutation matrix, yielding orthogonal-idempotent identities that constrain the algebraic dependence between the matrix factors.  For the matrix-multiplication tensor, these identities make a pair of invertible first-slot factors impossible, while the forced rank profile demands three such factors.
+
+\noindent\textbf{Consequences and further questions.}\quad
+The theorem leaves the exact binary-field rank in $[21,23]$. The same
+saturation identity restricts rank-22 decompositions whose first-factor
+rank sum is exactly~27: at most one of those factors may be invertible.
+Section~\ref{sec:outlook} derives this consequence and explains why the
+current occupation bounds do not force equality at length~21.
+
+\noindent\textbf{Relation to prior work.}\quad
+The flattening rank-sum constraint $\sum_t\rk(A_t)\ge\rk(\Phi_A(T))$ follows from subadditivity of matrix rank; flattenings are standard tools in algebraic complexity~\cite{burgisser1997algebraic,blaser1999focs}. The structure theorem that matrices with pairwise rank-one differences lie in a common affine row or column coset belongs to Hua's geometry of matrices~\cite{hua1945geometries,wan1996geometry,pazzis2015hua}. Rank-additive decompositions and idempotent identities are classical linear algebra; related identities appear in~\cite{cochran1934distribution,tian2001rank}, and Lemma~\ref{lem:saturation} is proved directly below over the field needed here. The specific route presented here combines CNF/DRAT certification of eight quotient bounds with rank-additivity at zero excess and the tensor-specific product identity~\eqref{eq:product}, obtaining a structural contradiction rather than a final enumeration of first-factor profiles.
+
+
+\input{sections/research_process}
+
+%% ===========================================================
+\section{Setting and Wang's Certificate}\label{sec:setting}
+
+\subsection{Tensor Convention}
+
+The $3\times 3$ matrix multiplication tensor $\Tmmm$ lives in $(\FF^9)^{\otimes 3}$, where each copy of~$\FF^9$ is identified with the space of $3\times 3$ matrices over~$\FF$.  We index it by
+\begin{equation}\label{eq:tensor}
+  T[3i+j,\;3j+k,\;3i+k] = 1 \qquad (0\le i,j,k<3),
+\end{equation}
+with all other entries zero. Under the coordinate pairing
+$\langle A,X\rangle=\sum_{i,j}A_{ij}X_{ij}=\tr(A^TX)$, its trilinear
+form on input and test matrices is $(X,Y,Z)\mapsto\tr(XYZ^T)$.
+A rank-one summand is written $A_t\otimes B_t\otimes C_t$, where
+$A_t,B_t,C_t$ are coefficient matrices. An exact decomposition of length~$r$ is an identity
+\begin{equation}\label{eq:general-decomposition}
+  \Tmmm \;=\; \sum_{t=1}^r A_t\otimes B_t\otimes C_t,
+\end{equation}
+which computes $XY=\sum_t\langle A_t,X\rangle\langle B_t,Y\rangle C_t$
+using $r$ scalar multiplications and proves $R(\Tmmm)\le r$; equality
+requires a separate lower bound.
+
+For $W\le\FF^9$, let $q_W:\FF^9\to\FF^9/W$ and define
+$T_W=(q_W\otimes\mathrm{id}\otimes\mathrm{id})\Tmmm$.
+Its dual first-input space is $W^\perp$ under the coordinate pairing:
+quotienting coefficient factors is equivalent to restricting the first
+input to this annihilator, not to the subspace~$W$ itself.
+
+The tensor has a symmetry relevant to the proof: the map $(A,B,C)\mapsto(A^T,C,B)$ preserves the trilinear form because $\tr(ABC^T)=\tr(A^TCB^T)$.  This transposition symmetry allows us to reduce the analysis of ``row-type'' decompositions to ``column-type'' by transposing the $A$-factors.
+
+\subsection{Wang's Quotient Occupation Inequality}
+
+Wang~\cite{wangautomated} proves $R_{\FF}(\Tmmm)\ge20$ by a certified computation. Write $L_0(W)$ for the lower bound in the fixed, inherited table, so $L_0(W)\le R(T_W)$. The table value is not the true quotient rank and is not redefined when we prove a stronger bound. The fundamental inequality is:
+
+\begin{proposition}[Occupation inequality]\label{prop:occupation}
+  Let $\Tmmm=\sum_{t=1}^n A_t\otimes B_t\otimes C_t$ be a length-$n$ decomposition, and let $W\le\FF^9$.  If $m(W)$ denotes the number of indices~$t$ with $A_t\in W$, then
+  \begin{equation}\label{eq:occ}
+    m(W)\;\le\; n-R(T_W)\;\le\;n-L_0(W).
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  Terms with $A_t\in W$ vanish under $q_W$. The remaining terms give a decomposition of $T_W$ of length at most $n-m(W)$; hence $R(T_W)\le n-m(W)$.
+\end{proof}
+
+Wang's certificate contains 496~representative subspaces.  The full lookup table (LUT) is obtained by expanding these representatives under the tensor symmetry group---the action of $\GL_3(\FF)\times\GL_3(\FF)$ on the $A$-slot by $(P,Q)\cdot A = P^TAQ^{-T}$, together with the transpose $(A,B,C)\mapsto(A^T,C,B)$.  The expanded LUT has exactly $8{,}283{,}458$ entries, one for each subspace of~$\FF^9$, which matches the sum of Gaussian binomial coefficients $\sum_{d=0}^9\binom{9}{d}_2$.  We independently re-expanded the full table from the 496 certificate nodes using a BFS orbit closure with verified tensor-preserving generators, and obtained zero value mismatches and zero missing subspaces.
+
+For invertible $U,V,H$, the complete coefficient action is
+\begin{equation}\label{eq:coefficient-action}
+ (A,B,C)\longmapsto
+ (U^TAV^{-T},\;V^TBH^{-T},\;U^{-1}CH).
+\end{equation}
+It is the pullback of $(X,Y,Z)\mapsto(UXV^{-1},VYH^{-1},U^{-T}ZH^T)$,
+which preserves $\tr(XYZ^T)$. Thus the first-slot actions above extend
+to genuine symmetries of the full tensor, preserving quotient ranks.
+
+\subsection{Finite Premises and Their Sources}
+
+The proof uses the inherited table and separately certified improvements:
+
+\begin{enumerate}[label=(\roman*)]
+  \item\label{it:lines} \textbf{All 511 lines have $L=19$.}\quad For every one-dimensional subspace $\langle a\rangle\le\FF^9$, the table gives $L_0(\langle a\rangle)=19$.
+
+  \item\label{it:dim2} \textbf{Eight dimension-two orbits satisfy $R(T_W)\ge19$.}\quad Among the $43{,}435$ two-dimensional subspaces of~$\FF^9$, the symmetry group partitions them into 14 orbits. Exactly 8 orbits, indexed 484--491 in the pinned certificate, consist of planes whose three nonzero matrices all have rank~$\ge2$. They contain $32{,}018$ subspaces. The inherited value is $L_0(W_i)=18$ for each representative. Section~\ref{sec:dim2} proves $R(T_{W_i})\ge19$ by infeasibility of its target-18 occupation system. Tensor symmetries give $T_{W_i}\cong T_{gW_i}$, transferring the improved bound throughout each orbit. These indices refer to the pinned file, not to arbitrary versions of the upstream table.
+
+  \item\label{it:coset} \textbf{Coset hyperplane values.}\quad After normalization (see Section~\ref{sec:coset}), the relevant four-dimensional coset span $S$ has $L_0(S)=14$.  Its 15 three-dimensional hyperplanes split into one rank-one family with $L=15$ and fourteen affine-plane hyperplanes each with $L=17$.
+\end{enumerate}
+
+
+%% ===========================================================
+\section{Proof of the Main Theorem}\label{sec:proof}
+
+The verified bound $R_{\FF}(\Tmmm)\ge20$ already excludes shorter decompositions. It therefore suffices to exclude length~20. Assume for contradiction that
+\begin{equation}\label{eq:decomp}
+  \Tmmm \;=\; \sum_{t=1}^{20} A_t\otimes B_t\otimes C_t
+\end{equation}
+is an exact decomposition over~$\FF$, with every summand nonzero.
+
+\subsection{Split Flattening and the Rank Budget}\label{sec:flattening}
+
+The \emph{$A$-split flattening} of a tensor $T\in(\FF^9)^{\otimes 3}$ is the linear map $\Phi_A(T):\FF^{27}\to\FF^{27}$ obtained by splitting each $A$-coordinate into its row and column indices.  Concretely, the matrix $P=\Phi_A(\Tmmm)$ has entry $P[(i,b),(j,c)]=T[3i+j,b,c]$, where $(i,b)$ and $(j,c)$ are composite indices with $0\le i,j<3$ and $0\le b,c<9$.  From the indexing~\eqref{eq:tensor}, one checks that $P$ is a $27\times27$ permutation matrix: each row and column has exactly one nonzero entry.  In particular, $\rk(P)=27$.
+
+For each summand, the split-flattened term $M_t=\Phi_A(A_t\otimes B_t\otimes C_t)$ is the Kronecker product $A_t\otimes\mathbf{b}_t\mathbf{c}_t^T$, where $\mathbf{b}_t=\operatorname{vec}(B_t)$ and $\mathbf{c}_t=\operatorname{vec}(C_t)$.  Since $B_t\ne 0$ and $C_t\ne 0$, the outer product $\mathbf{b}_t\mathbf{c}_t^T$ has rank one, and therefore
+\[
+  \rk(M_t) = \rk(A_t).
+\]
+By subadditivity of rank,
+\begin{equation}\label{eq:rksum}
+  27 = \rk(P) = \rk\!\Bigl(\sum_{t=1}^{20}M_t\Bigr) \;\le\; \sum_{t=1}^{20}\rk(A_t).
+\end{equation}
+Writing $e_t=\rk(A_t)-1\in\{0,1,2\}$ for each factor, we obtain $\sum_{t=1}^{20}e_t\ge 7$.  Since each term contributes at most~2, at least four factors have $e_t\ge 1$, hence $\rk(A_t)\ge 2$.  We call these factors \emph{high-rank}.
+
+\subsection{Distinctness of First Factors}
+
+By value~\ref{it:lines}, every line satisfies $L_0(\langle a\rangle)=19$. The occupation inequality gives $m(\langle a\rangle)\le1$. Over~$\FF$, a nonzero matrix has no nontrivial scalar multiple, so at most one factor equals~$a$. Thus the twenty $A$-factors are pairwise distinct.
+
+\subsection{Eight Two-Dimensional Quotient Bounds}\label{sec:dim2}
+
+Let $A_s,A_t$ be distinct high-rank factors and set $W=\langle A_s,A_t\rangle$. Since $m(W)\ge2$, equation~\eqref{eq:occ} gives $R(T_W)\le18$.
+
+Now suppose the third nonzero element $A_s+A_t$ also has rank~$\ge 2$.  Then $W$ is an ``all-high'' plane: all three of its nonzero elements have matrix rank at least~2.  The independent orbit classification (Section~\ref{sec:setting}) shows that such planes fall into exactly eight orbits, with certificate indices 484--491.  We claim:
+
+\begin{proposition}[Dimension-two raises]\label{prop:dim2}
+  For each orbit representative $W_i$ ($i\in\{484,\ldots,491\}$), the occupation system
+  \begin{equation}\label{eq:occ-system}
+    x_q\in\mathbb{Z}_{\ge 0},\quad \sum_{q\in(\FF^9\!/W)\setminus 0}x_q = 18,\quad
+    \sum_{q\in (V/W)\setminus 0}x_q \le 18-L_0(V) \;\;\text{for every nonzero proper}\;V/W,
+  \end{equation}
+  has no integer solution, where $W=W_i$ and $V$ ranges over its strict superspaces below $\FF^9$. Consequently, $R(T_{W_i})\ge19$.
+\end{proposition}
+
+If $R(T_{W_i})\le18$, choose a nonzero-term quotient decomposition of length $n_0\le18$. Its first-factor multiplicities have total $n_0$ and satisfy every cap $n_0-L_0(V)$, by quotienting again by $V/W_i$. Adding $18-n_0$ to any one multiplicity preserves every enlarged cap $18-L_0(V)$ and gives total~18. Thus a short decomposition necessarily yields an integer solution of~\eqref{eq:occ-system}. The converse is not claimed: occupation counts do not supply compatible second and third factors.
+
+Each system has 127 multiplicity variables and $29{,}210$ subspace constraints, with caps $18-L_0(V)$. SAT encoding uses Boolean copies and sequential-counter constraints; CaDiCaL returns UNSAT and \texttt{drat-trim} verifies the proofs. Multiplicities are essential for orbit~489, where one direction has cap~2. Separate checks find feasible occupation vectors at target~19 and no row violations for projected rank-23 decompositions. These are calibration checks, not rank-19 constructions or proofs of the encoding's soundness.
+
+\medskip
+
+With $R(T_W)\ge19$ established for all-high planes, the occupation inequality gives $m(W)\le1$, contradicting $m(W)\ge2$. Therefore $A_s+A_t$ must have rank~$1$ whenever $A_s,A_t$ are both high-rank, and we conclude:
+\begin{equation}\label{eq:rkone}
+  \rk(A_s-A_t) = \rk(A_s+A_t) = 1 \qquad\text{for every pair of high-rank factors}.
+\end{equation}
+
+\subsection{Affine Coset Containment}\label{sec:coset}
+
+The structure of families of matrices with pairwise rank-one differences is classical.  The following is a consequence of the adjacency theory in Hua's geometry of matrices~\cite{hua1945geometries,wan1996geometry,pazzis2015hua}:
+
+\begin{lemma}[Coset structure]\label{lem:coset}
+  Let $H\subset M_{3\times 3}(\FF)$ be a set of at least four distinct matrices such that $\rk(a-b)=1$ for every $a\ne b$ in $H$.  Then $H$ is contained in an affine column coset $p+u\cdot(\FF^3)^T$ or an affine row coset $p+\FF^3\cdot v^T$, for some $p\in M_{3\times 3}(\FF)$ and nonzero $u,v\in\FF^3$.
+\end{lemma}
+
+\begin{proof}
+  Fix $a,b,c\in H$ distinct and write $a+b=u_1v_1^T$, $a+c=u_2v_2^T$.  Then $b+c=u_1v_1^T+u_2v_2^T$ has rank one, which requires either $u_1=u_2$ (column type) or $v_1=v_2$ (row type) over~$\FF$.  The type is unique: if both held, then $b+c=0$, contradicting $\rk(b+c)=1$.  For a fourth point $d\in H$, write $a+d=u'(v')^T$.  If $a,b,c$ are column type with common left vector~$u$, then $b+d$ and $c+d$ both have rank one.  Since $b+d=(u_1v_1^T)+(u'(v')^T)$ and $c+d=(u_2v_2^T)+(u'(v')^T)$, rank one forces $u'=u$ unless $(v')^T$ simultaneously equals both~$v_1^T$ and~$v_2^T$; but $v_1\ne v_2$ (since $b\ne c$), so $u'=u$.  Thus $d$ lies in $a+u\cdot(\FF^3)^T$.
+\end{proof}
+
+Let $H\subset\{A_1,\ldots,A_{20}\}$ denote the set of high-rank factors.  By~\eqref{eq:rkone} and Lemma~\ref{lem:coset} (with $|H|\ge 4$), all high-rank factors lie in a common affine coset of column type or row type.
+
+The tensor symmetry $(A,B,C)\mapsto(A^T,C,B)$ transforms a row-type coset $p+\FF^3\cdot v^T$ into the column-type coset $p^T+v\cdot(\FF^3)^T$.  It suffices to treat column type.
+
+\subsection{The Forced Rank Profile}
+
+Normalize the column coset using $\GL_3(\FF)\times\GL_3(\FF)$, which acts on the $A$-slot by $(P,Q)\cdot A = P^TAQ^{-T}$.  Since $\GL_3(\FF)$ acts transitively on $\FF^3\setminus\{0\}$, left multiplication sends $u$ to~$e_1$.  The coset is then $p+e_1\cdot(\FF^3)^T$, where $p$ is a fixed base matrix.  Translating by a coset element makes the first row of~$p$ zero.  The eight coset elements $\{p+e_1w^T:w\in\FF^3\}$ differ only in their first row.  Let $D$ be the lower $2\times 3$ block of~$p$.  In the rank-two case below, the stabilizer of the column direction~$e_1$ acts transitively on full-rank $2\times3$ lower blocks up to row and column base change, so we may take $D=\left(\begin{smallmatrix}0&1&0\\0&0&1\end{smallmatrix}\right)$, equivalently $p=272=\operatorname{diag}(0,1,1)$ in the integer encoding of Appendix~\ref{app:data}.  The values $L_0(S)=14$, $L_0(R)=15$, and the fourteen $L=17$ hyperplanes used below refer to this normalized span~$S=\langle272,4,2,1\rangle$; $\GL_3\times\GL_3$ invariance transfers them to every rank-two column coset.
+
+Explicitly, left multiplication by $\operatorname{diag}(1,K)$ fixes
+$e_1$ and induces any $K\in\GL_2(\FF)$ on the lower block.
+For rank-two $D$, choose a right action $G\in\GL_3(\FF)$ sending its
+row space to $\langle e_2^T,e_3^T\rangle$, then choose $K$ to put its
+two row vectors in that order; thus $KDG$ is the stated standard block.
+Both actions belong to the tensor symmetries described in
+Section~\ref{sec:setting}.
+
+If $\rk(D)=0$, every coset element has rank at most~1, so no high-rank factors can lie in the coset, contradicting $H\ne\emptyset$.  If $\rk(D)=1$, the row span of~$D$ is one-dimensional, and a coset element has rank~2 exactly when its first row lies outside this span; over~$\FF$, this gives $8-2=6$ rank-2 elements and 2 rank-1 elements, with no rank-3 elements.  The total excess from at most 6 high-rank factors would then be $\le 6\cdot 1=6<7$, contradicting~\eqref{eq:rksum}.  So $\rk(D)=2$.
+
+With $\rk(D)=2$, the coset has four rank-2 elements (first row in the 2-dimensional row span of~$D$, but not making rank~3) and four rank-3 elements (first row outside the row span of~$D$).  The span of the coset is the four-dimensional subspace
+\[
+  S = \langle p,\; e_1e_1^T,\; e_1e_2^T,\; e_1e_3^T\rangle.
+\]
+By value~\ref{it:coset}, $L_0(S)=14$.  The 15 three-dimensional hyperplanes of~$S$ comprise:
+\begin{itemize}
+  \item One hyperplane $R=\langle e_1e_1^T,e_1e_2^T,e_1e_3^T\rangle$ whose nonzero elements have rank one, with $L_0(R)=15$.
+  \item Fourteen hyperplanes corresponding to the fourteen affine planes in $(\FF^3)^T\cong\FF^3$, each with $L=17$.
+\end{itemize}
+Every set of four coset labels (first-row vectors) that forms an affine plane of~$\AG(3,2)$ lies in one of these fourteen hyperplanes.
+
+The fourteen bounds~17 are essential below; the values $L_0(S)=14$ and $L_0(R)=15$ are auxiliary normalization checks.
+
+Each affine-plane hyperplane $H_\pi$ has $L_0(H_\pi)=17$, so by~\eqref{eq:occ}, at most $20-17=3$ of the 20 factors can have their $A$-factor in~$H_\pi$.
+
+\begin{lemma}[Cap bound]\label{lem:cap}
+  Every 5-element subset of $\FF^3$ contains a 4-point affine plane.
+\end{lemma}
+
+\begin{proof}
+  Among five points $p_1,\ldots,p_5\in\FF^3$ there are $\binom{5}{2}=10$ unordered pair sums $p_i+p_j$, but only $|\FF^3\setminus\{0\}|=7$ possible nonzero values.  Hence two distinct pairs share the same sum: $p_i+p_j=p_k+p_\ell$.  The pairs cannot share exactly one endpoint (that would give $p_j=p_k$ or $p_j=p_\ell$, merging two of our five points), so they are disjoint.  Their four endpoints satisfy $p_i+p_j+p_k+p_\ell=0$, forming a four-point affine plane.
+\end{proof}
+
+The 14 four-point affine planes in $\AG(3,2)$ each contribute a constraint $\le 3$, and Lemma~\ref{lem:cap} shows that any 5 points contain such a plane.  Therefore:
+
+\begin{equation}\label{eq:highcount}
+  |H|\le 4.
+\end{equation}
+Since Section~\ref{sec:flattening} established $|H|\ge 4$, we have $|H|=4$.
+
+The four rank-3 labels form an affine plane of $\AG(3,2)$ (the complement of the row span of~$D$ in~$\FF^3$), so at most 3 of the 4 high-rank factors can be rank~3.  With $|H|=4$ and $h_3\le 3$, the rank excess is
+\[
+  \sum_{t=1}^{20}(\rk(A_t)-1) = 16\cdot 0 + (4-h_3)\cdot 1 + h_3\cdot 2 = 4+h_3.
+\]
+This must be $\ge 7$, hence $h_3\ge 3$.  Combined with $h_3\le 3$:
+\begin{equation}\label{eq:profile}
+  h_2=1,\quad h_3=3,\quad\text{and}\quad \sum_{t=1}^{20}\rk(A_t) = 16+2+3+3+3 = 27.
+\end{equation}
+
+\subsection{Saturation and the Algebraic Contradiction}\label{sec:saturation}
+
+Equation~\eqref{eq:profile} says that equality holds in the rank inequality~\eqref{eq:rksum}.  This has a strong algebraic consequence.
+
+\begin{lemma}[Rank-additive decomposition]\label{lem:saturation}
+  Let $P$ be an invertible $n\times n$ matrix over a field~$k$, and let $P=\sum_{t=1}^r M_t$ with $\sum_{t=1}^r\rk(M_t)=\rk(P)=n$.  Then
+  \begin{equation}\label{eq:idempotent}
+    M_t P^{-1} M_s \;=\; \delta_{ts}\,M_t \qquad\text{for all}\;s,t.
+  \end{equation}
+  In particular, the $\{E_t=M_tP^{-1}\}$ form a complete system of orthogonal idempotents: $E_t^2=E_t$, $E_tE_s=0$ for $t\ne s$, and $\sum_tE_t=I$. Here orthogonality means pairwise annihilation, not an inner-product condition.
+\end{lemma}
+
+\begin{proof}
+  Since $\sum_t\rk(M_t)=n=\rk(P)$, the column spaces $\operatorname{col}(M_t)$ form a direct sum equal to~$k^n$, and similarly for the row spaces.  For any $x$, write $Pz=M_sx$ for $z=P^{-1}M_sx$.  Then $\sum_t M_tz=M_sx$, and by uniqueness of the direct-sum decomposition, $M_tz=0$ for $t\ne s$ and $M_sz=M_sx$.
+\end{proof}
+
+This is an elementary rank-additivity lemma; related idempotent rank identities are classical~\cite{cochran1934distribution,tian2001rank}.
+
+Now we exploit the specific structure of the matrix-multiplication tensor.  The split-flattened term $M_t=M(A_t,B_t,C_t)$ has rows and columns indexed by pairs $(i,b)$ and $(j,c)$ with $0\le i,j<3$ and $0\le b,c<9$.  We compute the product explicitly.
+
+\begin{proposition}[Product identity]\label{prop:product}
+  For the tensor~$\Tmmm$ with convention~\eqref{eq:tensor},
+  \begin{equation}\label{eq:product}
+    M(A_t,B_t,C_t)\;P^{-1}\;M(A_s,B_s,C_s)
+    \;=\;
+    M\bigl(A_t B_s C_t^T A_s,\;\; B_t,\;\; C_s\bigr).
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  Index rows and columns by pairs $(i,b)$ and $(j,c)$ with $0\le i,j<3$ and $0\le b,c<9$.  The term $M_t$ has entries $M_t[(i,b),(j,c)] = A_t[i,j]\cdot\mathbf{b}_t[b]\cdot\mathbf{c}_t[c]$, where $\mathbf{b}_t=\operatorname{vec}(B_t)$ and $\mathbf{c}_t=\operatorname{vec}(C_t)$.  Since $P$ is a permutation matrix over~$\FF$, $P^{-1}=P^T$, so $P^{-1}[(k,d),(m,e)]=T[3m+k,e,d]$.
+
+  The $((i,b),(j,c))$-entry of the left side factors as $\mathbf{b}_t[b]\cdot\mathbf{c}_s[c]$ times
+  \[
+    \sum_{k,m} A_t[i,k]\,A_s[m,j] \;\underbrace{\sum_{d,e}\mathbf{c}_t[d]\,T[3m+k,e,d]\,\mathbf{b}_s[e]}_{(\star)}.
+  \]
+  For fixed $m,k$, the inner sum $(\star)$ is the coefficient of $X[m,k]$ in $\tr(XB_sC_t^T)$, namely $(B_sC_t^T)[k,m]$. Explicitly, the nonzero tensor entries have $e=3k+k'$, $d=3m+k'$ for $k'\in\{0,1,2\}$, giving $(\star)=\sum_{k'}C_t[m,k']\,B_s[k,k']$. Summing over $k,m$:
+  \[
+    \sum_{k,m}A_t[i,k]\,(B_sC_t^T)[k,m]\,A_s[m,j] = (A_tB_sC_t^TA_s)[i,j].
+  \]
+  Thus the full entry equals $M(A_tB_sC_t^TA_s,B_t,C_s)[(i,b),(j,c)]$.
+\end{proof}
+
+\begin{proof}[Completion of the proof of Theorem~\ref{thm:main}]
+  By~\eqref{eq:profile}, three of the $A$-factors---say $A_1,A_2,A_3$---are invertible ($\rk=3$).  Take $t=s$ in~\eqref{eq:idempotent} and~\eqref{eq:product}:
+  \[
+    M(A_tB_tC_t^TA_t,\,B_t,\,C_t) = M(A_t,\,B_t,\,C_t).
+  \]
+  Since $B_t\ne 0$ and $C_t\ne 0$, the map $X\mapsto M(X,B_t,C_t)$ is injective on $3\times 3$ matrices (it is a Kronecker product with a nonzero outer factor).  Therefore $A_tB_tC_t^TA_t=A_t$, which gives
+  \begin{equation}\label{eq:diagonal}
+    B_tC_t^T = A_t^{-1},
+  \end{equation}
+  so $B_t$ and $C_t$ are invertible.
+
+  Now take $t\ne s$ with both $A_t,A_s$ invertible (say $t=1,s=2$).  The off-diagonal identity~\eqref{eq:idempotent} and~\eqref{eq:product} give
+  \begin{equation}\label{eq:off-diagonal-zero}
+    M(A_1B_2C_1^TA_2,\,B_1,\,C_2) = 0.
+  \end{equation}
+  Since $B_1\ne 0$ and $C_2\ne 0$, injectivity gives $A_1B_2C_1^TA_2=0$.  But $A_1,A_2$ are invertible, $B_2$ is invertible by~\eqref{eq:diagonal} applied to $t=2$, and $C_1$ is invertible by~\eqref{eq:diagonal} applied to $t=1$.  A product of invertible matrices cannot be zero.
+
+  This contradiction shows that no length-20 decomposition exists, completing the proof.
+\end{proof}
+
+
+%% ===========================================================
+\section{Scope and Outlook}\label{sec:outlook}
+
+\subsection{Capacity Bounds at Length 21}
+
+The argument does not exclude length-21 decompositions because the relevant
+occupation caps increase. The following comparison lists the three cap
+families used at length~20. Here $L$ denotes the applicable certified
+quotient lower bound, including the improvements over $L_0$.
+\[
+  \begin{array}{c|cc}
+    \text{Subspace family} & n=20\text{ cap} & n=21\text{ cap} \\ \hline
+    L=19\text{ lines} & 1 & 2 \\
+    L=19\text{ all-high 2-planes} & 1 & 2 \\
+    L=17\text{ affine hyperplanes} & 3 & 4
+  \end{array}
+\]
+At length~21, the line cap rises to~2, allowing repeated $A$-directions.  The all-high-plane cap also rises to~2, so two high-rank factors may share a plane without contradiction, and the pairwise-rank-one-difference conclusion no longer follows.  Moreover, the flattening inequality $\sum_{t=1}^{21}\rk(A_t)\ge 27$ no longer forces the rank sum to equal~27: the rank-sum excess $\Delta_A=\sum_t\rk(A_t)-27$ need only be $\ge 0$, not zero.  Without zero excess, the saturated identities~\eqref{eq:idempotent} do not hold and the algebraic contradiction dissolves.
+
+The target-19 occupation witnesses and projected rank-23 controls test different aspects of consistency. Neither supplies a complete rank-19 quotient decomposition, establishes its existence, or replaces the forward encoding argument. They are useful diagnostics, not premises of the lower-bound proof.
+
+\subsection{Constraints on Rank-22 Decompositions}
+
+Although the main theorem does not settle rank~22, the saturation analysis gives structural information.  A hypothetical rank-22 decomposition with $\sum_t\rk(A_t)=27$ (zero excess in the $A$-slot) would satisfy all the identities of Lemma~\ref{lem:saturation}.  The product identity~\eqref{eq:product} then implies that at most one $A$-factor can be invertible, since two invertible factors lead to the same zero-product contradiction.  This eliminates the $A$-slot rank-distribution profile $(19,1,2)$ (nineteen rank-1, one rank-2, two rank-3 factors) at zero excess, leaving the profiles $(17,5,0)$ and $(18,3,1)$ as the only possibilities for a zero-excess rank-22 decomposition in that slot.  Under the tensor convention~\eqref{eq:tensor}, the cyclic map $(A,B,C)\mapsto(B,C^T,A^T)$ is a tensor symmetry---$\tr(B\cdot C^T\cdot A)=\tr(ABC^T)$ by cyclic trace---and transpose preserves rank.  The $B$- and $C$-slot split flattenings are also $27\times 27$ permutation matrices, so the saturation analysis transfers verbatim to each slot.  Zero excess in one slot does not by itself imply zero excess in the others.
+
+At positive excess, rank subadditivity no longer supplies these identities. A stronger occupation argument or a different structural constraint might still advance the problem; the present proof does not exclude such extensions.
+
+
+%% ===========================================================
+\section{Machine-Verified Inputs}\label{sec:machine}
+
+Theorem~\ref{thm:main} uses a certified quotient table and eight additional
+finite exclusions. This section explains how the mathematical premises
+are encoded and checked. From the repository root, \texttt{make verify-full}
+reconstructs the eight formulas, checks their proofs, independently expands
+the quotient table, and reruns its source verifier. The dependency and
+command guide is \qpath{reproducibility/README.md}.
+
+\subsection{Wang's Certified Quotient Lower Bounds}
+
+The inherited certificate accompanies Wang's
+arXiv:2603.07280v6~\cite{wangautomated}. Replaying its verifier confirms
+$R_{\FF}(\Tmmm)\ge20$ from 496 representative subspaces.
+Separately, a C++ breadth-first expansion reconstructs the complete
+$8{,}283{,}458$-entry lookup table. It:
+\begin{enumerate}
+  \item parses the certificate's textproto records;
+  \item verifies that each of the 13~elementary generators (six left transvections, six right transvections, and $A$-transpose) preserves the tensor under the convention~\eqref{eq:tensor};
+  \item computes RREF keys for each expanded subspace;
+  \item checks for value conflicts across overlapping orbits.
+\end{enumerate}
+The re-expanded table has zero conflicts, matches the Gaussian-binomial
+dimension counts, and agrees value-by-value with the stored table.
+
+\subsection{Eight Two-Dimensional DRAT Proofs}
+
+For each direction $q$, the strongest singleton row supplies a cap $c_q$. The primary encoder uses $c_q$ distinct Boolean copies with $x_q=\sum_{j=1}^{c_q}y_{q,j}$. Seven orbits have only caps 0 or 1; orbit~489 has one cap of~2. Row sums become cardinality constraints, and total weight~18 becomes matching upper and lower bounds.
+
+To check the direction needed by the proof, take any legal integer vector. Set exactly $x_q$ copies for each $q$ to true. Every row then has precisely its intended integer sum. Each satisfied cardinality constraint extends to a satisfying sequential-counter assignment; a single variable pool allocates disjoint auxiliary variables for all counters, so these extensions coexist. Deduplicating identical rows or omitting a tautology cannot remove this assignment. Conversely, summing the copies of a satisfying assignment recovers legal counts. Thus the CNF is equisatisfiable with the integer system, though the integer system is only necessary for a tensor decomposition. These unrestricted copies differ from the monotone threshold variables used by the separate unary-count implementation.
+
+CaDiCaL solves each instance and produces a DRAT proof, which \texttt{drat-trim} verifies.  The eight proof files range from 4.4\,MiB (orbit~489) to 33.8\,MiB (orbit~487); see Table~\ref{tab:dim2} for per-orbit sizes.  The complete verification pipeline, with source and bundled proof files in \qpath{proof/}, is:
+\begin{enumerate}
+  \item An independent semantic generator reconstructs each node-local system directly from the Wang LUT, producing $29{,}210$ rows per orbit.
+  \item The CNF encoder converts each system into DIMACS format using the Boolean-copy representation above and sequential-counter clauses for the cardinality constraints.
+  \item CaDiCaL returns UNSAT with a DRAT proof.
+  \item A separate reconstruction regenerates each CNF exactly and
+  \texttt{drat-trim} checks the corresponding refutation.
+\end{enumerate}
+All eight regenerated CNFs match the stored CNFs, and all eight DRAT replays succeed.
+
+\subsection{Cross-Checks Through Separate Implementations}
+
+A separate verification path within the same research program reconstructed
+the finite premises and the algebraic argument:
+\begin{itemize}
+  \item Re-ran the Wang verifier on the pinned certificate.
+  \item Verified 56,448 tensor actions under the symmetry generators.
+  \item Checked quotient semantics for 18,704 proof-used subspaces, linking dimension-two rows, line instances, and affine-plane instances to certificate nodes with zero failures.
+  \item Replayed the regenerated-CNF DRAT bundle with all checks passing.
+  \item Produced an independent family of ``transparent unary-count'' CNF/DRAT certificates for all eight orbits, with a forward-lifting verifier confirming that each legal integer occupation vector maps to the intended CNF assignment.
+\end{itemize}
+
+\subsection{From Finite Verification to the Tensor Theorem}
+
+The required logical chain is one-way:
+\begin{equation}\label{eq:finite-proof-implication}
+ R(T_{W_i})\le18
+ \ \Longrightarrow\ \text{legal target-18 occupation counts}
+ \ \Longrightarrow\ \text{satisfiable CNF}.
+\end{equation}
+The first implication follows from quotienting and padding counts; the
+second follows from the Boolean-copy construction above. A checked DRAT
+refutation therefore proves $R(T_{W_i})\ge19$, strengthening the inherited
+bound $L_0(W_i)=18$. The assignment map is essential: it connects the
+formula to every hypothetical short quotient decomposition.
+
+The final structural argument consumes the global bound~20, line
+bounds~19, all-high-plane bounds~19, and fourteen affine-plane bounds~17.
+With these finite premises established,
+Sections~\ref{sec:flattening}--\ref{sec:saturation} give the remaining
+deductions as a written proof. Computation supplies the finite
+restrictions; rank additivity and the product identity explain why they
+are incompatible with a 20-term decomposition.
+
+
+%% ===========================================================
+\section{Conclusions}
+
+Qiushi Engine's research yielded a structural proof of
+$R_{\FF}(\Tmmm)\ge21$.
+Together with the known upper bound, the interval is $[21,23]$.  The proof introduces a mechanism in which Wang's occupation lattice and split-flattening rank additivity are complementary: the occupation bounds force the rank profile into a zero-excess endpoint, and the saturation identity at zero excess converts the $A$-side counting bound into a $B/C$ algebraic contradiction.  This mechanism works at length~20 because the line cap, all-high-plane cap, and affine-hyperplane cap are exactly $(1,1,3)$, while at length~21 they widen to $(2,2,4)$.
+
+The exact bilinear complexity remains open. Any rank-22 decomposition that has zero excess in a given slot has at most one invertible factor in that slot. The present cap families do not force saturation at length~21 and therefore do not prove a lower bound of~22. Stronger occupation bounds, extensions of the saturation argument, and different structural methods remain possible research directions.
+
+Qiushi Engine's autonomous mathematical research also produced a record of how
+this mechanism was found. The integrated Meta-Trace and thematic research
+materials connect proposed representations to experiments, corrections,
+and subsequent decisions. They show how the difficulty of completing
+factor supports led to a question about the full tensor, where an equality
+could supply the missing cross-factor information. The report thus offers
+both a structural proof and an evidence-linked case study of the
+development of mathematical understanding through sustained autonomous
+research.
+
+\bigskip
+%% ===========================================================
+\appendix
+\section{Explicit Finite Data}\label{app:data}
+
+We record the explicit subspaces and values that the proof consumes, so that a reader can reconstruct the machine-verified inputs without access to the workspace.
+
+\subsection{Tensor Convention}
+
+The $3\times 3$ matrix $A$ is identified with a vector in~$\FF^9$ by row-major order:
+\[
+  A = \begin{pmatrix} a_0 & a_1 & a_2 \\ a_3 & a_4 & a_5 \\ a_6 & a_7 & a_8 \end{pmatrix}
+  \;\longleftrightarrow\; (a_0,a_1,\ldots,a_8)\in\FF^9.
+\]
+An integer $v\in\{0,\ldots,511\}$ represents the matrix whose $(i,j)$-entry is the bit at position $3i+j$ of the binary expansion of~$v$.
+
+\subsection{The Eight Two-Dimensional Orbit Representatives}
+
+Each representative $W_i$ is given by its two RREF basis vectors and the matrix ranks of its three nonzero elements. The RREF convention uses highest-set-bit pivots, ordered from bit~8 down to bit~0; this reverses the usual left-to-right order on the displayed coordinate vector. The indices below belong to the pinned certificate in Section~\ref{sec:machine}.
+
+\begin{table}[H]
+\centering
+\caption{The eight all-high-rank dimension-two representatives. Each has inherited value $L_0(W_i)=18$; the certificates here prove $R(T_{W_i})\ge19$. Variable counts include cardinality-counter auxiliaries.}
+\label{tab:dim2}
+\begin{tabular}{ccccccc}
+\toprule
+Index $i$ & Basis & Ranks & Orbit size & Variables & Clauses & DRAT proof \\
+\midrule
+484 & $(19,10)$  & $(2,2,2)$ &    98 & 100{,}873 & 192{,}962 & 26.7\,MiB \\
+485 & $(20,10)$  & $(2,2,2)$ & 2{,}352 &  83{,}309 & 158{,}029 & 14.0\,MiB \\
+486 & $(68,10)$  & $(2,2,2)$ & 1{,}176 &  74{,}056 & 140{,}223 & 12.3\,MiB \\
+487 & $(84,10)$  & $(2,3,3)$ & 3{,}528 & 149{,}344 & 289{,}124 & 33.8\,MiB \\
+488 & $(96,10)$  & $(2,2,3)$ & 14{,}112 &  82{,}041 & 156{,}048 & 14.4\,MiB \\
+489 & $(258,10)$ & $(2,2,2)$ & 4{,}704 &  28{,}097 &  51{,}933 &  4.4\,MiB \\
+490 & $(275,10)$ & $(2,3,3)$ & 4{,}704 &  98{,}494 & 188{,}427 & 17.9\,MiB \\
+491 & $(163,84)$ & $(3,3,3)$ & 1{,}344 & 154{,}160 & 300{,}539 & 33.5\,MiB \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{The Normalized Coset and Its Hyperplane Values}
+
+After $\GL_3\times\GL_3$ normalization, the column coset has base point $p=272$, the matrix
+\[
+  p = \begin{pmatrix} 0&0&0\\ 0&1&0\\ 0&0&1\end{pmatrix},
+\]
+whose lower $2\times 3$ block $D$ has rank~2, and column vector $u=e_1$.  The span is
+\[
+  S = \langle 272,\; 4,\; 2,\; 1\rangle,\qquad L_0(S)=14.
+\]
+Its 15 hyperplanes:
+\begin{itemize}
+  \item \textbf{Rank-one family:} $R=\langle4,2,1\rangle$ has nonzero elements of rank one and $L_0(R)=15$. The quotient $T_R$, not the subspace $R$, is isomorphic to $T_{\langle2,3,3\rangle}$.
+  \item \textbf{14 affine-plane hyperplanes:} each three-dimensional, each with $L=17$.  An affine plane in $\AG(3,2)$ is a coset of a two-dimensional subspace of~$\FF^3$; there are exactly $\binom{3}{2}_2\cdot 2^{3-2}=14$ such planes.
+\end{itemize}
+
+\subsection{Occupation System Specification}
+
+For completeness, we state how any reader can reconstruct the eight occupation systems.  Given a two-dimensional subspace $W\le\FF^9$ with RREF basis, let $k=9-2=7$ and identify $\FF^9/W\cong\FF^7$ via a complement.  For every nonzero proper subspace $V/W$ of $\FF^7$ (there are $\sum_{d=1}^{6}\binom{7}{d}_2 = 29{,}210$ such subspaces), the constraint is
+\[
+  \sum_{q\in(V/W)\setminus 0} x_q \;\le\; 18-L_0(V),
+\]
+where $V\le\FF^9$ is the full preimage of the chosen quotient subspace under $q_W$, and its bound is the inherited value $L_0(V)$. The total weight is $\sum_qx_q=18$. Infeasibility at target~18 is Proposition~\ref{prop:dim2}.
+
+
+\subsection{Proof Components and Reproduction Materials}\label{app:repository}
+
+The repository follows the mathematical dependencies of the report.
+The table below connects each mathematical question to the materials
+needed to study or reproduce it.
+
+\begin{longtable}{@{}L{4.8cm}L{9.8cm}@{}}
+\toprule
+Mathematical responsibility & Repository material and role\\
+\midrule
+\endfirsthead
+\toprule Mathematical responsibility & Repository material and role\\\midrule
+\endhead
+\bottomrule\endfoot
+Inherited quotient bounds (Section~\ref{sec:setting})
+& \qpath{proof/assets/quotients/}: pinned source certificate, expanded
+lookup data, and independent expansion utilities.\\
+Eight strengthened bounds (Section~\ref{sec:dim2})
+& \qpath{proof/assets/occupation/}: integer-row reconstruction, encoders,
+and the eight CNF/DRAT pairs used by the primary verification chain.\\
+Independent structural cross-checks (Section~\ref{sec:saturation})
+& \qpath{proof/assets/structural/}: the separate unary encoding and
+tensor-product checks.\\
+Computational reproduction
+& \qpath{proof/verify_proof_package.py} checks the selected finite
+premises; \qpath{evidence/verification.json} records the scope and results
+of the maintained replay.\\
+Research development (Appendix~\ref{app:research-record})
+& \qpath{research/README.md} introduces the public Meta-Trace;
+\qpath{research/materials/} contains notes, plans, programs, and results
+in eight mathematical themes. \qpath{research/catalog.json} indexes
+the individual materials.\\
+Rebuilding and independent use
+& \qpath{reproducibility/README.md} specifies dependencies and trust
+boundaries. From the repository root, \texttt{make verify-full} replays the
+primary computational chain and \texttt{make reports} rebuilds this PDF.\\
+\end{longtable}
+
+The explicit encoding argument connects the reconstructed formulas to
+the mathematical premises; the structural proof derives the theorem
+from those premises. No network search or language-model call is required
+for the mathematical replay.
+
+\FloatBarrier
+\clearpage
+\section{Meta-Trace: Development of the Research}\label{app:research-record}
+
+This appendix synthesizes Qiushi Engine's original Meta-Trace records
+with the associated research notes, plans, programs, and results. It
+follows the mathematical questions that connected the
+initial rank-22 search to the structural lower bound: what motivated an
+approach, what was tested, what was learned, and how that understanding
+changed the next question. Related lines of work are integrated by their
+scientific content, with the assumptions and status of intermediate
+results retained. The account is a thematic reconstruction of the recorded
+research, rather than a verbatim transcript or a strictly linear chronology.
+It preserves distinctions between an exploratory proposal, a tested result,
+and a later correction.
+
+The account is accompanied by eight thematic collections in
+\qpath{research/materials/}. These contain research notes and analyses,
+experimental plans, implementations, inputs, and results. The guide in
+\qpath{research/guide.md} connects the main changes of direction to those
+collections; \qpath{research/catalog.json} provides the individual
+artifact index. The appendix supplies a continuous reading of this
+material, rather than a transcript of its production.
+
+The central development was a progressive change in what a representation
+had to preserve. Numerical proximity did not ensure a finite exact
+algorithm. First-factor counts did not determine the remaining factors.
+A rank equality eventually recovered the missing algebraic coupling.
+Following these transitions makes visible a part of scientific work that
+the final proof alone cannot show: how useful understanding accumulated,
+survived corrections, and became the basis of a different method.
+
+\input{sections/research_record}
+\FloatBarrier
+\input{sections/comparison}
+\FloatBarrier
+\clearpage
+\phantomsection
+\addcontentsline{toc}{section}{References}
+\ifQiushiHasCitations
+  \IfFileExists{refs.bib}{%
+    \bibliographystyle{unsrtnat}
+    \bibliography{refs}}{}
+\fi
+
+\end{document}

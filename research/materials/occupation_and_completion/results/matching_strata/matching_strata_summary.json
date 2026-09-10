@@ -1,0 +1,243 @@
+{
+  "anchored_matching_count": 13327,
+  "classification_path": "data/matching_strata/anchored_matching_strata.json",
+  "cover_connection_audit_path": "data/matching_strata/cover_connection_audit.json",
+  "cover_connection_checks_passed": true,
+  "field": "F2",
+  "k7_computationally_closed": true,
+  "k7_lazy_infeasible_count": 4,
+  "k7_matching_strata_total": 6,
+  "k7_missing_from_coverage": [],
+  "k7_rank1_only_impossible_count": 2,
+  "lazy_record_count": 4,
+  "lazy_records": [
+    {
+      "candidate_max_excess": [
+        8,
+        5
+      ],
+      "candidate_violation_counts": [
+        16963,
+        7778
+      ],
+      "cut_count_total": 3511,
+      "cuts_by_mode": {
+        "atmost": 3000,
+        "vacuous": 511
+      },
+      "cuts_by_reason": {
+        "include_dim_1": 511,
+        "lazy_iter_1": 1500,
+        "lazy_iter_2": 1500
+      },
+      "elapsed_sec": 56.6832435131073,
+      "final_status": "INFEASIBLE",
+      "iteration_count": 3,
+      "k": 7,
+      "matching": [
+        1,
+        16,
+        27,
+        256,
+        325,
+        438,
+        504
+      ],
+      "path": "data/matching_strata/lazy_k7_stratum_1_16_27_256_325_438_504.json",
+      "target_higher_rank_count": 13
+    },
+    {
+      "candidate_max_excess": [
+        8,
+        4
+      ],
+      "candidate_violation_counts": [
+        17055,
+        7478
+      ],
+      "cut_count_total": 3511,
+      "cuts_by_mode": {
+        "atmost": 3000,
+        "vacuous": 511
+      },
+      "cuts_by_reason": {
+        "include_dim_1": 511,
+        "lazy_iter_1": 1500,
+        "lazy_iter_2": 1500
+      },
+      "elapsed_sec": 45.19154953956604,
+      "final_status": "INFEASIBLE",
+      "iteration_count": 3,
+      "k": 7,
+      "matching": [
+        1,
+        16,
+        27,
+        256,
+        360,
+        390,
+        511
+      ],
+      "path": "data/matching_strata/lazy_k7_stratum_1_16_27_256_360_390_511.json",
+      "target_higher_rank_count": 13
+    },
+    {
+      "candidate_max_excess": [
+        8,
+        5
+      ],
+      "candidate_violation_counts": [
+        16870,
+        9357
+      ],
+      "cut_count_total": 3511,
+      "cuts_by_mode": {
+        "atmost": 3000,
+        "vacuous": 511
+      },
+      "cuts_by_reason": {
+        "include_dim_1": 511,
+        "lazy_iter_1": 1500,
+        "lazy_iter_2": 1500
+      },
+      "elapsed_sec": 45.96953558921814,
+      "final_status": "INFEASIBLE",
+      "iteration_count": 3,
+      "k": 7,
+      "matching": [
+        1,
+        16,
+        27,
+        256,
+        360,
+        438,
+        455
+      ],
+      "path": "data/matching_strata/lazy_k7_stratum_1_16_27_256_360_438_455.json",
+      "target_higher_rank_count": 13
+    },
+    {
+      "candidate_max_excess": [
+        7,
+        5,
+        4
+      ],
+      "candidate_violation_counts": [
+        13476,
+        11774,
+        8184
+      ],
+      "cut_count_total": 5011,
+      "cuts_by_mode": {
+        "atmost": 4500,
+        "vacuous": 511
+      },
+      "cuts_by_reason": {
+        "include_dim_1": 511,
+        "lazy_iter_1": 1500,
+        "lazy_iter_2": 1500,
+        "lazy_iter_3": 1500
+      },
+      "elapsed_sec": 86.39973783493042,
+      "final_status": "INFEASIBLE",
+      "iteration_count": 4,
+      "k": 7,
+      "matching": [
+        1,
+        16,
+        36,
+        192,
+        360,
+        390,
+        511
+      ],
+      "path": "data/matching_strata/lazy_k7_stratum_1_16_36_192_360_390_511.json",
+      "target_higher_rank_count": 13
+    }
+  ],
+  "lazy_status_by_k": {
+    "k7_INFEASIBLE": 4
+  },
+  "lazy_status_hist": {
+    "INFEASIBLE": 4
+  },
+  "problem": "analysis matching-stratum execution summary",
+  "profile_path": "data/matching_strata/matching_stratum_residual_profile.json",
+  "rank1_only_impossible_strata": [
+    {
+      "canonical": [
+        1,
+        16,
+        27,
+        256,
+        325,
+        432,
+        511
+      ],
+      "k": 7,
+      "rank1_only_bad_by_dim": {
+        "6": 1
+      },
+      "rank1_only_bad_head": [
+        {
+          "cap_before_rank1": 6,
+          "dim": 6,
+          "excess": 1,
+          "fixed_rank1_occupancy": 7,
+          "key": 573979715964934,
+          "lb": 14
+        }
+      ],
+      "rank1_only_max_excess": 1,
+      "rank1_only_violation_count": 1
+    },
+    {
+      "canonical": [
+        1,
+        16,
+        36,
+        192,
+        360,
+        438,
+        455
+      ],
+      "k": 7,
+      "rank1_only_bad_by_dim": {
+        "7": 1
+      },
+      "rank1_only_bad_head": [
+        {
+          "cap_before_rank1": 6,
+          "dim": 7,
+          "excess": 1,
+          "fixed_rank1_occupancy": 7,
+          "key": 296129345281364071,
+          "lb": 14
+        }
+      ],
+      "rank1_only_max_excess": 1,
+      "rank1_only_violation_count": 1
+    }
+  ],
+  "rank1_only_status_by_k": {
+    "k1_OK": 1,
+    "k2_OK": 1,
+    "k3_OK": 3,
+    "k4_OK": 7,
+    "k5_OK": 10,
+    "k6_OK": 10,
+    "k7_IMPOSSIBLE": 2,
+    "k7_OK": 4
+  },
+  "scientific_meaning": "The matching half of the global cover has only 38 whole-matching strata. At k=7, two strata are impossible by fixed rank-1 occupancy alone and four surviving strata became CP-SAT INFEASIBLE after lazy full-LUT cut learning. This is computational evidence and a proof-target decomposition, not a checked lower-bound theorem.",
+  "strata_count_by_k": {
+    "1": 1,
+    "2": 1,
+    "3": 3,
+    "4": 7,
+    "5": 10,
+    "6": 10,
+    "7": 6
+  },
+  "strata_count_total": 38
+}

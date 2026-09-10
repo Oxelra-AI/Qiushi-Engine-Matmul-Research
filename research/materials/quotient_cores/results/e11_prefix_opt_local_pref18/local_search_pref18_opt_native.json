@@ -1,0 +1,43 @@
+{
+  "allow_zero_a": false,
+  "cnf_clauses": 6562,
+  "cnf_path": "data/e11_prefix_opt_local_pref18/local_search_pref18_opt_native.xor.cnf",
+  "cnf_sha256": "b2c79ab75f24bf4a9ccffd4df2029e45119f0551061df579bf2f5577a40a1967",
+  "core": "data/restricted_cores/mask_001_E11_core.npy",
+  "field": "F2",
+  "meaning": "SAT decodes to an exact E11 CPD; UNSAT refutes all rank-r E11 CPDs whose A multiset contains this prefix. Fixed prefix terms are encoded directly in Brent XORs.",
+  "native_xor_clauses": 648,
+  "prefix": [
+    1,
+    2,
+    3,
+    4,
+    12,
+    16,
+    20,
+    28,
+    32,
+    36,
+    92,
+    97,
+    108,
+    130,
+    144,
+    195,
+    208,
+    216
+  ],
+  "prefix_size": 18,
+  "purpose": "optimized exact E11 prefix-completion Brent SAT with fixed-A terms eliminated",
+  "rank": 19,
+  "solve": {
+    "command": "cryptominisat5 --verb 0 -t 4 --maxtime 180 data/e11_prefix_opt_local_pref18/local_search_pref18_opt_native.xor.cnf",
+    "elapsed_sec": 180.23012924194336,
+    "returncode": 15,
+    "status": "UNKNOWN",
+    "stderr_tail": "",
+    "stdout_tail": "s INDETERMINATE\n"
+  },
+  "sort_free_a": true,
+  "vars": 2537
+}

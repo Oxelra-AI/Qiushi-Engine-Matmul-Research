@@ -1,0 +1,942 @@
+{
+  "J_size": 65,
+  "elapsed_sec": 209.468,
+  "max_outside_0": {
+    "row_by_cap": {
+      "1": 18,
+      "10": 405,
+      "13": 95,
+      "16": 12,
+      "2": 4299,
+      "3": 1333,
+      "4": 1379,
+      "5": 669,
+      "6": 113,
+      "7": 1144,
+      "8": 2
+    },
+    "row_by_dim": {
+      "2": 138,
+      "3": 5069,
+      "4": 1060,
+      "5": 1833,
+      "6": 1265,
+      "7": 104
+    },
+    "row_count": 9469,
+    "solve_sec": 2.839,
+    "status": "INFEASIBLE"
+  },
+  "max_outside_1": {
+    "row_by_cap": {
+      "1": 18,
+      "10": 405,
+      "13": 95,
+      "16": 12,
+      "2": 4299,
+      "3": 1333,
+      "4": 1379,
+      "5": 669,
+      "6": 113,
+      "7": 1144,
+      "8": 2
+    },
+    "row_by_dim": {
+      "2": 138,
+      "3": 5069,
+      "4": 1060,
+      "5": 1833,
+      "6": 1265,
+      "7": 104
+    },
+    "row_count": 9469,
+    "solve_sec": 24.278,
+    "status": "INFEASIBLE"
+  },
+  "meaning": "CP-SAT exploration of the 9,469 lifted Wang rows that appear in the J65 proof input core, after removing outside-zero assumptions. This shows whether those rows alone force more than one outside-J point or which outside directions can escape. Not proof unless separately encoded and DRAT-verified.",
+  "minimize_outside": {
+    "A_cols": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      12,
+      16,
+      24,
+      28,
+      32,
+      73,
+      96,
+      97,
+      130,
+      144,
+      162,
+      170,
+      216,
+      252
+    ],
+    "fixed_A_checks": {
+      "affine_dim": 432,
+      "complete_wang_scan": {
+        "A_multiplicity_hist": {
+          "1": 19
+        },
+        "complete_constraint_count": 417199,
+        "complete_violation_count": 35,
+        "distinct_A_points": 19,
+        "elapsed_sec": 0.174,
+        "label": "lifted_core_min_outside_solution",
+        "max_excess": 2,
+        "rank_s": 19,
+        "term_count_with_multiplicity": 19,
+        "violations_by_dim8": {
+          "3": 2,
+          "4": 9,
+          "5": 14,
+          "6": 9,
+          "7": 1
+        },
+        "violations_by_excess": {
+          "1": 34,
+          "2": 1
+        },
+        "violations_by_full_lut_L": {
+          "12": 17,
+          "14": 4,
+          "15": 12,
+          "9": 2
+        },
+        "violations_by_occ_cap_head": {
+          "(11, 10)": 2,
+          "(5, 4)": 12,
+          "(6, 5)": 4,
+          "(8, 7)": 16,
+          "(9, 7)": 1
+        },
+        "violations_head": [
+          {
+            "L": 12,
+            "basis8": [
+              128,
+              34,
+              16,
+              8,
+              4
+            ],
+            "basis9": [
+              256,
+              68,
+              32,
+              16,
+              8,
+              1
+            ],
+            "cap": 7,
+            "dim8": 5,
+            "dim9": 6,
+            "excess": 2,
+            "key8": 4415293769733,
+            "key9": 571780540960774,
+            "occupancy": 9,
+            "point_count": 31
+          },
+          {
+            "L": 15,
+            "basis8": [
+              66,
+              34,
+              10,
+              4,
+              1
+            ],
+            "basis9": [
+              132,
+              68,
+              20,
+              8,
+              2,
+              1
+            ],
+            "cap": 4,
+            "dim8": 5,
+            "dim9": 6,
+            "excess": 1,
+            "key8": 1108143784997,
+            "key9": 565166240991302,
+            "occupancy": 5,
+            "point_count": 31
+          },
+          {
+            "L": 15,
+            "basis8": [
+              136,
+              66,
+              34,
+              4,
+              1
+            ],
+            "basis9": [
+              272,
+              132,
+              68,
+              8,
+              2,
+              1
+            ],
+            "cap": 4,
+            "dim8": 5,
+            "dim9": 6,
+            "excess": 1,
+            "key8": 1108244711557,
+            "key9": 565166442844422,
+            "occupancy": 5,
+            "point_count": 31
+          },
+          {
+            "L": 15,
+            "basis8": [
+              138,
+              64,
+              32,
+              6,
+              1
+            ],
+            "basis9": [
+              276,
+              128,
+              64,
+              12,
+              2,
+              1
+            ],
+            "cap": 4,
+            "dim8": 5,
+            "dim9": 6,
+            "excess": 1,
+            "key8": 1112531273893,
+            "key9": 565175015969094,
+            "occupancy": 5,
+            "point_count": 31
+          },
+          {
+            "L": 15,
+            "basis8": [
+              132,
+              64,
+              32,
+              14,
+              1
+            ],
+            "basis9": [
+              264,
+              128,
+              64,
+              28,
+              2,
+              1
+            ],
+            "cap": 4,
+            "dim8": 5,
+            "dim9": 6,
+            "excess": 1,
+            "key8": 1129711142981,
+            "key9": 565209375707270,
+            "occupancy": 5,
+            "point_count": 31
+          },
+          {
+            "L": 15,
+            "basis8": [
+              129,
+              64,
+              32,
+              5,
+              3
+            ],
+            "basis9": [
+              258,
+              128,
+              64,
+              10,
+              6,
+              1
+            ],
+            "cap": 4,
+            "dim8": 5,
+            "dim9": 6,
+            "excess": 1,
+            "key8": 3309407045653,
+            "key9": 569568767512614,
+            "occupancy": 5,
+            "point_count": 31
+          },
+          {
+            "L": 15,
+            "basis8": [
+              65,
+              33,
+              17,
+              8,
+              4
+            ],
+            "basis9": [
+              130,
+              66,
+              34,
+              16,
+              8,
+              1
+            ],
+            "cap": 4,
+            "dim8": 5,
+            "dim9": 6,
+            "excess": 1,
+            "key8": 4415297954837,
+            "key9": 571780549330982,
+            "occupancy": 5,
+            "point_count": 31
+          },
+          {
+            "L": 15,
+            "basis8": [
+              72,
+              40,
+              4,
+              1
+            ],
+            "basis9": [
+              144,
+              80,
+              8,
+              2,
+              1
+            ],
+            "cap": 4,
+            "dim8": 4,
+            "dim9": 5,
+            "excess": 1,
+            "key8": 2164589700,
+            "key9": 1103840807173,
+            "occupancy": 5,
+            "point_count": 15
+          },
+          {
+            "L": 15,
+            "basis8": [
+              170,
+              96,
+              4,
+              1
+            ],
+            "basis9": [
+              340,
+              192,
+              8,
+              2,
+              1
+            ],
+            "cap": 4,
+            "dim8": 4,
+            "dim9": 5,
+            "excess": 1,
+            "key8": 2165050020,
+            "key9": 1103841727813,
+            "occupancy": 5,
+            "point_count": 15
+          },
+          {
+            "L": 15,
+            "basis8": [
+              138,
+              64,
+              32,
+              1
+            ],
+            "basis9": [
+              276,
+              128,
+              64,
+              2,
+              1
+            ],
+            "cap": 4,
+            "dim8": 4,
+            "dim9": 5,
+            "excess": 1,
+            "key8": 2282227876,
+            "key9": 1104076083525,
+            "occupancy": 5,
+            "point_count": 15
+          },
+          {
+            "L": 15,
+            "basis8": [
+              129,
+              64,
+              32,
+              3
+            ],
+            "basis9": [
+              258,
+              128,
+              64,
+              6,
+              1
+            ],
+            "cap": 4,
+            "dim8": 4,
+            "dim9": 5,
+            "excess": 1,
+            "key8": 6577195028,
+            "key9": 1112666017829,
+            "occupancy": 5,
+            "point_count": 15
+          },
+          {
+            "L": 15,
+            "basis8": [
+              65,
+              33,
+              8,
+              4
+            ],
+            "basis9": [
+              130,
+              66,
+              16,
+              8,
+              1
+            ],
+            "cap": 4,
+            "dim8": 4,
+            "dim9": 5,
+            "excess": 1,
+            "key8": 8623760404,
+            "key9": 1116759148581,
+            "occupancy": 5,
+            "point_count": 15
+          },
+          {
+            "L": 15,
+            "basis8": [
+              162,
+              16,
+              8
+            ],
+            "basis9": [
+              324,
+              32,
+              16,
+              1
+            ],
+            "cap": 4,
+            "dim8": 3,
+            "dim9": 4,
+            "excess": 1,
+            "key8": 33688099,
+            "key9": 2214859844,
+            "occupancy": 5,
+            "point_count": 7
+          },
+          {
+            "L": 14,
+            "basis8": [
+              144,
+              50,
+              8,
+              4
+            ],
+            "basis9": [
+              288,
+              100,
+              16,
+              8,
+              1
+            ],
+            "cap": 5,
+            "dim8": 4,
+            "dim9": 5,
+            "excess": 1,
+            "key8": 8623900932,
+            "key9": 1116759429637,
+            "occupancy": 6,
+            "point_count": 15
+          },
+          {
+            "L": 14,
+            "basis8": [
+              128,
+              34,
+              16,
+              8
+            ],
+            "basis9": [
+              256,
+              68,
+              32,
+              16,
+              1
+            ],
+            "cap": 5,
+            "dim8": 4,
+            "dim9": 5,
+            "excess": 1,
+            "key8": 17247258628,
+            "key9": 1134006145029,
+            "occupancy": 6,
+            "point_count": 15
+          },
+          {
+            "L": 14,
+            "basis8": [
+              162,
+              70,
+              16,
+              8
+            ],
+            "basis9": [
+              324,
+              140,
+              32,
+              16,
+              1
+            ],
+            "cap": 5,
+            "dim8": 4,
+            "dim9": 5,
+            "excess": 1,
+            "key8": 17247554084,
+            "key9": 1134006735941,
+            "occupancy": 6,
+            "point_count": 15
+          },
+          {
+            "L": 14,
+            "basis8": [
+              16,
+              8,
+              4
+            ],
+            "basis9": [
+              32,
+              16,
+              8,
+              1
+            ],
+            "cap": 5,
+            "dim8": 3,
+            "dim9": 4,
+            "excess": 1,
+            "key8": 16843011,
+            "key9": 2181169668,
+            "occupancy": 6,
+            "point_count": 7
+          },
+          {
+            "L": 12,
+            "basis8": [
+              136,
+              66,
+              34,
+              24,
+              4,
+              1
+            ],
+            "basis9": [
+              272,
+              132,
+              68,
+              48,
+              8,
+              2,
+              1
+            ],
+            "cap": 7,
+            "dim8": 6,
+            "dim9": 7,
+            "excess": 1,
+            "key8": 567399682689158,
+            "key9": 289365175517090055,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "basis8": [
+              136,
+              73,
+              41,
+              24,
+              4,
+              3
+            ],
+            "basis9": [
+              272,
+              146,
+              82,
+              48,
+              8,
+              6,
+              1
+            ],
+            "cap": 7,
+            "dim8": 6,
+            "dim9": 7,
+            "excess": 1,
+            "key8": 1693299618949254,
+            "key9": 291616975389610247,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "basis8": [
+              132,
+              69,
+              37,
+              16,
+              8,
+              3
+            ],
+            "basis9": [
+              264,
+              138,
+              74,
+              32,
+              16,
+              6,
+              1
+            ],
+            "cap": 7,
+            "dim8": 6,
+            "dim9": 7,
+            "excess": 1,
+            "key8": 1697680468781126,
+            "key9": 291625737089273991,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "basis8": [
+              129,
+              67,
+              35,
+              17,
+              8,
+              4
+            ],
+            "basis9": [
+              258,
+              134,
+              70,
+              34,
+              16,
+              8,
+              1
+            ],
+            "cap": 7,
+            "dim8": 6,
+            "dim9": 7,
+            "excess": 1,
+            "key8": 2260632561281046,
+            "key9": 292751641274273831,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "basis8": [
+              65,
+              33,
+              16,
+              8,
+              4
+            ],
+            "basis9": [
+              130,
+              66,
+              32,
+              16,
+              8,
+              1
+            ],
+            "cap": 7,
+            "dim8": 5,
+            "dim9": 6,
+            "excess": 1,
+            "key8": 4415293760533,
+            "key9": 571780540942374,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "basis8": [
+              131,
+              33,
+              16,
+              8,
+              4
+            ],
+            "basis9": [
+              262,
+              66,
+              32,
+              16,
+              8,
+              1
+            ],
+            "cap": 7,
+            "dim8": 5,
+            "dim9": 6,
+            "excess": 1,
+            "key8": 4415293761589,
+            "key9": 571780540944486,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "basis8": [
+              129,
+              35,
+              16,
+              8,
+              4
+            ],
+            "basis9": [
+              258,
+              70,
+              32,
+              16,
+              8,
+              1
+            ],
+            "cap": 7,
+            "dim8": 5,
+            "dim9": 6,
+            "excess": 1,
+            "key8": 4415293777941,
+            "key9": 571780540977190,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "basis8": [
+              162,
+              67,
+              16,
+              8,
+              4
+            ],
+            "basis9": [
+              324,
+              134,
+              32,
+              16,
+              8,
+              1
+            ],
+            "cap": 7,
+            "dim8": 5,
+            "dim9": 6,
+            "excess": 1,
+            "key8": 4415294040613,
+            "key9": 571780541502534,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "basis8": [
+              162,
+              99,
+              16,
+              8,
+              4
+            ],
+            "basis9": [
+              324,
+              198,
+              32,
+              16,
+              8,
+              1
+            ],
+            "cap": 7,
+            "dim8": 5,
+            "dim9": 6,
+            "excess": 1,
+            "key8": 4415294302757,
+            "key9": 571780542026822,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "basis8": [
+              144,
+              82,
+              50,
+              8,
+              4
+            ],
+            "basis9": [
+              288,
+              164,
+              100,
+              16,
+              8,
+              1
+            ],
+            "cap": 7,
+            "dim8": 5,
+            "dim9": 6,
+            "excess": 1,
+            "key8": 4415436769541,
+            "key9": 571780826960390,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "basis8": [
+              130,
+              70,
+              32,
+              16,
+              8
+            ],
+            "basis9": [
+              260,
+              140,
+              64,
+              32,
+              16,
+              1
+            ],
+            "cap": 7,
+            "dim8": 5,
+            "dim9": 6,
+            "excess": 1,
+            "key8": 8830587553829,
+            "key9": 580611128528966,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "basis8": [
+              162,
+              16,
+              8,
+              4
+            ],
+            "basis9": [
+              324,
+              32,
+              16,
+              8,
+              1
+            ],
+            "cap": 7,
+            "dim8": 4,
+            "dim9": 5,
+            "excess": 1,
+            "key8": 8623622692,
+            "key9": 1116758873157,
+            "occupancy": 8,
+            "point_count": 15
+          },
+          {
+            "L": 9,
+            "basis8": [
+              128,
+              66,
+              34,
+              16,
+              8,
+              4
+            ],
+            "basis9": [
+              256,
+              132,
+              68,
+              32,
+              16,
+              8,
+              1
+            ],
+            "cap": 10,
+            "dim8": 6,
+            "dim9": 7,
+            "excess": 1,
+            "key8": 2260630409594886,
+            "key9": 292751636970901511,
+            "occupancy": 11,
+            "point_count": 63
+          }
+        ]
+      },
+      "complete_wang_violation_count_with_points": 35,
+      "linear_pass": true,
+      "quotient_rank_violations_size2": 4,
+      "saturated_contractions": 9,
+      "trace_local_dependency": {
+        "exact_local_inconsistent_examples": [],
+        "exact_local_inconsistent_terms": 0,
+        "minimal_cut_examples": [],
+        "minimal_cut_violations": 0,
+        "saturated_rank9_count": 6
+      },
+      "transversal_failures": 7,
+      "zero_domain_terms": 1
+    },
+    "objective_value": 5.0,
+    "outside_selected": [
+      1,
+      12,
+      73,
+      96,
+      162
+    ],
+    "outside_selected_count": 5,
+    "row_by_cap": {
+      "1": 18,
+      "10": 405,
+      "13": 95,
+      "16": 12,
+      "2": 4299,
+      "3": 1333,
+      "4": 1379,
+      "5": 669,
+      "6": 113,
+      "7": 1144,
+      "8": 2
+    },
+    "row_by_dim": {
+      "2": 138,
+      "3": 5069,
+      "4": 1060,
+      "5": 1833,
+      "6": 1265,
+      "7": 104
+    },
+    "row_count": 9469,
+    "solve_sec": 120.061,
+    "status": "FEASIBLE"
+  },
+  "outside_size": 190,
+  "parameters": {
+    "seed": 630771,
+    "singleton_limit": 0,
+    "time": 120.0,
+    "workers": 8
+  },
+  "row_count": 9469,
+  "schema": "lifted_core_escape_analysis_v1",
+  "singleton_results": []
+}

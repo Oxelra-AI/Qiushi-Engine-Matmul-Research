@@ -1,0 +1,149 @@
+{
+  "accepted_nonroot_nodes_popped": 124568,
+  "elapsed_sec": 389.5570955276489,
+  "exhausted_declared_tree": true,
+  "field": "F2",
+  "files": {
+    "cache": "data/e11_capacity_sat/e11_capacity_cache.pkl",
+    "eliminated_prefixes_jsonl": "data/e11_canonical_tree/depth4_complete_eliminated_prefixes.jsonl",
+    "frontier_jsonl": "data/e11_canonical_tree/depth4_complete_frontier.jsonl",
+    "membership": "data/e11_occupation_sat/e11_membership.npy",
+    "occupation_feasible_leaves_jsonl": "data/e11_canonical_tree/depth4_complete_occupation_feasible_leaves.jsonl",
+    "perms": "data/e11_quotient_action/e11_quotient_action_verification.perms.npz",
+    "subspace_orbits": "data/e11_subspace_orbits/e11_subspace_orbits.npz"
+  },
+  "max_depth": 4,
+  "max_frontier_size": 205,
+  "meaning": "If and only if exhausted_declared_tree is true at max_depth=19 with no witness, the recorded canonical tree plus eliminated-prefix records constitute an occupation-level nonexistence certificate. Node-limited or shallower runs are only calibrated search-state evidence.",
+  "node_limit": 0,
+  "occupation_feasible_leaf_count_at_max_depth": 119957,
+  "pruned_prefix_count": 112017,
+  "purpose": "canonical E11 A-multiset support tree with exact all-subspace Wang separation",
+  "rank_s": 19,
+  "raw_popped_including_root": 124569,
+  "self_tests": [
+    {
+      "brute": {
+        "orbit_representatives": 164,
+        "raw_valid_multisets": 32391,
+        "size": 2
+      },
+      "generated": {
+        "level1": 8,
+        "level2": 164,
+        "level2_unique": 164
+      },
+      "name": "canonical_augmentation_size2",
+      "ok": true
+    }
+  ],
+  "stats": {
+    "children_attempted_by_depth": {
+      "0": 255,
+      "1": 2040,
+      "2": 40290,
+      "3": 1133475
+    },
+    "leaves_by_depth": {
+      "4": 119957
+    },
+    "popped_by_depth": {
+      "0": 1,
+      "1": 8,
+      "2": 158,
+      "3": 4445,
+      "4": 119957
+    },
+    "pruned_by_capacity_by_depth": {
+      "2": 6,
+      "3": 1553,
+      "4": 110458
+    },
+    "pushed_by_depth": {
+      "1": 8,
+      "2": 158,
+      "3": 4445,
+      "4": 119957
+    },
+    "skipped_noncanonical_by_depth": {
+      "0": 247,
+      "1": 1842,
+      "2": 32071,
+      "3": 729131
+    },
+    "skipped_point_cap_by_depth": {
+      "1": 6,
+      "2": 286,
+      "3": 12603
+    },
+    "skipped_wrong_parent_by_depth": {
+      "1": 28,
+      "2": 1935,
+      "3": 161326
+    }
+  },
+  "stopped_by_node_limit_or_witness": false,
+  "violation_cap_counts": {
+    "1": 19798,
+    "2": 90524,
+    "3": 1695
+  },
+  "violation_dim_counts": {
+    "2": 22677,
+    "3": 88700,
+    "4": 640
+  },
+  "violation_orbit_id_counts_head": {
+    "10": 3,
+    "11": 12,
+    "12": 1,
+    "13": 21,
+    "14": 1,
+    "15": 31,
+    "16": 37,
+    "17": 81,
+    "18": 94,
+    "19": 1,
+    "20": 18,
+    "22": 18,
+    "23": 24,
+    "24": 28,
+    "25": 1,
+    "26": 70,
+    "27": 96,
+    "28": 8,
+    "29": 8,
+    "30": 17,
+    "31": 119,
+    "32": 12,
+    "33": 12,
+    "34": 24,
+    "35": 24,
+    "36": 21,
+    "37": 23,
+    "38": 42,
+    "39": 5180,
+    "40": 14499,
+    "42": 19,
+    "43": 19,
+    "44": 24,
+    "45": 28,
+    "46": 38,
+    "48": 30,
+    "49": 29,
+    "50": 33,
+    "51": 27,
+    "52": 35,
+    "53": 38,
+    "54": 50,
+    "55": 43,
+    "56": 44,
+    "58": 139,
+    "59": 152,
+    "60": 173,
+    "61": 12,
+    "62": 34,
+    "63": 20
+  },
+  "witness": null
+}

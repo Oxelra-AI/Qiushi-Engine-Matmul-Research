@@ -1,0 +1,62 @@
+{
+  "scheme": "data/fmm_r23_schemes/serendipitous_8d34.qmm",
+  "continuation_json": "data/fmm_r23_schemes/serendipitous_8d34_continuation_ranked0_further.json",
+  "source_t": 60.0,
+  "source_rank23_residual_norm": 3.645387814811203e-12,
+  "source_min_projective_pairing_singular": 4.745007821921315e-05,
+  "results": [
+    {
+      "pair": "uv",
+      "remove": 2,
+      "sigma_min_normalized_pairing": 4.745007821921313e-05,
+      "gamma_abs_removed": 0.0001230343688888173,
+      "initial_residual_norm": 56.26699823210646,
+      "initial_residual_maxabs": 39.538209786594926,
+      "initial_var_norm": 1187541.572939386,
+      "candidate_index": 2,
+      "success": false,
+      "status": 0,
+      "message": "The maximum number of function evaluations is exceeded.",
+      "nfev": 3000,
+      "final_residual_norm": 0.00639850886098303,
+      "final_residual_maxabs": 0.0018607189740381964,
+      "final_var_norm": 1187696.884462813
+    },
+    {
+      "pair": "uv",
+      "remove": 17,
+      "sigma_min_normalized_pairing": 4.745007821921313e-05,
+      "gamma_abs_removed": 0.0009829117189699907,
+      "initial_residual_norm": 1.1921073245538856,
+      "initial_residual_maxabs": 0.6983824446306743,
+      "initial_var_norm": 14935.450817508867,
+      "candidate_index": 0,
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 2957,
+      "final_residual_norm": 1.0000000000557374,
+      "final_residual_maxabs": 0.582312201882293,
+      "final_var_norm": 14940.838566936802
+    },
+    {
+      "pair": "uv",
+      "remove": 10,
+      "sigma_min_normalized_pairing": 4.745007821921313e-05,
+      "gamma_abs_removed": 0.0009482387547488548,
+      "initial_residual_norm": 1.1934648418249856,
+      "initial_residual_maxabs": 0.6978173814230934,
+      "initial_var_norm": 14935.469396111359,
+      "candidate_index": 1,
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 2937,
+      "final_residual_norm": 1.0000000000562392,
+      "final_residual_maxabs": 0.5819020425967674,
+      "final_var_norm": 14940.797879260912
+    }
+  ],
+  "best_npy": "data/fmm_r23_schemes/serendipitous_rank22_attempt_from_pairdefect_best.npy",
+  "interpretation": "A final residual near zero would be a candidate rank-22 decomposition requiring independent exactification and QMM verification. Nonzero residual indicates the near pair-defect path has not yet produced an exact rank-22 algorithm."
+}

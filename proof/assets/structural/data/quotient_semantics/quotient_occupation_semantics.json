@@ -1,0 +1,31 @@
+{
+  "all_ok": true,
+  "elapsed_sec": 19.008480310440063,
+  "failure_count": 0,
+  "failures_head": [],
+  "input_instance_counts": {
+    "affine_plane_rows": 1302,
+    "dim2_core_rows": 18011,
+    "line_rows": 511
+  },
+  "mathematical_statement_checked": "q_U is reduction modulo the RREF rowspace U; for all a in F2^9, q_U(a)=0 iff a in U. Applying q_U to each A factor of a rank-one term kills exactly the terms counted by the occupation row.",
+  "meaning": "For every proof-used A-subspace U, the quotient map represented by the Wang RREF substitution kills exactly the A-vectors in U. Hence a lower bound L for q_U(T) gives the occupation inequality #terms with A_t in U <= s-L for any s-term decomposition.",
+  "quotient_image_dimension_hist": {
+    "2": 13,
+    "3": 1209,
+    "4": 1991,
+    "5": 12684,
+    "6": 2296,
+    "8": 511
+  },
+  "schema": "s0908_quotient_occupation_semantics_v1",
+  "subspace_dimension_hist": {
+    "1": 511,
+    "3": 2296,
+    "4": 12684,
+    "5": 1991,
+    "6": 1209,
+    "7": 13
+  },
+  "used_unique_subspace_count": 18704
+}

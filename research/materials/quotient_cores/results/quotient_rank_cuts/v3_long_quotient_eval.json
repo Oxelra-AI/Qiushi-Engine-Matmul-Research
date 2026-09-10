@@ -1,0 +1,3839 @@
+{
+  "best_by_complete_violations": [
+    {
+      "complete_violations": 16,
+      "linear": true,
+      "qviol": 0,
+      "round": 12,
+      "trans": 0,
+      "zero": 0
+    },
+    {
+      "complete_violations": 28,
+      "linear": true,
+      "qviol": 0,
+      "round": 14,
+      "trans": 0,
+      "zero": 0
+    },
+    {
+      "complete_violations": 29,
+      "linear": true,
+      "qviol": 72,
+      "round": 4,
+      "trans": 4,
+      "zero": 0
+    },
+    {
+      "complete_violations": 29,
+      "linear": true,
+      "qviol": 0,
+      "round": 10,
+      "trans": 5,
+      "zero": 1
+    },
+    {
+      "complete_violations": 33,
+      "linear": true,
+      "qviol": 0,
+      "round": 8,
+      "trans": 13,
+      "zero": 1
+    },
+    {
+      "complete_violations": 34,
+      "linear": true,
+      "qviol": 0,
+      "round": 13,
+      "trans": 0,
+      "zero": 0
+    },
+    {
+      "complete_violations": 35,
+      "linear": true,
+      "qviol": 0,
+      "round": 11,
+      "trans": 4,
+      "zero": 1
+    },
+    {
+      "complete_violations": 42,
+      "linear": true,
+      "qviol": 0,
+      "round": 6,
+      "trans": 0,
+      "zero": 0
+    },
+    {
+      "complete_violations": 75,
+      "linear": true,
+      "qviol": 0,
+      "round": 5,
+      "trans": 16,
+      "zero": 2
+    },
+    {
+      "complete_violations": 87,
+      "linear": false,
+      "qviol": 4,
+      "round": 9,
+      "trans": 20,
+      "zero": 2
+    }
+  ],
+  "core": "E11",
+  "elapsed_sec": 0.362,
+  "field": "F2",
+  "round_count": 15,
+  "rows": [
+    {
+      "complete_violations": 409,
+      "domain_hist": {
+        "B3_C3": 9,
+        "B9_C9": 10
+      },
+      "linear_affine_dim": 459,
+      "linear_passed": true,
+      "max_excess": 2,
+      "quotient_cut_eval": {
+        "distinct_A_points": 19,
+        "guard_source_pairs_scanned": 253,
+        "multiplicity_hist": {
+          "1": 19
+        },
+        "name": "v3_long_round0",
+        "nontrivial_guarded_instances": 1384,
+        "saturated_by_rank": {
+          "3": 3,
+          "9": 20
+        },
+        "saturated_contraction_count": 23,
+        "term_count": 19,
+        "violated_guarded_instances": 0,
+        "violations_by_requirement": {},
+        "violations_by_side": {},
+        "violations_by_source_pair_rank": {},
+        "violations_by_target_rank": {}
+      },
+      "quotient_cut_violations_head": [],
+      "round": 0,
+      "support": [
+        2,
+        3,
+        8,
+        9,
+        12,
+        13,
+        16,
+        18,
+        20,
+        22,
+        32,
+        34,
+        35,
+        64,
+        65,
+        66,
+        128,
+        129,
+        130
+      ],
+      "transversal_failure_count_reported": 18,
+      "zero_domain_term_count": 0
+    },
+    {
+      "complete_violations": 234,
+      "domain_hist": {
+        "B0_C3": 2,
+        "B3_C0": 1,
+        "B3_C3": 6,
+        "B6_C3": 5,
+        "B6_C6": 4,
+        "B9_C9": 1
+      },
+      "linear_affine_dim": 81,
+      "linear_passed": true,
+      "max_excess": 2,
+      "quotient_cut_eval": {
+        "distinct_A_points": 19,
+        "guard_source_pairs_scanned": 300,
+        "multiplicity_hist": {
+          "1": 19
+        },
+        "name": "v3_long_round1",
+        "nontrivial_guarded_instances": 5408,
+        "saturated_by_rank": {
+          "3": 1,
+          "6": 7,
+          "9": 17
+        },
+        "saturated_contraction_count": 25,
+        "term_count": 19,
+        "violated_guarded_instances": 28,
+        "violations_by_requirement": {
+          "3": 28
+        },
+        "violations_by_side": {
+          "B": 12,
+          "C": 16
+        },
+        "violations_by_source_pair_rank": {
+          "3,6": 4,
+          "6,3": 12,
+          "6,6": 12
+        },
+        "violations_by_target_rank": {
+          "3": 12,
+          "6": 14,
+          "9": 2
+        }
+      },
+      "quotient_cut_violations_head": [
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            8,
+            16
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            35,
+            161
+          ],
+          "target": 90,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            8,
+            16
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            35,
+            161
+          ],
+          "target": 121,
+          "target_rank": 9,
+          "target_saturated": true,
+          "target_weight": 9
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            8,
+            16
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            35,
+            161
+          ],
+          "target": 216,
+          "target_rank": 3,
+          "target_saturated": true,
+          "target_weight": 3
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            8,
+            16
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            35,
+            161
+          ],
+          "target": 251,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            8,
+            16
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            35,
+            227
+          ],
+          "target": 24,
+          "target_rank": 3,
+          "target_saturated": false,
+          "target_weight": 5
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            8,
+            16
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            35,
+            227
+          ],
+          "target": 59,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 9
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            8,
+            16
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            35,
+            227
+          ],
+          "target": 216,
+          "target_rank": 3,
+          "target_saturated": true,
+          "target_weight": 3
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            8,
+            16
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            35,
+            227
+          ],
+          "target": 251,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            192,
+            195
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            3
+          ],
+          "source_weights": [
+            6,
+            3
+          ],
+          "sources": [
+            39,
+            216
+          ],
+          "target": 72,
+          "target_rank": 3,
+          "target_saturated": false,
+          "target_weight": 4
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            192,
+            195
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            3
+          ],
+          "source_weights": [
+            6,
+            3
+          ],
+          "sources": [
+            39,
+            216
+          ],
+          "target": 111,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 8
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            192,
+            195
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            3
+          ],
+          "source_weights": [
+            6,
+            3
+          ],
+          "sources": [
+            39,
+            216
+          ],
+          "target": 144,
+          "target_rank": 3,
+          "target_saturated": false,
+          "target_weight": 5
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            192,
+            195
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            3
+          ],
+          "source_weights": [
+            6,
+            3
+          ],
+          "sources": [
+            39,
+            216
+          ],
+          "target": 183,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 9
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            72,
+            108
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            3
+          ],
+          "source_weights": [
+            6,
+            3
+          ],
+          "sources": [
+            39,
+            216
+          ],
+          "target": 24,
+          "target_rank": 3,
+          "target_saturated": false,
+          "target_weight": 5
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            72,
+            108
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            3
+          ],
+          "source_weights": [
+            6,
+            3
+          ],
+          "sources": [
+            39,
+            216
+          ],
+          "target": 63,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 9
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            72,
+            108
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            3
+          ],
+          "source_weights": [
+            6,
+            3
+          ],
+          "sources": [
+            39,
+            216
+          ],
+          "target": 192,
+          "target_rank": 3,
+          "target_saturated": false,
+          "target_weight": 4
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            72,
+            108
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            3
+          ],
+          "source_weights": [
+            6,
+            3
+          ],
+          "sources": [
+            39,
+            216
+          ],
+          "target": 231,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 8
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            8,
+            16
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            161,
+            227
+          ],
+          "target": 24,
+          "target_rank": 3,
+          "target_saturated": false,
+          "target_weight": 5
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            8,
+            16
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            161,
+            227
+          ],
+          "target": 90,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            8,
+            16
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            161,
+            227
+          ],
+          "target": 185,
+          "target_rank": 9,
+          "target_saturated": true,
+          "target_weight": 9
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            8,
+            16
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            161,
+            227
+          ],
+          "target": 251,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        }
+      ],
+      "round": 1,
+      "support": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        16,
+        28,
+        37,
+        72,
+        76,
+        108,
+        133,
+        192,
+        195,
+        216,
+        219,
+        250,
+        252
+      ],
+      "transversal_failure_count_reported": 20,
+      "zero_domain_term_count": 3
+    },
+    {
+      "complete_violations": 167,
+      "domain_hist": {
+        "B0_C6": 1,
+        "B3_C3": 2,
+        "B3_C6": 6,
+        "B6_C3": 2,
+        "B6_C6": 6,
+        "B9_C9": 2
+      },
+      "linear_affine_dim": null,
+      "linear_passed": false,
+      "max_excess": 3,
+      "quotient_cut_eval": {
+        "distinct_A_points": 19,
+        "guard_source_pairs_scanned": 210,
+        "multiplicity_hist": {
+          "1": 19
+        },
+        "name": "v3_long_round2",
+        "nontrivial_guarded_instances": 2688,
+        "saturated_by_rank": {
+          "6": 6,
+          "9": 15
+        },
+        "saturated_contraction_count": 21,
+        "term_count": 19,
+        "violated_guarded_instances": 20,
+        "violations_by_requirement": {
+          "3": 20
+        },
+        "violations_by_side": {
+          "B": 20
+        },
+        "violations_by_source_pair_rank": {
+          "6,6": 20
+        },
+        "violations_by_target_rank": {
+          "3": 3,
+          "6": 17
+        }
+      },
+      "quotient_cut_violations_head": [
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            32,
+            108
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            88,
+            147
+          ],
+          "target": 35,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            32,
+            108
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            88,
+            147
+          ],
+          "target": 123,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            32,
+            108
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            88,
+            147
+          ],
+          "target": 176,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            32,
+            108
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            88,
+            147
+          ],
+          "target": 232,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            32,
+            61
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            88,
+            152
+          ],
+          "target": 56,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 9
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            32,
+            61
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            88,
+            152
+          ],
+          "target": 96,
+          "target_rank": 3,
+          "target_saturated": false,
+          "target_weight": 5
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            32,
+            61
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            88,
+            152
+          ],
+          "target": 160,
+          "target_rank": 3,
+          "target_saturated": false,
+          "target_weight": 5
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            32,
+            61
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            88,
+            152
+          ],
+          "target": 248,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            4,
+            32
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            145,
+            147
+          ],
+          "target": 36,
+          "target_rank": 3,
+          "target_saturated": false,
+          "target_weight": 8
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            4,
+            32
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            145,
+            147
+          ],
+          "target": 38,
+          "target_rank": 6,
+          "target_saturated": true,
+          "target_weight": 6
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            4,
+            32
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            145,
+            147
+          ],
+          "target": 181,
+          "target_rank": 6,
+          "target_saturated": true,
+          "target_weight": 6
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            4,
+            32
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            145,
+            147
+          ],
+          "target": 183,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 8
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            32,
+            180
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            147,
+            152
+          ],
+          "target": 35,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            32,
+            180
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            147,
+            152
+          ],
+          "target": 40,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 9
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            32,
+            144
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            147,
+            152
+          ],
+          "target": 112,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            32,
+            144
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            147,
+            152
+          ],
+          "target": 123,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            32,
+            180
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            147,
+            152
+          ],
+          "target": 176,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            32,
+            180
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            147,
+            152
+          ],
+          "target": 187,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            32,
+            144
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            147,
+            152
+          ],
+          "target": 227,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 9
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            32,
+            144
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            147,
+            152
+          ],
+          "target": 232,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        }
+      ],
+      "round": 2,
+      "support": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        27,
+        31,
+        32,
+        61,
+        72,
+        97,
+        108,
+        144,
+        162,
+        180,
+        227,
+        237,
+        251
+      ],
+      "transversal_failure_count_reported": 20,
+      "zero_domain_term_count": 1
+    },
+    {
+      "complete_violations": 196,
+      "domain_hist": {
+        "B0_C0": 7,
+        "B0_C3": 5,
+        "B3_C0": 2,
+        "B3_C3": 2,
+        "B3_C6": 2,
+        "B6_C3": 1
+      },
+      "linear_affine_dim": null,
+      "linear_passed": false,
+      "max_excess": 3,
+      "quotient_cut_eval": {
+        "distinct_A_points": 19,
+        "guard_source_pairs_scanned": 210,
+        "multiplicity_hist": {
+          "1": 19
+        },
+        "name": "v3_long_round3",
+        "nontrivial_guarded_instances": 13760,
+        "saturated_by_rank": {
+          "3": 2,
+          "6": 12,
+          "9": 7
+        },
+        "saturated_contraction_count": 21,
+        "term_count": 19,
+        "violated_guarded_instances": 208,
+        "violations_by_requirement": {
+          "3": 208
+        },
+        "violations_by_side": {
+          "B": 108,
+          "C": 100
+        },
+        "violations_by_source_pair_rank": {
+          "3,6": 20,
+          "6,3": 40,
+          "6,6": 148
+        },
+        "violations_by_target_rank": {
+          "3": 46,
+          "6": 132,
+          "9": 30
+        }
+      },
+      "quotient_cut_violations_head": [
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            1,
+            3
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            3,
+            6
+          ],
+          "source_weights": [
+            3,
+            6
+          ],
+          "sources": [
+            4,
+            40
+          ],
+          "target": 9,
+          "target_rank": 3,
+          "target_saturated": false,
+          "target_weight": 4
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            1,
+            3
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            3,
+            6
+          ],
+          "source_weights": [
+            3,
+            6
+          ],
+          "sources": [
+            4,
+            40
+          ],
+          "target": 13,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            1,
+            3
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            3,
+            6
+          ],
+          "source_weights": [
+            3,
+            6
+          ],
+          "sources": [
+            4,
+            40
+          ],
+          "target": 33,
+          "target_rank": 6,
+          "target_saturated": true,
+          "target_weight": 6
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            1,
+            3
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            3,
+            6
+          ],
+          "source_weights": [
+            3,
+            6
+          ],
+          "sources": [
+            4,
+            40
+          ],
+          "target": 37,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            1,
+            8
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            3,
+            6
+          ],
+          "source_weights": [
+            3,
+            6
+          ],
+          "sources": [
+            4,
+            54
+          ],
+          "target": 9,
+          "target_rank": 3,
+          "target_saturated": false,
+          "target_weight": 4
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            1,
+            8
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            3,
+            6
+          ],
+          "source_weights": [
+            3,
+            6
+          ],
+          "sources": [
+            4,
+            54
+          ],
+          "target": 13,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            1,
+            8
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            3,
+            6
+          ],
+          "source_weights": [
+            3,
+            6
+          ],
+          "sources": [
+            4,
+            54
+          ],
+          "target": 59,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            1,
+            8
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            3,
+            6
+          ],
+          "source_weights": [
+            3,
+            6
+          ],
+          "sources": [
+            4,
+            54
+          ],
+          "target": 63,
+          "target_rank": 6,
+          "target_saturated": true,
+          "target_weight": 6
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            3,
+            10
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            3,
+            6
+          ],
+          "source_weights": [
+            3,
+            6
+          ],
+          "sources": [
+            4,
+            63
+          ],
+          "target": 9,
+          "target_rank": 3,
+          "target_saturated": false,
+          "target_weight": 4
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            3,
+            10
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            3,
+            6
+          ],
+          "source_weights": [
+            3,
+            6
+          ],
+          "sources": [
+            4,
+            63
+          ],
+          "target": 13,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            3,
+            10
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            3,
+            6
+          ],
+          "source_weights": [
+            3,
+            6
+          ],
+          "sources": [
+            4,
+            63
+          ],
+          "target": 50,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            3,
+            10
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            3,
+            6
+          ],
+          "source_weights": [
+            3,
+            6
+          ],
+          "sources": [
+            4,
+            63
+          ],
+          "target": 54,
+          "target_rank": 6,
+          "target_saturated": true,
+          "target_weight": 6
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            18,
+            128
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            3,
+            6
+          ],
+          "source_weights": [
+            3,
+            6
+          ],
+          "sources": [
+            4,
+            68
+          ],
+          "target": 144,
+          "target_rank": 3,
+          "target_saturated": true,
+          "target_weight": 3
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            18,
+            128
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            3,
+            6
+          ],
+          "source_weights": [
+            3,
+            6
+          ],
+          "sources": [
+            4,
+            68
+          ],
+          "target": 148,
+          "target_rank": 6,
+          "target_saturated": true,
+          "target_weight": 6
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            18,
+            128
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            3,
+            6
+          ],
+          "source_weights": [
+            3,
+            6
+          ],
+          "sources": [
+            4,
+            68
+          ],
+          "target": 208,
+          "target_rank": 6,
+          "target_saturated": true,
+          "target_weight": 6
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            18,
+            128
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            3,
+            6
+          ],
+          "source_weights": [
+            3,
+            6
+          ],
+          "sources": [
+            4,
+            68
+          ],
+          "target": 212,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            4,
+            255
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            33,
+            66
+          ],
+          "target": 4,
+          "target_rank": 3,
+          "target_saturated": true,
+          "target_weight": 3
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 1,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            8
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            33,
+            66
+          ],
+          "target": 9,
+          "target_rank": 3,
+          "target_saturated": false,
+          "target_weight": 4
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            144,
+            255
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            33,
+            66
+          ],
+          "target": 19,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            4,
+            144
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            33,
+            66
+          ],
+          "target": 23,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 8
+        }
+      ],
+      "round": 3,
+      "support": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        10,
+        18,
+        32,
+        36,
+        64,
+        128,
+        144,
+        146,
+        185,
+        210,
+        219,
+        235,
+        255
+      ],
+      "transversal_failure_count_reported": 20,
+      "zero_domain_term_count": 14
+    },
+    {
+      "complete_violations": 29,
+      "domain_hist": {
+        "B3_C3": 6,
+        "B3_C6": 2,
+        "B6_C6": 6,
+        "B9_C9": 5
+      },
+      "linear_affine_dim": 342,
+      "linear_passed": true,
+      "max_excess": 1,
+      "quotient_cut_eval": {
+        "distinct_A_points": 19,
+        "guard_source_pairs_scanned": 136,
+        "multiplicity_hist": {
+          "1": 19
+        },
+        "name": "v3_long_round4",
+        "nontrivial_guarded_instances": 5344,
+        "saturated_by_rank": {
+          "3": 2,
+          "6": 4,
+          "9": 11
+        },
+        "saturated_contraction_count": 17,
+        "term_count": 19,
+        "violated_guarded_instances": 72,
+        "violations_by_requirement": {
+          "3": 72
+        },
+        "violations_by_side": {
+          "B": 56,
+          "C": 16
+        },
+        "violations_by_source_pair_rank": {
+          "6,3": 8,
+          "6,6": 64
+        },
+        "violations_by_target_rank": {
+          "3": 22,
+          "6": 50
+        }
+      },
+      "quotient_cut_violations_head": [
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            144,
+            146
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            3
+          ],
+          "source_weights": [
+            6,
+            3
+          ],
+          "sources": [
+            68,
+            96
+          ],
+          "target": 132,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            16,
+            18
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            3
+          ],
+          "source_weights": [
+            6,
+            3
+          ],
+          "sources": [
+            68,
+            96
+          ],
+          "target": 144,
+          "target_rank": 3,
+          "target_saturated": false,
+          "target_weight": 5
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            144,
+            146
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            3
+          ],
+          "source_weights": [
+            6,
+            3
+          ],
+          "sources": [
+            68,
+            96
+          ],
+          "target": 160,
+          "target_rank": 3,
+          "target_saturated": false,
+          "target_weight": 4
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            16,
+            18
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            3
+          ],
+          "source_weights": [
+            6,
+            3
+          ],
+          "sources": [
+            68,
+            96
+          ],
+          "target": 180,
+          "target_rank": 3,
+          "target_saturated": false,
+          "target_weight": 6
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            144,
+            146
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            3
+          ],
+          "source_weights": [
+            6,
+            3
+          ],
+          "sources": [
+            68,
+            96
+          ],
+          "target": 192,
+          "target_rank": 3,
+          "target_saturated": false,
+          "target_weight": 5
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            16,
+            18
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            3
+          ],
+          "source_weights": [
+            6,
+            3
+          ],
+          "sources": [
+            68,
+            96
+          ],
+          "target": 212,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            144,
+            146
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            3
+          ],
+          "source_weights": [
+            6,
+            3
+          ],
+          "sources": [
+            68,
+            96
+          ],
+          "target": 228,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 8
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            16,
+            18
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            3
+          ],
+          "source_weights": [
+            6,
+            3
+          ],
+          "sources": [
+            68,
+            96
+          ],
+          "target": 240,
+          "target_rank": 6,
+          "target_saturated": true,
+          "target_weight": 6
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            144,
+            146
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            68,
+            100
+          ],
+          "target": 128,
+          "target_rank": 3,
+          "target_saturated": false,
+          "target_weight": 8
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            144,
+            146
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            68,
+            100
+          ],
+          "target": 132,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            16,
+            18
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            68,
+            100
+          ],
+          "target": 144,
+          "target_rank": 3,
+          "target_saturated": false,
+          "target_weight": 5
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            16,
+            18
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            68,
+            100
+          ],
+          "target": 148,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 8
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            144,
+            146
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            68,
+            100
+          ],
+          "target": 160,
+          "target_rank": 3,
+          "target_saturated": false,
+          "target_weight": 4
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            144,
+            146
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            68,
+            100
+          ],
+          "target": 164,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            16,
+            18
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            68,
+            100
+          ],
+          "target": 176,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            16,
+            18
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            68,
+            100
+          ],
+          "target": 180,
+          "target_rank": 3,
+          "target_saturated": false,
+          "target_weight": 6
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            144,
+            146
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            68,
+            100
+          ],
+          "target": 192,
+          "target_rank": 3,
+          "target_saturated": false,
+          "target_weight": 5
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            144,
+            146
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            68,
+            100
+          ],
+          "target": 196,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 8
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            16,
+            18
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            68,
+            100
+          ],
+          "target": 208,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 8
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            16,
+            18
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            68,
+            100
+          ],
+          "target": 212,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        }
+      ],
+      "round": 4,
+      "support": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        16,
+        18,
+        32,
+        72,
+        96,
+        144,
+        146,
+        160,
+        224,
+        227,
+        243,
+        252,
+        255
+      ],
+      "transversal_failure_count_reported": 4,
+      "zero_domain_term_count": 0
+    },
+    {
+      "complete_violations": 75,
+      "domain_hist": {
+        "B0_C3": 1,
+        "B3_C0": 1,
+        "B3_C3": 3,
+        "B6_C3": 2,
+        "B6_C6": 8,
+        "B9_C9": 4
+      },
+      "linear_affine_dim": 279,
+      "linear_passed": true,
+      "max_excess": 2,
+      "quotient_cut_eval": {
+        "distinct_A_points": 19,
+        "guard_source_pairs_scanned": 78,
+        "multiplicity_hist": {
+          "1": 19
+        },
+        "name": "v3_long_round5",
+        "nontrivial_guarded_instances": 1984,
+        "saturated_by_rank": {
+          "3": 1,
+          "6": 4,
+          "9": 8
+        },
+        "saturated_contraction_count": 13,
+        "term_count": 19,
+        "violated_guarded_instances": 0,
+        "violations_by_requirement": {},
+        "violations_by_side": {},
+        "violations_by_source_pair_rank": {},
+        "violations_by_target_rank": {}
+      },
+      "quotient_cut_violations_head": [],
+      "round": 5,
+      "support": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        16,
+        28,
+        32,
+        36,
+        64,
+        65,
+        72,
+        128,
+        142,
+        180,
+        212,
+        216,
+        224
+      ],
+      "transversal_failure_count_reported": 16,
+      "zero_domain_term_count": 2
+    },
+    {
+      "complete_violations": 42,
+      "domain_hist": {
+        "B3_C3": 4,
+        "B6_C6": 10,
+        "B9_C9": 5
+      },
+      "linear_affine_dim": 288,
+      "linear_passed": true,
+      "max_excess": 2,
+      "quotient_cut_eval": {
+        "distinct_A_points": 19,
+        "guard_source_pairs_scanned": 91,
+        "multiplicity_hist": {
+          "1": 19
+        },
+        "name": "v3_long_round6",
+        "nontrivial_guarded_instances": 0,
+        "saturated_by_rank": {
+          "6": 3,
+          "9": 11
+        },
+        "saturated_contraction_count": 14,
+        "term_count": 19,
+        "violated_guarded_instances": 0,
+        "violations_by_requirement": {},
+        "violations_by_side": {},
+        "violations_by_source_pair_rank": {},
+        "violations_by_target_rank": {}
+      },
+      "quotient_cut_violations_head": [],
+      "round": 6,
+      "support": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        10,
+        24,
+        28,
+        32,
+        36,
+        96,
+        109,
+        125,
+        130,
+        146,
+        168,
+        188,
+        195,
+        216
+      ],
+      "transversal_failure_count_reported": 0,
+      "zero_domain_term_count": 0
+    },
+    {
+      "complete_violations": 151,
+      "domain_hist": {
+        "B0_C3": 6,
+        "B3_C0": 2,
+        "B3_C3": 7,
+        "B3_C6": 3,
+        "B6_C3": 1
+      },
+      "linear_affine_dim": null,
+      "linear_passed": false,
+      "max_excess": 2,
+      "quotient_cut_eval": {
+        "distinct_A_points": 19,
+        "guard_source_pairs_scanned": 325,
+        "multiplicity_hist": {
+          "1": 19
+        },
+        "name": "v3_long_round7",
+        "nontrivial_guarded_instances": 8704,
+        "saturated_by_rank": {
+          "3": 1,
+          "6": 10,
+          "9": 15
+        },
+        "saturated_contraction_count": 26,
+        "term_count": 19,
+        "violated_guarded_instances": 44,
+        "violations_by_requirement": {
+          "3": 44
+        },
+        "violations_by_side": {
+          "B": 32,
+          "C": 12
+        },
+        "violations_by_source_pair_rank": {
+          "3,6": 4,
+          "6,6": 40
+        },
+        "violations_by_target_rank": {
+          "3": 8,
+          "6": 31,
+          "9": 5
+        }
+      },
+      "quotient_cut_violations_head": [
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            4,
+            32
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            10,
+            202
+          ],
+          "target": 53,
+          "target_rank": 9,
+          "target_saturated": false,
+          "target_weight": 10
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            4,
+            32
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            10,
+            202
+          ],
+          "target": 63,
+          "target_rank": 6,
+          "target_saturated": true,
+          "target_weight": 6
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            4,
+            32
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            10,
+            202
+          ],
+          "target": 245,
+          "target_rank": 6,
+          "target_saturated": true,
+          "target_weight": 6
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            4,
+            32
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            10,
+            202
+          ],
+          "target": 255,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 8
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            4,
+            32
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            3,
+            6
+          ],
+          "source_weights": [
+            3,
+            6
+          ],
+          "sources": [
+            18,
+            202
+          ],
+          "target": 45,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            4,
+            32
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            3,
+            6
+          ],
+          "source_weights": [
+            3,
+            6
+          ],
+          "sources": [
+            18,
+            202
+          ],
+          "target": 63,
+          "target_rank": 6,
+          "target_saturated": true,
+          "target_weight": 6
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            4,
+            32
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            3,
+            6
+          ],
+          "source_weights": [
+            3,
+            6
+          ],
+          "sources": [
+            18,
+            202
+          ],
+          "target": 231,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            4,
+            32
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            3,
+            6
+          ],
+          "source_weights": [
+            3,
+            6
+          ],
+          "sources": [
+            18,
+            202
+          ],
+          "target": 245,
+          "target_rank": 6,
+          "target_saturated": true,
+          "target_weight": 6
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            65,
+            97
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            81,
+            150
+          ],
+          "target": 13,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 8
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            92,
+            162
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            81,
+            150
+          ],
+          "target": 18,
+          "target_rank": 3,
+          "target_saturated": true,
+          "target_weight": 3
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            162,
+            222
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            81,
+            150
+          ],
+          "target": 22,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 8
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            92,
+            162
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            81,
+            150
+          ],
+          "target": 67,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 7
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            162,
+            222
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            81,
+            150
+          ],
+          "target": 71,
+          "target_rank": 9,
+          "target_saturated": false,
+          "target_weight": 10
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            65,
+            97
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            81,
+            150
+          ],
+          "target": 92,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 8
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            162,
+            222
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            81,
+            150
+          ],
+          "target": 128,
+          "target_rank": 3,
+          "target_saturated": false,
+          "target_weight": 6
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            92,
+            162
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            81,
+            150
+          ],
+          "target": 132,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 9
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            65,
+            97
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            81,
+            150
+          ],
+          "target": 155,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 8
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            65,
+            97
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            81,
+            150
+          ],
+          "target": 202,
+          "target_rank": 6,
+          "target_saturated": true,
+          "target_weight": 6
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            162,
+            222
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            81,
+            150
+          ],
+          "target": 209,
+          "target_rank": 6,
+          "target_saturated": true,
+          "target_weight": 6
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            92,
+            162
+          ],
+          "requirement": 3,
+          "side": "C",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            81,
+            150
+          ],
+          "target": 213,
+          "target_rank": 9,
+          "target_saturated": false,
+          "target_weight": 11
+        }
+      ],
+      "round": 7,
+      "support": [
+        4,
+        18,
+        20,
+        27,
+        32,
+        36,
+        65,
+        73,
+        92,
+        94,
+        96,
+        97,
+        109,
+        160,
+        162,
+        182,
+        219,
+        222,
+        255
+      ],
+      "transversal_failure_count_reported": 20,
+      "zero_domain_term_count": 8
+    },
+    {
+      "complete_violations": 33,
+      "domain_hist": {
+        "B3_C0": 1,
+        "B3_C3": 7,
+        "B6_C3": 1,
+        "B6_C6": 10
+      },
+      "linear_affine_dim": 144,
+      "linear_passed": true,
+      "max_excess": 1,
+      "quotient_cut_eval": {
+        "distinct_A_points": 19,
+        "guard_source_pairs_scanned": 171,
+        "multiplicity_hist": {
+          "1": 19
+        },
+        "name": "v3_long_round8",
+        "nontrivial_guarded_instances": 3936,
+        "saturated_by_rank": {
+          "3": 1,
+          "6": 6,
+          "9": 12
+        },
+        "saturated_contraction_count": 19,
+        "term_count": 19,
+        "violated_guarded_instances": 0,
+        "violations_by_requirement": {},
+        "violations_by_side": {},
+        "violations_by_source_pair_rank": {},
+        "violations_by_target_rank": {}
+      },
+      "quotient_cut_violations_head": [],
+      "round": 8,
+      "support": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        16,
+        27,
+        32,
+        36,
+        64,
+        73,
+        130,
+        137,
+        144,
+        182,
+        227,
+        247,
+        252
+      ],
+      "transversal_failure_count_reported": 13,
+      "zero_domain_term_count": 1
+    },
+    {
+      "complete_violations": 87,
+      "domain_hist": {
+        "B0_C0": 1,
+        "B0_C3": 1,
+        "B3_C3": 7,
+        "B6_C3": 1,
+        "B6_C6": 6,
+        "B9_C9": 3
+      },
+      "linear_affine_dim": null,
+      "linear_passed": false,
+      "max_excess": 2,
+      "quotient_cut_eval": {
+        "distinct_A_points": 19,
+        "guard_source_pairs_scanned": 190,
+        "multiplicity_hist": {
+          "1": 19
+        },
+        "name": "v3_long_round9",
+        "nontrivial_guarded_instances": 448,
+        "saturated_by_rank": {
+          "6": 5,
+          "9": 15
+        },
+        "saturated_contraction_count": 20,
+        "term_count": 19,
+        "violated_guarded_instances": 4,
+        "violations_by_requirement": {
+          "3": 4
+        },
+        "violations_by_side": {
+          "B": 4
+        },
+        "violations_by_source_pair_rank": {
+          "6,6": 4
+        },
+        "violations_by_target_rank": {
+          "3": 1,
+          "6": 3
+        }
+      },
+      "quotient_cut_violations_head": [
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            160,
+            180
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            225,
+            245
+          ],
+          "target": 34,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 8
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            160,
+            180
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            225,
+            245
+          ],
+          "target": 54,
+          "target_rank": 6,
+          "target_saturated": false,
+          "target_weight": 8
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            160,
+            180
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            225,
+            245
+          ],
+          "target": 195,
+          "target_rank": 3,
+          "target_saturated": false,
+          "target_weight": 4
+        },
+        {
+          "W_dim": 6,
+          "outside_lhs": 2,
+          "outside_point_count": 32,
+          "outside_points_in_candidate": [
+            160,
+            180
+          ],
+          "requirement": 3,
+          "side": "B",
+          "source_ranks": [
+            6,
+            6
+          ],
+          "source_weights": [
+            6,
+            6
+          ],
+          "sources": [
+            225,
+            245
+          ],
+          "target": 215,
+          "target_rank": 6,
+          "target_saturated": true,
+          "target_weight": 6
+        }
+      ],
+      "round": 9,
+      "support": [
+        4,
+        12,
+        13,
+        28,
+        32,
+        36,
+        55,
+        108,
+        109,
+        137,
+        138,
+        160,
+        162,
+        180,
+        182,
+        192,
+        224,
+        227,
+        255
+      ],
+      "transversal_failure_count_reported": 20,
+      "zero_domain_term_count": 2
+    },
+    {
+      "complete_violations": 29,
+      "domain_hist": {
+        "B3_C0": 1,
+        "B3_C3": 3,
+        "B6_C6": 10,
+        "B9_C9": 5
+      },
+      "linear_affine_dim": 351,
+      "linear_passed": true,
+      "max_excess": 2,
+      "quotient_cut_eval": {
+        "distinct_A_points": 19,
+        "guard_source_pairs_scanned": 21,
+        "multiplicity_hist": {
+          "1": 19
+        },
+        "name": "v3_long_round10",
+        "nontrivial_guarded_instances": 1472,
+        "saturated_by_rank": {
+          "3": 1,
+          "6": 3,
+          "9": 3
+        },
+        "saturated_contraction_count": 7,
+        "term_count": 19,
+        "violated_guarded_instances": 0,
+        "violations_by_requirement": {},
+        "violations_by_side": {},
+        "violations_by_source_pair_rank": {},
+        "violations_by_target_rank": {}
+      },
+      "quotient_cut_violations_head": [],
+      "round": 10,
+      "support": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        16,
+        18,
+        32,
+        36,
+        65,
+        72,
+        130,
+        144,
+        146,
+        209,
+        224,
+        227,
+        252
+      ],
+      "transversal_failure_count_reported": 5,
+      "zero_domain_term_count": 1
+    },
+    {
+      "complete_violations": 35,
+      "domain_hist": {
+        "B0_C3": 1,
+        "B3_C3": 2,
+        "B6_C6": 5,
+        "B9_C9": 11
+      },
+      "linear_affine_dim": 558,
+      "linear_passed": true,
+      "max_excess": 1,
+      "quotient_cut_eval": {
+        "distinct_A_points": 19,
+        "guard_source_pairs_scanned": 36,
+        "multiplicity_hist": {
+          "1": 19
+        },
+        "name": "v3_long_round11",
+        "nontrivial_guarded_instances": 192,
+        "saturated_by_rank": {
+          "3": 1,
+          "6": 1,
+          "9": 7
+        },
+        "saturated_contraction_count": 9,
+        "term_count": 19,
+        "violated_guarded_instances": 0,
+        "violations_by_requirement": {},
+        "violations_by_side": {},
+        "violations_by_source_pair_rank": {},
+        "violations_by_target_rank": {}
+      },
+      "quotient_cut_violations_head": [],
+      "round": 11,
+      "support": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        16,
+        18,
+        32,
+        36,
+        72,
+        73,
+        128,
+        130,
+        201,
+        224,
+        232,
+        252,
+        255
+      ],
+      "transversal_failure_count_reported": 4,
+      "zero_domain_term_count": 1
+    },
+    {
+      "complete_violations": 16,
+      "domain_hist": {
+        "B6_C6": 6,
+        "B9_C9": 13
+      },
+      "linear_affine_dim": 666,
+      "linear_passed": true,
+      "max_excess": 1,
+      "quotient_cut_eval": {
+        "distinct_A_points": 19,
+        "guard_source_pairs_scanned": 45,
+        "multiplicity_hist": {
+          "1": 19
+        },
+        "name": "v3_long_round12",
+        "nontrivial_guarded_instances": 0,
+        "saturated_by_rank": {
+          "6": 1,
+          "9": 9
+        },
+        "saturated_contraction_count": 10,
+        "term_count": 19,
+        "violated_guarded_instances": 0,
+        "violations_by_requirement": {},
+        "violations_by_side": {},
+        "violations_by_source_pair_rank": {},
+        "violations_by_target_rank": {}
+      },
+      "quotient_cut_violations_head": [],
+      "round": 12,
+      "support": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        20,
+        24,
+        36,
+        65,
+        73,
+        128,
+        160,
+        182,
+        189,
+        192,
+        219,
+        224,
+        236
+      ],
+      "transversal_failure_count_reported": 0,
+      "zero_domain_term_count": 0
+    },
+    {
+      "complete_violations": 34,
+      "domain_hist": {
+        "B6_C6": 6,
+        "B9_C9": 13
+      },
+      "linear_affine_dim": 666,
+      "linear_passed": true,
+      "max_excess": 1,
+      "quotient_cut_eval": {
+        "distinct_A_points": 19,
+        "guard_source_pairs_scanned": 28,
+        "multiplicity_hist": {
+          "1": 19
+        },
+        "name": "v3_long_round13",
+        "nontrivial_guarded_instances": 0,
+        "saturated_by_rank": {
+          "6": 1,
+          "9": 7
+        },
+        "saturated_contraction_count": 8,
+        "term_count": 19,
+        "violated_guarded_instances": 0,
+        "violations_by_requirement": {},
+        "violations_by_side": {},
+        "violations_by_source_pair_rank": {},
+        "violations_by_target_rank": {}
+      },
+      "quotient_cut_violations_head": [],
+      "round": 13,
+      "support": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        18,
+        31,
+        32,
+        36,
+        65,
+        72,
+        130,
+        133,
+        144,
+        227,
+        232,
+        252,
+        255
+      ],
+      "transversal_failure_count_reported": 0,
+      "zero_domain_term_count": 0
+    },
+    {
+      "complete_violations": 28,
+      "domain_hist": {
+        "B3_C3": 3,
+        "B6_C6": 6,
+        "B9_C9": 10
+      },
+      "linear_affine_dim": 567,
+      "linear_passed": true,
+      "max_excess": 1,
+      "quotient_cut_eval": {
+        "distinct_A_points": 19,
+        "guard_source_pairs_scanned": 105,
+        "multiplicity_hist": {
+          "1": 19
+        },
+        "name": "v3_long_round14",
+        "nontrivial_guarded_instances": 1248,
+        "saturated_by_rank": {
+          "3": 1,
+          "6": 2,
+          "9": 12
+        },
+        "saturated_contraction_count": 15,
+        "term_count": 19,
+        "violated_guarded_instances": 0,
+        "violations_by_requirement": {},
+        "violations_by_side": {},
+        "violations_by_source_pair_rank": {},
+        "violations_by_target_rank": {}
+      },
+      "quotient_cut_violations_head": [],
+      "round": 14,
+      "support": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        16,
+        20,
+        32,
+        36,
+        65,
+        72,
+        128,
+        180,
+        195,
+        216,
+        227,
+        238,
+        245,
+        252
+      ],
+      "transversal_failure_count_reported": 0,
+      "zero_domain_term_count": 0
+    }
+  ],
+  "schema": "v3_long_quotient_eval_v1",
+  "source": "data/core_complete_transversal/core_e11_saturation_v3_complete_long.json"
+}

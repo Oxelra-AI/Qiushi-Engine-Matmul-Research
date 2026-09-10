@@ -1,0 +1,95 @@
+{
+  "build_elapsed_sec": 45.09891152381897,
+  "exact_rank1_count": 6,
+  "field": "F2",
+  "fixed_rank1_anchor": 1,
+  "include_dims": [
+    1,
+    2,
+    3
+  ],
+  "lut_meta_brief": {
+    "conflict_count": 0,
+    "coverage_ok": true,
+    "subspace_count": 8283458
+  },
+  "matching_constraints": {
+    "left_vector_at_most_one": 7,
+    "meaning": "Selected rank-1 points form a matching in the 7x7 Segre grid; E11 fixed.",
+    "right_vector_at_most_one": 7
+  },
+  "meaning": "If all exact k=1..7 matching branches are infeasible with checked proofs, then nonadjacent rank-1 supports are excluded. Feasible supports require full expanded LUT scanning.",
+  "problem": "global nonadjacent rank-1 matching branch Wang support CP-SAT",
+  "rank1_projection_empty": 0,
+  "rank1_projection_filter": null,
+  "rank1_projection_rows_added": 0,
+  "rank1_projection_skipped_vacuous": 0,
+  "rank_s": 20,
+  "solve_elapsed_sec": 304.5579285621643,
+  "solver_num_branches": 28195,
+  "solver_num_conflicts": 1066,
+  "solver_status": "UNKNOWN",
+  "solver_status_code": 0,
+  "solver_walltime": 303.029724696,
+  "support": null,
+  "support_rank1_count": null,
+  "support_rank1_uv": null,
+  "support_rank_hist": null,
+  "support_size": null,
+  "through_e11_dims": [
+    4,
+    6
+  ],
+  "wang_cap_hist": {
+    "1": 511,
+    "2": 445679,
+    "3": 403108,
+    "4": 65973,
+    "5": 21905,
+    "6": 30924,
+    "7": 7632,
+    "8": 46974,
+    "9": 852,
+    "11": 2733
+  },
+  "wang_e11_in_row_hist": {
+    "0": 820930,
+    "1": 205361
+  },
+  "wang_empty": 0,
+  "wang_row_var_hist": {
+    "1": 511,
+    "3": 43435,
+    "7": 788035,
+    "15": 97155,
+    "63": 97155
+  },
+  "wang_rows_added": 1025682,
+  "wang_rows_by_dim": {
+    "1": 511,
+    "2": 43435,
+    "3": 788035,
+    "4": 97155,
+    "6": 97155
+  },
+  "wang_rows_by_lb": {
+    "9": 2733,
+    "11": 852,
+    "12": 46974,
+    "13": 7632,
+    "14": 30924,
+    "15": 21905,
+    "16": 65973,
+    "17": 403108,
+    "18": 445679,
+    "19": 511
+  },
+  "wang_skipped_vacuous": 609,
+  "wang_source_by_dim": {
+    "include_dim,1": 511,
+    "include_dim,2": 43435,
+    "include_dim,3": 788035,
+    "through_E11,4": 97155,
+    "through_E11,6": 97155
+  }
+}

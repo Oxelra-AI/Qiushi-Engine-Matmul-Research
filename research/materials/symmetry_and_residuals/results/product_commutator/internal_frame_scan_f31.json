@@ -1,0 +1,637 @@
+{
+  "scope": "Exact F_31 pilot probes of internal SL3 frame changes in the BILR four exterior planes for the Jennrich rank<=2 commutator condition.",
+  "prime": 31,
+  "rank2_screen_explanation": "A valid <=10-cube residual must have upper rank <=2 for L=span[H(X),H(Y)]. The direct experimental rejection used here is max_rank_seen_random_combos>2 (or an explicit rank>2 basis/random combination). Bounded-rank classification over characteristic zero then says an actually upper-rank-2 L is built from rank-2 compression spaces R(2,0), R(1,1), R(0,2) and the primitive 3x3 skew-symmetric model; the simple common-image/common-kernel/span-dim screen recorded here is not a complete compression classifier because it does not detect R(1,1). Scalar filters are necessary identities for fixed X,Y, not sufficient.",
+  "basis_order": [
+    "E00",
+    "E01",
+    "E02",
+    "E10",
+    "E11",
+    "E12",
+    "E20",
+    "E21",
+    "E22"
+  ],
+  "fixed_rank2_scalar_test_pairs": [
+    {
+      "x": [
+        3,
+        0,
+        1,
+        3,
+        30,
+        1,
+        1,
+        3,
+        29
+      ],
+      "y": [
+        30,
+        3,
+        30,
+        30,
+        1,
+        0,
+        30,
+        2,
+        1
+      ]
+    },
+    {
+      "x": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        30
+      ],
+      "y": [
+        0,
+        1,
+        2,
+        0,
+        30,
+        0,
+        3,
+        0,
+        1
+      ]
+    },
+    {
+      "x": [
+        0,
+        1,
+        0,
+        2,
+        0,
+        1,
+        30,
+        0,
+        3
+      ],
+      "y": [
+        2,
+        0,
+        30,
+        1,
+        1,
+        0,
+        0,
+        3,
+        29
+      ]
+    },
+    {
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "y": [
+        2,
+        30,
+        0,
+        3,
+        29,
+        1,
+        4,
+        0,
+        28
+      ]
+    },
+    {
+      "x": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "y": [
+        1,
+        1,
+        0,
+        30,
+        0,
+        2,
+        0,
+        29,
+        1
+      ]
+    }
+  ],
+  "base_bilr": {
+    "D": {
+      "span_dim": 4,
+      "common_image_dim": 4,
+      "common_kernel_dim": 5,
+      "max_basis_rank": 2,
+      "max_rank_seen_random_combos": 4,
+      "bounded_rank2_classification_screen_passes": false,
+      "basis_rank_hist": {
+        "0": 18,
+        "2": 18
+      }
+    },
+    "scalar_filter_passes": false,
+    "scalar_values": [
+      {
+        "rank": 4,
+        "trC3": 0,
+        "rank2_quartic": 26
+      },
+      {
+        "rank": 2,
+        "trC3": 0,
+        "rank2_quartic": 0
+      },
+      {
+        "rank": 4,
+        "trC3": 0,
+        "rank2_quartic": 11
+      },
+      {
+        "rank": 4,
+        "trC3": 0,
+        "rank2_quartic": 23
+      },
+      {
+        "rank": 2,
+        "trC3": 0,
+        "rank2_quartic": 0
+      }
+    ]
+  },
+  "random_internal_sl3_summary": {
+    "samples": 300,
+    "classification_screen_pass_count": 0,
+    "scalar_filter_pass_count": 0,
+    "both_filters_pass_count": 0,
+    "span_dim_hist": {
+      "28": 291,
+      "27": 9
+    },
+    "common_image_dim_hist": {
+      "8": 300
+    },
+    "common_kernel_dim_hist": {
+      "1": 300
+    },
+    "max_rank_seen_hist": {
+      "8": 300
+    }
+  },
+  "random_both_filter_examples_first5": [],
+  "elementary_one_parameter_slices": [
+    {
+      "plane": 0,
+      "generator": [
+        0,
+        1
+      ],
+      "values_tested": 31,
+      "scalar_filter_pass_count": 0,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "scalar_filter_pass_values_first20": [],
+      "classification_screen_pass_values_first20": [],
+      "both_values_first20": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    },
+    {
+      "plane": 0,
+      "generator": [
+        0,
+        2
+      ],
+      "values_tested": 31,
+      "scalar_filter_pass_count": 0,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "scalar_filter_pass_values_first20": [],
+      "classification_screen_pass_values_first20": [],
+      "both_values_first20": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    },
+    {
+      "plane": 0,
+      "generator": [
+        1,
+        0
+      ],
+      "values_tested": 31,
+      "scalar_filter_pass_count": 0,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "scalar_filter_pass_values_first20": [],
+      "classification_screen_pass_values_first20": [],
+      "both_values_first20": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    },
+    {
+      "plane": 0,
+      "generator": [
+        1,
+        2
+      ],
+      "values_tested": 31,
+      "scalar_filter_pass_count": 0,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "scalar_filter_pass_values_first20": [],
+      "classification_screen_pass_values_first20": [],
+      "both_values_first20": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    },
+    {
+      "plane": 0,
+      "generator": [
+        2,
+        0
+      ],
+      "values_tested": 31,
+      "scalar_filter_pass_count": 1,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "scalar_filter_pass_values_first20": [
+        1
+      ],
+      "classification_screen_pass_values_first20": [],
+      "both_values_first20": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    },
+    {
+      "plane": 0,
+      "generator": [
+        2,
+        1
+      ],
+      "values_tested": 31,
+      "scalar_filter_pass_count": 0,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "scalar_filter_pass_values_first20": [],
+      "classification_screen_pass_values_first20": [],
+      "both_values_first20": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    },
+    {
+      "plane": 1,
+      "generator": [
+        0,
+        1
+      ],
+      "values_tested": 31,
+      "scalar_filter_pass_count": 0,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "scalar_filter_pass_values_first20": [],
+      "classification_screen_pass_values_first20": [],
+      "both_values_first20": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    },
+    {
+      "plane": 1,
+      "generator": [
+        0,
+        2
+      ],
+      "values_tested": 31,
+      "scalar_filter_pass_count": 0,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "scalar_filter_pass_values_first20": [],
+      "classification_screen_pass_values_first20": [],
+      "both_values_first20": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    },
+    {
+      "plane": 1,
+      "generator": [
+        1,
+        0
+      ],
+      "values_tested": 31,
+      "scalar_filter_pass_count": 0,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "scalar_filter_pass_values_first20": [],
+      "classification_screen_pass_values_first20": [],
+      "both_values_first20": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    },
+    {
+      "plane": 1,
+      "generator": [
+        1,
+        2
+      ],
+      "values_tested": 31,
+      "scalar_filter_pass_count": 0,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "scalar_filter_pass_values_first20": [],
+      "classification_screen_pass_values_first20": [],
+      "both_values_first20": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    },
+    {
+      "plane": 1,
+      "generator": [
+        2,
+        0
+      ],
+      "values_tested": 31,
+      "scalar_filter_pass_count": 1,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "scalar_filter_pass_values_first20": [
+        1
+      ],
+      "classification_screen_pass_values_first20": [],
+      "both_values_first20": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    },
+    {
+      "plane": 1,
+      "generator": [
+        2,
+        1
+      ],
+      "values_tested": 31,
+      "scalar_filter_pass_count": 0,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "scalar_filter_pass_values_first20": [],
+      "classification_screen_pass_values_first20": [],
+      "both_values_first20": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    },
+    {
+      "plane": 2,
+      "generator": [
+        0,
+        1
+      ],
+      "values_tested": 31,
+      "scalar_filter_pass_count": 0,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "scalar_filter_pass_values_first20": [],
+      "classification_screen_pass_values_first20": [],
+      "both_values_first20": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    },
+    {
+      "plane": 2,
+      "generator": [
+        0,
+        2
+      ],
+      "values_tested": 31,
+      "scalar_filter_pass_count": 0,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "scalar_filter_pass_values_first20": [],
+      "classification_screen_pass_values_first20": [],
+      "both_values_first20": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    },
+    {
+      "plane": 2,
+      "generator": [
+        1,
+        0
+      ],
+      "values_tested": 31,
+      "scalar_filter_pass_count": 0,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "scalar_filter_pass_values_first20": [],
+      "classification_screen_pass_values_first20": [],
+      "both_values_first20": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    },
+    {
+      "plane": 2,
+      "generator": [
+        1,
+        2
+      ],
+      "values_tested": 31,
+      "scalar_filter_pass_count": 0,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "scalar_filter_pass_values_first20": [],
+      "classification_screen_pass_values_first20": [],
+      "both_values_first20": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    },
+    {
+      "plane": 2,
+      "generator": [
+        2,
+        0
+      ],
+      "values_tested": 31,
+      "scalar_filter_pass_count": 1,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "scalar_filter_pass_values_first20": [
+        1
+      ],
+      "classification_screen_pass_values_first20": [],
+      "both_values_first20": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    },
+    {
+      "plane": 2,
+      "generator": [
+        2,
+        1
+      ],
+      "values_tested": 31,
+      "scalar_filter_pass_count": 0,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "scalar_filter_pass_values_first20": [],
+      "classification_screen_pass_values_first20": [],
+      "both_values_first20": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    },
+    {
+      "plane": 3,
+      "generator": [
+        0,
+        1
+      ],
+      "values_tested": 31,
+      "scalar_filter_pass_count": 0,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "scalar_filter_pass_values_first20": [],
+      "classification_screen_pass_values_first20": [],
+      "both_values_first20": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    },
+    {
+      "plane": 3,
+      "generator": [
+        0,
+        2
+      ],
+      "values_tested": 31,
+      "scalar_filter_pass_count": 0,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "scalar_filter_pass_values_first20": [],
+      "classification_screen_pass_values_first20": [],
+      "both_values_first20": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    },
+    {
+      "plane": 3,
+      "generator": [
+        1,
+        0
+      ],
+      "values_tested": 31,
+      "scalar_filter_pass_count": 0,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "scalar_filter_pass_values_first20": [],
+      "classification_screen_pass_values_first20": [],
+      "both_values_first20": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    },
+    {
+      "plane": 3,
+      "generator": [
+        1,
+        2
+      ],
+      "values_tested": 31,
+      "scalar_filter_pass_count": 0,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "scalar_filter_pass_values_first20": [],
+      "classification_screen_pass_values_first20": [],
+      "both_values_first20": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    },
+    {
+      "plane": 3,
+      "generator": [
+        2,
+        0
+      ],
+      "values_tested": 31,
+      "scalar_filter_pass_count": 1,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "scalar_filter_pass_values_first20": [
+        1
+      ],
+      "classification_screen_pass_values_first20": [],
+      "both_values_first20": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    },
+    {
+      "plane": 3,
+      "generator": [
+        2,
+        1
+      ],
+      "values_tested": 31,
+      "scalar_filter_pass_count": 0,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "scalar_filter_pass_values_first20": [],
+      "classification_screen_pass_values_first20": [],
+      "both_values_first20": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    }
+  ],
+  "diagonal_two_parameter_slices": [
+    {
+      "plane": 0,
+      "values_tested": 900,
+      "scalar_filter_pass_count": 0,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "both_examples_first5": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    },
+    {
+      "plane": 1,
+      "values_tested": 900,
+      "scalar_filter_pass_count": 0,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "both_examples_first5": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    },
+    {
+      "plane": 2,
+      "values_tested": 900,
+      "scalar_filter_pass_count": 0,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "both_examples_first5": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    },
+    {
+      "plane": 3,
+      "values_tested": 900,
+      "scalar_filter_pass_count": 0,
+      "classification_screen_pass_count": 0,
+      "both_filters_pass_count": 0,
+      "both_examples_first5": [],
+      "min_max_rank_seen_random_combos": 4,
+      "min_span_dim": 4
+    }
+  ],
+  "interpretation": "No sampled random internal frame and no scanned elementary/diagonal slice point had upper-rank behavior compatible with rank<=2 in the tested linear combinations: random internal frames reached rank 8, while elementary and diagonal one-plane slices always had a rank-4 combination. This is not a proof: special rank-22 frames could lie outside these slices or require imposing all X,Y identities. The simple compression screen is intentionally only a coarse summary and does not implement the full R(1,1) compression alternative. The script provides a cheap exact modular instrument for locating or excluding candidate frame loci before any heavy elimination."
+}

@@ -1,0 +1,207 @@
+{
+  "all_ok": true,
+  "checks": {
+    "citations_all_defined": true,
+    "frontier_resolved_bound_unchanged": true,
+    "hex_fragments_all_matched": true,
+    "isolated_package_replay_ok": true,
+    "latest_wang_recheck_bound_remains_20": true,
+    "latest_wang_recheck_no_21_public_statement_found": true,
+    "latest_wang_recheck_official_v11": true,
+    "log_no_errors": true,
+    "log_no_undefined": true,
+    "manifest_contains_wang_sidecar": true,
+    "manifest_records_payload": true,
+    "manifest_records_qiushi_matmul": true,
+    "pdf_exists_nonempty": true,
+    "pdf_old_cap_absent": true,
+    "pdf_required_text_present": true,
+    "regenerate_package_verify_ok": true,
+    "removed_keys_not_used": true,
+    "stale_patterns_absent": true,
+    "standard_package_verify_ok": true,
+    "wang_verifier_package_ok": true
+  },
+  "defined_bib_keys": [
+    "blaser1999focs",
+    "burgisser1997algebraic",
+    "cochran1934distribution",
+    "heule2019waysa",
+    "hua1945geometries",
+    "laderman1976noncommutative",
+    "landsberg2012lower",
+    "pazzis2015hua",
+    "strassen1969gaussian",
+    "tian2001rank",
+    "wan1996geometry",
+    "wangautomated"
+  ],
+  "files": {
+    "main_pdf": {
+      "exists": true,
+      "path": "research/research_record/deliverables/report/main.pdf",
+      "sha256": "34df357bdd442457405ef9a4ebda8ef8750b69aedba0be643d5e2c1f9ba56d27",
+      "size_bytes": 265114
+    },
+    "main_tex": {
+      "exists": true,
+      "path": "research/research_record/deliverables/report/main.tex",
+      "sha256": "cd1fc543ee34a4b620ba4faf090c680160d51c62128ebaba6ab3f10c88238720",
+      "size_bytes": 47115
+    },
+    "manifest": {
+      "exists": true,
+      "path": "research/research_record/deliverables/report/proof_package/manifest.json",
+      "sha256": "393771fcad83a10d89f625ab15d21710210f65266f41b0460d97867d0ef35a7c",
+      "size_bytes": 21494
+    },
+    "refs_bib": {
+      "exists": true,
+      "path": "research/research_record/deliverables/report/refs.bib",
+      "sha256": "b6388f0089dbf0d5e4d471ee9c8cc7eafe08972d95d8b2f4394cddef93104d9b",
+      "size_bytes": 3926
+    }
+  },
+  "frontier_resolved": {
+    "checked_date": "2026-09-09",
+    "path": "data/frontier_recheck/wang_v11_resolved.json",
+    "resolution": "resolved_bound_unchanged",
+    "wang_bound_stated": 20
+  },
+  "hex_fragment_verification": {
+    "matched": 5,
+    "ok": true,
+    "total_fragments": 5,
+    "unmatched": [],
+    "unmatched_count": 0
+  },
+  "latest_wang_recheck": {
+    "abs_v11_sha256": "6c1f40026498ba3024b01a52ecbd465f11b3e539d9f10b2ac21fe91b485caaa0",
+    "abstract_excerpt": "We present a general, automated framework for proving lower bounds on the bilinear complexity (tensor rank) of multiplication problems over a finite field $\\mathbb{F}_q$. The framework is parameterized only by the multiplication tensor and by a group of rank-preserving symmetries acting on one argument: it classifies the subspaces of the argument into orbits under the group, runs a dynamic program over the orbits combining four lower-bound techniques, and emits a proof certificate that a verifier rechecks, typically faster than the search. Instantiating the framework for matrix multiplication, we improve the lower bounds for three small formats over $\\mathbb{F}_2$, most notably showing that the bilinear complexity of multiplying two $3 \\times 3$ matrices over $\\mathbb{F}_2$ is at least $20$, raising the bound of $19$ that had stood since Bläser (2003). Instantiating it for polynomial multiplication, we obtain eighteen new lower bounds over $\\mathbb{F}_2$ and $\\mathbb{F}_3$, for the full product, cyclic convolution, and the truncated (modulo $x^N$) and negacyclic (modulo $x^N+1$) products. Every bound is backed by a machine-checkable certificate.",
+    "checked_at_utc": "2026-09-09T01:09:04Z",
+    "exists": true,
+    "latest_version_from_official_abs": 11,
+    "official_abs_url": "https://arxiv.org/abs/2603.07280v11",
+    "path": "data/frontier_recheck/wang_latest_recheck.json",
+    "pdf_v11_sha256": "a61884b9f60db1e499638f4326e477ff90552722901ae6acd4a314d50b890cb3"
+  },
+  "log_errors": [],
+  "log_undefined": [],
+  "manifest_payload": {
+    "payload_file_count": 78,
+    "payload_size_bytes": 382898685,
+    "payload_tree_sha256": "a116cd3c131ebe9c4a832aa17ff3d6cc3b173784aed37aacac22a8a4d430c5f1",
+    "qiushi_matmul": {
+      "found": true,
+      "name": "qiushi-matmul",
+      "path": "qiushi-matmul",
+      "resolved_path": "qiushi-matmul",
+      "sha256": "4bf7acb99db37e638a0cbfd2a39fdf9e155dc8f8d4e06a21917dfdbfacc6e21e",
+      "size_bytes": 529
+    },
+    "qiushi_matmul_doctor": {
+      "command": [
+        "qiushi-matmul",
+        "doctor",
+        "--json"
+      ],
+      "parsed_stdout": {
+        "cuda": true,
+        "missing": [],
+        "native_verifier": true,
+        "python": "3.12.13",
+        "release": "qiushi-matmul-1f-20260904.7",
+        "status": "ok",
+        "upstream_count": 8,
+        "version": "1.0"
+      },
+      "returncode": 0
+    }
+  },
+  "missing_citation_keys": [],
+  "package_current": {
+    "file_count_current_including_verify_outputs": 83,
+    "size_bytes_current_including_verify_outputs": 383057870
+  },
+  "pdf_absence": {
+    "no_old_cap_123": true,
+    "no_old_cap_234": true,
+    "no_old_sharp_title": true
+  },
+  "pdf_presence": {
+    "cap_language": true,
+    "cap_language_target": true,
+    "cyclic_symmetry_present": true,
+    "main_theorem": true,
+    "package_verifier": true,
+    "proof_package_path": true,
+    "source_search": true,
+    "stops_at_length_21": true,
+    "wang_latest_bound_20": true,
+    "wang_latest_v11": true,
+    "wang_v6": true
+  },
+  "pdftotext_returncode": 0,
+  "removed_keys": [
+    "nayak2021framework",
+    "yang2024ruling",
+    "emrl2002hua",
+    "landsberg2011lower",
+    "landsberg2016loga",
+    "strassen1987relative",
+    "blaser1999sup"
+  ],
+  "schema": "final_report_checks_v2",
+  "stale_hits": {
+    "false_excess_sentence": [],
+    "length22_node_feasible_claim": [],
+    "old_cap_123": [],
+    "old_computation_dependence": [],
+    "old_currently_known": [],
+    "old_general_n_flattening_sentence": [],
+    "old_public_record_overstatement": [],
+    "old_sharp_at_21_title": [],
+    "old_wrong_hash_suffix": [],
+    "sketch_word": []
+  },
+  "used_citation_keys": [
+    "blaser1999focs",
+    "burgisser1997algebraic",
+    "cochran1934distribution",
+    "heule2019waysa",
+    "hua1945geometries",
+    "laderman1976noncommutative",
+    "landsberg2012lower",
+    "pazzis2015hua",
+    "strassen1969gaussian",
+    "tian2001rank",
+    "wan1996geometry",
+    "wangautomated"
+  ],
+  "verify_results": {
+    "research/research_record/deliverables/report/proof_package/verify_result_final.json": {
+      "all_ok": true,
+      "bundle_all_ok": true,
+      "elapsed_sec": 276.1411235332489,
+      "sha256": "7d27a328ffa07b95521fa992b65ed189b0f7967adec77a0ef06821aec9b50d9c"
+    },
+    "research/research_record/deliverables/report/proof_package/verify_result_regenerate_final.json": {
+      "all_ok": true,
+      "bundle_all_ok": true,
+      "elapsed_sec": 421.7148206233978,
+      "sha256": "8d101add8d69b8e15720b3f623c213b913fdd49278045a073fc31b99dd788f10"
+    },
+    "research/research_record/deliverables/report/proof_package/verify_result_wang.json": {
+      "all_ok": true,
+      "bundle_all_ok": null,
+      "elapsed_sec": 3.60730242729187,
+      "sha256": "d13a599fbc7da5ce3d1b049a3a431e879a0629a9bf1ae31c8102cada15959651"
+    },
+    "data/final_checks/isolated_replay.json": {
+      "all_ok": true,
+      "bundle_all_ok": null,
+      "elapsed_sec": 220.80080199241638,
+      "sha256": "0eaa7d67e9695782c93029a69cd80798d581b5196292bb2eca74e93b2a7e12f0"
+    }
+  }
+}

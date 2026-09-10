@@ -1,0 +1,179 @@
+{
+  "all_k7_closed": true,
+  "artifact_hashes": {
+    "workspace/data/matching_strata/cover_connection_audit.json": "c56c144d3d9925dd6a57536dc82b7e0dd856ae6d879fdb32ae74bfa53a3fce35",
+    "workspace/data/graph_cert/k7_graph_is_cnf_with_vex/idx035_k7_graph_is.cnf": "0b5e16a01e766a533c50a387edbf00ac948a3aabd500e55769a7ec5e62a17985",
+    "workspace/data/graph_cert/k7_graph_is_cnf_with_vex/idx035_k7_graph_is.drat": "fc5659093b004fc8dbaa99807a01d64ac2c01435051c2fe783c03fc20fb8eb59",
+    "workspace/data/graph_cert/k7_graph_is_cnf_with_vex/idx036_k7_graph_is.cnf": "1f82e3e2f9ef678831e90f557e635721e9d4e2342920938a04599b8da7868939",
+    "workspace/data/graph_cert/k7_graph_is_cnf_with_vex/idx036_k7_graph_is.drat": "9796279f4c8f9cd8c287102f2ee6af6c1be177a4c694a3a2b19c69008d2e7bd2",
+    "workspace/data/graph_cert/k7_graph_is_cnf_with_vex/strict_verification_graph_is_cnf.json": "63cf992205c38562803d7433ed39f00a7505c21111092a5413e9d72da2a9e7ae",
+    "workspace/data/graph_cert/k7_graph_is_cnf_with_vex/summary.json": "405689a61a0e62ba25401a7da2f34ffde747a4b70a71f8ceb238eedc5b6d9871",
+    "workspace/data/graph_cert/k7_rerun/stratum_idx032_k7_1_16_27_256_325_432_511.cert.json": "6d1abfb6693458fcd43eba783afe78845542d29e81b718c63f1c66103a736cb8",
+    "workspace/data/graph_cert/k7_rerun/stratum_idx033_k7_1_16_27_256_325_438_504.cert.json": "ed395c6dd88a8803eeacff8e0e78257d253d959f6a12880af531c0315ee5cfc5",
+    "workspace/data/graph_cert/k7_rerun/stratum_idx034_k7_1_16_27_256_360_390_511.cert.json": "b57cb24e94c8f5383b42b0749e472231e4c7f14df0257eb0ebd66c5cf0e8bd7e",
+    "workspace/data/graph_cert/k7_rerun/stratum_idx035_k7_1_16_27_256_360_438_455.cert.json": "57762a2e07c1cddaa65695ca452c83feb813a9694b46b2e8ea2d17c643a902a7",
+    "workspace/data/graph_cert/k7_rerun/stratum_idx036_k7_1_16_36_192_360_390_511.cert.json": "ea1f39596180eeb5c9307ddf184479210c9b86e0e0691585710b5d8aa709d904",
+    "workspace/data/graph_cert/k7_rerun/stratum_idx037_k7_1_16_36_192_360_438_455.cert.json": "e02abd7df0a88385849260de8f11f5025845a479f4fe64f1de86b261358bc815",
+    "workspace/data/graph_cert/k7_rerun/summary_k07.json": "dde26c49541390c65eda9f2fde9ae2bdac25243400625b695e05a26d89e983f9",
+    "workspace/data/graph_cert/k7_rerun/verification_k7_certified.json": "030d5813d28753b100ecfa8cf0bd1d2ebd4c087f771f333312c4ee7e8065d30b"
+  },
+  "dependencies": {
+    "anchored_matching_classification": {
+      "k7_strata_count": 6,
+      "k7_total_orbit": 720,
+      "path": "workspace/data/matching_strata/anchored_matching_strata.json",
+      "sha256": "79e67f84d344f8330e4acd5afbb106db79f66fb73f98fc590bc16f59841cd577",
+      "total_anchored_matchings": 13327
+    },
+    "cover_connection_audit": {
+      "exists": true,
+      "path": "workspace/data/matching_strata/cover_connection_audit.json",
+      "sha256": "c56c144d3d9925dd6a57536dc82b7e0dd856ae6d879fdb32ae74bfa53a3fce35"
+    },
+    "dim1_multiplicity_free_premise": {
+      "all_lb_ge_19": true,
+      "dim1_count": 511,
+      "expected_count": 511,
+      "match": true,
+      "min_lb": 19,
+      "violations": []
+    },
+    "wang_lut": {
+      "entry_count": 8283458,
+      "path": "workspace/data/wang_f2_lb20/wang_subspace_lut.pkl",
+      "sha256": "4704acba23a97d40aa65d5a65222dcb679461fdccf3e41dbeed2a634894a3b33"
+    }
+  },
+  "k7_strata": [
+    {
+      "certificate": {
+        "source": "matching_violates",
+        "type": "certified_excluded_matching_violates"
+      },
+      "closed": true,
+      "idx": 32,
+      "k": 7,
+      "matching": [
+        1,
+        16,
+        27,
+        256,
+        325,
+        432,
+        511
+      ],
+      "orbit_size": 24
+    },
+    {
+      "certificate": {
+        "source": "clique_cover",
+        "type": "certified_excluded_clique_cover"
+      },
+      "closed": true,
+      "idx": 33,
+      "k": 7,
+      "matching": [
+        1,
+        16,
+        27,
+        256,
+        325,
+        438,
+        504
+      ],
+      "orbit_size": 24
+    },
+    {
+      "certificate": {
+        "source": "clique_cover",
+        "type": "certified_excluded_clique_cover"
+      },
+      "closed": true,
+      "idx": 34,
+      "k": 7,
+      "matching": [
+        1,
+        16,
+        27,
+        256,
+        360,
+        390,
+        511
+      ],
+      "orbit_size": 144
+    },
+    {
+      "certificate": {
+        "cnf_clauses": 25518,
+        "cnf_vars": 3135,
+        "source": "workspace/data/graph_cert/k7_graph_is_cnf_with_vex/idx035_k7_graph_is.cnf",
+        "type": "graph_cnf_drat_verified"
+      },
+      "closed": true,
+      "idx": 35,
+      "k": 7,
+      "matching": [
+        1,
+        16,
+        27,
+        256,
+        360,
+        438,
+        455
+      ],
+      "orbit_size": 144
+    },
+    {
+      "certificate": {
+        "cnf_clauses": 25518,
+        "cnf_vars": 3135,
+        "source": "workspace/data/graph_cert/k7_graph_is_cnf_with_vex/idx036_k7_graph_is.cnf",
+        "type": "graph_cnf_drat_verified"
+      },
+      "closed": true,
+      "idx": 36,
+      "k": 7,
+      "matching": [
+        1,
+        16,
+        36,
+        192,
+        360,
+        390,
+        511
+      ],
+      "orbit_size": 192
+    },
+    {
+      "certificate": {
+        "source": "matching_violates",
+        "type": "certified_excluded_matching_violates"
+      },
+      "closed": true,
+      "idx": 37,
+      "k": 7,
+      "matching": [
+        1,
+        16,
+        36,
+        192,
+        360,
+        438,
+        455
+      ],
+      "orbit_size": 192
+    }
+  ],
+  "meaning": "Unified manifest for the k=7 nonadjacent matching level of the Wang F2 support proof tree. All six canonical k=7 anchored matching strata are excluded as Wang-admissible A-side support configurations. This is a support-side necessary condition result over F2; it does not close the adjacent-pair branch, does not close k<=6, and does not prove R_F2 >= 21 or rank-23 optimality.",
+  "schema": "k7_matching_proof_manifest_v1",
+  "verification_steps": [
+    "Load Wang LUT from the specified path and verify its SHA256.",
+    "Confirm all 511 one-dimensional rows have lb >= 19 (multiplicity-free premise).",
+    "Load anchored matching classification and verify SHA256 and k=7 orbit counts.",
+    "For each k=7 stratum: replay the certificate type against the LUT.",
+    "  - matching_violates: find the cited Wang row, verify matching intersection exceeds capacity.",
+    "  - clique_cover: verify each intra-color pair has a residual-1 Wang row, and color_count < target.",
+    "  - graph_cnf_drat: regenerate the graph CNF from vertex/edge exclusion rows, verify clause multiset, replay DRAT.",
+    "Verify that the six strata exhaust all k=7 orbits (orbit sizes sum to expected total)."
+  ]
+}

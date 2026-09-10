@@ -1,0 +1,2831 @@
+{
+  "distinct_violated_rows": 1969,
+  "elapsed_sec": 373.4065420627594,
+  "field": "F2",
+  "lut_meta_brief": {
+    "conflict_count": 0,
+    "coverage_ok": true,
+    "subspace_count": 8283458
+  },
+  "meaning": "Rows with max_excess>=1 in these supports are exactly places where raising the row lower bound by one would cut the displayed support. A rank proof for the restricted tensor at current lb+1 is still required before changing the table.",
+  "problem": "tight Wang rows from fixed-E11 rep2/rep16 midrange supports",
+  "source_summaries": [
+    {
+      "max_excess": 2,
+      "rank_hist": {
+        "1": 17,
+        "2": 3
+      },
+      "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json",
+      "support_size": 20,
+      "total_multiplicity": 20,
+      "violation_count": 246,
+      "violations_by_dim_lb": {
+        "4,15": 6,
+        "4,17": 6,
+        "5,14": 6,
+        "5,15": 105,
+        "6,12": 6,
+        "6,15": 93,
+        "7,12": 18,
+        "8,9": 6
+      }
+    },
+    {
+      "max_excess": 2,
+      "rank_hist": {
+        "1": 17,
+        "2": 2,
+        "3": 1
+      },
+      "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json",
+      "support_size": 20,
+      "total_multiplicity": 20,
+      "violation_count": 294,
+      "violations_by_dim_lb": {
+        "4,14": 1,
+        "4,16": 6,
+        "4,17": 16,
+        "5,14": 1,
+        "5,15": 49,
+        "5,16": 2,
+        "6,12": 8,
+        "6,14": 18,
+        "6,15": 117,
+        "7,12": 62,
+        "7,14": 7,
+        "7,9": 1,
+        "8,9": 6
+      }
+    },
+    {
+      "max_excess": 3,
+      "rank_hist": {
+        "1": 16,
+        "2": 4
+      },
+      "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json",
+      "support_size": 20,
+      "total_multiplicity": 20,
+      "violation_count": 369,
+      "violations_by_dim_lb": {
+        "4,16": 4,
+        "4,17": 10,
+        "5,14": 1,
+        "5,15": 53,
+        "5,16": 5,
+        "6,12": 4,
+        "6,14": 23,
+        "6,15": 135,
+        "7,12": 110,
+        "7,14": 13,
+        "7,9": 1,
+        "8,6": 1,
+        "8,9": 9
+      }
+    },
+    {
+      "max_excess": 2,
+      "rank_hist": {
+        "1": 16,
+        "2": 2,
+        "3": 2
+      },
+      "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json",
+      "support_size": 20,
+      "total_multiplicity": 20,
+      "violation_count": 547,
+      "violations_by_dim_lb": {
+        "4,16": 20,
+        "4,17": 24,
+        "5,14": 15,
+        "5,15": 96,
+        "5,16": 2,
+        "6,12": 13,
+        "6,13": 3,
+        "6,14": 49,
+        "6,15": 180,
+        "7,12": 121,
+        "7,14": 12,
+        "7,9": 1,
+        "8,9": 11
+      }
+    },
+    {
+      "max_excess": 2,
+      "rank_hist": {
+        "1": 14,
+        "2": 6
+      },
+      "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json",
+      "support_size": 20,
+      "total_multiplicity": 20,
+      "violation_count": 555,
+      "violations_by_dim_lb": {
+        "4,16": 19,
+        "4,17": 18,
+        "5,15": 100,
+        "5,16": 16,
+        "6,12": 8,
+        "6,14": 50,
+        "6,15": 200,
+        "7,12": 117,
+        "7,14": 16,
+        "7,9": 1,
+        "8,6": 1,
+        "8,9": 9
+      }
+    }
+  ],
+  "sources": [
+    "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json",
+    "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json",
+    "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json",
+    "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json",
+    "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+  ],
+  "top_rows": [
+    {
+      "basis": [
+        256,
+        136,
+        64,
+        34,
+        18,
+        4,
+        1
+      ],
+      "basis_matrix_labels": [
+        "000/000/001",
+        "000/100/010",
+        "000/000/100",
+        "010/001/000",
+        "010/010/000",
+        "001/000/000",
+        "100/000/000"
+      ],
+      "cap": 8,
+      "dim": 7,
+      "flattening_ranks": {
+        "A": 2,
+        "B": 9,
+        "C": 9
+      },
+      "key": 290502040458694663,
+      "lb": 12,
+      "max_excess": 3,
+      "max_occupancy": 11,
+      "nonzero_A_slices_after_restriction": 2,
+      "raise_by_one_would_cap_rank20": 7,
+      "rank1_points_in_phi_count": 13,
+      "rank1_points_in_phi_head": [
+        256,
+        64,
+        320,
+        18,
+        48,
+        504,
+        4,
+        260,
+        1,
+        65,
+        219,
+        5,
+        325
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 8,
+          "cap23_if_raised": 10,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 8,
+          "cap23_if_raised": 10,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 8,
+          "cap23_if_raised": 10,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 15,
+      "restricted_tensor_shape": [
+        2,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 3,
+          "name": "e11_rep002_exact16",
+          "occupancy": 11,
+          "points_in_support": [
+            1,
+            34,
+            48,
+            52,
+            64,
+            219,
+            278,
+            304,
+            320,
+            325,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        }
+      ],
+      "total_excess": 3
+    },
+    {
+      "basis": [
+        290,
+        144,
+        66,
+        10,
+        4,
+        1
+      ],
+      "basis_matrix_labels": [
+        "010/001/001",
+        "000/010/010",
+        "010/000/100",
+        "010/100/000",
+        "001/000/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "key": 567369752777254,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 3,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 9,
+      "rank1_points_in_phi_head": [
+        144,
+        72,
+        216,
+        4,
+        438,
+        1,
+        73,
+        5,
+        511
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 2,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 4,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 6,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 24,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 1,
+          "name": "e11_rep002_k01_17_full_capacity_check",
+          "occupancy": 6,
+          "points_in_support": [
+            1,
+            4,
+            5,
+            72,
+            144,
+            217
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "excess": 1,
+          "name": "e11_rep002_exact17",
+          "occupancy": 6,
+          "points_in_support": [
+            1,
+            5,
+            10,
+            72,
+            216,
+            510
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "excess": 2,
+          "name": "rep002_k01_17_symm_noseed_fullcheck",
+          "occupancy": 7,
+          "points_in_support": [
+            1,
+            5,
+            72,
+            144,
+            367,
+            434,
+            438
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "total_excess": 4
+    },
+    {
+      "basis": [
+        290,
+        144,
+        72,
+        4,
+        1
+      ],
+      "basis_matrix_labels": [
+        "010/001/001",
+        "000/010/010",
+        "000/100/100",
+        "001/000/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "key": 1108404736549,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 4,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 9,
+      "rank1_points_in_phi_head": [
+        144,
+        72,
+        216,
+        4,
+        438,
+        1,
+        73,
+        5,
+        511
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 2,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 4,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 4,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 24,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 1,
+          "name": "e11_rep002_k01_17_full_capacity_check",
+          "occupancy": 6,
+          "points_in_support": [
+            1,
+            4,
+            5,
+            72,
+            144,
+            217
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "excess": 2,
+          "name": "rep002_k01_17_symm_noseed_fullcheck",
+          "occupancy": 7,
+          "points_in_support": [
+            1,
+            5,
+            72,
+            144,
+            367,
+            434,
+            438
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "total_excess": 3
+    },
+    {
+      "basis": [
+        129,
+        65,
+        37,
+        16,
+        9,
+        2
+      ],
+      "basis_matrix_labels": [
+        "100/000/010",
+        "100/000/100",
+        "101/001/000",
+        "000/010/000",
+        "100/100/000",
+        "010/000/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "key": 1135830026954774,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 3,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 9,
+      "rank1_points_in_phi_head": [
+        65,
+        192,
+        16,
+        9,
+        72,
+        2,
+        18,
+        27,
+        219
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 7,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 3,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 5,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 24,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 2,
+          "name": "e11_rep002_k01_17_full_capacity_check",
+          "occupancy": 7,
+          "points_in_support": [
+            2,
+            16,
+            25,
+            65,
+            72,
+            194,
+            217
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "excess": 1,
+          "name": "rep002_k01_17_symm_noseed_fullcheck",
+          "occupancy": 6,
+          "points_in_support": [
+            2,
+            16,
+            65,
+            72,
+            111,
+            192
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "total_excess": 3
+    },
+    {
+      "basis": [
+        260,
+        68,
+        32,
+        20,
+        8,
+        1
+      ],
+      "basis_matrix_labels": [
+        "001/000/001",
+        "001/000/100",
+        "000/001/000",
+        "001/010/000",
+        "000/100/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "key": 571789130895430,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 3,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 9,
+      "rank1_points_in_phi_head": [
+        260,
+        320,
+        32,
+        292,
+        8,
+        40,
+        360,
+        1,
+        9
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 6,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 5,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 4,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 18,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 1,
+          "name": "e11_rep002_exact16",
+          "occupancy": 6,
+          "points_in_support": [
+            1,
+            8,
+            52,
+            304,
+            320,
+            360
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        },
+        {
+          "excess": 2,
+          "name": "e11_rep016_k01_17_full_capacity_check",
+          "occupancy": 7,
+          "points_in_support": [
+            1,
+            21,
+            33,
+            41,
+            292,
+            320,
+            360
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "total_excess": 3
+    },
+    {
+      "basis": [
+        256,
+        138,
+        64,
+        34,
+        18,
+        4,
+        1
+      ],
+      "basis_matrix_labels": [
+        "000/000/001",
+        "010/100/010",
+        "000/000/100",
+        "010/001/000",
+        "010/010/000",
+        "001/000/000",
+        "100/000/000"
+      ],
+      "cap": 8,
+      "dim": 7,
+      "flattening_ranks": {
+        "A": 2,
+        "B": 9,
+        "C": 9
+      },
+      "key": 290502040458711047,
+      "lb": 12,
+      "max_excess": 2,
+      "max_occupancy": 10,
+      "nonzero_A_slices_after_restriction": 2,
+      "raise_by_one_would_cap_rank20": 7,
+      "rank1_points_in_phi_count": 13,
+      "rank1_points_in_phi_head": [
+        256,
+        64,
+        320,
+        18,
+        216,
+        48,
+        4,
+        260,
+        1,
+        65,
+        5,
+        325,
+        511
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 9,
+          "cap23_if_raised": 10,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 9,
+          "cap23_if_raised": 10,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 10,
+          "cap23_if_raised": 10,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 18,
+      "restricted_tensor_shape": [
+        2,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 1,
+          "name": "e11_rep002_exact17",
+          "occupancy": 9,
+          "points_in_support": [
+            1,
+            5,
+            18,
+            48,
+            65,
+            216,
+            254,
+            320,
+            510
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "excess": 2,
+          "name": "e11_rep002_exact16",
+          "occupancy": 10,
+          "points_in_support": [
+            1,
+            34,
+            48,
+            52,
+            64,
+            278,
+            304,
+            320,
+            325,
+            511
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        }
+      ],
+      "total_excess": 3
+    },
+    {
+      "basis": [
+        271,
+        130,
+        74,
+        45,
+        18
+      ],
+      "basis_matrix_labels": [
+        "111/100/001",
+        "010/000/010",
+        "010/100/100",
+        "101/101/000",
+        "010/010/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "key": 19888157511925,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 4,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 9,
+      "rank1_points_in_phi_head": [
+        130,
+        325,
+        455,
+        45,
+        360,
+        18,
+        144,
+        63,
+        504
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 1,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 1,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 2,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 45,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 2,
+          "name": "rep002_k01_17_symm_noseed_fullcheck",
+          "occupancy": 7,
+          "points_in_support": [
+            45,
+            63,
+            117,
+            130,
+            144,
+            360,
+            434
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "total_excess": 2
+    },
+    {
+      "basis": [
+        129,
+        65,
+        16,
+        9,
+        2
+      ],
+      "basis_matrix_labels": [
+        "100/000/010",
+        "100/000/100",
+        "000/010/000",
+        "100/100/000",
+        "010/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "key": 2218418251797,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 4,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 9,
+      "rank1_points_in_phi_head": [
+        65,
+        192,
+        16,
+        9,
+        72,
+        2,
+        18,
+        27,
+        219
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 2,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 3,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 5,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 21,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 2,
+          "name": "e11_rep002_k01_17_full_capacity_check",
+          "occupancy": 7,
+          "points_in_support": [
+            2,
+            16,
+            25,
+            65,
+            72,
+            194,
+            217
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        }
+      ],
+      "total_excess": 2
+    },
+    {
+      "basis": [
+        129,
+        65,
+        17,
+        8,
+        2
+      ],
+      "basis_matrix_labels": [
+        "100/000/010",
+        "100/000/100",
+        "100/010/000",
+        "000/100/000",
+        "010/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "key": 2216274962453,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 4,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 9,
+      "rank1_points_in_phi_head": [
+        65,
+        192,
+        144,
+        8,
+        73,
+        2,
+        146,
+        27,
+        219
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 2,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 5,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 7,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 21,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 2,
+          "name": "e11_rep002_k01_17_full_capacity_check",
+          "occupancy": 7,
+          "points_in_support": [
+            2,
+            8,
+            25,
+            65,
+            144,
+            194,
+            217
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        }
+      ],
+      "total_excess": 2
+    },
+    {
+      "basis": [
+        128,
+        64,
+        17,
+        8,
+        2
+      ],
+      "basis_matrix_labels": [
+        "000/000/010",
+        "000/000/100",
+        "100/010/000",
+        "000/100/000",
+        "010/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "key": 2216274954245,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 4,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 9,
+      "rank1_points_in_phi_head": [
+        128,
+        64,
+        192,
+        8,
+        72,
+        2,
+        130,
+        27,
+        219
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 5,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 7,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 6,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 15,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 2,
+          "name": "e11_rep002_k01_17_full_capacity_check",
+          "occupancy": 7,
+          "points_in_support": [
+            2,
+            8,
+            25,
+            72,
+            130,
+            194,
+            217
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        }
+      ],
+      "total_excess": 2
+    },
+    {
+      "basis": [
+        258,
+        132,
+        71,
+        39,
+        23,
+        14
+      ],
+      "basis_matrix_labels": [
+        "010/000/001",
+        "001/000/010",
+        "111/000/100",
+        "111/001/000",
+        "111/010/000",
+        "011/100/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "key": 7906672166080550,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 3,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 7,
+      "rank1_points_in_phi_head": [
+        390,
+        325,
+        195,
+        48,
+        438,
+        73,
+        511
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 1,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 5,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 1,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 48,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 2,
+          "name": "e11_rep016_k01_17_full_capacity_check",
+          "occupancy": 7,
+          "points_in_support": [
+            23,
+            25,
+            41,
+            195,
+            325,
+            438,
+            511
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "total_excess": 2
+    },
+    {
+      "basis": [
+        256,
+        135,
+        68,
+        39,
+        23,
+        14
+      ],
+      "basis_matrix_labels": [
+        "000/000/001",
+        "111/000/010",
+        "001/000/100",
+        "111/001/000",
+        "111/010/000",
+        "011/100/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "key": 7906672153522182,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 3,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 5,
+      "rank1_points_in_phi_head": [
+        256,
+        195,
+        144,
+        48,
+        365
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 5,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 4,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 4,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 45,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 2,
+          "name": "e11_rep016_k01_17_full_capacity_check",
+          "occupancy": 7,
+          "points_in_support": [
+            23,
+            25,
+            41,
+            144,
+            195,
+            256,
+            365
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "total_excess": 2
+    },
+    {
+      "basis": [
+        257,
+        130,
+        68,
+        35,
+        18,
+        14
+      ],
+      "basis_matrix_labels": [
+        "100/000/001",
+        "010/000/010",
+        "001/000/100",
+        "110/001/000",
+        "010/010/000",
+        "011/100/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "key": 7901166005407766,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 3,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 9,
+      "rank1_points_in_phi_head": [
+        130,
+        325,
+        455,
+        18,
+        144,
+        45,
+        360,
+        63,
+        504
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 1,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 1,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 2,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 33,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 2,
+          "name": "rep002_k01_17_symm_noseed_fullcheck",
+          "occupancy": 7,
+          "points_in_support": [
+            45,
+            63,
+            117,
+            130,
+            144,
+            360,
+            434
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "total_excess": 2
+    },
+    {
+      "basis": [
+        259,
+        130,
+        70,
+        33,
+        18,
+        12
+      ],
+      "basis_matrix_labels": [
+        "110/000/001",
+        "010/000/010",
+        "011/000/100",
+        "100/001/000",
+        "010/010/000",
+        "001/100/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "key": 6775261811986486,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 3,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 9,
+      "rank1_points_in_phi_head": [
+        130,
+        325,
+        455,
+        18,
+        144,
+        45,
+        360,
+        63,
+        504
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 1,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 1,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 2,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 33,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 2,
+          "name": "rep002_k01_17_symm_noseed_fullcheck",
+          "occupancy": 7,
+          "points_in_support": [
+            45,
+            63,
+            117,
+            130,
+            144,
+            360,
+            434
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "total_excess": 2
+    },
+    {
+      "basis": [
+        256,
+        133,
+        64,
+        33,
+        21,
+        8
+      ],
+      "basis_matrix_labels": [
+        "000/000/001",
+        "101/000/010",
+        "000/000/100",
+        "100/001/000",
+        "101/010/000",
+        "000/100/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "key": 4526760508043270,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 3,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 7,
+      "rank1_points_in_phi_head": [
+        256,
+        64,
+        320,
+        144,
+        8,
+        72,
+        216
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 5,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 4,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 7,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 24,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 2,
+          "name": "e11_rep016_k01_17_full_capacity_check",
+          "occupancy": 7,
+          "points_in_support": [
+            21,
+            33,
+            41,
+            144,
+            216,
+            256,
+            320
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "total_excess": 2
+    },
+    {
+      "basis": [
+        256,
+        129,
+        64,
+        33,
+        17,
+        8
+      ],
+      "basis_matrix_labels": [
+        "000/000/001",
+        "100/000/010",
+        "000/000/100",
+        "100/001/000",
+        "100/010/000",
+        "000/100/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "key": 4522362461499398,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 3,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 9,
+      "rank1_points_in_phi_head": [
+        256,
+        64,
+        320,
+        144,
+        48,
+        8,
+        72,
+        216,
+        56
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 5,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 5,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 8,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": false,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 18,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 2,
+          "name": "e11_rep016_k01_17_full_capacity_check",
+          "occupancy": 7,
+          "points_in_support": [
+            25,
+            33,
+            41,
+            144,
+            216,
+            256,
+            320
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "total_excess": 2
+    },
+    {
+      "basis": [
+        259,
+        129,
+        74,
+        33,
+        19,
+        6
+      ],
+      "basis_matrix_labels": [
+        "110/000/001",
+        "100/000/010",
+        "010/100/100",
+        "100/001/000",
+        "110/010/000",
+        "011/000/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "key": 3398661619855414,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 3,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 7,
+      "rank1_points_in_phi_head": [
+        360,
+        146,
+        216,
+        432,
+        6,
+        292,
+        438
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 4,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 3,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 1,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 36,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 2,
+          "name": "e11_rep016_k01_17_full_capacity_check",
+          "occupancy": 7,
+          "points_in_support": [
+            19,
+            21,
+            33,
+            216,
+            292,
+            360,
+            438
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "total_excess": 2
+    },
+    {
+      "basis": [
+        256,
+        130,
+        75,
+        34,
+        16,
+        6
+      ],
+      "basis_matrix_labels": [
+        "000/000/001",
+        "010/000/010",
+        "110/100/100",
+        "010/001/000",
+        "000/010/000",
+        "011/000/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "key": 3395365236658182,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 3,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 9,
+      "rank1_points_in_phi_head": [
+        256,
+        130,
+        16,
+        146,
+        432,
+        6,
+        36,
+        292,
+        438
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 5,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 6,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 3,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 27,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 2,
+          "name": "rep002_k01_17_symm_noseed_fullcheck",
+          "occupancy": 7,
+          "points_in_support": [
+            6,
+            16,
+            36,
+            111,
+            130,
+            367,
+            438
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "total_excess": 2
+    },
+    {
+      "basis": [
+        264,
+        128,
+        74,
+        42,
+        16,
+        5
+      ],
+      "basis_matrix_labels": [
+        "000/100/001",
+        "000/000/010",
+        "010/100/100",
+        "010/101/000",
+        "000/010/000",
+        "101/000/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "key": 2832432458895494,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 3,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 9,
+      "rank1_points_in_phi_head": [
+        128,
+        360,
+        16,
+        144,
+        504,
+        5,
+        455,
+        365,
+        63
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 3,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 2,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 3,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 27,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 2,
+          "name": "rep002_k01_17_symm_noseed_fullcheck",
+          "occupancy": 7,
+          "points_in_support": [
+            5,
+            16,
+            63,
+            117,
+            144,
+            360,
+            434
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "total_excess": 2
+    },
+    {
+      "basis": [
+        257,
+        136,
+        64,
+        34,
+        19,
+        4
+      ],
+      "basis_matrix_labels": [
+        "100/000/001",
+        "000/100/010",
+        "000/000/100",
+        "010/001/000",
+        "110/010/000",
+        "001/000/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "key": 2272763818610710,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 3,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 5,
+      "rank1_points_in_phi_head": [
+        64,
+        219,
+        504,
+        4,
+        325
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 3,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 3,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 2,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 24,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 2,
+          "name": "e11_rep002_exact16",
+          "occupancy": 7,
+          "points_in_support": [
+            34,
+            64,
+            219,
+            278,
+            304,
+            325,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        }
+      ],
+      "total_excess": 2
+    },
+    {
+      "basis": [
+        259,
+        138,
+        73,
+        34,
+        17,
+        4
+      ],
+      "basis_matrix_labels": [
+        "110/000/001",
+        "010/100/010",
+        "100/100/100",
+        "010/001/000",
+        "100/010/000",
+        "001/000/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "key": 2270564833120310,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 3,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 5,
+      "rank1_points_in_phi_head": [
+        73,
+        195,
+        448,
+        360,
+        4
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 2,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 5,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 1,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 33,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 2,
+          "name": "e11_rep002_exact16",
+          "occupancy": 7,
+          "points_in_support": [
+            34,
+            73,
+            195,
+            278,
+            304,
+            360,
+            448
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        }
+      ],
+      "total_excess": 2
+    },
+    {
+      "basis": [
+        281,
+        129,
+        65,
+        49,
+        5,
+        3
+      ],
+      "basis_matrix_labels": [
+        "100/110/001",
+        "100/000/010",
+        "100/000/100",
+        "100/011/000",
+        "101/000/000",
+        "110/000/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "key": 1694452918792598,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 3,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 7,
+      "rank1_points_in_phi_head": [
+        65,
+        192,
+        5,
+        3,
+        130,
+        195,
+        6
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 1,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 6,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 3,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 36,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 2,
+          "name": "rep002_k01_17_symm_noseed_fullcheck",
+          "occupancy": 7,
+          "points_in_support": [
+            5,
+            6,
+            65,
+            117,
+            130,
+            192,
+            367
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "total_excess": 2
+    },
+    {
+      "basis": [
+        269,
+        133,
+        76,
+        41,
+        21,
+        2
+      ],
+      "basis_matrix_labels": [
+        "101/100/001",
+        "101/000/010",
+        "001/100/100",
+        "100/101/000",
+        "101/010/000",
+        "010/000/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "key": 1149078017716438,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 3,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 7,
+      "rank1_points_in_phi_head": [
+        292,
+        360,
+        144,
+        504,
+        2,
+        146,
+        438
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 1,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 1,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 3,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 42,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 2,
+          "name": "e11_rep016_k01_17_full_capacity_check",
+          "occupancy": 7,
+          "points_in_support": [
+            21,
+            23,
+            41,
+            144,
+            292,
+            360,
+            438
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "total_excess": 2
+    },
+    {
+      "basis": [
+        268,
+        133,
+        72,
+        41,
+        21,
+        2
+      ],
+      "basis_matrix_labels": [
+        "001/100/001",
+        "101/000/010",
+        "000/100/100",
+        "100/101/000",
+        "101/010/000",
+        "010/000/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "key": 1149078000939206,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 3,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 7,
+      "rank1_points_in_phi_head": [
+        72,
+        365,
+        144,
+        216,
+        2,
+        146,
+        511
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 1,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 2,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 4,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 36,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 2,
+          "name": "e11_rep016_k01_17_full_capacity_check",
+          "occupancy": 7,
+          "points_in_support": [
+            21,
+            23,
+            41,
+            144,
+            216,
+            365,
+            511
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "total_excess": 2
+    },
+    {
+      "basis": [
+        293,
+        129,
+        65,
+        17,
+        8,
+        2
+      ],
+      "basis_matrix_labels": [
+        "101/001/001",
+        "100/000/010",
+        "100/000/100",
+        "100/010/000",
+        "000/100/000",
+        "010/000/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "key": 1134732780778070,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 3,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 9,
+      "rank1_points_in_phi_head": [
+        65,
+        192,
+        144,
+        8,
+        73,
+        2,
+        146,
+        27,
+        219
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 2,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 6,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 7,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 27,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 2,
+          "name": "e11_rep002_k01_17_full_capacity_check",
+          "occupancy": 7,
+          "points_in_support": [
+            2,
+            8,
+            25,
+            65,
+            144,
+            194,
+            217
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        }
+      ],
+      "total_excess": 2
+    },
+    {
+      "basis": [
+        257,
+        128,
+        64,
+        17,
+        8,
+        2
+      ],
+      "basis_matrix_labels": [
+        "100/000/001",
+        "000/000/010",
+        "000/000/100",
+        "100/010/000",
+        "000/100/000",
+        "010/000/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "key": 1134732776574998,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 3,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 9,
+      "rank1_points_in_phi_head": [
+        128,
+        64,
+        192,
+        8,
+        72,
+        2,
+        130,
+        27,
+        219
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 5,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 7,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 6,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 15,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 2,
+          "name": "e11_rep002_k01_17_full_capacity_check",
+          "occupancy": 7,
+          "points_in_support": [
+            2,
+            8,
+            25,
+            72,
+            130,
+            194,
+            217
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        }
+      ],
+      "total_excess": 2
+    },
+    {
+      "basis": [
+        320,
+        129,
+        41,
+        16,
+        5,
+        2
+      ],
+      "basis_matrix_labels": [
+        "000/000/101",
+        "100/000/010",
+        "100/101/000",
+        "000/010/000",
+        "101/000/000",
+        "010/000/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "key": 1131431997748230,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 3,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 9,
+      "rank1_points_in_phi_head": [
+        320,
+        16,
+        504,
+        5,
+        325,
+        2,
+        18,
+        7,
+        511
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 3,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 1,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 3,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 24,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 2,
+          "name": "e11_rep016_k01_17_full_capacity_check",
+          "occupancy": 7,
+          "points_in_support": [
+            16,
+            21,
+            23,
+            41,
+            320,
+            325,
+            511
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "total_excess": 2
+    },
+    {
+      "basis": [
+        289,
+        129,
+        72,
+        17,
+        4,
+        2
+      ],
+      "basis_matrix_labels": [
+        "100/001/001",
+        "100/000/010",
+        "000/100/100",
+        "100/010/000",
+        "001/000/000",
+        "010/000/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "key": 1130334763627030,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 3,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 9,
+      "rank1_points_in_phi_head": [
+        72,
+        144,
+        216,
+        4,
+        365,
+        2,
+        146,
+        6,
+        511
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 1,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 4,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 5,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 24,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 2,
+          "name": "e11_rep016_k01_17_full_capacity_check",
+          "occupancy": 7,
+          "points_in_support": [
+            19,
+            21,
+            23,
+            144,
+            216,
+            365,
+            511
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "total_excess": 2
+    },
+    {
+      "basis": [
+        256,
+        68,
+        32,
+        20,
+        8,
+        1
+      ],
+      "basis_matrix_labels": [
+        "000/000/001",
+        "001/000/100",
+        "000/001/000",
+        "001/010/000",
+        "000/100/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "key": 571789130895366,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 3,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 9,
+      "rank1_points_in_phi_head": [
+        256,
+        32,
+        288,
+        8,
+        40,
+        1,
+        325,
+        9,
+        365
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 7,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 7,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 6,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 15,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 2,
+          "name": "e11_rep016_k01_17_full_capacity_check",
+          "occupancy": 7,
+          "points_in_support": [
+            1,
+            21,
+            33,
+            41,
+            256,
+            325,
+            365
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "total_excess": 2
+    },
+    {
+      "basis": [
+        386,
+        64,
+        48,
+        10,
+        6,
+        1
+      ],
+      "basis_matrix_labels": [
+        "010/000/011",
+        "000/000/100",
+        "000/011/000",
+        "010/100/000",
+        "011/000/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "key": 569568699881510,
+      "lb": 15,
+      "max_excess": 2,
+      "max_occupancy": 7,
+      "nonzero_A_slices_after_restriction": 3,
+      "raise_by_one_would_cap_rank20": 4,
+      "rank1_points_in_phi_count": 9,
+      "rank1_points_in_phi_head": [
+        64,
+        48,
+        504,
+        6,
+        54,
+        1,
+        65,
+        7,
+        511
+      ],
+      "rank23_A_support_raise_screen": [
+        {
+          "A_occupancy": 6,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_cn122_3x3_r23_repro_scheme"
+        },
+        {
+          "A_occupancy": 5,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_serendipitous_8d34"
+        },
+        {
+          "A_occupancy": 6,
+          "cap23_if_raised": 7,
+          "passes_raised_bound": true,
+          "scheme": "QMM_fmm_r23_schemes_naive_c88"
+        }
+      ],
+      "restricted_tensor_nnz": 24,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "source_hits": [
+        {
+          "excess": 2,
+          "name": "e11_rep002_exact17",
+          "occupancy": 7,
+          "points_in_support": [
+            1,
+            10,
+            48,
+            54,
+            65,
+            504,
+            510
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        }
+      ],
+      "total_excess": 2
+    }
+  ]
+}

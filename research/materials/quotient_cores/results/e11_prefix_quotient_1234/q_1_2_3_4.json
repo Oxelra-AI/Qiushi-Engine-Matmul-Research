@@ -1,0 +1,30 @@
+{
+  "annihilator_basis_masks": [
+    8,
+    16,
+    32,
+    64,
+    128
+  ],
+  "field": "F2",
+  "meaning": "If this projected tensor has rank greater than rank-prefix_size, no E11 rank decomposition containing the prefix exists. A SAT quotient decomposition is only necessary evidence, not a completion of the original prefix.",
+  "necessary_remaining_rank_bound": 15,
+  "npy_path": "data/e11_prefix_quotient_1234/q_1_2_3_4.npy",
+  "prefix": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "prefix_size": 4,
+  "prefix_span_dim": 3,
+  "projected_core_nnz": 15,
+  "projected_core_shape": [
+    5,
+    9,
+    9
+  ],
+  "purpose": "A-side quotient core for exact prefix subtree rank test",
+  "quotient_dim": 5,
+  "source_core": "data/restricted_cores/mask_001_E11_core.npy"
+}

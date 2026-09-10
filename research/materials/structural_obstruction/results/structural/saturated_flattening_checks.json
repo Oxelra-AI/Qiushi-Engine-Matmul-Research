@@ -1,0 +1,676 @@
+{
+  "P": {
+    "PinvP_identity": true,
+    "is_permutation": true,
+    "rank": 27,
+    "shape": [
+      27,
+      27
+    ]
+  },
+  "meaning": "Checks the split-flattening equality identities in the actual convention. These are necessary conditions for a saturated rank-20 profile, not by themselves a contradiction.",
+  "profile27_statement": "For any decomposition with sum rank(A_t)=27 and nonzero B,C, the G_t=P^{-1}F_t are complementary idempotent projections. A rank20 survivor after analysis coset reduction would have A-rank profile 16 rank1, one rank2, three rank3, hence sum rank(A_t)=27.",
+  "schema": "s0908_saturated_flattening_checks_v1",
+  "sources": {
+    "cn122_qmm": {
+      "Ft_Pinv_Fs_bad_count": 52,
+      "Ft_Pinv_Fs_bad_head": [
+        [
+          1,
+          7,
+          36
+        ],
+        [
+          1,
+          8,
+          6
+        ],
+        [
+          1,
+          9,
+          12
+        ],
+        [
+          1,
+          17,
+          6
+        ],
+        [
+          1,
+          18,
+          30
+        ],
+        [
+          1,
+          19,
+          6
+        ],
+        [
+          2,
+          1,
+          18
+        ],
+        [
+          2,
+          13,
+          12
+        ],
+        [
+          2,
+          22,
+          6
+        ],
+        [
+          5,
+          2,
+          2
+        ],
+        [
+          5,
+          4,
+          2
+        ],
+        [
+          5,
+          5,
+          8
+        ],
+        [
+          5,
+          9,
+          8
+        ],
+        [
+          6,
+          1,
+          3
+        ],
+        [
+          6,
+          6,
+          1
+        ],
+        [
+          6,
+          16,
+          4
+        ],
+        [
+          7,
+          2,
+          1
+        ],
+        [
+          7,
+          4,
+          1
+        ],
+        [
+          7,
+          5,
+          4
+        ],
+        [
+          7,
+          9,
+          4
+        ]
+      ],
+      "idempotent_bad_count": 5,
+      "idempotent_bad_head": [
+        5,
+        6,
+        8,
+        19,
+        22
+      ],
+      "orthogonal_projection_bad_count": 52,
+      "orthogonal_projection_bad_head": [
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          1,
+          17
+        ],
+        [
+          1,
+          18
+        ],
+        [
+          1,
+          19
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          13
+        ],
+        [
+          2,
+          22
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          7,
+          9
+        ]
+      ],
+      "rankA_hist": {
+        "1": 14,
+        "2": 9
+      },
+      "rankF_hist": {
+        "1": 14,
+        "2": 9
+      },
+      "rankF_matches_rankA": true,
+      "rank_P": 27,
+      "rank_sum_A": 32,
+      "rank_sum_F": 32,
+      "saturates_split_flattening": false,
+      "sumF_equals_P": true,
+      "sumG_equals_I": true,
+      "term_count": 23,
+      "verify_brent_diff": 0
+    },
+    "flip_rank23_text": {
+      "Ft_Pinv_Fs_bad_count": 47,
+      "Ft_Pinv_Fs_bad_head": [
+        [
+          0,
+          10,
+          18
+        ],
+        [
+          0,
+          12,
+          18
+        ],
+        [
+          0,
+          21,
+          18
+        ],
+        [
+          1,
+          6,
+          12
+        ],
+        [
+          1,
+          8,
+          12
+        ],
+        [
+          1,
+          13,
+          12
+        ],
+        [
+          2,
+          1,
+          18
+        ],
+        [
+          2,
+          8,
+          18
+        ],
+        [
+          2,
+          20,
+          18
+        ],
+        [
+          3,
+          1,
+          12
+        ],
+        [
+          3,
+          8,
+          12
+        ],
+        [
+          3,
+          20,
+          12
+        ],
+        [
+          4,
+          6,
+          18
+        ],
+        [
+          4,
+          8,
+          18
+        ],
+        [
+          4,
+          13,
+          18
+        ],
+        [
+          5,
+          1,
+          2
+        ],
+        [
+          5,
+          8,
+          2
+        ],
+        [
+          5,
+          20,
+          2
+        ],
+        [
+          6,
+          6,
+          12
+        ],
+        [
+          6,
+          8,
+          12
+        ]
+      ],
+      "idempotent_bad_count": 4,
+      "idempotent_bad_head": [
+        6,
+        8,
+        10,
+        20
+      ],
+      "orthogonal_projection_bad_count": 47,
+      "orthogonal_projection_bad_head": [
+        [
+          0,
+          10
+        ],
+        [
+          0,
+          12
+        ],
+        [
+          0,
+          21
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          13
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          20
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          3,
+          20
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          4,
+          13
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          20
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "rankA_hist": {
+        "1": 16,
+        "2": 7
+      },
+      "rankF_hist": {
+        "1": 16,
+        "2": 7
+      },
+      "rankF_matches_rankA": true,
+      "rank_P": 27,
+      "rank_sum_A": 30,
+      "rank_sum_F": 30,
+      "saturates_split_flattening": false,
+      "sumF_equals_P": true,
+      "sumG_equals_I": true,
+      "term_count": 23,
+      "verify_brent_diff": 0
+    },
+    "pivot17_transformed_rank23": {
+      "Ft_Pinv_Fs_bad_count": 47,
+      "Ft_Pinv_Fs_bad_head": [
+        [
+          0,
+          10,
+          9
+        ],
+        [
+          0,
+          12,
+          27
+        ],
+        [
+          0,
+          21,
+          36
+        ],
+        [
+          1,
+          6,
+          18
+        ],
+        [
+          1,
+          8,
+          18
+        ],
+        [
+          1,
+          13,
+          18
+        ],
+        [
+          2,
+          1,
+          18
+        ],
+        [
+          2,
+          8,
+          12
+        ],
+        [
+          2,
+          20,
+          6
+        ],
+        [
+          3,
+          1,
+          12
+        ],
+        [
+          3,
+          8,
+          8
+        ],
+        [
+          3,
+          20,
+          4
+        ],
+        [
+          4,
+          6,
+          12
+        ],
+        [
+          4,
+          8,
+          12
+        ],
+        [
+          4,
+          13,
+          12
+        ],
+        [
+          5,
+          1,
+          3
+        ],
+        [
+          5,
+          8,
+          2
+        ],
+        [
+          5,
+          20,
+          1
+        ],
+        [
+          6,
+          6,
+          8
+        ],
+        [
+          6,
+          8,
+          8
+        ]
+      ],
+      "idempotent_bad_count": 4,
+      "idempotent_bad_head": [
+        6,
+        8,
+        10,
+        20
+      ],
+      "orthogonal_projection_bad_count": 47,
+      "orthogonal_projection_bad_head": [
+        [
+          0,
+          10
+        ],
+        [
+          0,
+          12
+        ],
+        [
+          0,
+          21
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          13
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          20
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          3,
+          20
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          4,
+          13
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          20
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "rankA_hist": {
+        "1": 16,
+        "2": 7
+      },
+      "rankF_hist": {
+        "1": 16,
+        "2": 7
+      },
+      "rankF_matches_rankA": true,
+      "rank_P": 27,
+      "rank_sum_A": 30,
+      "rank_sum_F": 30,
+      "saturates_split_flattening": false,
+      "sumF_equals_P": true,
+      "sumG_equals_I": true,
+      "term_count": 23,
+      "verify_brent_diff": 0
+    },
+    "schoolbook_27": {
+      "Ft_Pinv_Fs_bad_count": 0,
+      "Ft_Pinv_Fs_bad_head": [],
+      "idempotent_bad_count": 0,
+      "idempotent_bad_head": [],
+      "orthogonal_projection_bad_count": 0,
+      "orthogonal_projection_bad_head": [],
+      "rankA_hist": {
+        "1": 27
+      },
+      "rankF_hist": {
+        "1": 27
+      },
+      "rankF_matches_rankA": true,
+      "rank_P": 27,
+      "rank_sum_A": 27,
+      "rank_sum_F": 27,
+      "saturates_split_flattening": true,
+      "sumF_equals_P": true,
+      "sumG_equals_I": true,
+      "term_count": 27,
+      "verify_brent_diff": 0
+    }
+  }
+}

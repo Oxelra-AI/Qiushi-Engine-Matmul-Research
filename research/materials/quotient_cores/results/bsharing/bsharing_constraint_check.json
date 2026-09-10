@@ -1,0 +1,97 @@
+{
+  "ok": true,
+  "rank23_scheme_source": "data/pivot_fixed/pivot17_rank23_transformed_control.json",
+  "n_terms": 23,
+  "excess": {
+    "e_A": 3,
+    "e_B": 2,
+    "e_C": 2
+  },
+  "column_space_verified": true,
+  "rank_relation_verified": true,
+  "sum_Mt_equals_P": true,
+  "six_constraints": {
+    "A_col_by_B": {
+      "max_sum": 2,
+      "bound": 6,
+      "ok": true
+    },
+    "A_row_by_C": {
+      "max_sum": 2,
+      "bound": 6,
+      "ok": true
+    },
+    "B_col_by_C": {
+      "max_sum": 2,
+      "bound": 5,
+      "ok": true
+    },
+    "B_row_by_A": {
+      "max_sum": 2,
+      "bound": 5,
+      "ok": true
+    },
+    "C_col_by_A": {
+      "max_sum": 2,
+      "bound": 5,
+      "ok": true
+    },
+    "C_row_by_B": {
+      "max_sum": 3,
+      "bound": 5,
+      "ok": true
+    }
+  },
+  "b_sharing_details": [
+    {
+      "B_value": 16,
+      "term_indices": [
+        5,
+        9
+      ],
+      "A_ranks": [
+        1,
+        1
+      ],
+      "A_rank_sum": 2,
+      "bound": 6,
+      "ok": true
+    },
+    {
+      "B_value": 128,
+      "term_indices": [
+        7,
+        22
+      ],
+      "A_ranks": [
+        1,
+        1
+      ],
+      "A_rank_sum": 2,
+      "bound": 6,
+      "ok": true
+    }
+  ],
+  "c_sharing_details": [],
+  "zero_excess_analysis": {
+    "e_A=0_B_sharing_cap": 3,
+    "profile_18_3_1": {
+      "rank3_needs_unique_B": true,
+      "rank2_can_share_B_with_at_most_one_rank1": true,
+      "minimum_distinct_B_for_high_rank": 4,
+      "note": "rank-3 uses cap 3 alone; each rank-2 uses cap 2, can share with one rank-1"
+    },
+    "profile_17_5_0": {
+      "rank2_pairwise_sharing": "Two rank-2 cannot share B (sum=4>3)",
+      "rank2_can_share_B_with_rank1": "Yes, sum=3=cap",
+      "minimum_distinct_B_for_high_rank": 5,
+      "note": "All 5 rank-2 need distinct B values; each can share with one rank-1"
+    }
+  },
+  "theorem_statement": "For T=<3,3,3> over F_2, let T = Σ_{t=1}^n A_t⊗B_t⊗C_t be an exact decomposition. Set e_A = Σ rank(A_t) - 27.  Then for every 3×3 matrix b over F_2, Σ_{t: B_t=b} rank(A_t) ≤ 3 + e_A, and dually for C.  Under the cyclic symmetry (A,B,C)→(B,C^T,A^T), analogous bounds hold for B-split (grouping by C or A) and C-split (grouping by A or B), each with the corresponding slot excess.",
+  "proof_sketch": "The A-split flattened summand M_t = A_t ⊗ (vec(B_t)·vec(C_t)^T) has col(M_t) = col(A_t) ⊗ ⟨vec(B_t)⟩ ⊂ F_2^3 ⊗ ⟨vec(B_t)⟩.  Since Σ M_t = P is invertible of rank 27, the addition map from ⊕_t col(M_t) → F_2^27 is surjective with kernel of dimension e_A.  For any subfamily sharing B_t = b, their column spaces all lie in the 3-dimensional slice F_2^3 ⊗ ⟨vec(b)⟩, so Σ_{t in S} rank(A_t) ≤ dim(slice) + dim(kernel) = 3 + e_A.  The row-space version gives the C-grouping bound.  The cyclic symmetry (A,B,C) → (B,C^T,A^T) preserves the tensor and transfers the A-split argument to B-split and C-split.",
+  "connection_to_pinned_proof": "At e_A=0 (length-20 forced profile), three rank-3 A-factors each occupy a full 3-dimensional B-slice. Direct-sum requires these slices to be distinct, hence three distinct B values that no other term may share. This gives a transparent reading of the existing saturation endpoint without changing the released proof.",
+  "rank22_application": "At e_A=0 for length 22: the A-col constraint Σ_{t:B_t=b} rank(A_t) ≤ 3 forbids two rank-2 A-factors from sharing a B value (sum=4>3), and the single rank-3 factor (profile 18,3,1) must have a unique B value. This is a solver-free B/C-side pruning constraint from A-side data alone, exactly the coupling that analysis showed occupation-only exclusion was missing.",
+  "excess_one_note": "At e_A=1 the B-sharing cap becomes 4. A rank-3 A-factor can share B with a rank-1 factor (sum=4), but not with a rank-2 factor (sum=5>4). Two rank-2 factors can share B (sum=4). This already constrains the unique length-21 residual family more than the pairwise rank tests that analysis showed were insufficient.",
+  "strategist_conjecture_correction": "The pairwise excess-one conditions are genuinely insufficient (analysis witnesses), and the 'at most e+1 invertible factors at excess e' conjecture cannot be reached through pairwise rank inequalities. The B/C-sharing constraint is a matroid-type independence condition on subspaces col(A_t) ⊗ ⟨vec(B_t)⟩, not decomposable into two-term inequalities. Moreover, pairwise inequalities become vacuous for 3×3 matrices once e ≥ 3, which is where verified rank-23 schemes live."
+}

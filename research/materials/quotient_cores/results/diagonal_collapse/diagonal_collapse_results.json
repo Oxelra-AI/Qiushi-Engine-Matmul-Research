@@ -1,0 +1,198 @@
+{
+  "structural": {
+    "trM3_degree_counts": {
+      "0": 0,
+      "1": 3,
+      "2": 0,
+      "3": 8
+    },
+    "linear_masks": [
+      [
+        0
+      ],
+      [
+        4
+      ],
+      [
+        8
+      ]
+    ],
+    "degree2_nonzero_count": 0,
+    "degree3_nonzero_count": 8,
+    "degree3_nonzero_masks": [
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        0,
+        2,
+        6
+      ],
+      [
+        1,
+        3,
+        4
+      ],
+      [
+        1,
+        5,
+        6
+      ],
+      [
+        2,
+        3,
+        7
+      ],
+      [
+        2,
+        6,
+        8
+      ],
+      [
+        4,
+        5,
+        7
+      ],
+      [
+        5,
+        7,
+        8
+      ]
+    ],
+    "sym3_quotient_dim": 84,
+    "sym3_quotient_hamming_weight": 8,
+    "degree3_equals_sym3_quotient": true,
+    "equation_count_degree2": 36,
+    "equation_count_degree3": 84,
+    "equation_count_high": 120,
+    "note": "The 84 degree-3 diagonal equations are exactly the analysis E_inv/Sym^3 quotient equations over F2; the additional diagonal-collapse information is the 36 zero degree-2 equations. Linear terms can be supplied by cube terms whenever f>=1."
+  },
+  "results": [
+    {
+      "m": 0,
+      "primary_vars": 0,
+      "total_vars": 0,
+      "clauses": 8,
+      "solver": "kissat",
+      "timeout": 120,
+      "status": "UNSAT",
+      "solve_sec": 0.003356,
+      "returncode": 20,
+      "cnf": "data/diagonal_collapse/diag_highdeg_m0.cnf",
+      "drat": {
+        "status": "VERIFIED",
+        "time_sec": 0.05302286148071289,
+        "proof_bytes": 2,
+        "output_tail": "\nc turning on binary mode checking\n\nc parsing input formula with 0 variables and 8 clauses\n\nc finished parsing, read 2 bytes from proof file\n\nc trivial UNSAT\ns VERIFIED\n\nc verification time: 0.048 seconds\n"
+      }
+    },
+    {
+      "m": 1,
+      "primary_vars": 27,
+      "total_vars": 1324,
+      "clauses": 4659,
+      "solver": "kissat",
+      "timeout": 120,
+      "status": "UNSAT",
+      "solve_sec": 0.031238,
+      "returncode": 20,
+      "cnf": "data/diagonal_collapse/diag_highdeg_m1.cnf",
+      "drat": {
+        "status": "VERIFIED",
+        "time_sec": 0.06487417221069336,
+        "proof_bytes": 20469,
+        "output_tail": "\nc turning on binary mode checking\n\nc parsing input formula with 1324 variables and 4659 clauses\n\nc finished parsing, read 20469 bytes from proof file\n\nc detected empty clause; start verification via backward checking\n\nc 423 of 4659 clauses in core                            \n\nc 186 of 1936 lemmas in core using 3447 resolution steps\n\nc 0 RAT lemmas in core; 18 redundant literals in core lemmas\n\ns VERIFIED\n\nc verification time: 0.061 seconds\n"
+      }
+    },
+    {
+      "m": 2,
+      "primary_vars": 54,
+      "total_vars": 2914,
+      "clauses": 10194,
+      "solver": "kissat",
+      "timeout": 120,
+      "status": "UNSAT",
+      "solve_sec": 0.216374,
+      "returncode": 20,
+      "cnf": "data/diagonal_collapse/diag_highdeg_m2.cnf",
+      "drat": {
+        "status": "VERIFIED",
+        "time_sec": 0.12030315399169922,
+        "proof_bytes": 230419,
+        "output_tail": "\nc turning on binary mode checking\n\nc parsing input formula with 2914 variables and 10194 clauses\n\nc finished parsing, read 230419 bytes from proof file\n\nc detected empty clause; start verification via backward checking\n\nc 2745 of 10194 clauses in core                            \n\nc 2329 of 8343 lemmas in core using 87340 resolution steps\n\nc 13 RAT lemmas in core; 383 redundant literals in core lemmas\n\ns VERIFIED\n\nc verification time: 0.115 seconds\n"
+      }
+    },
+    {
+      "m": 3,
+      "primary_vars": 81,
+      "total_vars": 4504,
+      "clauses": 15729,
+      "solver": "kissat",
+      "timeout": 120,
+      "status": "UNSAT",
+      "solve_sec": 14.160614,
+      "returncode": 20,
+      "cnf": "data/diagonal_collapse/diag_highdeg_m3.cnf",
+      "drat": {
+        "status": "VERIFIED",
+        "time_sec": 15.920219659805298,
+        "proof_bytes": 25012159,
+        "output_tail": "\nc turning on binary mode checking\n\nc parsing input formula with 4504 variables and 15729 clauses\n\nc finished parsing, read 25012159 bytes from proof file\n\nc detected empty clause; start verification via backward checking\n\nc 13464 of 15729 clauses in core                            \n\nc 252928 of 430828 lemmas in core using 13983452 resolution steps\n\nc 39 RAT lemmas in core; 126740 redundant literals in core lemmas\n\ns VERIFIED\n\nc verification time: 15.912 seconds\n"
+      }
+    },
+    {
+      "m": 4,
+      "primary_vars": 108,
+      "total_vars": 6094,
+      "clauses": 21264,
+      "solver": "kissat",
+      "timeout": 120,
+      "status": "SAT",
+      "solve_sec": 3.246823,
+      "returncode": 10,
+      "cnf": "data/diagonal_collapse/diag_highdeg_m4.cnf",
+      "stdout_tail": " -5979 -5980 -5981 -5982 -5983\nv -5984 -5985 -5986 -5987 -5988 -5989 -5990 -5991 -5992 -5993 -5994 -5995\nv -5996 -5997 -5998 -5999 -6000 -6001 -6002 -6003 -6004 -6005 6006 -6007 -6008\nv -6009 -6010 -6011 -6012 -6013 -6014 -6015 -6016 -6017 -6018 -6019 -6020\nv -6021 -6022 -6023 -6024 -6025 -6026 -6027 -6028 6029 6030 6031 6032 6033\nv 6034 6035 6036 6037 6038 6039 6040 6041 6042 6043 6044 6045 6046 6047 6048\nv -6049 -6050 6051 6052 -6053 -6054 -6055 -6056 -6057 -6058 -6059 -6060 -6061\nv -6062 -6063 -6064 -6065 -6066 -6067 -6068 -6069 -6070 -6071 -6072 -6073 6074\nv -6075 -6076 -6077 -6078 -6079 -6080 -6081 -6082 -6083 -6084 -6085 -6086\nv -6087 -6088 -6089 -6090 -6091 -6092 -6093 -6094 0\nc\nc ---- [ profiling ] ---------------------------------------------------------\nc\nc           2.46   76.04 %  search\nc           1.29   39.67 %  focused\nc           1.18   36.37 %  stable\nc           0.73   22.55 %  simplify\nc           0.66   20.43 %  probe\nc           0.30    9.18 %  vivify\nc           0.25    7.71 %  sweep\nc           0.10    2.97 %  eliminate\nc           0.05    1.42 %  reduce\nc           0.04    1.22 %  factor\nc           0.04    1.16 %  preprocess\nc           0.03    1.07 %  substitute\nc           0.03    0.86 %  congruence\nc           0.01    0.39 %  subsume\nc           0.01    0.31 %  walking\nc           0.01    0.31 %  transitive\nc           0.00    0.11 %  parse\nc           0.00    0.09 %  backbone\nc           0.00    0.08 %  lucky\nc           0.00    0.01 %  extend\nc =============================================\nc           3.24  100.00 %  total\nc\nc ---- [ statistics ] --------------------------------------------------------\nc\nc chronological:                           15                0 %  conflicts\nc conflicts:                            66997            20667.87 per second\nc congruent:                              124                2 %  variables\nc decisions:                           267085                3.99 per conflict\nc eliminated:                            3269               54 %  variables\nc factored:                                13                0 %  variables\nc propagations:                      19715265          6081953    per second\nc reductions:                              21             3190    interval\nc reordered:                                3            22332    interval\nc rephased:                                 9             7444    interval\nc restarts:                              5160               13    interval\nc strengthened:                          1196                0 %  checks\nc substituted:                            145                2 %  variables\nc subsumed:                               964                0 %  checks\nc switched:                                13             5154    interval\nc vivified:                              8230               23 %  checks\nc walks:                                    3            22332    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 2 used 36937 clauses 29.31% accumulated 58.64% tier1\nc focused glue 3 used 21028 clauses 16.69% accumulated 75.33%\nc focused glue 4 used 10974 clauses  8.71% accumulated 84.04%\nc focused glue 5 used  5675 clauses  4.50% accumulated 88.55%\nc focused glue 6 used  3712 clauses  2.95% accumulated 91.49% tier2\nc\nc stable glue 3    used 25304 clauses 13.55% accumulated 54.78% tier1\nc stable glue 4    used 16355 clauses  8.76% accumulated 63.54%\nc stable glue 5-17 used 45068 clauses 24.14% accumulated 87.68%\nc stable glue 18   used  2089 clauses  1.12% accumulated 88.79%\nc stable glue 19   used  2313 clauses  1.24% accumulated 90.03% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         23867392 bytes         23 MB\nc process-time:                             3s               3.24 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 10\n"
+    },
+    {
+      "m": 5,
+      "primary_vars": 135,
+      "total_vars": 7684,
+      "clauses": 26799,
+      "solver": "kissat",
+      "timeout": 120,
+      "status": "SAT",
+      "solve_sec": 0.062662,
+      "returncode": 10,
+      "cnf": "data/diagonal_collapse/diag_highdeg_m5.cnf",
+      "stdout_tail": "-7363 -7364 7365 7366\nv -7367 -7368 -7369 -7370 -7371 -7372 -7373 -7374 -7375 -7376 -7377 -7378\nv -7379 -7380 -7381 -7382 -7383 -7384 -7385 -7386 -7387 -7388 -7389 -7390\nv -7391 -7392 -7393 7394 -7395 -7396 -7397 -7398 -7399 -7400 -7401 -7402 -7403\nv -7404 -7405 -7406 7407 -7408 -7409 -7410 -7411 -7412 -7413 -7414 -7415 -7416\nv -7417 -7418 7419 -7420 -7421 -7422 -7423 -7424 -7425 -7426 -7427 -7428 -7429\nv -7430 -7431 -7432 -7433 -7434 -7435 7436 7437 7438 7439 7440 7441 7442 7443\nv 7444 7445 7446 7447 -7448 -7449 -7450 -7451 -7452 -7453 -7454 -7455 -7456\nv -7457 -7458 -7459 -7460 -7461 -7462 -7463 -7464 -7465 -7466 -7467 -7468\nv -7469 -7470 -7471 -7472 -7473 -7474 -7475 -7476 -7477 -7478 -7479 -7480\nv -7481 -7482 -7483 -7484 -7485 -7486 -7487 -7488 -7489 -7490 -7491 -7492\nv -7493 -7494 -7495 -7496 -7497 -7498 -7499 -7500 -7501 -7502 -7503 -7504\nv -7505 -7506 -7507 -7508 -7509 -7510 -7511 -7512 -7513 -7514 -7515 -7516\nv -7517 -7518 -7519 -7520 -7521 -7522 -7523 -7524 -7525 -7526 -7527 -7528\nv -7529 -7530 -7531 -7532 -7533 -7534 7535 -7536 -7537 -7538 -7539 7540 -7541\nv -7542 -7543 -7544 -7545 -7546 -7547 -7548 -7549 -7550 -7551 -7552 -7553\nv -7554 -7555 -7556 -7557 -7558 -7559 -7560 -7561 -7562 -7563 7564 7565 7566\nv 7567 7568 -7569 -7570 -7571 -7572 -7573 -7574 -7575 -7576 -7577 -7578 -7579\nv -7580 -7581 -7582 -7583 -7584 -7585 -7586 -7587 -7588 -7589 -7590 -7591\nv -7592 -7593 -7594 -7595 -7596 7597 -7598 -7599 -7600 -7601 -7602 -7603 -7604\nv -7605 -7606 -7607 -7608 -7609 -7610 -7611 -7612 -7613 -7614 -7615 -7616\nv -7617 -7618 -7619 -7620 -7621 -7622 -7623 -7624 -7625 7626 -7627 -7628 -7629\nv -7630 -7631 -7632 -7633 -7634 -7635 -7636 -7637 -7638 -7639 -7640 -7641\nv -7642 -7643 -7644 -7645 -7646 -7647 -7648 -7649 -7650 -7651 -7652 -7653\nv -7654 7655 7656 -7657 -7658 -7659 -7660 -7661 -7662 -7663 -7664 -7665 -7666\nv -7667 -7668 -7669 -7670 -7671 -7672 -7673 -7674 -7675 -7676 -7677 -7678\nv -7679 -7680 -7681 -7682 -7683 7684 0\nc\nc ---- [ profiling ] ---------------------------------------------------------\nc\nc           0.04   71.39 %  preprocess\nc           0.04   71.28 %  probe\nc           0.02   37.65 %  sweep\nc           0.01   15.34 %  congruence\nc           0.01   13.23 %  search\nc           0.01   13.22 %  focused\nc           0.01   12.79 %  factor\nc           0.00    7.54 %  parse\nc           0.00    5.73 %  lucky\nc           0.00    5.11 %  substitute\nc           0.00    0.35 %  backbone\nc           0.00    0.02 %  extend\nc           0.00    0.00 %  simplify\nc =============================================\nc           0.06  100.00 %  total\nc\nc ---- [ statistics ] --------------------------------------------------------\nc\nc conflicts:                              184             2991.04 per second\nc congruent:                              125                2 %  variables\nc decisions:                             2143               11.65 per conflict\nc factored:                                 5                0 %  variables\nc propagations:                        224877          3655526    per second\nc restarts:                                39                5    interval\nc substituted:                            140                2 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 4   used 17 clauses 15.04% accumulated 58.41% tier1\nc focused glue 5   used  5 clauses  4.42% accumulated 62.83%\nc focused glue 6-9 used 25 clauses 22.12% accumulated 84.96%\nc focused glue 10  used  3 clauses  2.65% accumulated 87.61%\nc focused glue 11  used  4 clauses  3.54% accumulated 91.15% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         25571328 bytes         24 MB\nc process-time:                                              0.06 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 10\n"
+    },
+    {
+      "m": 6,
+      "primary_vars": 162,
+      "total_vars": 9274,
+      "clauses": 32334,
+      "solver": "kissat",
+      "timeout": 120,
+      "status": "SAT",
+      "solve_sec": 0.426077,
+      "returncode": 10,
+      "cnf": "data/diagonal_collapse/diag_highdeg_m6.cnf",
+      "stdout_tail": "096 -9097 -9098 -9099 -9100\nv -9101 -9102 -9103 -9104 -9105 -9106 -9107 9108 9109 -9110 -9111 9112 9113\nv -9114 -9115 -9116 -9117 9118 9119 -9120 -9121 -9122 -9123 -9124 -9125 -9126\nv -9127 -9128 -9129 -9130 -9131 -9132 -9133 -9134 -9135 -9136 -9137 -9138\nv -9139 -9140 -9141 -9142 -9143 -9144 -9145 -9146 -9147 -9148 -9149 -9150\nv -9151 -9152 9153 -9154 -9155 -9156 -9157 -9158 -9159 -9160 -9161 -9162 -9163\nv -9164 -9165 -9166 -9167 -9168 -9169 -9170 -9171 -9172 -9173 -9174 -9175\nv -9176 -9177 -9178 -9179 -9180 -9181 -9182 -9183 -9184 -9185 -9186 -9187 9188\nv 9189 9190 9191 9192 9193 9194 9195 9196 9197 9198 9199 9200 9201 9202 9203\nv 9204 -9205 -9206 -9207 -9208 -9209 -9210 -9211 -9212 -9213 -9214 -9215 -9216\nv 9217 -9218 9219 -9220 -9221 -9222 -9223 -9224 -9225 -9226 -9227 -9228 -9229\nv -9230 -9231 -9232 -9233 -9234 -9235 -9236 -9237 -9238 -9239 -9240 -9241\nv -9242 -9243 -9244 -9245 -9246 -9247 -9248 -9249 -9250 -9251 9252 9253 -9254\nv -9255 -9256 -9257 -9258 -9259 -9260 -9261 -9262 -9263 -9264 -9265 -9266\nv -9267 -9268 -9269 -9270 -9271 -9272 -9273 -9274 0\nc\nc ---- [ profiling ] ---------------------------------------------------------\nc\nc           0.26   61.69 %  search\nc           0.15   35.23 %  focused\nc           0.15   34.83 %  probe\nc           0.11   26.46 %  stable\nc           0.10   24.79 %  simplify\nc           0.07   15.80 %  sweep\nc           0.05   10.91 %  preprocess\nc           0.03    7.50 %  vivify\nc           0.02    5.63 %  congruence\nc           0.01    2.50 %  factor\nc           0.01    2.35 %  substitute\nc           0.01    1.23 %  parse\nc           0.00    1.05 %  lucky\nc           0.00    1.02 %  reduce\nc           0.00    0.86 %  walking\nc           0.00    0.70 %  transitive\nc           0.00    0.34 %  backbone\nc           0.00    0.00 %  extend\nc =============================================\nc           0.42  100.00 %  total\nc\nc ---- [ statistics ] --------------------------------------------------------\nc\nc chronological:                            7                0 %  conflicts\nc conflicts:                             7012            16652.46 per second\nc congruent:                              127                1 %  variables\nc decisions:                            45988                6.56 per conflict\nc factored:                                 6                0 %  variables\nc propagations:                       4409284         10471394    per second\nc reductions:                               4             1753    interval\nc rephased:                                 3             2337    interval\nc restarts:                               609               12    interval\nc substituted:                            149                2 %  variables\nc switched:                                 5             1402    interval\nc vivified:                              1024               14 %  checks\nc walks:                                    1             7012    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 3 used 1641 clauses 20.87% accumulated 66.26% tier1\nc focused glue 4 used 1038 clauses 13.20% accumulated 79.46%\nc focused glue 5 used  503 clauses  6.40% accumulated 85.86%\nc focused glue 6 used  314 clauses  3.99% accumulated 89.85%\nc focused glue 7 used  197 clauses  2.51% accumulated 92.36% tier2\nc\nc stable glue 4    used  850 clauses  9.89% accumulated 54.23% tier1\nc stable glue 5    used  551 clauses  6.41% accumulated 60.64%\nc stable glue 6-22 used 2407 clauses 28.02% accumulated 88.66%\nc stable glue 23   used   99 clauses  1.15% accumulated 89.81%\nc stable glue 24   used   75 clauses  0.87% accumulated 90.69% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         27275264 bytes         26 MB\nc process-time:                                              0.42 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 10\n"
+    },
+    {
+      "m": 7,
+      "primary_vars": 189,
+      "total_vars": 10864,
+      "clauses": 37869,
+      "solver": "kissat",
+      "timeout": 120,
+      "status": "SAT",
+      "solve_sec": 0.440897,
+      "returncode": 10,
+      "cnf": "data/diagonal_collapse/diag_highdeg_m7.cnf",
+      "stdout_tail": "-10711 -10712\nv -10713 -10714 -10715 -10716 -10717 -10718 -10719 -10720 -10721 -10722 -10723\nv -10724 -10725 -10726 -10727 -10728 -10729 -10730 -10731 -10732 -10733 -10734\nv -10735 -10736 -10737 -10738 -10739 -10740 -10741 -10742 -10743 -10744 -10745\nv -10746 -10747 -10748 10749 10750 10751 10752 10753 10754 10755 10756 10757\nv 10758 10759 10760 10761 10762 10763 10764 10765 10766 10767 10768 10769\nv 10770 10771 10772 10773 10774 10775 10776 10777 10778 10779 10780 10781\nv 10782 -10783 -10784 -10785 -10786 -10787 -10788 -10789 -10790 -10791 -10792\nv -10793 -10794 -10795 -10796 -10797 -10798 -10799 -10800 -10801 -10802 -10803\nv -10804 -10805 -10806 -10807 -10808 -10809 -10810 -10811 -10812 -10813 -10814\nv -10815 -10816 -10817 -10818 -10819 -10820 -10821 -10822 -10823 -10824 -10825\nv -10826 -10827 -10828 -10829 -10830 -10831 -10832 -10833 -10834 -10835 -10836\nv -10837 -10838 -10839 -10840 -10841 -10842 -10843 -10844 -10845 -10846 -10847\nv -10848 -10849 -10850 -10851 -10852 -10853 -10854 -10855 -10856 -10857 -10858\nv -10859 -10860 -10861 -10862 -10863 -10864 0\nc\nc ---- [ profiling ] ---------------------------------------------------------\nc\nc           0.25   58.87 %  search\nc           0.16   36.79 %  probe\nc           0.16   36.22 %  focused\nc           0.11   25.96 %  simplify\nc           0.10   22.65 %  stable\nc           0.07   15.64 %  sweep\nc           0.05   11.74 %  preprocess\nc           0.04    8.23 %  vivify\nc           0.03    5.85 %  congruence\nc           0.01    3.19 %  factor\nc           0.01    2.72 %  substitute\nc           0.01    1.58 %  lucky\nc           0.01    1.42 %  parse\nc           0.00    1.08 %  reduce\nc           0.00    0.88 %  walking\nc           0.00    0.75 %  transitive\nc           0.00    0.42 %  backbone\nc           0.00    0.00 %  extend\nc =============================================\nc           0.43  100.00 %  total\nc\nc ---- [ statistics ] --------------------------------------------------------\nc\nc chronological:                           11                0 %  conflicts\nc conflicts:                             6006            13826.29 per second\nc congruent:                              128                1 %  variables\nc decisions:                            47703                7.94 per conflict\nc factored:                                 7                0 %  variables\nc propagations:                       4600896         10591625    per second\nc reductions:                               4             1502    interval\nc rephased:                                 3             2002    interval\nc restarts:                               512               12    interval\nc substituted:                            155                1 %  variables\nc switched:                                 5             1201    interval\nc vivified:                              1080               15 %  checks\nc walks:                                    1             6006    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 3 used 1581 clauses 23.69% accumulated 58.52% tier1\nc focused glue 4 used  977 clauses 14.64% accumulated 73.15%\nc focused glue 5 used  579 clauses  8.67% accumulated 81.83%\nc focused glue 6 used  348 clauses  5.21% accumulated 87.04%\nc focused glue 7 used  219 clauses  3.28% accumulated 90.32% tier2\nc\nc stable glue 3    used  653 clauses 14.48% accumulated 50.34% tier1\nc stable glue 4    used  375 clauses  8.31% accumulated 58.66%\nc stable glue 5-34 used 1361 clauses 30.17% accumulated 88.83%\nc stable glue 35   used   30 clauses  0.67% accumulated 89.49%\nc stable glue 36   used   47 clauses  1.04% accumulated 90.53% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         28979200 bytes         28 MB\nc process-time:                                              0.43 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 10\n"
+    }
+  ]
+}

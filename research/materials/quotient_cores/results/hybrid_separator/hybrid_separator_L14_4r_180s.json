@@ -1,0 +1,942 @@
+{
+  "annihilator_dim_min": 5,
+  "complete_core_table_meta": {
+    "by_dim8": {
+      "0": 1,
+      "1": 255,
+      "2": 10795,
+      "3": 97155,
+      "4": 200787,
+      "5": 97155,
+      "6": 10795,
+      "7": 255,
+      "8": 1
+    },
+    "by_full_lut_L": {
+      "0": 1,
+      "11": 865,
+      "12": 61232,
+      "13": 8130,
+      "14": 81540,
+      "15": 138902,
+      "16": 83046,
+      "17": 34664,
+      "18": 687,
+      "19": 1,
+      "3": 33,
+      "6": 578,
+      "9": 7520
+    },
+    "constraint_count": 417199,
+    "elapsed_sec": 36.564
+  },
+  "constraint_summary": {
+    "active_wang_rows": 338851,
+    "annihilator_weight_terms_total": 273384,
+    "contraction_lower_bounds": 255,
+    "direct_point_terms_total": 3584895,
+    "repr_count": {
+      "annihilator": 39168,
+      "direct": 299683
+    },
+    "rows_by_L": {
+      "12": 12,
+      "14": 81540,
+      "15": 138902,
+      "16": 83046,
+      "17": 34664,
+      "18": 687
+    },
+    "rows_by_dim8": {
+      "1": 255,
+      "2": 10795,
+      "3": 97155,
+      "4": 191478,
+      "5": 38970,
+      "6": 198
+    },
+    "weight_equalities": 255,
+    "weight_variables": 255
+  },
+  "core": "E11",
+  "elapsed_sec": 236.733,
+  "field": "F2",
+  "final_status": "UNKNOWN",
+  "hint_added": true,
+  "initial_threshold_L": 14,
+  "interpretation": "Adaptive exact Wang separator in linked annihilator-weight representation. COMPLETE_WANG_FEASIBLE would still need fixed-A B/C completion; UNKNOWN/timeout is not a lower bound proof.",
+  "model_stats_final": "satisfaction model '': (model_fingerprint: 0xf44339bcc407dc91)\n#Variables: 510\n  - 255 Booleans in [0,1]\n  - 255 in [0,19]\n#kLinear1: 510\n#kLinear3: 10'993\n#kLinearN: 327'859 (#terms: 3'858'195)",
+  "rank_s": 19,
+  "representation_examples": [
+    {
+      "D_nonzero": [
+        34,
+        80,
+        114,
+        128,
+        162,
+        208,
+        242
+      ],
+      "L": 15,
+      "ann_terms": 7,
+      "dim8": 5,
+      "direct_terms": 31,
+      "idx": 310430,
+      "reason": "initial_threshold",
+      "repr": "annihilator",
+      "rhs": 60
+    },
+    {
+      "D_nonzero": [
+        50,
+        80,
+        98,
+        128,
+        178,
+        208,
+        226
+      ],
+      "L": 15,
+      "ann_terms": 7,
+      "dim8": 5,
+      "direct_terms": 31,
+      "idx": 310431,
+      "reason": "initial_threshold",
+      "repr": "annihilator",
+      "rhs": 60
+    },
+    {
+      "D_nonzero": [
+        48,
+        66,
+        114,
+        128,
+        176,
+        194,
+        242
+      ],
+      "L": 15,
+      "ann_terms": 7,
+      "dim8": 5,
+      "direct_terms": 31,
+      "idx": 310441,
+      "reason": "initial_threshold",
+      "repr": "annihilator",
+      "rhs": 60
+    },
+    {
+      "D_nonzero": [
+        50,
+        66,
+        112,
+        128,
+        178,
+        194,
+        240
+      ],
+      "L": 15,
+      "ann_terms": 7,
+      "dim8": 5,
+      "direct_terms": 31,
+      "idx": 310443,
+      "reason": "initial_threshold",
+      "repr": "annihilator",
+      "rhs": 60
+    },
+    {
+      "D_nonzero": [
+        48,
+        82,
+        98,
+        128,
+        176,
+        210,
+        226
+      ],
+      "L": 15,
+      "ann_terms": 7,
+      "dim8": 5,
+      "direct_terms": 31,
+      "idx": 310453,
+      "reason": "initial_threshold",
+      "repr": "annihilator",
+      "rhs": 60
+    },
+    {
+      "D_nonzero": [
+        34,
+        82,
+        112,
+        128,
+        162,
+        210,
+        240
+      ],
+      "L": 15,
+      "ann_terms": 7,
+      "dim8": 5,
+      "direct_terms": 31,
+      "idx": 310454,
+      "reason": "initial_threshold",
+      "repr": "annihilator",
+      "rhs": 60
+    },
+    {
+      "D_nonzero": [
+        42,
+        64,
+        106,
+        128,
+        170,
+        192,
+        234
+      ],
+      "L": 15,
+      "ann_terms": 7,
+      "dim8": 5,
+      "direct_terms": 31,
+      "idx": 310529,
+      "reason": "initial_threshold",
+      "repr": "annihilator",
+      "rhs": 60
+    },
+    {
+      "D_nonzero": [
+        58,
+        64,
+        122,
+        128,
+        186,
+        192,
+        250
+      ],
+      "L": 15,
+      "ann_terms": 7,
+      "dim8": 5,
+      "direct_terms": 31,
+      "idx": 310543,
+      "reason": "initial_threshold",
+      "repr": "annihilator",
+      "rhs": 60
+    },
+    {
+      "D_nonzero": [
+        16,
+        42,
+        58,
+        128,
+        144,
+        170,
+        186
+      ],
+      "L": 15,
+      "ann_terms": 7,
+      "dim8": 5,
+      "direct_terms": 31,
+      "idx": 310568,
+      "reason": "initial_threshold",
+      "repr": "annihilator",
+      "rhs": 60
+    },
+    {
+      "D_nonzero": [
+        16,
+        106,
+        122,
+        128,
+        144,
+        234,
+        250
+      ],
+      "L": 15,
+      "ann_terms": 7,
+      "dim8": 5,
+      "direct_terms": 31,
+      "idx": 310569,
+      "reason": "initial_threshold",
+      "repr": "annihilator",
+      "rhs": 60
+    },
+    {
+      "D_nonzero": [
+        42,
+        80,
+        122,
+        128,
+        170,
+        208,
+        250
+      ],
+      "L": 14,
+      "ann_terms": 7,
+      "dim8": 5,
+      "direct_terms": 31,
+      "idx": 310570,
+      "reason": "initial_threshold",
+      "repr": "annihilator",
+      "rhs": 56
+    },
+    {
+      "D_nonzero": [
+        58,
+        80,
+        106,
+        128,
+        186,
+        208,
+        234
+      ],
+      "L": 14,
+      "ann_terms": 7,
+      "dim8": 5,
+      "direct_terms": 31,
+      "idx": 310571,
+      "reason": "initial_threshold",
+      "repr": "annihilator",
+      "rhs": 56
+    },
+    {
+      "D_nonzero": [
+        16,
+        42,
+        58,
+        64,
+        80,
+        106,
+        122
+      ],
+      "L": 14,
+      "ann_terms": 7,
+      "dim8": 5,
+      "direct_terms": 31,
+      "idx": 310572,
+      "reason": "initial_threshold",
+      "repr": "annihilator",
+      "rhs": 56
+    },
+    {
+      "D_nonzero": [
+        16,
+        64,
+        80,
+        170,
+        186,
+        234,
+        250
+      ],
+      "L": 14,
+      "ann_terms": 7,
+      "dim8": 5,
+      "direct_terms": 31,
+      "idx": 310573,
+      "reason": "initial_threshold",
+      "repr": "annihilator",
+      "rhs": 56
+    },
+    {
+      "D_nonzero": [
+        42,
+        64,
+        106,
+        144,
+        186,
+        208,
+        250
+      ],
+      "L": 14,
+      "ann_terms": 7,
+      "dim8": 5,
+      "direct_terms": 31,
+      "idx": 310574,
+      "reason": "initial_threshold",
+      "repr": "annihilator",
+      "rhs": 56
+    },
+    {
+      "D_nonzero": [
+        58,
+        64,
+        122,
+        144,
+        170,
+        208,
+        234
+      ],
+      "L": 14,
+      "ann_terms": 7,
+      "dim8": 5,
+      "direct_terms": 31,
+      "idx": 310575,
+      "reason": "initial_threshold",
+      "repr": "annihilator",
+      "rhs": 56
+    },
+    {
+      "D_nonzero": [
+        16,
+        42,
+        58,
+        192,
+        208,
+        234,
+        250
+      ],
+      "L": 14,
+      "ann_terms": 7,
+      "dim8": 5,
+      "direct_terms": 31,
+      "idx": 310576,
+      "reason": "initial_threshold",
+      "repr": "annihilator",
+      "rhs": 56
+    },
+    {
+      "D_nonzero": [
+        16,
+        106,
+        122,
+        170,
+        186,
+        192,
+        208
+      ],
+      "L": 14,
+      "ann_terms": 7,
+      "dim8": 5,
+      "direct_terms": 31,
+      "idx": 310577,
+      "reason": "initial_threshold",
+      "repr": "annihilator",
+      "rhs": 56
+    },
+    {
+      "D_nonzero": [
+        42,
+        80,
+        122,
+        144,
+        186,
+        192,
+        234
+      ],
+      "L": 14,
+      "ann_terms": 7,
+      "dim8": 5,
+      "direct_terms": 31,
+      "idx": 310578,
+      "reason": "initial_threshold",
+      "repr": "annihilator",
+      "rhs": 56
+    },
+    {
+      "D_nonzero": [
+        58,
+        80,
+        106,
+        144,
+        170,
+        192,
+        250
+      ],
+      "L": 14,
+      "ann_terms": 7,
+      "dim8": 5,
+      "direct_terms": 31,
+      "idx": 310579,
+      "reason": "initial_threshold",
+      "repr": "annihilator",
+      "rhs": 56
+    },
+    {
+      "D_nonzero": [
+        10,
+        48,
+        58,
+        128,
+        138,
+        176,
+        186
+      ],
+      "L": 15,
+      "ann_terms": 7,
+      "dim8": 5,
+      "direct_terms": 31,
+      "idx": 310580,
+      "reason": "initial_threshold",
+      "repr": "annihilator",
+      "rhs": 60
+    },
+    {
+      "D_nonzero": [
+        48,
+        74,
+        122,
+        128,
+        176,
+        202,
+        250
+      ],
+      "L": 15,
+      "ann_terms": 7,
+      "dim8": 5,
+      "direct_terms": 31,
+      "idx": 310581,
+      "reason": "initial_threshold",
+      "repr": "annihilator",
+      "rhs": 60
+    },
+    {
+      "D_nonzero": [
+        10,
+        112,
+        122,
+        128,
+        138,
+        240,
+        250
+      ],
+      "L": 15,
+      "ann_terms": 7,
+      "dim8": 5,
+      "direct_terms": 31,
+      "idx": 310582,
+      "reason": "initial_threshold",
+      "repr": "annihilator",
+      "rhs": 60
+    },
+    {
+      "D_nonzero": [
+        58,
+        74,
+        112,
+        128,
+        186,
+        202,
+        240
+      ],
+      "L": 15,
+      "ann_terms": 7,
+      "dim8": 5,
+      "direct_terms": 31,
+      "idx": 310583,
+      "reason": "initial_threshold",
+      "repr": "annihilator",
+      "rhs": 60
+    },
+    {
+      "D_nonzero": [
+        26,
+        42,
+        48,
+        128,
+        154,
+        170,
+        176
+      ],
+      "L": 15,
+      "ann_terms": 7,
+      "dim8": 5,
+      "direct_terms": 31,
+      "idx": 310592,
+      "reason": "initial_threshold",
+      "repr": "annihilator",
+      "rhs": 60
+    }
+  ],
+  "rounds": [
+    {
+      "A_cols": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        20,
+        24,
+        31,
+        32,
+        64,
+        73,
+        109,
+        127,
+        128,
+        141,
+        160,
+        182,
+        192,
+        219
+      ],
+      "active_rows": 338839,
+      "affine_dim": 891,
+      "complete_wang_violations": 12,
+      "linear_pass": true,
+      "max_excess": 1,
+      "new_rows_added_from_violations": 12,
+      "quotient_rank_violations_size2": 0,
+      "repr_count": {
+        "annihilator": 39156,
+        "direct": 299683
+      },
+      "round": 0,
+      "solve_sec": 32.532,
+      "solver_status": "OPTIMAL",
+      "transversal_failures": 0,
+      "violations_by_L": {
+        "12": 12
+      },
+      "violations_by_dim8": {
+        "5": 6,
+        "6": 6
+      },
+      "violations_by_dual_k": {
+        "2": 6,
+        "3": 6
+      },
+      "violations_head": [
+        {
+          "D_key": 37896739,
+          "D_nonzero": [
+            9,
+            18,
+            27,
+            34,
+            43,
+            48,
+            57
+          ],
+          "L": 12,
+          "basis8": [
+            128,
+            64,
+            50,
+            9,
+            4
+          ],
+          "cap": 7,
+          "codim_dual_k": 3,
+          "dim8": 5,
+          "excess": 1,
+          "key8": 4417584105477,
+          "key9": 571785121632262,
+          "occupancy": 8,
+          "point_count": 31,
+          "record_index": 343428
+        },
+        {
+          "D_key": 37898771,
+          "D_nonzero": [
+            9,
+            18,
+            27,
+            161,
+            168,
+            179,
+            186
+          ],
+          "L": 12,
+          "basis8": [
+            137,
+            64,
+            41,
+            18,
+            4
+          ],
+          "cap": 7,
+          "codim_dual_k": 3,
+          "dim8": 5,
+          "excess": 1,
+          "key8": 4436873709717,
+          "key9": 571823700840742,
+          "occupancy": 8,
+          "point_count": 31,
+          "record_index": 346825
+        },
+        {
+          "D_key": 37896755,
+          "D_nonzero": [
+            9,
+            18,
+            27,
+            35,
+            42,
+            49,
+            56
+          ],
+          "L": 12,
+          "basis8": [
+            128,
+            64,
+            41,
+            27,
+            4
+          ],
+          "cap": 7,
+          "codim_dual_k": 3,
+          "dim8": 5,
+          "excess": 1,
+          "key8": 4456201062405,
+          "key9": 571862355546118,
+          "occupancy": 8,
+          "point_count": 31,
+          "record_index": 349380
+        },
+        {
+          "D_key": 37899827,
+          "D_nonzero": [
+            9,
+            18,
+            27,
+            227,
+            234,
+            241,
+            248
+          ],
+          "L": 12,
+          "basis8": [
+            137,
+            73,
+            41,
+            27,
+            4
+          ],
+          "cap": 7,
+          "codim_dual_k": 3,
+          "dim8": 5,
+          "excess": 1,
+          "key8": 4456201136277,
+          "key9": 571862355693862,
+          "occupancy": 8,
+          "point_count": 31,
+          "record_index": 349425
+        },
+        {
+          "D_key": 8429827,
+          "D_nonzero": [
+            2,
+            5,
+            7,
+            16,
+            18,
+            21,
+            23
+          ],
+          "L": 12,
+          "basis8": [
+            128,
+            64,
+            32,
+            8,
+            5
+          ],
+          "cap": 7,
+          "codim_dual_k": 3,
+          "dim8": 5,
+          "excess": 1,
+          "key8": 5514872752133,
+          "key9": 573979698925574,
+          "occupancy": 8,
+          "point_count": 31,
+          "record_index": 350020
+        },
+        {
+          "D_key": 12624259,
+          "D_nonzero": [
+            3,
+            5,
+            6,
+            24,
+            27,
+            29,
+            30
+          ],
+          "L": 12,
+          "basis8": [
+            128,
+            64,
+            32,
+            24,
+            7
+          ],
+          "cap": 7,
+          "codim_dual_k": 3,
+          "dim8": 5,
+          "excess": 1,
+          "key8": 7748255746053,
+          "key9": 578446464913414,
+          "occupancy": 8,
+          "point_count": 31,
+          "record_index": 371332
+        },
+        {
+          "D_key": 148146,
+          "D_nonzero": [
+            18,
+            43,
+            57
+          ],
+          "L": 12,
+          "basis8": [
+            128,
+            64,
+            33,
+            19,
+            9,
+            4
+          ],
+          "cap": 7,
+          "codim_dual_k": 2,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 2261736359462918,
+          "key9": 292753848870637575,
+          "occupancy": 8,
+          "point_count": 63,
+          "record_index": 413311
+        },
+        {
+          "D_key": 221858,
+          "D_nonzero": [
+            27,
+            42,
+            49
+          ],
+          "L": 12,
+          "basis8": [
+            128,
+            64,
+            35,
+            17,
+            10,
+            4
+          ],
+          "cap": 7,
+          "codim_dual_k": 2,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 2262831584512006,
+          "key9": 292756039320735751,
+          "occupancy": 8,
+          "point_count": 63,
+          "record_index": 413471
+        },
+        {
+          "D_key": 224930,
+          "D_nonzero": [
+            27,
+            234,
+            241
+          ],
+          "L": 12,
+          "basis8": [
+            131,
+            67,
+            35,
+            17,
+            10,
+            4
+          ],
+          "cap": 7,
+          "codim_dual_k": 2,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 2262831584536630,
+          "key9": 292756039320784999,
+          "occupancy": 8,
+          "point_count": 63,
+          "record_index": 413486
+        },
+        {
+          "D_key": 76594,
+          "D_nonzero": [
+            9,
+            179,
+            186
+          ],
+          "L": 12,
+          "basis8": [
+            130,
+            64,
+            34,
+            18,
+            11,
+            4
+          ],
+          "cap": 7,
+          "codim_dual_k": 2,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 2263933239429158,
+          "key9": 292758242630570055,
+          "occupancy": 8,
+          "point_count": 63,
+          "record_index": 413777
+        },
+        {
+          "D_key": 149586,
+          "D_nonzero": [
+            18,
+            133,
+            151
+          ],
+          "L": 12,
+          "basis8": [
+            129,
+            64,
+            32,
+            18,
+            8,
+            5
+          ],
+          "cap": 7,
+          "codim_dual_k": 2,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 2823584649578518,
+          "key9": 293877545450868775,
+          "occupancy": 8,
+          "point_count": 63,
+          "record_index": 414000
+        },
+        {
+          "D_key": 75122,
+          "D_nonzero": [
+            9,
+            87,
+            94
+          ],
+          "L": 12,
+          "basis8": [
+            128,
+            66,
+            32,
+            18,
+            11,
+            6
+          ],
+          "cap": 7,
+          "codim_dual_k": 2,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 3389833137899526,
+          "key9": 295010042427510791,
+          "occupancy": 8,
+          "point_count": 63,
+          "record_index": 415799
+        }
+      ],
+      "zero_domain_terms": 0
+    },
+    {
+      "active_rows": 338851,
+      "repr_count": {
+        "annihilator": 39168,
+        "direct": 299683
+      },
+      "round": 1,
+      "solve_sec": 139.839,
+      "solver_status": "UNKNOWN"
+    }
+  ],
+  "schema": "hybrid_violation_separator_v1"
+}

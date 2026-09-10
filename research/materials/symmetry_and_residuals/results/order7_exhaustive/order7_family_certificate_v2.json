@@ -1,0 +1,553 @@
+{
+  "purpose": "Strengthened certificate excluding termwise diagonal order-7 sandwich symmetric rank<=22 UV-span representations over F2.",
+  "field": "F2",
+  "selected_F7_matrix": [
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "action_convention": {
+    "U_and_V": "row-major covector action vec(F^T X F^{-T}) = kron(F^T,F^{-1}) vec_row(X)",
+    "W_slice_coefficients": "row-major action vec(F^{-1} X F) = kron(F^{-1},F^T) vec_row(X); this is the inverse-transpose action paired with UV",
+    "gE_T_equals_T_hW": true,
+    "gbar_Q_equals_Q_gE": true,
+    "orders": {
+      "F7": true,
+      "M9": true,
+      "gE": true,
+      "hW": true,
+      "gbar": true
+    }
+  },
+  "fixed_spaces": {
+    "FixE_dim": 15,
+    "FixE_mod_L_dim": 12,
+    "L0_dim": 3,
+    "L0_equals_L_intersection_FixE": true,
+    "sigma_projector": {
+      "rank": 15,
+      "idempotent": true,
+      "image_fixed_rank": 0,
+      "image_equals_FixE": true
+    }
+  },
+  "rank_one_orbits": {
+    "rank_one_total": 261121,
+    "fixed_count": 49,
+    "free_orbit_count": 37296,
+    "total_check": 261121,
+    "fixed_rank_one_coordinates_unique": true,
+    "fixed_rank_one_span_rank": 9,
+    "fixed_rank_one_span_intersection_L": 0,
+    "fixed_rank_one_span_intersection_L0": 0,
+    "free_orbit_profile": {
+      "(3, 'L0', 1, 0, 0)": 28,
+      "(4, 'p_plus_L0', 0, 1, 1)": 196,
+      "(6, 'L0', 1, 0, 0)": 308,
+      "(7, 'other', 0, 0, 0)": 35392,
+      "(7, 'p_plus_L0', 0, 1, 1)": 1372
+    }
+  },
+  "fixed_projection_enumeration": {
+    "orbits_with_sigma_in_L0_but_nonzero": 0,
+    "all_orbits_with_sigma_in_L0_have_sigma_zero": true,
+    "filtered_orbits_with_nonzero_L0part_over_all_fixed_p": 0,
+    "every_filtered_orbit_has_sigma_in_span_p": true,
+    "histogram_over_49_fixed_points": {
+      "(32, 28, 0, 4, 0)": 49
+    },
+    "per_fixed": [
+      {
+        "fixed_local": 0,
+        "fixed_global": 56320,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 1,
+        "fixed_global": 56350,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 2,
+        "fixed_global": 56435,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 3,
+        "fixed_global": 56482,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 4,
+        "fixed_global": 56591,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 5,
+        "fixed_global": 56621,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 6,
+        "fixed_global": 56708,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 7,
+        "fixed_global": 71650,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 8,
+        "fixed_global": 71680,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 9,
+        "fixed_global": 71765,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 10,
+        "fixed_global": 71812,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 11,
+        "fixed_global": 71921,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 12,
+        "fixed_global": 71951,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 13,
+        "fixed_global": 72038,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 14,
+        "fixed_global": 115085,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 15,
+        "fixed_global": 115115,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 16,
+        "fixed_global": 115200,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 17,
+        "fixed_global": 115247,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 18,
+        "fixed_global": 115356,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 19,
+        "fixed_global": 115386,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 20,
+        "fixed_global": 115473,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 21,
+        "fixed_global": 139102,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 22,
+        "fixed_global": 139132,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 23,
+        "fixed_global": 139217,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 24,
+        "fixed_global": 139264,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 25,
+        "fixed_global": 139373,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 26,
+        "fixed_global": 139403,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 27,
+        "fixed_global": 139490,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 28,
+        "fixed_global": 194801,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 29,
+        "fixed_global": 194831,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 30,
+        "fixed_global": 194916,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 31,
+        "fixed_global": 194963,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 32,
+        "fixed_global": 195072,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 33,
+        "fixed_global": 195102,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 34,
+        "fixed_global": 195189,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 35,
+        "fixed_global": 210131,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 36,
+        "fixed_global": 210161,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 37,
+        "fixed_global": 210246,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 38,
+        "fixed_global": 210293,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 39,
+        "fixed_global": 210402,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 40,
+        "fixed_global": 210432,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 41,
+        "fixed_global": 210519,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 42,
+        "fixed_global": 254588,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 43,
+        "fixed_global": 254618,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 44,
+        "fixed_global": 254703,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 45,
+        "fixed_global": 254750,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 46,
+        "fixed_global": 254859,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 47,
+        "fixed_global": 254889,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      },
+      {
+        "fixed_local": 48,
+        "fixed_global": 254976,
+        "filtered_orbits_total": 32,
+        "rank7_sigma_equals_p": 28,
+        "rank7_sigma_equals_p_plus_nonzero_L0": 0,
+        "lower_rank_sigma_equals_p": 4,
+        "lower_rank_sigma_equals_p_plus_nonzero_L0": 0
+      }
+    ]
+  },
+  "skeleton_arguments": [
+    {
+      "rank_range": "r<=20",
+      "excluded": true,
+      "reason": "For any invariant generated span containing L, P+L0 <= sigma(S) and dim sigma(S)<=dim(P)+m force m>=dim(L0)=3 free seven-orbits; this already uses 21 terms."
+    },
+    {
+      "rank": 21,
+      "skeleton": "three free seven-orbits and no fixed point",
+      "excluded": true,
+      "reason": "The fixed-part budget forces sigma(S)=L0, hence each of the three orbit sums must lie in L0. Enumeration shows every free orbit whose sum lies in L0 has sum 0, so three such sums cannot span L0."
+    },
+    {
+      "rank": 22,
+      "skeleton": "three free seven-orbits and one fixed point p",
+      "excluded": true,
+      "reason": "The fixed-part budget is tight: sigma(S) must equal <p>+L0, so every free orbit sum must lie in <p>+L0. Enumeration over all 49 fixed p shows every such orbit sum is exactly p (no nonzero L0 component), so sigma(S)=<p> cannot contain L0."
+    }
+  ],
+  "order7_diagonal_subgroup_conjugacy_in_GL3F2": {
+    "GL3F2_size": 168,
+    "order7_element_count": 48,
+    "order7_subgroup_count": 8,
+    "conjugates_of_selected_subgroup": 8,
+    "all_order7_subgroups_conjugate": true
+  },
+  "theorem_status": "proved_no_termwise_diagonal_order7_sandwich_symmetric_rank_le_22_over_F2",
+  "scope": [
+    "This is a named-family result, not a global lower bound for R_F2(T333): it treats representations whose individual rank-one UV terms are permuted by a diagonal order-7 sandwich subgroup.",
+    "It does not exclude an invariant 22-dimensional UV subspace whose selected rank-one generators are not themselves a union of group orbits.",
+    "It does not transfer to characteristic zero without a separate algebraic argument.",
+    "The selected F7 result covers all diagonal order-7 sandwich subgroups over F2 by the recorded GL3(F2) conjugacy computation, not arbitrary non-diagonal De Groote triples."
+  ],
+  "supersedes": [
+    "data/symmetry_search/orbit_search_results.json: non-preserving action convention and random sampling only",
+    "data/order7_exhaustive/order7_family_certificate.json: correct core computation but weaker/full-UV-rank packaging"
+  ],
+  "elapsed_sec": 4.236359119415283
+}

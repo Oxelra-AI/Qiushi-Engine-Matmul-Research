@@ -1,0 +1,126 @@
+{
+  "records": [
+    {
+      "constraint_summary_by_residual": {
+        "2": 2035,
+        "3": 1775,
+        "4": 100,
+        "5": 3
+      },
+      "constraints_added": 3913,
+      "drat_cadical_sec": 7.74,
+      "drat_sha256": "c4cf1aa590c1194bb9df45000f5f0adfc8741fed5eb2676b5709daede324ca05",
+      "drat_trim_sec": 12.78,
+      "drat_verified": true,
+      "final_clauses": 55374,
+      "final_cnf": "workspace/data/separation/k5_idx12_v2/idx012_final.cnf",
+      "final_cnf_sha256": "1c3b54bf20063b073809750811edc525e44da0b6aaf76c7f7aec6d5509899266",
+      "final_variables": 4634,
+      "idx": 12,
+      "k": 5,
+      "matching": [
+        1,
+        16,
+        27,
+        256,
+        325
+      ],
+      "round_log": [
+        {
+          "cadical_exit": 10,
+          "cadical_sec": 0.1,
+          "clauses": 14309,
+          "elapsed_sec": 46.38,
+          "lut_violations": 7291,
+          "max_excess": 5,
+          "model_size": 15,
+          "new_by_residual": {
+            "2": 400,
+            "3": 409,
+            "4": 40,
+            "5": 2
+          },
+          "new_clauses": 8510,
+          "new_constraints": 851,
+          "result": "SAT_SEPARATED",
+          "round": 0,
+          "skipped_large": 6323,
+          "variables": 4634
+        },
+        {
+          "cadical_exit": 10,
+          "cadical_sec": 0.52,
+          "clauses": 22819,
+          "elapsed_sec": 50.52,
+          "lut_violations": 7008,
+          "max_excess": 4,
+          "model_size": 15,
+          "new_by_residual": {
+            "2": 404,
+            "3": 309,
+            "4": 5,
+            "5": 1
+          },
+          "new_clauses": 7465,
+          "new_constraints": 719,
+          "result": "SAT_SEPARATED",
+          "round": 1,
+          "skipped_large": 6270,
+          "variables": 4634
+        },
+        {
+          "cadical_exit": 10,
+          "cadical_sec": 1.09,
+          "clauses": 30284,
+          "elapsed_sec": 49.68,
+          "lut_violations": 11054,
+          "max_excess": 5,
+          "model_size": 15,
+          "new_by_residual": {
+            "2": 601,
+            "3": 515,
+            "4": 27
+          },
+          "new_clauses": 12176,
+          "new_constraints": 1143,
+          "result": "SAT_SEPARATED",
+          "round": 2,
+          "skipped_large": 9802,
+          "variables": 4634
+        },
+        {
+          "cadical_exit": 10,
+          "cadical_sec": 4.06,
+          "clauses": 42460,
+          "elapsed_sec": 55.1,
+          "lut_violations": 11187,
+          "max_excess": 5,
+          "model_size": 15,
+          "new_by_residual": {
+            "2": 630,
+            "3": 542,
+            "4": 28
+          },
+          "new_clauses": 12914,
+          "new_constraints": 1200,
+          "result": "SAT_SEPARATED",
+          "round": 3,
+          "skipped_large": 9883,
+          "variables": 4634
+        },
+        {
+          "cadical_exit": 20,
+          "cadical_sec": 7.74,
+          "clauses": 55374,
+          "result": "UNSAT",
+          "round": 4,
+          "variables": 4634
+        }
+      ],
+      "rounds": 5,
+      "status": "UNSAT",
+      "total_elapsed_sec": 244.49
+    }
+  ],
+  "schema": "iterative_separation_v1"
+}

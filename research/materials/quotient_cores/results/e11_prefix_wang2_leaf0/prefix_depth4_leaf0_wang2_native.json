@@ -1,0 +1,42 @@
+{
+  "cache": "data/e11_capacity_sat/e11_capacity_cache.pkl",
+  "cnf_clauses": 516068,
+  "cnf_path": "data/e11_prefix_wang2_leaf0/prefix_depth4_leaf0_wang2_native.xor.cnf",
+  "cnf_sha256": "40bc44caf5fc0cb20606e7668ca235db746567f47bbe2ab118224e24b2369482",
+  "core": "data/restricted_cores/mask_001_E11_core.npy",
+  "dim2_max_cap": 1,
+  "elapsed_total_sec": 314.4280560016632,
+  "field": "F2",
+  "meaning": "UNSAT refutes every E11 rank-19 CPD whose A multiset contains this prefix, using Brent plus exact dim<=2 Wang occupation restrictions. SAT is decoded and verified as an actual CPD.",
+  "native_xor_clauses": 648,
+  "prefix": [
+    80,
+    122,
+    191,
+    213
+  ],
+  "prefix_size": 4,
+  "purpose": "exact E11 prefix-completion Brent SAT coupled with dim<=2 Wang occupation constraints",
+  "rank": 19,
+  "solve": {
+    "command": "cryptominisat5 --verb 0 -t 4 --maxtime 300 data/e11_prefix_wang2_leaf0/prefix_depth4_leaf0_wang2_native.xor.cnf",
+    "elapsed_sec": 313.7286283969879,
+    "returncode": 15,
+    "status": "UNKNOWN",
+    "stderr_tail": "",
+    "stdout_tail": "s INDETERMINATE\n"
+  },
+  "sort_free_a": true,
+  "vars": 18268,
+  "wang_stats": {
+    "dim2_atmost_clauses": 410940,
+    "dim2_constraints": 438,
+    "dim2_max_cap": 1,
+    "eq_indicator_clauses": 34425,
+    "eq_indicator_count": 3825,
+    "free_terms": 15,
+    "singleton_atmost_clauses": 28515,
+    "singleton_constraints": 255,
+    "static_prefix_violations": 0
+  }
+}

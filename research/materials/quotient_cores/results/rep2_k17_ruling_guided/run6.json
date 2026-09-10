@@ -1,0 +1,1726 @@
+{
+  "closed_by_graph": false,
+  "elapsed_sec": 1068.0148582458496,
+  "exact_rank1_count": 17,
+  "field": "F2",
+  "final_degree_hist": {
+    "388": 6,
+    "402": 48,
+    "405": 96,
+    "408": 24,
+    "410": 132,
+    "411": 96,
+    "413": 24
+  },
+  "final_edge_count_after_feedback": 86892,
+  "fixed_prefix": [
+    1,
+    2
+  ],
+  "graph_size_info": null,
+  "initial_degree_hist": {
+    "402": 48,
+    "405": 96,
+    "408": 24,
+    "410": 24,
+    "414": 12,
+    "416": 24,
+    "417": 96,
+    "420": 48,
+    "421": 6,
+    "422": 48
+  },
+  "initial_edge_count_after_old_pairs": 87867,
+  "iterations": [
+    {
+      "canonical_high": [
+        224,
+        229,
+        236
+      ],
+      "event": "full_high_ruling_query",
+      "feedback": [
+        {
+          "canonical": [
+            224,
+            229
+          ],
+          "edges_removed": 96,
+          "images": 96,
+          "strict_vs_wang_only": false,
+          "subset": [
+            225,
+            228
+          ],
+          "type": "ruling_pair_edge_removal"
+        },
+        {
+          "canonical": [
+            225,
+            233
+          ],
+          "edges_removed": 48,
+          "images": 48,
+          "strict_vs_wang_only": false,
+          "subset": [
+            225,
+            233
+          ],
+          "type": "ruling_pair_edge_removal"
+        },
+        {
+          "canonical": [
+            224,
+            236
+          ],
+          "edges_removed": 192,
+          "images": 192,
+          "strict_vs_wang_only": false,
+          "subset": [
+            228,
+            233
+          ],
+          "type": "ruling_pair_edge_removal"
+        }
+      ],
+      "high": [
+        225,
+        228,
+        233
+      ],
+      "iteration": 1,
+      "orbit_image_count_setwise": 192,
+      "ruling_build_sec": 9.113739252090454,
+      "ruling_constraints_added": 98,
+      "ruling_solve_sec": 0.3242623805999756,
+      "ruling_status": "INFEASIBLE",
+      "search_stats": {
+        "hit_node_limit": false,
+        "nodes": 4,
+        "prunes": {}
+      },
+      "shrink_records": [
+        {
+          "canonical_setwise": [
+            225
+          ],
+          "new_relative_to_imported_old_pairs": false,
+          "orbit_image_count_setwise": 48,
+          "ruling_solve_sec": 8.39065933227539,
+          "ruling_status": "OPTIMAL",
+          "ruling_strict_vs_wang_only": false,
+          "size": 1,
+          "subset": [
+            225
+          ],
+          "wang_only_solve_sec": 7.578643083572388,
+          "wang_only_status": "OPTIMAL"
+        },
+        {
+          "canonical_setwise": [
+            224
+          ],
+          "new_relative_to_imported_old_pairs": false,
+          "orbit_image_count_setwise": 48,
+          "ruling_solve_sec": 4.592382192611694,
+          "ruling_status": "OPTIMAL",
+          "ruling_strict_vs_wang_only": false,
+          "size": 1,
+          "subset": [
+            228
+          ],
+          "wang_only_solve_sec": 6.242407560348511,
+          "wang_only_status": "OPTIMAL"
+        },
+        {
+          "canonical_setwise": [
+            225
+          ],
+          "new_relative_to_imported_old_pairs": false,
+          "orbit_image_count_setwise": 48,
+          "ruling_solve_sec": 12.159428834915161,
+          "ruling_status": "UNKNOWN",
+          "ruling_strict_vs_wang_only": false,
+          "size": 1,
+          "subset": [
+            233
+          ],
+          "wang_only_solve_sec": 12.166818857192993,
+          "wang_only_status": "UNKNOWN"
+        },
+        {
+          "canonical_setwise": [
+            224,
+            229
+          ],
+          "new_relative_to_imported_old_pairs": true,
+          "orbit_image_count_setwise": 96,
+          "ruling_solve_sec": 4.560677766799927,
+          "ruling_status": "INFEASIBLE",
+          "ruling_strict_vs_wang_only": false,
+          "size": 2,
+          "subset": [
+            225,
+            228
+          ],
+          "wang_only_solve_sec": 4.712343215942383,
+          "wang_only_status": "INFEASIBLE"
+        },
+        {
+          "canonical_setwise": [
+            225,
+            233
+          ],
+          "new_relative_to_imported_old_pairs": true,
+          "orbit_image_count_setwise": 48,
+          "ruling_solve_sec": 5.29210352897644,
+          "ruling_status": "INFEASIBLE",
+          "ruling_strict_vs_wang_only": false,
+          "size": 2,
+          "subset": [
+            225,
+            233
+          ],
+          "wang_only_solve_sec": 5.657450437545776,
+          "wang_only_status": "INFEASIBLE"
+        },
+        {
+          "canonical_setwise": [
+            224,
+            236
+          ],
+          "new_relative_to_imported_old_pairs": true,
+          "orbit_image_count_setwise": 192,
+          "ruling_solve_sec": 0.42534399032592773,
+          "ruling_status": "INFEASIBLE",
+          "ruling_strict_vs_wang_only": false,
+          "size": 2,
+          "subset": [
+            228,
+            233
+          ],
+          "wang_only_solve_sec": 0.28257322311401367,
+          "wang_only_status": "INFEASIBLE"
+        }
+      ],
+      "wang_only_compare_solve_sec": 0.3200705051422119,
+      "wang_only_compare_status": "INFEASIBLE"
+    },
+    {
+      "canonical_high": [
+        25,
+        26,
+        98
+      ],
+      "event": "full_high_ruling_query",
+      "feedback": [
+        {
+          "canonical": [
+            25,
+            26
+          ],
+          "edges_removed": 3,
+          "images": 3,
+          "strict_vs_wang_only": false,
+          "subset": [
+            25,
+            26
+          ],
+          "type": "ruling_pair_edge_removal"
+        },
+        {
+          "canonical": [
+            25,
+            98
+          ],
+          "edges_removed": 96,
+          "images": 96,
+          "strict_vs_wang_only": false,
+          "subset": [
+            25,
+            98
+          ],
+          "type": "ruling_pair_edge_removal"
+        },
+        {
+          "canonical": [
+            25,
+            102
+          ],
+          "edges_removed": 96,
+          "images": 96,
+          "strict_vs_wang_only": false,
+          "subset": [
+            26,
+            98
+          ],
+          "type": "ruling_pair_edge_removal"
+        }
+      ],
+      "high": [
+        25,
+        26,
+        98
+      ],
+      "iteration": 2,
+      "orbit_image_count_setwise": 96,
+      "ruling_build_sec": 7.7944629192352295,
+      "ruling_constraints_added": 98,
+      "ruling_solve_sec": 0.995368480682373,
+      "ruling_status": "INFEASIBLE",
+      "search_stats": {
+        "hit_node_limit": false,
+        "nodes": 4,
+        "prunes": {}
+      },
+      "shrink_records": [
+        {
+          "canonical_setwise": [
+            25
+          ],
+          "new_relative_to_imported_old_pairs": false,
+          "orbit_image_count_setwise": 6,
+          "ruling_solve_sec": 10.719395160675049,
+          "ruling_status": "OPTIMAL",
+          "ruling_strict_vs_wang_only": false,
+          "size": 1,
+          "subset": [
+            25
+          ],
+          "wang_only_solve_sec": 10.513931035995483,
+          "wang_only_status": "OPTIMAL"
+        },
+        {
+          "canonical_setwise": [
+            25
+          ],
+          "new_relative_to_imported_old_pairs": false,
+          "orbit_image_count_setwise": 6,
+          "ruling_solve_sec": 12.159522533416748,
+          "ruling_status": "UNKNOWN",
+          "ruling_strict_vs_wang_only": false,
+          "size": 1,
+          "subset": [
+            26
+          ],
+          "wang_only_solve_sec": 12.153380632400513,
+          "wang_only_status": "UNKNOWN"
+        },
+        {
+          "canonical_setwise": [
+            98
+          ],
+          "new_relative_to_imported_old_pairs": false,
+          "orbit_image_count_setwise": 96,
+          "ruling_solve_sec": 10.997079610824585,
+          "ruling_status": "OPTIMAL",
+          "ruling_strict_vs_wang_only": false,
+          "size": 1,
+          "subset": [
+            98
+          ],
+          "wang_only_solve_sec": 10.97475266456604,
+          "wang_only_status": "OPTIMAL"
+        },
+        {
+          "canonical_setwise": [
+            25,
+            26
+          ],
+          "new_relative_to_imported_old_pairs": true,
+          "orbit_image_count_setwise": 3,
+          "ruling_solve_sec": 4.6319169998168945,
+          "ruling_status": "INFEASIBLE",
+          "ruling_strict_vs_wang_only": false,
+          "size": 2,
+          "subset": [
+            25,
+            26
+          ],
+          "wang_only_solve_sec": 4.67702841758728,
+          "wang_only_status": "INFEASIBLE"
+        },
+        {
+          "canonical_setwise": [
+            25,
+            98
+          ],
+          "new_relative_to_imported_old_pairs": true,
+          "orbit_image_count_setwise": 96,
+          "ruling_solve_sec": 5.046321153640747,
+          "ruling_status": "INFEASIBLE",
+          "ruling_strict_vs_wang_only": false,
+          "size": 2,
+          "subset": [
+            25,
+            98
+          ],
+          "wang_only_solve_sec": 5.1735968589782715,
+          "wang_only_status": "INFEASIBLE"
+        },
+        {
+          "canonical_setwise": [
+            25,
+            102
+          ],
+          "new_relative_to_imported_old_pairs": true,
+          "orbit_image_count_setwise": 96,
+          "ruling_solve_sec": 4.322988033294678,
+          "ruling_status": "INFEASIBLE",
+          "ruling_strict_vs_wang_only": false,
+          "size": 2,
+          "subset": [
+            26,
+            98
+          ],
+          "wang_only_solve_sec": 4.282288312911987,
+          "wang_only_status": "INFEASIBLE"
+        }
+      ],
+      "wang_only_compare_solve_sec": 0.8210158348083496,
+      "wang_only_compare_status": "INFEASIBLE"
+    },
+    {
+      "canonical_high": [
+        28,
+        35,
+        59
+      ],
+      "event": "full_high_ruling_query",
+      "feedback": [
+        {
+          "canonical": [
+            28,
+            35
+          ],
+          "edges_removed": 24,
+          "images": 24,
+          "strict_vs_wang_only": false,
+          "subset": [
+            28,
+            35
+          ],
+          "type": "ruling_pair_edge_removal"
+        },
+        {
+          "canonical": [
+            28,
+            39
+          ],
+          "edges_removed": 24,
+          "images": 24,
+          "strict_vs_wang_only": false,
+          "subset": [
+            28,
+            59
+          ],
+          "type": "ruling_pair_edge_removal"
+        },
+        {
+          "canonical": [
+            35,
+            59
+          ],
+          "edges_removed": 12,
+          "images": 12,
+          "strict_vs_wang_only": false,
+          "subset": [
+            35,
+            59
+          ],
+          "type": "ruling_pair_edge_removal"
+        }
+      ],
+      "high": [
+        28,
+        35,
+        59
+      ],
+      "iteration": 3,
+      "orbit_image_count_setwise": 24,
+      "ruling_build_sec": 7.557827711105347,
+      "ruling_constraints_added": 98,
+      "ruling_solve_sec": 2.9235661029815674,
+      "ruling_status": "INFEASIBLE",
+      "search_stats": {
+        "hit_node_limit": false,
+        "nodes": 4,
+        "prunes": {}
+      },
+      "shrink_records": [
+        {
+          "canonical_setwise": [
+            28
+          ],
+          "new_relative_to_imported_old_pairs": false,
+          "orbit_image_count_setwise": 12,
+          "ruling_solve_sec": 6.629001617431641,
+          "ruling_status": "OPTIMAL",
+          "ruling_strict_vs_wang_only": false,
+          "size": 1,
+          "subset": [
+            28
+          ],
+          "wang_only_solve_sec": 6.252135992050171,
+          "wang_only_status": "OPTIMAL"
+        },
+        {
+          "canonical_setwise": [
+            35
+          ],
+          "new_relative_to_imported_old_pairs": false,
+          "orbit_image_count_setwise": 24,
+          "ruling_solve_sec": 7.167831897735596,
+          "ruling_status": "OPTIMAL",
+          "ruling_strict_vs_wang_only": false,
+          "size": 1,
+          "subset": [
+            35
+          ],
+          "wang_only_solve_sec": 8.299713850021362,
+          "wang_only_status": "OPTIMAL"
+        },
+        {
+          "canonical_setwise": [
+            35
+          ],
+          "new_relative_to_imported_old_pairs": false,
+          "orbit_image_count_setwise": 24,
+          "ruling_solve_sec": 5.071516036987305,
+          "ruling_status": "OPTIMAL",
+          "ruling_strict_vs_wang_only": false,
+          "size": 1,
+          "subset": [
+            59
+          ],
+          "wang_only_solve_sec": 7.356027364730835,
+          "wang_only_status": "OPTIMAL"
+        },
+        {
+          "canonical_setwise": [
+            28,
+            35
+          ],
+          "new_relative_to_imported_old_pairs": true,
+          "orbit_image_count_setwise": 24,
+          "ruling_solve_sec": 6.057523250579834,
+          "ruling_status": "INFEASIBLE",
+          "ruling_strict_vs_wang_only": false,
+          "size": 2,
+          "subset": [
+            28,
+            35
+          ],
+          "wang_only_solve_sec": 5.86661958694458,
+          "wang_only_status": "INFEASIBLE"
+        },
+        {
+          "canonical_setwise": [
+            28,
+            39
+          ],
+          "new_relative_to_imported_old_pairs": true,
+          "orbit_image_count_setwise": 24,
+          "ruling_solve_sec": 6.418207168579102,
+          "ruling_status": "INFEASIBLE",
+          "ruling_strict_vs_wang_only": false,
+          "size": 2,
+          "subset": [
+            28,
+            59
+          ],
+          "wang_only_solve_sec": 6.448015451431274,
+          "wang_only_status": "INFEASIBLE"
+        },
+        {
+          "canonical_setwise": [
+            35,
+            59
+          ],
+          "new_relative_to_imported_old_pairs": true,
+          "orbit_image_count_setwise": 12,
+          "ruling_solve_sec": 5.524440050125122,
+          "ruling_status": "INFEASIBLE",
+          "ruling_strict_vs_wang_only": false,
+          "size": 2,
+          "subset": [
+            35,
+            59
+          ],
+          "wang_only_solve_sec": 6.3301026821136475,
+          "wang_only_status": "INFEASIBLE"
+        }
+      ],
+      "wang_only_compare_solve_sec": 2.918405055999756,
+      "wang_only_compare_status": "INFEASIBLE"
+    },
+    {
+      "canonical_high": [
+        98,
+        107,
+        116
+      ],
+      "event": "full_high_ruling_query",
+      "feedback": [
+        {
+          "canonical": [
+            98,
+            107
+          ],
+          "edges_removed": 48,
+          "images": 48,
+          "strict_vs_wang_only": false,
+          "subset": [
+            98,
+            107
+          ],
+          "type": "ruling_pair_edge_removal"
+        },
+        {
+          "canonical": [
+            98,
+            116
+          ],
+          "edges_removed": 96,
+          "images": 96,
+          "strict_vs_wang_only": false,
+          "subset": [
+            98,
+            116
+          ],
+          "type": "ruling_pair_edge_removal"
+        },
+        {
+          "canonical": [
+            98,
+            124
+          ],
+          "edges_removed": 96,
+          "images": 96,
+          "strict_vs_wang_only": false,
+          "subset": [
+            107,
+            116
+          ],
+          "type": "ruling_pair_edge_removal"
+        }
+      ],
+      "high": [
+        98,
+        107,
+        116
+      ],
+      "iteration": 4,
+      "orbit_image_count_setwise": 192,
+      "ruling_build_sec": 7.689325332641602,
+      "ruling_constraints_added": 98,
+      "ruling_solve_sec": 0.3178884983062744,
+      "ruling_status": "INFEASIBLE",
+      "search_stats": {
+        "hit_node_limit": false,
+        "nodes": 4,
+        "prunes": {}
+      },
+      "shrink_records": [
+        {
+          "canonical_setwise": [
+            98
+          ],
+          "new_relative_to_imported_old_pairs": false,
+          "orbit_image_count_setwise": 96,
+          "ruling_solve_sec": 11.141515970230103,
+          "ruling_status": "OPTIMAL",
+          "ruling_strict_vs_wang_only": false,
+          "size": 1,
+          "subset": [
+            98
+          ],
+          "wang_only_solve_sec": 11.09517788887024,
+          "wang_only_status": "OPTIMAL"
+        },
+        {
+          "canonical_setwise": [
+            98
+          ],
+          "new_relative_to_imported_old_pairs": false,
+          "orbit_image_count_setwise": 96,
+          "ruling_solve_sec": 8.378004550933838,
+          "ruling_status": "OPTIMAL",
+          "ruling_strict_vs_wang_only": false,
+          "size": 1,
+          "subset": [
+            107
+          ],
+          "wang_only_solve_sec": 8.41511344909668,
+          "wang_only_status": "OPTIMAL"
+        },
+        {
+          "canonical_setwise": [
+            98
+          ],
+          "new_relative_to_imported_old_pairs": false,
+          "orbit_image_count_setwise": 96,
+          "ruling_solve_sec": 8.493011236190796,
+          "ruling_status": "OPTIMAL",
+          "ruling_strict_vs_wang_only": false,
+          "size": 1,
+          "subset": [
+            116
+          ],
+          "wang_only_solve_sec": 8.412786722183228,
+          "wang_only_status": "OPTIMAL"
+        },
+        {
+          "canonical_setwise": [
+            98,
+            107
+          ],
+          "new_relative_to_imported_old_pairs": true,
+          "orbit_image_count_setwise": 48,
+          "ruling_solve_sec": 5.203426122665405,
+          "ruling_status": "INFEASIBLE",
+          "ruling_strict_vs_wang_only": false,
+          "size": 2,
+          "subset": [
+            98,
+            107
+          ],
+          "wang_only_solve_sec": 5.544944763183594,
+          "wang_only_status": "INFEASIBLE"
+        },
+        {
+          "canonical_setwise": [
+            98,
+            116
+          ],
+          "new_relative_to_imported_old_pairs": true,
+          "orbit_image_count_setwise": 96,
+          "ruling_solve_sec": 0.2935471534729004,
+          "ruling_status": "INFEASIBLE",
+          "ruling_strict_vs_wang_only": false,
+          "size": 2,
+          "subset": [
+            98,
+            116
+          ],
+          "wang_only_solve_sec": 0.2927424907684326,
+          "wang_only_status": "INFEASIBLE"
+        },
+        {
+          "canonical_setwise": [
+            98,
+            124
+          ],
+          "new_relative_to_imported_old_pairs": true,
+          "orbit_image_count_setwise": 96,
+          "ruling_solve_sec": 2.268289566040039,
+          "ruling_status": "INFEASIBLE",
+          "ruling_strict_vs_wang_only": false,
+          "size": 2,
+          "subset": [
+            107,
+            116
+          ],
+          "wang_only_solve_sec": 2.2779016494750977,
+          "wang_only_status": "INFEASIBLE"
+        }
+      ],
+      "wang_only_compare_solve_sec": 0.3170602321624756,
+      "wang_only_compare_status": "INFEASIBLE"
+    },
+    {
+      "canonical_high": [
+        224,
+        232,
+        240
+      ],
+      "event": "full_high_ruling_query",
+      "feedback": [
+        {
+          "canonical": [
+            224,
+            232
+          ],
+          "edges_removed": 48,
+          "images": 48,
+          "strict_vs_wang_only": false,
+          "subset": [
+            224,
+            232
+          ],
+          "type": "ruling_pair_edge_removal"
+        },
+        {
+          "canonical": [
+            224,
+            232
+          ],
+          "edges_removed": 0,
+          "images": 48,
+          "strict_vs_wang_only": false,
+          "subset": [
+            224,
+            240
+          ],
+          "type": "ruling_pair_edge_removal"
+        },
+        {
+          "canonical": [
+            224,
+            248
+          ],
+          "edges_removed": 24,
+          "images": 24,
+          "strict_vs_wang_only": false,
+          "subset": [
+            232,
+            240
+          ],
+          "type": "ruling_pair_edge_removal"
+        }
+      ],
+      "high": [
+        224,
+        232,
+        240
+      ],
+      "iteration": 5,
+      "orbit_image_count_setwise": 48,
+      "ruling_build_sec": 7.83901834487915,
+      "ruling_constraints_added": 98,
+      "ruling_solve_sec": 2.2671890258789062,
+      "ruling_status": "INFEASIBLE",
+      "search_stats": {
+        "hit_node_limit": false,
+        "nodes": 4,
+        "prunes": {}
+      },
+      "shrink_records": [
+        {
+          "canonical_setwise": [
+            224
+          ],
+          "new_relative_to_imported_old_pairs": false,
+          "orbit_image_count_setwise": 48,
+          "ruling_solve_sec": 4.80920934677124,
+          "ruling_status": "OPTIMAL",
+          "ruling_strict_vs_wang_only": false,
+          "size": 1,
+          "subset": [
+            224
+          ],
+          "wang_only_solve_sec": 5.026689529418945,
+          "wang_only_status": "OPTIMAL"
+        },
+        {
+          "canonical_setwise": [
+            224
+          ],
+          "new_relative_to_imported_old_pairs": false,
+          "orbit_image_count_setwise": 48,
+          "ruling_solve_sec": 4.687224626541138,
+          "ruling_status": "OPTIMAL",
+          "ruling_strict_vs_wang_only": false,
+          "size": 1,
+          "subset": [
+            232
+          ],
+          "wang_only_solve_sec": 5.890779733657837,
+          "wang_only_status": "OPTIMAL"
+        },
+        {
+          "canonical_setwise": [
+            224
+          ],
+          "new_relative_to_imported_old_pairs": false,
+          "orbit_image_count_setwise": 48,
+          "ruling_solve_sec": 4.876137018203735,
+          "ruling_status": "OPTIMAL",
+          "ruling_strict_vs_wang_only": false,
+          "size": 1,
+          "subset": [
+            240
+          ],
+          "wang_only_solve_sec": 4.769641399383545,
+          "wang_only_status": "OPTIMAL"
+        },
+        {
+          "canonical_setwise": [
+            224,
+            232
+          ],
+          "new_relative_to_imported_old_pairs": true,
+          "orbit_image_count_setwise": 48,
+          "ruling_solve_sec": 4.852601051330566,
+          "ruling_status": "INFEASIBLE",
+          "ruling_strict_vs_wang_only": false,
+          "size": 2,
+          "subset": [
+            224,
+            232
+          ],
+          "wang_only_solve_sec": 5.023998022079468,
+          "wang_only_status": "INFEASIBLE"
+        },
+        {
+          "canonical_setwise": [
+            224,
+            232
+          ],
+          "new_relative_to_imported_old_pairs": true,
+          "orbit_image_count_setwise": 48,
+          "ruling_solve_sec": 4.758865118026733,
+          "ruling_status": "INFEASIBLE",
+          "ruling_strict_vs_wang_only": false,
+          "size": 2,
+          "subset": [
+            224,
+            240
+          ],
+          "wang_only_solve_sec": 4.976891756057739,
+          "wang_only_status": "INFEASIBLE"
+        },
+        {
+          "canonical_setwise": [
+            224,
+            248
+          ],
+          "new_relative_to_imported_old_pairs": true,
+          "orbit_image_count_setwise": 24,
+          "ruling_solve_sec": 3.6969311237335205,
+          "ruling_status": "INFEASIBLE",
+          "ruling_strict_vs_wang_only": false,
+          "size": 2,
+          "subset": [
+            232,
+            240
+          ],
+          "wang_only_solve_sec": 3.82301664352417,
+          "wang_only_status": "INFEASIBLE"
+        }
+      ],
+      "wang_only_compare_solve_sec": 2.303560495376587,
+      "wang_only_compare_status": "INFEASIBLE"
+    },
+    {
+      "canonical_high": [
+        225,
+        234,
+        242
+      ],
+      "event": "full_high_ruling_query",
+      "feedback": [
+        {
+          "canonical": [
+            225,
+            234
+          ],
+          "edges_removed": 48,
+          "images": 48,
+          "strict_vs_wang_only": false,
+          "subset": [
+            225,
+            234
+          ],
+          "type": "ruling_pair_edge_removal"
+        },
+        {
+          "canonical": [
+            225,
+            234
+          ],
+          "edges_removed": 0,
+          "images": 48,
+          "strict_vs_wang_only": false,
+          "subset": [
+            225,
+            242
+          ],
+          "type": "ruling_pair_edge_removal"
+        },
+        {
+          "canonical": [
+            225,
+            249
+          ],
+          "edges_removed": 24,
+          "images": 24,
+          "strict_vs_wang_only": false,
+          "subset": [
+            234,
+            242
+          ],
+          "type": "ruling_pair_edge_removal"
+        }
+      ],
+      "high": [
+        225,
+        234,
+        242
+      ],
+      "iteration": 6,
+      "orbit_image_count_setwise": 48,
+      "ruling_build_sec": 7.6334474086761475,
+      "ruling_constraints_added": 98,
+      "ruling_solve_sec": 0.3158292770385742,
+      "ruling_status": "INFEASIBLE",
+      "search_stats": {
+        "hit_node_limit": false,
+        "nodes": 4,
+        "prunes": {}
+      },
+      "shrink_records": [
+        {
+          "canonical_setwise": [
+            225
+          ],
+          "new_relative_to_imported_old_pairs": false,
+          "orbit_image_count_setwise": 48,
+          "ruling_solve_sec": 7.496891975402832,
+          "ruling_status": "OPTIMAL",
+          "ruling_strict_vs_wang_only": false,
+          "size": 1,
+          "subset": [
+            225
+          ],
+          "wang_only_solve_sec": 7.762041091918945,
+          "wang_only_status": "OPTIMAL"
+        },
+        {
+          "canonical_setwise": [
+            225
+          ],
+          "new_relative_to_imported_old_pairs": false,
+          "orbit_image_count_setwise": 48,
+          "ruling_solve_sec": 9.043992757797241,
+          "ruling_status": "OPTIMAL",
+          "ruling_strict_vs_wang_only": false,
+          "size": 1,
+          "subset": [
+            234
+          ],
+          "wang_only_solve_sec": 8.559784889221191,
+          "wang_only_status": "OPTIMAL"
+        },
+        {
+          "canonical_setwise": [
+            225
+          ],
+          "new_relative_to_imported_old_pairs": false,
+          "orbit_image_count_setwise": 48,
+          "ruling_solve_sec": 6.3703131675720215,
+          "ruling_status": "OPTIMAL",
+          "ruling_strict_vs_wang_only": false,
+          "size": 1,
+          "subset": [
+            242
+          ],
+          "wang_only_solve_sec": 6.153959035873413,
+          "wang_only_status": "OPTIMAL"
+        },
+        {
+          "canonical_setwise": [
+            225,
+            234
+          ],
+          "new_relative_to_imported_old_pairs": true,
+          "orbit_image_count_setwise": 48,
+          "ruling_solve_sec": 2.164760112762451,
+          "ruling_status": "INFEASIBLE",
+          "ruling_strict_vs_wang_only": false,
+          "size": 2,
+          "subset": [
+            225,
+            234
+          ],
+          "wang_only_solve_sec": 2.2018046379089355,
+          "wang_only_status": "INFEASIBLE"
+        },
+        {
+          "canonical_setwise": [
+            225,
+            234
+          ],
+          "new_relative_to_imported_old_pairs": true,
+          "orbit_image_count_setwise": 48,
+          "ruling_solve_sec": 2.1766517162323,
+          "ruling_status": "INFEASIBLE",
+          "ruling_strict_vs_wang_only": false,
+          "size": 2,
+          "subset": [
+            225,
+            242
+          ],
+          "wang_only_solve_sec": 2.160613775253296,
+          "wang_only_status": "INFEASIBLE"
+        },
+        {
+          "canonical_setwise": [
+            225,
+            249
+          ],
+          "new_relative_to_imported_old_pairs": true,
+          "orbit_image_count_setwise": 24,
+          "ruling_solve_sec": 3.937283754348755,
+          "ruling_status": "INFEASIBLE",
+          "ruling_strict_vs_wang_only": false,
+          "size": 2,
+          "subset": [
+            234,
+            242
+          ],
+          "wang_only_solve_sec": 3.861912727355957,
+          "wang_only_status": "INFEASIBLE"
+        }
+      ],
+      "wang_only_compare_solve_sec": 0.31445884704589844,
+      "wang_only_compare_status": "INFEASIBLE"
+    }
+  ],
+  "lut_meta_brief": {
+    "conflict_count": 0,
+    "coverage_ok": true,
+    "subspace_count": 8283458
+  },
+  "old_constraint_files": [
+    "data/guided_clique/merged_guided_constraints_v3.json"
+  ],
+  "old_constraint_source_count": 47,
+  "old_constraint_sources_head": [
+    {
+      "canonical_subset": [
+        34,
+        52
+      ],
+      "edges_removed": 24,
+      "images": 24,
+      "k0": 16,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        34,
+        272
+      ],
+      "edges_removed": 192,
+      "images": 192,
+      "k0": 16,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        34,
+        274
+      ],
+      "edges_removed": 192,
+      "images": 192,
+      "k0": 16,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        34,
+        400
+      ],
+      "edges_removed": 192,
+      "images": 192,
+      "k0": 16,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        34,
+        402
+      ],
+      "edges_removed": 192,
+      "images": 192,
+      "k0": 16,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        160,
+        274
+      ],
+      "edges_removed": 192,
+      "images": 192,
+      "k0": 16,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        17
+      ],
+      "images": 0,
+      "k0": 17,
+      "new_vertices_as_hyperedges": 0,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "singleton"
+    },
+    {
+      "canonical_subset": [
+        25,
+        193
+      ],
+      "edges_removed": 12,
+      "images": 12,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        28,
+        29
+      ],
+      "edges_removed": 12,
+      "images": 12,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        28,
+        30
+      ],
+      "edges_removed": 0,
+      "images": 12,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        28,
+        31
+      ],
+      "edges_removed": 6,
+      "images": 6,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        28,
+        33
+      ],
+      "edges_removed": 48,
+      "images": 48,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        28,
+        41
+      ],
+      "edges_removed": 48,
+      "images": 48,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        33,
+        35
+      ],
+      "edges_removed": 48,
+      "images": 48,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        33,
+        37
+      ],
+      "edges_removed": 24,
+      "images": 24,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        33,
+        39
+      ],
+      "edges_removed": 48,
+      "images": 48,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        33,
+        41
+      ],
+      "edges_removed": 24,
+      "images": 24,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        35,
+        39
+      ],
+      "edges_removed": 12,
+      "images": 12,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        35,
+        43
+      ],
+      "edges_removed": 24,
+      "images": 24,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        35,
+        46
+      ],
+      "edges_removed": 24,
+      "images": 24,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        80,
+        81
+      ],
+      "edges_removed": 24,
+      "images": 24,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        80,
+        82
+      ],
+      "edges_removed": 0,
+      "images": 24,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        80,
+        83
+      ],
+      "edges_removed": 12,
+      "images": 12,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        80,
+        84
+      ],
+      "edges_removed": 96,
+      "images": 96,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        80,
+        88
+      ],
+      "edges_removed": 24,
+      "images": 24,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        80,
+        92
+      ],
+      "edges_removed": 192,
+      "images": 192,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        84,
+        85
+      ],
+      "edges_removed": 24,
+      "images": 24,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        84,
+        86
+      ],
+      "edges_removed": 0,
+      "images": 24,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        84,
+        87
+      ],
+      "edges_removed": 12,
+      "images": 12,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        96,
+        97
+      ],
+      "edges_removed": 48,
+      "images": 48,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        96,
+        98
+      ],
+      "edges_removed": 96,
+      "images": 96,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        96,
+        99
+      ],
+      "edges_removed": 96,
+      "images": 96,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        96,
+        100
+      ],
+      "edges_removed": 96,
+      "images": 96,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        96,
+        104
+      ],
+      "edges_removed": 48,
+      "images": 48,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        96,
+        108
+      ],
+      "edges_removed": 96,
+      "images": 96,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        98,
+        99
+      ],
+      "edges_removed": 48,
+      "images": 48,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        98,
+        102
+      ],
+      "edges_removed": 96,
+      "images": 96,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        161,
+        163
+      ],
+      "edges_removed": 0,
+      "images": 48,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        161,
+        165
+      ],
+      "edges_removed": 0,
+      "images": 96,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        161,
+        169
+      ],
+      "edges_removed": 48,
+      "images": 48,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        161,
+        177
+      ],
+      "edges_removed": 48,
+      "images": 48,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        161,
+        185
+      ],
+      "edges_removed": 48,
+      "images": 48,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        224,
+        225
+      ],
+      "edges_removed": 96,
+      "images": 96,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        224,
+        226
+      ],
+      "edges_removed": 0,
+      "images": 96,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        224,
+        227
+      ],
+      "edges_removed": 24,
+      "images": 24,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        224,
+        228
+      ],
+      "edges_removed": 48,
+      "images": 48,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        225,
+        226
+      ],
+      "edges_removed": 24,
+      "images": 24,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    }
+  ],
+  "old_singleton_sources": [
+    {
+      "images": 12,
+      "new_vertices_removed": 12,
+      "rep": 10,
+      "source": "data/coverage/rep2_k17_survivors_corrected.json"
+    },
+    {
+      "images": 24,
+      "new_vertices_removed": 24,
+      "rep": 12,
+      "source": "data/coverage/rep2_k17_survivors_corrected.json"
+    },
+    {
+      "images": 24,
+      "new_vertices_removed": 0,
+      "rep": 20,
+      "source": "data/coverage/rep2_k17_survivors_corrected.json"
+    }
+  ],
+  "pointwise_stabilizer_order": 96,
+  "problem": "rep2 adjacent-pair exact-k17 mixed-rank ruling-aware guided clique test",
+  "proof_status": "CP-SAT skeleton execution evidence. Ruling-enabled exclusions need conversion to a proof-producing CNF/provenance object before theorem use; feasible support is only A-side occupation evidence.",
+  "proved_hyperedges_active": 0,
+  "ruling_meta": {
+    "encoded_clause_count": 98,
+    "encoded_size_hist": {
+      "1": 1,
+      "2": 10,
+      "3": 87
+    },
+    "proof_source": "transport of the analysis fixed-prefix [1,2,3] exclusion across all Segre ruling lines",
+    "simplified_counts": {
+      "binary": 10,
+      "contradictions": 0,
+      "ternary": 87,
+      "unit": 1
+    },
+    "total_ruling_triples": 98
+  },
+  "ruling_new_pair_canonical_count": 16,
+  "ruling_new_pair_canonicals": [
+    [
+      25,
+      26
+    ],
+    [
+      25,
+      98
+    ],
+    [
+      25,
+      102
+    ],
+    [
+      28,
+      35
+    ],
+    [
+      28,
+      39
+    ],
+    [
+      35,
+      59
+    ],
+    [
+      98,
+      107
+    ],
+    [
+      98,
+      116
+    ],
+    [
+      98,
+      124
+    ],
+    [
+      224,
+      229
+    ],
+    [
+      224,
+      232
+    ],
+    [
+      224,
+      236
+    ],
+    [
+      224,
+      248
+    ],
+    [
+      225,
+      233
+    ],
+    [
+      225,
+      234
+    ],
+    [
+      225,
+      249
+    ]
+  ],
+  "ruling_strict_pair_canonical_count": 0,
+  "ruling_strict_pair_canonicals": [],
+  "schema": "rep2_k17_ruling_guided_v1",
+  "setwise_stabilizer_order": 192,
+  "support_candidate_path": null,
+  "target_high_rank_points": 3,
+  "temporary_skip_hyperedges_active": 0,
+  "vertex_rank_hist": {
+    "2": 258,
+    "3": 168
+  },
+  "vertices_after_old_singletons": 426
+}

@@ -1,0 +1,5 @@
+LIB "ffsolve.lib";
+ring r=5,(x,y),dp;
+ideal I=x2-1,y-x;
+ffsolve(I);
+quit;

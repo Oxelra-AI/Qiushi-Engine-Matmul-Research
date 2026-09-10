@@ -1,0 +1,70 @@
+{
+  "A_multiset": [
+    2,
+    2,
+    3,
+    3,
+    4,
+    14,
+    16,
+    32,
+    33,
+    35,
+    64,
+    74,
+    78,
+    94,
+    99,
+    105,
+    109,
+    125
+  ],
+  "A_size": 18,
+  "W_basis": [
+    1,
+    20
+  ],
+  "W_rref": [
+    20,
+    1
+  ],
+  "elapsed_sec": 0.20210742950439453,
+  "encoding": {
+    "B_to_C_by_rank": {
+      "3": 5,
+      "6": 11,
+      "9": 12
+    },
+    "B_to_C_determination_equations": 1701,
+    "B_to_C_inverse_equations": 1413,
+    "B_to_C_inverse_vars": 1701,
+    "B_to_C_product_vars": 12717,
+    "B_to_C_tight_constraints": 28,
+    "base_vc_vars": 324,
+    "cnf_clauses": 114210,
+    "cnf_path": "data/dim2_quotients/orbit481/det_rounds/round_0031/orbit481_round0031_det.cnf",
+    "cnf_vars": 33201,
+    "mode": "b2c",
+    "product_vars": 1458,
+    "quotient_dim": 7,
+    "quotient_tensor_nnz": 24,
+    "rank": 18,
+    "tight_lambda_count": 28,
+    "tight_rank_hist": {
+      "3": 5,
+      "6": 11,
+      "9": 12
+    },
+    "xor_terms_total": 3969
+  },
+  "returncode": 20,
+  "sat": false,
+  "schema": "dim2_quotient_fixed_a_det_v1",
+  "solver": "cadical",
+  "solver_command": [
+    "cadical",
+    "data/dim2_quotients/orbit481/det_rounds/round_0031/orbit481_round0031_det.cnf"
+  ],
+  "stderr_tail": "",
+  "stdout_tail": "c -  0.19 32 283 1   4 11  300  229 1.9 7 4 2 6 49% 25393 4567 14%\nc i  0.19 32 230 1   4  9  369  264 1.9 6 3 2 6 49% 25393 4564 14%\nc i  0.20 32 195 1   4  8  434  302 1.9 6 3 2 6 49% 25393 4555 14%\nc i  0.20 32 188 1   4  8  451  311 1.9 6 3 2 6 49% 25393 4472 13%\nc }  0.20 32 187 1   4  7  454  311 1.9 6 3 2 6 49% 25393 4204 13%\nc 0  0.20 32 187 1   4  7  454  311 1.9 6 3 2 6 49% 25393 4204 13%\nc \nc --- [ result ] -------------------------------------------------------------\nc \ns UNSATISFIABLE\nc \nc --- [ run-time profiling ] -------------------------------------------------\nc \nc process time taken by individual solving procedures\nc (percentage relative to process time for solving)\nc \nc         0.14   86.60% preprocess\nc         0.13   78.87% simplify\nc         0.07   41.09% congruence\nc         0.03   19.79% parse\nc         0.02   14.04% factor\nc         0.02   13.32% search\nc         0.02   11.36% fastelim\nc         0.01    8.24% unstable\nc         0.01    5.07% lucky\nc         0.00    2.98% subsume\nc         0.00    0.35% backbone\nc   =================================\nc         0.16   83.43% solve\nc \nc last line shows process time for solving\nc (percentage relative to total process time)\nc \nc --- [ statistics ] ---------------------------------------------------------\nc \nc chronological:                87        19.16 %  of conflicts\nc conflicts:                   454      2779.16    per second\nc backbone:                  14456        43.54 %  of vars\nc decisions:                  3361     20574.32    per second\nc eliminated:                 2617         7.88 %  of all variables\nc fixed:                     15798        47.58 %  of all variables\nc learned:                     439        96.70 %  per conflict\nc learned_lits:               3648       100.00 %  learned literals\nc minimized:                     0         0.00 %  learned literals\nc shrunken:                    808        22.15 %  learned literals\nc minishrunken:                139         3.81 %  learned literals\nc otfs:                          9         1.98 %  of conflict\nc propagations:             160011         0.98 M  per second\nc reduced:                      15         3.30 %  per conflict\nc restarts:                      4       113.50    interval\nc substituted:               10582        31.87 %  of all variables\nc subsumed:                  20040        12.51 %  of all clauses\nc strengthened:                 13         0.01 %  of all clauses\nc ticks:                   1826215        11.41    propagation\nc weakened:                  39795         2.35    average size\nc congruence:                    1       454.00    interval\nc \nc seconds are measured in process time for solving\nc \nc --- [ glue usage ] ---------------------------------------------------------\nc \nc focused glue 2 used 245 clauses 32.79% accumulated 54.61% tier1\nc focused glue 3 used 168 clauses 22.48% accumulated 77.10% tier2\nc \nc stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1\nc stable glue 3 used 0 clauses 0.000% accumulated 0.000%\nc stable glue 4 used 0 clauses 0.000% accumulated 0.000%\nc stable glue 5 used 0 clauses 0.000% accumulated 0.000%\nc stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2\nc \nc \nc --- [ resources ] ----------------------------------------------------------\nc \nc total process time since initialization:         0.20    seconds\nc total real time since initialization:            0.20    seconds\nc maximum resident set size of process:          777.15    MB\nc \nc --- [ shutting down ] ------------------------------------------------------\nc \nc exit 20"
+}

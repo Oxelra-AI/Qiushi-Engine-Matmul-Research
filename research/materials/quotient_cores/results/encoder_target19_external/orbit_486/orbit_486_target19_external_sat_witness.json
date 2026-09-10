@@ -1,0 +1,95 @@
+{
+  "W_basis": [
+    68,
+    10
+  ],
+  "W_rref": [
+    68,
+    10
+  ],
+  "cadical": {
+    "command": [
+      "cadical",
+      "-q",
+      "--sat",
+      "--binary=false",
+      "-t",
+      "240",
+      "-w",
+      "data/encoder_target19_external/orbit_486/orbit_486_target_19.sol",
+      "data/encoder_target19_external/orbit_486/orbit_486_target_19.cnf"
+    ],
+    "elapsed_sec": 240.20387268066406,
+    "returncode": -6,
+    "stderr_tail": "free(): corrupted unsorted chunks\n",
+    "stdout_tail": ""
+  },
+  "cert_index": 486,
+  "cnf_clauses": 4186876,
+  "cnf_path": "data/encoder_target19_external/orbit_486/orbit_486_target_19.cnf",
+  "cnf_sha256": "a112e35fbf2be08c8cf58fdaf244a154e119f5bb5405593c73707554b02b5db2",
+  "cnf_variables": 1996420,
+  "copy_variables": 167,
+  "ok": false,
+  "raw_lb": 18,
+  "record_path": "data/encoder_target19_external/orbit_486/orbit_486_target19_external_sat_witness.json",
+  "row_meta": {
+    "W_rref": [
+      68,
+      10
+    ],
+    "cap_hist": {
+      "1": 87,
+      "10": 1066,
+      "13": 132,
+      "16": 13,
+      "2": 1840,
+      "3": 4653,
+      "4": 9153,
+      "5": 5888,
+      "6": 680,
+      "7": 5661,
+      "8": 37
+    },
+    "free_bits": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      7,
+      8
+    ],
+    "mask_popcount_hist": {
+      "1": 127,
+      "15": 11811,
+      "3": 2667,
+      "31": 2667,
+      "63": 127,
+      "7": 11811
+    },
+    "missing_lut_rows": 0,
+    "negative_cap_rows": 0,
+    "quotient_dim": 7,
+    "quotient_subspace_dim_hist": {
+      "1": 127,
+      "2": 2667,
+      "3": 11811,
+      "4": 11811,
+      "5": 2667,
+      "6": 127
+    },
+    "row_digest": "8f9c4e000e22a6d4a063a18b2b43a06a8cbf40f6b0c968f9822fc6ddc64aab98",
+    "strict_subspaces": 29210,
+    "tautological_source_rows": 0,
+    "unique_rows": 29210
+  },
+  "sat": false,
+  "schema": "encoder_target19_external_orbit_v1",
+  "singleton_upper_bound_hist": {
+    "1": 87,
+    "2": 40
+  },
+  "target": 19,
+  "witness": null
+}

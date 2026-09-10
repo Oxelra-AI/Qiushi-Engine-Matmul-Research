@@ -1,0 +1,30 @@
+{
+  "cadical_elapsed_sec": 36.705,
+  "cadical_exit": 20,
+  "cadical_log": "data/lifted_jcore/lifted_used_rows_all190_units.cadical.log",
+  "cadical_log_parse": {
+    "contains_sat": false,
+    "contains_unsat": true,
+    "contains_verified": false,
+    "tail": "process\nc         4.68   13.50% fastelim\nc         2.67    7.69% factor\nc         1.45    4.18% congruence\nc         1.13    3.25% subsume\nc         1.10    3.17% elim\nc         1.07    3.07% sweep\nc         0.97    2.78% lucky\nc         0.85    2.46% parse\nc         0.69    1.99% vivify\nc         0.22    0.64% backbone\nc         0.07    0.21% probe\nc         0.04    0.13% ternary\nc   =================================\nc        34.70   97.60% solve\nc \nc last line shows process time for solving\nc (percentage relative to total process time)\nc \nc --- [ statistics ] ---------------------------------------------------------\nc \nc chronological:              8964        23.12 %  of conflicts\nc conflicts:                 38770      1117.39    per second\nc backbone:                1819176       174.66 %  of vars\nc decisions:                 79211      2282.95    per second\nc eliminated:               996247        95.65 %  of all variables\nc factored:                   1016         2.31 %  of variables\nc fixed:                      5497         0.53 %  of all variables\nc learned:                   37695        97.23 %  per conflict\nc learned_lits:             662548       100.00 %  learned literals\nc minimized:                     0         0.00 %  learned literals\nc shrunken:                 332957        50.25 %  learned literals\nc minishrunken:              36443         5.50 %  learned literals\nc otfs:                        211         0.54 %  of conflict\nc propagations:          115728327         3.34 M  per second\nc reduced:                    8371        21.59 %  per conflict\nc rephased:                      8      4846.25    interval\nc restarts:                   2310        16.78    interval\nc subsumed:                  82442         3.30 %  of all clauses\nc strengthened:               2071         0.08 %  of all clauses\nc ticks:                 848053352         8.29    propagation\nc vivified:                    553         0.02 %  of all clauses\nc weakened:                2116532         2.40    average size\nc \nc seconds are measured in process time for solving\nc \nc --- [ glue usage ] ---------------------------------------------------------\nc \nc focused glue 2 used 31123 clauses 23.02% accumulated 60.40% tier1\nc focused glue 3 used 19447 clauses 14.38% accumulated 74.79% tier2\nc \nc stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1\nc stable glue 3 used 0 clauses 0.000% accumulated 0.000%\nc stable glue 4 used 0 clauses 0.000% accumulated 0.000%\nc stable glue 5 used 0 clauses 0.000% accumulated 0.000%\nc stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2\nc \nc \nc --- [ resources ] ----------------------------------------------------------\nc \nc total process time since initialization:        35.55    seconds\nc total real time since initialization:           36.67    seconds\nc maximum resident set size of process:          568.56    MB\nc \nc --- [ shutting down ] ------------------------------------------------------\nc \nc exit 20\n"
+  },
+  "cnf": "data/lifted_jcore/lifted_used_rows_all190_units.cnf",
+  "drat": "data/lifted_jcore/lifted_used_rows_all190_units.drat",
+  "drat_trim_elapsed_sec": 91.286,
+  "drat_trim_exit": 0,
+  "drat_trim_log": "data/lifted_jcore/lifted_used_rows_all190_units.drat_trim.log",
+  "drat_trim_log_parse": {
+    "contains_sat": false,
+    "contains_unsat": false,
+    "contains_verified": true,
+    "tail": "\nc parsing input formula with 1040545 variables and 2211223 clauses\n\nc finished parsing\n\nc detected empty clause; start verification via backward checking\n\nc 124813 of 2211223 clauses in core                            \n\nc 137503 of 1137544 lemmas in core using 2689722 resolution steps\n\nc 3612 RAT lemmas in core; 4847 redundant literals in core lemmas\n\ns VERIFIED\n\nc verification time: 91.221 seconds\n"
+  },
+  "hashes": {
+    "data/lifted_jcore/lifted_used_rows_all190_units.cadical.log": "8a57d6144ce71a6904a18d9a624baa80f288e7db995bbae77144f4db84b72cd7",
+    "data/lifted_jcore/lifted_used_rows_all190_units.cnf": "c7d8a0de94bde4d15215d80e0f2cb79ebaa1b7f7a9a3ab75e117a15bd8950468",
+    "data/lifted_jcore/lifted_used_rows_all190_units.drat": "db5207ace2a83a1ec4e686d1b9224a07da72f73377151f4306b1a3bb7d751e05",
+    "data/lifted_jcore/lifted_used_rows_all190_units.drat_trim.log": "89bc7cb89886914bbf139c27db4c65bc2b2ce4ebdbb654b384d61dd7cb275c2b",
+    "data/lifted_jcore/lifted_used_rows_all190_units.input_core.cnf": "8a244355bf8d913fe0251a5997a1e9d8234c9d1ff6187372de8915cc34ab0bfb"
+  },
+  "input_core_cnf": "data/lifted_jcore/lifted_used_rows_all190_units.input_core.cnf"
+}

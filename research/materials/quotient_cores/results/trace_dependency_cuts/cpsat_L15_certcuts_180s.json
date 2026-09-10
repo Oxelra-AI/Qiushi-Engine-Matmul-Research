@@ -1,0 +1,110 @@
+{
+  "build_sec": 46.802,
+  "constraint_summary": {
+    "certificate_aux_vars": 132,
+    "certificate_count": 15,
+    "certificate_guard_sizes": [
+      10,
+      5,
+      10,
+      5,
+      6,
+      4,
+      6,
+      9,
+      7,
+      5,
+      6,
+      11,
+      5,
+      6,
+      4
+    ],
+    "certificate_guarded_parity_cuts": 15,
+    "certificate_local_inconsistent_cuts": 88,
+    "contraction_lower_bounds": 255,
+    "contraction_weight_definitions": 255,
+    "local_cut_size_hist": {},
+    "local_trace_dependency_cuts": 0,
+    "skipped_by_minL": 159899,
+    "wang_by_dim": {
+      "1": 255,
+      "2": 10795,
+      "3": 96057,
+      "4": 141054,
+      "5": 9138
+    },
+    "wang_rows": 257299
+  },
+  "core": "E11 quotient core",
+  "field": "F2",
+  "hint_added": true,
+  "hint_source": "data/distinct_line_cover/best_L15_hint_rounds.json",
+  "meaning": "255-variable distinct support model with complete/threshold Wang rows, contraction lower bounds, sound local trace-dependency cuts, and correctly guarded certificate parity cuts. Solver output is search evidence only unless converted to a proof.",
+  "parameters": {
+    "cert_cuts": "all",
+    "max_certs": null,
+    "max_size5_cuts": null,
+    "min_L": 15,
+    "seed": 5303,
+    "solver_time": 180.0,
+    "trace_cuts": "none",
+    "workers": 8
+  },
+  "rank_s": 19,
+  "schema": "distinct_cert_trace_cpsat_v1",
+  "solution": {
+    "A_cols": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      20,
+      24,
+      31,
+      32,
+      36,
+      64,
+      73,
+      127,
+      128,
+      141,
+      160,
+      182,
+      192,
+      219
+    ],
+    "affine_dim": 891,
+    "complete_wang_max_excess": 1,
+    "complete_wang_violations": 9,
+    "distinct_points": 19,
+    "linear_pass": true,
+    "quotient_rank_violations_size2": 0,
+    "rank9_weight_hist": {
+      "10": 12,
+      "11": 20,
+      "12": 16,
+      "13": 8,
+      "14": 4,
+      "9": 12
+    },
+    "saturated_contractions": 12,
+    "trace_local_dependency": {
+      "exact_local_inconsistent_examples": [],
+      "exact_local_inconsistent_terms": 0,
+      "minimal_cut_examples": [],
+      "minimal_cut_violations": 0,
+      "saturated_rank9_count": 12
+    },
+    "transversal_failures": 0,
+    "violations_by_L": {
+      "12": 9
+    },
+    "zero_domain_terms": 0
+  },
+  "solve_sec": 29.349,
+  "solver": "OR-Tools CP-SAT",
+  "status": "OPTIMAL",
+  "total_elapsed_sec": 76.351
+}

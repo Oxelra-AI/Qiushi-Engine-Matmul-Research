@@ -1,0 +1,1318 @@
+{
+  "build_elapsed_sec": 17.50459361076355,
+  "field": "F2",
+  "fixed_rank1_matching": [
+    1,
+    16,
+    36,
+    192,
+    360
+  ],
+  "fixed_rank1_matching_uv": [
+    {
+      "point": 1,
+      "u": 1,
+      "v": 1
+    },
+    {
+      "point": 16,
+      "u": 2,
+      "v": 2
+    },
+    {
+      "point": 36,
+      "u": 3,
+      "v": 4
+    },
+    {
+      "point": 192,
+      "u": 4,
+      "v": 3
+    },
+    {
+      "point": 360,
+      "u": 6,
+      "v": 5
+    }
+  ],
+  "include_dims": [
+    1
+  ],
+  "lut_meta_brief": {
+    "conflict_count": 0,
+    "coverage_ok": true,
+    "subspace_count": 8283458
+  },
+  "meaning": "Conditioned on this exact rank-1 matching stratum. Feasible support must be scanned against the full expanded LUT before being treated as a complete Wang-admissible A-support.",
+  "problem": "conditioned matching-stratum higher-rank completion",
+  "rank_s": 20,
+  "seed_key_count": 318,
+  "selected_rank1_occ_hist": {
+    "0": 646,
+    "1": 144617,
+    "2": 42276,
+    "3": 7009,
+    "4": 572,
+    "5": 17
+  },
+  "solve_elapsed_sec": 45.523497581481934,
+  "solver_num_branches": 0,
+  "solver_num_conflicts": 0,
+  "solver_status": "UNKNOWN",
+  "solver_status_code": 0,
+  "solver_walltime": 45.163109236000004,
+  "support": null,
+  "support_higher_rank": null,
+  "support_rank_hist": null,
+  "support_size": null,
+  "target_higher_rank_count": 15,
+  "through_e11_dims": [
+    4,
+    6
+  ],
+  "total_rank1_k": 5,
+  "wang_cap_hist": {
+    "0": 6,
+    "1": 1075,
+    "2": 31678,
+    "3": 57705,
+    "4": 26029,
+    "5": 27720,
+    "6": 22698,
+    "7": 24847,
+    "8": 1143,
+    "9": 1318,
+    "10": 903,
+    "11": 10,
+    "12": 2,
+    "13": 2,
+    "15": 1
+  },
+  "wang_empty": 0,
+  "wang_row_var_hist": {
+    "0": 50,
+    "1": 462,
+    "2": 2,
+    "6": 65,
+    "8": 336,
+    "9": 960,
+    "10": 3420,
+    "11": 9312,
+    "12": 21833,
+    "13": 35424,
+    "14": 25812,
+    "26": 6,
+    "28": 5,
+    "29": 2,
+    "30": 3,
+    "42": 6,
+    "46": 153,
+    "48": 720,
+    "50": 1092,
+    "51": 1152,
+    "52": 3960,
+    "53": 5760,
+    "54": 8070,
+    "55": 11520,
+    "56": 16934,
+    "57": 18627,
+    "58": 14853,
+    "59": 10028,
+    "60": 3756,
+    "61": 576,
+    "62": 54,
+    "63": 5,
+    "110": 9,
+    "114": 88,
+    "120": 14,
+    "230": 10,
+    "234": 57,
+    "462": 1
+  },
+  "wang_rows_added": 194623,
+  "wang_rows_by_dim": {
+    "0": 1,
+    "1": 511,
+    "2": 2,
+    "3": 2,
+    "4": 97160,
+    "5": 16,
+    "6": 97266,
+    "7": 111,
+    "8": 67,
+    "9": 1
+  },
+  "wang_rows_by_lb": {
+    "0": 1,
+    "6": 10,
+    "9": 2799,
+    "11": 852,
+    "12": 47062,
+    "13": 7632,
+    "14": 30950,
+    "15": 21981,
+    "16": 58496,
+    "17": 24838,
+    "18": 4,
+    "19": 511,
+    "20": 1
+  },
+  "wang_skipped_vacuous": 514,
+  "wang_source_by_dim": {
+    "include_dim,1": 511,
+    "seed,0": 1,
+    "seed,2": 2,
+    "seed,3": 2,
+    "seed,4": 5,
+    "seed,5": 16,
+    "seed,6": 111,
+    "seed,7": 111,
+    "seed,8": 67,
+    "seed,9": 1,
+    "through_E11,4": 97155,
+    "through_E11,6": 97155
+  },
+  "witness_head": [
+    {
+      "basis": [
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "cap": 15,
+      "dim": 9,
+      "hr_vars_in_row": 462,
+      "key": 75854169073859085471753,
+      "lb": 0,
+      "selected_rank1_in_row": 5,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        260,
+        132,
+        68,
+        32,
+        20,
+        12,
+        2,
+        1
+      ],
+      "cap": 12,
+      "dim": 8,
+      "hr_vars_in_row": 230,
+      "key": 148157190800659222600,
+      "lb": 6,
+      "selected_rank1_in_row": 2,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        258,
+        130,
+        64,
+        32,
+        16,
+        10,
+        6,
+        1
+      ],
+      "cap": 11,
+      "dim": 8,
+      "hr_vars_in_row": 230,
+      "key": 149308982007295922216,
+      "lb": 6,
+      "selected_rank1_in_row": 3,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        258,
+        130,
+        66,
+        34,
+        18,
+        8,
+        6,
+        1
+      ],
+      "cap": 11,
+      "dim": 8,
+      "hr_vars_in_row": 230,
+      "key": 149307858310715691048,
+      "lb": 6,
+      "selected_rank1_in_row": 3,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        256,
+        128,
+        66,
+        34,
+        18,
+        8,
+        6,
+        1
+      ],
+      "cap": 11,
+      "dim": 8,
+      "hr_vars_in_row": 230,
+      "key": 149307858310715674632,
+      "lb": 6,
+      "selected_rank1_in_row": 3,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        256,
+        129,
+        64,
+        32,
+        17,
+        8,
+        5,
+        2
+      ],
+      "cap": 13,
+      "dim": 8,
+      "hr_vars_in_row": 230,
+      "key": 296593579420425400328,
+      "lb": 6,
+      "selected_rank1_in_row": 1,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        256,
+        132,
+        68,
+        36,
+        20,
+        12,
+        2,
+        1
+      ],
+      "cap": 11,
+      "dim": 8,
+      "hr_vars_in_row": 230,
+      "key": 148157190809249157128,
+      "lb": 6,
+      "selected_rank1_in_row": 3,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        256,
+        129,
+        64,
+        32,
+        17,
+        8,
+        5,
+        3
+      ],
+      "cap": 13,
+      "dim": 8,
+      "hr_vars_in_row": 230,
+      "key": 444167532010101813256,
+      "lb": 6,
+      "selected_rank1_in_row": 1,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        256,
+        128,
+        64,
+        32,
+        18,
+        10,
+        4,
+        1
+      ],
+      "cap": 11,
+      "dim": 8,
+      "hr_vars_in_row": 230,
+      "key": 148732523454015737864,
+      "lb": 6,
+      "selected_rank1_in_row": 3,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        260,
+        128,
+        68,
+        32,
+        16,
+        12,
+        2,
+        1
+      ],
+      "cap": 12,
+      "dim": 8,
+      "hr_vars_in_row": 230,
+      "key": 148157186402612678728,
+      "lb": 6,
+      "selected_rank1_in_row": 2,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        256,
+        128,
+        64,
+        32,
+        16,
+        10,
+        4,
+        1
+      ],
+      "cap": 10,
+      "dim": 8,
+      "hr_vars_in_row": 230,
+      "key": 148732521254992482312,
+      "lb": 6,
+      "selected_rank1_in_row": 4,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        260,
+        132,
+        68,
+        36,
+        20,
+        8,
+        2,
+        1
+      ],
+      "cap": 8,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 148154939009435471944,
+      "lb": 9,
+      "selected_rank1_in_row": 3,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        256,
+        129,
+        65,
+        33,
+        16,
+        8,
+        4,
+        2
+      ],
+      "cap": 8,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 296305347946913738760,
+      "lb": 9,
+      "selected_rank1_in_row": 3,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        256,
+        129,
+        64,
+        33,
+        17,
+        8,
+        4,
+        2
+      ],
+      "cap": 11,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 296305349046421172232,
+      "lb": 9,
+      "selected_rank1_in_row": 0,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        256,
+        129,
+        65,
+        33,
+        17,
+        9,
+        5,
+        2
+      ],
+      "cap": 9,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 296594142372530499592,
+      "lb": 9,
+      "selected_rank1_in_row": 2,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        256,
+        129,
+        65,
+        33,
+        17,
+        9,
+        4,
+        2
+      ],
+      "cap": 10,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 296305911996378787848,
+      "lb": 9,
+      "selected_rank1_in_row": 1,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        258,
+        130,
+        64,
+        34,
+        18,
+        10,
+        4,
+        1
+      ],
+      "cap": 10,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 148732523458310721576,
+      "lb": 9,
+      "selected_rank1_in_row": 1,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        256,
+        128,
+        68,
+        36,
+        20,
+        8,
+        2,
+        1
+      ],
+      "cap": 8,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 148154939009435439112,
+      "lb": 9,
+      "selected_rank1_in_row": 3,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        256,
+        132,
+        64,
+        32,
+        20,
+        12,
+        2,
+        1
+      ],
+      "cap": 10,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 148157190800642445320,
+      "lb": 9,
+      "selected_rank1_in_row": 1,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        258,
+        128,
+        64,
+        32,
+        16,
+        10,
+        6,
+        1
+      ],
+      "cap": 7,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 149308982007295905832,
+      "lb": 9,
+      "selected_rank1_in_row": 4,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        258,
+        128,
+        66,
+        32,
+        16,
+        10,
+        4,
+        1
+      ],
+      "cap": 8,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 148732521255000870952,
+      "lb": 9,
+      "selected_rank1_in_row": 3,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        258,
+        128,
+        66,
+        32,
+        18,
+        10,
+        4,
+        1
+      ],
+      "cap": 9,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 148732523454024126504,
+      "lb": 9,
+      "selected_rank1_in_row": 2,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        256,
+        128,
+        65,
+        33,
+        16,
+        8,
+        4,
+        3
+      ],
+      "cap": 9,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 443879300536590143496,
+      "lb": 9,
+      "selected_rank1_in_row": 2,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        256,
+        128,
+        65,
+        33,
+        16,
+        8,
+        5,
+        3
+      ],
+      "cap": 8,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 444167530912741855240,
+      "lb": 9,
+      "selected_rank1_in_row": 3,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        256,
+        128,
+        65,
+        33,
+        16,
+        9,
+        5,
+        3
+      ],
+      "cap": 9,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 444168093862695276552,
+      "lb": 9,
+      "selected_rank1_in_row": 2,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        256,
+        128,
+        65,
+        33,
+        17,
+        9,
+        4,
+        3
+      ],
+      "cap": 11,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 443879864586055192584,
+      "lb": 9,
+      "selected_rank1_in_row": 0,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        257,
+        129,
+        64,
+        32,
+        16,
+        9,
+        5,
+        2
+      ],
+      "cap": 9,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 296594141270867193880,
+      "lb": 9,
+      "selected_rank1_in_row": 2,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        257,
+        129,
+        64,
+        32,
+        17,
+        8,
+        5,
+        2
+      ],
+      "cap": 11,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 296593579420425400344,
+      "lb": 9,
+      "selected_rank1_in_row": 0,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        257,
+        129,
+        64,
+        33,
+        16,
+        9,
+        4,
+        2
+      ],
+      "cap": 10,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 296305910896862965784,
+      "lb": 9,
+      "selected_rank1_in_row": 1,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        257,
+        129,
+        65,
+        33,
+        16,
+        9,
+        4,
+        2
+      ],
+      "cap": 8,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 296305910896867160088,
+      "lb": 9,
+      "selected_rank1_in_row": 3,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        256,
+        129,
+        65,
+        32,
+        16,
+        9,
+        5,
+        2
+      ],
+      "cap": 8,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 296594141270871388168,
+      "lb": 9,
+      "selected_rank1_in_row": 3,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        258,
+        130,
+        64,
+        32,
+        16,
+        10,
+        4,
+        1
+      ],
+      "cap": 7,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 148732521254992498728,
+      "lb": 9,
+      "selected_rank1_in_row": 4,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        257,
+        129,
+        64,
+        33,
+        17,
+        9,
+        5,
+        2
+      ],
+      "cap": 10,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 296594142372526305304,
+      "lb": 9,
+      "selected_rank1_in_row": 1,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        257,
+        128,
+        64,
+        32,
+        17,
+        9,
+        5,
+        2
+      ],
+      "cap": 9,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 296594142370378813464,
+      "lb": 9,
+      "selected_rank1_in_row": 2,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        257,
+        129,
+        64,
+        32,
+        17,
+        8,
+        4,
+        2
+      ],
+      "cap": 10,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 296305349044273688600,
+      "lb": 9,
+      "selected_rank1_in_row": 1,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        257,
+        128,
+        64,
+        33,
+        17,
+        8,
+        5,
+        2
+      ],
+      "cap": 8,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 296593579422572875800,
+      "lb": 9,
+      "selected_rank1_in_row": 3,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        258,
+        128,
+        66,
+        32,
+        16,
+        10,
+        6,
+        1
+      ],
+      "cap": 9,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 149308982007304294440,
+      "lb": 9,
+      "selected_rank1_in_row": 2,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        258,
+        128,
+        66,
+        32,
+        18,
+        8,
+        6,
+        1
+      ],
+      "cap": 9,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 149307858306420707368,
+      "lb": 9,
+      "selected_rank1_in_row": 2,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        257,
+        128,
+        65,
+        32,
+        17,
+        9,
+        5,
+        3
+      ],
+      "cap": 11,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 444168094960059420696,
+      "lb": 9,
+      "selected_rank1_in_row": 0,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        258,
+        128,
+        66,
+        34,
+        16,
+        8,
+        4,
+        1
+      ],
+      "cap": 9,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 148731395359388995624,
+      "lb": 9,
+      "selected_rank1_in_row": 2,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        256,
+        129,
+        65,
+        33,
+        16,
+        9,
+        5,
+        3
+      ],
+      "cap": 8,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 444168093862695284744,
+      "lb": 9,
+      "selected_rank1_in_row": 3,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        256,
+        129,
+        64,
+        33,
+        16,
+        8,
+        4,
+        3
+      ],
+      "cap": 10,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 443879300536585957384,
+      "lb": 9,
+      "selected_rank1_in_row": 1,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        256,
+        129,
+        64,
+        33,
+        16,
+        8,
+        5,
+        3
+      ],
+      "cap": 9,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 444167530912737669128,
+      "lb": 9,
+      "selected_rank1_in_row": 2,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        256,
+        129,
+        64,
+        33,
+        16,
+        9,
+        4,
+        3
+      ],
+      "cap": 9,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 443879863486539378696,
+      "lb": 9,
+      "selected_rank1_in_row": 2,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        256,
+        129,
+        64,
+        33,
+        17,
+        8,
+        5,
+        3
+      ],
+      "cap": 10,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 444167532012249296904,
+      "lb": 9,
+      "selected_rank1_in_row": 1,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        258,
+        130,
+        64,
+        32,
+        18,
+        10,
+        4,
+        1
+      ],
+      "cap": 8,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 148732523454015754280,
+      "lb": 9,
+      "selected_rank1_in_row": 3,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        257,
+        128,
+        64,
+        32,
+        17,
+        8,
+        4,
+        3
+      ],
+      "cap": 9,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 443879301633950093336,
+      "lb": 9,
+      "selected_rank1_in_row": 2,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        257,
+        128,
+        64,
+        32,
+        17,
+        8,
+        5,
+        3
+      ],
+      "cap": 10,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 444167532010101805080,
+      "lb": 9,
+      "selected_rank1_in_row": 1,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        257,
+        128,
+        65,
+        32,
+        17,
+        8,
+        4,
+        3
+      ],
+      "cap": 9,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 443879301633954287640,
+      "lb": 9,
+      "selected_rank1_in_row": 2,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        257,
+        128,
+        64,
+        33,
+        16,
+        9,
+        5,
+        3
+      ],
+      "cap": 8,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 444168093862691082264,
+      "lb": 9,
+      "selected_rank1_in_row": 3,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        257,
+        129,
+        65,
+        32,
+        16,
+        9,
+        4,
+        3
+      ],
+      "cap": 8,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 443879863484396089368,
+      "lb": 9,
+      "selected_rank1_in_row": 3,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        258,
+        128,
+        66,
+        34,
+        16,
+        8,
+        6,
+        1
+      ],
+      "cap": 8,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 149307856111692419112,
+      "lb": 9,
+      "selected_rank1_in_row": 3,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        258,
+        128,
+        66,
+        34,
+        18,
+        8,
+        4,
+        1
+      ],
+      "cap": 10,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 148731397558412251176,
+      "lb": 9,
+      "selected_rank1_in_row": 1,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        257,
+        129,
+        65,
+        33,
+        17,
+        8,
+        5,
+        2
+      ],
+      "cap": 9,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 296593579422577078296,
+      "lb": 9,
+      "selected_rank1_in_row": 2,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        260,
+        128,
+        68,
+        32,
+        20,
+        12,
+        2,
+        1
+      ],
+      "cap": 10,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 148157190800659189832,
+      "lb": 9,
+      "selected_rank1_in_row": 1,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        260,
+        132,
+        64,
+        32,
+        16,
+        12,
+        2,
+        1
+      ],
+      "cap": 8,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 148157186402595934280,
+      "lb": 9,
+      "selected_rank1_in_row": 3,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        260,
+        132,
+        68,
+        32,
+        16,
+        12,
+        2,
+        1
+      ],
+      "cap": 8,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 148157186402612711496,
+      "lb": 9,
+      "selected_rank1_in_row": 3,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        260,
+        132,
+        68,
+        32,
+        20,
+        8,
+        2,
+        1
+      ],
+      "cap": 8,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 148154939000845537352,
+      "lb": 9,
+      "selected_rank1_in_row": 3,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        258,
+        130,
+        66,
+        34,
+        16,
+        8,
+        6,
+        1
+      ],
+      "cap": 7,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 149307856111692435496,
+      "lb": 9,
+      "selected_rank1_in_row": 4,
+      "source": "seed"
+    },
+    {
+      "basis": [
+        256,
+        129,
+        64,
+        32,
+        16,
+        9,
+        5,
+        3
+      ],
+      "cap": 10,
+      "dim": 8,
+      "hr_vars_in_row": 234,
+      "key": 444168093860543606792,
+      "lb": 9,
+      "selected_rank1_in_row": 1,
+      "source": "seed"
+    }
+  ]
+}

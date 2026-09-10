@@ -1,0 +1,223 @@
+\section{Qiushi Engine and Autonomous Mathematical Research}\label{sec:research}
+
+\subsection{Research Architecture and Computational Environment}
+
+Qiushi Engine is a hierarchical multi-agent research system designed for
+sustained autonomous scientific research. Its first
+report, on autonomous discovery with a real optical platform, describes
+a core research layer for planning, method development, experimentation,
+and critical review, supported by knowledge retrieval, memory, auxiliary
+exploration, and evidence checking~\cite{yang2026optical}. Curated knowledge
+and memory allow earlier findings to inform later decisions without
+repeatedly rebuilding the entire context.
+
+Here these capabilities were applied to exact mathematics. Qiushi Engine
+carried out the mathematical research end to end: it formulated candidate
+approaches, wrote and executed research programs, compared representations,
+derived and tested claims, and developed and documented the final proof.
+The research initially addressed the broader rank-22 construction and
+rank-23 optimality questions. Its subsequent
+focus on binary-field bounds concentrated the research on an exact,
+finitely representable problem while retaining both constructive and
+lower-bound routes. The scientific report was completed on 9 September.
+
+The computational environment joined Python and C++ programs with
+numerical linear algebra, symbolic calculation, combinatorial search,
+and proof checking. The released research programs include NumPy and
+SymPy calculations and constraint-programming formulations. The final
+finite proof uses PySAT encodings, CaDiCaL proof generation, and
+\texttt{drat-trim} verification, with a separate C++ reconstruction of
+the quotient table. These tools serve different purposes: a numerical
+experiment can suggest structure; an exact identity or checked finite
+proof establishes it. The maintained mathematical replay runs on Linux
+without Qiushi Engine or language-model access. Its dependencies and
+commands are collected in \qpath{reproducibility/README.md}.
+
+\subsection{Meta-Trace: Research Memory and Evidence}
+
+Meta-Trace~\cite{yang2026optical} is the structured record of the research process within
+Qiushi Engine's memory system. It connects three complementary views:
+\emph{history}, preserving summaries of questions, approaches, and actions;
+\emph{evidence}, linking claims to arguments, computations, and artifacts;
+and \emph{trajectory}, retaining changes in understanding, decisions, and
+unresolved questions. Layered summaries and retrieval connect a compact
+view of prior research to the detailed records and materials needed to
+recover its context. Later reasoning can therefore revisit both a finding
+and its conditions, reuse a method, or recognize a previously corrected
+error. Meta-Trace provides this research-history foundation for memory;
+the underlying evidence, its summaries, and the conclusions drawn from
+them remain distinguishable.
+
+A final proof orders statements by logical dependence. Research usually
+discovers those dependencies in a different order. A promising candidate
+may fail; a weaker formulation may reveal what a stronger one must retain;
+an apparent computational obstacle may become a question about algebraic
+structure. Understanding this development requires preserving the reasons
+for a decision alongside its outcome.
+
+The research trajectory in Appendix~\ref{app:research-record} is a
+problem-driven synthesis of the original Meta-Trace records and their
+associated notes, plans, programs, and results. Recurring accounts are
+condensed; related lines of research are organized by mathematical question;
+consequential corrections and unresolved branches remain explicit.
+The research guide links these themes to specific supporting artifacts.
+This preserves the scientific connections across the research without
+reproducing private operational details.
+
+For Qiushi Engine, this record supports continuity and the reuse of
+accumulated understanding. For readers, this account makes the
+development of the method inspectable: which observation changed a question,
+which counterexample invalidated an inference, and which representation
+made a new proof possible. It also preserves useful intermediate methods
+and open branches as starting points for further research. The final
+theorem and the path to it therefore become two connected scientific
+objects, each with its own supporting evidence.
+
+Publishing this research trajectory extends the contribution beyond the
+final theorem. It makes the development of mathematical understanding
+available for study: how evidence changed a conjecture, why a promising
+representation was abandoned, and how an intermediate result enabled a
+different proof strategy. Researchers can inspect these transitions,
+reuse the resulting methods, and compare alternative approaches against
+the same evidence. In this way, the open record provides a concrete,
+substantive case study of Qiushi Engine's long-horizon autonomous research
+capability, expressed through the mathematical decisions and results it
+produced rather than through the final answer alone.
+
+Three changes organize the account. Numerical continuation made exactness
+and coefficient growth inseparable. Quotient searches exposed the gap
+between admissible first-factor supports and complete decompositions.
+Finally, equality in a rank bound recovered relations among all three
+factors. These are the main points at which accumulated understanding
+changed the research strategy. The following subsections explain them;
+the appendix develops the intermediate routes and their evidence.
+
+\subsection{Numerical Deformation and Exactness}
+
+Laderman's 23-product construction reorganizes the 27 entrywise products
+into shared bilinear work~\cite{laderman1976noncommutative}. Reducing 23 to
+22 asks for another exact identity. A 22-term decomposition has
+$22(9+9+9)=594$ coefficients and must satisfy 729 cubic coefficient
+identities. The small matrix dimensions therefore conceal a highly
+coupled algebraic problem.
+
+Qiushi Engine explored deformations of known rank-23 schemes,
+pairing-defect formulations, and cyclic and transpose symmetries.
+Some numerical residuals decreased while the factor amplitudes grew:
+large terms cancelled without approaching a finite-coefficient solution.
+This observation changed the question from how far a residual could be
+reduced to what geometry would support an exact shorter decomposition.
+Incidence formulations and local compatibility tests made that distinction
+explicit. They supplied reusable representations and checks while the
+rank-22 construction question remained open.
+
+\subsection{Quotient Cores and Factor Compatibility}
+
+Over $\FF$, exact arithmetic removes numerical zero-testing from the
+existence problem. A codimension-one core obtained by quotienting the
+$E_{11}$ direction offered a concrete target: a 19-term decomposition of
+that core, embedded in the coordinate complement and supplemented by the
+three deleted products, would yield a full 22-term decomposition.
+
+Occupation bounds constrained the possible first factors of such a
+candidate. Yet an admissible first-factor multiset did not supply
+compatible second and third factors. Qiushi Engine examined fixed-factor
+completion, contraction ranks, lift compatibility, coding interpretations,
+and moment relaxations to understand this missing information. Each
+representation offered a different way to test compatibility; several
+necessary-condition models remained feasible or computationally unresolved.
+
+The lasting insight was the distinction between locating factors and
+coupling them. It motivated a return to the full tensor: could support
+geometry force a configuration in which additional algebraic identities
+become unavoidable, without first deciding the entire core problem?
+
+\begin{figure}[tbp]
+  \centering
+  \makebox[\linewidth][c]{\input{figures/research_route}\unskip}
+  \caption{Changes of mathematical representation during the research.
+  Construction and quotient searches clarified exactness and factor
+  compatibility. Returning to the full tensor connected these questions
+  to a rank equality and the structural lower-bound proof.}
+  \label{fig:research-route}
+\end{figure}
+
+\subsection{Split-Flattening Saturation and Algebraic Structure}
+
+For a hypothetical 20-term decomposition, the split flattening requires
+$\sum_t\rk(A_t)\ge27$. Certified occupation bounds and affine geometry
+force sixteen rank-one, one rank-two, and three rank-three first factors.
+Their rank sum is $16+2+9=27$: the inequality is an equality.
+
+Recognizing this profile statistic as a rank-additivity condition changed
+the final proof obligation:
+\[
+  P=\sum_t M_t,\qquad \sum_t\rk(M_t)=\rk(P)
+  \quad\Longrightarrow\quad M_tP^{-1}M_s=\delta_{ts}M_t.
+\]
+Equality couples the second and third factors through $P^{-1}$. For the
+matrix-multiplication tensor, evaluating these products explicitly makes
+the required invertible factors incompatible. Thus first-factor counting
+leads to a contradiction involving all three factors. The final argument
+uses finite geometry to force equality and equality to impose algebraic
+structure, replacing the remaining support enumeration with an identity.
+
+Qiushi Engine also reduced the finite assumptions. Only eight
+two-dimensional orbits, in which all three nonzero matrices have rank
+at least two, are needed. An additional orbit considered earlier already
+has a rank-one third direction. Removing it shortened the proof by
+identifying the precise statement the geometry required.
+
+\subsection{Semantic Validation and Independent Checks}
+
+The finite premises were reconstructed through separate encodings:
+bounded Boolean copies of integer multiplicities and explicit monotone
+unary counts. One quotient allows a direction of multiplicity two, so
+the distinction between integer counts and distinct-support bits is
+essential. An earlier auxiliary-variable collision had exposed a false
+contradiction. The corrected approach therefore supplied an explicit
+mathematical-to-Boolean assignment map as well as a checked refutation.
+
+The cross-factor identity received a similarly direct test. The actual
+$27\times27$ permutation matrix was constructed and the products of
+elementary matrices were computed independently of the proposed index
+formula. The recorded checks cover all $729^2=531{,}441$ pairs of
+elementary simple tensors, complementing the multilinear derivation
+below. A convention error encountered along the way was corrected at
+the level of the tensor identity.
+
+These checks changed the mathematical explanation: they made multiplicity,
+coordinates, and the scope of each implication explicit. The resulting
+proof has a finite computational foundation followed by a fully written
+structural deduction.
+
+\subsection{Research Development and Reusable Knowledge}
+
+The proof and the Meta-Trace answer different scientific questions.
+The proof establishes why a 20-term decomposition is impossible.
+The Meta-Trace explains how Qiushi Engine arrived at the representation
+that made this contradiction accessible. Early work contributed exact
+controls, quotient constructions, and an understanding of the information
+lost by relaxations; later work used those distinctions to formulate a
+more effective question about the full tensor.
+
+Together, the account and its research materials expose the development
+of a method: which ideas were proposed, what calculations tested them,
+why some interpretations were revised, and how retained understanding
+informed subsequent research. This makes the autonomous research
+process itself available for scientific study and reuse, alongside its
+mathematical result.
+
+\begin{figure}[tbp]
+  \centering
+  \makebox[\linewidth][c]{\input{figures/proof_structure}\unskip}
+  \caption{Two complementary constraints meet at equality.
+  The finite-input branch restricts the first-factor geometry; the
+  flattening branch supplies a rank budget. At the forced profile the
+  budget is exactly exhausted, enabling a symbolic contradiction involving
+  all three factors. Above the dashed line are the finite premises and
+  the general rank bound; below it are their structural consequences
+  for a hypothetical 20-term decomposition over $\FF$.}
+  \label{fig:proof-structure}
+\end{figure}
+\FloatBarrier

@@ -1,0 +1,2357 @@
+{
+  "block_psd": {
+    "histogram": {
+      "1": 23,
+      "2": 25,
+      "3": 24,
+      "5": 16,
+      "6": 4,
+      "7": 1
+    },
+    "largest_block": 7,
+    "n_blocks": 93
+  },
+  "candidate_count": 33,
+  "core": "E11 quotient distinct projected-A branch",
+  "elapsed_sec": 328.383,
+  "field": "F2",
+  "linear_model": {
+    "block_total_equalities": 21,
+    "n_eq": 7,
+    "n_ub_rlt": 183302,
+    "n_ub_total": 189215,
+    "n_ub_triangle": 5913
+  },
+  "lut_coverage_ok": true,
+  "meaning": "For fixed orbit counts n, impose Wang RLT, triangle/Fortet rows, deterministic orbit-block pair totals, and the block-decomposed 256x256 PSD condition. Feasible is a continuous second-moment witness for that count vector, not a point support and not an exact rank result.",
+  "numerically_feasible_count": 6,
+  "pair_orbit_count": 97,
+  "point_orbit_sizes": [
+    6,
+    9,
+    36,
+    72,
+    36,
+    96
+  ],
+  "results": [
+    {
+      "matrix_psd_blocks": 70,
+      "n": [
+        0,
+        1,
+        3,
+        5,
+        3,
+        7
+      ],
+      "numerically_feasible": false,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 8.008,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          0,
+          1,
+          3,
+          5,
+          3,
+          7
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": true,
+        "source_status": "optimal_inaccurate",
+        "l1_dist": 1.4019999999999997
+      },
+      "status": "infeasible"
+    },
+    {
+      "matrix_psd_blocks": 70,
+      "n": [
+        1,
+        0,
+        3,
+        5,
+        3,
+        7
+      ],
+      "numerically_feasible": false,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 5.834,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          1,
+          0,
+          3,
+          5,
+          3,
+          7
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": true,
+        "source_status": "optimal_inaccurate",
+        "l1_dist": 1.4819999999999998
+      },
+      "status": "error: Solver 'CLARABEL' failed. Try another solver, or solve with verbose=True for more information."
+    },
+    {
+      "matrix_psd_blocks": 70,
+      "n": [
+        1,
+        1,
+        3,
+        5,
+        2,
+        7
+      ],
+      "numerically_feasible": false,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 8.429,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          1,
+          1,
+          3,
+          5,
+          2,
+          7
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": true,
+        "source_status": "optimal_inaccurate",
+        "l1_dist": 1.5659999999999998
+      },
+      "status": "infeasible"
+    },
+    {
+      "matrix_psd_blocks": 70,
+      "n": [
+        1,
+        1,
+        3,
+        5,
+        3,
+        6
+      ],
+      "numerically_feasible": false,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 7.769,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          1,
+          1,
+          3,
+          5,
+          3,
+          6
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": true,
+        "source_status": "optimal_inaccurate",
+        "l1_dist": 1.8079999999999998
+      },
+      "status": "infeasible"
+    },
+    {
+      "matrix_psd_blocks": 70,
+      "n": [
+        1,
+        1,
+        2,
+        5,
+        3,
+        7
+      ],
+      "numerically_feasible": false,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 8.722,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          1,
+          1,
+          2,
+          5,
+          3,
+          7
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": true,
+        "source_status": "optimal_inaccurate",
+        "l1_dist": 1.9740000000000002
+      },
+      "status": "infeasible"
+    },
+    {
+      "matrix_psd_blocks": 70,
+      "n": [
+        1,
+        1,
+        3,
+        4,
+        3,
+        7
+      ],
+      "numerically_feasible": false,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 7.898,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          1,
+          1,
+          3,
+          4,
+          3,
+          7
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": true,
+        "source_status": "optimal_inaccurate",
+        "l1_dist": 2.058
+      },
+      "status": "infeasible"
+    },
+    {
+      "matrix_psd_blocks": 70,
+      "n": [
+        0,
+        0,
+        3,
+        6,
+        3,
+        7
+      ],
+      "numerically_feasible": false,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 5.95,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          0,
+          0,
+          3,
+          6,
+          3,
+          7
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": true,
+        "source_status": "optimal_inaccurate",
+        "l1_dist": 2.768
+      },
+      "status": "error: Solver 'CLARABEL' failed. Try another solver, or solve with verbose=True for more information."
+    },
+    {
+      "matrix_psd_blocks": 70,
+      "n": [
+        0,
+        0,
+        3,
+        5,
+        3,
+        8
+      ],
+      "numerically_feasible": false,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 5.876,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          0,
+          0,
+          3,
+          5,
+          3,
+          8
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": true,
+        "source_status": "optimal_inaccurate",
+        "l1_dist": 2.8259999999999996
+      },
+      "status": "error: Solver 'CLARABEL' failed. Try another solver, or solve with verbose=True for more information."
+    },
+    {
+      "block_total_max_abs_resid": 3.98944915518083e-11,
+      "block_totals": [
+        {
+          "block": [
+            0,
+            0
+          ],
+          "residual": 3.98944915518083e-11,
+          "target": 0.0,
+          "value": 3.98944915518083e-11
+        },
+        {
+          "block": [
+            1,
+            1
+          ],
+          "residual": 3.6466211675383226e-11,
+          "target": 0.0,
+          "value": 3.6466211675383226e-11
+        },
+        {
+          "block": [
+            2,
+            2
+          ],
+          "residual": -4.0545344859310717e-13,
+          "target": 3.0,
+          "value": 2.9999999999995945
+        },
+        {
+          "block": [
+            3,
+            3
+          ],
+          "residual": 1.4281908988778014e-12,
+          "target": 10.0,
+          "value": 10.000000000001428
+        },
+        {
+          "block": [
+            4,
+            4
+          ],
+          "residual": 1.3491430195244902e-12,
+          "target": 6.0,
+          "value": 6.000000000001349
+        },
+        {
+          "block": [
+            5,
+            5
+          ],
+          "residual": 6.52633502795652e-12,
+          "target": 21.0,
+          "value": 21.000000000006526
+        },
+        {
+          "block": [
+            0,
+            1
+          ],
+          "residual": -6.242162113353849e-12,
+          "target": 0.0,
+          "value": -6.242162113353849e-12
+        },
+        {
+          "block": [
+            0,
+            2
+          ],
+          "residual": -1.5460109675879193e-11,
+          "target": 0.0,
+          "value": -1.5460109675879193e-11
+        },
+        {
+          "block": [
+            0,
+            3
+          ],
+          "residual": -1.6190195311889394e-11,
+          "target": 0.0,
+          "value": -1.6190195311889394e-11
+        },
+        {
+          "block": [
+            0,
+            4
+          ],
+          "residual": -1.4682666726129588e-11,
+          "target": 0.0,
+          "value": -1.4682666726129588e-11
+        },
+        {
+          "block": [
+            0,
+            5
+          ],
+          "residual": -3.7971056660607344e-11,
+          "target": 0.0,
+          "value": -3.7971056660607344e-11
+        },
+        {
+          "block": [
+            1,
+            2
+          ],
+          "residual": -1.0117181270479124e-11,
+          "target": 0.0,
+          "value": -1.0117181270479124e-11
+        },
+        {
+          "block": [
+            1,
+            3
+          ],
+          "residual": -2.129894654637763e-11,
+          "target": 0.0,
+          "value": -2.129894654637763e-11
+        },
+        {
+          "block": [
+            1,
+            4
+          ],
+          "residual": -1.0490126432661436e-11,
+          "target": 0.0,
+          "value": -1.0490126432661436e-11
+        },
+        {
+          "block": [
+            1,
+            5
+          ],
+          "residual": -1.787437320286464e-11,
+          "target": 0.0,
+          "value": -1.787437320286464e-11
+        },
+        {
+          "block": [
+            2,
+            3
+          ],
+          "residual": 1.0903278280238737e-11,
+          "target": 15.0,
+          "value": 15.000000000010903
+        },
+        {
+          "block": [
+            2,
+            4
+          ],
+          "residual": 3.7836400679225335e-12,
+          "target": 12.0,
+          "value": 12.000000000003784
+        },
+        {
+          "block": [
+            2,
+            5
+          ],
+          "residual": 1.0345502232667059e-11,
+          "target": 21.0,
+          "value": 21.000000000010346
+        },
+        {
+          "block": [
+            3,
+            4
+          ],
+          "residual": 6.956213383091381e-12,
+          "target": 20.0,
+          "value": 20.000000000006956
+        },
+        {
+          "block": [
+            3,
+            5
+          ],
+          "residual": 1.1141310096718371e-11,
+          "target": 35.0,
+          "value": 35.00000000001114
+        },
+        {
+          "block": [
+            4,
+            5
+          ],
+          "residual": 9.297451697420911e-12,
+          "target": 28.0,
+          "value": 28.000000000009297
+        }
+      ],
+      "kernel_max_abs_resid": 1.3298163850602763e-11,
+      "kernel_residuals_by_orbit": [
+        1.3298163850602763e-11,
+        8.103602594529604e-12,
+        2.576684945979864e-12,
+        2.6983658853149378e-12,
+        2.447111121021598e-12,
+        6.328509443434556e-12
+      ],
+      "linear_eq_resid": 1.792867897373833e-12,
+      "linear_ub_viol": 1.001526262637725e-10,
+      "m_integrality_max_distance": 0.499674237287554,
+      "m_integrality_sum_distance": 17.284340873313923,
+      "m_total_float": 170.99999999998735,
+      "matrix_psd_blocks": 70,
+      "n": [
+        0,
+        0,
+        3,
+        5,
+        4,
+        7
+      ],
+      "nonzero_y_orbits_1e_10": 68,
+      "numerically_feasible": true,
+      "psd_min_eig": -4.647607304127395e-11,
+      "psd_neg_count_1e_7": 0,
+      "psd_neg_count_1e_8": 0,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 5.776,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          0,
+          0,
+          3,
+          5,
+          4,
+          7
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": true,
+        "source_status": "optimal_inaccurate",
+        "l1_dist": 2.8259999999999996
+      },
+      "status": "optimal_inaccurate",
+      "y_max": 0.025032425240082548,
+      "y_min": -1.5708554939953976e-11,
+      "y_vector_saved": "data/fixed_count_block_psd/n_0_0_3_5_4_7_y.npy",
+      "z_vector_saved": "data/fixed_count_block_psd/n_0_0_3_5_4_7_z.npy"
+    },
+    {
+      "matrix_psd_blocks": 70,
+      "n": [
+        0,
+        0,
+        4,
+        5,
+        3,
+        7
+      ],
+      "numerically_feasible": false,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 5.98,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          0,
+          0,
+          4,
+          5,
+          3,
+          7
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": true,
+        "source_status": "optimal_inaccurate",
+        "l1_dist": 2.8259999999999996
+      },
+      "status": "error: Solver 'CLARABEL' failed. Try another solver, or solve with verbose=True for more information."
+    },
+    {
+      "matrix_psd_blocks": 70,
+      "n": [
+        0,
+        1,
+        3,
+        6,
+        2,
+        7
+      ],
+      "numerically_feasible": false,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 7.927,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          0,
+          1,
+          3,
+          6,
+          2,
+          7
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": true,
+        "source_status": "optimal_inaccurate",
+        "l1_dist": 2.852
+      },
+      "status": "infeasible"
+    },
+    {
+      "matrix_psd_blocks": 70,
+      "n": [
+        0,
+        1,
+        3,
+        5,
+        2,
+        8
+      ],
+      "numerically_feasible": false,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 8.346,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          0,
+          1,
+          3,
+          5,
+          2,
+          8
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": true,
+        "source_status": "optimal_inaccurate",
+        "l1_dist": 2.9099999999999997
+      },
+      "status": "infeasible"
+    },
+    {
+      "matrix_psd_blocks": 70,
+      "n": [
+        0,
+        1,
+        4,
+        5,
+        2,
+        7
+      ],
+      "numerically_feasible": false,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 8.234,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          0,
+          1,
+          4,
+          5,
+          2,
+          7
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": true,
+        "source_status": "optimal_inaccurate",
+        "l1_dist": 2.9099999999999997
+      },
+      "status": "infeasible"
+    },
+    {
+      "matrix_psd_blocks": 70,
+      "n": [
+        0,
+        2,
+        3,
+        5,
+        2,
+        7
+      ],
+      "numerically_feasible": false,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 6.904,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          0,
+          2,
+          3,
+          5,
+          2,
+          7
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": false,
+        "source_status": "infeasible",
+        "l1_dist": 2.9099999999999997
+      },
+      "status": "infeasible"
+    },
+    {
+      "block_total_max_abs_resid": 8.597673684107576e-10,
+      "block_totals": [
+        {
+          "block": [
+            0,
+            0
+          ],
+          "residual": 5.958677697278544e-12,
+          "target": 0.0,
+          "value": 5.958677697278544e-12
+        },
+        {
+          "block": [
+            1,
+            1
+          ],
+          "residual": 9.214115885200731e-12,
+          "target": 0.0,
+          "value": 9.214115885200731e-12
+        },
+        {
+          "block": [
+            2,
+            2
+          ],
+          "residual": 1.1344303274540835e-10,
+          "target": 3.0,
+          "value": 3.000000000113443
+        },
+        {
+          "block": [
+            3,
+            3
+          ],
+          "residual": -9.43494171679049e-11,
+          "target": 15.0,
+          "value": 14.99999999990565
+        },
+        {
+          "block": [
+            4,
+            4
+          ],
+          "residual": 8.928946471087329e-11,
+          "target": 1.0,
+          "value": 1.0000000000892895
+        },
+        {
+          "block": [
+            5,
+            5
+          ],
+          "residual": 6.477307579189073e-11,
+          "target": 21.0,
+          "value": 21.000000000064773
+        },
+        {
+          "block": [
+            0,
+            1
+          ],
+          "residual": -2.008383596073773e-12,
+          "target": 0.0,
+          "value": -2.008383596073773e-12
+        },
+        {
+          "block": [
+            0,
+            2
+          ],
+          "residual": -1.631068613505704e-10,
+          "target": 3.0,
+          "value": 2.999999999836893
+        },
+        {
+          "block": [
+            0,
+            3
+          ],
+          "residual": 1.9836932096950477e-10,
+          "target": 6.0,
+          "value": 6.000000000198369
+        },
+        {
+          "block": [
+            0,
+            4
+          ],
+          "residual": 5.171640893308904e-11,
+          "target": 2.0,
+          "value": 2.0000000000517164
+        },
+        {
+          "block": [
+            0,
+            5
+          ],
+          "residual": 1.326432297332758e-10,
+          "target": 7.0,
+          "value": 7.000000000132643
+        },
+        {
+          "block": [
+            1,
+            2
+          ],
+          "residual": -3.65210867285899e-12,
+          "target": 0.0,
+          "value": -3.65210867285899e-12
+        },
+        {
+          "block": [
+            1,
+            3
+          ],
+          "residual": -9.020045641227495e-12,
+          "target": 0.0,
+          "value": -9.020045641227495e-12
+        },
+        {
+          "block": [
+            1,
+            4
+          ],
+          "residual": -2.7723389464501044e-12,
+          "target": 0.0,
+          "value": -2.7723389464501044e-12
+        },
+        {
+          "block": [
+            1,
+            5
+          ],
+          "residual": 9.58409081510489e-13,
+          "target": 0.0,
+          "value": 9.58409081510489e-13
+        },
+        {
+          "block": [
+            2,
+            3
+          ],
+          "residual": 8.597673684107576e-10,
+          "target": 18.0,
+          "value": 18.000000000859767
+        },
+        {
+          "block": [
+            2,
+            4
+          ],
+          "residual": 3.785416424761934e-11,
+          "target": 6.0,
+          "value": 6.000000000037854
+        },
+        {
+          "block": [
+            2,
+            5
+          ],
+          "residual": -5.395435209720745e-10,
+          "target": 21.0,
+          "value": 20.999999999460456
+        },
+        {
+          "block": [
+            3,
+            4
+          ],
+          "residual": -5.356000087886059e-10,
+          "target": 12.0,
+          "value": 11.9999999994644
+        },
+        {
+          "block": [
+            3,
+            5
+          ],
+          "residual": 5.1599613470898475e-11,
+          "target": 42.0,
+          "value": 42.0000000000516
+        },
+        {
+          "block": [
+            4,
+            5
+          ],
+          "residual": 2.3227642031997675e-10,
+          "target": 14.0,
+          "value": 14.000000000232276
+        }
+      ],
+      "kernel_max_abs_resid": 3.30623306510347e-11,
+      "kernel_residuals_by_orbit": [
+        4.530750774556225e-12,
+        2.047581307822385e-12,
+        2.7184643425215427e-11,
+        3.30623306510347e-11,
+        8.619466251857943e-12,
+        2.210820415626813e-11
+      ],
+      "linear_eq_resid": 3.8254732714904094e-11,
+      "linear_ub_viol": 7.527982088123416e-11,
+      "m_integrality_max_distance": 0.4975656398307554,
+      "m_integrality_sum_distance": 17.92712628524562,
+      "m_total_float": 171.0000000004978,
+      "matrix_psd_blocks": 70,
+      "n": [
+        1,
+        0,
+        3,
+        6,
+        2,
+        7
+      ],
+      "nonzero_y_orbits_1e_10": 77,
+      "numerically_feasible": true,
+      "psd_min_eig": -2.7066661599865533e-11,
+      "psd_neg_count_1e_7": 0,
+      "psd_neg_count_1e_8": 0,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 5.954,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          1,
+          0,
+          3,
+          6,
+          2,
+          7
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": true,
+        "source_status": "optimal_inaccurate",
+        "l1_dist": 2.932
+      },
+      "status": "optimal_inaccurate",
+      "y_max": 0.017302376276449642,
+      "y_min": -4.696544998466166e-11,
+      "y_vector_saved": "data/fixed_count_block_psd/n_1_0_3_6_2_7_y.npy",
+      "z_vector_saved": "data/fixed_count_block_psd/n_1_0_3_6_2_7_z.npy"
+    },
+    {
+      "matrix_psd_blocks": 70,
+      "n": [
+        2,
+        0,
+        3,
+        5,
+        2,
+        7
+      ],
+      "numerically_feasible": false,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 5.875,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          2,
+          0,
+          3,
+          5,
+          2,
+          7
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": true,
+        "source_status": "optimal_inaccurate",
+        "l1_dist": 2.9899999999999993
+      },
+      "status": "error: Solver 'CLARABEL' failed. Try another solver, or solve with verbose=True for more information."
+    },
+    {
+      "matrix_psd_blocks": 70,
+      "n": [
+        1,
+        0,
+        3,
+        5,
+        2,
+        8
+      ],
+      "numerically_feasible": false,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 5.89,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          1,
+          0,
+          3,
+          5,
+          2,
+          8
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": true,
+        "source_status": "optimal_inaccurate",
+        "l1_dist": 2.9899999999999998
+      },
+      "status": "error: Solver 'CLARABEL' failed. Try another solver, or solve with verbose=True for more information."
+    },
+    {
+      "block_total_max_abs_resid": 4.58334765560366e-11,
+      "block_totals": [
+        {
+          "block": [
+            0,
+            0
+          ],
+          "residual": -1.0560307626680888e-12,
+          "target": 0.0,
+          "value": -1.0560307626680888e-12
+        },
+        {
+          "block": [
+            1,
+            1
+          ],
+          "residual": 4.58334765560366e-11,
+          "target": 0.0,
+          "value": 4.58334765560366e-11
+        },
+        {
+          "block": [
+            2,
+            2
+          ],
+          "residual": 2.828848266744899e-12,
+          "target": 6.0,
+          "value": 6.000000000002829
+        },
+        {
+          "block": [
+            3,
+            3
+          ],
+          "residual": 5.5706550483591855e-12,
+          "target": 10.0,
+          "value": 10.00000000000557
+        },
+        {
+          "block": [
+            4,
+            4
+          ],
+          "residual": 3.5704772471945034e-13,
+          "target": 1.0,
+          "value": 1.000000000000357
+        },
+        {
+          "block": [
+            5,
+            5
+          ],
+          "residual": 6.394884621840902e-14,
+          "target": 21.0,
+          "value": 21.000000000000064
+        },
+        {
+          "block": [
+            0,
+            1
+          ],
+          "residual": -8.054117145979961e-12,
+          "target": 0.0,
+          "value": -8.054117145979961e-12
+        },
+        {
+          "block": [
+            0,
+            2
+          ],
+          "residual": 5.253575352526241e-12,
+          "target": 4.0,
+          "value": 4.000000000005254
+        },
+        {
+          "block": [
+            0,
+            3
+          ],
+          "residual": 1.5134560271690134e-12,
+          "target": 5.0,
+          "value": 5.0000000000015135
+        },
+        {
+          "block": [
+            0,
+            4
+          ],
+          "residual": 2.263522702605769e-12,
+          "target": 2.0,
+          "value": 2.0000000000022635
+        },
+        {
+          "block": [
+            0,
+            5
+          ],
+          "residual": 1.9175772081325704e-12,
+          "target": 7.0,
+          "value": 7.000000000001918
+        },
+        {
+          "block": [
+            1,
+            2
+          ],
+          "residual": -1.3409568369891923e-11,
+          "target": 0.0,
+          "value": -1.3409568369891923e-11
+        },
+        {
+          "block": [
+            1,
+            3
+          ],
+          "residual": -3.258485541341414e-11,
+          "target": 0.0,
+          "value": -3.258485541341414e-11
+        },
+        {
+          "block": [
+            1,
+            4
+          ],
+          "residual": -1.703874906826385e-11,
+          "target": 0.0,
+          "value": -1.703874906826385e-11
+        },
+        {
+          "block": [
+            1,
+            5
+          ],
+          "residual": -1.470350044070304e-11,
+          "target": 0.0,
+          "value": -1.470350044070304e-11
+        },
+        {
+          "block": [
+            2,
+            3
+          ],
+          "residual": -1.8332002582610585e-12,
+          "target": 20.0,
+          "value": 19.999999999998167
+        },
+        {
+          "block": [
+            2,
+            4
+          ],
+          "residual": 9.467981954003335e-13,
+          "target": 8.0,
+          "value": 8.000000000000947
+        },
+        {
+          "block": [
+            2,
+            5
+          ],
+          "residual": 2.653877118063974e-12,
+          "target": 28.0,
+          "value": 28.000000000002654
+        },
+        {
+          "block": [
+            3,
+            4
+          ],
+          "residual": 8.121503469737945e-12,
+          "target": 10.0,
+          "value": 10.000000000008122
+        },
+        {
+          "block": [
+            3,
+            5
+          ],
+          "residual": 4.881428594671888e-12,
+          "target": 35.0,
+          "value": 35.00000000000488
+        },
+        {
+          "block": [
+            4,
+            5
+          ],
+          "residual": 3.588240815588506e-12,
+          "target": 14.0,
+          "value": 14.000000000003588
+        }
+      ],
+      "kernel_max_abs_resid": 1.0185217012452578e-11,
+      "kernel_residuals_by_orbit": [
+        8.94901905108886e-13,
+        1.0185217012452578e-11,
+        1.4899520410991126e-12,
+        3.6205394903793603e-12,
+        1.8931943409182257e-12,
+        1.633722271189238e-12
+      ],
+      "linear_eq_resid": 6.529069637578151e-13,
+      "linear_ub_viol": 9.101775142083733e-11,
+      "m_integrality_max_distance": 0.4953077109297741,
+      "m_integrality_sum_distance": 20.71720689265226,
+      "m_total_float": 170.9999999999971,
+      "matrix_psd_blocks": 70,
+      "n": [
+        1,
+        0,
+        4,
+        5,
+        2,
+        7
+      ],
+      "nonzero_y_orbits_1e_10": 77,
+      "numerically_feasible": true,
+      "psd_min_eig": -3.742286052110627e-12,
+      "psd_neg_count_1e_7": 0,
+      "psd_neg_count_1e_8": 0,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 6.083,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          1,
+          0,
+          4,
+          5,
+          2,
+          7
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": true,
+        "source_status": "optimal_inaccurate",
+        "l1_dist": 2.9899999999999998
+      },
+      "status": "optimal_inaccurate",
+      "y_max": 0.022675218661060408,
+      "y_min": -3.8512664140637595e-11,
+      "y_vector_saved": "data/fixed_count_block_psd/n_1_0_4_5_2_7_y.npy",
+      "z_vector_saved": "data/fixed_count_block_psd/n_1_0_4_5_2_7_z.npy"
+    },
+    {
+      "matrix_psd_blocks": 70,
+      "n": [
+        0,
+        1,
+        3,
+        6,
+        3,
+        6
+      ],
+      "numerically_feasible": false,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 10.685,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          0,
+          1,
+          3,
+          6,
+          3,
+          6
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": true,
+        "source_status": "optimal_inaccurate",
+        "l1_dist": 3.094
+      },
+      "status": "error: Solver 'CLARABEL' failed. Try another solver, or solve with verbose=True for more information."
+    },
+    {
+      "matrix_psd_blocks": 70,
+      "n": [
+        0,
+        1,
+        3,
+        5,
+        4,
+        6
+      ],
+      "numerically_feasible": false,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 7.076,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          0,
+          1,
+          3,
+          5,
+          4,
+          6
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": false,
+        "source_status": "error: Solver 'CLARABEL' failed. Try another solver, or solve with verbose=True for more information.",
+        "l1_dist": 3.1519999999999997
+      },
+      "status": "error: Solver 'CLARABEL' failed. Try another solver, or solve with verbose=True for more information."
+    },
+    {
+      "matrix_psd_blocks": 70,
+      "n": [
+        0,
+        1,
+        4,
+        5,
+        3,
+        6
+      ],
+      "numerically_feasible": false,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 6.715,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          0,
+          1,
+          4,
+          5,
+          3,
+          6
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": true,
+        "source_status": "optimal_inaccurate",
+        "l1_dist": 3.1519999999999997
+      },
+      "status": "error: Solver 'CLARABEL' failed. Try another solver, or solve with verbose=True for more information."
+    },
+    {
+      "matrix_psd_blocks": 70,
+      "n": [
+        0,
+        2,
+        3,
+        5,
+        3,
+        6
+      ],
+      "numerically_feasible": false,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 6.776,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          0,
+          2,
+          3,
+          5,
+          3,
+          6
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": false,
+        "source_status": "infeasible",
+        "l1_dist": 3.1519999999999997
+      },
+      "status": "infeasible"
+    },
+    {
+      "block_total_max_abs_resid": 4.6365760884611374e-11,
+      "block_totals": [
+        {
+          "block": [
+            0,
+            0
+          ],
+          "residual": 1.2929627981523053e-14,
+          "target": 0.0,
+          "value": 1.2929627981523053e-14
+        },
+        {
+          "block": [
+            1,
+            1
+          ],
+          "residual": 4.6365760884611374e-11,
+          "target": 0.0,
+          "value": 4.6365760884611374e-11
+        },
+        {
+          "block": [
+            2,
+            2
+          ],
+          "residual": 9.2148511043888e-13,
+          "target": 3.0,
+          "value": 3.0000000000009215
+        },
+        {
+          "block": [
+            3,
+            3
+          ],
+          "residual": 5.773159728050814e-12,
+          "target": 15.0,
+          "value": 15.000000000005773
+        },
+        {
+          "block": [
+            4,
+            4
+          ],
+          "residual": 2.0818902157770935e-12,
+          "target": 3.0,
+          "value": 3.000000000002082
+        },
+        {
+          "block": [
+            5,
+            5
+          ],
+          "residual": -2.8599345114344032e-12,
+          "target": 15.0,
+          "value": 14.99999999999714
+        },
+        {
+          "block": [
+            0,
+            1
+          ],
+          "residual": -1.0101824318832853e-11,
+          "target": 0.0,
+          "value": -1.0101824318832853e-11
+        },
+        {
+          "block": [
+            0,
+            2
+          ],
+          "residual": 1.1937117960769683e-12,
+          "target": 3.0,
+          "value": 3.0000000000011937
+        },
+        {
+          "block": [
+            0,
+            3
+          ],
+          "residual": 1.602273869139026e-12,
+          "target": 6.0,
+          "value": 6.000000000001602
+        },
+        {
+          "block": [
+            0,
+            4
+          ],
+          "residual": 1.4592771435673058e-12,
+          "target": 3.0,
+          "value": 3.0000000000014593
+        },
+        {
+          "block": [
+            0,
+            5
+          ],
+          "residual": 2.303934820702125e-12,
+          "target": 6.0,
+          "value": 6.000000000002304
+        },
+        {
+          "block": [
+            1,
+            2
+          ],
+          "residual": -1.4082453385185136e-11,
+          "target": 0.0,
+          "value": -1.4082453385185136e-11
+        },
+        {
+          "block": [
+            1,
+            3
+          ],
+          "residual": -4.5205337716334773e-11,
+          "target": 0.0,
+          "value": -4.5205337716334773e-11
+        },
+        {
+          "block": [
+            1,
+            4
+          ],
+          "residual": -2.3542398472384396e-11,
+          "target": 0.0,
+          "value": -2.3542398472384396e-11
+        },
+        {
+          "block": [
+            1,
+            5
+          ],
+          "residual": 7.098119456897638e-12,
+          "target": 0.0,
+          "value": 7.098119456897638e-12
+        },
+        {
+          "block": [
+            2,
+            3
+          ],
+          "residual": 7.901235221652314e-12,
+          "target": 18.0,
+          "value": 18.0000000000079
+        },
+        {
+          "block": [
+            2,
+            4
+          ],
+          "residual": 2.8457236567192012e-12,
+          "target": 9.0,
+          "value": 9.000000000002846
+        },
+        {
+          "block": [
+            2,
+            5
+          ],
+          "residual": -1.2789769243681803e-12,
+          "target": 18.0,
+          "value": 17.99999999999872
+        },
+        {
+          "block": [
+            3,
+            4
+          ],
+          "residual": 9.897860309138196e-12,
+          "target": 18.0,
+          "value": 18.000000000009898
+        },
+        {
+          "block": [
+            3,
+            5
+          ],
+          "residual": 2.8563817977556027e-12,
+          "target": 36.0,
+          "value": 36.000000000002856
+        },
+        {
+          "block": [
+            4,
+            5
+          ],
+          "residual": 1.2967404927621828e-12,
+          "target": 18.0,
+          "value": 18.000000000001297
+        }
+      ],
+      "kernel_max_abs_resid": 1.0303502418802528e-11,
+      "kernel_residuals_by_orbit": [
+        1.12242492431476e-12,
+        1.0303502418802528e-11,
+        1.5647170427983585e-12,
+        5.0228153018149885e-12,
+        2.6158220524871673e-12,
+        7.886799396552976e-13
+      ],
+      "linear_eq_resid": 7.664030370425879e-13,
+      "linear_ub_viol": 9.39323356171473e-11,
+      "m_integrality_max_distance": 0.48916049084021745,
+      "m_integrality_sum_distance": 19.108667742155944,
+      "m_total_float": 170.99999999999653,
+      "matrix_psd_blocks": 70,
+      "n": [
+        1,
+        0,
+        3,
+        6,
+        3,
+        6
+      ],
+      "nonzero_y_orbits_1e_10": 77,
+      "numerically_feasible": true,
+      "psd_min_eig": -7.739057650869693e-12,
+      "psd_neg_count_1e_7": 0,
+      "psd_neg_count_1e_8": 0,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 6.132,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          1,
+          0,
+          3,
+          6,
+          3,
+          6
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": true,
+        "source_status": "optimal_inaccurate",
+        "l1_dist": 3.174
+      },
+      "status": "optimal_inaccurate",
+      "y_max": 0.01813751987264863,
+      "y_min": -6.430816157194221e-11,
+      "y_vector_saved": null,
+      "z_vector_saved": null
+    },
+    {
+      "block_total_max_abs_resid": 5.148059756265866e-11,
+      "block_totals": [
+        {
+          "block": [
+            0,
+            0
+          ],
+          "residual": -5.844214001626824e-13,
+          "target": 1.0,
+          "value": 0.9999999999994156
+        },
+        {
+          "block": [
+            1,
+            1
+          ],
+          "residual": 4.8497152745394523e-11,
+          "target": 0.0,
+          "value": 4.8497152745394523e-11
+        },
+        {
+          "block": [
+            2,
+            2
+          ],
+          "residual": -2.3842261498430162e-11,
+          "target": 3.0,
+          "value": 2.9999999999761577
+        },
+        {
+          "block": [
+            3,
+            3
+          ],
+          "residual": -5.148059756265866e-11,
+          "target": 10.0,
+          "value": 9.99999999994852
+        },
+        {
+          "block": [
+            4,
+            4
+          ],
+          "residual": -2.434052959188193e-12,
+          "target": 3.0,
+          "value": 2.999999999997566
+        },
+        {
+          "block": [
+            5,
+            5
+          ],
+          "residual": 9.308109838457312e-13,
+          "target": 15.0,
+          "value": 15.00000000000093
+        },
+        {
+          "block": [
+            0,
+            1
+          ],
+          "residual": -6.536840104823606e-12,
+          "target": 0.0,
+          "value": -6.536840104823606e-12
+        },
+        {
+          "block": [
+            0,
+            2
+          ],
+          "residual": 6.501466032204917e-13,
+          "target": 6.0,
+          "value": 6.00000000000065
+        },
+        {
+          "block": [
+            0,
+            3
+          ],
+          "residual": 1.9941381879107212e-11,
+          "target": 10.0,
+          "value": 10.000000000019941
+        },
+        {
+          "block": [
+            0,
+            4
+          ],
+          "residual": -1.6991741347283096e-11,
+          "target": 6.0,
+          "value": 5.999999999983008
+        },
+        {
+          "block": [
+            0,
+            5
+          ],
+          "residual": -3.241851231905457e-11,
+          "target": 12.0,
+          "value": 11.999999999967581
+        },
+        {
+          "block": [
+            1,
+            2
+          ],
+          "residual": -1.3827417572416475e-11,
+          "target": 0.0,
+          "value": -1.3827417572416475e-11
+        },
+        {
+          "block": [
+            1,
+            3
+          ],
+          "residual": -2.5089054111031882e-11,
+          "target": 0.0,
+          "value": -2.5089054111031882e-11
+        },
+        {
+          "block": [
+            1,
+            4
+          ],
+          "residual": -1.770375951132222e-11,
+          "target": 0.0,
+          "value": -1.770375951132222e-11
+        },
+        {
+          "block": [
+            1,
+            5
+          ],
+          "residual": -3.1485383800520875e-11,
+          "target": 0.0,
+          "value": -3.1485383800520875e-11
+        },
+        {
+          "block": [
+            2,
+            3
+          ],
+          "residual": 3.394973191461759e-11,
+          "target": 15.0,
+          "value": 15.00000000003395
+        },
+        {
+          "block": [
+            2,
+            4
+          ],
+          "residual": 5.149658477421326e-12,
+          "target": 9.0,
+          "value": 9.00000000000515
+        },
+        {
+          "block": [
+            2,
+            5
+          ],
+          "residual": 1.5994316981959855e-11,
+          "target": 18.0,
+          "value": 18.000000000015994
+        },
+        {
+          "block": [
+            3,
+            4
+          ],
+          "residual": 4.7492676458205096e-11,
+          "target": 15.0,
+          "value": 15.000000000047493
+        },
+        {
+          "block": [
+            3,
+            5
+          ],
+          "residual": 4.8906656502367696e-11,
+          "target": 30.0,
+          "value": 30.000000000048907
+        },
+        {
+          "block": [
+            4,
+            5
+          ],
+          "residual": -4.739320047519868e-12,
+          "target": 18.0,
+          "value": 17.99999999999526
+        }
+      ],
+      "kernel_max_abs_resid": 1.0777145054532115e-11,
+      "kernel_residuals_by_orbit": [
+        7.263155672026243e-13,
+        1.0777145054532115e-11,
+        1.5363797302684969e-12,
+        3.323896713425256e-12,
+        2.8321789358187743e-12,
+        5.403011371640787e-12
+      ],
+      "linear_eq_resid": 6.087574888624658e-12,
+      "linear_ub_viol": 9.21793342384631e-11,
+      "m_integrality_max_distance": 0.4949188987420907,
+      "m_integrality_sum_distance": 22.16760233431819,
+      "m_total_float": 170.99999999999437,
+      "matrix_psd_blocks": 70,
+      "n": [
+        2,
+        0,
+        3,
+        5,
+        3,
+        6
+      ],
+      "nonzero_y_orbits_1e_10": 79,
+      "numerically_feasible": true,
+      "psd_min_eig": -9.665750658011178e-12,
+      "psd_neg_count_1e_7": 0,
+      "psd_neg_count_1e_8": 0,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 5.851,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          2,
+          0,
+          3,
+          5,
+          3,
+          6
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": true,
+        "source_status": "optimal_inaccurate",
+        "l1_dist": 3.2319999999999993
+      },
+      "status": "optimal_inaccurate",
+      "y_max": 0.06987812828803724,
+      "y_min": -1.1471889666527933e-11,
+      "y_vector_saved": null,
+      "z_vector_saved": null
+    },
+    {
+      "matrix_psd_blocks": 70,
+      "n": [
+        1,
+        0,
+        3,
+        5,
+        4,
+        6
+      ],
+      "numerically_feasible": false,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 5.883,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          1,
+          0,
+          3,
+          5,
+          4,
+          6
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": true,
+        "source_status": "optimal_inaccurate",
+        "l1_dist": 3.2319999999999998
+      },
+      "status": "error: Solver 'CLARABEL' failed. Try another solver, or solve with verbose=True for more information."
+    },
+    {
+      "block_total_max_abs_resid": 6.759037773917953e-11,
+      "block_totals": [
+        {
+          "block": [
+            0,
+            0
+          ],
+          "residual": 1.2808133105750085e-12,
+          "target": 0.0,
+          "value": 1.2808133105750085e-12
+        },
+        {
+          "block": [
+            1,
+            1
+          ],
+          "residual": 3.530644229893447e-11,
+          "target": 0.0,
+          "value": 3.530644229893447e-11
+        },
+        {
+          "block": [
+            2,
+            2
+          ],
+          "residual": 5.041300710217911e-12,
+          "target": 6.0,
+          "value": 6.000000000005041
+        },
+        {
+          "block": [
+            3,
+            3
+          ],
+          "residual": 1.7177370637000422e-11,
+          "target": 10.0,
+          "value": 10.000000000017177
+        },
+        {
+          "block": [
+            4,
+            4
+          ],
+          "residual": -5.253575352526241e-13,
+          "target": 3.0,
+          "value": 2.9999999999994746
+        },
+        {
+          "block": [
+            5,
+            5
+          ],
+          "residual": -8.686384944667225e-12,
+          "target": 15.0,
+          "value": 14.999999999991314
+        },
+        {
+          "block": [
+            0,
+            1
+          ],
+          "residual": -6.347851628577226e-12,
+          "target": 0.0,
+          "value": -6.347851628577226e-12
+        },
+        {
+          "block": [
+            0,
+            2
+          ],
+          "residual": 3.176836571583408e-11,
+          "target": 4.0,
+          "value": 4.000000000031768
+        },
+        {
+          "block": [
+            0,
+            3
+          ],
+          "residual": -2.7958080295320542e-11,
+          "target": 5.0,
+          "value": 4.999999999972042
+        },
+        {
+          "block": [
+            0,
+            4
+          ],
+          "residual": 8.775202786637237e-13,
+          "target": 3.0,
+          "value": 3.0000000000008775
+        },
+        {
+          "block": [
+            0,
+            5
+          ],
+          "residual": 1.1834977442504169e-11,
+          "target": 6.0,
+          "value": 6.000000000011835
+        },
+        {
+          "block": [
+            1,
+            2
+          ],
+          "residual": -1.0450693729356016e-11,
+          "target": 0.0,
+          "value": -1.0450693729356016e-11
+        },
+        {
+          "block": [
+            1,
+            3
+          ],
+          "residual": -2.2964215547902e-11,
+          "target": 0.0,
+          "value": -2.2964215547902e-11
+        },
+        {
+          "block": [
+            1,
+            4
+          ],
+          "residual": -1.352571681169919e-11,
+          "target": 0.0,
+          "value": -1.352571681169919e-11
+        },
+        {
+          "block": [
+            1,
+            5
+          ],
+          "residual": -1.54999250377037e-11,
+          "target": 0.0,
+          "value": -1.54999250377037e-11
+        },
+        {
+          "block": [
+            2,
+            3
+          ],
+          "residual": -6.759037773917953e-11,
+          "target": 20.0,
+          "value": 19.99999999993241
+        },
+        {
+          "block": [
+            2,
+            4
+          ],
+          "residual": 7.783995670251898e-12,
+          "target": 12.0,
+          "value": 12.000000000007784
+        },
+        {
+          "block": [
+            2,
+            5
+          ],
+          "residual": 9.57811607804615e-12,
+          "target": 24.0,
+          "value": 24.000000000009578
+        },
+        {
+          "block": [
+            3,
+            4
+          ],
+          "residual": 1.766764512467489e-11,
+          "target": 15.0,
+          "value": 15.000000000017668
+        },
+        {
+          "block": [
+            3,
+            5
+          ],
+          "residual": 2.4726887204451486e-11,
+          "target": 30.0,
+          "value": 30.000000000024727
+        },
+        {
+          "block": [
+            4,
+            5
+          ],
+          "residual": -9.64917035162216e-12,
+          "target": 18.0,
+          "value": 17.99999999999035
+        }
+      ],
+      "kernel_max_abs_resid": 7.845876066429883e-12,
+      "kernel_residuals_by_orbit": [
+        8.824677100172096e-13,
+        7.845876066429883e-12,
+        5.2951809603740685e-12,
+        4.659883590107938e-12,
+        1.5028574235221502e-12,
+        1.9717005805830468e-12
+      ],
+      "linear_eq_resid": 2.1231905122931494e-12,
+      "linear_ub_viol": 6.84564529977066e-11,
+      "m_integrality_max_distance": 0.49075172668249434,
+      "m_integrality_sum_distance": 19.49130313061026,
+      "m_total_float": 170.99999999997985,
+      "matrix_psd_blocks": 70,
+      "n": [
+        1,
+        0,
+        4,
+        5,
+        3,
+        6
+      ],
+      "nonzero_y_orbits_1e_10": 77,
+      "numerically_feasible": true,
+      "psd_min_eig": -4.666496484396456e-12,
+      "psd_neg_count_1e_7": 0,
+      "psd_neg_count_1e_8": 0,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 6.186,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          1,
+          0,
+          4,
+          5,
+          3,
+          6
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": true,
+        "source_status": "optimal_inaccurate",
+        "l1_dist": 3.2319999999999998
+      },
+      "status": "optimal_inaccurate",
+      "y_max": 0.022878882061580234,
+      "y_min": -1.9676732072382253e-11,
+      "y_vector_saved": null,
+      "z_vector_saved": null
+    },
+    {
+      "matrix_psd_blocks": 70,
+      "n": [
+        1,
+        1,
+        3,
+        6,
+        2,
+        6
+      ],
+      "numerically_feasible": false,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 8.57,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          1,
+          1,
+          3,
+          6,
+          2,
+          6
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": true,
+        "source_status": "optimal",
+        "l1_dist": 3.258
+      },
+      "status": "infeasible"
+    },
+    {
+      "matrix_psd_blocks": 70,
+      "n": [
+        0,
+        1,
+        2,
+        6,
+        3,
+        7
+      ],
+      "numerically_feasible": false,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 8.539,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          0,
+          1,
+          2,
+          6,
+          3,
+          7
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": true,
+        "source_status": "optimal_inaccurate",
+        "l1_dist": 3.2600000000000002
+      },
+      "status": "infeasible"
+    },
+    {
+      "matrix_psd_blocks": 70,
+      "n": [
+        1,
+        1,
+        4,
+        5,
+        2,
+        6
+      ],
+      "numerically_feasible": false,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 7.777,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          1,
+          1,
+          4,
+          5,
+          2,
+          6
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": true,
+        "source_status": "optimal_inaccurate",
+        "l1_dist": 3.316
+      },
+      "status": "infeasible"
+    },
+    {
+      "matrix_psd_blocks": 70,
+      "n": [
+        1,
+        2,
+        3,
+        5,
+        2,
+        6
+      ],
+      "numerically_feasible": false,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 7.291,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          1,
+          2,
+          3,
+          5,
+          2,
+          6
+        ],
+        "source": "integer_mean_psd",
+        "source_feasible": false,
+        "source_status": "infeasible",
+        "l1_dist": 3.316
+      },
+      "status": "infeasible"
+    },
+    {
+      "matrix_psd_blocks": 70,
+      "n": [
+        3,
+        0,
+        0,
+        3,
+        0,
+        13
+      ],
+      "numerically_feasible": false,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 5.562,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          3,
+          0,
+          0,
+          3,
+          0,
+          13
+        ],
+        "source": "integer_pair_block_witness_n",
+        "source_exact_count_feasible": true,
+        "source_label": "feasibility_lex",
+        "source_status": "OPTIMAL"
+      },
+      "status": "error: Solver 'CLARABEL' failed. Try another solver, or solve with verbose=True for more information."
+    },
+    {
+      "matrix_psd_blocks": 70,
+      "n": [
+        6,
+        0,
+        11,
+        2,
+        0,
+        0
+      ],
+      "numerically_feasible": false,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 5.892,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          6,
+          0,
+          11,
+          2,
+          0,
+          0
+        ],
+        "source": "integer_pair_block_witness_n",
+        "source_exact_count_feasible": true,
+        "source_label": "max_omitted",
+        "source_status": "OPTIMAL"
+      },
+      "status": "error: Solver 'CLARABEL' failed. Try another solver, or solve with verbose=True for more information."
+    },
+    {
+      "matrix_psd_blocks": 70,
+      "n": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        17
+      ],
+      "numerically_feasible": false,
+      "scalar_psd_blocks": 23,
+      "solve_sec": 6.077,
+      "solver": "CLARABEL",
+      "source": {
+        "n": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          17
+        ],
+        "source": "integer_pair_block_witness_n",
+        "source_exact_count_feasible": true,
+        "source_label": "min_omitted",
+        "source_status": "OPTIMAL"
+      },
+      "status": "error: Solver 'CLARABEL' failed. Try another solver, or solve with verbose=True for more information."
+    }
+  ],
+  "saved_witnesses": [
+    {
+      "n": [
+        0,
+        0,
+        3,
+        5,
+        4,
+        7
+      ],
+      "y": "data/fixed_count_block_psd/n_0_0_3_5_4_7_y.npy",
+      "z": "data/fixed_count_block_psd/n_0_0_3_5_4_7_z.npy"
+    },
+    {
+      "n": [
+        1,
+        0,
+        3,
+        6,
+        2,
+        7
+      ],
+      "y": "data/fixed_count_block_psd/n_1_0_3_6_2_7_y.npy",
+      "z": "data/fixed_count_block_psd/n_1_0_3_6_2_7_z.npy"
+    },
+    {
+      "n": [
+        1,
+        0,
+        4,
+        5,
+        2,
+        7
+      ],
+      "y": "data/fixed_count_block_psd/n_1_0_4_5_2_7_y.npy",
+      "z": "data/fixed_count_block_psd/n_1_0_4_5_2_7_z.npy"
+    }
+  ],
+  "schema": "fixed_count_block_psd_v1",
+  "status_counts": {
+    "error: Solver 'CLARABEL' failed. Try another solver, or solve with verbose=True for more information.": 13,
+    "infeasible": 14,
+    "optimal_inaccurate": 6
+  }
+}

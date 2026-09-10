@@ -1,0 +1,198 @@
+{
+  "tensor": "M_<3,3,2>",
+  "prime": 65521,
+  "entries": [
+    {
+      "mode": 0,
+      "d": 1,
+      "label": "A=K^9",
+      "shape": "6x54",
+      "rank": 6,
+      "contrib_per_rank1": 1,
+      "bound": 6
+    },
+    {
+      "mode": 0,
+      "d": 2,
+      "label": "A=K^9",
+      "shape": "54x216",
+      "rank": 54,
+      "contrib_per_rank1": 8,
+      "bound": 7
+    },
+    {
+      "mode": 0,
+      "d": 3,
+      "label": "A=K^9",
+      "shape": "216x504",
+      "rank": 216,
+      "contrib_per_rank1": 28,
+      "bound": 8
+    },
+    {
+      "mode": 0,
+      "d": 4,
+      "label": "A=K^9",
+      "shape": "504x756",
+      "rank": 486,
+      "contrib_per_rank1": 56,
+      "bound": 9
+    },
+    {
+      "mode": 0,
+      "d": 5,
+      "label": "A=K^9",
+      "shape": "756x756",
+      "rank": 630,
+      "contrib_per_rank1": 70,
+      "bound": 9
+    },
+    {
+      "mode": 0,
+      "d": 6,
+      "label": "A=K^9",
+      "shape": "756x504",
+      "rank": 480,
+      "contrib_per_rank1": 56,
+      "bound": 9
+    },
+    {
+      "mode": 0,
+      "d": 7,
+      "label": "A=K^9",
+      "shape": "504x216",
+      "rank": 216,
+      "contrib_per_rank1": 28,
+      "bound": 8
+    },
+    {
+      "mode": 0,
+      "d": 8,
+      "label": "A=K^9",
+      "shape": "216x54",
+      "rank": 54,
+      "contrib_per_rank1": 8,
+      "bound": 7
+    },
+    {
+      "mode": 0,
+      "d": 9,
+      "label": "A=K^9",
+      "shape": "54x6",
+      "rank": 6,
+      "contrib_per_rank1": 1,
+      "bound": 6
+    },
+    {
+      "mode": 1,
+      "d": 1,
+      "label": "B=K^6(left)",
+      "shape": "9x36",
+      "rank": 9,
+      "contrib_per_rank1": 1,
+      "bound": 9
+    },
+    {
+      "mode": 1,
+      "d": 2,
+      "label": "B=K^6(left)",
+      "shape": "54x90",
+      "rank": 54,
+      "contrib_per_rank1": 5,
+      "bound": 11
+    },
+    {
+      "mode": 1,
+      "d": 3,
+      "label": "B=K^6(left)",
+      "shape": "135x120",
+      "rank": 105,
+      "contrib_per_rank1": 10,
+      "bound": 11
+    },
+    {
+      "mode": 1,
+      "d": 4,
+      "label": "B=K^6(left)",
+      "shape": "180x90",
+      "rank": 90,
+      "contrib_per_rank1": 10,
+      "bound": 9
+    },
+    {
+      "mode": 1,
+      "d": 5,
+      "label": "B=K^6(left)",
+      "shape": "135x36",
+      "rank": 36,
+      "contrib_per_rank1": 5,
+      "bound": 8
+    },
+    {
+      "mode": 1,
+      "d": 6,
+      "label": "B=K^6(left)",
+      "shape": "54x6",
+      "rank": 6,
+      "contrib_per_rank1": 1,
+      "bound": 6
+    },
+    {
+      "mode": 2,
+      "d": 1,
+      "label": "C=K^6(right)",
+      "shape": "6x54",
+      "rank": 6,
+      "contrib_per_rank1": 1,
+      "bound": 6
+    },
+    {
+      "mode": 2,
+      "d": 2,
+      "label": "C=K^6(right)",
+      "shape": "36x135",
+      "rank": 36,
+      "contrib_per_rank1": 5,
+      "bound": 8
+    },
+    {
+      "mode": 2,
+      "d": 3,
+      "label": "C=K^6(right)",
+      "shape": "90x180",
+      "rank": 90,
+      "contrib_per_rank1": 10,
+      "bound": 9
+    },
+    {
+      "mode": 2,
+      "d": 4,
+      "label": "C=K^6(right)",
+      "shape": "120x135",
+      "rank": 105,
+      "contrib_per_rank1": 10,
+      "bound": 11
+    },
+    {
+      "mode": 2,
+      "d": 5,
+      "label": "C=K^6(right)",
+      "shape": "90x54",
+      "rank": 54,
+      "contrib_per_rank1": 5,
+      "bound": 11
+    },
+    {
+      "mode": 2,
+      "d": 6,
+      "label": "C=K^6(right)",
+      "shape": "36x9",
+      "rank": 9,
+      "contrib_per_rank1": 1,
+      "bound": 9
+    }
+  ],
+  "best_bound": 11,
+  "best_source": "mode=1 d=2 label=B=K^6(left)",
+  "note": "This is the best pure exterior-Koszul flattening bound. Blaser's substitution method gives R >= 14, which is stronger. Self-contained Koszul bound: R(M_<3,3,2>) >= 11."
+}

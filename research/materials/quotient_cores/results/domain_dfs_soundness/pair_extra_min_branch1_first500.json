@@ -1,0 +1,1046 @@
+{
+  "cardinality_dead_seen": 198,
+  "cover": "data/domain_dfs_soundness/e11_wang_cap67_first512_cover.bin",
+  "elapsed_sec": 152.3409435749054,
+  "found": [
+    {
+      "avail": 12,
+      "exclude_size": 86,
+      "force": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        12,
+        16,
+        20,
+        64,
+        96
+      ],
+      "idx": 186,
+      "need": 9,
+      "pair_best": [
+        0,
+        6,
+        7,
+        7,
+        4,
+        4,
+        3,
+        3,
+        0,
+        5,
+        5,
+        2,
+        8,
+        -1,
+        6,
+        0
+      ],
+      "single_best": [
+        0,
+        7,
+        4,
+        3,
+        5,
+        7,
+        1
+      ]
+    },
+    {
+      "avail": 12,
+      "exclude_size": 87,
+      "force": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        12,
+        16,
+        20,
+        65,
+        97
+      ],
+      "idx": 196,
+      "need": 9,
+      "pair_best": [
+        7,
+        21,
+        7,
+        7,
+        4,
+        4,
+        3,
+        3,
+        0,
+        5,
+        5,
+        2,
+        8,
+        -1,
+        6,
+        0
+      ],
+      "single_best": [
+        7,
+        7,
+        4,
+        3,
+        5,
+        7,
+        1
+      ]
+    },
+    {
+      "avail": 12,
+      "exclude_size": 98,
+      "force": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        12,
+        16,
+        20,
+        72,
+        108
+      ],
+      "idx": 206,
+      "need": 9,
+      "pair_best": [
+        1,
+        6,
+        7,
+        7,
+        4,
+        4,
+        3,
+        3,
+        0,
+        5,
+        5,
+        2,
+        8,
+        -1,
+        6,
+        0
+      ],
+      "single_best": [
+        1,
+        7,
+        4,
+        3,
+        5,
+        7,
+        1
+      ]
+    },
+    {
+      "avail": 12,
+      "exclude_size": 99,
+      "force": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        12,
+        16,
+        20,
+        73,
+        109
+      ],
+      "idx": 215,
+      "need": 9,
+      "pair_best": [
+        7,
+        21,
+        7,
+        7,
+        4,
+        4,
+        3,
+        3,
+        0,
+        5,
+        5,
+        2,
+        8,
+        -1,
+        6,
+        0
+      ],
+      "single_best": [
+        7,
+        7,
+        4,
+        3,
+        5,
+        7,
+        1
+      ]
+    },
+    {
+      "avail": 11,
+      "exclude_size": 118,
+      "force": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        12,
+        16,
+        20,
+        73,
+        128
+      ],
+      "idx": 216,
+      "need": 9,
+      "pair_best": [
+        7,
+        12,
+        7,
+        7,
+        4,
+        4,
+        3,
+        3,
+        1,
+        4,
+        4,
+        2,
+        8,
+        -1,
+        6,
+        0
+      ],
+      "single_best": [
+        7,
+        7,
+        4,
+        3,
+        5,
+        6,
+        0
+      ]
+    },
+    {
+      "avail": 11,
+      "exclude_size": 118,
+      "force": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        12,
+        16,
+        20,
+        109,
+        128
+      ],
+      "idx": 246,
+      "need": 9,
+      "pair_best": [
+        1,
+        10,
+        7,
+        7,
+        5,
+        4,
+        2,
+        3,
+        0,
+        3,
+        5,
+        3,
+        8,
+        -1,
+        5,
+        0
+      ],
+      "single_best": [
+        10,
+        7,
+        4,
+        3,
+        5,
+        6,
+        0
+      ]
+    }
+  ],
+  "found_count": 6,
+  "frontier": "data/domain_dfs_soundness/branch1_prefix_d10_frontier.jsonl",
+  "live_seen": 49,
+  "minimized": [
+    {
+      "best_pair_after_min": [
+        0,
+        6,
+        7,
+        7,
+        3,
+        3,
+        4,
+        4,
+        0,
+        7,
+        7,
+        2,
+        10,
+        -1,
+        8,
+        0
+      ],
+      "best_single_after_min": [
+        0,
+        7,
+        3,
+        4,
+        7,
+        9,
+        2
+      ],
+      "learned_clause": "not x4 OR not x5 OR not x6 OR not x7 OR not x8 OR not x12 OR not x64 OR not x96",
+      "minimized": {
+        "A": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          12,
+          64,
+          96
+        ],
+        "E": [],
+        "certificate": {
+          "avail": 16,
+          "best_both_take": 0,
+          "both": 0,
+          "bound": 10,
+          "caps": [
+            7,
+            7
+          ],
+          "counts": [
+            3,
+            3
+          ],
+          "i_only": 7,
+          "j_only": 7,
+          "kind": "two",
+          "margin": -1,
+          "max_inside": 8,
+          "need": 11,
+          "outside": 2,
+          "residuals": [
+            4,
+            4
+          ],
+          "rows": [
+            0,
+            6
+          ],
+          "sat_removed_total": 231,
+          "valid": true
+        },
+        "excluded_count": 0,
+        "literal_count": 8
+      },
+      "rows": [
+        0,
+        6
+      ],
+      "source": {
+        "avail": 12,
+        "exclude_size": 86,
+        "force": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          12,
+          16,
+          20,
+          64,
+          96
+        ],
+        "idx": 186,
+        "need": 9,
+        "pair_best": [
+          0,
+          6,
+          7,
+          7,
+          4,
+          4,
+          3,
+          3,
+          0,
+          5,
+          5,
+          2,
+          8,
+          -1,
+          6,
+          0
+        ],
+        "single_best": [
+          0,
+          7,
+          4,
+          3,
+          5,
+          7,
+          1
+        ]
+      }
+    },
+    {
+      "best_pair_after_min": [
+        7,
+        21,
+        7,
+        7,
+        3,
+        3,
+        4,
+        4,
+        0,
+        7,
+        7,
+        2,
+        10,
+        -1,
+        8,
+        0
+      ],
+      "best_single_after_min": [
+        7,
+        7,
+        3,
+        4,
+        7,
+        9,
+        2
+      ],
+      "learned_clause": "not x4 OR not x5 OR not x6 OR not x7 OR not x8 OR not x12 OR not x65 OR not x97",
+      "minimized": {
+        "A": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          12,
+          65,
+          97
+        ],
+        "E": [],
+        "certificate": {
+          "avail": 16,
+          "best_both_take": 0,
+          "both": 0,
+          "bound": 10,
+          "caps": [
+            7,
+            7
+          ],
+          "counts": [
+            3,
+            3
+          ],
+          "i_only": 7,
+          "j_only": 7,
+          "kind": "two",
+          "margin": -1,
+          "max_inside": 8,
+          "need": 11,
+          "outside": 2,
+          "residuals": [
+            4,
+            4
+          ],
+          "rows": [
+            7,
+            21
+          ],
+          "sat_removed_total": 231,
+          "valid": true
+        },
+        "excluded_count": 0,
+        "literal_count": 8
+      },
+      "rows": [
+        7,
+        21
+      ],
+      "source": {
+        "avail": 12,
+        "exclude_size": 87,
+        "force": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          12,
+          16,
+          20,
+          65,
+          97
+        ],
+        "idx": 196,
+        "need": 9,
+        "pair_best": [
+          7,
+          21,
+          7,
+          7,
+          4,
+          4,
+          3,
+          3,
+          0,
+          5,
+          5,
+          2,
+          8,
+          -1,
+          6,
+          0
+        ],
+        "single_best": [
+          7,
+          7,
+          4,
+          3,
+          5,
+          7,
+          1
+        ]
+      }
+    },
+    {
+      "best_pair_after_min": [
+        1,
+        6,
+        7,
+        7,
+        3,
+        3,
+        4,
+        4,
+        0,
+        7,
+        7,
+        2,
+        10,
+        -1,
+        8,
+        0
+      ],
+      "best_single_after_min": [
+        1,
+        7,
+        3,
+        4,
+        7,
+        9,
+        2
+      ],
+      "learned_clause": "not x4 OR not x5 OR not x6 OR not x7 OR not x8 OR not x12 OR not x72 OR not x108",
+      "minimized": {
+        "A": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          12,
+          72,
+          108
+        ],
+        "E": [],
+        "certificate": {
+          "avail": 16,
+          "best_both_take": 0,
+          "both": 0,
+          "bound": 10,
+          "caps": [
+            7,
+            7
+          ],
+          "counts": [
+            3,
+            3
+          ],
+          "i_only": 7,
+          "j_only": 7,
+          "kind": "two",
+          "margin": -1,
+          "max_inside": 8,
+          "need": 11,
+          "outside": 2,
+          "residuals": [
+            4,
+            4
+          ],
+          "rows": [
+            1,
+            6
+          ],
+          "sat_removed_total": 231,
+          "valid": true
+        },
+        "excluded_count": 0,
+        "literal_count": 8
+      },
+      "rows": [
+        1,
+        6
+      ],
+      "source": {
+        "avail": 12,
+        "exclude_size": 98,
+        "force": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          12,
+          16,
+          20,
+          72,
+          108
+        ],
+        "idx": 206,
+        "need": 9,
+        "pair_best": [
+          1,
+          6,
+          7,
+          7,
+          4,
+          4,
+          3,
+          3,
+          0,
+          5,
+          5,
+          2,
+          8,
+          -1,
+          6,
+          0
+        ],
+        "single_best": [
+          1,
+          7,
+          4,
+          3,
+          5,
+          7,
+          1
+        ]
+      }
+    },
+    {
+      "best_pair_after_min": [
+        7,
+        21,
+        7,
+        7,
+        3,
+        3,
+        4,
+        4,
+        0,
+        7,
+        7,
+        2,
+        10,
+        -1,
+        8,
+        0
+      ],
+      "best_single_after_min": [
+        7,
+        7,
+        3,
+        4,
+        7,
+        9,
+        2
+      ],
+      "learned_clause": "not x4 OR not x5 OR not x6 OR not x7 OR not x8 OR not x12 OR not x73 OR not x109",
+      "minimized": {
+        "A": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          12,
+          73,
+          109
+        ],
+        "E": [],
+        "certificate": {
+          "avail": 16,
+          "best_both_take": 0,
+          "both": 0,
+          "bound": 10,
+          "caps": [
+            7,
+            7
+          ],
+          "counts": [
+            3,
+            3
+          ],
+          "i_only": 7,
+          "j_only": 7,
+          "kind": "two",
+          "margin": -1,
+          "max_inside": 8,
+          "need": 11,
+          "outside": 2,
+          "residuals": [
+            4,
+            4
+          ],
+          "rows": [
+            7,
+            21
+          ],
+          "sat_removed_total": 231,
+          "valid": true
+        },
+        "excluded_count": 0,
+        "literal_count": 8
+      },
+      "rows": [
+        7,
+        21
+      ],
+      "source": {
+        "avail": 12,
+        "exclude_size": 99,
+        "force": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          12,
+          16,
+          20,
+          73,
+          109
+        ],
+        "idx": 215,
+        "need": 9,
+        "pair_best": [
+          7,
+          21,
+          7,
+          7,
+          4,
+          4,
+          3,
+          3,
+          0,
+          5,
+          5,
+          2,
+          8,
+          -1,
+          6,
+          0
+        ],
+        "single_best": [
+          7,
+          7,
+          4,
+          3,
+          5,
+          7,
+          1
+        ]
+      }
+    },
+    {
+      "best_pair_after_min": [
+        7,
+        12,
+        7,
+        7,
+        3,
+        4,
+        4,
+        3,
+        1,
+        6,
+        5,
+        2,
+        9,
+        -1,
+        7,
+        0
+      ],
+      "best_single_after_min": [
+        7,
+        7,
+        3,
+        4,
+        7,
+        7,
+        1
+      ],
+      "learned_clause": "not x4 OR not x5 OR not x6 OR not x7 OR not x12 OR not x16 OR not x20 OR not x73 OR not x128 OR x64 OR x97 OR x109",
+      "minimized": {
+        "A": [
+          4,
+          5,
+          6,
+          7,
+          12,
+          16,
+          20,
+          73,
+          128
+        ],
+        "E": [
+          64,
+          97,
+          109
+        ],
+        "certificate": {
+          "avail": 14,
+          "best_both_take": 0,
+          "both": 1,
+          "bound": 9,
+          "caps": [
+            7,
+            7
+          ],
+          "counts": [
+            3,
+            4
+          ],
+          "i_only": 6,
+          "j_only": 5,
+          "kind": "two",
+          "margin": -1,
+          "max_inside": 7,
+          "need": 10,
+          "outside": 2,
+          "residuals": [
+            4,
+            3
+          ],
+          "rows": [
+            7,
+            12
+          ],
+          "sat_removed_total": 229,
+          "valid": true
+        },
+        "excluded_count": 3,
+        "literal_count": 12
+      },
+      "rows": [
+        7,
+        12
+      ],
+      "source": {
+        "avail": 11,
+        "exclude_size": 118,
+        "force": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          12,
+          16,
+          20,
+          73,
+          128
+        ],
+        "idx": 216,
+        "need": 9,
+        "pair_best": [
+          7,
+          12,
+          7,
+          7,
+          4,
+          4,
+          3,
+          3,
+          1,
+          4,
+          4,
+          2,
+          8,
+          -1,
+          6,
+          0
+        ],
+        "single_best": [
+          7,
+          7,
+          4,
+          3,
+          5,
+          6,
+          0
+        ]
+      }
+    },
+    {
+      "best_pair_after_min": [
+        1,
+        10,
+        7,
+        7,
+        5,
+        4,
+        2,
+        3,
+        0,
+        3,
+        5,
+        3,
+        8,
+        -1,
+        5,
+        0
+      ],
+      "best_single_after_min": [
+        10,
+        7,
+        4,
+        3,
+        5,
+        6,
+        0
+      ],
+      "learned_clause": "not x4 OR not x5 OR not x6 OR not x7 OR not x8 OR not x12 OR not x16 OR not x20 OR not x109 OR not x128 OR x65 OR x73 OR x96",
+      "minimized": {
+        "A": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          12,
+          16,
+          20,
+          109,
+          128
+        ],
+        "E": [
+          65,
+          73,
+          96
+        ],
+        "certificate": {
+          "avail": 11,
+          "best_both_take": 0,
+          "both": 0,
+          "bound": 8,
+          "caps": [
+            7,
+            7
+          ],
+          "counts": [
+            5,
+            4
+          ],
+          "i_only": 3,
+          "j_only": 5,
+          "kind": "two",
+          "margin": -1,
+          "max_inside": 5,
+          "need": 9,
+          "outside": 3,
+          "residuals": [
+            2,
+            3
+          ],
+          "rows": [
+            1,
+            10
+          ],
+          "sat_removed_total": 231,
+          "valid": true
+        },
+        "excluded_count": 3,
+        "literal_count": 13
+      },
+      "rows": [
+        1,
+        10
+      ],
+      "source": {
+        "avail": 11,
+        "exclude_size": 118,
+        "force": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          12,
+          16,
+          20,
+          109,
+          128
+        ],
+        "idx": 246,
+        "need": 9,
+        "pair_best": [
+          1,
+          10,
+          7,
+          7,
+          5,
+          4,
+          2,
+          3,
+          0,
+          3,
+          5,
+          3,
+          8,
+          -1,
+          5,
+          0
+        ],
+        "single_best": [
+          10,
+          7,
+          4,
+          3,
+          5,
+          6,
+          0
+        ]
+      }
+    }
+  ],
+  "pair_limit": 64,
+  "records_scanned": 247,
+  "schema": "s0908_pair_extra_minimize_v1"
+}

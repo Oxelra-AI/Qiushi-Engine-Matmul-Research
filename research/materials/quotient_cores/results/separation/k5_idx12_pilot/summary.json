@@ -1,0 +1,123 @@
+{
+  "records": [
+    {
+      "constraint_summary_by_residual": {
+        "2": 1943,
+        "3": 1639,
+        "4": 81
+      },
+      "constraints_added": 3663,
+      "drat_cadical_sec": 5.69,
+      "drat_sha256": "0b571ec582f88c2e6ca24d3ac137180f9516710f0ffb37c84ddb72efe1b6b490",
+      "drat_trim_sec": 9.28,
+      "drat_verified": true,
+      "final_clauses": 47428,
+      "final_cnf": "workspace/data/separation/k5_idx12_pilot/idx012_final.cnf",
+      "final_cnf_sha256": "9463fa3c4539ec768a5dd8cc489d112700aaaff6b060099c74bb1efc33385919",
+      "final_variables": 2399,
+      "idx": 12,
+      "k": 5,
+      "matching": [
+        1,
+        16,
+        27,
+        256,
+        325
+      ],
+      "round_log": [
+        {
+          "cadical_exit": 10,
+          "cadical_sec": 0.06,
+          "clauses": 9705,
+          "elapsed_sec": 53.47,
+          "lut_violations": 8089,
+          "max_excess": 4,
+          "model_size": 15,
+          "new_by_residual": {
+            "2": 467,
+            "3": 393,
+            "4": 13
+          },
+          "new_clauses": 8687,
+          "new_constraints": 873,
+          "result": "SAT_SEPARATED",
+          "round": 0,
+          "skipped_large": 7192,
+          "variables": 2399
+        },
+        {
+          "cadical_exit": 10,
+          "cadical_sec": 1.12,
+          "clauses": 18392,
+          "elapsed_sec": 50.15,
+          "lut_violations": 7281,
+          "max_excess": 4,
+          "model_size": 15,
+          "new_by_residual": {
+            "2": 406,
+            "3": 286,
+            "4": 20
+          },
+          "new_clauses": 7159,
+          "new_constraints": 712,
+          "result": "SAT_SEPARATED",
+          "round": 1,
+          "skipped_large": 6475,
+          "variables": 2399
+        },
+        {
+          "cadical_exit": 10,
+          "cadical_sec": 0.64,
+          "clauses": 25551,
+          "elapsed_sec": 49.11,
+          "lut_violations": 8706,
+          "max_excess": 5,
+          "model_size": 15,
+          "new_by_residual": {
+            "2": 473,
+            "3": 398,
+            "4": 15
+          },
+          "new_clauses": 9321,
+          "new_constraints": 886,
+          "result": "SAT_SEPARATED",
+          "round": 2,
+          "skipped_large": 7737,
+          "variables": 2399
+        },
+        {
+          "cadical_exit": 10,
+          "cadical_sec": 2.98,
+          "clauses": 34872,
+          "elapsed_sec": 54.17,
+          "lut_violations": 10678,
+          "max_excess": 4,
+          "model_size": 15,
+          "new_by_residual": {
+            "2": 597,
+            "3": 562,
+            "4": 33
+          },
+          "new_clauses": 12556,
+          "new_constraints": 1192,
+          "result": "SAT_SEPARATED",
+          "round": 3,
+          "skipped_large": 9385,
+          "variables": 2399
+        },
+        {
+          "cadical_exit": 20,
+          "cadical_sec": 5.61,
+          "clauses": 47428,
+          "result": "UNSAT",
+          "round": 4,
+          "variables": 2399
+        }
+      ],
+      "rounds": 5,
+      "status": "UNSAT",
+      "total_elapsed_sec": 242.35
+    }
+  ],
+  "schema": "iterative_separation_v1"
+}

@@ -1,0 +1,86 @@
+{
+  "build_sec": 17.409,
+  "candidate_found": null,
+  "constraint_summary": {
+    "distinct_points": 255,
+    "excess": {
+      "enabled": true,
+      "excess_variables": 366,
+      "ineq_by_source_rank": {
+        "1": 12012,
+        "2": 54600,
+        "3": 26352
+      },
+      "ineq_by_source_target_rank": {
+        "(1, 1)": 2112,
+        "(1, 2)": 9900,
+        "(2, 1)": 9900,
+        "(2, 2)": 44700,
+        "(3, 1)": 4752,
+        "(3, 2)": 21600
+      },
+      "leakage_inequalities_B": 46482,
+      "leakage_inequalities_C": 46482,
+      "mode": "unconditional",
+      "skipped_trivial_B": 0,
+      "skipped_trivial_C": 0,
+      "source_count": 255,
+      "source_ranks": [
+        1,
+        2,
+        3
+      ],
+      "target_count": 183,
+      "target_ranks": [
+        1,
+        2
+      ],
+      "tight_booleans": 0
+    },
+    "rank": 19,
+    "scalar_bounds": {
+      "by_rank": {
+        "1": 33,
+        "2": 150,
+        "3": 72
+      },
+      "count": 255
+    },
+    "wang": {
+      "added": 417197,
+      "by_L": {
+        "11": 865,
+        "12": 61232,
+        "13": 8130,
+        "14": 81540,
+        "15": 138902,
+        "16": 83046,
+        "17": 34664,
+        "18": 687,
+        "3": 33,
+        "6": 578,
+        "9": 7520
+      },
+      "by_dim8": {
+        "1": 255,
+        "2": 10795,
+        "3": 97155,
+        "4": 200787,
+        "5": 97155,
+        "6": 10795,
+        "7": 255
+      },
+      "mode": "complete",
+      "skipped_not_kept": 0
+    }
+  },
+  "elapsed_sec": 536.576,
+  "last": {
+    "round": 0,
+    "solve_sec": 519.167,
+    "status": "UNKNOWN"
+  },
+  "out": "data/unconditional_leakage/solve_complete600.json",
+  "purpose": "CP-SAT support search with UNCONDITIONAL leakage inequalities — no tightness guards, no big-M.",
+  "schema": "s0908_unconditional_leakage_v1"
+}

@@ -1,0 +1,50 @@
+{
+  "schema": "correction_manifest_v1",
+  "field": "F2",
+  "active_object": "E11 quotient core distinct projected-A length-19 branch",
+  "correction": {
+    "issue": "analysis trace equations used M_inv[b,c] as coefficient on X[b,c]. For X=b c^T, tr(M_inv X)=sum_{b,c} M_inv[c,b] X[b,c].",
+    "invalidated_claims": [
+      "single q=49 36-row trace certificate as tensor-decomposition evidence",
+      "six single saturated rank-9 contractions individually rejecting the near-miss",
+      "dual-basis overlap constraints as new separating power beyond binary contraction lower bounds"
+    ],
+    "unaffected_prior_results": [
+      "analysis repeated projected-A E11-core branch DRAT certificate",
+      "analysis bridge from future distinct-core exclusion to R_F2(T)>=21",
+      "analysis linked annihilator-weight Wang reformulation",
+      "analysis repaired fixed-A rank-one completion results"
+    ]
+  },
+  "new_artifacts": {
+    "corrected_analysis": "data/corrected_independent-verification-record",
+    "corrected_certificate": "data/corrected_independent-verification-record",
+    "existing_candidate_batch": "data/corrected_independent-verification-record",
+    "compressed_support_system": "data/corrected_independent-verification-record",
+    "random_exact_control": "data/corrected_independent-verification-record",
+    "single_q_structure": "data/corrected_independent-verification-record",
+    "research_note": "notes/corrected_trace_reassessment.md",
+    "verification_verifier": "independent-verification-record"
+  },
+  "main_checked_numbers": {
+    "cn122_actual_correct_trace_failures": 0,
+    "cn122_actual_wrong_pairing_disagreements": 16,
+    "synthetic_nonsymmetric_correct_failures": 0,
+    "synthetic_nonsymmetric_wrong_disagreements": 136,
+    "random_exact_controls_total_saturated_rank9": 155,
+    "random_exact_controls_correct_failures": 0,
+    "random_exact_controls_wrong_disagreements": 688,
+    "q49_correct_pairing_tr_Minv_M": 1,
+    "q49_wrong_entry_pairing": 0,
+    "near_miss_corrected_all_trace_consistent": false,
+    "near_miss_corrected_all_trace_rank": 732,
+    "near_miss_corrected_all_trace_rows": 792,
+    "near_miss_corrected_certificate_rows": 122,
+    "near_miss_single_corrected_q_inconsistent": 0,
+    "near_miss_first_inconsistent_q_subset_size": 8,
+    "compressed_existing_candidates_consistent": 16,
+    "compressed_existing_candidates_inconsistent": 15,
+    "proper_subspaces_inside_rank9_kernels_with_L_le9_count": 2592
+  },
+  "status": "distinct branch remains open; corrected trace gives local multi-contraction support rejection for known near-misses but no complete-Wang-admissible support or global exclusion"
+}

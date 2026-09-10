@@ -1,0 +1,89 @@
+{
+  "build_sec": 48.31,
+  "constraint_summary": {
+    "contraction_lower_bounds": 255,
+    "contraction_weight_definitions": 255,
+    "lex_aux_vars": 0,
+    "lex_maps_used": 0,
+    "skipped_by_minL": 159899,
+    "trace_cut_size_hist": {
+      "5": 246
+    },
+    "trace_dependency_cuts": 246,
+    "wang_by_dim": {
+      "1": 255,
+      "2": 10795,
+      "3": 96057,
+      "4": 141054,
+      "5": 9138
+    },
+    "wang_rows": 257299
+  },
+  "core": "E11 quotient core",
+  "field": "F2",
+  "hint_added": true,
+  "hint_source": "data/distinct_line_cover/best_L15_hint_rounds.json",
+  "meaning": "255-variable distinct A-support model with complete/threshold Wang rows, contraction lower bounds, optional sound trace-dependency cuts, and optional whole-support lex symmetry. FEASIBLE is only an A-support candidate needing B/C completion; INFEASIBLE still needs proof-producing replay.",
+  "parameters": {
+    "lex_map_limit": 64,
+    "lex_symmetry": "none",
+    "max_size5_cuts": null,
+    "min_L": 15,
+    "seed": 5302,
+    "solver_time": 120.0,
+    "trace_cuts": "minimal",
+    "workers": 8
+  },
+  "rank_s": 19,
+  "schema": "distinct_trace_cut_cpsat_v1",
+  "solution": {
+    "A_cols": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      20,
+      24,
+      31,
+      32,
+      64,
+      73,
+      109,
+      127,
+      128,
+      141,
+      160,
+      182,
+      192,
+      219
+    ],
+    "affine_dim": 891,
+    "complete_wang_max_excess": 1,
+    "complete_wang_violations": 12,
+    "distinct_points": 19,
+    "linear_pass": true,
+    "quotient_rank_violations_size2": 0,
+    "rank9_weight_hist": {
+      "10": 8,
+      "11": 24,
+      "12": 12,
+      "13": 8,
+      "14": 4,
+      "9": 16
+    },
+    "trace_local_dependency": {
+      "exact_local_inconsistent_examples": [],
+      "exact_local_inconsistent_terms": 0,
+      "minimal_cut_examples": [],
+      "minimal_cut_violations": 0,
+      "saturated_rank9_count": 16
+    },
+    "transversal_failures": 0,
+    "zero_domain_terms": 0
+  },
+  "solve_sec": 26.481,
+  "solver": "OR-Tools CP-SAT",
+  "status": "OPTIMAL",
+  "total_elapsed_sec": 75.04
+}

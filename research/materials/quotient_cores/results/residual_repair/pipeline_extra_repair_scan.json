@@ -1,0 +1,6351 @@
+{
+  "aggregate_exact_hist": {
+    "d_eq_k": 186,
+    "d_gt_k": 996,
+    "d_lt_k": 4,
+    "hall_fail": 186
+  },
+  "aggregate_status_hist": {
+    "IMPOSSIBLE_D_GT_K": 996,
+    "NO_REPAIR_HALL_FAIL": 186,
+    "UNDERDETERMINED_D_LT_K": 4
+  },
+  "candidate_records": [
+    {
+      "changed_pairs": [
+        {
+          "new_A": 274,
+          "old_A": 146,
+          "slot": 7
+        },
+        {
+          "new_A": 278,
+          "old_A": 284,
+          "slot": 12
+        }
+      ],
+      "changed_slots": [
+        7,
+        12
+      ],
+      "delete_index": 19,
+      "deleted_A": 384,
+      "extra_scans": {
+        "0": {
+          "examples": [],
+          "hist": {
+            "IMPOSSIBLE_D_GT_K": 1
+          },
+          "total": 1
+        },
+        "1": {
+          "examples": [],
+          "hist": {
+            "IMPOSSIBLE_D_GT_K": 20
+          },
+          "total": 20
+        },
+        "2": {
+          "examples": [
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                7,
+                12,
+                14
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 4,
+              "extra_slots": [
+                0,
+                14
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 4,
+              "rank_L": 18,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                4,
+                7,
+                12
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 4,
+              "extra_slots": [
+                1,
+                4
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 4,
+              "rank_L": 18,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                12,
+                15
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 4,
+              "extra_slots": [
+                1,
+                15
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 4,
+              "rank_L": 18,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": null,
+              "block": [
+                2,
+                7,
+                12,
+                13
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 4,
+              "extra_slots": [
+                2,
+                13
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 4,
+              "rank_L": 18,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                4,
+                7,
+                12,
+                15
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 4,
+              "extra_slots": [
+                4,
+                15
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 4,
+              "rank_L": 18,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": null,
+              "block": [
+                7,
+                10,
+                12,
+                20
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 4,
+              "extra_slots": [
+                10,
+                20
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 4,
+              "rank_L": 18,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": null,
+              "block": [
+                7,
+                12,
+                17,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 4,
+              "extra_slots": [
+                17,
+                19
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 4,
+              "rank_L": 18,
+              "status": "NO_REPAIR_HALL_FAIL"
+            }
+          ],
+          "hist": {
+            "IMPOSSIBLE_D_GT_K": 183,
+            "NO_REPAIR_HALL_FAIL": 7
+          },
+          "total": 190
+        }
+      },
+      "name": "del_flip_rank23_text_384",
+      "peer_status": "BRENT_UNSAT",
+      "source": "flip_rank23_text"
+    },
+    {
+      "changed_pairs": [
+        {
+          "new_A": 130,
+          "old_A": 146,
+          "slot": 7
+        },
+        {
+          "new_A": 219,
+          "old_A": 269,
+          "slot": 8
+        },
+        {
+          "new_A": 452,
+          "old_A": 384,
+          "slot": 19
+        }
+      ],
+      "changed_slots": [
+        7,
+        8,
+        19
+      ],
+      "delete_index": 20,
+      "deleted_A": 268,
+      "extra_scans": {
+        "0": {
+          "examples": [],
+          "hist": {
+            "IMPOSSIBLE_D_GT_K": 1
+          },
+          "total": 1
+        },
+        "1": {
+          "examples": [
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 4,
+              "extra_slots": [
+                1
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 4,
+              "rank_L": 18,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": null,
+              "block": [
+                4,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 4,
+              "extra_slots": [
+                4
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 4,
+              "rank_L": 18,
+              "status": "NO_REPAIR_HALL_FAIL"
+            }
+          ],
+          "hist": {
+            "IMPOSSIBLE_D_GT_K": 17,
+            "NO_REPAIR_HALL_FAIL": 2
+          },
+          "total": 19
+        },
+        "2": {
+          "examples": [
+            {
+              "H_dims": [
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                2,
+                1,
+                2,
+                1,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                0,
+                1
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  1
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                2,
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                4,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                0,
+                4
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  1
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                7,
+                8,
+                14,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                0,
+                14
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                2,
+                1,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                2,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                2
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                2,
+                1,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                3,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                3
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": false,
+              "block": [
+                1,
+                4,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 4,
+              "extra_slots": [
+                1,
+                4
+              ],
+              "hall_failure": null,
+              "hall_ok": null,
+              "k": 5,
+              "rank_L": 17,
+              "status": "UNDERDETERMINED_D_LT_K"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                2,
+                1,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                5,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                5
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                2,
+                1,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                6,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                6
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                8,
+                9,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                9
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                8,
+                10,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                10
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                8,
+                11,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                11
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                8,
+                12,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                12
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                8,
+                13,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                13
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                8,
+                14,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                14
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                2,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                4,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                8,
+                15,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                15
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                8,
+                16,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                16
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                8,
+                17,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                17
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                8,
+                18,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                18
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                8,
+                19,
+                20
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                20
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                8,
+                19,
+                21
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                21
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                2,
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                2,
+                4,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                2,
+                4
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  1
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": null,
+              "block": [
+                2,
+                6,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                2,
+                6
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": null,
+              "block": [
+                2,
+                7,
+                8,
+                13,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                2,
+                13
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                2,
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                3,
+                4,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                3,
+                4
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  1
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                4,
+                5,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                5
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                4,
+                6,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                6
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                4,
+                7,
+                8,
+                9,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                9
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                4,
+                7,
+                8,
+                10,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                10
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                4,
+                7,
+                8,
+                11,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                11
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                4,
+                7,
+                8,
+                12,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                12
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            }
+          ],
+          "hist": {
+            "IMPOSSIBLE_D_GT_K": 129,
+            "NO_REPAIR_HALL_FAIL": 41,
+            "UNDERDETERMINED_D_LT_K": 1
+          },
+          "total": 171
+        }
+      },
+      "name": "del_flip_rank23_text_268",
+      "peer_status": "BRENT_UNSAT",
+      "source": "flip_rank23_text"
+    },
+    {
+      "changed_pairs": [
+        {
+          "new_A": 6,
+          "old_A": 400,
+          "slot": 0
+        },
+        {
+          "new_A": 92,
+          "old_A": 260,
+          "slot": 1
+        },
+        {
+          "new_A": 18,
+          "old_A": 146,
+          "slot": 7
+        }
+      ],
+      "changed_slots": [
+        0,
+        1,
+        7
+      ],
+      "delete_index": 10,
+      "deleted_A": 392,
+      "extra_scans": {
+        "0": {
+          "examples": [],
+          "hist": {
+            "IMPOSSIBLE_D_GT_K": 1
+          },
+          "total": 1
+        },
+        "1": {
+          "examples": [
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 4,
+              "extra_slots": [
+                4
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 4,
+              "rank_L": 18,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                7,
+                10
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 4,
+              "extra_slots": [
+                10
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 4,
+              "rank_L": 18,
+              "status": "NO_REPAIR_HALL_FAIL"
+            }
+          ],
+          "hist": {
+            "IMPOSSIBLE_D_GT_K": 17,
+            "NO_REPAIR_HALL_FAIL": 2
+          },
+          "total": 19
+        },
+        "2": {
+          "examples": [
+            {
+              "H_dims": [
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                2,
+                1,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                2,
+                4,
+                7
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                2,
+                4
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                2,
+                1,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                2,
+                7,
+                10
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                2,
+                10
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                2,
+                7,
+                12
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                2,
+                12
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                2,
+                1,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                3,
+                4,
+                7
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                3,
+                4
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                2,
+                1,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                3,
+                7,
+                10
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                3,
+                10
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                5,
+                7
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                5
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                6,
+                7
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                6
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                8
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                8
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                9
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                9
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": false,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                10
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 4,
+              "extra_slots": [
+                4,
+                10
+              ],
+              "hall_failure": null,
+              "hall_ok": null,
+              "k": 5,
+              "rank_L": 17,
+              "status": "UNDERDETERMINED_D_LT_K"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                11
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                11
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                12
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                12
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                13
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                13
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                14
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                14
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                15
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                15
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                16
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                16
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                17
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                17
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                18
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                18
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                19
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                20
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                20
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                21
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                21
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                2,
+                1,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                5,
+                7,
+                10
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                5,
+                10
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                2,
+                1,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                6,
+                7,
+                10
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                6,
+                10
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                7,
+                8,
+                10
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                8,
+                10
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                8,
+                19
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                7,
+                9,
+                10
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                9,
+                10
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                7,
+                10,
+                11
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                10,
+                11
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                7,
+                10,
+                12
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                10,
+                12
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                7,
+                10,
+                13
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                10,
+                13
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                4
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                7,
+                10,
+                14
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                10,
+                14
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            }
+          ],
+          "hist": {
+            "IMPOSSIBLE_D_GT_K": 129,
+            "NO_REPAIR_HALL_FAIL": 41,
+            "UNDERDETERMINED_D_LT_K": 1
+          },
+          "total": 171
+        }
+      },
+      "name": "del_flip_rank23_text_392",
+      "peer_status": "BRENT_UNSAT",
+      "source": "flip_rank23_text"
+    },
+    {
+      "changed_pairs": [
+        {
+          "new_A": 33,
+          "old_A": 36,
+          "slot": 7
+        },
+        {
+          "new_A": 105,
+          "old_A": 457,
+          "slot": 12
+        }
+      ],
+      "changed_slots": [
+        7,
+        12
+      ],
+      "delete_index": 19,
+      "deleted_A": 5,
+      "extra_scans": {
+        "0": {
+          "examples": [],
+          "hist": {
+            "IMPOSSIBLE_D_GT_K": 1
+          },
+          "total": 1
+        },
+        "1": {
+          "examples": [],
+          "hist": {
+            "IMPOSSIBLE_D_GT_K": 20
+          },
+          "total": 20
+        },
+        "2": {
+          "examples": [
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                7,
+                12,
+                14
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 4,
+              "extra_slots": [
+                0,
+                14
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 4,
+              "rank_L": 18,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                4,
+                7,
+                12
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 4,
+              "extra_slots": [
+                1,
+                4
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 4,
+              "rank_L": 18,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                12,
+                15
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 4,
+              "extra_slots": [
+                1,
+                15
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 4,
+              "rank_L": 18,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": null,
+              "block": [
+                2,
+                7,
+                12,
+                13
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 4,
+              "extra_slots": [
+                2,
+                13
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 4,
+              "rank_L": 18,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                4,
+                7,
+                12,
+                15
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 4,
+              "extra_slots": [
+                4,
+                15
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 4,
+              "rank_L": 18,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": null,
+              "block": [
+                7,
+                10,
+                12,
+                20
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 4,
+              "extra_slots": [
+                10,
+                20
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 4,
+              "rank_L": 18,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": null,
+              "block": [
+                7,
+                12,
+                17,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 4,
+              "extra_slots": [
+                17,
+                19
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 4,
+              "rank_L": 18,
+              "status": "NO_REPAIR_HALL_FAIL"
+            }
+          ],
+          "hist": {
+            "IMPOSSIBLE_D_GT_K": 183,
+            "NO_REPAIR_HALL_FAIL": 7
+          },
+          "total": 190
+        }
+      },
+      "name": "del_pivot17_transformed_rank23_5",
+      "peer_status": "BRENT_UNSAT",
+      "source": "pivot17_transformed_rank23"
+    },
+    {
+      "changed_pairs": [
+        {
+          "new_A": 292,
+          "old_A": 36,
+          "slot": 7
+        },
+        {
+          "new_A": 39,
+          "old_A": 89,
+          "slot": 8
+        },
+        {
+          "new_A": 79,
+          "old_A": 5,
+          "slot": 19
+        }
+      ],
+      "changed_slots": [
+        7,
+        8,
+        19
+      ],
+      "delete_index": 20,
+      "deleted_A": 201,
+      "extra_scans": {
+        "0": {
+          "examples": [],
+          "hist": {
+            "IMPOSSIBLE_D_GT_K": 1
+          },
+          "total": 1
+        },
+        "1": {
+          "examples": [
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 4,
+              "extra_slots": [
+                1
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 4,
+              "rank_L": 18,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": null,
+              "block": [
+                4,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 4,
+              "extra_slots": [
+                4
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 4,
+              "rank_L": 18,
+              "status": "NO_REPAIR_HALL_FAIL"
+            }
+          ],
+          "hist": {
+            "IMPOSSIBLE_D_GT_K": 17,
+            "NO_REPAIR_HALL_FAIL": 2
+          },
+          "total": 19
+        },
+        "2": {
+          "examples": [
+            {
+              "H_dims": [
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                2,
+                1,
+                2,
+                1,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                0,
+                1
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  1
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                2,
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                4,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                0,
+                4
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  1
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                7,
+                8,
+                14,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                0,
+                14
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                2,
+                1,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                2,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                2
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                2,
+                1,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                3,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                3
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": false,
+              "block": [
+                1,
+                4,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 4,
+              "extra_slots": [
+                1,
+                4
+              ],
+              "hall_failure": null,
+              "hall_ok": null,
+              "k": 5,
+              "rank_L": 17,
+              "status": "UNDERDETERMINED_D_LT_K"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                2,
+                1,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                5,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                5
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                2,
+                1,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                6,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                6
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                8,
+                9,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                9
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                8,
+                10,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                10
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                8,
+                11,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                11
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                8,
+                12,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                12
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                8,
+                13,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                13
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                8,
+                14,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                14
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                2,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                4,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                8,
+                15,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                15
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                8,
+                16,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                16
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                8,
+                17,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                17
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                8,
+                18,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                18
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                8,
+                19,
+                20
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                20
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                1,
+                7,
+                8,
+                19,
+                21
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                1,
+                21
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                2,
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                2,
+                4,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                2,
+                4
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  1
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": null,
+              "block": [
+                2,
+                6,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                2,
+                6
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": null,
+              "block": [
+                2,
+                7,
+                8,
+                13,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                2,
+                13
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                2,
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                3,
+                4,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                3,
+                4
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  1
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                4,
+                5,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                5
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                2,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                4,
+                6,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                6
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                4,
+                7,
+                8,
+                9,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                9
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                4,
+                7,
+                8,
+                10,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                10
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                4,
+                7,
+                8,
+                11,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                11
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                4,
+                7,
+                8,
+                12,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                12
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            }
+          ],
+          "hist": {
+            "IMPOSSIBLE_D_GT_K": 129,
+            "NO_REPAIR_HALL_FAIL": 41,
+            "UNDERDETERMINED_D_LT_K": 1
+          },
+          "total": 171
+        }
+      },
+      "name": "del_pivot17_transformed_rank23_201",
+      "peer_status": "BRENT_UNSAT",
+      "source": "pivot17_transformed_rank23"
+    },
+    {
+      "changed_pairs": [
+        {
+          "new_A": 360,
+          "old_A": 261,
+          "slot": 0
+        },
+        {
+          "new_A": 3,
+          "old_A": 73,
+          "slot": 1
+        },
+        {
+          "new_A": 32,
+          "old_A": 36,
+          "slot": 7
+        }
+      ],
+      "changed_slots": [
+        0,
+        1,
+        7
+      ],
+      "delete_index": 10,
+      "deleted_A": 133,
+      "extra_scans": {
+        "0": {
+          "examples": [],
+          "hist": {
+            "IMPOSSIBLE_D_GT_K": 1
+          },
+          "total": 1
+        },
+        "1": {
+          "examples": [
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 4,
+              "extra_slots": [
+                4
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 4,
+              "rank_L": 18,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                7,
+                10
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 4,
+              "extra_slots": [
+                10
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 4,
+              "rank_L": 18,
+              "status": "NO_REPAIR_HALL_FAIL"
+            }
+          ],
+          "hist": {
+            "IMPOSSIBLE_D_GT_K": 17,
+            "NO_REPAIR_HALL_FAIL": 2
+          },
+          "total": 19
+        },
+        "2": {
+          "examples": [
+            {
+              "H_dims": [
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                2,
+                1,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                2,
+                4,
+                7
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                2,
+                4
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                2,
+                1,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                2,
+                7,
+                10
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                2,
+                10
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                2,
+                7,
+                12
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                2,
+                12
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                2,
+                1,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                3,
+                4,
+                7
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                3,
+                4
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                2,
+                1,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                3,
+                7,
+                10
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                3,
+                10
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                5,
+                7
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                5
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                6,
+                7
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                6
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                8
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                8
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                9
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                9
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": false,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                10
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 4,
+              "extra_slots": [
+                4,
+                10
+              ],
+              "hall_failure": null,
+              "hall_ok": null,
+              "k": 5,
+              "rank_L": 17,
+              "status": "UNDERDETERMINED_D_LT_K"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                11
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                11
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                12
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                12
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                13
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                13
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                14
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                14
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                15
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                15
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                16
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                16
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                17
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                17
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                18
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                18
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                19
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                20
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                20
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                4,
+                7,
+                21
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                4,
+                21
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                2,
+                1,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                5,
+                7,
+                10
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                5,
+                10
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                2,
+                1,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                6,
+                7,
+                10
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                6,
+                10
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                7,
+                8,
+                10
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                8,
+                10
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "H_total_rank": 0,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                7,
+                8,
+                19
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                8,
+                19
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                2,
+                1
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                7,
+                9,
+                10
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                9,
+                10
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                7,
+                10,
+                11
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                10,
+                11
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                7,
+                10,
+                12
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                10,
+                12
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              "H_total_rank": 1,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                7,
+                10,
+                13
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                10,
+                13
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            },
+            {
+              "H_dims": [
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "H_tag_counts": [
+                1,
+                1,
+                1,
+                1,
+                4
+              ],
+              "H_total_rank": 2,
+              "basis_cover_found": null,
+              "block": [
+                0,
+                1,
+                7,
+                10,
+                14
+              ],
+              "brent_diff": null,
+              "chosen": null,
+              "d": 5,
+              "extra_slots": [
+                10,
+                14
+              ],
+              "hall_failure": {
+                "rank": 0,
+                "size": 1,
+                "subset": [
+                  0
+                ]
+              },
+              "hall_ok": false,
+              "k": 5,
+              "rank_L": 17,
+              "status": "NO_REPAIR_HALL_FAIL"
+            }
+          ],
+          "hist": {
+            "IMPOSSIBLE_D_GT_K": 129,
+            "NO_REPAIR_HALL_FAIL": 41,
+            "UNDERDETERMINED_D_LT_K": 1
+          },
+          "total": 171
+        }
+      },
+      "name": "del_pivot17_transformed_rank23_133",
+      "peer_status": "BRENT_UNSAT",
+      "source": "pivot17_transformed_rank23"
+    }
+  ],
+  "elapsed_sec": 0.4113914966583252,
+  "meaning": "Local residual-space scan near peer A-swap candidates, allowing one/two extra unchanged B-slots to change; d=k cases are exact Hall/transversal tests, d<k cases are not excluded.",
+  "rank22_witnesses": [],
+  "schema": "s0908_pipeline_extra_repair_scan_v1"
+}

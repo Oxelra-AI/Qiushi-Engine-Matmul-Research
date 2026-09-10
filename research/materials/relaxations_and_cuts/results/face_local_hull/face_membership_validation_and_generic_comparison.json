@@ -1,0 +1,2493 @@
+{
+  "schema": "face_membership_validation_v1",
+  "elapsed_sec": 71.07662916183472,
+  "meaning": "Independent validation of analysis face-conditioned local memberships and comparison with the analysis generic local mixtures. Generic profile failures mean the displayed analysis convex combination used local profiles impossible on the J face; alternative analysis face-valid combinations may still exist.",
+  "global_solution_file": "data/local_hull/global_fractional_solution.json",
+  "face_result_file": "data/face_local_hull/face_conditioned_local_hull_results.json",
+  "J_size": 65,
+  "tested_map_count": 12,
+  "face_total_bad_profiles": 0,
+  "face_reconstruction_max_abs_error": 5.5067062021407764e-14,
+  "generic_maps_with_face_invalid_displayed_profiles": 12,
+  "generic_total_invalid_mixture_weight_due_to_face_caps": 4.784561387524257,
+  "map_summaries": [
+    {
+      "map_index": 0,
+      "annihilator_basis": [
+        161,
+        66,
+        18,
+        9
+      ],
+      "face_caps_match_output": true,
+      "target_recomputed_max_abs_error": 0.0,
+      "target_sum": 19.000000000000007,
+      "min_face_cap_slack": 0.0,
+      "min_local_wang_slack": 0.07085734639004748,
+      "tight_local_wang_constraints": 0,
+      "face_active_combination_size": 15,
+      "face_membership_reconstruction_max_abs_error": 4.218847493575595e-15,
+      "face_bad_profile_count": 0,
+      "face_bad_profiles_head": [],
+      "generic_mixture_face_comparison": {
+        "source_file": "data/local_hull/fractional_local_membership.json",
+        "source_pair_index": 0,
+        "active_combination_size": 15,
+        "profiles_exceeding_face_caps": 9,
+        "invalid_mixture_weight_due_to_face_caps": 0.4467627623632867,
+        "max_face_cap_excess_in_generic_profiles": 4,
+        "bad_profiles_head": [
+          {
+            "profile_index": 0,
+            "weight": 0.2035603271451999,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 0,
+                "value": 5,
+                "cap": 4,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              5,
+              2,
+              2,
+              2,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "profile_index": 18,
+            "weight": 0.01139329237375886,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 11,
+                "value": 7,
+                "cap": 3,
+                "excess": 4
+              }
+            ],
+            "profile": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              3,
+              3,
+              3,
+              7,
+              0,
+              0,
+              0,
+              3
+            ]
+          },
+          {
+            "profile_index": 30,
+            "weight": 0.017480083016344405,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 4,
+                "value": 5,
+                "cap": 3,
+                "excess": 2
+              }
+            ],
+            "profile": [
+              0,
+              0,
+              0,
+              0,
+              5,
+              4,
+              1,
+              3,
+              3,
+              0,
+              0,
+              0,
+              1,
+              0,
+              2,
+              0
+            ]
+          },
+          {
+            "profile_index": 38,
+            "weight": 0.0136449724113763,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 15,
+                "value": 7,
+                "cap": 5,
+                "excess": 2
+              }
+            ],
+            "profile": [
+              0,
+              2,
+              0,
+              3,
+              3,
+              0,
+              0,
+              0,
+              0,
+              3,
+              0,
+              0,
+              0,
+              0,
+              1,
+              7
+            ]
+          },
+          {
+            "profile_index": 48,
+            "weight": 0.14066852096355417,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 6,
+                "value": 4,
+                "cap": 3,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              2,
+              0,
+              0,
+              0,
+              3,
+              3,
+              4,
+              2,
+              0,
+              0,
+              0,
+              1,
+              2,
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "profile_index": 49,
+            "weight": 0.03487001480663906,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 4,
+                "value": 4,
+                "cap": 3,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              0,
+              0,
+              0,
+              0,
+              4,
+              0,
+              3,
+              3,
+              0,
+              0,
+              3,
+              2,
+              0,
+              0,
+              0,
+              4
+            ]
+          },
+          {
+            "profile_index": 51,
+            "weight": 0.00015132123720103773,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 2,
+                "value": 5,
+                "cap": 3,
+                "excess": 2
+              },
+              {
+                "kind": "face_cap",
+                "color": 3,
+                "value": 7,
+                "cap": 5,
+                "excess": 2
+              }
+            ],
+            "profile": [
+              0,
+              0,
+              5,
+              7,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              3,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "profile_index": 52,
+            "weight": 0.01190954777404415,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 15,
+                "value": 6,
+                "cap": 5,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              0,
+              0,
+              2,
+              3,
+              0,
+              0,
+              3,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              3,
+              6
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "map_index": 1,
+      "annihilator_basis": [
+        131,
+        66,
+        18,
+        9
+      ],
+      "face_caps_match_output": true,
+      "target_recomputed_max_abs_error": 0.0,
+      "target_sum": 19.000000000000007,
+      "min_face_cap_slack": 0.7433817139527603,
+      "min_local_wang_slack": 1.253126190300442,
+      "tight_local_wang_constraints": 0,
+      "face_active_combination_size": 16,
+      "face_membership_reconstruction_max_abs_error": 1.0658141036401503e-14,
+      "face_bad_profile_count": 0,
+      "face_bad_profiles_head": [],
+      "generic_mixture_face_comparison": {
+        "source_file": "data/local_hull/fractional_local_membership.json",
+        "source_pair_index": 1,
+        "active_combination_size": 16,
+        "profiles_exceeding_face_caps": 15,
+        "invalid_mixture_weight_due_to_face_caps": 0.9519028093788489,
+        "max_face_cap_excess_in_generic_profiles": 4,
+        "bad_profiles_head": [
+          {
+            "profile_index": 0,
+            "weight": 0.2313867572757718,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 0,
+                "value": 7,
+                "cap": 6,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              7,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "profile_index": 3,
+            "weight": 0.005116412652347205,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 5,
+                "value": 7,
+                "cap": 5,
+                "excess": 2
+              }
+            ],
+            "profile": [
+              0,
+              0,
+              3,
+              0,
+              3,
+              7,
+              3,
+              0,
+              0,
+              0,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "profile_index": 9,
+            "weight": 0.05940240275253428,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 5,
+                "value": 8,
+                "cap": 5,
+                "excess": 3
+              }
+            ],
+            "profile": [
+              0,
+              2,
+              2,
+              0,
+              0,
+              8,
+              2,
+              0,
+              1,
+              1,
+              2,
+              1,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "profile_index": 11,
+            "weight": 0.020443068559421816,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 6,
+                "value": 8,
+                "cap": 5,
+                "excess": 3
+              }
+            ],
+            "profile": [
+              0,
+              2,
+              2,
+              0,
+              0,
+              2,
+              8,
+              0,
+              1,
+              0,
+              2,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "profile_index": 14,
+            "weight": 0.06275260541062527,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 8,
+                "value": 8,
+                "cap": 5,
+                "excess": 3
+              }
+            ],
+            "profile": [
+              0,
+              2,
+              0,
+              0,
+              1,
+              2,
+              2,
+              0,
+              8,
+              0,
+              2,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "profile_index": 15,
+            "weight": 0.013803313520518406,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 9,
+                "value": 8,
+                "cap": 6,
+                "excess": 2
+              }
+            ],
+            "profile": [
+              0,
+              2,
+              2,
+              0,
+              1,
+              2,
+              2,
+              1,
+              0,
+              8,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "profile_index": 18,
+            "weight": 0.011428215250949487,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 11,
+                "value": 8,
+                "cap": 4,
+                "excess": 4
+              }
+            ],
+            "profile": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              2,
+              1,
+              1,
+              2,
+              2,
+              8,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "profile_index": 21,
+            "weight": 0.0910225720645529,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 14,
+                "value": 8,
+                "cap": 4,
+                "excess": 4
+              }
+            ],
+            "profile": [
+              0,
+              1,
+              1,
+              0,
+              0,
+              2,
+              2,
+              0,
+              0,
+              2,
+              2,
+              0,
+              0,
+              1,
+              8,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "map_index": 2,
+      "annihilator_basis": [
+        66,
+        18,
+        8,
+        1
+      ],
+      "face_caps_match_output": true,
+      "target_recomputed_max_abs_error": 0.0,
+      "target_sum": 19.000000000000004,
+      "min_face_cap_slack": 1.5742587466926712,
+      "min_local_wang_slack": 1.4086735099774437,
+      "tight_local_wang_constraints": 0,
+      "face_active_combination_size": 16,
+      "face_membership_reconstruction_max_abs_error": 5.551115123125783e-15,
+      "face_bad_profile_count": 0,
+      "face_bad_profiles_head": [],
+      "generic_mixture_face_comparison": {
+        "source_file": "data/local_hull/fractional_local_membership.json",
+        "source_pair_index": 2,
+        "active_combination_size": 16,
+        "profiles_exceeding_face_caps": 16,
+        "invalid_mixture_weight_due_to_face_caps": 1.0000000000000004,
+        "max_face_cap_excess_in_generic_profiles": 6,
+        "bad_profiles_head": [
+          {
+            "profile_index": 0,
+            "weight": 0.06467148534310573,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 0,
+                "value": 6,
+                "cap": 5,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              6,
+              4,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "profile_index": 8,
+            "weight": 0.018790573594884803,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 5,
+                "value": 6,
+                "cap": 3,
+                "excess": 3
+              }
+            ],
+            "profile": [
+              0,
+              0,
+              0,
+              0,
+              7,
+              6,
+              3,
+              0,
+              0,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "profile_index": 14,
+            "weight": 0.01625373966464716,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 9,
+                "value": 7,
+                "cap": 5,
+                "excess": 2
+              }
+            ],
+            "profile": [
+              0,
+              3,
+              3,
+              0,
+              0,
+              3,
+              3,
+              0,
+              0,
+              7,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "profile_index": 19,
+            "weight": 0.014994637458854192,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 14,
+                "value": 8,
+                "cap": 5,
+                "excess": 3
+              }
+            ],
+            "profile": [
+              0,
+              1,
+              1,
+              0,
+              0,
+              2,
+              2,
+              0,
+              0,
+              2,
+              2,
+              0,
+              0,
+              1,
+              8,
+              0
+            ]
+          },
+          {
+            "profile_index": 20,
+            "weight": 0.0018112407371172583,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 15,
+                "value": 8,
+                "cap": 2,
+                "excess": 6
+              }
+            ],
+            "profile": [
+              0,
+              2,
+              2,
+              1,
+              1,
+              2,
+              2,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8
+            ]
+          },
+          {
+            "profile_index": 21,
+            "weight": 0.1728989211009369,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 9,
+                "value": 6,
+                "cap": 5,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              0,
+              0,
+              0,
+              1,
+              3,
+              0,
+              0,
+              3,
+              2,
+              6,
+              0,
+              4,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "profile_index": 23,
+            "weight": 0.075194681966964,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 7,
+                "value": 6,
+                "cap": 5,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              1,
+              0,
+              0,
+              3,
+              0,
+              3,
+              3,
+              6,
+              0,
+              0,
+              0,
+              0,
+              0,
+              3,
+              0,
+              0
+            ]
+          },
+          {
+            "profile_index": 24,
+            "weight": 0.014188040072635891,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 5,
+                "value": 7,
+                "cap": 3,
+                "excess": 4
+              }
+            ],
+            "profile": [
+              0,
+              3,
+              0,
+              0,
+              0,
+              7,
+              0,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              3,
+              3,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "map_index": 3,
+      "annihilator_basis": [
+        131,
+        34,
+        18,
+        9
+      ],
+      "face_caps_match_output": true,
+      "target_recomputed_max_abs_error": 0.0,
+      "target_sum": 19.000000000000007,
+      "min_face_cap_slack": 1.2090668840441987,
+      "min_local_wang_slack": 0.2658095419282702,
+      "tight_local_wang_constraints": 0,
+      "face_active_combination_size": 16,
+      "face_membership_reconstruction_max_abs_error": 5.329070518200751e-15,
+      "face_bad_profile_count": 0,
+      "face_bad_profiles_head": [],
+      "generic_mixture_face_comparison": {
+        "source_file": "data/local_hull/fractional_local_membership.json",
+        "source_pair_index": 3,
+        "active_combination_size": 16,
+        "profiles_exceeding_face_caps": 12,
+        "invalid_mixture_weight_due_to_face_caps": 0.601224186709129,
+        "max_face_cap_excess_in_generic_profiles": 4,
+        "bad_profiles_head": [
+          {
+            "profile_index": 3,
+            "weight": 0.06246010026215271,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 5,
+                "value": 5,
+                "cap": 4,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              0,
+              0,
+              5,
+              0,
+              3,
+              5,
+              2,
+              0,
+              1,
+              1,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "profile_index": 5,
+            "weight": 0.09356854873819576,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 6,
+                "value": 5,
+                "cap": 4,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              0,
+              4,
+              0,
+              0,
+              3,
+              2,
+              5,
+              0,
+              2,
+              2,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "profile_index": 11,
+            "weight": 0.008045082411674221,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 1,
+                "value": 5,
+                "cap": 4,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              0,
+              5,
+              4,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              5,
+              2,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "profile_index": 20,
+            "weight": 0.030377688670517915,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 13,
+                "value": 7,
+                "cap": 3,
+                "excess": 4
+              },
+              {
+                "kind": "face_cap",
+                "color": 14,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              0,
+              3,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              7,
+              3,
+              3
+            ]
+          },
+          {
+            "profile_index": 30,
+            "weight": 0.002167429411028321,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 5,
+                "value": 5,
+                "cap": 4,
+                "excess": 1
+              },
+              {
+                "kind": "face_cap",
+                "color": 7,
+                "value": 5,
+                "cap": 2,
+                "excess": 3
+              }
+            ],
+            "profile": [
+              0,
+              0,
+              0,
+              0,
+              4,
+              5,
+              0,
+              5,
+              2,
+              0,
+              0,
+              0,
+              2,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "profile_index": 34,
+            "weight": 0.0074222048318544065,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 3,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              },
+              {
+                "kind": "face_cap",
+                "color": 7,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              0,
+              0,
+              6,
+              3,
+              3,
+              0,
+              0,
+              3,
+              0,
+              0,
+              4,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "profile_index": 35,
+            "weight": 0.0345825160924012,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 7,
+                "value": 4,
+                "cap": 2,
+                "excess": 2
+              }
+            ],
+            "profile": [
+              0,
+              0,
+              2,
+              0,
+              0,
+              4,
+              3,
+              4,
+              0,
+              0,
+              0,
+              3,
+              0,
+              0,
+              0,
+              3
+            ]
+          },
+          {
+            "profile_index": 37,
+            "weight": 0.02393430914991381,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 13,
+                "value": 4,
+                "cap": 3,
+                "excess": 1
+              },
+              {
+                "kind": "face_cap",
+                "color": 14,
+                "value": 4,
+                "cap": 2,
+                "excess": 2
+              }
+            ],
+            "profile": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              2,
+              3,
+              0,
+              3,
+              4,
+              4,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "map_index": 4,
+      "annihilator_basis": [
+        139,
+        75,
+        40,
+        16
+      ],
+      "face_caps_match_output": true,
+      "target_recomputed_max_abs_error": 0.0,
+      "target_sum": 19.000000000000004,
+      "min_face_cap_slack": 1.5025268572029327,
+      "min_local_wang_slack": -8.881784197001252e-16,
+      "tight_local_wang_constraints": 2,
+      "face_active_combination_size": 14,
+      "face_membership_reconstruction_max_abs_error": 7.327471962526033e-15,
+      "face_bad_profile_count": 0,
+      "face_bad_profiles_head": [],
+      "generic_mixture_face_comparison": {
+        "source_file": "data/local_hull/active_fractional_local_membership.json",
+        "source_pair_index": 0,
+        "active_combination_size": 14,
+        "profiles_exceeding_face_caps": 10,
+        "invalid_mixture_weight_due_to_face_caps": 0.3119240824674989,
+        "max_face_cap_excess_in_generic_profiles": 4,
+        "bad_profiles_head": [
+          {
+            "profile_index": 28,
+            "weight": 0.05870147304894613,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 3,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              },
+              {
+                "kind": "face_cap",
+                "color": 7,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              4,
+              3,
+              0,
+              3,
+              0,
+              3,
+              0,
+              3,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "profile_index": 30,
+            "weight": 0.051093340221801155,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 7,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              0,
+              3,
+              0,
+              2,
+              0,
+              3,
+              0,
+              3,
+              0,
+              0,
+              0,
+              0,
+              4,
+              0,
+              0,
+              4
+            ]
+          },
+          {
+            "profile_index": 47,
+            "weight": 0.055771587693068586,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 4,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              },
+              {
+                "kind": "face_cap",
+                "color": 11,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              1,
+              0,
+              0,
+              0,
+              3,
+              0,
+              0,
+              0,
+              0,
+              3,
+              3,
+              3,
+              3,
+              0,
+              0,
+              3
+            ]
+          },
+          {
+            "profile_index": 54,
+            "weight": 0.0186352595174263,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 3,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              },
+              {
+                "kind": "face_cap",
+                "color": 4,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              1,
+              0,
+              0,
+              3,
+              3,
+              0,
+              0,
+              0,
+              0,
+              3,
+              0,
+              0,
+              3,
+              3,
+              0,
+              3
+            ]
+          },
+          {
+            "profile_index": 55,
+            "weight": 0.0048876194079199575,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 4,
+                "value": 6,
+                "cap": 2,
+                "excess": 4
+              },
+              {
+                "kind": "face_cap",
+                "color": 7,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              1,
+              0,
+              0,
+              0,
+              6,
+              0,
+              0,
+              3,
+              0,
+              0,
+              0,
+              0,
+              3,
+              3,
+              0,
+              3
+            ]
+          },
+          {
+            "profile_index": 56,
+            "weight": 0.025438322136336056,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 4,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              },
+              {
+                "kind": "face_cap",
+                "color": 11,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              0,
+              0,
+              0,
+              0,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              3,
+              4,
+              3,
+              0,
+              4
+            ]
+          },
+          {
+            "profile_index": 57,
+            "weight": 0.020561165365612737,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 11,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              1,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              3,
+              3,
+              0,
+              3,
+              3,
+              0,
+              0,
+              3
+            ]
+          },
+          {
+            "profile_index": 58,
+            "weight": 0.046099156831316,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 7,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              3,
+              3,
+              3,
+              0,
+              0,
+              3,
+              3,
+              0,
+              3
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "map_index": 5,
+      "annihilator_basis": [
+        131,
+        64,
+        34,
+        10
+      ],
+      "face_caps_match_output": true,
+      "target_recomputed_max_abs_error": 0.0,
+      "target_sum": 19.000000000000007,
+      "min_face_cap_slack": 0.5959867723750332,
+      "min_local_wang_slack": 0.0,
+      "tight_local_wang_constraints": 3,
+      "face_active_combination_size": 13,
+      "face_membership_reconstruction_max_abs_error": 1.532107773982716e-14,
+      "face_bad_profile_count": 0,
+      "face_bad_profiles_head": [],
+      "generic_mixture_face_comparison": {
+        "source_file": "data/local_hull/active_fractional_local_membership.json",
+        "source_pair_index": 1,
+        "active_combination_size": 13,
+        "profiles_exceeding_face_caps": 3,
+        "invalid_mixture_weight_due_to_face_caps": 0.2986801871711235,
+        "max_face_cap_excess_in_generic_profiles": 1,
+        "bad_profiles_head": [
+          {
+            "profile_index": 52,
+            "weight": 0.1555847086122517,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 10,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              0,
+              0
+            ]
+          },
+          {
+            "profile_index": 53,
+            "weight": 0.13343019595569885,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 14,
+                "value": 2,
+                "cap": 1,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              3,
+              3,
+              0,
+              1,
+              0,
+              1,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              2,
+              0
+            ]
+          },
+          {
+            "profile_index": 61,
+            "weight": 0.009665282603172938,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 5,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              3,
+              3,
+              3,
+              3,
+              3,
+              0,
+              0,
+              0,
+              3,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "map_index": 6,
+      "annihilator_basis": [
+        139,
+        75,
+        36,
+        28
+      ],
+      "face_caps_match_output": true,
+      "target_recomputed_max_abs_error": 0.0,
+      "target_sum": 19.000000000000007,
+      "min_face_cap_slack": 0.5823346385589696,
+      "min_local_wang_slack": -8.881784197001252e-16,
+      "tight_local_wang_constraints": 3,
+      "face_active_combination_size": 13,
+      "face_membership_reconstruction_max_abs_error": 2.4424906541753444e-15,
+      "face_bad_profile_count": 0,
+      "face_bad_profiles_head": [],
+      "generic_mixture_face_comparison": {
+        "source_file": "data/local_hull/active_fractional_local_membership.json",
+        "source_pair_index": 2,
+        "active_combination_size": 12,
+        "profiles_exceeding_face_caps": 6,
+        "invalid_mixture_weight_due_to_face_caps": 0.43914188812791044,
+        "max_face_cap_excess_in_generic_profiles": 1,
+        "bad_profiles_head": [
+          {
+            "profile_index": 50,
+            "weight": 0.04021264634796288,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 4,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              1,
+              0,
+              3,
+              0,
+              3,
+              3,
+              0,
+              0,
+              0,
+              0,
+              3,
+              0,
+              3,
+              3,
+              0,
+              0
+            ]
+          },
+          {
+            "profile_index": 51,
+            "weight": 0.20883268072051525,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 11,
+                "value": 2,
+                "cap": 1,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              3,
+              1,
+              1,
+              4,
+              0,
+              2,
+              0,
+              0,
+              0,
+              1,
+              1,
+              2,
+              1,
+              2,
+              0,
+              1
+            ]
+          },
+          {
+            "profile_index": 57,
+            "weight": 0.1252638598723184,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 14,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              2,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              2,
+              2,
+              0,
+              2,
+              3,
+              3,
+              2
+            ]
+          },
+          {
+            "profile_index": 60,
+            "weight": 0.029750804468081288,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 4,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              3,
+              0,
+              0,
+              2,
+              3,
+              2,
+              0,
+              3,
+              2,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "profile_index": 65,
+            "weight": 0.027183340482135804,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 4,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              3,
+              0,
+              2,
+              2,
+              3,
+              2,
+              0,
+              2,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "profile_index": 66,
+            "weight": 0.007898556236896809,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 4,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              1,
+              0,
+              0,
+              0,
+              3,
+              0,
+              0,
+              3,
+              0,
+              3,
+              3,
+              0,
+              3,
+              0,
+              0,
+              3
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "map_index": 7,
+      "annihilator_basis": [
+        136,
+        64,
+        34,
+        1
+      ],
+      "face_caps_match_output": true,
+      "target_recomputed_max_abs_error": 0.0,
+      "target_sum": 19.000000000000007,
+      "min_face_cap_slack": 1.148212914816704,
+      "min_local_wang_slack": 0.0,
+      "tight_local_wang_constraints": 3,
+      "face_active_combination_size": 13,
+      "face_membership_reconstruction_max_abs_error": 5.5067062021407764e-14,
+      "face_bad_profile_count": 0,
+      "face_bad_profiles_head": [],
+      "generic_mixture_face_comparison": {
+        "source_file": "data/local_hull/active_fractional_local_membership.json",
+        "source_pair_index": 3,
+        "active_combination_size": 13,
+        "profiles_exceeding_face_caps": 1,
+        "invalid_mixture_weight_due_to_face_caps": 0.0764128087885907,
+        "max_face_cap_excess_in_generic_profiles": 1,
+        "bad_profiles_head": [
+          {
+            "profile_index": 55,
+            "weight": 0.0764128087885907,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 3,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              1,
+              0,
+              3,
+              3,
+              0,
+              0,
+              0,
+              0,
+              3,
+              3,
+              0,
+              0,
+              3,
+              3,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "map_index": 8,
+      "annihilator_basis": [
+        136,
+        77,
+        39,
+        30
+      ],
+      "face_caps_match_output": true,
+      "target_recomputed_max_abs_error": 0.0,
+      "target_sum": 19.000000000000007,
+      "min_face_cap_slack": 1.1974746193615216,
+      "min_local_wang_slack": -1.7763568394002505e-15,
+      "tight_local_wang_constraints": 4,
+      "face_active_combination_size": 12,
+      "face_membership_reconstruction_max_abs_error": 5.551115123125783e-15,
+      "face_bad_profile_count": 0,
+      "face_bad_profiles_head": [],
+      "generic_mixture_face_comparison": {
+        "source_file": "data/local_hull/active_fractional_local_membership.json",
+        "source_pair_index": 4,
+        "active_combination_size": 12,
+        "profiles_exceeding_face_caps": 3,
+        "invalid_mixture_weight_due_to_face_caps": 0.06851307844163224,
+        "max_face_cap_excess_in_generic_profiles": 1,
+        "bad_profiles_head": [
+          {
+            "profile_index": 70,
+            "weight": 0.052197132778332794,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 6,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              3,
+              1,
+              1,
+              0,
+              0,
+              2,
+              3,
+              0,
+              1,
+              0,
+              1,
+              2,
+              2,
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "profile_index": 73,
+            "weight": 0.0038558297593939486,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 3,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              },
+              {
+                "kind": "face_cap",
+                "color": 6,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              4,
+              0,
+              0,
+              3,
+              0,
+              0,
+              3,
+              0,
+              0,
+              3,
+              3,
+              0,
+              0,
+              3,
+              0,
+              0
+            ]
+          },
+          {
+            "profile_index": 74,
+            "weight": 0.0124601159039055,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 6,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              2,
+              0,
+              2,
+              0,
+              0,
+              2,
+              3,
+              1,
+              2,
+              0,
+              1,
+              3,
+              0,
+              1,
+              0,
+              2
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "map_index": 9,
+      "annihilator_basis": [
+        81,
+        32,
+        5,
+        2
+      ],
+      "face_caps_match_output": true,
+      "target_recomputed_max_abs_error": 0.0,
+      "target_sum": 19.000000000000004,
+      "min_face_cap_slack": 0.44632499962854877,
+      "min_local_wang_slack": -8.881784197001252e-16,
+      "tight_local_wang_constraints": 2,
+      "face_active_combination_size": 14,
+      "face_membership_reconstruction_max_abs_error": 1.1102230246251565e-15,
+      "face_bad_profile_count": 0,
+      "face_bad_profiles_head": [],
+      "generic_mixture_face_comparison": {
+        "source_file": "data/local_hull/active_fractional_local_membership.json",
+        "source_pair_index": 5,
+        "active_combination_size": 14,
+        "profiles_exceeding_face_caps": 6,
+        "invalid_mixture_weight_due_to_face_caps": 0.3139555196476791,
+        "max_face_cap_excess_in_generic_profiles": 2,
+        "bad_profiles_head": [
+          {
+            "profile_index": 0,
+            "weight": 0.11966824459297777,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 4,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              4,
+              3,
+              3,
+              0,
+              3,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              3,
+              0,
+              0
+            ]
+          },
+          {
+            "profile_index": 48,
+            "weight": 0.014016542067887069,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 3,
+                "value": 3,
+                "cap": 1,
+                "excess": 2
+              }
+            ],
+            "profile": [
+              1,
+              0,
+              3,
+              3,
+              0,
+              0,
+              3,
+              3,
+              0,
+              0,
+              3,
+              3,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "profile_index": 52,
+            "weight": 0.1441071281951744,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 3,
+                "value": 2,
+                "cap": 1,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              3,
+              2,
+              2,
+              2,
+              0,
+              0,
+              3,
+              2,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              2,
+              0
+            ]
+          },
+          {
+            "profile_index": 57,
+            "weight": 0.00902086909391997,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 3,
+                "value": 3,
+                "cap": 1,
+                "excess": 2
+              }
+            ],
+            "profile": [
+              1,
+              0,
+              3,
+              3,
+              0,
+              3,
+              0,
+              0,
+              0,
+              0,
+              3,
+              3,
+              0,
+              3,
+              0,
+              0
+            ]
+          },
+          {
+            "profile_index": 60,
+            "weight": 0.026391899281059793,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 4,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              1,
+              0,
+              3,
+              0,
+              3,
+              3,
+              3,
+              0,
+              0,
+              0,
+              3,
+              3,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "profile_index": 66,
+            "weight": 0.0007508364166600723,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 4,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              2,
+              1,
+              1,
+              1,
+              3,
+              0,
+              3,
+              0,
+              2,
+              2,
+              2,
+              2,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "map_index": 10,
+      "annihilator_basis": [
+        130,
+        73,
+        24,
+        5
+      ],
+      "face_caps_match_output": true,
+      "target_recomputed_max_abs_error": 0.0,
+      "target_sum": 19.000000000000004,
+      "min_face_cap_slack": 0.862988418884135,
+      "min_local_wang_slack": -7.105427357601002e-15,
+      "tight_local_wang_constraints": 4,
+      "face_active_combination_size": 12,
+      "face_membership_reconstruction_max_abs_error": 2.1760371282653068e-14,
+      "face_bad_profile_count": 0,
+      "face_bad_profiles_head": [],
+      "generic_mixture_face_comparison": {
+        "source_file": "data/local_hull/active_fractional_local_membership.json",
+        "source_pair_index": 6,
+        "active_combination_size": 12,
+        "profiles_exceeding_face_caps": 3,
+        "invalid_mixture_weight_due_to_face_caps": 0.1678913292188601,
+        "max_face_cap_excess_in_generic_profiles": 1,
+        "bad_profiles_head": [
+          {
+            "profile_index": 0,
+            "weight": 0.07537584724995684,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 2,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              4,
+              3,
+              3,
+              0,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              3,
+              0,
+              3,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "profile_index": 48,
+            "weight": 0.06850579055793161,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 3,
+                "value": 2,
+                "cap": 1,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              2,
+              1,
+              0,
+              2,
+              0,
+              2,
+              1,
+              3,
+              0,
+              0,
+              0,
+              2,
+              0,
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "profile_index": 60,
+            "weight": 0.024009691410971645,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 8,
+                "value": 4,
+                "cap": 3,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              2,
+              0,
+              1,
+              0,
+              3,
+              2,
+              0,
+              0,
+              4,
+              0,
+              0,
+              0,
+              0,
+              2,
+              3,
+              2
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "map_index": 11,
+      "annihilator_basis": [
+        133,
+        78,
+        36,
+        17
+      ],
+      "face_caps_match_output": true,
+      "target_recomputed_max_abs_error": 0.0,
+      "target_sum": 19.000000000000007,
+      "min_face_cap_slack": 1.185049234280696,
+      "min_local_wang_slack": -7.105427357601002e-15,
+      "tight_local_wang_constraints": 3,
+      "face_active_combination_size": 13,
+      "face_membership_reconstruction_max_abs_error": 2.5757174171303632e-14,
+      "face_bad_profile_count": 0,
+      "face_bad_profiles_head": [],
+      "generic_mixture_face_comparison": {
+        "source_file": "data/local_hull/active_fractional_local_membership.json",
+        "source_pair_index": 7,
+        "active_combination_size": 13,
+        "profiles_exceeding_face_caps": 4,
+        "invalid_mixture_weight_due_to_face_caps": 0.10815273520969639,
+        "max_face_cap_excess_in_generic_profiles": 2,
+        "bad_profiles_head": [
+          {
+            "profile_index": 58,
+            "weight": 0.01049787485927948,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 11,
+                "value": 4,
+                "cap": 2,
+                "excess": 2
+              },
+              {
+                "kind": "face_cap",
+                "color": 13,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              4,
+              0,
+              4,
+              1,
+              3,
+              2,
+              2
+            ]
+          },
+          {
+            "profile_index": 62,
+            "weight": 0.0047677584668865125,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 11,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              2,
+              2,
+              0,
+              4,
+              0,
+              1,
+              0,
+              3,
+              0,
+              2,
+              1,
+              3,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "profile_index": 64,
+            "weight": 0.08684832556530331,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 11,
+                "value": 3,
+                "cap": 2,
+                "excess": 1
+              }
+            ],
+            "profile": [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              2,
+              2,
+              2,
+              3,
+              3,
+              1,
+              1,
+              2
+            ]
+          },
+          {
+            "profile_index": 67,
+            "weight": 0.006038776318227082,
+            "cap_failures_head": [
+              {
+                "kind": "face_cap",
+                "color": 11,
+                "value": 4,
+                "cap": 2,
+                "excess": 2
+              }
+            ],
+            "profile": [
+              2,
+              3,
+              0,
+              3,
+              0,
+              1,
+              0,
+              2,
+              0,
+              2,
+              0,
+              4,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

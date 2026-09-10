@@ -1,0 +1,44 @@
+#!/usr/bin/env python3
+"""Public compatibility adapter for the pinned upstream certificate verifier."""
+import hashlib
+import json
+import os
+from pathlib import Path
+import shutil
+import subprocess
+import sys
+
+EXPECTED = '25595a883ce877eecd802139ff4e07646e154b2797ad6fe7f9ec737ab0c6135d'
+
+
+def main():
+    if len(sys.argv) != 4 or sys.argv[1:3] != ['lower-bound', 'verify-wang-q2-333']:
+        print('Usage: qiushi-matmul lower-bound verify-wang-q2-333 <certificate>',
+              file=sys.stderr)
+        return 2
+    certificate = Path(sys.argv[3]).resolve()
+    value = hashlib.sha256(certificate.read_bytes()).hexdigest()
+    if value != EXPECTED:
+        raise ValueError('This adapter accepts only the pinned lower-bound-20 certificate')
+    binary = os.environ.get('WANG_VERIFIER', '')
+    executable = shutil.which(binary) if binary else None
+    if not executable or Path(executable).resolve() == Path(__file__).resolve():
+        raise ValueError('Set WANG_VERIFIER to the pinned upstream verifier_main executable')
+    completed = subprocess.run([executable, str(certificate)], capture_output=True,
+                               text=True, timeout=110)
+    print(json.dumps({
+        'status': 'verified' if completed.returncode == 0 else 'rejected',
+        'domain': 'prime 2', 'claimed_lower_bound': 20,
+        'certificate_sha256': value,
+        'verifier_sha256': hashlib.sha256(Path(executable).read_bytes()).hexdigest(),
+        'verifier_exit_code': completed.returncode,
+    }))
+    return 0 if completed.returncode == 0 else 2
+
+
+if __name__ == '__main__':
+    try:
+        raise SystemExit(main())
+    except (OSError, ValueError, subprocess.TimeoutExpired) as exc:
+        print(json.dumps({'status': 'error', 'error': str(exc)}))
+        raise SystemExit(2)

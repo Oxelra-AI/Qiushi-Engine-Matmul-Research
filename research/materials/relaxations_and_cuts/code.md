@@ -1,0 +1,52 @@
+# Exploratory source programs: Relaxations and exact cuts
+
+[Topic overview](README.md) · [Coverage and use](../../../reproducibility/research-materials.md)
+
+These are historical scientific artifacts. The maintained theorem and replay entry
+point are in the report and proof package, not inferred from a saved status field.
+
+Programs are preserved for inspection and adaptation. Do not execute the archive
+as a batch: some sources launch searches or create outputs at import time.
+
+- [analytical pencil](code/analytical_pencil.py)
+- [annihilator perturbation](code/annihilator_perturbation.py)
+- [block decompose sdp](code/block_decompose_sdp.py)
+- [block sdp v2](code/block_sdp_v2.py)
+- [combined sdp scan](code/combined_sdp_scan.py)
+- [common pencil certificate](code/common_pencil_certificate.py)
+- [conditional repivot cuts](code/conditional_repivot_cuts.py)
+- [conic pilot preflight](code/conic_pilot_preflight.py)
+- [e11 ghw singleton test](code/e11_ghw_singleton_test.py)
+- [e11 pencil rank sat](code/e11_pencil_rank_sat.py)
+- [face conditioned local hull](code/face_conditioned_local_hull.py)
+- [fixed count block psd](code/fixed_count_block_psd.py)
+- [fixed n integer pair psd loop](code/fixed_n_integer_pair_psd_loop.py)
+- [global lp](code/global_lp.py)
+- [global psd cut loop](code/global_psd_cut_loop.py)
+- [global sdp feasibility](code/global_sdp_feasibility.py)
+- [hybrid annihilator core](code/hybrid_annihilator_core.py)
+- [mixed source cuts](code/mixed_source_cuts.py)
+- [moment cubature instrument](code/moment_cubature_instrument.py)
+- [moment psd check](code/moment_psd_check.py)
+- [orbit sdp](code/orbit_sdp.py)
+- [pencil boundary all lines](code/pencil_boundary_all_lines.py)
+- [pencil boundary fast](code/pencil_boundary_fast.py)
+- [pencil budget wang filter](code/pencil_budget_wang_filter.py)
+- [pencil candidate envelope scan](code/pencil_candidate_envelope_scan.py)
+- [pencil constructive repair](code/pencil_constructive_repair.py)
+- [pencil factor cpsat](code/pencil_factor_cpsat.py)
+- [pencil fullrank3 exact](code/pencil_fullrank3_exact.py)
+- [pencil pilot](code/pencil_pilot.py)
+- [pencil repair audit](code/pencil_repair_audit.py)
+- [pencil validation](code/pencil_validation.py)
+- [pencil wang comparison](code/pencil_wang_comparison.py)
+- [pooled global square cuts](code/pooled_global_square_cuts.py)
+- [repair moment cut extraction](code/repair_moment_cut_extraction.py)
+- [rlt pair lift](code/rlt_pair_lift.py)
+- [rlt triangle integrality](code/rlt_triangle_integrality.py)
+- [scan repivot quotient views](code/scan_repivot_quotient_views.py)
+- [unconditional leakage](code/unconditional_leakage.py)
+- [uniform rlt regression](code/uniform_rlt_regression.py)
+- [wang code lp](code/wang_code_lp.py)
+- [wang code triple moment](code/wang_code_triple_moment.py)
+- [wang leakage dfs](code/wang_leakage_dfs.py)

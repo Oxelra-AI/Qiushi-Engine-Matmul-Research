@@ -1,0 +1,90 @@
+{
+  "build_sec": 66.069,
+  "complete_meta": {
+    "by_dim8": {
+      "0": 1,
+      "1": 255,
+      "2": 10795,
+      "3": 97155,
+      "4": 200787,
+      "5": 97155,
+      "6": 10795,
+      "7": 255,
+      "8": 1
+    },
+    "by_full_lut_L": {
+      "0": 1,
+      "11": 865,
+      "12": 61232,
+      "13": 8130,
+      "14": 81540,
+      "15": 138902,
+      "16": 83046,
+      "17": 34664,
+      "18": 687,
+      "19": 1,
+      "3": 33,
+      "6": 578,
+      "9": 7520
+    },
+    "constraint_count": 417199,
+    "elapsed_sec": 49.228
+  },
+  "constraint_summary": {
+    "purity_2sat": {
+      "extended_in_model": false,
+      "purity_clause_count": 2712
+    },
+    "retained_wang": {
+      "added": 320364,
+      "by_L": {
+        "11": 13,
+        "12": 17312,
+        "13": 498,
+        "14": 51522,
+        "15": 130982,
+        "16": 82998,
+        "17": 34664,
+        "18": 687,
+        "3": 33,
+        "6": 200,
+        "9": 1455
+      },
+      "by_dim": {
+        "1": 255,
+        "2": 10795,
+        "3": 97155,
+        "4": 200787,
+        "5": 5742,
+        "6": 5375,
+        "7": 255
+      },
+      "skipped_not_kept": 96833
+    }
+  },
+  "elapsed_sec": 96.861,
+  "lut_coverage_ok": true,
+  "meaning": "Experimental support generation with reduced Wang rows plus purity-side 2-SAT; feasible supports are candidates only and are rescanned against complete Wang and shadow.",
+  "parameters": {
+    "max_rounds": 3,
+    "minimize_weight": true,
+    "out": "data/support_search/wang_purity_minweight_pilot.json",
+    "seed": 906,
+    "solver_time": 30.0,
+    "target_weight": null,
+    "workers": 8
+  },
+  "reduced_counts": {
+    "dropped": 96833,
+    "kept": 320366,
+    "kept_hash": null
+  },
+  "rounds": [
+    {
+      "round": 0,
+      "solve_sec": 30.792,
+      "status": "UNKNOWN"
+    }
+  ],
+  "schema": "research_record_wang_purity_support_search_v1"
+}

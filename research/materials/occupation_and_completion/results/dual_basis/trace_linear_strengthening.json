@@ -1,0 +1,57 @@
+{
+  "schema": "trace_linear_strengthening_v1",
+  "elapsed_sec": 0.035,
+  "cn122": {
+    "terms": 21,
+    "unique_A": 18,
+    "no_trace": {
+      "equations": 648,
+      "rank": 648,
+      "consistent": true
+    },
+    "with_trace": {
+      "equations": 693,
+      "rank": 688,
+      "consistent": true,
+      "saturated_rk9": 5,
+      "trace_equations": 45
+    },
+    "rank_gain": 40
+  },
+  "near_miss": {
+    "support": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      20,
+      24,
+      31,
+      32,
+      64,
+      73,
+      109,
+      127,
+      128,
+      141,
+      160,
+      182,
+      192,
+      219
+    ],
+    "no_trace": {
+      "equations": 648,
+      "rank": 648,
+      "consistent": true
+    },
+    "with_trace": {
+      "equations": 792,
+      "rank": 672,
+      "consistent": false,
+      "saturated_rk9": 16,
+      "trace_equations": 144
+    },
+    "rank_gain": 24
+  }
+}

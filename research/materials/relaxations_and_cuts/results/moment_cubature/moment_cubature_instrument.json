@@ -1,0 +1,425 @@
+{
+  "sl3_basis": [
+    "E01",
+    "E02",
+    "E10",
+    "E12",
+    "E20",
+    "E21",
+    "H0",
+    "H1"
+  ],
+  "killing_gram": [
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      -1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -1,
+      2
+    ]
+  ],
+  "killing_det": -3,
+  "bilr_11_node_control": {
+    "traces_c": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    "weights_w_cubed": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    "mu_rows": [
+      [
+        "-1",
+        "0",
+        "0",
+        "-1",
+        "1",
+        "1",
+        "0",
+        "-1"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "-1",
+        "1"
+      ],
+      [
+        "-1",
+        "-1",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "-1"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "-1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-1",
+        "0",
+        "0",
+        "0",
+        "-1"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "1",
+        "0",
+        "-1"
+      ],
+      [
+        "-1",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "-1",
+        "1"
+      ],
+      [
+        "-1",
+        "0",
+        "0",
+        "-1",
+        "0",
+        "1",
+        "0",
+        "-1"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-1",
+        "1",
+        "1",
+        "0",
+        "-1"
+      ],
+      [
+        "-1",
+        "-1",
+        "0",
+        "0",
+        "1",
+        "1",
+        "0",
+        "-1"
+      ]
+    ],
+    "check": {
+      "sum_w": "3",
+      "sum_w_is_3": true,
+      "sum_w_mu_zero": true,
+      "sum_w_mumu_equals_K": true,
+      "mu_rank": 8,
+      "left_kernel_dim": 3,
+      "weights_in_left_kernel": true
+    },
+    "left_kernel_basis": [
+      [
+        "-1",
+        "0",
+        "0",
+        "1",
+        "1",
+        "1",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "-1",
+        "-1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "-1",
+        "0",
+        "-1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "1"
+      ]
+    ]
+  },
+  "bilr_10_deletion_controls": [
+    {
+      "drop": 0,
+      "sum_w": "2",
+      "sum_w_is_3": false,
+      "sum_w_mu_zero": false,
+      "sum_w_mumu_equals_K": false,
+      "mu_rank": 8,
+      "quadratic_diff_rank": 1,
+      "linear_diff_rank": 1
+    },
+    {
+      "drop": 1,
+      "sum_w": "2",
+      "sum_w_is_3": false,
+      "sum_w_mu_zero": false,
+      "sum_w_mumu_equals_K": false,
+      "mu_rank": 8,
+      "quadratic_diff_rank": 1,
+      "linear_diff_rank": 1
+    },
+    {
+      "drop": 2,
+      "sum_w": "2",
+      "sum_w_is_3": false,
+      "sum_w_mu_zero": false,
+      "sum_w_mumu_equals_K": false,
+      "mu_rank": 8,
+      "quadratic_diff_rank": 1,
+      "linear_diff_rank": 1
+    },
+    {
+      "drop": 3,
+      "sum_w": "2",
+      "sum_w_is_3": false,
+      "sum_w_mu_zero": false,
+      "sum_w_mumu_equals_K": false,
+      "mu_rank": 8,
+      "quadratic_diff_rank": 1,
+      "linear_diff_rank": 1
+    },
+    {
+      "drop": 4,
+      "sum_w": "2",
+      "sum_w_is_3": false,
+      "sum_w_mu_zero": false,
+      "sum_w_mumu_equals_K": false,
+      "mu_rank": 8,
+      "quadratic_diff_rank": 1,
+      "linear_diff_rank": 1
+    },
+    {
+      "drop": 5,
+      "sum_w": "2",
+      "sum_w_is_3": false,
+      "sum_w_mu_zero": false,
+      "sum_w_mumu_equals_K": false,
+      "mu_rank": 8,
+      "quadratic_diff_rank": 1,
+      "linear_diff_rank": 1
+    },
+    {
+      "drop": 6,
+      "sum_w": "2",
+      "sum_w_is_3": false,
+      "sum_w_mu_zero": false,
+      "sum_w_mumu_equals_K": false,
+      "mu_rank": 8,
+      "quadratic_diff_rank": 1,
+      "linear_diff_rank": 1
+    },
+    {
+      "drop": 7,
+      "sum_w": "4",
+      "sum_w_is_3": false,
+      "sum_w_mu_zero": false,
+      "sum_w_mumu_equals_K": false,
+      "mu_rank": 8,
+      "quadratic_diff_rank": 1,
+      "linear_diff_rank": 1
+    },
+    {
+      "drop": 8,
+      "sum_w": "4",
+      "sum_w_is_3": false,
+      "sum_w_mu_zero": false,
+      "sum_w_mumu_equals_K": false,
+      "mu_rank": 8,
+      "quadratic_diff_rank": 1,
+      "linear_diff_rank": 1
+    },
+    {
+      "drop": 9,
+      "sum_w": "4",
+      "sum_w_is_3": false,
+      "sum_w_mu_zero": false,
+      "sum_w_mumu_equals_K": false,
+      "mu_rank": 8,
+      "quadratic_diff_rank": 1,
+      "linear_diff_rank": 1
+    },
+    {
+      "drop": 10,
+      "sum_w": "4",
+      "sum_w_is_3": false,
+      "sum_w_mu_zero": false,
+      "sum_w_mumu_equals_K": false,
+      "mu_rank": 8,
+      "quadratic_diff_rank": 1,
+      "linear_diff_rank": 1
+    }
+  ],
+  "active_k8_impossible": true,
+  "active_k8_impossibility_proof": "If k=8 active cubes satisfy sum_i w_i mu_i mu_i^T=K with rank(K)=8, then the mu_i span an 8-dimensional space and hence form a basis. The second moment equation sum_i w_i mu_i=0 is a linear relation among this basis. Since each active w_i=c_i^3 is nonzero, this is impossible. Therefore a pure cyclic (10,4) solution under the traceless-free-orbit hypothesis has k=9 or k=10 active cubes; at most one cube can be invisible at I.",
+  "active_count_consequence_for_10_4": "Under traceless free orbits a rank-22 (10,4) cyclic decomposition needs k=9 or k=10 active cubes; k=8 is impossible and k<8 cannot represent rank(K)=8.",
+  "explicit_9_node_moment_cubature": {
+    "constructed": false,
+    "diag_GH": [
+      "-2",
+      "2",
+      "3/2",
+      "4/3",
+      "5/4",
+      "6/5",
+      "-4/3",
+      "-3/4"
+    ],
+    "diag_G": [
+      "2",
+      "3/2",
+      "2",
+      "-2",
+      "2",
+      "-2",
+      "2",
+      "-2"
+    ],
+    "reason": "diagonal entries did not match by rational square permutation; no direct rational isometry stored"
+  },
+  "interpretation": "The first three trace moments are exact necessary equations. They rule out k<=8 active cubes, but an exact rational 9-node moment cubature exists if constructed=true, so the cubic residual coupled to the rank-4 exterior configuration remains essential for excluding (10,4)."
+}

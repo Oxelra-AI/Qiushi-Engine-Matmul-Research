@@ -1,0 +1,103 @@
+{
+  "records": [
+    {
+      "constraint_summary_by_residual": {
+        "2": 1087,
+        "3": 97,
+        "4": 3
+      },
+      "constraints_added": 1187,
+      "drat_cadical_sec": 51.79,
+      "drat_sha256": "31f473816fc7275a0549ff4585c0307480ad7ee21081b21a83127998a892544d",
+      "drat_trim_sec": 79.87,
+      "drat_verified": true,
+      "final_clauses": 37313,
+      "final_cnf": "workspace/data/separation/idx25_v3/idx025_final.cnf",
+      "final_cnf_sha256": "bd0fbe5a50fd30fff7b2970d215c20890162a78c5b6c365b16fa73a15012b096",
+      "final_variables": 3584,
+      "idx": 25,
+      "k": 6,
+      "matching": [
+        1,
+        16,
+        27,
+        256,
+        360,
+        438
+      ],
+      "round_log": [
+        {
+          "cadical_exit": 10,
+          "cadical_sec": 0.48,
+          "clauses": 23583,
+          "elapsed_sec": 48.05,
+          "lut_violations": 10105,
+          "max_excess": 6,
+          "model_size": 14,
+          "new_by_residual": {
+            "2": 419,
+            "3": 46,
+            "4": 2
+          },
+          "new_clauses": 5416,
+          "new_constraints": 467,
+          "result": "SAT_SEPARATED",
+          "round": 0,
+          "skipped_large": 9592,
+          "variables": 3584
+        },
+        {
+          "cadical_exit": 10,
+          "cadical_sec": 3.56,
+          "clauses": 28999,
+          "elapsed_sec": 55.87,
+          "lut_violations": 6924,
+          "max_excess": 4,
+          "model_size": 14,
+          "new_by_residual": {
+            "2": 224,
+            "3": 17
+          },
+          "new_clauses": 2724,
+          "new_constraints": 241,
+          "result": "SAT_SEPARATED",
+          "round": 1,
+          "skipped_large": 6670,
+          "variables": 3584
+        },
+        {
+          "cadical_exit": 10,
+          "cadical_sec": 5.5,
+          "clauses": 31723,
+          "elapsed_sec": 57.83,
+          "lut_violations": 10971,
+          "max_excess": 6,
+          "model_size": 14,
+          "new_by_residual": {
+            "2": 444,
+            "3": 34,
+            "4": 1
+          },
+          "new_clauses": 5590,
+          "new_constraints": 479,
+          "result": "SAT_SEPARATED",
+          "round": 2,
+          "skipped_large": 10460,
+          "variables": 3584
+        },
+        {
+          "cadical_exit": 20,
+          "cadical_sec": 51.14,
+          "clauses": 37313,
+          "result": "UNSAT",
+          "round": 3,
+          "variables": 3584
+        }
+      ],
+      "rounds": 4,
+      "status": "UNSAT",
+      "total_elapsed_sec": 361.45
+    }
+  ],
+  "schema": "iterative_separation_v1"
+}

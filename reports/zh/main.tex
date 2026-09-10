@@ -1,0 +1,485 @@
+% Compile: latexmk -xelatex -interaction=nonstopmode -halt-on-error main.tex
+\documentclass[11pt,a4paper]{article}
+\input{latex/preamble}
+\input{latex/authors}
+
+\title{二元域上 $3\times3$ 矩阵乘法\\双线性复杂度下界 21 的结构性证明}
+\newcommand{\ReportSubtitle}{Qiushi Engine 从算法搜索到代数障碍的研究历程}
+\date{2026年9月9日}
+\hypersetup{
+  pdftitle={二元域上 3×3 矩阵乘法双线性复杂度下界 21 的结构性证明},
+  pdfauthor={\ReportAuthorNames},
+  pdfsubject={双线性复杂度、结构性下界证明与 Qiushi Engine 的研究过程}
+}
+\begin{document}
+\maketitle
+\thispagestyle{plain}
+\begin{abstract}
+两个 $3\times3$ 矩阵相乘，常规方法需要 27 次标量乘法，已知双线性算法可将其减少到 23 次；最少究竟需要多少次，至今仍是快速矩阵乘法研究中的经典开放问题。本报告聚焦只有 0、1 两个元素、按模二运算的二元域 $\FF$。Qiushi Engine 通过长程、端到端的自主数学研究，独立形成了一个结构性证明：任何精确双线性算法都至少需要 21 次标量乘法，结合已知上界得到 $21\le R_{\FF}(\Tmmm)\le23$。证明的核心认识是，有限几何能够迫使秩不等式取等，而取等又产生因子之间必须满足的代数关系。具体而言，经过机器认证的八个加强后的商张量下界与仿射几何，将假设的 20 项分解限制到一个恰好饱和的秩型；由此导出的跨因子恒等式，使该分解所要求的可逆因子不可能同时存在。这样，末端的候选枚举被一个简洁的代数矛盾取代，关于因子分布的计数信息也转化为关于因子相容性的结构解释。同一机制还约束了秩不等式取等时可能出现的 22 项分解。通向证明的研究历程同样构成本工作的价值：系统从算法构造出发，经历数值实验、商核心搜索、反例检验与错误修正，逐步认识到仅确定因子的分布不足以获得完整分解，最终回到完整张量，通过取等条件找到了缺失的跨因子联系。随报告公开的 Research Trajectory（研究历程）由研究记忆及相关材料整理而成，与笔记、程序、实验结果和机器可检查证书相互对应，使读者既能独立复验数学结果，也能理解关键认识如何积累、为何改变研究方向，以及中间方法如何被后续研究继承。本工作因此既提供了矩阵乘法下界的一条结构性证明路线，也提供了一个可追溯、可复用的长程自主数学研究案例，将最终成果与形成成果的知识积累过程共同开放给研究者。
+\par\smallskip\noindent\textbf{关键词}\quad
+矩阵乘法；张量秩；双线性复杂度；有限域；计算机辅助证明；自主数学研究
+\end{abstract}
+{\small\setstretch{1.0}\tableofcontents\par}
+\clearpage
+
+\section{引言}
+
+两个 $3\times3$ 矩阵的常规乘法需要 27 次标量乘法。双线性算法先分别对两个输入的元素作线性组合，再计算这些组合之间的乘积，最后以乘积的线性组合恢复输出，从而减少乘法次数。构造出一个这样的算法，就给出了所需乘法次数的上界；证明下界，则必须排除同一计算模型下的所有更短算法。底域的选择至关重要：本文始终在二元域上进行标量运算，其中加法按模二计算。
+
+这一计数衡量的是代数复杂度，而非机器指令数或硬件吞吐量。核心科学问题是：哪些精确分解能够存在？本文揭示的关键机制是，看似分离的因子约束能够共同迫使一个秩不等式取等，而取等又产生足以排除所假设分解的代数恒等式。
+
+域 $k$ 上张量 $T$ 的\emph{双线性复杂度} $R(T)$，是计算 $T$ 所表示的多线性映射所需的双线性算法中，标量乘法次数的最小值。等价地，它就是 $T$ 的张量秩，即将 $T$ 写为 $r$ 个简单张量（秩一张量）之和所需的最小 $r$。对于 $\FF$ 上的 $3\times3$ 矩阵乘法张量 $\Tmmm$，本研究所继承的早期基线为
+\[
+  20\;\le\;R_{\FF}(\Tmmm)\;\le\;23.
+\]
+Laderman 算法适配到 $\FF$ 后可达到上界 23\cite{laderman1976noncommutative}；SAT 搜索也已发现显式的 23 次乘法方案\cite{heule2019waysa}。下界 20 由 Wang\cite{wangautomated}通过自动化框架证明：该框架对第一矩阵因子上的线性限制进行轨道分类，并以动态规划结合四种下界技术，即展平、强制乘积、退化归约以及带回溯的代入法。Wang 的方法产生了包含 496 个子空间代表的机器可检查证明证书。对于本文使用的证书，我们在固定版本的文件上重新运行了 Wang 的验证器，并独立将这 496 个节点展开为完整下界表，所有数值均一致。
+
+矩阵乘法的一般下界方法，包括 Bläser 的二次秩下界和 Landsberg 的渐近秩改进\cite{blaser1999focs,landsberg2012lower}，尚未确定 $\Tmmm$ 这类小张量的精确秩。$\FF$ 上的分解几何也不同于更大的域，因为二元域中不存在非平凡的非零标量倍数。
+
+\begin{theorem}[主要结果]\label{thm:main}
+  $R_{\FF}(\Tmmm)\ge21$。亦即，$\FF$ 上任何 $3\times3$ 矩阵乘法的双线性算法都至少需要 21 次标量乘法。
+\end{theorem}
+
+\textbf{证明机制。}\quad
+证明利用两类约束在长度 20 时的互补作用，排除所有 20 项分解；任何一类约束单独都不足以完成证明。Wang 的商张量占据下界限制了分解中能有多少因子落在因子空间的任意子空间内。分裂展平不等式则要求所有第一因子的矩阵秩之和至少为 27。在长度 20 时，证明使用的三类占据容量恰好达到关键值：$L=19$ 的一维子空间容量为 1；下界加强至 $L=19$ 的全高秩二维子空间容量为 1；规范化陪集中 $L=17$ 的仿射超平面容量为 3。
+
+这三类容量约束迫使秩和恰好等于 27，即达到零超额情形。此时，分裂展平后的各项构成一个置换矩阵的直和分解，从而导出约束矩阵因子间代数关系的正交幂等恒等式。对于矩阵乘法张量，这些恒等式排除了两个可逆第一因子同时存在的可能性，而被强迫的秩型却要求存在三个。矛盾由此产生：因子分布的要求，与因子之间必须满足的代数关系无法同时成立。
+
+\textbf{推论与后续问题。}\quad
+定理将二元域上的精确秩限制在 $[21,23]$ 内。同一饱和恒等式还约束了第一因子秩和恰好为 27 的秩 22 分解：其中至多有一个第一因子可逆。第\ref{sec:outlook}节推导这一结论，并说明现有占据下界为何不能在长度 21 时强迫秩不等式取等。
+
+\textbf{与已有工作的关系。}\quad
+展平的秩和约束 $\sum_t\rk(A_t)\ge\rk(\Phi_A(T))$ 来自矩阵秩的次可加性；展平是代数复杂度中的标准工具\cite{burgisser1997algebraic,blaser1999focs}。两两之差为秩一矩阵的矩阵族包含于共同仿射行陪集或列陪集的结构定理，属于华罗庚矩阵几何的内容\cite{hua1945geometries,wan1996geometry,pazzis2015hua}。秩可加分解与幂等恒等式是经典线性代数；相关恒等式见文献\cite{cochran1934distribution,tian2001rank}，本文则在所需底域上直接证明引理\ref{lem:saturation}。本文的具体路线将八个商下界的 CNF/DRAT 认证、零超额时的秩可加性，以及张量特有的乘积恒等式\eqref{eq:product}结合起来，以结构性矛盾取代最后对第一因子秩型的枚举。
+
+\input{sections/research_process}
+
+\section{数学设定与 Wang 证书}\label{sec:setting}
+
+\subsection{张量约定}
+
+$3\times3$ 矩阵乘法张量 $\Tmmm$ 属于 $(\FF^9)^{\otimes3}$，其中每个 $\FF^9$ 都与 $\FF$ 上的 $3\times3$ 矩阵空间对应。我们采用索引约定
+\begin{equation}\label{eq:tensor}
+  T[3i+j,\;3j+k,\;3i+k] = 1 \qquad (0\le i,j,k<3),
+\end{equation}
+其余元素均为零。在坐标配对 $\langle A,X\rangle=\sum_{i,j}A_{ij}X_{ij}=\tr(A^TX)$ 下，其作用于输入矩阵与测试矩阵的三线性形式为 $(X,Y,Z)\mapsto\tr(XYZ^T)$。一个秩一项写作 $A_t\otimes B_t\otimes C_t$，其中 $A_t,B_t,C_t$ 是系数矩阵。长度为 $r$ 的精确分解是恒等式
+\begin{equation}\label{eq:general-decomposition}
+  \Tmmm \;=\; \sum_{t=1}^r A_t\otimes B_t\otimes C_t,
+\end{equation}
+它以 $r$ 次标量乘法计算 $XY=\sum_t\langle A_t,X\rangle\langle B_t,Y\rangle C_t$，因此证明 $R(\Tmmm)\le r$；等号是否成立还需要另行证明下界。
+
+对于 $W\le\FF^9$，令 $q_W:\FF^9\to\FF^9/W$，并定义 $T_W=(q_W\otimes\mathrm{id}\otimes\mathrm{id})\Tmmm$。其对偶的第一输入空间，是坐标配对下的零化子 $W^\perp$：对系数因子取商，等价于将第一输入限制在该零化子上，而不是限制在子空间 $W$ 本身。
+
+张量具有证明所需的一种对称性：映射 $(A,B,C)\mapsto(A^T,C,B)$ 保持三线性形式，因为 $\tr(ABC^T)=\tr(A^TCB^T)$。利用这一转置对称性，将 $A$ 因子转置即可把“行型”分解的分析归约为“列型”。
+
+\subsection{Wang 的商张量占据不等式}
+
+Wang\cite{wangautomated}通过经过认证的计算证明了 $R_{\FF}(\Tmmm)\ge20$。记固定的继承表中的下界为 $L_0(W)$，于是 $L_0(W)\le R(T_W)$。表值不是真实的商张量秩，也不会因后来证明了更强下界而被重新定义。基本不等式如下。
+
+\begin{proposition}[占据不等式]\label{prop:occupation}
+  设 $\Tmmm=\sum_{t=1}^n A_t\otimes B_t\otimes C_t$ 是一个长度为 $n$ 的分解，且 $W\le\FF^9$。若 $m(W)$ 表示满足 $A_t\in W$ 的指标 $t$ 的数量，则
+  \begin{equation}\label{eq:occ}
+    m(W)\;\le\; n-R(T_W)\;\le\;n-L_0(W).
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  满足 $A_t\in W$ 的项在 $q_W$ 下消失。其余项给出一个长度至多为 $n-m(W)$ 的 $T_W$ 分解，因此 $R(T_W)\le n-m(W)$。
+\end{proof}
+
+Wang 的证书包含 496 个子空间代表。对这些代表施加张量对称群作用，便得到完整查找表（LUT）。该作用包括 $\GL_3(\FF)\times\GL_3(\FF)$ 在 $A$ 位置上的作用 $(P,Q)\cdot A=P^TAQ^{-T}$，以及转置 $(A,B,C)\mapsto(A^T,C,B)$。展开后的 LUT 恰有 $8{,}283{,}458$ 个条目，每个条目对应 $\FF^9$ 的一个子空间，与高斯二项式系数之和 $\sum_{d=0}^9\binom{9}{d}_2$ 一致。我们利用经过验证、保持张量的生成元，通过广度优先搜索（BFS）计算轨道闭包，从 496 个证书节点独立展开了完整表；没有数值不匹配，也没有缺失子空间。
+
+对于可逆的 $U,V,H$，完整的系数作用为
+\begin{equation}\label{eq:coefficient-action}
+ (A,B,C)\longmapsto
+ (U^TAV^{-T},\;V^TBH^{-T},\;U^{-1}CH).
+\end{equation}
+它是映射 $(X,Y,Z)\mapsto(UXV^{-1},VYH^{-1},U^{-T}ZH^T)$ 的拉回，而后者保持 $\tr(XYZ^T)$。因此，上述第一位置上的作用确实可扩展为完整张量的对称性，并保持商张量的秩。
+
+\subsection{有限前提及其来源}
+
+证明使用继承表以及另行认证的改进：
+\begin{enumerate}[label=(\roman*)]
+  \item\label{it:lines} \textbf{全部 511 个一维子空间均有 $L=19$。}\quad 对任意一维子空间 $\langle a\rangle\le\FF^9$，表中都有 $L_0(\langle a\rangle)=19$。
+  \item\label{it:dim2} \textbf{八个二维轨道满足 $R(T_W)\ge19$。}\quad $\FF^9$ 的 $43{,}435$ 个二维子空间在对称群作用下分为 14 个轨道。其中恰有八个轨道的平面，其三个非零矩阵的秩均至少为 2；它们在固定证书中的编号为 484--491，共包含 $32{,}018$ 个子空间。每个代表的继承值均为 $L_0(W_i)=18$。第\ref{sec:dim2}节通过证明目标总数为 18 的占据系统不可行，得到 $R(T_{W_i})\ge19$。张量对称性给出 $T_{W_i}\cong T_{gW_i}$，将改进后的下界传递到整个轨道。这些编号对应固定版本的文件，而不是上游表的任意版本。
+  \item\label{it:coset} \textbf{陪集超平面的表值。}\quad 规范化后（见第\ref{sec:coset}节），相关陪集的四维线性张成空间 $S$ 满足 $L_0(S)=14$。它的 15 个三维超平面分为一个 $L=15$ 的秩一族，以及十四个 $L=17$ 的仿射平面对应超平面。
+\end{enumerate}
+
+\section{主定理的证明}\label{sec:proof}
+
+已经验证的下界 $R_{\FF}(\Tmmm)\ge20$ 排除了更短分解，因此只需排除长度 20。反设
+\begin{equation}\label{eq:decomp}
+  \Tmmm \;=\; \sum_{t=1}^{20} A_t\otimes B_t\otimes C_t
+\end{equation}
+是 $\FF$ 上的一个精确分解，且各项均非零。
+
+\subsection{分裂展平与秩预算}\label{sec:flattening}
+
+张量 $T\in(\FF^9)^{\otimes3}$ 的 \emph{$A$ 分裂展平}，是把每个 $A$ 坐标拆成行、列指标后得到的线性映射 $\Phi_A(T):\FF^{27}\to\FF^{27}$。具体而言，矩阵 $P=\Phi_A(\Tmmm)$ 的元素为 $P[(i,b),(j,c)]=T[3i+j,b,c]$，其中 $(i,b)$ 和 $(j,c)$ 为复合指标，$0\le i,j<3$，$0\le b,c<9$。由索引约定\eqref{eq:tensor}可知，$P$ 是一个 $27\times27$ 置换矩阵：每行、每列都恰有一个非零元素。特别地，$\rk(P)=27$。
+
+每个分解项展平后得到 $M_t=\Phi_A(A_t\otimes B_t\otimes C_t)$，它是 Kronecker 积 $A_t\otimes\mathbf{b}_t\mathbf{c}_t^T$，其中 $\mathbf{b}_t=\operatorname{vec}(B_t)$，$\mathbf{c}_t=\operatorname{vec}(C_t)$。由于 $B_t\ne0$ 且 $C_t\ne0$，外积 $\mathbf{b}_t\mathbf{c}_t^T$ 的秩为一，所以
+\[
+  \rk(M_t) = \rk(A_t).
+\]
+由秩的次可加性，
+\begin{equation}\label{eq:rksum}
+  27 = \rk(P) = \rk\!\Bigl(\sum_{t=1}^{20}M_t\Bigr) \;\le\; \sum_{t=1}^{20}\rk(A_t).
+\end{equation}
+对每个因子记 $e_t=\rk(A_t)-1\in\{0,1,2\}$，得到 $\sum_{t=1}^{20}e_t\ge7$。每项至多贡献 2，因此至少四个因子满足 $e_t\ge1$，即 $\rk(A_t)\ge2$。称这些因子为\emph{高秩因子}。
+
+\subsection{第一因子的互异性}
+
+根据表值\ref{it:lines}，每个一维子空间均满足 $L_0(\langle a\rangle)=19$。占据不等式给出 $m(\langle a\rangle)\le1$。在 $\FF$ 上，非零矩阵没有非平凡的非零标量倍数，所以至多一个因子等于 $a$。故二十个 $A$ 因子两两不同。
+
+\subsection{八个二维商下界}\label{sec:dim2}
+
+取不同的高秩因子 $A_s,A_t$，令 $W=\langle A_s,A_t\rangle$。由于 $m(W)\ge2$，式\eqref{eq:occ}给出 $R(T_W)\le18$。
+
+现在假设第三个非零元素 $A_s+A_t$ 的秩也至少为 2。那么 $W$ 就是一个“全高秩”平面：其三个非零元素的矩阵秩均至少为 2。独立的轨道分类（第\ref{sec:setting}节）表明，这些平面恰分为八个轨道，证书编号为 484--491。我们证明：
+
+\begin{proposition}[二维下界的加强]\label{prop:dim2}
+  对每个轨道代表 $W_i$（$i\in\{484,\ldots,491\}$），占据系统
+  \begin{equation}\label{eq:occ-system}
+    \begin{gathered}
+    x_q\in\mathbb{Z}_{\ge0},\qquad \sum_{q\in(\FF^9\!/W)\setminus0}x_q=18,\\
+    \sum_{q\in(V/W)\setminus0}x_q\le18-L_0(V)
+    \qquad\text{对每个非零真子空间 }V/W
+    \end{gathered}
+  \end{equation}
+  均无整数解。其中 $W=W_i$，$V$ 遍历所有严格包含 $W$ 且严格小于 $\FF^9$ 的子空间。因此，$R(T_{W_i})\ge19$。
+\end{proposition}
+
+若 $R(T_{W_i})\le18$，取一个各项非零、长度 $n_0\le18$ 的商张量分解。对其再次按 $V/W_i$ 取商可知，第一因子的重数总和为 $n_0$，且满足每个容量约束 $n_0-L_0(V)$。给任意一个重数加上 $18-n_0$，仍满足所有放宽后的容量约束 $18-L_0(V)$，而总和变为 18。因此，短分解必然产生式\eqref{eq:occ-system}的整数解。这里不主张逆命题：占据计数本身不能提供相容的第二、第三因子。
+
+每个系统有 127 个重数变量和 $29{,}210$ 个子空间约束，容量为 $18-L_0(V)$。SAT 编码使用布尔副本与序贯计数器约束；CaDiCaL 返回 UNSAT，\texttt{drat-trim} 验证其证明。重数对轨道 489 尤为关键，因为其中一个方向的容量为 2。另行检查还在目标总数 19 时找到了可行占据向量，并确认投影后的秩 23 分解不违反任何约束行。这些是校准检查，既不是秩 19 构造，也不是编码可靠性的证明。
+
+\medskip
+一旦对全高秩平面建立 $R(T_W)\ge19$，占据不等式就给出 $m(W)\le1$，与 $m(W)\ge2$ 矛盾。因此，只要 $A_s,A_t$ 均为高秩因子，$A_s+A_t$ 就必须秩为一，故
+\begin{equation}\label{eq:rkone}
+  \rk(A_s-A_t)=\rk(A_s+A_t)=1
+  \qquad\text{对任意一对高秩因子成立。}
+\end{equation}
+
+\subsection{仿射陪集包含关系}\label{sec:coset}
+
+两两之差为秩一矩阵的矩阵族具有经典的结构。下面的结论来自华罗庚矩阵几何中的邻接理论\cite{hua1945geometries,wan1996geometry,pazzis2015hua}。
+
+\begin{lemma}[陪集结构]\label{lem:coset}
+  设 $H\subset M_{3\times3}(\FF)$ 包含至少四个互不相同的矩阵，且对任意不同的 $a,b\in H$，均有 $\rk(a-b)=1$。则存在 $p\in M_{3\times3}(\FF)$ 及非零 $u,v\in\FF^3$，使 $H$ 包含于仿射列陪集 $p+u\cdot(\FF^3)^T$ 或仿射行陪集 $p+\FF^3\cdot v^T$。
+\end{lemma}
+
+\begin{proof}
+  固定互不相同的 $a,b,c\in H$，写成 $a+b=u_1v_1^T$、$a+c=u_2v_2^T$。于是 $b+c=u_1v_1^T+u_2v_2^T$ 的秩为一；在 $\FF$ 上，这要求 $u_1=u_2$（列型）或 $v_1=v_2$（行型）。类型是唯一的：若两者同时成立，则 $b+c=0$，与 $\rk(b+c)=1$ 矛盾。对第四个点 $d\in H$，写成 $a+d=u'(v')^T$。若 $a,b,c$ 为列型，公共左向量为 $u$，则 $b+d$ 和 $c+d$ 都是秩一矩阵。由于 $b+d=u_1v_1^T+u'(v')^T$ 且 $c+d=u_2v_2^T+u'(v')^T$，秩一条件强迫 $u'=u$，除非 $(v')^T$ 同时等于 $v_1^T$ 和 $v_2^T$；但因 $b\ne c$，有 $v_1\ne v_2$，故只能 $u'=u$。因此 $d$ 属于 $a+u\cdot(\FF^3)^T$。
+\end{proof}
+
+令 $H\subset\{A_1,\ldots,A_{20}\}$ 为高秩因子的集合。由式\eqref{eq:rkone}、引理\ref{lem:coset}及 $|H|\ge4$，所有高秩因子均包含于同一个列型或行型仿射陪集。
+
+张量对称性 $(A,B,C)\mapsto(A^T,C,B)$ 将行型陪集 $p+\FF^3\cdot v^T$ 变为列型陪集 $p^T+v\cdot(\FF^3)^T$，所以只需处理列型。
+
+\subsection{被强迫的秩型}
+
+利用 $\GL_3(\FF)\times\GL_3(\FF)$ 规范化列陪集；该群在 $A$ 位置上的作用为 $(P,Q)\cdot A=P^TAQ^{-T}$。因为 $\GL_3(\FF)$ 在 $\FF^3\setminus\{0\}$ 上传递作用，左乘可以将 $u$ 送至 $e_1$。陪集因而写为 $p+e_1\cdot(\FF^3)^T$，其中 $p$ 为固定基矩阵。调整陪集代表，可令 $p$ 的第一行为零。八个陪集元素 $\{p+e_1w^T:w\in\FF^3\}$ 仅在第一行不同。令 $D$ 为 $p$ 的下方 $2\times3$ 子块。在下述秩二情形中，列方向 $e_1$ 的稳定子结合行、列基变换，对满秩的 $2\times3$ 下方子块传递作用。因此可取 $D=\left(\begin{smallmatrix}0&1&0\\0&0&1\end{smallmatrix}\right)$；等价地，在附录\ref{app:data}的整数编码中，$p=272=\operatorname{diag}(0,1,1)$。下文使用的 $L_0(S)=14$、$L_0(R)=15$ 以及十四个 $L=17$ 的超平面值，均针对规范化后的张成空间 $S=\langle272,4,2,1\rangle$；$\GL_3\times\GL_3$ 不变性将这些值传递到每个下方子块秩为二的列陪集。
+
+具体而言，左乘 $\operatorname{diag}(1,K)$ 保持 $e_1$ 不变，并在下方子块上诱导任意 $K\in\GL_2(\FF)$。对于秩二的 $D$，可先选取右作用 $G\in\GL_3(\FF)$，将其行空间送至 $\langle e_2^T,e_3^T\rangle$，再选取 $K$，使两行向量依次成为这两个标准基向量；于是 $KDG$ 就是上述标准子块。两种作用都属于第\ref{sec:setting}节描述的张量对称性。
+
+若 $\rk(D)=0$，每个陪集元素的秩至多为一，因而陪集中没有高秩因子，与 $H\ne\emptyset$ 矛盾。若 $\rk(D)=1$，则 $D$ 的行空间为一维；当且仅当第一行不在此行空间内时，陪集元素的秩为二。在 $\FF$ 上，这给出 $8-2=6$ 个秩二元素和 2 个秩一元素，没有秩三元素。至多六个高秩因子带来的总超额因而不超过 $6\cdot1=6<7$，与式\eqref{eq:rksum}矛盾。因此 $\rk(D)=2$。
+
+当 $\rk(D)=2$ 时，陪集中有四个秩二元素（第一行位于 $D$ 的二维行空间内，因而不使秩升至三）和四个秩三元素（第一行位于该行空间外）。陪集的线性张成空间是四维子空间
+\[
+  S = \langle p,\; e_1e_1^T,\; e_1e_2^T,\; e_1e_3^T\rangle.
+\]
+根据表值\ref{it:coset}，$L_0(S)=14$。$S$ 的 15 个三维超平面包括：
+\begin{itemize}
+  \item 一个超平面 $R=\langle e_1e_1^T,e_1e_2^T,e_1e_3^T\rangle$，其非零元素均秩为一，且 $L_0(R)=15$。
+  \item 十四个超平面，分别对应 $(\FF^3)^T\cong\FF^3$ 中的十四个仿射平面，每个均有 $L=17$。
+\end{itemize}
+若四个陪集标签（第一行向量）构成 $\AG(3,2)$ 的一个仿射平面，那么对应的四个陪集元素便落在这十四个超平面之一内。
+
+十四个下界 17 是下面论证的必要前提；$L_0(S)=14$ 和 $L_0(R)=15$ 则用于辅助检查规范化。
+
+每个仿射平面对应的超平面 $H_\pi$ 均满足 $L_0(H_\pi)=17$，故由式\eqref{eq:occ}，二十个因子中至多有 $20-17=3$ 个 $A$ 因子属于 $H_\pi$。
+
+\begin{lemma}[点集容量界]\label{lem:cap}
+  $\FF^3$ 的任意五元子集都包含一个四点仿射平面。
+\end{lemma}
+
+\begin{proof}
+  五个点 $p_1,\ldots,p_5\in\FF^3$ 产生 $\binom{5}{2}=10$ 个无序点对和 $p_i+p_j$，而可能的非零值只有 $|\FF^3\setminus\{0\}|=7$ 个。因此必有两个不同点对具有相同的和：$p_i+p_j=p_k+p_\ell$。两对不能恰好共享一个端点，否则会得到 $p_j=p_k$ 或 $p_j=p_\ell$，使五个点中有两点重合。所以这两对互不相交。四个端点满足 $p_i+p_j+p_k+p_\ell=0$，构成一个四点仿射平面。
+\end{proof}
+
+$\AG(3,2)$ 中十四个四点仿射平面各提供一个“至多 3 个”的约束，而引理\ref{lem:cap}说明任意五个点都包含一个这样的平面。因此
+\begin{equation}\label{eq:highcount}
+  |H|\le4.
+\end{equation}
+第\ref{sec:flattening}节已证明 $|H|\ge4$，故 $|H|=4$。
+
+四个秩三标签本身构成 $\AG(3,2)$ 的一个仿射平面，即 $D$ 的行空间在 $\FF^3$ 中的补集。因此，四个高秩因子中至多三个秩为三。记秩三因子数为 $h_3\le3$，由 $|H|=4$ 可得秩超额
+\[
+  \sum_{t=1}^{20}(\rk(A_t)-1)=16\cdot0+(4-h_3)\cdot1+h_3\cdot2=4+h_3.
+\]
+该值必须至少为 7，所以 $h_3\ge3$。结合 $h_3\le3$，得到
+\begin{equation}\label{eq:profile}
+  h_2=1,\quad h_3=3,\quad\text{且}\quad
+  \sum_{t=1}^{20}\rk(A_t)=16+2+3+3+3=27.
+\end{equation}
+
+\subsection{饱和与代数矛盾}\label{sec:saturation}
+
+式\eqref{eq:profile}说明秩不等式\eqref{eq:rksum}取等。这带来了一个很强的代数结论。
+
+\begin{lemma}[秩可加分解]\label{lem:saturation}
+  设 $P$ 是域 $k$ 上的可逆 $n\times n$ 矩阵，且 $P=\sum_{t=1}^rM_t$ 满足 $\sum_{t=1}^r\rk(M_t)=\rk(P)=n$。则
+  \begin{equation}\label{eq:idempotent}
+    M_tP^{-1}M_s=\delta_{ts}\,M_t\qquad\text{对所有 }s,t\text{ 成立。}
+  \end{equation}
+  特别地，$\{E_t=M_tP^{-1}\}$ 构成一组完备的正交幂等元：$E_t^2=E_t$，当 $t\ne s$ 时 $E_tE_s=0$，且 $\sum_tE_t=I$。这里的正交指两两相乘为零，不涉及内积条件。
+\end{lemma}
+
+\begin{proof}
+  由于 $\sum_t\rk(M_t)=n=\rk(P)$，列空间 $\operatorname{col}(M_t)$ 构成直和，且其和等于 $k^n$；行空间同理。对任意 $x$，令 $z=P^{-1}M_sx$，于是 $Pz=M_sx$。因此 $\sum_tM_tz=M_sx$，由直和分解的唯一性，当 $t\ne s$ 时有 $M_tz=0$，而 $M_sz=M_sx$。
+\end{proof}
+
+这是一个初等的秩可加性引理；相关的幂等秩恒等式已有经典研究\cite{cochran1934distribution,tian2001rank}。
+
+下面利用矩阵乘法张量的特殊结构。分裂展平项 $M_t=M(A_t,B_t,C_t)$ 的行、列分别由 $(i,b)$ 和 $(j,c)$ 编号，其中 $0\le i,j<3$，$0\le b,c<9$。我们显式计算其乘积。
+
+\begin{proposition}[乘积恒等式]\label{prop:product}
+  对于采用约定\eqref{eq:tensor}的张量 $\Tmmm$，有
+  \begin{equation}\label{eq:product}
+    M(A_t,B_t,C_t)\;P^{-1}\;M(A_s,B_s,C_s)
+    \;=\;M\bigl(A_tB_sC_t^TA_s,\;B_t,\;C_s\bigr).
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  用 $(i,b)$ 和 $(j,c)$ 为行、列编号，其中 $0\le i,j<3$，$0\le b,c<9$。$M_t$ 的元素为 $M_t[(i,b),(j,c)]=A_t[i,j]\cdot\mathbf{b}_t[b]\cdot\mathbf{c}_t[c]$，其中 $\mathbf{b}_t=\operatorname{vec}(B_t)$，$\mathbf{c}_t=\operatorname{vec}(C_t)$。由于 $P$ 是 $\FF$ 上的置换矩阵，$P^{-1}=P^T$，因此 $P^{-1}[(k,d),(m,e)]=T[3m+k,e,d]$。
+
+  左侧的 $((i,b),(j,c))$ 元素可分解为 $\mathbf{b}_t[b]\cdot\mathbf{c}_s[c]$ 乘以
+  \[
+    \sum_{k,m}A_t[i,k]\,A_s[m,j]\;\underbrace{\sum_{d,e}\mathbf{c}_t[d]\,T[3m+k,e,d]\,\mathbf{b}_s[e]}_{(\star)}.
+  \]
+  对固定的 $m,k$，内层和式 $(\star)$ 是 $\tr(XB_sC_t^T)$ 中 $X[m,k]$ 的系数，即 $(B_sC_t^T)[k,m]$。具体地，非零张量元素满足 $e=3k+k'$、$d=3m+k'$，其中 $k'\in\{0,1,2\}$，所以 $(\star)=\sum_{k'}C_t[m,k']\,B_s[k,k']$。对 $k,m$ 求和得到
+  \[
+    \sum_{k,m}A_t[i,k]\,(B_sC_t^T)[k,m]\,A_s[m,j]=(A_tB_sC_t^TA_s)[i,j].
+  \]
+  故完整的矩阵元素等于 $M(A_tB_sC_t^TA_s,B_t,C_s)[(i,b),(j,c)]$。
+\end{proof}
+
+\begin{proof}[完成定理\ref{thm:main}的证明]
+  由式\eqref{eq:profile}，有三个 $A$ 因子可逆（$\rk=3$），不妨记为 $A_1,A_2,A_3$。在式\eqref{eq:idempotent}和式\eqref{eq:product}中取 $t=s$，得到
+  \[
+    M(A_tB_tC_t^TA_t,\,B_t,\,C_t)=M(A_t,\,B_t,\,C_t).
+  \]
+  因为 $B_t\ne0$ 且 $C_t\ne0$，映射 $X\mapsto M(X,B_t,C_t)$ 在 $3\times3$ 矩阵空间上是单射：它是与一个非零外积矩阵作 Kronecker 积。因此 $A_tB_tC_t^TA_t=A_t$，从而
+  \begin{equation}\label{eq:diagonal}
+    B_tC_t^T=A_t^{-1},
+  \end{equation}
+  所以 $B_t$ 与 $C_t$ 都可逆。
+
+  现取 $t\ne s$，且 $A_t,A_s$ 均可逆，例如 $t=1,s=2$。式\eqref{eq:idempotent}的非对角恒等式与式\eqref{eq:product}给出
+  \begin{equation}\label{eq:off-diagonal-zero}
+    M(A_1B_2C_1^TA_2,\,B_1,\,C_2)=0.
+  \end{equation}
+  因为 $B_1\ne0$ 且 $C_2\ne0$，由单射性得 $A_1B_2C_1^TA_2=0$。然而 $A_1,A_2$ 可逆；将式\eqref{eq:diagonal}分别用于 $t=2$ 和 $t=1$，又知 $B_2,C_1$ 可逆。可逆矩阵的乘积不可能为零。
+
+  这一矛盾说明不存在 20 项分解，证明完成。
+\end{proof}
+
+\section{适用范围与展望}\label{sec:outlook}
+
+\subsection{长度 21 时的容量约束}
+
+本论证不能排除 21 项分解，因为相关占据容量会增大。下表比较了长度 20 时使用的三类容量。这里的 $L$ 表示相应的已认证商下界，包括对 $L_0$ 的改进。
+\[
+  \begin{array}{c|cc}
+    \text{子空间族}&n=20\text{ 时的容量}&n=21\text{ 时的容量}\\\hline
+    L=19\text{ 的一维子空间}&1&2\\
+    L=19\text{ 的全高秩二维平面}&1&2\\
+    L=17\text{ 的仿射超平面}&3&4
+  \end{array}
+\]
+长度为 21 时，一维子空间容量升至 2，允许 $A$ 方向重复。全高秩平面容量也升至 2，两个高秩因子可以同处一个这样的平面而不产生矛盾，因此不能再推出两两之差秩一。此外，展平不等式 $\sum_{t=1}^{21}\rk(A_t)\ge27$ 也不再强迫秩和等于 27：秩和超额 $\Delta_A=\sum_t\rk(A_t)-27$ 只需非负，无须为零。没有零超额，饱和恒等式\eqref{eq:idempotent}就不成立，上述代数矛盾也不再随之产生。
+
+目标总数 19 的占据见证与投影后的秩 23 对照，检验的是不同方面的一致性。两者都没有提供完整的秩 19 商张量分解，也不能证明其存在，更不能取代编码的正向论证。它们是有用的诊断手段，而不是下界证明的前提。
+
+\subsection{对秩 22 分解的约束}
+
+尽管主定理未解决秩 22 的问题，饱和分析仍提供了结构信息。假设一个秩 22 分解满足 $\sum_t\rk(A_t)=27$，即 $A$ 位置上零超额，则引理\ref{lem:saturation}的全部恒等式都成立。乘积恒等式\eqref{eq:product}随即说明，至多一个 $A$ 因子可以可逆，因为两个可逆因子会导出同样的零乘积矛盾。这排除了零超额时 $A$ 位置的秩分布 $(19,1,2)$，即十九个秩一、一个秩二和两个秩三因子；因而该位置上零超额的秩 22 分解只可能具有 $(17,5,0)$ 或 $(18,3,1)$ 两种秩型。
+
+在张量约定\eqref{eq:tensor}下，循环映射 $(A,B,C)\mapsto(B,C^T,A^T)$ 是张量对称性，因为迹的循环性给出 $\tr(B\cdot C^T\cdot A)=\tr(ABC^T)$，且转置保持秩。$B$ 与 $C$ 位置的分裂展平同样是 $27\times27$ 置换矩阵，所以同样的饱和分析适用于每个因子位置。一个位置上零超额，本身并不意味着其他位置也零超额。
+
+在正超额情形下，秩的次可加性不再提供这些恒等式。更强的占据论证或不同的结构约束仍可能推进问题；本文的证明没有排除这些扩展。
+
+\section{机器验证的前提}\label{sec:machine}
+
+定理\ref{thm:main}使用一份经过认证的商下界表，以及八个额外的有限排除结果。本节说明如何编码并检查这些数学前提。在仓库根目录运行 \texttt{make verify-full}，即可重建八个公式、检查它们的证明、独立展开商下界表，并重新运行原始证书的验证器。依赖与命令说明见 \qpath{reproducibility/README.md}。
+
+\subsection{Wang 认证的商下界}
+
+继承证书来自 Wang 的 arXiv:2603.07280v6\cite{wangautomated}。重新运行其验证器，可从 496 个子空间代表确认 $R_{\FF}(\Tmmm)\ge20$。另一套 C++ 广度优先展开程序独立重建包含 $8{,}283{,}458$ 个条目的完整查找表，具体步骤为：
+\begin{enumerate}
+  \item 解析证书的 textproto 记录；
+  \item 验证 13 个初等生成元，即六个左侧错切、六个右侧错切及 $A$ 转置，均在约定\eqref{eq:tensor}下保持张量；
+  \item 为每个展开子空间计算简化行阶梯形（RREF）键；
+  \item 检查重叠轨道之间是否存在表值冲突。
+\end{enumerate}
+重新展开的表没有冲突，各维子空间数符合高斯二项式计数，并与已保存的表逐值一致。
+
+\subsection{八个二维 DRAT 证明}
+
+对每个方向 $q$，最强的单点约束行给出容量 $c_q$。主编码器使用 $c_q$ 个互异的布尔副本，并令 $x_q=\sum_{j=1}^{c_q}y_{q,j}$。七个轨道只有 0 或 1 的容量；轨道 489 有一个方向的容量为 2。各行求和转化为基数约束，总重数 18 则转化为相匹配的上界与下界约束。
+
+为验证证明所需的正向蕴含，取任意合法整数向量，对每个 $q$ 恰将 $x_q$ 个副本设为真。于是每行的布尔求和都恰等于预期的整数和。每个已满足的基数约束都可扩展为满足序贯计数器的赋值；统一变量池为所有计数器分配互不重叠的辅助变量，使这些扩展可以同时成立。删除重复行或恒真约束不会移除这一赋值。反过来，将满足赋值中的副本求和也可恢复合法整数计数。因此，CNF 与整数系统等可满足，但整数系统只是张量分解的必要条件。这些无序布尔副本不同于独立一元计数实现中使用的单调阈值变量。
+
+CaDiCaL 求解每个实例并生成 DRAT 证明，再由 \texttt{drat-trim} 验证。八个证明文件的大小从轨道 489 的 4.4\,MiB 到轨道 487 的 33.8\,MiB 不等；各轨道数据见表\ref{tab:dim2}。源程序和证明文件均位于 \qpath{proof/}，完整验证流程如下：
+\begin{enumerate}
+  \item 独立的语义生成器直接从 Wang LUT 重建每个节点的局部系统，每个轨道产生 $29{,}210$ 行。
+  \item CNF 编码器使用上述布尔副本表示和基数约束的序贯计数器子句，将各系统转换为 DIMACS 格式。
+  \item CaDiCaL 返回 UNSAT，并输出 DRAT 证明。
+  \item 另一套重建过程精确再生各 CNF，再由 \texttt{drat-trim} 检查相应的反驳证明。
+\end{enumerate}
+八份再生 CNF 均与保存版本一致，八份 DRAT 证明均复验成功。
+
+\subsection{独立实现的交叉检查}
+
+同一研究项目中的另一条验证路径重建了有限前提与代数论证：
+\begin{itemize}
+  \item 对固定证书重新运行 Wang 验证器。
+  \item 验证对称生成元下的 56,448 次张量作用。
+  \item 检查证明使用的 18,704 个子空间的商语义，将二维约束行、一维实例和仿射平面实例对应到证书节点，未发现失败。
+  \item 复验再生 CNF 的 DRAT 证明包，全部检查通过。
+  \item 为全部八个轨道生成另一组“透明一元计数”CNF/DRAT 证书；正向赋值提升验证器确认，每个合法整数占据向量都映射到预期的 CNF 赋值。
+\end{itemize}
+
+\subsection{从有限验证到张量定理}
+
+证明所需的逻辑链是单向的：
+\begin{equation}\label{eq:finite-proof-implication}
+ R(T_{W_i})\le18
+ \ \Longrightarrow\ \text{合法的目标 18 占据计数}
+ \ \Longrightarrow\ \text{CNF 可满足。}
+\end{equation}
+第一个蕴含来自取商与计数补足，第二个来自上述布尔副本构造。因此，经过检查的 DRAT 反驳证明给出 $R(T_{W_i})\ge19$，加强了继承下界 $L_0(W_i)=18$。赋值映射不可缺少：它将公式与每一个假设存在的短商张量分解连接起来。
+
+最终结构性论证使用的前提是：整体下界 20、一维下界 19、全高秩平面下界 19，以及十四个仿射平面对应的下界 17。在这些有限前提成立后，第\ref{sec:flattening}至\ref{sec:saturation}节以书面证明给出其余推导。计算提供有限限制；秩可加性与乘积恒等式解释这些限制为何与 20 项分解不相容。
+
+\section{结论}
+
+Qiushi Engine 的研究得到 $R_{\FF}(\Tmmm)\ge21$ 的结构性证明。结合已知上界，秩的范围为 $[21,23]$。证明揭示了一种机制：Wang 占据格与分裂展平的秩可加性相互补充。占据下界迫使秩型达到零超额，而零超额处的饱和恒等式将 $A$ 侧的计数约束转化为涉及 $B/C$ 的代数矛盾。该机制在长度 20 时成立，因为一维容量、全高秩平面容量和仿射超平面容量恰为 $(1,1,3)$；长度变为 21 时，它们放宽为 $(2,2,4)$。
+
+精确双线性复杂度仍未确定。任何在某个因子位置上零超额的秩 22 分解，都至多有一个该位置的因子可逆。现有容量约束不能在长度 21 时强迫饱和，因此不能证明下界 22。更强的占据下界、饱和论证的扩展，以及不同的结构方法，仍是可能的研究方向。
+
+Qiushi Engine 的自主数学研究也留下了这一机制如何形成的记录。整合后的 Meta-Trace 与按主题组织的研究材料，将候选表示、实验、纠错及后续决策连接起来。它们展示了：从因子支撑到完整分解的困难，如何促使系统重新考察完整张量；一个秩不等式的取等条件，又如何恢复此前缺失的跨因子联系。因此，本报告既提供结构性证明，也提供一个与证据相联的研究案例，使读者能够理解持续自主研究中的数学认识如何积累，并转化为新的方法。
+
+\bigskip
+\appendix
+\section{显式有限数据}\label{app:data}
+
+本附录列出证明实际使用的子空间与表值，使读者无需访问研究工作空间，也能重建机器验证的前提。
+
+\subsection{张量约定}
+
+按行优先顺序，将 $3\times3$ 矩阵 $A$ 对应为 $\FF^9$ 中的向量：
+\[
+  A=\begin{pmatrix}a_0&a_1&a_2\\a_3&a_4&a_5\\a_6&a_7&a_8\end{pmatrix}
+  \;\longleftrightarrow\;(a_0,a_1,\ldots,a_8)\in\FF^9.
+\]
+整数 $v\in\{0,\ldots,511\}$ 表示的矩阵，其 $(i,j)$ 元素等于 $v$ 的二进制展开中第 $3i+j$ 位。
+
+\subsection{八个二维轨道代表}
+
+每个代表 $W_i$ 由两个 RREF 基向量及其三个非零元素的矩阵秩给出。RREF 约定以最高非零位为主元，从第 8 位向第 0 位排序；这与所展示坐标向量通常从左至右的顺序相反。以下编号属于第\ref{sec:machine}节中的固定证书。
+
+\begin{table}[H]
+\centering
+\caption{八个全高秩二维代表。各代表的继承值均为 $L_0(W_i)=18$；本文证书证明 $R(T_{W_i})\ge19$。变量数包含基数计数器的辅助变量。}
+\label{tab:dim2}
+\begin{tabular}{ccccccc}
+\toprule
+编号 $i$&基&矩阵秩&轨道大小&变量数&子句数&DRAT 证明\\
+\midrule
+484 & $(19,10)$  & $(2,2,2)$ &    98 & 100{,}873 & 192{,}962 & 26.7\,MiB \\
+485 & $(20,10)$  & $(2,2,2)$ & 2{,}352 &  83{,}309 & 158{,}029 & 14.0\,MiB \\
+486 & $(68,10)$  & $(2,2,2)$ & 1{,}176 &  74{,}056 & 140{,}223 & 12.3\,MiB \\
+487 & $(84,10)$  & $(2,3,3)$ & 3{,}528 & 149{,}344 & 289{,}124 & 33.8\,MiB \\
+488 & $(96,10)$  & $(2,2,3)$ & 14{,}112 &  82{,}041 & 156{,}048 & 14.4\,MiB \\
+489 & $(258,10)$ & $(2,2,2)$ & 4{,}704 &  28{,}097 &  51{,}933 &  4.4\,MiB \\
+490 & $(275,10)$ & $(2,3,3)$ & 4{,}704 &  98{,}494 & 188{,}427 & 17.9\,MiB \\
+491 & $(163,84)$ & $(3,3,3)$ & 1{,}344 & 154{,}160 & 300{,}539 & 33.5\,MiB \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{规范化陪集及其超平面表值}
+
+经过 $\GL_3\times\GL_3$ 规范化，列陪集的基点为 $p=272$，即矩阵
+\[
+  p=\begin{pmatrix}0&0&0\\0&1&0\\0&0&1\end{pmatrix},
+\]
+其下方 $2\times3$ 子块 $D$ 的秩为二，列向量为 $u=e_1$。张成空间为
+\[
+  S=\langle272,\;4,\;2,\;1\rangle,\qquad L_0(S)=14.
+\]
+它的 15 个超平面如下：
+\begin{itemize}
+  \item \textbf{秩一族：}$R=\langle4,2,1\rangle$ 的非零元素均秩为一，且 $L_0(R)=15$。与 $T_{\langle2,3,3\rangle}$ 同构的是商张量 $T_R$，而非子空间 $R$ 本身。
+  \item \textbf{十四个仿射平面对应超平面：}各为三维，且均有 $L=17$。$\AG(3,2)$ 中的仿射平面是 $\FF^3$ 的二维子空间的陪集，恰有 $\binom{3}{2}_2\cdot2^{3-2}=14$ 个。
+\end{itemize}
+
+\subsection{占据系统的规格}
+
+为完整说明复现方法，下面给出八个占据系统的重建方式。给定具有 RREF 基的二维子空间 $W\le\FF^9$，令 $k=9-2=7$，并通过选择一个补空间建立 $\FF^9/W\cong\FF^7$。对于 $\FF^7$ 的每个非零真子空间 $V/W$，约束为
+\[
+  \sum_{q\in(V/W)\setminus0}x_q\;\le\;18-L_0(V),
+\]
+这样的子空间共有 $\sum_{d=1}^{6}\binom{7}{d}_2=29{,}210$ 个。其中，$V\le\FF^9$ 是所选商子空间在 $q_W$ 下的完整原像，其下界取继承值 $L_0(V)$。总重数为 $\sum_qx_q=18$。目标 18 时的不可行性即命题\ref{prop:dim2}。
+
+\subsection{证明组成与复现材料}\label{app:repository}
+
+仓库按照本报告的数学依赖关系组织。下表将每项数学问题与研究或复现它所需的材料对应起来。
+
+\begin{longtable}{@{}L{4.8cm}L{9.8cm}@{}}
+\toprule
+数学内容&仓库材料及其作用\\
+\midrule
+\endfirsthead
+\toprule 数学内容&仓库材料及其作用\\\midrule
+\endhead
+\bottomrule\endfoot
+继承的商下界（第\ref{sec:setting}节）
+&\qpath{proof/assets/quotients/}：固定的源证书、展开后的查找数据及独立展开工具。\\
+八个加强后的下界（第\ref{sec:dim2}节）
+&\qpath{proof/assets/occupation/}：整数约束行重建、编码器，以及主验证链使用的八组 CNF/DRAT 文件。\\
+独立结构性交叉检查（第\ref{sec:saturation}节）
+&\qpath{proof/assets/structural/}：独立的一元编码与张量乘积检查。\\
+计算复现
+&\qpath{proof/verify_proof_package.py} 检查选定的有限前提；\qpath{evidence/verification.json} 记录维护版本复验的范围与结果。\\
+研究发展（附录\ref{app:research-record}）
+&\qpath{research/README.md} 介绍公开的 Meta-Trace；\qpath{research/materials/} 按八个数学主题保存笔记、规划、程序和结果；\qpath{research/catalog.json} 索引各项材料。\\
+重新构建与独立使用
+&\qpath{reproducibility/README.md} 说明依赖与可信边界。在仓库根目录运行 \texttt{make verify-full} 可复验主要计算链，\texttt{make reports} 可重新构建本 PDF。\\
+\end{longtable}
+
+显式的编码论证将重建公式与数学前提连接起来；结构性证明则由这些前提导出定理。数学复验不需要网络搜索或语言模型调用。
+
+\FloatBarrier
+\clearpage
+\section{研究历程与知识积累}\label{app:research-record}
+
+本附录将 Qiushi Engine 的原始 Meta-Trace 记录与相关研究笔记、规划、程序和结果综合起来。叙述沿着连接初始秩 22 搜索与结构性下界的数学问题展开：一条路线为何提出，检验了什么，从中学到了什么，以及这些认识如何改变下一个问题。相关研究线按科学内容整合，同时保留中间结果的假设与状态。本附录是依据原始记录进行的主题化重建，而非逐字实录或严格线性的时间线；探索性提议、经过检验的结果与后续更正始终保持区别。
+
+与本附录配套的是 \qpath{research/materials/} 中的八个主题材料集，包括研究笔记与分析、实验规划、实现、输入和结果。\qpath{research/guide.md} 将主要方向变化对应到这些材料集；\qpath{research/catalog.json} 提供单项材料索引。本附录为这些材料提供连贯的阅读路径，而不是转录其生成过程。
+
+研究的核心演变，是逐步改变对“一个表示必须保留什么”的认识。数值上接近，并不能保证存在有限系数的精确算法；第一因子计数，不能决定其余因子；最终，一个秩等式恢复了缺失的代数耦合。追踪这些变化，可以看到仅凭最终证明无法展示的一部分科学工作：有用的理解如何积累、经受纠错，并成为另一种方法的基础。
+
+\input{sections/research_record}
+\FloatBarrier
+\input{sections/comparison}
+\FloatBarrier
+\phantomsection
+\addcontentsline{toc}{section}{参考文献}
+\ifQiushiHasCitations
+  \IfFileExists{refs.bib}{%
+    \bibliographystyle{unsrtnat}
+    \bibliography{refs}}{}
+\fi
+\end{document}

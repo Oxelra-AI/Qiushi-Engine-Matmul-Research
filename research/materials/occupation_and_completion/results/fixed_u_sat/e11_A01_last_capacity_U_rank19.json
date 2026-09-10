@@ -1,0 +1,43 @@
+{
+  "clauses": 14661,
+  "cnf_path": "data/fixed_u_sat/e11_A01_last_capacity_U_rank19.cnf",
+  "core": "data/restricted_cores/mask_001_E11_core.npy",
+  "known_check": null,
+  "rank": 19,
+  "solve": {
+    "elapsed_sec": 1.4307982921600342,
+    "returncode": 20,
+    "solver": "kissat",
+    "status": "UNSAT",
+    "stderr_tail": "",
+    "stdout_tail": "593 39%\nc i  1.43  8 19 13 21 3103 1 63986 11399 1.9 15 8 3 9 14% 1585 8891 1592 39%\nc i  1.43  8 19 13 21 3103 1 63987 11399 1.9 15 8 3 9 14% 1585 8891 1575 39%\nc\nc seconds   switched    rate         size/glue tier1    binary       remaining\nc        MB   reductions  conflicts        size  tier2    irredundant\nc         level    restarts     redundant    glue   trail       variables\nc\nc i  1.43  8 19 13 21 3103 1 63988 11399 1.9 15 8 3 9 14% 1585 8891 1523 37%\nc ]  1.43  8 19 13 21 3103 1 63990 11399 1.9 15 8 3 9 14% 1585 8891 1333 33%\nc 0  1.43  8 18 13 21 3103 3 63990 11399 1.8 11 6 3 6 12% 1585 8891 1333 33%\nc\nc ---- [ result ] ------------------------------------------------------------\nc\ns UNSATISFIABLE\nc\nc ---- [ profiling ] ---------------------------------------------------------\nc\nc           1.10   77.43 %  search\nc           0.60   42.13 %  focused\nc           0.50   35.30 %  stable\nc           0.28   19.66 %  probe\nc           0.27   19.00 %  simplify\nc           0.14    9.64 %  vivify\nc           0.09    6.37 %  sweep\nc           0.05    3.23 %  preprocess\nc           0.03    2.00 %  reduce\nc           0.02    1.74 %  eliminate\nc           0.02    1.32 %  congruence\nc           0.02    1.24 %  substitute\nc           0.01    0.82 %  walking\nc           0.01    0.76 %  factor\nc           0.00    0.26 %  parse\nc           0.00    0.26 %  subsume\nc           0.00    0.24 %  transitive\nc           0.00    0.08 %  backbone\nc           0.00    0.07 %  lucky\nc =============================================\nc           1.43  100.00 %  total\nc\nc ---- [ statistics ] --------------------------------------------------------\nc\nc chronological:                            8                0 %  conflicts\nc conflicts:                            63990            44782.64 per second\nc congruent:                             1135               28 %  variables\nc decisions:                           145547                2.27 per conflict\nc eliminated:                            1197               29 %  variables\nc factored:                                 2                0 %  variables\nc iterations:                              19                0 %  variables\nc propagations:                       5355785          3748182    per second\nc reductions:                              21             3047    interval\nc reordered:                                3            21330    interval\nc rephased:                                 8             7999    interval\nc restarts:                              3103               21    interval\nc strengthened:                            50                0 %  checks\nc substituted:                           1163               29 %  variables\nc subsumed:                                26                0 %  checks\nc switched:                                13             4922    interval\nc vivified:                              5296               27 %  checks\nc walks:                                    3            21330    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 3 used 22328 clauses 18.79% accumulated 66.17% tier1\nc focused glue 4 used 14547 clauses 12.25% accumulated 78.41%\nc focused glue 5 used  9531 clauses  8.02% accumulated 86.44%\nc focused glue 6 used  6206 clauses  5.22% accumulated 91.66% tier2\nc\nc stable glue 3   used 19111 clauses 14.17% accumulated 54.56% tier1\nc stable glue 4   used 14919 clauses 11.06% accumulated 65.62%\nc stable glue 5-7 used 25876 clauses 19.18% accumulated 84.80%\nc stable glue 8   used  5056 clauses  3.75% accumulated 88.55%\nc stable glue 9   used  3718 clauses  2.76% accumulated 91.31% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         35794944 bytes         34 MB\nc process-time:                             1s               1.43 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n"
+  },
+  "source": {
+    "capacity_json": "data/core_capacity/core_capacity_E11_s19.json",
+    "source": "capacity",
+    "support_size": 18
+  },
+  "u_masks": [
+    4,
+    8,
+    9,
+    16,
+    18,
+    24,
+    27,
+    32,
+    36,
+    36,
+    40,
+    50,
+    64,
+    65,
+    72,
+    144,
+    146,
+    216,
+    219
+  ],
+  "u_rank": 8,
+  "vars": 4068
+}

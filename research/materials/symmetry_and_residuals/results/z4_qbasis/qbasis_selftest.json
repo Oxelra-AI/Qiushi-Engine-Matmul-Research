@@ -1,0 +1,275 @@
+{
+  "prime": 65521,
+  "imag_unit": 24297,
+  "rule": "stored L -> A=L^T; Q^{-1}a0^TQ=D; A2=Q^{-1}AQ; M2=Q^{-1}MQ; form coefficient for n_ab is A2_ba; both coefficient orbits and variable coordinates use weight mu_b/mu_a",
+  "Q": [
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      65520,
+      24297,
+      41224
+    ],
+    [
+      1,
+      65520,
+      65520
+    ]
+  ],
+  "mu": [
+    65520,
+    24297,
+    41224
+  ],
+  "coords": {
+    "0": {
+      "entry": [
+        0,
+        0
+      ],
+      "group": "p",
+      "weight": 1
+    },
+    "1": {
+      "entry": [
+        1,
+        1
+      ],
+      "group": "p",
+      "weight": 1
+    },
+    "2": {
+      "entry": [
+        2,
+        2
+      ],
+      "group": "p",
+      "weight": 1
+    },
+    "3": {
+      "entry": [
+        1,
+        2
+      ],
+      "group": "q",
+      "weight": 65520
+    },
+    "4": {
+      "entry": [
+        2,
+        1
+      ],
+      "group": "q",
+      "weight": 65520
+    },
+    "5": {
+      "entry": [
+        1,
+        0
+      ],
+      "group": "z",
+      "weight": 24297
+    },
+    "6": {
+      "entry": [
+        0,
+        2
+      ],
+      "group": "z",
+      "weight": 24297
+    },
+    "7": {
+      "entry": [
+        0,
+        1
+      ],
+      "group": "w",
+      "weight": 41224
+    },
+    "8": {
+      "entry": [
+        2,
+        0
+      ],
+      "group": "w",
+      "weight": 41224
+    }
+  },
+  "target_formula_blocks": {
+    "p3": "n11^3+n22^3+n33^3",
+    "pq2": "3(n22+n33)n23 n32",
+    "pzw": "3(n11+n22)n12 n21 + 3(n11+n33)n13 n31",
+    "qz2": "3 n32 n21 n13",
+    "qw2": "3 n23 n12 n31"
+  },
+  "target_self_tests": {
+    "target_formula_ok": true,
+    "qz2_rank": 1,
+    "qw2_rank": 1,
+    "qz2_hyperbolic_active_row_n32": true,
+    "qw2_hyperbolic_active_row_n23": true,
+    "qz2_q_direction": [
+      0,
+      3
+    ],
+    "qw2_q_direction": [
+      3,
+      0
+    ],
+    "q_directions_different": true,
+    "qz2_block": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        0
+      ]
+    ],
+    "qw2_block": [
+      [
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "pairing_random_tests": {
+    "random_points": 20,
+    "forms_per_point": 5,
+    "mismatches": 0,
+    "ok": true
+  },
+  "bilr_positive_control": {
+    "residual_matches_sum_of_11_cubes": true,
+    "cube_orbits": [
+      [
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        6,
+        5,
+        4
+      ],
+      [
+        7,
+        10,
+        9,
+        8
+      ]
+    ],
+    "orbit_lengths_sorted": [
+      1,
+      2,
+      4,
+      4
+    ],
+    "orbit_profiles": [
+      {
+        "orbit": [
+          0
+        ],
+        "length": 1,
+        "nonzero_counts_by_group": {
+          "p": 3,
+          "q": 0,
+          "z": 0,
+          "w": 0
+        },
+        "support_kind": "p_only"
+      },
+      {
+        "orbit": [
+          1,
+          2
+        ],
+        "length": 2,
+        "nonzero_counts_by_group": {
+          "p": 2,
+          "q": 2,
+          "z": 0,
+          "w": 0
+        },
+        "support_kind": "p_plus_q"
+      },
+      {
+        "orbit": [
+          3,
+          6,
+          5,
+          4
+        ],
+        "length": 4,
+        "nonzero_counts_by_group": {
+          "p": 3,
+          "q": 2,
+          "z": 2,
+          "w": 2
+        },
+        "support_kind": "general_size4"
+      },
+      {
+        "orbit": [
+          7,
+          10,
+          9,
+          8
+        ],
+        "length": 4,
+        "nonzero_counts_by_group": {
+          "p": 3,
+          "q": 2,
+          "z": 2,
+          "w": 2
+        },
+        "support_kind": "general_size4"
+      }
+    ],
+    "orbit_sum_matches_residual": true,
+    "residual_blocks": {
+      "qz2_rank": 2,
+      "qw2_rank": 2,
+      "qz2_block": [
+        [
+          3685,
+          0,
+          34603
+        ],
+        [
+          61836,
+          3,
+          34603
+        ]
+      ],
+      "qw2_block": [
+        [
+          30918,
+          3,
+          3685
+        ],
+        [
+          30918,
+          0,
+          61836
+        ]
+      ]
+    }
+  },
+  "interpretation": "This file fixes the Z4 coordinate convention and validates the block instrument. It is not a rank-22 construction or nonexistence theorem."
+}

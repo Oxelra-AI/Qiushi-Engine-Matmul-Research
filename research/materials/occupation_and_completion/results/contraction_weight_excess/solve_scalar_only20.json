@@ -1,0 +1,779 @@
+{
+  "build_sec": 0.311,
+  "candidate_found": null,
+  "complete_records_meta": {
+    "build_sec": 38.644,
+    "by_dim8": {
+      "0": 1,
+      "1": 255,
+      "2": 10795,
+      "3": 97155,
+      "4": 200787,
+      "5": 97155,
+      "6": 10795,
+      "7": 255,
+      "8": 1
+    },
+    "by_full_lut_L": {
+      "0": 1,
+      "11": 865,
+      "12": 61232,
+      "13": 8130,
+      "14": 81540,
+      "15": 138902,
+      "16": 83046,
+      "17": 34664,
+      "18": 687,
+      "19": 1,
+      "3": 33,
+      "6": 578,
+      "9": 7520
+    },
+    "cache_path": "data/contraction_weight_excess/e11_complete_wang_records.pkl",
+    "cache_used": true,
+    "constraint_count": 417199,
+    "elapsed_sec": 36.569,
+    "lut_coverage_ok": true
+  },
+  "constraint_summary": {
+    "distinct_points": 255,
+    "excess": {
+      "enabled": false
+    },
+    "extra_complete_rows_added_total": 0,
+    "rank": 19,
+    "scalar_bounds": {
+      "by_rank": {
+        "1": 33,
+        "2": 150,
+        "3": 72
+      },
+      "count": 255
+    },
+    "wang": {
+      "added": 0,
+      "by_L": {},
+      "by_dim8": {},
+      "mode": "none",
+      "skipped_not_kept": 0
+    },
+    "weight_bounds": {
+      "max": null,
+      "maximize": false,
+      "min": null,
+      "minimize": false,
+      "target": null
+    }
+  },
+  "elapsed_sec": 5.078,
+  "interpretation": "Feasible supports pass only necessary A-level conditions. UNKNOWN or non-proof UNSAT is not a rank lower-bound proof.",
+  "model_stats": "satisfaction model '': (model_fingerprint: 0xcd8ce3dd045c84d0)\n#Variables: 511\n  - 255 Booleans in [0,1]\n  - 255 in [0,19]\n  - 1 in [0,152]\n#kLinear1: 255\n#kLinearN: 258 (#terms: 33'425)",
+  "parameters": {
+    "action": "solve",
+    "forbid_point": [],
+    "force_point": [],
+    "log_search": false,
+    "max_rounds": 1,
+    "max_samew": null,
+    "max_weight": null,
+    "maximize_weight": false,
+    "min_weight": null,
+    "minimize_weight": false,
+    "out": "data/contraction_weight_excess/solve_scalar_only20.json",
+    "rank": 19,
+    "scalar_ranks": "123",
+    "seed": 1030,
+    "solver_time": 20.0,
+    "source_ranks": "123",
+    "target_ranks": "12",
+    "target_weight": null,
+    "use_excess": false,
+    "wang": "none",
+    "workers": 8
+  },
+  "purpose": "Coverage-preserving CP-SAT support experiment using contraction weights and guarded integer excess variables.",
+  "rounds": [
+    {
+      "A_support": [
+        2,
+        4,
+        8,
+        9,
+        16,
+        18,
+        20,
+        22,
+        24,
+        27,
+        32,
+        33,
+        34,
+        64,
+        65,
+        66,
+        128,
+        129,
+        130
+      ],
+      "complete_wang_scan": {
+        "complete_violation_count": 453,
+        "max_excess": 3,
+        "violations_by_dim8": {
+          "3": 28,
+          "4": 190,
+          "5": 178,
+          "6": 57
+        },
+        "violations_by_excess": {
+          "1": 381,
+          "2": 66,
+          "3": 6
+        },
+        "violations_by_full_lut_L": {
+          "12": 95,
+          "14": 13,
+          "15": 309,
+          "16": 22,
+          "17": 4,
+          "9": 10
+        },
+        "violations_head": [
+          {
+            "L": 15,
+            "basis8": [
+              136,
+              33,
+              16,
+              4,
+              2
+            ],
+            "basis9": [
+              272,
+              66,
+              32,
+              8,
+              4,
+              1
+            ],
+            "cap": 4,
+            "dim8": 5,
+            "dim9": 6,
+            "excess": 3,
+            "key8": 2207680571525,
+            "key9": 567365314564358,
+            "occupancy": 7,
+            "point_count": 31
+          },
+          {
+            "L": 15,
+            "basis8": [
+              137,
+              33,
+              16,
+              4,
+              2
+            ],
+            "basis9": [
+              274,
+              66,
+              32,
+              8,
+              4,
+              1
+            ],
+            "cap": 4,
+            "dim8": 5,
+            "dim9": 6,
+            "excess": 3,
+            "key8": 2207680571541,
+            "key9": 567365314564390,
+            "occupancy": 7,
+            "point_count": 31
+          },
+          {
+            "L": 15,
+            "basis8": [
+              129,
+              40,
+              16,
+              4,
+              2
+            ],
+            "basis9": [
+              258,
+              80,
+              32,
+              8,
+              4,
+              1
+            ],
+            "cap": 4,
+            "dim8": 5,
+            "dim9": 6,
+            "excess": 3,
+            "key8": 2207680628757,
+            "key9": 567365314678822,
+            "occupancy": 7,
+            "point_count": 31
+          },
+          {
+            "L": 15,
+            "basis8": [
+              129,
+              41,
+              16,
+              4,
+              2
+            ],
+            "basis9": [
+              258,
+              82,
+              32,
+              8,
+              4,
+              1
+            ],
+            "cap": 4,
+            "dim8": 5,
+            "dim9": 6,
+            "excess": 3,
+            "key8": 2207680636949,
+            "key9": 567365314695206,
+            "occupancy": 7,
+            "point_count": 31
+          },
+          {
+            "L": 15,
+            "basis8": [
+              33,
+              16,
+              4,
+              2
+            ],
+            "basis9": [
+              66,
+              32,
+              8,
+              4,
+              1
+            ],
+            "cap": 4,
+            "dim8": 4,
+            "dim9": 5,
+            "excess": 3,
+            "key8": 4311876116,
+            "key9": 1108135380005,
+            "occupancy": 7,
+            "point_count": 15
+          },
+          {
+            "L": 15,
+            "basis8": [
+              129,
+              16,
+              4,
+              2
+            ],
+            "basis9": [
+              258,
+              32,
+              8,
+              4,
+              1
+            ],
+            "cap": 4,
+            "dim8": 4,
+            "dim9": 5,
+            "excess": 3,
+            "key8": 4311877652,
+            "key9": 1108135383077,
+            "occupancy": 7,
+            "point_count": 15
+          },
+          {
+            "L": 15,
+            "basis8": [
+              40,
+              16,
+              4,
+              2
+            ],
+            "basis9": [
+              80,
+              32,
+              8,
+              4,
+              1
+            ],
+            "cap": 4,
+            "dim8": 4,
+            "dim9": 5,
+            "excess": 2,
+            "key8": 4311876228,
+            "key9": 1108135380229,
+            "occupancy": 6,
+            "point_count": 15
+          },
+          {
+            "L": 15,
+            "basis8": [
+              41,
+              16,
+              4,
+              2
+            ],
+            "basis9": [
+              82,
+              32,
+              8,
+              4,
+              1
+            ],
+            "cap": 4,
+            "dim8": 4,
+            "dim9": 5,
+            "excess": 2,
+            "key8": 4311876244,
+            "key9": 1108135380261,
+            "occupancy": 6,
+            "point_count": 15
+          },
+          {
+            "L": 15,
+            "basis8": [
+              136,
+              16,
+              4,
+              2
+            ],
+            "basis9": [
+              272,
+              32,
+              8,
+              4,
+              1
+            ],
+            "cap": 4,
+            "dim8": 4,
+            "dim9": 5,
+            "excess": 2,
+            "key8": 4311877764,
+            "key9": 1108135383301,
+            "occupancy": 6,
+            "point_count": 15
+          },
+          {
+            "L": 15,
+            "basis8": [
+              137,
+              16,
+              4,
+              2
+            ],
+            "basis9": [
+              274,
+              32,
+              8,
+              4,
+              1
+            ],
+            "cap": 4,
+            "dim8": 4,
+            "dim9": 5,
+            "excess": 2,
+            "key8": 4311877780,
+            "key9": 1108135383333,
+            "occupancy": 6,
+            "point_count": 15
+          },
+          {
+            "L": 15,
+            "basis8": [
+              161,
+              16,
+              4,
+              2
+            ],
+            "basis9": [
+              322,
+              32,
+              8,
+              4,
+              1
+            ],
+            "cap": 4,
+            "dim8": 4,
+            "dim9": 5,
+            "excess": 2,
+            "key8": 4311878164,
+            "key9": 1108135384101,
+            "occupancy": 6,
+            "point_count": 15
+          },
+          {
+            "L": 15,
+            "basis8": [
+              168,
+              16,
+              4,
+              2
+            ],
+            "basis9": [
+              336,
+              32,
+              8,
+              4,
+              1
+            ],
+            "cap": 4,
+            "dim8": 4,
+            "dim9": 5,
+            "excess": 2,
+            "key8": 4311878276,
+            "key9": 1108135384325,
+            "occupancy": 6,
+            "point_count": 15
+          }
+        ]
+      },
+      "excess_eval": {
+        "feasible_excess_assignment": false,
+        "leakage_by_source_rank_pair": {
+          "(1, 1)": 10,
+          "(1, 2)": 8,
+          "(1, None)": 2,
+          "(2, 1)": 1,
+          "(2, 2)": 2,
+          "(2, None)": 2,
+          "(None, 2)": 1
+        },
+        "leakage_violation_count": 26,
+        "leakage_violations_head": [
+          {
+            "budget": 2,
+            "eB_lb": 1,
+            "eC_lb": 2,
+            "lambda": 1,
+            "m": 5,
+            "max_side_excess": 6,
+            "r": 3,
+            "rank_lambda": 1,
+            "srcB": {
+              "h": 1,
+              "h_twice": 2,
+              "intersection_dim": 0,
+              "m_lambda_plus_mu": 6,
+              "rank_lambda": 1,
+              "rhs_twice": 2,
+              "tight_lambda": 32
+            },
+            "srcC": {
+              "h": 2,
+              "h_twice": 4,
+              "intersection_dim": 0,
+              "m_lambda_plus_mu": 7,
+              "rank_lambda": 2,
+              "rhs_twice": 4,
+              "tight_lambda": 41
+            }
+          },
+          {
+            "budget": 1,
+            "eB_lb": 0,
+            "eC_lb": 2,
+            "lambda": 8,
+            "m": 4,
+            "max_side_excess": 6,
+            "r": 3,
+            "rank_lambda": 1,
+            "srcB": null,
+            "srcC": {
+              "h": 2,
+              "h_twice": 4,
+              "intersection_dim": 0,
+              "m_lambda_plus_mu": 6,
+              "rank_lambda": 2,
+              "rhs_twice": 4,
+              "tight_lambda": 33
+            }
+          },
+          {
+            "budget": 2,
+            "eB_lb": 1,
+            "eC_lb": 2,
+            "lambda": 9,
+            "m": 5,
+            "max_side_excess": 6,
+            "r": 3,
+            "rank_lambda": 1,
+            "srcB": {
+              "h": 1,
+              "h_twice": 2,
+              "intersection_dim": 0,
+              "m_lambda_plus_mu": 6,
+              "rank_lambda": 1,
+              "rhs_twice": 2,
+              "tight_lambda": 32
+            },
+            "srcC": {
+              "h": 2,
+              "h_twice": 4,
+              "intersection_dim": 0,
+              "m_lambda_plus_mu": 7,
+              "rank_lambda": 2,
+              "rhs_twice": 4,
+              "tight_lambda": 33
+            }
+          },
+          {
+            "budget": 4,
+            "eB_lb": 3,
+            "eC_lb": 2,
+            "lambda": 12,
+            "m": 7,
+            "max_side_excess": 6,
+            "r": 3,
+            "rank_lambda": 1,
+            "srcB": {
+              "h": 3,
+              "h_twice": 6,
+              "intersection_dim": 0,
+              "m_lambda_plus_mu": 4,
+              "rank_lambda": 1,
+              "rhs_twice": 6,
+              "tight_lambda": 4
+            },
+            "srcC": {
+              "h": 2,
+              "h_twice": 4,
+              "intersection_dim": 0,
+              "m_lambda_plus_mu": 9,
+              "rank_lambda": 2,
+              "rhs_twice": 4,
+              "tight_lambda": 33
+            }
+          },
+          {
+            "budget": 0,
+            "eB_lb": 1,
+            "eC_lb": 0,
+            "lambda": 32,
+            "m": 3,
+            "max_side_excess": 6,
+            "r": 3,
+            "rank_lambda": 1,
+            "srcB": {
+              "h": 1,
+              "h_twice": 2,
+              "intersection_dim": 0,
+              "m_lambda_plus_mu": 7,
+              "rank_lambda": 2,
+              "rhs_twice": 2,
+              "tight_lambda": 129
+            },
+            "srcC": null
+          },
+          {
+            "budget": 0,
+            "eB_lb": 1,
+            "eC_lb": 1,
+            "lambda": 33,
+            "m": 6,
+            "max_side_excess": 3,
+            "r": 6,
+            "rank_lambda": 2,
+            "srcB": {
+              "h": 1,
+              "h_twice": 2,
+              "intersection_dim": 0,
+              "m_lambda_plus_mu": 7,
+              "rank_lambda": 1,
+              "rhs_twice": 2,
+              "tight_lambda": 128
+            },
+            "srcC": {
+              "h": 4,
+              "h_twice": 8,
+              "intersection_dim": 3,
+              "m_lambda_plus_mu": 4,
+              "rank_lambda": 2,
+              "rhs_twice": 2,
+              "tight_lambda": 41
+            }
+          },
+          {
+            "budget": 3,
+            "eB_lb": 1,
+            "eC_lb": 3,
+            "lambda": 36,
+            "m": 6,
+            "max_side_excess": 6,
+            "r": 3,
+            "rank_lambda": 1,
+            "srcB": {
+              "h": 1,
+              "h_twice": 2,
+              "intersection_dim": 0,
+              "m_lambda_plus_mu": 10,
+              "rank_lambda": 2,
+              "rhs_twice": 2,
+              "tight_lambda": 129
+            },
+            "srcC": {
+              "h": 3,
+              "h_twice": 6,
+              "intersection_dim": 0,
+              "m_lambda_plus_mu": 3,
+              "rank_lambda": 1,
+              "rhs_twice": 6,
+              "tight_lambda": 4
+            }
+          },
+          {
+            "budget": 3,
+            "eB_lb": 1,
+            "eC_lb": 3,
+            "lambda": 37,
+            "m": 9,
+            "max_side_excess": 3,
+            "r": 6,
+            "rank_lambda": 2,
+            "srcB": {
+              "h": 1,
+              "h_twice": 2,
+              "intersection_dim": 0,
+              "m_lambda_plus_mu": 10,
+              "rank_lambda": 1,
+              "rhs_twice": 2,
+              "tight_lambda": 128
+            },
+            "srcC": {
+              "h": 3,
+              "h_twice": 6,
+              "intersection_dim": 0,
+              "m_lambda_plus_mu": 6,
+              "rank_lambda": 1,
+              "rhs_twice": 6,
+              "tight_lambda": 4
+            }
+          },
+          {
+            "budget": 0,
+            "eB_lb": 1,
+            "eC_lb": 1,
+            "lambda": 41,
+            "m": 6,
+            "max_side_excess": 3,
+            "r": 6,
+            "rank_lambda": 2,
+            "srcB": {
+              "h": 1,
+              "h_twice": 2,
+              "intersection_dim": 0,
+              "m_lambda_plus_mu": 7,
+              "rank_lambda": 1,
+              "rhs_twice": 2,
+              "tight_lambda": 128
+            },
+            "srcC": {
+              "h": 4,
+              "h_twice": 8,
+              "intersection_dim": 3,
+              "m_lambda_plus_mu": 4,
+              "rank_lambda": 2,
+              "rhs_twice": 2,
+              "tight_lambda": 33
+            }
+          },
+          {
+            "budget": 3,
+            "eB_lb": 1,
+            "eC_lb": 3,
+            "lambda": 45,
+            "m": 9,
+            "max_side_excess": 3,
+            "r": 6,
+            "rank_lambda": 2,
+            "srcB": {
+              "h": 1,
+              "h_twice": 2,
+              "intersection_dim": 0,
+              "m_lambda_plus_mu": 10,
+              "rank_lambda": 1,
+              "rhs_twice": 2,
+              "tight_lambda": 128
+            },
+            "srcC": {
+              "h": 3,
+              "h_twice": 6,
+              "intersection_dim": 0,
+              "m_lambda_plus_mu": 6,
+              "rank_lambda": 1,
+              "rhs_twice": 6,
+              "tight_lambda": 4
+            }
+          }
+        ],
+        "scalar_by_rank": {},
+        "scalar_ranks": [
+          1,
+          2,
+          3
+        ],
+        "scalar_violation_count": 0,
+        "scalar_violations_head": [],
+        "side_bound_violation_count": 0,
+        "side_bound_violations_head": [],
+        "source_ranks": [
+          1,
+          2,
+          3
+        ],
+        "target_count": 183,
+        "target_ranks": [
+          1,
+          2
+        ],
+        "tight_source_count": 24,
+        "tight_source_rank_hist": {
+          "1": 4,
+          "2": 6,
+          "3": 14
+        },
+        "total_terms": 19
+      },
+      "new_complete_rows_added": 0,
+      "new_rows_head": [],
+      "response_stats": "CpSolverResponse summary:\nstatus: OPTIMAL\nobjective: 0\nbest_bound: 0\nintegers: 476\nbooleans: 255\nconflicts: 147\nbranches: 9747\npropagations: 241\ninteger_propagations: 76358\nrestarts: 8194\nlp_iterations: 55027\nwalltime: 4.6044\nusertime: 4.6044\ndeterministic_time: 29.2431\ngap_integral: 0\nsolution_fingerprint: 0x21947f625f13439d\n",
+      "round": 0,
+      "solve_sec": 4.611,
+      "status": "OPTIMAL",
+      "total_A_weight": 34,
+      "weight_rank_hist": {
+        "10": 56,
+        "11": 44,
+        "12": 25,
+        "13": 8,
+        "14": 2,
+        "15": 2,
+        "16": 1,
+        "3": 4,
+        "4": 1,
+        "5": 4,
+        "6": 14,
+        "7": 14,
+        "8": 28,
+        "9": 52
+      }
+    }
+  ],
+  "schema": "s0908_contraction_weight_excess_solve_v1",
+  "spaces": {
+    "convention": "M_lambda = Lambda^T tensor I3; quotient directions are 8-bit masks bits 0..7.",
+    "lambda_rank_distribution": {
+      "1": 33,
+      "2": 150,
+      "3": 72
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "base_check": {
+    "base_edge_bad_count": 0,
+    "base_edge_bad_head": [],
+    "base_edges_checked": 14098,
+    "vertex_bad_count": 0,
+    "vertex_bad_head": [],
+    "vertex_exclusions_checked": 197
+  },
+  "branch": "matching",
+  "cnf_check": {
+    "cnf_clauses": 189188,
+    "cnf_variables": 7765,
+    "exact_sequence_match": true,
+    "first_mismatch": null,
+    "regenerated_clauses": 189188,
+    "regenerated_variables": 7765
+  },
+  "copy_cnf": false,
+  "drat": "workspace/data/fair_seed/k5_idx15_copy/seed.drat",
+  "drat_cadical_exit": 20,
+  "drat_cadical_sec": 791.9,
+  "drat_sha256": "246b24fd5ee9f57c4d8e2a193cdfb9b97af4059bc3d39a3790f626774044ca53",
+  "drat_trim": {
+    "elapsed_sec": 1641.038852930069,
+    "exit": 0,
+    "verified": true
+  },
+  "fixed_prefix": [
+    1,
+    16,
+    27,
+    256,
+    438
+  ],
+  "idx": 15,
+  "initial_solve": {
+    "cadical_exit": 20,
+    "cadical_sec": 772.94,
+    "has_model": false,
+    "sat": false,
+    "unsat": true
+  },
+  "k": 5,
+  "learned_check": {
+    "learned_bad_count": 0,
+    "learned_bad_head": [],
+    "learned_by_residual": {
+      "10": 122,
+      "11": 66,
+      "12": 13,
+      "13": 4,
+      "2": 81334,
+      "3": 22194,
+      "4": 22257,
+      "5": 18873,
+      "6": 9486,
+      "7": 4300,
+      "8": 1050,
+      "9": 391
+    },
+    "learned_by_source": {
+      "full_row_direct": 85213,
+      "witness_subset": 74877
+    },
+    "learned_checked": 160090
+  },
+  "meaning": "Verified UNSAT closes the fixed encoded stratum only; it does not by itself prove the global rank lower bound.",
+  "provenance_ok": true,
+  "schema": "fair_seed_solve_v1",
+  "seed_cnf": "workspace/data/matching/k5_batch/idx015/round025.cnf",
+  "seed_cnf_sha256": "8925b556b3ce0f3e8ea9ddf6f908e2a3a655ddf841b3153fa999ed67d9090431",
+  "seed_run_dir": "workspace/data/matching/k5_batch/idx015",
+  "seed_summary_status": "SOLVER_UNKNOWN",
+  "solve_cnf": "workspace/data/fair_seed/k5_idx15_copy/seed.cnf",
+  "status": "UNSAT_VERIFIED",
+  "structure_check": {
+    "prefix_count": 5,
+    "problems": [],
+    "structure_ok": true,
+    "survivor_count": 265,
+    "target": 15
+  },
+  "survivor_count": 265,
+  "target": 15
+}

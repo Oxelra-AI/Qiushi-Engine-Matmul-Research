@@ -1,0 +1,220 @@
+{
+  "binary_audit": {
+    "binary": {
+      "expected_size_bytes": 563275020,
+      "magic": "WANG512\u0001",
+      "nrows": 8283456,
+      "path": "data/wang_native/full_tensor/full_wang512_cap19_len20_all_dim9_allbinding.bin",
+      "size_bytes": 563275020,
+      "size_matches": true
+    },
+    "binary_exact_match": true,
+    "cap_hist": {
+      "1": 511,
+      "2": 445679,
+      "3": 2183716,
+      "4": 2213526,
+      "5": 2174242,
+      "6": 797860,
+      "7": 62034,
+      "8": 373576,
+      "9": 4837,
+      "11": 26152,
+      "14": 1274,
+      "17": 49
+    },
+    "compared_rows": 8283456,
+    "dim_hist": {
+      "1": 511,
+      "2": 43435,
+      "3": 788035,
+      "4": 3309747,
+      "5": 3309747,
+      "6": 788035,
+      "7": 43435,
+      "8": 511
+    },
+    "elapsed_sec": 147.86483597755432,
+    "expected_rows": 8283456,
+    "file_rows": 8283456,
+    "first_mismatches": [],
+    "leftover_after_expected": false,
+    "length": 20,
+    "max_cap": 19,
+    "popcount_hist_head_tail": {
+      "head": {
+        "1": 511,
+        "3": 43435,
+        "7": 788035,
+        "15": 3309747,
+        "31": 3309747,
+        "63": 788035,
+        "127": 43435,
+        "255": 511
+      },
+      "tail": {
+        "1": 511,
+        "3": 43435,
+        "7": 788035,
+        "15": 3309747,
+        "31": 3309747,
+        "63": 788035,
+        "127": 43435,
+        "255": 511
+      }
+    },
+    "row_count_matches": true,
+    "schema": "binary_semantics_audit_v1",
+    "skipped_cap": 1,
+    "skipped_dim0": 1,
+    "source_lut_rows": 8283458
+  },
+  "binary_path": "data/wang_native/full_tensor/full_wang512_cap19_len20_all_dim9_allbinding.bin",
+  "binary_sha256": "b2ecfbd3f7c028471420d06d0974934c800e0be4d2b153cf5bdc36d14d9ae899",
+  "dim2_loadbearing_audit": {
+    "all_high_all_raised": true,
+    "all_high_rank_pair_orbits_count": 8,
+    "all_high_rank_pair_orbits_load_bearing": [
+      484,
+      485,
+      486,
+      487,
+      488,
+      489,
+      490,
+      491
+    ],
+    "all_high_rank_raised_to_19": [
+      484,
+      485,
+      486,
+      487,
+      488,
+      489,
+      490,
+      491
+    ],
+    "coset_compatible_exactly_one_rank1_orbits_not_load_bearing_for_coset_failure": [
+      479,
+      481,
+      482,
+      483
+    ],
+    "orbit479_record": {
+      "backtracking_proof_size": null,
+      "basis": [
+        1,
+        10
+      ],
+      "basis_hex": [
+        "0x1",
+        "0xa"
+      ],
+      "current_overlay_lb": 19,
+      "index": 479,
+      "nonzero_elements": [
+        1,
+        10,
+        11
+      ],
+      "nonzero_hex": [
+        "0x1",
+        "0xa",
+        "0xb"
+      ],
+      "nonzero_matrices": [
+        "1../.../...",
+        ".1./1../...",
+        "11./1../..."
+      ],
+      "occupation_feasible_at_old_lb": false,
+      "occupation_raise_status": "INFEASIBLE",
+      "occupation_support_size_tested": 18,
+      "old_lb": 18,
+      "proof_type": "degenerate",
+      "rank_ge2_count": 2,
+      "rank_hist": {
+        "1": 1,
+        "2": 2
+      },
+      "rank_pattern": [
+        1,
+        2,
+        2
+      ],
+      "relevant_two_high_rank_generators": true
+    },
+    "orbits_with_at_most_one_high_rank_cannot_host_high_pair": [
+      478,
+      480
+    ],
+    "rank_patterns_484_491": {
+      "484": [
+        2,
+        2,
+        2
+      ],
+      "485": [
+        2,
+        2,
+        2
+      ],
+      "486": [
+        2,
+        2,
+        2
+      ],
+      "487": [
+        2,
+        3,
+        3
+      ],
+      "488": [
+        2,
+        2,
+        3
+      ],
+      "489": [
+        2,
+        2,
+        2
+      ],
+      "490": [
+        2,
+        3,
+        3
+      ],
+      "491": [
+        3,
+        3,
+        3
+      ]
+    },
+    "schema": "dim2_loadbearing_audit_v1",
+    "source": "data/wang_analysis/dim2_reduction_audit.json"
+  },
+  "elapsed_sec": 303.82590889930725,
+  "lut_entries": 8283458,
+  "lut_path": "data/wang_f2_lb20/wang_subspace_lut.pkl",
+  "lut_sha256": "4704acba23a97d40aa65d5a65222dcb679461fdccf3e41dbeed2a634894a3b33",
+  "schema": "wang_semantics_combined_v1",
+  "transpose_audit": {
+    "checked": 8283458,
+    "dim_hist": {
+      "0": 1,
+      "1": 511,
+      "2": 43435,
+      "3": 788035,
+      "4": 3309747,
+      "5": 3309747,
+      "6": 788035,
+      "7": 43435,
+      "8": 511,
+      "9": 1
+    },
+    "elapsed_sec": 150.5349440574646,
+    "first_mismatches": [],
+    "mismatch_count": 0,
+    "schema": "lut_transpose_audit_v1"
+  }
+}

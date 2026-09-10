@@ -1,0 +1,207 @@
+{
+  "capacity_distribution": {
+    "1": 249,
+    "2": 6
+  },
+  "capacity_two_labels": {
+    "1": "E12",
+    "2": "E13",
+    "3": "E12+E13",
+    "32": "E31",
+    "36": "E21+E31",
+    "4": "E21"
+  },
+  "capacity_two_points": [
+    1,
+    2,
+    3,
+    4,
+    32,
+    36
+  ],
+  "field": "F2",
+  "full_table_sat_expansion_assessment": {
+    "path": "data/repeat_branch_certificate/cnf_expansion_assessment.json",
+    "sequential_counter_scenarios": [
+      {
+        "estimated_wang_aux_variables": 129340,
+        "estimated_wang_clauses": 290434,
+        "name": "compact_fixed_repeat_p1",
+        "wang_rows": 12165
+      },
+      {
+        "estimated_wang_aux_variables": 29960356,
+        "estimated_wang_clauses": 63923442,
+        "name": "full_fixed_repeat_p1",
+        "wang_rows": 417198
+      },
+      {
+        "estimated_wang_aux_variables": 31189860,
+        "estimated_wang_clauses": 66324090,
+        "name": "full_no_fixed_repeat_token_model",
+        "wang_rows": 417198
+      },
+      {
+        "estimated_wang_aux_variables": 148174,
+        "estimated_wang_clauses": 327158,
+        "name": "compact_no_fixed_repeat_token_model",
+        "wang_rows": 12165
+      }
+    ]
+  },
+  "larger_crosscheck_certificate": {
+    "cadical_exit": 20,
+    "cnf_clauses": 1850250,
+    "cnf_variables": 951878,
+    "description": "Full compact fixed p=1 CNF using 12165 Wang rows, contractions, and unconditional quotient-rank cuts.",
+    "drat_trim_verified": true,
+    "files": {
+      "cnf": {
+        "exists": true,
+        "path": "data/repeat_branch_certificate/fixed_repeat_p1.cnf",
+        "sha256": "742f9bd17a0fe64e1dbde0fe756588570e338ce0697752cf232165d0c1906c01",
+        "size": 34225874
+      },
+      "drat": {
+        "exists": true,
+        "path": "data/repeat_branch_certificate/drat_p1/fixed_repeat_p1.drat",
+        "sha256": "e4afe4b92441ef733653fa6419a9f77664ad976de26b7d1195b9b168124a35f8",
+        "size": 251259480
+      },
+      "drat_trim_log": {
+        "exists": true,
+        "path": "data/repeat_branch_certificate/drat_p1/fixed_repeat_p1.drat_trim.log",
+        "sha256": "282af50b7101c9bdfcf7fc5eec7a37a0f87825fea2ff565af2c8ce75974eb33b",
+        "size": 405
+      },
+      "meta": {
+        "exists": true,
+        "path": "data/repeat_branch_certificate/fixed_repeat_p1.meta.json",
+        "sha256": "268e32de82814deebc834448518a6bc9fd943fe8b5da99a41f1ecbac0cb5c7f2",
+        "size": 14479
+      }
+    }
+  },
+  "mathematical_statement": "There is no length-19 nonzero projected A-direction multiset for the E11 core over F2 that satisfies the complete Wang occupation consequences and contains a repeated projected direction. Equivalently, any actual rank-19 E11-core decomposition over F2 must have 19 distinct projected A-directions.",
+  "primary_certificate": {
+    "cadical_elapsed_sec": 31.51169180870056,
+    "cadical_exit": 20,
+    "cnf_clauses": 53255,
+    "cnf_variables": 24895,
+    "constraints": {
+      "contraction_lower_bounds_used": 0,
+      "hard_total_length": 19,
+      "one_dimensional_capacities_encoded_as_tokens": true,
+      "quotient_rank_cuts_used": 0,
+      "selected_wang_rows": 262,
+      "selected_wang_rows_by_L": {
+        "12": 68,
+        "15": 102,
+        "16": 19,
+        "17": 70,
+        "9": 3
+      },
+      "selected_wang_rows_by_dim": {
+        "2": 89,
+        "4": 21,
+        "5": 152
+      }
+    },
+    "description": "Small Wang-only fixed representative p=1 (E12) CNF/DRAT certificate plus symmetry transport.",
+    "deterministic_reencode_hash_match": true,
+    "drat_trim_elapsed_sec": 23.744466066360474,
+    "drat_trim_verified": true,
+    "files": {
+      "cadical_log": {
+        "exists": true,
+        "path": "data/repeat_branch_certificate/iis_shrink_p1/drat/fixed_repeat_p1_iis.cadical.log",
+        "sha256": "fb7df88fde60b1cf3093992d5ac6ddf54b7b713d9296c0f8b0618088b01599d2",
+        "size": 52676
+      },
+      "cnf": {
+        "exists": true,
+        "path": "data/repeat_branch_certificate/iis_shrink_p1/fixed_repeat_p1_iis.cnf",
+        "sha256": "673426778d1c211ac35b014a3c1baa6f2b0595a2c242f948074d580816234dc9",
+        "size": 821939
+      },
+      "drat": {
+        "exists": true,
+        "path": "data/repeat_branch_certificate/iis_shrink_p1/drat/fixed_repeat_p1_iis.drat",
+        "sha256": "3f9c1a06cb4eb5f0e2193e9a5be752a708945eb9ae6bfafa9490a14aeb52b419",
+        "size": 75596992
+      },
+      "drat_trim_log": {
+        "exists": true,
+        "path": "data/repeat_branch_certificate/iis_shrink_p1/drat/fixed_repeat_p1_iis.drat_trim.log",
+        "sha256": "06189eefc71bad881aba868753cce40508d173c2777f57305305788d66c417fe",
+        "size": 396
+      },
+      "meta": {
+        "exists": true,
+        "path": "data/repeat_branch_certificate/iis_shrink_p1/fixed_repeat_p1_iis.meta.json",
+        "sha256": "d0556f5381e8a31fed99d17d6365254207d8880760d5d44e25e9c08ce061cd49",
+        "size": 3809
+      },
+      "reencode_verify": {
+        "exists": true,
+        "path": "data/repeat_branch_certificate/iis_shrink_p1/reencode_check/reencode_verify.json",
+        "sha256": "5be2d95d5709fe87e0d73807629a4b5f8a24af1e33bc9c0c720aec7e5baabce6",
+        "size": 1239
+      },
+      "shrink_summary": {
+        "exists": true,
+        "path": "data/repeat_branch_certificate/iis_shrink_p1/shrink_summary.json",
+        "sha256": "ac44df0d666d8501faa94a37f667808ecb0b4f13111465ad7b6f13be6ce20875",
+        "size": 125072
+      }
+    },
+    "fixed_copies": 2,
+    "fixed_repeat_label": "E12",
+    "fixed_repeat_point": 1
+  },
+  "rank_length": 19,
+  "schema": "repeated_e11_core_certificate_manifest_v1",
+  "scope_limits": [
+    "Does not exclude the distinct projected-A branch.",
+    "Does not prove E11-core rank >=20 over F2.",
+    "Does not construct a rank<=22 algorithm.",
+    "Does not prove rank 23 optimality for T_<3,3,3> over characteristic zero or any general field."
+  ],
+  "supporting_records": {
+    "explanatory_note": "notes/repeated_core_certificate.md",
+    "milp_all_six_crosscheck": "data/repeat_branch_certificate/fixed_repeat_milp_replay.json",
+    "row_transport": "data/repeat_branch_certificate/symmetry_row_transport_check.json",
+    "symmetry": "data/repeat_branch_certificate/induced_core_symmetry.json",
+    "verification_review": "independent-verification-record"
+  },
+  "symmetry_summary": {
+    "E11_stabilizer_count": 1152,
+    "full_orbits": [
+      [
+        1,
+        2,
+        3,
+        4,
+        32,
+        36
+      ]
+    ],
+    "no_transpose_orbits": [
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        4,
+        32,
+        36
+      ]
+    ],
+    "row_transport_checked_pairs": 301824,
+    "row_transport_preserves_selected_L_values": true,
+    "standard_GL3xGL3_transpose_action_count": 56448,
+    "transpose_exchanges_rulings": true
+  },
+  "tensor_object": "E11 codimension-one quotient core of T_<3,3,3>"
+}

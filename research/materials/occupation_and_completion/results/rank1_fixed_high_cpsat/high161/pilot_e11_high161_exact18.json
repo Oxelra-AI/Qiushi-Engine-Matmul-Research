@@ -1,0 +1,985 @@
+{
+  "build_elapsed_sec": 42.72373080253601,
+  "cap_hist": {
+    "2": 196,
+    "3": 1225,
+    "4": 3199,
+    "5": 13392,
+    "6": 25094,
+    "7": 23086,
+    "8": 80724,
+    "9": 49,
+    "10": 4609,
+    "11": 18358,
+    "13": 336,
+    "14": 938,
+    "16": 21,
+    "17": 28,
+    "19": 1
+  },
+  "compression": {
+    "compressed_intersections": 427912,
+    "constraint_size_cap_hist": {
+      "10,7": 3052,
+      "10,8": 25956,
+      "11,7": 5334,
+      "11,8": 21126,
+      "12,10": 392,
+      "12,11": 4312,
+      "13,10": 2016,
+      "13,11": 5040,
+      "13,7": 812,
+      "13,8": 3010,
+      "13,9": 49,
+      "15,10": 1176,
+      "15,11": 5880,
+      "17,10": 945,
+      "17,11": 3024,
+      "21,10": 80,
+      "21,11": 102,
+      "21,13": 168,
+      "21,14": 714,
+      "25,13": 168,
+      "25,14": 224,
+      "3,2": 196,
+      "33,16": 21,
+      "33,17": 28,
+      "4,3": 1120,
+      "49,19": 1,
+      "5,3": 105,
+      "5,4": 2268,
+      "6,5": 10500,
+      "7,4": 882,
+      "7,5": 2304,
+      "7,6": 24800,
+      "8,7": 8064,
+      "9,4": 49,
+      "9,5": 588,
+      "9,6": 294,
+      "9,7": 5824,
+      "9,8": 30632
+    },
+    "fixed_high_in_row_hist": {
+      "0": 7866259,
+      "1": 417199
+    },
+    "nonvacuous_constraints": 171256,
+    "raw_by_dim": {
+      "0": 1,
+      "1": 511,
+      "2": 43435,
+      "3": 788035,
+      "4": 3309747,
+      "5": 3309747,
+      "6": 788035,
+      "7": 43435,
+      "8": 511,
+      "9": 1
+    },
+    "raw_by_lb": {
+      "0": 1,
+      "3": 49,
+      "6": 1274,
+      "9": 26152,
+      "11": 4837,
+      "12": 373576,
+      "13": 62034,
+      "14": 797860,
+      "15": 2174242,
+      "16": 2213526,
+      "17": 2183716,
+      "18": 445679,
+      "19": 511,
+      "20": 1
+    },
+    "raw_residual_cap_hist": {
+      "0": 2,
+      "1": 6527,
+      "2": 500201,
+      "3": 2214296,
+      "4": 2258144,
+      "5": 2103711,
+      "6": 741208,
+      "7": 97538,
+      "8": 330218,
+      "9": 4137,
+      "10": 4910,
+      "11": 21242,
+      "13": 336,
+      "14": 938,
+      "16": 21,
+      "17": 28,
+      "19": 1
+    }
+  },
+  "empty_rows": 0,
+  "exact_rank1_count": 18,
+  "field": "F2",
+  "fixed_high_points": [
+    161
+  ],
+  "fixed_high_rank_hist": {
+    "3": 1
+  },
+  "fixed_rank1_points": [
+    1
+  ],
+  "lut_meta_brief": {
+    "conflict_count": 0,
+    "coverage_ok": true,
+    "subspace_count": 8283458
+  },
+  "meaning": "SAT/OPTIMAL is a rank-1 skeleton candidate under the fixed high prefix. INFEASIBLE should be converted to CNF/DRAT before theorem use.",
+  "problem": "CP-SAT exact rank-1 skeleton with fixed higher-rank A-prefix",
+  "rank1_points": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    16,
+    18,
+    24,
+    27,
+    32,
+    36,
+    40,
+    45,
+    48,
+    54,
+    56,
+    63,
+    64,
+    65,
+    72,
+    73,
+    128,
+    130,
+    144,
+    146,
+    192,
+    195,
+    216,
+    219,
+    256,
+    260,
+    288,
+    292,
+    320,
+    325,
+    360,
+    365,
+    384,
+    390,
+    432,
+    438,
+    448,
+    455,
+    504,
+    511
+  ],
+  "rank_s_for_capacities": 20,
+  "row_var_hist": {
+    "3": 196,
+    "4": 1120,
+    "5": 2373,
+    "6": 10500,
+    "7": 27986,
+    "8": 8064,
+    "9": 37387,
+    "10": 29008,
+    "11": 26460,
+    "12": 4704,
+    "13": 10927,
+    "15": 7056,
+    "17": 3969,
+    "21": 1064,
+    "25": 392,
+    "33": 49,
+    "49": 1
+  },
+  "rows_added": 171256,
+  "skipped_vacuous": 0,
+  "solve_elapsed_sec": 38.10182428359985,
+  "solver_num_branches": 61546,
+  "solver_num_conflicts": 2099,
+  "solver_status": "INFEASIBLE",
+  "solver_status_code": 3,
+  "solver_walltime": 37.966203725,
+  "support_all_fixed_prefix": null,
+  "support_all_size_with_fixed_high": null,
+  "support_rank1": null,
+  "support_rank1_size": null,
+  "witness_head": [
+    {
+      "basis": [
+        160,
+        2,
+        1
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 4213251,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        160,
+        4,
+        1
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 4229635,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        161,
+        4,
+        2
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 8423955,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        161,
+        5,
+        3
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 12626451,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        161,
+        4,
+        3
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 12618259,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        161,
+        5,
+        2
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 8432147,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        160,
+        6,
+        1
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 4246019,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        160,
+        8,
+        1
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 4262403,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        161,
+        16,
+        9,
+        3
+      ],
+      "cap": 2,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 6480333332,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        161,
+        16,
+        2
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 8522259,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        161,
+        16,
+        8
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 33688083,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        160,
+        16,
+        10,
+        1
+      ],
+      "cap": 2,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 2189560324,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        161,
+        18,
+        9
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 37898771,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        161,
+        24,
+        3
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 12782099,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        129,
+        32,
+        9,
+        5
+      ],
+      "cap": 2,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 10775431188,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        129,
+        32,
+        27,
+        7
+      ],
+      "cap": 2,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 15145895956,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        129,
+        32,
+        4
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 17041427,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        137,
+        40,
+        18,
+        7
+      ],
+      "cap": 2,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 15108212884,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        129,
+        32,
+        8
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 33818643,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        132,
+        36,
+        12,
+        1
+      ],
+      "cap": 2,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 2198112324,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        133,
+        36,
+        9
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 38045779,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        137,
+        40,
+        5
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21301395,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        145,
+        48,
+        9,
+        7
+      ],
+      "cap": 2,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 15070529812,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        138,
+        43,
+        27,
+        5
+      ],
+      "cap": 2,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 10851018916,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        129,
+        32,
+        16
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 67373075,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        133,
+        36,
+        20,
+        2
+      ],
+      "cap": 2,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 4379150420,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        137,
+        40,
+        24
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 100993171,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        129,
+        32,
+        20,
+        2
+      ],
+      "cap": 2,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 4379117588,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        133,
+        36,
+        18
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 75794515,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        137,
+        40,
+        29,
+        3
+      ],
+      "cap": 2,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 6564415636,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        140,
+        45,
+        27
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 113617091,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        145,
+        48,
+        6
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 25561363,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        139,
+        42,
+        18,
+        5
+      ],
+      "cap": 2,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 10813262004,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        129,
+        32,
+        24
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 100927507,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        133,
+        36,
+        28,
+        3
+      ],
+      "cap": 2,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 6560188500,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        137,
+        40,
+        16
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 67438739,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        145,
+        48,
+        8
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 33949971,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        150,
+        54,
+        14,
+        1
+      ],
+      "cap": 2,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 2206648676,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        133,
+        36,
+        27
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 113543251,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        140,
+        45,
+        18
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 75868355,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        151,
+        54,
+        9
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 38193523,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        153,
+        56,
+        7
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 29821331,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        160,
+        64,
+        1
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 4721155,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        161,
+        64,
+        8
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 34081299,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        161,
+        65,
+        9
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 38283795,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        161,
+        64,
+        9
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 38275603,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        161,
+        65,
+        8
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 34089491,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        160,
+        72,
+        1
+      ],
+      "cap": 2,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 4786691,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        128,
+        65,
+        33,
+        3
+      ],
+      "cap": 2,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 6581397508,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        128,
+        73,
+        33,
+        27
+      ],
+      "cap": 2,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 58121070596,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    }
+  ]
+}

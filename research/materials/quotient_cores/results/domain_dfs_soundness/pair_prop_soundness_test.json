@@ -1,0 +1,40 @@
+{
+  "cases": [
+    {
+      "brute": 1,
+      "complete": true,
+      "cpp": 1,
+      "name": "positive_mandatory",
+      "pair_forces": 2,
+      "pair_prunes": 0,
+      "solutions_head": [
+        [
+          3,
+          4,
+          5,
+          6
+        ]
+      ]
+    },
+    {
+      "brute": 0,
+      "complete": true,
+      "cpp": 0,
+      "name": "terminal_reject",
+      "pair_prunes": 1,
+      "solutions_head": []
+    },
+    {
+      "mismatches": [],
+      "name": "random_suite",
+      "total_brute": 31,
+      "total_cpp": 31,
+      "total_pair_forces": 18,
+      "total_pair_prunes": 72,
+      "trials": 120
+    }
+  ],
+  "runner": "scripts/pair_prop_dfs",
+  "schema": "s0908_pair_prop_soundness_test_v1",
+  "status": "ok"
+}

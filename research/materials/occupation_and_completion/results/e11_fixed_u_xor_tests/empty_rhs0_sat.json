@@ -1,0 +1,29 @@
+{
+  "and_clauses": 3,
+  "cnf_path": "data/e11_fixed_u_xor_tests/empty_rhs0_sat.xor.cnf",
+  "command": "cryptominisat5 --verb 0 -t 1 --maxtime 30 data/e11_fixed_u_xor_tests/empty_rhs0_sat.xor.cnf",
+  "core": "data/e11_fixed_u_xor_tests/empty_rhs0_sat_core.npy",
+  "decoded_solution": {
+    "diff_count": 0,
+    "model_lit_count": 3,
+    "solution_npz": "data/e11_fixed_u_xor_tests/empty_rhs0_sat.solution.npz",
+    "v_masks": [
+      1
+    ],
+    "verified": true,
+    "w_masks": [
+      1
+    ]
+  },
+  "elapsed_sec": 0.00838923454284668,
+  "rank": 1,
+  "returncode": 10,
+  "solver_status": "SAT",
+  "stderr_tail": "",
+  "stdout_tail": "s SATISFIABLE\nv 1 2 3 0\n",
+  "u_masks": [
+    1
+  ],
+  "vars": 3,
+  "xor_clauses": 1
+}

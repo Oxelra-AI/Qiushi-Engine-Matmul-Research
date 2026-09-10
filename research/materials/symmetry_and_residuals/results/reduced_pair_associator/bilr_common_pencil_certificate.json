@@ -1,0 +1,94 @@
+{
+  "schema": "common_pencil_certificate_v1",
+  "scope": "Exact integer common-pencil wedge certificate for the fixed BILR residual cubic on sl_3/gl_3.",
+  "necessary_condition": "If a cubic on n variables has Waring rank <= n+1 and nondegenerate Hessian at p, then for every fixed X, Omega(X,Y) wedge Omega(X,Z)=0 for all Y,Z, where Omega=K[H_X,H_Y].",
+  "convention": "Stored BILR free representatives are transposed to A=L^T for l_A(X)=tr(A X).  Operators use 6H scaling; nonzero wedge is scale-independent.",
+  "X": [
+    [
+      3,
+      0,
+      1
+    ],
+    [
+      3,
+      -1,
+      1
+    ],
+    [
+      1,
+      3,
+      -2
+    ]
+  ],
+  "Y": [
+    [
+      -1,
+      3,
+      -1
+    ],
+    [
+      -1,
+      1,
+      0
+    ],
+    [
+      -1,
+      2,
+      1
+    ]
+  ],
+  "Z": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "Z_search_trial": 0,
+  "rank_Cxy_mod_primes": {
+    "101": 4,
+    "1009": 4,
+    "65521": 4
+  },
+  "rank_Cxz_mod_primes": {
+    "101": 2,
+    "1009": 2,
+    "65521": 2
+  },
+  "rank_OmegaXY_sl3_Q": 4,
+  "rank_OmegaXZ_sl3_Q": 2,
+  "individual_OmegaXY_nonzero_4pf_count": 9,
+  "individual_OmegaXY_first_nonzero_4pf": {
+    "indices": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "value": "129600"
+  },
+  "individual_OmegaXZ_nonzero_4pf_count": 0,
+  "individual_OmegaXZ_first_nonzero_4pf": null,
+  "mixed_wedge_nonzero_coeff_count": 9,
+  "mixed_wedge_first_nonzero_coeff": {
+    "indices": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "value": "-19440"
+  },
+  "mixed_wedge_gcd_abs_coeffs": "19440",
+  "interpretation": "The fixed BILR residual violates the k=n+1 common-pencil condition.  This is another exact certificate that the BILR residual has Waring rank at least 11.  For variable cyclic frames the same wedge equations, especially in reduced split choices, are necessary filters; surviving zeros are candidate loci, not algorithms."
+}

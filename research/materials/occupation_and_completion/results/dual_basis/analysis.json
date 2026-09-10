@@ -1,0 +1,339 @@
+{
+  "schema": "dual_basis_instrument_v1",
+  "elapsed_sec": 0.055,
+  "core_shape": [
+    8,
+    9,
+    9
+  ],
+  "contraction_rank_histogram": {
+    "3": 33,
+    "6": 150,
+    "9": 72
+  },
+  "invertible_count": 72,
+  "cn122_core_terms": 21,
+  "cn122_dual_basis_validation": {
+    "invertible_saturated_contractions": 5,
+    "trace_tests": {
+      "pass": 45,
+      "fail": 0
+    },
+    "orthogonality_tests": {
+      "pass": 360,
+      "fail": 0
+    },
+    "all_pass": true,
+    "details_sample": [
+      {
+        "q": 43,
+        "q_hex": "0x2b",
+        "I_count": 9,
+        "trace_ok": true,
+        "ortho_ok": true
+      },
+      {
+        "q": 51,
+        "q_hex": "0x33",
+        "I_count": 9,
+        "trace_ok": true,
+        "ortho_ok": true
+      },
+      {
+        "q": 71,
+        "q_hex": "0x47",
+        "I_count": 9,
+        "trace_ok": true,
+        "ortho_ok": true
+      },
+      {
+        "q": 86,
+        "q_hex": "0x56",
+        "I_count": 9,
+        "trace_ok": true,
+        "ortho_ok": true
+      },
+      {
+        "q": 133,
+        "q_hex": "0x85",
+        "I_count": 9,
+        "trace_ok": true,
+        "ortho_ok": true
+      }
+    ]
+  },
+  "violating_line_pair_analysis": [
+    {
+      "D_nonzero": [
+        18,
+        43,
+        57
+      ],
+      "D_basis": [
+        43,
+        18
+      ],
+      "rk9_contractions": [
+        43,
+        57
+      ],
+      "rk3_contraction": 18,
+      "N_rank": 3,
+      "MinvM_rank": 9,
+      "MinvM_plus_I_rank": 3,
+      "N_interpretation": "N = M1^-1 + M2^-1 has rank 3. Common terms (7 expected) must have c_s^T N b_t = 0 for all s,t. If rank(N) = r, then b_t must lie in a (9-r)-dim subspace of right null(row of N), constraining common B-factors."
+    },
+    {
+      "D_nonzero": [
+        27,
+        42,
+        49
+      ],
+      "D_basis": [
+        42,
+        27
+      ],
+      "rk9_contractions": [
+        42,
+        49
+      ],
+      "rk3_contraction": 27,
+      "N_rank": 3,
+      "MinvM_rank": 9,
+      "MinvM_plus_I_rank": 3,
+      "N_interpretation": "N = M1^-1 + M2^-1 has rank 3. Common terms (7 expected) must have c_s^T N b_t = 0 for all s,t. If rank(N) = r, then b_t must lie in a (9-r)-dim subspace of right null(row of N), constraining common B-factors."
+    },
+    {
+      "D_nonzero": [
+        27,
+        234,
+        241
+      ],
+      "D_basis": [
+        234,
+        27
+      ],
+      "rk9_contractions": [
+        234,
+        241
+      ],
+      "rk3_contraction": 27,
+      "N_rank": 3,
+      "MinvM_rank": 9,
+      "MinvM_plus_I_rank": 3,
+      "N_interpretation": "N = M1^-1 + M2^-1 has rank 3. Common terms (7 expected) must have c_s^T N b_t = 0 for all s,t. If rank(N) = r, then b_t must lie in a (9-r)-dim subspace of right null(row of N), constraining common B-factors."
+    },
+    {
+      "D_nonzero": [
+        9,
+        179,
+        186
+      ],
+      "D_basis": [
+        179,
+        9
+      ],
+      "rk9_contractions": [
+        179,
+        186
+      ],
+      "rk3_contraction": 9,
+      "N_rank": 3,
+      "MinvM_rank": 9,
+      "MinvM_plus_I_rank": 3,
+      "N_interpretation": "N = M1^-1 + M2^-1 has rank 3. Common terms (7 expected) must have c_s^T N b_t = 0 for all s,t. If rank(N) = r, then b_t must lie in a (9-r)-dim subspace of right null(row of N), constraining common B-factors."
+    },
+    {
+      "D_nonzero": [
+        18,
+        133,
+        151
+      ],
+      "D_basis": [
+        133,
+        18
+      ],
+      "rk9_contractions": [
+        133,
+        151
+      ],
+      "rk3_contraction": 18,
+      "N_rank": 3,
+      "MinvM_rank": 9,
+      "MinvM_plus_I_rank": 3,
+      "N_interpretation": "N = M1^-1 + M2^-1 has rank 3. Common terms (7 expected) must have c_s^T N b_t = 0 for all s,t. If rank(N) = r, then b_t must lie in a (9-r)-dim subspace of right null(row of N), constraining common B-factors."
+    },
+    {
+      "D_nonzero": [
+        9,
+        87,
+        94
+      ],
+      "D_basis": [
+        87,
+        9
+      ],
+      "rk9_contractions": [
+        87,
+        94
+      ],
+      "rk3_contraction": 9,
+      "N_rank": 3,
+      "MinvM_rank": 9,
+      "MinvM_plus_I_rank": 3,
+      "N_interpretation": "N = M1^-1 + M2^-1 has rank 3. Common terms (7 expected) must have c_s^T N b_t = 0 for all s,t. If rank(N) = r, then b_t must lie in a (9-r)-dim subspace of right null(row of N), constraining common B-factors."
+    }
+  ],
+  "systematic_pair_analysis": {
+    "total_rank9": 72,
+    "total_pairs": 2556,
+    "N_rank_histogram": {
+      "3": 468,
+      "6": 1512,
+      "9": 576
+    },
+    "high_rank_pairs_count": 576,
+    "high_rank_pairs_sample": [
+      {
+        "q1": 42,
+        "q2": 87,
+        "N_rank": 9,
+        "q1q2_xor": 125,
+        "xor_rank": 9
+      },
+      {
+        "q1": 42,
+        "q2": 95,
+        "N_rank": 9,
+        "q1q2_xor": 117,
+        "xor_rank": 9
+      },
+      {
+        "q1": 42,
+        "q2": 117,
+        "N_rank": 9,
+        "q1q2_xor": 95,
+        "xor_rank": 9
+      },
+      {
+        "q1": 42,
+        "q2": 125,
+        "N_rank": 9,
+        "q1q2_xor": 87,
+        "xor_rank": 9
+      },
+      {
+        "q1": 42,
+        "q2": 135,
+        "N_rank": 9,
+        "q1q2_xor": 173,
+        "xor_rank": 9
+      },
+      {
+        "q1": 42,
+        "q2": 141,
+        "N_rank": 9,
+        "q1q2_xor": 167,
+        "xor_rank": 9
+      },
+      {
+        "q1": 42,
+        "q2": 143,
+        "N_rank": 9,
+        "q1q2_xor": 165,
+        "xor_rank": 9
+      },
+      {
+        "q1": 42,
+        "q2": 149,
+        "N_rank": 9,
+        "q1q2_xor": 191,
+        "xor_rank": 9
+      },
+      {
+        "q1": 42,
+        "q2": 165,
+        "N_rank": 9,
+        "q1q2_xor": 143,
+        "xor_rank": 9
+      },
+      {
+        "q1": 42,
+        "q2": 167,
+        "N_rank": 9,
+        "q1q2_xor": 141,
+        "xor_rank": 9
+      },
+      {
+        "q1": 42,
+        "q2": 173,
+        "N_rank": 9,
+        "q1q2_xor": 135,
+        "xor_rank": 9
+      },
+      {
+        "q1": 42,
+        "q2": 191,
+        "N_rank": 9,
+        "q1q2_xor": 149,
+        "xor_rank": 9
+      },
+      {
+        "q1": 42,
+        "q2": 197,
+        "N_rank": 9,
+        "q1q2_xor": 239,
+        "xor_rank": 9
+      },
+      {
+        "q1": 42,
+        "q2": 221,
+        "N_rank": 9,
+        "q1q2_xor": 247,
+        "xor_rank": 9
+      },
+      {
+        "q1": 42,
+        "q2": 239,
+        "N_rank": 9,
+        "q1q2_xor": 197,
+        "xor_rank": 9
+      },
+      {
+        "q1": 42,
+        "q2": 247,
+        "N_rank": 9,
+        "q1q2_xor": 221,
+        "xor_rank": 9
+      },
+      {
+        "q1": 43,
+        "q2": 86,
+        "N_rank": 9,
+        "q1q2_xor": 125,
+        "xor_rank": 9
+      },
+      {
+        "q1": 43,
+        "q2": 94,
+        "N_rank": 9,
+        "q1q2_xor": 117,
+        "xor_rank": 9
+      },
+      {
+        "q1": 43,
+        "q2": 117,
+        "N_rank": 9,
+        "q1q2_xor": 94,
+        "xor_rank": 9
+      },
+      {
+        "q1": 43,
+        "q2": 125,
+        "N_rank": 9,
+        "q1q2_xor": 86,
+        "xor_rank": 9
+      }
+    ]
+  }
+}

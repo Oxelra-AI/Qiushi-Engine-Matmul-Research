@@ -1,0 +1,89 @@
+{
+  "active_rows_path": "data/pivot_fixed/pivot17_n23_forced_control_cegar.active_rows.jsonl",
+  "binary": {
+    "expected_size_bytes": 563275020,
+    "magic": "WANG512\u0001",
+    "nrows": 8283456,
+    "path": "data/wang_native/full_tensor/full_wang512_cap22_len23_all_dim9_allbinding.bin",
+    "size_bytes": 563275020,
+    "size_matches": true
+  },
+  "elapsed_sec": 53.85700464248657,
+  "final_active_rows": 450185,
+  "final_status": "candidate_satisfies_checked_binary",
+  "fixed_nonpivot_count": 22,
+  "force_multiset": "data/pivot_fixed/pivot17_rank23_transformed_control.json",
+  "initial_active_rows": 450185,
+  "initial_binary_max_cap_rhs": 5,
+  "initial_binary_max_dim": 3,
+  "initial_cap_hist": {
+    "5": 445679,
+    "6": 4506
+  },
+  "initial_dim_hist": {
+    "2": 43337,
+    "3": 406848
+  },
+  "initial_dominance": {
+    "applied": false
+  },
+  "initial_row_limit": 0,
+  "iterations": [
+    {
+      "active_rows": 450185,
+      "candidate_distinct_count": 22,
+      "candidate_max_multiplicity": 2,
+      "candidate_multiset": [
+        1,
+        5,
+        7,
+        9,
+        16,
+        17,
+        18,
+        21,
+        36,
+        36,
+        64,
+        73,
+        89,
+        128,
+        130,
+        133,
+        201,
+        256,
+        260,
+        261,
+        448,
+        457,
+        504
+      ],
+      "iteration": 0,
+      "scan": {
+        "cap_hist_violated": {},
+        "dim_hist_violated": {},
+        "elapsed_sec": 31.922309398651123,
+        "excess_total": 0,
+        "max_excess": 0,
+        "rows_checked": 8283456,
+        "violation_count": 0
+      },
+      "selected_violation_rows": [],
+      "solve": {
+        "branches": 0,
+        "conflicts": 0,
+        "elapsed_sec": 0.5326001644134521,
+        "feasible": true,
+        "objective": 0.0,
+        "status": "OPTIMAL",
+        "wall_time_sec": 0.13648364100000002
+      },
+      "status": "candidate_satisfies_checked_binary"
+    }
+  ],
+  "length": 23,
+  "pivot": 17,
+  "pivot_mult": 1,
+  "schema": "pivot_fixed_full_wang_cegar_v1",
+  "variable_upper_bound": 4
+}

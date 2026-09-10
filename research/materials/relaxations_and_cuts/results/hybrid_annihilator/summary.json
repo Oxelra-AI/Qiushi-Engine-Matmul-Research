@@ -1,0 +1,151 @@
+{
+  "schema": "summary_v1",
+  "field": "F2",
+  "core": "E11",
+  "rank_s": 19,
+  "main_result": "Built and tested an exact linked annihilator-weight representation of E11-core Wang occupation rows for the remaining distinct projected-A branch.",
+  "identity": {
+    "formula": "For U <= F2^8, D=U^perp, w(q)=sum_{p:q(p)=1} x_p, sum_{q in D\\{0}} w(q)=2^(dim(D)-1)*(19-occ(U)); Wang occ(U)<=19-L(U) is equivalent to sum_D w >= 2^(dim(D)-1)*L(U).",
+    "checked_rows": 417199,
+    "identity_failure_count": 0,
+    "evidence": "data/hybrid_annihilator/analysis_L15_support.json"
+  },
+  "best_known_distinct_support": {
+    "A_cols": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      20,
+      24,
+      31,
+      32,
+      64,
+      73,
+      109,
+      127,
+      128,
+      141,
+      160,
+      182,
+      192,
+      219
+    ],
+    "complete_wang_violations": 12,
+    "violations_by_L": {
+      "12": 12
+    },
+    "violations_by_dim8": {
+      "5": 6,
+      "6": 6
+    },
+    "single_fixed_A_completion_status": "INFEASIBLE",
+    "single_fixed_A_completion_solve_sec": 146.483,
+    "single_fixed_A_completion_evidence": "data/completion/L15_12violation_single_completion_300s.json"
+  },
+  "dual_violation_structure": {
+    "dim6_dual_lines": "six k=2 annihilator rows require three linked weights summing at least 24 but the support gives 22; rank pattern is one rank-3 contraction and two rank-9 contractions",
+    "dim5_dual_planes": "six k=3 annihilator rows require seven linked weights summing at least 48 but the support gives 44; four have rank pattern 3,3,3,6,6,9,9 and two have 3,3,3,6,6,6,6",
+    "stabilizer_orbits_meeting_twelve_rows": [
+      {
+        "dual_k": 2,
+        "orbit_size": 288,
+        "hit_count": 6
+      },
+      {
+        "dual_k": 3,
+        "orbit_size": 288,
+        "hit_count": 4
+      },
+      {
+        "dual_k": 3,
+        "orbit_size": 72,
+        "hit_count": 2
+      }
+    ],
+    "evidence": "data/hybrid_annihilator/dual_violation_orbits.json"
+  },
+  "encoding_comparison": {
+    "threshold_L14_direct_with_hint": {
+      "rows": 338839,
+      "direct_point_terms_total": 4804875,
+      "status": "OPTIMAL",
+      "solve_sec": 37.941,
+      "evidence": "data/direct_compare/direct_L14_120s_with_L15_hint.json"
+    },
+    "threshold_L14_hybrid_with_hint": {
+      "rows": 338839,
+      "direct_rows": 299683,
+      "annihilator_rows": 39156,
+      "combined_terms_total": 3858219,
+      "status": "OPTIMAL",
+      "solve_sec": 31.939,
+      "weight_link_mismatch_count": 0,
+      "evidence": "data/hybrid_annihilator/hybrid_L14_360s.json"
+    },
+    "threshold_L12_hybrid_with_hint": {
+      "rows": 408201,
+      "direct_rows": 308979,
+      "annihilator_rows": 99222,
+      "combined_terms_total": 4396281,
+      "status": "UNKNOWN",
+      "solve_sec": 1201.408,
+      "evidence": "data/hybrid_annihilator/hybrid_L12_1200s.json"
+    },
+    "no_hint_short_runs": {
+      "direct_L14_status": "UNKNOWN after 181.309 s",
+      "hybrid_L14_status": "UNKNOWN after 137.694 s",
+      "direct_evidence": "data/direct_nohint/direct_L14_180s_nohint.json",
+      "hybrid_evidence": "data/hybrid_nohint/hybrid_L14_180s_nohint.json"
+    },
+    "all_nontrivial_rows_term_estimate": {
+      "direct_point_terms_total": 7448805,
+      "hybrid_combined_terms_total": 4437255,
+      "saving": 3011550
+    }
+  },
+  "separator_and_orbit_runs": {
+    "adaptive_separator": {
+      "initial_threshold_L": 14,
+      "round0_support_violations": 12,
+      "new_rows_added": 12,
+      "round1_status": "UNKNOWN after 139.839 s",
+      "evidence": "data/hybrid_separator/hybrid_separator_L14_4r_180s.json"
+    },
+    "orbit_augmented": {
+      "new_L12_rows_from_three_dual_orbits": 648,
+      "active_rows": 339487,
+      "status": "UNKNOWN after 301.355 s",
+      "evidence": "data/hybrid_orbit_augmented/orbit_augmented_L14_300s.json"
+    }
+  },
+  "fixed_A_completion_repair": {
+    "repaired_function": "solve_fixed_A_completion in scripts/fixed_A_rankone_solver.py",
+    "batch_evidence": "data/completion/distinct_candidate_completion_repaired.json",
+    "tested_completion_statuses": [
+      {
+        "support": "analysis 15-violation support",
+        "status": "INFEASIBLE",
+        "solve_sec": 5.342
+      },
+      {
+        "support": "analysis round12 16-violation support",
+        "status": "INFEASIBLE",
+        "solve_sec": 0.11
+      },
+      {
+        "support": "analysis 12-violation support",
+        "status": "INFEASIBLE",
+        "solve_sec": 146.483
+      }
+    ]
+  },
+  "not_established": [
+    "No complete-Wang-admissible length-19 distinct E11 support was found.",
+    "No proof-producing exclusion of the distinct E11 branch was obtained.",
+    "No rank-19 E11-core decomposition and no rank<=22 full 3x3 algorithm was produced.",
+    "No new characteristic-zero lower bound follows from this finite-field computation."
+  ],
+  "notes": "notes/hybrid_annihilator_weight_encoding.md"
+}

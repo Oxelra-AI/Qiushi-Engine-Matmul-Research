@@ -1,0 +1,167 @@
+{
+  "all_load_bearing_checks_pass": true,
+  "core": "E11",
+  "field": "F2",
+  "file_hash_checks": {
+    "cadical_log": {
+      "actual_sha256": "fb7df88fde60b1cf3093992d5ac6ddf54b7b713d9296c0f8b0618088b01599d2",
+      "exists": true,
+      "expected_sha256": "fb7df88fde60b1cf3093992d5ac6ddf54b7b713d9296c0f8b0618088b01599d2",
+      "hash_match": true,
+      "path": "data/repeat_branch_certificate/iis_shrink_p1/drat/fixed_repeat_p1_iis.cadical.log",
+      "size": 52676
+    },
+    "cnf": {
+      "actual_sha256": "673426778d1c211ac35b014a3c1baa6f2b0595a2c242f948074d580816234dc9",
+      "exists": true,
+      "expected_sha256": "673426778d1c211ac35b014a3c1baa6f2b0595a2c242f948074d580816234dc9",
+      "hash_match": true,
+      "path": "data/repeat_branch_certificate/iis_shrink_p1/fixed_repeat_p1_iis.cnf",
+      "size": 821939
+    },
+    "drat": {
+      "actual_sha256": "3f9c1a06cb4eb5f0e2193e9a5be752a708945eb9ae6bfafa9490a14aeb52b419",
+      "exists": true,
+      "expected_sha256": "3f9c1a06cb4eb5f0e2193e9a5be752a708945eb9ae6bfafa9490a14aeb52b419",
+      "hash_match": true,
+      "path": "data/repeat_branch_certificate/iis_shrink_p1/drat/fixed_repeat_p1_iis.drat",
+      "size": 75596992
+    },
+    "drat_trim_log": {
+      "actual_sha256": "06189eefc71bad881aba868753cce40508d173c2777f57305305788d66c417fe",
+      "exists": true,
+      "expected_sha256": "06189eefc71bad881aba868753cce40508d173c2777f57305305788d66c417fe",
+      "hash_match": true,
+      "path": "data/repeat_branch_certificate/iis_shrink_p1/drat/fixed_repeat_p1_iis.drat_trim.log",
+      "size": 396
+    },
+    "meta": {
+      "actual_sha256": "d0556f5381e8a31fed99d17d6365254207d8880760d5d44e25e9c08ce061cd49",
+      "exists": true,
+      "expected_sha256": "d0556f5381e8a31fed99d17d6365254207d8880760d5d44e25e9c08ce061cd49",
+      "hash_match": true,
+      "path": "data/repeat_branch_certificate/iis_shrink_p1/fixed_repeat_p1_iis.meta.json",
+      "size": 3809
+    },
+    "reencode_verify": {
+      "actual_sha256": "5be2d95d5709fe87e0d73807629a4b5f8a24af1e33bc9c0c720aec7e5baabce6",
+      "exists": true,
+      "expected_sha256": "5be2d95d5709fe87e0d73807629a4b5f8a24af1e33bc9c0c720aec7e5baabce6",
+      "hash_match": true,
+      "path": "data/repeat_branch_certificate/iis_shrink_p1/reencode_check/reencode_verify.json",
+      "size": 1239
+    },
+    "shrink_summary": {
+      "actual_sha256": "ac44df0d666d8501faa94a37f667808ecb0b4f13111465ad7b6f13be6ce20875",
+      "exists": true,
+      "expected_sha256": "ac44df0d666d8501faa94a37f667808ecb0b4f13111465ad7b6f13be6ce20875",
+      "hash_match": true,
+      "path": "data/repeat_branch_certificate/iis_shrink_p1/shrink_summary.json",
+      "size": 125072
+    }
+  },
+  "manifest": "data/repeat_branch_certificate/certificate_manifest.json",
+  "reencoding": {
+    "hash_match": true,
+    "original_cnf_sha256": "673426778d1c211ac35b014a3c1baa6f2b0595a2c242f948074d580816234dc9",
+    "reencoded_cnf_sha256": "673426778d1c211ac35b014a3c1baa6f2b0595a2c242f948074d580816234dc9",
+    "selected_indices_count": 262
+  },
+  "review_conclusion": "Accept the repeated projected-A exclusion for the E11 core over F2 as a settled reduction for subsequent work.",
+  "sat_proof_status": {
+    "cadical_exit_is_unsat_20": true,
+    "cadical_log_status": "UNSATISFIABLE",
+    "cnf_header": {
+      "clauses": 53255,
+      "vars": 24895
+    },
+    "drat_trim_exit_zero": true,
+    "drat_trim_status": "VERIFIED",
+    "drat_trim_verified": true,
+    "status_self_file_info_note": "status JSON was written after its file_info snapshot, so its internal self exists=false entry is a harmless bookkeeping artifact"
+  },
+  "schema": "repeat_certificate_review_v1",
+  "scope_guard": {
+    "manifest_explicitly_says_distinct_branch_not_excluded": true,
+    "manifest_explicitly_says_no_char0_rank23": true,
+    "manifest_explicitly_says_no_core_lb20": true,
+    "manifest_explicitly_says_no_rank22_algorithm": true
+  },
+  "small_formula_semantics": {
+    "core_constraint_count": 262,
+    "core_constraints_by_kind": {
+      "wang": 262
+    },
+    "encoding_stats": {
+      "hard_total_clauses": 16456,
+      "hard_total_constraints": 2,
+      "wang_clauses": 36799,
+      "wang_constraints": 262
+    },
+    "fixed_multiplicity": 2,
+    "fixed_repeat_label": "E12",
+    "fixed_repeat_point": 1,
+    "hard_total_constraints": 2,
+    "meta_schema": "fixed_repeat_core_cnf_v1",
+    "quotient_rank_or_contraction_rows_used": false,
+    "rank_s": 19,
+    "selected_L": {
+      "12": 68,
+      "15": 102,
+      "16": 19,
+      "17": 70,
+      "9": 3
+    },
+    "selected_dims": {
+      "2": 89,
+      "4": 21,
+      "5": 152
+    },
+    "selected_kind": {
+      "wang": 262
+    },
+    "selected_records_count": 262,
+    "token_variables_before_aux": 259,
+    "uses_only_wang_rows_beyond_total_and_token_bounds": true
+  },
+  "statement_reviewed": "There is no length-19 nonzero projected A-direction multiset for the E11 core over F2 that satisfies the complete Wang occupation consequences and contains a repeated projected direction. Equivalently, any actual rank-19 E11-core decomposition over F2 must have 19 distinct projected A-directions.",
+  "symmetry_transport": {
+    "capacity_two_matches_expected": true,
+    "capacity_two_points": [
+      1,
+      2,
+      3,
+      4,
+      32,
+      36
+    ],
+    "complete_core_table_constraint_count": 417199,
+    "full_stabilizer_orbits": [
+      [
+        1,
+        2,
+        3,
+        4,
+        32,
+        36
+      ]
+    ],
+    "maps_each_capacity_two_point_to_1_all_present": true,
+    "no_transpose_orbits": [
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        4,
+        32,
+        36
+      ]
+    ],
+    "selected_rows_preserve_L_under_all_stabilizer_perms": true,
+    "transported_pairs_checked": 301824,
+    "transpose_exchanges_rulings": true,
+    "witness_maps_all_preimage_image_preserve_L": true
+  }
+}

@@ -1,0 +1,4467 @@
+{
+  "elapsed_sec": 2.4087116718292236,
+  "meaning": "Dependency-map analysis of rank-one points modulo W=col(D); compares three-term projected dependencies with the full dependency image in W and searches for rank-one generated dim20/21 subspaces inside known rank23 spans.",
+  "results": {
+    "flip_rank23_text": {
+      "U_dim": 23,
+      "W_coord_rank": 9,
+      "all_rank_one_points_analysis": {
+        "U_dim": 23,
+        "W_supplied_by_dependencies": true,
+        "dependency_summary": {
+          "W_image_dim_by_support_cutoff": [
+            {
+              "W_image_dim": 0,
+              "relation_count_at_most": 0,
+              "support_at_most": 1
+            },
+            {
+              "W_image_dim": 0,
+              "relation_count_at_most": 0,
+              "support_at_most": 2
+            },
+            {
+              "W_image_dim": 2,
+              "relation_count_at_most": 5,
+              "support_at_most": 3
+            },
+            {
+              "W_image_dim": 5,
+              "relation_count_at_most": 12,
+              "support_at_most": 4
+            },
+            {
+              "W_image_dim": 7,
+              "relation_count_at_most": 21,
+              "support_at_most": 5
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 46,
+              "support_at_most": 6
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 90,
+              "support_at_most": 7
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 175,
+              "support_at_most": 8
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 338,
+              "support_at_most": 9
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 623,
+              "support_at_most": 10
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 1079,
+              "support_at_most": 11
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 1660,
+              "support_at_most": 12
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 2303,
+              "support_at_most": 13
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 2938,
+              "support_at_most": 14
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 3458,
+              "support_at_most": 15
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 3800,
+              "support_at_most": 16
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 3973,
+              "support_at_most": 17
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 4052,
+              "support_at_most": 18
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 4083,
+              "support_at_most": 19
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 4091,
+              "support_at_most": 20
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 4095,
+              "support_at_most": 21
+            }
+          ],
+          "W_image_dim_full_dependency_space": 9,
+          "dependency_count": 4095,
+          "dependency_enum_truncated": false,
+          "dependency_support_hist": {
+            "10": 285,
+            "11": 456,
+            "12": 581,
+            "13": 643,
+            "14": 635,
+            "15": 520,
+            "16": 342,
+            "17": 173,
+            "18": 79,
+            "19": 31,
+            "20": 8,
+            "21": 4,
+            "3": 5,
+            "4": 7,
+            "5": 9,
+            "6": 25,
+            "7": 44,
+            "8": 85,
+            "9": 163
+          },
+          "lifted_W_matrix_rank_hist": {
+            "0": 7,
+            "3": 392,
+            "6": 2352,
+            "9": 1344
+          },
+          "projected_dependency_dim": 12,
+          "q_rank": 14,
+          "small_nonzero_lift_examples": [
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 26,
+              "support": 3,
+              "wtag": 16
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 216,
+              "support": 4,
+              "wtag": 16
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 2578,
+              "support": 4,
+              "wtag": 16
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 2768,
+              "support": 5,
+              "wtag": 16
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 12818,
+              "support": 5,
+              "wtag": 16
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 13008,
+              "support": 6,
+              "wtag": 16
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 14362,
+              "support": 6,
+              "wtag": 16
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 295494,
+              "support": 6,
+              "wtag": 130
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 295556,
+              "support": 5,
+              "wtag": 130
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 297044,
+              "support": 6,
+              "wtag": 146
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 297100,
+              "support": 6,
+              "wtag": 130
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 458753,
+              "support": 4,
+              "wtag": 1
+            }
+          ],
+          "small_zero_lift_examples": [
+            194,
+            2568,
+            12808,
+            14336
+          ],
+          "zero_W_relation_support_hist": {
+            "3": 3,
+            "4": 1,
+            "6": 2,
+            "7": 1
+          }
+        },
+        "label": "all_rank_one_points_in_U",
+        "projected_rank_one_span_dim": 14,
+        "projects_onto_U_mod_W": true,
+        "quotient_target_dim": 14,
+        "rank_one_count": 26,
+        "rank_one_generates_U": true,
+        "rank_one_span_intersection_W_dim": 9,
+        "rank_one_span_rank_in_U": 23
+      },
+      "best_hyperplanes": {
+        "best_rank_one_span_rank": 20,
+        "best_records_analyzed": [
+          {
+            "U_dim": 22,
+            "W_supplied_by_dependencies": false,
+            "dependency_summary": {
+              "W_image_dim_by_support_cutoff": [
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 1
+                },
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 2
+                },
+                {
+                  "W_image_dim": 2,
+                  "relation_count_at_most": 5,
+                  "support_at_most": 3
+                },
+                {
+                  "W_image_dim": 4,
+                  "relation_count_at_most": 11,
+                  "support_at_most": 4
+                },
+                {
+                  "W_image_dim": 5,
+                  "relation_count_at_most": 15,
+                  "support_at_most": 5
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 30,
+                  "support_at_most": 6
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 59,
+                  "support_at_most": 7
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 109,
+                  "support_at_most": 8
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 195,
+                  "support_at_most": 9
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 318,
+                  "support_at_most": 10
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 493,
+                  "support_at_most": 11
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 675,
+                  "support_at_most": 12
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 811,
+                  "support_at_most": 13
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 912,
+                  "support_at_most": 14
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 975,
+                  "support_at_most": 15
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 1008,
+                  "support_at_most": 16
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 1022,
+                  "support_at_most": 17
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 1023,
+                  "support_at_most": 18
+                }
+              ],
+              "W_image_dim_full_dependency_space": 7,
+              "dependency_count": 1023,
+              "dependency_enum_truncated": false,
+              "dependency_support_hist": {
+                "10": 123,
+                "11": 175,
+                "12": 182,
+                "13": 136,
+                "14": 101,
+                "15": 63,
+                "16": 33,
+                "17": 14,
+                "18": 1,
+                "3": 5,
+                "4": 6,
+                "5": 4,
+                "6": 15,
+                "7": 29,
+                "8": 50,
+                "9": 86
+              },
+              "lifted_W_matrix_rank_hist": {
+                "0": 7,
+                "3": 168,
+                "6": 592,
+                "9": 256
+              },
+              "projected_dependency_dim": 10,
+              "q_rank": 13,
+              "small_nonzero_lift_examples": [
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 26,
+                  "support": 3,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 216,
+                  "support": 4,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 2578,
+                  "support": 4,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 2768,
+                  "support": 5,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 12818,
+                  "support": 5,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 13008,
+                  "support": 6,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 14362,
+                  "support": 6,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 148038,
+                  "support": 6,
+                  "wtag": 130
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 148100,
+                  "support": 5,
+                  "wtag": 130
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 149588,
+                  "support": 6,
+                  "wtag": 146
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 149644,
+                  "support": 6,
+                  "wtag": 130
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 229377,
+                  "support": 4,
+                  "wtag": 1
+                }
+              ],
+              "small_zero_lift_examples": [
+                194,
+                2568,
+                12808,
+                14336
+              ],
+              "zero_W_relation_support_hist": {
+                "3": 3,
+                "4": 1,
+                "6": 2,
+                "7": 1
+              }
+            },
+            "label": "best_hyperplane_phi_540673",
+            "phi": 540673,
+            "projected_rank_one_span_dim": 13,
+            "projects_onto_U_mod_W": true,
+            "quotient_target_dim": 13,
+            "rank_one_count": 23,
+            "rank_one_count_in_hyperplane": 23,
+            "rank_one_generates_U": false,
+            "rank_one_span_intersection_W_dim": 7,
+            "rank_one_span_rank_in_U": 20
+          },
+          {
+            "U_dim": 22,
+            "W_supplied_by_dependencies": false,
+            "dependency_summary": {
+              "W_image_dim_by_support_cutoff": [
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 1
+                },
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 2
+                },
+                {
+                  "W_image_dim": 1,
+                  "relation_count_at_most": 3,
+                  "support_at_most": 3
+                },
+                {
+                  "W_image_dim": 4,
+                  "relation_count_at_most": 8,
+                  "support_at_most": 4
+                },
+                {
+                  "W_image_dim": 6,
+                  "relation_count_at_most": 15,
+                  "support_at_most": 5
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 29,
+                  "support_at_most": 6
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 49,
+                  "support_at_most": 7
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 79,
+                  "support_at_most": 8
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 122,
+                  "support_at_most": 9
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 190,
+                  "support_at_most": 10
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 273,
+                  "support_at_most": 11
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 350,
+                  "support_at_most": 12
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 435,
+                  "support_at_most": 13
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 489,
+                  "support_at_most": 14
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 503,
+                  "support_at_most": 15
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 510,
+                  "support_at_most": 16
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 511,
+                  "support_at_most": 17
+                }
+              ],
+              "W_image_dim_full_dependency_space": 7,
+              "dependency_count": 511,
+              "dependency_enum_truncated": false,
+              "dependency_support_hist": {
+                "10": 68,
+                "11": 83,
+                "12": 77,
+                "13": 85,
+                "14": 54,
+                "15": 14,
+                "16": 7,
+                "17": 1,
+                "3": 3,
+                "4": 5,
+                "5": 7,
+                "6": 14,
+                "7": 20,
+                "8": 30,
+                "9": 43
+              },
+              "lifted_W_matrix_rank_hist": {
+                "0": 3,
+                "3": 84,
+                "6": 296,
+                "9": 128
+              },
+              "projected_dependency_dim": 9,
+              "q_rank": 13,
+              "small_nonzero_lift_examples": [
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 26,
+                  "support": 3,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 216,
+                  "support": 4,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 1298,
+                  "support": 4,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 1488,
+                  "support": 5,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 37190,
+                  "support": 6,
+                  "wtag": 130
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 37252,
+                  "support": 5,
+                  "wtag": 130
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 37972,
+                  "support": 6,
+                  "wtag": 146
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 38028,
+                  "support": 6,
+                  "wtag": 130
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 57345,
+                  "support": 4,
+                  "wtag": 1
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 217136,
+                  "support": 6,
+                  "wtag": 8
+                },
+                {
+                  "W_matrix_rank": 6,
+                  "dep_mask": 789088,
+                  "support": 6,
+                  "wtag": 160
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 1051208,
+                  "support": 5,
+                  "wtag": 128
+                }
+              ],
+              "small_zero_lift_examples": [
+                194,
+                1288
+              ],
+              "zero_W_relation_support_hist": {
+                "3": 2,
+                "6": 1
+              }
+            },
+            "label": "best_hyperplane_phi_32780",
+            "phi": 32780,
+            "projected_rank_one_span_dim": 13,
+            "projects_onto_U_mod_W": true,
+            "quotient_target_dim": 13,
+            "rank_one_count": 22,
+            "rank_one_count_in_hyperplane": 22,
+            "rank_one_generates_U": false,
+            "rank_one_span_intersection_W_dim": 7,
+            "rank_one_span_rank_in_U": 20
+          },
+          {
+            "U_dim": 22,
+            "W_supplied_by_dependencies": false,
+            "dependency_summary": {
+              "W_image_dim_by_support_cutoff": [
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 1
+                },
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 2
+                },
+                {
+                  "W_image_dim": 2,
+                  "relation_count_at_most": 5,
+                  "support_at_most": 3
+                },
+                {
+                  "W_image_dim": 4,
+                  "relation_count_at_most": 11,
+                  "support_at_most": 4
+                },
+                {
+                  "W_image_dim": 6,
+                  "relation_count_at_most": 20,
+                  "support_at_most": 5
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 41,
+                  "support_at_most": 6
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 74,
+                  "support_at_most": 7
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 127,
+                  "support_at_most": 8
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 208,
+                  "support_at_most": 9
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 324,
+                  "support_at_most": 10
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 475,
+                  "support_at_most": 11
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 631,
+                  "support_at_most": 12
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 786,
+                  "support_at_most": 13
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 919,
+                  "support_at_most": 14
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 986,
+                  "support_at_most": 15
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 1010,
+                  "support_at_most": 16
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 1021,
+                  "support_at_most": 17
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 1023,
+                  "support_at_most": 18
+                }
+              ],
+              "W_image_dim_full_dependency_space": 7,
+              "dependency_count": 1023,
+              "dependency_enum_truncated": false,
+              "dependency_support_hist": {
+                "10": 116,
+                "11": 151,
+                "12": 156,
+                "13": 155,
+                "14": 133,
+                "15": 67,
+                "16": 24,
+                "17": 11,
+                "18": 2,
+                "3": 5,
+                "4": 6,
+                "5": 9,
+                "6": 21,
+                "7": 33,
+                "8": 53,
+                "9": 81
+              },
+              "lifted_W_matrix_rank_hist": {
+                "0": 7,
+                "3": 168,
+                "6": 592,
+                "9": 256
+              },
+              "projected_dependency_dim": 10,
+              "q_rank": 13,
+              "small_nonzero_lift_examples": [
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 13,
+                  "support": 3,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 108,
+                  "support": 4,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 1289,
+                  "support": 4,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 1384,
+                  "support": 5,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 6409,
+                  "support": 5,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 6504,
+                  "support": 6,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 7181,
+                  "support": 6,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 82211,
+                  "support": 6,
+                  "wtag": 130
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 82242,
+                  "support": 5,
+                  "wtag": 130
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 82986,
+                  "support": 6,
+                  "wtag": 146
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 83014,
+                  "support": 6,
+                  "wtag": 130
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 264580,
+                  "support": 5,
+                  "wtag": 511
+                }
+              ],
+              "small_zero_lift_examples": [
+                97,
+                1284,
+                6404,
+                7168
+              ],
+              "zero_W_relation_support_hist": {
+                "3": 3,
+                "4": 1,
+                "6": 2,
+                "7": 1
+              }
+            },
+            "label": "best_hyperplane_phi_131144",
+            "phi": 131144,
+            "projected_rank_one_span_dim": 13,
+            "projects_onto_U_mod_W": true,
+            "quotient_target_dim": 13,
+            "rank_one_count": 23,
+            "rank_one_count_in_hyperplane": 23,
+            "rank_one_generates_U": false,
+            "rank_one_span_intersection_W_dim": 7,
+            "rank_one_span_rank_in_U": 20
+          },
+          {
+            "U_dim": 22,
+            "W_supplied_by_dependencies": false,
+            "dependency_summary": {
+              "W_image_dim_by_support_cutoff": [
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 1
+                },
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 2
+                },
+                {
+                  "W_image_dim": 1,
+                  "relation_count_at_most": 2,
+                  "support_at_most": 3
+                },
+                {
+                  "W_image_dim": 4,
+                  "relation_count_at_most": 6,
+                  "support_at_most": 4
+                },
+                {
+                  "W_image_dim": 5,
+                  "relation_count_at_most": 11,
+                  "support_at_most": 5
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 21,
+                  "support_at_most": 6
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 32,
+                  "support_at_most": 7
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 50,
+                  "support_at_most": 8
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 76,
+                  "support_at_most": 9
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 108,
+                  "support_at_most": 10
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 156,
+                  "support_at_most": 11
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 196,
+                  "support_at_most": 12
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 229,
+                  "support_at_most": 13
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 251,
+                  "support_at_most": 14
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 254,
+                  "support_at_most": 15
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 255,
+                  "support_at_most": 16
+                }
+              ],
+              "W_image_dim_full_dependency_space": 7,
+              "dependency_count": 255,
+              "dependency_enum_truncated": false,
+              "dependency_support_hist": {
+                "10": 32,
+                "11": 48,
+                "12": 40,
+                "13": 33,
+                "14": 22,
+                "15": 3,
+                "16": 1,
+                "3": 2,
+                "4": 4,
+                "5": 5,
+                "6": 10,
+                "7": 11,
+                "8": 18,
+                "9": 26
+              },
+              "lifted_W_matrix_rank_hist": {
+                "0": 1,
+                "3": 42,
+                "6": 148,
+                "9": 64
+              },
+              "projected_dependency_dim": 8,
+              "q_rank": 13,
+              "small_nonzero_lift_examples": [
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 26,
+                  "support": 3,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 216,
+                  "support": 4,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 28673,
+                  "support": 4,
+                  "wtag": 1
+                },
+                {
+                  "W_matrix_rank": 6,
+                  "dep_mask": 199264,
+                  "support": 6,
+                  "wtag": 160
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 334084,
+                  "support": 6,
+                  "wtag": 448
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 427521,
+                  "support": 6,
+                  "wtag": 4
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 526920,
+                  "support": 5,
+                  "wtag": 128
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 526930,
+                  "support": 6,
+                  "wtag": 144
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 526986,
+                  "support": 6,
+                  "wtag": 128
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 526992,
+                  "support": 5,
+                  "wtag": 144
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 720936,
+                  "support": 5,
+                  "wtag": 32
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 720946,
+                  "support": 6,
+                  "wtag": 48
+                }
+              ],
+              "small_zero_lift_examples": [
+                194
+              ],
+              "zero_W_relation_support_hist": {
+                "3": 1
+              }
+            },
+            "label": "best_hyperplane_phi_146",
+            "phi": 146,
+            "projected_rank_one_span_dim": 13,
+            "projects_onto_U_mod_W": true,
+            "quotient_target_dim": 13,
+            "rank_one_count": 21,
+            "rank_one_count_in_hyperplane": 21,
+            "rank_one_generates_U": false,
+            "rank_one_span_intersection_W_dim": 7,
+            "rank_one_span_rank_in_U": 20
+          },
+          {
+            "U_dim": 22,
+            "W_supplied_by_dependencies": false,
+            "dependency_summary": {
+              "W_image_dim_by_support_cutoff": [
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 1
+                },
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 2
+                },
+                {
+                  "W_image_dim": 2,
+                  "relation_count_at_most": 5,
+                  "support_at_most": 3
+                },
+                {
+                  "W_image_dim": 4,
+                  "relation_count_at_most": 11,
+                  "support_at_most": 4
+                },
+                {
+                  "W_image_dim": 5,
+                  "relation_count_at_most": 19,
+                  "support_at_most": 5
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 40,
+                  "support_at_most": 6
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 71,
+                  "support_at_most": 7
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 116,
+                  "support_at_most": 8
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 202,
+                  "support_at_most": 9
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 334,
+                  "support_at_most": 10
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 489,
+                  "support_at_most": 11
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 645,
+                  "support_at_most": 12
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 793,
+                  "support_at_most": 13
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 910,
+                  "support_at_most": 14
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 975,
+                  "support_at_most": 15
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 1007,
+                  "support_at_most": 16
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 1021,
+                  "support_at_most": 17
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 1023,
+                  "support_at_most": 18
+                }
+              ],
+              "W_image_dim_full_dependency_space": 7,
+              "dependency_count": 1023,
+              "dependency_enum_truncated": false,
+              "dependency_support_hist": {
+                "10": 132,
+                "11": 155,
+                "12": 156,
+                "13": 148,
+                "14": 117,
+                "15": 65,
+                "16": 32,
+                "17": 14,
+                "18": 2,
+                "3": 5,
+                "4": 6,
+                "5": 8,
+                "6": 21,
+                "7": 31,
+                "8": 45,
+                "9": 86
+              },
+              "lifted_W_matrix_rank_hist": {
+                "0": 7,
+                "3": 168,
+                "6": 592,
+                "9": 256
+              },
+              "projected_dependency_dim": 10,
+              "q_rank": 13,
+              "small_nonzero_lift_examples": [
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 26,
+                  "support": 3,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 216,
+                  "support": 4,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 2578,
+                  "support": 4,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 2768,
+                  "support": 5,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 12818,
+                  "support": 5,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 13008,
+                  "support": 6,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 14362,
+                  "support": 6,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 135944,
+                  "support": 5,
+                  "wtag": 511
+                },
+                {
+                  "W_matrix_rank": 6,
+                  "dep_mask": 135954,
+                  "support": 6,
+                  "wtag": 495
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 137472,
+                  "support": 4,
+                  "wtag": 511
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 139520,
+                  "support": 3,
+                  "wtag": 511
+                },
+                {
+                  "W_matrix_rank": 6,
+                  "dep_mask": 139546,
+                  "support": 6,
+                  "wtag": 495
+                }
+              ],
+              "small_zero_lift_examples": [
+                194,
+                2568,
+                12808,
+                14336
+              ],
+              "zero_W_relation_support_hist": {
+                "3": 3,
+                "4": 1,
+                "6": 2,
+                "7": 1
+              }
+            },
+            "label": "best_hyperplane_phi_1048834",
+            "phi": 1048834,
+            "projected_rank_one_span_dim": 13,
+            "projects_onto_U_mod_W": true,
+            "quotient_target_dim": 13,
+            "rank_one_count": 23,
+            "rank_one_count_in_hyperplane": 23,
+            "rank_one_generates_U": false,
+            "rank_one_span_intersection_W_dim": 7,
+            "rank_one_span_rank_in_U": 20
+          },
+          {
+            "U_dim": 22,
+            "W_supplied_by_dependencies": false,
+            "dependency_summary": {
+              "W_image_dim_by_support_cutoff": [
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 1
+                },
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 2
+                },
+                {
+                  "W_image_dim": 2,
+                  "relation_count_at_most": 3,
+                  "support_at_most": 3
+                },
+                {
+                  "W_image_dim": 4,
+                  "relation_count_at_most": 6,
+                  "support_at_most": 4
+                },
+                {
+                  "W_image_dim": 5,
+                  "relation_count_at_most": 11,
+                  "support_at_most": 5
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 22,
+                  "support_at_most": 6
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 38,
+                  "support_at_most": 7
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 56,
+                  "support_at_most": 8
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 82,
+                  "support_at_most": 9
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 119,
+                  "support_at_most": 10
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 160,
+                  "support_at_most": 11
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 197,
+                  "support_at_most": 12
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 220,
+                  "support_at_most": 13
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 235,
+                  "support_at_most": 14
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 247,
+                  "support_at_most": 15
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 252,
+                  "support_at_most": 16
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 254,
+                  "support_at_most": 17
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 255,
+                  "support_at_most": 18
+                }
+              ],
+              "W_image_dim_full_dependency_space": 7,
+              "dependency_count": 255,
+              "dependency_enum_truncated": false,
+              "dependency_support_hist": {
+                "10": 37,
+                "11": 41,
+                "12": 37,
+                "13": 23,
+                "14": 15,
+                "15": 12,
+                "16": 5,
+                "17": 2,
+                "18": 1,
+                "3": 3,
+                "4": 3,
+                "5": 5,
+                "6": 11,
+                "7": 16,
+                "8": 18,
+                "9": 26
+              },
+              "lifted_W_matrix_rank_hist": {
+                "0": 1,
+                "3": 50,
+                "6": 156,
+                "9": 48
+              },
+              "projected_dependency_dim": 8,
+              "q_rank": 13,
+              "small_nonzero_lift_examples": [
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 13,
+                  "support": 3,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 108,
+                  "support": 4,
+                  "wtag": 16
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 33408,
+                  "support": 3,
+                  "wtag": 511
+                },
+                {
+                  "W_matrix_rank": 6,
+                  "dep_mask": 33421,
+                  "support": 6,
+                  "wtag": 495
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 33505,
+                  "support": 6,
+                  "wtag": 511
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 59416,
+                  "support": 6,
+                  "wtag": 8
+                },
+                {
+                  "W_matrix_rank": 6,
+                  "dep_mask": 197936,
+                  "support": 6,
+                  "wtag": 160
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 332930,
+                  "support": 6,
+                  "wtag": 448
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 525604,
+                  "support": 5,
+                  "wtag": 128
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 525609,
+                  "support": 6,
+                  "wtag": 144
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 525637,
+                  "support": 6,
+                  "wtag": 128
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 525640,
+                  "support": 5,
+                  "wtag": 144
+                }
+              ],
+              "small_zero_lift_examples": [
+                97
+              ],
+              "zero_W_relation_support_hist": {
+                "3": 1
+              }
+            },
+            "label": "best_hyperplane_phi_164224",
+            "phi": 164224,
+            "projected_rank_one_span_dim": 13,
+            "projects_onto_U_mod_W": true,
+            "quotient_target_dim": 13,
+            "rank_one_count": 21,
+            "rank_one_count_in_hyperplane": 21,
+            "rank_one_generates_U": false,
+            "rank_one_span_intersection_W_dim": 7,
+            "rank_one_span_rank_in_U": 20
+          },
+          {
+            "U_dim": 22,
+            "W_supplied_by_dependencies": false,
+            "dependency_summary": {
+              "W_image_dim_by_support_cutoff": [
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 1
+                },
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 2
+                },
+                {
+                  "W_image_dim": 1,
+                  "relation_count_at_most": 2,
+                  "support_at_most": 3
+                },
+                {
+                  "W_image_dim": 4,
+                  "relation_count_at_most": 6,
+                  "support_at_most": 4
+                },
+                {
+                  "W_image_dim": 4,
+                  "relation_count_at_most": 6,
+                  "support_at_most": 5
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 13,
+                  "support_at_most": 6
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 25,
+                  "support_at_most": 7
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 54,
+                  "support_at_most": 8
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 80,
+                  "support_at_most": 9
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 122,
+                  "support_at_most": 10
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 172,
+                  "support_at_most": 11
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 202,
+                  "support_at_most": 12
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 222,
+                  "support_at_most": 13
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 237,
+                  "support_at_most": 14
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 253,
+                  "support_at_most": 15
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 253,
+                  "support_at_most": 16
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 255,
+                  "support_at_most": 17
+                }
+              ],
+              "W_image_dim_full_dependency_space": 7,
+              "dependency_count": 255,
+              "dependency_enum_truncated": false,
+              "dependency_support_hist": {
+                "10": 42,
+                "11": 50,
+                "12": 30,
+                "13": 20,
+                "14": 15,
+                "15": 16,
+                "17": 2,
+                "3": 2,
+                "4": 4,
+                "6": 7,
+                "7": 12,
+                "8": 29,
+                "9": 26
+              },
+              "lifted_W_matrix_rank_hist": {
+                "0": 1,
+                "3": 42,
+                "6": 148,
+                "9": 64
+              },
+              "projected_dependency_dim": 8,
+              "q_rank": 13,
+              "small_nonzero_lift_examples": [
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 18582,
+                  "support": 6,
+                  "wtag": 146
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 28673,
+                  "support": 4,
+                  "wtag": 1
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 65952,
+                  "support": 4,
+                  "wtag": 511
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 66080,
+                  "support": 3,
+                  "wtag": 511
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 108556,
+                  "support": 6,
+                  "wtag": 8
+                },
+                {
+                  "W_matrix_rank": 6,
+                  "dep_mask": 394328,
+                  "support": 6,
+                  "wtag": 160
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 660514,
+                  "support": 6,
+                  "wtag": 448
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 819521,
+                  "support": 6,
+                  "wtag": 4
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 1180688,
+                  "support": 4,
+                  "wtag": 384
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 1310792,
+                  "support": 4,
+                  "wtag": 288
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 1577010,
+                  "support": 6,
+                  "wtag": 64
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 1605897,
+                  "support": 6,
+                  "wtag": 292
+                }
+              ],
+              "small_zero_lift_examples": [
+                896
+              ],
+              "zero_W_relation_support_hist": {
+                "3": 1
+              }
+            },
+            "label": "best_hyperplane_phi_4194849",
+            "phi": 4194849,
+            "projected_rank_one_span_dim": 13,
+            "projects_onto_U_mod_W": true,
+            "quotient_target_dim": 13,
+            "rank_one_count": 21,
+            "rank_one_count_in_hyperplane": 21,
+            "rank_one_generates_U": false,
+            "rank_one_span_intersection_W_dim": 7,
+            "rank_one_span_rank_in_U": 20
+          },
+          {
+            "U_dim": 22,
+            "W_supplied_by_dependencies": false,
+            "dependency_summary": {
+              "W_image_dim_by_support_cutoff": [
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 1
+                },
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 2
+                },
+                {
+                  "W_image_dim": 1,
+                  "relation_count_at_most": 3,
+                  "support_at_most": 3
+                },
+                {
+                  "W_image_dim": 4,
+                  "relation_count_at_most": 8,
+                  "support_at_most": 4
+                },
+                {
+                  "W_image_dim": 5,
+                  "relation_count_at_most": 12,
+                  "support_at_most": 5
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 21,
+                  "support_at_most": 6
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 38,
+                  "support_at_most": 7
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 72,
+                  "support_at_most": 8
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 121,
+                  "support_at_most": 9
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 188,
+                  "support_at_most": 10
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 285,
+                  "support_at_most": 11
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 374,
+                  "support_at_most": 12
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 440,
+                  "support_at_most": 13
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 483,
+                  "support_at_most": 14
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 502,
+                  "support_at_most": 15
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 509,
+                  "support_at_most": 16
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 510,
+                  "support_at_most": 17
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 511,
+                  "support_at_most": 18
+                }
+              ],
+              "W_image_dim_full_dependency_space": 7,
+              "dependency_count": 511,
+              "dependency_enum_truncated": false,
+              "dependency_support_hist": {
+                "10": 67,
+                "11": 97,
+                "12": 89,
+                "13": 66,
+                "14": 43,
+                "15": 19,
+                "16": 7,
+                "17": 1,
+                "18": 1,
+                "3": 3,
+                "4": 5,
+                "5": 4,
+                "6": 9,
+                "7": 17,
+                "8": 34,
+                "9": 49
+              },
+              "lifted_W_matrix_rank_hist": {
+                "0": 3,
+                "3": 84,
+                "6": 296,
+                "9": 128
+              },
+              "projected_dependency_dim": 9,
+              "q_rank": 13,
+              "small_nonzero_lift_examples": [
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 28673,
+                  "support": 4,
+                  "wtag": 1
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 66148,
+                  "support": 5,
+                  "wtag": 511
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 66336,
+                  "support": 4,
+                  "wtag": 511
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 66592,
+                  "support": 3,
+                  "wtag": 511
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 66916,
+                  "support": 6,
+                  "wtag": 511
+                },
+                {
+                  "W_matrix_rank": 6,
+                  "dep_mask": 395416,
+                  "support": 6,
+                  "wtag": 160
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 661538,
+                  "support": 6,
+                  "wtag": 448
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 819841,
+                  "support": 6,
+                  "wtag": 4
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 1050772,
+                  "support": 5,
+                  "wtag": 128
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 1051088,
+                  "support": 6,
+                  "wtag": 128
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 1441804,
+                  "support": 5,
+                  "wtag": 32
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 1442120,
+                  "support": 6,
+                  "wtag": 32
+                }
+              ],
+              "small_zero_lift_examples": [
+                324,
+                1604,
+                1792
+              ],
+              "zero_W_relation_support_hist": {
+                "3": 2,
+                "4": 1
+              }
+            },
+            "label": "best_hyperplane_phi_262690",
+            "phi": 262690,
+            "projected_rank_one_span_dim": 13,
+            "projects_onto_U_mod_W": true,
+            "quotient_target_dim": 13,
+            "rank_one_count": 22,
+            "rank_one_count_in_hyperplane": 22,
+            "rank_one_generates_U": false,
+            "rank_one_span_intersection_W_dim": 7,
+            "rank_one_span_rank_in_U": 20
+          }
+        ],
+        "functional_space_dim": 14,
+        "hyperplanes_tested": 16383,
+        "rank_one_span_rank_hist_over_hyperplanes": {
+          "10": 1775,
+          "11": 2558,
+          "12": 2930,
+          "13": 2770,
+          "14": 2143,
+          "15": 1330,
+          "16": 702,
+          "17": 302,
+          "18": 97,
+          "19": 41,
+          "20": 17,
+          "3": 1,
+          "4": 1,
+          "5": 14,
+          "6": 49,
+          "7": 165,
+          "8": 478,
+          "9": 1010
+        }
+      },
+      "dim20_21_rank_one_generated_search_in_this_span": {
+        "20": {
+          "complete_without_witness": true,
+          "elapsed_sec": 0.7925024032592773,
+          "rank_d_subsets_seen": 28828,
+          "stopped_after_witness": false,
+          "subsets_spanning_W_seen": 0,
+          "tested_subsets": 230230,
+          "witness_indices": null
+        },
+        "21": {
+          "complete_without_witness": true,
+          "elapsed_sec": 0.2140522003173828,
+          "rank_d_subsets_seen": 4697,
+          "stopped_after_witness": false,
+          "subsets_spanning_W_seen": 0,
+          "tested_subsets": 65780,
+          "witness_indices": null
+        },
+        "total_elapsed_sec": 1.0065617561340332
+      },
+      "original_term_analysis": {
+        "U_dim": 23,
+        "W_supplied_by_dependencies": true,
+        "dependency_summary": {
+          "W_image_dim_by_support_cutoff": [
+            {
+              "W_image_dim": 0,
+              "relation_count_at_most": 0,
+              "support_at_most": 1
+            },
+            {
+              "W_image_dim": 0,
+              "relation_count_at_most": 0,
+              "support_at_most": 2
+            },
+            {
+              "W_image_dim": 1,
+              "relation_count_at_most": 1,
+              "support_at_most": 3
+            },
+            {
+              "W_image_dim": 4,
+              "relation_count_at_most": 4,
+              "support_at_most": 4
+            },
+            {
+              "W_image_dim": 6,
+              "relation_count_at_most": 8,
+              "support_at_most": 5
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 17,
+              "support_at_most": 6
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 25,
+              "support_at_most": 7
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 49,
+              "support_at_most": 8
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 90,
+              "support_at_most": 9
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 152,
+              "support_at_most": 10
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 245,
+              "support_at_most": 11
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 328,
+              "support_at_most": 12
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 410,
+              "support_at_most": 13
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 467,
+              "support_at_most": 14
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 493,
+              "support_at_most": 15
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 510,
+              "support_at_most": 16
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 511,
+              "support_at_most": 17
+            }
+          ],
+          "W_image_dim_full_dependency_space": 9,
+          "dependency_count": 511,
+          "dependency_enum_truncated": false,
+          "dependency_support_hist": {
+            "10": 62,
+            "11": 93,
+            "12": 83,
+            "13": 82,
+            "14": 57,
+            "15": 26,
+            "16": 17,
+            "17": 1,
+            "3": 1,
+            "4": 3,
+            "5": 4,
+            "6": 9,
+            "7": 8,
+            "8": 24,
+            "9": 41
+          },
+          "lifted_W_matrix_rank_hist": {
+            "3": 49,
+            "6": 294,
+            "9": 168
+          },
+          "projected_dependency_dim": 9,
+          "q_rank": 14,
+          "small_nonzero_lift_examples": [
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 32916,
+              "support": 4,
+              "wtag": 511
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 171016,
+              "support": 6,
+              "wtag": 4
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 281089,
+              "support": 5,
+              "wtag": 144
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 548940,
+              "support": 6,
+              "wtag": 448
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 606752,
+              "support": 5,
+              "wtag": 384
+            },
+            {
+              "W_matrix_rank": 6,
+              "dep_mask": 854049,
+              "support": 6,
+              "wtag": 272
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 1179968,
+              "support": 4,
+              "wtag": 1
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 2165760,
+              "support": 4,
+              "wtag": 288
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 2330632,
+              "support": 6,
+              "wtag": 292
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 2884641,
+              "support": 6,
+              "wtag": 48
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 3411986,
+              "support": 6,
+              "wtag": 8
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 4203394,
+              "support": 6,
+              "wtag": 130
+            }
+          ],
+          "small_zero_lift_examples": [],
+          "zero_W_relation_support_hist": {}
+        },
+        "label": "original_23_terms",
+        "projected_rank_one_span_dim": 14,
+        "projects_onto_U_mod_W": true,
+        "quotient_target_dim": 14,
+        "rank_one_count": 23,
+        "rank_one_generates_U": true,
+        "rank_one_span_intersection_W_dim": 9,
+        "rank_one_span_rank_in_U": 23
+      },
+      "rank_one_count_all": 26,
+      "source": "flip_rank23_text"
+    },
+    "pivot17_transformed_rank23": {
+      "U_dim": 23,
+      "W_coord_rank": 9,
+      "all_rank_one_points_analysis": {
+        "U_dim": 23,
+        "W_supplied_by_dependencies": true,
+        "dependency_summary": {
+          "W_image_dim_by_support_cutoff": [
+            {
+              "W_image_dim": 0,
+              "relation_count_at_most": 0,
+              "support_at_most": 1
+            },
+            {
+              "W_image_dim": 0,
+              "relation_count_at_most": 0,
+              "support_at_most": 2
+            },
+            {
+              "W_image_dim": 2,
+              "relation_count_at_most": 5,
+              "support_at_most": 3
+            },
+            {
+              "W_image_dim": 5,
+              "relation_count_at_most": 12,
+              "support_at_most": 4
+            },
+            {
+              "W_image_dim": 7,
+              "relation_count_at_most": 21,
+              "support_at_most": 5
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 46,
+              "support_at_most": 6
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 90,
+              "support_at_most": 7
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 175,
+              "support_at_most": 8
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 338,
+              "support_at_most": 9
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 623,
+              "support_at_most": 10
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 1079,
+              "support_at_most": 11
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 1660,
+              "support_at_most": 12
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 2303,
+              "support_at_most": 13
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 2938,
+              "support_at_most": 14
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 3458,
+              "support_at_most": 15
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 3800,
+              "support_at_most": 16
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 3973,
+              "support_at_most": 17
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 4052,
+              "support_at_most": 18
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 4083,
+              "support_at_most": 19
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 4091,
+              "support_at_most": 20
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 4095,
+              "support_at_most": 21
+            }
+          ],
+          "W_image_dim_full_dependency_space": 9,
+          "dependency_count": 4095,
+          "dependency_enum_truncated": false,
+          "dependency_support_hist": {
+            "10": 285,
+            "11": 456,
+            "12": 581,
+            "13": 643,
+            "14": 635,
+            "15": 520,
+            "16": 342,
+            "17": 173,
+            "18": 79,
+            "19": 31,
+            "20": 8,
+            "21": 4,
+            "3": 5,
+            "4": 7,
+            "5": 9,
+            "6": 25,
+            "7": 44,
+            "8": 85,
+            "9": 163
+          },
+          "lifted_W_matrix_rank_hist": {
+            "0": 7,
+            "3": 392,
+            "6": 2352,
+            "9": 1344
+          },
+          "projected_dependency_dim": 12,
+          "q_rank": 14,
+          "small_nonzero_lift_examples": [
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 15,
+              "support": 4,
+              "wtag": 6
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 485,
+              "support": 6,
+              "wtag": 7
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 490,
+              "support": 6,
+              "wtag": 1
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 1680,
+              "support": 4,
+              "wtag": 63
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 2192,
+              "support": 3,
+              "wtag": 63
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 29218,
+              "support": 6,
+              "wtag": 18
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 98317,
+              "support": 5,
+              "wtag": 6
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 100498,
+              "support": 6,
+              "wtag": 63
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 561152,
+              "support": 3,
+              "wtag": 128
+            },
+            {
+              "W_matrix_rank": 6,
+              "dep_mask": 563344,
+              "support": 6,
+              "wtag": 191
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 564736,
+              "support": 6,
+              "wtag": 128
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 593922,
+              "support": 4,
+              "wtag": 128
+            }
+          ],
+          "small_zero_lift_examples": [
+            3584,
+            98306,
+            4719104,
+            4721664
+          ],
+          "zero_W_relation_support_hist": {
+            "3": 3,
+            "4": 1,
+            "6": 2,
+            "7": 1
+          }
+        },
+        "label": "all_rank_one_points_in_U",
+        "projected_rank_one_span_dim": 14,
+        "projects_onto_U_mod_W": true,
+        "quotient_target_dim": 14,
+        "rank_one_count": 26,
+        "rank_one_generates_U": true,
+        "rank_one_span_intersection_W_dim": 9,
+        "rank_one_span_rank_in_U": 23
+      },
+      "best_hyperplanes": {
+        "best_rank_one_span_rank": 20,
+        "best_records_analyzed": [
+          {
+            "U_dim": 22,
+            "W_supplied_by_dependencies": false,
+            "dependency_summary": {
+              "W_image_dim_by_support_cutoff": [
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 1
+                },
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 2
+                },
+                {
+                  "W_image_dim": 2,
+                  "relation_count_at_most": 5,
+                  "support_at_most": 3
+                },
+                {
+                  "W_image_dim": 4,
+                  "relation_count_at_most": 11,
+                  "support_at_most": 4
+                },
+                {
+                  "W_image_dim": 5,
+                  "relation_count_at_most": 15,
+                  "support_at_most": 5
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 30,
+                  "support_at_most": 6
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 59,
+                  "support_at_most": 7
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 109,
+                  "support_at_most": 8
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 195,
+                  "support_at_most": 9
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 318,
+                  "support_at_most": 10
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 493,
+                  "support_at_most": 11
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 675,
+                  "support_at_most": 12
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 811,
+                  "support_at_most": 13
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 912,
+                  "support_at_most": 14
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 975,
+                  "support_at_most": 15
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 1008,
+                  "support_at_most": 16
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 1022,
+                  "support_at_most": 17
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 1023,
+                  "support_at_most": 18
+                }
+              ],
+              "W_image_dim_full_dependency_space": 7,
+              "dependency_count": 1023,
+              "dependency_enum_truncated": false,
+              "dependency_support_hist": {
+                "10": 123,
+                "11": 175,
+                "12": 182,
+                "13": 136,
+                "14": 101,
+                "15": 63,
+                "16": 33,
+                "17": 14,
+                "18": 1,
+                "3": 5,
+                "4": 6,
+                "5": 4,
+                "6": 15,
+                "7": 29,
+                "8": 50,
+                "9": 86
+              },
+              "lifted_W_matrix_rank_hist": {
+                "0": 7,
+                "3": 168,
+                "6": 592,
+                "9": 256
+              },
+              "projected_dependency_dim": 10,
+              "q_rank": 13,
+              "small_nonzero_lift_examples": [
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 123,
+                  "support": 6,
+                  "wtag": 1
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 420,
+                  "support": 4,
+                  "wtag": 63
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 548,
+                  "support": 3,
+                  "wtag": 63
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 7305,
+                  "support": 6,
+                  "wtag": 18
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 25125,
+                  "support": 6,
+                  "wtag": 63
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 140288,
+                  "support": 3,
+                  "wtag": 128
+                },
+                {
+                  "W_matrix_rank": 6,
+                  "dep_mask": 140836,
+                  "support": 6,
+                  "wtag": 191
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 141184,
+                  "support": 6,
+                  "wtag": 128
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 148481,
+                  "support": 4,
+                  "wtag": 128
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 153736,
+                  "support": 6,
+                  "wtag": 146
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 533632,
+                  "support": 4,
+                  "wtag": 128
+                },
+                {
+                  "W_matrix_rank": 6,
+                  "dep_mask": 533796,
+                  "support": 6,
+                  "wtag": 191
+                }
+              ],
+              "small_zero_lift_examples": [
+                896,
+                24577,
+                655488,
+                656128
+              ],
+              "zero_W_relation_support_hist": {
+                "3": 3,
+                "4": 1,
+                "6": 2,
+                "7": 1
+              }
+            },
+            "label": "best_hyperplane_phi_540673",
+            "phi": 540673,
+            "projected_rank_one_span_dim": 13,
+            "projects_onto_U_mod_W": true,
+            "quotient_target_dim": 13,
+            "rank_one_count": 23,
+            "rank_one_count_in_hyperplane": 23,
+            "rank_one_generates_U": false,
+            "rank_one_span_intersection_W_dim": 7,
+            "rank_one_span_rank_in_U": 20
+          },
+          {
+            "U_dim": 22,
+            "W_supplied_by_dependencies": false,
+            "dependency_summary": {
+              "W_image_dim_by_support_cutoff": [
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 1
+                },
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 2
+                },
+                {
+                  "W_image_dim": 1,
+                  "relation_count_at_most": 3,
+                  "support_at_most": 3
+                },
+                {
+                  "W_image_dim": 4,
+                  "relation_count_at_most": 8,
+                  "support_at_most": 4
+                },
+                {
+                  "W_image_dim": 6,
+                  "relation_count_at_most": 15,
+                  "support_at_most": 5
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 29,
+                  "support_at_most": 6
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 49,
+                  "support_at_most": 7
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 79,
+                  "support_at_most": 8
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 122,
+                  "support_at_most": 9
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 190,
+                  "support_at_most": 10
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 273,
+                  "support_at_most": 11
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 350,
+                  "support_at_most": 12
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 435,
+                  "support_at_most": 13
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 489,
+                  "support_at_most": 14
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 503,
+                  "support_at_most": 15
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 510,
+                  "support_at_most": 16
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 511,
+                  "support_at_most": 17
+                }
+              ],
+              "W_image_dim_full_dependency_space": 7,
+              "dependency_count": 511,
+              "dependency_enum_truncated": false,
+              "dependency_support_hist": {
+                "10": 68,
+                "11": 83,
+                "12": 77,
+                "13": 85,
+                "14": 54,
+                "15": 14,
+                "16": 7,
+                "17": 1,
+                "3": 3,
+                "4": 5,
+                "5": 7,
+                "6": 14,
+                "7": 20,
+                "8": 30,
+                "9": 43
+              },
+              "lifted_W_matrix_rank_hist": {
+                "0": 3,
+                "3": 84,
+                "6": 296,
+                "9": 128
+              },
+              "projected_dependency_dim": 9,
+              "q_rank": 13,
+              "small_nonzero_lift_examples": [
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 15,
+                  "support": 4,
+                  "wtag": 6
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 1954,
+                  "support": 6,
+                  "wtag": 18
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 6157,
+                  "support": 5,
+                  "wtag": 6
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 35072,
+                  "support": 3,
+                  "wtag": 128
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 37122,
+                  "support": 4,
+                  "wtag": 128
+                },
+                {
+                  "W_matrix_rank": 6,
+                  "dep_mask": 37133,
+                  "support": 6,
+                  "wtag": 134
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 38560,
+                  "support": 6,
+                  "wtag": 146
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 198915,
+                  "support": 6,
+                  "wtag": 130
+                },
+                {
+                  "W_matrix_rank": 6,
+                  "dep_mask": 198924,
+                  "support": 6,
+                  "wtag": 132
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 200961,
+                  "support": 5,
+                  "wtag": 130
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 229379,
+                  "support": 5,
+                  "wtag": 2
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 229388,
+                  "support": 5,
+                  "wtag": 4
+                }
+              ],
+              "small_zero_lift_examples": [
+                6146,
+                295040
+              ],
+              "zero_W_relation_support_hist": {
+                "3": 2,
+                "6": 1
+              }
+            },
+            "label": "best_hyperplane_phi_32780",
+            "phi": 32780,
+            "projected_rank_one_span_dim": 13,
+            "projects_onto_U_mod_W": true,
+            "quotient_target_dim": 13,
+            "rank_one_count": 22,
+            "rank_one_count_in_hyperplane": 22,
+            "rank_one_generates_U": false,
+            "rank_one_span_intersection_W_dim": 7,
+            "rank_one_span_rank_in_U": 20
+          },
+          {
+            "U_dim": 22,
+            "W_supplied_by_dependencies": false,
+            "dependency_summary": {
+              "W_image_dim_by_support_cutoff": [
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 1
+                },
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 2
+                },
+                {
+                  "W_image_dim": 2,
+                  "relation_count_at_most": 5,
+                  "support_at_most": 3
+                },
+                {
+                  "W_image_dim": 4,
+                  "relation_count_at_most": 11,
+                  "support_at_most": 4
+                },
+                {
+                  "W_image_dim": 6,
+                  "relation_count_at_most": 20,
+                  "support_at_most": 5
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 41,
+                  "support_at_most": 6
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 74,
+                  "support_at_most": 7
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 127,
+                  "support_at_most": 8
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 208,
+                  "support_at_most": 9
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 324,
+                  "support_at_most": 10
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 475,
+                  "support_at_most": 11
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 631,
+                  "support_at_most": 12
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 786,
+                  "support_at_most": 13
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 919,
+                  "support_at_most": 14
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 986,
+                  "support_at_most": 15
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 1010,
+                  "support_at_most": 16
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 1021,
+                  "support_at_most": 17
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 1023,
+                  "support_at_most": 18
+                }
+              ],
+              "W_image_dim_full_dependency_space": 7,
+              "dependency_count": 1023,
+              "dependency_enum_truncated": false,
+              "dependency_support_hist": {
+                "10": 116,
+                "11": 151,
+                "12": 156,
+                "13": 155,
+                "14": 133,
+                "15": 67,
+                "16": 24,
+                "17": 11,
+                "18": 2,
+                "3": 5,
+                "4": 6,
+                "5": 9,
+                "6": 21,
+                "7": 33,
+                "8": 53,
+                "9": 81
+              },
+              "lifted_W_matrix_rank_hist": {
+                "0": 7,
+                "3": 168,
+                "6": 592,
+                "9": 256
+              },
+              "projected_dependency_dim": 10,
+              "q_rank": 13,
+              "small_nonzero_lift_examples": [
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 15,
+                  "support": 4,
+                  "wtag": 6
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 464,
+                  "support": 4,
+                  "wtag": 63
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 592,
+                  "support": 3,
+                  "wtag": 63
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 7330,
+                  "support": 6,
+                  "wtag": 18
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 24589,
+                  "support": 5,
+                  "wtag": 6
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 25170,
+                  "support": 6,
+                  "wtag": 63
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 140288,
+                  "support": 3,
+                  "wtag": 128
+                },
+                {
+                  "W_matrix_rank": 6,
+                  "dep_mask": 140880,
+                  "support": 6,
+                  "wtag": 191
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 141184,
+                  "support": 6,
+                  "wtag": 128
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 148482,
+                  "support": 4,
+                  "wtag": 128
+                },
+                {
+                  "W_matrix_rank": 6,
+                  "dep_mask": 148493,
+                  "support": 6,
+                  "wtag": 134
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 153760,
+                  "support": 6,
+                  "wtag": 146
+                }
+              ],
+              "small_zero_lift_examples": [
+                896,
+                24578,
+                1179776,
+                1180416
+              ],
+              "zero_W_relation_support_hist": {
+                "3": 3,
+                "4": 1,
+                "6": 2,
+                "7": 1
+              }
+            },
+            "label": "best_hyperplane_phi_131144",
+            "phi": 131144,
+            "projected_rank_one_span_dim": 13,
+            "projects_onto_U_mod_W": true,
+            "quotient_target_dim": 13,
+            "rank_one_count": 23,
+            "rank_one_count_in_hyperplane": 23,
+            "rank_one_generates_U": false,
+            "rank_one_span_intersection_W_dim": 7,
+            "rank_one_span_rank_in_U": 20
+          },
+          {
+            "U_dim": 22,
+            "W_supplied_by_dependencies": false,
+            "dependency_summary": {
+              "W_image_dim_by_support_cutoff": [
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 1
+                },
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 2
+                },
+                {
+                  "W_image_dim": 1,
+                  "relation_count_at_most": 2,
+                  "support_at_most": 3
+                },
+                {
+                  "W_image_dim": 4,
+                  "relation_count_at_most": 6,
+                  "support_at_most": 4
+                },
+                {
+                  "W_image_dim": 5,
+                  "relation_count_at_most": 11,
+                  "support_at_most": 5
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 21,
+                  "support_at_most": 6
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 32,
+                  "support_at_most": 7
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 50,
+                  "support_at_most": 8
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 76,
+                  "support_at_most": 9
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 108,
+                  "support_at_most": 10
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 156,
+                  "support_at_most": 11
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 196,
+                  "support_at_most": 12
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 229,
+                  "support_at_most": 13
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 251,
+                  "support_at_most": 14
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 254,
+                  "support_at_most": 15
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 255,
+                  "support_at_most": 16
+                }
+              ],
+              "W_image_dim_full_dependency_space": 7,
+              "dependency_count": 255,
+              "dependency_enum_truncated": false,
+              "dependency_support_hist": {
+                "10": 32,
+                "11": 48,
+                "12": 40,
+                "13": 33,
+                "14": 22,
+                "15": 3,
+                "16": 1,
+                "3": 2,
+                "4": 4,
+                "5": 5,
+                "6": 10,
+                "7": 11,
+                "8": 18,
+                "9": 26
+              },
+              "lifted_W_matrix_rank_hist": {
+                "0": 1,
+                "3": 42,
+                "6": 148,
+                "9": 64
+              },
+              "projected_dependency_dim": 8,
+              "q_rank": 13,
+              "small_nonzero_lift_examples": [
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 15,
+                  "support": 4,
+                  "wtag": 6
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 245,
+                  "support": 6,
+                  "wtag": 7
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 250,
+                  "support": 6,
+                  "wtag": 1
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 6157,
+                  "support": 5,
+                  "wtag": 6
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 35328,
+                  "support": 3,
+                  "wtag": 128
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 37378,
+                  "support": 4,
+                  "wtag": 128
+                },
+                {
+                  "W_matrix_rank": 6,
+                  "dep_mask": 37389,
+                  "support": 6,
+                  "wtag": 134
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 199171,
+                  "support": 6,
+                  "wtag": 130
+                },
+                {
+                  "W_matrix_rank": 6,
+                  "dep_mask": 199180,
+                  "support": 6,
+                  "wtag": 132
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 201217,
+                  "support": 5,
+                  "wtag": 130
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 229379,
+                  "support": 5,
+                  "wtag": 2
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 229388,
+                  "support": 5,
+                  "wtag": 4
+                }
+              ],
+              "small_zero_lift_examples": [
+                6146
+              ],
+              "zero_W_relation_support_hist": {
+                "3": 1
+              }
+            },
+            "label": "best_hyperplane_phi_146",
+            "phi": 146,
+            "projected_rank_one_span_dim": 13,
+            "projects_onto_U_mod_W": true,
+            "quotient_target_dim": 13,
+            "rank_one_count": 21,
+            "rank_one_count_in_hyperplane": 21,
+            "rank_one_generates_U": false,
+            "rank_one_span_intersection_W_dim": 7,
+            "rank_one_span_rank_in_U": 20
+          },
+          {
+            "U_dim": 22,
+            "W_supplied_by_dependencies": false,
+            "dependency_summary": {
+              "W_image_dim_by_support_cutoff": [
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 1
+                },
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 2
+                },
+                {
+                  "W_image_dim": 2,
+                  "relation_count_at_most": 5,
+                  "support_at_most": 3
+                },
+                {
+                  "W_image_dim": 4,
+                  "relation_count_at_most": 11,
+                  "support_at_most": 4
+                },
+                {
+                  "W_image_dim": 5,
+                  "relation_count_at_most": 19,
+                  "support_at_most": 5
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 40,
+                  "support_at_most": 6
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 71,
+                  "support_at_most": 7
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 116,
+                  "support_at_most": 8
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 202,
+                  "support_at_most": 9
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 334,
+                  "support_at_most": 10
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 489,
+                  "support_at_most": 11
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 645,
+                  "support_at_most": 12
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 793,
+                  "support_at_most": 13
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 910,
+                  "support_at_most": 14
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 975,
+                  "support_at_most": 15
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 1007,
+                  "support_at_most": 16
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 1021,
+                  "support_at_most": 17
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 1023,
+                  "support_at_most": 18
+                }
+              ],
+              "W_image_dim_full_dependency_space": 7,
+              "dependency_count": 1023,
+              "dependency_enum_truncated": false,
+              "dependency_support_hist": {
+                "10": 132,
+                "11": 155,
+                "12": 156,
+                "13": 148,
+                "14": 117,
+                "15": 65,
+                "16": 32,
+                "17": 14,
+                "18": 2,
+                "3": 5,
+                "4": 6,
+                "5": 8,
+                "6": 21,
+                "7": 31,
+                "8": 45,
+                "9": 86
+              },
+              "lifted_W_matrix_rank_hist": {
+                "0": 7,
+                "3": 168,
+                "6": 592,
+                "9": 256
+              },
+              "projected_dependency_dim": 10,
+              "q_rank": 13,
+              "small_nonzero_lift_examples": [
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 15,
+                  "support": 4,
+                  "wtag": 6
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 485,
+                  "support": 6,
+                  "wtag": 7
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 490,
+                  "support": 6,
+                  "wtag": 1
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 1680,
+                  "support": 4,
+                  "wtag": 63
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 2192,
+                  "support": 3,
+                  "wtag": 63
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 24589,
+                  "support": 5,
+                  "wtag": 6
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 26770,
+                  "support": 6,
+                  "wtag": 63
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 77824,
+                  "support": 3,
+                  "wtag": 128
+                },
+                {
+                  "W_matrix_rank": 6,
+                  "dep_mask": 80016,
+                  "support": 6,
+                  "wtag": 191
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 81408,
+                  "support": 6,
+                  "wtag": 128
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 86018,
+                  "support": 4,
+                  "wtag": 128
+                },
+                {
+                  "W_matrix_rank": 6,
+                  "dep_mask": 86029,
+                  "support": 6,
+                  "wtag": 134
+                }
+              ],
+              "small_zero_lift_examples": [
+                3584,
+                24578,
+                590336,
+                592896
+              ],
+              "zero_W_relation_support_hist": {
+                "3": 3,
+                "4": 1,
+                "6": 2,
+                "7": 1
+              }
+            },
+            "label": "best_hyperplane_phi_1048834",
+            "phi": 1048834,
+            "projected_rank_one_span_dim": 13,
+            "projects_onto_U_mod_W": true,
+            "quotient_target_dim": 13,
+            "rank_one_count": 23,
+            "rank_one_count_in_hyperplane": 23,
+            "rank_one_generates_U": false,
+            "rank_one_span_intersection_W_dim": 7,
+            "rank_one_span_rank_in_U": 20
+          },
+          {
+            "U_dim": 22,
+            "W_supplied_by_dependencies": false,
+            "dependency_summary": {
+              "W_image_dim_by_support_cutoff": [
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 1
+                },
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 2
+                },
+                {
+                  "W_image_dim": 2,
+                  "relation_count_at_most": 3,
+                  "support_at_most": 3
+                },
+                {
+                  "W_image_dim": 4,
+                  "relation_count_at_most": 6,
+                  "support_at_most": 4
+                },
+                {
+                  "W_image_dim": 5,
+                  "relation_count_at_most": 11,
+                  "support_at_most": 5
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 22,
+                  "support_at_most": 6
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 38,
+                  "support_at_most": 7
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 56,
+                  "support_at_most": 8
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 82,
+                  "support_at_most": 9
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 119,
+                  "support_at_most": 10
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 160,
+                  "support_at_most": 11
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 197,
+                  "support_at_most": 12
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 220,
+                  "support_at_most": 13
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 235,
+                  "support_at_most": 14
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 247,
+                  "support_at_most": 15
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 252,
+                  "support_at_most": 16
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 254,
+                  "support_at_most": 17
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 255,
+                  "support_at_most": 18
+                }
+              ],
+              "W_image_dim_full_dependency_space": 7,
+              "dependency_count": 255,
+              "dependency_enum_truncated": false,
+              "dependency_support_hist": {
+                "10": 37,
+                "11": 41,
+                "12": 37,
+                "13": 23,
+                "14": 15,
+                "15": 12,
+                "16": 5,
+                "17": 2,
+                "18": 1,
+                "3": 3,
+                "4": 3,
+                "5": 5,
+                "6": 11,
+                "7": 16,
+                "8": 18,
+                "9": 26
+              },
+              "lifted_W_matrix_rank_hist": {
+                "0": 1,
+                "3": 50,
+                "6": 156,
+                "9": 48
+              },
+              "projected_dependency_dim": 8,
+              "q_rank": 13,
+              "small_nonzero_lift_examples": [
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 15,
+                  "support": 4,
+                  "wtag": 6
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 485,
+                  "support": 6,
+                  "wtag": 7
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 490,
+                  "support": 6,
+                  "wtag": 1
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 656,
+                  "support": 3,
+                  "wtag": 63
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 12301,
+                  "support": 5,
+                  "wtag": 6
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 12946,
+                  "support": 6,
+                  "wtag": 63
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 70656,
+                  "support": 3,
+                  "wtag": 128
+                },
+                {
+                  "W_matrix_rank": 6,
+                  "dep_mask": 71312,
+                  "support": 6,
+                  "wtag": 191
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 74754,
+                  "support": 4,
+                  "wtag": 128
+                },
+                {
+                  "W_matrix_rank": 6,
+                  "dep_mask": 74765,
+                  "support": 6,
+                  "wtag": 134
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 398339,
+                  "support": 6,
+                  "wtag": 130
+                },
+                {
+                  "W_matrix_rank": 6,
+                  "dep_mask": 398348,
+                  "support": 6,
+                  "wtag": 132
+                }
+              ],
+              "small_zero_lift_examples": [
+                12290
+              ],
+              "zero_W_relation_support_hist": {
+                "3": 1
+              }
+            },
+            "label": "best_hyperplane_phi_164224",
+            "phi": 164224,
+            "projected_rank_one_span_dim": 13,
+            "projects_onto_U_mod_W": true,
+            "quotient_target_dim": 13,
+            "rank_one_count": 21,
+            "rank_one_count_in_hyperplane": 21,
+            "rank_one_generates_U": false,
+            "rank_one_span_intersection_W_dim": 7,
+            "rank_one_span_rank_in_U": 20
+          },
+          {
+            "U_dim": 22,
+            "W_supplied_by_dependencies": false,
+            "dependency_summary": {
+              "W_image_dim_by_support_cutoff": [
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 1
+                },
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 2
+                },
+                {
+                  "W_image_dim": 1,
+                  "relation_count_at_most": 2,
+                  "support_at_most": 3
+                },
+                {
+                  "W_image_dim": 4,
+                  "relation_count_at_most": 6,
+                  "support_at_most": 4
+                },
+                {
+                  "W_image_dim": 4,
+                  "relation_count_at_most": 6,
+                  "support_at_most": 5
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 13,
+                  "support_at_most": 6
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 25,
+                  "support_at_most": 7
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 54,
+                  "support_at_most": 8
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 80,
+                  "support_at_most": 9
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 122,
+                  "support_at_most": 10
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 172,
+                  "support_at_most": 11
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 202,
+                  "support_at_most": 12
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 222,
+                  "support_at_most": 13
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 237,
+                  "support_at_most": 14
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 253,
+                  "support_at_most": 15
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 253,
+                  "support_at_most": 16
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 255,
+                  "support_at_most": 17
+                }
+              ],
+              "W_image_dim_full_dependency_space": 7,
+              "dependency_count": 255,
+              "dependency_enum_truncated": false,
+              "dependency_support_hist": {
+                "10": 42,
+                "11": 50,
+                "12": 30,
+                "13": 20,
+                "14": 15,
+                "15": 16,
+                "17": 2,
+                "3": 2,
+                "4": 4,
+                "6": 7,
+                "7": 12,
+                "8": 29,
+                "9": 26
+              },
+              "lifted_W_matrix_rank_hist": {
+                "0": 1,
+                "3": 42,
+                "6": 148,
+                "9": 64
+              },
+              "projected_dependency_dim": 8,
+              "q_rank": 13,
+              "small_nonzero_lift_examples": [
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 15,
+                  "support": 4,
+                  "wtag": 6
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 485,
+                  "support": 6,
+                  "wtag": 7
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 490,
+                  "support": 6,
+                  "wtag": 1
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 1680,
+                  "support": 4,
+                  "wtag": 63
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 2192,
+                  "support": 3,
+                  "wtag": 63
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 29218,
+                  "support": 6,
+                  "wtag": 18
+                },
+                {
+                  "W_matrix_rank": 6,
+                  "dep_mask": 425991,
+                  "support": 6,
+                  "wtag": 258
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 425992,
+                  "support": 4,
+                  "wtag": 260
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 864272,
+                  "support": 6,
+                  "wtag": 64
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 1130560,
+                  "support": 4,
+                  "wtag": 72
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 1737984,
+                  "support": 6,
+                  "wtag": 288
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 1836296,
+                  "support": 6,
+                  "wtag": 36
+                }
+              ],
+              "small_zero_lift_examples": [
+                3584
+              ],
+              "zero_W_relation_support_hist": {
+                "3": 1
+              }
+            },
+            "label": "best_hyperplane_phi_4194849",
+            "phi": 4194849,
+            "projected_rank_one_span_dim": 13,
+            "projects_onto_U_mod_W": true,
+            "quotient_target_dim": 13,
+            "rank_one_count": 21,
+            "rank_one_count_in_hyperplane": 21,
+            "rank_one_generates_U": false,
+            "rank_one_span_intersection_W_dim": 7,
+            "rank_one_span_rank_in_U": 20
+          },
+          {
+            "U_dim": 22,
+            "W_supplied_by_dependencies": false,
+            "dependency_summary": {
+              "W_image_dim_by_support_cutoff": [
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 1
+                },
+                {
+                  "W_image_dim": 0,
+                  "relation_count_at_most": 0,
+                  "support_at_most": 2
+                },
+                {
+                  "W_image_dim": 1,
+                  "relation_count_at_most": 3,
+                  "support_at_most": 3
+                },
+                {
+                  "W_image_dim": 4,
+                  "relation_count_at_most": 8,
+                  "support_at_most": 4
+                },
+                {
+                  "W_image_dim": 5,
+                  "relation_count_at_most": 12,
+                  "support_at_most": 5
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 21,
+                  "support_at_most": 6
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 38,
+                  "support_at_most": 7
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 72,
+                  "support_at_most": 8
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 121,
+                  "support_at_most": 9
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 188,
+                  "support_at_most": 10
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 285,
+                  "support_at_most": 11
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 374,
+                  "support_at_most": 12
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 440,
+                  "support_at_most": 13
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 483,
+                  "support_at_most": 14
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 502,
+                  "support_at_most": 15
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 509,
+                  "support_at_most": 16
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 510,
+                  "support_at_most": 17
+                },
+                {
+                  "W_image_dim": 7,
+                  "relation_count_at_most": 511,
+                  "support_at_most": 18
+                }
+              ],
+              "W_image_dim_full_dependency_space": 7,
+              "dependency_count": 511,
+              "dependency_enum_truncated": false,
+              "dependency_support_hist": {
+                "10": 67,
+                "11": 97,
+                "12": 89,
+                "13": 66,
+                "14": 43,
+                "15": 19,
+                "16": 7,
+                "17": 1,
+                "18": 1,
+                "3": 3,
+                "4": 5,
+                "5": 4,
+                "6": 9,
+                "7": 17,
+                "8": 34,
+                "9": 49
+              },
+              "lifted_W_matrix_rank_hist": {
+                "0": 3,
+                "3": 84,
+                "6": 296,
+                "9": 128
+              },
+              "projected_dependency_dim": 9,
+              "q_rank": 13,
+              "small_nonzero_lift_examples": [
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 15,
+                  "support": 4,
+                  "wtag": 6
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 485,
+                  "support": 6,
+                  "wtag": 7
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 490,
+                  "support": 6,
+                  "wtag": 1
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 1680,
+                  "support": 4,
+                  "wtag": 63
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 2192,
+                  "support": 3,
+                  "wtag": 63
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 229379,
+                  "support": 5,
+                  "wtag": 2
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 229388,
+                  "support": 5,
+                  "wtag": 4
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 296080,
+                  "support": 5,
+                  "wtag": 63
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 297616,
+                  "support": 6,
+                  "wtag": 63
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 459267,
+                  "support": 6,
+                  "wtag": 2
+                },
+                {
+                  "W_matrix_rank": 3,
+                  "dep_mask": 459276,
+                  "support": 6,
+                  "wtag": 4
+                },
+                {
+                  "W_matrix_rank": 6,
+                  "dep_mask": 598023,
+                  "support": 6,
+                  "wtag": 258
+                }
+              ],
+              "small_zero_lift_examples": [
+                3584,
+                295424,
+                297984
+              ],
+              "zero_W_relation_support_hist": {
+                "3": 2,
+                "4": 1
+              }
+            },
+            "label": "best_hyperplane_phi_262690",
+            "phi": 262690,
+            "projected_rank_one_span_dim": 13,
+            "projects_onto_U_mod_W": true,
+            "quotient_target_dim": 13,
+            "rank_one_count": 22,
+            "rank_one_count_in_hyperplane": 22,
+            "rank_one_generates_U": false,
+            "rank_one_span_intersection_W_dim": 7,
+            "rank_one_span_rank_in_U": 20
+          }
+        ],
+        "functional_space_dim": 14,
+        "hyperplanes_tested": 16383,
+        "rank_one_span_rank_hist_over_hyperplanes": {
+          "10": 1775,
+          "11": 2558,
+          "12": 2930,
+          "13": 2770,
+          "14": 2143,
+          "15": 1330,
+          "16": 702,
+          "17": 302,
+          "18": 97,
+          "19": 41,
+          "20": 17,
+          "3": 1,
+          "4": 1,
+          "5": 14,
+          "6": 49,
+          "7": 165,
+          "8": 478,
+          "9": 1010
+        }
+      },
+      "dim20_21_rank_one_generated_search_in_this_span": {
+        "20": {
+          "complete_without_witness": true,
+          "elapsed_sec": 0.7922477722167969,
+          "rank_d_subsets_seen": 28828,
+          "stopped_after_witness": false,
+          "subsets_spanning_W_seen": 0,
+          "tested_subsets": 230230,
+          "witness_indices": null
+        },
+        "21": {
+          "complete_without_witness": true,
+          "elapsed_sec": 0.21362876892089844,
+          "rank_d_subsets_seen": 4697,
+          "stopped_after_witness": false,
+          "subsets_spanning_W_seen": 0,
+          "tested_subsets": 65780,
+          "witness_indices": null
+        },
+        "total_elapsed_sec": 1.0058906078338623
+      },
+      "original_term_analysis": {
+        "U_dim": 23,
+        "W_supplied_by_dependencies": true,
+        "dependency_summary": {
+          "W_image_dim_by_support_cutoff": [
+            {
+              "W_image_dim": 0,
+              "relation_count_at_most": 0,
+              "support_at_most": 1
+            },
+            {
+              "W_image_dim": 0,
+              "relation_count_at_most": 0,
+              "support_at_most": 2
+            },
+            {
+              "W_image_dim": 1,
+              "relation_count_at_most": 1,
+              "support_at_most": 3
+            },
+            {
+              "W_image_dim": 4,
+              "relation_count_at_most": 4,
+              "support_at_most": 4
+            },
+            {
+              "W_image_dim": 6,
+              "relation_count_at_most": 8,
+              "support_at_most": 5
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 17,
+              "support_at_most": 6
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 25,
+              "support_at_most": 7
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 49,
+              "support_at_most": 8
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 90,
+              "support_at_most": 9
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 152,
+              "support_at_most": 10
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 245,
+              "support_at_most": 11
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 328,
+              "support_at_most": 12
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 410,
+              "support_at_most": 13
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 467,
+              "support_at_most": 14
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 493,
+              "support_at_most": 15
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 510,
+              "support_at_most": 16
+            },
+            {
+              "W_image_dim": 9,
+              "relation_count_at_most": 511,
+              "support_at_most": 17
+            }
+          ],
+          "W_image_dim_full_dependency_space": 9,
+          "dependency_count": 511,
+          "dependency_enum_truncated": false,
+          "dependency_support_hist": {
+            "10": 62,
+            "11": 93,
+            "12": 83,
+            "13": 82,
+            "14": 57,
+            "15": 26,
+            "16": 17,
+            "17": 1,
+            "3": 1,
+            "4": 3,
+            "5": 4,
+            "6": 9,
+            "7": 8,
+            "8": 24,
+            "9": 41
+          },
+          "lifted_W_matrix_rank_hist": {
+            "3": 49,
+            "6": 294,
+            "9": 168
+          },
+          "projected_dependency_dim": 9,
+          "q_rank": 14,
+          "small_nonzero_lift_examples": [
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 32916,
+              "support": 4,
+              "wtag": 63
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 171016,
+              "support": 6,
+              "wtag": 288
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 281089,
+              "support": 5,
+              "wtag": 130
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 548940,
+              "support": 6,
+              "wtag": 7
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 606752,
+              "support": 5,
+              "wtag": 6
+            },
+            {
+              "W_matrix_rank": 6,
+              "dep_mask": 854049,
+              "support": 6,
+              "wtag": 132
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 1179968,
+              "support": 4,
+              "wtag": 72
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 2165760,
+              "support": 4,
+              "wtag": 260
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 2330632,
+              "support": 6,
+              "wtag": 36
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 2884641,
+              "support": 6,
+              "wtag": 384
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 3411986,
+              "support": 6,
+              "wtag": 64
+            },
+            {
+              "W_matrix_rank": 3,
+              "dep_mask": 4203394,
+              "support": 6,
+              "wtag": 146
+            }
+          ],
+          "small_zero_lift_examples": [],
+          "zero_W_relation_support_hist": {}
+        },
+        "label": "original_23_terms",
+        "projected_rank_one_span_dim": 14,
+        "projects_onto_U_mod_W": true,
+        "quotient_target_dim": 14,
+        "rank_one_count": 23,
+        "rank_one_generates_U": true,
+        "rank_one_span_intersection_W_dim": 9,
+        "rank_one_span_rank_in_U": 23
+      },
+      "rank_one_count_all": 26,
+      "source": "pivot17_transformed_rank23"
+    }
+  },
+  "schema": "s0908_dependency_modW_v1"
+}

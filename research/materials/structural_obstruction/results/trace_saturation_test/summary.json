@@ -1,0 +1,116 @@
+{
+  "schema": "trace_tight_contraction_summary_v1",
+  "field": "F2",
+  "purpose": "support-level and algebra-control measurements for the corrected tight-contraction trace mechanism in rank-19 quotient cores",
+  "coefficient_convention": "diagonal trace row uses M_inv[c,b] on X[b,c], giving c^T M_inv b",
+  "quotient_cores": {
+    "E11": {
+      "rank9_contractions": 72,
+      "nu_distribution": {
+        "32": 81,
+        "36": 96,
+        "40": 72,
+        "48": 6
+      },
+      "nu_on_eight_verified_quotient_orbits": [
+        48,
+        48,
+        32,
+        40,
+        32,
+        32,
+        40,
+        36
+      ],
+      "lp_wang_plus_contraction_rank_max_sum_nu": 820.0,
+      "lp_no_saturated_rank9_feasible": true,
+      "lp_no_saturated_rank9_sum_nu": 731.6861240218406,
+      "lp_no_saturated_rank9_min_hit": 9.999999999999957,
+      "integer_lazy_no_saturated_status": "UNKNOWN",
+      "integer_lazy_no_saturated_iterations_with_candidate_before_unknown": 5,
+      "integer_lazy_candidate_rank9_hit_histograms_head": [
+        {
+          "10": 42,
+          "12": 24,
+          "14": 6
+        },
+        {
+          "10": 33,
+          "12": 31,
+          "14": 7,
+          "16": 1
+        },
+        {
+          "10": 60,
+          "12": 12
+        },
+        {
+          "10": 26,
+          "11": 30,
+          "12": 6,
+          "13": 10
+        },
+        {
+          "10": 19,
+          "11": 27,
+          "12": 12,
+          "13": 12,
+          "14": 1,
+          "15": 1
+        }
+      ],
+      "spectral_controls_zero_failures": {
+        "rank3_tight_tests": 29,
+        "rank6_tight_tests": 46,
+        "rank9_tight_tests": 58,
+        "rank9_defect1_tests": 137
+      }
+    },
+    "E12_E21": {
+      "rank9_contractions": 88,
+      "nu_distribution": {
+        "40": 85,
+        "44": 96,
+        "48": 55,
+        "52": 16,
+        "56": 3
+      },
+      "lp_wang_plus_contraction_rank_max_sum_nu": 963.1456529080725,
+      "lp_no_saturated_rank9_feasible": true,
+      "lp_no_saturated_rank9_sum_nu": 890.4093454723584,
+      "lp_no_saturated_rank9_min_hit": 9.999999999999863,
+      "spectral_controls_zero_failures": {
+        "rank3_tight_tests": 26,
+        "rank6_tight_tests": 38,
+        "rank9_tight_tests": 96,
+        "rank9_defect1_tests": 147
+      }
+    },
+    "H3": {
+      "rank9_contractions": 80,
+      "nu_distribution": {
+        "36": 84,
+        "40": 98,
+        "44": 52,
+        "48": 21
+      },
+      "lp_wang_plus_contraction_rank_max_sum_nu": 871.8290836717161,
+      "lp_no_saturated_rank9_feasible": true,
+      "lp_no_saturated_rank9_sum_nu": 810.2987234160669,
+      "lp_no_saturated_rank9_min_hit": 9.999999999999918,
+      "spectral_controls_zero_failures": {
+        "rank3_tight_tests": 12,
+        "rank6_tight_tests": 11,
+        "rank9_tight_tests": 56,
+        "rank9_defect1_tests": 164
+      }
+    }
+  },
+  "scientific_interpretation": "The full tight-contraction spectral equations and rank-9 defect-one equations are validated on known rank-21 decompositions, but tight invertible contractions are not forced by the current Wang-occupation linear relaxations. The independent-verification-record layer should therefore be added as conditional cuts inside support and B/C completion searches rather than treated as a standalone route to a finite-field lower bound.",
+  "evidence_files": [
+    "data/trace_saturation_test/trace_test_lp.json",
+    "data/trace_saturation_test/no_saturation_long_lazy_E11.json",
+    "data/trace_saturation_test/spectral_resolution_controls.json",
+    "notes/trace_saturation_support_test.md"
+  ]
+}

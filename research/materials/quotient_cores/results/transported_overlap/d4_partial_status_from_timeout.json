@@ -1,0 +1,52 @@
+{
+  "artifacts": {
+    "cadical_log": {
+      "exists": true,
+      "path": "data/neighborhood_repair/cnf/current_support_repair_d4.cadical.log",
+      "sha256": "9aec1b08e390e56c9c306641841931abfe2b62e20222a381f69d6ee0153a149b",
+      "size": 7876
+    },
+    "cnf": {
+      "exists": true,
+      "path": "data/neighborhood_repair/cnf/current_support_repair_d4.cnf",
+      "sha256": "a2749dc2fc7d2f5fa47251c20f0e07e804b3aafb02a8ebe85f309ccba6b6887d",
+      "size": 645190081
+    },
+    "drat": {
+      "exists": true,
+      "path": "data/neighborhood_repair/cnf/current_support_repair_d4.drat",
+      "sha256": "8d0acdc9293f7fbbff5f18cc608d41ae55ef8acd87a50a9b735613584b4d5df7",
+      "size": 1495306550
+    },
+    "drat_trim_log": {
+      "exists": true,
+      "path": "data/neighborhood_repair/cnf/current_support_repair_d4.drat_trim.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "meta": {
+      "exists": true,
+      "path": "data/neighborhood_repair/cnf/current_support_repair_d4.meta.json",
+      "sha256": "7d5139149dcffd81f9821b6222a49b3b50ff52d5b0c20cf224cac131d40c90eb",
+      "size": 3565
+    }
+  },
+  "cadical_log_contains_exit20": true,
+  "cadical_log_contains_unsat": true,
+  "cadical_log_tail": "c --- [ banner ] -------------------------------------------------------------\nc \nc CaDiCaL SAT Solver\nc Copyright (c) 2016-2025\nc A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller\nc JKU Linz, University of Freiburg, TU Wien\nc \nc Version 3.0.0 7b99c07f0bcab5824a5a3ce62c7066554017f641\nc g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG\nc Fri Jun 12 17:14:38 CST 2026 Linux local 6.8.0-117-generic x86_64\nc \nc --- [ limit ] --------------------------------------------------------------\nc \nc setting time limit to 900 seconds real time (due to '-t 900')\nc \nc --- [ proof tracing ] ------------------------------------------------------\nc \nc opening file to write 'data/neighborhood_repair/cnf/current_support_repair_d4.drat'\nc writing non-binary proof trace to 'data/neighborhood_repair/cnf/current_support_repair_d4.drat'\nc \nc --- [ parsing input ] ------------------------------------------------------\nc \nc reading DIMACS file from 'data/neighborhood_repair/cnf/current_support_repair_d4.cnf'\nc opening file to read 'data/neighborhood_repair/cnf/current_support_repair_d4.cnf'\nc found 'p cnf 14773323 31606964' header\nc parsed 31606964 clauses in 9.15 seconds process time\nc \nc --- [ options ] ------------------------------------------------------------\nc \nc   --binary=false                 (different from default 'true')\nc   --stabilize=false              (different from default 'true')\nc   --walk=false                   (different from default 'true')\nc \nc --- [ solving ] ------------------------------------------------------------\nc \nc time measured in process time since initialization\nc \nc  seconds    reduction conflicts       size tier2           variables\nc          MB     restarts   redundant    glue  trail               remaining\nc            level     rate       size/glu tier1   irredundant\nc \nc *  9.16 5327  0 0   0  0    0    0 0.0 0 0 2 6  0% 31606964 14773323 100%\nc ( 18.52 5542  0 0   0  0    0    0 0.0 0 0 2 6  0% 31606964 14773323 100%\nc . 18.52 5542  0 0   0  0    0    0 0.0 0 0 2 6  0% 31606964 14773323 100%\nc e 60.89 5862  0 0   0  0    0    0 0.0 0 0 2 6  0% 29631915 11359952 77%\nc P 71.90 6540  0 0   0  0    0    0 0.0 0 0 2 6  0% 29631915 11359952 77%\nc ) 71.92 6540  0 0   0  0    0    0 0.0 0 0 2 6  0% 29631915 11359952 77%\nc { 81.93 6558  0 0   0  0    0    0 0.0 0 0 2 6  0% 29631915 11359952 77%\nc - 123.21 6587 107 1   2  9  300  139 4.0 40 10 2 6 25% 29631915 11359952 77%\nc I 232.60 6745 43 1  32  4 1004  633 3.8 37 10 2 6 24% 29631915 11359952 77%\nc - 372.90 7793 31 2  88  3 1803  742 3.6 35 10 2 6 24% 29631915 11359952 77%\nc s 454.75 6917 28 2  90  3 2196  952 3.5 33 9 2 6 23% 29543639 11359952 77%\nc e 515.45 7615 28 2  90  3 2196  594 3.5 33 9 2 6 23% 29355436 6314080 43%\nc s 520.61 7615 28 2  90  3 2196  593 3.5 33 9 2 6 23% 29300273 6314080 43%\nc e 525.28 7615 28 2  90  3 2196  593 3.5 33 9 2 6 23% 29288991 6309495 43%\nc i 571.98 7214 27 2 114  3 2528  816 3.6 34 10 2 6 31% 29288991 6203679 42%\nc B 607.64 7218 25 2 115  3 3008 1170 3.6 33 9 2 6 30% 29288991 6183404 42%\nc i 724.30 7226 21 2 183  2 4553 1916 3.4 30 9 2 6 31% 29288991 6183396 42%\nc i 725.02 7226 21 2 183  2 4560 1920 3.4 30 9 2 6 31% 29288991 6183394 42%\nc i 725.54 7226 21 2 183  2 4564 1920 3.4 30 9 2 6 31% 29288991 6069157 41%\nc i 726.32 7226 21 2 183  2 4570 1921 3.4 30 9 2 6 31% 29288991 5938227 40%\nc \nc  seconds     reduction conflicts       size  tier2           variables\nc           MB     restarts   redundant     glue  trail              remaining\nc             level     rate       size/glue tier1   irredundant\nc \nc i 726.85 7226 21 2 183  2 4574 1922 3.4 30 9 2 6 31% 29288991 5821139 39%\nc i 728.27 7226 21 2 183  2 4582 1924 3.4 30 9 2 6 31% 29288991 5655867 38%\nc i 729.29 7226 21 2 183  2 4605 1926 3.4 30 9 2 6 31% 29288991 5522108 37%\nc i 729.67 7226 21 2 183  2 4606 1926 3.4 30 9 2 6 31% 29288991 5385528 36%\nc i 730.03 7226 21 2 183  2 4610 1928 3.4 30 9 2 6 31% 29288991 5217554 35%\nc i 730.19 7226 21 2 183  2 4611 1928 3.4 30 9 2 6 31% 29288991 4928695 33%\nc } 730.56 7226 21 2 183  2 4613 1928 3.4 30 9 2 6 31% 29288991 4189081 28%\nc 0 730.56 7226 21 2 183  2 4613 1928 3.4 30 9 2 6 31% 29288991 4189081 28%\nc \nc --- [ closing proof ] ------------------------------------------------------\nc \nc DRAT proof file 'data/neighborhood_repair/cnf/current_support_repair_d4.drat' closed\nc DRAT 32787613 added clauses 49.85%\nc DRAT 32983243 deleted clauses 50.15%\nc DRAT 1495306550 bytes (1426.04 MB)\nc \nc --- [ result ] -------------------------------------------------------------\nc \ns UNSATISFIABLE\nc \nc --- [ run-time profiling ] -------------------------------------------------\nc \nc process time taken by individual solving procedures\nc (percentage relative to process time for solving)\nc \nc       596.39   82.67% search\nc       577.01   79.98% unstable\nc       112.52   15.60% simplify\nc        53.38    7.40% preprocess\nc        49.76    6.90% elim\nc        24.99    3.46% fastelim\nc        19.38    2.69% lucky\nc        15.60    2.16% congruence\nc        14.33    1.99% subsume\nc         9.15    1.27% parse\nc         0.31    0.04% backbone\nc   =================================\nc       721.41   98.75% solve\nc \nc last line shows process time for solving\nc (percentage relative to total process time)\nc \nc --- [ statistics ] ---------------------------------------------------------\nc \nc chronological:              1119        24.26 %  of conflicts\nc conflicts:                  4613         6.39    per second\nc backbone:                      1         0.00 %  of vars\nc decisions:                 11382        15.78    per second\nc eliminated:              8463828        57.29 %  of all variables\nc fixed:                   2120414        14.35 %  of all variables\nc learned:                    4249        92.11 %  per conflict\nc learned_lits:             401816       100.00 %  learned literals\nc minimized:                     0         0.00 %  learned literals\nc shrunken:                 218534        54.39 %  learned literals\nc minishrunken:              54962        13.68 %  learned literals\nc otfs:                         20         0.43 %  of conflict\nc propagations:         2692024013         3.73 M  per second\nc reduced:                     504        10.93 %  per conflict\nc rephased:                      2      2306.50    interval\nc restarts:                    183        25.21    interval\nc subsumed:                 144886         0.23 %  of all clauses\nc strengthened:                 20         0.00 %  of all clauses\nc ticks:                8031251732         3.10    propagation\nc weakened:               32837475         2.57    average size\nc \nc seconds are measured in process time for solving\nc \nc --- [ glue usage ] ---------------------------------------------------------\nc \nc focused glue 3 used 2196 clauses 14.96% accumulated 57.46% tier1\nc focused glue 4 used 1530 clauses 10.42% accumulated 67.89%\nc focused glue 5 used 1150 clauses 7.836% accumulated 75.73% tier2\nc \nc stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1\nc stable glue 3 used 0 clauses 0.000% accumulated 0.000%\nc stable glue 4 used 0 clauses 0.000% accumulated 0.000%\nc stable glue 5 used 0 clauses 0.000% accumulated 0.000%\nc stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2\nc \nc \nc --- [ resources ] ----------------------------------------------------------\nc \nc total process time since initialization:       730.56    seconds\nc total real time since initialization:          730.72    seconds\nc maximum resident set size of process:         9911.11    MB\nc \nc --- [ shutting down ] ------------------------------------------------------\nc \nc exit 20\n",
+  "drat_trim_contains_verified": false,
+  "drat_trim_log_tail": "",
+  "managed_task_error": "Command timed out after 2400s",
+  "managed_task_state": "timed_out",
+  "meaning": "The d=4 CaDiCaL log reached UNSAT and wrote a DRAT trace, but the managed task timed out before drat-trim verification. Treat d=4 as solver-UNSAT with unverified proof artifact until replay succeeds.",
+  "meta_summary": {
+    "base_violations": 9,
+    "cnf_sha256": "a2749dc2fc7d2f5fa47251c20f0e07e804b3aafb02a8ebe85f309ccba6b6887d",
+    "d": 4,
+    "num_clauses": 31606964,
+    "num_vars": 14773323,
+    "row_count": 281564
+  },
+  "schema": "d4_timeout_status_v1",
+  "source_task": "tasks/s54_t23_tool1/result.json"
+}

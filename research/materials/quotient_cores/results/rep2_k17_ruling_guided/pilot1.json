@@ -1,0 +1,805 @@
+{
+  "closed_by_graph": false,
+  "elapsed_sec": 386.44886922836304,
+  "exact_rank1_count": 17,
+  "field": "F2",
+  "final_degree_hist": {
+    "402": 48,
+    "405": 96,
+    "408": 24,
+    "410": 24,
+    "414": 108,
+    "416": 24,
+    "417": 96,
+    "421": 6
+  },
+  "final_edge_count_after_feedback": 87531,
+  "fixed_prefix": [
+    1,
+    2
+  ],
+  "graph_size_info": null,
+  "initial_degree_hist": {
+    "402": 48,
+    "405": 96,
+    "408": 24,
+    "410": 24,
+    "414": 12,
+    "416": 24,
+    "417": 96,
+    "420": 48,
+    "421": 6,
+    "422": 48
+  },
+  "initial_edge_count_after_old_pairs": 87867,
+  "iterations": [
+    {
+      "canonical_high": [
+        224,
+        229,
+        236
+      ],
+      "event": "full_high_ruling_query",
+      "feedback": [
+        {
+          "canonical": [
+            224,
+            229
+          ],
+          "edges_removed": 96,
+          "images": 96,
+          "strict_vs_wang_only": false,
+          "subset": [
+            225,
+            228
+          ],
+          "type": "ruling_pair_edge_removal"
+        },
+        {
+          "canonical": [
+            225,
+            233
+          ],
+          "edges_removed": 48,
+          "images": 48,
+          "strict_vs_wang_only": false,
+          "subset": [
+            225,
+            233
+          ],
+          "type": "ruling_pair_edge_removal"
+        },
+        {
+          "canonical": [
+            224,
+            236
+          ],
+          "edges_removed": 192,
+          "images": 192,
+          "strict_vs_wang_only": false,
+          "subset": [
+            228,
+            233
+          ],
+          "type": "ruling_pair_edge_removal"
+        }
+      ],
+      "high": [
+        225,
+        228,
+        233
+      ],
+      "iteration": 1,
+      "orbit_image_count_setwise": 192,
+      "ruling_build_sec": 7.472743034362793,
+      "ruling_constraints_added": 98,
+      "ruling_solve_sec": 0.31829118728637695,
+      "ruling_status": "INFEASIBLE",
+      "search_stats": {
+        "hit_node_limit": false,
+        "nodes": 4,
+        "prunes": {}
+      },
+      "shrink_records": [
+        {
+          "canonical_setwise": [
+            225
+          ],
+          "new_relative_to_imported_old_pairs": false,
+          "orbit_image_count_setwise": 48,
+          "ruling_solve_sec": 7.472305774688721,
+          "ruling_status": "OPTIMAL",
+          "ruling_strict_vs_wang_only": false,
+          "size": 1,
+          "subset": [
+            225
+          ],
+          "wang_only_solve_sec": 7.537398099899292,
+          "wang_only_status": "OPTIMAL"
+        },
+        {
+          "canonical_setwise": [
+            224
+          ],
+          "new_relative_to_imported_old_pairs": false,
+          "orbit_image_count_setwise": 48,
+          "ruling_solve_sec": 4.603356122970581,
+          "ruling_status": "OPTIMAL",
+          "ruling_strict_vs_wang_only": false,
+          "size": 1,
+          "subset": [
+            228
+          ],
+          "wang_only_solve_sec": 6.245563983917236,
+          "wang_only_status": "OPTIMAL"
+        },
+        {
+          "canonical_setwise": [
+            225
+          ],
+          "new_relative_to_imported_old_pairs": false,
+          "orbit_image_count_setwise": 48,
+          "ruling_solve_sec": 12.156500339508057,
+          "ruling_status": "UNKNOWN",
+          "ruling_strict_vs_wang_only": false,
+          "size": 1,
+          "subset": [
+            233
+          ],
+          "wang_only_solve_sec": 11.989034652709961,
+          "wang_only_status": "OPTIMAL"
+        },
+        {
+          "canonical_setwise": [
+            224,
+            229
+          ],
+          "new_relative_to_imported_old_pairs": true,
+          "orbit_image_count_setwise": 96,
+          "ruling_solve_sec": 4.468862295150757,
+          "ruling_status": "INFEASIBLE",
+          "ruling_strict_vs_wang_only": false,
+          "size": 2,
+          "subset": [
+            225,
+            228
+          ],
+          "wang_only_solve_sec": 5.672686815261841,
+          "wang_only_status": "INFEASIBLE"
+        },
+        {
+          "canonical_setwise": [
+            225,
+            233
+          ],
+          "new_relative_to_imported_old_pairs": true,
+          "orbit_image_count_setwise": 48,
+          "ruling_solve_sec": 6.3617262840271,
+          "ruling_status": "INFEASIBLE",
+          "ruling_strict_vs_wang_only": false,
+          "size": 2,
+          "subset": [
+            225,
+            233
+          ],
+          "wang_only_solve_sec": 7.693685054779053,
+          "wang_only_status": "INFEASIBLE"
+        },
+        {
+          "canonical_setwise": [
+            224,
+            236
+          ],
+          "new_relative_to_imported_old_pairs": true,
+          "orbit_image_count_setwise": 192,
+          "ruling_solve_sec": 0.4330625534057617,
+          "ruling_status": "INFEASIBLE",
+          "ruling_strict_vs_wang_only": false,
+          "size": 2,
+          "subset": [
+            228,
+            233
+          ],
+          "wang_only_solve_sec": 0.4272127151489258,
+          "wang_only_status": "INFEASIBLE"
+        }
+      ],
+      "wang_only_compare_solve_sec": 0.31120800971984863,
+      "wang_only_compare_status": "INFEASIBLE"
+    }
+  ],
+  "lut_meta_brief": {
+    "conflict_count": 0,
+    "coverage_ok": true,
+    "subspace_count": 8283458
+  },
+  "old_constraint_files": [
+    "data/guided_clique/merged_guided_constraints_v3.json"
+  ],
+  "old_constraint_source_count": 47,
+  "old_constraint_sources_head": [
+    {
+      "canonical_subset": [
+        34,
+        52
+      ],
+      "edges_removed": 24,
+      "images": 24,
+      "k0": 16,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        34,
+        272
+      ],
+      "edges_removed": 192,
+      "images": 192,
+      "k0": 16,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        34,
+        274
+      ],
+      "edges_removed": 192,
+      "images": 192,
+      "k0": 16,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        34,
+        400
+      ],
+      "edges_removed": 192,
+      "images": 192,
+      "k0": 16,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        34,
+        402
+      ],
+      "edges_removed": 192,
+      "images": 192,
+      "k0": 16,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        160,
+        274
+      ],
+      "edges_removed": 192,
+      "images": 192,
+      "k0": 16,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        17
+      ],
+      "images": 0,
+      "k0": 17,
+      "new_vertices_as_hyperedges": 0,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "singleton"
+    },
+    {
+      "canonical_subset": [
+        25,
+        193
+      ],
+      "edges_removed": 12,
+      "images": 12,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        28,
+        29
+      ],
+      "edges_removed": 12,
+      "images": 12,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        28,
+        30
+      ],
+      "edges_removed": 0,
+      "images": 12,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        28,
+        31
+      ],
+      "edges_removed": 6,
+      "images": 6,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        28,
+        33
+      ],
+      "edges_removed": 48,
+      "images": 48,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        28,
+        41
+      ],
+      "edges_removed": 48,
+      "images": 48,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        33,
+        35
+      ],
+      "edges_removed": 48,
+      "images": 48,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        33,
+        37
+      ],
+      "edges_removed": 24,
+      "images": 24,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        33,
+        39
+      ],
+      "edges_removed": 48,
+      "images": 48,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        33,
+        41
+      ],
+      "edges_removed": 24,
+      "images": 24,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        35,
+        39
+      ],
+      "edges_removed": 12,
+      "images": 12,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        35,
+        43
+      ],
+      "edges_removed": 24,
+      "images": 24,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        35,
+        46
+      ],
+      "edges_removed": 24,
+      "images": 24,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        80,
+        81
+      ],
+      "edges_removed": 24,
+      "images": 24,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        80,
+        82
+      ],
+      "edges_removed": 0,
+      "images": 24,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        80,
+        83
+      ],
+      "edges_removed": 12,
+      "images": 12,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        80,
+        84
+      ],
+      "edges_removed": 96,
+      "images": 96,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        80,
+        88
+      ],
+      "edges_removed": 24,
+      "images": 24,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        80,
+        92
+      ],
+      "edges_removed": 192,
+      "images": 192,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        84,
+        85
+      ],
+      "edges_removed": 24,
+      "images": 24,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        84,
+        86
+      ],
+      "edges_removed": 0,
+      "images": 24,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        84,
+        87
+      ],
+      "edges_removed": 12,
+      "images": 12,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        96,
+        97
+      ],
+      "edges_removed": 48,
+      "images": 48,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        96,
+        98
+      ],
+      "edges_removed": 96,
+      "images": 96,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        96,
+        99
+      ],
+      "edges_removed": 96,
+      "images": 96,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        96,
+        100
+      ],
+      "edges_removed": 96,
+      "images": 96,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        96,
+        104
+      ],
+      "edges_removed": 48,
+      "images": 48,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        96,
+        108
+      ],
+      "edges_removed": 96,
+      "images": 96,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        98,
+        99
+      ],
+      "edges_removed": 48,
+      "images": 48,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        98,
+        102
+      ],
+      "edges_removed": 96,
+      "images": 96,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        161,
+        163
+      ],
+      "edges_removed": 0,
+      "images": 48,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        161,
+        165
+      ],
+      "edges_removed": 0,
+      "images": 96,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        161,
+        169
+      ],
+      "edges_removed": 48,
+      "images": 48,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        161,
+        177
+      ],
+      "edges_removed": 48,
+      "images": 48,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        161,
+        185
+      ],
+      "edges_removed": 48,
+      "images": 48,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        224,
+        225
+      ],
+      "edges_removed": 96,
+      "images": 96,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        224,
+        226
+      ],
+      "edges_removed": 0,
+      "images": 96,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        224,
+        227
+      ],
+      "edges_removed": 24,
+      "images": 24,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        224,
+        228
+      ],
+      "edges_removed": 48,
+      "images": 48,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    },
+    {
+      "canonical_subset": [
+        225,
+        226
+      ],
+      "edges_removed": 24,
+      "images": 24,
+      "k0": 17,
+      "source": "data/guided_clique/merged_guided_constraints_v3.json",
+      "type": "pair"
+    }
+  ],
+  "old_singleton_sources": [
+    {
+      "images": 12,
+      "new_vertices_removed": 12,
+      "rep": 10,
+      "source": "data/coverage/rep2_k17_survivors_corrected.json"
+    },
+    {
+      "images": 24,
+      "new_vertices_removed": 24,
+      "rep": 12,
+      "source": "data/coverage/rep2_k17_survivors_corrected.json"
+    },
+    {
+      "images": 24,
+      "new_vertices_removed": 0,
+      "rep": 20,
+      "source": "data/coverage/rep2_k17_survivors_corrected.json"
+    }
+  ],
+  "pointwise_stabilizer_order": 96,
+  "problem": "rep2 adjacent-pair exact-k17 mixed-rank ruling-aware guided clique test",
+  "proof_status": "CP-SAT skeleton execution evidence. Ruling-enabled exclusions need conversion to a proof-producing CNF/provenance object before theorem use; feasible support is only A-side occupation evidence.",
+  "proved_hyperedges_active": 0,
+  "ruling_meta": {
+    "encoded_clause_count": 98,
+    "encoded_size_hist": {
+      "1": 1,
+      "2": 10,
+      "3": 87
+    },
+    "proof_source": "transport of the analysis fixed-prefix [1,2,3] exclusion across all Segre ruling lines",
+    "simplified_counts": {
+      "binary": 10,
+      "contradictions": 0,
+      "ternary": 87,
+      "unit": 1
+    },
+    "total_ruling_triples": 98
+  },
+  "ruling_new_pair_canonical_count": 3,
+  "ruling_new_pair_canonicals": [
+    [
+      224,
+      229
+    ],
+    [
+      224,
+      236
+    ],
+    [
+      225,
+      233
+    ]
+  ],
+  "ruling_strict_pair_canonical_count": 0,
+  "ruling_strict_pair_canonicals": [],
+  "schema": "rep2_k17_ruling_guided_v1",
+  "setwise_stabilizer_order": 192,
+  "support_candidate_path": null,
+  "target_high_rank_points": 3,
+  "temporary_skip_hyperedges_active": 0,
+  "vertex_rank_hist": {
+    "2": 258,
+    "3": 168
+  },
+  "vertices_after_old_singletons": 426
+}

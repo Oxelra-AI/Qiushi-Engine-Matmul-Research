@@ -1,0 +1,96 @@
+{
+  "M0_rows": [
+    1,
+    2,
+    4,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "examples_by_rank_pairs": {
+    "2": {
+      "Delta_rows": [
+        0,
+        2,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "q": 1,
+      "r": 1
+    },
+    "3": {
+      "Delta_rows": [
+        1,
+        2,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "q": 0,
+      "r": 0
+    },
+    "4": {
+      "Delta_rows": [
+        1,
+        2,
+        4,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "q": 8,
+      "r": 8
+    }
+  },
+  "field": "F2",
+  "mathematical_consequence": [
+    "The peer rank distribution by (q,r) pairs is reproduced: Delta never has rank 0 or 1.",
+    "The stronger block statement that every lifted term with nonzero B-block component shares the final q_s direction is false without a saturation/minimality hypothesis.",
+    "Tight contraction/domain arguments remain valid when active_count equals matrix rank; they should not be applied to nonsaturated lift block equations merely because the sum has rank at most one."
+  ],
+  "pair_distribution_rank_M0_plus_qr": {
+    "2": 28,
+    "3": 8100,
+    "4": 254016
+  },
+  "rank1_sum_alignment_counterexample": {
+    "lesson": "A nonminimal or nonsaturated sum of rank-one terms can cancel directions outside the final rank-one column space. Alignment of individual factors follows from tight equality count=rank, not from rank(target)<=1 alone.",
+    "sum_equals_target": true,
+    "target_left_factor": 1,
+    "target_rank": 1,
+    "target_right_factor": 16,
+    "term1_left_factor_equals_target": false,
+    "term2_left_factor_equals_target": false,
+    "term_count": 2,
+    "term_left_factors": [
+      3,
+      2
+    ],
+    "term_right_factors": [
+      16,
+      16
+    ]
+  },
+  "schema": "lift_residual_and_rank1_sum_test_v1",
+  "unique_rank_le1_matrix_count": 261122,
+  "unique_rank_le1_matrix_distribution_rank_M0_plus_X": {
+    "2": 28,
+    "3": 7078,
+    "4": 254016
+  }
+}

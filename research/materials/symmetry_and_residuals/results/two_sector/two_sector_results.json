@@ -1,0 +1,70 @@
+{
+  "two_sector": {
+    "dim_L_sym": 6,
+    "dim_L_anti": 3,
+    "direct_sum": true,
+    "F_contains_L_anti": true,
+    "dim_F_cap_L1": 3,
+    "dim_quotient": 6
+  },
+  "Qi_compatibility": {
+    "rank_over_Qi": 22,
+    "nullspace_dim": 59,
+    "num_quadrics": 59,
+    "num_bilinear": 59,
+    "singular_fixed_path": "data/two_sector/compatibility_Qi.sing",
+    "singular_bilinear_path": "data/two_sector/compatibility_Qi_bilinear.sing"
+  },
+  "f_parity": {
+    "naive_27_f": 9,
+    "naive_27_rank": 27,
+    "laderman_tau_f": 7,
+    "laderman_tau_rank": 23,
+    "both_odd": true,
+    "rank22_needs_even_f": true,
+    "current_moves_preserve_f_parity": true,
+    "parity_changing_moves": [
+      "orbit_collapse",
+      "fixed_term_addition",
+      "fixed_term_removal"
+    ]
+  },
+  "skeleton_variables": {
+    "(8,7) r=22": {
+      "f": 8,
+      "m": 7,
+      "vars_fixed": 72,
+      "vars_free": 126,
+      "total": 198
+    },
+    "(6,8) r=22": {
+      "f": 6,
+      "m": 8,
+      "vars_fixed": 54,
+      "vars_free": 144,
+      "total": 198
+    },
+    "(4,9) r=22": {
+      "f": 4,
+      "m": 9,
+      "vars_fixed": 36,
+      "vars_free": 162,
+      "total": 198
+    },
+    "(2,10) r=22": {
+      "f": 2,
+      "m": 10,
+      "vars_fixed": 18,
+      "vars_free": 180,
+      "total": 198
+    },
+    "(0,11) r=22": {
+      "f": 0,
+      "m": 11,
+      "vars_fixed": 0,
+      "vars_free": 198,
+      "total": 198
+    },
+    "note": "All skeletons have 9*(f+2m) = 9*22 = 198 unknowns before symmetry reduction"
+  }
+}

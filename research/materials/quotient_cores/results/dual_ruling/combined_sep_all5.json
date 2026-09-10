@@ -1,0 +1,85 @@
+{
+  "contraction_lower_constraints": 511,
+  "dual_ruling_constraints": 294,
+  "final_status": "UNKNOWN",
+  "final_wang_constraints": 519635,
+  "initial_max_residual": 2,
+  "initial_wang_constraints": 519102,
+  "learned_zero_domain_cut_count": 0,
+  "prefix": [
+    1,
+    2
+  ],
+  "primal_ruling_counts": {
+    "binary": 10,
+    "ternary": 87,
+    "unit": 1
+  },
+  "rounds": [
+    {
+      "full_lut_max_excess": 2,
+      "full_lut_violation_count": 533,
+      "learned_wang_added": 533,
+      "learned_zero_domain_cuts_added": 0,
+      "rank1_total": 16,
+      "round": 0,
+      "saturation": {
+        "domain_hist": {
+          "B6_C3": 6,
+          "B6_C6": 4,
+          "B9_C9": 10
+        },
+        "linear_affine_dim": 549,
+        "linear_passed": true,
+        "saturated_contraction_count": 20,
+        "undersaturated_contraction_count": 0,
+        "zero_domain_terms": []
+      },
+      "solve_sec": 149.45,
+      "status": "OPTIMAL",
+      "support": [
+        1,
+        2,
+        4,
+        7,
+        8,
+        11,
+        16,
+        25,
+        32,
+        56,
+        65,
+        72,
+        130,
+        139,
+        144,
+        211,
+        260,
+        288,
+        455,
+        504
+      ],
+      "wang_constraint_count": 519102,
+      "zero_domain_cut_count": 0
+    },
+    {
+      "note": "no solution found",
+      "round": 1,
+      "solve_sec": 211.82,
+      "status": "UNKNOWN",
+      "wang_constraint_count": 519635,
+      "zero_domain_cut_count": 0
+    }
+  ],
+  "schema": "combined_rep2_separation_v1",
+  "source_counts": {
+    "base_residual": 516414,
+    "both": 0,
+    "learned": 533,
+    "orbit": 2688
+  },
+  "tier": "all5",
+  "top": null,
+  "total_elapsed_sec": 468.83,
+  "total_rounds": 2
+}

@@ -1,0 +1,173 @@
+{
+  "build_sec": 69.095,
+  "complete_meta": {
+    "by_dim8": {
+      "0": 1,
+      "1": 255,
+      "2": 10795,
+      "3": 97155,
+      "4": 200787,
+      "5": 97155,
+      "6": 10795,
+      "7": 255,
+      "8": 1
+    },
+    "by_full_lut_L": {
+      "0": 1,
+      "11": 865,
+      "12": 61232,
+      "13": 8130,
+      "14": 81540,
+      "15": 138902,
+      "16": 83046,
+      "17": 34664,
+      "18": 687,
+      "19": 1,
+      "3": 33,
+      "6": 578,
+      "9": 7520
+    },
+    "constraint_count": 417199,
+    "elapsed_sec": 51.781
+  },
+  "constraint_summary": {
+    "certificate_cut_summary": {
+      "aux_vars": 140,
+      "certificate_count": 17,
+      "guard_sizes": [
+        10,
+        5,
+        10,
+        5,
+        6,
+        4,
+        6,
+        9,
+        7,
+        5,
+        6,
+        11,
+        5,
+        6,
+        4,
+        4,
+        8
+      ],
+      "guarded_parity_cuts": 17,
+      "local_inconsistent_cuts": 104
+    },
+    "contraction_lower_bounds": 255,
+    "contraction_rank_hist": {
+      "3": 33,
+      "6": 150,
+      "9": 72
+    },
+    "hint_added": false,
+    "overlap_cuts": 1152,
+    "overlap_meta": {
+      "base_support": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        20,
+        24,
+        31,
+        32,
+        36,
+        64,
+        73,
+        109,
+        127,
+        128,
+        141,
+        160,
+        182,
+        219
+      ],
+      "center_count_in_file": 1152,
+      "center_count_used": 1152,
+      "certified_overlap_cut": {
+        "d3_cnf_sha256": "a2cfc55f4e3faf27291bb3631de8f73de3a71a528d3af1639238bbbdcdae74b9",
+        "d3_drat_sha256": "21e1d03b0f109fcab8d33b8eb2bcfe681e8dde7eecd8ee5b043fb380e65e6f9f",
+        "d3_drat_trim_verified": true,
+        "d3_meta_path": "data/neighborhood_repair/cnf/current_support_repair_d3.meta.json",
+        "d3_status_path": "data/neighborhood_repair/cnf/current_support_repair_d3.status.json",
+        "d_certified": 3,
+        "excluded_condition": "|S'∩gS| >= 16",
+        "linear_cut": "sum_{p in gS} x_p <= 15",
+        "overlap_max": 15
+      },
+      "group": {
+        "base_support_stabilizer_size_in_generated_group": 1,
+        "orbit_size_from_stabilizer": 1152,
+        "permutation_count": 1152,
+        "unique_transported_center_count": 1152
+      },
+      "source": "data/transported_overlap/transported_overlap_analysis.json"
+    },
+    "retained_wang": {
+      "added": 320364,
+      "by_L": {
+        "11": 13,
+        "12": 17312,
+        "13": 498,
+        "14": 51522,
+        "15": 130982,
+        "16": 82998,
+        "17": 34664,
+        "18": 687,
+        "3": 33,
+        "6": 200,
+        "9": 1455
+      },
+      "by_dim": {
+        "1": 255,
+        "2": 10795,
+        "3": 97155,
+        "4": 200787,
+        "5": 5742,
+        "6": 5375,
+        "7": 255
+      },
+      "skipped_not_kept": 96833
+    },
+    "trace_dependency_cut_size_hist": {
+      "5": 246
+    },
+    "trace_dependency_cuts": 246
+  },
+  "core": "E11 quotient core",
+  "elapsed_sec": 327.725,
+  "field": "F2",
+  "lut_coverage_ok": true,
+  "meaning": "CP-SAT search combining retained Wang rows, contraction lower bounds, transported overlap cuts, and independent-verification-record cuts. FEASIBLE is only an A-support candidate with checks; UNKNOWN or solver-only INFEASIBLE is not proof.",
+  "parameters": {
+    "cert_cuts": true,
+    "hint_source": "data/reduced_wang/reduced_wang_cpsat_overlap_300s.json",
+    "max_certs": null,
+    "max_rounds": 2,
+    "max_size5_cuts": null,
+    "overlap_max": 15,
+    "seed": 6262,
+    "solver_time": 300.0,
+    "trace_cuts": "minimal",
+    "use_overlap": true,
+    "workers": 8
+  },
+  "rank_s": 19,
+  "reduced_counts": {
+    "dropped": 96833,
+    "kept": 320366,
+    "kept_hash": null
+  },
+  "rounds": [
+    {
+      "round": 0,
+      "solve_sec": 258.63,
+      "status": "UNKNOWN"
+    }
+  ],
+  "schema": "cumulative_reduced_support_search_v1"
+}

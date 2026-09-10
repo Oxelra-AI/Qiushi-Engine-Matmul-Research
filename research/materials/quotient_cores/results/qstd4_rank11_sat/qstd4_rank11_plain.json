@@ -1,0 +1,33 @@
+{
+  "allow_zero_a": false,
+  "cnf_clauses": 25688,
+  "cnf_path": "data/qstd4_rank11_sat/qstd4_rank11_plain.cnf",
+  "cnf_sha256": "3b35285ee88333067a90d384955cb87f30bd595e7dde56c4250877051e657785",
+  "core": "data/q_std4/q_std4.npy",
+  "core_shape": [
+    4,
+    9,
+    9
+  ],
+  "field": "F2",
+  "meaning": "SAT gives an exact E11 CPD after decode/verification; UNSAT for this prefix excludes every decomposition whose A multiset contains the prefix. Solver-only UNSAT should be upgraded to a plain-CNF DRAT proof before use as a durable subtree certificate.",
+  "mode": "plain",
+  "native_xor_clauses": 0,
+  "prefix": [],
+  "prefix_size": 0,
+  "proof_sha256": "363ca37a5509e90cfcc69c7d76617423e5089cbd3e951d28dd97b870299567e0",
+  "proof_size_bytes": 895483904,
+  "purpose": "exact E11 prefix-completion CPD SAT with variable remaining A and all B/C factors",
+  "rank": 11,
+  "solve": {
+    "command": "kissat data/qstd4_rank11_sat/qstd4_rank11_plain.cnf data/qstd4_rank11_sat/qstd4_rank11_plain.drat",
+    "elapsed_sec": 300.00374484062195,
+    "proof_path": "data/qstd4_rank11_sat/qstd4_rank11_plain.drat",
+    "returncode": null,
+    "status": "TIMEOUT",
+    "stderr_tail": "",
+    "stdout_tail": ""
+  },
+  "sort_free_a": false,
+  "vars": 7613
+}

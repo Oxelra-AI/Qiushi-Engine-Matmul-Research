@@ -1,0 +1,4782 @@
+{
+  "active_wang_rows_final": 12160,
+  "added_source_counts": {
+    "complete_scan_violation": 1110,
+    "initial_dim1": 255,
+    "initial_dim2": 10795
+  },
+  "complete_core_table_meta": {
+    "by_dim8": {
+      "0": 1,
+      "1": 255,
+      "2": 10795,
+      "3": 97155,
+      "4": 200787,
+      "5": 97155,
+      "6": 10795,
+      "7": 255,
+      "8": 1
+    },
+    "by_full_lut_L": {
+      "0": 1,
+      "11": 865,
+      "12": 61232,
+      "13": 8130,
+      "14": 81540,
+      "15": 138902,
+      "16": 83046,
+      "17": 34664,
+      "18": 687,
+      "19": 1,
+      "3": 33,
+      "6": 578,
+      "9": 7520
+    },
+    "constraint_count": 417199,
+    "elapsed_sec": 36.136
+  },
+  "contraction_lower_count": 255,
+  "contraction_rank_dist": {
+    "3": 33,
+    "6": 150,
+    "9": 72
+  },
+  "core": "E11",
+  "exact_support_exclusions": 6,
+  "field": "F2",
+  "final_status": "OPTIMAL",
+  "rank_s": 19,
+  "rounds": [
+    {
+      "active_wang_after_learning": 11459,
+      "active_wang_rows": 11050,
+      "complete_wang_scan": {
+        "A_multiplicity_hist": {
+          "1": 19
+        },
+        "complete_constraint_count": 417199,
+        "complete_violation_count": 409,
+        "distinct_A_points": 19,
+        "elapsed_sec": 0.077,
+        "label": "v3_round0",
+        "max_excess": 2,
+        "rank_s": 19,
+        "term_count_with_multiplicity": 19,
+        "violations_by_dim8": {
+          "3": 29,
+          "4": 184,
+          "5": 154,
+          "6": 42
+        },
+        "violations_by_excess": {
+          "1": 366,
+          "2": 43
+        },
+        "violations_by_full_lut_L": {
+          "12": 72,
+          "14": 9,
+          "15": 302,
+          "16": 15,
+          "17": 10,
+          "9": 1
+        },
+        "violations_by_occ_cap_head": {
+          "(11, 10)": 1,
+          "(3, 2)": 10,
+          "(4, 3)": 15,
+          "(5, 4)": 259,
+          "(6, 4)": 43,
+          "(6, 5)": 9,
+          "(8, 7)": 72
+        }
+      },
+      "complete_wang_violations_head": [
+        {
+          "L": 15,
+          "basis8": [
+            80,
+            34,
+            8,
+            4,
+            1
+          ],
+          "basis9": [
+            160,
+            68,
+            16,
+            8,
+            2,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 1108135396613,
+          "key9": 565166224214534,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            82,
+            34,
+            8,
+            4,
+            1
+          ],
+          "basis9": [
+            164,
+            68,
+            16,
+            8,
+            2,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 1108135396645,
+          "key9": 565166224214598,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            64,
+            34,
+            10,
+            6,
+            1
+          ],
+          "basis9": [
+            128,
+            68,
+            20,
+            12,
+            2,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 1112438752261,
+          "key9": 565174830925830,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            128,
+            64,
+            34,
+            10,
+            1
+          ],
+          "basis9": [
+            256,
+            128,
+            68,
+            20,
+            2,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 1121129596933,
+          "key9": 565192212615174,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            132,
+            64,
+            34,
+            12,
+            1
+          ],
+          "basis9": [
+            264,
+            128,
+            68,
+            24,
+            2,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 1125424564293,
+          "key9": 565200802549894,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            134,
+            64,
+            34,
+            12,
+            1
+          ],
+          "basis9": [
+            268,
+            128,
+            68,
+            24,
+            2,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 1125424564325,
+          "key9": 565200802549958,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            136,
+            33,
+            16,
+            4,
+            2
+          ],
+          "basis9": [
+            272,
+            66,
+            32,
+            8,
+            4,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 2207680571525,
+          "key9": 567365314564358,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            137,
+            33,
+            16,
+            4,
+            2
+          ],
+          "basis9": [
+            274,
+            66,
+            32,
+            8,
+            4,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 2207680571541,
+          "key9": 567365314564390,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            129,
+            40,
+            16,
+            4,
+            2
+          ],
+          "basis9": [
+            258,
+            80,
+            32,
+            8,
+            4,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 2207680628757,
+          "key9": 567365314678822,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            129,
+            41,
+            16,
+            4,
+            2
+          ],
+          "basis9": [
+            258,
+            82,
+            32,
+            8,
+            4,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 2207680636949,
+          "key9": 567365314695206,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            129,
+            16,
+            8,
+            5,
+            2
+          ],
+          "basis9": [
+            258,
+            32,
+            16,
+            10,
+            4,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 2209794361365,
+          "key9": 567369542144038,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            129,
+            16,
+            9,
+            5,
+            2
+          ],
+          "basis9": [
+            258,
+            32,
+            18,
+            10,
+            4,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 2209798555669,
+          "key9": 567369550532646,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            129,
+            32,
+            16,
+            5,
+            2
+          ],
+          "basis9": [
+            258,
+            64,
+            32,
+            10,
+            4,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 2209828046869,
+          "key9": 567369609515046,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            129,
+            32,
+            17,
+            5,
+            2
+          ],
+          "basis9": [
+            258,
+            64,
+            34,
+            10,
+            4,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 2209832241173,
+          "key9": 567369617903654,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            128,
+            33,
+            17,
+            5,
+            2
+          ],
+          "basis9": [
+            256,
+            66,
+            34,
+            10,
+            4,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 2209832249349,
+          "key9": 567369617920006,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            129,
+            64,
+            32,
+            5,
+            2
+          ],
+          "basis9": [
+            258,
+            128,
+            64,
+            10,
+            4,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 2209895417877,
+          "key9": 567369744257062,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            129,
+            68,
+            32,
+            16,
+            2
+          ],
+          "basis9": [
+            258,
+            136,
+            64,
+            32,
+            4,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 2233517770773,
+          "key9": 567416988962854,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            129,
+            69,
+            32,
+            16,
+            2
+          ],
+          "basis9": [
+            258,
+            138,
+            64,
+            32,
+            4,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 2233517778965,
+          "key9": 567416988979238,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            128,
+            64,
+            33,
+            17,
+            2
+          ],
+          "basis9": [
+            256,
+            128,
+            66,
+            34,
+            4,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 2235669415941,
+          "key9": 567421292253190,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            129,
+            68,
+            32,
+            20,
+            2
+          ],
+          "basis9": [
+            258,
+            136,
+            64,
+            40,
+            4,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 2242107705365,
+          "key9": 567434168832038,
+          "occupancy": 6,
+          "point_count": 31
+        }
+      ],
+      "exact_support_excluded_for_fixed_A_failure": true,
+      "learned_wang_rows_added": 409,
+      "round": 0,
+      "saturation": {
+        "linear_affine_dim": 459,
+        "linear_passed": true,
+        "saturated_contraction_count": 23,
+        "term_domain_dims_hist": {
+          "B3_C3": 9,
+          "B9_C9": 10
+        },
+        "transversal_failure_count_reported": 18,
+        "transversal_witnesses_head": [
+          {
+            "participating_terms": [
+              1,
+              3,
+              4,
+              6,
+              7,
+              10,
+              11,
+              14,
+              17
+            ],
+            "q": 53,
+            "q_hex": "0x35",
+            "rank": 9,
+            "side": "C",
+            "subset_size": 4,
+            "subset_terms": [
+              10,
+              11,
+              14,
+              17
+            ],
+            "sum_domain_dim": 3,
+            "term_domain_dims": [
+              3,
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "participating_terms": [
+              1,
+              2,
+              5,
+              6,
+              7,
+              10,
+              11,
+              14,
+              17
+            ],
+            "q": 61,
+            "q_hex": "0x3d",
+            "rank": 9,
+            "side": "C",
+            "subset_size": 4,
+            "subset_terms": [
+              10,
+              11,
+              14,
+              17
+            ],
+            "sum_domain_dim": 3,
+            "term_domain_dims": [
+              3,
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "participating_terms": [
+              0,
+              3,
+              4,
+              7,
+              8,
+              11,
+              13,
+              17,
+              18
+            ],
+            "q": 71,
+            "q_hex": "0x47",
+            "rank": 9,
+            "side": "C",
+            "subset_size": 4,
+            "subset_terms": [
+              11,
+              13,
+              17,
+              18
+            ],
+            "sum_domain_dim": 3,
+            "term_domain_dims": [
+              3,
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "participating_terms": [
+              0,
+              2,
+              5,
+              7,
+              8,
+              11,
+              13,
+              17,
+              18
+            ],
+            "q": 79,
+            "q_hex": "0x4f",
+            "rank": 9,
+            "side": "C",
+            "subset_size": 4,
+            "subset_terms": [
+              11,
+              13,
+              17,
+              18
+            ],
+            "sum_domain_dim": 3,
+            "term_domain_dims": [
+              3,
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "participating_terms": [
+              0,
+              3,
+              4,
+              6,
+              9,
+              11,
+              13,
+              17,
+              18
+            ],
+            "q": 87,
+            "q_hex": "0x57",
+            "rank": 9,
+            "side": "C",
+            "subset_size": 4,
+            "subset_terms": [
+              11,
+              13,
+              17,
+              18
+            ],
+            "sum_domain_dim": 3,
+            "term_domain_dims": [
+              3,
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "participating_terms": [
+              0,
+              2,
+              5,
+              6,
+              9,
+              11,
+              13,
+              17,
+              18
+            ],
+            "q": 95,
+            "q_hex": "0x5f",
+            "rank": 9,
+            "side": "C",
+            "subset_size": 4,
+            "subset_terms": [
+              11,
+              13,
+              17,
+              18
+            ],
+            "sum_domain_dim": 3,
+            "term_domain_dims": [
+              3,
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "participating_terms": [
+              1,
+              3,
+              4,
+              8,
+              9,
+              12,
+              14,
+              16,
+              18
+            ],
+            "q": 133,
+            "q_hex": "0x85",
+            "rank": 9,
+            "side": "C",
+            "subset_size": 4,
+            "subset_terms": [
+              12,
+              14,
+              16,
+              18
+            ],
+            "sum_domain_dim": 3,
+            "term_domain_dims": [
+              3,
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "participating_terms": [
+              0,
+              3,
+              4,
+              7,
+              8,
+              11,
+              14,
+              15,
+              16
+            ],
+            "q": 135,
+            "q_hex": "0x87",
+            "rank": 9,
+            "side": "C",
+            "subset_size": 4,
+            "subset_terms": [
+              11,
+              14,
+              15,
+              16
+            ],
+            "sum_domain_dim": 3,
+            "term_domain_dims": [
+              3,
+              3,
+              3,
+              3
+            ]
+          }
+        ],
+        "undersaturated_contraction_count": 0,
+        "zero_domain_term_count": 0
+      },
+      "solve_sec": 2.399,
+      "status": "OPTIMAL",
+      "support": [
+        2,
+        3,
+        8,
+        9,
+        12,
+        13,
+        16,
+        18,
+        20,
+        22,
+        32,
+        34,
+        35,
+        64,
+        65,
+        66,
+        128,
+        129,
+        130
+      ]
+    },
+    {
+      "active_wang_after_learning": 11693,
+      "active_wang_rows": 11459,
+      "complete_wang_scan": {
+        "A_multiplicity_hist": {
+          "1": 19
+        },
+        "complete_constraint_count": 417199,
+        "complete_violation_count": 234,
+        "distinct_A_points": 19,
+        "elapsed_sec": 0.076,
+        "label": "v3_round1",
+        "max_excess": 2,
+        "rank_s": 19,
+        "term_count_with_multiplicity": 19,
+        "violations_by_dim8": {
+          "3": 15,
+          "4": 74,
+          "5": 112,
+          "6": 33
+        },
+        "violations_by_excess": {
+          "1": 215,
+          "2": 19
+        },
+        "violations_by_full_lut_L": {
+          "12": 48,
+          "14": 8,
+          "15": 157,
+          "16": 12,
+          "17": 5,
+          "9": 4
+        },
+        "violations_by_occ_cap_head": {
+          "(11, 10)": 4,
+          "(3, 2)": 5,
+          "(4, 3)": 12,
+          "(5, 4)": 140,
+          "(6, 4)": 17,
+          "(6, 5)": 8,
+          "(8, 7)": 46,
+          "(9, 7)": 2
+        }
+      },
+      "complete_wang_violations_head": [
+        {
+          "L": 15,
+          "basis8": [
+            146,
+            74,
+            34,
+            6,
+            1
+          ],
+          "basis9": [
+            292,
+            148,
+            68,
+            12,
+            2,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 1112539744549,
+          "key9": 565175032910406,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            145,
+            72,
+            33,
+            5,
+            2
+          ],
+          "basis9": [
+            290,
+            144,
+            66,
+            10,
+            4,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 2209899677973,
+          "key9": 567369752777254,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            192,
+            33,
+            25,
+            4,
+            3
+          ],
+          "basis9": [
+            384,
+            66,
+            50,
+            8,
+            6,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 3307229948933,
+          "key9": 569564413319174,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            193,
+            33,
+            25,
+            4,
+            3
+          ],
+          "basis9": [
+            386,
+            66,
+            50,
+            8,
+            6,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 3307229948949,
+          "key9": 569564413319206,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            136,
+            80,
+            33,
+            4,
+            3
+          ],
+          "basis9": [
+            272,
+            160,
+            66,
+            8,
+            6,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 3307263887493,
+          "key9": 569564481196294,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            137,
+            81,
+            33,
+            4,
+            3
+          ],
+          "basis9": [
+            274,
+            162,
+            66,
+            8,
+            6,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 3307263895701,
+          "key9": 569564481212710,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            193,
+            32,
+            25,
+            5,
+            3
+          ],
+          "basis9": [
+            386,
+            64,
+            50,
+            10,
+            6,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 3309377424405,
+          "key9": 569568708270118,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            136,
+            80,
+            33,
+            5,
+            3
+          ],
+          "basis9": [
+            272,
+            160,
+            66,
+            10,
+            6,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 3309411371141,
+          "key9": 569568776163590,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            137,
+            81,
+            33,
+            5,
+            3
+          ],
+          "basis9": [
+            274,
+            162,
+            66,
+            10,
+            6,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 3309411379349,
+          "key9": 569568776180006,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            140,
+            76,
+            37,
+            25,
+            3
+          ],
+          "basis9": [
+            280,
+            152,
+            74,
+            50,
+            6,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 3352377788613,
+          "key9": 569654708998534,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            136,
+            76,
+            37,
+            28,
+            3
+          ],
+          "basis9": [
+            272,
+            152,
+            74,
+            56,
+            6,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 3358820239493,
+          "key9": 569667593900294,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            195,
+            33,
+            19,
+            11,
+            4
+          ],
+          "basis9": [
+            390,
+            66,
+            38,
+            22,
+            8,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 4421748796469,
+          "key9": 571793451014246,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            216,
+            33,
+            4,
+            3
+          ],
+          "basis9": [
+            432,
+            66,
+            8,
+            6,
+            1
+          ],
+          "cap": 4,
+          "dim8": 4,
+          "dim9": 5,
+          "excess": 2,
+          "key8": 6459501956,
+          "key9": 1112430631685,
+          "occupancy": 6,
+          "point_count": 15
+        },
+        {
+          "L": 15,
+          "basis8": [
+            216,
+            33,
+            5,
+            3
+          ],
+          "basis9": [
+            432,
+            66,
+            10,
+            6,
+            1
+          ],
+          "cap": 4,
+          "dim8": 4,
+          "dim9": 5,
+          "excess": 2,
+          "key8": 6463696260,
+          "key9": 1112439020293,
+          "occupancy": 6,
+          "point_count": 15
+        },
+        {
+          "L": 15,
+          "basis8": [
+            192,
+            57,
+            5,
+            3
+          ],
+          "basis9": [
+            384,
+            114,
+            10,
+            6,
+            1
+          ],
+          "cap": 4,
+          "dim8": 4,
+          "dim9": 5,
+          "excess": 2,
+          "key8": 6463892484,
+          "key9": 1112439412741,
+          "occupancy": 6,
+          "point_count": 15
+        },
+        {
+          "L": 15,
+          "basis8": [
+            192,
+            37,
+            28,
+            3
+          ],
+          "basis9": [
+            384,
+            74,
+            56,
+            6,
+            1
+          ],
+          "cap": 4,
+          "dim8": 4,
+          "dim9": 5,
+          "excess": 2,
+          "key8": 6560197636,
+          "key9": 1112632023045,
+          "occupancy": 6,
+          "point_count": 15
+        },
+        {
+          "L": 15,
+          "basis8": [
+            195,
+            33,
+            24,
+            4
+          ],
+          "basis9": [
+            390,
+            66,
+            48,
+            8,
+            1
+          ],
+          "cap": 4,
+          "dim8": 4,
+          "dim9": 5,
+          "excess": 2,
+          "key8": 8690871348,
+          "key9": 1116893370469,
+          "occupancy": 6,
+          "point_count": 15
+        },
+        {
+          "L": 12,
+          "basis8": [
+            192,
+            56,
+            4,
+            2,
+            1
+          ],
+          "basis9": [
+            384,
+            112,
+            8,
+            4,
+            2,
+            1
+          ],
+          "cap": 7,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 1103823834117,
+          "key9": 565157601089542,
+          "occupancy": 9,
+          "point_count": 31
+        },
+        {
+          "L": 12,
+          "basis8": [
+            192,
+            33,
+            24,
+            4,
+            3
+          ],
+          "basis9": [
+            384,
+            66,
+            48,
+            8,
+            6,
+            1
+          ],
+          "cap": 7,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 3307225754629,
+          "key9": 569564404930566,
+          "occupancy": 9,
+          "point_count": 31
+        },
+        {
+          "L": 17,
+          "basis8": [
+            216,
+            34,
+            5
+          ],
+          "basis9": [
+            432,
+            68,
+            10,
+            1
+          ],
+          "cap": 2,
+          "dim8": 3,
+          "dim9": 4,
+          "excess": 1,
+          "key8": 21253507,
+          "key9": 2189990660,
+          "occupancy": 3,
+          "point_count": 7
+        }
+      ],
+      "exact_support_excluded_for_fixed_A_failure": true,
+      "learned_wang_rows_added": 234,
+      "round": 1,
+      "saturation": {
+        "linear_affine_dim": 81,
+        "linear_passed": true,
+        "saturated_contraction_count": 25,
+        "term_domain_dims_hist": {
+          "B0_C3": 2,
+          "B3_C0": 1,
+          "B3_C3": 6,
+          "B6_C3": 5,
+          "B6_C6": 4,
+          "B9_C9": 1
+        },
+        "transversal_failure_count_reported": 20,
+        "transversal_witnesses_head": [
+          {
+            "participating_terms": [
+              0,
+              1,
+              4,
+              11,
+              12,
+              18
+            ],
+            "q": 35,
+            "q_hex": "0x23",
+            "rank": 6,
+            "side": "B",
+            "subset_size": 1,
+            "subset_terms": [
+              11
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          },
+          {
+            "participating_terms": [
+              0,
+              1,
+              4,
+              11,
+              12,
+              18
+            ],
+            "q": 35,
+            "q_hex": "0x23",
+            "rank": 6,
+            "side": "C",
+            "subset_size": 1,
+            "subset_terms": [
+              12
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          },
+          {
+            "participating_terms": [
+              6,
+              7,
+              8,
+              11,
+              15,
+              16
+            ],
+            "q": 48,
+            "q_hex": "0x30",
+            "rank": 6,
+            "side": "B",
+            "subset_size": 1,
+            "subset_terms": [
+              6
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          },
+          {
+            "participating_terms": [
+              0,
+              2,
+              4,
+              6,
+              7,
+              11,
+              12,
+              14,
+              15
+            ],
+            "q": 49,
+            "q_hex": "0x31",
+            "rank": 9,
+            "side": "B",
+            "subset_size": 1,
+            "subset_terms": [
+              6
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          },
+          {
+            "participating_terms": [
+              0,
+              2,
+              4,
+              6,
+              7,
+              11,
+              12,
+              14,
+              15
+            ],
+            "q": 49,
+            "q_hex": "0x31",
+            "rank": 9,
+            "side": "C",
+            "subset_size": 1,
+            "subset_terms": [
+              12
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          },
+          {
+            "participating_terms": [
+              0,
+              2,
+              3,
+              6,
+              8,
+              10,
+              14,
+              15,
+              18
+            ],
+            "q": 53,
+            "q_hex": "0x35",
+            "rank": 9,
+            "side": "B",
+            "subset_size": 1,
+            "subset_terms": [
+              6
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          },
+          {
+            "participating_terms": [
+              0,
+              1,
+              3,
+              6,
+              9,
+              13,
+              14,
+              17,
+              18
+            ],
+            "q": 87,
+            "q_hex": "0x57",
+            "rank": 9,
+            "side": "B",
+            "subset_size": 1,
+            "subset_terms": [
+              6
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          },
+          {
+            "participating_terms": [
+              1,
+              2,
+              5,
+              7,
+              8,
+              11,
+              13,
+              16,
+              18
+            ],
+            "q": 106,
+            "q_hex": "0x6a",
+            "rank": 9,
+            "side": "B",
+            "subset_size": 1,
+            "subset_terms": [
+              11
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          }
+        ],
+        "undersaturated_contraction_count": 0,
+        "zero_domain_term_count": 3
+      },
+      "solve_sec": 3.261,
+      "status": "OPTIMAL",
+      "support": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        16,
+        28,
+        37,
+        72,
+        76,
+        108,
+        133,
+        192,
+        195,
+        216,
+        219,
+        250,
+        252
+      ]
+    },
+    {
+      "active_wang_after_learning": 11860,
+      "active_wang_rows": 11693,
+      "complete_wang_scan": {
+        "A_multiplicity_hist": {
+          "1": 19
+        },
+        "complete_constraint_count": 417199,
+        "complete_violation_count": 167,
+        "distinct_A_points": 19,
+        "elapsed_sec": 0.121,
+        "label": "v3_round2",
+        "max_excess": 3,
+        "rank_s": 19,
+        "term_count_with_multiplicity": 19,
+        "violations_by_dim8": {
+          "3": 13,
+          "4": 43,
+          "5": 67,
+          "6": 44
+        },
+        "violations_by_excess": {
+          "1": 156,
+          "2": 10,
+          "3": 1
+        },
+        "violations_by_full_lut_L": {
+          "12": 51,
+          "13": 1,
+          "14": 6,
+          "15": 96,
+          "16": 6,
+          "17": 7
+        },
+        "violations_by_occ_cap_head": {
+          "(3, 2)": 7,
+          "(4, 3)": 6,
+          "(5, 4)": 89,
+          "(6, 4)": 6,
+          "(6, 5)": 6,
+          "(7, 4)": 1,
+          "(7, 6)": 1,
+          "(8, 7)": 47,
+          "(9, 7)": 4
+        }
+      },
+      "complete_wang_violations_head": [
+        {
+          "L": 15,
+          "basis8": [
+            200,
+            33,
+            24,
+            4,
+            3
+          ],
+          "basis9": [
+            400,
+            66,
+            48,
+            8,
+            6,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 3,
+          "key8": 3307225754757,
+          "key9": 569564404930822,
+          "occupancy": 7,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            202,
+            34,
+            26,
+            4,
+            1
+          ],
+          "basis9": [
+            404,
+            68,
+            52,
+            8,
+            2,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 1108210896037,
+          "key9": 565166375213382,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            201,
+            33,
+            24,
+            4,
+            3
+          ],
+          "basis9": [
+            402,
+            66,
+            48,
+            8,
+            6,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 3307225754773,
+          "key9": 569564404930854,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            193,
+            40,
+            24,
+            4,
+            3
+          ],
+          "basis9": [
+            386,
+            80,
+            48,
+            8,
+            6,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 3307225811989,
+          "key9": 569564405045286,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            193,
+            34,
+            17,
+            10,
+            4
+          ],
+          "basis9": [
+            386,
+            68,
+            34,
+            20,
+            8,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 4419592932373,
+          "key9": 571789139286054,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            33,
+            24,
+            4,
+            3
+          ],
+          "basis9": [
+            66,
+            48,
+            8,
+            6,
+            1
+          ],
+          "cap": 4,
+          "dim8": 4,
+          "dim9": 5,
+          "excess": 2,
+          "key8": 6459425300,
+          "key9": 1112430478373,
+          "occupancy": 6,
+          "point_count": 15
+        },
+        {
+          "L": 15,
+          "basis8": [
+            233,
+            24,
+            4,
+            3
+          ],
+          "basis9": [
+            466,
+            48,
+            8,
+            6,
+            1
+          ],
+          "cap": 4,
+          "dim8": 4,
+          "dim9": 5,
+          "excess": 2,
+          "key8": 6459428500,
+          "key9": 1112430484773,
+          "occupancy": 6,
+          "point_count": 15
+        },
+        {
+          "L": 12,
+          "basis8": [
+            136,
+            64,
+            33,
+            24,
+            4,
+            3
+          ],
+          "basis9": [
+            272,
+            128,
+            66,
+            48,
+            8,
+            6,
+            1
+          ],
+          "cap": 7,
+          "dim8": 6,
+          "dim9": 7,
+          "excess": 2,
+          "key8": 1693299585321094,
+          "key9": 291616975322353927,
+          "occupancy": 9,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "basis8": [
+            128,
+            72,
+            33,
+            24,
+            4,
+            3
+          ],
+          "basis9": [
+            256,
+            144,
+            66,
+            48,
+            8,
+            6,
+            1
+          ],
+          "cap": 7,
+          "dim8": 6,
+          "dim9": 7,
+          "excess": 2,
+          "key8": 1693299585386502,
+          "key9": 291616975322484743,
+          "occupancy": 9,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "basis8": [
+            129,
+            66,
+            35,
+            19,
+            8,
+            5
+          ],
+          "basis9": [
+            258,
+            132,
+            70,
+            38,
+            16,
+            10,
+            1
+          ],
+          "cap": 7,
+          "dim8": 6,
+          "dim9": 7,
+          "excess": 2,
+          "key8": 2823586809661462,
+          "key9": 293877549771034663,
+          "occupancy": 9,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "basis8": [
+            128,
+            65,
+            34,
+            17,
+            9,
+            7
+          ],
+          "basis9": [
+            256,
+            130,
+            68,
+            34,
+            18,
+            14,
+            1
+          ],
+          "cap": 7,
+          "dim8": 6,
+          "dim9": 7,
+          "excess": 2,
+          "key8": 3950581928962054,
+          "key9": 296131540009635847,
+          "occupancy": 9,
+          "point_count": 63
+        },
+        {
+          "L": 17,
+          "basis8": [
+            34,
+            24,
+            7
+          ],
+          "basis9": [
+            68,
+            48,
+            14,
+            1
+          ],
+          "cap": 2,
+          "dim8": 3,
+          "dim9": 4,
+          "excess": 1,
+          "key8": 29557283,
+          "key9": 2206598212,
+          "occupancy": 3,
+          "point_count": 7
+        },
+        {
+          "L": 17,
+          "basis8": [
+            234,
+            24,
+            7
+          ],
+          "basis9": [
+            468,
+            48,
+            14,
+            1
+          ],
+          "cap": 2,
+          "dim8": 3,
+          "dim9": 4,
+          "excess": 1,
+          "key8": 29560483,
+          "key9": 2206604612,
+          "occupancy": 3,
+          "point_count": 7
+        },
+        {
+          "L": 17,
+          "basis8": [
+            33,
+            27,
+            7
+          ],
+          "basis9": [
+            66,
+            54,
+            14,
+            1
+          ],
+          "cap": 2,
+          "dim8": 3,
+          "dim9": 4,
+          "excess": 1,
+          "key8": 29581843,
+          "key9": 2206647332,
+          "occupancy": 3,
+          "point_count": 7
+        },
+        {
+          "L": 17,
+          "basis8": [
+            139,
+            97,
+            7
+          ],
+          "basis9": [
+            278,
+            194,
+            14,
+            1
+          ],
+          "cap": 2,
+          "dim8": 3,
+          "dim9": 4,
+          "excess": 1,
+          "key8": 30156979,
+          "key9": 2207797604,
+          "occupancy": 3,
+          "point_count": 7
+        },
+        {
+          "L": 17,
+          "basis8": [
+            144,
+            122,
+            7
+          ],
+          "basis9": [
+            288,
+            244,
+            14,
+            1
+          ],
+          "cap": 2,
+          "dim8": 3,
+          "dim9": 4,
+          "excess": 1,
+          "key8": 30361859,
+          "key9": 2208207364,
+          "occupancy": 3,
+          "point_count": 7
+        },
+        {
+          "L": 17,
+          "basis8": [
+            203,
+            38,
+            27
+          ],
+          "basis9": [
+            406,
+            76,
+            54,
+            1
+          ],
+          "cap": 2,
+          "dim8": 3,
+          "dim9": 4,
+          "excess": 1,
+          "key8": 113560755,
+          "key9": 2374605156,
+          "occupancy": 3,
+          "point_count": 7
+        },
+        {
+          "L": 17,
+          "basis8": [
+            198,
+            34,
+            31
+          ],
+          "basis9": [
+            396,
+            68,
+            62,
+            1
+          ],
+          "cap": 2,
+          "dim8": 3,
+          "dim9": 4,
+          "excess": 1,
+          "key8": 130305123,
+          "key9": 2408093892,
+          "occupancy": 3,
+          "point_count": 7
+        },
+        {
+          "L": 16,
+          "basis8": [
+            200,
+            34,
+            24,
+            7
+          ],
+          "basis9": [
+            400,
+            68,
+            48,
+            14,
+            1
+          ],
+          "cap": 3,
+          "dim8": 4,
+          "dim9": 5,
+          "excess": 1,
+          "key8": 15133330564,
+          "key9": 1129778288901,
+          "occupancy": 4,
+          "point_count": 15
+        },
+        {
+          "L": 16,
+          "basis8": [
+            57,
+            4,
+            3
+          ],
+          "basis9": [
+            114,
+            8,
+            6,
+            1
+          ],
+          "cap": 3,
+          "dim8": 3,
+          "dim9": 4,
+          "excess": 1,
+          "key8": 12616595,
+          "key9": 2172716836,
+          "occupancy": 4,
+          "point_count": 7
+        }
+      ],
+      "exact_support_excluded_for_fixed_A_failure": true,
+      "learned_wang_rows_added": 167,
+      "round": 2,
+      "saturation": {
+        "linear_affine_dim": null,
+        "linear_passed": false,
+        "saturated_contraction_count": 21,
+        "term_domain_dims_hist": {
+          "B0_C6": 1,
+          "B3_C3": 2,
+          "B3_C6": 6,
+          "B6_C3": 2,
+          "B6_C6": 6,
+          "B9_C9": 2
+        },
+        "transversal_failure_count_reported": 20,
+        "transversal_witnesses_head": [
+          {
+            "participating_terms": [
+              1,
+              2,
+              3,
+              6,
+              8,
+              11
+            ],
+            "q": 38,
+            "q_hex": "0x26",
+            "rank": 6,
+            "side": "B",
+            "subset_size": 1,
+            "subset_terms": [
+              2
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          },
+          {
+            "participating_terms": [
+              1,
+              2,
+              4,
+              5,
+              8,
+              10,
+              11,
+              15,
+              18
+            ],
+            "q": 42,
+            "q_hex": "0x2a",
+            "rank": 9,
+            "side": "B",
+            "subset_size": 1,
+            "subset_terms": [
+              2
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          },
+          {
+            "participating_terms": [
+              0,
+              2,
+              4,
+              8,
+              9,
+              12,
+              13,
+              14,
+              18
+            ],
+            "q": 49,
+            "q_hex": "0x31",
+            "rank": 9,
+            "side": "B",
+            "subset_size": 1,
+            "subset_terms": [
+              2
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          },
+          {
+            "participating_terms": [
+              0,
+              1,
+              6,
+              7,
+              8,
+              9,
+              12,
+              13,
+              16
+            ],
+            "q": 51,
+            "q_hex": "0x33",
+            "rank": 9,
+            "side": "B",
+            "subset_size": 7,
+            "subset_terms": [
+              0,
+              1,
+              6,
+              7,
+              12,
+              13,
+              16
+            ],
+            "sum_domain_dim": 6,
+            "term_domain_dims": [
+              3,
+              3,
+              3,
+              3,
+              6,
+              6,
+              3
+            ]
+          },
+          {
+            "participating_terms": [
+              1,
+              2,
+              3,
+              6,
+              9,
+              10,
+              11,
+              14,
+              15
+            ],
+            "q": 70,
+            "q_hex": "0x46",
+            "rank": 9,
+            "side": "B",
+            "subset_size": 1,
+            "subset_terms": [
+              2
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          },
+          {
+            "participating_terms": [
+              1,
+              2,
+              3,
+              7,
+              10,
+              11,
+              13,
+              14,
+              18
+            ],
+            "q": 86,
+            "q_hex": "0x56",
+            "rank": 9,
+            "side": "B",
+            "subset_size": 1,
+            "subset_terms": [
+              2
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          },
+          {
+            "participating_terms": [
+              1,
+              2,
+              3,
+              7,
+              10,
+              11,
+              13,
+              14,
+              18
+            ],
+            "q": 86,
+            "q_hex": "0x56",
+            "rank": 9,
+            "side": "C",
+            "subset_size": 7,
+            "subset_terms": [
+              1,
+              2,
+              3,
+              7,
+              11,
+              14,
+              18
+            ],
+            "sum_domain_dim": 6,
+            "term_domain_dims": [
+              6,
+              6,
+              6,
+              6,
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "participating_terms": [
+              1,
+              2,
+              4,
+              5,
+              8,
+              12,
+              15,
+              16,
+              17
+            ],
+            "q": 106,
+            "q_hex": "0x6a",
+            "rank": 9,
+            "side": "B",
+            "subset_size": 1,
+            "subset_terms": [
+              2
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          }
+        ],
+        "undersaturated_contraction_count": 0,
+        "zero_domain_term_count": 1
+      },
+      "solve_sec": 64.8,
+      "status": "OPTIMAL",
+      "support": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        27,
+        31,
+        32,
+        61,
+        72,
+        97,
+        108,
+        144,
+        162,
+        180,
+        227,
+        237,
+        251
+      ]
+    },
+    {
+      "active_wang_after_learning": 12056,
+      "active_wang_rows": 11860,
+      "complete_wang_scan": {
+        "A_multiplicity_hist": {
+          "1": 19
+        },
+        "complete_constraint_count": 417199,
+        "complete_violation_count": 196,
+        "distinct_A_points": 19,
+        "elapsed_sec": 0.124,
+        "label": "v3_round3",
+        "max_excess": 3,
+        "rank_s": 19,
+        "term_count_with_multiplicity": 19,
+        "violations_by_dim8": {
+          "3": 11,
+          "4": 47,
+          "5": 86,
+          "6": 52
+        },
+        "violations_by_excess": {
+          "1": 184,
+          "2": 11,
+          "3": 1
+        },
+        "violations_by_full_lut_L": {
+          "12": 87,
+          "14": 23,
+          "15": 61,
+          "16": 9,
+          "17": 1,
+          "9": 15
+        },
+        "violations_by_occ_cap_head": {
+          "(10, 7)": 1,
+          "(11, 10)": 15,
+          "(3, 2)": 1,
+          "(4, 3)": 9,
+          "(5, 4)": 57,
+          "(6, 4)": 4,
+          "(6, 5)": 22,
+          "(7, 5)": 1,
+          "(8, 7)": 80,
+          "(9, 7)": 6
+        }
+      },
+      "complete_wang_violations_head": [
+        {
+          "L": 12,
+          "basis8": [
+            128,
+            69,
+            36,
+            20,
+            9,
+            3
+          ],
+          "basis9": [
+            256,
+            138,
+            72,
+            40,
+            18,
+            6,
+            1
+          ],
+          "cap": 7,
+          "dim8": 6,
+          "dim9": 7,
+          "excess": 3,
+          "key8": 1698788566149126,
+          "key9": 291627953284009991,
+          "occupancy": 10,
+          "point_count": 63
+        },
+        {
+          "L": 15,
+          "basis8": [
+            150,
+            70,
+            36,
+            10,
+            1
+          ],
+          "basis9": [
+            300,
+            140,
+            72,
+            20,
+            2,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 1121138035045,
+          "key9": 565192229491398,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            128,
+            82,
+            48,
+            9,
+            5
+          ],
+          "basis9": [
+            256,
+            164,
+            96,
+            18,
+            10,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 5517087492101,
+          "key9": 573984128405510,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            128,
+            69,
+            39,
+            23,
+            9
+          ],
+          "basis9": [
+            256,
+            138,
+            78,
+            46,
+            18,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 9945160919045,
+          "key9": 582840275259398,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            128,
+            82,
+            48,
+            9
+          ],
+          "basis9": [
+            256,
+            164,
+            96,
+            18,
+            1
+          ],
+          "cap": 4,
+          "dim8": 4,
+          "dim9": 5,
+          "excess": 2,
+          "key8": 19529353220,
+          "key9": 1138570334213,
+          "occupancy": 6,
+          "point_count": 15
+        },
+        {
+          "L": 14,
+          "basis8": [
+            128,
+            64,
+            43,
+            18
+          ],
+          "basis9": [
+            256,
+            128,
+            86,
+            36,
+            1
+          ],
+          "cap": 5,
+          "dim8": 4,
+          "dim9": 5,
+          "excess": 2,
+          "key8": 38835587076,
+          "key9": 1177182801925,
+          "occupancy": 7,
+          "point_count": 15
+        },
+        {
+          "L": 12,
+          "basis8": [
+            128,
+            82,
+            48,
+            8,
+            4,
+            1
+          ],
+          "basis9": [
+            256,
+            164,
+            96,
+            16,
+            8,
+            2,
+            1
+          ],
+          "cap": 7,
+          "dim8": 6,
+          "dim9": 7,
+          "excess": 2,
+          "key8": 567365381801990,
+          "key9": 289365106915315719,
+          "occupancy": 9,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "basis8": [
+            128,
+            64,
+            34,
+            18,
+            9,
+            5
+          ],
+          "basis9": [
+            256,
+            128,
+            68,
+            36,
+            18,
+            10,
+            1
+          ],
+          "cap": 7,
+          "dim8": 6,
+          "dim9": 7,
+          "excess": 2,
+          "key8": 2824684169594886,
+          "key9": 293879744490901511,
+          "occupancy": 9,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "basis8": [
+            128,
+            64,
+            34,
+            18,
+            9,
+            7
+          ],
+          "basis9": [
+            256,
+            128,
+            68,
+            36,
+            18,
+            14,
+            1
+          ],
+          "cap": 7,
+          "dim8": 6,
+          "dim9": 7,
+          "excess": 2,
+          "key8": 3950584076437510,
+          "key9": 296131544304586759,
+          "occupancy": 9,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "basis8": [
+            128,
+            80,
+            8,
+            2,
+            1
+          ],
+          "basis9": [
+            256,
+            160,
+            16,
+            4,
+            2,
+            1
+          ],
+          "cap": 7,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 1103840806917,
+          "key9": 565157635035142,
+          "occupancy": 9,
+          "point_count": 31
+        },
+        {
+          "L": 12,
+          "basis8": [
+            128,
+            64,
+            41,
+            16,
+            2
+          ],
+          "basis9": [
+            256,
+            128,
+            82,
+            32,
+            4,
+            1
+          ],
+          "cap": 7,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 2233555486725,
+          "key9": 567417064394758,
+          "occupancy": 9,
+          "point_count": 31
+        },
+        {
+          "L": 12,
+          "basis8": [
+            128,
+            64,
+            34,
+            18,
+            9
+          ],
+          "basis9": [
+            256,
+            128,
+            68,
+            36,
+            18,
+            1
+          ],
+          "cap": 7,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 9934402488325,
+          "key9": 582818758397958,
+          "occupancy": 9,
+          "point_count": 31
+        },
+        {
+          "L": 17,
+          "basis8": [
+            210,
+            39,
+            10
+          ],
+          "basis9": [
+            420,
+            78,
+            20,
+            1
+          ],
+          "cap": 2,
+          "dim8": 3,
+          "dim9": 4,
+          "excess": 1,
+          "key8": 42265891,
+          "key9": 2232015428,
+          "occupancy": 3,
+          "point_count": 7
+        },
+        {
+          "L": 16,
+          "basis8": [
+            177,
+            8,
+            2
+          ],
+          "basis9": [
+            354,
+            16,
+            4,
+            1
+          ],
+          "cap": 3,
+          "dim8": 3,
+          "dim9": 4,
+          "excess": 1,
+          "key8": 8456979,
+          "key9": 2164397604,
+          "occupancy": 4,
+          "point_count": 7
+        },
+        {
+          "L": 16,
+          "basis8": [
+            225,
+            9,
+            3
+          ],
+          "basis9": [
+            450,
+            18,
+            6,
+            1
+          ],
+          "cap": 3,
+          "dim8": 3,
+          "dim9": 4,
+          "excess": 1,
+          "key8": 12660243,
+          "key9": 2172804132,
+          "occupancy": 4,
+          "point_count": 7
+        },
+        {
+          "L": 16,
+          "basis8": [
+            128,
+            82,
+            9
+          ],
+          "basis9": [
+            256,
+            164,
+            18,
+            1
+          ],
+          "cap": 3,
+          "dim8": 3,
+          "dim9": 4,
+          "excess": 1,
+          "key8": 38422531,
+          "key9": 2224328708,
+          "occupancy": 4,
+          "point_count": 7
+        },
+        {
+          "L": 16,
+          "basis8": [
+            128,
+            43,
+            18
+          ],
+          "basis9": [
+            256,
+            86,
+            36,
+            1
+          ],
+          "cap": 3,
+          "dim8": 3,
+          "dim9": 4,
+          "excess": 1,
+          "key8": 75851779,
+          "key9": 2299187204,
+          "occupancy": 4,
+          "point_count": 7
+        },
+        {
+          "L": 16,
+          "basis8": [
+            171,
+            64,
+            18
+          ],
+          "basis9": [
+            342,
+            128,
+            36,
+            1
+          ],
+          "cap": 3,
+          "dim8": 3,
+          "dim9": 4,
+          "excess": 1,
+          "key8": 76024499,
+          "key9": 2299532644,
+          "occupancy": 4,
+          "point_count": 7
+        },
+        {
+          "L": 16,
+          "basis8": [
+            128,
+            107,
+            18
+          ],
+          "basis9": [
+            256,
+            214,
+            36,
+            1
+          ],
+          "cap": 3,
+          "dim8": 3,
+          "dim9": 4,
+          "excess": 1,
+          "key8": 76376067,
+          "key9": 2300235780,
+          "occupancy": 4,
+          "point_count": 7
+        },
+        {
+          "L": 16,
+          "basis8": [
+            146,
+            64,
+            43
+          ],
+          "basis9": [
+            292,
+            128,
+            86,
+            1
+          ],
+          "cap": 3,
+          "dim8": 3,
+          "dim9": 4,
+          "excess": 1,
+          "key8": 180881699,
+          "key9": 2509247044,
+          "occupancy": 4,
+          "point_count": 7
+        }
+      ],
+      "exact_support_excluded_for_fixed_A_failure": true,
+      "learned_wang_rows_added": 196,
+      "round": 3,
+      "saturation": {
+        "linear_affine_dim": null,
+        "linear_passed": false,
+        "saturated_contraction_count": 21,
+        "term_domain_dims_hist": {
+          "B0_C0": 7,
+          "B0_C3": 5,
+          "B3_C0": 2,
+          "B3_C3": 2,
+          "B3_C6": 2,
+          "B6_C3": 1
+        },
+        "transversal_failure_count_reported": 20,
+        "transversal_witnesses_head": [
+          {
+            "participating_terms": [
+              3,
+              9,
+              18
+            ],
+            "q": 4,
+            "q_hex": "0x4",
+            "rank": 3,
+            "side": "B",
+            "subset_size": 1,
+            "subset_terms": [
+              3
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          },
+          {
+            "participating_terms": [
+              3,
+              9,
+              18
+            ],
+            "q": 4,
+            "q_hex": "0x4",
+            "rank": 3,
+            "side": "C",
+            "subset_size": 1,
+            "subset_terms": [
+              3
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          },
+          {
+            "participating_terms": [
+              0,
+              2,
+              5,
+              8,
+              9,
+              16
+            ],
+            "q": 33,
+            "q_hex": "0x21",
+            "rank": 6,
+            "side": "B",
+            "subset_size": 1,
+            "subset_terms": [
+              0
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          },
+          {
+            "participating_terms": [
+              0,
+              2,
+              5,
+              8,
+              9,
+              16
+            ],
+            "q": 33,
+            "q_hex": "0x21",
+            "rank": 6,
+            "side": "C",
+            "subset_size": 1,
+            "subset_terms": [
+              0
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          },
+          {
+            "participating_terms": [
+              4,
+              5,
+              6,
+              8,
+              9,
+              16
+            ],
+            "q": 40,
+            "q_hex": "0x28",
+            "rank": 6,
+            "side": "B",
+            "subset_size": 1,
+            "subset_terms": [
+              4
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          },
+          {
+            "participating_terms": [
+              4,
+              5,
+              6,
+              8,
+              9,
+              16
+            ],
+            "q": 40,
+            "q_hex": "0x28",
+            "rank": 6,
+            "side": "C",
+            "subset_size": 1,
+            "subset_terms": [
+              6
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          },
+          {
+            "participating_terms": [
+              1,
+              2,
+              3,
+              6,
+              8,
+              12
+            ],
+            "q": 54,
+            "q_hex": "0x36",
+            "rank": 6,
+            "side": "B",
+            "subset_size": 1,
+            "subset_terms": [
+              1
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          },
+          {
+            "participating_terms": [
+              1,
+              2,
+              3,
+              6,
+              8,
+              12
+            ],
+            "q": 54,
+            "q_hex": "0x36",
+            "rank": 6,
+            "side": "C",
+            "subset_size": 1,
+            "subset_terms": [
+              1
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          }
+        ],
+        "undersaturated_contraction_count": 0,
+        "zero_domain_term_count": 14
+      },
+      "solve_sec": 48.751,
+      "status": "OPTIMAL",
+      "support": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        10,
+        18,
+        32,
+        36,
+        64,
+        128,
+        144,
+        146,
+        185,
+        210,
+        219,
+        235,
+        255
+      ]
+    },
+    {
+      "active_wang_after_learning": 12085,
+      "active_wang_rows": 12056,
+      "complete_wang_scan": {
+        "A_multiplicity_hist": {
+          "1": 19
+        },
+        "complete_constraint_count": 417199,
+        "complete_violation_count": 29,
+        "distinct_A_points": 19,
+        "elapsed_sec": 0.073,
+        "label": "v3_round4",
+        "max_excess": 1,
+        "rank_s": 19,
+        "term_count_with_multiplicity": 19,
+        "violations_by_dim8": {
+          "4": 6,
+          "5": 14,
+          "6": 9
+        },
+        "violations_by_excess": {
+          "1": 29
+        },
+        "violations_by_full_lut_L": {
+          "12": 18,
+          "14": 3,
+          "15": 6,
+          "9": 2
+        },
+        "violations_by_occ_cap_head": {
+          "(11, 10)": 2,
+          "(5, 4)": 6,
+          "(6, 5)": 3,
+          "(8, 7)": 18
+        }
+      },
+      "complete_wang_violations_head": [
+        {
+          "L": 15,
+          "basis8": [
+            129,
+            33,
+            17,
+            4,
+            2
+          ],
+          "basis9": [
+            258,
+            66,
+            34,
+            8,
+            4,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 1,
+          "key8": 2207684765717,
+          "key9": 567365322952742,
+          "occupancy": 5,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            129,
+            72,
+            37,
+            17,
+            2
+          ],
+          "basis9": [
+            258,
+            144,
+            74,
+            34,
+            4,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 1,
+          "key8": 2235686258709,
+          "key9": 567421325938726,
+          "occupancy": 5,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            140,
+            72,
+            37,
+            29,
+            3
+          ],
+          "basis9": [
+            280,
+            144,
+            74,
+            58,
+            6,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 1,
+          "key8": 3360967690437,
+          "key9": 569671888802182,
+          "occupancy": 5,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            144,
+            48,
+            4,
+            2
+          ],
+          "basis9": [
+            288,
+            96,
+            8,
+            4,
+            1
+          ],
+          "cap": 4,
+          "dim8": 4,
+          "dim9": 5,
+          "excess": 1,
+          "key8": 4312140036,
+          "key9": 1108135907845,
+          "occupancy": 5,
+          "point_count": 15
+        },
+        {
+          "L": 15,
+          "basis8": [
+            144,
+            72,
+            37,
+            2
+          ],
+          "basis9": [
+            288,
+            144,
+            74,
+            4,
+            1
+          ],
+          "cap": 4,
+          "dim8": 4,
+          "dim9": 5,
+          "excess": 1,
+          "key8": 4450748676,
+          "key9": 1108413125125,
+          "occupancy": 5,
+          "point_count": 15
+        },
+        {
+          "L": 15,
+          "basis8": [
+            145,
+            72,
+            37,
+            3
+          ],
+          "basis9": [
+            290,
+            144,
+            74,
+            6,
+            1
+          ],
+          "cap": 4,
+          "dim8": 4,
+          "dim9": 5,
+          "excess": 1,
+          "key8": 6598232340,
+          "key9": 1112708092453,
+          "occupancy": 5,
+          "point_count": 15
+        },
+        {
+          "L": 14,
+          "basis8": [
+            129,
+            96,
+            16,
+            5,
+            2
+          ],
+          "basis9": [
+            258,
+            192,
+            32,
+            10,
+            4,
+            1
+          ],
+          "cap": 5,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 1,
+          "key8": 2209828571157,
+          "key9": 567369610563622,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 14,
+          "basis8": [
+            129,
+            96,
+            16,
+            2
+          ],
+          "basis9": [
+            258,
+            192,
+            32,
+            4,
+            1
+          ],
+          "cap": 5,
+          "dim8": 4,
+          "dim9": 5,
+          "excess": 1,
+          "key8": 4362864660,
+          "key9": 1108237357093,
+          "occupancy": 6,
+          "point_count": 15
+        },
+        {
+          "L": 14,
+          "basis8": [
+            224,
+            16,
+            9,
+            3
+          ],
+          "basis9": [
+            448,
+            32,
+            18,
+            6,
+            1
+          ],
+          "cap": 5,
+          "dim8": 4,
+          "dim9": 5,
+          "excess": 1,
+          "key8": 6480334340,
+          "key9": 1112472296453,
+          "occupancy": 6,
+          "point_count": 15
+        },
+        {
+          "L": 12,
+          "basis8": [
+            144,
+            82,
+            48,
+            8,
+            4,
+            1
+          ],
+          "basis9": [
+            288,
+            164,
+            96,
+            16,
+            8,
+            2,
+            1
+          ],
+          "cap": 7,
+          "dim8": 6,
+          "dim9": 7,
+          "excess": 1,
+          "key8": 567365381802246,
+          "key9": 289365106915316231,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "basis8": [
+            160,
+            66,
+            16,
+            8,
+            6,
+            1
+          ],
+          "basis9": [
+            320,
+            132,
+            32,
+            16,
+            12,
+            2,
+            1
+          ],
+          "cap": 7,
+          "dim8": 6,
+          "dim9": 7,
+          "excess": 1,
+          "key8": 569564270709254,
+          "key9": 289369504693130247,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "basis8": [
+            146,
+            82,
+            50,
+            8,
+            6,
+            1
+          ],
+          "basis9": [
+            292,
+            164,
+            100,
+            16,
+            12,
+            2,
+            1
+          ],
+          "cap": 7,
+          "dim8": 6,
+          "dim9": 7,
+          "excess": 1,
+          "key8": 569564413446438,
+          "key9": 289369504978604615,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "basis8": [
+            130,
+            66,
+            34,
+            16,
+            14,
+            1
+          ],
+          "basis9": [
+            260,
+            132,
+            68,
+            32,
+            28,
+            2,
+            1
+          ],
+          "cap": 7,
+          "dim8": 6,
+          "dim9": 7,
+          "excess": 1,
+          "key8": 578377619097638,
+          "key9": 289387131389907015,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "basis8": [
+            129,
+            72,
+            40,
+            16,
+            4,
+            2
+          ],
+          "basis9": [
+            258,
+            144,
+            80,
+            32,
+            8,
+            4,
+            1
+          ],
+          "cap": 7,
+          "dim8": 6,
+          "dim9": 7,
+          "excess": 1,
+          "key8": 1130332481456150,
+          "key9": 290491041114624039,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "basis8": [
+            129,
+            96,
+            16,
+            8,
+            5,
+            2
+          ],
+          "basis9": [
+            258,
+            192,
+            32,
+            16,
+            10,
+            4,
+            1
+          ],
+          "cap": 7,
+          "dim8": 6,
+          "dim9": 7,
+          "excess": 1,
+          "key8": 1131414712748054,
+          "key9": 290493205577207847,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "basis8": [
+            129,
+            96,
+            16,
+            9,
+            5,
+            2
+          ],
+          "basis9": [
+            258,
+            192,
+            32,
+            18,
+            10,
+            4,
+            1
+          ],
+          "cap": 7,
+          "dim8": 6,
+          "dim9": 7,
+          "excess": 1,
+          "key8": 1131416860231702,
+          "key9": 290493209872175143,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "basis8": [
+            128,
+            69,
+            37,
+            16,
+            9,
+            3
+          ],
+          "basis9": [
+            256,
+            138,
+            74,
+            32,
+            18,
+            6,
+            1
+          ],
+          "cap": 7,
+          "dim8": 6,
+          "dim9": 7,
+          "excess": 1,
+          "key8": 1698779980408838,
+          "key9": 291627936112529415,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "basis8": [
+            160,
+            84,
+            8,
+            2,
+            1
+          ],
+          "basis9": [
+            320,
+            168,
+            16,
+            4,
+            2,
+            1
+          ],
+          "cap": 7,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 1,
+          "key8": 1103840840197,
+          "key9": 565157635101702,
+          "occupancy": 8,
+          "point_count": 31
+        },
+        {
+          "L": 12,
+          "basis8": [
+            204,
+            44,
+            16,
+            2,
+            1
+          ],
+          "basis9": [
+            408,
+            88,
+            32,
+            4,
+            2,
+            1
+          ],
+          "cap": 7,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 1,
+          "key8": 1103874067653,
+          "key9": 565157701556614,
+          "occupancy": 8,
+          "point_count": 31
+        },
+        {
+          "L": 12,
+          "basis8": [
+            172,
+            76,
+            16,
+            2,
+            1
+          ],
+          "basis9": [
+            344,
+            152,
+            32,
+            4,
+            2,
+            1
+          ],
+          "cap": 7,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 1,
+          "key8": 1103874329285,
+          "key9": 565157702079878,
+          "occupancy": 8,
+          "point_count": 31
+        }
+      ],
+      "exact_support_excluded_for_fixed_A_failure": true,
+      "learned_wang_rows_added": 29,
+      "round": 4,
+      "saturation": {
+        "linear_affine_dim": 342,
+        "linear_passed": true,
+        "saturated_contraction_count": 17,
+        "term_domain_dims_hist": {
+          "B3_C3": 6,
+          "B3_C6": 2,
+          "B6_C6": 6,
+          "B9_C9": 5
+        },
+        "transversal_failure_count_reported": 4,
+        "transversal_witnesses_head": [
+          {
+            "participating_terms": [
+              0,
+              2,
+              5,
+              6,
+              7,
+              8,
+              10,
+              15,
+              17
+            ],
+            "q": 177,
+            "q_hex": "0xb1",
+            "rank": 9,
+            "side": "C",
+            "subset_size": 7,
+            "subset_terms": [
+              5,
+              6,
+              7,
+              8,
+              10,
+              15,
+              17
+            ],
+            "sum_domain_dim": 6,
+            "term_domain_dims": [
+              6,
+              6,
+              6,
+              3,
+              6,
+              6,
+              3
+            ]
+          },
+          {
+            "participating_terms": [
+              6,
+              7,
+              8,
+              9,
+              14,
+              15
+            ],
+            "q": 240,
+            "q_hex": "0xf0",
+            "rank": 6,
+            "side": "B",
+            "subset_size": 4,
+            "subset_terms": [
+              8,
+              9,
+              14,
+              15
+            ],
+            "sum_domain_dim": 3,
+            "term_domain_dims": [
+              3,
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "participating_terms": [
+              0,
+              1,
+              5,
+              6,
+              8,
+              9,
+              12,
+              14,
+              15
+            ],
+            "q": 243,
+            "q_hex": "0xf3",
+            "rank": 9,
+            "side": "B",
+            "subset_size": 4,
+            "subset_terms": [
+              8,
+              9,
+              14,
+              15
+            ],
+            "sum_domain_dim": 3,
+            "term_domain_dims": [
+              3,
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "participating_terms": [
+              0,
+              2,
+              4,
+              6,
+              7,
+              8,
+              14,
+              16,
+              17
+            ],
+            "q": 249,
+            "q_hex": "0xf9",
+            "rank": 9,
+            "side": "C",
+            "subset_size": 7,
+            "subset_terms": [
+              4,
+              6,
+              7,
+              8,
+              14,
+              16,
+              17
+            ],
+            "sum_domain_dim": 6,
+            "term_domain_dims": [
+              6,
+              6,
+              6,
+              3,
+              6,
+              6,
+              3
+            ]
+          }
+        ],
+        "undersaturated_contraction_count": 0,
+        "zero_domain_term_count": 0
+      },
+      "solve_sec": 59.955,
+      "status": "OPTIMAL",
+      "support": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        16,
+        18,
+        32,
+        72,
+        96,
+        144,
+        146,
+        160,
+        224,
+        227,
+        243,
+        252,
+        255
+      ]
+    },
+    {
+      "active_wang_after_learning": 12160,
+      "active_wang_rows": 12085,
+      "complete_wang_scan": {
+        "A_multiplicity_hist": {
+          "1": 19
+        },
+        "complete_constraint_count": 417199,
+        "complete_violation_count": 75,
+        "distinct_A_points": 19,
+        "elapsed_sec": 0.122,
+        "label": "v3_round5",
+        "max_excess": 2,
+        "rank_s": 19,
+        "term_count_with_multiplicity": 19,
+        "violations_by_dim8": {
+          "3": 3,
+          "4": 22,
+          "5": 33,
+          "6": 17
+        },
+        "violations_by_excess": {
+          "1": 74,
+          "2": 1
+        },
+        "violations_by_full_lut_L": {
+          "12": 26,
+          "14": 3,
+          "15": 42,
+          "16": 2,
+          "9": 2
+        },
+        "violations_by_occ_cap_head": {
+          "(11, 10)": 2,
+          "(4, 3)": 2,
+          "(5, 4)": 41,
+          "(6, 4)": 1,
+          "(6, 5)": 3,
+          "(8, 7)": 26
+        }
+      },
+      "complete_wang_violations_head": [
+        {
+          "L": 15,
+          "basis8": [
+            134,
+            66,
+            16,
+            8,
+            1
+          ],
+          "basis9": [
+            268,
+            132,
+            32,
+            16,
+            2,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 2,
+          "key8": 1116759148645,
+          "key9": 565183471718598,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 16,
+          "basis8": [
+            135,
+            65,
+            9
+          ],
+          "basis9": [
+            270,
+            130,
+            18,
+            1
+          ],
+          "cap": 3,
+          "dim8": 3,
+          "dim9": 4,
+          "excess": 1,
+          "key8": 38283379,
+          "key9": 2224050404,
+          "occupancy": 4,
+          "point_count": 7
+        },
+        {
+          "L": 16,
+          "basis8": [
+            149,
+            65,
+            9
+          ],
+          "basis9": [
+            298,
+            130,
+            18,
+            1
+          ],
+          "cap": 3,
+          "dim8": 3,
+          "dim9": 4,
+          "excess": 1,
+          "key8": 38283603,
+          "key9": 2224050852,
+          "occupancy": 4,
+          "point_count": 7
+        },
+        {
+          "L": 15,
+          "basis8": [
+            138,
+            64,
+            34,
+            4,
+            1
+          ],
+          "basis9": [
+            276,
+            128,
+            68,
+            8,
+            2,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 1,
+          "key8": 1108244695205,
+          "key9": 565166442811718,
+          "occupancy": 5,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            136,
+            64,
+            32,
+            6,
+            1
+          ],
+          "basis9": [
+            272,
+            128,
+            64,
+            12,
+            2,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 1,
+          "key8": 1112531273861,
+          "key9": 565175015969030,
+          "occupancy": 5,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            136,
+            64,
+            34,
+            6,
+            1
+          ],
+          "basis9": [
+            272,
+            128,
+            68,
+            12,
+            2,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 1,
+          "key8": 1112539662469,
+          "key9": 565175032746246,
+          "occupancy": 5,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            136,
+            64,
+            40,
+            6,
+            1
+          ],
+          "basis9": [
+            272,
+            128,
+            80,
+            12,
+            2,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 1,
+          "key8": 1112564828293,
+          "key9": 565175083077894,
+          "occupancy": 5,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            134,
+            66,
+            32,
+            8,
+            1
+          ],
+          "basis9": [
+            268,
+            132,
+            64,
+            16,
+            2,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 1,
+          "key8": 1116826257509,
+          "key9": 565183605936326,
+          "occupancy": 5,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            150,
+            66,
+            36,
+            8,
+            1
+          ],
+          "basis9": [
+            300,
+            132,
+            72,
+            16,
+            2,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 1,
+          "key8": 1116843034981,
+          "key9": 565183639491270,
+          "occupancy": 5,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            132,
+            64,
+            32,
+            10,
+            1
+          ],
+          "basis9": [
+            264,
+            128,
+            64,
+            20,
+            2,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 1,
+          "key8": 1121121208389,
+          "key9": 565192195838086,
+          "occupancy": 5,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            148,
+            64,
+            36,
+            10,
+            1
+          ],
+          "basis9": [
+            296,
+            128,
+            72,
+            20,
+            2,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 1,
+          "key8": 1121137985861,
+          "key9": 565192229393030,
+          "occupancy": 5,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            148,
+            64,
+            52,
+            10,
+            1
+          ],
+          "basis9": [
+            296,
+            128,
+            104,
+            20,
+            2,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 1,
+          "key8": 1121205094725,
+          "key9": 565192363610758,
+          "occupancy": 5,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            128,
+            64,
+            38,
+            14,
+            1
+          ],
+          "basis9": [
+            256,
+            128,
+            76,
+            28,
+            2,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 1,
+          "key8": 1129736308741,
+          "key9": 565209426038790,
+          "occupancy": 5,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            131,
+            65,
+            50,
+            9,
+            4
+          ],
+          "basis9": [
+            262,
+            130,
+            100,
+            18,
+            8,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 1,
+          "key8": 4417584113717,
+          "key9": 571785121648742,
+          "occupancy": 5,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            145,
+            65,
+            50,
+            9,
+            4
+          ],
+          "basis9": [
+            290,
+            130,
+            100,
+            18,
+            8,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 1,
+          "key8": 4417584113941,
+          "key9": 571785121649190,
+          "occupancy": 5,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            145,
+            64,
+            33,
+            8,
+            5
+          ],
+          "basis9": [
+            290,
+            128,
+            66,
+            16,
+            10,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 1,
+          "key8": 5514876946709,
+          "key9": 573979707314726,
+          "occupancy": 5,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            129,
+            64,
+            32,
+            8,
+            7
+          ],
+          "basis9": [
+            258,
+            128,
+            64,
+            16,
+            14,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 1,
+          "key8": 7713896007701,
+          "key9": 578377745436710,
+          "occupancy": 5,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            133,
+            64,
+            36,
+            17,
+            8
+          ],
+          "basis9": [
+            266,
+            128,
+            72,
+            34,
+            16,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 1,
+          "key8": 8832751765589,
+          "key9": 580615456952486,
+          "occupancy": 5,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            129,
+            64,
+            36,
+            21,
+            8
+          ],
+          "basis9": [
+            258,
+            128,
+            72,
+            42,
+            16,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 1,
+          "key8": 8841341700117,
+          "key9": 580632636821542,
+          "occupancy": 5,
+          "point_count": 31
+        },
+        {
+          "L": 15,
+          "basis8": [
+            134,
+            65,
+            32,
+            19,
+            9
+          ],
+          "basis9": [
+            268,
+            130,
+            64,
+            38,
+            18,
+            1
+          ],
+          "cap": 4,
+          "dim8": 5,
+          "dim9": 6,
+          "excess": 1,
+          "key8": 9936541591653,
+          "key9": 582823036604614,
+          "occupancy": 5,
+          "point_count": 31
+        }
+      ],
+      "exact_support_excluded_for_fixed_A_failure": true,
+      "learned_wang_rows_added": 75,
+      "round": 5,
+      "saturation": {
+        "linear_affine_dim": 279,
+        "linear_passed": true,
+        "saturated_contraction_count": 13,
+        "term_domain_dims_hist": {
+          "B0_C3": 1,
+          "B3_C0": 1,
+          "B3_C3": 3,
+          "B6_C3": 2,
+          "B6_C6": 8,
+          "B9_C9": 4
+        },
+        "transversal_failure_count_reported": 16,
+        "transversal_witnesses_head": [
+          {
+            "participating_terms": [
+              1,
+              2,
+              14
+            ],
+            "q": 2,
+            "q_hex": "0x2",
+            "rank": 3,
+            "side": "B",
+            "subset_size": 1,
+            "subset_terms": [
+              2
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          },
+          {
+            "participating_terms": [
+              1,
+              2,
+              3,
+              6,
+              9,
+              17
+            ],
+            "q": 22,
+            "q_hex": "0x16",
+            "rank": 6,
+            "side": "B",
+            "subset_size": 1,
+            "subset_terms": [
+              2
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          },
+          {
+            "participating_terms": [
+              1,
+              2,
+              3,
+              6,
+              9,
+              17
+            ],
+            "q": 22,
+            "q_hex": "0x16",
+            "rank": 6,
+            "side": "C",
+            "subset_size": 1,
+            "subset_terms": [
+              3
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          },
+          {
+            "participating_terms": [
+              0,
+              1,
+              3,
+              4,
+              9,
+              10,
+              14,
+              15,
+              18
+            ],
+            "q": 79,
+            "q_hex": "0x4f",
+            "rank": 9,
+            "side": "C",
+            "subset_size": 1,
+            "subset_terms": [
+              3
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          },
+          {
+            "participating_terms": [
+              1,
+              2,
+              3,
+              7,
+              8,
+              10,
+              11,
+              12,
+              17
+            ],
+            "q": 102,
+            "q_hex": "0x66",
+            "rank": 9,
+            "side": "B",
+            "subset_size": 1,
+            "subset_terms": [
+              2
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          },
+          {
+            "participating_terms": [
+              1,
+              2,
+              3,
+              7,
+              8,
+              10,
+              11,
+              12,
+              17
+            ],
+            "q": 102,
+            "q_hex": "0x66",
+            "rank": 9,
+            "side": "C",
+            "subset_size": 1,
+            "subset_terms": [
+              3
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          },
+          {
+            "participating_terms": [
+              0,
+              1,
+              3,
+              5,
+              7,
+              8,
+              10,
+              12,
+              17
+            ],
+            "q": 103,
+            "q_hex": "0x67",
+            "rank": 9,
+            "side": "C",
+            "subset_size": 1,
+            "subset_terms": [
+              3
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          },
+          {
+            "participating_terms": [
+              0,
+              2,
+              3,
+              4,
+              8,
+              10
+            ],
+            "q": 109,
+            "q_hex": "0x6d",
+            "rank": 6,
+            "side": "B",
+            "subset_size": 1,
+            "subset_terms": [
+              2
+            ],
+            "sum_domain_dim": 0,
+            "term_domain_dims": [
+              0
+            ]
+          }
+        ],
+        "undersaturated_contraction_count": 0,
+        "zero_domain_term_count": 2
+      },
+      "solve_sec": 118.249,
+      "status": "OPTIMAL",
+      "support": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        16,
+        28,
+        32,
+        36,
+        64,
+        65,
+        72,
+        128,
+        142,
+        180,
+        212,
+        216,
+        224
+      ]
+    }
+  ],
+  "schema": "core_e11_saturation_v3_complete_v1",
+  "scope": "Boolean distinct projective A-points only; multiplicity-bearing rank-19 decompositions remain outside this model.",
+  "total_elapsed_sec": 340.524,
+  "total_rounds": 6
+}

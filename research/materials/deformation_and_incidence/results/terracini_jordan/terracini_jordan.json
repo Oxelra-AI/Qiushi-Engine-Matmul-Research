@@ -1,0 +1,240 @@
+{
+  "cn122_p65521": {
+    "JS_rank": 0,
+    "brent_jacobian_rank": 527,
+    "combined_stab_scaling_rank": 70,
+    "elapsed_sec": 0.14076900482177734,
+    "extra_kernel": 24,
+    "kernel_dim": 94,
+    "rank": 23,
+    "scaling_rank": 46,
+    "stabilizer_param_rank": 26
+  },
+  "eigenvalue_balance": {
+    "equation": "p_{a_i} - q_{b_i} + q_{c_i} - r_{d_i} + r_{e_i} - p_{f_i} = 0",
+    "factor_structure": "u_i = rank-1 matrix, v_i = rank-1 matrix, w_i = rank-1 matrix",
+    "full_span_constraint": "9 eigenvalue pairs per factor, all occupied",
+    "multiplicity_constraint": "sum = 22, each >= 1"
+  },
+  "embedding": {
+    "conclusion": "rank 26 over all tested primes => rank 26 over Q (1-dim kernel = central direction)",
+    "matrix_shape": [
+      243,
+      27
+    ],
+    "ranks_by_prime": {
+      "11": 26,
+      "13": 26,
+      "5": 26,
+      "65521": 26,
+      "7": 26
+    }
+  },
+  "jordan_types": {
+    "analysis": "For generic (P0,Q0,R0) with distinct eigenvalues, all three dg_i are diagonalizable with 9 distinct eigenvalues. Eigenvectors of dg_1 are rank-1 matrices q_b (p_a)^T in M_3. A full-span rank-22 decomposition must assign each summand to one of 9 eigenvalue pairs, with u-span = K^9 requiring all 9 pairs occupied. This forces multiplicity vector n with sum(n) = 22, min(n) >= 1. When any P0 has a Jordan block, the corresponding dg has non-semisimple eigenvalues, reducing the number of independent eigenvectors below 9 and preventing full-span projective action.",
+    "generic_diagonal": {
+      "P0_eigenvalues": [
+        0,
+        1,
+        2
+      ],
+      "Q0_eigenvalues": [
+        0,
+        3,
+        5
+      ],
+      "R0_eigenvalues": [
+        0,
+        7,
+        11
+      ],
+      "all_semisimple": true,
+      "dg1_eigenvalues": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          90,
+          1
+        ],
+        [
+          100,
+          1
+        ],
+        [
+          65321,
+          1
+        ],
+        [
+          65322,
+          1
+        ],
+        [
+          65421,
+          1
+        ],
+        [
+          65511,
+          1
+        ],
+        [
+          65512,
+          1
+        ]
+      ],
+      "dg2_eigenvalues": [
+        [
+          0,
+          1
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          200,
+          1
+        ],
+        [
+          15521,
+          1
+        ],
+        [
+          15531,
+          1
+        ],
+        [
+          15721,
+          1
+        ],
+        [
+          64521,
+          1
+        ],
+        [
+          64531,
+          1
+        ],
+        [
+          64721,
+          1
+        ]
+      ],
+      "dg3_eigenvalues": [
+        [
+          0,
+          1
+        ],
+        [
+          900,
+          1
+        ],
+        [
+          999,
+          1
+        ],
+        [
+          1000,
+          1
+        ],
+        [
+          49900,
+          1
+        ],
+        [
+          49999,
+          1
+        ],
+        [
+          50000,
+          1
+        ],
+        [
+          65421,
+          1
+        ],
+        [
+          65520,
+          1
+        ]
+      ]
+    },
+    "jordan_block_example": {
+      "P0_jordan_type": "2+1 (eigenvalues 1,1,2)",
+      "dg1_eigenvalue_pattern": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          65517,
+          1
+        ],
+        [
+          65518,
+          1
+        ],
+        [
+          65519,
+          1
+        ],
+        [
+          65520,
+          1
+        ]
+      ],
+      "has_nonsimple_eigenvalue": false
+    }
+  },
+  "prediction_r22": {
+    "central_overlap": 2,
+    "conormal_forced_min": 203,
+    "conormal_generic": 179,
+    "extra_conormal_from_stabilizer": 24,
+    "forced_jacobian_rank_max": 526,
+    "forced_total_kernel": 68,
+    "generic_jacobian_rank": 550,
+    "generic_kernel": 44,
+    "param_dim": 594,
+    "r": 22,
+    "scaling_kernel": 44,
+    "stabilizer_rank_in_params": 26
+  },
+  "prediction_r23": {
+    "central_overlap": 2,
+    "conormal_forced_min": 178,
+    "conormal_generic": 154,
+    "extra_conormal_from_stabilizer": 24,
+    "forced_jacobian_rank_max": 551,
+    "forced_total_kernel": 70,
+    "generic_jacobian_rank": 575,
+    "generic_kernel": 46,
+    "param_dim": 621,
+    "r": 23,
+    "scaling_kernel": 46,
+    "stabilizer_rank_in_params": 26
+  },
+  "prediction_r24": {
+    "central_overlap": 2,
+    "conormal_forced_min": 153,
+    "conormal_generic": 129,
+    "extra_conormal_from_stabilizer": 24,
+    "forced_jacobian_rank_max": 576,
+    "forced_total_kernel": 72,
+    "generic_jacobian_rank": 600,
+    "generic_kernel": 48,
+    "param_dim": 648,
+    "r": 24,
+    "scaling_kernel": 48,
+    "stabilizer_rank_in_params": 26
+  }
+}

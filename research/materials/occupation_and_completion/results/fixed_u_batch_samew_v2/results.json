@@ -1,0 +1,1045 @@
+{
+  "candidates_built": 60,
+  "core": "data/restricted_cores/mask_001_E11_core.npy",
+  "elapsed_sec": 38.06343150138855,
+  "found": null,
+  "interpretation": "UNSAT records exclude exact rank-19 E11 CPDs with the corresponding fixed 19-term A-factor multiset, while allowing B and C factors to vary freely. This is a local A-support exclusion, not a global lower bound unless all A supports are exhausted.",
+  "max_supports": 60,
+  "pair_type_counter_seen_until_selection_stop": {
+    "diff-w": 8573,
+    "same-w": 60
+  },
+  "pool": "data/e11_flip_workspace/data/schemes_modp/e11core/mod2-rank21a.npy",
+  "records": [
+    {
+      "candidate_index": 0,
+      "clauses": 15633,
+      "deleted": [
+        16,
+        18
+      ],
+      "elapsed_sec": 0.041333913803100586,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 0,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "gruent:                              648               15 %  variables\nc decisions:                              795               56.79 per conflict\nc factored:                                18                0 %  variables\nc iterations:                               2                0 %  variables\nc propagations:                         22803           564696    per second\nc substituted:                            648               15 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 11 used 3 clauses 50.00% accumulated 83.33% tier1 tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         34078720 bytes         32 MB\nc process-time:                                              0.04 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4311
+    },
+    {
+      "candidate_index": 1,
+      "clauses": 17253,
+      "deleted": [
+        1,
+        8
+      ],
+      "elapsed_sec": 0.041301727294921875,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 1,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "        5              124.02 per second\nc congruent:                             1215               26 %  variables\nc decisions:                              297               59.40 per conflict\nc factored:                                18                0 %  variables\nc iterations:                               3                0 %  variables\nc propagations:                         20845           517028    per second\nc substituted:                           1215               26 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc no clauses used at all\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.04 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4716
+    },
+    {
+      "candidate_index": 2,
+      "clauses": 18873,
+      "deleted": [
+        5,
+        13
+      ],
+      "elapsed_sec": 0.04722762107849121,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 1,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "                        5                0 %  variables\nc propagations:                         29953           646514    per second\nc substituted:                           1419               28 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 3   used 19 clauses 27.54% accumulated 53.62% tier1\nc focused glue 4   used 17 clauses 24.64% accumulated 78.26%\nc focused glue 5-6 used  3 clauses  4.35% accumulated 82.61%\nc focused glue 7   used  3 clauses  4.35% accumulated 86.96%\nc focused glue 8   used  2 clauses  2.90% accumulated 89.86% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.04 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 5121
+    },
+    {
+      "candidate_index": 3,
+      "clauses": 18225,
+      "deleted": [
+        5,
+        10
+      ],
+      "elapsed_sec": 0.045404672622680664,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 2,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "                     40595           912001    per second\nc restarts:                                 3               79    interval\nc substituted:                           1215               25 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 5   used 55 clauses 20.45% accumulated 56.88% tier1\nc focused glue 6   used 25 clauses  9.29% accumulated 66.17%\nc focused glue 7-9 used 47 clauses 17.47% accumulated 83.64%\nc focused glue 10  used 10 clauses  3.72% accumulated 87.36%\nc focused glue 11  used  9 clauses  3.35% accumulated 90.71% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.04 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4959
+    },
+    {
+      "candidate_index": 4,
+      "clauses": 18873,
+      "deleted": [
+        6,
+        19
+      ],
+      "elapsed_sec": 0.05415749549865723,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 3,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": ":                        130984          2463819    per second\nc restarts:                                17               56    interval\nc substituted:                           1053               21 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 3 used 340 clauses 18.65% accumulated 60.18% tier1\nc focused glue 4 used 243 clauses 13.33% accumulated 73.51%\nc focused glue 5 used 179 clauses  9.82% accumulated 83.32%\nc focused glue 6 used 100 clauses  5.49% accumulated 88.81%\nc focused glue 7 used  49 clauses  2.69% accumulated 91.50% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.05 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 5121
+    },
+    {
+      "candidate_index": 5,
+      "clauses": 16605,
+      "deleted": [
+        16,
+        17
+      ],
+      "elapsed_sec": 0.04001188278198242,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 3,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "        5              127.72 per second\nc congruent:                              891               20 %  variables\nc decisions:                               15                3.00 per conflict\nc factored:                                18                0 %  variables\nc iterations:                               2                0 %  variables\nc propagations:                         10685           272939    per second\nc substituted:                            891               20 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc no clauses used at all\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.04 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4554
+    },
+    {
+      "candidate_index": 6,
+      "clauses": 14013,
+      "deleted": [
+        2,
+        11
+      ],
+      "elapsed_sec": 0.04584765434265137,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 4,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "                76669          1711247    per second\nc restarts:                                 3              272    interval\nc substituted:                           1134               29 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 3   used 290 clauses 21.59% accumulated 61.06% tier1\nc focused glue 4   used 141 clauses 10.50% accumulated 71.56%\nc focused glue 5-7 used 188 clauses 14.00% accumulated 85.55%\nc focused glue 8   used  27 clauses  2.01% accumulated 87.57%\nc focused glue 9   used  34 clauses  2.53% accumulated 90.10% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.04 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 3906
+    },
+    {
+      "candidate_index": 7,
+      "clauses": 13365,
+      "deleted": [
+        17,
+        20
+      ],
+      "elapsed_sec": 0.040465354919433594,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 4,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "ns:                               5                0 %  variables\nc propagations:                         29617           747659    per second\nc substituted:                           1053               28 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 2 used 92 clauses 24.27% accumulated 53.83% tier1\nc focused glue 3 used 83 clauses 21.90% accumulated 75.73%\nc focused glue 4 used 27 clauses  7.12% accumulated 82.85%\nc focused glue 5 used 20 clauses  5.28% accumulated 88.13%\nc focused glue 6 used 15 clauses  3.96% accumulated 92.08% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.04 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 3744
+    },
+    {
+      "candidate_index": 8,
+      "clauses": 15957,
+      "deleted": [
+        1,
+        10
+      ],
+      "elapsed_sec": 0.04843902587890625,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 6,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "                90770          1907935    per second\nc restarts:                                 3              298    interval\nc substituted:                           1134               26 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 3   used 253 clauses 15.84% accumulated 63.43% tier1\nc focused glue 4   used 113 clauses  7.08% accumulated 70.51%\nc focused glue 5-7 used 226 clauses 14.15% accumulated 84.66%\nc focused glue 8   used  41 clauses  2.57% accumulated 87.23%\nc focused glue 9   used  51 clauses  3.19% accumulated 90.42% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.05 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4392
+    },
+    {
+      "candidate_index": 9,
+      "clauses": 17253,
+      "deleted": [
+        5,
+        7
+      ],
+      "elapsed_sec": 0.8826868534088135,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 6,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "   interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 2 used 12085 clauses 24.94% accumulated 61.04% tier1\nc focused glue 3 used  7640 clauses 15.77% accumulated 76.80%\nc focused glue 4 used  4355 clauses  8.99% accumulated 85.79%\nc focused glue 5 used  2477 clauses  5.11% accumulated 90.90% tier2\nc\nc stable glue 2   used 13823 clauses 20.69% accumulated 53.59% tier1\nc stable glue 3   used  8555 clauses 12.80% accumulated 66.39%\nc stable glue 4-7 used 13907 clauses 20.81% accumulated 87.21%\nc stable glue 8   used  1717 clauses  2.57% accumulated 89.77%\nc stable glue 9   used  1229 clauses  1.84% accumulated 91.61% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                             1s               0.88 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4716
+    },
+    {
+      "candidate_index": 10,
+      "clauses": 16281,
+      "deleted": [
+        17,
+        18
+      ],
+      "elapsed_sec": 0.04042339324951172,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 6,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "%  variables\nc decisions:                              252               15.75 per conflict\nc factored:                                18                0 %  variables\nc iterations:                               4                0 %  variables\nc propagations:                         13833           349336    per second\nc substituted:                            891               20 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 2 used 1 clauses 33.33% accumulated 33.33% tier1\nc focused glue 3 used 2 clauses 66.67% accumulated 100.00% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.04 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4473
+    },
+    {
+      "candidate_index": 11,
+      "clauses": 14985,
+      "deleted": [
+        5,
+        9
+      ],
+      "elapsed_sec": 0.04712986946105957,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 7,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "            2.71 per conflict\nc iterations:                               9                0 %  variables\nc propagations:                         94491          2043093    per second\nc restarts:                                32               31    interval\nc substituted:                            648               16 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 2 used 747 clauses 38.35% accumulated 63.19% tier1\nc focused glue 3 used 408 clauses 20.94% accumulated 84.14%\nc focused glue 4 used 135 clauses  6.93% accumulated 91.07% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.04 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4149
+    },
+    {
+      "candidate_index": 12,
+      "clauses": 18873,
+      "deleted": [
+        4,
+        10
+      ],
+      "elapsed_sec": 0.04451942443847656,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 8,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "            3.07 per conflict\nc iterations:                               4                0 %  variables\nc propagations:                         30829           705760    per second\nc restarts:                                 2              130    interval\nc substituted:                           1377               27 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 2 used 136 clauses 51.71% accumulated 69.96% tier1\nc focused glue 3 used  41 clauses 15.59% accumulated 85.55%\nc focused glue 4 used  18 clauses  6.84% accumulated 92.40% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.04 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 5121
+    },
+    {
+      "candidate_index": 13,
+      "clauses": 17253,
+      "deleted": [
+        13,
+        20
+      ],
+      "elapsed_sec": 0.04443359375,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 9,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "                35268           810442    per second\nc restarts:                                 5               50    interval\nc substituted:                           1539               33 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 2   used 107 clauses 38.49% accumulated 63.67% tier1\nc focused glue 3   used  17 clauses  6.12% accumulated 69.78%\nc focused glue 4-7 used  39 clauses 14.03% accumulated 83.81%\nc focused glue 8   used   9 clauses  3.24% accumulated 87.05%\nc focused glue 9   used  11 clauses  3.96% accumulated 91.01% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.04 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4716
+    },
+    {
+      "candidate_index": 14,
+      "clauses": 20817,
+      "deleted": [
+        7,
+        12
+      ],
+      "elapsed_sec": 0.05466127395629883,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 11,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "%  variables\nc switched:                                 1             1156    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 3   used 341 clauses 20.82% accumulated 62.52% tier1\nc focused glue 4   used 178 clauses 10.87% accumulated 73.38%\nc focused glue 5-7 used 224 clauses 13.68% accumulated 87.06%\nc focused glue 8   used  38 clauses  2.32% accumulated 89.38%\nc focused glue 9   used  12 clauses  0.73% accumulated 90.11% tier2\nc\nc stable glue 2 used 153 clauses 33.77% accumulated 64.46% tier1\nc stable glue 3 used  88 clauses 19.43% accumulated 83.89%\nc stable glue 4 used  46 clauses 10.15% accumulated 94.04% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.05 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 5607
+    },
+    {
+      "candidate_index": 15,
+      "clauses": 20493,
+      "deleted": [
+        16,
+        20
+      ],
+      "elapsed_sec": 3.175265073776245,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 11,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "-------------------------\nc\nc focused glue 2 used 50202 clauses 23.91% accumulated 53.27% tier1\nc focused glue 3 used 34878 clauses 16.61% accumulated 69.88%\nc focused glue 4 used 22365 clauses 10.65% accumulated 80.53%\nc focused glue 5 used 14985 clauses  7.14% accumulated 87.66%\nc focused glue 6 used  9828 clauses  4.68% accumulated 92.34% tier2\nc\nc stable glue 3    used 36626 clauses 14.68% accumulated 53.20% tier1\nc stable glue 4    used 25296 clauses 10.14% accumulated 63.34%\nc stable glue 5-10 used 59492 clauses 23.84% accumulated 87.18%\nc stable glue 11   used  4416 clauses  1.77% accumulated 88.95%\nc stable glue 12   used  4003 clauses  1.60% accumulated 90.55% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                             3s               3.17 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 5526
+    },
+    {
+      "candidate_index": 16,
+      "clauses": 15309,
+      "deleted": [
+        3,
+        5
+      ],
+      "elapsed_sec": 0.5132260322570801,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 12,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "-------------------------\nc\nc focused glue 3   used 4528 clauses 16.34% accumulated 50.25% tier1\nc focused glue 4   used 3208 clauses 11.58% accumulated 61.82%\nc focused glue 5-8 used 6624 clauses 23.90% accumulated 85.73%\nc focused glue 9   used  820 clauses  2.96% accumulated 88.69%\nc focused glue 10  used  693 clauses  2.50% accumulated 91.19% tier2\nc\nc stable glue 4    used 3172 clauses 12.86% accumulated 50.54% tier1\nc stable glue 5    used 2436 clauses  9.87% accumulated 60.41%\nc stable glue 6-15 used 7048 clauses 28.57% accumulated 88.98%\nc stable glue 16   used  205 clauses  0.83% accumulated 89.81%\nc stable glue 17   used  224 clauses  0.91% accumulated 90.72% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                             1s               0.51 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4230
+    },
+    {
+      "candidate_index": 17,
+      "clauses": 14661,
+      "deleted": [
+        8,
+        13
+      ],
+      "elapsed_sec": 0.04360389709472656,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 12,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "           50145          1172105    per second\nc restarts:                                 1              210    interval\nc substituted:                            810               20 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 8     used 10 clauses  4.39% accumulated 53.07% tier1\nc focused glue 9     used  6 clauses  2.63% accumulated 55.70%\nc focused glue 10-31 used 73 clauses 32.02% accumulated 87.72%\nc focused glue 32    used  1 clauses  0.44% accumulated 88.16%\nc focused glue 33    used  4 clauses  1.75% accumulated 89.91% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.04 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4068
+    },
+    {
+      "candidate_index": 18,
+      "clauses": 14661,
+      "deleted": [
+        15,
+        18
+      ],
+      "elapsed_sec": 2.918860673904419,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 12,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "-------------------------\nc\nc focused glue 2 used 62162 clauses 25.60% accumulated 53.74% tier1\nc focused glue 3 used 40759 clauses 16.79% accumulated 70.53%\nc focused glue 4 used 25185 clauses 10.37% accumulated 80.90%\nc focused glue 5 used 16938 clauses  6.98% accumulated 87.88%\nc focused glue 6 used 11204 clauses  4.61% accumulated 92.49% tier2\nc\nc stable glue 5    used 19716 clauses  6.90% accumulated 56.64% tier1\nc stable glue 6    used 19002 clauses  6.65% accumulated 63.29%\nc stable glue 7-12 used 66889 clauses 23.40% accumulated 86.69%\nc stable glue 13   used  6205 clauses  2.17% accumulated 88.86%\nc stable glue 14   used  5367 clauses  1.88% accumulated 90.74% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                             3s               2.92 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4068
+    },
+    {
+      "candidate_index": 19,
+      "clauses": 18873,
+      "deleted": [
+        10,
+        15
+      ],
+      "elapsed_sec": 0.05490231513977051,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 13,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "%  variables\nc switched:                                 1             1360    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 3   used 331 clauses 22.49% accumulated 55.03% tier1\nc focused glue 4   used 197 clauses 13.38% accumulated 68.41%\nc focused glue 5-7 used 272 clauses 18.48% accumulated 86.89%\nc focused glue 8   used  28 clauses  1.90% accumulated 88.79%\nc focused glue 9   used  21 clauses  1.43% accumulated 90.22% tier2\nc\nc stable glue 2 used 210 clauses 32.41% accumulated 58.95% tier1\nc stable glue 3 used 141 clauses 21.76% accumulated 80.71%\nc stable glue 4 used  81 clauses 12.50% accumulated 93.21% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.05 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 5121
+    },
+    {
+      "candidate_index": 20,
+      "clauses": 17253,
+      "deleted": [
+        4,
+        20
+      ],
+      "elapsed_sec": 0.04205131530761719,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 14,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "                   3                0 %  variables\nc propagations:                         29155           707422    per second\nc substituted:                            891               19 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 2   used 299 clauses 50.00% accumulated 69.57% tier1\nc focused glue 3   used  39 clauses  6.52% accumulated 76.09%\nc focused glue 4-7 used  63 clauses 10.54% accumulated 86.62%\nc focused glue 8   used  11 clauses  1.84% accumulated 88.46%\nc focused glue 9   used  30 clauses  5.02% accumulated 93.48% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.04 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4716
+    },
+    {
+      "candidate_index": 21,
+      "clauses": 19845,
+      "deleted": [
+        11,
+        19
+      ],
+      "elapsed_sec": 0.047577857971191406,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 14,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "           51736          1107837    per second\nc restarts:                                 2              242    interval\nc substituted:                           1296               24 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 4    used  68 clauses  9.56% accumulated 55.56% tier1\nc focused glue 5    used  42 clauses  5.91% accumulated 61.46%\nc focused glue 6-10 used 175 clauses 24.61% accumulated 86.08%\nc focused glue 11   used  16 clauses  2.25% accumulated 88.33%\nc focused glue 12   used  19 clauses  2.67% accumulated 91.00% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.04 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 5364
+    },
+    {
+      "candidate_index": 22,
+      "clauses": 16605,
+      "deleted": [
+        4,
+        5
+      ],
+      "elapsed_sec": 0.04032135009765625,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 15,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "        5              126.65 per second\nc congruent:                              810               18 %  variables\nc decisions:                               15                3.00 per conflict\nc factored:                                18                0 %  variables\nc iterations:                               2                0 %  variables\nc propagations:                         12449           315332    per second\nc substituted:                            810               18 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc no clauses used at all\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.04 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4554
+    },
+    {
+      "candidate_index": 23,
+      "clauses": 19521,
+      "deleted": [
+        11,
+        19
+      ],
+      "elapsed_sec": 0.045754432678222656,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 15,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "-------------------------------------\nc\nc conflicts:                                0                0.00 per second\nc congruent:                             1620               31 %  variables\nc decisions:                                0                0.00 per conflict\nc factored:                                18                0 %  variables\nc propagations:                         18652           415246    per second\nc substituted:                           1701               32 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc no clauses used at all\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.04 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 5283
+    },
+    {
+      "candidate_index": 24,
+      "clauses": 20493,
+      "deleted": [
+        14,
+        17
+      ],
+      "elapsed_sec": 8.529357194900513,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 15,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "--------------------\nc\nc focused glue 2 used 115361 clauses 20.94% accumulated 56.38% tier1\nc focused glue 3 used  84068 clauses 15.26% accumulated 71.64%\nc focused glue 4 used  49647 clauses  9.01% accumulated 80.65%\nc focused glue 5 used  35289 clauses  6.41% accumulated 87.06%\nc focused glue 6 used  24943 clauses  4.53% accumulated 91.58% tier2\nc\nc stable glue 2   used 185339 clauses 16.06% accumulated 52.70% tier1\nc stable glue 3   used 134230 clauses 11.63% accumulated 64.33%\nc stable glue 4-6 used 217287 clauses 18.83% accumulated 83.16%\nc stable glue 7   used  47128 clauses  4.08% accumulated 87.24%\nc stable glue 8   used  36201 clauses  3.14% accumulated 90.38% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                             9s               8.53 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 5526
+    },
+    {
+      "candidate_index": 25,
+      "clauses": 17577,
+      "deleted": [
+        2,
+        14
+      ],
+      "elapsed_sec": 0.048648834228515625,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 16,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "              3                0 %  variables\nc propagations:                         96318          2014557    per second\nc restarts:                                76               11    interval\nc substituted:                            891               19 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 3 used 182 clauses 18.53% accumulated 65.38% tier1\nc focused glue 4 used 124 clauses 12.63% accumulated 78.00%\nc focused glue 5 used  73 clauses  7.43% accumulated 85.44%\nc focused glue 6 used  49 clauses  4.99% accumulated 90.43% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.05 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4797
+    },
+    {
+      "candidate_index": 26,
+      "clauses": 19197,
+      "deleted": [
+        8,
+        13
+      ],
+      "elapsed_sec": 0.5806150436401367,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 16,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "2111    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 3 used 10171 clauses 19.37% accumulated 60.80% tier1\nc focused glue 4 used  7621 clauses 14.52% accumulated 75.31%\nc focused glue 5 used  5029 clauses  9.58% accumulated 84.89%\nc focused glue 6 used  3184 clauses  6.06% accumulated 90.96% tier2\nc\nc stable glue 3   used 4103 clauses 13.23% accumulated 54.38% tier1\nc stable glue 4   used 3386 clauses 10.91% accumulated 65.29%\nc stable glue 5-7 used 5961 clauses 19.22% accumulated 84.51%\nc stable glue 8   used 1098 clauses  3.54% accumulated 88.05%\nc stable glue 9   used  813 clauses  2.62% accumulated 90.67% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                             1s               0.58 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 5202
+    },
+    {
+      "candidate_index": 27,
+      "clauses": 15633,
+      "deleted": [
+        2,
+        12
+      ],
+      "elapsed_sec": 0.0446619987487793,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 17,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "                   3                0 %  variables\nc propagations:                         52707          1199795    per second\nc substituted:                            891               21 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 3   used 211 clauses 22.52% accumulated 61.37% tier1\nc focused glue 4   used  48 clauses  5.12% accumulated 66.49%\nc focused glue 5-8 used 187 clauses 19.96% accumulated 86.45%\nc focused glue 9   used  31 clauses  3.31% accumulated 89.75%\nc focused glue 10  used  14 clauses  1.49% accumulated 91.25% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.04 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4311
+    },
+    {
+      "candidate_index": 28,
+      "clauses": 15309,
+      "deleted": [
+        3,
+        10
+      ],
+      "elapsed_sec": 0.03946208953857422,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 17,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "5                5.00 per conflict\nc factored:                                18                0 %  variables\nc iterations:                               2                0 %  variables\nc propagations:                         13250           343033    per second\nc substituted:                            729               17 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 3 used 6 clauses 66.67% accumulated 77.78% tier1\nc focused glue 4 used 0 clauses  0.00% accumulated 77.78%\nc focused glue 5 used 1 clauses 11.11% accumulated 88.89% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.04 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4230
+    },
+    {
+      "candidate_index": 29,
+      "clauses": 17901,
+      "deleted": [
+        6,
+        8
+      ],
+      "elapsed_sec": 0.4644591808319092,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 18,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "   10283    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 4 used 4719 clauses 18.92% accumulated 67.31% tier1\nc focused glue 5 used 3279 clauses 13.15% accumulated 80.46%\nc focused glue 6 used 1834 clauses  7.35% accumulated 87.81%\nc focused glue 7 used 1024 clauses  4.11% accumulated 91.92% tier2\nc\nc stable glue 5   used 3817 clauses 13.10% accumulated 54.07% tier1\nc stable glue 6   used 3322 clauses 11.40% accumulated 65.48%\nc stable glue 7-9 used 5890 clauses 20.22% accumulated 85.69%\nc stable glue 10  used 1079 clauses  3.70% accumulated 89.40%\nc stable glue 11  used  769 clauses  2.64% accumulated 92.04% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.46 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4878
+    },
+    {
+      "candidate_index": 30,
+      "clauses": 15633,
+      "deleted": [
+        7,
+        8
+      ],
+      "elapsed_sec": 0.732149600982666,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 19,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "7503    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 3 used 12126 clauses 20.25% accumulated 65.66% tier1\nc focused glue 4 used  7773 clauses 12.98% accumulated 78.64%\nc focused glue 5 used  5094 clauses  8.51% accumulated 87.14%\nc focused glue 6 used  3022 clauses  5.05% accumulated 92.19% tier2\nc\nc stable glue 4   used 6497 clauses 13.81% accumulated 62.23% tier1\nc stable glue 5   used 4862 clauses 10.33% accumulated 72.56%\nc stable glue 6-8 used 7103 clauses 15.10% accumulated 87.66%\nc stable glue 9   used  980 clauses  2.08% accumulated 89.74%\nc stable glue 10  used  606 clauses  1.29% accumulated 91.03% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                             1s               0.73 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4311
+    },
+    {
+      "candidate_index": 31,
+      "clauses": 14337,
+      "deleted": [
+        13,
+        15
+      ],
+      "elapsed_sec": 0.04261040687561035,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 19,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "                50794          1214528    per second\nc restarts:                                 1              296    interval\nc substituted:                            648               16 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 6    used 42 clauses 11.80% accumulated 53.65% tier1\nc focused glue 7    used 37 clauses 10.39% accumulated 64.04%\nc focused glue 8-10 used 77 clauses 21.63% accumulated 85.67%\nc focused glue 11   used  9 clauses  2.53% accumulated 88.20%\nc focused glue 12   used 11 clauses  3.09% accumulated 91.29% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.04 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 3987
+    },
+    {
+      "candidate_index": 32,
+      "clauses": 20169,
+      "deleted": [
+        3,
+        18
+      ],
+      "elapsed_sec": 0.052399635314941406,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 20,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "substituted:                           1215               22 %  variables\nc switched:                                 1             1071    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 3   used 323 clauses 17.22% accumulated 59.33% tier1\nc focused glue 4   used 145 clauses  7.73% accumulated 67.06%\nc focused glue 5-7 used 348 clauses 18.55% accumulated 85.61%\nc focused glue 8   used  66 clauses  3.52% accumulated 89.13%\nc focused glue 9   used  63 clauses  3.36% accumulated 92.48% tier2\nc\nc stable glue 2 used 43 clauses 41.75% accumulated 83.50% tier1\nc stable glue 3 used 11 clauses 10.68% accumulated 94.17% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.05 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 5445
+    },
+    {
+      "candidate_index": 33,
+      "clauses": 19845,
+      "deleted": [
+        4,
+        17
+      ],
+      "elapsed_sec": 0.046927452087402344,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 20,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "                40850           888468    per second\nc restarts:                                 1              411    interval\nc substituted:                           1215               23 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 2   used 210 clauses 36.78% accumulated 64.10% tier1\nc focused glue 3   used  58 clauses 10.16% accumulated 74.26%\nc focused glue 4-5 used  72 clauses 12.61% accumulated 86.87%\nc focused glue 6   used  13 clauses  2.28% accumulated 89.14%\nc focused glue 7   used  20 clauses  3.50% accumulated 92.64% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.04 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 5364
+    },
+    {
+      "candidate_index": 34,
+      "clauses": 20493,
+      "deleted": [
+        5,
+        7
+      ],
+      "elapsed_sec": 0.21605563163757324,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 21,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "------------------------------\nc\nc focused glue 3   used 1868 clauses 18.34% accumulated 51.86% tier1\nc focused glue 4   used 1248 clauses 12.25% accumulated 64.11%\nc focused glue 5-6 used 1761 clauses 17.29% accumulated 81.40%\nc focused glue 7   used  609 clauses  5.98% accumulated 87.37%\nc focused glue 8   used  358 clauses  3.51% accumulated 90.89% tier2\nc\nc stable glue 4   used 1394 clauses 13.38% accumulated 55.93% tier1\nc stable glue 5   used 1183 clauses 11.35% accumulated 67.28%\nc stable glue 6-7 used 1691 clauses 16.23% accumulated 83.51%\nc stable glue 8   used  504 clauses  4.84% accumulated 88.35%\nc stable glue 9   used  387 clauses  3.71% accumulated 92.06% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.21 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 5526
+    },
+    {
+      "candidate_index": 35,
+      "clauses": 18873,
+      "deleted": [
+        16,
+        17
+      ],
+      "elapsed_sec": 0.03215193748474121,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 22,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "           0.03  100.00 %  total\nc\nc ---- [ statistics ] --------------------------------------------------------\nc\nc conflicts:                                0                0.00 per second\nc congruent:                             1053               21 %  variables\nc decisions:                                0                0.00 per conflict\nc propagations:                         15848           508258    per second\nc substituted:                           1053               21 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc no clauses used at all\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.03 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 5121
+    },
+    {
+      "candidate_index": 36,
+      "clauses": 14985,
+      "deleted": [
+        0,
+        11
+      ],
+      "elapsed_sec": 0.04137730598449707,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 23,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "                             4                0 %  variables\nc propagations:                         30574           755511    per second\nc substituted:                            810               20 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 2 used 274 clauses 50.09% accumulated 60.15% tier1\nc focused glue 3 used  97 clauses 17.73% accumulated 77.88%\nc focused glue 4 used  32 clauses  5.85% accumulated 83.73%\nc focused glue 5 used  14 clauses  2.56% accumulated 86.29%\nc focused glue 6 used  44 clauses  8.04% accumulated 94.33% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.04 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4149
+    },
+    {
+      "candidate_index": 37,
+      "clauses": 16281,
+      "deleted": [
+        2,
+        5
+      ],
+      "elapsed_sec": 0.5396127700805664,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 23,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "-----------------------------------\nc\nc focused glue 2 used 5285 clauses 23.65% accumulated 61.62% tier1\nc focused glue 3 used 2972 clauses 13.30% accumulated 74.92%\nc focused glue 4 used 1927 clauses  8.63% accumulated 83.55%\nc focused glue 5 used 1218 clauses  5.45% accumulated 89.00%\nc focused glue 6 used  794 clauses  3.55% accumulated 92.55% tier2\nc\nc stable glue 4    used 3807 clauses 11.48% accumulated 54.98% tier1\nc stable glue 5    used 2934 clauses  8.84% accumulated 63.82%\nc stable glue 6-12 used 7937 clauses 23.93% accumulated 87.75%\nc stable glue 13   used  503 clauses  1.52% accumulated 89.27%\nc stable glue 14   used  435 clauses  1.31% accumulated 90.58% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                             1s               0.54 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4473
+    },
+    {
+      "candidate_index": 38,
+      "clauses": 17901,
+      "deleted": [
+        7,
+        9
+      ],
+      "elapsed_sec": 0.1500096321105957,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 25,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "-------------------------------------------------------\nc\nc focused glue 3 used 1137 clauses 20.86% accumulated 50.83% tier1\nc focused glue 4 used  756 clauses 13.87% accumulated 64.70%\nc focused glue 5 used  621 clauses 11.39% accumulated 76.10%\nc focused glue 6 used  530 clauses  9.72% accumulated 85.82%\nc focused glue 7 used  344 clauses  6.31% accumulated 92.13% tier2\nc\nc stable glue 3 used 767 clauses 17.01% accumulated 65.52% tier1\nc stable glue 4 used 458 clauses 10.16% accumulated 75.68%\nc stable glue 5 used 332 clauses  7.36% accumulated 83.04%\nc stable glue 6 used 246 clauses  5.45% accumulated 88.49%\nc stable glue 7 used 193 clauses  4.28% accumulated 92.77% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.15 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4878
+    },
+    {
+      "candidate_index": 39,
+      "clauses": 16281,
+      "deleted": [
+        8,
+        14
+      ],
+      "elapsed_sec": 0.1919419765472412,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 25,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "----------------------------------------\nc\nc focused glue 3 used 2071 clauses 18.52% accumulated 62.31% tier1\nc focused glue 4 used 1459 clauses 13.05% accumulated 75.36%\nc focused glue 5 used  957 clauses  8.56% accumulated 83.92%\nc focused glue 6 used  657 clauses  5.88% accumulated 89.79%\nc focused glue 7 used  400 clauses  3.58% accumulated 93.37% tier2\nc\nc stable glue 3   used 1167 clauses 15.37% accumulated 57.59% tier1\nc stable glue 4   used  746 clauses  9.83% accumulated 67.41%\nc stable glue 5-8 used 1410 clauses 18.57% accumulated 85.99%\nc stable glue 9   used  221 clauses  2.91% accumulated 88.90%\nc stable glue 10  used  174 clauses  2.29% accumulated 91.19% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.19 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4473
+    },
+    {
+      "candidate_index": 40,
+      "clauses": 23409,
+      "deleted": [
+        3,
+        9
+      ],
+      "elapsed_sec": 10.003040313720703,
+      "pair_type": "same-w",
+      "returncode": null,
+      "scheme_index": 26,
+      "status": "TIMEOUT",
+      "stderr_tail": "",
+      "stdout_tail": "1.9 26 14 4 14 16% 1782 23872 2124 34%\nc ]  9.13 13 23 22 57 13254 1 288291 24590 1.9 26 14 4 14 16% 1782 23872 2124 34%\nc {  9.13 13 28 22 57 13254 5 288291 24590 1.8 17 10 3 9 12% 1782 23872 2124 34%\nc -  9.21 13 28 22 58 13291 5 291479 21178 1.8 17 10 3 9 12% 1782 23872 2124 34%\nc -  9.43 13 27 22 59 13448 5 299094 24306 1.8 18 10 3 9 12% 1782 23872 2124 34%\nc\nc seconds   switched     rate          size/glue tier1    binary        remaining\nc        MB   reductions   conflicts         size  tier2     irredundant\nc         level    restarts       redundant    glue   trail        variables\nc\nc o  9.51 13 26 22 59 13459 4 302444 27522 1.9 18 9 3 9 12% 1782 23872 2124 34%\nc -  9.67 13 26 22 60 13613 4 306775 26032 1.9 18 9 3 9 13% 1782 23872 2124 34%\nc u  9.75 13 26 22 60 13631 4 308178 26449 1.9 18 9 3 9 13% 1782 23872 2124 34%\nc v  9.79 13 26 22 60 13631 4 308178 26091 1.9 18 9 3 9 13% 1782 23872 2124 34%\nc w  9.81 13 26 22 60 13631 4 308178 26057 1.9 18 9 3 9 13% 1782 23872 2124 34%\n",
+      "u_rank": 8,
+      "vars": 6255
+    },
+    {
+      "candidate_index": 41,
+      "clauses": 16929,
+      "deleted": [
+        9,
+        10
+      ],
+      "elapsed_sec": 0.042600154876708984,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 27,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "%  variables\nc decisions:                              920                7.08 per conflict\nc iterations:                               2                0 %  variables\nc propagations:                         26445           633474    per second\nc restarts:                                 2               65    interval\nc substituted:                           1053               23 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 2 used 46 clauses 56.79% accumulated 83.95% tier1\nc focused glue 3 used  4 clauses  4.94% accumulated 88.89% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.04 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4635
+    },
+    {
+      "candidate_index": 42,
+      "clauses": 19197,
+      "deleted": [
+        9,
+        14
+      ],
+      "elapsed_sec": 0.06216239929199219,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 29,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "             1980    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 2 used 419 clauses 39.87% accumulated 50.90% tier1\nc focused glue 3 used 247 clauses 23.50% accumulated 74.41%\nc focused glue 4 used 155 clauses 14.75% accumulated 89.15%\nc focused glue 5 used  61 clauses  5.80% accumulated 94.96% tier2\nc\nc stable glue 2   used 980 clauses 31.98% accumulated 50.10% tier1\nc stable glue 3   used 583 clauses 19.03% accumulated 69.13%\nc stable glue 4-5 used 440 clauses 14.36% accumulated 83.49%\nc stable glue 6   used 106 clauses  3.46% accumulated 86.95%\nc stable glue 7   used 131 clauses  4.28% accumulated 91.22% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.06 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 5202
+    },
+    {
+      "candidate_index": 43,
+      "clauses": 17577,
+      "deleted": [
+        8,
+        11
+      ],
+      "elapsed_sec": 0.04316091537475586,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 30,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "ngruent:                             1539               32 %  variables\nc decisions:                              413               68.83 per conflict\nc factored:                                18                0 %  variables\nc iterations:                               2                0 %  variables\nc propagations:                         16306           386343    per second\nc substituted:                           1620               34 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 0 used 0 clauses  0.00% accumulated  0.00% tier1 tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.04 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4797
+    },
+    {
+      "candidate_index": 44,
+      "clauses": 16281,
+      "deleted": [
+        9,
+        10
+      ],
+      "elapsed_sec": 0.041372060775756836,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 30,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "       1458               33 %  variables\nc decisions:                              167               33.40 per conflict\nc factored:                                18                0 %  variables\nc iterations:                               2                0 %  variables\nc propagations:                         15439           382229    per second\nc restarts:                                 1                5    interval\nc substituted:                           1458               33 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc no clauses used at all\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.04 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4473
+    },
+    {
+      "candidate_index": 45,
+      "clauses": 19521,
+      "deleted": [
+        17,
+        20
+      ],
+      "elapsed_sec": 0.04602861404418945,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 30,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "          29 %  variables\nc decisions:                              263                1.22 per conflict\nc iterations:                               5                0 %  variables\nc propagations:                         25218           559219    per second\nc substituted:                           1643               31 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 2 used 128 clauses 34.32% accumulated 68.36% tier1\nc focused glue 3 used  78 clauses 20.91% accumulated 89.28%\nc focused glue 4 used  36 clauses  9.65% accumulated 98.93% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.04 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 5283
+    },
+    {
+      "candidate_index": 46,
+      "clauses": 20169,
+      "deleted": [
+        6,
+        14
+      ],
+      "elapsed_sec": 0.06568694114685059,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 32,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "-----------------------------------\nc\nc focused glue 3   used 372 clauses 16.36% accumulated 58.66% tier1\nc focused glue 4   used 190 clauses  8.36% accumulated 67.02%\nc focused glue 5-7 used 421 clauses 18.51% accumulated 85.53%\nc focused glue 8   used  70 clauses  3.08% accumulated 88.61%\nc focused glue 9   used  62 clauses  2.73% accumulated 91.34% tier2\nc\nc stable glue 2   used 1693 clauses 52.00% accumulated 55.77% tier1\nc stable glue 3   used  322 clauses  9.89% accumulated 65.66%\nc stable glue 4-6 used  637 clauses 19.56% accumulated 85.23%\nc stable glue 7   used  106 clauses  3.26% accumulated 88.48%\nc stable glue 8   used   92 clauses  2.83% accumulated 91.31% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.06 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 5445
+    },
+    {
+      "candidate_index": 47,
+      "clauses": 22113,
+      "deleted": [
+        11,
+        12
+      ],
+      "elapsed_sec": 0.12533140182495117,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 32,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "------------------------------\nc\nc focused glue 3   used 1017 clauses 19.28% accumulated 61.14% tier1\nc focused glue 4   used  595 clauses 11.28% accumulated 72.42%\nc focused glue 5-6 used  698 clauses 13.23% accumulated 85.65%\nc focused glue 7   used  193 clauses  3.66% accumulated 89.31%\nc focused glue 8   used  131 clauses  2.48% accumulated 91.79% tier2\nc\nc stable glue 2   used 2102 clauses 22.85% accumulated 54.48% tier1\nc stable glue 3   used  961 clauses 10.45% accumulated 64.93%\nc stable glue 4-7 used 1875 clauses 20.38% accumulated 85.31%\nc stable glue 8   used  230 clauses  2.50% accumulated 87.81%\nc stable glue 9   used  229 clauses  2.49% accumulated 90.30% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.12 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 5931
+    },
+    {
+      "candidate_index": 48,
+      "clauses": 20169,
+      "deleted": [
+        12,
+        19
+      ],
+      "elapsed_sec": 2.091141700744629,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 34,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "terval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 3 used 30913 clauses 20.32% accumulated 63.76% tier1\nc focused glue 4 used 20544 clauses 13.50% accumulated 77.26%\nc focused glue 5 used 13149 clauses  8.64% accumulated 85.90%\nc focused glue 6 used  8445 clauses  5.55% accumulated 91.45% tier2\nc\nc stable glue 4    used 22828 clauses 11.60% accumulated 55.21% tier1\nc stable glue 5    used 17474 clauses  8.88% accumulated 64.09%\nc stable glue 6-10 used 46618 clauses 23.68% accumulated 87.77%\nc stable glue 11   used  4115 clauses  2.09% accumulated 89.86%\nc stable glue 12   used  3268 clauses  1.66% accumulated 91.52% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                             2s               2.09 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 5445
+    },
+    {
+      "candidate_index": 49,
+      "clauses": 19845,
+      "deleted": [
+        4,
+        11
+      ],
+      "elapsed_sec": 0.0961771011352539,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 35,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "----------------------------------------\nc\nc focused glue 3   used 942 clauses 25.36% accumulated 52.87% tier1\nc focused glue 4   used 483 clauses 13.00% accumulated 65.87%\nc focused glue 5-7 used 697 clauses 18.76% accumulated 84.63%\nc focused glue 8   used 161 clauses  4.33% accumulated 88.96%\nc focused glue 9   used 102 clauses  2.75% accumulated 91.71% tier2\nc\nc stable glue 4   used 482 clauses 15.42% accumulated 56.85% tier1\nc stable glue 5   used 257 clauses  8.22% accumulated 65.07%\nc stable glue 6-8 used 546 clauses 17.47% accumulated 82.53%\nc stable glue 9   used 151 clauses  4.83% accumulated 87.36%\nc stable glue 10  used  96 clauses  3.07% accumulated 90.44% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.09 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 5364
+    },
+    {
+      "candidate_index": 50,
+      "clauses": 17253,
+      "deleted": [
+        0,
+        17
+      ],
+      "elapsed_sec": 0.29910778999328613,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 36,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "-----------------------------------\nc\nc focused glue 4 used 2175 clauses 15.66% accumulated 62.78% tier1\nc focused glue 5 used 1718 clauses 12.37% accumulated 75.15%\nc focused glue 6 used 1125 clauses  8.10% accumulated 83.25%\nc focused glue 7 used  797 clauses  5.74% accumulated 88.98%\nc focused glue 8 used  560 clauses  4.03% accumulated 93.02% tier2\nc\nc stable glue 6    used  432 clauses  6.79% accumulated 54.80% tier1\nc stable glue 7    used  443 clauses  6.97% accumulated 61.77%\nc stable glue 8-15 used 1632 clauses 25.66% accumulated 87.44%\nc stable glue 16   used  120 clauses  1.89% accumulated 89.32%\nc stable glue 17   used   99 clauses  1.56% accumulated 90.88% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.30 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4716
+    },
+    {
+      "candidate_index": 51,
+      "clauses": 16281,
+      "deleted": [
+        2,
+        18
+      ],
+      "elapsed_sec": 0.21898341178894043,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 36,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "-------------------------\nc\nc focused glue 4   used 1228 clauses 13.69% accumulated 59.11% tier1\nc focused glue 5   used  973 clauses 10.85% accumulated 69.96%\nc focused glue 6-7 used 1247 clauses 13.90% accumulated 83.86%\nc focused glue 8   used  369 clauses  4.11% accumulated 87.98%\nc focused glue 9   used  280 clauses  3.12% accumulated 91.10% tier2\nc\nc stable glue 5    used  737 clauses 10.21% accumulated 51.49% tier1\nc stable glue 6    used  509 clauses  7.05% accumulated 58.54%\nc stable glue 7-16 used 2117 clauses 29.33% accumulated 87.87%\nc stable glue 17   used  110 clauses  1.52% accumulated 89.39%\nc stable glue 18   used  126 clauses  1.75% accumulated 91.13% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.22 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4473
+    },
+    {
+      "candidate_index": 52,
+      "clauses": 18873,
+      "deleted": [
+        0,
+        6
+      ],
+      "elapsed_sec": 0.04428291320800781,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 37,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "              2.74 per conflict\nc factored:                                18                0 %  variables\nc iterations:                               2                0 %  variables\nc propagations:                         27919           642732    per second\nc substituted:                           1134               22 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 2 used 39 clauses 66.10% accumulated 67.80% tier1\nc focused glue 3 used 11 clauses 18.64% accumulated 86.44%\nc focused glue 4 used  7 clauses 11.86% accumulated 98.31% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.04 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 5121
+    },
+    {
+      "candidate_index": 53,
+      "clauses": 18549,
+      "deleted": [
+        3,
+        18
+      ],
+      "elapsed_sec": 0.8360064029693604,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 37,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "8020    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 3 used 12715 clauses 17.74% accumulated 65.54% tier1\nc focused glue 4 used  8629 clauses 12.04% accumulated 77.58%\nc focused glue 5 used  5809 clauses  8.10% accumulated 85.68%\nc focused glue 6 used  4034 clauses  5.63% accumulated 91.31% tier2\nc\nc stable glue 4   used 7364 clauses 13.50% accumulated 56.58% tier1\nc stable glue 5   used 6395 clauses 11.73% accumulated 68.30%\nc stable glue 6-7 used 8614 clauses 15.80% accumulated 84.10%\nc stable glue 8   used 2983 clauses  5.47% accumulated 89.57%\nc stable glue 9   used 1958 clauses  3.59% accumulated 93.16% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                             1s               0.83 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 5040
+    },
+    {
+      "candidate_index": 54,
+      "clauses": 19845,
+      "deleted": [
+        5,
+        6
+      ],
+      "elapsed_sec": 1.4175913333892822,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 38,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "------------------------------\nc\nc focused glue 2 used 28227 clauses 19.97% accumulated 58.97% tier1\nc focused glue 3 used 20671 clauses 14.63% accumulated 73.60%\nc focused glue 4 used 13837 clauses  9.79% accumulated 83.39%\nc focused glue 5 used  9071 clauses  6.42% accumulated 89.81%\nc focused glue 6 used  5570 clauses  3.94% accumulated 93.75% tier2\nc\nc stable glue 3   used 10667 clauses 10.88% accumulated 56.68% tier1\nc stable glue 4   used  9383 clauses  9.57% accumulated 66.25%\nc stable glue 5-8 used 19328 clauses 19.72% accumulated 85.96%\nc stable glue 9   used  2488 clauses  2.54% accumulated 88.50%\nc stable glue 10  used  2004 clauses  2.04% accumulated 90.55% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                             1s               1.41 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 5364
+    },
+    {
+      "candidate_index": 55,
+      "clauses": 19197,
+      "deleted": [
+        11,
+        17
+      ],
+      "elapsed_sec": 0.05406355857849121,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 39,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "16 %  variables\nc switched:                                 1             1042    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 3   used 275 clauses 20.51% accumulated 69.20% tier1\nc focused glue 4   used 122 clauses  9.10% accumulated 78.30%\nc focused glue 5-6 used 101 clauses  7.53% accumulated 85.83%\nc focused glue 7   used  28 clauses  2.09% accumulated 87.92%\nc focused glue 8   used  33 clauses  2.46% accumulated 90.38% tier2\nc\nc stable glue 1 used 64 clauses 60.95% accumulated 60.95% tier1\nc stable glue 2 used 26 clauses 24.76% accumulated 85.71%\nc stable glue 3 used  8 clauses  7.62% accumulated 93.33% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.05 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 5202
+    },
+    {
+      "candidate_index": 56,
+      "clauses": 17253,
+      "deleted": [
+        5,
+        20
+      ],
+      "elapsed_sec": 0.049582481384277344,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 40,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "                98331          2018454    per second\nc restarts:                                10               84    interval\nc substituted:                           1134               24 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 2   used 418 clauses 23.72% accumulated 51.19% tier1\nc focused glue 3   used 370 clauses 21.00% accumulated 72.19%\nc focused glue 4-5 used 204 clauses 11.58% accumulated 83.77%\nc focused glue 6   used  51 clauses  2.89% accumulated 86.66%\nc focused glue 7   used  66 clauses  3.75% accumulated 90.41% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.05 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4716
+    },
+    {
+      "candidate_index": 57,
+      "clauses": 16605,
+      "deleted": [
+        8,
+        10
+      ],
+      "elapsed_sec": 0.042455434799194336,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 40,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "              7.78 per conflict\nc factored:                                 2                0 %  variables\nc iterations:                               4                0 %  variables\nc propagations:                         22339           536531    per second\nc substituted:                           1168               26 %  variables\nc switched:                                 0                0    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 2 used 18 clauses 46.15% accumulated 61.54% tier1\nc focused glue 3 used 10 clauses 25.64% accumulated 87.18%\nc focused glue 4 used  4 clauses 10.26% accumulated 97.44% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.04 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4554
+    },
+    {
+      "candidate_index": 58,
+      "clauses": 17253,
+      "deleted": [
+        9,
+        15
+      ],
+      "elapsed_sec": 1.1370599269866943,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 40,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "   interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 3 used 16600 clauses 22.05% accumulated 59.09% tier1\nc focused glue 4 used 11298 clauses 15.01% accumulated 74.10%\nc focused glue 5 used  7214 clauses  9.58% accumulated 83.68%\nc focused glue 6 used  4823 clauses  6.41% accumulated 90.08% tier2\nc\nc stable glue 3   used 15471 clauses 17.82% accumulated 50.21% tier1\nc stable glue 4   used 11612 clauses 13.37% accumulated 63.58%\nc stable glue 5-6 used 15469 clauses 17.82% accumulated 81.40%\nc stable glue 7   used  4739 clauses  5.46% accumulated 86.86%\nc stable glue 8   used  3296 clauses  3.80% accumulated 90.65% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                             1s               1.13 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4716
+    },
+    {
+      "candidate_index": 59,
+      "clauses": 17577,
+      "deleted": [
+        1,
+        4
+      ],
+      "elapsed_sec": 0.056732177734375,
+      "pair_type": "same-w",
+      "returncode": 20,
+      "scheme_index": 41,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "--------------------------------------------------\nc\nc focused glue 3 used 402 clauses 23.41% accumulated 61.56% tier1\nc focused glue 4 used 271 clauses 15.78% accumulated 77.34%\nc focused glue 5 used 100 clauses  5.82% accumulated 83.17%\nc focused glue 6 used  67 clauses  3.90% accumulated 87.07%\nc focused glue 7 used  59 clauses  3.44% accumulated 90.51% tier2\nc\nc stable glue 3   used 367 clauses 20.50% accumulated 66.03% tier1\nc stable glue 4   used 160 clauses  8.94% accumulated 74.97%\nc stable glue 5-7 used 213 clauses 11.90% accumulated 86.87%\nc stable glue 8   used  40 clauses  2.23% accumulated 89.11%\nc stable glue 9   used  40 clauses  2.23% accumulated 91.34% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         37486592 bytes         36 MB\nc process-time:                                              0.05 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n",
+      "u_rank": 8,
+      "vars": 4797
+    }
+  ],
+  "selection": "same-w",
+  "status_counter": {
+    "TIMEOUT": 1,
+    "UNSAT": 59
+  },
+  "tested": 60,
+  "timeout_per_instance_sec": 10,
+  "unique_by_type": {
+    "same-w": 60
+  }
+}

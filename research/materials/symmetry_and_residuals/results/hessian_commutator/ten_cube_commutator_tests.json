@@ -1,0 +1,9 @@
+{
+  "scope": "Verification that 10-cube gl_3 moment systems have commutator rank <= 2.",
+  "prime": 65521,
+  "bilr_drop_tests": [],
+  "bilr_11_cube_generic_rank": 4,
+  "theoretical_bound_k_minus_n": "rank([H(X),H(Y)]) <= 2*(k-9) for k vectors in gl_3 (dim 9)",
+  "bilr_k11_saturates_bound": true,
+  "interpretation": "On gl_3, the Jennrich commutator rank is exactly 2*(k-9) generically. For k=9: rank 0. For k=10: rank <= 2. For k=11 (BILR): rank = 4 (saturated). Therefore any (10,4) pure-cyclic decomposition with traceless free orbits would give at most 10 cubes on gl_3, with commutator rank <= 2. The question is whether the RESIDUAL CUBIC from ANY rank-4 exterior configuration requires Waring rank > 10 on gl_3."
+}

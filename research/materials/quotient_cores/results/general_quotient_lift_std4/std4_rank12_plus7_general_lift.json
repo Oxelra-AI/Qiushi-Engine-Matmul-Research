@@ -1,0 +1,67 @@
+{
+  "elapsed_sec": 601.0782790184021,
+  "field": "F2",
+  "first_witness_scheme_idx": null,
+  "meaning": "SAT gives a verified E11 rank<=19 lift (and then T333 rank<=22 via +3). UNSAT records exclude only the listed quotient schemes for this prefix span; they do not prove universality without an exhaustive quotient-scheme certificate.",
+  "pool": "data/qstd4_trivial_pool/qstd4_rank12_trivial.npy",
+  "prefix_basis": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "purpose": "exact general coset lift-back for E11 quotient schemes over F2",
+  "records": [
+    {
+      "annihilator_basis": [
+        16,
+        32,
+        64,
+        128
+      ],
+      "annihilator_residual_nnz": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "cnf_clauses": 8505,
+      "cnf_path": "data/general_quotient_lift_std4/std4_rank12_plus7_general_lift_scheme0.xor.cnf",
+      "cnf_sha256": "4480d78f65311f9cb4475f9ec168e0f9a032f304fe708051694247161e3d2a3d",
+      "dual_lifts_for_quotient_basis": [
+        16,
+        32,
+        64,
+        128
+      ],
+      "native_xor_clauses": 324,
+      "phi_vectors": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "qrank": 12,
+      "quotient_diff": 0,
+      "residual_reconstruction_diff": 0,
+      "scheme_idx": 0,
+      "solve": {
+        "command": "cryptominisat5 --verb 0 -t 8 --maxtime 600 data/general_quotient_lift_std4/std4_rank12_plus7_general_lift_scheme0.xor.cnf",
+        "elapsed_sec": 601.0682306289673,
+        "returncode": 15,
+        "status": "UNKNOWN",
+        "stderr_tail": "",
+        "stdout_tail": "s INDETERMINATE\n"
+      },
+      "vars": 3037
+    }
+  ],
+  "residual_rank_budget": 7,
+  "schemes_recorded": 1,
+  "schemes_requested": 1,
+  "status_counts": {
+    "UNKNOWN": 1
+  },
+  "total_rank_budget": 19,
+  "witness_found": false
+}

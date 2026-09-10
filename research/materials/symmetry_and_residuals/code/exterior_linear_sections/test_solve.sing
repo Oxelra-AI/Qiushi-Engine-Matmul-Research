@@ -1,0 +1,6 @@
+LIB "solve.lib";
+ring r=5,(x,y),dp;
+ideal I=x2-1,y-x;
+ideal G=std(I);
+solve(G);
+quit;

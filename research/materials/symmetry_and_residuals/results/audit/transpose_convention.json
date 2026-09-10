@@ -1,0 +1,12 @@
+{
+  "algebraic_proof": "tr(XYZ^T) = tr((XYZ^T)^T) = tr(ZY^TX^T) = tr(X^TZY^T) by cyclic permutation",
+  "conv1_failures_ATCTBT": 97025,
+  "conv2_failures_ATC_B": 0,
+  "convention": "T[3i+j, 3j+k, 3i+k]=1, f(X,Y,Z)=tr(XYZ^T)",
+  "correct_automorphism": "(A,B,C) -> (A^T, C, B)",
+  "elapsed_sec": 16.860952138900757,
+  "sample_size": 200000,
+  "schema": "transpose_convention_v1",
+  "tensor_symmetric_under_correct_auto": true,
+  "wrong_automorphism": "(A,B,C) -> (A^T, C^T, B^T)"
+}

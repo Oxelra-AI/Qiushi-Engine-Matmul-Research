@@ -1,0 +1,197 @@
+{
+  "build_sec": 49.833,
+  "certificate_cut_summary": {
+    "aux_vars": 140,
+    "certificate_count": 17,
+    "guard_sizes": [
+      10,
+      5,
+      10,
+      5,
+      6,
+      4,
+      6,
+      9,
+      7,
+      5,
+      6,
+      11,
+      5,
+      6,
+      4,
+      4,
+      8
+    ],
+    "guarded_parity_cuts": 17,
+    "local_inconsistent_cuts": 104
+  },
+  "contraction_lower_bounds": 255,
+  "core": "E11 quotient core",
+  "elapsed_sec": 360.463,
+  "field": "F2",
+  "initial_rows": 257299,
+  "initial_rows_by_L": {
+    "15": 138902,
+    "16": 83046,
+    "17": 34664,
+    "18": 687
+  },
+  "local_trace_cut_size_hist": {},
+  "local_trace_cuts": 0,
+  "meaning": "Adaptive exact Wang-row separation starting from high-L rows plus optional sound trace-family cuts. Solver statuses are search evidence unless converted to proof.",
+  "parameters": {
+    "cert_cut_path": "data/trace_dependency_cuts/trace_certificate_family_cuts_augmented.json",
+    "cert_cuts": true,
+    "hint_source": "data/distinct_line_cover/best_L15_hint_rounds.json",
+    "max_certs": null,
+    "max_rounds": 4,
+    "max_size5_cuts": null,
+    "seed": 5370,
+    "solver_time": 240.0,
+    "threshold_L": 15,
+    "trace_cuts": "none",
+    "workers": 8
+  },
+  "rank_s": 19,
+  "rounds": [
+    {
+      "A_cols": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        20,
+        24,
+        31,
+        32,
+        36,
+        64,
+        73,
+        109,
+        127,
+        128,
+        141,
+        160,
+        182,
+        219
+      ],
+      "affine_dim": 891,
+      "complete_wang_max_excess": 1,
+      "complete_wang_violations": 9,
+      "linear_pass": true,
+      "new_rows_added": 9,
+      "quotient_rank_violations_size2": 0,
+      "round": 0,
+      "saturated_contractions": 10,
+      "solve_sec": 63.973,
+      "status": "OPTIMAL",
+      "total_rows_included_after_round": 257308,
+      "trace_local_dependency": {
+        "exact_local_inconsistent_examples": [],
+        "exact_local_inconsistent_terms": 0,
+        "minimal_cut_examples": [],
+        "minimal_cut_violations": 0,
+        "saturated_rank9_count": 10
+      },
+      "transversal_failures": 0,
+      "violations_by_L": {
+        "12": 9
+      },
+      "violations_by_dim8": {
+        "5": 6,
+        "6": 3
+      },
+      "violations_head": [
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 5,
+          "excess": 1,
+          "key8": 4417508755461,
+          "occupancy": 8,
+          "point_count": 31
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 5,
+          "excess": 1,
+          "key8": 4436873709717,
+          "occupancy": 8,
+          "point_count": 31
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 5,
+          "excess": 1,
+          "key8": 4456163313813,
+          "occupancy": 8,
+          "point_count": 31
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 5,
+          "excess": 1,
+          "key8": 4456163387397,
+          "occupancy": 8,
+          "point_count": 31
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 5,
+          "excess": 1,
+          "key8": 6635867678725,
+          "occupancy": 8,
+          "point_count": 31
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 5,
+          "excess": 1,
+          "key8": 7748268402853,
+          "occupancy": 8,
+          "point_count": 31
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 2263933239429158,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 2823584649578518,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 3389833137899526,
+          "occupancy": 8,
+          "point_count": 63
+        }
+      ],
+      "zero_domain_terms": 0
+    },
+    {
+      "round": 1,
+      "solve_sec": 240.932,
+      "status": "UNKNOWN"
+    }
+  ],
+  "schema": "cert_trace_separator_v1"
+}

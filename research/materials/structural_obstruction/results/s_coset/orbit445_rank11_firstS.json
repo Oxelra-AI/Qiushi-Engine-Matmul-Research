@@ -1,0 +1,531 @@
+{
+  "annihilator_basis": [
+    4,
+    16,
+    32,
+    128
+  ],
+  "cover_cache_profile_count": 1,
+  "distinct_S_tested": 1,
+  "distinct_S_total_in_pool": 542,
+  "elapsed_sec": 1.8770325183868408,
+  "field": "F2",
+  "m_profile_distribution_count": 1,
+  "m_profile_distribution_head": [
+    {
+      "count": 1,
+      "m_tuple": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        6,
+        3,
+        3,
+        3,
+        6,
+        3,
+        3,
+        3,
+        6,
+        3
+      ]
+    }
+  ],
+  "meaning": "For each tested S, ALL_COVERS_UNSAT proves the coset R+V tensor S contains no F2 tensor of rank at most rank_residual_budget. This is an exact S-level exclusion, but only for S spaces sampled by the input quotient pool.",
+  "phi_vectors": [
+    1,
+    2,
+    8,
+    64
+  ],
+  "pool": "data/quotient_workspaces/q_1_2_8_64/data/schemes_modp/q_1_2_8_64/mod2-rank11a.npy",
+  "pool_shape": [
+    542,
+    33
+  ],
+  "prefix": [
+    1,
+    2,
+    8,
+    64
+  ],
+  "purpose": "exact S-only lift test for distinct matrix subspaces S obtained from quotient CPD pool",
+  "q_terms": 11,
+  "rank_residual_budget": 8,
+  "records": [
+    {
+      "S_dim": 11,
+      "S_hash": "df94a7d48e48c39ec42617319880e0c019d42645ba6aec18b7b521a8833b777b",
+      "S_index": 0,
+      "cover_records": [
+        {
+          "cnf_clauses": 1960,
+          "cnf_path": "data/s_coset/tmp_firstS/S0000_cover000.xor.cnf",
+          "cover": [
+            2,
+            2,
+            3,
+            4,
+            5,
+            8,
+            9,
+            12
+          ],
+          "cover_index": 0,
+          "solve": {
+            "command": "cryptominisat5 --verb 0 -t 4 --maxtime 20 data/s_coset/tmp_firstS/S0000_cover000.xor.cnf",
+            "elapsed_sec": 0.012885808944702148,
+            "returncode": 20,
+            "status": "UNSAT",
+            "stderr_tail": "",
+            "stdout_tail": "s UNSATISFIABLE\n"
+          },
+          "vars": 836,
+          "xor_clauses": 324
+        },
+        {
+          "cnf_clauses": 1960,
+          "cnf_path": null,
+          "cover": [
+            2,
+            2,
+            3,
+            4,
+            5,
+            8,
+            9,
+            13
+          ],
+          "cover_index": 1,
+          "solve": {
+            "command": "cryptominisat5 --verb 0 -t 4 --maxtime 20 data/s_coset/tmp_firstS/S0000_cover001.xor.cnf",
+            "elapsed_sec": 0.014064311981201172,
+            "returncode": 20,
+            "status": "UNSAT",
+            "stderr_tail": "",
+            "stdout_tail": "s UNSATISFIABLE\n"
+          },
+          "vars": 836,
+          "xor_clauses": 324
+        },
+        {
+          "cnf_clauses": 1960,
+          "cnf_path": null,
+          "cover": [
+            2,
+            2,
+            3,
+            4,
+            5,
+            8,
+            12,
+            13
+          ],
+          "cover_index": 2,
+          "solve": {
+            "command": "cryptominisat5 --verb 0 -t 4 --maxtime 20 data/s_coset/tmp_firstS/S0000_cover002.xor.cnf",
+            "elapsed_sec": 0.014106512069702148,
+            "returncode": 20,
+            "status": "UNSAT",
+            "stderr_tail": "",
+            "stdout_tail": "s UNSATISFIABLE\n"
+          },
+          "vars": 836,
+          "xor_clauses": 324
+        },
+        {
+          "cnf_clauses": 1960,
+          "cnf_path": null,
+          "cover": [
+            2,
+            2,
+            3,
+            4,
+            5,
+            9,
+            12,
+            13
+          ],
+          "cover_index": 3,
+          "solve": {
+            "command": "cryptominisat5 --verb 0 -t 4 --maxtime 20 data/s_coset/tmp_firstS/S0000_cover003.xor.cnf",
+            "elapsed_sec": 0.013712406158447266,
+            "returncode": 20,
+            "status": "UNSAT",
+            "stderr_tail": "",
+            "stdout_tail": "s UNSATISFIABLE\n"
+          },
+          "vars": 836,
+          "xor_clauses": 324
+        },
+        {
+          "cnf_clauses": 1960,
+          "cnf_path": null,
+          "cover": [
+            2,
+            2,
+            3,
+            4,
+            8,
+            9,
+            12,
+            13
+          ],
+          "cover_index": 4,
+          "solve": {
+            "command": "cryptominisat5 --verb 0 -t 4 --maxtime 20 data/s_coset/tmp_firstS/S0000_cover004.xor.cnf",
+            "elapsed_sec": 0.012148141860961914,
+            "returncode": 20,
+            "status": "UNSAT",
+            "stderr_tail": "",
+            "stdout_tail": "s UNSATISFIABLE\n"
+          },
+          "vars": 836,
+          "xor_clauses": 324
+        },
+        {
+          "cnf_clauses": 1960,
+          "cnf_path": null,
+          "cover": [
+            2,
+            2,
+            3,
+            5,
+            8,
+            9,
+            12,
+            13
+          ],
+          "cover_index": 5,
+          "solve": {
+            "command": "cryptominisat5 --verb 0 -t 4 --maxtime 20 data/s_coset/tmp_firstS/S0000_cover005.xor.cnf",
+            "elapsed_sec": 0.014153718948364258,
+            "returncode": 20,
+            "status": "UNSAT",
+            "stderr_tail": "",
+            "stdout_tail": "s UNSATISFIABLE\n"
+          },
+          "vars": 836,
+          "xor_clauses": 324
+        },
+        {
+          "cnf_clauses": 1960,
+          "cnf_path": null,
+          "cover": [
+            2,
+            3,
+            3,
+            4,
+            5,
+            8,
+            9,
+            12
+          ],
+          "cover_index": 6,
+          "solve": {
+            "command": "cryptominisat5 --verb 0 -t 4 --maxtime 20 data/s_coset/tmp_firstS/S0000_cover006.xor.cnf",
+            "elapsed_sec": 0.013175487518310547,
+            "returncode": 20,
+            "status": "UNSAT",
+            "stderr_tail": "",
+            "stdout_tail": "s UNSATISFIABLE\n"
+          },
+          "vars": 836,
+          "xor_clauses": 324
+        },
+        {
+          "cnf_clauses": 1960,
+          "cnf_path": null,
+          "cover": [
+            2,
+            3,
+            3,
+            4,
+            5,
+            8,
+            9,
+            13
+          ],
+          "cover_index": 7,
+          "solve": {
+            "command": "cryptominisat5 --verb 0 -t 4 --maxtime 20 data/s_coset/tmp_firstS/S0000_cover007.xor.cnf",
+            "elapsed_sec": 0.013735294342041016,
+            "returncode": 20,
+            "status": "UNSAT",
+            "stderr_tail": "",
+            "stdout_tail": "s UNSATISFIABLE\n"
+          },
+          "vars": 836,
+          "xor_clauses": 324
+        },
+        {
+          "cnf_clauses": 1960,
+          "cnf_path": null,
+          "cover": [
+            2,
+            3,
+            3,
+            4,
+            5,
+            8,
+            12,
+            13
+          ],
+          "cover_index": 8,
+          "solve": {
+            "command": "cryptominisat5 --verb 0 -t 4 --maxtime 20 data/s_coset/tmp_firstS/S0000_cover008.xor.cnf",
+            "elapsed_sec": 0.013296365737915039,
+            "returncode": 20,
+            "status": "UNSAT",
+            "stderr_tail": "",
+            "stdout_tail": "s UNSATISFIABLE\n"
+          },
+          "vars": 836,
+          "xor_clauses": 324
+        },
+        {
+          "cnf_clauses": 1960,
+          "cnf_path": null,
+          "cover": [
+            2,
+            3,
+            3,
+            4,
+            5,
+            9,
+            12,
+            13
+          ],
+          "cover_index": 9,
+          "solve": {
+            "command": "cryptominisat5 --verb 0 -t 4 --maxtime 20 data/s_coset/tmp_firstS/S0000_cover009.xor.cnf",
+            "elapsed_sec": 0.014065265655517578,
+            "returncode": 20,
+            "status": "UNSAT",
+            "stderr_tail": "",
+            "stdout_tail": "s UNSATISFIABLE\n"
+          },
+          "vars": 836,
+          "xor_clauses": 324
+        },
+        {
+          "cnf_clauses": 1960,
+          "cnf_path": null,
+          "cover": [
+            2,
+            3,
+            3,
+            4,
+            8,
+            9,
+            12,
+            13
+          ],
+          "cover_index": 10,
+          "solve": {
+            "command": "cryptominisat5 --verb 0 -t 4 --maxtime 20 data/s_coset/tmp_firstS/S0000_cover010.xor.cnf",
+            "elapsed_sec": 0.01387786865234375,
+            "returncode": 20,
+            "status": "UNSAT",
+            "stderr_tail": "",
+            "stdout_tail": "s UNSATISFIABLE\n"
+          },
+          "vars": 836,
+          "xor_clauses": 324
+        },
+        {
+          "cnf_clauses": 1960,
+          "cnf_path": null,
+          "cover": [
+            2,
+            3,
+            3,
+            5,
+            8,
+            9,
+            12,
+            13
+          ],
+          "cover_index": 11,
+          "solve": {
+            "command": "cryptominisat5 --verb 0 -t 4 --maxtime 20 data/s_coset/tmp_firstS/S0000_cover011.xor.cnf",
+            "elapsed_sec": 0.018520355224609375,
+            "returncode": 20,
+            "status": "UNSAT",
+            "stderr_tail": "",
+            "stdout_tail": "s UNSATISFIABLE\n"
+          },
+          "vars": 836,
+          "xor_clauses": 324
+        }
+      ],
+      "cover_status_counts": {
+        "UNSAT": 12
+      },
+      "covers_tested": 12,
+      "eight_s_bound": 64,
+      "m_by_phi": {
+        "1": 3,
+        "10": 6,
+        "11": 3,
+        "12": 3,
+        "13": 3,
+        "14": 6,
+        "15": 3,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 6,
+        "7": 3,
+        "8": 3,
+        "9": 3
+      },
+      "quotient_slices_in_S": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "rank_res": 8,
+      "scheme_indices": [
+        150
+      ],
+      "scheme_multiplicity": 1,
+      "status": "ALL_COVERS_UNSAT",
+      "sum_m_phi": 54,
+      "valid_cover_count": 12,
+      "valid_covers_head": [
+        [
+          2,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          12
+        ],
+        [
+          2,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          13
+        ],
+        [
+          2,
+          2,
+          3,
+          4,
+          5,
+          8,
+          12,
+          13
+        ],
+        [
+          2,
+          2,
+          3,
+          4,
+          5,
+          9,
+          12,
+          13
+        ],
+        [
+          2,
+          2,
+          3,
+          4,
+          8,
+          9,
+          12,
+          13
+        ],
+        [
+          2,
+          2,
+          3,
+          5,
+          8,
+          9,
+          12,
+          13
+        ],
+        [
+          2,
+          3,
+          3,
+          4,
+          5,
+          8,
+          9,
+          12
+        ],
+        [
+          2,
+          3,
+          3,
+          4,
+          5,
+          8,
+          9,
+          13
+        ],
+        [
+          2,
+          3,
+          3,
+          4,
+          5,
+          8,
+          12,
+          13
+        ],
+        [
+          2,
+          3,
+          3,
+          4,
+          5,
+          9,
+          12,
+          13
+        ],
+        [
+          2,
+          3,
+          3,
+          4,
+          8,
+          9,
+          12,
+          13
+        ],
+        [
+          2,
+          3,
+          3,
+          5,
+          8,
+          9,
+          12,
+          13
+        ]
+      ]
+    }
+  ],
+  "sat_found": false,
+  "status_counts": {
+    "ALL_COVERS_UNSAT": 1
+  },
+  "valid_cover_count_distribution": {
+    "12": 1
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "statement": "Any rank-r CPD of the E11 core in the A-complement lifts over F2 to a rank-(r+3) CPD of T333 by embedding A-factors with a00=0 and adding the three elementary products for the removed A00 slice.",
+  "positive_control": {
+    "core": "E11",
+    "pool": "data/e11_flip_workspace/data/schemes_modp/e11core/mod2-rank21a.npy",
+    "pool_row": 0,
+    "core_rank": 21,
+    "core_cpd_verified": true,
+    "core_diff_count": 0,
+    "full_rank_after_lift": 24,
+    "full_t333_verified": true,
+    "full_diff_count": 0,
+    "full_npz": "data/lift_verify/e11_rank21_poolrow0_lift_rank24_full_t333.npz",
+    "added_removed_slice_terms": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        2
+      ],
+      [
+        1,
+        4,
+        4
+      ]
+    ]
+  },
+  "all_core_coordinate_checks": {
+    "E11": {
+      "mask": 1,
+      "pivot": 0,
+      "complement": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "peer_core_path": "data/restricted_cores/mask_001_E11_core.npy",
+      "rebuilt_equals_peer": true,
+      "coordinate_diff_count": 0,
+      "full_reconstruction_identity_verified": true,
+      "removed_slice_terms": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          4,
+          4
+        ]
+      ],
+      "removed_slice_rank_terms": 3,
+      "removed_slice_term_verification": true,
+      "removed_slice_diff_count": 0,
+      "core_shape": [
+        8,
+        9,
+        9
+      ],
+      "core_nnz": 24
+    },
+    "E12_E21": {
+      "mask": 10,
+      "pivot": 3,
+      "complement": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "peer_core_path": "data/restricted_cores/mask_010_E12_E21_core.npy",
+      "rebuilt_equals_peer": true,
+      "coordinate_diff_count": 0,
+      "full_reconstruction_identity_verified": true,
+      "removed_slice_terms": [
+        [
+          10,
+          1,
+          8
+        ],
+        [
+          10,
+          2,
+          16
+        ],
+        [
+          10,
+          4,
+          32
+        ]
+      ],
+      "removed_slice_rank_terms": 3,
+      "removed_slice_term_verification": true,
+      "removed_slice_diff_count": 0,
+      "core_shape": [
+        8,
+        9,
+        9
+      ],
+      "core_nnz": 27
+    },
+    "E13_E22_E31": {
+      "mask": 84,
+      "pivot": 6,
+      "complement": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8
+      ],
+      "peer_core_path": "data/restricted_cores/mask_084_E13_E22_E31_core.npy",
+      "rebuilt_equals_peer": true,
+      "coordinate_diff_count": 0,
+      "full_reconstruction_identity_verified": true,
+      "removed_slice_terms": [
+        [
+          84,
+          1,
+          64
+        ],
+        [
+          84,
+          2,
+          128
+        ],
+        [
+          84,
+          4,
+          256
+        ]
+      ],
+      "removed_slice_rank_terms": 3,
+      "removed_slice_term_verification": true,
+      "removed_slice_diff_count": 0,
+      "core_shape": [
+        8,
+        9,
+        9
+      ],
+      "core_nnz": 30
+    }
+  }
+}

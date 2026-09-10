@@ -1,0 +1,390 @@
+{
+  "elapsed_sec": 2.1369807720184326,
+  "line_caps_n19": {
+    "rank1": {
+      "all_cap_le_1": false,
+      "cap_hist": {
+        "1": 249,
+        "2": 6
+      },
+      "lb_hist": {
+        "17": 6,
+        "18": 249
+      },
+      "lift_rank_hist": {
+        "1": 33,
+        "2": 150,
+        "3": 72
+      },
+      "line_count": 255,
+      "missing_lut": 0,
+      "pivot": 1,
+      "repeatable": [
+        {
+          "cap": 2,
+          "lb": 17,
+          "lift": 2,
+          "lift_rank": 1,
+          "q": 1
+        },
+        {
+          "cap": 2,
+          "lb": 17,
+          "lift": 4,
+          "lift_rank": 1,
+          "q": 2
+        },
+        {
+          "cap": 2,
+          "lb": 17,
+          "lift": 6,
+          "lift_rank": 1,
+          "q": 3
+        },
+        {
+          "cap": 2,
+          "lb": 17,
+          "lift": 8,
+          "lift_rank": 1,
+          "q": 4
+        },
+        {
+          "cap": 2,
+          "lb": 17,
+          "lift": 64,
+          "lift_rank": 1,
+          "q": 32
+        },
+        {
+          "cap": 2,
+          "lb": 17,
+          "lift": 72,
+          "lift_rank": 1,
+          "q": 36
+        }
+      ],
+      "repeatable_count": 6,
+      "target": 19
+    },
+    "rank2": {
+      "all_cap_le_1": true,
+      "cap_hist": {
+        "1": 255
+      },
+      "lb_hist": {
+        "18": 255
+      },
+      "lift_rank_hist": {
+        "1": 33,
+        "2": 150,
+        "3": 72
+      },
+      "line_count": 255,
+      "missing_lut": 0,
+      "pivot": 17,
+      "repeatable": [],
+      "repeatable_count": 0,
+      "target": 19
+    },
+    "rank3": {
+      "all_cap_le_1": true,
+      "cap_hist": {
+        "1": 255
+      },
+      "lb_hist": {
+        "18": 255
+      },
+      "lift_rank_hist": {
+        "1": 33,
+        "2": 150,
+        "3": 72
+      },
+      "line_count": 255,
+      "missing_lut": 0,
+      "pivot": 273,
+      "repeatable": [],
+      "repeatable_count": 0,
+      "target": 19
+    }
+  },
+  "quotient_tensor_projection": {
+    "rank1": {
+      "basis_images": [
+        {
+          "original_bit": 0,
+          "q_bits": [],
+          "q_mask": 0
+        },
+        {
+          "original_bit": 1,
+          "q_bits": [
+            0
+          ],
+          "q_mask": 1
+        },
+        {
+          "original_bit": 2,
+          "q_bits": [
+            1
+          ],
+          "q_mask": 2
+        },
+        {
+          "original_bit": 3,
+          "q_bits": [
+            2
+          ],
+          "q_mask": 4
+        },
+        {
+          "original_bit": 4,
+          "q_bits": [
+            3
+          ],
+          "q_mask": 8
+        },
+        {
+          "original_bit": 5,
+          "q_bits": [
+            4
+          ],
+          "q_mask": 16
+        },
+        {
+          "original_bit": 6,
+          "q_bits": [
+            5
+          ],
+          "q_mask": 32
+        },
+        {
+          "original_bit": 7,
+          "q_bits": [
+            6
+          ],
+          "q_mask": 64
+        },
+        {
+          "original_bit": 8,
+          "q_bits": [
+            7
+          ],
+          "q_mask": 128
+        }
+      ],
+      "correct_slice_ranks": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "correct_vs_wrong_diff_entries": 0,
+      "has_multibit_basis_image": false,
+      "kernel_check": true,
+      "pivot": 1,
+      "pivot_matrix_rank": 1,
+      "wrong_lowbit_slice_ranks": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    "rank2": {
+      "basis_images": [
+        {
+          "original_bit": 0,
+          "q_bits": [
+            0
+          ],
+          "q_mask": 1
+        },
+        {
+          "original_bit": 1,
+          "q_bits": [
+            1
+          ],
+          "q_mask": 2
+        },
+        {
+          "original_bit": 2,
+          "q_bits": [
+            2
+          ],
+          "q_mask": 4
+        },
+        {
+          "original_bit": 3,
+          "q_bits": [
+            3
+          ],
+          "q_mask": 8
+        },
+        {
+          "original_bit": 4,
+          "q_bits": [
+            0
+          ],
+          "q_mask": 1
+        },
+        {
+          "original_bit": 5,
+          "q_bits": [
+            4
+          ],
+          "q_mask": 16
+        },
+        {
+          "original_bit": 6,
+          "q_bits": [
+            5
+          ],
+          "q_mask": 32
+        },
+        {
+          "original_bit": 7,
+          "q_bits": [
+            6
+          ],
+          "q_mask": 64
+        },
+        {
+          "original_bit": 8,
+          "q_bits": [
+            7
+          ],
+          "q_mask": 128
+        }
+      ],
+      "correct_slice_ranks": [
+        6,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "correct_vs_wrong_diff_entries": 0,
+      "has_multibit_basis_image": false,
+      "kernel_check": true,
+      "pivot": 17,
+      "pivot_matrix_rank": 2,
+      "wrong_lowbit_slice_ranks": [
+        6,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    "rank3": {
+      "basis_images": [
+        {
+          "original_bit": 0,
+          "q_bits": [
+            0
+          ],
+          "q_mask": 1
+        },
+        {
+          "original_bit": 1,
+          "q_bits": [
+            1
+          ],
+          "q_mask": 2
+        },
+        {
+          "original_bit": 2,
+          "q_bits": [
+            2
+          ],
+          "q_mask": 4
+        },
+        {
+          "original_bit": 3,
+          "q_bits": [
+            3
+          ],
+          "q_mask": 8
+        },
+        {
+          "original_bit": 4,
+          "q_bits": [
+            4
+          ],
+          "q_mask": 16
+        },
+        {
+          "original_bit": 5,
+          "q_bits": [
+            5
+          ],
+          "q_mask": 32
+        },
+        {
+          "original_bit": 6,
+          "q_bits": [
+            6
+          ],
+          "q_mask": 64
+        },
+        {
+          "original_bit": 7,
+          "q_bits": [
+            7
+          ],
+          "q_mask": 128
+        },
+        {
+          "original_bit": 8,
+          "q_bits": [
+            0,
+            4
+          ],
+          "q_mask": 17
+        }
+      ],
+      "correct_slice_ranks": [
+        6,
+        3,
+        3,
+        3,
+        6,
+        3,
+        3,
+        3
+      ],
+      "correct_vs_wrong_diff_entries": 3,
+      "has_multibit_basis_image": true,
+      "kernel_check": true,
+      "pivot": 273,
+      "pivot_matrix_rank": 3,
+      "wrong_lowbit_slice_ranks": [
+        6,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    }
+  },
+  "schema": "s0908_independent_three_orbit_check_v1",
+  "source_lut": "data/wang_f2_lb20/wang_subspace_lut.pkl",
+  "source_lut_sha256": "4704acba23a97d40aa65d5a65222dcb679461fdccf3e41dbeed2a634894a3b33"
+}

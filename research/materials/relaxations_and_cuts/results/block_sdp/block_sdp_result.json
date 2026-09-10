@@ -1,0 +1,80 @@
+{
+  "block_decomposition": {
+    "largest_block": 7,
+    "multiplicity_histogram": {
+      "1": 23,
+      "2": 25,
+      "3": 24,
+      "5": 16,
+      "6": 4,
+      "7": 1
+    },
+    "n_eigenspaces": 93,
+    "n_matrix_psd": 70,
+    "n_scalar_psd": 23,
+    "total_psd_params": 594
+  },
+  "block_witness_validation": [
+    {
+      "block": -0.16974614730194798,
+      "full": -0.1697461473019484,
+      "label": "feasibility_lex",
+      "match": true
+    },
+    {
+      "block": -0.14839803386703504,
+      "full": -0.148398033867035,
+      "label": "max_omitted",
+      "match": true
+    },
+    {
+      "block": -0.07616601882767278,
+      "full": -0.07616601882767313,
+      "label": "min_omitted",
+      "match": true
+    },
+    {
+      "block": -0.1409071033770267,
+      "full": -0.14090710337702633,
+      "label": "force_zero_omitted",
+      "match": true
+    }
+  ],
+  "elapsed_sec": 98.517,
+  "feasible_point": {
+    "n_mass": [
+      0.6720273380573558,
+      0.7117308273796202,
+      2.9582517764719465,
+      5.02901091044874,
+      2.7541239425685182,
+      6.874855205071093
+    ],
+    "nonzero_pairs": 92,
+    "total_mass": 18.999999999997275,
+    "x_by_orbit": [
+      0.11200455634289264,
+      0.07908120304218003,
+      0.08217366045755407,
+      0.0698473737562325,
+      0.07650344284912551,
+      0.07161307505282388
+    ]
+  },
+  "full_verification": {
+    "eq_resid": 3.557348859928311e-12,
+    "full_256_min_eig": 1.3187506642253766e-12,
+    "full_256_neg_1e8": 0,
+    "ub_viol": 3.6234156781188655e-11
+  },
+  "linear_model": {
+    "n_eq": 7,
+    "n_ub_rlt": 183302,
+    "n_ub_total": 189215,
+    "n_ub_tri": 5913
+  },
+  "meaning": "Block-decomposed SDP for E11 moment matrix. Feasible = continuous moment point exists (not a support). Infeasible = PSD+RLT globally excluded.",
+  "schema": "block_sdp_v2",
+  "sdp_solve_sec": 7.365,
+  "sdp_status": "optimal_inaccurate"
+}

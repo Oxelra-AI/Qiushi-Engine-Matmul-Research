@@ -1,0 +1,3377 @@
+{
+  "cross_pairs": [
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      6
+    ]
+  ],
+  "elapsed_sec": 14.846,
+  "field": "F2",
+  "interpretation": "UNSAT/capacity rejection is a strict necessary support-level obstruction under nonzero term semantics. Passing the filter does not imply B/C completion. The same-W deletion family is local, not a global cover of rank-19 supports.",
+  "latin_triples": [
+    [
+      0,
+      2,
+      7
+    ],
+    [
+      0,
+      4,
+      5
+    ],
+    [
+      1,
+      2,
+      6
+    ],
+    [
+      1,
+      3,
+      5
+    ]
+  ],
+  "logic": {
+    "B_s": "slice s is B/v-pure: active v factors lie in its row group",
+    "C_s": "slice s is C/w-pure: active w factors lie in its column group",
+    "cap3": "B_s and C_s forced",
+    "cap4": "B_s or C_s forced",
+    "cap5_extension": "cap3 sharing in both non-own row groups forces C-pure for a cap5 slice; column analogue forces B-pure; excess lower bound exceeding c-3 rejects",
+    "sharing": "shared nonzero term between different row groups forbids both B-pure; different column groups forbids both C-pure"
+  },
+  "purpose": "support-level purity-side 2-SAT filter for E11 core, with cap-5 cap3-sharing extension",
+  "random_low_weight_calibration": {
+    "base_reject_count": 839,
+    "base_reject_rate": 0.600143061516452,
+    "extended_reject_count": 931,
+    "extended_reject_rate": 0.6659513590844063,
+    "pass_examples": [
+      {
+        "base_clauses": 38,
+        "caps": [
+          4,
+          6,
+          4,
+          6,
+          5,
+          5,
+          4,
+          5
+        ],
+        "extended_units": [],
+        "total_weight": 39,
+        "u": [
+          92,
+          32,
+          80,
+          147,
+          134,
+          1,
+          9,
+          56,
+          40,
+          106,
+          130,
+          160,
+          7,
+          4,
+          16,
+          64,
+          128,
+          8,
+          2
+        ]
+      },
+      {
+        "base_clauses": 39,
+        "caps": [
+          5,
+          8,
+          4,
+          6,
+          4,
+          4,
+          6,
+          3
+        ],
+        "extended_units": [],
+        "total_weight": 40,
+        "u": [
+          81,
+          128,
+          113,
+          7,
+          34,
+          12,
+          6,
+          65,
+          16,
+          66,
+          139,
+          2,
+          200,
+          10,
+          58,
+          4,
+          8,
+          64,
+          32
+        ]
+      },
+      {
+        "base_clauses": 33,
+        "caps": [
+          5,
+          5,
+          3,
+          4,
+          4,
+          4,
+          5,
+          5
+        ],
+        "extended_units": [],
+        "total_weight": 35,
+        "u": [
+          196,
+          136,
+          1,
+          32,
+          36,
+          80,
+          17,
+          18,
+          33,
+          138,
+          195,
+          4,
+          42,
+          65,
+          16,
+          8,
+          2,
+          64,
+          128
+        ]
+      },
+      {
+        "base_clauses": 30,
+        "caps": [
+          4,
+          3,
+          4,
+          7,
+          5,
+          5,
+          4,
+          4
+        ],
+        "extended_units": [],
+        "total_weight": 36,
+        "u": [
+          17,
+          44,
+          1,
+          192,
+          88,
+          10,
+          36,
+          130,
+          49,
+          12,
+          184,
+          5,
+          128,
+          32,
+          72,
+          8,
+          64,
+          16,
+          2
+        ]
+      },
+      {
+        "base_clauses": 33,
+        "caps": [
+          3,
+          4,
+          5,
+          4,
+          5,
+          7,
+          5,
+          5
+        ],
+        "extended_units": [],
+        "total_weight": 38,
+        "u": [
+          34,
+          164,
+          105,
+          68,
+          37,
+          96,
+          20,
+          26,
+          192,
+          10,
+          56,
+          129,
+          32,
+          64,
+          144,
+          128,
+          16,
+          4,
+          2
+        ]
+      }
+    ],
+    "reject_by_weight": {
+      "(31, 'base')": 2,
+      "(31, 'ext')": 2,
+      "(32, 'base')": 26,
+      "(32, 'ext')": 26,
+      "(33, 'base')": 68,
+      "(33, 'ext')": 71,
+      "(34, 'base')": 110,
+      "(34, 'ext')": 121,
+      "(35, 'base')": 120,
+      "(35, 'ext')": 131,
+      "(36, 'base')": 135,
+      "(36, 'ext')": 149,
+      "(37, 'base')": 101,
+      "(37, 'ext')": 118,
+      "(38, 'base')": 108,
+      "(38, 'ext')": 127,
+      "(39, 'base')": 96,
+      "(39, 'ext')": 104,
+      "(40, 'base')": 73,
+      "(40, 'ext')": 82
+    },
+    "samples_requested": 5000,
+    "valid_capacity_supports": 1398,
+    "warning": "Random low-weight samples are not Wang-filtered and are only a calibration of the 2-SAT obstruction, not a complete support-frontier count.",
+    "weight_hist": {
+      "31": 2,
+      "32": 27,
+      "33": 76,
+      "34": 137,
+      "35": 150,
+      "36": 197,
+      "37": 174,
+      "38": 232,
+      "39": 207,
+      "40": 196
+    }
+  },
+  "rank21_pool": {
+    "base_all_pass": true,
+    "base_failure_head": [],
+    "base_hist": {
+      "(True, True, False, 3, 39)": 1,
+      "(True, True, False, 3, 40)": 1,
+      "(True, True, False, 3, 41)": 1,
+      "(True, True, False, 3, 42)": 2,
+      "(True, True, False, 3, 44)": 1,
+      "(True, True, False, 3, 45)": 7,
+      "(True, True, False, 3, 46)": 7,
+      "(True, True, False, 3, 47)": 5,
+      "(True, True, False, 3, 48)": 12,
+      "(True, True, False, 3, 49)": 6,
+      "(True, True, False, 3, 50)": 9,
+      "(True, True, False, 3, 51)": 13,
+      "(True, True, False, 3, 52)": 8,
+      "(True, True, False, 3, 53)": 14,
+      "(True, True, False, 3, 54)": 12,
+      "(True, True, False, 3, 55)": 13,
+      "(True, True, False, 3, 56)": 6,
+      "(True, True, False, 3, 57)": 14,
+      "(True, True, False, 3, 58)": 10,
+      "(True, True, False, 3, 59)": 11,
+      "(True, True, False, 3, 60)": 12,
+      "(True, True, False, 3, 61)": 12,
+      "(True, True, False, 3, 62)": 5,
+      "(True, True, False, 3, 63)": 8,
+      "(True, True, False, 3, 64)": 5,
+      "(True, True, False, 3, 65)": 3,
+      "(True, True, False, 3, 66)": 5,
+      "(True, True, False, 3, 67)": 2,
+      "(True, True, False, 3, 68)": 4,
+      "(True, True, False, 3, 77)": 1,
+      "(True, True, False, 4, 42)": 1,
+      "(True, True, False, 4, 45)": 1,
+      "(True, True, False, 4, 46)": 2,
+      "(True, True, False, 4, 48)": 2,
+      "(True, True, False, 4, 49)": 8,
+      "(True, True, False, 4, 50)": 4,
+      "(True, True, False, 4, 51)": 9,
+      "(True, True, False, 4, 52)": 5,
+      "(True, True, False, 4, 53)": 6,
+      "(True, True, False, 4, 54)": 9,
+      "(True, True, False, 4, 55)": 9,
+      "(True, True, False, 4, 56)": 5,
+      "(True, True, False, 4, 57)": 4,
+      "(True, True, False, 4, 58)": 5,
+      "(True, True, False, 4, 59)": 15,
+      "(True, True, False, 4, 60)": 11,
+      "(True, True, False, 4, 61)": 10,
+      "(True, True, False, 4, 62)": 5,
+      "(True, True, False, 4, 63)": 5,
+      "(True, True, False, 4, 64)": 5,
+      "(True, True, False, 4, 65)": 7,
+      "(True, True, False, 4, 66)": 6,
+      "(True, True, False, 4, 67)": 3,
+      "(True, True, False, 4, 68)": 1,
+      "(True, True, False, 4, 69)": 4,
+      "(True, True, False, 4, 71)": 2,
+      "(True, True, False, 4, 72)": 1,
+      "(True, True, False, 4, 73)": 1,
+      "(True, True, False, 4, 74)": 1,
+      "(True, True, False, 4, 76)": 1,
+      "(True, True, False, 4, 77)": 1,
+      "(True, True, False, 5, 45)": 1,
+      "(True, True, False, 5, 48)": 1,
+      "(True, True, False, 5, 49)": 5,
+      "(True, True, False, 5, 50)": 3,
+      "(True, True, False, 5, 51)": 1,
+      "(True, True, False, 5, 52)": 2,
+      "(True, True, False, 5, 53)": 7,
+      "(True, True, False, 5, 55)": 3,
+      "(True, True, False, 5, 56)": 2,
+      "(True, True, False, 5, 57)": 6,
+      "(True, True, False, 5, 58)": 7,
+      "(True, True, False, 5, 59)": 9,
+      "(True, True, False, 5, 60)": 10,
+      "(True, True, False, 5, 61)": 3,
+      "(True, True, False, 5, 62)": 6,
+      "(True, True, False, 5, 63)": 3,
+      "(True, True, False, 5, 64)": 8,
+      "(True, True, False, 5, 65)": 6,
+      "(True, True, False, 5, 66)": 7,
+      "(True, True, False, 5, 67)": 2,
+      "(True, True, False, 5, 68)": 4,
+      "(True, True, False, 5, 69)": 4,
+      "(True, True, False, 5, 70)": 4,
+      "(True, True, False, 5, 71)": 1,
+      "(True, True, False, 5, 72)": 3,
+      "(True, True, False, 5, 73)": 4,
+      "(True, True, False, 5, 74)": 2,
+      "(True, True, False, 5, 75)": 1,
+      "(True, True, False, 5, 78)": 1,
+      "(True, True, False, 5, 81)": 1,
+      "(True, True, False, 6, 56)": 1,
+      "(True, True, False, 6, 57)": 1,
+      "(True, True, False, 6, 58)": 1,
+      "(True, True, False, 6, 59)": 1,
+      "(True, True, False, 6, 60)": 2,
+      "(True, True, False, 6, 61)": 1,
+      "(True, True, False, 6, 62)": 3,
+      "(True, True, False, 6, 63)": 1,
+      "(True, True, False, 6, 64)": 2,
+      "(True, True, False, 6, 65)": 3,
+      "(True, True, False, 6, 66)": 2,
+      "(True, True, False, 6, 67)": 2,
+      "(True, True, False, 6, 68)": 2,
+      "(True, True, False, 6, 69)": 4,
+      "(True, True, False, 6, 70)": 2,
+      "(True, True, False, 6, 71)": 1,
+      "(True, True, False, 6, 72)": 1,
+      "(True, True, False, 6, 73)": 1,
+      "(True, True, False, 6, 76)": 2,
+      "(True, True, False, 6, 79)": 1,
+      "(True, True, False, 6, 85)": 1,
+      "(True, True, False, 6, 90)": 1,
+      "(True, True, False, 7, 67)": 2,
+      "(True, True, False, 7, 68)": 1,
+      "(True, True, False, 7, 70)": 1,
+      "(True, True, False, 7, 76)": 2,
+      "(True, True, False, 8, 72)": 1
+    },
+    "extended_all_pass": true,
+    "extended_failure_head": [],
+    "extended_hist": {
+      "(True, True, False, 3, 39, 0)": 1,
+      "(True, True, False, 3, 40, 0)": 1,
+      "(True, True, False, 3, 41, 0)": 1,
+      "(True, True, False, 3, 42, 0)": 2,
+      "(True, True, False, 3, 44, 0)": 1,
+      "(True, True, False, 3, 45, 0)": 7,
+      "(True, True, False, 3, 46, 0)": 7,
+      "(True, True, False, 3, 47, 0)": 5,
+      "(True, True, False, 3, 48, 0)": 12,
+      "(True, True, False, 3, 49, 0)": 6,
+      "(True, True, False, 3, 50, 0)": 9,
+      "(True, True, False, 3, 51, 0)": 13,
+      "(True, True, False, 3, 52, 0)": 8,
+      "(True, True, False, 3, 53, 0)": 14,
+      "(True, True, False, 3, 54, 0)": 12,
+      "(True, True, False, 3, 55, 0)": 13,
+      "(True, True, False, 3, 56, 0)": 6,
+      "(True, True, False, 3, 57, 0)": 14,
+      "(True, True, False, 3, 58, 0)": 10,
+      "(True, True, False, 3, 59, 0)": 11,
+      "(True, True, False, 3, 60, 0)": 12,
+      "(True, True, False, 3, 61, 0)": 12,
+      "(True, True, False, 3, 62, 0)": 5,
+      "(True, True, False, 3, 63, 0)": 8,
+      "(True, True, False, 3, 64, 0)": 5,
+      "(True, True, False, 3, 65, 0)": 3,
+      "(True, True, False, 3, 66, 0)": 5,
+      "(True, True, False, 3, 67, 0)": 2,
+      "(True, True, False, 3, 68, 0)": 4,
+      "(True, True, False, 3, 77, 0)": 1,
+      "(True, True, False, 4, 42, 0)": 1,
+      "(True, True, False, 4, 45, 0)": 1,
+      "(True, True, False, 4, 46, 0)": 2,
+      "(True, True, False, 4, 48, 0)": 2,
+      "(True, True, False, 4, 49, 0)": 8,
+      "(True, True, False, 4, 50, 0)": 4,
+      "(True, True, False, 4, 51, 0)": 9,
+      "(True, True, False, 4, 52, 0)": 5,
+      "(True, True, False, 4, 53, 0)": 6,
+      "(True, True, False, 4, 54, 0)": 9,
+      "(True, True, False, 4, 55, 0)": 9,
+      "(True, True, False, 4, 56, 0)": 5,
+      "(True, True, False, 4, 57, 0)": 4,
+      "(True, True, False, 4, 58, 0)": 5,
+      "(True, True, False, 4, 59, 0)": 15,
+      "(True, True, False, 4, 60, 0)": 11,
+      "(True, True, False, 4, 61, 0)": 10,
+      "(True, True, False, 4, 62, 0)": 5,
+      "(True, True, False, 4, 63, 0)": 5,
+      "(True, True, False, 4, 64, 0)": 5,
+      "(True, True, False, 4, 65, 0)": 7,
+      "(True, True, False, 4, 66, 0)": 6,
+      "(True, True, False, 4, 67, 0)": 3,
+      "(True, True, False, 4, 68, 0)": 1,
+      "(True, True, False, 4, 69, 0)": 4,
+      "(True, True, False, 4, 71, 0)": 2,
+      "(True, True, False, 4, 72, 0)": 1,
+      "(True, True, False, 4, 73, 0)": 1,
+      "(True, True, False, 4, 74, 0)": 1,
+      "(True, True, False, 4, 76, 0)": 1,
+      "(True, True, False, 4, 77, 0)": 1,
+      "(True, True, False, 5, 45, 0)": 1,
+      "(True, True, False, 5, 48, 0)": 1,
+      "(True, True, False, 5, 49, 0)": 5,
+      "(True, True, False, 5, 50, 0)": 3,
+      "(True, True, False, 5, 51, 0)": 1,
+      "(True, True, False, 5, 52, 0)": 2,
+      "(True, True, False, 5, 53, 0)": 7,
+      "(True, True, False, 5, 55, 0)": 3,
+      "(True, True, False, 5, 56, 0)": 2,
+      "(True, True, False, 5, 57, 0)": 6,
+      "(True, True, False, 5, 58, 0)": 7,
+      "(True, True, False, 5, 59, 0)": 9,
+      "(True, True, False, 5, 60, 0)": 10,
+      "(True, True, False, 5, 61, 0)": 3,
+      "(True, True, False, 5, 62, 0)": 6,
+      "(True, True, False, 5, 63, 0)": 3,
+      "(True, True, False, 5, 64, 0)": 8,
+      "(True, True, False, 5, 65, 0)": 6,
+      "(True, True, False, 5, 66, 0)": 7,
+      "(True, True, False, 5, 67, 0)": 2,
+      "(True, True, False, 5, 68, 0)": 4,
+      "(True, True, False, 5, 69, 0)": 4,
+      "(True, True, False, 5, 70, 0)": 4,
+      "(True, True, False, 5, 71, 0)": 1,
+      "(True, True, False, 5, 72, 0)": 3,
+      "(True, True, False, 5, 73, 0)": 4,
+      "(True, True, False, 5, 74, 0)": 2,
+      "(True, True, False, 5, 75, 0)": 1,
+      "(True, True, False, 5, 78, 0)": 1,
+      "(True, True, False, 5, 81, 0)": 1,
+      "(True, True, False, 6, 56, 0)": 1,
+      "(True, True, False, 6, 57, 0)": 1,
+      "(True, True, False, 6, 58, 0)": 1,
+      "(True, True, False, 6, 59, 0)": 1,
+      "(True, True, False, 6, 60, 0)": 2,
+      "(True, True, False, 6, 61, 0)": 1,
+      "(True, True, False, 6, 62, 0)": 3,
+      "(True, True, False, 6, 63, 0)": 1,
+      "(True, True, False, 6, 64, 0)": 2,
+      "(True, True, False, 6, 65, 0)": 3,
+      "(True, True, False, 6, 66, 0)": 2,
+      "(True, True, False, 6, 67, 0)": 2,
+      "(True, True, False, 6, 68, 0)": 2,
+      "(True, True, False, 6, 69, 0)": 4,
+      "(True, True, False, 6, 70, 0)": 2,
+      "(True, True, False, 6, 71, 0)": 1,
+      "(True, True, False, 6, 72, 0)": 1,
+      "(True, True, False, 6, 73, 0)": 1,
+      "(True, True, False, 6, 76, 0)": 2,
+      "(True, True, False, 6, 79, 0)": 1,
+      "(True, True, False, 6, 85, 0)": 1,
+      "(True, True, False, 6, 90, 0)": 1,
+      "(True, True, False, 7, 67, 0)": 2,
+      "(True, True, False, 7, 68, 0)": 1,
+      "(True, True, False, 7, 70, 0)": 1,
+      "(True, True, False, 7, 76, 0)": 2,
+      "(True, True, False, 8, 72, 0)": 1
+    },
+    "rank": 21,
+    "rows": 519
+  },
+  "same_w_deletions": {
+    "all_hist": {
+      "(False, False, True, True, True, True, 2, 34)": 1,
+      "(False, False, True, True, True, True, 2, 36)": 3,
+      "(False, False, True, True, True, True, 2, 37)": 2,
+      "(False, False, True, True, True, True, 2, 38)": 4,
+      "(False, False, True, True, True, True, 2, 39)": 4,
+      "(False, False, True, True, True, True, 2, 40)": 1,
+      "(False, False, True, True, True, True, 2, 41)": 4,
+      "(False, False, True, True, True, True, 2, 42)": 9,
+      "(False, False, True, True, True, True, 2, 43)": 8,
+      "(False, False, True, True, True, True, 2, 44)": 9,
+      "(False, False, True, True, True, True, 2, 45)": 8,
+      "(False, False, True, True, True, True, 2, 46)": 14,
+      "(False, False, True, True, True, True, 2, 47)": 12,
+      "(False, False, True, True, True, True, 2, 48)": 11,
+      "(False, False, True, True, True, True, 2, 49)": 9,
+      "(False, False, True, True, True, True, 2, 50)": 9,
+      "(False, False, True, True, True, True, 2, 51)": 7,
+      "(False, False, True, True, True, True, 2, 52)": 8,
+      "(False, False, True, True, True, True, 2, 53)": 5,
+      "(False, False, True, True, True, True, 2, 54)": 12,
+      "(False, False, True, True, True, True, 2, 55)": 1,
+      "(False, False, True, True, True, True, 2, 56)": 3,
+      "(False, False, True, True, True, True, 2, 57)": 2,
+      "(False, False, True, True, True, True, 2, 58)": 1,
+      "(False, False, True, True, True, True, 2, 59)": 4,
+      "(False, True, False, True, False, True, 3, 38)": 1,
+      "(False, True, False, True, False, True, 3, 39)": 1,
+      "(False, True, False, True, False, True, 3, 40)": 2,
+      "(False, True, False, True, False, True, 3, 41)": 2,
+      "(False, True, False, True, False, True, 3, 42)": 3,
+      "(False, True, False, True, False, True, 3, 43)": 2,
+      "(False, True, False, True, False, True, 3, 44)": 2,
+      "(False, True, False, True, False, True, 3, 45)": 6,
+      "(False, True, False, True, False, True, 3, 46)": 2,
+      "(False, True, False, True, False, True, 3, 48)": 4,
+      "(False, True, False, True, False, True, 3, 50)": 2,
+      "(False, True, False, True, False, True, 3, 51)": 3,
+      "(False, True, False, True, False, True, 3, 53)": 2,
+      "(False, True, False, True, False, True, 3, 54)": 3,
+      "(False, True, False, True, False, True, 3, 55)": 1,
+      "(False, True, False, True, False, True, 3, 56)": 2,
+      "(False, True, False, True, False, True, 3, 57)": 2,
+      "(False, True, False, True, False, True, 3, 62)": 1,
+      "(False, True, True, False, False, True, 3, 45)": 1,
+      "(False, True, True, False, False, True, 3, 47)": 1,
+      "(False, True, True, False, True, False, 3, 39)": 1,
+      "(False, True, True, False, True, False, 3, 40)": 2,
+      "(False, True, True, False, True, False, 3, 41)": 2,
+      "(False, True, True, False, True, False, 3, 42)": 5,
+      "(False, True, True, False, True, False, 3, 43)": 6,
+      "(False, True, True, False, True, False, 3, 44)": 3,
+      "(False, True, True, False, True, False, 3, 45)": 7,
+      "(False, True, True, False, True, False, 3, 46)": 10,
+      "(False, True, True, False, True, False, 3, 47)": 7,
+      "(False, True, True, False, True, False, 3, 48)": 14,
+      "(False, True, True, False, True, False, 3, 49)": 10,
+      "(False, True, True, False, True, False, 3, 50)": 19,
+      "(False, True, True, False, True, False, 3, 51)": 16,
+      "(False, True, True, False, True, False, 3, 52)": 16,
+      "(False, True, True, False, True, False, 3, 53)": 19,
+      "(False, True, True, False, True, False, 3, 54)": 5,
+      "(False, True, True, False, True, False, 3, 55)": 13,
+      "(False, True, True, False, True, False, 3, 56)": 14,
+      "(False, True, True, False, True, False, 3, 57)": 13,
+      "(False, True, True, False, True, False, 3, 58)": 11,
+      "(False, True, True, False, True, False, 3, 59)": 8,
+      "(False, True, True, False, True, False, 3, 60)": 9,
+      "(False, True, True, False, True, False, 3, 61)": 3,
+      "(False, True, True, False, True, False, 3, 62)": 5,
+      "(False, True, True, False, True, False, 3, 63)": 1,
+      "(False, True, True, False, True, False, 3, 64)": 2,
+      "(False, True, True, False, True, False, 3, 65)": 2,
+      "(False, True, True, False, True, False, 3, 70)": 1,
+      "(False, True, True, False, True, False, 4, 40)": 3,
+      "(False, True, True, False, True, False, 4, 41)": 1,
+      "(False, True, True, False, True, False, 4, 42)": 1,
+      "(False, True, True, False, True, False, 4, 43)": 5,
+      "(False, True, True, False, True, False, 4, 44)": 11,
+      "(False, True, True, False, True, False, 4, 45)": 7,
+      "(False, True, True, False, True, False, 4, 46)": 2,
+      "(False, True, True, False, True, False, 4, 47)": 7,
+      "(False, True, True, False, True, False, 4, 48)": 11,
+      "(False, True, True, False, True, False, 4, 49)": 4,
+      "(False, True, True, False, True, False, 4, 50)": 9,
+      "(False, True, True, False, True, False, 4, 51)": 17,
+      "(False, True, True, False, True, False, 4, 52)": 13,
+      "(False, True, True, False, True, False, 4, 53)": 11,
+      "(False, True, True, False, True, False, 4, 54)": 19,
+      "(False, True, True, False, True, False, 4, 55)": 18,
+      "(False, True, True, False, True, False, 4, 56)": 12,
+      "(False, True, True, False, True, False, 4, 57)": 8,
+      "(False, True, True, False, True, False, 4, 58)": 6,
+      "(False, True, True, False, True, False, 4, 59)": 9,
+      "(False, True, True, False, True, False, 4, 60)": 7,
+      "(False, True, True, False, True, False, 4, 61)": 4,
+      "(False, True, True, False, True, False, 4, 62)": 4,
+      "(False, True, True, False, True, False, 4, 63)": 3,
+      "(False, True, True, False, True, False, 4, 64)": 3,
+      "(False, True, True, False, True, False, 4, 65)": 2,
+      "(False, True, True, False, True, False, 4, 66)": 6,
+      "(False, True, True, False, True, False, 4, 67)": 3,
+      "(False, True, True, False, True, False, 4, 68)": 1,
+      "(False, True, True, False, True, False, 4, 69)": 1,
+      "(False, True, True, False, True, False, 4, 71)": 1,
+      "(False, True, True, False, True, False, 4, 72)": 1,
+      "(False, True, True, False, True, False, 4, 73)": 3,
+      "(False, True, True, False, True, False, 4, 74)": 2,
+      "(False, True, True, False, True, False, 5, 46)": 1,
+      "(False, True, True, False, True, False, 5, 48)": 1,
+      "(False, True, True, False, True, False, 5, 50)": 3,
+      "(False, True, True, False, True, False, 5, 52)": 4,
+      "(False, True, True, False, True, False, 5, 53)": 1,
+      "(False, True, True, False, True, False, 5, 54)": 10,
+      "(False, True, True, False, True, False, 5, 55)": 6,
+      "(False, True, True, False, True, False, 5, 56)": 9,
+      "(False, True, True, False, True, False, 5, 57)": 5,
+      "(False, True, True, False, True, False, 5, 58)": 2,
+      "(False, True, True, False, True, False, 5, 59)": 4,
+      "(False, True, True, False, True, False, 5, 60)": 2,
+      "(False, True, True, False, True, False, 5, 61)": 5,
+      "(False, True, True, False, True, False, 5, 62)": 6,
+      "(False, True, True, False, True, False, 5, 63)": 9,
+      "(False, True, True, False, True, False, 5, 64)": 7,
+      "(False, True, True, False, True, False, 5, 65)": 1,
+      "(False, True, True, False, True, False, 5, 66)": 3,
+      "(False, True, True, False, True, False, 5, 67)": 2,
+      "(False, True, True, False, True, False, 5, 68)": 2,
+      "(False, True, True, False, True, False, 5, 69)": 3,
+      "(False, True, True, False, True, False, 5, 70)": 4,
+      "(False, True, True, False, True, False, 5, 71)": 3,
+      "(False, True, True, False, True, False, 5, 73)": 1,
+      "(False, True, True, False, True, False, 5, 74)": 1,
+      "(False, True, True, False, True, False, 5, 79)": 1,
+      "(False, True, True, False, True, False, 5, 85)": 1,
+      "(False, True, True, False, True, False, 6, 55)": 1,
+      "(False, True, True, False, True, False, 6, 60)": 1,
+      "(False, True, True, False, True, False, 6, 61)": 2,
+      "(False, True, True, False, True, False, 6, 64)": 2,
+      "(False, True, True, False, True, False, 6, 66)": 1,
+      "(False, True, True, False, True, False, 7, 68)": 2,
+      "(True, False, True, True, True, True, 2, 39)": 2,
+      "(True, False, True, True, True, True, 2, 41)": 1,
+      "(True, False, True, True, True, True, 2, 42)": 1,
+      "(True, False, True, True, True, True, 2, 43)": 2,
+      "(True, False, True, True, True, True, 2, 44)": 1,
+      "(True, False, True, True, True, True, 2, 45)": 1,
+      "(True, False, True, True, True, True, 2, 46)": 1,
+      "(True, False, True, True, True, True, 2, 47)": 1,
+      "(True, False, True, True, True, True, 2, 48)": 4,
+      "(True, False, True, True, True, True, 2, 49)": 2,
+      "(True, False, True, True, True, True, 2, 50)": 1,
+      "(True, False, True, True, True, True, 2, 53)": 1,
+      "(True, True, False, True, False, True, 3, 36)": 1,
+      "(True, True, False, True, False, True, 3, 41)": 1,
+      "(True, True, False, True, False, True, 3, 50)": 1,
+      "(True, True, False, True, False, True, 3, 57)": 1,
+      "(True, True, True, False, True, False, 3, 40)": 1,
+      "(True, True, True, False, True, False, 3, 43)": 1,
+      "(True, True, True, False, True, False, 3, 45)": 2,
+      "(True, True, True, False, True, False, 3, 47)": 1,
+      "(True, True, True, False, True, False, 3, 48)": 2,
+      "(True, True, True, False, True, False, 3, 49)": 1,
+      "(True, True, True, False, True, False, 3, 50)": 3,
+      "(True, True, True, False, True, False, 3, 52)": 4,
+      "(True, True, True, False, True, False, 3, 53)": 2,
+      "(True, True, True, False, True, False, 3, 56)": 3,
+      "(True, True, True, False, True, False, 3, 57)": 1,
+      "(True, True, True, False, True, False, 3, 59)": 1,
+      "(True, True, True, False, True, False, 3, 61)": 3,
+      "(True, True, True, False, True, False, 3, 62)": 1,
+      "(True, True, True, False, True, False, 4, 42)": 1,
+      "(True, True, True, False, True, False, 4, 43)": 1,
+      "(True, True, True, False, True, False, 4, 44)": 1,
+      "(True, True, True, False, True, False, 4, 46)": 1,
+      "(True, True, True, False, True, False, 4, 49)": 1,
+      "(True, True, True, False, True, False, 4, 51)": 1,
+      "(True, True, True, False, True, False, 4, 52)": 1,
+      "(True, True, True, False, True, False, 4, 53)": 1,
+      "(True, True, True, False, True, False, 4, 54)": 3,
+      "(True, True, True, False, True, False, 4, 60)": 2,
+      "(True, True, True, False, True, False, 5, 47)": 1,
+      "(True, True, True, False, True, False, 5, 48)": 1,
+      "(True, True, True, False, True, False, 5, 53)": 1,
+      "(True, True, True, False, True, False, 5, 54)": 1,
+      "(True, True, True, False, True, False, 5, 55)": 1,
+      "(True, True, True, False, True, False, 5, 59)": 1,
+      "(True, True, True, False, True, False, 5, 60)": 1,
+      "(True, True, True, False, True, False, 5, 62)": 1,
+      "(True, True, True, False, True, False, 5, 63)": 2,
+      "(True, True, True, False, True, False, 5, 64)": 1,
+      "(True, True, True, False, True, False, 5, 66)": 1,
+      "(True, True, True, False, True, False, 5, 68)": 1,
+      "(True, True, True, False, True, False, 6, 56)": 1,
+      "(True, True, True, False, True, False, 6, 65)": 1
+    },
+    "records_head": [
+      {
+        "base_reject": true,
+        "caps": [
+          5,
+          2,
+          7,
+          4,
+          6,
+          6,
+          10,
+          6
+        ],
+        "cross_obs": [],
+        "deleted_terms": [
+          16,
+          18
+        ],
+        "ext_reject": true,
+        "latin_obs": [],
+        "pool_row": 0,
+        "shadow_ok": false
+      },
+      {
+        "base_reject": true,
+        "caps": [
+          4,
+          12,
+          8,
+          2,
+          5,
+          10,
+          6,
+          4
+        ],
+        "cross_obs": [],
+        "deleted_terms": [
+          1,
+          8
+        ],
+        "ext_reject": true,
+        "latin_obs": [],
+        "pool_row": 1,
+        "shadow_ok": false
+      },
+      {
+        "base_reject": false,
+        "caps": [
+          5,
+          12,
+          8,
+          3,
+          5,
+          10,
+          8,
+          5
+        ],
+        "cross_obs": [],
+        "deleted_terms": [
+          5,
+          13
+        ],
+        "ext_reject": false,
+        "latin_obs": [],
+        "pool_row": 1,
+        "shadow_ok": false
+      },
+      {
+        "base_reject": true,
+        "caps": [
+          10,
+          12,
+          2,
+          5,
+          6,
+          5,
+          8,
+          6
+        ],
+        "cross_obs": [],
+        "deleted_terms": [
+          5,
+          10
+        ],
+        "ext_reject": true,
+        "latin_obs": [],
+        "pool_row": 2,
+        "shadow_ok": false
+      },
+      {
+        "base_reject": true,
+        "caps": [
+          11,
+          9,
+          4,
+          6,
+          3,
+          3,
+          12,
+          8
+        ],
+        "cross_obs": [],
+        "deleted_terms": [
+          6,
+          19
+        ],
+        "ext_reject": true,
+        "latin_obs": [],
+        "pool_row": 3,
+        "shadow_ok": false
+      },
+      {
+        "base_reject": true,
+        "caps": [
+          9,
+          8,
+          5,
+          4,
+          2,
+          3,
+          11,
+          7
+        ],
+        "cross_obs": [],
+        "deleted_terms": [
+          16,
+          17
+        ],
+        "ext_reject": true,
+        "latin_obs": [],
+        "pool_row": 3,
+        "shadow_ok": false
+      },
+      {
+        "base_reject": true,
+        "caps": [
+          7,
+          5,
+          5,
+          3,
+          3,
+          3,
+          8,
+          7
+        ],
+        "cross_obs": [],
+        "deleted_terms": [
+          2,
+          11
+        ],
+        "ext_reject": true,
+        "latin_obs": [],
+        "pool_row": 4,
+        "shadow_ok": false
+      },
+      {
+        "base_reject": true,
+        "caps": [
+          7,
+          3,
+          6,
+          3,
+          2,
+          3,
+          8,
+          7
+        ],
+        "cross_obs": [],
+        "deleted_terms": [
+          17,
+          20
+        ],
+        "ext_reject": true,
+        "latin_obs": [],
+        "pool_row": 4,
+        "shadow_ok": false
+      },
+      {
+        "base_reject": true,
+        "caps": [
+          6,
+          11,
+          7,
+          6,
+          3,
+          2,
+          5,
+          7
+        ],
+        "cross_obs": [],
+        "deleted_terms": [
+          1,
+          10
+        ],
+        "ext_reject": true,
+        "latin_obs": [],
+        "pool_row": 6,
+        "shadow_ok": false
+      },
+      {
+        "base_reject": false,
+        "caps": [
+          5,
+          10,
+          8,
+          8,
+          3,
+          3,
+          7,
+          7
+        ],
+        "cross_obs": [],
+        "deleted_terms": [
+          5,
+          7
+        ],
+        "ext_reject": false,
+        "latin_obs": [],
+        "pool_row": 6,
+        "shadow_ok": false
+      },
+      {
+        "base_reject": true,
+        "caps": [
+          5,
+          10,
+          8,
+          8,
+          3,
+          2,
+          6,
+          6
+        ],
+        "cross_obs": [],
+        "deleted_terms": [
+          17,
+          18
+        ],
+        "ext_reject": true,
+        "latin_obs": [],
+        "pool_row": 6,
+        "shadow_ok": false
+      },
+      {
+        "base_reject": false,
+        "caps": [
+          5,
+          3,
+          4,
+          8,
+          6,
+          5,
+          6,
+          7
+        ],
+        "cross_obs": [],
+        "deleted_terms": [
+          5,
+          9
+        ],
+        "ext_reject": false,
+        "latin_obs": [],
+        "pool_row": 7,
+        "shadow_ok": false
+      },
+      {
+        "base_reject": false,
+        "caps": [
+          7,
+          3,
+          9,
+          6,
+          5,
+          10,
+          6,
+          10
+        ],
+        "cross_obs": [],
+        "deleted_terms": [
+          4,
+          10
+        ],
+        "ext_reject": false,
+        "latin_obs": [],
+        "pool_row": 8,
+        "shadow_ok": false
+      },
+      {
+        "base_reject": false,
+        "caps": [
+          6,
+          7,
+          4,
+          11,
+          5,
+          5,
+          8,
+          5
+        ],
+        "cross_obs": [],
+        "deleted_terms": [
+          13,
+          20
+        ],
+        "ext_reject": false,
+        "latin_obs": [],
+        "pool_row": 9,
+        "shadow_ok": false
+      },
+      {
+        "base_reject": false,
+        "caps": [
+          11,
+          10,
+          8,
+          9,
+          5,
+          7,
+          9,
+          3
+        ],
+        "cross_obs": [],
+        "deleted_terms": [
+          7,
+          12
+        ],
+        "ext_reject": false,
+        "latin_obs": [],
+        "pool_row": 11,
+        "shadow_ok": false
+      },
+      {
+        "base_reject": false,
+        "caps": [
+          11,
+          10,
+          7,
+          8,
+          5,
+          6,
+          9,
+          5
+        ],
+        "cross_obs": [],
+        "deleted_terms": [
+          16,
+          20
+        ],
+        "ext_reject": false,
+        "latin_obs": [],
+        "pool_row": 11,
+        "shadow_ok": false
+      },
+      {
+        "base_reject": false,
+        "caps": [
+          6,
+          3,
+          6,
+          5,
+          5,
+          5,
+          8,
+          7
+        ],
+        "cross_obs": [],
+        "deleted_terms": [
+          3,
+          5
+        ],
+        "ext_reject": false,
+        "latin_obs": [],
+        "pool_row": 12,
+        "shadow_ok": false
+      },
+      {
+        "base_reject": true,
+        "caps": [
+          4,
+          2,
+          6,
+          4,
+          5,
+          6,
+          8,
+          8
+        ],
+        "cross_obs": [],
+        "deleted_terms": [
+          8,
+          13
+        ],
+        "ext_reject": true,
+        "latin_obs": [],
+        "pool_row": 12,
+        "shadow_ok": false
+      },
+      {
+        "base_reject": false,
+        "caps": [
+          6,
+          3,
+          6,
+          5,
+          5,
+          4,
+          7,
+          7
+        ],
+        "cross_obs": [],
+        "deleted_terms": [
+          15,
+          18
+        ],
+        "ext_reject": false,
+        "latin_obs": [],
+        "pool_row": 12,
+        "shadow_ok": true
+      },
+      {
+        "base_reject": false,
+        "caps": [
+          3,
+          7,
+          10,
+          7,
+          6,
+          9,
+          6,
+          8
+        ],
+        "cross_obs": [],
+        "deleted_terms": [
+          10,
+          15
+        ],
+        "ext_reject": false,
+        "latin_obs": [],
+        "pool_row": 13,
+        "shadow_ok": true
+      }
+    ],
+    "same_w_deletion_pairs_scanned": 815,
+    "shadow_fail_count": 739,
+    "shadow_ok_base_2sat_reject_count": 4,
+    "shadow_ok_base_support_reject_count": 22,
+    "shadow_ok_capacity_reject_count": 18,
+    "shadow_ok_count": 76,
+    "shadow_ok_extended_extra_reject_count": 0,
+    "shadow_ok_extended_support_reject_count": 22,
+    "shadow_ok_hist": {
+      "(False, True, True, True, True, 2, 39)": 2,
+      "(False, True, True, True, True, 2, 41)": 1,
+      "(False, True, True, True, True, 2, 42)": 1,
+      "(False, True, True, True, True, 2, 43)": 2,
+      "(False, True, True, True, True, 2, 44)": 1,
+      "(False, True, True, True, True, 2, 45)": 1,
+      "(False, True, True, True, True, 2, 46)": 1,
+      "(False, True, True, True, True, 2, 47)": 1,
+      "(False, True, True, True, True, 2, 48)": 4,
+      "(False, True, True, True, True, 2, 49)": 2,
+      "(False, True, True, True, True, 2, 50)": 1,
+      "(False, True, True, True, True, 2, 53)": 1,
+      "(True, False, True, False, True, 3, 36)": 1,
+      "(True, False, True, False, True, 3, 41)": 1,
+      "(True, False, True, False, True, 3, 50)": 1,
+      "(True, False, True, False, True, 3, 57)": 1,
+      "(True, True, False, True, False, 3, 40)": 1,
+      "(True, True, False, True, False, 3, 43)": 1,
+      "(True, True, False, True, False, 3, 45)": 2,
+      "(True, True, False, True, False, 3, 47)": 1,
+      "(True, True, False, True, False, 3, 48)": 2,
+      "(True, True, False, True, False, 3, 49)": 1,
+      "(True, True, False, True, False, 3, 50)": 3,
+      "(True, True, False, True, False, 3, 52)": 4,
+      "(True, True, False, True, False, 3, 53)": 2,
+      "(True, True, False, True, False, 3, 56)": 3,
+      "(True, True, False, True, False, 3, 57)": 1,
+      "(True, True, False, True, False, 3, 59)": 1,
+      "(True, True, False, True, False, 3, 61)": 3,
+      "(True, True, False, True, False, 3, 62)": 1,
+      "(True, True, False, True, False, 4, 42)": 1,
+      "(True, True, False, True, False, 4, 43)": 1,
+      "(True, True, False, True, False, 4, 44)": 1,
+      "(True, True, False, True, False, 4, 46)": 1,
+      "(True, True, False, True, False, 4, 49)": 1,
+      "(True, True, False, True, False, 4, 51)": 1,
+      "(True, True, False, True, False, 4, 52)": 1,
+      "(True, True, False, True, False, 4, 53)": 1,
+      "(True, True, False, True, False, 4, 54)": 3,
+      "(True, True, False, True, False, 4, 60)": 2,
+      "(True, True, False, True, False, 5, 47)": 1,
+      "(True, True, False, True, False, 5, 48)": 1,
+      "(True, True, False, True, False, 5, 53)": 1,
+      "(True, True, False, True, False, 5, 54)": 1,
+      "(True, True, False, True, False, 5, 55)": 1,
+      "(True, True, False, True, False, 5, 59)": 1,
+      "(True, True, False, True, False, 5, 60)": 1,
+      "(True, True, False, True, False, 5, 62)": 1,
+      "(True, True, False, True, False, 5, 63)": 2,
+      "(True, True, False, True, False, 5, 64)": 1,
+      "(True, True, False, True, False, 5, 66)": 1,
+      "(True, True, False, True, False, 5, 68)": 1,
+      "(True, True, False, True, False, 6, 56)": 1,
+      "(True, True, False, True, False, 6, 65)": 1
+    },
+    "shadow_ok_pass_base_support_count": 54,
+    "shadow_ok_pass_extended_support_count": 54,
+    "shadow_ok_pass_support_examples": [
+      {
+        "base": {
+          "capacity_ok": true,
+          "caps": [
+            6,
+            3,
+            6,
+            5,
+            5,
+            4,
+            7,
+            7
+          ],
+          "n_clauses": 32,
+          "total_weight": 43,
+          "twosat_assignment": {
+            "B0": false,
+            "B1": true,
+            "B2": false,
+            "B3": false,
+            "B4": false,
+            "B5": true,
+            "B6": false,
+            "B7": false,
+            "C0": false,
+            "C1": true,
+            "C2": false,
+            "C3": false,
+            "C4": false,
+            "C5": false,
+            "C6": false,
+            "C7": false
+          },
+          "twosat_sat": true
+        },
+        "deleted_terms": [
+          15,
+          18
+        ],
+        "deleted_w": 320,
+        "extended": {
+          "extended_units": [],
+          "hard_reject_reasons": [],
+          "rejects_support": false,
+          "twosat_sat": true
+        },
+        "pool_row": 12,
+        "remaining_u": [
+          128,
+          196,
+          216,
+          64,
+          36,
+          160,
+          3,
+          4,
+          3,
+          252,
+          1,
+          18,
+          192,
+          73,
+          16,
+          164,
+          17,
+          13,
+          72
+        ],
+        "shadow": {
+          "aug_rank": 128,
+          "ok": true,
+          "rank": 128,
+          "tight": [
+            62,
+            78,
+            87,
+            151,
+            171,
+            174,
+            179,
+            250
+          ],
+          "tight_count": 8
+        }
+      },
+      {
+        "base": {
+          "capacity_ok": true,
+          "caps": [
+            3,
+            7,
+            10,
+            7,
+            6,
+            9,
+            6,
+            8
+          ],
+          "n_clauses": 41,
+          "total_weight": 56,
+          "twosat_assignment": {
+            "B0": true,
+            "B1": false,
+            "B2": false,
+            "B3": false,
+            "B4": false,
+            "B5": false,
+            "B6": false,
+            "B7": false,
+            "C0": true,
+            "C1": false,
+            "C2": false,
+            "C3": false,
+            "C4": false,
+            "C5": false,
+            "C6": false,
+            "C7": false
+          },
+          "twosat_sat": true
+        },
+        "deleted_terms": [
+          10,
+          15
+        ],
+        "deleted_w": 72,
+        "extended": {
+          "extended_units": [],
+          "hard_reject_reasons": [],
+          "rejects_support": false,
+          "twosat_sat": true
+        },
+        "pool_row": 13,
+        "remaining_u": [
+          28,
+          124,
+          110,
+          192,
+          160,
+          173,
+          128,
+          36,
+          4,
+          164,
+          2,
+          216,
+          2,
+          182,
+          3,
+          108,
+          3,
+          18,
+          252
+        ],
+        "shadow": {
+          "aug_rank": 153,
+          "ok": true,
+          "rank": 153,
+          "tight": [
+            51,
+            55,
+            57,
+            61,
+            62,
+            179,
+            185,
+            197,
+            237,
+            243,
+            247,
+            249,
+            250
+          ],
+          "tight_count": 13
+        }
+      },
+      {
+        "base": {
+          "capacity_ok": true,
+          "caps": [
+            6,
+            5,
+            7,
+            4,
+            8,
+            7,
+            6,
+            9
+          ],
+          "n_clauses": 41,
+          "total_weight": 52,
+          "twosat_assignment": {
+            "B0": false,
+            "B1": false,
+            "B2": false,
+            "B3": true,
+            "B4": false,
+            "B5": false,
+            "B6": false,
+            "B7": false,
+            "C0": false,
+            "C1": false,
+            "C2": false,
+            "C3": false,
+            "C4": false,
+            "C5": false,
+            "C6": false,
+            "C7": false
+          },
+          "twosat_sat": true
+        },
+        "deleted_terms": [
+          2,
+          14
+        ],
+        "deleted_w": 73,
+        "extended": {
+          "extended_units": [],
+          "hard_reject_reasons": [],
+          "rejects_support": false,
+          "twosat_sat": true
+        },
+        "pool_row": 16,
+        "remaining_u": [
+          67,
+          32,
+          128,
+          4,
+          152,
+          180,
+          65,
+          9,
+          252,
+          144,
+          216,
+          148,
+          36,
+          227,
+          245,
+          32,
+          3,
+          22,
+          2
+        ],
+        "shadow": {
+          "aug_rank": 104,
+          "ok": true,
+          "rank": 104,
+          "tight": [
+            103,
+            121,
+            143,
+            179
+          ],
+          "tight_count": 4
+        }
+      },
+      {
+        "base": {
+          "capacity_ok": true,
+          "caps": [
+            9,
+            10,
+            10,
+            5,
+            3,
+            10,
+            8,
+            6
+          ],
+          "n_clauses": 44,
+          "total_weight": 61,
+          "twosat_assignment": {
+            "B0": false,
+            "B1": false,
+            "B2": false,
+            "B3": false,
+            "B4": true,
+            "B5": false,
+            "B6": false,
+            "B7": false,
+            "C0": false,
+            "C1": false,
+            "C2": false,
+            "C3": false,
+            "C4": true,
+            "C5": false,
+            "C6": false,
+            "C7": false
+          },
+          "twosat_sat": true
+        },
+        "deleted_terms": [
+          5,
+          7
+        ],
+        "deleted_w": 384,
+        "extended": {
+          "extended_units": [],
+          "hard_reject_reasons": [],
+          "rejects_support": false,
+          "twosat_sat": true
+        },
+        "pool_row": 21,
+        "remaining_u": [
+          14,
+          12,
+          109,
+          160,
+          32,
+          13,
+          182,
+          227,
+          255,
+          231,
+          3,
+          4,
+          2,
+          4,
+          96,
+          99,
+          195,
+          22,
+          97
+        ],
+        "shadow": {
+          "aug_rank": 118,
+          "ok": true,
+          "rank": 118,
+          "tight": [
+            57,
+            71,
+            78,
+            135,
+            221,
+            249
+          ],
+          "tight_count": 6
+        }
+      },
+      {
+        "base": {
+          "capacity_ok": true,
+          "caps": [
+            3,
+            7,
+            10,
+            7,
+            6,
+            11,
+            6,
+            7
+          ],
+          "n_clauses": 44,
+          "total_weight": 57,
+          "twosat_assignment": {
+            "B0": true,
+            "B1": false,
+            "B2": false,
+            "B3": false,
+            "B4": false,
+            "B5": false,
+            "B6": false,
+            "B7": false,
+            "C0": true,
+            "C1": false,
+            "C2": false,
+            "C3": false,
+            "C4": false,
+            "C5": false,
+            "C6": false,
+            "C7": false
+          },
+          "twosat_sat": true
+        },
+        "deleted_terms": [
+          9,
+          14
+        ],
+        "deleted_w": 288,
+        "extended": {
+          "extended_units": [],
+          "hard_reject_reasons": [],
+          "rejects_support": false,
+          "twosat_sat": true
+        },
+        "pool_row": 29,
+        "remaining_u": [
+          160,
+          2,
+          36,
+          224,
+          22,
+          13,
+          254,
+          32,
+          32,
+          36,
+          255,
+          108,
+          146,
+          12,
+          50,
+          252,
+          2,
+          204,
+          1
+        ],
+        "shadow": {
+          "aug_rank": 150,
+          "ok": true,
+          "rank": 150,
+          "tight": [
+            46,
+            61,
+            86,
+            125,
+            157,
+            165,
+            205,
+            206,
+            221,
+            222,
+            239,
+            241
+          ],
+          "tight_count": 12
+        }
+      },
+      {
+        "base": {
+          "capacity_ok": true,
+          "caps": [
+            7,
+            7,
+            3,
+            6,
+            6,
+            9,
+            6,
+            8
+          ],
+          "n_clauses": 39,
+          "total_weight": 52,
+          "twosat_assignment": {
+            "B0": false,
+            "B1": false,
+            "B2": true,
+            "B3": false,
+            "B4": false,
+            "B5": false,
+            "B6": false,
+            "B7": false,
+            "C0": false,
+            "C1": false,
+            "C2": true,
+            "C3": false,
+            "C4": false,
+            "C5": false,
+            "C6": false,
+            "C7": false
+          },
+          "twosat_sat": true
+        },
+        "deleted_terms": [
+          1,
+          6
+        ],
+        "deleted_w": 56,
+        "extended": {
+          "extended_units": [],
+          "hard_reject_reasons": [],
+          "rejects_support": false,
+          "twosat_sat": true
+        },
+        "pool_row": 42,
+        "remaining_u": [
+          65,
+          224,
+          225,
+          251,
+          1,
+          2,
+          32,
+          160,
+          219,
+          24,
+          4,
+          27,
+          4,
+          8,
+          182,
+          32,
+          160,
+          26,
+          227
+        ],
+        "shadow": {
+          "aug_rank": 118,
+          "ok": true,
+          "rank": 118,
+          "tight": [
+            71,
+            79,
+            87,
+            174,
+            179,
+            229,
+            243
+          ],
+          "tight_count": 7
+        }
+      },
+      {
+        "base": {
+          "capacity_ok": true,
+          "caps": [
+            9,
+            8,
+            3,
+            7,
+            7,
+            10,
+            8,
+            9
+          ],
+          "n_clauses": 44,
+          "total_weight": 61,
+          "twosat_assignment": {
+            "B0": false,
+            "B1": false,
+            "B2": true,
+            "B3": false,
+            "B4": false,
+            "B5": false,
+            "B6": false,
+            "B7": false,
+            "C0": false,
+            "C1": false,
+            "C2": true,
+            "C3": false,
+            "C4": false,
+            "C5": false,
+            "C6": false,
+            "C7": false
+          },
+          "twosat_sat": true
+        },
+        "deleted_terms": [
+          12,
+          15
+        ],
+        "deleted_w": 24,
+        "extended": {
+          "extended_units": [],
+          "hard_reject_reasons": [],
+          "rejects_support": false,
+          "twosat_sat": true
+        },
+        "pool_row": 42,
+        "remaining_u": [
+          65,
+          255,
+          224,
+          225,
+          251,
+          1,
+          73,
+          2,
+          32,
+          160,
+          219,
+          24,
+          27,
+          4,
+          182,
+          32,
+          160,
+          26,
+          227
+        ],
+        "shadow": {
+          "aug_rank": 163,
+          "ok": true,
+          "rank": 163,
+          "tight": [
+            57,
+            70,
+            79,
+            87,
+            94,
+            106,
+            133,
+            157,
+            174,
+            186,
+            197,
+            206,
+            214,
+            229,
+            241,
+            243,
+            250
+          ],
+          "tight_count": 17
+        }
+      },
+      {
+        "base": {
+          "capacity_ok": true,
+          "caps": [
+            8,
+            8,
+            4,
+            9,
+            3,
+            9,
+            4,
+            4
+          ],
+          "n_clauses": 40,
+          "total_weight": 49,
+          "twosat_assignment": {
+            "B0": false,
+            "B1": false,
+            "B2": false,
+            "B3": false,
+            "B4": true,
+            "B5": false,
+            "B6": false,
+            "B7": true,
+            "C0": false,
+            "C1": false,
+            "C2": true,
+            "C3": false,
+            "C4": true,
+            "C5": false,
+            "C6": true,
+            "C7": false
+          },
+          "twosat_sat": true
+        },
+        "deleted_terms": [
+          7,
+          17
+        ],
+        "deleted_w": 128,
+        "extended": {
+          "extended_units": [],
+          "hard_reject_reasons": [],
+          "rejects_support": false,
+          "twosat_sat": true
+        },
+        "pool_row": 64,
+        "remaining_u": [
+          107,
+          9,
+          162,
+          11,
+          31,
+          4,
+          176,
+          32,
+          16,
+          2,
+          171,
+          4,
+          4,
+          104,
+          235,
+          8,
+          105,
+          32,
+          3
+        ],
+        "shadow": {
+          "aug_rank": 114,
+          "ok": true,
+          "rank": 114,
+          "tight": [
+            79,
+            121,
+            143,
+            151,
+            185,
+            249
+          ],
+          "tight_count": 6
+        }
+      },
+      {
+        "base": {
+          "capacity_ok": true,
+          "caps": [
+            6,
+            7,
+            7,
+            4,
+            8,
+            10,
+            4,
+            8
+          ],
+          "n_clauses": 44,
+          "total_weight": 54,
+          "twosat_assignment": {
+            "B0": false,
+            "B1": false,
+            "B2": false,
+            "B3": true,
+            "B4": false,
+            "B5": false,
+            "B6": true,
+            "B7": false,
+            "C0": false,
+            "C1": false,
+            "C2": false,
+            "C3": false,
+            "C4": false,
+            "C5": false,
+            "C6": false,
+            "C7": false
+          },
+          "twosat_sat": true
+        },
+        "deleted_terms": [
+          1,
+          17
+        ],
+        "deleted_w": 432,
+        "extended": {
+          "extended_units": [],
+          "hard_reject_reasons": [],
+          "rejects_support": false,
+          "twosat_sat": true
+        },
+        "pool_row": 99,
+        "remaining_u": [
+          32,
+          3,
+          216,
+          128,
+          192,
+          129,
+          182,
+          1,
+          36,
+          180,
+          130,
+          32,
+          181,
+          90,
+          18,
+          54,
+          109,
+          59,
+          36
+        ],
+        "shadow": {
+          "aug_rank": 111,
+          "ok": true,
+          "rank": 111,
+          "tight": [
+            58,
+            61,
+            179,
+            205,
+            229
+          ],
+          "tight_count": 5
+        }
+      },
+      {
+        "base": {
+          "capacity_ok": true,
+          "caps": [
+            6,
+            7,
+            3,
+            5,
+            10,
+            6,
+            5,
+            6
+          ],
+          "n_clauses": 37,
+          "total_weight": 48,
+          "twosat_assignment": {
+            "B0": false,
+            "B1": false,
+            "B2": true,
+            "B3": false,
+            "B4": false,
+            "B5": false,
+            "B6": false,
+            "B7": false,
+            "C0": false,
+            "C1": false,
+            "C2": true,
+            "C3": false,
+            "C4": false,
+            "C5": false,
+            "C6": false,
+            "C7": false
+          },
+          "twosat_sat": true
+        },
+        "deleted_terms": [
+          8,
+          18
+        ],
+        "deleted_w": 144,
+        "extended": {
+          "extended_units": [],
+          "hard_reject_reasons": [],
+          "rejects_support": false,
+          "twosat_sat": true
+        },
+        "pool_row": 105,
+        "remaining_u": [
+          1,
+          147,
+          144,
+          104,
+          3,
+          108,
+          4,
+          176,
+          146,
+          115,
+          36,
+          8,
+          16,
+          18,
+          144,
+          19,
+          32,
+          72,
+          219
+        ],
+        "shadow": {
+          "aug_rank": 153,
+          "ok": true,
+          "rank": 153,
+          "tight": [
+            70,
+            71,
+            103,
+            107,
+            118,
+            122,
+            149,
+            165,
+            179,
+            214,
+            241,
+            246
+          ],
+          "tight_count": 12
+        }
+      },
+      {
+        "base": {
+          "capacity_ok": true,
+          "caps": [
+            11,
+            10,
+            6,
+            8,
+            3,
+            3,
+            7,
+            5
+          ],
+          "n_clauses": 44,
+          "total_weight": 53,
+          "twosat_assignment": {
+            "B0": false,
+            "B1": false,
+            "B2": false,
+            "B3": false,
+            "B4": true,
+            "B5": true,
+            "B6": false,
+            "B7": false,
+            "C0": false,
+            "C1": false,
+            "C2": false,
+            "C3": false,
+            "C4": true,
+            "C5": true,
+            "C6": false,
+            "C7": false
+          },
+          "twosat_sat": true
+        },
+        "deleted_terms": [
+          1,
+          9
+        ],
+        "deleted_w": 128,
+        "extended": {
+          "extended_units": [],
+          "hard_reject_reasons": [],
+          "rejects_support": false,
+          "twosat_sat": true
+        },
+        "pool_row": 113,
+        "remaining_u": [
+          3,
+          4,
+          2,
+          72,
+          1,
+          3,
+          31,
+          8,
+          227,
+          219,
+          195,
+          199,
+          4,
+          11,
+          36,
+          108,
+          16,
+          203,
+          9
+        ],
+        "shadow": {
+          "aug_rank": 138,
+          "ok": true,
+          "rank": 138,
+          "tight": [
+            42,
+            51,
+            55,
+            70,
+            107,
+            165,
+            167,
+            171,
+            234,
+            243
+          ],
+          "tight_count": 10
+        }
+      },
+      {
+        "base": {
+          "capacity_ok": true,
+          "caps": [
+            6,
+            6,
+            14,
+            5,
+            5,
+            13,
+            9,
+            3
+          ],
+          "n_clauses": 44,
+          "total_weight": 61,
+          "twosat_assignment": {
+            "B0": false,
+            "B1": false,
+            "B2": false,
+            "B3": false,
+            "B4": false,
+            "B5": false,
+            "B6": false,
+            "B7": true,
+            "C0": false,
+            "C1": false,
+            "C2": false,
+            "C3": false,
+            "C4": false,
+            "C5": false,
+            "C6": false,
+            "C7": true
+          },
+          "twosat_sat": true
+        },
+        "deleted_terms": [
+          15,
+          16
+        ],
+        "deleted_w": 72,
+        "extended": {
+          "extended_units": [],
+          "hard_reject_reasons": [],
+          "rejects_support": false,
+          "twosat_sat": true
+        },
+        "pool_row": 121,
+        "remaining_u": [
+          36,
+          4,
+          4,
+          111,
+          16,
+          219,
+          125,
+          2,
+          166,
+          102,
+          101,
+          108,
+          36,
+          100,
+          109,
+          3,
+          36,
+          180,
+          112
+        ],
+        "shadow": {
+          "aug_rank": 126,
+          "ok": true,
+          "rank": 126,
+          "tight": [
+            61,
+            107,
+            115,
+            133,
+            171,
+            173,
+            205,
+            229
+          ],
+          "tight_count": 8
+        }
+      }
+    ],
+    "shadow_ok_strict_support_reject_examples": [
+      {
+        "base": {
+          "capacity_ok": false,
+          "caps": [
+            5,
+            3,
+            9,
+            6,
+            2,
+            12,
+            6,
+            6
+          ],
+          "cross_cap3_cap4_obstructions": [],
+          "hard_reject_reasons": [
+            {
+              "caps": [
+                2
+              ],
+              "slices": [
+                4
+              ],
+              "type": "capacity_lt3"
+            }
+          ],
+          "latin_triple_obstructions": [],
+          "n_clauses": 35,
+          "total_weight": 49,
+          "twosat_sat": true
+        },
+        "deleted_terms": [
+          4,
+          5
+        ],
+        "deleted_w": 24,
+        "extended": {
+          "extended_units": [],
+          "hard_reject_reasons": [
+            {
+              "caps": [
+                2
+              ],
+              "slices": [
+                4
+              ],
+              "type": "capacity_lt3"
+            }
+          ],
+          "twosat_sat": true
+        },
+        "pool_row": 15,
+        "remaining_u": [
+          36,
+          2,
+          140,
+          227,
+          225,
+          32,
+          2,
+          28,
+          44,
+          180,
+          1,
+          65,
+          32,
+          12,
+          108,
+          160,
+          224,
+          36,
+          109
+        ],
+        "shadow": {
+          "aug_rank": 108,
+          "ok": true,
+          "rank": 108,
+          "tight": [
+            79,
+            95,
+            170,
+            186,
+            247,
+            249
+          ],
+          "tight_count": 6
+        }
+      },
+      {
+        "base": {
+          "capacity_ok": false,
+          "caps": [
+            5,
+            10,
+            3,
+            6,
+            9,
+            6,
+            2,
+            7
+          ],
+          "cross_cap3_cap4_obstructions": [],
+          "hard_reject_reasons": [
+            {
+              "caps": [
+                2
+              ],
+              "slices": [
+                6
+              ],
+              "type": "capacity_lt3"
+            }
+          ],
+          "latin_triple_obstructions": [],
+          "n_clauses": 36,
+          "total_weight": 48,
+          "twosat_sat": true
+        },
+        "deleted_terms": [
+          9,
+          10
+        ],
+        "deleted_w": 384,
+        "extended": {
+          "extended_units": [],
+          "hard_reject_reasons": [
+            {
+              "caps": [
+                2
+              ],
+              "slices": [
+                6
+              ],
+              "type": "capacity_lt3"
+            }
+          ],
+          "twosat_sat": true
+        },
+        "pool_row": 30,
+        "remaining_u": [
+          27,
+          186,
+          178,
+          4,
+          4,
+          160,
+          182,
+          1,
+          219,
+          146,
+          2,
+          18,
+          24,
+          1,
+          162,
+          32,
+          8,
+          26,
+          65
+        ],
+        "shadow": {
+          "aug_rank": 152,
+          "ok": true,
+          "rank": 152,
+          "tight": [
+            58,
+            87,
+            122,
+            165,
+            170,
+            179,
+            185,
+            214,
+            229,
+            234,
+            241,
+            243,
+            246,
+            249
+          ],
+          "tight_count": 14
+        }
+      },
+      {
+        "base": {
+          "capacity_ok": false,
+          "caps": [
+            7,
+            13,
+            9,
+            6,
+            5,
+            2,
+            4,
+            7
+          ],
+          "cross_cap3_cap4_obstructions": [],
+          "hard_reject_reasons": [
+            {
+              "caps": [
+                2
+              ],
+              "slices": [
+                5
+              ],
+              "type": "capacity_lt3"
+            }
+          ],
+          "latin_triple_obstructions": [],
+          "n_clauses": 35,
+          "total_weight": 53,
+          "twosat_sat": true
+        },
+        "deleted_terms": [
+          1,
+          17
+        ],
+        "deleted_w": 256,
+        "extended": {
+          "extended_units": [],
+          "hard_reject_reasons": [
+            {
+              "caps": [
+                2
+              ],
+              "slices": [
+                5
+              ],
+              "type": "capacity_lt3"
+            }
+          ],
+          "twosat_sat": true
+        },
+        "pool_row": 54,
+        "remaining_u": [
+          8,
+          146,
+          199,
+          2,
+          227,
+          130,
+          30,
+          22,
+          134,
+          28,
+          1,
+          227,
+          65,
+          31,
+          3,
+          12,
+          142,
+          4,
+          2
+        ],
+        "shadow": {
+          "aug_rank": 138,
+          "ok": true,
+          "rank": 138,
+          "tight": [
+            53,
+            61,
+            62,
+            103,
+            115,
+            229,
+            230,
+            237,
+            241,
+            249
+          ],
+          "tight_count": 10
+        }
+      },
+      {
+        "base": {
+          "capacity_ok": false,
+          "caps": [
+            7,
+            5,
+            5,
+            5,
+            6,
+            5,
+            2,
+            4
+          ],
+          "cross_cap3_cap4_obstructions": [],
+          "hard_reject_reasons": [
+            {
+              "caps": [
+                2
+              ],
+              "slices": [
+                6
+              ],
+              "type": "capacity_lt3"
+            }
+          ],
+          "latin_triple_obstructions": [],
+          "n_clauses": 29,
+          "total_weight": 39,
+          "twosat_sat": true
+        },
+        "deleted_terms": [
+          1,
+          11
+        ],
+        "deleted_w": 448,
+        "extended": {
+          "extended_units": [],
+          "hard_reject_reasons": [
+            {
+              "caps": [
+                2
+              ],
+              "slices": [
+                6
+              ],
+              "type": "capacity_lt3"
+            }
+          ],
+          "twosat_sat": true
+        },
+        "pool_row": 74,
+        "remaining_u": [
+          3,
+          54,
+          32,
+          13,
+          1,
+          16,
+          28,
+          224,
+          72,
+          9,
+          130,
+          18,
+          17,
+          41,
+          128,
+          36,
+          129,
+          18,
+          4
+        ],
+        "shadow": {
+          "aug_rank": 153,
+          "ok": true,
+          "rank": 153,
+          "tight": [
+            78,
+            106,
+            118,
+            121,
+            122,
+            127,
+            151,
+            165,
+            179,
+            191,
+            205,
+            206
+          ],
+          "tight_count": 12
+        }
+      },
+      {
+        "base": {
+          "capacity_ok": false,
+          "caps": [
+            3,
+            8,
+            7,
+            5,
+            7,
+            6,
+            6,
+            2
+          ],
+          "cross_cap3_cap4_obstructions": [],
+          "hard_reject_reasons": [
+            {
+              "caps": [
+                2
+              ],
+              "slices": [
+                7
+              ],
+              "type": "capacity_lt3"
+            }
+          ],
+          "latin_triple_obstructions": [],
+          "n_clauses": 35,
+          "total_weight": 44,
+          "twosat_sat": true
+        },
+        "deleted_terms": [
+          3,
+          6
+        ],
+        "deleted_w": 256,
+        "extended": {
+          "extended_units": [],
+          "hard_reject_reasons": [
+            {
+              "caps": [
+                2
+              ],
+              "slices": [
+                7
+              ],
+              "type": "capacity_lt3"
+            }
+          ],
+          "twosat_sat": true
+        },
+        "pool_row": 95,
+        "remaining_u": [
+          64,
+          1,
+          36,
+          180,
+          108,
+          26,
+          18,
+          2,
+          27,
+          2,
+          22,
+          24,
+          194,
+          100,
+          96,
+          8,
+          4,
+          1,
+          118
+        ],
+        "shadow": {
+          "aug_rank": 109,
+          "ok": true,
+          "rank": 109,
+          "tight": [
+            53,
+            57,
+            102,
+            170,
+            190
+          ],
+          "tight_count": 5
+        }
+      },
+      {
+        "base": {
+          "capacity_ok": true,
+          "caps": [
+            6,
+            5,
+            3,
+            4,
+            4,
+            6,
+            3,
+            5
+          ],
+          "cross_cap3_cap4_obstructions": [],
+          "hard_reject_reasons": [],
+          "latin_triple_obstructions": [],
+          "n_clauses": 33,
+          "total_weight": 36,
+          "twosat_sat": false
+        },
+        "deleted_terms": [
+          9,
+          19
+        ],
+        "deleted_w": 8,
+        "extended": {
+          "extended_units": [],
+          "hard_reject_reasons": [],
+          "twosat_sat": false
+        },
+        "pool_row": 128,
+        "remaining_u": [
+          1,
+          224,
+          130,
+          36,
+          8,
+          32,
+          128,
+          129,
+          4,
+          97,
+          32,
+          3,
+          128,
+          19,
+          16,
+          31,
+          18,
+          40,
+          72
+        ],
+        "shadow": {
+          "aug_rank": 145,
+          "ok": true,
+          "rank": 145,
+          "tight": [
+            70,
+            71,
+            79,
+            86,
+            87,
+            94,
+            102,
+            118,
+            135,
+            151,
+            167,
+            197
+          ],
+          "tight_count": 12
+        }
+      },
+      {
+        "base": {
+          "capacity_ok": false,
+          "caps": [
+            8,
+            3,
+            6,
+            2,
+            6,
+            8,
+            7,
+            9
+          ],
+          "cross_cap3_cap4_obstructions": [],
+          "hard_reject_reasons": [
+            {
+              "caps": [
+                2
+              ],
+              "slices": [
+                3
+              ],
+              "type": "capacity_lt3"
+            }
+          ],
+          "latin_triple_obstructions": [],
+          "n_clauses": 39,
+          "total_weight": 49,
+          "twosat_sat": true
+        },
+        "deleted_terms": [
+          8,
+          10
+        ],
+        "deleted_w": 16,
+        "extended": {
+          "extended_units": [],
+          "hard_reject_reasons": [
+            {
+              "caps": [
+                2
+              ],
+              "slices": [
+                3
+              ],
+              "type": "capacity_lt3"
+            }
+          ],
+          "twosat_sat": true
+        },
+        "pool_row": 144,
+        "remaining_u": [
+          148,
+          144,
+          2,
+          128,
+          1,
+          224,
+          245,
+          8,
+          97,
+          20,
+          1,
+          225,
+          4,
+          32,
+          65,
+          253,
+          2,
+          227,
+          180
+        ],
+        "shadow": {
+          "aug_rank": 109,
+          "ok": true,
+          "rank": 109,
+          "tight": [
+            42,
+            113,
+            149,
+            177,
+            214
+          ],
+          "tight_count": 5
+        }
+      },
+      {
+        "base": {
+          "capacity_ok": false,
+          "caps": [
+            7,
+            8,
+            3,
+            6,
+            2,
+            7,
+            6,
+            4
+          ],
+          "cross_cap3_cap4_obstructions": [],
+          "hard_reject_reasons": [
+            {
+              "caps": [
+                2
+              ],
+              "slices": [
+                4
+              ],
+              "type": "capacity_lt3"
+            }
+          ],
+          "latin_triple_obstructions": [],
+          "n_clauses": 30,
+          "total_weight": 43,
+          "twosat_sat": true
+        },
+        "deleted_terms": [
+          10,
+          17
+        ],
+        "deleted_w": 40,
+        "extended": {
+          "extended_units": [],
+          "hard_reject_reasons": [
+            {
+              "caps": [
+                2
+              ],
+              "slices": [
+                4
+              ],
+              "type": "capacity_lt3"
+            }
+          ],
+          "twosat_sat": true
+        },
+        "pool_row": 145,
+        "remaining_u": [
+          9,
+          99,
+          128,
+          138,
+          32,
+          97,
+          96,
+          4,
+          3,
+          22,
+          8,
+          24,
+          195,
+          10,
+          4,
+          2,
+          32,
+          105,
+          227
+        ],
+        "shadow": {
+          "aug_rank": 118,
+          "ok": true,
+          "rank": 118,
+          "tight": [
+            53,
+            58,
+            70,
+            78,
+            94,
+            122,
+            127
+          ],
+          "tight_count": 7
+        }
+      },
+      {
+        "base": {
+          "capacity_ok": false,
+          "caps": [
+            7,
+            4,
+            3,
+            6,
+            2,
+            6,
+            6,
+            5
+          ],
+          "cross_cap3_cap4_obstructions": [],
+          "hard_reject_reasons": [
+            {
+              "caps": [
+                2
+              ],
+              "slices": [
+                4
+              ],
+              "type": "capacity_lt3"
+            }
+          ],
+          "latin_triple_obstructions": [],
+          "n_clauses": 27,
+          "total_weight": 39,
+          "twosat_sat": true
+        },
+        "deleted_terms": [
+          16,
+          20
+        ],
+        "deleted_w": 48,
+        "extended": {
+          "extended_units": [],
+          "hard_reject_reasons": [
+            {
+              "caps": [
+                2
+              ],
+              "slices": [
+                4
+              ],
+              "type": "capacity_lt3"
+            }
+          ],
+          "twosat_sat": true
+        },
+        "pool_row": 154,
+        "remaining_u": [
+          36,
+          40,
+          201,
+          12,
+          1,
+          60,
+          32,
+          1,
+          195,
+          2,
+          128,
+          18,
+          32,
+          193,
+          73,
+          2,
+          97,
+          8,
+          192
+        ],
+        "shadow": {
+          "aug_rank": 142,
+          "ok": true,
+          "rank": 142,
+          "tight": [
+            62,
+            78,
+            86,
+            94,
+            113,
+            133,
+            141,
+            149,
+            165,
+            173,
+            197,
+            205,
+            213
+          ],
+          "tight_count": 13
+        }
+      },
+      {
+        "base": {
+          "capacity_ok": true,
+          "caps": [
+            8,
+            8,
+            3,
+            5,
+            9,
+            6,
+            4,
+            7
+          ],
+          "cross_cap3_cap4_obstructions": [
+            [
+              2,
+              6
+            ]
+          ],
+          "hard_reject_reasons": [],
+          "latin_triple_obstructions": [],
+          "n_clauses": 45,
+          "total_weight": 50,
+          "twosat_sat": false
+        },
+        "deleted_terms": [
+          8,
+          15
+        ],
+        "deleted_w": 192,
+        "extended": {
+          "extended_units": [],
+          "hard_reject_reasons": [],
+          "twosat_sat": false
+        },
+        "pool_row": 156,
+        "remaining_u": [
+          24,
+          9,
+          32,
+          18,
+          16,
+          36,
+          255,
+          227,
+          17,
+          130,
+          1,
+          147,
+          251,
+          32,
+          144,
+          3,
+          72,
+          146,
+          4
+        ],
+        "shadow": {
+          "aug_rank": 129,
+          "ok": true,
+          "rank": 129,
+          "tight": [
+            70,
+            94,
+            95,
+            127,
+            151,
+            206,
+            249,
+            250
+          ],
+          "tight_count": 8
+        }
+      },
+      {
+        "base": {
+          "capacity_ok": true,
+          "caps": [
+            7,
+            3,
+            5,
+            3,
+            3,
+            3,
+            9,
+            8
+          ],
+          "cross_cap3_cap4_obstructions": [],
+          "hard_reject_reasons": [],
+          "latin_triple_obstructions": [],
+          "n_clauses": 36,
+          "total_weight": 41,
+          "twosat_sat": false
+        },
+        "deleted_terms": [
+          11,
+          18
+        ],
+        "deleted_w": 56,
+        "extended": {
+          "extended_units": [],
+          "hard_reject_reasons": [],
+          "twosat_sat": false
+        },
+        "pool_row": 179,
+        "remaining_u": [
+          160,
+          4,
+          144,
+          195,
+          20,
+          2,
+          192,
+          193,
+          1,
+          72,
+          128,
+          65,
+          132,
+          69,
+          97,
+          36,
+          216,
+          73,
+          2
+        ],
+        "shadow": {
+          "aug_rank": 154,
+          "ok": true,
+          "rank": 154,
+          "tight": [
+            42,
+            61,
+            107,
+            117,
+            121,
+            149,
+            165,
+            177,
+            221,
+            222,
+            246,
+            249,
+            250
+          ],
+          "tight_count": 13
+        }
+      },
+      {
+        "base": {
+          "capacity_ok": false,
+          "caps": [
+            6,
+            6,
+            3,
+            7,
+            2,
+            9,
+            3,
+            5
+          ],
+          "cross_cap3_cap4_obstructions": [],
+          "hard_reject_reasons": [
+            {
+              "caps": [
+                2
+              ],
+              "slices": [
+                4
+              ],
+              "type": "capacity_lt3"
+            }
+          ],
+          "latin_triple_obstructions": [],
+          "n_clauses": 32,
+          "total_weight": 41,
+          "twosat_sat": true
+        },
+        "deleted_terms": [
+          2,
+          17
+        ],
+        "deleted_w": 40,
+        "extended": {
+          "extended_units": [],
+          "hard_reject_reasons": [
+            {
+              "caps": [
+                2
+              ],
+              "slices": [
+                4
+              ],
+              "type": "capacity_lt3"
+            }
+          ],
+          "twosat_sat": true
+        },
+        "pool_row": 184,
+        "remaining_u": [
+          32,
+          24,
+          40,
+          73,
+          160,
+          3,
+          2,
+          163,
+          12,
+          138,
+          32,
+          195,
+          1,
+          8,
+          96,
+          36,
+          60,
+          162,
+          1
+        ],
+        "shadow": {
+          "aug_rank": 140,
+          "ok": true,
+          "rank": 140,
+          "tight": [
+            62,
+            78,
+            94,
+            102,
+            106,
+            122,
+            141,
+            157,
+            198,
+            214,
+            243
+          ],
+          "tight_count": 11
+        }
+      }
+    ],
+    "unique_remaining_u_multisets": 814
+  },
+  "slice_blocks": {
+    "0": [
+      1,
+      0
+    ],
+    "1": [
+      2,
+      0
+    ],
+    "2": [
+      0,
+      1
+    ],
+    "3": [
+      1,
+      1
+    ],
+    "4": [
+      2,
+      1
+    ],
+    "5": [
+      0,
+      2
+    ],
+    "6": [
+      1,
+      2
+    ],
+    "7": [
+      2,
+      2
+    ]
+  }
+}

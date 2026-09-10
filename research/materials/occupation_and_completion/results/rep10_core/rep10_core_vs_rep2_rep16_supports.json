@@ -1,0 +1,682 @@
+{
+  "comparisons": [
+    {
+      "actual_rep10_core_rows": {
+        "max_excess": 1,
+        "occupancy_hist": {
+          "1": 1008,
+          "2": 682,
+          "3": 1034,
+          "4": 1339,
+          "5": 939,
+          "6": 406,
+          "7": 138,
+          "8": 26
+        },
+        "rows_by_dim": {
+          "4": 960,
+          "6": 4612
+        },
+        "rows_by_lb": {
+          "12": 3746,
+          "15": 866,
+          "17": 960
+        },
+        "rows_checked": 5572,
+        "slack_hist": {
+          "-1": 13,
+          "0": 75,
+          "1": 387,
+          "2": 1404,
+          "3": 1254,
+          "4": 1366,
+          "5": 843,
+          "6": 190,
+          "7": 40
+        },
+        "tight_count": 75,
+        "violation_count": 13,
+        "violation_head": [
+          {
+            "basis": [
+              262,
+              130,
+              64,
+              16,
+              10,
+              1
+            ],
+            "cap": 5,
+            "dim": 6,
+            "excess": 1,
+            "key": 573979698942054,
+            "lb": 15,
+            "occupancy": 6
+          },
+          {
+            "basis": [
+              290,
+              128,
+              66,
+              16,
+              10,
+              1
+            ],
+            "cap": 5,
+            "dim": 6,
+            "excess": 1,
+            "key": 573979707314726,
+            "lb": 15,
+            "occupancy": 6
+          },
+          {
+            "basis": [
+              258,
+              32,
+              18,
+              10,
+              4,
+              1
+            ],
+            "cap": 5,
+            "dim": 6,
+            "excess": 1,
+            "key": 567369550532646,
+            "lb": 15,
+            "occupancy": 6
+          },
+          {
+            "basis": [
+              262,
+              130,
+              64,
+              18,
+              10,
+              1
+            ],
+            "cap": 5,
+            "dim": 6,
+            "excess": 1,
+            "key": 573983993909350,
+            "lb": 15,
+            "occupancy": 6
+          },
+          {
+            "basis": [
+              290,
+              130,
+              66,
+              18,
+              10,
+              1
+            ],
+            "cap": 5,
+            "dim": 6,
+            "excess": 1,
+            "key": 573984002298406,
+            "lb": 15,
+            "occupancy": 6
+          },
+          {
+            "basis": [
+              258,
+              130,
+              64,
+              10,
+              4,
+              1
+            ],
+            "cap": 5,
+            "dim": 6,
+            "excess": 1,
+            "key": 567369744273446,
+            "lb": 15,
+            "occupancy": 6
+          },
+          {
+            "basis": [
+              290,
+              144,
+              66,
+              10,
+              4,
+              1
+            ],
+            "cap": 5,
+            "dim": 6,
+            "excess": 1,
+            "key": 567369752777254,
+            "lb": 15,
+            "occupancy": 6
+          },
+          {
+            "basis": [
+              272,
+              130,
+              64,
+              10,
+              4,
+              1
+            ],
+            "cap": 5,
+            "dim": 6,
+            "excess": 1,
+            "key": 567369744273670,
+            "lb": 15,
+            "occupancy": 6
+          },
+          {
+            "basis": [
+              304,
+              144,
+              66,
+              10,
+              4,
+              1
+            ],
+            "cap": 5,
+            "dim": 6,
+            "excess": 1,
+            "key": 567369752777478,
+            "lb": 15,
+            "occupancy": 6
+          },
+          {
+            "basis": [
+              274,
+              130,
+              64,
+              10,
+              4,
+              1
+            ],
+            "cap": 5,
+            "dim": 6,
+            "excess": 1,
+            "key": 567369744273702,
+            "lb": 15,
+            "occupancy": 6
+          },
+          {
+            "basis": [
+              306,
+              144,
+              66,
+              10,
+              4,
+              1
+            ],
+            "cap": 5,
+            "dim": 6,
+            "excess": 1,
+            "key": 567369752777510,
+            "lb": 15,
+            "occupancy": 6
+          },
+          {
+            "basis": [
+              256,
+              162,
+              96,
+              10,
+              4,
+              1
+            ],
+            "cap": 5,
+            "dim": 6,
+            "excess": 1,
+            "key": 567369878753286,
+            "lb": 15,
+            "occupancy": 6
+          },
+          {
+            "basis": [
+              288,
+              176,
+              98,
+              10,
+              4,
+              1
+            ],
+            "cap": 5,
+            "dim": 6,
+            "excess": 1,
+            "key": 567369887257094,
+            "lb": 15,
+            "occupancy": 6
+          }
+        ]
+      },
+      "analogous_collect_meta": {
+        "active_rows": 14478,
+        "row_signature_hist": {
+          "(4, 14, 4, 13, 'through_fixed')": 226,
+          "(4, 15, 3, 13, 'through_fixed')": 935,
+          "(4, 16, 2, 13, 'through_fixed')": 1488,
+          "(4, 17, 1, 13, 'through_fixed')": 18,
+          "(6, 11, 7, 61, 'through_fixed')": 384,
+          "(6, 12, 6, 61, 'through_fixed')": 7520,
+          "(6, 13, 5, 61, 'through_fixed')": 1008,
+          "(6, 14, 4, 61, 'through_fixed')": 1674,
+          "(6, 15, 3, 61, 'through_fixed')": 258,
+          "(6, 9, 9, 61, 'through_fixed')": 967
+        },
+        "selected_rows_total": 14478,
+        "skipped_vacuous": 0,
+        "source_by_dim": {
+          "through_fixed,4": 2667,
+          "through_fixed,6": 11811
+        }
+      },
+      "analogous_same_dim_lb_rows": {
+        "max_excess": 0,
+        "occupancy_hist": {
+          "2": 494,
+          "3": 1977,
+          "4": 2676,
+          "5": 1563,
+          "6": 687,
+          "7": 369,
+          "8": 30
+        },
+        "rows_by_dim": {
+          "4": 18,
+          "6": 7778
+        },
+        "rows_by_lb": {
+          "12": 7520,
+          "15": 258,
+          "17": 18
+        },
+        "rows_checked": 7796,
+        "slack_hist": {
+          "0": 69,
+          "1": 519,
+          "2": 774,
+          "3": 1524,
+          "4": 2544,
+          "5": 1890,
+          "6": 476
+        },
+        "tight_count": 69,
+        "violation_count": 0,
+        "violation_head": []
+      },
+      "analogous_through_fixed_row_summary": {
+        "by_cap_rem": {
+          "1": 18,
+          "3": 258,
+          "6": 7520
+        },
+        "by_dim": {
+          "4": 18,
+          "6": 7778
+        },
+        "by_lb": {
+          "12": 7520,
+          "15": 258,
+          "17": 18
+        },
+        "by_source_dim": {
+          "through_fixed,4": 18,
+          "through_fixed,6": 7778
+        },
+        "by_var_count": {
+          "13": 18,
+          "61": 7778
+        },
+        "row_count": 7796
+      },
+      "fixed": [
+        1,
+        2
+      ],
+      "support": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        8,
+        16,
+        25,
+        32,
+        56,
+        65,
+        72,
+        130,
+        144,
+        194,
+        217,
+        260,
+        288,
+        455,
+        504
+      ],
+      "support_path": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_dim123_throughfixed_rank1proj.json",
+      "support_rank1_count": 17,
+      "support_rank_hist": {
+        "1": 17,
+        "2": 3
+      },
+      "support_size": 20
+    },
+    {
+      "actual_rep10_core_rows": {
+        "max_excess": 1,
+        "occupancy_hist": {
+          "1": 1091,
+          "2": 1003,
+          "3": 1235,
+          "4": 1049,
+          "5": 712,
+          "6": 358,
+          "7": 111,
+          "8": 12,
+          "9": 1
+        },
+        "rows_by_dim": {
+          "4": 960,
+          "6": 4612
+        },
+        "rows_by_lb": {
+          "12": 3746,
+          "15": 866,
+          "17": 960
+        },
+        "rows_checked": 5572,
+        "slack_hist": {
+          "-1": 7,
+          "0": 66,
+          "1": 409,
+          "2": 1437,
+          "3": 930,
+          "4": 1032,
+          "5": 916,
+          "6": 609,
+          "7": 166
+        },
+        "tight_count": 66,
+        "violation_count": 7,
+        "violation_head": [
+          {
+            "basis": [
+              132,
+              68,
+              20,
+              8,
+              2,
+              1
+            ],
+            "cap": 5,
+            "dim": 6,
+            "excess": 1,
+            "key": 565166240991302,
+            "lb": 15,
+            "occupancy": 6
+          },
+          {
+            "basis": [
+              290,
+              130,
+              66,
+              18,
+              10,
+              1
+            ],
+            "cap": 5,
+            "dim": 6,
+            "excess": 1,
+            "key": 573984002298406,
+            "lb": 15,
+            "occupancy": 6
+          },
+          {
+            "basis": [
+              292,
+              132,
+              66,
+              20,
+              10,
+              1
+            ],
+            "cap": 5,
+            "dim": 6,
+            "excess": 1,
+            "key": 573988297282118,
+            "lb": 15,
+            "occupancy": 6
+          },
+          {
+            "basis": [
+              294,
+              134,
+              66,
+              22,
+              10,
+              1
+            ],
+            "cap": 5,
+            "dim": 6,
+            "excess": 1,
+            "key": 573992592265830,
+            "lb": 15,
+            "occupancy": 6
+          },
+          {
+            "basis": [
+              294,
+              132,
+              66,
+              20,
+              10,
+              1
+            ],
+            "cap": 5,
+            "dim": 6,
+            "excess": 1,
+            "key": 573988297282150,
+            "lb": 15,
+            "occupancy": 6
+          },
+          {
+            "basis": [
+              292,
+              134,
+              66,
+              22,
+              10,
+              1
+            ],
+            "cap": 5,
+            "dim": 6,
+            "excess": 1,
+            "key": 573992592265798,
+            "lb": 15,
+            "occupancy": 6
+          },
+          {
+            "basis": [
+              320,
+              34,
+              18,
+              10,
+              4,
+              1
+            ],
+            "cap": 8,
+            "dim": 6,
+            "excess": 1,
+            "key": 567369550550022,
+            "lb": 12,
+            "occupancy": 9
+          }
+        ]
+      },
+      "analogous_collect_meta": {
+        "active_rows": 14478,
+        "row_signature_hist": {
+          "(4, 14, 4, 13, 'through_fixed')": 84,
+          "(4, 15, 3, 13, 'through_fixed')": 721,
+          "(4, 16, 2, 13, 'through_fixed')": 1768,
+          "(4, 17, 1, 13, 'through_fixed')": 94,
+          "(6, 11, 7, 61, 'through_fixed')": 56,
+          "(6, 12, 6, 61, 'through_fixed')": 6858,
+          "(6, 13, 5, 61, 'through_fixed')": 808,
+          "(6, 14, 4, 61, 'through_fixed')": 2796,
+          "(6, 15, 3, 61, 'through_fixed')": 678,
+          "(6, 9, 9, 61, 'through_fixed')": 615
+        },
+        "selected_rows_total": 14478,
+        "skipped_vacuous": 0,
+        "source_by_dim": {
+          "through_fixed,4": 2667,
+          "through_fixed,6": 11811
+        }
+      },
+      "analogous_same_dim_lb_rows": {
+        "max_excess": 0,
+        "occupancy_hist": {
+          "2": 546,
+          "3": 1475,
+          "4": 2284,
+          "5": 2131,
+          "6": 1007,
+          "7": 179,
+          "8": 8
+        },
+        "rows_by_dim": {
+          "4": 94,
+          "6": 7536
+        },
+        "rows_by_lb": {
+          "12": 6858,
+          "15": 678,
+          "17": 94
+        },
+        "rows_checked": 7630,
+        "slack_hist": {
+          "0": 22,
+          "1": 413,
+          "2": 1312,
+          "3": 2336,
+          "4": 2144,
+          "5": 1170,
+          "6": 233
+        },
+        "tight_count": 22,
+        "violation_count": 0,
+        "violation_head": []
+      },
+      "analogous_through_fixed_row_summary": {
+        "by_cap_rem": {
+          "1": 94,
+          "3": 678,
+          "6": 6858
+        },
+        "by_dim": {
+          "4": 94,
+          "6": 7536
+        },
+        "by_lb": {
+          "12": 6858,
+          "15": 678,
+          "17": 94
+        },
+        "by_source_dim": {
+          "through_fixed,4": 94,
+          "through_fixed,6": 7536
+        },
+        "by_var_count": {
+          "13": 94,
+          "61": 7536
+        },
+        "row_count": 7630
+      },
+      "fixed": [
+        1,
+        16
+      ],
+      "support": [
+        1,
+        16,
+        19,
+        21,
+        23,
+        25,
+        33,
+        41,
+        144,
+        192,
+        195,
+        216,
+        256,
+        292,
+        320,
+        325,
+        360,
+        365,
+        438,
+        511
+      ],
+      "support_path": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_dim123_throughfixed_rank1proj.json",
+      "support_rank1_count": 14,
+      "support_rank_hist": {
+        "1": 14,
+        "2": 6
+      },
+      "support_size": 20
+    }
+  ],
+  "core_dim_lb_groups": [
+    [
+      4,
+      17
+    ],
+    [
+      6,
+      12
+    ],
+    [
+      6,
+      15
+    ]
+  ],
+  "core_path": "data/rep10_core/rep10_orbit_core_ablation_pilot.json",
+  "core_row_count": 5572,
+  "core_summary": {
+    "by_cap_rem": {
+      "1": 960,
+      "3": 866,
+      "6": 3746
+    },
+    "by_dim": {
+      "4": 960,
+      "6": 4612
+    },
+    "by_lb": {
+      "12": 3746,
+      "15": 866,
+      "17": 960
+    },
+    "by_source_dim": {
+      "through_fixed,4": 960,
+      "through_fixed,6": 4612
+    },
+    "by_var_count": {
+      "13": 960,
+      "61": 4612
+    },
+    "row_count": 5572
+  },
+  "field": "F2",
+  "lut_meta_brief": {
+    "conflict_count": 0,
+    "coverage_ok": true,
+    "subspace_count": 8283458
+  },
+  "meaning": "If supports satisfy analogous row types but violate actual rep10-core rows, the row types alone do not transfer; full Wang-table/coupled-slot information is needed.",
+  "problem": "compare rep10 row core with saved supports",
+  "rank_s": 20,
+  "total_elapsed_sec": 15.381606578826904
+}

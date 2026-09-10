@@ -1,0 +1,36 @@
+{
+  "all_ok": true,
+  "cases": [
+    {
+      "cnf_header": "p cnf 3 4",
+      "cnf_path": "data/e11_fixed_u_xor_tests/empty_rhs0_sat.xor.cnf",
+      "empty_clause_count": 0,
+      "empty_xor_count": 0,
+      "expected": "SAT",
+      "json_path": "data/e11_fixed_u_xor_tests/empty_rhs0_sat.json",
+      "name": "empty_rhs0_sat",
+      "ok": true,
+      "returncode": 0,
+      "status": "SAT",
+      "stderr_tail": "",
+      "stdout_tail": "{\n  \"and_clauses\": 3,\n  \"elapsed_sec\": 0.00838923454284668,\n  \"rank\": 1,\n  \"returncode\": 10,\n  \"solver_status\": \"SAT\",\n  \"vars\": 3,\n  \"xor_clauses\": 1\n}\n{\n  \"diff_count\": 0,\n  \"model_lit_count\": 3,\n  \"solution_npz\": \"data/e11_fixed_u_xor_tests/empty_rhs0_sat.solution.npz\",\n  \"v_masks\": [\n    1\n  ],\n  \"verified\": true,\n  \"w_masks\": [\n    1\n  ]\n}\nwrote data/e11_fixed_u_xor_tests/empty_rhs0_sat.json\n"
+    },
+    {
+      "cnf_header": "p cnf 3 5",
+      "cnf_path": "data/e11_fixed_u_xor_tests/empty_rhs1_unsat.xor.cnf",
+      "empty_clause_count": 1,
+      "empty_xor_count": 0,
+      "expected": "UNSAT",
+      "json_path": "data/e11_fixed_u_xor_tests/empty_rhs1_unsat.json",
+      "name": "empty_rhs1_unsat",
+      "ok": true,
+      "returncode": 0,
+      "status": "UNSAT",
+      "stderr_tail": "",
+      "stdout_tail": "{\n  \"and_clauses\": 4,\n  \"elapsed_sec\": 0.006346464157104492,\n  \"rank\": 1,\n  \"returncode\": 20,\n  \"solver_status\": \"UNSAT\",\n  \"vars\": 3,\n  \"xor_clauses\": 1\n}\nwrote data/e11_fixed_u_xor_tests/empty_rhs1_unsat.json\n"
+    }
+  ],
+  "interpretation": "The fixed-A native-XOR encoder correctly ignores empty 0=0 equations and encodes empty 0=1 equations as CNF contradiction; no x 0 line should appear.",
+  "purpose": "direct empty-XOR regression tests for e11_fixed_u_xor_sat.py",
+  "script": "scripts/e11_fixed_u_xor_sat.py"
+}

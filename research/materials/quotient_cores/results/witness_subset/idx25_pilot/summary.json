@@ -1,0 +1,203 @@
+{
+  "records": [
+    {
+      "base_metadata": "workspace/data/witness_subset/idx25_pilot/idx025/base_metadata.json",
+      "branch": "matching",
+      "candidate_kind": "higher_rank_only",
+      "drat": "workspace/data/witness_subset/idx25_pilot/idx025/final.drat",
+      "drat_cadical_exit": 20,
+      "drat_cadical_sec": 54.93,
+      "drat_sha256": "b0b2615874ee36421e1803b86d20393893c7bb6f4d32dd926b4ff998d39d78b8",
+      "drat_trim": {
+        "elapsed_sec": 82.04463076591492,
+        "exit": 0,
+        "verified": true
+      },
+      "final_clauses": 54050,
+      "final_cnf": "workspace/data/witness_subset/idx25_pilot/idx025/final.cnf",
+      "final_cnf_sha256": "ac9d76337a637c1a8adaa9a5d89195e3d61190d63d08c0e088590b93f095cbf3",
+      "final_variables": 6916,
+      "fixed_prefix": [
+        1,
+        16,
+        27,
+        256,
+        360,
+        438
+      ],
+      "idx": 25,
+      "k": 6,
+      "learned_by_residual": {
+        "10": 8,
+        "11": 2,
+        "2": 13298,
+        "3": 3094,
+        "4": 2901,
+        "5": 2426,
+        "6": 1209,
+        "7": 491,
+        "8": 110,
+        "9": 40
+      },
+      "learned_by_source": {
+        "full_row_direct": 14130,
+        "witness_subset": 9449
+      },
+      "learned_clause_count": 23579,
+      "learned_clause_provenance": "workspace/data/witness_subset/idx25_pilot/idx025/learned_clauses.jsonl",
+      "learned_clause_provenance_sha256": "976d5c4e622d246db8cc9a1f28143cc9459180d60a3e4d122af98ce8d062d039",
+      "orbit_size": 576,
+      "round_log": [
+        {
+          "cadical_exit": 10,
+          "cadical_sec": 1.45,
+          "cheap_full_rows_used": 398,
+          "clauses": 30471,
+          "cnf": "workspace/data/witness_subset/idx25_pilot/idx025/round000.cnf",
+          "lut_violations": 10019,
+          "max_excess": 5,
+          "model_size": 14,
+          "new_by_residual": {
+            "10": 3,
+            "11": 2,
+            "2": 4022,
+            "3": 788,
+            "4": 602,
+            "5": 514,
+            "6": 271,
+            "7": 121,
+            "8": 31,
+            "9": 12
+          },
+          "new_by_source": {
+            "full_row_direct": 4284,
+            "witness_subset": 2082
+          },
+          "new_clauses": 6366,
+          "result": "SAT_SEPARATED",
+          "round": 0,
+          "skipped_budget": 0,
+          "skipped_duplicate": 8094,
+          "support_size": 20,
+          "variables": 6916,
+          "witness_rows_used": 2082
+        },
+        {
+          "cadical_exit": 10,
+          "cadical_sec": 0.93,
+          "cheap_full_rows_used": 310,
+          "clauses": 36837,
+          "cnf": "workspace/data/witness_subset/idx25_pilot/idx025/round001.cnf",
+          "lut_violations": 7472,
+          "max_excess": 5,
+          "model_size": 14,
+          "new_by_residual": {
+            "10": 2,
+            "2": 2910,
+            "3": 661,
+            "4": 693,
+            "5": 565,
+            "6": 296,
+            "7": 111,
+            "8": 24,
+            "9": 7
+          },
+          "new_by_source": {
+            "full_row_direct": 3053,
+            "witness_subset": 2216
+          },
+          "new_clauses": 5269,
+          "result": "SAT_SEPARATED",
+          "round": 1,
+          "skipped_budget": 0,
+          "skipped_duplicate": 5414,
+          "support_size": 20,
+          "variables": 6916,
+          "witness_rows_used": 2216
+        },
+        {
+          "cadical_exit": 10,
+          "cadical_sec": 1.83,
+          "cheap_full_rows_used": 435,
+          "clauses": 42106,
+          "cnf": "workspace/data/witness_subset/idx25_pilot/idx025/round002.cnf",
+          "lut_violations": 9854,
+          "max_excess": 6,
+          "model_size": 14,
+          "new_by_residual": {
+            "10": 2,
+            "2": 3887,
+            "3": 845,
+            "4": 689,
+            "5": 566,
+            "6": 339,
+            "7": 122,
+            "8": 35,
+            "9": 11
+          },
+          "new_by_source": {
+            "full_row_direct": 4191,
+            "witness_subset": 2305
+          },
+          "new_clauses": 6496,
+          "result": "SAT_SEPARATED",
+          "round": 2,
+          "skipped_budget": 0,
+          "skipped_duplicate": 7698,
+          "support_size": 20,
+          "variables": 6916,
+          "witness_rows_used": 2305
+        },
+        {
+          "cadical_exit": 10,
+          "cadical_sec": 18.94,
+          "cheap_full_rows_used": 279,
+          "clauses": 48602,
+          "cnf": "workspace/data/witness_subset/idx25_pilot/idx025/round003.cnf",
+          "lut_violations": 7401,
+          "max_excess": 4,
+          "model_size": 14,
+          "new_by_residual": {
+            "10": 1,
+            "2": 2479,
+            "3": 800,
+            "4": 917,
+            "5": 781,
+            "6": 303,
+            "7": 137,
+            "8": 20,
+            "9": 10
+          },
+          "new_by_source": {
+            "full_row_direct": 2602,
+            "witness_subset": 2846
+          },
+          "new_clauses": 5448,
+          "result": "SAT_SEPARATED",
+          "round": 3,
+          "skipped_budget": 0,
+          "skipped_duplicate": 4698,
+          "support_size": 20,
+          "variables": 6916,
+          "witness_rows_used": 2846
+        },
+        {
+          "cadical_exit": 20,
+          "cadical_sec": 53.45,
+          "clauses": 54050,
+          "cnf": "workspace/data/witness_subset/idx25_pilot/idx025/round004.cnf",
+          "result": "UNSAT",
+          "round": 4,
+          "variables": 6916
+        }
+      ],
+      "rounds": 5,
+      "schema": "witness_subset_result_v1",
+      "status": "UNSAT",
+      "survivor_count": 252,
+      "target": 14,
+      "total_elapsed_sec": 437.83
+    }
+  ],
+  "schema": "witness_subset_batch_v1"
+}

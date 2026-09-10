@@ -1,0 +1,206 @@
+{
+  "field": "F3",
+  "seed_summary": {
+    "rank": 27,
+    "tau_invariant_exact": true,
+    "tensor_matches_T333_F3": true,
+    "fixed_count": 9,
+    "free_orbit_count": 9,
+    "duplicate_ordered_pair_count": 162
+  },
+  "one_step": {
+    "reason_counts": {
+      "filtered_fixed-fixed": 18,
+      "accepted_free-free-4": 72,
+      "filtered_fixed-free": 72
+    },
+    "accepted": 72,
+    "rank_hist": {
+      "27": 72
+    },
+    "samples": [
+      {
+        "type": 0,
+        "i": 4,
+        "j": 5,
+        "rank": 27
+      },
+      {
+        "type": 0,
+        "i": 4,
+        "j": 6,
+        "rank": 27
+      },
+      {
+        "type": 0,
+        "i": 5,
+        "j": 4,
+        "rank": 27
+      },
+      {
+        "type": 0,
+        "i": 5,
+        "j": 6,
+        "rank": 27
+      },
+      {
+        "type": 0,
+        "i": 6,
+        "j": 4,
+        "rank": 27
+      },
+      {
+        "type": 0,
+        "i": 6,
+        "j": 5,
+        "rank": 27
+      },
+      {
+        "type": 0,
+        "i": 7,
+        "j": 8,
+        "rank": 27
+      },
+      {
+        "type": 0,
+        "i": 7,
+        "j": 9,
+        "rank": 27
+      },
+      {
+        "type": 0,
+        "i": 8,
+        "j": 7,
+        "rank": 27
+      },
+      {
+        "type": 0,
+        "i": 8,
+        "j": 9,
+        "rank": 27
+      },
+      {
+        "type": 0,
+        "i": 9,
+        "j": 7,
+        "rank": 27
+      },
+      {
+        "type": 0,
+        "i": 9,
+        "j": 8,
+        "rank": 27
+      },
+      {
+        "type": 0,
+        "i": 10,
+        "j": 11,
+        "rank": 27
+      },
+      {
+        "type": 0,
+        "i": 10,
+        "j": 12,
+        "rank": 27
+      },
+      {
+        "type": 0,
+        "i": 11,
+        "j": 10,
+        "rank": 27
+      },
+      {
+        "type": 0,
+        "i": 11,
+        "j": 12,
+        "rank": 27
+      },
+      {
+        "type": 0,
+        "i": 12,
+        "j": 10,
+        "rank": 27
+      },
+      {
+        "type": 0,
+        "i": 12,
+        "j": 11,
+        "rank": 27
+      },
+      {
+        "type": 0,
+        "i": 16,
+        "j": 17,
+        "rank": 27
+      },
+      {
+        "type": 0,
+        "i": 16,
+        "j": 18,
+        "rank": 27
+      }
+    ]
+  },
+  "move": "full tau-orbit flip on two distinct free orbits; local four-term tensor delta checked every accepted move",
+  "walk": {
+    "restarts_requested": 2,
+    "steps_per_restart": 20,
+    "tries_per_step": 250,
+    "full_check_interval": 10,
+    "restarts_completed": 2,
+    "accepted_moves": 40,
+    "nodes_with_no_move": 0,
+    "best_rank": 27,
+    "best_scheme_path": "data/tau_orbit_walk/sample_walk_best_rank27.json",
+    "first_rank_le_23_path": null,
+    "first_rank_le_22_path": null,
+    "reason_counts": {
+      "filtered_fixed-free": 1496,
+      "accepted_free-free-4": 1380,
+      "filtered_fixed-fixed": 720
+    },
+    "full_check_failures": 0,
+    "restart_summaries_first20": [
+      {
+        "restart": 0,
+        "steps_done": 20,
+        "best_rank": 27,
+        "final_rank": 27,
+        "rank_hist": {
+          "27": 21
+        }
+      },
+      {
+        "restart": 1,
+        "steps_done": 20,
+        "best_rank": 27,
+        "final_rank": 27,
+        "rank_hist": {
+          "27": 21
+        }
+      }
+    ],
+    "restart_summaries_last10": [
+      {
+        "restart": 0,
+        "steps_done": 20,
+        "best_rank": 27,
+        "final_rank": 27,
+        "rank_hist": {
+          "27": 21
+        }
+      },
+      {
+        "restart": 1,
+        "steps_done": 20,
+        "best_rank": 27,
+        "final_rank": 27,
+        "rank_hist": {
+          "27": 21
+        }
+      }
+    ],
+    "elapsed_sec": 1.3536124229431152
+  },
+  "interpretation": "Calibration of a tau-restricted flip walk from the standard seed. Rank<=23 hits are exact F3 decompositions and useful positive controls; no rank-22 hit is not a proof."
+}

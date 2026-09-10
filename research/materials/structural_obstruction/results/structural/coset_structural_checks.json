@@ -1,0 +1,297 @@
+{
+  "ag32_plane_check": {
+    "every_5_subset_contains_plane": true,
+    "plane_count": 14,
+    "plane_count_by_subset_size": {
+      "0": {
+        "0": 1
+      },
+      "1": {
+        "0": 8
+      },
+      "2": {
+        "0": 28
+      },
+      "3": {
+        "0": 56
+      },
+      "4": {
+        "0": 56,
+        "1": 14
+      },
+      "5": {
+        "1": 56
+      },
+      "6": {
+        "3": 28
+      },
+      "7": {
+        "7": 8
+      },
+      "8": {
+        "14": 1
+      }
+    }
+  },
+  "allowed_orbits_used": [
+    481,
+    482,
+    483
+  ],
+  "canonical_rank2_lowerblock_coset_check": {
+    "coset_by_firstrow": {
+      "0": 272,
+      "1": 273,
+      "2": 274,
+      "3": 275,
+      "4": 276,
+      "5": 277,
+      "6": 278,
+      "7": 279
+    },
+    "p": 272,
+    "rank2_firstrows": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "rank3_firstrows": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "rank3_firstrows_affine_plane_count": 1,
+    "rank3_points_form_affine_plane": true,
+    "rank_by_firstrow": {
+      "0": 2,
+      "1": 3,
+      "2": 2,
+      "3": 3,
+      "4": 2,
+      "5": 3,
+      "6": 2,
+      "7": 3
+    }
+  },
+  "conditional_interpretation": {
+    "if_dim2_raises_479_484_491_are_certified": "then every pair of distinct high-rank A-factors in a length-20 candidate has an allowed dim-2 orbit, hence differs by rank one; the converse is false because orbit 479 also has rank-one sums but is excluded. The one-way implication is enough for coset containment.",
+    "with_dim3_coset_LB17_and_AG32_fact": "at most four high-rank factors; split-flattening excess then forces exactly four with profile one rank2 and three rank3 in a lower-block rank2 coset"
+  },
+  "current_allowed_dim2_orbits": [
+    478,
+    480,
+    481,
+    482,
+    483
+  ],
+  "high_rank_pair_summary": {
+    "bad_allowed_not_481_483_count": 0,
+    "bad_allowed_not_481_483_head": [],
+    "bad_allowed_sum_not_rankone_count": 0,
+    "bad_allowed_sum_not_rankone_head": [],
+    "orbit_rankpattern": {
+      "479": {
+        "[1, 2, 2]": 441
+      },
+      "481": {
+        "[1, 2, 2]": 3528
+      },
+      "482": {
+        "[1, 3, 3]": 1764
+      },
+      "483": {
+        "[1, 2, 3]": 4704
+      },
+      "484": {
+        "[2, 2, 2]": 294
+      },
+      "485": {
+        "[2, 2, 2]": 7056
+      },
+      "486": {
+        "[2, 2, 2]": 3528
+      },
+      "487": {
+        "[2, 3, 3]": 10584
+      },
+      "488": {
+        "[2, 2, 3]": 42336
+      },
+      "489": {
+        "[2, 2, 2]": 14112
+      },
+      "490": {
+        "[2, 3, 3]": 14112
+      },
+      "491": {
+        "[3, 3, 3]": 4032
+      }
+    },
+    "rankone_sum_but_excluded_count": 441,
+    "rankone_sum_but_excluded_head": [
+      [
+        10,
+        11,
+        479,
+        19,
+        1
+      ],
+      [
+        10,
+        17,
+        479,
+        19,
+        1
+      ],
+      [
+        10,
+        26,
+        479,
+        19,
+        1
+      ],
+      [
+        11,
+        19,
+        479,
+        19,
+        1
+      ],
+      [
+        11,
+        25,
+        479,
+        19,
+        1
+      ],
+      [
+        12,
+        13,
+        479,
+        19,
+        1
+      ],
+      [
+        12,
+        33,
+        479,
+        19,
+        1
+      ],
+      [
+        12,
+        44,
+        479,
+        19,
+        1
+      ],
+      [
+        13,
+        37,
+        479,
+        19,
+        1
+      ],
+      [
+        13,
+        41,
+        479,
+        19,
+        1
+      ],
+      [
+        14,
+        15,
+        479,
+        19,
+        1
+      ],
+      [
+        14,
+        49,
+        479,
+        19,
+        1
+      ],
+      [
+        14,
+        62,
+        479,
+        19,
+        1
+      ],
+      [
+        15,
+        55,
+        479,
+        19,
+        1
+      ],
+      [
+        15,
+        57,
+        479,
+        19,
+        1
+      ],
+      [
+        17,
+        19,
+        479,
+        19,
+        1
+      ],
+      [
+        17,
+        25,
+        479,
+        19,
+        1
+      ],
+      [
+        19,
+        26,
+        479,
+        19,
+        1
+      ],
+      [
+        20,
+        22,
+        479,
+        19,
+        1
+      ],
+      [
+        20,
+        34,
+        479,
+        19,
+        1
+      ]
+    ],
+    "total_pairs": 106491
+  },
+  "high_rank_vertex_count": 462,
+  "meaning": "Finite proof-support checks for the high-rank rank-one-difference/coset reduction. CP-SAT/orbit raise certification is a separate premise.",
+  "rankone_sum_lemma_check": {
+    "bad_pair_count": 0,
+    "bad_pair_head": [],
+    "bad_triple_head": [],
+    "compatible_triple_count": 490,
+    "compatible_triples_without_global_side_count": 0,
+    "pair_hist_by_same_left_same_right_sumrank": {
+      "(False, False, 2)": 882,
+      "(False, True, 1)": 147,
+      "(True, False, 1)": 147
+    },
+    "rankone_point_count": 49
+  },
+  "schema": "s0908_coset_structural_checks_v1",
+  "sources": {
+    "cache": "data/wang_f2_lb20/wang_orbit_closed_cache.pkl",
+    "cascade": "data/wang_analysis/cascade/dim3_raises_to_dim2.json"
+  }
+}

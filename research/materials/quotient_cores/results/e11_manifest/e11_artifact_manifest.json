@@ -1,0 +1,192 @@
+{
+  "capacity_cache": {
+    "arrays_sha256_ordered": "e965f5d4c780bcda1911ef537b2eb6a7a51c7d6a6fa5efaa01c0cf03fcca2314",
+    "core_name": "E11",
+    "lut_meta_brief": {
+      "conflict_count": 0,
+      "coverage_ok": true,
+      "subspace_count": 8283458
+    },
+    "rank_s": 19,
+    "stats": {
+      "L_counts": {
+        "0": 1,
+        "3": 33,
+        "6": 578,
+        "9": 7520,
+        "11": 865,
+        "12": 61232,
+        "13": 8130,
+        "14": 81540,
+        "15": 138902,
+        "16": 83046,
+        "17": 34664,
+        "18": 687,
+        "19": 1
+      },
+      "build_elapsed_sec": 9.768110513687134,
+      "cap_counts": {
+        "0": 1,
+        "1": 687,
+        "2": 34664,
+        "3": 83046,
+        "4": 138902,
+        "5": 81540,
+        "6": 8130,
+        "7": 61232,
+        "8": 865,
+        "10": 7520,
+        "13": 578,
+        "16": 33,
+        "19": 1
+      },
+      "dim_counts": {
+        "0": 1,
+        "1": 255,
+        "2": 10795,
+        "3": 97155,
+        "4": 200787,
+        "5": 97155,
+        "6": 10795,
+        "7": 255,
+        "8": 1
+      },
+      "nonvacuous_count": 417197,
+      "subspace_count": 417199
+    },
+    "subspace_count": 417199
+  },
+  "core": {
+    "nnz": 24,
+    "sha256_raw_uint8": "5abb782023836a0f4cbd49c4c0bf4ec6b5c9fe4479ada1f0d8b893d8c68444a0",
+    "shape": [
+      8,
+      9,
+      9
+    ]
+  },
+  "elapsed_sec": 2.5615859031677246,
+  "field": "F2",
+  "file_hashes": {
+    "capacity_cache": {
+      "path": "data/e11_capacity_sat/e11_capacity_cache.pkl",
+      "sha256": "058e684fd6c41904df1c9db72df38b51751da2cb72e16d8517d0e4caab2acf24",
+      "size_bytes": 18319174
+    },
+    "core_e11": {
+      "path": "data/restricted_cores/mask_001_E11_core.npy",
+      "sha256": "480ac95a1f91a18ca5ba4617ef7c776d4ebfbf4e1c987c0d626ed7e9e2235758",
+      "size_bytes": 776
+    },
+    "depth4_eliminated": {
+      "path": "data/e11_canonical_tree/depth4_complete_eliminated_prefixes.jsonl",
+      "sha256": "2bead36eb70b152cc9bb63ac313438f14557947a75ad026f195ab1aff01b8db4",
+      "size_bytes": 32143600
+    },
+    "depth4_leaves": {
+      "path": "data/e11_canonical_tree/depth4_complete_occupation_feasible_leaves.jsonl",
+      "sha256": "aa593dfe1b194f46d73d7b2d8eb365b771abed0892eeabbc95acb8e57b1986af",
+      "size_bytes": 12573167
+    },
+    "depth4_replay": {
+      "path": "data/e11_canonical_tree/depth4_complete_summary_replay_check.json",
+      "sha256": "f596f16211ae6c8e7b90dd8cb0e47f4438d8067c7767c417c90ab745172d01e5",
+      "size_bytes": 1440
+    },
+    "depth4_summary": {
+      "path": "data/e11_canonical_tree/depth4_complete_summary.json",
+      "sha256": "1b17532dc7144611170dc5ff495c96f0ce0d090daab95531ef57d9101187f855",
+      "size_bytes": 3633
+    },
+    "depth4_terminal_completeness": {
+      "path": "data/e11_canonical_tree/depth4_complete_summary_terminal_completeness.json",
+      "sha256": "daa3f70b8d1282827a56b8bdc070fafacd1a43f88da329f82e6d69be2c7302cb",
+      "size_bytes": 1436
+    },
+    "domain_cpsat_all_tight": {
+      "path": "data/e11_occupation_sat/domain_cpsat_all_tight.json",
+      "sha256": "648fdc46e21f9e174523261c320deee0074259f47c729d7d7c05151018ea52ca",
+      "size_bytes": 4470
+    },
+    "drat_meta": {
+      "path": "data/e11_fixed_u_drat/local_search_9viol_kissat_drat_meta.json",
+      "sha256": "9a2ed2a4dbd3d5c8bfe9c9f253f8cb47d515d6f4653719be21b2c88dba754c6d",
+      "size_bytes": 1541
+    },
+    "drat_translation": {
+      "path": "data/e11_fixed_u_drat/local_search_9viol_plain_cnf_translation_verify.json",
+      "sha256": "8ffc0dd105c0fae923e15b3408485a4dadd5d34d11cf661893629e458ea97828",
+      "size_bytes": 2165
+    },
+    "membership": {
+      "path": "data/e11_occupation_sat/e11_membership.npy",
+      "sha256": "f2c83599f6dc46f9137d8d96887d37ecb1679a251fb3bc1103ff1f53b4f6df91",
+      "size_bytes": 106803072
+    },
+    "quotient_perms": {
+      "path": "data/e11_quotient_action/e11_quotient_action_verification.perms.npz",
+      "sha256": "b86bd7ad8153fd97df227146b19592c58204759c37a721b6fa31b59701338b95",
+      "size_bytes": 34788
+    },
+    "subspace_orbit_check": {
+      "path": "data/e11_subspace_orbits/e11_subspace_orbit_certificate_check.json",
+      "sha256": "20e93cfdd02f164ae51f15ec7285ea20f6fd2829d04cbeabc7eba2b78af58822",
+      "size_bytes": 1498
+    },
+    "subspace_orbits": {
+      "path": "data/e11_subspace_orbits/e11_subspace_orbits.npz",
+      "sha256": "fcb43b3f4f20f27a126e31835435f0ef3c3195df95b893d5c3767aa3ac5a0260",
+      "size_bytes": 1187527
+    },
+    "wang_lut": {
+      "path": "data/wang_f2_lb20/wang_subspace_lut.pkl",
+      "sha256": "4704acba23a97d40aa65d5a65222dcb679461fdccf3e41dbeed2a634894a3b33",
+      "size_bytes": 77941277
+    },
+    "xor_empty_regression": {
+      "path": "data/e11_fixed_u_xor_tests/empty_xor_regression_summary.json",
+      "sha256": "ef0a65817f5cb183ba890f7bbd54dddfb3122444de44165c0c3173bf230de89d",
+      "size_bytes": 2136
+    },
+    "xor_local_neg": {
+      "path": "data/e11_fixed_u_xor/local_search_9viol_xor_rerun.json",
+      "sha256": "1fd9c366253bb3890f145671fe5951f57808cb1a437db15aaf078ac0eb60d98a",
+      "size_bytes": 742
+    },
+    "xor_rank21_control": {
+      "path": "data/e11_fixed_u_xor/rank21_poolrow0_xor_control_rerun_correct_us.json",
+      "sha256": "f2bd06abfbb746956c1a2c27d22616702155139a8398901596addc0e8efd2025",
+      "size_bytes": 5541
+    },
+    "xor_vector_neg": {
+      "path": "data/e11_fixed_u_xor/vector_local_9viol_xor_rerun.json",
+      "sha256": "e8298f7e6116e1660cb4cee29f2d59b668053b774d65e67cf904e4118031d7f6",
+      "size_bytes": 741
+    }
+  },
+  "meaning": "This binds the analysis tree/SAT/proof records to concrete file hashes and checks that the membership matrix and quotient action are reconstructed from their defining cache/generators. It is evidence infrastructure, not a rank result.",
+  "membership": {
+    "loaded_sha256_raw_uint8": "e39150493e3b3a92382841ea55d6427c0dc3a2dd8316a98a80806d7ea709f5c8",
+    "matches_cache_masks": true,
+    "rebuilt_from_cache_masks_sha256_raw_uint8": "e39150493e3b3a92382841ea55d6427c0dc3a2dd8316a98a80806d7ea709f5c8",
+    "shape": [
+      256,
+      417199
+    ]
+  },
+  "purpose": "analysis E11 artifact hash/consistency manifest",
+  "quotient_permutation_group": {
+    "closure_equals_rows": true,
+    "closure_from_generators_size": 576,
+    "distinct_rows": 576,
+    "generator_count": 8,
+    "generators_in_rows": true,
+    "identity_in_rows": true,
+    "inverses_in_generated_closure": true,
+    "perms_shape": [
+      576,
+      256
+    ]
+  },
+  "rank_s": 19
+}

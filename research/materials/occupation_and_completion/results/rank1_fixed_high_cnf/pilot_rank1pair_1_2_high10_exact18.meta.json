@@ -1,0 +1,3579 @@
+{
+  "capacity_aux_vars": 448124,
+  "cardinality_capacity_clauses": 871733,
+  "cardinality_capacity_rows": 5475,
+  "cnf_path": "data/rank1_fixed_high_cnf/pilot_rank1pair_1_2_high10_exact18.cnf",
+  "compression": {
+    "compressed_intersections": 427912,
+    "constraint_size_cap_hist": {
+      "10,7": 3400,
+      "10,8": 25608,
+      "11,7": 5280,
+      "11,8": 21180,
+      "12,10": 592,
+      "12,11": 4112,
+      "13,10": 1584,
+      "13,11": 5472,
+      "13,7": 890,
+      "13,8": 2935,
+      "13,9": 46,
+      "15,10": 1504,
+      "15,11": 5552,
+      "17,10": 945,
+      "17,11": 3024,
+      "2,1": 3,
+      "21,10": 90,
+      "21,11": 92,
+      "21,13": 222,
+      "21,14": 660,
+      "25,13": 168,
+      "25,14": 224,
+      "3,2": 224,
+      "33,16": 25,
+      "33,17": 24,
+      "4,3": 712,
+      "49,19": 1,
+      "5,3": 87,
+      "5,4": 2466,
+      "6,5": 9888,
+      "7,4": 600,
+      "7,5": 3354,
+      "7,6": 24032,
+      "8,7": 7488,
+      "9,4": 105,
+      "9,5": 538,
+      "9,6": 288,
+      "9,7": 5928,
+      "9,8": 30528
+    },
+    "elapsed_sec": 39.598931550979614,
+    "fixed_high_in_row_hist": {
+      "0": 7866259,
+      "1": 417199
+    },
+    "fixed_high_points": [
+      10
+    ],
+    "fixed_high_rank_hist": {
+      "2": 1
+    },
+    "nonvacuous_constraints": 169871,
+    "rank1_intersection_size_hist_raw": {
+      "0": 1168041,
+      "1": 2035950,
+      "2": 1828386,
+      "3": 1260378,
+      "4": 804384,
+      "5": 463932,
+      "6": 295176,
+      "7": 182910,
+      "8": 84672,
+      "9": 64876,
+      "10": 29008,
+      "11": 33516,
+      "12": 4704,
+      "13": 14553,
+      "15": 7056,
+      "17": 4410,
+      "21": 1064,
+      "25": 392,
+      "33": 49,
+      "49": 1
+    },
+    "raw_by_dim": {
+      "0": 1,
+      "1": 511,
+      "2": 43435,
+      "3": 788035,
+      "4": 3309747,
+      "5": 3309747,
+      "6": 788035,
+      "7": 43435,
+      "8": 511,
+      "9": 1
+    },
+    "raw_by_lb": {
+      "0": 1,
+      "3": 49,
+      "6": 1274,
+      "9": 26152,
+      "11": 4837,
+      "12": 373576,
+      "13": 62034,
+      "14": 797860,
+      "15": 2174242,
+      "16": 2213526,
+      "17": 2183716,
+      "18": 445679,
+      "19": 511,
+      "20": 1
+    },
+    "raw_subspaces": 8283458,
+    "residual_cap_hist_raw": {
+      "0": 2,
+      "1": 6979,
+      "2": 500648,
+      "3": 2216676,
+      "4": 2251752,
+      "5": 2107230,
+      "6": 738946,
+      "7": 99292,
+      "8": 330107,
+      "9": 4350,
+      "10": 5100,
+      "11": 21052,
+      "13": 390,
+      "14": 884,
+      "16": 25,
+      "17": 24,
+      "19": 1
+    }
+  },
+  "direct_capacity_clauses": 10721311,
+  "direct_comb_limit": 2000,
+  "direct_rows": 164396,
+  "elapsed_sec": 16.08637547492981,
+  "empty_clause_count": 0,
+  "exact_rank1_count": 18,
+  "field": "F2",
+  "fixed_high_points": [
+    10
+  ],
+  "fixed_rank1_points": [
+    1,
+    2
+  ],
+  "fixed_rank1_unit_clauses": 2,
+  "global_exact_count_clauses": 2232,
+  "lut_meta_brief": {
+    "conflict_count": 0,
+    "coverage_ok": true,
+    "subspace_count": 8283458
+  },
+  "meaning": "UNSAT proves no exact-rank1-count Wang support skeleton with these fixed higher-rank A-points. SAT is only rank-1 skeleton feasibility under the fixed high prefix.",
+  "num_clauses": 11595278,
+  "num_vars": 449289,
+  "problem": "rank-1 skeleton CNF with fixed higher-rank A-points",
+  "rank1_points": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    16,
+    18,
+    24,
+    27,
+    32,
+    36,
+    40,
+    45,
+    48,
+    54,
+    56,
+    63,
+    64,
+    65,
+    72,
+    73,
+    128,
+    130,
+    144,
+    146,
+    192,
+    195,
+    216,
+    219,
+    256,
+    260,
+    288,
+    292,
+    320,
+    325,
+    360,
+    365,
+    384,
+    390,
+    432,
+    438,
+    448,
+    455,
+    504,
+    511
+  ],
+  "rank_s_for_capacities": 20,
+  "selected_constraint_count": 169871,
+  "selected_constraint_hist": {
+    "10,7": 3400,
+    "10,8": 25608,
+    "11,7": 5280,
+    "11,8": 21180,
+    "12,10": 592,
+    "12,11": 4112,
+    "13,10": 1584,
+    "13,11": 5472,
+    "13,7": 890,
+    "13,8": 2935,
+    "13,9": 46,
+    "15,10": 1504,
+    "15,11": 5552,
+    "17,10": 945,
+    "17,11": 3024,
+    "2,1": 3,
+    "21,10": 90,
+    "21,11": 92,
+    "21,13": 222,
+    "21,14": 660,
+    "25,13": 168,
+    "25,14": 224,
+    "3,2": 224,
+    "33,16": 25,
+    "33,17": 24,
+    "4,3": 712,
+    "49,19": 1,
+    "5,3": 87,
+    "5,4": 2466,
+    "6,5": 9888,
+    "7,4": 600,
+    "7,5": 3354,
+    "7,6": 24032,
+    "8,7": 7488,
+    "9,4": 105,
+    "9,5": 538,
+    "9,6": 288,
+    "9,7": 5928,
+    "9,8": 30528
+  },
+  "skipped_vacuous_after_compression": 0,
+  "witness_head": [
+    {
+      "basis": [
+        8,
+        2
+      ],
+      "cap": 1,
+      "clauses_if_direct": 1,
+      "dim": 2,
+      "fixed_high_in_row": 1,
+      "intersection_size": 2,
+      "key": 16514,
+      "lb": 18,
+      "raw_cap": 2,
+      "residual_cap": 1
+    },
+    {
+      "basis": [
+        9,
+        3
+      ],
+      "cap": 1,
+      "clauses_if_direct": 1,
+      "dim": 2,
+      "fixed_high_in_row": 1,
+      "intersection_size": 2,
+      "key": 24722,
+      "lb": 18,
+      "raw_cap": 2,
+      "residual_cap": 1
+    },
+    {
+      "basis": [
+        18,
+        10
+      ],
+      "cap": 1,
+      "clauses_if_direct": 1,
+      "dim": 2,
+      "fixed_high_in_row": 1,
+      "intersection_size": 2,
+      "key": 82210,
+      "lb": 18,
+      "raw_cap": 2,
+      "residual_cap": 1
+    },
+    {
+      "basis": [
+        290,
+        10,
+        4,
+        1
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 2164347428,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        386,
+        10,
+        6,
+        1
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 2172737572,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        100,
+        16,
+        9,
+        3
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 6480332356,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        68,
+        18,
+        10,
+        1
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 2189575236,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        18,
+        10,
+        4
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 16859427,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        18,
+        10,
+        5
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21053731,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        18,
+        10,
+        6
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 25248035,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        18,
+        10,
+        7
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 29442339,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        96,
+        17,
+        8,
+        2
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 4328662532,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        68,
+        16,
+        10,
+        1
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 2189558852,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        32,
+        9,
+        3
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 12657155,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        36,
+        8,
+        2
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 8454723,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        258,
+        32,
+        10,
+        4
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 8632143908,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        33,
+        9,
+        3
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 12657171,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        34,
+        10,
+        6
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 25248291,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        37,
+        8,
+        2
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 8454739,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        32,
+        10,
+        7
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 29442563,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        322,
+        34,
+        10,
+        5
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 10779644964,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        48,
+        9,
+        3
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 12657411,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        258,
+        32,
+        16,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21542211620,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        52,
+        8,
+        2
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 8454979,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        326,
+        39,
+        17,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21546464356,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        386,
+        48,
+        10,
+        6
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 12927244324,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        49,
+        9,
+        3
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 12657427,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        327,
+        34,
+        16,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21542229108,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        50,
+        10,
+        4
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 16859939,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        53,
+        8,
+        2
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 8454995,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        259,
+        36,
+        17,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21546438708,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        48,
+        10,
+        5
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21054211,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        450,
+        50,
+        10,
+        7
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 15074745380,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        64,
+        18,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42091523,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        65,
+        18,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42091539,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        258,
+        64,
+        10,
+        1
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 2189955108,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        66,
+        18,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42091555,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        67,
+        18,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42091571,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        294,
+        66,
+        10,
+        1
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 2189972068,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        128,
+        9,
+        3
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 12658691,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        129,
+        9,
+        3
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 12658707,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        144,
+        9,
+        3
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 12658947,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        322,
+        128,
+        16,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21542999076,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        145,
+        9,
+        3
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 12658963,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        327,
+        130,
+        16,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21543015540,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        192,
+        8,
+        2
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 8457219,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        258,
+        128,
+        64,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21744324644,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        130,
+        66,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42485795,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        193,
+        8,
+        2
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 8457235,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        128,
+        67,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42493955,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        263,
+        130,
+        65,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21748535412,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        208,
+        8,
+        2
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 8457475,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        290,
+        144,
+        66,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21752844836,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        146,
+        64,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42469667,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        326,
+        195,
+        17,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21547742308,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        209,
+        8,
+        2
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 8457491,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        144,
+        65,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42477827,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        294,
+        146,
+        67,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21757055588,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        323,
+        192,
+        17,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21547717684,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        256,
+        66,
+        34,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21617987588,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        256,
+        67,
+        39,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21638967300,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        256,
+        130,
+        10,
+        6
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 12927913988,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        256,
+        146,
+        54,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21702529028,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        256,
+        195,
+        10,
+        7
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 15075930116,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        256,
+        210,
+        50,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21686276100,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        260,
+        66,
+        39,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21638959172,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        260,
+        67,
+        34,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21617995844,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        258,
+        128,
+        10,
+        6
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 12927897636,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        260,
+        144,
+        54,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21702512708,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        259,
+        192,
+        10,
+        7
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 15075905588,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        260,
+        209,
+        50,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21686267972,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        256,
+        10,
+        4
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 16863235,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        258,
+        64,
+        34,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21617971236,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        263,
+        65,
+        39,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21638951028,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        278,
+        130,
+        54,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21702398308,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        288,
+        146,
+        10,
+        6
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 12928045572,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        274,
+        192,
+        50,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21686128932,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        288,
+        209,
+        10,
+        7
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 15076045316,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        256,
+        32,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42209283,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        260,
+        36,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42242115,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        259,
+        64,
+        39,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21638942772,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        262,
+        65,
+        34,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21617979492,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        274,
+        128,
+        54,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21702381860,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        290,
+        144,
+        10,
+        6
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 12928029220,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        278,
+        195,
+        50,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21686153572,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        291,
+        210,
+        10,
+        7
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 15076053556,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        256,
+        36,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42242051,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        260,
+        32,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42209347,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        288,
+        10,
+        4
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 16863747,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        258,
+        66,
+        32,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21609599012,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        259,
+        67,
+        36,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21626384436,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        320,
+        130,
+        10,
+        7
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 15075398660,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        320,
+        146,
+        53,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21698335748,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        320,
+        195,
+        10,
+        6
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 12928447492,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        320,
+        210,
+        48,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21677888516,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        256,
+        64,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42471427,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        260,
+        68,
+        10,
+        1
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 2189987908,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        263,
+        66,
+        36,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21626376308,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        262,
+        67,
+        32,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21609607268,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        322,
+        128,
+        10,
+        7
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 15075382308,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        325,
+        144,
+        53,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21698319444,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        323,
+        192,
+        10,
+        6
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 12928422964,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        325,
+        209,
+        48,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21677880404,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        256,
+        68,
+        10,
+        1
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 2189987844,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        260,
+        65,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42479683,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        320,
+        10,
+        5
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21058563,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        258,
+        64,
+        32,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21609582628,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        263,
+        65,
+        36,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21626368116,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        343,
+        130,
+        53,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21698205044,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        354,
+        146,
+        10,
+        7
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 15075530276,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        338,
+        192,
+        48,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21677741348,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        354,
+        209,
+        10,
+        6
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 12928562724,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        288,
+        66,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42488323,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        292,
+        70,
+        10,
+        1
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 2190004804,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        320,
+        34,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42226691,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        325,
+        39,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42267731,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        259,
+        64,
+        36,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21626359860,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        262,
+        65,
+        32,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21609590884,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        338,
+        128,
+        53,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21698188580,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        352,
+        144,
+        10,
+        7
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 15075513860,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        343,
+        195,
+        48,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21677766004,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        353,
+        210,
+        10,
+        6
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 12928570900,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        288,
+        70,
+        10,
+        1
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 2190004740,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        292,
+        67,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42496579,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        320,
+        39,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42267651,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        325,
+        34,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42226771,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        354,
+        10,
+        5
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21059107,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        384,
+        66,
+        50,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21685098500,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        384,
+        67,
+        53,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21697689604,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        258,
+        130,
+        10,
+        4
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 8632946724,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        274,
+        146,
+        36,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21627031844,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        323,
+        195,
+        10,
+        5
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 10780963892,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        338,
+        210,
+        34,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21619168548,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        256,
+        128,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42995715,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        288,
+        160,
+        16,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21543260676,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        320,
+        192,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 43521027,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        359,
+        231,
+        17,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21548037748,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        390,
+        66,
+        53,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21697681508,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        390,
+        67,
+        50,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21685106788,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        258,
+        128,
+        10,
+        4
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 8632930340,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        278,
+        144,
+        36,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21627015524,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        323,
+        192,
+        10,
+        5
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 10780939316,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        343,
+        209,
+        34,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21619160436,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        260,
+        130,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 43012163,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        292,
+        162,
+        16,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21543277124,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        325,
+        195,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 43545683,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        354,
+        228,
+        17,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21548013092,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        384,
+        10,
+        6
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 25253891,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        386,
+        64,
+        50,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21685082148,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        389,
+        65,
+        53,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21697673300,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        278,
+        130,
+        36,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21626900836,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        290,
+        146,
+        10,
+        4
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 8633078308,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        338,
+        192,
+        34,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21619021092,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        353,
+        209,
+        10,
+        5
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 10781079060,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        256,
+        160,
+        16,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21543260164,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        288,
+        144,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 43127299,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        325,
+        228,
+        17,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21548012628,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        354,
+        210,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 43669027,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        384,
+        48,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42342403,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        390,
+        54,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42391651,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        387,
+        64,
+        53,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21697665076,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        388,
+        65,
+        50,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21685090372,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        274,
+        128,
+        36,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21626884388,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        290,
+        144,
+        10,
+        4
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 8633061924,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        343,
+        195,
+        34,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21619045748,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        353,
+        210,
+        10,
+        5
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 10781087252,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        260,
+        162,
+        16,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21543276612,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        292,
+        146,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 43143747,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        320,
+        231,
+        17,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21548037124,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        359,
+        209,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 43660915,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        384,
+        54,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42391555,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        390,
+        48,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42342499,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        432,
+        10,
+        6
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 25254659,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        386,
+        66,
+        48,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21676709924,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        387,
+        67,
+        54,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21701883956,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        322,
+        130,
+        10,
+        5
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 10780431396,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        338,
+        146,
+        39,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21639615780,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        259,
+        195,
+        10,
+        4
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 8633479220,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        274,
+        210,
+        32,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21610778916,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        256,
+        192,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 43520003,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        292,
+        228,
+        17,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21548012100,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        320,
+        128,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42996739,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        354,
+        162,
+        16,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21543278116,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        384,
+        64,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42473475,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        390,
+        70,
+        10,
+        1
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 2190006372,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        389,
+        66,
+        54,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21701875796,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        388,
+        67,
+        48,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21676718148,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        322,
+        128,
+        10,
+        5
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 10780415012,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        343,
+        144,
+        39,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21639599476,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        259,
+        192,
+        10,
+        4
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 8633454644,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        278,
+        209,
+        32,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21610770788,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        260,
+        195,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 43544643,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        288,
+        231,
+        17,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21548036612,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        325,
+        130,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 43013203,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        359,
+        160,
+        16,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21543261812,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        384,
+        70,
+        10,
+        1
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 2190006276,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        390,
+        65,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 42481763,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        448,
+        10,
+        7
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 3,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 29449219,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        386,
+        64,
+        48,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21676693540,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    },
+    {
+      "basis": [
+        389,
+        65,
+        54,
+        10
+      ],
+      "cap": 2,
+      "clauses_if_direct": 1,
+      "dim": 4,
+      "fixed_high_in_row": 1,
+      "intersection_size": 3,
+      "key": 21701867604,
+      "lb": 17,
+      "raw_cap": 3,
+      "residual_cap": 2
+    }
+  ]
+}

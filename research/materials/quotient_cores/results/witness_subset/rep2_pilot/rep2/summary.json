@@ -1,0 +1,153 @@
+{
+  "base_metadata": "workspace/data/witness_subset/rep2_pilot/rep2/base_metadata.json",
+  "branch": "rep2_adjacent_pair",
+  "candidate_kind": "all_projective_points_except_prefix",
+  "final_clauses": 49039,
+  "final_variables": 18185,
+  "fixed_prefix": [
+    1,
+    2
+  ],
+  "idx": null,
+  "k": 2,
+  "learned_by_residual": {
+    "10": 19,
+    "11": 10,
+    "12": 8,
+    "13": 2,
+    "14": 1,
+    "15": 3,
+    "2": 686,
+    "3": 564,
+    "4": 356,
+    "5": 314,
+    "6": 185,
+    "7": 137,
+    "8": 90,
+    "9": 32
+  },
+  "learned_by_source": {
+    "full_row_direct": 1073,
+    "witness_subset": 1334
+  },
+  "learned_clause_count": 2407,
+  "learned_clause_provenance": "workspace/data/witness_subset/rep2_pilot/rep2/learned_clauses.jsonl",
+  "learned_clause_provenance_sha256": "7ecb1fa349c41e331dbe21848dd43039231e483d889aaa5bac2f8e14f2ba6eb6",
+  "orbit_size": null,
+  "round_log": [
+    {
+      "cadical_exit": 10,
+      "cadical_sec": 0.02,
+      "cheap_full_rows_used": 51,
+      "clauses": 46632,
+      "cnf": "workspace/data/witness_subset/rep2_pilot/rep2/round000.cnf",
+      "lut_violations": 8452,
+      "max_excess": 9,
+      "model_size": 18,
+      "new_by_residual": {
+        "11": 2,
+        "12": 2,
+        "15": 1,
+        "2": 356,
+        "3": 354,
+        "4": 138,
+        "5": 99,
+        "6": 28,
+        "7": 31,
+        "8": 14,
+        "9": 8
+      },
+      "new_by_source": {
+        "full_row_direct": 646,
+        "witness_subset": 387
+      },
+      "new_clauses": 1033,
+      "result": "SAT_SEPARATED",
+      "round": 0,
+      "skipped_budget": 0,
+      "skipped_duplicate": 8028,
+      "support_size": 20,
+      "variables": 18185,
+      "witness_rows_used": 387
+    },
+    {
+      "cadical_exit": 10,
+      "cadical_sec": 0.04,
+      "cheap_full_rows_used": 33,
+      "clauses": 47665,
+      "cnf": "workspace/data/witness_subset/rep2_pilot/rep2/round001.cnf",
+      "lut_violations": 7472,
+      "max_excess": 7,
+      "model_size": 18,
+      "new_by_residual": {
+        "10": 8,
+        "11": 5,
+        "12": 2,
+        "14": 1,
+        "15": 1,
+        "2": 270,
+        "3": 154,
+        "4": 114,
+        "5": 113,
+        "6": 66,
+        "7": 49,
+        "8": 33,
+        "9": 10
+      },
+      "new_by_source": {
+        "full_row_direct": 352,
+        "witness_subset": 474
+      },
+      "new_clauses": 826,
+      "result": "SAT_SEPARATED",
+      "round": 1,
+      "skipped_budget": 0,
+      "skipped_duplicate": 6976,
+      "support_size": 20,
+      "variables": 18185,
+      "witness_rows_used": 474
+    },
+    {
+      "cadical_exit": 10,
+      "cadical_sec": 0.02,
+      "cheap_full_rows_used": 5,
+      "clauses": 48491,
+      "cnf": "workspace/data/witness_subset/rep2_pilot/rep2/round002.cnf",
+      "lut_violations": 1715,
+      "max_excess": 3,
+      "model_size": 18,
+      "new_by_residual": {
+        "10": 11,
+        "11": 3,
+        "12": 4,
+        "13": 2,
+        "15": 1,
+        "2": 60,
+        "3": 56,
+        "4": 104,
+        "5": 102,
+        "6": 91,
+        "7": 57,
+        "8": 43,
+        "9": 14
+      },
+      "new_by_source": {
+        "full_row_direct": 75,
+        "witness_subset": 473
+      },
+      "new_clauses": 548,
+      "result": "SAT_SEPARATED",
+      "round": 2,
+      "skipped_budget": 0,
+      "skipped_duplicate": 1237,
+      "support_size": 20,
+      "variables": 18185,
+      "witness_rows_used": 473
+    }
+  ],
+  "rounds": 3,
+  "schema": "witness_subset_result_v1",
+  "status": "MAX_ROUNDS",
+  "survivor_count": 509,
+  "target": 18
+}

@@ -1,0 +1,237 @@
+{
+  "base_mask_count": 30572,
+  "branch": {
+    "avail_hr_count": 462,
+    "excluded_count": 0,
+    "fixed_rank1": [
+      1,
+      2
+    ],
+    "free_r1_count": 47,
+    "rep": 2,
+    "stab_order": 96
+  },
+  "hr_orbits": [
+    {
+      "rank_hist": {
+        "2": 6
+      },
+      "rep": 10,
+      "size": 6
+    },
+    {
+      "rank_hist": {
+        "2": 12
+      },
+      "rep": 12,
+      "size": 12
+    },
+    {
+      "rank_hist": {
+        "2": 6
+      },
+      "rep": 17,
+      "size": 6
+    },
+    {
+      "rank_hist": {
+        "2": 12
+      },
+      "rep": 20,
+      "size": 12
+    },
+    {
+      "rank_hist": {
+        "2": 6
+      },
+      "rep": 25,
+      "size": 6
+    },
+    {
+      "rank_hist": {
+        "2": 12
+      },
+      "rep": 28,
+      "size": 12
+    },
+    {
+      "rank_hist": {
+        "2": 24
+      },
+      "rep": 33,
+      "size": 24
+    },
+    {
+      "rank_hist": {
+        "2": 24
+      },
+      "rep": 34,
+      "size": 24
+    },
+    {
+      "rank_hist": {
+        "2": 24
+      },
+      "rep": 35,
+      "size": 24
+    },
+    {
+      "rank_hist": {
+        "2": 24
+      },
+      "rep": 80,
+      "size": 24
+    },
+    {
+      "rank_hist": {
+        "3": 24
+      },
+      "rep": 84,
+      "size": 24
+    },
+    {
+      "rank_hist": {
+        "2": 48
+      },
+      "rep": 96,
+      "size": 48
+    },
+    {
+      "rank_hist": {
+        "3": 48
+      },
+      "rep": 98,
+      "size": 48
+    },
+    {
+      "rank_hist": {
+        "2": 48
+      },
+      "rep": 160,
+      "size": 48
+    },
+    {
+      "rank_hist": {
+        "3": 48
+      },
+      "rep": 161,
+      "size": 48
+    },
+    {
+      "rank_hist": {
+        "2": 48
+      },
+      "rep": 224,
+      "size": 48
+    },
+    {
+      "rank_hist": {
+        "3": 48
+      },
+      "rep": 225,
+      "size": 48
+    }
+  ],
+  "known_tests": [
+    {
+      "fixed_high": [
+        25,
+        194,
+        217
+      ],
+      "name": "rep2_wit_k17",
+      "sol_size": 15,
+      "stats": {
+        "branches": 191,
+        "build_sec": 4.776,
+        "conflicts": 0,
+        "constraints": 14070,
+        "solve_sec": 0.269,
+        "status": "OPTIMAL"
+      },
+      "status": "OPTIMAL"
+    },
+    {
+      "fixed_high": [
+        34,
+        52,
+        278,
+        304
+      ],
+      "name": "rep2_wit_k16",
+      "sol_size": 14,
+      "stats": {
+        "branches": 108,
+        "build_sec": 6.25,
+        "conflicts": 0,
+        "constraints": 14785,
+        "solve_sec": 0.192,
+        "status": "OPTIMAL"
+      },
+      "status": "OPTIMAL"
+    }
+  ],
+  "minimal_forbidden": [
+    {
+      "full_status": "OPTIMAL",
+      "name": "rep2_wit_k17",
+      "subsets": []
+    },
+    {
+      "full_status": "OPTIMAL",
+      "name": "rep2_wit_k16",
+      "subsets": []
+    }
+  ],
+  "triple_scan": {
+    "feasible": 1,
+    "infeasible": 0,
+    "results": [
+      {
+        "full_support": [
+          1,
+          2,
+          7,
+          10,
+          12,
+          16,
+          25,
+          54,
+          73,
+          192,
+          216,
+          260,
+          320,
+          360,
+          365,
+          384,
+          390,
+          432,
+          448,
+          504
+        ],
+        "sol_size": 15,
+        "stats": {
+          "branches": 116,
+          "build_sec": 4.735,
+          "conflicts": 0,
+          "constraints": 14304,
+          "solve_sec": 0.251,
+          "status": "OPTIMAL"
+        },
+        "status": "OPTIMAL",
+        "triple": [
+          10,
+          12,
+          25
+        ]
+      }
+    ],
+    "tested": 1,
+    "witness_reps": [
+      25,
+      34,
+      160
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "build_sec": 51.037,
+  "complete_or_reduced_meta": {
+    "complete_meta_for_reconstruction": {
+      "by_dim8": {
+        "0": 1,
+        "1": 255,
+        "2": 10795,
+        "3": 97155,
+        "4": 200787,
+        "5": 97155,
+        "6": 10795,
+        "7": 255,
+        "8": 1
+      },
+      "by_full_lut_L": {
+        "0": 1,
+        "11": 865,
+        "12": 61232,
+        "13": 8130,
+        "14": 81540,
+        "15": 138902,
+        "16": 83046,
+        "17": 34664,
+        "18": 687,
+        "19": 1,
+        "3": 33,
+        "6": 578,
+        "9": 7520
+      },
+      "constraint_count": 417199,
+      "elapsed_sec": 36.737
+    },
+    "loaded_count": 320366,
+    "reduced_counts": {
+      "dropped_key8": 96833,
+      "kept_key8": 320366
+    },
+    "reduced_file_info": {
+      "description": "analysis primitive reduced E11-core Wang rows",
+      "rank_s": 19
+    },
+    "row_source": "data/reduced_wang/primitive_reduced_rows.pkl"
+  },
+  "constraints": {
+    "trace_dependency_cuts_added": 0,
+    "transported_face_cuts_added": 3456,
+    "transported_overlap_cuts_added": 1152,
+    "wang_rows_added": 319583,
+    "wang_rows_by_L": {
+      "0": 1,
+      "11": 13,
+      "12": 17312,
+      "13": 498,
+      "14": 51522,
+      "15": 130980,
+      "16": 82473,
+      "17": 34658,
+      "18": 438,
+      "3": 33,
+      "6": 200,
+      "9": 1455
+    },
+    "wang_rows_by_dim": {
+      "2": 10268,
+      "3": 97155,
+      "4": 200787,
+      "5": 5742,
+      "6": 5375,
+      "7": 255,
+      "8": 1
+    }
+  },
+  "elapsed_sec": 352.337,
+  "lut_coverage_ok": true,
+  "meaning": "CP-SAT support search with Wang rows and transported verified face cuts. This is search evidence only; any infeasibility proof requires replayable CNF/PB.",
+  "parameters": {
+    "include_overlap": true,
+    "rows": "reduced",
+    "seed": 640064,
+    "solver_time": 300.0,
+    "workers": 8
+  },
+  "row_source": "primitive_reduced_key_filter",
+  "schema": "transported_faces_cpsat_search_v1",
+  "solve_sec": 301.3,
+  "status": "UNKNOWN"
+}

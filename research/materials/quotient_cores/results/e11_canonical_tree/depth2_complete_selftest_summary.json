@@ -1,0 +1,84 @@
+{
+  "accepted_nonroot_nodes_popped": 166,
+  "elapsed_sec": 7.2059619426727295,
+  "exhausted_declared_tree": true,
+  "field": "F2",
+  "files": {
+    "cache": "data/e11_capacity_sat/e11_capacity_cache.pkl",
+    "eliminated_prefixes_jsonl": "data/e11_canonical_tree/depth2_complete_selftest_eliminated_prefixes.jsonl",
+    "frontier_jsonl": "data/e11_canonical_tree/depth2_complete_selftest_frontier.jsonl",
+    "membership": "data/e11_occupation_sat/e11_membership.npy",
+    "occupation_feasible_leaves_jsonl": "data/e11_canonical_tree/depth2_complete_selftest_occupation_feasible_leaves.jsonl",
+    "perms": "data/e11_quotient_action/e11_quotient_action_verification.perms.npz",
+    "subspace_orbits": "data/e11_subspace_orbits/e11_subspace_orbits.npz"
+  },
+  "max_depth": 2,
+  "max_frontier_size": 39,
+  "meaning": "If and only if exhausted_declared_tree is true at max_depth=19 with no witness, the recorded canonical tree plus eliminated-prefix records constitute an occupation-level nonexistence certificate. Node-limited or shallower runs are only calibrated search-state evidence.",
+  "node_limit": 0,
+  "occupation_feasible_leaf_count_at_max_depth": 158,
+  "pruned_prefix_count": 6,
+  "purpose": "canonical E11 A-multiset support tree with exact all-subspace Wang separation",
+  "rank_s": 19,
+  "raw_popped_including_root": 167,
+  "self_tests": [
+    {
+      "brute": {
+        "orbit_representatives": 164,
+        "raw_valid_multisets": 32391,
+        "size": 2
+      },
+      "generated": {
+        "level1": 8,
+        "level2": 164,
+        "level2_unique": 164
+      },
+      "name": "canonical_augmentation_size2",
+      "ok": true
+    }
+  ],
+  "stats": {
+    "children_attempted_by_depth": {
+      "0": 255,
+      "1": 2040
+    },
+    "leaves_by_depth": {
+      "2": 158
+    },
+    "popped_by_depth": {
+      "0": 1,
+      "1": 8,
+      "2": 158
+    },
+    "pruned_by_capacity_by_depth": {
+      "2": 6
+    },
+    "pushed_by_depth": {
+      "1": 8,
+      "2": 158
+    },
+    "skipped_noncanonical_by_depth": {
+      "0": 247,
+      "1": 1842
+    },
+    "skipped_point_cap_by_depth": {
+      "1": 6
+    },
+    "skipped_wrong_parent_by_depth": {
+      "1": 28
+    }
+  },
+  "stopped_by_node_limit_or_witness": false,
+  "violation_cap_counts": {
+    "1": 6
+  },
+  "violation_dim_counts": {
+    "2": 6
+  },
+  "violation_orbit_id_counts_head": {
+    "31": 1,
+    "39": 3,
+    "40": 2
+  },
+  "witness": null
+}

@@ -1,0 +1,55 @@
+{
+  "cnf": "data/challenge4_MM22.cnf",
+  "dimacs": {
+    "actual_clause_lines": 111780,
+    "empty_clause_count": 0,
+    "header": {
+      "clauses": 111780,
+      "format": "cnf",
+      "line": 1,
+      "vars": 24975
+    },
+    "header_clause_count_matches": true,
+    "header_vars_cover_literals": true,
+    "max_abs_literal": 24975,
+    "unused_variables_within_header": 0,
+    "used_variable_count": 24975
+  },
+  "layout_size22": {
+    "A_i_a": "i*27 + a + 1, with i=0..21, a=row-major 0..8",
+    "B_i_b": "i*27 + 9 + b + 1, with b=row-major 0..8",
+    "C_i_c": "i*27 + 18 + c + 1, with c=row-major 0..8",
+    "base_coeff_range": [
+      1,
+      594
+    ],
+    "cdim": 729,
+    "cube_clauses": 48114,
+    "cube_count": 16038,
+    "cube_range": [
+      2377,
+      18414
+    ],
+    "cube_var": "orig+pair + i*729 + a*81 + b*9 + c + 1 = pair(i,a,b) AND C_i,c",
+    "dim": 3,
+    "inactive_atleastone_clause_count_in_current_source_header": 93,
+    "orig_count": 594,
+    "pair_clauses": 5346,
+    "pair_count": 1782,
+    "pair_range": [
+      595,
+      2376
+    ],
+    "pair_var": "orig + i*81 + a*9 + b + 1 = (A_i,a AND B_i,b)",
+    "sdim": 9,
+    "semantic_clause_total_plain_xor": 111780,
+    "semantic_variable_total_without_padding": 24975,
+    "size": 22,
+    "xor_aux_count": 6561,
+    "xor_aux_range": [
+      18415,
+      24975
+    ],
+    "xor_parity_clauses": 58320
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": "scope_check_summary_v1",
+  "meaning": "Concise exact check of the stored analysis Phase-3 integer pair-count vectors against the full analysis linear formulation.",
+  "source_result": "data/pooled_square_cuts/pooled_square_cuts_results.json",
+  "full_detail_file": "data/scope_audit/phase3_full_audit.json",
+  "linear_model": {
+    "wang_records": 417199,
+    "n_eq": 7,
+    "n_ub_rlt": 183302,
+    "n_ub_triangle": 5913,
+    "n_ub_total": 189215
+  },
+  "summary": {
+    "checked_phase3_witnesses": 4,
+    "base_rlt_exact_feasible": 4,
+    "block_total_exact_feasible": 4,
+    "triangle_exact_feasible": 2,
+    "full_exact_feasible": 2
+  },
+  "witnesses": [
+    {
+      "n": [
+        1,
+        0,
+        4,
+        5,
+        2,
+        7
+      ],
+      "base_rlt_exact_feasible": true,
+      "block_totals_exact_feasible": true,
+      "triangle_exact_feasible": false,
+      "triangle_violated_rows": 2,
+      "full_max_violation": "1/24"
+    },
+    {
+      "n": [
+        1,
+        0,
+        3,
+        6,
+        3,
+        6
+      ],
+      "base_rlt_exact_feasible": true,
+      "block_totals_exact_feasible": true,
+      "triangle_exact_feasible": true,
+      "full_exact_feasible": true,
+      "reported_min_eig": -0.1689182450190102
+    },
+    {
+      "n": [
+        2,
+        0,
+        3,
+        5,
+        3,
+        6
+      ],
+      "base_rlt_exact_feasible": true,
+      "block_totals_exact_feasible": true,
+      "triangle_exact_feasible": false,
+      "triangle_violated_rows": 4,
+      "full_max_violation": "1/36"
+    },
+    {
+      "n": [
+        1,
+        0,
+        4,
+        5,
+        3,
+        6
+      ],
+      "base_rlt_exact_feasible": true,
+      "block_totals_exact_feasible": true,
+      "triangle_exact_feasible": true,
+      "full_exact_feasible": true,
+      "reported_min_eig": -0.28963158086873914
+    }
+  ]
+}

@@ -1,0 +1,933 @@
+{
+  "central_lift_note": "Multiplying P by a scalar or allowing P^3 to be scalar does not change Ad(P), the fixed-locus cubic C_P, or the modular invariants recorded here. A full sandwich-extension action/fixed-locus faithfulness proof is still a separate algebraic task.",
+  "class_representatives_char0": {
+    "pure_I": "P=I, already studied as pure cyclic",
+    "regular_three": "P=diag(1,zeta,zeta^2)",
+    "two_plus_one": "P=diag(1,1,zeta)"
+  },
+  "comparison": {
+    "pure_I": {
+      "KY_ranks_CP": [
+        950,
+        950
+      ],
+      "actual_order3_rhoP_invariant_dimension": 249,
+      "ad_trace_char0": {
+        "tr_g": 9,
+        "tr_g2": 9
+      },
+      "deprecated_wrong_invariant_dimension_formula_using_trace_AdP": 249,
+      "exterior_m_ge_4_by_full_gl9_orbit_all_primes": true,
+      "primes": [
+        65521,
+        1000003
+      ],
+      "sl3_projection_open_orbit_all_primes": true,
+      "stab_dims": [
+        8,
+        8
+      ],
+      "trace_quadratic_ranks": [
+        8,
+        8
+      ]
+    },
+    "regular_three": {
+      "KY_ranks_CP": [
+        950,
+        950
+      ],
+      "actual_order3_rhoP_invariant_dimension": 249,
+      "ad_trace_char0": {
+        "tr_g": 0,
+        "tr_g2": 0
+      },
+      "deprecated_wrong_invariant_dimension_formula_using_trace_AdP": 243,
+      "exterior_m_ge_4_by_full_gl9_orbit_all_primes": true,
+      "primes": [
+        65521,
+        1000003
+      ],
+      "sl3_projection_open_orbit_all_primes": false,
+      "stab_dims": [
+        22,
+        22
+      ],
+      "trace_quadratic_ranks": [
+        8,
+        8
+      ]
+    },
+    "two_plus_one": {
+      "KY_ranks_CP": [
+        950,
+        950
+      ],
+      "actual_order3_rhoP_invariant_dimension": 249,
+      "ad_trace_char0": {
+        "tr_g": 3,
+        "tr_g2": 3
+      },
+      "deprecated_wrong_invariant_dimension_formula_using_trace_AdP": 245,
+      "exterior_m_ge_4_by_full_gl9_orbit_all_primes": true,
+      "primes": [
+        65521,
+        1000003
+      ],
+      "sl3_projection_open_orbit_all_primes": true,
+      "stab_dims": [
+        8,
+        8
+      ],
+      "trace_quadratic_ranks": [
+        8,
+        8
+      ]
+    }
+  },
+  "interpretation": "The 245 and 243 values for the nontrivial classes are only the deprecated scalar trace diagnostic (729+tr(AdP)+tr(AdP)^2)/3; they are not invariant dimensions of the actual order-3 cyclic action.  The action selfcheck gives dimension 249 for all three rho_P actions.  For all three classes the full exterior target in Lambda^3(gl3) has GL9 orbit dimension 64, larger than the affine sigma_3(G(3,9)) upper bound 57, so the same orbit-dimension mechanism excludes m<=3 at the level of the full exterior equation.  The sl3 projection behaves differently: the two-plus-one class remains open-orbit in Lambda^3(sl3), while the regular-three class has stabilizer dimension 22 after trace-free projection, so the old Cartan-only formulation does not transfer.  The trace-grading quadratic rank remains 8 and the KY rank of C_P is 950 in all three classes; the missing pieces are the exact sandwich-extension/fixed-locus faithfulness proof and the mixed-independent-verification-record hypotheses needed to turn these measurements into a theorem about cyclic-type rank-22 skeletons.",
+  "model": "twisted fixed-locus model C_P(X)=tr(X Ad(P)X Ad(P)^2X) with diagonal representatives of PGL3 order-3 classes",
+  "records": [
+    {
+      "actual_order3_rhoP_invariant_dimension_from_action_selfcheck": 249,
+      "ad_trace_char0_integer": {
+        "tr_g": 9,
+        "tr_g2": 9
+      },
+      "ad_trace_mod": {
+        "tr_g": 9,
+        "tr_g2": 9
+      },
+      "cube_KY_rank_calibration": 70,
+      "deprecated_wrong_invariant_dimension_formula_using_trace_AdP": 249,
+      "diag_mod_p": [
+        1,
+        1,
+        1
+      ],
+      "exterior_gl3_nonzero_terms": 8,
+      "gl8_stabilizer_on_traceless_projection": {
+        "ambient_lambda3_sl3_dim": 56,
+        "dim_gl8": 64,
+        "map_rank": 56,
+        "open_orbit_by_stabilizer_8": true,
+        "orbit_dim": 56,
+        "sigma3_affine_upper_dim": 48,
+        "sigma3_dimension_argument_excludes_m_le_3_from_sl3_projection": true,
+        "stab_dim": 8
+      },
+      "gl9_stabilizer_on_full_exterior_target": {
+        "ambient_lambda3_gl3_dim": 84,
+        "dim_gl9": 81,
+        "map_rank": 64,
+        "orbit_dim": 64,
+        "sigma3_affine_upper_dim": 57,
+        "sigma3_dimension_argument_excludes_m_le_3": true,
+        "stab_dim": 17
+      },
+      "iota_trace_nonzero_terms": 0,
+      "koszul_young_matrix_shape": [
+        1134,
+        1134
+      ],
+      "koszul_young_rank_CP": 950,
+      "label": "pure_I",
+      "prime": 65521,
+      "trace_grading_quadratic_matrix_mod_p": [
+        [
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          65518
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          65518,
+          6
+        ]
+      ],
+      "trace_grading_quadratic_rank_on_sl3": 8,
+      "traceless_projection_nonzero_terms": 8,
+      "traceless_projection_terms_mod_p": {
+        "(0, 2, 6)": 6,
+        "(0, 2, 7)": 65518,
+        "(0, 3, 4)": 3,
+        "(1, 2, 5)": 65518,
+        "(1, 4, 6)": 3,
+        "(1, 4, 7)": 3,
+        "(3, 5, 6)": 65518,
+        "(3, 5, 7)": 6
+      }
+    },
+    {
+      "actual_order3_rhoP_invariant_dimension_from_action_selfcheck": 249,
+      "ad_trace_char0_integer": {
+        "tr_g": 3,
+        "tr_g2": 3
+      },
+      "ad_trace_mod": {
+        "tr_g": 3,
+        "tr_g2": 3
+      },
+      "cube_KY_rank_calibration": 70,
+      "deprecated_wrong_invariant_dimension_formula_using_trace_AdP": 245,
+      "diag_mod_p": [
+        1,
+        1,
+        16673
+      ],
+      "exterior_gl3_nonzero_terms": 8,
+      "gl8_stabilizer_on_traceless_projection": {
+        "ambient_lambda3_sl3_dim": 56,
+        "dim_gl8": 64,
+        "map_rank": 56,
+        "open_orbit_by_stabilizer_8": true,
+        "orbit_dim": 56,
+        "sigma3_affine_upper_dim": 48,
+        "sigma3_dimension_argument_excludes_m_le_3_from_sl3_projection": true,
+        "stab_dim": 8
+      },
+      "gl9_stabilizer_on_full_exterior_target": {
+        "ambient_lambda3_gl3_dim": 84,
+        "dim_gl9": 81,
+        "map_rank": 64,
+        "orbit_dim": 64,
+        "sigma3_affine_upper_dim": 57,
+        "sigma3_dimension_argument_excludes_m_le_3": true,
+        "stab_dim": 17
+      },
+      "iota_trace_nonzero_terms": 2,
+      "koszul_young_matrix_shape": [
+        1134,
+        1134
+      ],
+      "koszul_young_rank_CP": 950,
+      "label": "two_plus_one",
+      "prime": 65521,
+      "trace_grading_quadratic_matrix_mod_p": [
+        [
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          32759,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          32759,
+          0,
+          0
+        ],
+        [
+          0,
+          32759,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          32759,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          65518
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          65518,
+          6
+        ]
+      ],
+      "trace_grading_quadratic_rank_on_sl3": 8,
+      "traceless_projection_nonzero_terms": 8,
+      "traceless_projection_terms_mod_p": {
+        "(0, 2, 6)": 6,
+        "(0, 2, 7)": 65518,
+        "(0, 3, 4)": 50019,
+        "(1, 2, 5)": 15502,
+        "(1, 4, 6)": 50019,
+        "(1, 4, 7)": 15499,
+        "(3, 5, 6)": 15502,
+        "(3, 5, 7)": 65518
+      }
+    },
+    {
+      "actual_order3_rhoP_invariant_dimension_from_action_selfcheck": 249,
+      "ad_trace_char0_integer": {
+        "tr_g": 0,
+        "tr_g2": 0
+      },
+      "ad_trace_mod": {
+        "tr_g": 0,
+        "tr_g2": 0
+      },
+      "cube_KY_rank_calibration": 70,
+      "deprecated_wrong_invariant_dimension_formula_using_trace_AdP": 243,
+      "diag_mod_p": [
+        1,
+        16673,
+        48847
+      ],
+      "exterior_gl3_nonzero_terms": 8,
+      "gl8_stabilizer_on_traceless_projection": {
+        "ambient_lambda3_sl3_dim": 56,
+        "dim_gl8": 64,
+        "map_rank": 42,
+        "open_orbit_by_stabilizer_8": false,
+        "orbit_dim": 42,
+        "sigma3_affine_upper_dim": 48,
+        "sigma3_dimension_argument_excludes_m_le_3_from_sl3_projection": false,
+        "stab_dim": 22
+      },
+      "gl9_stabilizer_on_full_exterior_target": {
+        "ambient_lambda3_gl3_dim": 84,
+        "dim_gl9": 81,
+        "map_rank": 64,
+        "orbit_dim": 64,
+        "sigma3_affine_upper_dim": 57,
+        "sigma3_dimension_argument_excludes_m_le_3": true,
+        "stab_dim": 17
+      },
+      "iota_trace_nonzero_terms": 3,
+      "koszul_young_matrix_shape": [
+        1134,
+        1134
+      ],
+      "koszul_young_rank_CP": 950,
+      "label": "regular_three",
+      "prime": 65521,
+      "trace_grading_quadratic_matrix_mod_p": [
+        [
+          0,
+          0,
+          32759,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          32759,
+          0,
+          0,
+          0
+        ],
+        [
+          32759,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          32759,
+          0,
+          0
+        ],
+        [
+          0,
+          32759,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          32759,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          65518
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          65518,
+          6
+        ]
+      ],
+      "trace_grading_quadratic_rank_on_sl3": 8,
+      "traceless_projection_nonzero_terms": 8,
+      "traceless_projection_terms_mod_p": {
+        "(0, 2, 6)": 65518,
+        "(0, 2, 7)": 50022,
+        "(0, 3, 4)": 3,
+        "(1, 2, 5)": 65518,
+        "(1, 4, 6)": 15499,
+        "(1, 4, 7)": 50019,
+        "(3, 5, 6)": 15502,
+        "(3, 5, 7)": 65518
+      }
+    },
+    {
+      "actual_order3_rhoP_invariant_dimension_from_action_selfcheck": 249,
+      "ad_trace_char0_integer": {
+        "tr_g": 9,
+        "tr_g2": 9
+      },
+      "ad_trace_mod": {
+        "tr_g": 9,
+        "tr_g2": 9
+      },
+      "cube_KY_rank_calibration": 70,
+      "deprecated_wrong_invariant_dimension_formula_using_trace_AdP": 249,
+      "diag_mod_p": [
+        1,
+        1,
+        1
+      ],
+      "exterior_gl3_nonzero_terms": 8,
+      "gl8_stabilizer_on_traceless_projection": {
+        "ambient_lambda3_sl3_dim": 56,
+        "dim_gl8": 64,
+        "map_rank": 56,
+        "open_orbit_by_stabilizer_8": true,
+        "orbit_dim": 56,
+        "sigma3_affine_upper_dim": 48,
+        "sigma3_dimension_argument_excludes_m_le_3_from_sl3_projection": true,
+        "stab_dim": 8
+      },
+      "gl9_stabilizer_on_full_exterior_target": {
+        "ambient_lambda3_gl3_dim": 84,
+        "dim_gl9": 81,
+        "map_rank": 64,
+        "orbit_dim": 64,
+        "sigma3_affine_upper_dim": 57,
+        "sigma3_dimension_argument_excludes_m_le_3": true,
+        "stab_dim": 17
+      },
+      "iota_trace_nonzero_terms": 0,
+      "koszul_young_matrix_shape": [
+        1134,
+        1134
+      ],
+      "koszul_young_rank_CP": 950,
+      "label": "pure_I",
+      "prime": 1000003,
+      "trace_grading_quadratic_matrix_mod_p": [
+        [
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          1000000
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1000000,
+          6
+        ]
+      ],
+      "trace_grading_quadratic_rank_on_sl3": 8,
+      "traceless_projection_nonzero_terms": 8,
+      "traceless_projection_terms_mod_p": {
+        "(0, 2, 6)": 6,
+        "(0, 2, 7)": 1000000,
+        "(0, 3, 4)": 3,
+        "(1, 2, 5)": 1000000,
+        "(1, 4, 6)": 3,
+        "(1, 4, 7)": 3,
+        "(3, 5, 6)": 1000000,
+        "(3, 5, 7)": 6
+      }
+    },
+    {
+      "actual_order3_rhoP_invariant_dimension_from_action_selfcheck": 249,
+      "ad_trace_char0_integer": {
+        "tr_g": 3,
+        "tr_g2": 3
+      },
+      "ad_trace_mod": {
+        "tr_g": 3,
+        "tr_g2": 3
+      },
+      "cube_KY_rank_calibration": 70,
+      "deprecated_wrong_invariant_dimension_formula_using_trace_AdP": 245,
+      "diag_mod_p": [
+        1,
+        1,
+        499501
+      ],
+      "exterior_gl3_nonzero_terms": 8,
+      "gl8_stabilizer_on_traceless_projection": {
+        "ambient_lambda3_sl3_dim": 56,
+        "dim_gl8": 64,
+        "map_rank": 56,
+        "open_orbit_by_stabilizer_8": true,
+        "orbit_dim": 56,
+        "sigma3_affine_upper_dim": 48,
+        "sigma3_dimension_argument_excludes_m_le_3_from_sl3_projection": true,
+        "stab_dim": 8
+      },
+      "gl9_stabilizer_on_full_exterior_target": {
+        "ambient_lambda3_gl3_dim": 84,
+        "dim_gl9": 81,
+        "map_rank": 64,
+        "orbit_dim": 64,
+        "sigma3_affine_upper_dim": 57,
+        "sigma3_dimension_argument_excludes_m_le_3": true,
+        "stab_dim": 17
+      },
+      "iota_trace_nonzero_terms": 2,
+      "koszul_young_matrix_shape": [
+        1134,
+        1134
+      ],
+      "koszul_young_rank_CP": 950,
+      "label": "two_plus_one",
+      "prime": 1000003,
+      "trace_grading_quadratic_matrix_mod_p": [
+        [
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          500000,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          500000,
+          0,
+          0
+        ],
+        [
+          0,
+          500000,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          500000,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          1000000
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1000000,
+          6
+        ]
+      ],
+      "trace_grading_quadratic_rank_on_sl3": 8,
+      "traceless_projection_nonzero_terms": 8,
+      "traceless_projection_terms_mod_p": {
+        "(0, 2, 6)": 6,
+        "(0, 2, 7)": 1000000,
+        "(0, 3, 4)": 498500,
+        "(1, 2, 5)": 501503,
+        "(1, 4, 6)": 498500,
+        "(1, 4, 7)": 501500,
+        "(3, 5, 6)": 501503,
+        "(3, 5, 7)": 1000000
+      }
+    },
+    {
+      "actual_order3_rhoP_invariant_dimension_from_action_selfcheck": 249,
+      "ad_trace_char0_integer": {
+        "tr_g": 0,
+        "tr_g2": 0
+      },
+      "ad_trace_mod": {
+        "tr_g": 0,
+        "tr_g2": 0
+      },
+      "cube_KY_rank_calibration": 70,
+      "deprecated_wrong_invariant_dimension_formula_using_trace_AdP": 243,
+      "diag_mod_p": [
+        1,
+        499501,
+        500501
+      ],
+      "exterior_gl3_nonzero_terms": 8,
+      "gl8_stabilizer_on_traceless_projection": {
+        "ambient_lambda3_sl3_dim": 56,
+        "dim_gl8": 64,
+        "map_rank": 42,
+        "open_orbit_by_stabilizer_8": false,
+        "orbit_dim": 42,
+        "sigma3_affine_upper_dim": 48,
+        "sigma3_dimension_argument_excludes_m_le_3_from_sl3_projection": false,
+        "stab_dim": 22
+      },
+      "gl9_stabilizer_on_full_exterior_target": {
+        "ambient_lambda3_gl3_dim": 84,
+        "dim_gl9": 81,
+        "map_rank": 64,
+        "orbit_dim": 64,
+        "sigma3_affine_upper_dim": 57,
+        "sigma3_dimension_argument_excludes_m_le_3": true,
+        "stab_dim": 17
+      },
+      "iota_trace_nonzero_terms": 3,
+      "koszul_young_matrix_shape": [
+        1134,
+        1134
+      ],
+      "koszul_young_rank_CP": 950,
+      "label": "regular_three",
+      "prime": 1000003,
+      "trace_grading_quadratic_matrix_mod_p": [
+        [
+          0,
+          0,
+          500000,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          500000,
+          0,
+          0,
+          0
+        ],
+        [
+          500000,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          500000,
+          0,
+          0
+        ],
+        [
+          0,
+          500000,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          500000,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          1000000
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1000000,
+          6
+        ]
+      ],
+      "trace_grading_quadratic_rank_on_sl3": 8,
+      "traceless_projection_nonzero_terms": 8,
+      "traceless_projection_terms_mod_p": {
+        "(0, 2, 6)": 1000000,
+        "(0, 2, 7)": 498503,
+        "(0, 3, 4)": 3,
+        "(1, 2, 5)": 1000000,
+        "(1, 4, 6)": 501500,
+        "(1, 4, 7)": 498500,
+        "(3, 5, 6)": 501503,
+        "(3, 5, 7)": 1000000
+      }
+    }
+  ],
+  "schema": "twisted_cyclic_invariants_v1"
+}

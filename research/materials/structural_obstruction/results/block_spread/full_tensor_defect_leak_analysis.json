@@ -1,0 +1,1858 @@
+{
+  "interpretation": "If Brent spot-check fails, the file is not a full T333 pool in this convention and only the local row analysis is diagnostic. Exact full rank-20 use requires a full-tensor encoder/search.",
+  "purpose": "full-tensor block-spread defect/leak calibration on available pool files",
+  "results": [
+    {
+      "all_defect_ok": false,
+      "brent_failures": [
+        {
+          "diff": 51,
+          "row": 0
+        },
+        {
+          "diff": 51,
+          "row": 1
+        },
+        {
+          "diff": 51,
+          "row": 2
+        },
+        {
+          "diff": 51,
+          "row": 3
+        },
+        {
+          "diff": 51,
+          "row": 4
+        },
+        {
+          "diff": 51,
+          "row": 5
+        },
+        {
+          "diff": 51,
+          "row": 6
+        },
+        {
+          "diff": 51,
+          "row": 7
+        },
+        {
+          "diff": 51,
+          "row": 8
+        },
+        {
+          "diff": 51,
+          "row": 9
+        }
+      ],
+      "brent_spot_checked": 10,
+      "capacity_leak_hist": {
+        "(0, 0, 0)": 100,
+        "(10, 3, 4)": 3,
+        "(10, 3, 5)": 2,
+        "(10, 3, 6)": 1,
+        "(10, 4, 4)": 9,
+        "(10, 4, 5)": 2,
+        "(10, 4, 6)": 1,
+        "(10, 5, 2)": 2,
+        "(10, 5, 3)": 6,
+        "(10, 5, 4)": 16,
+        "(10, 5, 5)": 5,
+        "(10, 5, 6)": 2,
+        "(10, 6, 1)": 1,
+        "(10, 6, 3)": 4,
+        "(10, 6, 4)": 5,
+        "(10, 6, 6)": 1,
+        "(11, 3, 4)": 1,
+        "(11, 3, 6)": 1,
+        "(11, 4, 4)": 3,
+        "(11, 4, 5)": 2,
+        "(11, 5, 3)": 2,
+        "(11, 5, 4)": 10,
+        "(11, 5, 5)": 6,
+        "(11, 5, 6)": 2,
+        "(11, 6, 3)": 2,
+        "(11, 6, 4)": 5,
+        "(11, 6, 5)": 7,
+        "(11, 6, 6)": 1,
+        "(12, 4, 4)": 1,
+        "(12, 4, 5)": 3,
+        "(12, 5, 3)": 2,
+        "(12, 5, 4)": 5,
+        "(12, 5, 5)": 3,
+        "(12, 5, 6)": 4,
+        "(12, 6, 2)": 1,
+        "(12, 6, 3)": 2,
+        "(12, 6, 4)": 8,
+        "(12, 6, 6)": 1,
+        "(13, 4, 4)": 1,
+        "(13, 4, 5)": 1,
+        "(13, 4, 6)": 1,
+        "(13, 5, 4)": 2,
+        "(13, 5, 5)": 2,
+        "(13, 5, 6)": 1,
+        "(13, 6, 4)": 3,
+        "(13, 6, 5)": 6,
+        "(13, 6, 6)": 2,
+        "(14, 4, 5)": 1,
+        "(14, 5, 4)": 4,
+        "(14, 5, 5)": 1,
+        "(14, 5, 6)": 3,
+        "(14, 6, 4)": 2,
+        "(14, 6, 5)": 5,
+        "(15, 5, 6)": 1,
+        "(15, 6, 5)": 1,
+        "(15, 6, 6)": 1,
+        "(16, 6, 5)": 1,
+        "(16, 6, 6)": 1,
+        "(3, 3, 0)": 38,
+        "(3, 3, 3)": 9,
+        "(4, 3, 0)": 4,
+        "(4, 3, 1)": 24,
+        "(4, 3, 3)": 5,
+        "(4, 3, 4)": 2,
+        "(4, 4, 0)": 10,
+        "(4, 4, 3)": 10,
+        "(5, 3, 1)": 31,
+        "(5, 3, 2)": 14,
+        "(5, 3, 3)": 3,
+        "(5, 3, 4)": 6,
+        "(5, 4, 0)": 3,
+        "(5, 4, 1)": 39,
+        "(5, 4, 3)": 8,
+        "(5, 4, 4)": 11,
+        "(5, 5, 0)": 1,
+        "(5, 5, 3)": 2,
+        "(6, 3, 1)": 7,
+        "(6, 3, 2)": 28,
+        "(6, 3, 3)": 2,
+        "(6, 3, 4)": 1,
+        "(6, 4, 1)": 16,
+        "(6, 4, 2)": 29,
+        "(6, 4, 3)": 8,
+        "(6, 4, 4)": 3,
+        "(6, 5, 1)": 12,
+        "(6, 5, 3)": 1,
+        "(6, 5, 4)": 4,
+        "(6, 6, 0)": 1,
+        "(7, 3, 2)": 10,
+        "(7, 3, 3)": 15,
+        "(7, 3, 4)": 1,
+        "(7, 4, 1)": 4,
+        "(7, 4, 2)": 22,
+        "(7, 4, 3)": 18,
+        "(7, 4, 4)": 3,
+        "(7, 4, 5)": 2,
+        "(7, 5, 1)": 4,
+        "(7, 5, 2)": 21,
+        "(7, 5, 3)": 4,
+        "(7, 5, 4)": 3,
+        "(7, 5, 5)": 3,
+        "(7, 6, 1)": 3,
+        "(7, 6, 4)": 1,
+        "(8, 3, 2)": 1,
+        "(8, 3, 3)": 9,
+        "(8, 3, 4)": 5,
+        "(8, 3, 5)": 2,
+        "(8, 4, 1)": 2,
+        "(8, 4, 2)": 10,
+        "(8, 4, 3)": 13,
+        "(8, 4, 4)": 9,
+        "(8, 5, 1)": 3,
+        "(8, 5, 2)": 12,
+        "(8, 5, 3)": 14,
+        "(8, 5, 4)": 7,
+        "(8, 5, 5)": 2,
+        "(8, 6, 1)": 2,
+        "(8, 6, 2)": 3,
+        "(8, 6, 3)": 1,
+        "(8, 6, 4)": 2,
+        "(8, 6, 5)": 2,
+        "(9, 3, 3)": 3,
+        "(9, 3, 4)": 5,
+        "(9, 3, 5)": 2,
+        "(9, 3, 6)": 1,
+        "(9, 4, 2)": 1,
+        "(9, 4, 3)": 12,
+        "(9, 4, 4)": 9,
+        "(9, 4, 5)": 1,
+        "(9, 5, 2)": 8,
+        "(9, 5, 3)": 12,
+        "(9, 5, 4)": 11,
+        "(9, 5, 5)": 2,
+        "(9, 5, 6)": 1,
+        "(9, 6, 2)": 5,
+        "(9, 6, 3)": 3,
+        "(9, 6, 4)": 6,
+        "(9, 6, 6)": 1
+      },
+      "failure_head": [
+        {
+          "caps": [
+            11,
+            13,
+            8,
+            9,
+            12,
+            13,
+            5,
+            8,
+            0
+          ],
+          "failures": [
+            {
+              "block": [
+                0,
+                0
+              ],
+              "budget": 8,
+              "c": 11,
+              "leak_sum": 9,
+              "leak_v_rank": 5,
+              "leak_w_rank": 4,
+              "ok": false,
+              "slice": 0,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                2,
+                0
+              ],
+              "budget": 5,
+              "c": 8,
+              "leak_sum": 9,
+              "leak_v_rank": 5,
+              "leak_w_rank": 4,
+              "ok": false,
+              "slice": 2,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                0,
+                1
+              ],
+              "budget": 6,
+              "c": 9,
+              "leak_sum": 7,
+              "leak_v_rank": 5,
+              "leak_w_rank": 2,
+              "ok": false,
+              "slice": 3,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                2,
+                1
+              ],
+              "budget": 10,
+              "c": 13,
+              "leak_sum": 11,
+              "leak_v_rank": 6,
+              "leak_w_rank": 5,
+              "ok": false,
+              "slice": 5,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                0,
+                2
+              ],
+              "budget": 2,
+              "c": 5,
+              "leak_sum": 5,
+              "leak_v_rank": 4,
+              "leak_w_rank": 1,
+              "ok": false,
+              "slice": 6,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                2,
+                2
+              ],
+              "budget": -3,
+              "c": 0,
+              "leak_sum": 0,
+              "leak_v_rank": 0,
+              "leak_w_rank": 0,
+              "ok": false,
+              "slice": 8,
+              "v_pure": true,
+              "w_pure": true
+            }
+          ],
+          "row": 0
+        },
+        {
+          "caps": [
+            6,
+            12,
+            8,
+            4,
+            7,
+            12,
+            8,
+            6,
+            0
+          ],
+          "failures": [
+            {
+              "block": [
+                0,
+                0
+              ],
+              "budget": 3,
+              "c": 6,
+              "leak_sum": 6,
+              "leak_v_rank": 4,
+              "leak_w_rank": 2,
+              "ok": false,
+              "slice": 0,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                2,
+                0
+              ],
+              "budget": 5,
+              "c": 8,
+              "leak_sum": 10,
+              "leak_v_rank": 6,
+              "leak_w_rank": 4,
+              "ok": false,
+              "slice": 2,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                0,
+                1
+              ],
+              "budget": 1,
+              "c": 4,
+              "leak_sum": 4,
+              "leak_v_rank": 3,
+              "leak_w_rank": 1,
+              "ok": false,
+              "slice": 3,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                1,
+                1
+              ],
+              "budget": 4,
+              "c": 7,
+              "leak_sum": 6,
+              "leak_v_rank": 4,
+              "leak_w_rank": 2,
+              "ok": false,
+              "slice": 4,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                2,
+                1
+              ],
+              "budget": 9,
+              "c": 12,
+              "leak_sum": 10,
+              "leak_v_rank": 6,
+              "leak_w_rank": 4,
+              "ok": false,
+              "slice": 5,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                0,
+                2
+              ],
+              "budget": 5,
+              "c": 8,
+              "leak_sum": 8,
+              "leak_v_rank": 4,
+              "leak_w_rank": 4,
+              "ok": false,
+              "slice": 6,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                1,
+                2
+              ],
+              "budget": 3,
+              "c": 6,
+              "leak_sum": 5,
+              "leak_v_rank": 3,
+              "leak_w_rank": 2,
+              "ok": false,
+              "slice": 7,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                2,
+                2
+              ],
+              "budget": -3,
+              "c": 0,
+              "leak_sum": 0,
+              "leak_v_rank": 0,
+              "leak_w_rank": 0,
+              "ok": false,
+              "slice": 8,
+              "v_pure": true,
+              "w_pure": true
+            }
+          ],
+          "row": 1
+        },
+        {
+          "caps": [
+            12,
+            4,
+            5,
+            12,
+            4,
+            3,
+            9,
+            9,
+            0
+          ],
+          "failures": [
+            {
+              "block": [
+                1,
+                0
+              ],
+              "budget": 1,
+              "c": 4,
+              "leak_sum": 4,
+              "leak_v_rank": 3,
+              "leak_w_rank": 1,
+              "ok": false,
+              "slice": 1,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                2,
+                0
+              ],
+              "budget": 2,
+              "c": 5,
+              "leak_sum": 7,
+              "leak_v_rank": 3,
+              "leak_w_rank": 4,
+              "ok": false,
+              "slice": 2,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                1,
+                1
+              ],
+              "budget": 1,
+              "c": 4,
+              "leak_sum": 4,
+              "leak_v_rank": 3,
+              "leak_w_rank": 1,
+              "ok": false,
+              "slice": 4,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                2,
+                1
+              ],
+              "budget": 0,
+              "c": 3,
+              "leak_sum": 6,
+              "leak_v_rank": 3,
+              "leak_w_rank": 3,
+              "ok": false,
+              "slice": 5,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                0,
+                2
+              ],
+              "budget": 6,
+              "c": 9,
+              "leak_sum": 8,
+              "leak_v_rank": 6,
+              "leak_w_rank": 2,
+              "ok": false,
+              "slice": 6,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                1,
+                2
+              ],
+              "budget": 6,
+              "c": 9,
+              "leak_sum": 7,
+              "leak_v_rank": 4,
+              "leak_w_rank": 3,
+              "ok": false,
+              "slice": 7,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                2,
+                2
+              ],
+              "budget": -3,
+              "c": 0,
+              "leak_sum": 0,
+              "leak_v_rank": 0,
+              "leak_w_rank": 0,
+              "ok": false,
+              "slice": 8,
+              "v_pure": true,
+              "w_pure": true
+            }
+          ],
+          "row": 2
+        },
+        {
+          "caps": [
+            7,
+            9,
+            6,
+            10,
+            5,
+            14,
+            14,
+            4,
+            0
+          ],
+          "failures": [
+            {
+              "block": [
+                0,
+                0
+              ],
+              "budget": 4,
+              "c": 7,
+              "leak_sum": 6,
+              "leak_v_rank": 4,
+              "leak_w_rank": 2,
+              "ok": false,
+              "slice": 0,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                1,
+                0
+              ],
+              "budget": 6,
+              "c": 9,
+              "leak_sum": 8,
+              "leak_v_rank": 4,
+              "leak_w_rank": 4,
+              "ok": false,
+              "slice": 1,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                2,
+                0
+              ],
+              "budget": 3,
+              "c": 6,
+              "leak_sum": 7,
+              "leak_v_rank": 3,
+              "leak_w_rank": 4,
+              "ok": false,
+              "slice": 2,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                1,
+                1
+              ],
+              "budget": 2,
+              "c": 5,
+              "leak_sum": 5,
+              "leak_v_rank": 4,
+              "leak_w_rank": 1,
+              "ok": false,
+              "slice": 4,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                1,
+                2
+              ],
+              "budget": 1,
+              "c": 4,
+              "leak_sum": 4,
+              "leak_v_rank": 3,
+              "leak_w_rank": 1,
+              "ok": false,
+              "slice": 7,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                2,
+                2
+              ],
+              "budget": -3,
+              "c": 0,
+              "leak_sum": 0,
+              "leak_v_rank": 0,
+              "leak_w_rank": 0,
+              "ok": false,
+              "slice": 8,
+              "v_pure": true,
+              "w_pure": true
+            }
+          ],
+          "row": 3
+        },
+        {
+          "caps": [
+            12,
+            9,
+            4,
+            9,
+            8,
+            6,
+            7,
+            8,
+            0
+          ],
+          "failures": [
+            {
+              "block": [
+                0,
+                0
+              ],
+              "budget": 9,
+              "c": 12,
+              "leak_sum": 11,
+              "leak_v_rank": 5,
+              "leak_w_rank": 6,
+              "ok": false,
+              "slice": 0,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                1,
+                0
+              ],
+              "budget": 6,
+              "c": 9,
+              "leak_sum": 8,
+              "leak_v_rank": 4,
+              "leak_w_rank": 4,
+              "ok": false,
+              "slice": 1,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                2,
+                0
+              ],
+              "budget": 1,
+              "c": 4,
+              "leak_sum": 7,
+              "leak_v_rank": 3,
+              "leak_w_rank": 4,
+              "ok": false,
+              "slice": 2,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                0,
+                1
+              ],
+              "budget": 6,
+              "c": 9,
+              "leak_sum": 9,
+              "leak_v_rank": 5,
+              "leak_w_rank": 4,
+              "ok": false,
+              "slice": 3,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                1,
+                1
+              ],
+              "budget": 5,
+              "c": 8,
+              "leak_sum": 7,
+              "leak_v_rank": 3,
+              "leak_w_rank": 4,
+              "ok": false,
+              "slice": 4,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                2,
+                1
+              ],
+              "budget": 3,
+              "c": 6,
+              "leak_sum": 7,
+              "leak_v_rank": 4,
+              "leak_w_rank": 3,
+              "ok": false,
+              "slice": 5,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                0,
+                2
+              ],
+              "budget": 4,
+              "c": 7,
+              "leak_sum": 6,
+              "leak_v_rank": 4,
+              "leak_w_rank": 2,
+              "ok": false,
+              "slice": 6,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                1,
+                2
+              ],
+              "budget": 5,
+              "c": 8,
+              "leak_sum": 7,
+              "leak_v_rank": 4,
+              "leak_w_rank": 3,
+              "ok": false,
+              "slice": 7,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                2,
+                2
+              ],
+              "budget": -3,
+              "c": 0,
+              "leak_sum": 0,
+              "leak_v_rank": 0,
+              "leak_w_rank": 0,
+              "ok": false,
+              "slice": 8,
+              "v_pure": true,
+              "w_pure": true
+            }
+          ],
+          "row": 4
+        }
+      ],
+      "path": "data/e11_flip_workspace/data/schemes_modp/e11core/mod2-rank22a.npy",
+      "rows_analyzed": 100,
+      "shape": [
+        561,
+        66
+      ],
+      "total_weight_hist": {
+        "39": 1,
+        "42": 1,
+        "45": 2,
+        "47": 1,
+        "48": 4,
+        "49": 4,
+        "50": 4,
+        "51": 2,
+        "52": 4,
+        "53": 4,
+        "54": 3,
+        "55": 5,
+        "56": 4,
+        "57": 7,
+        "58": 4,
+        "59": 4,
+        "60": 3,
+        "61": 1,
+        "62": 7,
+        "63": 5,
+        "64": 4,
+        "65": 3,
+        "66": 4,
+        "67": 6,
+        "68": 1,
+        "69": 1,
+        "70": 2,
+        "71": 1,
+        "72": 1,
+        "75": 1,
+        "76": 2,
+        "77": 1,
+        "79": 1,
+        "81": 1,
+        "83": 1
+      }
+    },
+    {
+      "all_defect_ok": false,
+      "brent_failures": [
+        {
+          "diff": 51,
+          "row": 0
+        },
+        {
+          "diff": 51,
+          "row": 1
+        },
+        {
+          "diff": 51,
+          "row": 2
+        },
+        {
+          "diff": 51,
+          "row": 3
+        },
+        {
+          "diff": 51,
+          "row": 4
+        },
+        {
+          "diff": 51,
+          "row": 5
+        },
+        {
+          "diff": 51,
+          "row": 6
+        },
+        {
+          "diff": 51,
+          "row": 7
+        },
+        {
+          "diff": 51,
+          "row": 8
+        },
+        {
+          "diff": 51,
+          "row": 9
+        }
+      ],
+      "brent_spot_checked": 10,
+      "capacity_leak_hist": {
+        "(0, 0, 0)": 100,
+        "(10, 3, 3)": 1,
+        "(10, 3, 4)": 1,
+        "(10, 4, 3)": 2,
+        "(10, 4, 4)": 3,
+        "(10, 4, 5)": 6,
+        "(10, 5, 1)": 1,
+        "(10, 5, 2)": 1,
+        "(10, 5, 3)": 8,
+        "(10, 5, 4)": 8,
+        "(10, 5, 5)": 5,
+        "(10, 5, 6)": 1,
+        "(10, 6, 2)": 5,
+        "(10, 6, 3)": 6,
+        "(10, 6, 4)": 6,
+        "(10, 6, 5)": 2,
+        "(10, 6, 6)": 1,
+        "(11, 3, 5)": 1,
+        "(11, 4, 3)": 1,
+        "(11, 4, 4)": 2,
+        "(11, 4, 5)": 2,
+        "(11, 5, 3)": 4,
+        "(11, 5, 4)": 6,
+        "(11, 5, 5)": 6,
+        "(11, 5, 6)": 1,
+        "(11, 6, 2)": 2,
+        "(11, 6, 3)": 5,
+        "(11, 6, 4)": 6,
+        "(11, 6, 5)": 2,
+        "(11, 6, 6)": 3,
+        "(12, 4, 4)": 2,
+        "(12, 4, 5)": 1,
+        "(12, 4, 6)": 1,
+        "(12, 5, 4)": 4,
+        "(12, 5, 5)": 2,
+        "(12, 6, 2)": 1,
+        "(12, 6, 3)": 2,
+        "(12, 6, 4)": 5,
+        "(12, 6, 6)": 4,
+        "(13, 4, 5)": 1,
+        "(13, 5, 4)": 3,
+        "(13, 5, 5)": 2,
+        "(13, 5, 6)": 2,
+        "(13, 6, 4)": 2,
+        "(13, 6, 5)": 4,
+        "(13, 6, 6)": 2,
+        "(14, 4, 6)": 1,
+        "(14, 5, 4)": 1,
+        "(14, 5, 5)": 1,
+        "(14, 5, 6)": 1,
+        "(14, 6, 4)": 3,
+        "(14, 6, 5)": 5,
+        "(15, 5, 6)": 1,
+        "(15, 6, 5)": 2,
+        "(15, 6, 6)": 2,
+        "(16, 4, 6)": 1,
+        "(16, 6, 5)": 2,
+        "(16, 6, 6)": 4,
+        "(17, 6, 6)": 1,
+        "(19, 6, 6)": 1,
+        "(3, 3, 0)": 26,
+        "(3, 3, 3)": 7,
+        "(4, 3, 0)": 4,
+        "(4, 3, 1)": 26,
+        "(4, 3, 3)": 7,
+        "(4, 3, 4)": 2,
+        "(4, 4, 0)": 17,
+        "(4, 4, 3)": 6,
+        "(5, 3, 0)": 4,
+        "(5, 3, 1)": 30,
+        "(5, 3, 2)": 15,
+        "(5, 3, 3)": 3,
+        "(5, 3, 4)": 1,
+        "(5, 3, 5)": 2,
+        "(5, 4, 0)": 4,
+        "(5, 4, 1)": 31,
+        "(5, 4, 3)": 9,
+        "(5, 4, 4)": 4,
+        "(5, 5, 0)": 4,
+        "(5, 5, 3)": 5,
+        "(6, 3, 1)": 3,
+        "(6, 3, 2)": 20,
+        "(6, 3, 3)": 10,
+        "(6, 3, 4)": 2,
+        "(6, 4, 0)": 3,
+        "(6, 4, 1)": 10,
+        "(6, 4, 2)": 31,
+        "(6, 4, 3)": 8,
+        "(6, 4, 4)": 7,
+        "(6, 4, 5)": 1,
+        "(6, 5, 1)": 12,
+        "(6, 5, 3)": 9,
+        "(6, 5, 4)": 3,
+        "(6, 6, 0)": 1,
+        "(7, 3, 1)": 1,
+        "(7, 3, 2)": 15,
+        "(7, 3, 3)": 11,
+        "(7, 3, 4)": 1,
+        "(7, 4, 1)": 10,
+        "(7, 4, 2)": 17,
+        "(7, 4, 3)": 15,
+        "(7, 4, 4)": 5,
+        "(7, 4, 5)": 2,
+        "(7, 5, 1)": 8,
+        "(7, 5, 2)": 11,
+        "(7, 5, 3)": 4,
+        "(7, 5, 4)": 3,
+        "(7, 5, 5)": 5,
+        "(7, 6, 1)": 1,
+        "(7, 6, 3)": 1,
+        "(7, 6, 4)": 4,
+        "(8, 3, 2)": 2,
+        "(8, 3, 3)": 9,
+        "(8, 3, 4)": 1,
+        "(8, 3, 5)": 1,
+        "(8, 4, 1)": 3,
+        "(8, 4, 2)": 11,
+        "(8, 4, 3)": 13,
+        "(8, 4, 4)": 11,
+        "(8, 4, 5)": 2,
+        "(8, 4, 6)": 1,
+        "(8, 5, 1)": 2,
+        "(8, 5, 2)": 8,
+        "(8, 5, 3)": 24,
+        "(8, 5, 4)": 7,
+        "(8, 5, 5)": 2,
+        "(8, 5, 6)": 1,
+        "(8, 6, 1)": 1,
+        "(8, 6, 2)": 3,
+        "(8, 6, 3)": 2,
+        "(8, 6, 4)": 3,
+        "(8, 6, 5)": 1,
+        "(9, 3, 2)": 1,
+        "(9, 3, 3)": 3,
+        "(9, 3, 4)": 4,
+        "(9, 3, 5)": 1,
+        "(9, 4, 1)": 1,
+        "(9, 4, 2)": 3,
+        "(9, 4, 3)": 9,
+        "(9, 4, 4)": 5,
+        "(9, 4, 5)": 2,
+        "(9, 4, 6)": 1,
+        "(9, 5, 1)": 1,
+        "(9, 5, 2)": 13,
+        "(9, 5, 3)": 8,
+        "(9, 5, 4)": 12,
+        "(9, 5, 5)": 3,
+        "(9, 5, 6)": 2,
+        "(9, 6, 1)": 1,
+        "(9, 6, 2)": 6,
+        "(9, 6, 3)": 6,
+        "(9, 6, 4)": 6,
+        "(9, 6, 5)": 1
+      },
+      "failure_head": [
+        {
+          "caps": [
+            13,
+            12,
+            10,
+            5,
+            8,
+            5,
+            7,
+            9,
+            0
+          ],
+          "failures": [
+            {
+              "block": [
+                0,
+                0
+              ],
+              "budget": 10,
+              "c": 13,
+              "leak_sum": 11,
+              "leak_v_rank": 6,
+              "leak_w_rank": 5,
+              "ok": false,
+              "slice": 0,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                1,
+                0
+              ],
+              "budget": 9,
+              "c": 12,
+              "leak_sum": 10,
+              "leak_v_rank": 5,
+              "leak_w_rank": 5,
+              "ok": false,
+              "slice": 1,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                2,
+                0
+              ],
+              "budget": 7,
+              "c": 10,
+              "leak_sum": 10,
+              "leak_v_rank": 5,
+              "leak_w_rank": 5,
+              "ok": false,
+              "slice": 2,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                0,
+                1
+              ],
+              "budget": 2,
+              "c": 5,
+              "leak_sum": 4,
+              "leak_v_rank": 3,
+              "leak_w_rank": 1,
+              "ok": false,
+              "slice": 3,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                1,
+                1
+              ],
+              "budget": 5,
+              "c": 8,
+              "leak_sum": 6,
+              "leak_v_rank": 4,
+              "leak_w_rank": 2,
+              "ok": false,
+              "slice": 4,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                2,
+                1
+              ],
+              "budget": 2,
+              "c": 5,
+              "leak_sum": 8,
+              "leak_v_rank": 4,
+              "leak_w_rank": 4,
+              "ok": false,
+              "slice": 5,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                0,
+                2
+              ],
+              "budget": 4,
+              "c": 7,
+              "leak_sum": 5,
+              "leak_v_rank": 4,
+              "leak_w_rank": 1,
+              "ok": false,
+              "slice": 6,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                1,
+                2
+              ],
+              "budget": 6,
+              "c": 9,
+              "leak_sum": 7,
+              "leak_v_rank": 5,
+              "leak_w_rank": 2,
+              "ok": false,
+              "slice": 7,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                2,
+                2
+              ],
+              "budget": -3,
+              "c": 0,
+              "leak_sum": 0,
+              "leak_v_rank": 0,
+              "leak_w_rank": 0,
+              "ok": false,
+              "slice": 8,
+              "v_pure": true,
+              "w_pure": true
+            }
+          ],
+          "row": 0
+        },
+        {
+          "caps": [
+            7,
+            5,
+            10,
+            3,
+            5,
+            9,
+            6,
+            5,
+            0
+          ],
+          "failures": [
+            {
+              "block": [
+                0,
+                0
+              ],
+              "budget": 4,
+              "c": 7,
+              "leak_sum": 7,
+              "leak_v_rank": 5,
+              "leak_w_rank": 2,
+              "ok": false,
+              "slice": 0,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                1,
+                0
+              ],
+              "budget": 2,
+              "c": 5,
+              "leak_sum": 4,
+              "leak_v_rank": 3,
+              "leak_w_rank": 1,
+              "ok": false,
+              "slice": 1,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                2,
+                0
+              ],
+              "budget": 7,
+              "c": 10,
+              "leak_sum": 11,
+              "leak_v_rank": 6,
+              "leak_w_rank": 5,
+              "ok": false,
+              "slice": 2,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                0,
+                1
+              ],
+              "budget": 0,
+              "c": 3,
+              "leak_sum": 3,
+              "leak_v_rank": 3,
+              "leak_w_rank": 0,
+              "ok": false,
+              "slice": 3,
+              "v_pure": false,
+              "w_pure": true
+            },
+            {
+              "block": [
+                1,
+                1
+              ],
+              "budget": 2,
+              "c": 5,
+              "leak_sum": 3,
+              "leak_v_rank": 3,
+              "leak_w_rank": 0,
+              "ok": false,
+              "slice": 4,
+              "v_pure": false,
+              "w_pure": true
+            },
+            {
+              "block": [
+                2,
+                1
+              ],
+              "budget": 6,
+              "c": 9,
+              "leak_sum": 10,
+              "leak_v_rank": 6,
+              "leak_w_rank": 4,
+              "ok": false,
+              "slice": 5,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                0,
+                2
+              ],
+              "budget": 3,
+              "c": 6,
+              "leak_sum": 6,
+              "leak_v_rank": 4,
+              "leak_w_rank": 2,
+              "ok": false,
+              "slice": 6,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                1,
+                2
+              ],
+              "budget": 2,
+              "c": 5,
+              "leak_sum": 4,
+              "leak_v_rank": 3,
+              "leak_w_rank": 1,
+              "ok": false,
+              "slice": 7,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                2,
+                2
+              ],
+              "budget": -3,
+              "c": 0,
+              "leak_sum": 0,
+              "leak_v_rank": 0,
+              "leak_w_rank": 0,
+              "ok": false,
+              "slice": 8,
+              "v_pure": true,
+              "w_pure": true
+            }
+          ],
+          "row": 1
+        },
+        {
+          "caps": [
+            10,
+            6,
+            4,
+            9,
+            5,
+            9,
+            11,
+            6,
+            0
+          ],
+          "failures": [
+            {
+              "block": [
+                0,
+                0
+              ],
+              "budget": 7,
+              "c": 10,
+              "leak_sum": 9,
+              "leak_v_rank": 6,
+              "leak_w_rank": 3,
+              "ok": false,
+              "slice": 0,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                1,
+                0
+              ],
+              "budget": 3,
+              "c": 6,
+              "leak_sum": 6,
+              "leak_v_rank": 4,
+              "leak_w_rank": 2,
+              "ok": false,
+              "slice": 1,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                2,
+                0
+              ],
+              "budget": 1,
+              "c": 4,
+              "leak_sum": 6,
+              "leak_v_rank": 3,
+              "leak_w_rank": 3,
+              "ok": false,
+              "slice": 2,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                0,
+                1
+              ],
+              "budget": 6,
+              "c": 9,
+              "leak_sum": 8,
+              "leak_v_rank": 5,
+              "leak_w_rank": 3,
+              "ok": false,
+              "slice": 3,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                1,
+                1
+              ],
+              "budget": 2,
+              "c": 5,
+              "leak_sum": 5,
+              "leak_v_rank": 4,
+              "leak_w_rank": 1,
+              "ok": false,
+              "slice": 4,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                2,
+                1
+              ],
+              "budget": 6,
+              "c": 9,
+              "leak_sum": 9,
+              "leak_v_rank": 4,
+              "leak_w_rank": 5,
+              "ok": false,
+              "slice": 5,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                0,
+                2
+              ],
+              "budget": 8,
+              "c": 11,
+              "leak_sum": 9,
+              "leak_v_rank": 6,
+              "leak_w_rank": 3,
+              "ok": false,
+              "slice": 6,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                1,
+                2
+              ],
+              "budget": 3,
+              "c": 6,
+              "leak_sum": 6,
+              "leak_v_rank": 4,
+              "leak_w_rank": 2,
+              "ok": false,
+              "slice": 7,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                2,
+                2
+              ],
+              "budget": -3,
+              "c": 0,
+              "leak_sum": 0,
+              "leak_v_rank": 0,
+              "leak_w_rank": 0,
+              "ok": false,
+              "slice": 8,
+              "v_pure": true,
+              "w_pure": true
+            }
+          ],
+          "row": 2
+        },
+        {
+          "caps": [
+            5,
+            9,
+            8,
+            7,
+            6,
+            6,
+            7,
+            3,
+            0
+          ],
+          "failures": [
+            {
+              "block": [
+                0,
+                0
+              ],
+              "budget": 2,
+              "c": 5,
+              "leak_sum": 5,
+              "leak_v_rank": 4,
+              "leak_w_rank": 1,
+              "ok": false,
+              "slice": 0,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                1,
+                0
+              ],
+              "budget": 6,
+              "c": 9,
+              "leak_sum": 7,
+              "leak_v_rank": 3,
+              "leak_w_rank": 4,
+              "ok": false,
+              "slice": 1,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                2,
+                0
+              ],
+              "budget": 5,
+              "c": 8,
+              "leak_sum": 9,
+              "leak_v_rank": 5,
+              "leak_w_rank": 4,
+              "ok": false,
+              "slice": 2,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                0,
+                1
+              ],
+              "budget": 4,
+              "c": 7,
+              "leak_sum": 5,
+              "leak_v_rank": 4,
+              "leak_w_rank": 1,
+              "ok": false,
+              "slice": 3,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                1,
+                1
+              ],
+              "budget": 3,
+              "c": 6,
+              "leak_sum": 5,
+              "leak_v_rank": 3,
+              "leak_w_rank": 2,
+              "ok": false,
+              "slice": 4,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                2,
+                1
+              ],
+              "budget": 3,
+              "c": 6,
+              "leak_sum": 7,
+              "leak_v_rank": 4,
+              "leak_w_rank": 3,
+              "ok": false,
+              "slice": 5,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                0,
+                2
+              ],
+              "budget": 4,
+              "c": 7,
+              "leak_sum": 6,
+              "leak_v_rank": 5,
+              "leak_w_rank": 1,
+              "ok": false,
+              "slice": 6,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                1,
+                2
+              ],
+              "budget": 0,
+              "c": 3,
+              "leak_sum": 3,
+              "leak_v_rank": 3,
+              "leak_w_rank": 0,
+              "ok": false,
+              "slice": 7,
+              "v_pure": false,
+              "w_pure": true
+            },
+            {
+              "block": [
+                2,
+                2
+              ],
+              "budget": -3,
+              "c": 0,
+              "leak_sum": 0,
+              "leak_v_rank": 0,
+              "leak_w_rank": 0,
+              "ok": false,
+              "slice": 8,
+              "v_pure": true,
+              "w_pure": true
+            }
+          ],
+          "row": 3
+        },
+        {
+          "caps": [
+            10,
+            6,
+            12,
+            9,
+            9,
+            11,
+            8,
+            7,
+            0
+          ],
+          "failures": [
+            {
+              "block": [
+                0,
+                0
+              ],
+              "budget": 7,
+              "c": 10,
+              "leak_sum": 10,
+              "leak_v_rank": 5,
+              "leak_w_rank": 5,
+              "ok": false,
+              "slice": 0,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                1,
+                0
+              ],
+              "budget": 3,
+              "c": 6,
+              "leak_sum": 5,
+              "leak_v_rank": 3,
+              "leak_w_rank": 2,
+              "ok": false,
+              "slice": 1,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                2,
+                0
+              ],
+              "budget": 9,
+              "c": 12,
+              "leak_sum": 10,
+              "leak_v_rank": 5,
+              "leak_w_rank": 5,
+              "ok": false,
+              "slice": 2,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                0,
+                1
+              ],
+              "budget": 6,
+              "c": 9,
+              "leak_sum": 9,
+              "leak_v_rank": 5,
+              "leak_w_rank": 4,
+              "ok": false,
+              "slice": 3,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                1,
+                1
+              ],
+              "budget": 6,
+              "c": 9,
+              "leak_sum": 7,
+              "leak_v_rank": 3,
+              "leak_w_rank": 4,
+              "ok": false,
+              "slice": 4,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                2,
+                1
+              ],
+              "budget": 8,
+              "c": 11,
+              "leak_sum": 10,
+              "leak_v_rank": 5,
+              "leak_w_rank": 5,
+              "ok": false,
+              "slice": 5,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                0,
+                2
+              ],
+              "budget": 5,
+              "c": 8,
+              "leak_sum": 8,
+              "leak_v_rank": 5,
+              "leak_w_rank": 3,
+              "ok": false,
+              "slice": 6,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                1,
+                2
+              ],
+              "budget": 4,
+              "c": 7,
+              "leak_sum": 6,
+              "leak_v_rank": 3,
+              "leak_w_rank": 3,
+              "ok": false,
+              "slice": 7,
+              "v_pure": false,
+              "w_pure": false
+            },
+            {
+              "block": [
+                2,
+                2
+              ],
+              "budget": -3,
+              "c": 0,
+              "leak_sum": 0,
+              "leak_v_rank": 0,
+              "leak_w_rank": 0,
+              "ok": false,
+              "slice": 8,
+              "v_pure": true,
+              "w_pure": true
+            }
+          ],
+          "row": 4
+        }
+      ],
+      "path": "data/e11_flip_workspace/data/schemes_modp/e11core/mod2-rank23a.npy",
+      "rows_analyzed": 100,
+      "shape": [
+        560,
+        69
+      ],
+      "total_weight_hist": {
+        "38": 2,
+        "44": 1,
+        "45": 1,
+        "46": 1,
+        "47": 2,
+        "48": 3,
+        "49": 6,
+        "50": 4,
+        "51": 1,
+        "52": 2,
+        "53": 2,
+        "54": 2,
+        "55": 7,
+        "56": 5,
+        "57": 3,
+        "58": 3,
+        "59": 6,
+        "60": 6,
+        "61": 4,
+        "62": 2,
+        "63": 4,
+        "64": 5,
+        "65": 3,
+        "66": 1,
+        "67": 3,
+        "68": 3,
+        "69": 6,
+        "71": 1,
+        "72": 3,
+        "74": 2,
+        "76": 2,
+        "78": 1,
+        "82": 1,
+        "85": 1,
+        "86": 1
+      }
+    }
+  ]
+}

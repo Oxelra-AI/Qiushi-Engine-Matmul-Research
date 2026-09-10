@@ -1,0 +1,524 @@
+{
+  "build_sec": 52.488,
+  "certificate_cut_summary": {
+    "aux_vars": 140,
+    "certificate_count": 17,
+    "guard_sizes": [
+      10,
+      5,
+      10,
+      5,
+      6,
+      4,
+      6,
+      9,
+      7,
+      5,
+      6,
+      11,
+      5,
+      6,
+      4,
+      4,
+      8
+    ],
+    "guarded_parity_cuts": 17,
+    "local_inconsistent_cuts": 104
+  },
+  "complete_core_table_meta": {
+    "by_dim8": {
+      "0": 1,
+      "1": 255,
+      "2": 10795,
+      "3": 97155,
+      "4": 200787,
+      "5": 97155,
+      "6": 10795,
+      "7": 255,
+      "8": 1
+    },
+    "by_full_lut_L": {
+      "0": 1,
+      "11": 865,
+      "12": 61232,
+      "13": 8130,
+      "14": 81540,
+      "15": 138902,
+      "16": 83046,
+      "17": 34664,
+      "18": 687,
+      "19": 1,
+      "3": 33,
+      "6": 578,
+      "9": 7520
+    },
+    "constraint_count": 417199,
+    "elapsed_sec": 36.889
+  },
+  "contraction_lower_bounds": 255,
+  "core": "E11 quotient core",
+  "elapsed_sec": 387.565,
+  "field": "F2",
+  "hint_added": true,
+  "initial_rows": 257299,
+  "initial_rows_by_L": {
+    "15": 138902,
+    "16": 83046,
+    "17": 34664,
+    "18": 687
+  },
+  "local_trace_cut_size_hist": {},
+  "local_trace_cuts": 0,
+  "meaning": "Adaptive exact Wang-row separation with transported radius-3 local-proof overlap cuts. The overlap cuts are valid only as consequences for complete-Wang-admissible distinct supports and preserve 255 point variables.",
+  "overlap_cut_summary": {
+    "base_support": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      20,
+      24,
+      31,
+      32,
+      36,
+      64,
+      73,
+      109,
+      127,
+      128,
+      141,
+      160,
+      182,
+      219
+    ],
+    "center_count_in_file": 1152,
+    "center_count_used": 1152,
+    "certified_overlap_cut": {
+      "d3_cnf_sha256": "a2cfc55f4e3faf27291bb3631de8f73de3a71a528d3af1639238bbbdcdae74b9",
+      "d3_drat_sha256": "21e1d03b0f109fcab8d33b8eb2bcfe681e8dde7eecd8ee5b043fb380e65e6f9f",
+      "d3_drat_trim_verified": true,
+      "d3_meta_path": "data/neighborhood_repair/cnf/current_support_repair_d3.meta.json",
+      "d3_status_path": "data/neighborhood_repair/cnf/current_support_repair_d3.status.json",
+      "d_certified": 3,
+      "excluded_condition": "|S'∩gS| >= 16",
+      "linear_cut": "sum_{p in gS} x_p <= 15",
+      "overlap_max": 15
+    },
+    "group": {
+      "base_support_stabilizer_size_in_generated_group": 1,
+      "orbit_size_from_stabilizer": 1152,
+      "permutation_count": 1152,
+      "unique_transported_center_count": 1152
+    },
+    "overlap_cuts_used": 1152,
+    "overlap_max_used": 15,
+    "source": "data/transported_overlap/transported_overlap_analysis.json"
+  },
+  "parameters": {
+    "cert_cut_path": "data/trace_dependency_cuts/trace_certificate_family_cuts_augmented.json",
+    "cert_cuts": true,
+    "disable_overlap_cuts": false,
+    "hint_source": "data/trace_dependency_cuts/separator_L15_augcertcuts_4r_240s.json",
+    "max_certs": null,
+    "max_overlap_centers": null,
+    "max_rounds": 3,
+    "max_size5_cuts": null,
+    "overlap_analysis": "data/transported_overlap/transported_overlap_analysis.json",
+    "overlap_max": 15,
+    "seed": 5501,
+    "solver_time": 180.0,
+    "threshold_L": 15,
+    "trace_cuts": "none",
+    "workers": 8
+  },
+  "rank_s": 19,
+  "rounds": [
+    {
+      "A_cols": [
+        2,
+        3,
+        16,
+        20,
+        24,
+        28,
+        31,
+        65,
+        72,
+        96,
+        97,
+        108,
+        114,
+        130,
+        146,
+        159,
+        162,
+        216,
+        252
+      ],
+      "affine_dim": 891,
+      "complete_wang_max_excess": 1,
+      "complete_wang_violations": 28,
+      "linear_pass": true,
+      "new_rows_added": 28,
+      "overlap_to_certified_base_orbit": {
+        "exchange_distance_to_base_orbit": 6,
+        "max_transported_overlap": 13,
+        "num_centers_at_max": 2,
+        "overlap_histogram": {
+          "10": 32,
+          "11": 4,
+          "12": 4,
+          "13": 2,
+          "3": 8,
+          "4": 64,
+          "5": 232,
+          "6": 256,
+          "7": 276,
+          "8": 180,
+          "9": 94
+        },
+        "violates_transported_radius3_cut": false
+      },
+      "quotient_rank_violations_size2": 0,
+      "round": 0,
+      "saturated_contractions": 20,
+      "solve_sec": 148.359,
+      "status": "OPTIMAL",
+      "total_rows_included_after_round": 257327,
+      "trace_local_dependency": {
+        "exact_local_inconsistent_examples": [
+          {
+            "p": 16,
+            "size": 5,
+            "witness": [
+              61,
+              87,
+              159,
+              185,
+              213
+            ]
+          },
+          {
+            "p": 28,
+            "size": 5,
+            "witness": [
+              125,
+              127,
+              159,
+              171,
+              229
+            ]
+          },
+          {
+            "p": 72,
+            "size": 5,
+            "witness": [
+              61,
+              87,
+              159,
+              185,
+              213
+            ]
+          },
+          {
+            "p": 97,
+            "size": 5,
+            "witness": [
+              127,
+              143,
+              229,
+              235,
+              237
+            ]
+          },
+          {
+            "p": 108,
+            "size": 5,
+            "witness": [
+              61,
+              79,
+              135,
+              221,
+              249
+            ]
+          }
+        ],
+        "exact_local_inconsistent_terms": 5,
+        "minimal_cut_examples": [],
+        "minimal_cut_violations": 0,
+        "saturated_rank9_count": 20
+      },
+      "transversal_failures": 0,
+      "violations_by_L": {
+        "12": 26,
+        "14": 2
+      },
+      "violations_by_dim8": {
+        "5": 8,
+        "6": 20
+      },
+      "violations_head": [
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 5,
+          "excess": 1,
+          "key8": 1103874492613,
+          "occupancy": 8,
+          "point_count": 31
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 5,
+          "excess": 1,
+          "key8": 1103924922373,
+          "occupancy": 8,
+          "point_count": 31
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 5,
+          "excess": 1,
+          "key8": 2227012642837,
+          "occupancy": 8,
+          "point_count": 31
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 5,
+          "excess": 1,
+          "key8": 3324372584469,
+          "occupancy": 8,
+          "point_count": 31
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 5,
+          "excess": 1,
+          "key8": 3326520076309,
+          "occupancy": 8,
+          "point_count": 31
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 5,
+          "excess": 1,
+          "key8": 3358803372037,
+          "occupancy": 8,
+          "point_count": 31
+        },
+        {
+          "L": 14,
+          "cap": 5,
+          "dim8": 5,
+          "excess": 1,
+          "key8": 6635863419061,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 14,
+          "cap": 5,
+          "dim8": 5,
+          "excess": 1,
+          "key8": 7748264200197,
+          "occupancy": 6,
+          "point_count": 31
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 1130332452038806,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 1131449139398662,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 1140230220974102,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 1693299585386502,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 1693299614746774,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 1694364670371846,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 1694366813653014,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 1694384064571526,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 1703178010101782,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 1703178026919958,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 3386534607202358,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 3387634118830118,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 3388733630457878,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 3389833142085638,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 3949480269842438,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 3950581924767798,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 3950581928962054,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 3951683588081670,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 3952785242990614,
+          "occupancy": 8,
+          "point_count": 63
+        },
+        {
+          "L": 12,
+          "cap": 7,
+          "dim8": 6,
+          "excess": 1,
+          "key8": 3952785247201286,
+          "occupancy": 8,
+          "point_count": 63
+        }
+      ],
+      "zero_domain_terms": 0
+    },
+    {
+      "round": 1,
+      "solve_sec": 180.941,
+      "status": "UNKNOWN"
+    }
+  ],
+  "schema": "overlap_cut_separator_v1"
+}

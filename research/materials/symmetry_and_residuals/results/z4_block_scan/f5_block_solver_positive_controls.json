@@ -1,0 +1,88 @@
+{
+  "prime": 5,
+  "scope": "positive controls for corrected Z4 block solver over F5; validates solver pipeline but is not a lower-bound theorem",
+  "dictionary_sizes": {
+    "qz": 7945,
+    "qw": 88945,
+    "max_qz_bucket": 4705,
+    "max_qw_bucket": 625,
+    "length2_tail": 1613,
+    "two_fixed_tail": 7565,
+    "length2_plus_fixed_tail": 189845
+  },
+  "synthetic_rank10_controls": [
+    {
+      "name": "synthetic_4+4+2",
+      "hit_count": 1,
+      "first_hit_pattern": "4+4+2",
+      "reconstruction_nonzero": 0
+    },
+    {
+      "name": "synthetic_4+4+1+1",
+      "hit_count": 1,
+      "first_hit_pattern": "4+4+1+1",
+      "reconstruction_nonzero": 0
+    }
+  ],
+  "bilr_4_4_2_1_control": {
+    "hit_count": 1,
+    "first_hit": {
+      "pattern": "4+4+2+1",
+      "l1": [
+        0,
+        2,
+        4,
+        0,
+        4,
+        1,
+        1,
+        2,
+        1
+      ],
+      "l2": [
+        0,
+        4,
+        1,
+        4,
+        1,
+        1,
+        4,
+        1,
+        4
+      ],
+      "tail_witness": [
+        [
+          4,
+          4,
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      "solver_stats": {
+        "qz_witnesses_seen": 1,
+        "qw_witnesses_seen": 1,
+        "p_solutions_seen": 1
+      }
+    },
+    "reconstruction_nonzero": 0
+  },
+  "all_controls_pass": true,
+  "artifact_hashes_sha256": {
+    "scripts/z4_pairing_pencil.py": "4932cdcfb0fc9c8d2a5463be2ca607e8e2a2e5cdd01a98080b8c9c0bd91ae3df",
+    "scripts/z4_finite_block_scan.py": "7a0f43e7086de115cfd29eb2545485ef047475646456d7f18376a148183c4e80",
+    "scripts/z4_f5_sl3_quotient_scan.py": "6b711b6f899c844758527242a3040f752716e4e03fc0e7186fdbbb5c893838b4",
+    "scripts/z4_f5_robust_rank10_scan.py": "ce003b51821b2eee90b4f1720189f5fd9045c49c56e664dbf3ce5a902dc56f6f",
+    "scripts/z4_f5_conciseness_scan.py": "2d12e23c0ae6670336724536443d206087ea14229908adb48da8d70cf951fc3b",
+    "scripts/z4_block_solver_controls.py": "735af52c51e8e376efcda746dc3e0ec8691fef53fd8455d2207872f0ffa4289f",
+    "data/z4_pairing_pencil/pairing_pencil_positive_control.json": "97dd9de0c70ab535bf11452b7fad5f131ea477a4fd06e6c2d69af84dba0c4443",
+    "data/z4_block_scan/f5_sl3_modT_robust_rank10_scan.json": "ed6d7c4358b16a37b3d8b4a76926620d808867fc0447d199120cfa56dd4c8f1c",
+    "data/z4_block_scan/f5_sl3_modT_conciseness_scan.json": "20ef3bc1c9eb91eb6bfa6565639de9c1c26d8d64b2a43c9ccb22e1638d4b98a9"
+  },
+  "seconds": 2.139650821685791
+}

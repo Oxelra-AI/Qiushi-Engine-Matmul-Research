@@ -1,0 +1,80 @@
+{
+  "L": 18,
+  "auxiliary_range_count": 2061,
+  "auxiliary_range_problem_head": [],
+  "auxiliary_ranges_disjoint_ordered": true,
+  "clauses_match_actual_file": true,
+  "cnf_path": "assets/structural/data/transparent_unary_certs_484_491/orbit488/orbit488_transparent.cnf",
+  "cnf_sha256_meta": "deb8d56a6eb8c71e6af2ff9fae946bf497cff23c650450222f09a59da204bddf",
+  "cnf_sha256_recomputed": "deb8d56a6eb8c71e6af2ff9fae946bf497cff23c650450222f09a59da204bddf",
+  "core_path": "assets/structural/data/dim2_caplimited_cores_484_491/orbit488/orbit488_cap3_core.json",
+  "drat_verified_meta": true,
+  "file_clause_count": 936906,
+  "file_comment_count": 0,
+  "forward_lifting_established_for_file": true,
+  "forward_lifting_proof_by_clause_family": {
+    "cap0_rows": "For cap 0, every included u[p,ell] must be false because the row occupancy is zero; the emitted unit clauses -u[p,ell] are satisfied.",
+    "row_forward_clauses": "For each occupation row the same prefix-threshold implications force row y[i,j] values from the row literals.",
+    "row_terminal_clause": "If the occupation row satisfies sum_{p in S} x_p <= cap, then among row unary literals there are at most cap true values, so y[n,cap+1] is false and the terminal clause is satisfied.",
+    "total_exact_units": "The alleged quotient occupation has total L, so y[n,L] is true and y[n,L+1] is false.",
+    "total_forward_clauses": "For y[i,j] defined as prefix count >= j, clauses -input_i or y[i,1], -y[i-1,j] or y[i,j], and -input_i or -y[i-1,j-1] or y[i,j] are immediate monotonicity/increment implications.",
+    "total_reverse_clauses": "If prefix count for i is at least j, then either the previous prefix already had at least j or input_i is true; also either the previous prefix already had at least j or it had at least j-1. These are exactly the two reverse clause families.",
+    "u_monotonicity": "u[p,ell+1] => u[p,ell] holds for u[p,ell]=(ell<=x_p)."
+  },
+  "header": {
+    "clauses": 936906,
+    "raw": "p cnf 585474 936906",
+    "vars": 585474
+  },
+  "k": 7,
+  "meaning": "Clause-level reconstruction and forward-lifting proof record for one transparent unary-count CNF. If clauses_match_actual_file and auxiliary_ranges_disjoint_ordered are true, the DRAT UNSAT result applies to exactly the clause families whose lifting proof is recorded here.",
+  "meta_clause_count": 936906,
+  "meta_path": "assets/structural/data/transparent_unary_certs_484_491/orbit488/orbit488_transparent.transparent_meta.json",
+  "meta_var_count": 585474,
+  "mismatches_head": [],
+  "reconstructed_clause_count": 936906,
+  "reconstructed_var_count": 585474,
+  "row_aux_total": 537448,
+  "row_record_count": 2146,
+  "sample_checks": {
+    "local_row_zero_sample_failures": [],
+    "note": "Samples support the clause-family proof; they are not the proof because the core rows are intentionally infeasible together.",
+    "sample_count": 5,
+    "total_clause_sample_failures": []
+  },
+  "schema": "s0908_transparent_cnf_lifting_verifier_v1",
+  "source": {
+    "core_path": "assets/structural/data/dim2_caplimited_cores_484_491/orbit488/orbit488_cap3_core.json",
+    "row_count": 2146,
+    "row_key": "shrunk_rows",
+    "row_sha256": "a529e466d1b2215d7a7d3320f615ea8030739981a673526f750b2754815cda21",
+    "source_index": 488
+  },
+  "stats_match_meta": true,
+  "stats_reconstructed": {
+    "row_atmost_terminal": 2060,
+    "row_cap0_units": 1548,
+    "row_prefix_increment": 233472,
+    "row_prefix_monotone": 378832,
+    "row_x_implies_ge1": 147420,
+    "total_lower_unit": 1,
+    "total_prefix_increment": 41130,
+    "total_prefix_monotone": 43415,
+    "total_reverse_prev_or_prevminus": 41148,
+    "total_reverse_prev_or_x": 43434,
+    "total_upper_unit": 1,
+    "total_x_implies_ge1": 2286,
+    "u_monotonicity": 2159
+  },
+  "total_counter_record": {
+    "aux_vars": 45740,
+    "clauses_after": 173574,
+    "clauses_before": 2159,
+    "end_var": 48026,
+    "kind": "total_exact_prefix",
+    "n_lits": 2286,
+    "name": "total_exact_prefix",
+    "start_var": 2287,
+    "target": 18
+  }
+}

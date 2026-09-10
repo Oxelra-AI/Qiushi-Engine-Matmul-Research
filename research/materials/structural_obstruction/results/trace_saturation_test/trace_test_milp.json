@@ -1,0 +1,408 @@
+{
+  "cores": {
+    "E11": {
+      "milp": {
+        "max_sum_nu": {
+          "core_name": "E11",
+          "direct_hit_constraint_count": 255,
+          "elapsed_sec": 182.137,
+          "fun": null,
+          "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+          "mode": "max_sum_nu",
+          "nnz": 7481700,
+          "nvars": 255,
+          "status": "TIME_LIMIT_OR_ITERATION_LIMIT",
+          "status_code": 1,
+          "success": false,
+          "time_limit_sec": 180.0,
+          "wang_constraint_count": 417199
+        },
+        "min_sum_nu_wang_only": {
+          "core_name": "E11",
+          "direct_hit_constraint_count": 0,
+          "elapsed_sec": 185.572,
+          "fun": null,
+          "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+          "mode": "min_sum_nu_wang_only",
+          "nnz": 7449060,
+          "nvars": 255,
+          "status": "TIME_LIMIT_OR_ITERATION_LIMIT",
+          "status_code": 1,
+          "success": false,
+          "time_limit_sec": 180.0,
+          "wang_constraint_count": 417199
+        },
+        "no_saturation": {
+          "core_name": "E11",
+          "direct_hit_constraint_count": 255,
+          "elapsed_sec": 185.144,
+          "fun": null,
+          "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+          "mode": "no_saturation",
+          "nnz": 7481700,
+          "nvars": 255,
+          "status": "TIME_LIMIT_OR_ITERATION_LIMIT",
+          "status_code": 1,
+          "success": false,
+          "time_limit_sec": 180.0,
+          "wang_constraint_count": 417199
+        }
+      },
+      "raw_gate": {
+        "contraction_rank_histogram": {
+          "3": 33,
+          "6": 150,
+          "9": 72
+        },
+        "core_name": "E11",
+        "invertible_q_count": 72,
+        "low_nu_points_head": [
+          [
+            5,
+            32
+          ],
+          [
+            6,
+            32
+          ],
+          [
+            7,
+            32
+          ],
+          [
+            10,
+            32
+          ],
+          [
+            11,
+            32
+          ],
+          [
+            14,
+            32
+          ],
+          [
+            15,
+            32
+          ],
+          [
+            17,
+            32
+          ],
+          [
+            19,
+            32
+          ],
+          [
+            21,
+            32
+          ],
+          [
+            23,
+            32
+          ],
+          [
+            25,
+            32
+          ],
+          [
+            26,
+            32
+          ],
+          [
+            29,
+            32
+          ],
+          [
+            30,
+            32
+          ],
+          [
+            33,
+            32
+          ],
+          [
+            34,
+            32
+          ],
+          [
+            35,
+            32
+          ],
+          [
+            37,
+            32
+          ],
+          [
+            38,
+            32
+          ],
+          [
+            39,
+            32
+          ],
+          [
+            40,
+            32
+          ],
+          [
+            41,
+            32
+          ],
+          [
+            44,
+            32
+          ],
+          [
+            45,
+            32
+          ],
+          [
+            48,
+            32
+          ],
+          [
+            50,
+            32
+          ],
+          [
+            52,
+            32
+          ],
+          [
+            54,
+            32
+          ],
+          [
+            56,
+            32
+          ]
+        ],
+        "nu_distribution": {
+          "32": 81,
+          "36": 96,
+          "40": 72,
+          "48": 6
+        },
+        "nu_max": 48,
+        "nu_mean_num_den": [
+          9216,
+          255
+        ],
+        "nu_min": 32,
+        "nu_value_examples_head": {
+          "32": [
+            5,
+            6,
+            7,
+            10,
+            11,
+            14,
+            15,
+            17,
+            19,
+            21,
+            23,
+            25
+          ],
+          "36": [
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91
+          ],
+          "40": [
+            8,
+            9,
+            12,
+            13,
+            16,
+            18,
+            20,
+            22,
+            24,
+            27,
+            28,
+            31
+          ],
+          "48": [
+            1,
+            2,
+            3,
+            4,
+            32,
+            36
+          ]
+        },
+        "pivot_mask": 1,
+        "quotient_meta": {
+          "free_bits": [],
+          "keep": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "pivot": 0
+        },
+        "rank9_baseline_total_hits": 648,
+        "rank9_no_saturation_total_hits": 720,
+        "top_nu_points_head": [
+          [
+            1,
+            48
+          ],
+          [
+            2,
+            48
+          ],
+          [
+            3,
+            48
+          ],
+          [
+            4,
+            48
+          ],
+          [
+            32,
+            48
+          ],
+          [
+            36,
+            48
+          ],
+          [
+            8,
+            40
+          ],
+          [
+            9,
+            40
+          ],
+          [
+            12,
+            40
+          ],
+          [
+            13,
+            40
+          ],
+          [
+            16,
+            40
+          ],
+          [
+            18,
+            40
+          ],
+          [
+            20,
+            40
+          ],
+          [
+            22,
+            40
+          ],
+          [
+            24,
+            40
+          ],
+          [
+            27,
+            40
+          ],
+          [
+            28,
+            40
+          ],
+          [
+            31,
+            40
+          ],
+          [
+            42,
+            40
+          ],
+          [
+            43,
+            40
+          ],
+          [
+            46,
+            40
+          ],
+          [
+            47,
+            40
+          ],
+          [
+            49,
+            40
+          ],
+          [
+            51,
+            40
+          ],
+          [
+            53,
+            40
+          ],
+          [
+            55,
+            40
+          ],
+          [
+            57,
+            40
+          ],
+          [
+            58,
+            40
+          ],
+          [
+            61,
+            40
+          ],
+          [
+            62,
+            40
+          ]
+        ]
+      }
+    }
+  },
+  "elapsed_sec": 559.111,
+  "field": "F2",
+  "lut_meta_brief": {
+    "conflict_count": 0,
+    "coverage_ok": true,
+    "subspace_count": 8283458
+  },
+  "parameters": {
+    "cores": [
+      "E11"
+    ],
+    "modes": [
+      "max_sum_nu",
+      "no_saturation",
+      "min_sum_nu_wang_only"
+    ],
+    "time_limit": 180.0
+  },
+  "purpose": "Complete support-level MILP gate for saturation of invertible contractions under all Wang occupation inequalities.",
+  "rank_s": 19,
+  "schema": "trace_gate_milp_v1"
+}

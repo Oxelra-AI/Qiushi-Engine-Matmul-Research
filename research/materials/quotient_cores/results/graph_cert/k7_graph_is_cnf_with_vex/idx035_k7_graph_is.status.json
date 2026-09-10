@@ -1,0 +1,29 @@
+{
+  "cadical_elapsed_sec": 2.31738018989563,
+  "cadical_exit": 20,
+  "cadical_log": "workspace/data/graph_cert/k7_graph_is_cnf_with_vex/idx035_k7_graph_is.cadical.log",
+  "cadical_log_parse": {
+    "sat": false,
+    "tail": "riables\nc fixed:                       443         9.53 %  of all variables\nc learned:                   39580        95.90 %  per conflict\nc learned_lits:            1761984       100.00 %  learned literals\nc minimized:                     0         0.00 %  learned literals\nc shrunken:                1332762        75.64 %  learned literals\nc minishrunken:              62207         3.53 %  learned literals\nc otfs:                        446         1.08 %  of conflict\nc propagations:           15045028         6.52 M  per second\nc reduced:                    9344        22.64 %  per conflict\nc rephased:                      8      5158.88    interval\nc restarts:                   2872        14.37    interval\nc subsumed:                  14653        13.37 %  of all clauses\nc strengthened:               1502         1.37 %  of all clauses\nc ticks:                  94787634         7.19    propagation\nc vivified:                    840         0.77 %  of all clauses\nc weakened:                  11636         4.13    average size\nc \nc seconds are measured in process time for solving\nc \nc --- [ glue usage ] ---------------------------------------------------------\nc \nc focused glue 2 used 43157 clauses 29.28% accumulated 67.11% tier1\nc focused glue 3 used 17700 clauses 12.01% accumulated 79.12% tier2\nc \nc stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1\nc stable glue 3 used 0 clauses 0.000% accumulated 0.000%\nc stable glue 4 used 0 clauses 0.000% accumulated 0.000%\nc stable glue 5 used 0 clauses 0.000% accumulated 0.000%\nc stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2\nc \nc \nc --- [ resources ] ----------------------------------------------------------\nc \nc total process time since initialization:         2.31    seconds\nc total real time since initialization:            2.31    seconds\nc maximum resident set size of process:         1113.66    MB\nc \nc --- [ shutting down ] ------------------------------------------------------\nc \nc exit 20\n",
+    "unsat": true,
+    "verified": false
+  },
+  "cnf": "workspace/data/graph_cert/k7_graph_is_cnf_with_vex/idx035_k7_graph_is.cnf",
+  "drat": "workspace/data/graph_cert/k7_graph_is_cnf_with_vex/idx035_k7_graph_is.drat",
+  "drat_trim_elapsed_sec": 4.023669719696045,
+  "drat_trim_exit": 0,
+  "drat_trim_log": "workspace/data/graph_cert/k7_graph_is_cnf_with_vex/idx035_k7_graph_is.drat_trim.log",
+  "drat_trim_log_parse": {
+    "sat": false,
+    "tail": "\nc parsing input formula with 3135 variables and 25518 clauses\n\nc finished parsing\n\nc detected empty clause; start verification via backward checking\n\nc 24292 of 25518 clauses in core                            \n\nc 48572 of 98332 lemmas in core using 3578931 resolution steps\n\nc 11104 RAT lemmas in core; 4171 redundant literals in core lemmas\n\ns VERIFIED\n\nc verification time: 4.018 seconds\n",
+    "unsat": false,
+    "verified": true
+  },
+  "hashes": {
+    "idx035_k7_graph_is.cadical.log": "d416c588cf76de2230c5ea2af1ce9f17ae3bee7d4846da37b3625a5b486f8428",
+    "idx035_k7_graph_is.cnf": "0b5e16a01e766a533c50a387edbf00ac948a3aabd500e55769a7ec5e62a17985",
+    "idx035_k7_graph_is.drat": "fc5659093b004fc8dbaa99807a01d64ac2c01435051c2fe783c03fc20fb8eb59",
+    "idx035_k7_graph_is.drat_trim.log": "73093be413bc123f672136a556d0b6edb99663e322a9c4445b24c800525e830d",
+    "idx035_k7_graph_is.meta.json": "23a79117ae06e89293780b3b1bcba7e06ba51ed0b82783a83dc4b753817486b7"
+  }
+}

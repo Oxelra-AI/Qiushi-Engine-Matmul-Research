@@ -1,0 +1,534 @@
+{
+  "A_cols": [
+    1,
+    2,
+    3,
+    4,
+    8,
+    20,
+    24,
+    31,
+    32,
+    64,
+    73,
+    109,
+    127,
+    128,
+    141,
+    160,
+    182,
+    192,
+    219
+  ],
+  "complete_core_table_meta": {
+    "by_dim8": {
+      "0": 1,
+      "1": 255,
+      "2": 10795,
+      "3": 97155,
+      "4": 200787,
+      "5": 97155,
+      "6": 10795,
+      "7": 255,
+      "8": 1
+    },
+    "by_full_lut_L": {
+      "0": 1,
+      "11": 865,
+      "12": 61232,
+      "13": 8130,
+      "14": 81540,
+      "15": 138902,
+      "16": 83046,
+      "17": 34664,
+      "18": 687,
+      "19": 1,
+      "3": 33,
+      "6": 578,
+      "9": 7520
+    },
+    "constraint_count": 417199,
+    "elapsed_sec": 36.604
+  },
+  "completion": {
+    "A_cols": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      20,
+      24,
+      31,
+      32,
+      64,
+      73,
+      109,
+      127,
+      128,
+      141,
+      160,
+      182,
+      192,
+      219
+    ],
+    "cp_model_stats": "CpSolverResponse summary:\nstatus: INFEASIBLE\nobjective: NA\nbest_bound: NA\nintegers: 2338\nbooleans: 1882\nconflicts: 831158\nbranches: 2393800\npropagations: 106506300\ninteger_propagations: 119286361\nrestarts: 171309\nlp_iterations: 613211\nwalltime: 146.476\nusertime: 146.476\ndeterministic_time: 1829.48\ngap_integral: 0\n",
+    "distinct_A_points": 19,
+    "equation_width_hist": {
+      "5": 81,
+      "6": 324,
+      "7": 81,
+      "8": 162
+    },
+    "equations": 648,
+    "field": "F2",
+    "label": "L15_solution_0",
+    "max_equation_width": 8,
+    "meaning": "FEASIBLE gives an exact fixed-A decomposition verified by reconstruction. INFEASIBLE/UNKNOWN is candidate-specific unless converted to proof.",
+    "saturated_contraction_count": 16,
+    "saturation_affine_dim": 891,
+    "saturation_linear_passed": true,
+    "saturation_linear_variables": 1539,
+    "schema": "solve_fixed_A_completion_v1",
+    "solve_sec": 146.48259282112122,
+    "status": "INFEASIBLE",
+    "term_count": 19,
+    "term_domain_dims_hist": {
+      "B9_C9": 19
+    },
+    "variables_alpha": 171,
+    "variables_beta": 171,
+    "variables_gamma": 1539,
+    "verified_decomposition": false,
+    "zero_domain_terms": []
+  },
+  "core": "E11",
+  "distinct_A": 19,
+  "elapsed_sec": 185.815,
+  "field": "F2",
+  "interpretation": "A support with Wang violations is not admissible; completion is run to test fixed-A solver behavior and local B/C compatibility, not to override Wang occupation.",
+  "label": "L15_solution_0",
+  "quotient_rank_scan_size2": {
+    "distinct_A_points": 19,
+    "multiplicity_hist": {
+      "1": 19
+    },
+    "name": "L15_solution_0",
+    "nontrivial_guarded_instances": 0,
+    "saturated_by_rank": {
+      "9": 16
+    },
+    "saturated_contraction_count": 16,
+    "source_sets_scanned": 136,
+    "term_count": 19,
+    "violated_guarded_instances": 0,
+    "violations_by_requirement": {},
+    "violations_by_side": {},
+    "violations_by_source_rank_pattern": {},
+    "violations_by_source_size": {},
+    "violations_by_target_saturated": {},
+    "violations_head": []
+  },
+  "rank_s": 19,
+  "saturation_summary": {
+    "count_minus_rank_hist": {
+      "0": 16,
+      "1": 30,
+      "10": 1,
+      "2": 55,
+      "3": 58,
+      "4": 48,
+      "5": 27,
+      "6": 12,
+      "7": 4,
+      "8": 2,
+      "9": 2
+    },
+    "linear_membership": {
+      "affine_solution_dimension_if_consistent": 891,
+      "coefficient_rank": 648,
+      "domain_dim_sum": 1539,
+      "equations": 648,
+      "linear_inconsistency_certificate": null,
+      "necessary_linear_test_passed": true,
+      "rhs_weight": 24,
+      "variables": 1539
+    },
+    "q_rank_hist": {
+      "3": 33,
+      "6": 150,
+      "9": 72
+    },
+    "saturated_by_rank": {
+      "9": 16
+    },
+    "saturated_contraction_count": 16,
+    "term_domain_dims_hist": {
+      "B9_C9": 19
+    },
+    "undersaturated_contraction_count": 0,
+    "zero_domain_terms": []
+  },
+  "schema": "single_completion_v1",
+  "source": "data/distinct_line_cover/threshold_L15_300s.json",
+  "source_index": 0,
+  "transversal": {
+    "failure_count_reported": 0,
+    "failures_head": [],
+    "interpretation": "Any failure is a Rado independent-transversal obstruction for B or C factors inside globally intersected saturated domains. Absence of reported failures means this necessary test found no obstruction.",
+    "per_q_first_head": [],
+    "saturated_contractions_with_failure_reported": 0
+  },
+  "wang_scan": {
+    "A_multiplicity_hist": {
+      "1": 19
+    },
+    "complete_constraint_count": 417199,
+    "complete_violation_count": 12,
+    "distinct_A_points": 19,
+    "elapsed_sec": 0.068,
+    "label": "L15_solution_0",
+    "max_excess": 1,
+    "rank_s": 19,
+    "term_count_with_multiplicity": 19,
+    "violations_by_dim8": {
+      "5": 6,
+      "6": 6
+    },
+    "violations_by_excess": {
+      "1": 12
+    },
+    "violations_by_full_lut_L": {
+      "12": 12
+    },
+    "violations_by_occ_cap_head": {
+      "(8, 7)": 12
+    },
+    "violations_head": [
+      {
+        "L": 12,
+        "basis8": [
+          128,
+          64,
+          33,
+          19,
+          9,
+          4
+        ],
+        "basis9": [
+          256,
+          128,
+          66,
+          38,
+          18,
+          8,
+          1
+        ],
+        "cap": 7,
+        "dim8": 6,
+        "dim9": 7,
+        "excess": 1,
+        "key8": 2261736359462918,
+        "key9": 292753848870637575,
+        "occupancy": 8,
+        "point_count": 63
+      },
+      {
+        "L": 12,
+        "basis8": [
+          128,
+          64,
+          35,
+          17,
+          10,
+          4
+        ],
+        "basis9": [
+          256,
+          128,
+          70,
+          34,
+          20,
+          8,
+          1
+        ],
+        "cap": 7,
+        "dim8": 6,
+        "dim9": 7,
+        "excess": 1,
+        "key8": 2262831584512006,
+        "key9": 292756039320735751,
+        "occupancy": 8,
+        "point_count": 63
+      },
+      {
+        "L": 12,
+        "basis8": [
+          131,
+          67,
+          35,
+          17,
+          10,
+          4
+        ],
+        "basis9": [
+          262,
+          134,
+          70,
+          34,
+          20,
+          8,
+          1
+        ],
+        "cap": 7,
+        "dim8": 6,
+        "dim9": 7,
+        "excess": 1,
+        "key8": 2262831584536630,
+        "key9": 292756039320784999,
+        "occupancy": 8,
+        "point_count": 63
+      },
+      {
+        "L": 12,
+        "basis8": [
+          130,
+          64,
+          34,
+          18,
+          11,
+          4
+        ],
+        "basis9": [
+          260,
+          128,
+          68,
+          36,
+          22,
+          8,
+          1
+        ],
+        "cap": 7,
+        "dim8": 6,
+        "dim9": 7,
+        "excess": 1,
+        "key8": 2263933239429158,
+        "key9": 292758242630570055,
+        "occupancy": 8,
+        "point_count": 63
+      },
+      {
+        "L": 12,
+        "basis8": [
+          129,
+          64,
+          32,
+          18,
+          8,
+          5
+        ],
+        "basis9": [
+          258,
+          128,
+          64,
+          36,
+          16,
+          10,
+          1
+        ],
+        "cap": 7,
+        "dim8": 6,
+        "dim9": 7,
+        "excess": 1,
+        "key8": 2823584649578518,
+        "key9": 293877545450868775,
+        "occupancy": 8,
+        "point_count": 63
+      },
+      {
+        "L": 12,
+        "basis8": [
+          128,
+          66,
+          32,
+          18,
+          11,
+          6
+        ],
+        "basis9": [
+          256,
+          132,
+          64,
+          36,
+          22,
+          12,
+          1
+        ],
+        "cap": 7,
+        "dim8": 6,
+        "dim9": 7,
+        "excess": 1,
+        "key8": 3389833137899526,
+        "key9": 295010042427510791,
+        "occupancy": 8,
+        "point_count": 63
+      },
+      {
+        "L": 12,
+        "basis8": [
+          128,
+          64,
+          50,
+          9,
+          4
+        ],
+        "basis9": [
+          256,
+          128,
+          100,
+          18,
+          8,
+          1
+        ],
+        "cap": 7,
+        "dim8": 5,
+        "dim9": 6,
+        "excess": 1,
+        "key8": 4417584105477,
+        "key9": 571785121632262,
+        "occupancy": 8,
+        "point_count": 31
+      },
+      {
+        "L": 12,
+        "basis8": [
+          137,
+          64,
+          41,
+          18,
+          4
+        ],
+        "basis9": [
+          274,
+          128,
+          82,
+          36,
+          8,
+          1
+        ],
+        "cap": 7,
+        "dim8": 5,
+        "dim9": 6,
+        "excess": 1,
+        "key8": 4436873709717,
+        "key9": 571823700840742,
+        "occupancy": 8,
+        "point_count": 31
+      },
+      {
+        "L": 12,
+        "basis8": [
+          128,
+          64,
+          41,
+          27,
+          4
+        ],
+        "basis9": [
+          256,
+          128,
+          82,
+          54,
+          8,
+          1
+        ],
+        "cap": 7,
+        "dim8": 5,
+        "dim9": 6,
+        "excess": 1,
+        "key8": 4456201062405,
+        "key9": 571862355546118,
+        "occupancy": 8,
+        "point_count": 31
+      },
+      {
+        "L": 12,
+        "basis8": [
+          137,
+          73,
+          41,
+          27,
+          4
+        ],
+        "basis9": [
+          274,
+          146,
+          82,
+          54,
+          8,
+          1
+        ],
+        "cap": 7,
+        "dim8": 5,
+        "dim9": 6,
+        "excess": 1,
+        "key8": 4456201136277,
+        "key9": 571862355693862,
+        "occupancy": 8,
+        "point_count": 31
+      },
+      {
+        "L": 12,
+        "basis8": [
+          128,
+          64,
+          32,
+          8,
+          5
+        ],
+        "basis9": [
+          256,
+          128,
+          64,
+          16,
+          10,
+          1
+        ],
+        "cap": 7,
+        "dim8": 5,
+        "dim9": 6,
+        "excess": 1,
+        "key8": 5514872752133,
+        "key9": 573979698925574,
+        "occupancy": 8,
+        "point_count": 31
+      },
+      {
+        "L": 12,
+        "basis8": [
+          128,
+          64,
+          32,
+          24,
+          7
+        ],
+        "basis9": [
+          256,
+          128,
+          64,
+          48,
+          14,
+          1
+        ],
+        "cap": 7,
+        "dim8": 5,
+        "dim9": 6,
+        "excess": 1,
+        "key8": 7748255746053,
+        "key9": 578446464913414,
+        "occupancy": 8,
+        "point_count": 31
+      }
+    ]
+  }
+}

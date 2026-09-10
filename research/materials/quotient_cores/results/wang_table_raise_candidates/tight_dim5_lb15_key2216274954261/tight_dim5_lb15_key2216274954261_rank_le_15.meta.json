@@ -1,0 +1,616 @@
+{
+  "A_keep_indices": [
+    0,
+    2,
+    5,
+    8
+  ],
+  "A_pivot_indices": [
+    7,
+    6,
+    4,
+    3,
+    1
+  ],
+  "basis": [
+    129,
+    64,
+    17,
+    8,
+    2
+  ],
+  "claimed_current_lb": 15,
+  "cnf": {
+    "base_var_count": 330,
+    "cube_and_xor_clause_count": 32076,
+    "cube_var_count": 4860,
+    "elapsed_sec": 0.04997563362121582,
+    "empty_clause_count": 0,
+    "num_clauses": 33696,
+    "num_vars": 9942,
+    "pair_clause_count": 1620,
+    "pair_var_count": 540,
+    "path": "data/wang_table_raise_candidates/tight_dim5_lb15_key2216274954261/tight_dim5_lb15_key2216274954261_rank_le_15.cnf",
+    "xor_aux_count": 4212
+  },
+  "dim_constraints": 5,
+  "field": "F2",
+  "flattening_ranks": {
+    "A": 4,
+    "B": 9,
+    "C": 9
+  },
+  "hashes": {
+    "data/wang_table_raise_candidates/tight_dim5_lb15_key2216274954261/tight_dim5_lb15_key2216274954261_rank_le_15.cnf": "03f8aa85d4986d40b186222ec9a4562141dec1d80030e55f6e7ae31f5f432094",
+    "data/wang_table_raise_candidates/tight_dim5_lb15_key2216274954261/tight_dim5_lb15_key2216274954261_tensor.npy": "ceefdfaba620bc48941c88fc260d3aef42fbb57da30dc3a93dca7daa1b72d946"
+  },
+  "key": 2216274954261,
+  "label": "tight_dim5_lb15_key2216274954261",
+  "mathematical_meaning_if_unsat_verified": "raises this restricted tensor lower bound from 15 to at least 16",
+  "rank_probe": 15,
+  "restricted_tensor_nnz": 18,
+  "restricted_tensor_shape": [
+    4,
+    9,
+    9
+  ],
+  "sat_decomposition": {
+    "meaning": "SAT gives an exact F2 decomposition of the restricted tensor with at most the probed rank; then this Wang entry cannot be raised above the probed rank.",
+    "terms": [
+      {
+        "term": 0,
+        "u": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "u_mask": 1,
+        "v": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "v_mask": 2,
+        "w": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "w_mask": 2,
+        "zero_tensor_term": false
+      },
+      {
+        "term": 1,
+        "u": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "u_mask": 1,
+        "v": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "v_mask": 1,
+        "w": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "w_mask": 1,
+        "zero_tensor_term": false
+      },
+      {
+        "term": 2,
+        "u": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "u_mask": 1,
+        "v": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "v_mask": 4,
+        "w": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "w_mask": 4,
+        "zero_tensor_term": false
+      },
+      {
+        "term": 3,
+        "u": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "u_mask": 1,
+        "v": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "v_mask": 8,
+        "w": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "w_mask": 72,
+        "zero_tensor_term": false
+      },
+      {
+        "term": 4,
+        "u": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "u_mask": 1,
+        "v": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "v_mask": 16,
+        "w": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "w_mask": 144,
+        "zero_tensor_term": false
+      },
+      {
+        "term": 5,
+        "u": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "u_mask": 1,
+        "v": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "v_mask": 32,
+        "w": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "w_mask": 288,
+        "zero_tensor_term": false
+      },
+      {
+        "term": 6,
+        "u": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "u_mask": 2,
+        "v": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "v_mask": 64,
+        "w": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "w_mask": 1,
+        "zero_tensor_term": false
+      },
+      {
+        "term": 7,
+        "u": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "u_mask": 2,
+        "v": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "v_mask": 128,
+        "w": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "w_mask": 2,
+        "zero_tensor_term": false
+      },
+      {
+        "term": 8,
+        "u": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "u_mask": 2,
+        "v": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "v_mask": 256,
+        "w": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "w_mask": 4,
+        "zero_tensor_term": false
+      },
+      {
+        "term": 9,
+        "u": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "u_mask": 4,
+        "v": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "v_mask": 64,
+        "w": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "w_mask": 8,
+        "zero_tensor_term": false
+      },
+      {
+        "term": 10,
+        "u": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "u_mask": 4,
+        "v": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "v_mask": 128,
+        "w": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "w_mask": 16,
+        "zero_tensor_term": false
+      },
+      {
+        "term": 11,
+        "u": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "u_mask": 4,
+        "v": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "v_mask": 256,
+        "w": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "w_mask": 32,
+        "zero_tensor_term": false
+      },
+      {
+        "term": 12,
+        "u": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "u_mask": 8,
+        "v": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "v_mask": 64,
+        "w": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "w_mask": 64,
+        "zero_tensor_term": false
+      },
+      {
+        "term": 13,
+        "u": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "u_mask": 8,
+        "v": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "v_mask": 128,
+        "w": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "w_mask": 128,
+        "zero_tensor_term": false
+      },
+      {
+        "term": 14,
+        "u": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "u_mask": 8,
+        "v": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "v_mask": 256,
+        "w": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "w_mask": 256,
+        "zero_tensor_term": false
+      }
+    ],
+    "verification": {
+      "mismatch_count": 0,
+      "nonzero_terms": 15,
+      "verified": true
+    }
+  },
+  "session_tensor_convention": "A_ij, B_jk, C_ik row-major",
+  "solver_status": {
+    "cadical_elapsed_sec": 0.019924402236938477,
+    "cadical_exit": 10,
+    "cadical_log": "data/wang_table_raise_candidates/tight_dim5_lb15_key2216274954261/tight_dim5_lb15_key2216274954261_rank_le_15.cadical.log",
+    "cadical_result": "SAT",
+    "cnf": "data/wang_table_raise_candidates/tight_dim5_lb15_key2216274954261/tight_dim5_lb15_key2216274954261_rank_le_15.cnf",
+    "drat": "data/wang_table_raise_candidates/tight_dim5_lb15_key2216274954261/tight_dim5_lb15_key2216274954261_rank_le_15.drat",
+    "drat_trim_exit": null,
+    "drat_trim_log": "data/wang_table_raise_candidates/tight_dim5_lb15_key2216274954261/tight_dim5_lb15_key2216274954261_rank_le_15.drat_trim.log",
+    "drat_trim_verified": false,
+    "hashes": {
+      "data/wang_table_raise_candidates/tight_dim5_lb15_key2216274954261/tight_dim5_lb15_key2216274954261_rank_le_15.cadical.log": "0cbf74f0fc12c263081df527b2e378647949584ac8c7ad050e622d20c1153d4d",
+      "data/wang_table_raise_candidates/tight_dim5_lb15_key2216274954261/tight_dim5_lb15_key2216274954261_rank_le_15.cnf": "03f8aa85d4986d40b186222ec9a4562141dec1d80030e55f6e7ae31f5f432094",
+      "data/wang_table_raise_candidates/tight_dim5_lb15_key2216274954261/tight_dim5_lb15_key2216274954261_rank_le_15.drat": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "data/wang_table_raise_candidates/tight_dim5_lb15_key2216274954261/tight_dim5_lb15_key2216274954261_rank_le_15.model.log": "320c4c43e26c8a17bd99de95987cf055599524996da699893d7bdbd77080b7a1"
+    },
+    "model_cadical_elapsed_sec": 0.02002120018005371,
+    "model_cadical_exit": 10,
+    "model_log": "data/wang_table_raise_candidates/tight_dim5_lb15_key2216274954261/tight_dim5_lb15_key2216274954261_rank_le_15.model.log",
+    "model_true_var_count": 215,
+    "status_path": "data/wang_table_raise_candidates/tight_dim5_lb15_key2216274954261/tight_dim5_lb15_key2216274954261_rank_le_15.status.json"
+  },
+  "tensor_npy": "data/wang_table_raise_candidates/tight_dim5_lb15_key2216274954261/tight_dim5_lb15_key2216274954261_tensor.npy"
+}

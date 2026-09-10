@@ -1,0 +1,170 @@
+{
+  "contraction_lower_constraints": 511,
+  "field": "F2",
+  "final_status": "UNKNOWN",
+  "final_wang_constraints": 516706,
+  "initial_max_residual": 2,
+  "initial_wang_constraints": 516414,
+  "learned_zero_domain_cut_count": 1,
+  "meaning": "Exploratory support-level separation combining Wang occupation, contraction lower bounds, and learned zero-domain shared-factor cuts. Not a formal lower bound without proof replay.",
+  "orbit_records": [],
+  "prefix": [
+    1,
+    2
+  ],
+  "rounds": [
+    {
+      "full_lut_max_excess": 2,
+      "full_lut_type_top": [
+        {
+          "count": 63,
+          "dim": 6,
+          "excess": 1,
+          "lb": 15,
+          "residual_after_prefix": 5
+        },
+        {
+          "count": 55,
+          "dim": 6,
+          "excess": 1,
+          "lb": 15,
+          "residual_after_prefix": 4
+        },
+        {
+          "count": 46,
+          "dim": 5,
+          "excess": 1,
+          "lb": 15,
+          "residual_after_prefix": 5
+        },
+        {
+          "count": 31,
+          "dim": 5,
+          "excess": 1,
+          "lb": 15,
+          "residual_after_prefix": 4
+        },
+        {
+          "count": 20,
+          "dim": 7,
+          "excess": 1,
+          "lb": 12,
+          "residual_after_prefix": 7
+        },
+        {
+          "count": 14,
+          "dim": 5,
+          "excess": 1,
+          "lb": 15,
+          "residual_after_prefix": 3
+        },
+        {
+          "count": 10,
+          "dim": 4,
+          "excess": 1,
+          "lb": 16,
+          "residual_after_prefix": 4
+        },
+        {
+          "count": 9,
+          "dim": 7,
+          "excess": 1,
+          "lb": 12,
+          "residual_after_prefix": 8
+        },
+        {
+          "count": 8,
+          "dim": 6,
+          "excess": 1,
+          "lb": 15,
+          "residual_after_prefix": 3
+        },
+        {
+          "count": 7,
+          "dim": 4,
+          "excess": 1,
+          "lb": 17,
+          "residual_after_prefix": 3
+        }
+      ],
+      "full_lut_violation_count": 292,
+      "learned_wang_added": 292,
+      "learned_zero_domain_cuts_added": 1,
+      "rank1_total": 16,
+      "round": 0,
+      "saturation": {
+        "domain_hist": {
+          "B0_C3": 1,
+          "B3_C3": 4,
+          "B3_C6": 2,
+          "B6_C6": 9,
+          "B9_C9": 4
+        },
+        "linear_affine_dim": 189,
+        "linear_passed": true,
+        "saturated_contraction_count": 27,
+        "undersaturated_contraction_count": 0,
+        "zero_domain_terms": [
+          {
+            "B_dim": 0,
+            "C_dim": 3,
+            "a": 360,
+            "saturated_contractions": 14,
+            "term": 16
+          }
+        ]
+      },
+      "solve_sec": 50.47,
+      "status": "OPTIMAL",
+      "support": [
+        1,
+        2,
+        4,
+        7,
+        8,
+        11,
+        16,
+        32,
+        35,
+        56,
+        65,
+        72,
+        130,
+        216,
+        260,
+        358,
+        360,
+        455,
+        458,
+        504
+      ],
+      "wang_constraint_count": 516414,
+      "zero_domain_cut_count": 0
+    },
+    {
+      "cp_model_stats": "CpSolverResponse summary:\nstatus: UNKNOWN\nobjective: 0\nbest_bound: 0\nintegers: 9732\nbooleans: 1349\nconflicts: 215\nbranches: 12481\npropagations: 425648\ninteger_propagations: 23653190\nrestarts: 5610\nlp_iterations: 39301\nwalltime: 82.376\nusertime: 82.376\ndeterministic_time: 131.237\ngap_integral: 0\n",
+      "round": 1,
+      "solve_sec": 82.83,
+      "status": "UNKNOWN",
+      "wang_constraint_count": 516706,
+      "zero_domain_cut_count": 1
+    }
+  ],
+  "ruling_counts": {
+    "binary": 10,
+    "ternary": 87,
+    "unit": 1
+  },
+  "schema": "rep2_shared_factor_separation_v1",
+  "setwise_stabilizer_order": 192,
+  "source_counts": {
+    "base_residual": 516414,
+    "both": 0,
+    "learned": 292,
+    "nonbinding_selected_orbit": 0,
+    "orbit": 0
+  },
+  "tier": "none",
+  "top": null,
+  "total_elapsed_sec": 239.75
+}

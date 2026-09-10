@@ -1,0 +1,182 @@
+{
+  "W_basis": [
+    1,
+    84
+  ],
+  "blocked_vectors": 1,
+  "counts": {
+    "trace_reject": 1
+  },
+  "elapsed_sec": 184.41531944274902,
+  "final_status": "UNKNOWN",
+  "orbit_index": 482,
+  "parameters": {
+    "det_timeout": 60,
+    "max_solutions": 200,
+    "mode": "b2c",
+    "solver": "cadical",
+    "time_limit_per_round": 120.0,
+    "total_time_limit": 1800.0,
+    "workers": 8
+  },
+  "rounds": [
+    {
+      "round": 0,
+      "solve": {
+        "branches": 187128,
+        "conflicts": 2825,
+        "elapsed_sec": 54.25725030899048,
+        "status": "OPTIMAL"
+      },
+      "support": {
+        "max_multiplicity": 1,
+        "solution_head": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            64,
+            1
+          ],
+          [
+            66,
+            1
+          ],
+          [
+            72,
+            1
+          ],
+          [
+            74,
+            1
+          ],
+          [
+            80,
+            1
+          ],
+          [
+            82,
+            1
+          ],
+          [
+            92,
+            1
+          ],
+          [
+            94,
+            1
+          ],
+          [
+            96,
+            1
+          ],
+          [
+            99,
+            1
+          ],
+          [
+            105,
+            1
+          ],
+          [
+            106,
+            1
+          ],
+          [
+            117,
+            1
+          ],
+          [
+            118,
+            1
+          ],
+          [
+            120,
+            1
+          ],
+          [
+            123,
+            1
+          ]
+        ],
+        "solution_weight_check": 18,
+        "support_nonzero_count": 18
+      },
+      "trace": {
+        "elapsed_sec": 0.01938605308532715,
+        "full_rank_aug": [
+          644,
+          645
+        ],
+        "full_trace_consistent": false,
+        "tensor_consistent": true,
+        "tight_lambda_count": 16,
+        "tight_rank_hist": {
+          "9": 16
+        }
+      }
+    },
+    {
+      "round": 1,
+      "solve": {
+        "branches": 1476332,
+        "conflicts": 362202,
+        "elapsed_sec": 120.05546569824219,
+        "status": "UNKNOWN"
+      }
+    }
+  ],
+  "rounds_completed": 2,
+  "row_meta": {
+    "cap_hist": {
+      "1": 869,
+      "2": 3043,
+      "3": 8591,
+      "4": 6414,
+      "5": 1194,
+      "6": 7384,
+      "7": 132,
+      "9": 1422,
+      "12": 148,
+      "15": 13
+    },
+    "mask_popcount_hist": {
+      "1": 127,
+      "3": 2667,
+      "7": 11811,
+      "15": 11811,
+      "31": 2667,
+      "63": 127
+    },
+    "missing_lut_rows": 0,
+    "negative_cap_rows": 0,
+    "node_dim": 2,
+    "quotient_dim": 7,
+    "singleton_cap_hist": {
+      "1": 127
+    },
+    "singleton_cap_max": 1,
+    "singleton_cap_min": 1,
+    "singleton_caps_count": 127,
+    "strict_subspace_rows": 29210,
+    "subspace_dim_hist": {
+      "1": 127,
+      "2": 2667,
+      "3": 11811,
+      "4": 11811,
+      "5": 2667,
+      "6": 127
+    },
+    "tautological_rows": 0,
+    "unique_masks": 29210,
+    "usable_rows_integer": 29210
+  },
+  "schema": "dim2_occupation_det_loop_v1",
+  "status_meaning": "UNKNOWN",
+  "target": 18
+}

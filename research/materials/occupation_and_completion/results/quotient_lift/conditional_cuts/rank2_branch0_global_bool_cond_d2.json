@@ -1,0 +1,3526 @@
+{
+  "conditionals_meta": {
+    "B_size_hist": {
+      "24": 28224
+    },
+    "count": 28224,
+    "path": "data/quotient_lift/conditional_cuts/conditional_rank2_cut_masks_from_two_orbits.json",
+    "sha256": "10283bb66cf37e79f0d7625ac90313599d684635b05869a568aaf9549ea78ccf"
+  },
+  "elapsed_sec": 272.7847988605499,
+  "final_row_count": 56636,
+  "final_status": "OPTIMAL",
+  "forbid_quotient": [],
+  "force_quotient": [
+    1
+  ],
+  "found_full_wang_admissible": false,
+  "initial_cap": 2,
+  "initial_dim": 2,
+  "initial_stats": {
+    "cap_hist": {
+      "2": 43337
+    },
+    "dim_hist": {
+      "2": 43337
+    },
+    "elapsed_sec": 4.508540153503418,
+    "rows": 43337,
+    "skipped": {
+      "tautological_bool": 512
+    }
+  },
+  "lut_coverage_ok": true,
+  "meaning": "Full A-side Boolean support CEGAR with optional fixed-pivot branch constraints, split-flattening rank-sum, complete-LUT replay, and conditional re-pivoted rank-2 lift-obstruction cuts. Infeasibility of active rows is not by itself full proof unless row/proof coverage is independently certified; full-LUT admissibility is only A-side evidence.",
+  "n": 20,
+  "pivot": 17,
+  "pivot_name": "rank2",
+  "rounds": [
+    {
+      "active_rows": 43337,
+      "branches": 1064,
+      "conditional_cuts": 28224,
+      "conditional_eval": {
+        "active_tests": 864,
+        "best_head": [
+          {
+            "B_selected": [
+              121,
+              281,
+              317,
+              505
+            ],
+            "index": 3528,
+            "lhs": 13,
+            "occ_B": 4,
+            "pivot_a": 57,
+            "source_index": 2
+          },
+          {
+            "B_selected": [
+              121,
+              281,
+              317,
+              505
+            ],
+            "index": 3530,
+            "lhs": 13,
+            "occ_B": 4,
+            "pivot_a": 57,
+            "source_index": 1
+          },
+          {
+            "B_selected": [
+              121,
+              281,
+              317,
+              505
+            ],
+            "index": 3531,
+            "lhs": 13,
+            "occ_B": 4,
+            "pivot_a": 57,
+            "source_index": 3
+          },
+          {
+            "B_selected": [
+              16,
+              57,
+              121,
+              473
+            ],
+            "index": 27690,
+            "lhs": 13,
+            "occ_B": 4,
+            "pivot_a": 505,
+            "source_index": 33
+          },
+          {
+            "B_selected": [
+              16,
+              57,
+              121,
+              473
+            ],
+            "index": 27694,
+            "lhs": 13,
+            "occ_B": 4,
+            "pivot_a": 505,
+            "source_index": 34
+          },
+          {
+            "B_selected": [
+              121,
+              281,
+              317
+            ],
+            "index": 3512,
+            "lhs": 12,
+            "occ_B": 3,
+            "pivot_a": 57,
+            "source_index": 18
+          },
+          {
+            "B_selected": [
+              121,
+              281,
+              317
+            ],
+            "index": 3514,
+            "lhs": 12,
+            "occ_B": 3,
+            "pivot_a": 57,
+            "source_index": 17
+          },
+          {
+            "B_selected": [
+              121,
+              281,
+              317
+            ],
+            "index": 3515,
+            "lhs": 12,
+            "occ_B": 3,
+            "pivot_a": 57,
+            "source_index": 19
+          },
+          {
+            "B_selected": [
+              281,
+              317,
+              505
+            ],
+            "index": 3532,
+            "lhs": 12,
+            "occ_B": 3,
+            "pivot_a": 57,
+            "source_index": 34
+          },
+          {
+            "B_selected": [
+              281,
+              317,
+              505
+            ],
+            "index": 3534,
+            "lhs": 12,
+            "occ_B": 3,
+            "pivot_a": 57,
+            "source_index": 33
+          },
+          {
+            "B_selected": [
+              281,
+              317,
+              505
+            ],
+            "index": 3535,
+            "lhs": 12,
+            "occ_B": 3,
+            "pivot_a": 57,
+            "source_index": 35
+          },
+          {
+            "B_selected": [
+              16,
+              121,
+              473
+            ],
+            "index": 27651,
+            "lhs": 12,
+            "occ_B": 3,
+            "pivot_a": 505,
+            "source_index": 17
+          },
+          {
+            "B_selected": [
+              16,
+              121,
+              473
+            ],
+            "index": 27655,
+            "lhs": 12,
+            "occ_B": 3,
+            "pivot_a": 505,
+            "source_index": 18
+          },
+          {
+            "B_selected": [
+              16,
+              57,
+              473
+            ],
+            "index": 27666,
+            "lhs": 12,
+            "occ_B": 3,
+            "pivot_a": 505,
+            "source_index": 1
+          },
+          {
+            "B_selected": [
+              16,
+              57,
+              473
+            ],
+            "index": 27670,
+            "lhs": 12,
+            "occ_B": 3,
+            "pivot_a": 505,
+            "source_index": 2
+          },
+          {
+            "B_selected": [
+              57,
+              121,
+              473
+            ],
+            "index": 27682,
+            "lhs": 12,
+            "occ_B": 3,
+            "pivot_a": 505,
+            "source_index": 35
+          },
+          {
+            "B_selected": [
+              16,
+              57,
+              121
+            ],
+            "index": 27692,
+            "lhs": 12,
+            "occ_B": 3,
+            "pivot_a": 505,
+            "source_index": 32
+          },
+          {
+            "B_selected": [
+              16,
+              85
+            ],
+            "index": 768,
+            "lhs": 11,
+            "occ_B": 2,
+            "pivot_a": 20,
+            "source_index": 4
+          },
+          {
+            "B_selected": [
+              16,
+              85
+            ],
+            "index": 769,
+            "lhs": 11,
+            "occ_B": 2,
+            "pivot_a": 20,
+            "source_index": 12
+          },
+          {
+            "B_selected": [
+              16,
+              85
+            ],
+            "index": 770,
+            "lhs": 11,
+            "occ_B": 2,
+            "pivot_a": 20,
+            "source_index": 0
+          }
+        ],
+        "max_lhs": 13,
+        "max_occ_B": 4,
+        "violating_pivot_count": 0,
+        "violation_head": [],
+        "violations": 0
+      },
+      "conflicts": 0,
+      "full_check_stats": {
+        "checked_rows": 8283457,
+        "elapsed_sec": 80.96492004394531,
+        "violation_cap_hist": {
+          "11": 45,
+          "14": 6,
+          "2": 575,
+          "3": 2743,
+          "4": 3204,
+          "5": 3397,
+          "6": 1724,
+          "7": 56,
+          "8": 823
+        },
+        "violation_count": 12573,
+        "violation_dim_hist": {
+          "3": 579,
+          "4": 2541,
+          "5": 4008,
+          "6": 4354,
+          "7": 1044,
+          "8": 47
+        },
+        "violation_excess_hist": {
+          "1": 11172,
+          "2": 1252,
+          "3": 141,
+          "4": 8
+        }
+      },
+      "new_rows_added": 5000,
+      "rank_hist": {
+        "1": 1,
+        "2": 9,
+        "3": 10
+      },
+      "rank_sum": 49,
+      "solve_elapsed_sec": 5.157008409500122,
+      "status": "OPTIMAL",
+      "support": [
+        16,
+        17,
+        20,
+        39,
+        57,
+        79,
+        85,
+        121,
+        211,
+        279,
+        281,
+        286,
+        317,
+        330,
+        415,
+        419,
+        443,
+        462,
+        473,
+        505
+      ],
+      "violation_head": [
+        {
+          "basis": [
+            262,
+            134,
+            66,
+            36,
+            17,
+            14
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 4,
+          "idx": 699300,
+          "lb": 15,
+          "occ": 9
+        },
+        {
+          "basis": [
+            258,
+            131,
+            65,
+            34,
+            16,
+            11,
+            5
+          ],
+          "cap": 6,
+          "dim": 7,
+          "excess": 4,
+          "idx": 43143,
+          "lb": 14,
+          "occ": 10
+        },
+        {
+          "basis": [
+            259,
+            131,
+            66,
+            35,
+            17,
+            9,
+            5
+          ],
+          "cap": 6,
+          "dim": 7,
+          "excess": 4,
+          "idx": 43416,
+          "lb": 14,
+          "occ": 10
+        },
+        {
+          "basis": [
+            262,
+            134,
+            68,
+            34,
+            16,
+            14,
+            1
+          ],
+          "cap": 6,
+          "dim": 7,
+          "excess": 4,
+          "idx": 43674,
+          "lb": 14,
+          "occ": 10
+        },
+        {
+          "basis": [
+            262,
+            134,
+            66,
+            36,
+            16,
+            14,
+            1
+          ],
+          "cap": 6,
+          "dim": 7,
+          "excess": 4,
+          "idx": 43905,
+          "lb": 14,
+          "occ": 10
+        },
+        {
+          "basis": [
+            259,
+            129,
+            65,
+            35,
+            19,
+            9,
+            7
+          ],
+          "cap": 8,
+          "dim": 7,
+          "excess": 4,
+          "idx": 8308,
+          "lb": 12,
+          "occ": 12
+        },
+        {
+          "basis": [
+            259,
+            130,
+            65,
+            35,
+            16,
+            10,
+            4
+          ],
+          "cap": 8,
+          "dim": 7,
+          "excess": 4,
+          "idx": 26204,
+          "lb": 12,
+          "occ": 12
+        },
+        {
+          "basis": [
+            258,
+            130,
+            64,
+            34,
+            16,
+            10,
+            4,
+            1
+          ],
+          "cap": 11,
+          "dim": 8,
+          "excess": 4,
+          "idx": 440,
+          "lb": 9,
+          "occ": 15
+        },
+        {
+          "basis": [
+            259,
+            138,
+            71,
+            42,
+            20
+          ],
+          "cap": 3,
+          "dim": 5,
+          "excess": 3,
+          "idx": 4084359,
+          "lb": 17,
+          "occ": 6
+        },
+        {
+          "basis": [
+            265,
+            136,
+            79,
+            39,
+            30
+          ],
+          "cap": 3,
+          "dim": 5,
+          "excess": 3,
+          "idx": 4086887,
+          "lb": 17,
+          "occ": 6
+        },
+        {
+          "basis": [
+            262,
+            162,
+            66,
+            17,
+            14
+          ],
+          "cap": 3,
+          "dim": 5,
+          "excess": 3,
+          "idx": 4140238,
+          "lb": 17,
+          "occ": 6
+        },
+        {
+          "basis": [
+            257,
+            132,
+            70,
+            38,
+            17,
+            13
+          ],
+          "cap": 3,
+          "dim": 6,
+          "excess": 3,
+          "idx": 831800,
+          "lb": 17,
+          "occ": 6
+        },
+        {
+          "basis": [
+            259,
+            129,
+            71,
+            33,
+            20,
+            11
+          ],
+          "cap": 3,
+          "dim": 6,
+          "excess": 3,
+          "idx": 831823,
+          "lb": 17,
+          "occ": 6
+        },
+        {
+          "basis": [
+            261,
+            132,
+            66,
+            35,
+            23,
+            13
+          ],
+          "cap": 3,
+          "dim": 6,
+          "excess": 3,
+          "idx": 831849,
+          "lb": 17,
+          "occ": 6
+        },
+        {
+          "basis": [
+            258,
+            131,
+            68,
+            39,
+            21,
+            11
+          ],
+          "cap": 3,
+          "dim": 6,
+          "excess": 3,
+          "idx": 831916,
+          "lb": 17,
+          "occ": 6
+        },
+        {
+          "basis": [
+            262,
+            135,
+            66,
+            37,
+            17,
+            14
+          ],
+          "cap": 3,
+          "dim": 6,
+          "excess": 3,
+          "idx": 831958,
+          "lb": 17,
+          "occ": 6
+        },
+        {
+          "basis": [
+            259,
+            134,
+            65,
+            20,
+            14
+          ],
+          "cap": 4,
+          "dim": 5,
+          "excess": 3,
+          "idx": 2979000,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            266,
+            135,
+            64,
+            45,
+            20
+          ],
+          "cap": 4,
+          "dim": 5,
+          "excess": 3,
+          "idx": 3456753,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            279,
+            134,
+            83,
+            36,
+            14
+          ],
+          "cap": 4,
+          "dim": 5,
+          "excess": 3,
+          "idx": 3460302,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            279,
+            134,
+            85,
+            36,
+            14
+          ],
+          "cap": 4,
+          "dim": 5,
+          "excess": 3,
+          "idx": 3463769,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            259,
+            134,
+            79,
+            36,
+            26
+          ],
+          "cap": 4,
+          "dim": 5,
+          "excess": 3,
+          "idx": 3475262,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            266,
+            138,
+            78,
+            35,
+            20
+          ],
+          "cap": 4,
+          "dim": 5,
+          "excess": 3,
+          "idx": 3885973,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            264,
+            134,
+            66,
+            36,
+            17
+          ],
+          "cap": 4,
+          "dim": 5,
+          "excess": 3,
+          "idx": 3951515,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            261,
+            132,
+            66,
+            38,
+            17,
+            13
+          ],
+          "cap": 4,
+          "dim": 6,
+          "excess": 3,
+          "idx": 660127,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            263,
+            134,
+            68,
+            34,
+            17,
+            15
+          ],
+          "cap": 4,
+          "dim": 6,
+          "excess": 3,
+          "idx": 660329,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            260,
+            133,
+            66,
+            39,
+            19,
+            13
+          ],
+          "cap": 4,
+          "dim": 6,
+          "excess": 3,
+          "idx": 661745,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            262,
+            134,
+            68,
+            35,
+            17,
+            15
+          ],
+          "cap": 4,
+          "dim": 6,
+          "excess": 3,
+          "idx": 661936,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            259,
+            138,
+            66,
+            42,
+            17,
+            5
+          ],
+          "cap": 4,
+          "dim": 6,
+          "excess": 3,
+          "idx": 662181,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            264,
+            128,
+            64,
+            17,
+            4,
+            2
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 83084,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            262,
+            134,
+            66,
+            35,
+            23,
+            15
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 558773,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            256,
+            160,
+            100,
+            20,
+            9,
+            3
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 559307,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            262,
+            134,
+            65,
+            35,
+            20,
+            12
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 559412,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            260,
+            132,
+            77,
+            33,
+            24,
+            2
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 559480,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            260,
+            129,
+            69,
+            35,
+            16,
+            10
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 559797,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            263,
+            134,
+            65,
+            39,
+            20,
+            10
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 560229,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            260,
+            129,
+            70,
+            35,
+            19,
+            9
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 560739,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            262,
+            134,
+            68,
+            35,
+            17,
+            9
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 562385,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            260,
+            134,
+            70,
+            35,
+            19,
+            9
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 563889,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            257,
+            129,
+            74,
+            35,
+            24,
+            7
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 564044,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            264,
+            132,
+            68,
+            36,
+            17,
+            2
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 565471,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            259,
+            129,
+            70,
+            35,
+            20,
+            9
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 567280,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            259,
+            135,
+            64,
+            39,
+            20,
+            10
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 570634,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            259,
+            134,
+            65,
+            35,
+            20,
+            14
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 585429,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            262,
+            132,
+            64,
+            33,
+            20,
+            12
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 587642,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            259,
+            129,
+            65,
+            35,
+            20,
+            14
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 590524,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            264,
+            132,
+            64,
+            32,
+            21,
+            2
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 591164,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            257,
+            129,
+            69,
+            35,
+            17,
+            14
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 592289,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            259,
+            160,
+            99,
+            16,
+            10,
+            4
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 592958,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            259,
+            131,
+            71,
+            35,
+            20,
+            9
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 632887,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            262,
+            135,
+            64,
+            39,
+            17,
+            15
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 644059,
+          "lb": 15,
+          "occ": 8
+        }
+      ],
+      "wall_time": 5.089883343
+    },
+    {
+      "active_rows": 48337,
+      "branches": 1422,
+      "conditional_cuts": 28224,
+      "conditional_eval": {
+        "active_tests": 576,
+        "best_head": [
+          {
+            "B_selected": [
+              16,
+              277,
+              305,
+              309,
+              377,
+              407,
+              417
+            ],
+            "index": 585,
+            "lhs": 16,
+            "occ_B": 7,
+            "pivot_a": 17,
+            "source_index": 0
+          },
+          {
+            "B_selected": [
+              16,
+              277,
+              309,
+              377,
+              407,
+              417,
+              470
+            ],
+            "index": 592,
+            "lhs": 16,
+            "occ_B": 7,
+            "pivot_a": 17,
+            "source_index": 15
+          },
+          {
+            "B_selected": [
+              16,
+              277,
+              305,
+              309,
+              377,
+              417,
+              470
+            ],
+            "index": 594,
+            "lhs": 16,
+            "occ_B": 7,
+            "pivot_a": 17,
+            "source_index": 28
+          },
+          {
+            "B_selected": [
+              16,
+              277,
+              305,
+              309,
+              407,
+              417,
+              470
+            ],
+            "index": 666,
+            "lhs": 16,
+            "occ_B": 7,
+            "pivot_a": 17,
+            "source_index": 1
+          },
+          {
+            "B_selected": [
+              16,
+              277,
+              305,
+              377,
+              407,
+              417
+            ],
+            "index": 576,
+            "lhs": 15,
+            "occ_B": 6,
+            "pivot_a": 17,
+            "source_index": 12
+          },
+          {
+            "B_selected": [
+              277,
+              305,
+              309,
+              377,
+              407,
+              417
+            ],
+            "index": 586,
+            "lhs": 15,
+            "occ_B": 6,
+            "pivot_a": 17,
+            "source_index": 16
+          },
+          {
+            "B_selected": [
+              277,
+              305,
+              309,
+              377,
+              407,
+              417
+            ],
+            "index": 587,
+            "lhs": 15,
+            "occ_B": 6,
+            "pivot_a": 17,
+            "source_index": 32
+          },
+          {
+            "B_selected": [
+              16,
+              277,
+              309,
+              377,
+              417,
+              470
+            ],
+            "index": 591,
+            "lhs": 15,
+            "occ_B": 6,
+            "pivot_a": 17,
+            "source_index": 16
+          },
+          {
+            "B_selected": [
+              16,
+              309,
+              377,
+              407,
+              417,
+              470
+            ],
+            "index": 593,
+            "lhs": 15,
+            "occ_B": 6,
+            "pivot_a": 17,
+            "source_index": 22
+          },
+          {
+            "B_selected": [
+              16,
+              305,
+              309,
+              407,
+              417,
+              470
+            ],
+            "index": 595,
+            "lhs": 15,
+            "occ_B": 6,
+            "pivot_a": 17,
+            "source_index": 9
+          },
+          {
+            "B_selected": [
+              16,
+              277,
+              305,
+              309,
+              407,
+              470
+            ],
+            "index": 606,
+            "lhs": 15,
+            "occ_B": 6,
+            "pivot_a": 17,
+            "source_index": 32
+          },
+          {
+            "B_selected": [
+              16,
+              277,
+              305,
+              407,
+              417,
+              470
+            ],
+            "index": 608,
+            "lhs": 15,
+            "occ_B": 6,
+            "pivot_a": 17,
+            "source_index": 13
+          },
+          {
+            "B_selected": [
+              16,
+              277,
+              305,
+              309,
+              377,
+              470
+            ],
+            "index": 614,
+            "lhs": 15,
+            "occ_B": 6,
+            "pivot_a": 17,
+            "source_index": 30
+          },
+          {
+            "B_selected": [
+              16,
+              277,
+              309,
+              377,
+              417,
+              470
+            ],
+            "index": 616,
+            "lhs": 15,
+            "occ_B": 6,
+            "pivot_a": 17,
+            "source_index": 41
+          },
+          {
+            "B_selected": [
+              16,
+              277,
+              305,
+              377,
+              417,
+              470
+            ],
+            "index": 624,
+            "lhs": 15,
+            "occ_B": 6,
+            "pivot_a": 17,
+            "source_index": 3
+          },
+          {
+            "B_selected": [
+              16,
+              305,
+              309,
+              407,
+              417,
+              470
+            ],
+            "index": 630,
+            "lhs": 15,
+            "occ_B": 6,
+            "pivot_a": 17,
+            "source_index": 10
+          },
+          {
+            "B_selected": [
+              16,
+              277,
+              377,
+              407,
+              417,
+              470
+            ],
+            "index": 638,
+            "lhs": 15,
+            "occ_B": 6,
+            "pivot_a": 17,
+            "source_index": 43
+          },
+          {
+            "B_selected": [
+              16,
+              277,
+              305,
+              309,
+              377,
+              470
+            ],
+            "index": 657,
+            "lhs": 15,
+            "occ_B": 6,
+            "pivot_a": 17,
+            "source_index": 2
+          },
+          {
+            "B_selected": [
+              277,
+              305,
+              309,
+              407,
+              417,
+              470
+            ],
+            "index": 667,
+            "lhs": 15,
+            "occ_B": 6,
+            "pivot_a": 17,
+            "source_index": 17
+          },
+          {
+            "B_selected": [
+              277,
+              305,
+              309,
+              407,
+              417,
+              470
+            ],
+            "index": 668,
+            "lhs": 15,
+            "occ_B": 6,
+            "pivot_a": 17,
+            "source_index": 33
+          }
+        ],
+        "max_lhs": 16,
+        "max_occ_B": 7,
+        "violating_pivot_count": 0,
+        "violation_head": [],
+        "violations": 0
+      },
+      "conflicts": 0,
+      "full_check_stats": {
+        "checked_rows": 8283457,
+        "elapsed_sec": 80.9166247844696,
+        "violation_cap_hist": {
+          "11": 55,
+          "14": 5,
+          "17": 1,
+          "2": 434,
+          "3": 2239,
+          "4": 2772,
+          "5": 3175,
+          "6": 1627,
+          "7": 55,
+          "8": 827,
+          "9": 1
+        },
+        "violation_count": 11191,
+        "violation_dim_hist": {
+          "3": 445,
+          "4": 2228,
+          "5": 3681,
+          "6": 3868,
+          "7": 930,
+          "8": 39
+        },
+        "violation_excess_hist": {
+          "1": 9708,
+          "2": 1306,
+          "3": 160,
+          "4": 16,
+          "5": 1
+        }
+      },
+      "new_rows_added": 5000,
+      "rank_hist": {
+        "1": 1,
+        "2": 6,
+        "3": 13
+      },
+      "rank_sum": 52,
+      "solve_elapsed_sec": 7.499432563781738,
+      "status": "OPTIMAL",
+      "support": [
+        16,
+        17,
+        49,
+        92,
+        116,
+        125,
+        154,
+        183,
+        185,
+        277,
+        305,
+        309,
+        319,
+        350,
+        372,
+        377,
+        407,
+        417,
+        470,
+        472
+      ],
+      "violation_head": [
+        {
+          "basis": [
+            260,
+            134,
+            69,
+            32,
+            17,
+            14
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 5,
+          "idx": 83567,
+          "lb": 15,
+          "occ": 10
+        },
+        {
+          "basis": [
+            260,
+            133,
+            70,
+            36,
+            17,
+            14
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 4,
+          "idx": 80666,
+          "lb": 15,
+          "occ": 9
+        },
+        {
+          "basis": [
+            260,
+            130,
+            69,
+            36,
+            17,
+            14
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 4,
+          "idx": 81756,
+          "lb": 15,
+          "occ": 9
+        },
+        {
+          "basis": [
+            260,
+            134,
+            65,
+            36,
+            21,
+            14
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 4,
+          "idx": 83631,
+          "lb": 15,
+          "occ": 9
+        },
+        {
+          "basis": [
+            258,
+            134,
+            64,
+            33,
+            16,
+            12
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 4,
+          "idx": 690264,
+          "lb": 15,
+          "occ": 9
+        },
+        {
+          "basis": [
+            258,
+            134,
+            66,
+            33,
+            16,
+            14
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 4,
+          "idx": 693311,
+          "lb": 15,
+          "occ": 9
+        },
+        {
+          "basis": [
+            256,
+            134,
+            66,
+            35,
+            18,
+            14
+          ],
+          "cap": 6,
+          "dim": 6,
+          "excess": 4,
+          "idx": 388335,
+          "lb": 14,
+          "occ": 10
+        },
+        {
+          "basis": [
+            259,
+            133,
+            65,
+            35,
+            17,
+            14
+          ],
+          "cap": 6,
+          "dim": 6,
+          "excess": 4,
+          "idx": 390100,
+          "lb": 14,
+          "occ": 10
+        },
+        {
+          "basis": [
+            257,
+            133,
+            65,
+            33,
+            16,
+            13,
+            3
+          ],
+          "cap": 6,
+          "dim": 7,
+          "excess": 4,
+          "idx": 42659,
+          "lb": 14,
+          "occ": 10
+        },
+        {
+          "basis": [
+            257,
+            133,
+            64,
+            33,
+            16,
+            12,
+            3
+          ],
+          "cap": 6,
+          "dim": 7,
+          "excess": 4,
+          "idx": 43734,
+          "lb": 14,
+          "occ": 10
+        },
+        {
+          "basis": [
+            260,
+            134,
+            70,
+            38,
+            16,
+            12,
+            1
+          ],
+          "cap": 6,
+          "dim": 7,
+          "excess": 4,
+          "idx": 43784,
+          "lb": 14,
+          "occ": 10
+        },
+        {
+          "basis": [
+            256,
+            133,
+            65,
+            32,
+            17,
+            13,
+            3
+          ],
+          "cap": 8,
+          "dim": 7,
+          "excess": 4,
+          "idx": 10290,
+          "lb": 12,
+          "occ": 12
+        },
+        {
+          "basis": [
+            256,
+            131,
+            65,
+            33,
+            16,
+            9,
+            4
+          ],
+          "cap": 8,
+          "dim": 7,
+          "excess": 4,
+          "idx": 10359,
+          "lb": 12,
+          "occ": 12
+        },
+        {
+          "basis": [
+            260,
+            133,
+            69,
+            32,
+            17,
+            13,
+            3
+          ],
+          "cap": 8,
+          "dim": 7,
+          "excess": 4,
+          "idx": 10395,
+          "lb": 12,
+          "occ": 12
+        },
+        {
+          "basis": [
+            256,
+            128,
+            66,
+            33,
+            16,
+            10,
+            4
+          ],
+          "cap": 8,
+          "dim": 7,
+          "excess": 4,
+          "idx": 21099,
+          "lb": 12,
+          "occ": 12
+        },
+        {
+          "basis": [
+            256,
+            132,
+            64,
+            33,
+            16,
+            12,
+            2
+          ],
+          "cap": 8,
+          "dim": 7,
+          "excess": 4,
+          "idx": 30255,
+          "lb": 12,
+          "occ": 12
+        },
+        {
+          "basis": [
+            256,
+            128,
+            65,
+            33,
+            16,
+            9,
+            4,
+            3
+          ],
+          "cap": 11,
+          "dim": 8,
+          "excess": 4,
+          "idx": 377,
+          "lb": 9,
+          "occ": 15
+        },
+        {
+          "basis": [
+            336,
+            134,
+            49,
+            14
+          ],
+          "cap": 3,
+          "dim": 4,
+          "excess": 3,
+          "idx": 5022515,
+          "lb": 17,
+          "occ": 6
+        },
+        {
+          "basis": [
+            277,
+            183,
+            116,
+            14
+          ],
+          "cap": 3,
+          "dim": 4,
+          "excess": 3,
+          "idx": 6103231,
+          "lb": 17,
+          "occ": 6
+        },
+        {
+          "basis": [
+            305,
+            148,
+            115,
+            14
+          ],
+          "cap": 3,
+          "dim": 4,
+          "excess": 3,
+          "idx": 7222468,
+          "lb": 17,
+          "occ": 6
+        },
+        {
+          "basis": [
+            291,
+            134,
+            97,
+            17,
+            13
+          ],
+          "cap": 3,
+          "dim": 5,
+          "excess": 3,
+          "idx": 4084933,
+          "lb": 17,
+          "occ": 6
+        },
+        {
+          "basis": [
+            261,
+            134,
+            71,
+            38,
+            17,
+            13
+          ],
+          "cap": 3,
+          "dim": 6,
+          "excess": 3,
+          "idx": 831899,
+          "lb": 17,
+          "occ": 6
+        },
+        {
+          "basis": [
+            260,
+            147,
+            70,
+            50,
+            9
+          ],
+          "cap": 4,
+          "dim": 5,
+          "excess": 3,
+          "idx": 1831444,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            270,
+            134,
+            76,
+            45,
+            28
+          ],
+          "cap": 4,
+          "dim": 5,
+          "excess": 3,
+          "idx": 2364496,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            260,
+            134,
+            84,
+            49,
+            14
+          ],
+          "cap": 4,
+          "dim": 5,
+          "excess": 3,
+          "idx": 2416074,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            288,
+            133,
+            98,
+            17,
+            14
+          ],
+          "cap": 4,
+          "dim": 5,
+          "excess": 3,
+          "idx": 2440870,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            260,
+            138,
+            76,
+            33,
+            16
+          ],
+          "cap": 4,
+          "dim": 5,
+          "excess": 3,
+          "idx": 2953147,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            277,
+            148,
+            87,
+            35,
+            14
+          ],
+          "cap": 4,
+          "dim": 5,
+          "excess": 3,
+          "idx": 2960068,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            293,
+            162,
+            65,
+            16,
+            13
+          ],
+          "cap": 4,
+          "dim": 5,
+          "excess": 3,
+          "idx": 2980609,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            258,
+            134,
+            82,
+            49,
+            14
+          ],
+          "cap": 4,
+          "dim": 5,
+          "excess": 3,
+          "idx": 3368965,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            258,
+            136,
+            76,
+            33,
+            16
+          ],
+          "cap": 4,
+          "dim": 5,
+          "excess": 3,
+          "idx": 3382359,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            274,
+            134,
+            66,
+            49,
+            14
+          ],
+          "cap": 4,
+          "dim": 5,
+          "excess": 3,
+          "idx": 3539487,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            270,
+            138,
+            76,
+            33,
+            16
+          ],
+          "cap": 4,
+          "dim": 5,
+          "excess": 3,
+          "idx": 3570364,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            291,
+            134,
+            97,
+            18,
+            14
+          ],
+          "cap": 4,
+          "dim": 5,
+          "excess": 3,
+          "idx": 3907038,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            269,
+            139,
+            79,
+            35,
+            17
+          ],
+          "cap": 4,
+          "dim": 5,
+          "excess": 3,
+          "idx": 3920312,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            258,
+            134,
+            76,
+            33,
+            16
+          ],
+          "cap": 4,
+          "dim": 5,
+          "excess": 3,
+          "idx": 3921681,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            272,
+            148,
+            82,
+            33,
+            14
+          ],
+          "cap": 4,
+          "dim": 5,
+          "excess": 3,
+          "idx": 3934419,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            261,
+            135,
+            70,
+            39,
+            16,
+            13
+          ],
+          "cap": 4,
+          "dim": 6,
+          "excess": 3,
+          "idx": 660222,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            261,
+            134,
+            71,
+            38,
+            23,
+            11
+          ],
+          "cap": 4,
+          "dim": 6,
+          "excess": 3,
+          "idx": 660742,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            257,
+            134,
+            67,
+            34,
+            16,
+            12
+          ],
+          "cap": 4,
+          "dim": 6,
+          "excess": 3,
+          "idx": 661787,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            277,
+            147,
+            80,
+            36,
+            14
+          ],
+          "cap": 5,
+          "dim": 5,
+          "excess": 3,
+          "idx": 1510458,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            277,
+            134,
+            69,
+            49,
+            14
+          ],
+          "cap": 5,
+          "dim": 5,
+          "excess": 3,
+          "idx": 2551503,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            256,
+            134,
+            80,
+            49,
+            14
+          ],
+          "cap": 5,
+          "dim": 5,
+          "excess": 3,
+          "idx": 3028385,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            274,
+            148,
+            80,
+            35,
+            14
+          ],
+          "cap": 5,
+          "dim": 5,
+          "excess": 3,
+          "idx": 3144338,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            305,
+            144,
+            115,
+            10,
+            4
+          ],
+          "cap": 5,
+          "dim": 5,
+          "excess": 3,
+          "idx": 3668294,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            320,
+            132,
+            33,
+            16,
+            12,
+            2
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 79730,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            256,
+            138,
+            65,
+            40,
+            25,
+            4
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 80170,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            260,
+            134,
+            69,
+            32,
+            17,
+            8
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 80399,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            260,
+            133,
+            70,
+            36,
+            22,
+            9
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 80667,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            256,
+            162,
+            97,
+            17,
+            10,
+            4
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 81380,
+          "lb": 15,
+          "occ": 8
+        }
+      ],
+      "wall_time": 7.406039900000001
+    },
+    {
+      "active_rows": 53337,
+      "branches": 13886,
+      "conditional_cuts": 28224,
+      "conditional_eval": {
+        "active_tests": 672,
+        "best_head": [
+          {
+            "B_selected": [
+              8,
+              9,
+              18,
+              256,
+              260,
+              288,
+              504
+            ],
+            "index": 65,
+            "lhs": 16,
+            "occ_B": 7,
+            "pivot_a": 10,
+            "source_index": 1
+          },
+          {
+            "B_selected": [
+              8,
+              9,
+              18,
+              256,
+              260,
+              288,
+              504
+            ],
+            "index": 84,
+            "lhs": 16,
+            "occ_B": 7,
+            "pivot_a": 10,
+            "source_index": 2
+          },
+          {
+            "B_selected": [
+              8,
+              9,
+              18,
+              256,
+              260,
+              288,
+              504
+            ],
+            "index": 87,
+            "lhs": 16,
+            "occ_B": 7,
+            "pivot_a": 10,
+            "source_index": 4
+          },
+          {
+            "B_selected": [
+              1,
+              9,
+              18,
+              256,
+              260,
+              288,
+              465
+            ],
+            "index": 588,
+            "lhs": 16,
+            "occ_B": 7,
+            "pivot_a": 17,
+            "source_index": 5
+          },
+          {
+            "B_selected": [
+              1,
+              9,
+              18,
+              256,
+              260,
+              288,
+              465
+            ],
+            "index": 589,
+            "lhs": 16,
+            "occ_B": 7,
+            "pivot_a": 17,
+            "source_index": 0
+          },
+          {
+            "B_selected": [
+              1,
+              9,
+              18,
+              260,
+              288,
+              465,
+              504
+            ],
+            "index": 599,
+            "lhs": 16,
+            "occ_B": 7,
+            "pivot_a": 17,
+            "source_index": 31
+          },
+          {
+            "B_selected": [
+              1,
+              9,
+              18,
+              256,
+              260,
+              465,
+              504
+            ],
+            "index": 600,
+            "lhs": 16,
+            "occ_B": 7,
+            "pivot_a": 17,
+            "source_index": 18
+          },
+          {
+            "B_selected": [
+              1,
+              9,
+              18,
+              260,
+              288,
+              465,
+              504
+            ],
+            "index": 606,
+            "lhs": 16,
+            "occ_B": 7,
+            "pivot_a": 17,
+            "source_index": 32
+          },
+          {
+            "B_selected": [
+              1,
+              9,
+              18,
+              260,
+              288,
+              465,
+              504
+            ],
+            "index": 614,
+            "lhs": 16,
+            "occ_B": 7,
+            "pivot_a": 17,
+            "source_index": 30
+          },
+          {
+            "B_selected": [
+              1,
+              9,
+              18,
+              256,
+              260,
+              288,
+              504
+            ],
+            "index": 641,
+            "lhs": 16,
+            "occ_B": 7,
+            "pivot_a": 17,
+            "source_index": 1
+          },
+          {
+            "B_selected": [
+              1,
+              9,
+              18,
+              256,
+              260,
+              465,
+              504
+            ],
+            "index": 646,
+            "lhs": 16,
+            "occ_B": 7,
+            "pivot_a": 17,
+            "source_index": 17
+          },
+          {
+            "B_selected": [
+              1,
+              9,
+              18,
+              256,
+              260,
+              465,
+              504
+            ],
+            "index": 649,
+            "lhs": 16,
+            "occ_B": 7,
+            "pivot_a": 17,
+            "source_index": 19
+          },
+          {
+            "B_selected": [
+              1,
+              9,
+              18,
+              256,
+              260,
+              465,
+              504
+            ],
+            "index": 650,
+            "lhs": 16,
+            "occ_B": 7,
+            "pivot_a": 17,
+            "source_index": 21
+          },
+          {
+            "B_selected": [
+              1,
+              9,
+              18,
+              256,
+              260,
+              288,
+              504
+            ],
+            "index": 661,
+            "lhs": 16,
+            "occ_B": 7,
+            "pivot_a": 17,
+            "source_index": 4
+          },
+          {
+            "B_selected": [
+              1,
+              9,
+              18,
+              256,
+              260,
+              288,
+              504
+            ],
+            "index": 663,
+            "lhs": 16,
+            "occ_B": 7,
+            "pivot_a": 17,
+            "source_index": 2
+          },
+          {
+            "B_selected": [
+              8,
+              9,
+              18,
+              256,
+              260,
+              288
+            ],
+            "index": 12,
+            "lhs": 15,
+            "occ_B": 6,
+            "pivot_a": 10,
+            "source_index": 0
+          },
+          {
+            "B_selected": [
+              8,
+              9,
+              18,
+              256,
+              260,
+              288
+            ],
+            "index": 13,
+            "lhs": 15,
+            "occ_B": 6,
+            "pivot_a": 10,
+            "source_index": 5
+          },
+          {
+            "B_selected": [
+              8,
+              9,
+              18,
+              256,
+              288,
+              504
+            ],
+            "index": 20,
+            "lhs": 15,
+            "occ_B": 6,
+            "pivot_a": 10,
+            "source_index": 8
+          },
+          {
+            "B_selected": [
+              8,
+              9,
+              18,
+              256,
+              288,
+              504
+            ],
+            "index": 21,
+            "lhs": 15,
+            "occ_B": 6,
+            "pivot_a": 10,
+            "source_index": 11
+          },
+          {
+            "B_selected": [
+              8,
+              9,
+              18,
+              260,
+              288,
+              504
+            ],
+            "index": 23,
+            "lhs": 15,
+            "occ_B": 6,
+            "pivot_a": 10,
+            "source_index": 31
+          }
+        ],
+        "max_lhs": 16,
+        "max_occ_B": 7,
+        "violating_pivot_count": 0,
+        "violation_head": [],
+        "violations": 0
+      },
+      "conflicts": 66,
+      "full_check_stats": {
+        "checked_rows": 8283457,
+        "elapsed_sec": 68.1505298614502,
+        "violation_cap_hist": {
+          "11": 60,
+          "14": 3,
+          "17": 2,
+          "2": 35,
+          "3": 373,
+          "4": 552,
+          "5": 1298,
+          "6": 541,
+          "7": 10,
+          "8": 425
+        },
+        "violation_count": 3299,
+        "violation_dim_hist": {
+          "3": 56,
+          "4": 541,
+          "5": 1181,
+          "6": 1163,
+          "7": 337,
+          "8": 21
+        },
+        "violation_excess_hist": {
+          "1": 2927,
+          "2": 325,
+          "3": 41,
+          "4": 6
+        }
+      },
+      "new_rows_added": 3299,
+      "rank_hist": {
+        "1": 11,
+        "2": 7,
+        "3": 2
+      },
+      "rank_sum": 31,
+      "solve_elapsed_sec": 12.633475065231323,
+      "status": "OPTIMAL",
+      "support": [
+        1,
+        5,
+        7,
+        8,
+        9,
+        10,
+        17,
+        18,
+        28,
+        30,
+        33,
+        35,
+        37,
+        72,
+        256,
+        260,
+        288,
+        313,
+        465,
+        504
+      ],
+      "violation_head": [
+        {
+          "basis": [
+            33,
+            17,
+            8,
+            5,
+            2
+          ],
+          "cap": 5,
+          "dim": 5,
+          "excess": 4,
+          "idx": 842532,
+          "lb": 15,
+          "occ": 9
+        },
+        {
+          "basis": [
+            449,
+            33,
+            17,
+            8,
+            5,
+            2
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 4,
+          "idx": 66922,
+          "lb": 15,
+          "occ": 9
+        },
+        {
+          "basis": [
+            257,
+            33,
+            17,
+            8,
+            5,
+            2
+          ],
+          "cap": 8,
+          "dim": 6,
+          "excess": 4,
+          "idx": 73115,
+          "lb": 12,
+          "occ": 12
+        },
+        {
+          "basis": [
+            257,
+            192,
+            33,
+            17,
+            8,
+            5,
+            2
+          ],
+          "cap": 8,
+          "dim": 7,
+          "excess": 4,
+          "idx": 9539,
+          "lb": 12,
+          "occ": 12
+        },
+        {
+          "basis": [
+            256,
+            193,
+            33,
+            17,
+            9,
+            4,
+            3
+          ],
+          "cap": 8,
+          "dim": 7,
+          "excess": 4,
+          "idx": 9667,
+          "lb": 12,
+          "occ": 12
+        },
+        {
+          "basis": [
+            257,
+            193,
+            32,
+            17,
+            9,
+            5,
+            3
+          ],
+          "cap": 8,
+          "dim": 7,
+          "excess": 4,
+          "idx": 10843,
+          "lb": 12,
+          "occ": 12
+        },
+        {
+          "basis": [
+            260,
+            193,
+            35,
+            20,
+            10
+          ],
+          "cap": 4,
+          "dim": 5,
+          "excess": 3,
+          "idx": 3246598,
+          "lb": 16,
+          "occ": 7
+        },
+        {
+          "basis": [
+            33,
+            16,
+            8,
+            4,
+            2
+          ],
+          "cap": 5,
+          "dim": 5,
+          "excess": 3,
+          "idx": 842523,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            34,
+            16,
+            8,
+            6,
+            1
+          ],
+          "cap": 5,
+          "dim": 5,
+          "excess": 3,
+          "idx": 842534,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            32,
+            17,
+            8,
+            5,
+            2
+          ],
+          "cap": 5,
+          "dim": 5,
+          "excess": 3,
+          "idx": 842602,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            32,
+            17,
+            9,
+            5,
+            3
+          ],
+          "cap": 5,
+          "dim": 5,
+          "excess": 3,
+          "idx": 842604,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            33,
+            17,
+            9,
+            4,
+            3
+          ],
+          "cap": 5,
+          "dim": 5,
+          "excess": 3,
+          "idx": 842627,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            32,
+            20,
+            8,
+            2,
+            1
+          ],
+          "cap": 5,
+          "dim": 5,
+          "excess": 3,
+          "idx": 842778,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            256,
+            32,
+            17,
+            8,
+            5
+          ],
+          "cap": 5,
+          "dim": 5,
+          "excess": 3,
+          "idx": 845326,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            260,
+            33,
+            20,
+            8,
+            2
+          ],
+          "cap": 5,
+          "dim": 5,
+          "excess": 3,
+          "idx": 1759031,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            256,
+            65,
+            32,
+            17,
+            8,
+            5
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 66738,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            129,
+            33,
+            16,
+            8,
+            4,
+            2
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 66750,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            193,
+            32,
+            17,
+            9,
+            5,
+            3
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 66914,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            321,
+            32,
+            17,
+            8,
+            5,
+            2
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 66915,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            66,
+            34,
+            16,
+            8,
+            6,
+            1
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 66925,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            68,
+            32,
+            20,
+            8,
+            2,
+            1
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 66947,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            193,
+            33,
+            17,
+            9,
+            4,
+            3
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 67045,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            256,
+            193,
+            33,
+            24,
+            4,
+            3
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 67062,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            258,
+            32,
+            16,
+            10,
+            4,
+            1
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 67095,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            256,
+            201,
+            33,
+            24,
+            4,
+            3
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 81956,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            256,
+            66,
+            32,
+            17,
+            8,
+            5
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 83052,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            256,
+            67,
+            32,
+            17,
+            8,
+            5
+          ],
+          "cap": 5,
+          "dim": 6,
+          "excess": 3,
+          "idx": 84889,
+          "lb": 15,
+          "occ": 8
+        },
+        {
+          "basis": [
+            288,
+            17,
+            8,
+            5,
+            2
+          ],
+          "cap": 6,
+          "dim": 5,
+          "excess": 3,
+          "idx": 1099306,
+          "lb": 14,
+          "occ": 9
+        },
+        {
+          "basis": [
+            257,
+            193,
+            35,
+            17,
+            10,
+            5
+          ],
+          "cap": 6,
+          "dim": 6,
+          "excess": 3,
+          "idx": 392459,
+          "lb": 14,
+          "occ": 9
+        },
+        {
+          "basis": [
+            288,
+            97,
+            17,
+            8,
+            5,
+            2
+          ],
+          "cap": 6,
+          "dim": 6,
+          "excess": 3,
+          "idx": 411305,
+          "lb": 14,
+          "occ": 9
+        },
+        {
+          "basis": [
+            256,
+            193,
+            33,
+            18,
+            10,
+            4
+          ],
+          "cap": 6,
+          "dim": 6,
+          "excess": 3,
+          "idx": 420556,
+          "lb": 14,
+          "occ": 9
+        },
+        {
+          "basis": [
+            288,
+            225,
+            17,
+            8,
+            5,
+            2
+          ],
+          "cap": 6,
+          "dim": 6,
+          "excess": 3,
+          "idx": 425082,
+          "lb": 14,
+          "occ": 9
+        },
+        {
+          "basis": [
+            258,
+            193,
+            35,
+            18,
+            10,
+            6
+          ],
+          "cap": 6,
+          "dim": 6,
+          "excess": 3,
+          "idx": 625536,
+          "lb": 14,
+          "occ": 9
+        },
+        {
+          "basis": [
+            258,
+            129,
+            64,
+            35,
+            18,
+            10,
+            6
+          ],
+          "cap": 6,
+          "dim": 7,
+          "excess": 3,
+          "idx": 43841,
+          "lb": 14,
+          "occ": 9
+        },
+        {
+          "basis": [
+            256,
+            32,
+            18,
+            10,
+            4,
+            1
+          ],
+          "cap": 8,
+          "dim": 6,
+          "excess": 3,
+          "idx": 48018,
+          "lb": 12,
+          "occ": 11
+        },
+        {
+          "basis": [
+            448,
+            33,
+            17,
+            8,
+            5,
+            2
+          ],
+          "cap": 8,
+          "dim": 6,
+          "excess": 3,
+          "idx": 48457,
+          "lb": 12,
+          "occ": 11
+        },
+        {
+          "basis": [
+            256,
+            33,
+            17,
+            9,
+            4,
+            3
+          ],
+          "cap": 8,
+          "dim": 6,
+          "excess": 3,
+          "idx": 68144,
+          "lb": 12,
+          "occ": 11
+        },
+        {
+          "basis": [
+            258,
+            34,
+            16,
+            8,
+            6,
+            1
+          ],
+          "cap": 8,
+          "dim": 6,
+          "excess": 3,
+          "idx": 70273,
+          "lb": 12,
+          "occ": 11
+        },
+        {
+          "basis": [
+            256,
+            33,
+            16,
+            8,
+            4,
+            2
+          ],
+          "cap": 8,
+          "dim": 6,
+          "excess": 3,
+          "idx": 72201,
+          "lb": 12,
+          "occ": 11
+        },
+        {
+          "basis": [
+            256,
+            32,
+            17,
+            8,
+            5,
+            2
+          ],
+          "cap": 8,
+          "dim": 6,
+          "excess": 3,
+          "idx": 73350,
+          "lb": 12,
+          "occ": 11
+        },
+        {
+          "basis": [
+            256,
+            129,
+            33,
+            16,
+            8,
+            4,
+            2
+          ],
+          "cap": 8,
+          "dim": 7,
+          "excess": 3,
+          "idx": 9660,
+          "lb": 12,
+          "occ": 11
+        },
+        {
+          "basis": [
+            258,
+            66,
+            34,
+            16,
+            8,
+            6,
+            1
+          ],
+          "cap": 8,
+          "dim": 7,
+          "excess": 3,
+          "idx": 10093,
+          "lb": 12,
+          "occ": 11
+        },
+        {
+          "basis": [
+            256,
+            65,
+            32,
+            17,
+            8,
+            5,
+            2
+          ],
+          "cap": 8,
+          "dim": 7,
+          "excess": 3,
+          "idx": 10590,
+          "lb": 12,
+          "occ": 11
+        },
+        {
+          "basis": [
+            260,
+            129,
+            64,
+            33,
+            20,
+            8,
+            2
+          ],
+          "cap": 8,
+          "dim": 7,
+          "excess": 3,
+          "idx": 31077,
+          "lb": 12,
+          "occ": 11
+        },
+        {
+          "basis": [
+            257,
+            193,
+            33,
+            17,
+            8,
+            5,
+            2
+          ],
+          "cap": 11,
+          "dim": 7,
+          "excess": 3,
+          "idx": 3443,
+          "lb": 9,
+          "occ": 14
+        },
+        {
+          "basis": [
+            256,
+            129,
+            64,
+            33,
+            16,
+            8,
+            4,
+            2
+          ],
+          "cap": 11,
+          "dim": 8,
+          "excess": 3,
+          "idx": 400,
+          "lb": 9,
+          "occ": 14
+        },
+        {
+          "basis": [
+            256,
+            32,
+            16,
+            8,
+            4,
+            2,
+            1
+          ],
+          "cap": 14,
+          "dim": 7,
+          "excess": 3,
+          "idx": 532,
+          "lb": 6,
+          "occ": 17
+        },
+        {
+          "basis": [
+            272,
+            193,
+            33,
+            8
+          ],
+          "cap": 3,
+          "dim": 4,
+          "excess": 2,
+          "idx": 4618410,
+          "lb": 17,
+          "occ": 5
+        },
+        {
+          "basis": [
+            256,
+            205,
+            37,
+            28
+          ],
+          "cap": 3,
+          "dim": 4,
+          "excess": 2,
+          "idx": 5977969,
+          "lb": 17,
+          "occ": 5
+        },
+        {
+          "basis": [
+            260,
+            33,
+            22,
+            10
+          ],
+          "cap": 3,
+          "dim": 4,
+          "excess": 2,
+          "idx": 6283558,
+          "lb": 17,
+          "occ": 5
+        }
+      ],
+      "wall_time": 12.550952943
+    }
+  ],
+  "schema": "s0908_fullA_global_boolean_wang_cegar_v1",
+  "source_lut": "data/wang_f2_lb20/wang_subspace_lut.pkl",
+  "source_lut_sha256": "4704acba23a97d40aa65d5a65222dcb679461fdccf3e41dbeed2a634894a3b33",
+  "use_conditionals": true,
+  "use_rank_sum": true
+}

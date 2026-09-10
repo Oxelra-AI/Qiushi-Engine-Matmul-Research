@@ -1,0 +1,101 @@
+{
+  "schema": "preceptor_summary_v1",
+  "field": "F2",
+  "core": "E11",
+  "main_result": "Independent review verification accepts the analysis repeated projected-A exclusion as a settled reduction and verifies the logical bridge showing that exclusion of the remaining distinct E11-core branch would imply R_F2(T_<3,3,3>) >= 21.",
+  "accepted_repeated_certificate": {
+    "review": "data/review/repeated_certificate_review.json",
+    "all_load_bearing_checks_pass": true,
+    "primary_cnf_sha256": "673426778d1c211ac35b014a3c1baa6f2b0595a2c242f948074d580816234dc9",
+    "primary_drat_sha256": "3f9c1a06cb4eb5f0e2193e9a5be752a708945eb9ae6bfafa9490a14aeb52b419",
+    "drat_trim_verified": true,
+    "formula_semantics": "fixed p=1 repeated twice; total length 19; tokenized one-dimensional capacities; 262 selected Wang rows; no contraction lower bounds and no quotient-rank cuts"
+  },
+  "bridge_to_full_rank20": {
+    "manifest": "data/review/f2_lb21_bridge_manifest.json",
+    "review": "independent-verification-record",
+    "status": "Sound over F2 when phrased with quotient tensor language and when the remaining distinct length-19 E11-core branch is fully excluded.",
+    "missing_dependency": "Resolve the distinct projected-A length-19 E11-core branch by proof-producing exclusion or exact B/C completion."
+  },
+  "direct_table_check": {
+    "quantity": "L_T(span(E11,E12))",
+    "value": 17,
+    "core_s19_capacity_for_E12_projected_point": 2,
+    "interpretation": "The analysis repeated-direction certificate is not redundant with the single 2D Wang row."
+  },
+  "delivered_background_tasks": {
+    "s47_t44_tool1": {
+      "output": "data/repeat_branch_certificate/complete_core_cpsat_pure_1800.json",
+      "status": "UNKNOWN",
+      "solve_sec": 1801.892,
+      "meaning": "complete E11-core CP-SAT with multiset variables, 417198 Wang rows, and 255 contraction lower bounds did not decide feasibility"
+    },
+    "s47_t62_tool1": {
+      "output": "data/repeat_branch_certificate/complete_core_distinct_cpsat_1200_v2.json",
+      "status": "UNKNOWN",
+      "solve_sec": 1202.065,
+      "meaning": "distinct-only complete E11-core CP-SAT with 417197 Wang rows and 255 contraction lower bounds did not decide feasibility"
+    }
+  },
+  "distinct_branch_experiments": {
+    "L_ge_17": {
+      "output": "data/distinct_line_cover/threshold_L17_180s.json",
+      "selected_rows": 35351,
+      "status_sequence": [
+        "OPTIMAL",
+        "OPTIMAL"
+      ],
+      "best_complete_wang_violations": 15,
+      "interpretation": "High-L rows alone do not exclude the distinct branch and reproduce the analysis near support."
+    },
+    "L_ge_15": {
+      "output": "data/distinct_line_cover/threshold_L15_300s.json",
+      "selected_rows": 257299,
+      "status_sequence": [
+        "OPTIMAL"
+      ],
+      "best_support": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        20,
+        24,
+        31,
+        32,
+        64,
+        73,
+        109,
+        127,
+        128,
+        141,
+        160,
+        182,
+        192,
+        219
+      ],
+      "complete_wang_violations": 12,
+      "violations_by_L": {
+        "12": 12
+      },
+      "zero_domain_terms": 0,
+      "linear_pass": true,
+      "transversal_failures": 0,
+      "quotient_rank_violations_size2": 0,
+      "interpretation": "This is only a nonadmissible A-support hint; all remaining violations are lower-L rows."
+    },
+    "L_ge_14": {
+      "output": "data/distinct_line_cover/threshold_L14_360s.json",
+      "selected_rows": 338839,
+      "status_sequence": [
+        "UNKNOWN"
+      ],
+      "interpretation": "Adding L=14 rows made the restricted distinct model undecided within 361.4 s, not a proof."
+    }
+  },
+  "independent mathematical check": {
+    "meaning": "The accepted repeated-direction reduction and F2 bridge remain valid. The UNKNOWN runs do not decide feasibility, and the 12-violation distinct support is not a decomposition. These conclusions do not settle the characteristic-zero BILR/Jennrich route."
+  },
+  "remaining_scientific_state": "The finite-field route is now concentrated on the distinct projected-A E11-core branch. A complete-Wang admissible distinct support would trigger exact fixed-A B/C completion and residual lift testing; a proof-producing distinct-support exclusion would yield R_F2(T)>=21 together with the existing no-rank-one certificates. No rank<=22 algorithm, no R_F2>=21 theorem, and no characteristic-zero rank-23 optimality proof has been obtained."
+}

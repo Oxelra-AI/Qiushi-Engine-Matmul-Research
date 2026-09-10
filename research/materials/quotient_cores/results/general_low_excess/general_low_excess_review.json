@@ -1,0 +1,478 @@
+{
+  "actual_leak_bound_pool_review": {
+    "bounds_never_exceed_actual_excess": true,
+    "example_head": [
+      {
+        "budget": 4,
+        "eB_actual": 3,
+        "eB_lb": 3,
+        "eC_actual": 1,
+        "eC_lb": 0,
+        "m": 7,
+        "mu": 1,
+        "rank_mu": 1,
+        "row": 0,
+        "slack_after_lbs": 1,
+        "srcB": [
+          2,
+          1,
+          3
+        ],
+        "srcC": null
+      },
+      {
+        "budget": 0,
+        "eB_actual": 0,
+        "eB_lb": 0,
+        "eC_actual": 0,
+        "eC_lb": 0,
+        "m": 3,
+        "mu": 2,
+        "rank_mu": 1,
+        "row": 0,
+        "slack_after_lbs": 0,
+        "srcB": null,
+        "srcC": null
+      },
+      {
+        "budget": 1,
+        "eB_actual": 0,
+        "eB_lb": 0,
+        "eC_actual": 1,
+        "eC_lb": 0,
+        "m": 4,
+        "mu": 3,
+        "rank_mu": 1,
+        "row": 0,
+        "slack_after_lbs": 1,
+        "srcB": null,
+        "srcC": null
+      },
+      {
+        "budget": 4,
+        "eB_actual": 2,
+        "eB_lb": 1,
+        "eC_actual": 2,
+        "eC_lb": 2,
+        "m": 7,
+        "mu": 4,
+        "rank_mu": 1,
+        "row": 0,
+        "slack_after_lbs": 1,
+        "srcB": [
+          103,
+          3,
+          4
+        ],
+        "srcC": [
+          227,
+          2,
+          2
+        ]
+      },
+      {
+        "budget": 6,
+        "eB_actual": 3,
+        "eB_lb": 3,
+        "eC_actual": 2,
+        "eC_lb": 1,
+        "m": 12,
+        "mu": 5,
+        "rank_mu": 2,
+        "row": 0,
+        "slack_after_lbs": 1,
+        "srcB": [
+          2,
+          1,
+          3
+        ],
+        "srcC": [
+          180,
+          1,
+          1
+        ]
+      },
+      {
+        "budget": 4,
+        "eB_actual": 1,
+        "eB_lb": 0,
+        "eC_actual": 2,
+        "eC_lb": 1,
+        "m": 10,
+        "mu": 6,
+        "rank_mu": 2,
+        "row": 0,
+        "slack_after_lbs": 2,
+        "srcB": null,
+        "srcC": [
+          180,
+          1,
+          1
+        ]
+      },
+      {
+        "budget": 3,
+        "eB_actual": 1,
+        "eB_lb": 1,
+        "eC_actual": 2,
+        "eC_lb": 1,
+        "m": 9,
+        "mu": 7,
+        "rank_mu": 2,
+        "row": 0,
+        "slack_after_lbs": 1,
+        "srcB": [
+          180,
+          1,
+          1
+        ],
+        "srcC": [
+          180,
+          1,
+          1
+        ]
+      },
+      {
+        "budget": 1,
+        "eB_actual": 1,
+        "eB_lb": 0,
+        "eC_actual": 0,
+        "eC_lb": 0,
+        "m": 4,
+        "mu": 8,
+        "rank_mu": 1,
+        "row": 0,
+        "slack_after_lbs": 1,
+        "srcB": null,
+        "srcC": null
+      },
+      {
+        "budget": 8,
+        "eB_actual": 4,
+        "eB_lb": 3,
+        "eC_actual": 4,
+        "eC_lb": 3,
+        "m": 11,
+        "mu": 9,
+        "rank_mu": 1,
+        "row": 0,
+        "slack_after_lbs": 2,
+        "srcB": [
+          2,
+          1,
+          3
+        ],
+        "srcC": [
+          2,
+          1,
+          3
+        ]
+      },
+      {
+        "budget": 1,
+        "eB_actual": 1,
+        "eB_lb": 0,
+        "eC_actual": 0,
+        "eC_lb": 0,
+        "m": 7,
+        "mu": 10,
+        "rank_mu": 2,
+        "row": 0,
+        "slack_after_lbs": 1,
+        "srcB": null,
+        "srcC": null
+      }
+    ],
+    "violation_head": []
+  },
+  "actual_pool_review": {
+    "actual_decomposition_checks_pass": true,
+    "pool_path": "data/e11_flip_workspace/data/schemes_modp/e11core/mod2-rank21a.npy",
+    "rows_checked": 519,
+    "rows_with_rank3_tight_sources_not_used_by": 509,
+    "terms_per_row": 21,
+    "tight_lambda_rank_hist_over_all_rows": {
+      "1": 1132,
+      "2": 1769,
+      "3": 2223
+    },
+    "tight_source_count_hist_vs_all_head": {
+      "(0, 2)": 4,
+      "(0, 3)": 1,
+      "(0, 4)": 1,
+      "(0, 5)": 1,
+      "(1, 1)": 3,
+      "(1, 2)": 6,
+      "(1, 3)": 10,
+      "(1, 4)": 10,
+      "(1, 5)": 8,
+      "(1, 6)": 2,
+      "(2, 2)": 3,
+      "(2, 3)": 2,
+      "(2, 4)": 6,
+      "(2, 5)": 11,
+      "(2, 6)": 11,
+      "(2, 7)": 7,
+      "(2, 8)": 2,
+      "(2, 9)": 1,
+      "(3, 10)": 2,
+      "(3, 11)": 1,
+      "(3, 3)": 2,
+      "(3, 4)": 4,
+      "(3, 5)": 16,
+      "(3, 6)": 15,
+      "(3, 7)": 11,
+      "(3, 8)": 7,
+      "(3, 9)": 3,
+      "(4, 4)": 1,
+      "(4, 5)": 4,
+      "(4, 6)": 21
+    },
+    "violation_head": []
+  },
+  "elapsed_sec": 44.317,
+  "interpretation": {
+    "not_global": "Same-W deletion lists are local labelled A-lists with repeats, not a cover of the distinct 19-direction E11 branch.",
+    "sound_core": "The analysis rank-1/2 tight-source leakage bounds are valid necessary conditions when derived from exact contractions; pool checks did not find overstrong inequalities.",
+    "strengthening": "Rank-3 tight contractions are also sound leakage sources into rank-1/2 targets; analysis omitted them, making the current filter weaker rather than unsound."
+  },
+  "known_and_samew_review": {
+    "L15": {
+      "allsource_leak_count": 0,
+      "allsource_leak_head": [],
+      "allsource_scalar_count": 0,
+      "allsource_tight_count": 16,
+      "allsource_tight_rank_hist": {
+        "3": 16
+      },
+      "distinct_A_count": 19,
+      "rank12_leak_count": 0,
+      "rank12_scalar_count": 0,
+      "source12_tight_count": 0,
+      "term_count": 19
+    },
+    "analysis": {
+      "allsource_leak_count": 0,
+      "allsource_leak_head": [],
+      "allsource_scalar_count": 0,
+      "allsource_tight_count": 12,
+      "allsource_tight_rank_hist": {
+        "3": 12
+      },
+      "distinct_A_count": 19,
+      "rank12_leak_count": 0,
+      "rank12_scalar_count": 0,
+      "source12_tight_count": 0,
+      "term_count": 19
+    },
+    "same_w_head_leak_only_recompute": {
+      "allsource_counts": {
+        "leak": 58,
+        "leak_head": [
+          {
+            "budget": 1,
+            "eB_lb": 1,
+            "eC_lb": 1,
+            "lambda": 3,
+            "m": 4,
+            "r": 3,
+            "rank_lambda": 1,
+            "srcB": {
+              "h": 1,
+              "intersection_dim": 0,
+              "rank_lambda": 2,
+              "shared_terms": [
+                2
+              ],
+              "tight_lambda": 112
+            },
+            "srcC": {
+              "h": 1,
+              "intersection_dim": 0,
+              "rank_lambda": 2,
+              "shared_terms": [
+                1
+              ],
+              "tight_lambda": 88
+            }
+          },
+          {
+            "budget": 0,
+            "eB_lb": 0,
+            "eC_lb": 1,
+            "lambda": 9,
+            "m": 3,
+            "r": 3,
+            "rank_lambda": 1,
+            "srcB": null,
+            "srcC": {
+              "h": 1,
+              "intersection_dim": 0,
+              "rank_lambda": 2,
+              "shared_terms": [
+                13
+              ],
+              "tight_lambda": 67
+            }
+          },
+          {
+            "budget": 0,
+            "eB_lb": 0,
+            "eC_lb": 1,
+            "lambda": 16,
+            "m": 3,
+            "r": 3,
+            "rank_lambda": 1,
+            "srcB": null,
+            "srcC": {
+              "h": 1,
+              "intersection_dim": 0,
+              "rank_lambda": 2,
+              "shared_terms": [
+                6
+              ],
+              "tight_lambda": 131
+            }
+          }
+        ],
+        "scalar": 0,
+        "tight": 18,
+        "tight_rank_hist": {
+          "1": 3,
+          "2": 9,
+          "3": 6
+        }
+      },
+      "rank12_counts": {
+        "leak": 58,
+        "leak_head": [
+          {
+            "budget": 1,
+            "eB_lb": 1,
+            "eC_lb": 1,
+            "lambda": 3,
+            "m": 4,
+            "r": 3,
+            "rank_lambda": 1,
+            "srcB": {
+              "h": 1,
+              "intersection_dim": 0,
+              "rank_lambda": 2,
+              "shared_terms": [
+                2
+              ],
+              "tight_lambda": 112
+            },
+            "srcC": {
+              "h": 1,
+              "intersection_dim": 0,
+              "rank_lambda": 2,
+              "shared_terms": [
+                1
+              ],
+              "tight_lambda": 88
+            }
+          },
+          {
+            "budget": 0,
+            "eB_lb": 0,
+            "eC_lb": 1,
+            "lambda": 9,
+            "m": 3,
+            "r": 3,
+            "rank_lambda": 1,
+            "srcB": null,
+            "srcC": {
+              "h": 1,
+              "intersection_dim": 0,
+              "rank_lambda": 2,
+              "shared_terms": [
+                13
+              ],
+              "tight_lambda": 67
+            }
+          },
+          {
+            "budget": 0,
+            "eB_lb": 0,
+            "eC_lb": 1,
+            "lambda": 16,
+            "m": 3,
+            "r": 3,
+            "rank_lambda": 1,
+            "srcB": null,
+            "srcC": {
+              "h": 1,
+              "intersection_dim": 0,
+              "rank_lambda": 2,
+              "shared_terms": [
+                6
+              ],
+              "tight_lambda": 131
+            }
+          }
+        ],
+        "scalar": 0,
+        "tight": 12,
+        "tight_rank_hist": {
+          "1": 3,
+          "2": 9
+        }
+      },
+      "source": {
+        "deleted_terms": [
+          7,
+          17
+        ],
+        "deleted_w": 128,
+        "pool_row": 64,
+        "u_masks": [
+          107,
+          9,
+          162,
+          11,
+          31,
+          4,
+          176,
+          32,
+          16,
+          2,
+          171,
+          4,
+          4,
+          104,
+          235,
+          8,
+          105,
+          32,
+          3
+        ]
+      },
+      "counts": {
+        "2sat_sat": false,
+        "half_pure_count": 31,
+        "leakage_budget_violation_count": 58,
+        "scalar_violation_count": 0,
+        "tight_count": 12
+      }
+    },
+    "same_w_full_classification": {
+      "classification_scalar_positive_leak_positive_twosat": {
+        "(False, True, False)": 17,
+        "(True, True, False)": 37
+      },
+      "general_reject_after_shadow_and_coordinate_pass": 54,
+      "records_scanned": 814,
+      "shadow_and_coordinate_pass_total": 54
+    }
+  },
+  "schema": "s0908_general_low_excess_review_v1",
+  "spaces": {
+    "convention_checked": "M_lambda = Lambda^T tensor I3; all 255 nonzero quotient lambdas satisfy rank(M)=3 rank(Lambda).",
+    "lambda_rank_distribution": {
+      "1": 33,
+      "2": 150,
+      "3": 72
+    }
+  }
+}

@@ -1,0 +1,6110 @@
+{
+  "distinct_tight_rows": 50611,
+  "elapsed_sec": 358.57487201690674,
+  "field": "F2",
+  "filters": {
+    "dims": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "lbs": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "max_cap": 8,
+    "min_occupancy": 3
+  },
+  "lut_meta_brief": {
+    "conflict_count": 0,
+    "coverage_ok": true,
+    "subspace_count": 8283458
+  },
+  "meaning": "For each row, a verified rank lower bound lb+1 for the displayed restricted tensor would cut every listed support hit. These are candidate rows for table strengthening, not strengthened results.",
+  "problem": "tight Wang rows that would cut current supports if raised by one",
+  "rank_s": 20,
+  "source_summaries": [
+    {
+      "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json",
+      "support_rank_hist": {
+        "1": 17,
+        "2": 3
+      },
+      "tight_by_dim_lb": {
+        "2,17": 2,
+        "3,15": 1,
+        "3,16": 40,
+        "3,17": 546,
+        "4,14": 26,
+        "4,15": 162,
+        "4,16": 1260,
+        "4,17": 801,
+        "5,12": 18,
+        "5,14": 249,
+        "5,15": 1749,
+        "5,16": 189,
+        "6,12": 231,
+        "6,14": 264,
+        "6,15": 1134,
+        "7,12": 285,
+        "7,14": 48
+      },
+      "tight_count": 7005,
+      "violated_ignored_count": 240
+    },
+    {
+      "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json",
+      "support_rank_hist": {
+        "1": 17,
+        "2": 2,
+        "3": 1
+      },
+      "tight_by_dim_lb": {
+        "3,16": 10,
+        "3,17": 461,
+        "4,14": 1,
+        "4,15": 85,
+        "4,16": 1042,
+        "4,17": 1503,
+        "5,12": 13,
+        "5,13": 3,
+        "5,14": 254,
+        "5,15": 1813,
+        "5,16": 422,
+        "6,12": 218,
+        "6,13": 16,
+        "6,14": 567,
+        "6,15": 1130,
+        "7,12": 494,
+        "7,14": 53
+      },
+      "tight_count": 8085,
+      "violated_ignored_count": 287
+    },
+    {
+      "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json",
+      "support_rank_hist": {
+        "1": 16,
+        "2": 4
+      },
+      "tight_by_dim_lb": {
+        "3,16": 2,
+        "3,17": 579,
+        "4,15": 37,
+        "4,16": 1308,
+        "4,17": 2559,
+        "5,14": 195,
+        "5,15": 2286,
+        "5,16": 995,
+        "6,12": 132,
+        "6,13": 43,
+        "6,14": 960,
+        "6,15": 1438,
+        "7,12": 700,
+        "7,14": 77
+      },
+      "tight_count": 11311,
+      "violated_ignored_count": 358
+    },
+    {
+      "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json",
+      "support_rank_hist": {
+        "1": 16,
+        "2": 2,
+        "3": 2
+      },
+      "tight_by_dim_lb": {
+        "3,16": 12,
+        "3,17": 564,
+        "4,14": 6,
+        "4,15": 103,
+        "4,16": 1438,
+        "4,17": 2378,
+        "5,12": 4,
+        "5,14": 401,
+        "5,15": 2509,
+        "5,16": 771,
+        "6,12": 310,
+        "6,13": 40,
+        "6,14": 937,
+        "6,15": 1422,
+        "7,12": 626,
+        "7,14": 77
+      },
+      "tight_count": 11598,
+      "violated_ignored_count": 535
+    },
+    {
+      "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json",
+      "support_rank_hist": {
+        "1": 14,
+        "2": 6
+      },
+      "tight_by_dim_lb": {
+        "3,16": 6,
+        "3,17": 710,
+        "4,14": 2,
+        "4,15": 63,
+        "4,16": 1698,
+        "4,17": 3774,
+        "5,12": 3,
+        "5,13": 3,
+        "5,14": 364,
+        "5,15": 2575,
+        "5,16": 1405,
+        "6,12": 234,
+        "6,13": 30,
+        "6,14": 1189,
+        "6,15": 1642,
+        "7,12": 771,
+        "7,14": 104
+      },
+      "tight_count": 14573,
+      "violated_ignored_count": 544
+    }
+  ],
+  "sources": [
+    "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json",
+    "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json",
+    "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json",
+    "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json",
+    "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+  ],
+  "top_rows": [
+    {
+      "A_keep_indices": [
+        0,
+        3,
+        5,
+        6
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        4,
+        2,
+        1
+      ],
+      "basis": [
+        360,
+        129,
+        17,
+        5,
+        2
+      ],
+      "basis_matrix_labels": [
+        "000/101/101",
+        "100/000/010",
+        "100/010/000",
+        "101/000/000",
+        "010/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 4,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            5,
+            146,
+            365,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            360,
+            365,
+            504,
+            511
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            5,
+            144,
+            360,
+            367
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            19,
+            144,
+            360,
+            365,
+            511
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 2209833039493,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        360,
+        144,
+        504,
+        5,
+        365,
+        2,
+        146,
+        7,
+        511
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 30,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 20
+    },
+    {
+      "A_keep_indices": [
+        0,
+        3,
+        4,
+        6
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        5,
+        2,
+        1
+      ],
+      "basis": [
+        321,
+        144,
+        41,
+        5,
+        2
+      ],
+      "basis_matrix_labels": [
+        "100/000/101",
+        "000/010/010",
+        "100/101/000",
+        "101/000/000",
+        "010/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 4,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            5,
+            146,
+            365,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            360,
+            365,
+            504,
+            511
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            5,
+            144,
+            360,
+            367
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            41,
+            144,
+            360,
+            365,
+            511
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 2209933825045,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        144,
+        360,
+        504,
+        5,
+        365,
+        2,
+        146,
+        7,
+        511
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 30,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 20
+    },
+    {
+      "A_keep_indices": [
+        0,
+        2,
+        5,
+        8
+      ],
+      "A_pivot_indices": [
+        7,
+        6,
+        4,
+        3,
+        1
+      ],
+      "basis": [
+        129,
+        64,
+        17,
+        8,
+        2
+      ],
+      "basis_matrix_labels": [
+        "100/000/010",
+        "000/000/100",
+        "100/010/000",
+        "000/100/000",
+        "010/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 4,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            8,
+            25,
+            72,
+            144
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            10,
+            72,
+            146,
+            216
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            8,
+            27,
+            64,
+            195
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            19,
+            25,
+            144,
+            195,
+            216
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 2216274954261,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        64,
+        144,
+        8,
+        72,
+        216,
+        2,
+        195,
+        146,
+        27
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 18,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 20
+    },
+    {
+      "A_keep_indices": [
+        1,
+        4,
+        5
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        3,
+        2,
+        0
+      ],
+      "basis": [
+        290,
+        144,
+        66,
+        10,
+        6,
+        1
+      ],
+      "basis_matrix_labels": [
+        "010/001/001",
+        "000/010/010",
+        "010/000/100",
+        "010/100/000",
+        "011/000/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 4,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            6,
+            72,
+            144,
+            217
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            10,
+            72,
+            216,
+            365
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            6,
+            72,
+            144,
+            434
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            144,
+            216,
+            292,
+            365
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 569568776032806,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        144,
+        72,
+        216,
+        6,
+        292,
+        1,
+        73,
+        7,
+        365
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 27,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "total_occupancy": 20
+    },
+    {
+      "A_keep_indices": [
+        0,
+        3,
+        5
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        4,
+        2,
+        1
+      ],
+      "basis": [
+        264,
+        129,
+        96,
+        17,
+        5,
+        2
+      ],
+      "basis_matrix_labels": [
+        "000/100/001",
+        "100/000/010",
+        "000/001/100",
+        "100/010/000",
+        "101/000/000",
+        "010/000/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 4,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            5,
+            146,
+            365,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            360,
+            365,
+            504,
+            511
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            5,
+            144,
+            360,
+            367
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            19,
+            144,
+            360,
+            365,
+            511
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 1131434375917702,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        360,
+        144,
+        504,
+        5,
+        365,
+        2,
+        146,
+        7,
+        511
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 24,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "total_occupancy": 20
+    },
+    {
+      "A_keep_indices": [
+        0,
+        1,
+        3
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        2
+      ],
+      "basis": [
+        264,
+        130,
+        74,
+        42,
+        18,
+        5
+      ],
+      "basis_matrix_labels": [
+        "000/100/001",
+        "010/000/010",
+        "010/100/100",
+        "010/101/000",
+        "010/010/000",
+        "101/000/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 4,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            5,
+            56,
+            130,
+            144,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            5,
+            18,
+            130,
+            365,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            304,
+            360,
+            365,
+            448,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            5,
+            130,
+            144,
+            360,
+            434
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "key": 2834631482167430,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        130,
+        448,
+        360,
+        18,
+        144,
+        56,
+        504,
+        5,
+        365
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 33,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "total_occupancy": 20
+    },
+    {
+      "A_keep_indices": [
+        0,
+        1,
+        3
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        2
+      ],
+      "basis": [
+        266,
+        130,
+        74,
+        40,
+        18,
+        7
+      ],
+      "basis_matrix_labels": [
+        "010/100/001",
+        "010/000/010",
+        "010/100/100",
+        "000/101/000",
+        "010/010/000",
+        "111/000/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 4,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            18,
+            40,
+            130,
+            320,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            304,
+            320,
+            360,
+            504,
+            511
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            130,
+            144,
+            360,
+            367,
+            434
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            21,
+            144,
+            320,
+            360,
+            511
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 3960527094042790,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        130,
+        320,
+        40,
+        360,
+        18,
+        144,
+        504,
+        7,
+        511
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 36,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "total_occupancy": 20
+    },
+    {
+      "A_keep_indices": [
+        0,
+        1,
+        2
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3
+      ],
+      "basis": [
+        260,
+        135,
+        65,
+        35,
+        23,
+        14
+      ],
+      "basis_matrix_labels": [
+        "001/000/001",
+        "111/000/010",
+        "100/000/100",
+        "110/001/000",
+        "111/010/000",
+        "011/100/000"
+      ],
+      "cap": 5,
+      "dim": 6,
+      "flattening_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 4,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            25,
+            65,
+            144,
+            260,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            52,
+            304,
+            325,
+            360,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            45,
+            65,
+            117,
+            144,
+            360
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            23,
+            25,
+            144,
+            325,
+            360
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 7906663551004742,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        260,
+        65,
+        325,
+        144,
+        45,
+        360,
+        504
+      ],
+      "rank1_points_in_phi_count": 7,
+      "restricted_tensor_nnz": 45,
+      "restricted_tensor_shape": [
+        3,
+        9,
+        9
+      ],
+      "total_occupancy": 20
+    },
+    {
+      "A_keep_indices": [
+        1,
+        5
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        4,
+        3,
+        2,
+        0
+      ],
+      "basis": [
+        290,
+        128,
+        66,
+        16,
+        10,
+        4,
+        1
+      ],
+      "basis_matrix_labels": [
+        "010/001/001",
+        "000/000/010",
+        "010/000/100",
+        "000/010/000",
+        "010/100/000",
+        "001/000/000",
+        "100/000/000"
+      ],
+      "cap": 8,
+      "dim": 7,
+      "flattening_ranks": {
+        "A": 2,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 8,
+          "points_in_support": [
+            1,
+            4,
+            5,
+            16,
+            72,
+            144,
+            194,
+            217
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 8,
+          "points_in_support": [
+            1,
+            5,
+            16,
+            72,
+            144,
+            367,
+            434,
+            438
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        },
+        {
+          "occupancy": 8,
+          "points_in_support": [
+            1,
+            16,
+            21,
+            144,
+            195,
+            216,
+            438,
+            511
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 290493205719290407,
+      "lb": 12,
+      "new_rank20_cap_if_raised": 7,
+      "raise_to_lb": 13,
+      "rank1_points_in_phi": [
+        128,
+        16,
+        144,
+        72,
+        216,
+        4,
+        438,
+        1,
+        195,
+        73,
+        27,
+        5,
+        511
+      ],
+      "rank1_points_in_phi_count": 13,
+      "restricted_tensor_nnz": 18,
+      "restricted_tensor_shape": [
+        2,
+        9,
+        9
+      ],
+      "total_occupancy": 24
+    },
+    {
+      "A_keep_indices": [
+        1,
+        2
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        0
+      ],
+      "basis": [
+        258,
+        130,
+        66,
+        32,
+        18,
+        10,
+        1
+      ],
+      "basis_matrix_labels": [
+        "010/000/001",
+        "010/000/010",
+        "010/000/100",
+        "000/001/000",
+        "010/010/000",
+        "010/100/000",
+        "100/000/000"
+      ],
+      "cap": 8,
+      "dim": 7,
+      "flattening_ranks": {
+        "A": 2,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 8,
+          "points_in_support": [
+            1,
+            25,
+            32,
+            56,
+            72,
+            130,
+            144,
+            217
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 8,
+          "points_in_support": [
+            1,
+            10,
+            18,
+            72,
+            130,
+            216,
+            320,
+            384
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 8,
+          "points_in_support": [
+            1,
+            19,
+            25,
+            33,
+            144,
+            192,
+            216,
+            320
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 293879735892594727,
+      "lb": 12,
+      "new_rank20_cap_if_raised": 7,
+      "raise_to_lb": 13,
+      "rank1_points_in_phi": [
+        130,
+        384,
+        320,
+        192,
+        32,
+        18,
+        144,
+        72,
+        24,
+        216,
+        56,
+        1,
+        73
+      ],
+      "rank1_points_in_phi_count": 13,
+      "restricted_tensor_nnz": 21,
+      "restricted_tensor_shape": [
+        2,
+        9,
+        9
+      ],
+      "total_occupancy": 24
+    },
+    {
+      "A_keep_indices": [
+        1,
+        2
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        0
+      ],
+      "basis": [
+        256,
+        132,
+        68,
+        36,
+        20,
+        14,
+        1
+      ],
+      "basis_matrix_labels": [
+        "000/000/001",
+        "001/000/010",
+        "001/000/100",
+        "001/001/000",
+        "001/010/000",
+        "011/100/000",
+        "100/000/000"
+      ],
+      "cap": 8,
+      "dim": 7,
+      "flattening_ranks": {
+        "A": 2,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 8,
+          "points_in_support": [
+            1,
+            27,
+            48,
+            219,
+            304,
+            325,
+            448,
+            511
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        },
+        {
+          "occupancy": 8,
+          "points_in_support": [
+            1,
+            36,
+            63,
+            111,
+            117,
+            144,
+            192,
+            367
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        },
+        {
+          "occupancy": 8,
+          "points_in_support": [
+            1,
+            21,
+            144,
+            192,
+            256,
+            292,
+            325,
+            511
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 296133743327875079,
+      "lb": 12,
+      "new_rank20_cap_if_raised": 7,
+      "raise_to_lb": 13,
+      "rank1_points_in_phi": [
+        256,
+        192,
+        448,
+        36,
+        292,
+        144,
+        48,
+        1,
+        325,
+        27,
+        219,
+        63,
+        511
+      ],
+      "rank1_points_in_phi_count": 13,
+      "restricted_tensor_nnz": 24,
+      "restricted_tensor_shape": [
+        2,
+        9,
+        9
+      ],
+      "total_occupancy": 24
+    },
+    {
+      "A_keep_indices": [
+        0,
+        3
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        2,
+        1
+      ],
+      "basis": [
+        264,
+        129,
+        65,
+        32,
+        16,
+        4,
+        2
+      ],
+      "basis_matrix_labels": [
+        "000/100/001",
+        "100/000/010",
+        "100/000/100",
+        "000/001/000",
+        "000/010/000",
+        "001/000/000",
+        "010/000/000"
+      ],
+      "cap": 8,
+      "dim": 7,
+      "flattening_ranks": {
+        "A": 2,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 8,
+          "points_in_support": [
+            2,
+            4,
+            6,
+            16,
+            32,
+            65,
+            194,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 8,
+          "points_in_support": [
+            2,
+            18,
+            48,
+            54,
+            65,
+            365,
+            504,
+            510
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 8,
+          "points_in_support": [
+            2,
+            6,
+            16,
+            36,
+            65,
+            117,
+            192,
+            367
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "key": 578730213296320647,
+      "lb": 12,
+      "new_rank20_cap_if_raised": 7,
+      "raise_to_lb": 13,
+      "rank1_points_in_phi": [
+        65,
+        192,
+        32,
+        16,
+        48,
+        504,
+        4,
+        36,
+        365,
+        2,
+        18,
+        6,
+        54
+      ],
+      "rank1_points_in_phi_count": 13,
+      "restricted_tensor_nnz": 15,
+      "restricted_tensor_shape": [
+        2,
+        9,
+        9
+      ],
+      "total_occupancy": 24
+    },
+    {
+      "A_keep_indices": [
+        0,
+        3
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        2,
+        1
+      ],
+      "basis": [
+        265,
+        129,
+        65,
+        41,
+        17,
+        4,
+        2
+      ],
+      "basis_matrix_labels": [
+        "100/100/001",
+        "100/000/010",
+        "100/000/100",
+        "100/101/000",
+        "100/010/000",
+        "001/000/000",
+        "010/000/000"
+      ],
+      "cap": 8,
+      "dim": 7,
+      "flattening_ranks": {
+        "A": 2,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 8,
+          "points_in_support": [
+            2,
+            4,
+            6,
+            56,
+            65,
+            144,
+            194,
+            288
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 8,
+          "points_in_support": [
+            2,
+            6,
+            45,
+            65,
+            144,
+            192,
+            434,
+            438
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        },
+        {
+          "occupancy": 8,
+          "points_in_support": [
+            19,
+            21,
+            23,
+            41,
+            144,
+            192,
+            292,
+            438
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 578731332135301271,
+      "lb": 12,
+      "new_rank20_cap_if_raised": 7,
+      "raise_to_lb": 13,
+      "rank1_points_in_phi": [
+        65,
+        192,
+        288,
+        144,
+        56,
+        432,
+        4,
+        45,
+        292,
+        2,
+        146,
+        6,
+        438
+      ],
+      "rank1_points_in_phi_count": 13,
+      "restricted_tensor_nnz": 27,
+      "restricted_tensor_shape": [
+        2,
+        9,
+        9
+      ],
+      "total_occupancy": 24
+    },
+    {
+      "A_keep_indices": [
+        0,
+        3
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        2,
+        1
+      ],
+      "basis": [
+        256,
+        129,
+        65,
+        41,
+        16,
+        5,
+        2
+      ],
+      "basis_matrix_labels": [
+        "000/000/001",
+        "100/000/010",
+        "100/000/100",
+        "100/101/000",
+        "000/010/000",
+        "101/000/000",
+        "010/000/000"
+      ],
+      "cap": 8,
+      "dim": 7,
+      "flattening_ranks": {
+        "A": 2,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 8,
+          "points_in_support": [
+            2,
+            5,
+            18,
+            65,
+            254,
+            365,
+            390,
+            510
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 8,
+          "points_in_support": [
+            2,
+            5,
+            16,
+            65,
+            111,
+            192,
+            360,
+            367
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        },
+        {
+          "occupancy": 8,
+          "points_in_support": [
+            16,
+            21,
+            23,
+            41,
+            192,
+            256,
+            360,
+            365
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 579293182577094663,
+      "lb": 12,
+      "new_rank20_cap_if_raised": 7,
+      "raise_to_lb": 13,
+      "rank1_points_in_phi": [
+        256,
+        65,
+        192,
+        448,
+        360,
+        16,
+        5,
+        365,
+        2,
+        18,
+        7,
+        390,
+        455
+      ],
+      "rank1_points_in_phi_count": 13,
+      "restricted_tensor_nnz": 21,
+      "restricted_tensor_shape": [
+        2,
+        9,
+        9
+      ],
+      "total_occupancy": 24
+    },
+    {
+      "A_keep_indices": [
+        0,
+        2
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        1
+      ],
+      "basis": [
+        261,
+        128,
+        65,
+        33,
+        17,
+        8,
+        2
+      ],
+      "basis_matrix_labels": [
+        "101/000/001",
+        "000/000/010",
+        "100/000/100",
+        "100/001/000",
+        "100/010/000",
+        "000/100/000",
+        "010/000/000"
+      ],
+      "cap": 8,
+      "dim": 7,
+      "flattening_ranks": {
+        "A": 2,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 8,
+          "points_in_support": [
+            2,
+            10,
+            48,
+            65,
+            130,
+            216,
+            365,
+            510
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 8,
+          "points_in_support": [
+            2,
+            8,
+            27,
+            48,
+            73,
+            195,
+            278,
+            365
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        },
+        {
+          "occupancy": 8,
+          "points_in_support": [
+            19,
+            25,
+            33,
+            41,
+            195,
+            216,
+            292,
+            365
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 580983114769109079,
+      "lb": 12,
+      "new_rank20_cap_if_raised": 7,
+      "raise_to_lb": 13,
+      "rank1_points_in_phi": [
+        128,
+        65,
+        292,
+        48,
+        8,
+        73,
+        365,
+        216,
+        56,
+        2,
+        130,
+        195,
+        27
+      ],
+      "rank1_points_in_phi_count": 13,
+      "restricted_tensor_nnz": 21,
+      "restricted_tensor_shape": [
+        2,
+        9,
+        9
+      ],
+      "total_occupancy": 24
+    },
+    {
+      "A_keep_indices": [
+        0,
+        5
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        4,
+        3,
+        2,
+        1
+      ],
+      "basis": [
+        289,
+        128,
+        65,
+        16,
+        9,
+        5,
+        3
+      ],
+      "basis_matrix_labels": [
+        "100/001/001",
+        "000/000/010",
+        "100/000/100",
+        "000/010/000",
+        "100/100/000",
+        "101/000/000",
+        "110/000/000"
+      ],
+      "cap": 8,
+      "dim": 7,
+      "flattening_ranks": {
+        "A": 2,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 8,
+          "points_in_support": [
+            5,
+            6,
+            16,
+            25,
+            65,
+            72,
+            144,
+            194
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 8,
+          "points_in_support": [
+            5,
+            6,
+            16,
+            65,
+            72,
+            144,
+            367,
+            434
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        },
+        {
+          "occupancy": 8,
+          "points_in_support": [
+            16,
+            19,
+            21,
+            25,
+            144,
+            216,
+            292,
+            511
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 867515808460313111,
+      "lb": 12,
+      "new_rank20_cap_if_raised": 7,
+      "raise_to_lb": 13,
+      "rank1_points_in_phi": [
+        128,
+        65,
+        16,
+        144,
+        9,
+        72,
+        216,
+        5,
+        292,
+        3,
+        219,
+        6,
+        511
+      ],
+      "rank1_points_in_phi_count": 13,
+      "restricted_tensor_nnz": 24,
+      "restricted_tensor_shape": [
+        2,
+        9,
+        9
+      ],
+      "total_occupancy": 24
+    },
+    {
+      "A_keep_indices": [
+        0,
+        1
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2
+      ],
+      "basis": [
+        259,
+        129,
+        65,
+        33,
+        17,
+        8,
+        4
+      ],
+      "basis_matrix_labels": [
+        "110/000/001",
+        "100/000/010",
+        "100/000/100",
+        "100/001/000",
+        "100/010/000",
+        "000/100/000",
+        "001/000/000"
+      ],
+      "cap": 8,
+      "dim": 7,
+      "flattening_ranks": {
+        "A": 2,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 8,
+          "points_in_support": [
+            4,
+            8,
+            25,
+            56,
+            65,
+            144,
+            217,
+            455
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 8,
+          "points_in_support": [
+            45,
+            65,
+            117,
+            144,
+            192,
+            367,
+            434,
+            438
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        },
+        {
+          "occupancy": 8,
+          "points_in_support": [
+            21,
+            25,
+            33,
+            41,
+            144,
+            192,
+            438,
+            511
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 1157443867072540727,
+      "lb": 12,
+      "new_rank20_cap_if_raised": 7,
+      "raise_to_lb": 13,
+      "rank1_points_in_phi": [
+        65,
+        192,
+        144,
+        48,
+        8,
+        73,
+        56,
+        4,
+        390,
+        455,
+        438,
+        45,
+        511
+      ],
+      "rank1_points_in_phi_count": 13,
+      "restricted_tensor_nnz": 24,
+      "restricted_tensor_shape": [
+        2,
+        9,
+        9
+      ],
+      "total_occupancy": 24
+    },
+    {
+      "A_keep_indices": [
+        0,
+        1
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2
+      ],
+      "basis": [
+        259,
+        130,
+        66,
+        33,
+        19,
+        10,
+        6
+      ],
+      "basis_matrix_labels": [
+        "110/000/001",
+        "010/000/010",
+        "010/000/100",
+        "100/001/000",
+        "110/010/000",
+        "010/100/000",
+        "011/000/000"
+      ],
+      "cap": 6,
+      "dim": 7,
+      "flattening_ranks": {
+        "A": 2,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 6,
+          "points_in_support": [
+            6,
+            25,
+            56,
+            72,
+            130,
+            217
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 6,
+          "points_in_support": [
+            6,
+            45,
+            72,
+            111,
+            130,
+            192
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        },
+        {
+          "occupancy": 6,
+          "points_in_support": [
+            19,
+            21,
+            25,
+            33,
+            192,
+            292
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 1735032718310264887,
+      "lb": 14,
+      "new_rank20_cap_if_raised": 5,
+      "raise_to_lb": 15,
+      "rank1_points_in_phi": [
+        130,
+        192,
+        72,
+        56,
+        6,
+        292,
+        45
+      ],
+      "rank1_points_in_phi_count": 7,
+      "restricted_tensor_nnz": 33,
+      "restricted_tensor_shape": [
+        2,
+        9,
+        9
+      ],
+      "total_occupancy": 18
+    },
+    {
+      "A_keep_indices": [
+        0,
+        3,
+        4,
+        5,
+        6
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        2,
+        1
+      ],
+      "basis": [
+        360,
+        144,
+        5,
+        2
+      ],
+      "basis_matrix_labels": [
+        "000/101/101",
+        "000/010/010",
+        "101/000/000",
+        "010/000/000"
+      ],
+      "cap": 5,
+      "dim": 4,
+      "flattening_ranks": {
+        "A": 5,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            5,
+            146,
+            365,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            360,
+            365,
+            504,
+            511
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            5,
+            144,
+            360,
+            367
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "key": 4317124228,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        360,
+        144,
+        504,
+        5,
+        365,
+        2,
+        146,
+        7,
+        511
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 30,
+      "restricted_tensor_shape": [
+        5,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        2,
+        6,
+        7,
+        8
+      ],
+      "A_pivot_indices": [
+        5,
+        4,
+        3,
+        1,
+        0
+      ],
+      "basis": [
+        32,
+        20,
+        8,
+        2,
+        1
+      ],
+      "basis_matrix_labels": [
+        "000/001/000",
+        "001/010/000",
+        "000/100/000",
+        "010/000/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            2,
+            10,
+            40,
+            54
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            2,
+            8,
+            34,
+            52
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            21,
+            23,
+            33,
+            41
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 1103840313861,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        32,
+        8,
+        40,
+        2,
+        54,
+        1,
+        9,
+        3,
+        63
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 15,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        2,
+        6,
+        7,
+        8
+      ],
+      "A_pivot_indices": [
+        5,
+        4,
+        3,
+        1,
+        0
+      ],
+      "basis": [
+        32,
+        20,
+        12,
+        2,
+        1
+      ],
+      "basis_matrix_labels": [
+        "000/001/000",
+        "001/010/000",
+        "001/100/000",
+        "010/000/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            2,
+            25,
+            32,
+            56
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            2,
+            27,
+            34,
+            52
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            21,
+            23,
+            25,
+            33
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 1103857091077,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        32,
+        24,
+        56,
+        2,
+        54,
+        1,
+        45,
+        3,
+        27
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 18,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        2,
+        3,
+        5,
+        8
+      ],
+      "A_pivot_indices": [
+        7,
+        6,
+        4,
+        1,
+        0
+      ],
+      "basis": [
+        136,
+        72,
+        16,
+        2,
+        1
+      ],
+      "basis_matrix_labels": [
+        "000/100/010",
+        "000/100/100",
+        "000/010/000",
+        "010/000/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            2,
+            16,
+            72,
+            194
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            2,
+            16,
+            72,
+            192
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            16,
+            19,
+            192,
+            195
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 1103874295941,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        72,
+        192,
+        16,
+        2,
+        18,
+        1,
+        73,
+        3,
+        195
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 18,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        2,
+        3,
+        5,
+        8
+      ],
+      "A_pivot_indices": [
+        7,
+        6,
+        4,
+        1,
+        0
+      ],
+      "basis": [
+        128,
+        64,
+        20,
+        2,
+        1
+      ],
+      "basis_matrix_labels": [
+        "000/000/010",
+        "000/000/100",
+        "001/010/000",
+        "010/000/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            2,
+            65,
+            130,
+            194
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            2,
+            65,
+            130,
+            192
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            21,
+            23,
+            192,
+            195
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 1103891007493,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        128,
+        64,
+        192,
+        2,
+        130,
+        1,
+        65,
+        3,
+        195
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 15,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        2,
+        3,
+        5,
+        8
+      ],
+      "A_pivot_indices": [
+        7,
+        6,
+        4,
+        1,
+        0
+      ],
+      "basis": [
+        132,
+        72,
+        20,
+        2,
+        1
+      ],
+      "basis_matrix_labels": [
+        "001/000/010",
+        "000/100/100",
+        "001/010/000",
+        "010/000/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            2,
+            72,
+            144,
+            217
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            2,
+            72,
+            146,
+            216
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            21,
+            23,
+            144,
+            216
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 1103891073093,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        72,
+        144,
+        216,
+        2,
+        146,
+        1,
+        73,
+        3,
+        219
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 21,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        1,
+        0
+      ],
+      "basis": [
+        276,
+        128,
+        64,
+        2,
+        1
+      ],
+      "basis_matrix_labels": [
+        "001/010/001",
+        "000/000/010",
+        "000/000/100",
+        "010/000/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            2,
+            65,
+            130,
+            194
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            2,
+            64,
+            195,
+            278
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            2,
+            65,
+            130,
+            192
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "key": 1104076083525,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        128,
+        64,
+        192,
+        2,
+        130,
+        1,
+        65,
+        3,
+        195
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 18,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        1,
+        0
+      ],
+      "basis": [
+        304,
+        144,
+        72,
+        2,
+        1
+      ],
+      "basis_matrix_labels": [
+        "000/011/001",
+        "000/010/010",
+        "000/100/100",
+        "010/000/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            2,
+            72,
+            144,
+            217
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            2,
+            72,
+            146,
+            216
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            2,
+            73,
+            219,
+            304
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        }
+      ],
+      "key": 1104109769477,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        144,
+        72,
+        216,
+        2,
+        146,
+        1,
+        73,
+        3,
+        219
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 24,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        1,
+        0
+      ],
+      "basis": [
+        292,
+        148,
+        72,
+        2,
+        1
+      ],
+      "basis_matrix_labels": [
+        "001/001/001",
+        "001/010/010",
+        "000/100/100",
+        "010/000/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            2,
+            72,
+            365,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            2,
+            73,
+            365,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            2,
+            72,
+            367,
+            434
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "key": 1104109802053,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        292,
+        432,
+        72,
+        504,
+        2,
+        1,
+        73,
+        365,
+        3
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 27,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        1,
+        0
+      ],
+      "basis": [
+        288,
+        148,
+        76,
+        2,
+        1
+      ],
+      "basis_matrix_labels": [
+        "000/001/001",
+        "001/010/010",
+        "001/100/100",
+        "010/000/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            2,
+            217,
+            288,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            2,
+            216,
+            365,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            2,
+            219,
+            365,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        }
+      ],
+      "key": 1104126579205,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        288,
+        216,
+        504,
+        2,
+        438,
+        1,
+        365,
+        3,
+        219
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 27,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        1,
+        3,
+        4,
+        7
+      ],
+      "A_pivot_indices": [
+        8,
+        6,
+        5,
+        2,
+        0
+      ],
+      "basis": [
+        258,
+        72,
+        34,
+        4,
+        1
+      ],
+      "basis_matrix_labels": [
+        "010/000/001",
+        "000/100/100",
+        "010/001/000",
+        "001/000/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            4,
+            5,
+            72,
+            288
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            34,
+            73,
+            360,
+            365
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            5,
+            72,
+            111,
+            360
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "key": 1108244762661,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        72,
+        288,
+        360,
+        4,
+        292,
+        1,
+        73,
+        5,
+        365
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 21,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        2,
+        0
+      ],
+      "basis": [
+        258,
+        130,
+        66,
+        4,
+        1
+      ],
+      "basis_matrix_labels": [
+        "010/000/001",
+        "010/000/010",
+        "010/000/100",
+        "001/000/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            4,
+            5,
+            130,
+            455
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            5,
+            130,
+            320,
+            384
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            5,
+            130,
+            192,
+            384
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "key": 1108379455525,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        130,
+        384,
+        320,
+        192,
+        4,
+        1,
+        5,
+        325,
+        455
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 21,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        2,
+        0
+      ],
+      "basis": [
+        290,
+        144,
+        74,
+        4,
+        1
+      ],
+      "basis_matrix_labels": [
+        "010/001/001",
+        "000/010/010",
+        "010/100/100",
+        "001/000/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            4,
+            5,
+            144,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            219,
+            360,
+            365,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            144,
+            360,
+            365,
+            438
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 1108413125157,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        144,
+        360,
+        504,
+        4,
+        438,
+        1,
+        219,
+        5,
+        365
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 27,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        2,
+        0
+      ],
+      "basis": [
+        258,
+        144,
+        106,
+        4,
+        1
+      ],
+      "basis_matrix_labels": [
+        "010/000/001",
+        "000/010/010",
+        "010/101/100",
+        "001/000/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            4,
+            5,
+            144,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            5,
+            254,
+            365,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            5,
+            111,
+            144,
+            360
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "key": 1108547342373,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        144,
+        360,
+        504,
+        4,
+        1,
+        5,
+        365
+      ],
+      "rank1_points_in_phi_count": 7,
+      "restricted_tensor_nnz": 27,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        2,
+        0
+      ],
+      "basis": [
+        290,
+        144,
+        72,
+        6,
+        1
+      ],
+      "basis_matrix_labels": [
+        "010/001/001",
+        "000/010/010",
+        "000/100/100",
+        "011/000/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            6,
+            72,
+            144,
+            217
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            6,
+            72,
+            144,
+            434
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            144,
+            216,
+            292,
+            365
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 1112699703845,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        144,
+        72,
+        216,
+        6,
+        292,
+        1,
+        73,
+        7,
+        365
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 27,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        1,
+        2,
+        4,
+        7
+      ],
+      "A_pivot_indices": [
+        8,
+        6,
+        5,
+        3,
+        0
+      ],
+      "basis": [
+        256,
+        64,
+        34,
+        10,
+        1
+      ],
+      "basis_matrix_labels": [
+        "000/000/001",
+        "000/000/100",
+        "010/001/000",
+        "010/100/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            10,
+            40,
+            65,
+            320
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            34,
+            64,
+            320,
+            360
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            41,
+            256,
+            320,
+            360
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 1121129598981,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        256,
+        64,
+        320,
+        40,
+        360,
+        1,
+        65
+      ],
+      "rank1_points_in_phi_count": 7,
+      "restricted_tensor_nnz": 18,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        1,
+        2,
+        4,
+        7
+      ],
+      "A_pivot_indices": [
+        8,
+        6,
+        5,
+        3,
+        0
+      ],
+      "basis": [
+        262,
+        66,
+        34,
+        10,
+        1
+      ],
+      "basis_matrix_labels": [
+        "011/000/001",
+        "010/000/100",
+        "010/001/000",
+        "010/100/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            10,
+            40,
+            72,
+            365
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            34,
+            73,
+            325,
+            365
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            41,
+            292,
+            325,
+            365
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 1121129615461,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        292,
+        72,
+        40,
+        1,
+        325,
+        73,
+        365
+      ],
+      "rank1_points_in_phi_count": 7,
+      "restricted_tensor_nnz": 27,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        1,
+        2,
+        4,
+        7
+      ],
+      "A_pivot_indices": [
+        8,
+        6,
+        5,
+        3,
+        0
+      ],
+      "basis": [
+        384,
+        64,
+        52,
+        10,
+        1
+      ],
+      "basis_matrix_labels": [
+        "000/000/011",
+        "000/000/100",
+        "001/011/000",
+        "010/100/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            10,
+            65,
+            384,
+            510
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            52,
+            64,
+            448,
+            511
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            63,
+            65,
+            117,
+            384
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "key": 1121205098501,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        384,
+        64,
+        448,
+        1,
+        65,
+        63,
+        511
+      ],
+      "rank1_points_in_phi_count": 7,
+      "restricted_tensor_nnz": 24,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        3,
+        0
+      ],
+      "basis": [
+        294,
+        144,
+        66,
+        10,
+        1
+      ],
+      "basis_matrix_labels": [
+        "011/001/001",
+        "000/010/010",
+        "010/000/100",
+        "010/100/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            10,
+            72,
+            216,
+            510
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            72,
+            144,
+            367,
+            438
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            144,
+            216,
+            438,
+            511
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 1121264472677,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        144,
+        438,
+        72,
+        216,
+        1,
+        73,
+        511
+      ],
+      "rank1_points_in_phi_count": 7,
+      "restricted_tensor_nnz": 30,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        1,
+        2,
+        3,
+        8
+      ],
+      "A_pivot_indices": [
+        7,
+        6,
+        5,
+        4,
+        0
+      ],
+      "basis": [
+        130,
+        64,
+        46,
+        18,
+        1
+      ],
+      "basis_matrix_labels": [
+        "010/000/010",
+        "000/000/100",
+        "011/101/000",
+        "010/010/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            65,
+            130,
+            144,
+            194
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            18,
+            65,
+            130,
+            254
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            65,
+            111,
+            130,
+            144
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "key": 1138359797797,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        130,
+        64,
+        18,
+        144,
+        1,
+        65,
+        195
+      ],
+      "rank1_points_in_phi_count": 7,
+      "restricted_tensor_nnz": 27,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        1,
+        2,
+        3,
+        8
+      ],
+      "A_pivot_indices": [
+        7,
+        6,
+        5,
+        4,
+        0
+      ],
+      "basis": [
+        130,
+        72,
+        46,
+        18,
+        1
+      ],
+      "basis_matrix_labels": [
+        "010/000/010",
+        "000/100/100",
+        "011/101/000",
+        "010/010/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            72,
+            130,
+            144,
+            217
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            18,
+            72,
+            130,
+            216
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            72,
+            117,
+            130,
+            144
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "key": 1138359863333,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        130,
+        72,
+        18,
+        144,
+        216,
+        1,
+        73
+      ],
+      "rank1_points_in_phi_count": 7,
+      "restricted_tensor_nnz": 30,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        4,
+        0
+      ],
+      "basis": [
+        290,
+        130,
+        72,
+        18,
+        1
+      ],
+      "basis_matrix_labels": [
+        "010/001/001",
+        "010/000/010",
+        "000/100/100",
+        "010/010/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            72,
+            130,
+            144,
+            217
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            18,
+            72,
+            130,
+            216
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            72,
+            130,
+            144,
+            434
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "key": 1138469392933,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        130,
+        72,
+        18,
+        144,
+        216,
+        1,
+        73
+      ],
+      "rank1_points_in_phi_count": 7,
+      "restricted_tensor_nnz": 27,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        4,
+        0
+      ],
+      "basis": [
+        290,
+        136,
+        72,
+        24,
+        1
+      ],
+      "basis_matrix_labels": [
+        "010/001/001",
+        "000/100/010",
+        "000/100/100",
+        "000/110/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            25,
+            72,
+            144,
+            217
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            72,
+            144,
+            192,
+            434
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            25,
+            144,
+            192,
+            216
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 1151354343973,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        72,
+        192,
+        24,
+        144,
+        216,
+        1,
+        73
+      ],
+      "rank1_points_in_phi_count": 7,
+      "restricted_tensor_nnz": 27,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        1,
+        2,
+        3,
+        8
+      ],
+      "A_pivot_indices": [
+        7,
+        6,
+        5,
+        4,
+        0
+      ],
+      "basis": [
+        130,
+        64,
+        46,
+        26,
+        1
+      ],
+      "basis_matrix_labels": [
+        "010/000/010",
+        "000/000/100",
+        "011/101/000",
+        "010/110/000",
+        "100/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            65,
+            130,
+            194,
+            217
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            27,
+            52,
+            64,
+            195
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            1,
+            65,
+            111,
+            117,
+            130
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "key": 1155539666981,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        130,
+        64,
+        216,
+        1,
+        65,
+        195,
+        27
+      ],
+      "rank1_points_in_phi_count": 7,
+      "restricted_tensor_nnz": 30,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        2,
+        1
+      ],
+      "basis": [
+        289,
+        144,
+        72,
+        4,
+        2
+      ],
+      "basis_matrix_labels": [
+        "100/001/001",
+        "000/010/010",
+        "000/100/100",
+        "001/000/000",
+        "010/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            4,
+            6,
+            72,
+            144
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            72,
+            146,
+            216,
+            365
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            6,
+            72,
+            144,
+            367
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "key": 2207916364309,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        144,
+        72,
+        216,
+        4,
+        365,
+        2,
+        146,
+        6,
+        511
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 24,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        0,
+        6,
+        7,
+        8
+      ],
+      "A_pivot_indices": [
+        5,
+        4,
+        3,
+        2,
+        1
+      ],
+      "basis": [
+        32,
+        17,
+        8,
+        5,
+        2
+      ],
+      "basis_matrix_labels": [
+        "000/001/000",
+        "100/010/000",
+        "000/100/000",
+        "101/000/000",
+        "010/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            5,
+            8,
+            25,
+            32
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            5,
+            10,
+            40,
+            54
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            8,
+            27,
+            34,
+            52
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        }
+      ],
+      "key": 2209794368005,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        32,
+        8,
+        40,
+        5,
+        45,
+        2,
+        27,
+        7,
+        54
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 18,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        0,
+        3,
+        5,
+        6
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        4,
+        2,
+        1
+      ],
+      "basis": [
+        360,
+        129,
+        16,
+        5,
+        2
+      ],
+      "basis_matrix_labels": [
+        "000/101/101",
+        "100/000/010",
+        "000/010/000",
+        "101/000/000",
+        "010/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            5,
+            18,
+            365,
+            510
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            5,
+            16,
+            360,
+            367
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            16,
+            21,
+            23,
+            360,
+            365
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 2209828845189,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        360,
+        16,
+        5,
+        365,
+        2,
+        18,
+        7
+      ],
+      "rank1_points_in_phi_count": 7,
+      "restricted_tensor_nnz": 27,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        0,
+        3,
+        4,
+        6
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        5,
+        2,
+        1
+      ],
+      "basis": [
+        337,
+        144,
+        57,
+        5,
+        2
+      ],
+      "basis_matrix_labels": [
+        "100/010/101",
+        "000/010/010",
+        "100/111/000",
+        "101/000/000",
+        "010/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            5,
+            146,
+            365,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            360,
+            365,
+            504,
+            511
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            5,
+            144,
+            360,
+            367
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "key": 2210000934165,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        144,
+        360,
+        504,
+        5,
+        365,
+        2,
+        146,
+        7,
+        511
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 36,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        2,
+        1
+      ],
+      "basis": [
+        257,
+        129,
+        65,
+        5,
+        2
+      ],
+      "basis_matrix_labels": [
+        "100/000/001",
+        "100/000/010",
+        "100/000/100",
+        "101/000/000",
+        "010/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            5,
+            65,
+            194,
+            260
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            5,
+            65,
+            320,
+            384
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            5,
+            65,
+            192,
+            384
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "key": 2210034364437,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        384,
+        65,
+        320,
+        192,
+        5,
+        260,
+        325,
+        2,
+        7
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 24,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        2,
+        1
+      ],
+      "basis": [
+        305,
+        144,
+        89,
+        5,
+        2
+      ],
+      "basis_matrix_labels": [
+        "100/011/001",
+        "000/010/010",
+        "100/110/100",
+        "101/000/000",
+        "010/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            5,
+            146,
+            365,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            360,
+            365,
+            504,
+            511
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            5,
+            144,
+            360,
+            367
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "key": 2210135151381,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        144,
+        360,
+        504,
+        5,
+        365,
+        2,
+        146,
+        7,
+        511
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 36,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        2,
+        1
+      ],
+      "basis": [
+        264,
+        144,
+        96,
+        5,
+        2
+      ],
+      "basis_matrix_labels": [
+        "000/100/001",
+        "000/010/010",
+        "000/001/100",
+        "101/000/000",
+        "010/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            5,
+            146,
+            365,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            360,
+            365,
+            504,
+            511
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            5,
+            144,
+            360,
+            367
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "key": 2210164510853,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        144,
+        360,
+        504,
+        5,
+        365,
+        2,
+        146,
+        7,
+        511
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 24,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        2,
+        1
+      ],
+      "basis": [
+        265,
+        144,
+        97,
+        5,
+        2
+      ],
+      "basis_matrix_labels": [
+        "100/100/001",
+        "000/010/010",
+        "100/001/100",
+        "101/000/000",
+        "010/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            5,
+            146,
+            365,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            360,
+            365,
+            504,
+            511
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            5,
+            144,
+            360,
+            367
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "key": 2210168705173,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        144,
+        360,
+        504,
+        5,
+        365,
+        2,
+        146,
+        7,
+        511
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 30,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        2,
+        1
+      ],
+      "basis": [
+        281,
+        144,
+        113,
+        5,
+        2
+      ],
+      "basis_matrix_labels": [
+        "100/110/001",
+        "000/010/010",
+        "100/011/100",
+        "101/000/000",
+        "010/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            5,
+            146,
+            365,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            360,
+            365,
+            504,
+            511
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            5,
+            144,
+            360,
+            367
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "key": 2210235814293,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        144,
+        360,
+        504,
+        5,
+        365,
+        2,
+        146,
+        7,
+        511
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 36,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        0,
+        2,
+        5,
+        8
+      ],
+      "A_pivot_indices": [
+        7,
+        6,
+        4,
+        3,
+        1
+      ],
+      "basis": [
+        128,
+        65,
+        17,
+        8,
+        2
+      ],
+      "basis_matrix_labels": [
+        "000/000/010",
+        "100/000/100",
+        "100/010/000",
+        "000/100/000",
+        "010/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            8,
+            25,
+            65,
+            130
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            10,
+            65,
+            130,
+            216
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            8,
+            27,
+            73,
+            195
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact16.json"
+        }
+      ],
+      "key": 2216274962437,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        128,
+        65,
+        8,
+        73,
+        216,
+        2,
+        130,
+        195,
+        27
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 18,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        0,
+        2,
+        5,
+        8
+      ],
+      "A_pivot_indices": [
+        7,
+        6,
+        4,
+        3,
+        1
+      ],
+      "basis": [
+        129,
+        65,
+        17,
+        9,
+        2
+      ],
+      "basis_matrix_labels": [
+        "100/000/010",
+        "100/000/100",
+        "100/010/000",
+        "100/100/000",
+        "010/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            65,
+            72,
+            144,
+            194
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            65,
+            72,
+            146,
+            216
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            2,
+            65,
+            72,
+            144,
+            192
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "key": 2218422446101,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        65,
+        192,
+        144,
+        9,
+        72,
+        24,
+        216,
+        2,
+        146
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 24,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        0,
+        6,
+        7,
+        8
+      ],
+      "A_pivot_indices": [
+        5,
+        4,
+        3,
+        2,
+        1
+      ],
+      "basis": [
+        33,
+        16,
+        9,
+        5,
+        3
+      ],
+      "basis_matrix_labels": [
+        "100/001/000",
+        "000/010/000",
+        "100/100/000",
+        "101/000/000",
+        "110/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            5,
+            6,
+            16,
+            25,
+            56
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            5,
+            6,
+            16,
+            36,
+            45
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            16,
+            19,
+            21,
+            25,
+            33
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 3309310181909,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        16,
+        9,
+        40,
+        56,
+        5,
+        36,
+        45,
+        3,
+        6
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 24,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        6,
+        2,
+        1
+      ],
+      "basis": [
+        289,
+        145,
+        72,
+        5,
+        3
+      ],
+      "basis_matrix_labels": [
+        "100/001/001",
+        "100/010/010",
+        "000/100/100",
+        "101/000/000",
+        "110/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            5,
+            6,
+            72,
+            217,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            5,
+            72,
+            146,
+            504,
+            510
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            5,
+            6,
+            72,
+            367,
+            438
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "key": 3309575483925,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        432,
+        72,
+        504,
+        5,
+        292,
+        3,
+        146,
+        6,
+        438
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 33,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        0,
+        2,
+        5,
+        8
+      ],
+      "A_pivot_indices": [
+        7,
+        6,
+        4,
+        3,
+        1
+      ],
+      "basis": [
+        129,
+        65,
+        16,
+        9,
+        3
+      ],
+      "basis_matrix_labels": [
+        "100/000/010",
+        "100/000/100",
+        "000/010/000",
+        "100/100/000",
+        "110/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            10,
+            65,
+            72,
+            130,
+            146
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            16,
+            65,
+            72,
+            130,
+            192
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            16,
+            19,
+            25,
+            192,
+            195
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 3317929879573,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        65,
+        192,
+        16,
+        9,
+        72,
+        3,
+        130,
+        195,
+        146
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 24,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        0,
+        1,
+        5,
+        6
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        4,
+        3,
+        2
+      ],
+      "basis": [
+        355,
+        130,
+        18,
+        11,
+        5
+      ],
+      "basis_matrix_labels": [
+        "110/001/101",
+        "010/000/010",
+        "010/010/000",
+        "110/100/000",
+        "101/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            5,
+            25,
+            130,
+            144,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            5,
+            18,
+            130,
+            365,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            23,
+            25,
+            144,
+            360,
+            365
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 5521257027125,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        130,
+        18,
+        144,
+        360,
+        504,
+        5,
+        365
+      ],
+      "rank1_points_in_phi_count": 7,
+      "restricted_tensor_nnz": 39,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        0,
+        1,
+        3,
+        6
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        5,
+        4,
+        2
+      ],
+      "basis": [
+        322,
+        130,
+        40,
+        16,
+        5
+      ],
+      "basis_matrix_labels": [
+        "010/000/101",
+        "010/000/010",
+        "000/101/000",
+        "000/010/000",
+        "101/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            5,
+            16,
+            56,
+            130,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            5,
+            40,
+            130,
+            146,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            5,
+            16,
+            45,
+            130,
+            367
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "key": 5532086719525,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        130,
+        448,
+        40,
+        16,
+        146,
+        56,
+        504,
+        5,
+        45
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 27,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        0,
+        1,
+        3,
+        6
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        5,
+        4,
+        2
+      ],
+      "basis": [
+        322,
+        128,
+        42,
+        16,
+        5
+      ],
+      "basis_matrix_labels": [
+        "010/000/101",
+        "000/000/010",
+        "010/101/000",
+        "000/010/000",
+        "101/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            5,
+            16,
+            144,
+            455,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            5,
+            16,
+            63,
+            144,
+            360
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            16,
+            21,
+            144,
+            360,
+            365
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep016_k01_17/e11_rep016_k01_17_full_capacity_check.json"
+        }
+      ],
+      "key": 5532095091749,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        128,
+        360,
+        16,
+        144,
+        504,
+        5,
+        455,
+        365,
+        63
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 27,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    },
+    {
+      "A_keep_indices": [
+        0,
+        1,
+        3,
+        6
+      ],
+      "A_pivot_indices": [
+        8,
+        7,
+        5,
+        4,
+        2
+      ],
+      "basis": [
+        320,
+        130,
+        42,
+        16,
+        5
+      ],
+      "basis_matrix_labels": [
+        "000/000/101",
+        "010/000/010",
+        "010/101/000",
+        "000/010/000",
+        "101/000/000"
+      ],
+      "cap": 5,
+      "dim": 5,
+      "flattening_ranks": {
+        "A": 4,
+        "B": 9,
+        "C": 9
+      },
+      "hit_count": 3,
+      "hits": [
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            5,
+            16,
+            130,
+            455,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_k01_17/e11_rep002_k01_17_full_capacity_check.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            5,
+            130,
+            146,
+            320,
+            504
+          ],
+          "source": "data/wang_fixed_e11_range_cpsat/rep002_exactk/e11_rep002_exact17.json"
+        },
+        {
+          "occupancy": 5,
+          "points_in_support": [
+            5,
+            16,
+            63,
+            130,
+            367
+          ],
+          "source": "data/wang_fixed_e11_symm_range/rep002_k01_17_symm_noseed_fullcheck.json"
+        }
+      ],
+      "key": 5532095108101,
+      "lb": 15,
+      "new_rank20_cap_if_raised": 4,
+      "raise_to_lb": 16,
+      "rank1_points_in_phi": [
+        320,
+        130,
+        16,
+        146,
+        504,
+        5,
+        325,
+        455,
+        63
+      ],
+      "rank1_points_in_phi_count": 9,
+      "restricted_tensor_nnz": 27,
+      "restricted_tensor_shape": [
+        4,
+        9,
+        9
+      ],
+      "total_occupancy": 15
+    }
+  ]
+}

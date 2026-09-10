@@ -1,0 +1,275 @@
+{
+  "elapsed_sec": 0.093,
+  "field": "F2",
+  "implications": {
+    "c3": "168 GL3 completions, matching analysis",
+    "c4": "20,160 own-block pairs and 127 allowed leak assignments per own pair; half-purity profiles (1,0) or (0,1) plus pure (0,0).",
+    "c5": "1,666,560 own-block pairs and 20,098 allowed leak assignments per own pair; dominant balanced profile is (1,1). Explicit enumeration is too large without sharing/canonicalization, but the defect-space parameterization is finite and structured."
+  },
+  "model": "For c=3+d active terms, choose own-block V of row rank 3, W solving V W^T=I3, then choose leak row matrices in d-dimensional dual defect spaces with orthogonal rowspaces.",
+  "purpose": "local slice parameter counts for defect/leak-budget completion of E11 core slices",
+  "records": [
+    {
+      "W_own_solutions_per_V": 1,
+      "allowed_leak_profile_counts_per_own_pair": {
+        "(0, 0)": 1
+      },
+      "c": 3,
+      "d": 0,
+      "full_local_completion_count_without_term_permutation_reduction": 168,
+      "own_block_pair_count": 168,
+      "rank3_V_count_enumerated": 168,
+      "rank3_V_count_formula": 168,
+      "samples": [
+        {
+          "V_rows": [
+            4,
+            2,
+            1
+          ],
+          "W_matrix_count_product": 1,
+          "kernel_size": 1,
+          "solutions_per_rhs": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "V_rows": [
+            5,
+            2,
+            1
+          ],
+          "W_matrix_count_product": 1,
+          "kernel_size": 1,
+          "solutions_per_rhs": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "V_rows": [
+            6,
+            2,
+            1
+          ],
+          "W_matrix_count_product": 1,
+          "kernel_size": 1,
+          "solutions_per_rhs": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "V_rows": [
+            7,
+            2,
+            1
+          ],
+          "W_matrix_count_product": 1,
+          "kernel_size": 1,
+          "solutions_per_rhs": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "V_rows": [
+            4,
+            3,
+            1
+          ],
+          "W_matrix_count_product": 1,
+          "kernel_size": 1,
+          "solutions_per_rhs": [
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "total_allowed_leak_assignments_per_own_pair": 1
+    },
+    {
+      "W_own_solutions_per_V": 8,
+      "allowed_leak_profile_counts_per_own_pair": {
+        "(0, 0)": 1,
+        "(0, 1)": 63,
+        "(1, 0)": 63
+      },
+      "c": 4,
+      "d": 1,
+      "full_local_completion_count_without_term_permutation_reduction": 2560320,
+      "own_block_pair_count": 20160,
+      "rank3_V_count_enumerated": 2520,
+      "rank3_V_count_formula": 2520,
+      "samples": [
+        {
+          "V_rows": [
+            4,
+            2,
+            1
+          ],
+          "W_matrix_count_product": 8,
+          "kernel_size": 2,
+          "solutions_per_rhs": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "V_rows": [
+            5,
+            2,
+            1
+          ],
+          "W_matrix_count_product": 8,
+          "kernel_size": 2,
+          "solutions_per_rhs": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "V_rows": [
+            6,
+            2,
+            1
+          ],
+          "W_matrix_count_product": 8,
+          "kernel_size": 2,
+          "solutions_per_rhs": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "V_rows": [
+            7,
+            2,
+            1
+          ],
+          "W_matrix_count_product": 8,
+          "kernel_size": 2,
+          "solutions_per_rhs": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "V_rows": [
+            8,
+            2,
+            1
+          ],
+          "W_matrix_count_product": 8,
+          "kernel_size": 2,
+          "solutions_per_rhs": [
+            2,
+            2,
+            2
+          ]
+        }
+      ],
+      "total_allowed_leak_assignments_per_own_pair": 127
+    },
+    {
+      "W_own_solutions_per_V": 64,
+      "allowed_leak_profile_counts_per_own_pair": {
+        "(0, 0)": 1,
+        "(0, 1)": 189,
+        "(0, 2)": 3906,
+        "(1, 0)": 189,
+        "(1, 1)": 11907,
+        "(2, 0)": 3906
+      },
+      "c": 5,
+      "d": 2,
+      "full_local_completion_count_without_term_permutation_reduction": 33494522880,
+      "own_block_pair_count": 1666560,
+      "rank3_V_count_enumerated": 26040,
+      "rank3_V_count_formula": 26040,
+      "samples": [
+        {
+          "V_rows": [
+            4,
+            2,
+            1
+          ],
+          "W_matrix_count_product": 64,
+          "kernel_size": 4,
+          "solutions_per_rhs": [
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "V_rows": [
+            5,
+            2,
+            1
+          ],
+          "W_matrix_count_product": 64,
+          "kernel_size": 4,
+          "solutions_per_rhs": [
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "V_rows": [
+            6,
+            2,
+            1
+          ],
+          "W_matrix_count_product": 64,
+          "kernel_size": 4,
+          "solutions_per_rhs": [
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "V_rows": [
+            7,
+            2,
+            1
+          ],
+          "W_matrix_count_product": 64,
+          "kernel_size": 4,
+          "solutions_per_rhs": [
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "V_rows": [
+            8,
+            2,
+            1
+          ],
+          "W_matrix_count_product": 64,
+          "kernel_size": 4,
+          "solutions_per_rhs": [
+            4,
+            4,
+            4
+          ]
+        }
+      ],
+      "total_allowed_leak_assignments_per_own_pair": 20098
+    }
+  ]
+}

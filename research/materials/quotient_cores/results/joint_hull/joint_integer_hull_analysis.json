@@ -1,0 +1,1667 @@
+{
+  "schema": "joint_integer_hull_v1",
+  "elapsed_sec": 52.915,
+  "base_support": [
+    1,
+    2,
+    3,
+    4,
+    8,
+    20,
+    24,
+    31,
+    32,
+    36,
+    64,
+    73,
+    109,
+    127,
+    128,
+    141,
+    160,
+    182,
+    219
+  ],
+  "violation_count": 9,
+  "dim5_violation_count": 6,
+  "dim6_violation_count": 3,
+  "pair_intersection_results": [
+    {
+      "i": 0,
+      "j": 1,
+      "key8_i": 4417508755461,
+      "key8_j": 4436873709717,
+      "intersection_dim": 4,
+      "intersection_basis": [
+        137,
+        82,
+        41,
+        4
+      ]
+    },
+    {
+      "i": 0,
+      "j": 2,
+      "key8_i": 4417508755461,
+      "key8_j": 4456163313813,
+      "intersection_dim": 4,
+      "intersection_basis": [
+        137,
+        91,
+        32,
+        4
+      ]
+    },
+    {
+      "i": 0,
+      "j": 3,
+      "key8_i": 4417508755461,
+      "key8_j": 4456163387397,
+      "intersection_dim": 4,
+      "intersection_basis": [
+        128,
+        82,
+        32,
+        4
+      ]
+    },
+    {
+      "i": 0,
+      "j": 4,
+      "key8_i": 4417508755461,
+      "key8_j": 6635867678725,
+      "intersection_dim": 3,
+      "intersection_basis": [
+        128,
+        91,
+        36
+      ]
+    },
+    {
+      "i": 0,
+      "j": 5,
+      "key8_i": 4417508755461,
+      "key8_j": 7748268402853,
+      "intersection_dim": 3,
+      "intersection_basis": [
+        141,
+        86,
+        36
+      ]
+    },
+    {
+      "i": 1,
+      "j": 2,
+      "key8_i": 4436873709717,
+      "key8_j": 4456163313813,
+      "intersection_dim": 4,
+      "intersection_basis": [
+        137,
+        64,
+        59,
+        4
+      ]
+    },
+    {
+      "i": 1,
+      "j": 3,
+      "key8_i": 4436873709717,
+      "key8_j": 4456163387397,
+      "intersection_dim": 4,
+      "intersection_basis": [
+        155,
+        82,
+        59,
+        4
+      ]
+    },
+    {
+      "i": 1,
+      "j": 4,
+      "key8_i": 4436873709717,
+      "key8_j": 6635867678725,
+      "intersection_dim": 3,
+      "intersection_basis": [
+        164,
+        109,
+        18
+      ]
+    },
+    {
+      "i": 1,
+      "j": 5,
+      "key8_i": 4436873709717,
+      "key8_j": 7748268402853,
+      "intersection_dim": 3,
+      "intersection_basis": [
+        141,
+        86,
+        59
+      ]
+    },
+    {
+      "i": 2,
+      "j": 3,
+      "key8_i": 4456163313813,
+      "key8_j": 4456163387397,
+      "intersection_dim": 4,
+      "intersection_basis": [
+        201,
+        32,
+        27,
+        4
+      ]
+    },
+    {
+      "i": 2,
+      "j": 4,
+      "key8_i": 4456163313813,
+      "key8_j": 6635867678725,
+      "intersection_dim": 3,
+      "intersection_basis": [
+        146,
+        91,
+        36
+      ]
+    },
+    {
+      "i": 2,
+      "j": 5,
+      "key8_i": 4456163313813,
+      "key8_j": 7748268402853,
+      "intersection_dim": 3,
+      "intersection_basis": [
+        141,
+        36,
+        31
+      ]
+    },
+    {
+      "i": 3,
+      "j": 4,
+      "key8_i": 4456163387397,
+      "key8_j": 6635867678725,
+      "intersection_dim": 3,
+      "intersection_basis": [
+        128,
+        73,
+        36
+      ]
+    },
+    {
+      "i": 3,
+      "j": 5,
+      "key8_i": 4456163387397,
+      "key8_j": 7748268402853,
+      "intersection_dim": 3,
+      "intersection_basis": [
+        73,
+        36,
+        31
+      ]
+    },
+    {
+      "i": 4,
+      "j": 5,
+      "key8_i": 6635867678725,
+      "key8_j": 7748268402853,
+      "intersection_dim": 3,
+      "intersection_basis": [
+        146,
+        73,
+        36
+      ]
+    }
+  ],
+  "good_pair_count": 6,
+  "hull_analyses": [
+    {
+      "pair_index": 0,
+      "pair_keys": [
+        4417508755461,
+        4436873709717
+      ],
+      "intersection_basis": [
+        137,
+        82,
+        41,
+        4
+      ],
+      "annihilator_basis": [
+        161,
+        66,
+        18,
+        9
+      ],
+      "near_miss_color_profile": [
+        5,
+        3,
+        3,
+        2,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "near_miss_feasible_local_lp": false,
+      "near_miss_local_violations": [
+        {
+          "constraint_idx": 38,
+          "lhs": 8,
+          "cap": 7,
+          "excess": 1
+        },
+        {
+          "constraint_idx": 53,
+          "lhs": 8,
+          "cap": 7,
+          "excess": 1
+        },
+        {
+          "constraint_idx": 57,
+          "lhs": 8,
+          "cap": 7,
+          "excess": 1
+        }
+      ],
+      "local_constraint_count": 66,
+      "local_violated_by_near_miss": 3,
+      "fractional_vertex_found": false,
+      "lp_results_head": [
+        {
+          "objective": "max_c_0",
+          "optimal_value": 5.0,
+          "solution": [
+            5.0,
+            2.0,
+            2.0,
+            2.0,
+            1.0,
+            0.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            -0.0,
+            1.0
+          ],
+          "is_integral": true
+        },
+        {
+          "objective": "max_c_1",
+          "optimal_value": 7.0,
+          "solution": [
+            0.0,
+            7.0,
+            6.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            2.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0
+          ],
+          "is_integral": true
+        },
+        {
+          "objective": "max_c_2",
+          "optimal_value": 7.0,
+          "solution": [
+            0.0,
+            6.0,
+            7.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.0,
+            3.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0
+          ],
+          "is_integral": true
+        },
+        {
+          "objective": "max_c_3",
+          "optimal_value": 7.0,
+          "solution": [
+            0.0,
+            0.0,
+            6.0,
+            7.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.0,
+            -0.0,
+            3.0,
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "is_integral": true
+        },
+        {
+          "objective": "max_c_4",
+          "optimal_value": 7.0,
+          "solution": [
+            0.0,
+            3.0,
+            3.0,
+            0.0,
+            7.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.0,
+            3.0,
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "is_integral": true
+        },
+        {
+          "objective": "max_c_5",
+          "optimal_value": 5.0,
+          "solution": [
+            0.0,
+            5.0,
+            2.0,
+            1.0,
+            0.0,
+            5.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            2.0,
+            1.0,
+            2.0,
+            0.0,
+            0.0
+          ],
+          "is_integral": true
+        }
+      ],
+      "ip_results": [
+        {
+          "objective": "max_c_0",
+          "optimal_value": 5.0,
+          "solution": [
+            5,
+            2,
+            2,
+            2,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "objective": "max_c_1",
+          "optimal_value": 7.0,
+          "solution": [
+            0,
+            7,
+            0,
+            0,
+            0,
+            3,
+            3,
+            0,
+            0,
+            3,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "objective": "max_c_2",
+          "optimal_value": 7.0,
+          "solution": [
+            0,
+            6,
+            7,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "objective": "max_c_3",
+          "optimal_value": 7.0,
+          "solution": [
+            0,
+            6,
+            0,
+            7,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "integrality_gap_detected": false
+    },
+    {
+      "pair_index": 1,
+      "pair_keys": [
+        4417508755461,
+        4456163313813
+      ],
+      "intersection_basis": [
+        137,
+        91,
+        32,
+        4
+      ],
+      "annihilator_basis": [
+        131,
+        66,
+        18,
+        9
+      ],
+      "near_miss_color_profile": [
+        5,
+        3,
+        3,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "near_miss_feasible_local_lp": false,
+      "near_miss_local_violations": [
+        {
+          "constraint_idx": 53,
+          "lhs": 8,
+          "cap": 7,
+          "excess": 1
+        },
+        {
+          "constraint_idx": 57,
+          "lhs": 8,
+          "cap": 7,
+          "excess": 1
+        }
+      ],
+      "local_constraint_count": 66,
+      "local_violated_by_near_miss": 2,
+      "fractional_vertex_found": false,
+      "lp_results_head": [
+        {
+          "objective": "max_c_0",
+          "optimal_value": 7.0,
+          "solution": [
+            7.0,
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "is_integral": true
+        },
+        {
+          "objective": "max_c_1",
+          "optimal_value": 7.0,
+          "solution": [
+            0.0,
+            7.0,
+            6.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0
+          ],
+          "is_integral": true
+        },
+        {
+          "objective": "max_c_2",
+          "optimal_value": 7.0,
+          "solution": [
+            0.0,
+            6.0,
+            7.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0
+          ],
+          "is_integral": true
+        },
+        {
+          "objective": "max_c_3",
+          "optimal_value": 7.0,
+          "solution": [
+            0.0,
+            0.0,
+            6.0,
+            7.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0
+          ],
+          "is_integral": true
+        },
+        {
+          "objective": "max_c_4",
+          "optimal_value": 8.0,
+          "solution": [
+            0.0,
+            2.0,
+            2.0,
+            0.0,
+            8.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            2.0,
+            1.0,
+            1.0,
+            2.0,
+            0.0,
+            0.0
+          ],
+          "is_integral": true
+        },
+        {
+          "objective": "max_c_5",
+          "optimal_value": 8.0,
+          "solution": [
+            0.0,
+            2.0,
+            2.0,
+            1.0,
+            0.0,
+            8.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            2.0,
+            1.0,
+            2.0,
+            0.0,
+            0.0
+          ],
+          "is_integral": true
+        }
+      ],
+      "ip_results": [
+        {
+          "objective": "max_c_0",
+          "optimal_value": 7.0,
+          "solution": [
+            7,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "objective": "max_c_1",
+          "optimal_value": 7.0,
+          "solution": [
+            0,
+            7,
+            0,
+            0,
+            0,
+            3,
+            3,
+            0,
+            0,
+            3,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "objective": "max_c_2",
+          "optimal_value": 7.0,
+          "solution": [
+            0,
+            3,
+            7,
+            0,
+            0,
+            3,
+            3,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "objective": "max_c_3",
+          "optimal_value": 7.0,
+          "solution": [
+            0,
+            6,
+            0,
+            7,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "integrality_gap_detected": false
+    },
+    {
+      "pair_index": 2,
+      "pair_keys": [
+        4417508755461,
+        4456163387397
+      ],
+      "intersection_basis": [
+        128,
+        82,
+        32,
+        4
+      ],
+      "annihilator_basis": [
+        66,
+        18,
+        8,
+        1
+      ],
+      "near_miss_color_profile": [
+        5,
+        2,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        3,
+        3,
+        0,
+        0
+      ],
+      "near_miss_feasible_local_lp": false,
+      "near_miss_local_violations": [
+        {
+          "constraint_idx": 52,
+          "lhs": 8,
+          "cap": 7,
+          "excess": 1
+        },
+        {
+          "constraint_idx": 60,
+          "lhs": 8,
+          "cap": 7,
+          "excess": 1
+        }
+      ],
+      "local_constraint_count": 66,
+      "local_violated_by_near_miss": 2,
+      "fractional_vertex_found": false,
+      "lp_results_head": [
+        {
+          "objective": "max_c_0",
+          "optimal_value": 6.0,
+          "solution": [
+            6.0,
+            4.0,
+            1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "is_integral": true
+        },
+        {
+          "objective": "max_c_1",
+          "optimal_value": 10.0,
+          "solution": [
+            0.0,
+            10.0,
+            3.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0
+          ],
+          "is_integral": true
+        },
+        {
+          "objective": "max_c_2",
+          "optimal_value": 7.0,
+          "solution": [
+            0.0,
+            6.0,
+            7.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0
+          ],
+          "is_integral": true
+        },
+        {
+          "objective": "max_c_3",
+          "optimal_value": 7.0,
+          "solution": [
+            0.0,
+            0.0,
+            6.0,
+            7.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0
+          ],
+          "is_integral": true
+        },
+        {
+          "objective": "max_c_4",
+          "optimal_value": 7.0,
+          "solution": [
+            0.0,
+            3.0,
+            3.0,
+            0.0,
+            7.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0
+          ],
+          "is_integral": true
+        },
+        {
+          "objective": "max_c_5",
+          "optimal_value": 7.0,
+          "solution": [
+            0.0,
+            6.0,
+            3.0,
+            0.0,
+            0.0,
+            7.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0
+          ],
+          "is_integral": true
+        }
+      ],
+      "ip_results": [
+        {
+          "objective": "max_c_0",
+          "optimal_value": 6.0,
+          "solution": [
+            6,
+            4,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "objective": "max_c_1",
+          "optimal_value": 10.0,
+          "solution": [
+            0,
+            10,
+            3,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "objective": "max_c_2",
+          "optimal_value": 7.0,
+          "solution": [
+            0,
+            3,
+            7,
+            0,
+            0,
+            3,
+            3,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "objective": "max_c_3",
+          "optimal_value": 7.0,
+          "solution": [
+            0,
+            6,
+            0,
+            7,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "integrality_gap_detected": false
+    },
+    {
+      "pair_index": 3,
+      "pair_keys": [
+        4436873709717,
+        4456163313813
+      ],
+      "intersection_basis": [
+        137,
+        64,
+        59,
+        4
+      ],
+      "annihilator_basis": [
+        131,
+        34,
+        18,
+        9
+      ],
+      "near_miss_color_profile": [
+        5,
+        2,
+        3,
+        3,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "near_miss_feasible_local_lp": false,
+      "near_miss_local_violations": [
+        {
+          "constraint_idx": 46,
+          "lhs": 8,
+          "cap": 7,
+          "excess": 1
+        },
+        {
+          "constraint_idx": 53,
+          "lhs": 8,
+          "cap": 7,
+          "excess": 1
+        },
+        {
+          "constraint_idx": 61,
+          "lhs": 8,
+          "cap": 7,
+          "excess": 1
+        }
+      ],
+      "local_constraint_count": 66,
+      "local_violated_by_near_miss": 3,
+      "fractional_vertex_found": false,
+      "lp_results_head": [
+        {
+          "objective": "max_c_0",
+          "optimal_value": 5.0,
+          "solution": [
+            5.0,
+            2.0,
+            2.0,
+            2.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            -0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "is_integral": true
+        },
+        {
+          "objective": "max_c_1",
+          "optimal_value": 7.0,
+          "solution": [
+            0.0,
+            7.0,
+            6.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.0,
+            0.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0
+          ],
+          "is_integral": true
+        },
+        {
+          "objective": "max_c_2",
+          "optimal_value": 7.0,
+          "solution": [
+            0.0,
+            4.0,
+            7.0,
+            0.0,
+            2.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.0,
+            0.0,
+            -0.0,
+            3.0,
+            0.0,
+            0.0
+          ],
+          "is_integral": true
+        },
+        {
+          "objective": "max_c_3",
+          "optimal_value": 7.0,
+          "solution": [
+            0.0,
+            0.0,
+            6.0,
+            7.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0
+          ],
+          "is_integral": true
+        },
+        {
+          "objective": "max_c_4",
+          "optimal_value": 7.0,
+          "solution": [
+            0.0,
+            3.0,
+            3.0,
+            0.0,
+            7.0,
+            0.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.0,
+            -0.0,
+            3.0,
+            0.0,
+            0.0
+          ],
+          "is_integral": true
+        },
+        {
+          "objective": "max_c_5",
+          "optimal_value": 5.0,
+          "solution": [
+            0.0,
+            4.0,
+            5.0,
+            0.0,
+            0.0,
+            5.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            -0.0,
+            2.0,
+            2.0,
+            0.0,
+            0.0
+          ],
+          "is_integral": true
+        }
+      ],
+      "ip_results": [
+        {
+          "objective": "max_c_0",
+          "optimal_value": 5.0,
+          "solution": [
+            5,
+            2,
+            2,
+            2,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "objective": "max_c_1",
+          "optimal_value": 7.0,
+          "solution": [
+            0,
+            7,
+            3,
+            0,
+            0,
+            3,
+            3,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "objective": "max_c_2",
+          "optimal_value": 7.0,
+          "solution": [
+            0,
+            3,
+            7,
+            0,
+            0,
+            3,
+            3,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "objective": "max_c_3",
+          "optimal_value": 7.0,
+          "solution": [
+            0,
+            4,
+            2,
+            7,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "integrality_gap_detected": false
+    },
+    {
+      "pair_index": 4,
+      "pair_keys": [
+        4436873709717,
+        4456163387397
+      ],
+      "intersection_basis": [
+        155,
+        82,
+        59,
+        4
+      ],
+      "annihilator_basis": [
+        161,
+        67,
+        18,
+        9
+      ],
+      "near_miss_color_profile": [
+        3,
+        5,
+        5,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "near_miss_feasible_local_lp": false,
+      "near_miss_local_violations": [
+        {
+          "constraint_idx": 38,
+          "lhs": 8,
+          "cap": 7,
+          "excess": 1
+        },
+        {
+          "constraint_idx": 53,
+          "lhs": 8,
+          "cap": 7,
+          "excess": 1
+        },
+        {
+          "constraint_idx": 57,
+          "lhs": 8,
+          "cap": 7,
+          "excess": 1
+        }
+      ],
+      "local_constraint_count": 66,
+      "local_violated_by_near_miss": 3,
+      "fractional_vertex_found": false,
+      "lp_results_head": [
+        {
+          "objective": "max_c_0",
+          "optimal_value": 5.0,
+          "solution": [
+            5.0,
+            2.0,
+            2.0,
+            2.0,
+            1.0,
+            0.0,
+            1.0,
+            0.0,
+            1.0,
+            0.0,
+            -0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "is_integral": true
+        },
+        {
+          "objective": "max_c_1",
+          "optimal_value": 7.0,
+          "solution": [
+            0.0,
+            7.0,
+            6.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            2.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0
+          ],
+          "is_integral": true
+        },
+        {
+          "objective": "max_c_2",
+          "optimal_value": 7.0,
+          "solution": [
+            0.0,
+            6.0,
+            7.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.0,
+            3.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0
+          ],
+          "is_integral": true
+        },
+        {
+          "objective": "max_c_3",
+          "optimal_value": 7.0,
+          "solution": [
+            0.0,
+            0.0,
+            6.0,
+            7.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.0,
+            3.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0
+          ],
+          "is_integral": true
+        },
+        {
+          "objective": "max_c_4",
+          "optimal_value": 7.0,
+          "solution": [
+            0.0,
+            3.0,
+            3.0,
+            0.0,
+            7.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.0,
+            3.0,
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "is_integral": true
+        },
+        {
+          "objective": "max_c_5",
+          "optimal_value": 5.0,
+          "solution": [
+            0.0,
+            5.0,
+            2.0,
+            1.0,
+            0.0,
+            5.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            2.0,
+            1.0,
+            2.0,
+            0.0,
+            0.0
+          ],
+          "is_integral": true
+        }
+      ],
+      "ip_results": [
+        {
+          "objective": "max_c_0",
+          "optimal_value": 5.0,
+          "solution": [
+            5,
+            2,
+            2,
+            2,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "objective": "max_c_1",
+          "optimal_value": 7.0,
+          "solution": [
+            0,
+            7,
+            2,
+            0,
+            0,
+            3,
+            3,
+            0,
+            0,
+            1,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "objective": "max_c_2",
+          "optimal_value": 7.0,
+          "solution": [
+            0,
+            6,
+            7,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "objective": "max_c_3",
+          "optimal_value": 7.0,
+          "solution": [
+            0,
+            6,
+            0,
+            7,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3
+          ]
+        }
+      ],
+      "integrality_gap_detected": false
+    }
+  ]
+}

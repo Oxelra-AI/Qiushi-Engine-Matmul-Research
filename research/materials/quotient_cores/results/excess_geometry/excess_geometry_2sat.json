@@ -1,0 +1,394 @@
+{
+  "schema": "s0908_excess_geometry_2sat_v1",
+  "theorem": {
+    "statement": "For E11 core slice with capacity m and block (R_j, C_i): e_B + e_C ≤ m-3 where e_B = rank(B_s)-3, e_C = rank(C_s)-3. Cap-3: two-sided purity. Cap-4: one-sided purity.",
+    "proof": "Sylvester: rank(B_s C_s^T) ≥ rank(B_s)+rank(C_s)-m. Since B_s C_s^T = M_s has rank 3: rank(B_s)+rank(C_s) ≤ m+3. col(M_s)⊆span(B_s), row(M_s)⊆span(C_s) ⟹ rank(B_s)≥3, rank(C_s)≥3."
+  },
+  "structure": {
+    "slice_blocks": {
+      "0": [
+        1,
+        0
+      ],
+      "1": [
+        2,
+        0
+      ],
+      "2": [
+        0,
+        1
+      ],
+      "3": [
+        1,
+        1
+      ],
+      "4": [
+        2,
+        1
+      ],
+      "5": [
+        0,
+        2
+      ],
+      "6": [
+        1,
+        2
+      ],
+      "7": [
+        2,
+        2
+      ]
+    },
+    "cross_pairs": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ]
+    ],
+    "cross_pair_count": 14,
+    "latin_triples": [
+      [
+        0,
+        2,
+        7
+      ],
+      [
+        0,
+        4,
+        5
+      ],
+      [
+        1,
+        2,
+        6
+      ],
+      [
+        1,
+        3,
+        5
+      ]
+    ],
+    "latin_triple_count": 4
+  },
+  "obstructions": {
+    "cross_pair_cap3_cap4": "Cap-3 slice forces both B-pure and C-pure. A sharing cap-4 slice in a cross pair (diff j AND diff i) is forced ¬B-pure AND ¬C-pure, contradicting cap-4 requirement.",
+    "latin_triple_cap4": "Three mutually-sharing cap-≤4 slices in a Latin triple: at most 1 B-pure (all j differ) + at most 1 C-pure (all i differ) = at most 2 pure, but 3 needed → UNSAT."
+  },
+  "pool_verification": {
+    "pool_path": "data/e11_flip_workspace/data/schemes_modp/e11core/mod2-rank21a.npy",
+    "rows": 519,
+    "terms_per_row": 21,
+    "sylvester_all_ok": true,
+    "excess_all_ok": true,
+    "cap4_oneside_pure": "260/260",
+    "twosat_sat": 519,
+    "twosat_unsat": 0,
+    "forced_vars_mean": 4.0,
+    "forced_vars_min": 0,
+    "forced_vars_max": 16,
+    "excess_distribution": {
+      "cap3_eB0_eC0": 237,
+      "cap4_eB0_eC1": 128,
+      "cap4_eB1_eC0": 132,
+      "cap5_eB0_eC2": 21,
+      "cap5_eB1_eC1": 486,
+      "cap5_eB2_eC0": 20,
+      "cap6_eB0_eC3": 3,
+      "cap6_eB1_eC1": 1,
+      "cap6_eB1_eC2": 354,
+      "cap6_eB2_eC1": 371,
+      "cap6_eB3_eC0": 2,
+      "cap7_eB1_eC2": 4,
+      "cap7_eB1_eC3": 98,
+      "cap7_eB2_eC1": 3,
+      "cap7_eB2_eC2": 387,
+      "cap7_eB3_eC1": 111,
+      "cap8_eB1_eC4": 28,
+      "cap8_eB2_eC2": 11,
+      "cap8_eB2_eC3": 228,
+      "cap8_eB3_eC2": 218,
+      "cap8_eB4_eC1": 32,
+      "cap9_eB1_eC5": 5,
+      "cap9_eB2_eC3": 12,
+      "cap9_eB2_eC4": 110,
+      "cap9_eB3_eC2": 15,
+      "cap9_eB3_eC3": 211,
+      "cap9_eB4_eC2": 83,
+      "cap9_eB5_eC1": 5,
+      "cap10_eB2_eC4": 16,
+      "cap10_eB2_eC5": 39,
+      "cap10_eB3_eC3": 23,
+      "cap10_eB3_eC4": 110,
+      "cap10_eB4_eC2": 7,
+      "cap10_eB4_eC3": 124,
+      "cap10_eB5_eC2": 24,
+      "cap10_eB6_eC1": 1,
+      "cap11_eB2_eC5": 2,
+      "cap11_eB2_eC6": 3,
+      "cap11_eB3_eC4": 28,
+      "cap11_eB3_eC5": 60,
+      "cap11_eB4_eC3": 20,
+      "cap11_eB4_eC4": 68,
+      "cap11_eB5_eC2": 2,
+      "cap11_eB5_eC3": 51,
+      "cap11_eB6_eC2": 13,
+      "cap12_eB2_eC6": 1,
+      "cap12_eB3_eC4": 2,
+      "cap12_eB3_eC5": 12,
+      "cap12_eB3_eC6": 5,
+      "cap12_eB4_eC3": 2,
+      "cap12_eB4_eC4": 10,
+      "cap12_eB4_eC5": 39,
+      "cap12_eB5_eC3": 12,
+      "cap12_eB5_eC4": 40,
+      "cap12_eB6_eC2": 1,
+      "cap12_eB6_eC3": 5,
+      "cap13_eB3_eC5": 1,
+      "cap13_eB3_eC6": 3,
+      "cap13_eB4_eC4": 2,
+      "cap13_eB4_eC5": 15,
+      "cap13_eB4_eC6": 3,
+      "cap13_eB5_eC4": 16,
+      "cap13_eB5_eC5": 19,
+      "cap13_eB6_eC4": 5,
+      "cap14_eB4_eC5": 6,
+      "cap14_eB4_eC6": 3,
+      "cap14_eB5_eC4": 2,
+      "cap14_eB5_eC5": 15,
+      "cap14_eB5_eC6": 1,
+      "cap14_eB6_eC5": 3,
+      "cap15_eB4_eC6": 1,
+      "cap15_eB5_eC5": 4,
+      "cap15_eB5_eC6": 4,
+      "cap15_eB6_eC5": 5,
+      "cap16_eB5_eC5": 3,
+      "cap16_eB5_eC6": 2,
+      "cap16_eB6_eC5": 2,
+      "cap17_eB5_eC6": 1
+    },
+    "cap_summary": {
+      "cap3": {
+        "total": 237,
+        "excess_pairs": {
+          "(0,0)": 237
+        }
+      },
+      "cap4": {
+        "total": 260,
+        "excess_pairs": {
+          "(0,1)": 128,
+          "(1,0)": 132
+        }
+      },
+      "cap5": {
+        "total": 527,
+        "excess_pairs": {
+          "(0,2)": 21,
+          "(1,1)": 486,
+          "(2,0)": 20
+        }
+      },
+      "cap6": {
+        "total": 731,
+        "excess_pairs": {
+          "(0,3)": 3,
+          "(1,1)": 1,
+          "(1,2)": 354,
+          "(2,1)": 371,
+          "(3,0)": 2
+        }
+      },
+      "cap7": {
+        "total": 603,
+        "excess_pairs": {
+          "(1,2)": 4,
+          "(1,3)": 98,
+          "(2,1)": 3,
+          "(2,2)": 387,
+          "(3,1)": 111
+        }
+      },
+      "cap8": {
+        "total": 517,
+        "excess_pairs": {
+          "(1,4)": 28,
+          "(2,2)": 11,
+          "(2,3)": 228,
+          "(3,2)": 218,
+          "(4,1)": 32
+        }
+      },
+      "cap9": {
+        "total": 441,
+        "excess_pairs": {
+          "(1,5)": 5,
+          "(2,3)": 12,
+          "(2,4)": 110,
+          "(3,2)": 15,
+          "(3,3)": 211,
+          "(4,2)": 83,
+          "(5,1)": 5
+        }
+      },
+      "cap10": {
+        "total": 344,
+        "excess_pairs": {
+          "(2,4)": 16,
+          "(2,5)": 39,
+          "(3,3)": 23,
+          "(3,4)": 110,
+          "(4,2)": 7,
+          "(4,3)": 124,
+          "(5,2)": 24,
+          "(6,1)": 1
+        }
+      },
+      "cap11": {
+        "total": 247,
+        "excess_pairs": {
+          "(2,5)": 2,
+          "(2,6)": 3,
+          "(3,4)": 28,
+          "(3,5)": 60,
+          "(4,3)": 20,
+          "(4,4)": 68,
+          "(5,2)": 2,
+          "(5,3)": 51,
+          "(6,2)": 13
+        }
+      },
+      "cap12": {
+        "total": 129,
+        "excess_pairs": {
+          "(2,6)": 1,
+          "(3,4)": 2,
+          "(3,5)": 12,
+          "(3,6)": 5,
+          "(4,3)": 2,
+          "(4,4)": 10,
+          "(4,5)": 39,
+          "(5,3)": 12,
+          "(5,4)": 40,
+          "(6,2)": 1,
+          "(6,3)": 5
+        }
+      },
+      "cap13": {
+        "total": 64,
+        "excess_pairs": {
+          "(3,5)": 1,
+          "(3,6)": 3,
+          "(4,4)": 2,
+          "(4,5)": 15,
+          "(4,6)": 3,
+          "(5,4)": 16,
+          "(5,5)": 19,
+          "(6,4)": 5
+        }
+      },
+      "cap14": {
+        "total": 30,
+        "excess_pairs": {
+          "(4,5)": 6,
+          "(4,6)": 3,
+          "(5,4)": 2,
+          "(5,5)": 15,
+          "(5,6)": 1,
+          "(6,5)": 3
+        }
+      },
+      "cap15": {
+        "total": 14,
+        "excess_pairs": {
+          "(4,6)": 1,
+          "(5,5)": 4,
+          "(5,6)": 4,
+          "(6,5)": 5
+        }
+      },
+      "cap16": {
+        "total": 7,
+        "excess_pairs": {
+          "(5,5)": 3,
+          "(5,6)": 2,
+          "(6,5)": 2
+        }
+      },
+      "cap17": {
+        "total": 1,
+        "excess_pairs": {
+          "(5,6)": 1
+        }
+      }
+    }
+  },
+  "rank19_analysis": {
+    "min_total_weight": 27,
+    "max_cap3_slices": 5,
+    "cap3_5_of_8_configs": {
+      "total": 56,
+      "with_cross_pair": 56,
+      "cross_count_dist": {
+        "5": 4,
+        "6": 12,
+        "7": 12,
+        "8": 12,
+        "9": 12,
+        "10": 4
+      }
+    }
+  },
+  "elapsed_sec": 0.585
+}

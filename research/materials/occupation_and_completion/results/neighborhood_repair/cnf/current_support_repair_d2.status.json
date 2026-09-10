@@ -1,0 +1,29 @@
+{
+  "cadical_elapsed_sec": 21.617,
+  "cadical_exit": 20,
+  "cadical_log": "data/neighborhood_repair/cnf/current_support_repair_d2.cadical.log",
+  "cadical_log_parse": {
+    "contains_sat": false,
+    "contains_unsat": true,
+    "contains_verified": false,
+    "tail": "  9.81 581  0 0   0  0    0    0 0.0 0 0 2 6  0% 2172658 473957 44%\nc s 10.29 595  0 0   0  0    0    0 0.0 0 0 2 6  0% 2167363 473957 44%\nc e 10.85 596  0 0   0  0    0    0 0.0 0 0 2 6  0% 2166839 473724 44%\nc s 11.31 596  0 0   0  0    0    0 0.0 0 0 2 6  0% 2164796 473724 44%\nc e 11.90 596  0 0   0  0    0    0 0.0 0 0 2 6  0% 2163488 473168 44%\nc P 12.90 625  0 0   0  0    0    0 0.0 0 0 2 6  0% 2163488 473168 44%\nc ) 12.90 625  0 0   0  0    0    0 0.0 0 0 2 6  0% 2163488 473168 44%\nc { 20.10 626  0 0   0  0    0    0 0.0 0 0 2 6  0% 2163488 473168 44%\nc } 21.20 642 139 0   1  9   69   38 2.7 12 5 2 6 24% 2163488 141898 13%\nc 0 21.20 642 139 0   1  9   69   38 2.7 12 5 2 6 24% 2163488 141898 13%\nc \nc --- [ closing proof ] ------------------------------------------------------\nc \nc DRAT proof file 'data/neighborhood_repair/cnf/current_support_repair_d2.drat' closed\nc DRAT 2548061 added clauses 51.98%\nc DRAT 2354190 deleted clauses 48.02%\nc DRAT 98390006 bytes (93.83 MB)\nc \nc --- [ result ] -------------------------------------------------------------\nc \ns UNSATISFIABLE\nc \nc --- [ run-time profiling ] -------------------------------------------------\nc \nc process time taken by individual solving procedures\nc (percentage relative to process time for solving)\nc \nc        12.69   61.91% search\nc        11.59   56.53% lucky\nc         7.81   38.09% preprocess\nc         7.18   35.02% simplify\nc         4.85   23.66% fastelim\nc         1.41    6.86% subsume\nc         1.10    5.38% unstable\nc         0.91    4.41% congruence\nc         0.70    3.41% parse\nc         0.02    0.09% backbone\nc   =================================\nc        20.50   96.70% solve\nc \nc last line shows process time for solving\nc (percentage relative to total process time)\nc \nc --- [ statistics ] ---------------------------------------------------------\nc \nc chronological:                26        37.68 %  of conflicts\nc conflicts:                    69         3.37    per second\nc backbone:                      1         0.00 %  of vars\nc decisions:                   653        31.85    per second\nc eliminated:               602595        56.02 %  of all variables\nc fixed:                    331270        30.79 %  of all variables\nc learned:                      64        92.75 %  per conflict\nc learned_lits:               3199       100.00 %  learned literals\nc minimized:                     0         0.00 %  learned literals\nc shrunken:                   2327        72.74 %  learned literals\nc minishrunken:                103         3.22 %  learned literals\nc otfs:                          1         1.45 %  of conflict\nc propagations:            7733799         0.38 M  per second\nc restarts:                      1        69.00    interval\nc subsumed:                   7363         0.16 %  of all clauses\nc strengthened:                  1         0.00 %  of all clauses\nc ticks:                  24822006         3.21    propagation\nc weakened:                2346826         2.55    average size\nc \nc seconds are measured in process time for solving\nc \nc --- [ glue usage ] ---------------------------------------------------------\nc \nc focused glue 3 used 13 clauses 16.88% accumulated 63.63% tier1\nc focused glue 4 used 7 clauses 9.090% accumulated 72.72% tier2\nc \nc stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1\nc stable glue 3 used 0 clauses 0.000% accumulated 0.000%\nc stable glue 4 used 0 clauses 0.000% accumulated 0.000%\nc stable glue 5 used 0 clauses 0.000% accumulated 0.000%\nc stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2\nc \nc \nc --- [ resources ] ----------------------------------------------------------\nc \nc total process time since initialization:        21.20    seconds\nc total real time since initialization:           21.21    seconds\nc maximum resident set size of process:         1172.63    MB\nc \nc --- [ shutting down ] ------------------------------------------------------\nc \nc exit 20\n"
+  },
+  "cnf": "data/neighborhood_repair/cnf/current_support_repair_d2.cnf",
+  "drat": "data/neighborhood_repair/cnf/current_support_repair_d2.drat",
+  "drat_trim_elapsed_sec": 11.603,
+  "drat_trim_exit": 0,
+  "drat_trim_log": "data/neighborhood_repair/cnf/current_support_repair_d2.drat_trim.log",
+  "drat_trim_log_parse": {
+    "contains_sat": false,
+    "contains_unsat": false,
+    "contains_verified": true,
+    "tail": "\nc parsing input formula with 1075763 variables and 2300926 clauses\n\nc finished parsing\n\nc detected empty clause; start verification via backward checking\n\nc 4354 of 2300926 clauses in core                            \n\nc 2402 of 2548062 lemmas in core using 13144 resolution steps\n\nc 0 RAT lemmas in core; 6 redundant literals in core lemmas\n\ns VERIFIED\n\nc verification time: 11.552 seconds\n"
+  },
+  "hashes": {
+    "data/neighborhood_repair/cnf/current_support_repair_d2.cadical.log": "c65ea496f0b72675f78020d2f373c43ec20eb7ffd75cc9fde83205e8958930e5",
+    "data/neighborhood_repair/cnf/current_support_repair_d2.cnf": "187ae7171e15e49537a9e14d7914a5e24b8068bac85fab18248f87bfa90aa4e9",
+    "data/neighborhood_repair/cnf/current_support_repair_d2.drat": "9cdf1dab30a1009829dff8253c5c018dc054767648c1619dc08142afbcb0fc59",
+    "data/neighborhood_repair/cnf/current_support_repair_d2.drat_trim.log": "c591bb889c046d611b9594452d489dcb374bcb6be235ddddf60bdbd5ac8ce1fb",
+    "data/neighborhood_repair/cnf/current_support_repair_d2.meta.json": "c14b37feaad8f6ad5a0ce714b1e90f08e27aa39dc787ba74d1267d4c8874bb70"
+  }
+}

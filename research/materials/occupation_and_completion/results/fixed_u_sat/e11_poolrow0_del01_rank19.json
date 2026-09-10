@@ -1,0 +1,52 @@
+{
+  "clauses": 14337,
+  "cnf_path": "data/fixed_u_sat/e11_poolrow0_del01_rank19.cnf",
+  "core": "data/restricted_cores/mask_001_E11_core.npy",
+  "known_check": {
+    "diff_count": 94,
+    "known_rank": 19,
+    "verified": false
+  },
+  "rank": 19,
+  "solve": {
+    "elapsed_sec": 0.22000980377197266,
+    "returncode": 20,
+    "solver": "kissat",
+    "status": "UNSAT",
+    "stderr_tail": "",
+    "stdout_tail": "\nc {  0.21  7 36 6 5 150 3 7940 4032 2.1 13 6 4 8 16% 2879 9948 3217 81%\nc i  0.21  7 36 6 5 174 3 8029 4095 2.1 13 6 4 8 16% 2888 9948 3216 81%\nc i  0.22  7 34 6 5 176 3 8281 4247 2.1 12 6 4 8 16% 2898 9948 3215 81%\nc i  0.22  7 34 6 5 176 3 8320 4280 2.1 12 6 3 8 16% 2898 9948 3214 81%\nc i  0.22  7 34 6 5 176 3 8367 4305 2.1 12 6 3 8 16% 2902 9948 3204 80%\nc i  0.22  7 34 6 5 176 3 8372 4307 2.1 12 6 3 8 16% 2904 9948 3148 79%\nc i  0.22  7 34 6 5 176 3 8373 4307 2.1 12 6 3 8 16% 2904 9948 3144 79%\nc i  0.22  7 34 6 5 176 3 8374 4307 2.1 12 6 3 8 16% 2904 9948 3139 79%\nc i  0.22  7 34 6 5 176 3 8375 4307 2.1 12 6 3 8 16% 2904 9948 3135 79%\nc }  0.22  7 34 6 5 176 3 8377 4307 2.1 12 6 3 8 16% 2904 9948 3123 78%\nc\nc seconds  switched  rate       size/glue tier1    binary       remaining\nc        MB reductions conflicts      size  tier2    irredundant\nc         level restarts   redundant    glue   trail       variables\nc\nc 0  0.22  7 34 6 5 176 3 8377 4307 2.1 12 6 3 8 16% 2904 9948 3123 78%\nc\nc ---- [ result ] ------------------------------------------------------------\nc\ns UNSATISFIABLE\nc\nc ---- [ profiling ] ---------------------------------------------------------\nc\nc           0.11   52.04 %  search\nc           0.10   44.82 %  probe\nc           0.07   30.23 %  simplify\nc           0.06   27.11 %  focused\nc           0.05   24.93 %  stable\nc           0.05   23.50 %  sweep\nc           0.03   15.99 %  preprocess\nc           0.03   12.92 %  vivify\nc           0.01    4.58 %  congruence\nc           0.00    1.62 %  substitute\nc           0.00    1.47 %  factor\nc           0.00    1.37 %  walking\nc           0.00    1.30 %  reduce\nc           0.00    1.23 %  parse\nc           0.00    0.50 %  transitive\nc           0.00    0.42 %  lucky\nc           0.00    0.20 %  backbone\nc =============================================\nc           0.22  100.00 %  total\nc\nc ---- [ statistics ] --------------------------------------------------------\nc\nc chronological:                            6                0 %  conflicts\nc conflicts:                             8377            38362.55 per second\nc congruent:                              651               16 %  variables\nc decisions:                            20118                2.40 per conflict\nc iterations:                              25                1 %  variables\nc propagations:                       1220615          5589818    per second\nc reductions:                               5             1675    interval\nc rephased:                                 3             2792    interval\nc restarts:                               176               48    interval\nc substituted:                            651               16 %  variables\nc switched:                                 6             1396    interval\nc vivified:                              1318               12 %  checks\nc walks:                                    1             8377    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 3   used 1865 clauses 17.38% accumulated 54.48% tier1\nc focused glue 4   used 1315 clauses 12.26% accumulated 66.74%\nc focused glue 5-6 used 1949 clauses 18.16% accumulated 84.90%\nc focused glue 7   used  495 clauses  4.61% accumulated 89.52%\nc focused glue 8   used  353 clauses  3.29% accumulated 92.81% tier2\nc\nc stable glue 4   used 1194 clauses 11.17% accumulated 59.84% tier1\nc stable glue 5   used  959 clauses  8.97% accumulated 68.82%\nc stable glue 6-9 used 1945 clauses 18.20% accumulated 87.02%\nc stable glue 10  used  246 clauses  2.30% accumulated 89.32%\nc stable glue 11  used  155 clauses  1.45% accumulated 90.77% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         35872768 bytes         34 MB\nc process-time:                                              0.22 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n"
+  },
+  "source": {
+    "deleted": [
+      0,
+      1
+    ],
+    "original_rank": 21,
+    "pool": "data/e11_flip_workspace/data/schemes_modp/e11core/mod2-rank21a.npy",
+    "row": 0,
+    "source": "pool"
+  },
+  "u_masks": [
+    16,
+    4,
+    3,
+    28,
+    100,
+    1,
+    65,
+    192,
+    8,
+    101,
+    3,
+    216,
+    224,
+    196,
+    3,
+    36,
+    1,
+    112,
+    144
+  ],
+  "u_rank": 8,
+  "vars": 3987
+}

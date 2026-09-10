@@ -1,0 +1,2537 @@
+{
+  "canonical_wang_stats": {
+    "by_dim8": {
+      "0": 1,
+      "1": 255,
+      "2": 10795,
+      "3": 97155,
+      "4": 200787,
+      "5": 97155,
+      "6": 10795,
+      "7": 255,
+      "8": 1
+    },
+    "cap_distribution_0_to_8": {
+      "0": 1,
+      "1": 687,
+      "2": 34664,
+      "3": 83046,
+      "4": 138902,
+      "5": 81540,
+      "6": 8130,
+      "7": 61232,
+      "8": 865
+    },
+    "cap_distribution_all": {
+      "0": 1,
+      "1": 687,
+      "10": 7520,
+      "13": 578,
+      "16": 33,
+      "19": 1,
+      "2": 34664,
+      "3": 83046,
+      "4": 138902,
+      "5": 81540,
+      "6": 8130,
+      "7": 61232,
+      "8": 865
+    },
+    "ghw_results_canonical": [
+      {
+        "L_r": 0,
+        "dim8": 8,
+        "dim9": 9,
+        "gap": 11,
+        "lb_histogram": {
+          "0": 1
+        },
+        "max_lb": 0,
+        "r": 0,
+        "singleton_bound": 11,
+        "singleton_violation": false,
+        "subspace_count": 1
+      },
+      {
+        "L_r": 3,
+        "dim8": 7,
+        "dim9": 8,
+        "gap": 9,
+        "lb_histogram": {
+          "3": 33,
+          "6": 150,
+          "9": 72
+        },
+        "max_lb": 9,
+        "r": 1,
+        "singleton_bound": 12,
+        "singleton_violation": false,
+        "subspace_count": 255
+      },
+      {
+        "L_r": 6,
+        "dim8": 6,
+        "dim9": 7,
+        "gap": 7,
+        "lb_histogram": {
+          "12": 5460,
+          "14": 192,
+          "6": 428,
+          "9": 4715
+        },
+        "max_lb": 14,
+        "r": 2,
+        "singleton_bound": 13,
+        "singleton_violation": false,
+        "subspace_count": 10795
+      },
+      {
+        "L_r": 9,
+        "dim8": 5,
+        "dim9": 6,
+        "gap": 5,
+        "lb_histogram": {
+          "11": 852,
+          "12": 46974,
+          "13": 7632,
+          "14": 29826,
+          "15": 9090,
+          "16": 48,
+          "9": 2733
+        },
+        "max_lb": 16,
+        "r": 3,
+        "singleton_bound": 14,
+        "singleton_violation": false,
+        "subspace_count": 97155
+      },
+      {
+        "L_r": 11,
+        "dim8": 4,
+        "dim9": 5,
+        "gap": 4,
+        "lb_histogram": {
+          "11": 13,
+          "12": 8798,
+          "13": 498,
+          "14": 50424,
+          "15": 117009,
+          "16": 24045
+        },
+        "max_lb": 16,
+        "r": 4,
+        "singleton_bound": 15,
+        "singleton_violation": false,
+        "subspace_count": 200787
+      },
+      {
+        "L_r": 14,
+        "dim8": 3,
+        "dim9": 4,
+        "gap": 2,
+        "lb_histogram": {
+          "14": 1098,
+          "15": 12801,
+          "16": 58428,
+          "17": 24828
+        },
+        "max_lb": 17,
+        "r": 5,
+        "singleton_bound": 16,
+        "singleton_violation": false,
+        "subspace_count": 97155
+      },
+      {
+        "L_r": 15,
+        "dim8": 2,
+        "dim9": 3,
+        "gap": 2,
+        "lb_histogram": {
+          "15": 2,
+          "16": 525,
+          "17": 9830,
+          "18": 438
+        },
+        "max_lb": 18,
+        "r": 6,
+        "singleton_bound": 17,
+        "singleton_violation": false,
+        "subspace_count": 10795
+      },
+      {
+        "L_r": 17,
+        "dim8": 1,
+        "dim9": 2,
+        "gap": 1,
+        "lb_histogram": {
+          "17": 6,
+          "18": 249
+        },
+        "max_lb": 18,
+        "r": 7,
+        "singleton_bound": 18,
+        "singleton_violation": false,
+        "subspace_count": 255
+      },
+      {
+        "L_r": 19,
+        "dim8": 0,
+        "dim9": 1,
+        "gap": 0,
+        "lb_histogram": {
+          "19": 1
+        },
+        "max_lb": 19,
+        "r": 8,
+        "singleton_bound": 19,
+        "singleton_violation": false,
+        "subspace_count": 1
+      }
+    ],
+    "rows_cap_0_to_8": 409067,
+    "total_keys8": 417199,
+    "violation_found": false
+  },
+  "elapsed_sec": 39.605,
+  "peer_artifacts_review": {
+    "cap3_stream_cap48_check.json": {
+      "cap3_solutions": 31776,
+      "cap48_fail": 31776,
+      "cap48_pass": 0,
+      "elapsed_sec": 120.00250196456909,
+      "fail_by_cap": {
+        "7": 31776
+      },
+      "first_survivor": null,
+      "rejection_rate": 1.0,
+      "timeout": true
+    },
+    "dfs_pilot_cap3.json": {
+      "cap_distribution": {
+        "1": 687,
+        "2": 34664,
+        "3": 83046
+      },
+      "constraining_rows": 118397,
+      "elapsed_sec": 90.00290894508362,
+      "max_cap": 3,
+      "max_depth": 19,
+      "node_count_by_depth": {
+        "0": 1,
+        "1": 1,
+        "10": 1,
+        "11": 1,
+        "12": 2,
+        "13": 33,
+        "14": 426,
+        "15": 2748,
+        "16": 11153,
+        "17": 24161,
+        "18": 30809,
+        "19": 53934,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      },
+      "solutions_found": 26967,
+      "solutions_head": [
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          16,
+          17,
+          26,
+          27,
+          32,
+          36,
+          64,
+          65,
+          108,
+          109,
+          128,
+          146
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          16,
+          17,
+          26,
+          27,
+          32,
+          36,
+          64,
+          65,
+          108,
+          109,
+          128,
+          177
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          16,
+          17,
+          26,
+          27,
+          32,
+          36,
+          64,
+          65,
+          108,
+          109,
+          128,
+          179
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          16,
+          17,
+          26,
+          27,
+          32,
+          36,
+          64,
+          65,
+          108,
+          109,
+          128,
+          180
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          16,
+          17,
+          26,
+          27,
+          32,
+          36,
+          64,
+          65,
+          108,
+          109,
+          128,
+          182
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          16,
+          17,
+          26,
+          27,
+          32,
+          36,
+          64,
+          65,
+          108,
+          109,
+          128,
+          195
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          16,
+          17,
+          26,
+          27,
+          32,
+          36,
+          64,
+          65,
+          108,
+          109,
+          128,
+          216
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          16,
+          17,
+          26,
+          27,
+          32,
+          36,
+          64,
+          65,
+          108,
+          109,
+          128,
+          219
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          16,
+          17,
+          26,
+          27,
+          32,
+          36,
+          64,
+          65,
+          108,
+          109,
+          128,
+          224
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          16,
+          17,
+          26,
+          27,
+          32,
+          36,
+          64,
+          65,
+          108,
+          109,
+          128,
+          227
+        ]
+      ],
+      "status": "ok",
+      "timeout": true
+    },
+    "dfs_pilot_cap3_solutions_head_canonical_cap0_to_8_checks": [
+      {
+        "check": {
+          "first_failures": [
+            {
+              "basis8": [
+                16,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                64,
+                40,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                34,
+                16,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                64,
+                34,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                68,
+                32,
+                8,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                66,
+                32,
+                8,
+                6,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                8,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            },
+            {
+              "basis8": [
+                16,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            },
+            {
+              "basis8": [
+                26,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            },
+            {
+              "basis8": [
+                64,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            }
+          ],
+          "ok": false,
+          "violation_count_cap0_to_8": 298
+        },
+        "index": 0,
+        "support": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          16,
+          17,
+          26,
+          27,
+          32,
+          36,
+          64,
+          65,
+          108,
+          109,
+          128,
+          146
+        ]
+      },
+      {
+        "check": {
+          "first_failures": [
+            {
+              "basis8": [
+                16,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                64,
+                40,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                34,
+                16,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                64,
+                34,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                68,
+                32,
+                8,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                176,
+                100,
+                8,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                156,
+                64,
+                44,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                66,
+                32,
+                8,
+                6,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                150,
+                66,
+                38,
+                8,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                150,
+                64,
+                38,
+                10,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 31
+            }
+          ],
+          "ok": false,
+          "violation_count_cap0_to_8": 347
+        },
+        "index": 1,
+        "support": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          16,
+          17,
+          26,
+          27,
+          32,
+          36,
+          64,
+          65,
+          108,
+          109,
+          128,
+          177
+        ]
+      },
+      {
+        "check": {
+          "first_failures": [
+            {
+              "basis8": [
+                16,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                64,
+                40,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                34,
+                16,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                64,
+                34,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                68,
+                32,
+                8,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                178,
+                100,
+                8,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                158,
+                64,
+                44,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                66,
+                32,
+                8,
+                6,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                148,
+                66,
+                38,
+                8,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                148,
+                64,
+                38,
+                10,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 31
+            }
+          ],
+          "ok": false,
+          "violation_count_cap0_to_8": 337
+        },
+        "index": 2,
+        "support": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          16,
+          17,
+          26,
+          27,
+          32,
+          36,
+          64,
+          65,
+          108,
+          109,
+          128,
+          179
+        ]
+      },
+      {
+        "check": {
+          "first_failures": [
+            {
+              "basis8": [
+                16,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                64,
+                40,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                34,
+                16,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                64,
+                34,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                68,
+                32,
+                8,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                66,
+                32,
+                8,
+                6,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                8,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            },
+            {
+              "basis8": [
+                16,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            },
+            {
+              "basis8": [
+                26,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            },
+            {
+              "basis8": [
+                64,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            }
+          ],
+          "ok": false,
+          "violation_count_cap0_to_8": 303
+        },
+        "index": 3,
+        "support": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          16,
+          17,
+          26,
+          27,
+          32,
+          36,
+          64,
+          65,
+          108,
+          109,
+          128,
+          180
+        ]
+      },
+      {
+        "check": {
+          "first_failures": [
+            {
+              "basis8": [
+                16,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                64,
+                40,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                34,
+                16,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                64,
+                34,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                68,
+                32,
+                8,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                66,
+                32,
+                8,
+                6,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                8,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            },
+            {
+              "basis8": [
+                16,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            },
+            {
+              "basis8": [
+                26,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            },
+            {
+              "basis8": [
+                64,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            }
+          ],
+          "ok": false,
+          "violation_count_cap0_to_8": 295
+        },
+        "index": 4,
+        "support": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          16,
+          17,
+          26,
+          27,
+          32,
+          36,
+          64,
+          65,
+          108,
+          109,
+          128,
+          182
+        ]
+      },
+      {
+        "check": {
+          "first_failures": [
+            {
+              "basis8": [
+                16,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                64,
+                40,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                34,
+                16,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                64,
+                34,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                68,
+                32,
+                8,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                66,
+                32,
+                8,
+                6,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                8,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            },
+            {
+              "basis8": [
+                16,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            },
+            {
+              "basis8": [
+                26,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            },
+            {
+              "basis8": [
+                64,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            }
+          ],
+          "ok": false,
+          "violation_count_cap0_to_8": 302
+        },
+        "index": 5,
+        "support": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          16,
+          17,
+          26,
+          27,
+          32,
+          36,
+          64,
+          65,
+          108,
+          109,
+          128,
+          195
+        ]
+      },
+      {
+        "check": {
+          "first_failures": [
+            {
+              "basis8": [
+                16,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                64,
+                40,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                34,
+                16,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                64,
+                34,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                68,
+                32,
+                8,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                66,
+                32,
+                8,
+                6,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                8,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            },
+            {
+              "basis8": [
+                16,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            },
+            {
+              "basis8": [
+                26,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            },
+            {
+              "basis8": [
+                64,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            }
+          ],
+          "ok": false,
+          "violation_count_cap0_to_8": 295
+        },
+        "index": 6,
+        "support": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          16,
+          17,
+          26,
+          27,
+          32,
+          36,
+          64,
+          65,
+          108,
+          109,
+          128,
+          216
+        ]
+      },
+      {
+        "check": {
+          "first_failures": [
+            {
+              "basis8": [
+                16,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                64,
+                40,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                34,
+                16,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                64,
+                34,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                68,
+                32,
+                8,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                66,
+                32,
+                8,
+                6,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                8,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            },
+            {
+              "basis8": [
+                16,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            },
+            {
+              "basis8": [
+                26,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            },
+            {
+              "basis8": [
+                64,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            }
+          ],
+          "ok": false,
+          "violation_count_cap0_to_8": 297
+        },
+        "index": 7,
+        "support": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          16,
+          17,
+          26,
+          27,
+          32,
+          36,
+          64,
+          65,
+          108,
+          109,
+          128,
+          219
+        ]
+      },
+      {
+        "check": {
+          "first_failures": [
+            {
+              "basis8": [
+                16,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                64,
+                40,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                34,
+                16,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                64,
+                34,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                68,
+                32,
+                8,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                66,
+                32,
+                8,
+                6,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                8,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            },
+            {
+              "basis8": [
+                16,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            },
+            {
+              "basis8": [
+                26,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            },
+            {
+              "basis8": [
+                64,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            }
+          ],
+          "ok": false,
+          "violation_count_cap0_to_8": 304
+        },
+        "index": 8,
+        "support": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          16,
+          17,
+          26,
+          27,
+          32,
+          36,
+          64,
+          65,
+          108,
+          109,
+          128,
+          224
+        ]
+      },
+      {
+        "check": {
+          "first_failures": [
+            {
+              "basis8": [
+                16,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                64,
+                40,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                34,
+                16,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                64,
+                34,
+                10,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 3,
+              "occupancy": 7,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                68,
+                32,
+                8,
+                1
+              ],
+              "cap": 4,
+              "dim8": 4,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 15
+            },
+            {
+              "basis8": [
+                66,
+                32,
+                8,
+                6,
+                1
+              ],
+              "cap": 4,
+              "dim8": 5,
+              "excess": 2,
+              "occupancy": 6,
+              "point_count": 31
+            },
+            {
+              "basis8": [
+                8,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            },
+            {
+              "basis8": [
+                16,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            },
+            {
+              "basis8": [
+                26,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            },
+            {
+              "basis8": [
+                64,
+                4,
+                1
+              ],
+              "cap": 4,
+              "dim8": 3,
+              "excess": 1,
+              "occupancy": 5,
+              "point_count": 7
+            }
+          ],
+          "ok": false,
+          "violation_count_cap0_to_8": 305
+        },
+        "index": 9,
+        "support": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          16,
+          17,
+          26,
+          27,
+          32,
+          36,
+          64,
+          65,
+          108,
+          109,
+          128,
+          227
+        ]
+      }
+    ],
+    "dfs_pilot_cap5.json": {
+      "cap_distribution": {
+        "1": 687,
+        "2": 34664,
+        "3": 83046,
+        "4": 138902,
+        "5": 81540
+      },
+      "constraining_rows": 338839,
+      "elapsed_sec": 90.00779581069946,
+      "max_cap": 5,
+      "max_depth": 19,
+      "node_count_by_depth": {
+        "0": 1,
+        "1": 1,
+        "10": 586,
+        "11": 3815,
+        "12": 9781,
+        "13": 9998,
+        "14": 3730,
+        "15": 252,
+        "16": 30,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 2,
+        "9": 39
+      },
+      "solutions_found": 0,
+      "solutions_head": [],
+      "status": "ok",
+      "timeout": true
+    },
+    "ghw_singleton_test.json": {
+      "code_params": {
+        "k": 8,
+        "n": 19
+      },
+      "e11_containing_subspaces": 417199,
+      "elapsed_sec": 4.511914253234863,
+      "results_by_r": [
+        {
+          "L_r": 0,
+          "dim8": 8,
+          "dim9": 9,
+          "gap": 11,
+          "lb_histogram": {
+            "0": 1
+          },
+          "max_lb": 0,
+          "r": 0,
+          "result": "slack 11",
+          "singleton_bound": 11,
+          "subspace_count": 1
+        },
+        {
+          "L_r": 3,
+          "dim8": 7,
+          "dim9": 8,
+          "gap": 9,
+          "lb_histogram": {
+            "3": 33,
+            "6": 150,
+            "9": 72
+          },
+          "max_lb": 9,
+          "r": 1,
+          "result": "slack 9",
+          "singleton_bound": 12,
+          "subspace_count": 255
+        },
+        {
+          "L_r": 6,
+          "dim8": 6,
+          "dim9": 7,
+          "gap": 7,
+          "lb_histogram": {
+            "12": 5460,
+            "14": 192,
+            "6": 428,
+            "9": 4715
+          },
+          "max_lb": 14,
+          "r": 2,
+          "result": "slack 7",
+          "singleton_bound": 13,
+          "subspace_count": 10795
+        },
+        {
+          "L_r": 9,
+          "dim8": 5,
+          "dim9": 6,
+          "gap": 5,
+          "lb_histogram": {
+            "11": 852,
+            "12": 46974,
+            "13": 7632,
+            "14": 29826,
+            "15": 9090,
+            "16": 48,
+            "9": 2733
+          },
+          "max_lb": 16,
+          "r": 3,
+          "result": "slack 5",
+          "singleton_bound": 14,
+          "subspace_count": 97155
+        },
+        {
+          "L_r": 11,
+          "dim8": 4,
+          "dim9": 5,
+          "gap": 4,
+          "lb_histogram": {
+            "11": 13,
+            "12": 8798,
+            "13": 498,
+            "14": 50424,
+            "15": 117009,
+            "16": 24045
+          },
+          "max_lb": 16,
+          "r": 4,
+          "result": "slack 4",
+          "singleton_bound": 15,
+          "subspace_count": 200787
+        },
+        {
+          "L_r": 14,
+          "dim8": 3,
+          "dim9": 4,
+          "gap": 2,
+          "lb_histogram": {
+            "14": 1098,
+            "15": 12801,
+            "16": 58428,
+            "17": 24828
+          },
+          "max_lb": 17,
+          "r": 5,
+          "result": "slack 2",
+          "singleton_bound": 16,
+          "subspace_count": 97155
+        },
+        {
+          "L_r": 15,
+          "dim8": 2,
+          "dim9": 3,
+          "gap": 2,
+          "lb_histogram": {
+            "15": 2,
+            "16": 525,
+            "17": 9830,
+            "18": 438
+          },
+          "max_lb": 18,
+          "r": 6,
+          "result": "slack 2",
+          "singleton_bound": 17,
+          "subspace_count": 10795
+        },
+        {
+          "L_r": 17,
+          "dim8": 1,
+          "dim9": 2,
+          "gap": 1,
+          "lb_histogram": {
+            "17": 6,
+            "18": 249
+          },
+          "max_lb": 18,
+          "r": 7,
+          "result": "slack 1",
+          "singleton_bound": 18,
+          "subspace_count": 255
+        },
+        {
+          "L_r": 19,
+          "dim8": 0,
+          "dim9": 1,
+          "gap": 0,
+          "lb_histogram": {
+            "19": 1
+          },
+          "max_lb": 19,
+          "r": 8,
+          "result": "TIGHT",
+          "singleton_bound": 19,
+          "subspace_count": 1
+        }
+      ],
+      "status": "ok",
+      "test": "ghw_singleton_e11_core_rank19",
+      "violation_found": false
+    },
+    "review_conclusion": {
+      "cap3_stream_timeout": true,
+      "dfs_cap3_timeout": true,
+      "dfs_cap5_timeout": true,
+      "meaning": "The saved DFS/stream files are timeout-limited pilots. The fact that all generated branch-1 cap<=3 supports fail later caps is useful evidence, but is not an exhaustive proof that all 19-point E11 supports violate Wang."
+    },
+    "wang_check_results.json": {
+      "cap45_constraint_count": 220442,
+      "dfs_solutions_checked": 10,
+      "elapsed_sec": 9.340589046478271,
+      "full_constraint_count": 417197,
+      "status": "ok",
+      "surviving_supports": [],
+      "survivors_cap45": 0,
+      "survivors_full_wang": 0
+    }
+  },
+  "peer_ghw_compare": [
+    {
+      "canonical_L_r": 0,
+      "canonical_gap": 11,
+      "match": true,
+      "peer_L_r": 0,
+      "peer_gap": 11,
+      "r": 0
+    },
+    {
+      "canonical_L_r": 3,
+      "canonical_gap": 9,
+      "match": true,
+      "peer_L_r": 3,
+      "peer_gap": 9,
+      "r": 1
+    },
+    {
+      "canonical_L_r": 6,
+      "canonical_gap": 7,
+      "match": true,
+      "peer_L_r": 6,
+      "peer_gap": 7,
+      "r": 2
+    },
+    {
+      "canonical_L_r": 9,
+      "canonical_gap": 5,
+      "match": true,
+      "peer_L_r": 9,
+      "peer_gap": 5,
+      "r": 3
+    },
+    {
+      "canonical_L_r": 11,
+      "canonical_gap": 4,
+      "match": true,
+      "peer_L_r": 11,
+      "peer_gap": 4,
+      "r": 4
+    },
+    {
+      "canonical_L_r": 14,
+      "canonical_gap": 2,
+      "match": true,
+      "peer_L_r": 14,
+      "peer_gap": 2,
+      "r": 5
+    },
+    {
+      "canonical_L_r": 15,
+      "canonical_gap": 2,
+      "match": true,
+      "peer_L_r": 15,
+      "peer_gap": 2,
+      "r": 6
+    },
+    {
+      "canonical_L_r": 17,
+      "canonical_gap": 1,
+      "match": true,
+      "peer_L_r": 17,
+      "peer_gap": 1,
+      "r": 7
+    },
+    {
+      "canonical_L_r": 19,
+      "canonical_gap": 0,
+      "match": true,
+      "peer_L_r": 19,
+      "peer_gap": 0,
+      "r": 8
+    }
+  ],
+  "pool_convention_check": {
+    "conclusion": "The rank-21 pool stores quotient/core A masks in bits 0..7 directly; applying CoreQuotient.project9 to these masks is a convention bug.",
+    "examples": [
+      {
+        "all_raw_u_lt_256": true,
+        "project9_diff": 45,
+        "project9_u_head": [
+          54,
+          104,
+          8,
+          2,
+          1,
+          14,
+          50,
+          0,
+          32,
+          96
+        ],
+        "project9_zero_terms": 2,
+        "raw_diff": 0,
+        "raw_distinct_A": 18,
+        "raw_u_head": [
+          108,
+          208,
+          16,
+          4,
+          3,
+          28,
+          100,
+          1,
+          65,
+          192
+        ],
+        "row": 0
+      },
+      {
+        "all_raw_u_lt_256": true,
+        "project9_diff": 45,
+        "project9_u_head": [
+          49,
+          127,
+          91,
+          48,
+          1,
+          18,
+          96,
+          16,
+          54,
+          1
+        ],
+        "project9_zero_terms": 0,
+        "raw_diff": 0,
+        "raw_distinct_A": 18,
+        "raw_u_head": [
+          98,
+          255,
+          182,
+          97,
+          2,
+          36,
+          192,
+          32,
+          109,
+          2
+        ],
+        "row": 1
+      },
+      {
+        "all_raw_u_lt_256": true,
+        "project9_diff": 45,
+        "project9_u_head": [
+          13,
+          36,
+          1,
+          1,
+          80,
+          36,
+          9,
+          91,
+          16,
+          113
+        ],
+        "project9_zero_terms": 0,
+        "raw_diff": 0,
+        "raw_distinct_A": 18,
+        "raw_u_head": [
+          27,
+          73,
+          3,
+          3,
+          160,
+          73,
+          18,
+          182,
+          32,
+          227
+        ],
+        "row": 2
+      },
+      {
+        "all_raw_u_lt_256": true,
+        "project9_diff": 45,
+        "project9_u_head": [
+          32,
+          113,
+          10,
+          36,
+          32,
+          99,
+          32,
+          33,
+          37,
+          80
+        ],
+        "project9_zero_terms": 0,
+        "raw_diff": 0,
+        "raw_distinct_A": 18,
+        "raw_u_head": [
+          64,
+          227,
+          20,
+          72,
+          65,
+          199,
+          64,
+          67,
+          75,
+          160
+        ],
+        "row": 3
+      },
+      {
+        "all_raw_u_lt_256": true,
+        "project9_diff": 45,
+        "project9_u_head": [
+          72,
+          2,
+          10,
+          0,
+          1,
+          36,
+          80,
+          1,
+          18,
+          96
+        ],
+        "project9_zero_terms": 1,
+        "raw_diff": 0,
+        "raw_distinct_A": 20,
+        "raw_u_head": [
+          144,
+          4,
+          20,
+          1,
+          2,
+          72,
+          160,
+          2,
+          36,
+          192
+        ],
+        "row": 4
+      }
+    ],
+    "pool_path": "data/e11_flip_workspace/data/schemes_modp/e11core/mod2-rank21a.npy",
+    "project9_interpretation_reconstruct_rows": 0,
+    "project9_zero_term_hist": {
+      "0": 8,
+      "1": 8,
+      "2": 4
+    },
+    "raw_8bit_core_masks_reconstruct_rows": 20,
+    "raw_distinct_A_hist": {
+      "16": 1,
+      "17": 2,
+      "18": 10,
+      "19": 3,
+      "20": 4
+    },
+    "rows_checked": 20
+  },
+  "schema": "s0908_peer_wang_support_review_v1",
+  "scientific_interpretation": {
+    "dfs": "The cap<=3 DFS and cap3_stream files have timeout=true and explored only the lexicographically first region/branch in the saved runs; all generated examples failed cap 4-8 constraints, usually cap 7, but this is not a complete exclusion.",
+    "ghw": "The GHW/Singleton computation matches the canonical E11 quotient Wang table and shows no Singleton contradiction; it does not prove existence or nonexistence of a support.",
+    "pool_bug": "Pool rows are already 8-bit E11 core masks; scripts validating pool rows with CoreQuotient.project9 are wrong for those validation sections. Scripts using pool u masks raw are not affected."
+  }
+}

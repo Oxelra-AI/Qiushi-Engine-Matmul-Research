@@ -1,0 +1,56 @@
+{
+  "core_path": "data/rep10_core/rep10_orbit_core_ablation_pilot.json",
+  "field": "F2 support polytope/integer support model",
+  "fixed_points": [
+    1,
+    10
+  ],
+  "lp": {
+    "elapsed_sec": 0.2229762077331543,
+    "fun": 0.0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "status": 0,
+    "success": true,
+    "support_fraction_hist": {
+      "fixed_values": {
+        "1": 1.0,
+        "10": 1.0
+      },
+      "fractional": 87,
+      "near0": 421,
+      "near1": 3,
+      "sum": 20.0
+    }
+  },
+  "lut_meta_brief": {
+    "conflict_count": 0,
+    "coverage_ok": true,
+    "subspace_count": 8283458
+  },
+  "matrix_shape": [
+    5572,
+    511
+  ],
+  "milp": {
+    "elapsed_sec": 300.0576136112213,
+    "fun": null,
+    "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+    "status": 1,
+    "success": false
+  },
+  "problem": "LP/MILP feasibility check for Wang row core",
+  "rank_s": 20,
+  "row_summary": {
+    "by_dim": {
+      "4": 960,
+      "6": 4612
+    },
+    "by_lb": {
+      "12": 3746,
+      "15": 866,
+      "17": 960
+    },
+    "row_count": 5572
+  },
+  "total_elapsed_sec": 303.0401153564453
+}

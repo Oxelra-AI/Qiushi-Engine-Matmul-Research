@@ -1,0 +1,553 @@
+{
+  "base_check": {
+    "base_edge_bad_count": 0,
+    "base_edge_bad_head": [],
+    "base_edges_checked": 70122,
+    "vertex_bad_count": 0,
+    "vertex_bad_head": [],
+    "vertex_exclusions_checked": 28
+  },
+  "branch": "fixed_prefix_projective_support",
+  "cnf_check": {
+    "cnf_clauses": 170367,
+    "cnf_variables": 16222,
+    "exact_sequence_match": true,
+    "first_mismatch": null,
+    "regenerated_clauses": 170367,
+    "regenerated_variables": 16222
+  },
+  "cnf_source": "copied_existing_seed_cnf",
+  "copy_cnf": true,
+  "fixed_prefix": [
+    1,
+    2,
+    80
+  ],
+  "full_lut_violations": {
+    "by_excess": {
+      "1": 931,
+      "2": 77,
+      "3": 4
+    },
+    "by_residual": {
+      "10": 6,
+      "11": 2,
+      "2": 41,
+      "3": 119,
+      "4": 289,
+      "5": 246,
+      "6": 130,
+      "7": 123,
+      "8": 47,
+      "9": 9
+    },
+    "count": 1012,
+    "max_excess": 3
+  },
+  "idx": null,
+  "initial_solve": {
+    "cadical_exit": 10,
+    "cadical_sec": 1.81,
+    "has_model": true,
+    "sat": true,
+    "unsat": false
+  },
+  "k": 3,
+  "learned_check": {
+    "learned_bad_count": 0,
+    "learned_bad_head": [],
+    "learned_by_residual": {
+      "10": 3733,
+      "11": 596,
+      "12": 237,
+      "13": 48,
+      "14": 181,
+      "15": 1,
+      "2": 8074,
+      "3": 5327,
+      "4": 9280,
+      "5": 10662,
+      "6": 9351,
+      "7": 12086,
+      "8": 7387,
+      "9": 1798
+    },
+    "learned_by_source": {
+      "full_row_direct": 9370,
+      "witness_subset": 59391
+    },
+    "learned_checked": 68761
+  },
+  "meaning": "SAT model is a support satisfying only the encoded seed CNF; listed violations show why it is not Wang-admissible if count>0.",
+  "provenance_ok": true,
+  "scan_sec": 46.6,
+  "schema": "fair_seed_solve_v1",
+  "seed_cnf": "workspace/data/rep2_marked_witness/rep080/current.cnf",
+  "seed_cnf_sha256": "3d5f0b6cf999dc49e2a3e52da1c38d7c212920143344394fd4bc9c0e324d6d53",
+  "seed_run_dir": "workspace/data/rep2_marked_witness/rep080",
+  "seed_summary_status": "MAX_ROUNDS",
+  "selected": [
+    4,
+    7,
+    10,
+    17,
+    25,
+    32,
+    45,
+    48,
+    53,
+    130,
+    139,
+    144,
+    325,
+    365,
+    384,
+    390,
+    432
+  ],
+  "selected_size": 17,
+  "solve_cnf": "workspace/data/fair_seed/rep2_rep080_witness20/seed.cnf",
+  "solve_cnf_sha256": "3d5f0b6cf999dc49e2a3e52da1c38d7c212920143344394fd4bc9c0e324d6d53",
+  "status": "SAT",
+  "structure_check": {
+    "prefix_count": 3,
+    "problems": [],
+    "structure_ok": true,
+    "survivor_count": 480,
+    "target": 17
+  },
+  "support_size": 20,
+  "survivor_count": 480,
+  "target": 17,
+  "violations_head": [
+    {
+      "cap": 11,
+      "excess": 1,
+      "fixed_count": 0,
+      "key": 443879864586051006488,
+      "lb": 9,
+      "residual": 11,
+      "selected_in_row": [
+        4,
+        7,
+        10,
+        17,
+        48,
+        130,
+        139,
+        144,
+        325,
+        365,
+        384,
+        432
+      ],
+      "selection_count": 12
+    },
+    {
+      "cap": 11,
+      "excess": 1,
+      "fixed_count": 2,
+      "key": 148732521254992482344,
+      "lb": 9,
+      "residual": 9,
+      "selected_in_row": [
+        4,
+        10,
+        17,
+        32,
+        48,
+        53,
+        139,
+        144,
+        365,
+        390
+      ],
+      "selection_count": 10
+    },
+    {
+      "cap": 11,
+      "excess": 1,
+      "fixed_count": 2,
+      "key": 296305349044277882904,
+      "lb": 9,
+      "residual": 9,
+      "selected_in_row": [
+        4,
+        10,
+        17,
+        25,
+        32,
+        53,
+        139,
+        144,
+        384,
+        390
+      ],
+      "selection_count": 10
+    },
+    {
+      "cap": 11,
+      "excess": 1,
+      "fixed_count": 2,
+      "key": 296593579422577070088,
+      "lb": 9,
+      "residual": 9,
+      "selected_in_row": [
+        7,
+        10,
+        17,
+        25,
+        48,
+        53,
+        130,
+        365,
+        384,
+        432
+      ],
+      "selection_count": 10
+    },
+    {
+      "cap": 11,
+      "excess": 1,
+      "fixed_count": 2,
+      "key": 296593579420429594632,
+      "lb": 9,
+      "residual": 9,
+      "selected_in_row": [
+        7,
+        10,
+        17,
+        25,
+        32,
+        45,
+        139,
+        144,
+        390,
+        432
+      ],
+      "selection_count": 10
+    },
+    {
+      "cap": 11,
+      "excess": 1,
+      "fixed_count": 2,
+      "key": 148732521254992498728,
+      "lb": 9,
+      "residual": 9,
+      "selected_in_row": [
+        4,
+        10,
+        17,
+        32,
+        48,
+        53,
+        130,
+        365,
+        384,
+        432
+      ],
+      "selection_count": 10
+    },
+    {
+      "cap": 11,
+      "excess": 2,
+      "fixed_count": 1,
+      "key": 296305349044273688600,
+      "lb": 9,
+      "residual": 10,
+      "selected_in_row": [
+        4,
+        10,
+        17,
+        25,
+        32,
+        53,
+        139,
+        144,
+        325,
+        365,
+        384,
+        390
+      ],
+      "selection_count": 12
+    },
+    {
+      "cap": 11,
+      "excess": 2,
+      "fixed_count": 2,
+      "key": 149308984206327566376,
+      "lb": 9,
+      "residual": 9,
+      "selected_in_row": [
+        7,
+        10,
+        25,
+        32,
+        45,
+        53,
+        130,
+        144,
+        365,
+        384,
+        390
+      ],
+      "selection_count": 11
+    },
+    {
+      "cap": 11,
+      "excess": 2,
+      "fixed_count": 1,
+      "key": 443879863484391895064,
+      "lb": 9,
+      "residual": 10,
+      "selected_in_row": [
+        4,
+        7,
+        10,
+        25,
+        32,
+        45,
+        48,
+        130,
+        139,
+        325,
+        384,
+        432
+      ],
+      "selection_count": 12
+    },
+    {
+      "cap": 11,
+      "excess": 1,
+      "fixed_count": 0,
+      "key": 443879863484396089368,
+      "lb": 9,
+      "residual": 11,
+      "selected_in_row": [
+        4,
+        7,
+        10,
+        25,
+        32,
+        45,
+        48,
+        130,
+        139,
+        365,
+        384,
+        432
+      ],
+      "selection_count": 12
+    },
+    {
+      "cap": 11,
+      "excess": 2,
+      "fixed_count": 2,
+      "key": 296593579422577078296,
+      "lb": 9,
+      "residual": 9,
+      "selected_in_row": [
+        7,
+        10,
+        17,
+        25,
+        48,
+        53,
+        139,
+        144,
+        325,
+        384,
+        432
+      ],
+      "selection_count": 11
+    },
+    {
+      "cap": 11,
+      "excess": 1,
+      "fixed_count": 1,
+      "key": 443879301636101779480,
+      "lb": 9,
+      "residual": 10,
+      "selected_in_row": [
+        4,
+        7,
+        17,
+        25,
+        45,
+        48,
+        130,
+        144,
+        365,
+        384,
+        432
+      ],
+      "selection_count": 11
+    },
+    {
+      "cap": 11,
+      "excess": 1,
+      "fixed_count": 2,
+      "key": 149308984206327549960,
+      "lb": 9,
+      "residual": 9,
+      "selected_in_row": [
+        7,
+        10,
+        25,
+        32,
+        45,
+        53,
+        139,
+        325,
+        384,
+        390
+      ],
+      "selection_count": 10
+    },
+    {
+      "cap": 11,
+      "excess": 1,
+      "fixed_count": 2,
+      "key": 289360708600139911,
+      "lb": 9,
+      "residual": 9,
+      "selected_in_row": [
+        4,
+        7,
+        17,
+        32,
+        48,
+        53,
+        139,
+        384,
+        390,
+        432
+      ],
+      "selection_count": 10
+    },
+    {
+      "cap": 11,
+      "excess": 1,
+      "fixed_count": 3,
+      "key": 289360777520943239,
+      "lb": 9,
+      "residual": 8,
+      "selected_in_row": [
+        4,
+        7,
+        48,
+        53,
+        139,
+        365,
+        384,
+        390,
+        432
+      ],
+      "selection_count": 9
+    },
+    {
+      "cap": 11,
+      "excess": 1,
+      "fixed_count": 1,
+      "key": 291619105483526151,
+      "lb": 9,
+      "residual": 10,
+      "selected_in_row": [
+        7,
+        10,
+        17,
+        32,
+        45,
+        48,
+        139,
+        144,
+        384,
+        390,
+        432
+      ],
+      "selection_count": 11
+    },
+    {
+      "cap": 11,
+      "excess": 1,
+      "fixed_count": 1,
+      "key": 290491006553444391,
+      "lb": 9,
+      "residual": 10,
+      "selected_in_row": [
+        4,
+        17,
+        25,
+        32,
+        45,
+        48,
+        53,
+        130,
+        139,
+        384,
+        432
+      ],
+      "selection_count": 11
+    },
+    {
+      "cap": 11,
+      "excess": 1,
+      "fixed_count": 1,
+      "key": 578721384856825879,
+      "lb": 9,
+      "residual": 10,
+      "selected_in_row": [
+        4,
+        10,
+        17,
+        25,
+        45,
+        48,
+        139,
+        144,
+        384,
+        390,
+        432
+      ],
+      "selection_count": 11
+    },
+    {
+      "cap": 8,
+      "excess": 1,
+      "fixed_count": 1,
+      "key": 578721385125261831,
+      "lb": 12,
+      "residual": 7,
+      "selected_in_row": [
+        4,
+        10,
+        17,
+        25,
+        139,
+        144,
+        325,
+        432
+      ],
+      "selection_count": 8
+    },
+    {
+      "cap": 8,
+      "excess": 1,
+      "fixed_count": 1,
+      "key": 578721385125253127,
+      "lb": 12,
+      "residual": 7,
+      "selected_in_row": [
+        4,
+        10,
+        17,
+        25,
+        130,
+        365,
+        384,
+        390
+      ],
+      "selection_count": 8
+    }
+  ]
+}

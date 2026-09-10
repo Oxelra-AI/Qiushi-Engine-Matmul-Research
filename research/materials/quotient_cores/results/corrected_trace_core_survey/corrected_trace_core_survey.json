@@ -1,0 +1,4625 @@
+{
+  "coefficient_convention": "correct trace row coefficient is M_inv[c,b] on X[b,c], giving tr(M_inv X)=c^T M_inv b; M_inv[b,c] was the old wrong entrywise pairing",
+  "cores": {
+    "E11": {
+      "A01_near_miss_corrected_replay": {
+        "correct_all_saturated": {
+          "certificate": {
+            "coefficients_zero": true,
+            "rhs_one": true,
+            "row_count": 122,
+            "tensor_rows": 90,
+            "trace_qs": [
+              42,
+              43,
+              57,
+              70,
+              71,
+              87,
+              94,
+              151,
+              186,
+              214
+            ],
+            "trace_rows": 32,
+            "trace_rows_by_q": {
+              "151": 2,
+              "186": 1,
+              "214": 1,
+              "42": 4,
+              "43": 6,
+              "57": 4,
+              "70": 4,
+              "71": 6,
+              "87": 2,
+              "94": 2
+            }
+          },
+          "consistent": false,
+          "nvars": 1539,
+          "rank": 732,
+          "rows": 792
+        },
+        "correct_all_saturated_qs": [
+          42,
+          43,
+          49,
+          57,
+          70,
+          71,
+          87,
+          94,
+          133,
+          151,
+          157,
+          179,
+          186,
+          214,
+          234,
+          241
+        ],
+        "correct_q49": {
+          "consistent": true,
+          "nvars": 1539,
+          "rank": 656,
+          "rows": 657
+        },
+        "correct_q49_saturated_qs": [
+          49
+        ],
+        "meaning": "The old single-q49 contradiction uses the wrong coefficient. With the corrected coefficient q49 alone is consistent; the sampled near-miss is still rejected by the joint corrected saturated trace equations.",
+        "q49_I_indices": [
+          0,
+          2,
+          5,
+          6,
+          8,
+          10,
+          12,
+          14,
+          15
+        ],
+        "q49_rank": 9,
+        "support": [
+          1,
+          2,
+          3,
+          4,
+          8,
+          20,
+          24,
+          31,
+          32,
+          64,
+          73,
+          109,
+          127,
+          128,
+          141,
+          160,
+          182,
+          192,
+          219
+        ],
+        "tensor_only": {
+          "consistent": true,
+          "nvars": 1539,
+          "rank": 648,
+          "rows": 648
+        },
+        "wrong_all_saturated": {
+          "certificate": {
+            "coefficients_zero": true,
+            "rhs_one": true,
+            "row_count": 36,
+            "tensor_rows": 27,
+            "trace_qs": [
+              49
+            ],
+            "trace_rows": 9,
+            "trace_rows_by_q": {
+              "49": 9
+            }
+          },
+          "consistent": false,
+          "nvars": 1539,
+          "rank": 672,
+          "rows": 792
+        },
+        "wrong_all_saturated_qs": [
+          42,
+          43,
+          49,
+          57,
+          70,
+          71,
+          87,
+          94,
+          133,
+          151,
+          157,
+          179,
+          186,
+          214,
+          234,
+          241
+        ],
+        "wrong_q49": {
+          "certificate": {
+            "coefficients_zero": true,
+            "rhs_one": true,
+            "row_count": 36,
+            "tensor_rows": 27,
+            "trace_qs": [
+              49
+            ],
+            "trace_rows": 9,
+            "trace_rows_by_q": {
+              "49": 9
+            }
+          },
+          "consistent": false,
+          "nvars": 1539,
+          "rank": 656,
+          "rows": 657
+        },
+        "wrong_q49_saturated_qs": [
+          49
+        ]
+      },
+      "contraction_rank_histogram": {
+        "3": 33,
+        "6": 150,
+        "9": 72
+      },
+      "core_shape": [
+        8,
+        9,
+        9
+      ],
+      "deletion_nearmiss_pilot": {
+        "consistent_after_correct_trace_examples_head": [
+          {
+            "A_multiset": [
+              1,
+              1,
+              3,
+              3,
+              3,
+              4,
+              8,
+              16,
+              28,
+              36,
+              65,
+              101,
+              112,
+              144,
+              192,
+              196,
+              208,
+              216,
+              224
+            ],
+            "correct_trace_rank": 710,
+            "deleted_positions": [
+              0,
+              6
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              43,
+              46,
+              87,
+              107,
+              151,
+              174,
+              190,
+              235,
+              247
+            ],
+            "scheme_index": 0,
+            "tensor_only_rank": 648
+          },
+          {
+            "A_multiset": [
+              1,
+              1,
+              3,
+              3,
+              8,
+              16,
+              28,
+              36,
+              65,
+              100,
+              101,
+              108,
+              112,
+              144,
+              192,
+              196,
+              208,
+              216,
+              224
+            ],
+            "correct_trace_rank": 648,
+            "deleted_positions": [
+              3,
+              4
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [],
+            "scheme_index": 0,
+            "tensor_only_rank": 648
+          },
+          {
+            "A_multiset": [
+              1,
+              1,
+              3,
+              3,
+              3,
+              4,
+              8,
+              16,
+              36,
+              65,
+              101,
+              108,
+              112,
+              144,
+              192,
+              196,
+              208,
+              216,
+              224
+            ],
+            "correct_trace_rank": 713,
+            "deleted_positions": [
+              5,
+              6
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              42,
+              87,
+              107,
+              115,
+              127,
+              190,
+              198,
+              235,
+              243
+            ],
+            "scheme_index": 0,
+            "tensor_only_rank": 648
+          },
+          {
+            "A_multiset": [
+              1,
+              3,
+              3,
+              3,
+              4,
+              8,
+              16,
+              36,
+              65,
+              100,
+              101,
+              108,
+              112,
+              144,
+              192,
+              196,
+              208,
+              216,
+              224
+            ],
+            "correct_trace_rank": 689,
+            "deleted_positions": [
+              5,
+              7
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              71,
+              127,
+              167,
+              190,
+              191,
+              198
+            ],
+            "scheme_index": 0,
+            "tensor_only_rank": 648
+          },
+          {
+            "A_multiset": [
+              1,
+              1,
+              3,
+              3,
+              3,
+              4,
+              8,
+              16,
+              36,
+              65,
+              100,
+              108,
+              112,
+              144,
+              192,
+              196,
+              208,
+              216,
+              224
+            ],
+            "correct_trace_rank": 711,
+            "deleted_positions": [
+              5,
+              11
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              42,
+              43,
+              71,
+              167,
+              179,
+              190,
+              191,
+              198,
+              239
+            ],
+            "scheme_index": 0,
+            "tensor_only_rank": 648
+          },
+          {
+            "A_multiset": [
+              1,
+              1,
+              3,
+              3,
+              3,
+              4,
+              8,
+              16,
+              65,
+              100,
+              101,
+              108,
+              112,
+              144,
+              192,
+              196,
+              208,
+              216,
+              224
+            ],
+            "correct_trace_rank": 703,
+            "deleted_positions": [
+              5,
+              17
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              42,
+              71,
+              86,
+              106,
+              190,
+              214,
+              234,
+              239
+            ],
+            "scheme_index": 0,
+            "tensor_only_rank": 648
+          },
+          {
+            "A_multiset": [
+              1,
+              1,
+              3,
+              3,
+              3,
+              4,
+              8,
+              16,
+              28,
+              36,
+              101,
+              108,
+              112,
+              144,
+              192,
+              196,
+              208,
+              216,
+              224
+            ],
+            "correct_trace_rank": 686,
+            "deleted_positions": [
+              6,
+              8
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              86,
+              87,
+              143,
+              151,
+              198,
+              214
+            ],
+            "scheme_index": 0,
+            "tensor_only_rank": 648
+          },
+          {
+            "A_multiset": [
+              1,
+              1,
+              3,
+              3,
+              3,
+              4,
+              8,
+              16,
+              28,
+              36,
+              65,
+              101,
+              108,
+              112,
+              144,
+              192,
+              196,
+              208,
+              224
+            ],
+            "correct_trace_rank": 725,
+            "deleted_positions": [
+              6,
+              13
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              42,
+              46,
+              87,
+              127,
+              179,
+              186,
+              190,
+              214,
+              235,
+              243,
+              247
+            ],
+            "scheme_index": 0,
+            "tensor_only_rank": 648
+          },
+          {
+            "A_multiset": [
+              1,
+              1,
+              3,
+              3,
+              3,
+              4,
+              8,
+              16,
+              28,
+              36,
+              65,
+              101,
+              108,
+              112,
+              144,
+              192,
+              208,
+              216,
+              224
+            ],
+            "correct_trace_rank": 715,
+            "deleted_positions": [
+              6,
+              15
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              43,
+              46,
+              87,
+              107,
+              115,
+              186,
+              198,
+              214,
+              247
+            ],
+            "scheme_index": 0,
+            "tensor_only_rank": 648
+          },
+          {
+            "A_multiset": [
+              1,
+              1,
+              3,
+              3,
+              3,
+              4,
+              8,
+              16,
+              28,
+              36,
+              65,
+              101,
+              108,
+              144,
+              192,
+              196,
+              208,
+              216,
+              224
+            ],
+            "correct_trace_rank": 727,
+            "deleted_positions": [
+              6,
+              19
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              42,
+              46,
+              87,
+              115,
+              127,
+              151,
+              174,
+              179,
+              198,
+              243,
+              247
+            ],
+            "scheme_index": 0,
+            "tensor_only_rank": 648
+          }
+        ],
+        "elapsed_sec": 6.971,
+        "max_supports": 1200,
+        "pool_rows_scanned_until_stop": 8,
+        "saturated_q_count_hist_for_tensor_consistent": {
+          "0": 2,
+          "10": 149,
+          "11": 179,
+          "12": 157,
+          "13": 136,
+          "14": 79,
+          "15": 58,
+          "16": 32,
+          "17": 26,
+          "18": 19,
+          "19": 7,
+          "20": 3,
+          "21": 1,
+          "22": 1,
+          "24": 1,
+          "4": 8,
+          "5": 12,
+          "6": 34,
+          "7": 55,
+          "8": 101,
+          "9": 140
+        },
+        "totals": {
+          "correct_trace_inconsistent": 1077,
+          "correct_trace_inconsistent_distinct": 25,
+          "distinct_supports_tested": 28,
+          "supports_tested": 1200,
+          "tensor_consistent": 1200,
+          "tensor_consistent_distinct": 28
+        },
+        "trace_inconsistent_examples_head": [
+          {
+            "A_multiset": [
+              1,
+              1,
+              3,
+              3,
+              3,
+              4,
+              8,
+              16,
+              28,
+              36,
+              65,
+              100,
+              101,
+              112,
+              144,
+              192,
+              196,
+              216,
+              224
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 26,
+                "tensor_rows": 18,
+                "trace_qs": [
+                  106,
+                  190,
+                  214,
+                  235,
+                  243
+                ],
+                "trace_rows": 8,
+                "trace_rows_by_q": {
+                  "106": 2,
+                  "190": 2,
+                  "214": 1,
+                  "235": 2,
+                  "243": 1
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 716,
+              "rows": 756
+            },
+            "deleted_positions": [
+              0,
+              1
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              46,
+              79,
+              87,
+              106,
+              179,
+              190,
+              214,
+              235,
+              239,
+              243,
+              247,
+              250
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          },
+          {
+            "A_multiset": [
+              1,
+              1,
+              3,
+              3,
+              3,
+              4,
+              8,
+              28,
+              36,
+              65,
+              100,
+              101,
+              112,
+              144,
+              192,
+              196,
+              208,
+              216,
+              224
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 50,
+                "tensor_rows": 48,
+                "trace_qs": [
+                  86
+                ],
+                "trace_rows": 2,
+                "trace_rows_by_q": {
+                  "86": 2
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 658,
+              "rows": 765
+            },
+            "deleted_positions": [
+              0,
+              2
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              46,
+              86,
+              107,
+              115,
+              151,
+              174,
+              191,
+              214,
+              235,
+              239,
+              243,
+              247,
+              250
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          },
+          {
+            "A_multiset": [
+              1,
+              1,
+              3,
+              3,
+              3,
+              8,
+              16,
+              28,
+              36,
+              65,
+              100,
+              101,
+              112,
+              144,
+              192,
+              196,
+              208,
+              216,
+              224
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 40,
+                "tensor_rows": 36,
+                "trace_qs": [
+                  47
+                ],
+                "trace_rows": 4,
+                "trace_rows_by_q": {
+                  "47": 4
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 655,
+              "rows": 747
+            },
+            "deleted_positions": [
+              0,
+              3
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              47,
+              79,
+              86,
+              107,
+              151,
+              179,
+              191,
+              198,
+              214,
+              235,
+              247
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          },
+          {
+            "A_multiset": [
+              1,
+              1,
+              3,
+              3,
+              4,
+              8,
+              16,
+              28,
+              36,
+              65,
+              100,
+              101,
+              112,
+              144,
+              192,
+              196,
+              208,
+              216,
+              224
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 14,
+                "tensor_rows": 12,
+                "trace_qs": [
+                  86
+                ],
+                "trace_rows": 2,
+                "trace_rows_by_q": {
+                  "86": 2
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 653,
+              "rows": 747
+            },
+            "deleted_positions": [
+              0,
+              4
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              86,
+              87,
+              106,
+              107,
+              179,
+              198,
+              214,
+              234,
+              235,
+              239,
+              250
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          },
+          {
+            "A_multiset": [
+              1,
+              1,
+              3,
+              3,
+              3,
+              4,
+              8,
+              16,
+              36,
+              65,
+              100,
+              101,
+              112,
+              144,
+              192,
+              196,
+              208,
+              216,
+              224
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 14,
+                "tensor_rows": 12,
+                "trace_qs": [
+                  43
+                ],
+                "trace_rows": 2,
+                "trace_rows_by_q": {
+                  "43": 2
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 652,
+              "rows": 747
+            },
+            "deleted_positions": [
+              0,
+              5
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              43,
+              46,
+              87,
+              106,
+              115,
+              174,
+              191,
+              198,
+              234,
+              239,
+              243
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          },
+          {
+            "A_multiset": [
+              1,
+              3,
+              3,
+              3,
+              4,
+              8,
+              16,
+              28,
+              36,
+              65,
+              100,
+              101,
+              112,
+              144,
+              192,
+              196,
+              208,
+              216,
+              224
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 67,
+                "tensor_rows": 60,
+                "trace_qs": [
+                  79,
+                  174,
+                  190,
+                  191,
+                  243
+                ],
+                "trace_rows": 7,
+                "trace_rows_by_q": {
+                  "174": 2,
+                  "190": 1,
+                  "191": 1,
+                  "243": 1,
+                  "79": 2
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 712,
+              "rows": 747
+            },
+            "deleted_positions": [
+              0,
+              7
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              43,
+              46,
+              47,
+              79,
+              115,
+              151,
+              174,
+              190,
+              191,
+              243,
+              247
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          },
+          {
+            "A_multiset": [
+              1,
+              1,
+              3,
+              3,
+              3,
+              4,
+              8,
+              16,
+              28,
+              36,
+              100,
+              101,
+              112,
+              144,
+              192,
+              196,
+              208,
+              216,
+              224
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 34,
+                "tensor_rows": 24,
+                "trace_qs": [
+                  46,
+                  86,
+                  87,
+                  151,
+                  174,
+                  198,
+                  234
+                ],
+                "trace_rows": 10,
+                "trace_rows_by_q": {
+                  "151": 1,
+                  "174": 1,
+                  "198": 3,
+                  "234": 1,
+                  "46": 2,
+                  "86": 1,
+                  "87": 1
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 727,
+              "rows": 801
+            },
+            "deleted_positions": [
+              0,
+              8
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              43,
+              46,
+              47,
+              86,
+              87,
+              106,
+              107,
+              151,
+              174,
+              190,
+              191,
+              198,
+              214,
+              234,
+              235,
+              239,
+              250
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          },
+          {
+            "A_multiset": [
+              1,
+              1,
+              3,
+              3,
+              3,
+              4,
+              8,
+              16,
+              28,
+              36,
+              65,
+              100,
+              101,
+              112,
+              144,
+              196,
+              208,
+              216,
+              224
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 50,
+                "tensor_rows": 48,
+                "trace_qs": [
+                  86
+                ],
+                "trace_rows": 2,
+                "trace_rows_by_q": {
+                  "86": 2
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 664,
+              "rows": 729
+            },
+            "deleted_positions": [
+              0,
+              9
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              46,
+              79,
+              86,
+              106,
+              115,
+              151,
+              191,
+              235,
+              239
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          },
+          {
+            "A_multiset": [
+              1,
+              1,
+              3,
+              3,
+              3,
+              4,
+              16,
+              28,
+              36,
+              65,
+              100,
+              101,
+              112,
+              144,
+              192,
+              196,
+              208,
+              216,
+              224
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 14,
+                "tensor_rows": 12,
+                "trace_qs": [
+                  43
+                ],
+                "trace_rows": 2,
+                "trace_rows_by_q": {
+                  "43": 2
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 652,
+              "rows": 729
+            },
+            "deleted_positions": [
+              0,
+              10
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              43,
+              47,
+              79,
+              87,
+              106,
+              179,
+              191,
+              234,
+              250
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          },
+          {
+            "A_multiset": [
+              1,
+              1,
+              3,
+              3,
+              3,
+              4,
+              8,
+              16,
+              28,
+              36,
+              65,
+              100,
+              112,
+              144,
+              192,
+              196,
+              208,
+              216,
+              224
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 67,
+                "tensor_rows": 60,
+                "trace_qs": [
+                  79,
+                  174,
+                  190,
+                  191,
+                  243
+                ],
+                "trace_rows": 7,
+                "trace_rows_by_q": {
+                  "174": 2,
+                  "190": 1,
+                  "191": 1,
+                  "243": 1,
+                  "79": 2
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 711,
+              "rows": 738
+            },
+            "deleted_positions": [
+              0,
+              11
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              46,
+              47,
+              79,
+              115,
+              174,
+              179,
+              190,
+              191,
+              239,
+              243
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          }
+        ]
+      },
+      "existing_core_file": "data/e11_flip_workspace/data/tensors/e11core.npy",
+      "existing_core_file_meta": {
+        "coo_rows": 24,
+        "format": "coo_abcv",
+        "raw_dtype": "int8",
+        "raw_shape": [
+          24,
+          4
+        ]
+      },
+      "existing_core_matches_reconstruction": true,
+      "label": "rank-1 quotient E11",
+      "mask": 1,
+      "name": "E11",
+      "quotient_meta": {
+        "free_bits": [],
+        "kept_full_A_indices": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "mask": 1,
+        "pivot": 0
+      },
+      "rank21_controls": {
+        "correct_trace_direct_failures": 0,
+        "correct_trace_direct_tests": 522,
+        "pool_rows_available": 519,
+        "pool_rows_sampled": 12,
+        "records_head": [
+          {
+            "A_multiplicity_hist": {
+              "1": 16,
+              "2": 1,
+              "3": 1
+            },
+            "correct_trace_direct_failures": 0,
+            "correct_trace_system_consistent": true,
+            "correct_trace_system_rank": 671,
+            "saturated_rank9_qs": [
+              87,
+              103,
+              239
+            ],
+            "scheme_index": 0,
+            "term_count": 21,
+            "unique_A": 18,
+            "verified": true
+          },
+          {
+            "A_multiplicity_hist": {
+              "1": 15,
+              "2": 3
+            },
+            "correct_trace_direct_failures": 0,
+            "correct_trace_system_consistent": true,
+            "correct_trace_system_rank": 672,
+            "saturated_rank9_qs": [
+              51,
+              79,
+              197
+            ],
+            "scheme_index": 1,
+            "term_count": 21,
+            "unique_A": 18,
+            "verified": true
+          },
+          {
+            "A_multiplicity_hist": {
+              "1": 15,
+              "2": 3
+            },
+            "correct_trace_direct_failures": 0,
+            "correct_trace_system_consistent": true,
+            "correct_trace_system_rank": 691,
+            "saturated_rank9_qs": [
+              87,
+              113,
+              141,
+              159,
+              191,
+              243
+            ],
+            "scheme_index": 2,
+            "term_count": 21,
+            "unique_A": 18,
+            "verified": true
+          },
+          {
+            "A_multiplicity_hist": {
+              "1": 15,
+              "2": 3
+            },
+            "correct_trace_direct_failures": 0,
+            "correct_trace_system_consistent": true,
+            "correct_trace_system_rank": 686,
+            "saturated_rank9_qs": [
+              43,
+              157,
+              171,
+              185,
+              191
+            ],
+            "scheme_index": 3,
+            "term_count": 21,
+            "unique_A": 18,
+            "verified": true
+          },
+          {
+            "A_multiplicity_hist": {
+              "1": 19,
+              "2": 1
+            },
+            "correct_trace_direct_failures": 0,
+            "correct_trace_system_consistent": true,
+            "correct_trace_system_rank": 675,
+            "saturated_rank9_qs": [
+              61,
+              125,
+              157,
+              221
+            ],
+            "scheme_index": 4,
+            "term_count": 21,
+            "unique_A": 20,
+            "verified": true
+          },
+          {
+            "A_multiplicity_hist": {
+              "1": 15,
+              "2": 3
+            },
+            "correct_trace_direct_failures": 0,
+            "correct_trace_system_consistent": true,
+            "correct_trace_system_rank": 685,
+            "saturated_rank9_qs": [
+              70,
+              102,
+              106,
+              125,
+              157
+            ],
+            "scheme_index": 5,
+            "term_count": 21,
+            "unique_A": 18,
+            "verified": true
+          },
+          {
+            "A_multiplicity_hist": {
+              "1": 15,
+              "2": 3
+            },
+            "correct_trace_direct_failures": 0,
+            "correct_trace_system_consistent": true,
+            "correct_trace_system_rank": 693,
+            "saturated_rank9_qs": [
+              58,
+              113,
+              121,
+              177,
+              185,
+              237
+            ],
+            "scheme_index": 6,
+            "term_count": 21,
+            "unique_A": 18,
+            "verified": true
+          },
+          {
+            "A_multiplicity_hist": {
+              "1": 19,
+              "2": 1
+            },
+            "correct_trace_direct_failures": 0,
+            "correct_trace_system_consistent": true,
+            "correct_trace_system_rank": 656,
+            "saturated_rank9_qs": [
+              58
+            ],
+            "scheme_index": 7,
+            "term_count": 21,
+            "unique_A": 20,
+            "verified": true
+          }
+        ],
+        "saturated_rank9_q_total_over_sample": 58,
+        "unique_A_histogram": {
+          "17": 2,
+          "18": 7,
+          "19": 1,
+          "20": 2
+        },
+        "verified_sampled_schemes": 12
+      },
+      "rank21_pool_file": "data/e11_flip_workspace/data/schemes_modp/e11core/mod2-rank21a.npy",
+      "rank9_contractions": [
+        42,
+        43,
+        46,
+        47,
+        49,
+        51,
+        53,
+        55,
+        57,
+        58,
+        61,
+        62,
+        70,
+        71,
+        78,
+        79,
+        86,
+        87,
+        94,
+        95,
+        102,
+        103,
+        106,
+        107,
+        113,
+        115,
+        117,
+        118,
+        121,
+        122,
+        125,
+        127,
+        133,
+        135,
+        141,
+        143,
+        149,
+        151,
+        157,
+        159,
+        165,
+        167,
+        170,
+        171,
+        173,
+        174,
+        177,
+        179,
+        185,
+        186,
+        190,
+        191,
+        197,
+        198,
+        205,
+        206,
+        213,
+        214,
+        221,
+        222,
+        229,
+        230,
+        234,
+        235,
+        237,
+        239,
+        241,
+        243,
+        246,
+        247,
+        249,
+        250
+      ]
+    },
+    "E12_E21": {
+      "contraction_rank_histogram": {
+        "3": 25,
+        "6": 142,
+        "9": 88
+      },
+      "core_shape": [
+        8,
+        9,
+        9
+      ],
+      "deletion_nearmiss_pilot": {
+        "consistent_after_correct_trace_examples_head": [
+          {
+            "A_multiset": [
+              2,
+              3,
+              7,
+              10,
+              10,
+              16,
+              26,
+              64,
+              66,
+              90,
+              96,
+              128,
+              132,
+              132,
+              154,
+              160,
+              165,
+              167,
+              231
+            ],
+            "correct_trace_rank": 699,
+            "deleted_positions": [
+              0,
+              14
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              46,
+              51,
+              78,
+              83,
+              113,
+              190,
+              236
+            ],
+            "scheme_index": 0,
+            "tensor_only_rank": 648
+          },
+          {
+            "A_multiset": [
+              2,
+              3,
+              7,
+              10,
+              10,
+              16,
+              23,
+              26,
+              64,
+              66,
+              90,
+              96,
+              128,
+              132,
+              132,
+              160,
+              165,
+              167,
+              231
+            ],
+            "correct_trace_rank": 715,
+            "deleted_positions": [
+              0,
+              17
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              46,
+              47,
+              78,
+              79,
+              81,
+              122,
+              151,
+              153,
+              188
+            ],
+            "scheme_index": 0,
+            "tensor_only_rank": 648
+          },
+          {
+            "A_multiset": [
+              2,
+              3,
+              7,
+              10,
+              10,
+              16,
+              23,
+              26,
+              66,
+              96,
+              128,
+              132,
+              132,
+              135,
+              154,
+              160,
+              165,
+              167,
+              231
+            ],
+            "correct_trace_rank": 721,
+            "deleted_positions": [
+              1,
+              4
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              46,
+              60,
+              113,
+              121,
+              142,
+              175,
+              207,
+              234,
+              236,
+              252
+            ],
+            "scheme_index": 0,
+            "tensor_only_rank": 648
+          },
+          {
+            "A_multiset": [
+              2,
+              3,
+              7,
+              10,
+              10,
+              23,
+              26,
+              64,
+              66,
+              96,
+              128,
+              132,
+              132,
+              135,
+              154,
+              160,
+              165,
+              167,
+              231
+            ],
+            "correct_trace_rank": 730,
+            "deleted_positions": [
+              4,
+              15
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              46,
+              51,
+              59,
+              79,
+              113,
+              121,
+              142,
+              151,
+              153,
+              175,
+              188,
+              190,
+              252
+            ],
+            "scheme_index": 0,
+            "tensor_only_rank": 648
+          },
+          {
+            "A_multiset": [
+              2,
+              3,
+              7,
+              10,
+              10,
+              16,
+              23,
+              26,
+              64,
+              66,
+              90,
+              128,
+              132,
+              132,
+              135,
+              154,
+              160,
+              165,
+              167
+            ],
+            "correct_trace_rank": 697,
+            "deleted_positions": [
+              10,
+              13
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              47,
+              59,
+              79,
+              85,
+              113,
+              172,
+              207
+            ],
+            "scheme_index": 0,
+            "tensor_only_rank": 648
+          },
+          {
+            "A_multiset": [
+              2,
+              3,
+              10,
+              10,
+              16,
+              26,
+              64,
+              66,
+              90,
+              96,
+              128,
+              132,
+              132,
+              135,
+              154,
+              160,
+              165,
+              167,
+              231
+            ],
+            "correct_trace_rank": 738,
+            "deleted_positions": [
+              14,
+              20
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              46,
+              51,
+              78,
+              83,
+              113,
+              135,
+              137,
+              138,
+              142,
+              151,
+              153,
+              172,
+              188,
+              207,
+              234,
+              238
+            ],
+            "scheme_index": 0,
+            "tensor_only_rank": 648
+          },
+          {
+            "A_multiset": [
+              2,
+              2,
+              3,
+              5,
+              6,
+              10,
+              10,
+              24,
+              30,
+              32,
+              34,
+              36,
+              74,
+              106,
+              160,
+              178,
+              180,
+              183,
+              222
+            ],
+            "correct_trace_rank": 714,
+            "deleted_positions": [
+              1,
+              18
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              85,
+              117,
+              138,
+              153,
+              154,
+              175,
+              188,
+              205,
+              209
+            ],
+            "scheme_index": 1,
+            "tensor_only_rank": 648
+          },
+          {
+            "A_multiset": [
+              2,
+              2,
+              3,
+              5,
+              6,
+              10,
+              10,
+              24,
+              30,
+              32,
+              34,
+              36,
+              106,
+              160,
+              170,
+              178,
+              180,
+              183,
+              226
+            ],
+            "correct_trace_rank": 700,
+            "deleted_positions": [
+              3,
+              19
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              91,
+              138,
+              188,
+              201,
+              205,
+              234,
+              238
+            ],
+            "scheme_index": 1,
+            "tensor_only_rank": 648
+          },
+          {
+            "A_multiset": [
+              2,
+              2,
+              5,
+              6,
+              10,
+              10,
+              24,
+              30,
+              32,
+              34,
+              36,
+              74,
+              106,
+              160,
+              170,
+              178,
+              180,
+              222,
+              226
+            ],
+            "correct_trace_rank": 717,
+            "deleted_positions": [
+              5,
+              7
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              47,
+              91,
+              103,
+              113,
+              117,
+              121,
+              138,
+              142,
+              175,
+              201
+            ],
+            "scheme_index": 1,
+            "tensor_only_rank": 648
+          },
+          {
+            "A_multiset": [
+              2,
+              2,
+              3,
+              5,
+              6,
+              10,
+              10,
+              24,
+              30,
+              34,
+              36,
+              74,
+              106,
+              160,
+              170,
+              178,
+              183,
+              222,
+              226
+            ],
+            "correct_trace_rank": 714,
+            "deleted_positions": [
+              6,
+              11
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              91,
+              124,
+              138,
+              187,
+              188,
+              201,
+              205,
+              234,
+              238
+            ],
+            "scheme_index": 1,
+            "tensor_only_rank": 648
+          }
+        ],
+        "elapsed_sec": 7.48,
+        "max_supports": 1200,
+        "pool_rows_scanned_until_stop": 7,
+        "saturated_q_count_hist_for_tensor_consistent": {
+          "10": 70,
+          "11": 123,
+          "12": 141,
+          "13": 179,
+          "14": 138,
+          "15": 128,
+          "16": 119,
+          "17": 64,
+          "18": 46,
+          "19": 26,
+          "20": 8,
+          "21": 8,
+          "22": 3,
+          "23": 9,
+          "24": 1,
+          "25": 2,
+          "5": 2,
+          "6": 2,
+          "7": 19,
+          "8": 42,
+          "9": 70
+        },
+        "totals": {
+          "correct_trace_inconsistent": 1167,
+          "correct_trace_inconsistent_distinct": 214,
+          "distinct_supports_tested": 216,
+          "supports_tested": 1200,
+          "tensor_consistent": 1200,
+          "tensor_consistent_distinct": 216
+        },
+        "trace_inconsistent_examples_head": [
+          {
+            "A_multiset": [
+              2,
+              3,
+              7,
+              10,
+              10,
+              16,
+              23,
+              26,
+              66,
+              90,
+              96,
+              128,
+              132,
+              132,
+              154,
+              160,
+              165,
+              167,
+              231
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 40,
+                "tensor_rows": 36,
+                "trace_qs": [
+                  83
+                ],
+                "trace_rows": 4,
+                "trace_rows_by_q": {
+                  "83": 4
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 676,
+              "rows": 729
+            },
+            "deleted_positions": [
+              0,
+              1
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              46,
+              47,
+              81,
+              83,
+              121,
+              122,
+              175,
+              227,
+              236
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          },
+          {
+            "A_multiset": [
+              2,
+              3,
+              7,
+              10,
+              16,
+              23,
+              26,
+              64,
+              66,
+              90,
+              96,
+              128,
+              132,
+              132,
+              154,
+              160,
+              165,
+              167,
+              231
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 26,
+                "tensor_rows": 18,
+                "trace_qs": [
+                  50,
+                  78,
+                  79,
+                  83,
+                  121
+                ],
+                "trace_rows": 8,
+                "trace_rows_by_q": {
+                  "121": 4,
+                  "50": 1,
+                  "78": 1,
+                  "79": 1,
+                  "83": 1
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 716,
+              "rows": 810
+            },
+            "deleted_positions": [
+              0,
+              2
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              46,
+              47,
+              50,
+              51,
+              78,
+              79,
+              83,
+              91,
+              113,
+              121,
+              141,
+              151,
+              153,
+              166,
+              175,
+              188,
+              227,
+              236
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          },
+          {
+            "A_multiset": [
+              2,
+              3,
+              7,
+              10,
+              10,
+              16,
+              23,
+              26,
+              64,
+              66,
+              90,
+              96,
+              128,
+              132,
+              154,
+              160,
+              165,
+              167,
+              231
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 26,
+                "tensor_rows": 24,
+                "trace_qs": [
+                  153
+                ],
+                "trace_rows": 2,
+                "trace_rows_by_q": {
+                  "153": 2
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 670,
+              "rows": 693
+            },
+            "deleted_positions": [
+              0,
+              3
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              91,
+              113,
+              153,
+              175,
+              227
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          },
+          {
+            "A_multiset": [
+              2,
+              3,
+              7,
+              10,
+              10,
+              16,
+              23,
+              26,
+              64,
+              66,
+              96,
+              128,
+              132,
+              132,
+              154,
+              160,
+              165,
+              167,
+              231
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 40,
+                "tensor_rows": 36,
+                "trace_qs": [
+                  83
+                ],
+                "trace_rows": 4,
+                "trace_rows_by_q": {
+                  "83": 4
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 668,
+              "rows": 738
+            },
+            "deleted_positions": [
+              0,
+              4
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              46,
+              47,
+              83,
+              91,
+              113,
+              121,
+              141,
+              166,
+              175,
+              190
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          },
+          {
+            "A_multiset": [
+              2,
+              3,
+              7,
+              10,
+              10,
+              16,
+              23,
+              64,
+              66,
+              90,
+              96,
+              128,
+              132,
+              132,
+              154,
+              160,
+              165,
+              167,
+              231
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 77,
+                "tensor_rows": 66,
+                "trace_qs": [
+                  46,
+                  81,
+                  166,
+                  175
+                ],
+                "trace_rows": 11,
+                "trace_rows_by_q": {
+                  "166": 4,
+                  "175": 2,
+                  "46": 3,
+                  "81": 2
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 712,
+              "rows": 756
+            },
+            "deleted_positions": [
+              0,
+              5
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              46,
+              47,
+              78,
+              79,
+              81,
+              122,
+              141,
+              166,
+              175,
+              190,
+              227,
+              236
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          },
+          {
+            "A_multiset": [
+              2,
+              3,
+              7,
+              10,
+              10,
+              16,
+              23,
+              26,
+              64,
+              66,
+              90,
+              96,
+              132,
+              132,
+              154,
+              160,
+              165,
+              167,
+              231
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 52,
+                "tensor_rows": 48,
+                "trace_qs": [
+                  47,
+                  113,
+                  188
+                ],
+                "trace_rows": 4,
+                "trace_rows_by_q": {
+                  "113": 2,
+                  "188": 1,
+                  "47": 1
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 724,
+              "rows": 774
+            },
+            "deleted_positions": [
+              0,
+              8
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              46,
+              47,
+              78,
+              79,
+              91,
+              113,
+              141,
+              151,
+              153,
+              166,
+              188,
+              190,
+              227,
+              236
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          },
+          {
+            "A_multiset": [
+              2,
+              3,
+              7,
+              10,
+              10,
+              16,
+              23,
+              26,
+              64,
+              66,
+              90,
+              96,
+              128,
+              132,
+              132,
+              154,
+              160,
+              165,
+              231
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 34,
+                "tensor_rows": 30,
+                "trace_qs": [
+                  51
+                ],
+                "trace_rows": 4,
+                "trace_rows_by_q": {
+                  "51": 4
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 662,
+              "rows": 729
+            },
+            "deleted_positions": [
+              0,
+              9
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              47,
+              51,
+              78,
+              81,
+              91,
+              113,
+              141,
+              188,
+              236
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          },
+          {
+            "A_multiset": [
+              2,
+              3,
+              7,
+              10,
+              10,
+              16,
+              23,
+              26,
+              64,
+              66,
+              90,
+              128,
+              132,
+              132,
+              154,
+              160,
+              165,
+              167,
+              231
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 34,
+                "tensor_rows": 30,
+                "trace_qs": [
+                  51
+                ],
+                "trace_rows": 4,
+                "trace_rows_by_q": {
+                  "51": 4
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 662,
+              "rows": 720
+            },
+            "deleted_positions": [
+              0,
+              10
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              50,
+              51,
+              81,
+              83,
+              113,
+              166,
+              188,
+              190
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          },
+          {
+            "A_multiset": [
+              2,
+              3,
+              7,
+              10,
+              10,
+              16,
+              23,
+              26,
+              64,
+              90,
+              96,
+              128,
+              132,
+              132,
+              154,
+              160,
+              165,
+              167,
+              231
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 38,
+                "tensor_rows": 36,
+                "trace_qs": [
+                  50
+                ],
+                "trace_rows": 2,
+                "trace_rows_by_q": {
+                  "50": 2
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 655,
+              "rows": 747
+            },
+            "deleted_positions": [
+              0,
+              11
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              50,
+              51,
+              78,
+              79,
+              81,
+              91,
+              121,
+              151,
+              166,
+              190,
+              236
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          },
+          {
+            "A_multiset": [
+              2,
+              3,
+              7,
+              10,
+              10,
+              16,
+              23,
+              26,
+              64,
+              66,
+              90,
+              96,
+              128,
+              132,
+              132,
+              154,
+              165,
+              167,
+              231
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 34,
+                "tensor_rows": 30,
+                "trace_qs": [
+                  51
+                ],
+                "trace_rows": 4,
+                "trace_rows_by_q": {
+                  "51": 4
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 662,
+              "rows": 747
+            },
+            "deleted_positions": [
+              0,
+              12
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              50,
+              51,
+              78,
+              79,
+              91,
+              121,
+              122,
+              141,
+              151,
+              153,
+              175
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          }
+        ]
+      },
+      "existing_core_file": "data/e12e21_flip_workspace/data/tensors/e12e21core.npy",
+      "existing_core_file_meta": {
+        "coo_rows": 27,
+        "format": "coo_abcv",
+        "raw_dtype": "int8",
+        "raw_shape": [
+          27,
+          4
+        ]
+      },
+      "existing_core_matches_reconstruction": true,
+      "label": "rank-2 quotient E12+E21",
+      "mask": 10,
+      "name": "E12_E21",
+      "quotient_meta": {
+        "free_bits": [
+          1
+        ],
+        "kept_full_A_indices": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "mask": 10,
+        "pivot": 3
+      },
+      "rank21_controls": {
+        "correct_trace_direct_failures": 0,
+        "correct_trace_direct_tests": 864,
+        "pool_rows_available": 500,
+        "pool_rows_sampled": 12,
+        "records_head": [
+          {
+            "A_multiplicity_hist": {
+              "1": 17,
+              "2": 2
+            },
+            "correct_trace_direct_failures": 0,
+            "correct_trace_system_consistent": true,
+            "correct_trace_system_rank": 705,
+            "saturated_rank9_qs": [
+              46,
+              60,
+              78,
+              91,
+              142,
+              175,
+              238,
+              245
+            ],
+            "scheme_index": 0,
+            "term_count": 21,
+            "unique_A": 19,
+            "verified": true
+          },
+          {
+            "A_multiplicity_hist": {
+              "1": 17,
+              "2": 2
+            },
+            "correct_trace_direct_failures": 0,
+            "correct_trace_system_consistent": true,
+            "correct_trace_system_rank": 709,
+            "saturated_rank9_qs": [
+              47,
+              81,
+              89,
+              103,
+              190,
+              205,
+              213,
+              245
+            ],
+            "scheme_index": 1,
+            "term_count": 21,
+            "unique_A": 19,
+            "verified": true
+          },
+          {
+            "A_multiplicity_hist": {
+              "1": 17,
+              "2": 2
+            },
+            "correct_trace_direct_failures": 0,
+            "correct_trace_system_consistent": true,
+            "correct_trace_system_rank": 709,
+            "saturated_rank9_qs": [
+              44,
+              135,
+              137,
+              142,
+              175,
+              233,
+              236,
+              252
+            ],
+            "scheme_index": 2,
+            "term_count": 21,
+            "unique_A": 19,
+            "verified": true
+          },
+          {
+            "A_multiplicity_hist": {
+              "1": 17,
+              "2": 2
+            },
+            "correct_trace_direct_failures": 0,
+            "correct_trace_system_consistent": true,
+            "correct_trace_system_rank": 705,
+            "saturated_rank9_qs": [
+              55,
+              81,
+              119,
+              124,
+              151,
+              172,
+              187,
+              215
+            ],
+            "scheme_index": 3,
+            "term_count": 21,
+            "unique_A": 19,
+            "verified": true
+          },
+          {
+            "A_multiplicity_hist": {
+              "1": 17,
+              "2": 2
+            },
+            "correct_trace_direct_failures": 0,
+            "correct_trace_system_consistent": true,
+            "correct_trace_system_rank": 709,
+            "saturated_rank9_qs": [
+              81,
+              103,
+              108,
+              113,
+              121,
+              142,
+              158,
+              245
+            ],
+            "scheme_index": 4,
+            "term_count": 21,
+            "unique_A": 19,
+            "verified": true
+          },
+          {
+            "A_multiplicity_hist": {
+              "1": 21
+            },
+            "correct_trace_direct_failures": 0,
+            "correct_trace_system_consistent": true,
+            "correct_trace_system_rank": 694,
+            "saturated_rank9_qs": [
+              60,
+              102,
+              113,
+              213,
+              219,
+              227
+            ],
+            "scheme_index": 5,
+            "term_count": 21,
+            "unique_A": 21,
+            "verified": true
+          },
+          {
+            "A_multiplicity_hist": {
+              "1": 17,
+              "2": 2
+            },
+            "correct_trace_direct_failures": 0,
+            "correct_trace_system_consistent": true,
+            "correct_trace_system_rank": 709,
+            "saturated_rank9_qs": [
+              59,
+              79,
+              91,
+              122,
+              131,
+              233,
+              234,
+              236
+            ],
+            "scheme_index": 6,
+            "term_count": 21,
+            "unique_A": 19,
+            "verified": true
+          },
+          {
+            "A_multiplicity_hist": {
+              "1": 17,
+              "2": 2
+            },
+            "correct_trace_direct_failures": 0,
+            "correct_trace_system_consistent": true,
+            "correct_trace_system_rank": 705,
+            "saturated_rank9_qs": [
+              47,
+              138,
+              142,
+              154,
+              158,
+              172,
+              213,
+              219
+            ],
+            "scheme_index": 7,
+            "term_count": 21,
+            "unique_A": 19,
+            "verified": true
+          }
+        ],
+        "saturated_rank9_q_total_over_sample": 96,
+        "unique_A_histogram": {
+          "19": 10,
+          "20": 1,
+          "21": 1
+        },
+        "verified_sampled_schemes": 12
+      },
+      "rank21_pool_file": "data/e12e21_flip_workspace/data/schemes_modp/e12e21core/mod2-rank21a.npy",
+      "rank9_contractions": [
+        44,
+        45,
+        46,
+        47,
+        50,
+        51,
+        54,
+        55,
+        58,
+        59,
+        60,
+        61,
+        70,
+        71,
+        78,
+        79,
+        81,
+        83,
+        85,
+        86,
+        89,
+        91,
+        93,
+        94,
+        102,
+        103,
+        108,
+        109,
+        113,
+        114,
+        117,
+        119,
+        121,
+        122,
+        124,
+        126,
+        130,
+        131,
+        134,
+        135,
+        137,
+        138,
+        141,
+        142,
+        146,
+        147,
+        150,
+        151,
+        153,
+        154,
+        157,
+        158,
+        162,
+        163,
+        166,
+        167,
+        169,
+        170,
+        172,
+        175,
+        185,
+        187,
+        188,
+        190,
+        194,
+        195,
+        201,
+        202,
+        205,
+        207,
+        209,
+        210,
+        213,
+        215,
+        218,
+        219,
+        226,
+        227,
+        233,
+        234,
+        236,
+        238,
+        241,
+        243,
+        245,
+        246,
+        252,
+        253
+      ]
+    },
+    "H3": {
+      "contraction_rank_histogram": {
+        "3": 21,
+        "6": 154,
+        "9": 80
+      },
+      "core_shape": [
+        8,
+        9,
+        9
+      ],
+      "deletion_nearmiss_pilot": {
+        "consistent_after_correct_trace_examples_head": [
+          {
+            "A_multiset": [
+              1,
+              4,
+              21,
+              24,
+              28,
+              36,
+              45,
+              48,
+              56,
+              80,
+              82,
+              84,
+              132,
+              164,
+              188,
+              198,
+              198,
+              212,
+              240
+            ],
+            "correct_trace_rank": 717,
+            "deleted_positions": [
+              1,
+              17
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              92,
+              101,
+              102,
+              108,
+              111,
+              121,
+              138,
+              238,
+              252
+            ],
+            "scheme_index": 0,
+            "tensor_only_rank": 648
+          },
+          {
+            "A_multiset": [
+              5,
+              7,
+              18,
+              21,
+              29,
+              45,
+              48,
+              56,
+              80,
+              82,
+              87,
+              132,
+              164,
+              188,
+              198,
+              212,
+              235,
+              240,
+              246
+            ],
+            "correct_trace_rank": 733,
+            "deleted_positions": [
+              0,
+              5
+            ],
+            "distinct": true,
+            "saturated_rank9_qs": [
+              50,
+              76,
+              101,
+              111,
+              113,
+              114,
+              117,
+              139,
+              178,
+              187,
+              213,
+              220,
+              223
+            ],
+            "scheme_index": 1,
+            "tensor_only_rank": 648
+          },
+          {
+            "A_multiset": [
+              5,
+              6,
+              7,
+              18,
+              21,
+              36,
+              45,
+              48,
+              56,
+              80,
+              82,
+              87,
+              132,
+              164,
+              188,
+              198,
+              235,
+              240,
+              246
+            ],
+            "correct_trace_rank": 718,
+            "deleted_positions": [
+              1,
+              6
+            ],
+            "distinct": true,
+            "saturated_rank9_qs": [
+              38,
+              47,
+              50,
+              51,
+              94,
+              139,
+              151,
+              243,
+              253
+            ],
+            "scheme_index": 1,
+            "tensor_only_rank": 648
+          },
+          {
+            "A_multiset": [
+              5,
+              6,
+              7,
+              18,
+              21,
+              36,
+              45,
+              48,
+              56,
+              80,
+              82,
+              87,
+              132,
+              164,
+              198,
+              212,
+              235,
+              240,
+              246
+            ],
+            "correct_trace_rank": 736,
+            "deleted_positions": [
+              1,
+              7
+            ],
+            "distinct": true,
+            "saturated_rank9_qs": [
+              47,
+              94,
+              122,
+              126,
+              151,
+              166,
+              167,
+              178,
+              183,
+              213,
+              215,
+              243
+            ],
+            "scheme_index": 1,
+            "tensor_only_rank": 648
+          },
+          {
+            "A_multiset": [
+              5,
+              6,
+              7,
+              21,
+              36,
+              45,
+              48,
+              56,
+              80,
+              82,
+              87,
+              132,
+              164,
+              188,
+              198,
+              212,
+              235,
+              240,
+              246
+            ],
+            "correct_trace_rank": 732,
+            "deleted_positions": [
+              1,
+              11
+            ],
+            "distinct": true,
+            "saturated_rank9_qs": [
+              38,
+              47,
+              102,
+              113,
+              126,
+              139,
+              166,
+              167,
+              183,
+              202,
+              213,
+              220
+            ],
+            "scheme_index": 1,
+            "tensor_only_rank": 648
+          },
+          {
+            "A_multiset": [
+              5,
+              6,
+              7,
+              18,
+              21,
+              36,
+              48,
+              56,
+              80,
+              82,
+              87,
+              132,
+              164,
+              188,
+              198,
+              212,
+              235,
+              240,
+              246
+            ],
+            "correct_trace_rank": 716,
+            "deleted_positions": [
+              1,
+              13
+            ],
+            "distinct": true,
+            "saturated_rank9_qs": [
+              50,
+              101,
+              114,
+              167,
+              178,
+              187,
+              202,
+              223,
+              253
+            ],
+            "scheme_index": 1,
+            "tensor_only_rank": 648
+          },
+          {
+            "A_multiset": [
+              5,
+              6,
+              21,
+              29,
+              36,
+              45,
+              48,
+              56,
+              80,
+              82,
+              87,
+              132,
+              164,
+              188,
+              198,
+              212,
+              235,
+              240,
+              246
+            ],
+            "correct_trace_rank": 723,
+            "deleted_positions": [
+              2,
+              11
+            ],
+            "distinct": true,
+            "saturated_rank9_qs": [
+              47,
+              117,
+              122,
+              139,
+              145,
+              158,
+              183,
+              202,
+              220,
+              223
+            ],
+            "scheme_index": 1,
+            "tensor_only_rank": 648
+          },
+          {
+            "A_multiset": [
+              5,
+              6,
+              18,
+              21,
+              29,
+              36,
+              45,
+              48,
+              56,
+              80,
+              82,
+              132,
+              164,
+              188,
+              198,
+              212,
+              235,
+              240,
+              246
+            ],
+            "correct_trace_rank": 710,
+            "deleted_positions": [
+              2,
+              12
+            ],
+            "distinct": true,
+            "saturated_rank9_qs": [
+              47,
+              51,
+              101,
+              114,
+              183,
+              215,
+              220,
+              253
+            ],
+            "scheme_index": 1,
+            "tensor_only_rank": 648
+          },
+          {
+            "A_multiset": [
+              5,
+              6,
+              7,
+              18,
+              21,
+              29,
+              36,
+              45,
+              48,
+              56,
+              80,
+              82,
+              87,
+              132,
+              164,
+              188,
+              198,
+              235,
+              240
+            ],
+            "correct_trace_rank": 719,
+            "deleted_positions": [
+              3,
+              6
+            ],
+            "distinct": true,
+            "saturated_rank9_qs": [
+              38,
+              47,
+              50,
+              101,
+              111,
+              113,
+              117,
+              139,
+              223
+            ],
+            "scheme_index": 1,
+            "tensor_only_rank": 648
+          },
+          {
+            "A_multiset": [
+              5,
+              6,
+              7,
+              18,
+              21,
+              29,
+              36,
+              45,
+              48,
+              56,
+              80,
+              82,
+              87,
+              132,
+              164,
+              188,
+              198,
+              212,
+              240
+            ],
+            "correct_trace_rank": 696,
+            "deleted_positions": [
+              3,
+              8
+            ],
+            "distinct": true,
+            "saturated_rank9_qs": [
+              117,
+              126,
+              142,
+              147,
+              154,
+              183
+            ],
+            "scheme_index": 1,
+            "tensor_only_rank": 648
+          }
+        ],
+        "elapsed_sec": 7.969,
+        "max_supports": 1200,
+        "pool_rows_scanned_until_stop": 6,
+        "saturated_q_count_hist_for_tensor_consistent": {
+          "10": 61,
+          "11": 129,
+          "12": 154,
+          "13": 188,
+          "14": 169,
+          "15": 129,
+          "16": 124,
+          "17": 70,
+          "18": 66,
+          "19": 24,
+          "20": 17,
+          "21": 8,
+          "22": 1,
+          "6": 3,
+          "8": 20,
+          "9": 37
+        },
+        "totals": {
+          "correct_trace_inconsistent": 1114,
+          "correct_trace_inconsistent_distinct": 780,
+          "distinct_supports_tested": 858,
+          "supports_tested": 1200,
+          "tensor_consistent": 1200,
+          "tensor_consistent_distinct": 858
+        },
+        "trace_inconsistent_examples_head": [
+          {
+            "A_multiset": [
+              1,
+              21,
+              24,
+              28,
+              36,
+              45,
+              48,
+              56,
+              80,
+              82,
+              84,
+              87,
+              132,
+              164,
+              188,
+              198,
+              198,
+              212,
+              240
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 24,
+                "tensor_rows": 18,
+                "trace_qs": [
+                  102,
+                  114,
+                  117,
+                  238
+                ],
+                "trace_rows": 6,
+                "trace_rows_by_q": {
+                  "102": 1,
+                  "114": 1,
+                  "117": 3,
+                  "238": 1
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 730,
+              "rows": 765
+            },
+            "deleted_positions": [
+              0,
+              1
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              38,
+              76,
+              92,
+              101,
+              102,
+              113,
+              114,
+              117,
+              170,
+              187,
+              238,
+              252,
+              253
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          },
+          {
+            "A_multiset": [
+              1,
+              7,
+              21,
+              24,
+              28,
+              36,
+              45,
+              48,
+              80,
+              82,
+              84,
+              87,
+              132,
+              164,
+              188,
+              198,
+              198,
+              212,
+              240
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 93,
+                "tensor_rows": 81,
+                "trace_qs": [
+                  108,
+                  111,
+                  142,
+                  166
+                ],
+                "trace_rows": 12,
+                "trace_rows_by_q": {
+                  "108": 2,
+                  "111": 6,
+                  "142": 2,
+                  "166": 2
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 715,
+              "rows": 774
+            },
+            "deleted_positions": [
+              0,
+              2
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              76,
+              108,
+              111,
+              117,
+              126,
+              139,
+              142,
+              154,
+              166,
+              217,
+              220,
+              230,
+              238,
+              252
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          },
+          {
+            "A_multiset": [
+              1,
+              7,
+              21,
+              24,
+              28,
+              36,
+              45,
+              48,
+              56,
+              80,
+              82,
+              84,
+              87,
+              132,
+              164,
+              188,
+              198,
+              212,
+              240
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 23,
+                "tensor_rows": 15,
+                "trace_qs": [
+                  38,
+                  101,
+                  113,
+                  117,
+                  166,
+                  187
+                ],
+                "trace_rows": 8,
+                "trace_rows_by_q": {
+                  "101": 1,
+                  "113": 1,
+                  "117": 1,
+                  "166": 2,
+                  "187": 1,
+                  "38": 2
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 736,
+              "rows": 792
+            },
+            "deleted_positions": [
+              0,
+              3
+            ],
+            "distinct": true,
+            "saturated_rank9_qs": [
+              38,
+              101,
+              108,
+              113,
+              117,
+              122,
+              124,
+              126,
+              142,
+              154,
+              166,
+              187,
+              217,
+              238,
+              243,
+              252
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          },
+          {
+            "A_multiset": [
+              1,
+              7,
+              21,
+              24,
+              28,
+              36,
+              45,
+              48,
+              56,
+              82,
+              84,
+              87,
+              132,
+              164,
+              188,
+              198,
+              198,
+              212,
+              240
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 80,
+                "tensor_rows": 75,
+                "trace_qs": [
+                  124
+                ],
+                "trace_rows": 5,
+                "trace_rows_by_q": {
+                  "124": 5
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 687,
+              "rows": 747
+            },
+            "deleted_positions": [
+              0,
+              4
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              38,
+              76,
+              117,
+              122,
+              124,
+              157,
+              181,
+              217,
+              220,
+              230,
+              253
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          },
+          {
+            "A_multiset": [
+              1,
+              7,
+              21,
+              28,
+              36,
+              45,
+              48,
+              56,
+              80,
+              82,
+              84,
+              87,
+              132,
+              164,
+              188,
+              198,
+              198,
+              212,
+              240
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 26,
+                "tensor_rows": 18,
+                "trace_qs": [
+                  38,
+                  46,
+                  76,
+                  101,
+                  113
+                ],
+                "trace_rows": 8,
+                "trace_rows_by_q": {
+                  "101": 1,
+                  "113": 4,
+                  "38": 1,
+                  "46": 1,
+                  "76": 1
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 693,
+              "rows": 819
+            },
+            "deleted_positions": [
+              0,
+              5
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              38,
+              46,
+              76,
+              101,
+              102,
+              113,
+              114,
+              122,
+              124,
+              139,
+              142,
+              154,
+              170,
+              181,
+              187,
+              217,
+              220,
+              243,
+              253
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          },
+          {
+            "A_multiset": [
+              7,
+              21,
+              24,
+              28,
+              36,
+              45,
+              48,
+              56,
+              80,
+              82,
+              84,
+              87,
+              132,
+              164,
+              188,
+              198,
+              198,
+              212,
+              240
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 62,
+                "tensor_rows": 60,
+                "trace_qs": [
+                  38
+                ],
+                "trace_rows": 2,
+                "trace_rows_by_q": {
+                  "38": 2
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 654,
+              "rows": 765
+            },
+            "deleted_positions": [
+              0,
+              6
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              38,
+              102,
+              108,
+              113,
+              122,
+              124,
+              139,
+              154,
+              157,
+              181,
+              220,
+              238,
+              243
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          },
+          {
+            "A_multiset": [
+              1,
+              7,
+              21,
+              24,
+              28,
+              36,
+              45,
+              48,
+              56,
+              80,
+              82,
+              87,
+              132,
+              164,
+              188,
+              198,
+              198,
+              212,
+              240
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 113,
+                "tensor_rows": 93,
+                "trace_qs": [
+                  46,
+                  101,
+                  108,
+                  111,
+                  142,
+                  217
+                ],
+                "trace_rows": 20,
+                "trace_rows_by_q": {
+                  "101": 4,
+                  "108": 3,
+                  "111": 5,
+                  "142": 3,
+                  "217": 2,
+                  "46": 3
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 727,
+              "rows": 765
+            },
+            "deleted_positions": [
+              0,
+              7
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              46,
+              92,
+              101,
+              102,
+              108,
+              111,
+              122,
+              126,
+              142,
+              166,
+              217,
+              238,
+              252
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          },
+          {
+            "A_multiset": [
+              1,
+              7,
+              21,
+              24,
+              28,
+              36,
+              45,
+              48,
+              56,
+              80,
+              82,
+              84,
+              87,
+              132,
+              164,
+              198,
+              198,
+              212,
+              240
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 5,
+                "tensor_rows": 0,
+                "trace_qs": [
+                  46,
+                  142,
+                  166,
+                  187,
+                  220
+                ],
+                "trace_rows": 5,
+                "trace_rows_by_q": {
+                  "142": 1,
+                  "166": 1,
+                  "187": 1,
+                  "220": 1,
+                  "46": 1
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 726,
+              "rows": 783
+            },
+            "deleted_positions": [
+              0,
+              8
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              38,
+              46,
+              92,
+              101,
+              102,
+              124,
+              142,
+              166,
+              170,
+              187,
+              220,
+              230,
+              238,
+              243,
+              252
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          },
+          {
+            "A_multiset": [
+              1,
+              7,
+              21,
+              24,
+              28,
+              36,
+              45,
+              48,
+              56,
+              80,
+              84,
+              87,
+              132,
+              164,
+              188,
+              198,
+              198,
+              212,
+              240
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 70,
+                "tensor_rows": 63,
+                "trace_qs": [
+                  111
+                ],
+                "trace_rows": 7,
+                "trace_rows_by_q": {
+                  "111": 7
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 679,
+              "rows": 837
+            },
+            "deleted_positions": [
+              0,
+              10
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              46,
+              76,
+              102,
+              111,
+              114,
+              117,
+              124,
+              126,
+              139,
+              142,
+              154,
+              157,
+              166,
+              170,
+              181,
+              187,
+              217,
+              220,
+              238,
+              243,
+              253
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          },
+          {
+            "A_multiset": [
+              1,
+              7,
+              21,
+              24,
+              28,
+              36,
+              45,
+              48,
+              56,
+              80,
+              82,
+              84,
+              87,
+              132,
+              164,
+              188,
+              198,
+              198,
+              212
+            ],
+            "correct_trace": {
+              "certificate": {
+                "coefficients_zero": true,
+                "rhs_one": true,
+                "row_count": 7,
+                "tensor_rows": 0,
+                "trace_qs": [
+                  46,
+                  102,
+                  108,
+                  114,
+                  139,
+                  142,
+                  181
+                ],
+                "trace_rows": 7,
+                "trace_rows_by_q": {
+                  "102": 1,
+                  "108": 1,
+                  "114": 1,
+                  "139": 1,
+                  "142": 1,
+                  "181": 1,
+                  "46": 1
+                }
+              },
+              "consistent": false,
+              "nvars": 1539,
+              "rank": 738,
+              "rows": 783
+            },
+            "deleted_positions": [
+              0,
+              11
+            ],
+            "distinct": false,
+            "saturated_rank9_qs": [
+              46,
+              76,
+              101,
+              102,
+              108,
+              111,
+              113,
+              114,
+              126,
+              139,
+              142,
+              154,
+              181,
+              230,
+              253
+            ],
+            "scheme_index": 0,
+            "tensor_only": {
+              "consistent": true,
+              "nvars": 1539,
+              "rank": 648,
+              "rows": 648
+            }
+          }
+        ]
+      },
+      "existing_core_file": "data/e13e22e31_flip_workspace/data/tensors/e13e22e31core.npy",
+      "existing_core_file_meta": {
+        "coo_rows": 30,
+        "format": "coo_abcv",
+        "raw_dtype": "int8",
+        "raw_shape": [
+          30,
+          4
+        ]
+      },
+      "existing_core_matches_reconstruction": true,
+      "label": "rank-3 quotient E13+E22+E31",
+      "mask": 84,
+      "name": "H3",
+      "quotient_meta": {
+        "free_bits": [
+          2,
+          4
+        ],
+        "kept_full_A_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8
+        ],
+        "mask": 84,
+        "pivot": 6
+      },
+      "rank21_controls": {
+        "correct_trace_direct_failures": 0,
+        "correct_trace_direct_tests": 504,
+        "pool_rows_available": 554,
+        "pool_rows_sampled": 12,
+        "records_head": [
+          {
+            "A_multiplicity_hist": {
+              "1": 19,
+              "2": 1
+            },
+            "correct_trace_direct_failures": 0,
+            "correct_trace_system_consistent": true,
+            "correct_trace_system_rank": 688,
+            "saturated_rank9_qs": [
+              122,
+              154,
+              158,
+              187,
+              217
+            ],
+            "scheme_index": 0,
+            "term_count": 21,
+            "unique_A": 20,
+            "verified": true
+          },
+          {
+            "A_multiplicity_hist": {
+              "1": 21
+            },
+            "correct_trace_direct_failures": 0,
+            "correct_trace_system_consistent": true,
+            "correct_trace_system_rank": 672,
+            "saturated_rank9_qs": [
+              111,
+              158,
+              253
+            ],
+            "scheme_index": 1,
+            "term_count": 21,
+            "unique_A": 21,
+            "verified": true
+          },
+          {
+            "A_multiplicity_hist": {
+              "1": 21
+            },
+            "correct_trace_direct_failures": 0,
+            "correct_trace_system_consistent": true,
+            "correct_trace_system_rank": 680,
+            "saturated_rank9_qs": [
+              122,
+              167,
+              223,
+              225
+            ],
+            "scheme_index": 2,
+            "term_count": 21,
+            "unique_A": 21,
+            "verified": true
+          },
+          {
+            "A_multiplicity_hist": {
+              "1": 21
+            },
+            "correct_trace_direct_failures": 0,
+            "correct_trace_system_consistent": true,
+            "correct_trace_system_rank": 664,
+            "saturated_rank9_qs": [
+              142,
+              243
+            ],
+            "scheme_index": 3,
+            "term_count": 21,
+            "unique_A": 21,
+            "verified": true
+          },
+          {
+            "A_multiplicity_hist": {
+              "1": 19,
+              "2": 1
+            },
+            "correct_trace_direct_failures": 0,
+            "correct_trace_system_consistent": true,
+            "correct_trace_system_rank": 693,
+            "saturated_rank9_qs": [
+              99,
+              105,
+              122,
+              167,
+              170,
+              202
+            ],
+            "scheme_index": 4,
+            "term_count": 21,
+            "unique_A": 20,
+            "verified": true
+          },
+          {
+            "A_multiplicity_hist": {
+              "1": 21
+            },
+            "correct_trace_direct_failures": 0,
+            "correct_trace_system_consistent": true,
+            "correct_trace_system_rank": 680,
+            "saturated_rank9_qs": [
+              105,
+              154,
+              167,
+              217
+            ],
+            "scheme_index": 5,
+            "term_count": 21,
+            "unique_A": 21,
+            "verified": true
+          },
+          {
+            "A_multiplicity_hist": {
+              "1": 21
+            },
+            "correct_trace_direct_failures": 0,
+            "correct_trace_system_consistent": true,
+            "correct_trace_system_rank": 680,
+            "saturated_rank9_qs": [
+              101,
+              170,
+              187,
+              205
+            ],
+            "scheme_index": 6,
+            "term_count": 21,
+            "unique_A": 21,
+            "verified": true
+          },
+          {
+            "A_multiplicity_hist": {
+              "1": 19,
+              "2": 1
+            },
+            "correct_trace_direct_failures": 0,
+            "correct_trace_system_consistent": true,
+            "correct_trace_system_rank": 696,
+            "saturated_rank9_qs": [
+              99,
+              111,
+              113,
+              205,
+              238,
+              253
+            ],
+            "scheme_index": 7,
+            "term_count": 21,
+            "unique_A": 20,
+            "verified": true
+          }
+        ],
+        "saturated_rank9_q_total_over_sample": 56,
+        "unique_A_histogram": {
+          "20": 5,
+          "21": 7
+        },
+        "verified_sampled_schemes": 12
+      },
+      "rank21_pool_file": "data/e13e22e31_flip_workspace/data/schemes_modp/e13e22e31core/mod2-rank21a.npy",
+      "rank9_contractions": [
+        38,
+        39,
+        46,
+        47,
+        50,
+        51,
+        58,
+        59,
+        76,
+        77,
+        78,
+        79,
+        92,
+        93,
+        94,
+        95,
+        97,
+        99,
+        101,
+        102,
+        105,
+        107,
+        108,
+        111,
+        113,
+        114,
+        117,
+        119,
+        121,
+        122,
+        124,
+        126,
+        138,
+        139,
+        142,
+        143,
+        145,
+        147,
+        149,
+        151,
+        153,
+        154,
+        157,
+        158,
+        166,
+        167,
+        170,
+        171,
+        177,
+        178,
+        181,
+        183,
+        185,
+        187,
+        189,
+        190,
+        202,
+        203,
+        204,
+        205,
+        209,
+        211,
+        213,
+        215,
+        217,
+        218,
+        220,
+        223,
+        225,
+        227,
+        229,
+        230,
+        233,
+        234,
+        236,
+        238,
+        242,
+        243,
+        252,
+        253
+      ]
+    }
+  },
+  "elapsed_sec": 22.569,
+  "field": "F2",
+  "parameters": {
+    "max_deletions": 1200,
+    "pool_limit": 12
+  },
+  "purpose": "Route-selection evidence for finite-field codimension-one quotient cores; no lower bound follows from this pilot.",
+  "schema": "corrected_trace_core_survey_v1"
+}

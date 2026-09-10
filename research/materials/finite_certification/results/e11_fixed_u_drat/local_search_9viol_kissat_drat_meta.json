@@ -1,0 +1,53 @@
+{
+  "purpose": "Verified DRAT proof for one fixed-A E11 rank-19 UNSAT support",
+  "field": "F2",
+  "core": "data/restricted_cores/mask_001_E11_core.npy",
+  "rank": 19,
+  "u_masks": [
+    1,
+    2,
+    3,
+    4,
+    12,
+    16,
+    20,
+    28,
+    32,
+    36,
+    92,
+    97,
+    108,
+    130,
+    144,
+    195,
+    208,
+    216,
+    252
+  ],
+  "cnf_path": "data/e11_fixed_u_drat/local_search_9viol_plain_cnf_drat.cnf",
+  "drat_path": "data/e11_fixed_u_drat/local_search_9viol_kissat.drat",
+  "drat_trim_log": "data/e11_fixed_u_drat/local_search_9viol_kissat.drat_trim.log",
+  "cnf_sha256": "30fe72db30911243e079de024a516ae82ecf9bf2a8723e8c8f1a0f2e37705d3b",
+  "drat_sha256": "4af8cffeb352d8051aea087e5a2dff61e1519b13092388387c84da8b1a2ec516",
+  "drat_trim_log_sha256": "54cf22ec2f8b27b8f93528d8884888cadf7e8f8bdf9d5cf8bda4e96d37c63ecf",
+  "cnf_stats": {
+    "vars": 4473,
+    "clauses": 16281
+  },
+  "kissat_result": {
+    "returncode": 20,
+    "status": "UNSAT",
+    "solver_stdout_record": "analysis run_shell output; proof written to local_search_9viol_kissat.drat"
+  },
+  "drat_trim_result": {
+    "returncode": 0,
+    "status": "VERIFIED",
+    "core_clauses": 4354,
+    "core_lemmas": 41718,
+    "resolution_steps": 820161,
+    "rat_lemmas": 0,
+    "verification_time_sec": 1.038
+  },
+  "fixed_support_unsat_certified": true,
+  "meaning": "This proves there is no E11 core CPD of rank 19 with exactly this A multiset. It is not a global E11 rank-19 exclusion and does not exclude other A-multisets or orbits."
+}

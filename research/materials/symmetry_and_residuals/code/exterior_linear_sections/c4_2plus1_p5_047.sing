@@ -1,0 +1,38 @@
+// analysis generated Singular chart
+// family=c4_2plus1 prime=5 pivot=(0, 4, 7)
+LIB "general.lib";
+option(redSB);
+ring r=5,(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14),dp;
+ideal I=
+4 + x2*x4 + 4*x1*x5,
+x2*x7 + 4*x1*x8,
+x5*x7 + 4*x4*x8,
+4*x14,
+x11*x13 + 4*x10*x14,
+4*x10,
+x2*x4*x6 + 4*x2*x3*x7 + 4*x1*x5*x6 + x1*x3*x8 + x0*x5*x7 + 4*x0*x4*x8,
+x2*x12 + 4*x0*x14,
+4*x0,
+1 + x2*x10*x12 + 4*x2*x9*x13 + 4*x1*x11*x12 + x1*x9*x14 + x0*x11*x13 + 4*x0*x10*x14,
+x1*x9 + 4*x0*x10,
+1 + x5*x12 + 4*x3*x14,
+4*x3,
+x5*x10*x12 + 4*x5*x9*x13 + 4*x4*x11*x12 + x4*x9*x14 + x3*x11*x13 + 4*x3*x10*x14,
+x4*x9 + 4*x3*x10,
+1 + x8*x12 + 4*x6*x14,
+4*x6,
+x8*x10*x12 + 4*x8*x9*x13 + 4*x7*x11*x12 + x7*x9*x14 + x6*x11*x13 + 4*x6*x10*x14,
+1 + x7*x9 + 4*x6*x10;
+print("family=c4_2plus1 prime=5 pivot=(0, 4, 7) equations=19");
+print("computing std");
+ideal G=std(I);
+print("std_done");
+print("dim");
+dim(G);
+print("degree");
+degree(G);
+print("ncols_std");
+size(G);
+print("lead_first20");
+for (int i=1; i<=size(G) and i<=20; i=i+1) { lead(G[i]); }
+quit;

@@ -1,0 +1,288 @@
+{
+  "base_graph_rank1": {
+    "base_rank1_edge_count": 0,
+    "base_rank1_unit_count": 0,
+    "base_rep2_total_edges": 11280,
+    "base_rep2_total_survivors": 509
+  },
+  "base_plus_ruling_feasible_at_least_table": [
+    {
+      "feasible": true,
+      "selected_candidates_bound": 24
+    },
+    {
+      "feasible": true,
+      "selected_candidates_bound": 25
+    },
+    {
+      "feasible": true,
+      "selected_candidates_bound": 26
+    },
+    {
+      "feasible": false,
+      "selected_candidates_bound": 27
+    },
+    {
+      "feasible": false,
+      "selected_candidates_bound": 28
+    }
+  ],
+  "base_plus_ruling_max": {
+    "hard_clause_count": 98,
+    "opt_selected_candidates": 26,
+    "opt_total_rank1_including_prefix": 28,
+    "selected_points": [
+      5,
+      6,
+      9,
+      18,
+      32,
+      36,
+      40,
+      48,
+      56,
+      63,
+      65,
+      73,
+      128,
+      144,
+      192,
+      195,
+      216,
+      219,
+      288,
+      292,
+      325,
+      360,
+      384,
+      438,
+      448,
+      455
+    ],
+    "solver_log_tail": "{\"status\": \"OPTIMUM\", \"cost\": 21, \"selected_count\": 26, \"positive\": [3, 4, 7, 9, 12, 13, 14, 16, 18, 19, 21, 23, 24, 26, 28, 29, 30, 31, 34, 35, 37, 38, 40, 43, 44, 45]}\n",
+    "status": "OPTIMUM",
+    "wcnf": "data/rep2_rank1_ruling_profile/base_ruling_rank1.wcnf"
+  },
+  "base_plus_ruling_orbit_signature": [
+    0,
+    2,
+    6,
+    0,
+    0,
+    4,
+    0,
+    0,
+    14,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "line_meta": {
+    "binary_pairs": [
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        16,
+        18
+      ],
+      [
+        64,
+        65
+      ],
+      [
+        72,
+        73
+      ],
+      [
+        128,
+        130
+      ],
+      [
+        144,
+        146
+      ]
+    ],
+    "encoded_rank1_clause_count": 98,
+    "simplified": {
+      "binary": 10,
+      "contradictions": 0,
+      "ternary": 87,
+      "unit": 1
+    },
+    "unit_points": [
+      3
+    ]
+  },
+  "meaning": "Maximum rank-1 candidates compatible with transported ruling-line triples, optionally with residual-0/1 Wang base graph restricted to rank-1 candidate variables. This profiles rep2 geometry; it is not a full support exclusion because higher-rank points are ignored.",
+  "orbit_signature_order": [
+    {
+      "rank": 1,
+      "rep": 3,
+      "size": 1
+    },
+    {
+      "rank": 1,
+      "rep": 4,
+      "size": 4
+    },
+    {
+      "rank": 1,
+      "rep": 8,
+      "size": 12
+    },
+    {
+      "rank": 2,
+      "rep": 10,
+      "size": 12
+    },
+    {
+      "rank": 2,
+      "rep": 12,
+      "size": 24
+    },
+    {
+      "rank": 1,
+      "rep": 24,
+      "size": 6
+    },
+    {
+      "rank": 2,
+      "rep": 25,
+      "size": 6
+    },
+    {
+      "rank": 2,
+      "rep": 28,
+      "size": 12
+    },
+    {
+      "rank": 1,
+      "rep": 32,
+      "size": 24
+    },
+    {
+      "rank": 2,
+      "rep": 33,
+      "size": 48
+    },
+    {
+      "rank": 2,
+      "rep": 35,
+      "size": 24
+    },
+    {
+      "rank": 2,
+      "rep": 80,
+      "size": 24
+    },
+    {
+      "rank": 3,
+      "rep": 84,
+      "size": 24
+    },
+    {
+      "rank": 2,
+      "rep": 96,
+      "size": 96
+    },
+    {
+      "rank": 3,
+      "rep": 98,
+      "size": 96
+    },
+    {
+      "rank": 2,
+      "rep": 224,
+      "size": 48
+    },
+    {
+      "rank": 3,
+      "rep": 225,
+      "size": 48
+    }
+  ],
+  "prefix": [
+    1,
+    2
+  ],
+  "rank1_candidate_count": 47,
+  "ruling_only_max": {
+    "hard_clause_count": 98,
+    "opt_selected_candidates": 26,
+    "opt_total_rank1_including_prefix": 28,
+    "selected_points": [
+      5,
+      6,
+      9,
+      18,
+      32,
+      36,
+      40,
+      48,
+      56,
+      63,
+      65,
+      73,
+      128,
+      144,
+      192,
+      195,
+      216,
+      219,
+      288,
+      292,
+      325,
+      360,
+      384,
+      438,
+      448,
+      455
+    ],
+    "solver_log_tail": "{\"status\": \"OPTIMUM\", \"cost\": 21, \"selected_count\": 26, \"positive\": [3, 4, 7, 9, 12, 13, 14, 16, 18, 19, 21, 23, 24, 26, 28, 29, 30, 31, 34, 35, 37, 38, 40, 43, 44, 45]}\n",
+    "status": "OPTIMUM",
+    "wcnf": "data/rep2_rank1_ruling_profile/ruling_only.wcnf"
+  },
+  "ruling_only_orbit_signature": [
+    0,
+    2,
+    6,
+    0,
+    0,
+    4,
+    0,
+    0,
+    14,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "schema": "rep2_rank1_ruling_profile_v1"
+}

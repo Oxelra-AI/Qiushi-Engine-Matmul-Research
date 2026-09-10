@@ -1,0 +1,42 @@
+{
+  "schema": "best_distinct_hint_v1",
+  "field": "F2",
+  "core": "E11",
+  "rank_s": 19,
+  "source": "data/distinct_line_cover/threshold_L15_300s.json",
+  "interpretation": "Best support found in analysis L>=15 restricted model; it has 12 complete Wang violations, all L=12, so it is only a CP-SAT hint, not an admissible support.",
+  "rounds": [
+    {
+      "round": 0,
+      "support": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        20,
+        24,
+        31,
+        32,
+        64,
+        73,
+        109,
+        127,
+        128,
+        141,
+        160,
+        182,
+        192,
+        219
+      ],
+      "complete_wang_violations": 12,
+      "violations_by_L": {
+        "12": 12
+      },
+      "zero_domain_terms": 0,
+      "linear_pass": true,
+      "transversal_failures": 0,
+      "quotient_rank_violations_size2": 0
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "build_sec": 16.485,
+  "candidate": null,
+  "constraint_summary": {
+    "direct_mixed_cuts": {
+      "added": 1440,
+      "by_K": {
+        "15": 1440
+      },
+      "by_dual_dim": {
+        "2": 1440
+      },
+      "by_gap": {
+        "6": 1440
+      },
+      "source_meta": {
+        "K_hist_unique": {
+          "12": 14724,
+          "15": 117630,
+          "9": 756
+        },
+        "dual_dim_hist_unique": {
+          "2": 9072,
+          "3": 124038
+        },
+        "gap_hist_unique": {
+          "1": 37854,
+          "2": 7056,
+          "3": 86760,
+          "6": 1440
+        },
+        "raw_nondominated_triples": 883728,
+        "truncated": true,
+        "unique_patterns": 133110
+      }
+    },
+    "scalar_by_rank": {
+      "1": 33,
+      "2": 150,
+      "3": 72
+    },
+    "wang": {
+      "added": 417197,
+      "by_L": {
+        "11": 865,
+        "12": 61232,
+        "13": 8130,
+        "14": 81540,
+        "15": 138902,
+        "16": 83046,
+        "17": 34664,
+        "18": 687,
+        "3": 33,
+        "6": 578,
+        "9": 7520
+      },
+      "by_dim8": {
+        "1": 255,
+        "2": 10795,
+        "3": 97155,
+        "4": 200787,
+        "5": 97155,
+        "6": 10795,
+        "7": 255
+      },
+      "mode": "complete",
+      "skipped_not_kept": 0
+    }
+  },
+  "elapsed_sec": 129.855,
+  "out": "data/mixed_source_cuts/direct_mixed_complete120_gap6_10k.json",
+  "params": {
+    "cuts_path": "data/mixed_source_cuts/unique_nondominated_cuts_top50k.json",
+    "max_cuts": 10000,
+    "min_K": 15,
+    "min_gap": 6,
+    "rank": 19,
+    "scalar": true,
+    "wang": "complete"
+  },
+  "purpose": "Search distinct 19-point E11 supports using canonical Wang rows plus direct mixed-source small-coefficient support cuts.",
+  "schema": "s0908_direct_mixed_cut_cpsat_v1",
+  "solver": {
+    "solve_sec": 113.37,
+    "status": "UNKNOWN",
+    "time_limit": 120.0,
+    "workers": 8
+  }
+}

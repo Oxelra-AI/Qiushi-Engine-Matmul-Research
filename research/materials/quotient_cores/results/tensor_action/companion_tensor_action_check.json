@@ -1,0 +1,31 @@
+{
+  "A_image_failures_head": [],
+  "A_image_formula_failure_count": 0,
+  "action_count": 56448,
+  "all_ok": true,
+  "branch_counts": {
+    "nontranspose": 28224,
+    "transpose": 28224
+  },
+  "conventions": {
+    "A_action_both": "nontranspose A->L^{-T} A R^{-T}; transpose A->R^{-1} A^T L^{-1}, matching wang_capacity_lazy.basis_image_for_action.",
+    "proof_convention": "T[3*i+j, 3*j+k, 3*i+k]=1; C is N0 x N2; nontranspose companion B->R^T B, C->L C; transpose companion B->L C, C->R^T B.",
+    "source_wang": "T[3*i+j, 3*j+k, 3*k+i]=1; C is N2 x N0; nontranspose companion B->R^T B, C->C L^T; transpose companion B->L C^T, C->B^T R."
+  },
+  "elapsed_sec": 27.314695119857788,
+  "gl3_count": 168,
+  "meaning": "Exact finite check that every A-side transport action used for Wang certificate witnesses is the A component of a matrix-multiplication tensor automorphism, in both the source/Wang C-index convention and the proof C-index convention. Also checks the source-convention split-flattening product formula on all elementary pairs.",
+  "proof_tensor_action_failure_count": 0,
+  "proof_tensor_action_failures_head": [],
+  "schema": "s0908_companion_tensor_action_check_v1",
+  "source_product_formula": {
+    "P_is_permutation": true,
+    "checks": 531441,
+    "failure_count": 0,
+    "failures_head": [],
+    "nonzero_lhs_count": 19683,
+    "nonzero_rhs_count": 19683
+  },
+  "source_tensor_action_failure_count": 0,
+  "source_tensor_action_failures_head": []
+}

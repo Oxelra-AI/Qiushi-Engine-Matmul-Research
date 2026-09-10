@@ -1,0 +1,1162 @@
+{
+  "branch_rep": 2,
+  "closed_by_graph": false,
+  "degree_hist_after_feedback": {
+    "0": 6,
+    "408": 24,
+    "413": 48,
+    "421": 6,
+    "422": 132,
+    "423": 72,
+    "425": 144
+  },
+  "edge_count_after_feedback": 89751,
+  "edge_sources": [
+    {
+      "canonical_subset": [
+        25,
+        193
+      ],
+      "edges_removed": 12,
+      "images_used": 12,
+      "k0": 17,
+      "source": "forbidden_json"
+    },
+    {
+      "canonical_subset": [
+        34,
+        52
+      ],
+      "edges_removed": 12,
+      "images_used": 12,
+      "k0": 16,
+      "source": "forbidden_json"
+    },
+    {
+      "canonical_subset": [
+        34,
+        274
+      ],
+      "edges_removed": 96,
+      "images_used": 96,
+      "k0": 16,
+      "source": "forbidden_json"
+    },
+    {
+      "canonical_subset": [
+        34,
+        272
+      ],
+      "edges_removed": 96,
+      "images_used": 96,
+      "k0": 16,
+      "source": "forbidden_json"
+    },
+    {
+      "canonical_subset": [
+        34,
+        400
+      ],
+      "edges_removed": 96,
+      "images_used": 96,
+      "k0": 16,
+      "source": "forbidden_json"
+    },
+    {
+      "canonical_subset": [
+        34,
+        402
+      ],
+      "edges_removed": 96,
+      "images_used": 96,
+      "k0": 16,
+      "source": "forbidden_json"
+    },
+    {
+      "canonical_subset": [
+        160,
+        274
+      ],
+      "edges_removed": 96,
+      "images_used": 96,
+      "k0": 16,
+      "source": "forbidden_json"
+    }
+  ],
+  "elapsed_sec": 444.63882303237915,
+  "field": "F2",
+  "final_graph_omega_if_computed": null,
+  "final_graph_witness_if_computed": null,
+  "fixed_hr_permanent": [],
+  "fixed_rank1": [
+    1,
+    2
+  ],
+  "higher_order_hyperedges_active": 0,
+  "iterations": [
+    {
+      "canonical_high": [
+        17,
+        19,
+        28
+      ],
+      "event": "full_high_query",
+      "feedback": [
+        {
+          "edges_removed": 2571,
+          "images": 6,
+          "subset": [
+            17
+          ],
+          "type": "singleton_vertex_removal"
+        },
+        {
+          "edges_removed": 0,
+          "images": 6,
+          "subset": [
+            19
+          ],
+          "type": "singleton_vertex_removal"
+        }
+      ],
+      "high": [
+        17,
+        19,
+        28
+      ],
+      "iteration": 1,
+      "orbit_image_count": 12,
+      "query_build_sec": 7.71625280380249,
+      "query_constraints_added": 199956,
+      "query_empty_constraints": 2,
+      "query_solve_sec": 0.2398221492767334,
+      "query_status": "INFEASIBLE",
+      "search_stats": {
+        "hit_node_limit": false,
+        "nodes": 4,
+        "prunes": {}
+      },
+      "shrink": {
+        "high": [
+          17,
+          19,
+          28
+        ],
+        "minimal_infeasible_subsets": [
+          [
+            17
+          ],
+          [
+            19
+          ]
+        ],
+        "queries": [
+          {
+            "build_sec": 4.976448059082031,
+            "canonical": [
+              17
+            ],
+            "constraints_added": 164285,
+            "empty_constraints": 0,
+            "orbit_image_count": 6,
+            "size": 1,
+            "solve_sec": 14.516479730606079,
+            "status": "INFEASIBLE",
+            "subset": [
+              17
+            ]
+          },
+          {
+            "build_sec": 5.015618324279785,
+            "canonical": [
+              17
+            ],
+            "constraints_added": 164285,
+            "empty_constraints": 0,
+            "orbit_image_count": 6,
+            "size": 1,
+            "solve_sec": 15.811179637908936,
+            "status": "INFEASIBLE",
+            "subset": [
+              19
+            ]
+          },
+          {
+            "build_sec": 4.987089157104492,
+            "canonical": [
+              28
+            ],
+            "constraints_added": 164304,
+            "empty_constraints": 0,
+            "orbit_image_count": 12,
+            "size": 1,
+            "solve_sec": 6.217530965805054,
+            "status": "OPTIMAL",
+            "subset": [
+              28
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "canonical_high": [
+        28,
+        29,
+        30
+      ],
+      "event": "full_high_query",
+      "feedback": [
+        {
+          "canonical": [
+            28,
+            29
+          ],
+          "edges_removed": 6,
+          "images": 6,
+          "subset": [
+            28,
+            29
+          ],
+          "type": "pair_edge_removal"
+        },
+        {
+          "canonical": [
+            28,
+            30
+          ],
+          "edges_removed": 6,
+          "images": 6,
+          "subset": [
+            28,
+            30
+          ],
+          "type": "pair_edge_removal"
+        },
+        {
+          "canonical": [
+            28,
+            31
+          ],
+          "edges_removed": 6,
+          "images": 6,
+          "subset": [
+            29,
+            30
+          ],
+          "type": "pair_edge_removal"
+        }
+      ],
+      "high": [
+        28,
+        29,
+        30
+      ],
+      "iteration": 2,
+      "orbit_image_count": 12,
+      "query_build_sec": 7.533100605010986,
+      "query_constraints_added": 198991,
+      "query_empty_constraints": 26,
+      "query_solve_sec": 0.24469685554504395,
+      "query_status": "INFEASIBLE",
+      "search_stats": {
+        "hit_node_limit": false,
+        "nodes": 4,
+        "prunes": {}
+      },
+      "shrink": {
+        "high": [
+          28,
+          29,
+          30
+        ],
+        "minimal_infeasible_subsets": [
+          [
+            28,
+            29
+          ],
+          [
+            28,
+            30
+          ],
+          [
+            29,
+            30
+          ]
+        ],
+        "queries": [
+          {
+            "build_sec": 4.957921504974365,
+            "canonical": [
+              28
+            ],
+            "constraints_added": 164304,
+            "empty_constraints": 0,
+            "orbit_image_count": 12,
+            "size": 1,
+            "solve_sec": 6.316788673400879,
+            "status": "OPTIMAL",
+            "subset": [
+              28
+            ]
+          },
+          {
+            "build_sec": 4.96143913269043,
+            "canonical": [
+              28
+            ],
+            "constraints_added": 164304,
+            "empty_constraints": 0,
+            "orbit_image_count": 12,
+            "size": 1,
+            "solve_sec": 6.374567270278931,
+            "status": "OPTIMAL",
+            "subset": [
+              29
+            ]
+          },
+          {
+            "build_sec": 4.99809718132019,
+            "canonical": [
+              28
+            ],
+            "constraints_added": 164304,
+            "empty_constraints": 0,
+            "orbit_image_count": 12,
+            "size": 1,
+            "solve_sec": 6.266398191452026,
+            "status": "OPTIMAL",
+            "subset": [
+              30
+            ]
+          },
+          {
+            "build_sec": 6.263411521911621,
+            "canonical": [
+              28,
+              29
+            ],
+            "constraints_added": 181867,
+            "empty_constraints": 2,
+            "orbit_image_count": 6,
+            "size": 2,
+            "solve_sec": 0.28803372383117676,
+            "status": "INFEASIBLE",
+            "subset": [
+              28,
+              29
+            ]
+          },
+          {
+            "build_sec": 6.155449628829956,
+            "canonical": [
+              28,
+              30
+            ],
+            "constraints_added": 181867,
+            "empty_constraints": 2,
+            "orbit_image_count": 6,
+            "size": 2,
+            "solve_sec": 0.29837512969970703,
+            "status": "INFEASIBLE",
+            "subset": [
+              28,
+              30
+            ]
+          },
+          {
+            "build_sec": 6.19793176651001,
+            "canonical": [
+              28,
+              31
+            ],
+            "constraints_added": 181549,
+            "empty_constraints": 1,
+            "orbit_image_count": 6,
+            "size": 2,
+            "solve_sec": 0.2892735004425049,
+            "status": "INFEASIBLE",
+            "subset": [
+              29,
+              30
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "canonical_high": [
+        33,
+        35,
+        37
+      ],
+      "event": "full_high_query",
+      "feedback": [
+        {
+          "canonical": [
+            33,
+            35
+          ],
+          "edges_removed": 24,
+          "images": 24,
+          "subset": [
+            33,
+            35
+          ],
+          "type": "pair_edge_removal"
+        },
+        {
+          "canonical": [
+            33,
+            37
+          ],
+          "edges_removed": 12,
+          "images": 12,
+          "subset": [
+            33,
+            37
+          ],
+          "type": "pair_edge_removal"
+        },
+        {
+          "canonical": [
+            33,
+            39
+          ],
+          "edges_removed": 24,
+          "images": 24,
+          "subset": [
+            35,
+            37
+          ],
+          "type": "pair_edge_removal"
+        }
+      ],
+      "high": [
+        33,
+        35,
+        37
+      ],
+      "iteration": 3,
+      "orbit_image_count": 24,
+      "query_build_sec": 7.47702431678772,
+      "query_constraints_added": 199933,
+      "query_empty_constraints": 2,
+      "query_solve_sec": 0.3175177574157715,
+      "query_status": "INFEASIBLE",
+      "search_stats": {
+        "hit_node_limit": false,
+        "nodes": 4,
+        "prunes": {}
+      },
+      "shrink": {
+        "high": [
+          33,
+          35,
+          37
+        ],
+        "minimal_infeasible_subsets": [
+          [
+            33,
+            35
+          ],
+          [
+            33,
+            37
+          ],
+          [
+            35,
+            37
+          ]
+        ],
+        "queries": [
+          {
+            "build_sec": 4.955851078033447,
+            "canonical": [
+              33
+            ],
+            "constraints_added": 164400,
+            "empty_constraints": 0,
+            "orbit_image_count": 24,
+            "size": 1,
+            "solve_sec": 8.161129474639893,
+            "status": "OPTIMAL",
+            "subset": [
+              33
+            ]
+          },
+          {
+            "build_sec": 4.96052622795105,
+            "canonical": [
+              35
+            ],
+            "constraints_added": 164256,
+            "empty_constraints": 0,
+            "orbit_image_count": 24,
+            "size": 1,
+            "solve_sec": 9.097579002380371,
+            "status": "OPTIMAL",
+            "subset": [
+              35
+            ]
+          },
+          {
+            "build_sec": 5.125939846038818,
+            "canonical": [
+              33
+            ],
+            "constraints_added": 164400,
+            "empty_constraints": 0,
+            "orbit_image_count": 24,
+            "size": 1,
+            "solve_sec": 4.999464988708496,
+            "status": "OPTIMAL",
+            "subset": [
+              37
+            ]
+          },
+          {
+            "build_sec": 6.192953586578369,
+            "canonical": [
+              33,
+              35
+            ],
+            "constraints_added": 181873,
+            "empty_constraints": 1,
+            "orbit_image_count": 24,
+            "size": 2,
+            "solve_sec": 0.29419517517089844,
+            "status": "INFEASIBLE",
+            "subset": [
+              33,
+              35
+            ]
+          },
+          {
+            "build_sec": 6.2099573612213135,
+            "canonical": [
+              33,
+              37
+            ],
+            "constraints_added": 182079,
+            "empty_constraints": 0,
+            "orbit_image_count": 12,
+            "size": 2,
+            "solve_sec": 5.344222784042358,
+            "status": "INFEASIBLE",
+            "subset": [
+              33,
+              37
+            ]
+          },
+          {
+            "build_sec": 6.243581295013428,
+            "canonical": [
+              33,
+              39
+            ],
+            "constraints_added": 182213,
+            "empty_constraints": 0,
+            "orbit_image_count": 24,
+            "size": 2,
+            "solve_sec": 5.99414324760437,
+            "status": "INFEASIBLE",
+            "subset": [
+              35,
+              37
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "canonical_high": [
+        80,
+        81,
+        82
+      ],
+      "event": "full_high_query",
+      "feedback": [
+        {
+          "canonical": [
+            80,
+            81
+          ],
+          "edges_removed": 12,
+          "images": 12,
+          "subset": [
+            80,
+            81
+          ],
+          "type": "pair_edge_removal"
+        },
+        {
+          "canonical": [
+            80,
+            82
+          ],
+          "edges_removed": 12,
+          "images": 12,
+          "subset": [
+            80,
+            82
+          ],
+          "type": "pair_edge_removal"
+        },
+        {
+          "canonical": [
+            80,
+            83
+          ],
+          "edges_removed": 12,
+          "images": 12,
+          "subset": [
+            81,
+            82
+          ],
+          "type": "pair_edge_removal"
+        }
+      ],
+      "high": [
+        80,
+        81,
+        82
+      ],
+      "iteration": 4,
+      "orbit_image_count": 24,
+      "query_build_sec": 7.492379903793335,
+      "query_constraints_added": 198715,
+      "query_empty_constraints": 5,
+      "query_solve_sec": 0.22826623916625977,
+      "query_status": "INFEASIBLE",
+      "search_stats": {
+        "hit_node_limit": false,
+        "nodes": 4,
+        "prunes": {}
+      },
+      "shrink": {
+        "high": [
+          80,
+          81,
+          82
+        ],
+        "minimal_infeasible_subsets": [
+          [
+            80,
+            81
+          ],
+          [
+            80,
+            82
+          ],
+          [
+            81,
+            82
+          ]
+        ],
+        "queries": [
+          {
+            "build_sec": 4.940161228179932,
+            "canonical": [
+              80
+            ],
+            "constraints_added": 164339,
+            "empty_constraints": 0,
+            "orbit_image_count": 24,
+            "size": 1,
+            "solve_sec": 6.66657018661499,
+            "status": "OPTIMAL",
+            "subset": [
+              80
+            ]
+          },
+          {
+            "build_sec": 4.936579704284668,
+            "canonical": [
+              80
+            ],
+            "constraints_added": 164339,
+            "empty_constraints": 0,
+            "orbit_image_count": 24,
+            "size": 1,
+            "solve_sec": 4.964828014373779,
+            "status": "OPTIMAL",
+            "subset": [
+              81
+            ]
+          },
+          {
+            "build_sec": 4.957608699798584,
+            "canonical": [
+              80
+            ],
+            "constraints_added": 164339,
+            "empty_constraints": 0,
+            "orbit_image_count": 24,
+            "size": 1,
+            "solve_sec": 5.981598377227783,
+            "status": "OPTIMAL",
+            "subset": [
+              82
+            ]
+          },
+          {
+            "build_sec": 6.265562295913696,
+            "canonical": [
+              80,
+              81
+            ],
+            "constraints_added": 181872,
+            "empty_constraints": 2,
+            "orbit_image_count": 12,
+            "size": 2,
+            "solve_sec": 0.29820847511291504,
+            "status": "INFEASIBLE",
+            "subset": [
+              80,
+              81
+            ]
+          },
+          {
+            "build_sec": 6.164347410202026,
+            "canonical": [
+              80,
+              82
+            ],
+            "constraints_added": 181872,
+            "empty_constraints": 2,
+            "orbit_image_count": 12,
+            "size": 2,
+            "solve_sec": 0.29691076278686523,
+            "status": "INFEASIBLE",
+            "subset": [
+              80,
+              82
+            ]
+          },
+          {
+            "build_sec": 6.248204231262207,
+            "canonical": [
+              80,
+              83
+            ],
+            "constraints_added": 181831,
+            "empty_constraints": 1,
+            "orbit_image_count": 12,
+            "size": 2,
+            "solve_sec": 0.2895801067352295,
+            "status": "INFEASIBLE",
+            "subset": [
+              81,
+              82
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "canonical_high": [
+        84,
+        85,
+        86
+      ],
+      "event": "full_high_query",
+      "feedback": [
+        {
+          "canonical": [
+            84,
+            85
+          ],
+          "edges_removed": 12,
+          "images": 12,
+          "subset": [
+            84,
+            85
+          ],
+          "type": "pair_edge_removal"
+        },
+        {
+          "canonical": [
+            84,
+            86
+          ],
+          "edges_removed": 12,
+          "images": 12,
+          "subset": [
+            84,
+            86
+          ],
+          "type": "pair_edge_removal"
+        },
+        {
+          "canonical": [
+            84,
+            87
+          ],
+          "edges_removed": 12,
+          "images": 12,
+          "subset": [
+            85,
+            86
+          ],
+          "type": "pair_edge_removal"
+        }
+      ],
+      "high": [
+        84,
+        85,
+        86
+      ],
+      "iteration": 5,
+      "orbit_image_count": 24,
+      "query_build_sec": 7.4602954387664795,
+      "query_constraints_added": 200423,
+      "query_empty_constraints": 35,
+      "query_solve_sec": 0.22811293601989746,
+      "query_status": "INFEASIBLE",
+      "search_stats": {
+        "hit_node_limit": false,
+        "nodes": 4,
+        "prunes": {}
+      },
+      "shrink": {
+        "high": [
+          84,
+          85,
+          86
+        ],
+        "minimal_infeasible_subsets": [
+          [
+            84,
+            85
+          ],
+          [
+            84,
+            86
+          ],
+          [
+            85,
+            86
+          ]
+        ],
+        "queries": [
+          {
+            "build_sec": 4.968841314315796,
+            "canonical": [
+              84
+            ],
+            "constraints_added": 165252,
+            "empty_constraints": 0,
+            "orbit_image_count": 24,
+            "size": 1,
+            "solve_sec": 5.300778388977051,
+            "status": "OPTIMAL",
+            "subset": [
+              84
+            ]
+          },
+          {
+            "build_sec": 4.99454140663147,
+            "canonical": [
+              84
+            ],
+            "constraints_added": 165252,
+            "empty_constraints": 0,
+            "orbit_image_count": 24,
+            "size": 1,
+            "solve_sec": 6.964555501937866,
+            "status": "OPTIMAL",
+            "subset": [
+              85
+            ]
+          },
+          {
+            "build_sec": 4.971741676330566,
+            "canonical": [
+              84
+            ],
+            "constraints_added": 165252,
+            "empty_constraints": 0,
+            "orbit_image_count": 24,
+            "size": 1,
+            "solve_sec": 9.185832977294922,
+            "status": "OPTIMAL",
+            "subset": [
+              86
+            ]
+          },
+          {
+            "build_sec": 6.238534450531006,
+            "canonical": [
+              84,
+              85
+            ],
+            "constraints_added": 182821,
+            "empty_constraints": 2,
+            "orbit_image_count": 12,
+            "size": 2,
+            "solve_sec": 0.3017721176147461,
+            "status": "INFEASIBLE",
+            "subset": [
+              84,
+              85
+            ]
+          },
+          {
+            "build_sec": 6.2728846073150635,
+            "canonical": [
+              84,
+              86
+            ],
+            "constraints_added": 182821,
+            "empty_constraints": 2,
+            "orbit_image_count": 12,
+            "size": 2,
+            "solve_sec": 0.3007686138153076,
+            "status": "INFEASIBLE",
+            "subset": [
+              84,
+              86
+            ]
+          },
+          {
+            "build_sec": 6.368227958679199,
+            "canonical": [
+              84,
+              87
+            ],
+            "constraints_added": 183200,
+            "empty_constraints": 1,
+            "orbit_image_count": 12,
+            "size": 2,
+            "solve_sec": 0.28949880599975586,
+            "status": "INFEASIBLE",
+            "subset": [
+              85,
+              86
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "canonical_high": [
+        96,
+        97,
+        98
+      ],
+      "event": "full_high_query",
+      "feedback": [
+        {
+          "canonical": [
+            96,
+            97
+          ],
+          "edges_removed": 24,
+          "images": 24,
+          "subset": [
+            96,
+            97
+          ],
+          "type": "pair_edge_removal"
+        },
+        {
+          "canonical": [
+            96,
+            98
+          ],
+          "edges_removed": 48,
+          "images": 48,
+          "subset": [
+            96,
+            98
+          ],
+          "type": "pair_edge_removal"
+        },
+        {
+          "canonical": [
+            96,
+            99
+          ],
+          "edges_removed": 48,
+          "images": 48,
+          "subset": [
+            97,
+            98
+          ],
+          "type": "pair_edge_removal"
+        }
+      ],
+      "high": [
+        96,
+        97,
+        98
+      ],
+      "iteration": 6,
+      "orbit_image_count": 48,
+      "query_build_sec": 7.594817638397217,
+      "query_constraints_added": 199136,
+      "query_empty_constraints": 11,
+      "query_solve_sec": 0.23668241500854492,
+      "query_status": "INFEASIBLE",
+      "search_stats": {
+        "hit_node_limit": false,
+        "nodes": 4,
+        "prunes": {}
+      },
+      "shrink": {
+        "high": [
+          96,
+          97,
+          98
+        ],
+        "minimal_infeasible_subsets": [
+          [
+            96,
+            97
+          ],
+          [
+            96,
+            98
+          ],
+          [
+            97,
+            98
+          ]
+        ],
+        "queries": [
+          {
+            "build_sec": 4.994123935699463,
+            "canonical": [
+              96
+            ],
+            "constraints_added": 164224,
+            "empty_constraints": 0,
+            "orbit_image_count": 48,
+            "size": 1,
+            "solve_sec": 4.607227802276611,
+            "status": "OPTIMAL",
+            "subset": [
+              96
+            ]
+          },
+          {
+            "build_sec": 5.007865905761719,
+            "canonical": [
+              96
+            ],
+            "constraints_added": 164224,
+            "empty_constraints": 0,
+            "orbit_image_count": 48,
+            "size": 1,
+            "solve_sec": 6.0122175216674805,
+            "status": "OPTIMAL",
+            "subset": [
+              97
+            ]
+          },
+          {
+            "build_sec": 5.03638482093811,
+            "canonical": [
+              98
+            ],
+            "constraints_added": 165306,
+            "empty_constraints": 0,
+            "orbit_image_count": 48,
+            "size": 1,
+            "solve_sec": 11.659474849700928,
+            "status": "OPTIMAL",
+            "subset": [
+              98
+            ]
+          },
+          {
+            "build_sec": 6.26196551322937,
+            "canonical": [
+              96,
+              97
+            ],
+            "constraints_added": 181620,
+            "empty_constraints": 2,
+            "orbit_image_count": 24,
+            "size": 2,
+            "solve_sec": 0.2931089401245117,
+            "status": "INFEASIBLE",
+            "subset": [
+              96,
+              97
+            ]
+          },
+          {
+            "build_sec": 6.300482511520386,
+            "canonical": [
+              96,
+              98
+            ],
+            "constraints_added": 182273,
+            "empty_constraints": 2,
+            "orbit_image_count": 48,
+            "size": 2,
+            "solve_sec": 0.2971987724304199,
+            "status": "INFEASIBLE",
+            "subset": [
+              96,
+              98
+            ]
+          },
+          {
+            "build_sec": 6.344876050949097,
+            "canonical": [
+              96,
+              99
+            ],
+            "constraints_added": 182437,
+            "empty_constraints": 1,
+            "orbit_image_count": 48,
+            "size": 2,
+            "solve_sec": 0.29642319679260254,
+            "status": "INFEASIBLE",
+            "subset": [
+              97,
+              98
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "k": 17,
+  "known_pair_edges_removed": 774,
+  "lut_meta_brief": {
+    "conflict_count": 0,
+    "coverage_ok": true,
+    "subspace_count": 8283458
+  },
+  "problem": "guided compatibility graph to full skeleton oracle",
+  "proof_status": "CP-SAT skeleton evidence only. Any exclusion needs certified singleton/pair/hyperedge implications or a checked original-variable proof; any support candidate needs independent full-LUT scan and then B/C/decomposition work.",
+  "rank_s": 20,
+  "rep_rank": 1,
+  "support_candidate_path": null,
+  "survivor_orbits": [
+    17,
+    25,
+    28,
+    33,
+    34,
+    35,
+    80,
+    84,
+    96,
+    98,
+    160,
+    161,
+    224,
+    225
+  ],
+  "target_additional_high_rank_points": 3,
+  "vertex_count_initial": 432,
+  "vertex_rank_hist": {
+    "2": 264,
+    "3": 168
+  }
+}

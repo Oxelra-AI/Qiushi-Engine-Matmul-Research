@@ -1,0 +1,52 @@
+{
+  "active_rows_path": "data/pivot_fixed/pivot17_n23_allbinding_cegar_control.active_rows.jsonl",
+  "binary": {
+    "expected_size_bytes": 563275020,
+    "magic": "WANG512\u0001",
+    "nrows": 8283456,
+    "path": "data/wang_native/full_tensor/full_wang512_cap22_len23_all_dim9_allbinding.bin",
+    "size_bytes": 563275020,
+    "size_matches": true
+  },
+  "elapsed_sec": 53.517839431762695,
+  "final_active_rows": 450185,
+  "final_status": "active_infeasible",
+  "initial_active_rows": 450185,
+  "initial_binary_max_cap_rhs": 5,
+  "initial_binary_max_dim": 3,
+  "initial_cap_hist": {
+    "5": 445679,
+    "6": 4506
+  },
+  "initial_dim_hist": {
+    "2": 43337,
+    "3": 406848
+  },
+  "initial_dominance": {
+    "applied": false,
+    "reason": "too_many_rows",
+    "rows": 450185
+  },
+  "initial_row_limit": 0,
+  "iterations": [
+    {
+      "active_rows": 450185,
+      "iteration": 0,
+      "solve": {
+        "branches": 0,
+        "conflicts": 0,
+        "elapsed_sec": 31.282116174697876,
+        "feasible": false,
+        "objective": null,
+        "status": "UNKNOWN",
+        "wall_time_sec": 30.806443038
+      },
+      "status": "active_infeasible"
+    }
+  ],
+  "length": 23,
+  "pivot": 17,
+  "pivot_mult": 1,
+  "schema": "pivot_fixed_full_wang_cegar_v1",
+  "variable_upper_bound": 4
+}

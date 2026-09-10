@@ -1,0 +1,104 @@
+{
+  "schema": "s0908_flawed_transaction_underflow_v1",
+  "simulation": {
+    "counts_after_restore_counts_uint8": [
+      0,
+      255,
+      0
+    ],
+    "counts_before_restore_counts": [
+      1,
+      0,
+      0
+    ],
+    "events": [
+      {
+        "count_after_increment": 1,
+        "event": "increment_selected_row",
+        "row": 0,
+        "selected": 1
+      },
+      {
+        "cap": 1,
+        "count": 1,
+        "event": "remove_touch",
+        "pts": [
+          1,
+          2
+        ],
+        "remain": 1,
+        "removed_point": 2,
+        "returns_false_here": false,
+        "rhs_cap_minus_count": 0,
+        "row": 0
+      },
+      {
+        "cap": 2,
+        "count": 0,
+        "event": "remove_touch",
+        "pts": [
+          2,
+          3
+        ],
+        "remain": 1,
+        "removed_point": 2,
+        "returns_false_here": true,
+        "rhs_cap_minus_count": 2,
+        "row": 2
+      },
+      {
+        "all_incident_rows": [
+          0,
+          1
+        ],
+        "event": "select_point_returns_false_before_remaining_incident_rows",
+        "incremented_rows": [
+          0
+        ],
+        "selected": 1
+      }
+    ],
+    "interpretation": "row1 contains selected point 1 but was never incremented; restore_counts decrements it from 0 to 255, corrupting later cap tests.",
+    "pt_rows": {
+      "1": [
+        0,
+        1
+      ],
+      "2": [
+        0,
+        2
+      ],
+      "3": [
+        1,
+        2
+      ]
+    },
+    "returned_false": true,
+    "rows": [
+      {
+        "cap": 1,
+        "pts": [
+          1,
+          2
+        ]
+      },
+      {
+        "cap": 1,
+        "pts": [
+          1,
+          3
+        ]
+      },
+      {
+        "cap": 2,
+        "pts": [
+          2,
+          3
+        ]
+      }
+    ],
+    "underflow_rows": [
+      1
+    ]
+  }
+}

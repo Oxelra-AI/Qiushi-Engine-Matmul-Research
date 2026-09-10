@@ -1,0 +1,34 @@
+{
+  "base_vars": 494,
+  "branch_index": null,
+  "cnf_path": "data/core_sat/e11_rank19_certified.cnf",
+  "core_nnz": 24,
+  "core_shape": [
+    8,
+    9,
+    9
+  ],
+  "known_pool": null,
+  "known_row": null,
+  "known_units": false,
+  "known_validation": null,
+  "layers": [
+    "certified:Brent+Tseytin+XOR",
+    "certified:slice_capacity_ge3",
+    "certified:term_sort_u_integer_nondecreasing"
+  ],
+  "num_clauses": 90628,
+  "num_vars": 25964,
+  "problem": "E11 core CPD over F2",
+  "rank": 19,
+  "semantics": {
+    "Brent": "XOR_t u_t[s]*v_t[b]*w_t[c] = core[s,b,c] for all 648 entries",
+    "branch": "earlier quotient point orbits forbidden and one term fixed to branch representative; complete only across all branches with verified orbit cover",
+    "capacity": "rank(I3)=3 in each of the eight nonzero slices implies at least three active terms per slice",
+    "core_convention": "T333[1:9,:,:], a00 slice deleted",
+    "sort_u": "term permutation symmetry permits integer-nondecreasing u order"
+  },
+  "sha256": "fcfca49b9cee47351045f30aac6812afb29d1e62d9a1bb9bccaa12c8fbbba4c1",
+  "slice_capacity_ge3": true,
+  "sort_u": true
+}

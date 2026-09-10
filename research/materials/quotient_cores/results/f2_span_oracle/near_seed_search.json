@@ -1,0 +1,812 @@
+{
+  "purpose": "Bounded construction search for an F2 rank-22 canonical rank-one-span subspace near known rank-23 quotient spans.",
+  "not_a_global_lower_bound": true,
+  "target_condition": "qrank=13, xspan_rank=22, l_intersection_dim=9 for rank-one locus inside H.",
+  "parameters": {
+    "swaps_per_seed": 4000,
+    "core_ext_per_seed": 4000,
+    "seed": 2026090529
+  },
+  "total_successes": 0,
+  "seed_results": [
+    {
+      "seed": "cn122",
+      "qmm_path": "data/cn122_r23_reproduce/scheme.qmm",
+      "hyperplane_successes": 0,
+      "best_hyperplanes": [
+        {
+          "rankone_count": 26,
+          "qrank": 13,
+          "xspan_rank": 21,
+          "l_intersection_dim": 8,
+          "kind": "seed_hyperplane",
+          "functional_mask": 16
+        },
+        {
+          "rankone_count": 25,
+          "qrank": 13,
+          "xspan_rank": 21,
+          "l_intersection_dim": 8,
+          "kind": "seed_hyperplane",
+          "functional_mask": 8192
+        },
+        {
+          "rankone_count": 24,
+          "qrank": 13,
+          "xspan_rank": 21,
+          "l_intersection_dim": 8,
+          "kind": "seed_hyperplane",
+          "functional_mask": 8
+        },
+        {
+          "rankone_count": 24,
+          "qrank": 13,
+          "xspan_rank": 21,
+          "l_intersection_dim": 8,
+          "kind": "seed_hyperplane",
+          "functional_mask": 8200
+        },
+        {
+          "rankone_count": 26,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "seed_hyperplane",
+          "functional_mask": 2
+        },
+        {
+          "rankone_count": 26,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "seed_hyperplane",
+          "functional_mask": 96
+        },
+        {
+          "rankone_count": 26,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "seed_hyperplane",
+          "functional_mask": 258
+        },
+        {
+          "rankone_count": 26,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "seed_hyperplane",
+          "functional_mask": 512
+        },
+        {
+          "rankone_count": 26,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "seed_hyperplane",
+          "functional_mask": 513
+        },
+        {
+          "rankone_count": 25,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "seed_hyperplane",
+          "functional_mask": 66
+        }
+      ],
+      "one_swap_trials": 4000,
+      "one_swap_successes": 0,
+      "best_one_swaps": [
+        {
+          "rankone_count": 26,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 8200,
+          "dropped_basis_pos": 12
+        },
+        {
+          "rankone_count": 26,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 8200,
+          "dropped_basis_pos": 12
+        },
+        {
+          "rankone_count": 25,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 16,
+          "dropped_basis_pos": 3
+        },
+        {
+          "rankone_count": 25,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 8,
+          "dropped_basis_pos": 3
+        },
+        {
+          "rankone_count": 24,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 16,
+          "dropped_basis_pos": 12
+        },
+        {
+          "rankone_count": 24,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 16,
+          "dropped_basis_pos": 12
+        },
+        {
+          "rankone_count": 24,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 16,
+          "dropped_basis_pos": 12
+        },
+        {
+          "rankone_count": 24,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 16,
+          "dropped_basis_pos": 12
+        },
+        {
+          "rankone_count": 24,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 16,
+          "dropped_basis_pos": 12
+        },
+        {
+          "rankone_count": 24,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 8192,
+          "dropped_basis_pos": 4
+        }
+      ],
+      "core12_plus_outside_trials": 4000,
+      "core12_plus_outside_successes": 0,
+      "best_core12_plus_outside": [
+        {
+          "rankone_count": 19,
+          "qrank": 13,
+          "xspan_rank": 17,
+          "l_intersection_dim": 4,
+          "kind": "core12_plus_outside",
+          "trial": 2130
+        },
+        {
+          "rankone_count": 19,
+          "qrank": 13,
+          "xspan_rank": 17,
+          "l_intersection_dim": 4,
+          "kind": "core12_plus_outside",
+          "trial": 3367
+        },
+        {
+          "rankone_count": 18,
+          "qrank": 12,
+          "xspan_rank": 15,
+          "l_intersection_dim": 3,
+          "kind": "core12_plus_outside",
+          "trial": 1971
+        },
+        {
+          "rankone_count": 17,
+          "qrank": 12,
+          "xspan_rank": 15,
+          "l_intersection_dim": 3,
+          "kind": "core12_plus_outside",
+          "trial": 273
+        },
+        {
+          "rankone_count": 16,
+          "qrank": 12,
+          "xspan_rank": 15,
+          "l_intersection_dim": 3,
+          "kind": "core12_plus_outside",
+          "trial": 1143
+        },
+        {
+          "rankone_count": 17,
+          "qrank": 13,
+          "xspan_rank": 15,
+          "l_intersection_dim": 2,
+          "kind": "core12_plus_outside",
+          "trial": 1786
+        },
+        {
+          "rankone_count": 18,
+          "qrank": 11,
+          "xspan_rank": 14,
+          "l_intersection_dim": 3,
+          "kind": "core12_plus_outside",
+          "trial": 2171
+        },
+        {
+          "rankone_count": 18,
+          "qrank": 11,
+          "xspan_rank": 14,
+          "l_intersection_dim": 3,
+          "kind": "core12_plus_outside",
+          "trial": 2598
+        },
+        {
+          "rankone_count": 16,
+          "qrank": 11,
+          "xspan_rank": 14,
+          "l_intersection_dim": 3,
+          "kind": "core12_plus_outside",
+          "trial": 1094
+        },
+        {
+          "rankone_count": 16,
+          "qrank": 11,
+          "xspan_rank": 14,
+          "l_intersection_dim": 3,
+          "kind": "core12_plus_outside",
+          "trial": 3765
+        }
+      ],
+      "success_examples": []
+    },
+    {
+      "seed": "serendipitous_8d34",
+      "qmm_path": "data/fmm_r23_schemes/serendipitous_8d34.qmm",
+      "hyperplane_successes": 0,
+      "best_hyperplanes": [
+        {
+          "rankone_count": 26,
+          "qrank": 13,
+          "xspan_rank": 21,
+          "l_intersection_dim": 8,
+          "kind": "seed_hyperplane",
+          "functional_mask": 128
+        },
+        {
+          "rankone_count": 25,
+          "qrank": 13,
+          "xspan_rank": 21,
+          "l_intersection_dim": 8,
+          "kind": "seed_hyperplane",
+          "functional_mask": 4
+        },
+        {
+          "rankone_count": 24,
+          "qrank": 13,
+          "xspan_rank": 21,
+          "l_intersection_dim": 8,
+          "kind": "seed_hyperplane",
+          "functional_mask": 2048
+        },
+        {
+          "rankone_count": 24,
+          "qrank": 13,
+          "xspan_rank": 21,
+          "l_intersection_dim": 8,
+          "kind": "seed_hyperplane",
+          "functional_mask": 2052
+        },
+        {
+          "rankone_count": 26,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "seed_hyperplane",
+          "functional_mask": 3
+        },
+        {
+          "rankone_count": 26,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "seed_hyperplane",
+          "functional_mask": 10
+        },
+        {
+          "rankone_count": 26,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "seed_hyperplane",
+          "functional_mask": 288
+        },
+        {
+          "rankone_count": 26,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "seed_hyperplane",
+          "functional_mask": 4096
+        },
+        {
+          "rankone_count": 26,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "seed_hyperplane",
+          "functional_mask": 4112
+        },
+        {
+          "rankone_count": 25,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "seed_hyperplane",
+          "functional_mask": 32
+        }
+      ],
+      "one_swap_trials": 4000,
+      "one_swap_successes": 0,
+      "best_one_swaps": [
+        {
+          "rankone_count": 26,
+          "qrank": 13,
+          "xspan_rank": 21,
+          "l_intersection_dim": 8,
+          "kind": "one_swap",
+          "from_functional_mask": 128,
+          "dropped_basis_pos": 2
+        },
+        {
+          "rankone_count": 26,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 4,
+          "dropped_basis_pos": 6
+        },
+        {
+          "rankone_count": 25,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 4,
+          "dropped_basis_pos": 0
+        },
+        {
+          "rankone_count": 25,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 2048,
+          "dropped_basis_pos": 7
+        },
+        {
+          "rankone_count": 24,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 128,
+          "dropped_basis_pos": 10
+        },
+        {
+          "rankone_count": 24,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 4,
+          "dropped_basis_pos": 6
+        },
+        {
+          "rankone_count": 24,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 4,
+          "dropped_basis_pos": 0
+        },
+        {
+          "rankone_count": 24,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 4,
+          "dropped_basis_pos": 10
+        },
+        {
+          "rankone_count": 24,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 4,
+          "dropped_basis_pos": 10
+        },
+        {
+          "rankone_count": 24,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 4,
+          "dropped_basis_pos": 0
+        }
+      ],
+      "core12_plus_outside_trials": 4000,
+      "core12_plus_outside_successes": 0,
+      "best_core12_plus_outside": [
+        {
+          "rankone_count": 20,
+          "qrank": 12,
+          "xspan_rank": 16,
+          "l_intersection_dim": 4,
+          "kind": "core12_plus_outside",
+          "trial": 2026
+        },
+        {
+          "rankone_count": 18,
+          "qrank": 12,
+          "xspan_rank": 16,
+          "l_intersection_dim": 4,
+          "kind": "core12_plus_outside",
+          "trial": 1843
+        },
+        {
+          "rankone_count": 19,
+          "qrank": 13,
+          "xspan_rank": 16,
+          "l_intersection_dim": 3,
+          "kind": "core12_plus_outside",
+          "trial": 612
+        },
+        {
+          "rankone_count": 19,
+          "qrank": 13,
+          "xspan_rank": 16,
+          "l_intersection_dim": 3,
+          "kind": "core12_plus_outside",
+          "trial": 1433
+        },
+        {
+          "rankone_count": 17,
+          "qrank": 12,
+          "xspan_rank": 15,
+          "l_intersection_dim": 3,
+          "kind": "core12_plus_outside",
+          "trial": 2737
+        },
+        {
+          "rankone_count": 15,
+          "qrank": 12,
+          "xspan_rank": 15,
+          "l_intersection_dim": 3,
+          "kind": "core12_plus_outside",
+          "trial": 2971
+        },
+        {
+          "rankone_count": 17,
+          "qrank": 13,
+          "xspan_rank": 15,
+          "l_intersection_dim": 2,
+          "kind": "core12_plus_outside",
+          "trial": 515
+        },
+        {
+          "rankone_count": 16,
+          "qrank": 11,
+          "xspan_rank": 14,
+          "l_intersection_dim": 3,
+          "kind": "core12_plus_outside",
+          "trial": 200
+        },
+        {
+          "rankone_count": 16,
+          "qrank": 11,
+          "xspan_rank": 14,
+          "l_intersection_dim": 3,
+          "kind": "core12_plus_outside",
+          "trial": 1020
+        },
+        {
+          "rankone_count": 16,
+          "qrank": 11,
+          "xspan_rank": 14,
+          "l_intersection_dim": 3,
+          "kind": "core12_plus_outside",
+          "trial": 3253
+        }
+      ],
+      "success_examples": []
+    },
+    {
+      "seed": "naive_c88",
+      "qmm_path": "data/fmm_r23_schemes/naive_c88.qmm",
+      "hyperplane_successes": 0,
+      "best_hyperplanes": [
+        {
+          "rankone_count": 26,
+          "qrank": 13,
+          "xspan_rank": 21,
+          "l_intersection_dim": 8,
+          "kind": "seed_hyperplane",
+          "functional_mask": 4096
+        },
+        {
+          "rankone_count": 25,
+          "qrank": 13,
+          "xspan_rank": 21,
+          "l_intersection_dim": 8,
+          "kind": "seed_hyperplane",
+          "functional_mask": 132
+        },
+        {
+          "rankone_count": 25,
+          "qrank": 13,
+          "xspan_rank": 21,
+          "l_intersection_dim": 8,
+          "kind": "seed_hyperplane",
+          "functional_mask": 8192
+        },
+        {
+          "rankone_count": 24,
+          "qrank": 13,
+          "xspan_rank": 21,
+          "l_intersection_dim": 8,
+          "kind": "seed_hyperplane",
+          "functional_mask": 129
+        },
+        {
+          "rankone_count": 26,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "seed_hyperplane",
+          "functional_mask": 84
+        },
+        {
+          "rankone_count": 26,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "seed_hyperplane",
+          "functional_mask": 264
+        },
+        {
+          "rankone_count": 26,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "seed_hyperplane",
+          "functional_mask": 352
+        },
+        {
+          "rankone_count": 25,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "seed_hyperplane",
+          "functional_mask": 544
+        },
+        {
+          "rankone_count": 25,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "seed_hyperplane",
+          "functional_mask": 1026
+        },
+        {
+          "rankone_count": 25,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "seed_hyperplane",
+          "functional_mask": 4104
+        }
+      ],
+      "one_swap_trials": 4000,
+      "one_swap_successes": 0,
+      "best_one_swaps": [
+        {
+          "rankone_count": 25,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 129,
+          "dropped_basis_pos": 11
+        },
+        {
+          "rankone_count": 24,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 4096,
+          "dropped_basis_pos": 12
+        },
+        {
+          "rankone_count": 24,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 4096,
+          "dropped_basis_pos": 12
+        },
+        {
+          "rankone_count": 24,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 4096,
+          "dropped_basis_pos": 12
+        },
+        {
+          "rankone_count": 24,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 132,
+          "dropped_basis_pos": 11
+        },
+        {
+          "rankone_count": 24,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 132,
+          "dropped_basis_pos": 11
+        },
+        {
+          "rankone_count": 24,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 132,
+          "dropped_basis_pos": 11
+        },
+        {
+          "rankone_count": 24,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 132,
+          "dropped_basis_pos": 11
+        },
+        {
+          "rankone_count": 24,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 132,
+          "dropped_basis_pos": 12
+        },
+        {
+          "rankone_count": 24,
+          "qrank": 13,
+          "xspan_rank": 20,
+          "l_intersection_dim": 7,
+          "kind": "one_swap",
+          "from_functional_mask": 8192,
+          "dropped_basis_pos": 12
+        }
+      ],
+      "core12_plus_outside_trials": 4000,
+      "core12_plus_outside_successes": 0,
+      "best_core12_plus_outside": [
+        {
+          "rankone_count": 18,
+          "qrank": 12,
+          "xspan_rank": 16,
+          "l_intersection_dim": 4,
+          "kind": "core12_plus_outside",
+          "trial": 505
+        },
+        {
+          "rankone_count": 18,
+          "qrank": 13,
+          "xspan_rank": 16,
+          "l_intersection_dim": 3,
+          "kind": "core12_plus_outside",
+          "trial": 1627
+        },
+        {
+          "rankone_count": 17,
+          "qrank": 12,
+          "xspan_rank": 15,
+          "l_intersection_dim": 3,
+          "kind": "core12_plus_outside",
+          "trial": 2130
+        },
+        {
+          "rankone_count": 16,
+          "qrank": 12,
+          "xspan_rank": 15,
+          "l_intersection_dim": 3,
+          "kind": "core12_plus_outside",
+          "trial": 3773
+        },
+        {
+          "rankone_count": 17,
+          "qrank": 13,
+          "xspan_rank": 15,
+          "l_intersection_dim": 2,
+          "kind": "core12_plus_outside",
+          "trial": 2895
+        },
+        {
+          "rankone_count": 14,
+          "qrank": 11,
+          "xspan_rank": 14,
+          "l_intersection_dim": 3,
+          "kind": "core12_plus_outside",
+          "trial": 1155
+        },
+        {
+          "rankone_count": 18,
+          "qrank": 12,
+          "xspan_rank": 14,
+          "l_intersection_dim": 2,
+          "kind": "core12_plus_outside",
+          "trial": 377
+        },
+        {
+          "rankone_count": 17,
+          "qrank": 12,
+          "xspan_rank": 14,
+          "l_intersection_dim": 2,
+          "kind": "core12_plus_outside",
+          "trial": 818
+        },
+        {
+          "rankone_count": 17,
+          "qrank": 12,
+          "xspan_rank": 14,
+          "l_intersection_dim": 2,
+          "kind": "core12_plus_outside",
+          "trial": 835
+        },
+        {
+          "rankone_count": 15,
+          "qrank": 12,
+          "xspan_rank": 14,
+          "l_intersection_dim": 2,
+          "kind": "core12_plus_outside",
+          "trial": 209
+        }
+      ],
+      "success_examples": []
+    }
+  ],
+  "elapsed_sec": 95.656
+}

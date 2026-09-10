@@ -1,0 +1,1101 @@
+{
+  "complete_core_table_meta": {
+    "by_dim8": {
+      "0": 1,
+      "1": 255,
+      "2": 10795,
+      "3": 97155,
+      "4": 200787,
+      "5": 97155,
+      "6": 10795,
+      "7": 255,
+      "8": 1
+    },
+    "by_full_lut_L": {
+      "0": 1,
+      "11": 865,
+      "12": 61232,
+      "13": 8130,
+      "14": 81540,
+      "15": 138902,
+      "16": 83046,
+      "17": 34664,
+      "18": 687,
+      "19": 1,
+      "3": 33,
+      "6": 578,
+      "9": 7520
+    },
+    "constraint_count": 417199,
+    "elapsed_sec": 35.887
+  },
+  "core": "E11 quotient core",
+  "elapsed_sec": 80.435,
+  "field": "F2",
+  "group_order": 1152,
+  "meaning": "Profiles whole-stabilizer orbit closures of violated complete-Wang rows for current near-miss basins. Row-orbit cuts preserve point incidences and are valid under the analysis Wang-invariance certificate.",
+  "pairwise_violation_closure_overlap": [
+    {
+      "a": "base_trace_consistent_9viol",
+      "a_only": 0,
+      "b": "L15_overlap_cert_round0",
+      "b_only": 336,
+      "union": 1032,
+      "violation_orbit_closure_intersection": 696
+    },
+    {
+      "a": "base_trace_consistent_9viol",
+      "a_only": 336,
+      "b": "L14_overlap_cert_round0",
+      "b_only": 1680,
+      "union": 2376,
+      "violation_orbit_closure_intersection": 360
+    },
+    {
+      "a": "L15_overlap_cert_round0",
+      "a_only": 576,
+      "b": "L14_overlap_cert_round0",
+      "b_only": 1584,
+      "union": 2616,
+      "violation_orbit_closure_intersection": 456
+    }
+  ],
+  "schema": "violation_orbit_profile_v1",
+  "support_records": [
+    {
+      "A_cols": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        20,
+        24,
+        31,
+        32,
+        36,
+        64,
+        73,
+        109,
+        127,
+        128,
+        141,
+        160,
+        182,
+        219
+      ],
+      "complete_wang_scan": {
+        "complete_violation_count": 9,
+        "max_excess": 1,
+        "violations_by_L": {
+          "12": 9
+        },
+        "violations_by_dim8": {
+          "5": 6,
+          "6": 3
+        },
+        "violations_head": [
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 5,
+            "excess": 1,
+            "key8": 4417508755461,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 5,
+            "excess": 1,
+            "key8": 4436873709717,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 5,
+            "excess": 1,
+            "key8": 4456163313813,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 5,
+            "excess": 1,
+            "key8": 4456163387397,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 5,
+            "excess": 1,
+            "key8": 6635867678725,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 5,
+            "excess": 1,
+            "key8": 7748268402853,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 2263933239429158,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 2823584649578518,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 3389833137899526,
+            "occupancy": 8,
+            "point_count": 63
+          }
+        ]
+      },
+      "name": "base_trace_consistent_9viol",
+      "slack0_key_count": 1114,
+      "slack0_orbit_closure_summary": {
+        "by_L": {
+          "12": 7488,
+          "14": 11712,
+          "15": 11976,
+          "16": 12456,
+          "17": 4766,
+          "18": 420,
+          "19": 1,
+          "6": 8,
+          "9": 936
+        },
+        "by_dim8": {
+          "0": 1,
+          "1": 132,
+          "2": 3014,
+          "3": 14157,
+          "4": 14745,
+          "5": 12930,
+          "6": 4712,
+          "7": 72
+        },
+        "count": 49763
+      },
+      "slack0_orbit_count": 134,
+      "source": "analysis/54",
+      "violation_key_count": 9,
+      "violation_keys_head": [
+        4417508755461,
+        4436873709717,
+        4456163313813,
+        4456163387397,
+        6635867678725,
+        7748268402853,
+        2263933239429158,
+        2823584649578518,
+        3389833137899526
+      ],
+      "violation_orbit_closure_summary": {
+        "by_L": {
+          "12": 696
+        },
+        "by_dim8": {
+          "5": 408,
+          "6": 288
+        },
+        "count": 696
+      },
+      "violation_orbit_count": 4,
+      "violation_orbits": [
+        {
+          "orbit_rep_key8": 1103840806917,
+          "orbit_size": 48,
+          "seed_key8": 4417508755461
+        },
+        {
+          "orbit_rep_key8": 1112430216197,
+          "orbit_size": 72,
+          "seed_key8": 6635867678725
+        },
+        {
+          "orbit_rep_key8": 1116759148549,
+          "orbit_size": 288,
+          "seed_key8": 4436873709717
+        },
+        {
+          "orbit_rep_key8": 569564270708742,
+          "orbit_size": 288,
+          "seed_key8": 2263933239429158
+        }
+      ]
+    },
+    {
+      "A_cols": [
+        2,
+        3,
+        16,
+        20,
+        24,
+        28,
+        31,
+        65,
+        72,
+        96,
+        97,
+        108,
+        114,
+        130,
+        146,
+        159,
+        162,
+        216,
+        252
+      ],
+      "complete_wang_scan": {
+        "complete_violation_count": 28,
+        "max_excess": 1,
+        "violations_by_L": {
+          "12": 26,
+          "14": 2
+        },
+        "violations_by_dim8": {
+          "5": 8,
+          "6": 20
+        },
+        "violations_head": [
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 5,
+            "excess": 1,
+            "key8": 1103874492613,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 5,
+            "excess": 1,
+            "key8": 1103924922373,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 5,
+            "excess": 1,
+            "key8": 2227012642837,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 5,
+            "excess": 1,
+            "key8": 3324372584469,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 5,
+            "excess": 1,
+            "key8": 3326520076309,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 5,
+            "excess": 1,
+            "key8": 3358803372037,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 14,
+            "cap": 5,
+            "dim8": 5,
+            "excess": 1,
+            "key8": 6635863419061,
+            "occupancy": 6,
+            "point_count": 31
+          },
+          {
+            "L": 14,
+            "cap": 5,
+            "dim8": 5,
+            "excess": 1,
+            "key8": 7748264200197,
+            "occupancy": 6,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 1130332452038806,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 1131449139398662,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 1140230220974102,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 1693299585386502,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 1693299614746774,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 1694364670371846,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 1694366813653014,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 1694384064571526,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 1703178010101782,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 1703178026919958,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 3386534607202358,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 3387634118830118,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 3388733630457878,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 3389833142085638,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 3949480269842438,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 3950581924767798,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 3950581928962054,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 3951683588081670,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 3952785242990614,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 3952785247201286,
+            "occupancy": 8,
+            "point_count": 63
+          }
+        ]
+      },
+      "name": "L15_overlap_cert_round0",
+      "slack0_key_count": 1334,
+      "slack0_orbit_closure_summary": {
+        "by_L": {
+          "12": 7092,
+          "14": 12168,
+          "15": 20448,
+          "16": 14760,
+          "17": 4766,
+          "18": 420,
+          "19": 1,
+          "6": 8,
+          "9": 648
+        },
+        "by_dim8": {
+          "0": 1,
+          "1": 132,
+          "2": 3014,
+          "3": 16377,
+          "4": 21717,
+          "5": 14418,
+          "6": 4580,
+          "7": 72
+        },
+        "count": 60311
+      },
+      "slack0_orbit_count": 143,
+      "source": "data/transported_overlap/overlap_cut_separator_L15_cert_3r_180s.json",
+      "violation_key_count": 28,
+      "violation_keys_head": [
+        1103874492613,
+        1103924922373,
+        2227012642837,
+        3324372584469,
+        3326520076309,
+        3358803372037,
+        6635863419061,
+        7748264200197,
+        1130332452038806,
+        1131449139398662,
+        1140230220974102,
+        1693299585386502,
+        1693299614746774,
+        1694364670371846,
+        1694366813653014,
+        1694384064571526,
+        1703178010101782,
+        1703178026919958,
+        3386534607202358,
+        3387634118830118,
+        3388733630457878,
+        3389833142085638,
+        3949480269842438,
+        3950581924767798,
+        3950581928962054,
+        3951683588081670,
+        3952785242990614,
+        3952785247201286
+      ],
+      "violation_orbit_closure_summary": {
+        "by_L": {
+          "12": 1008,
+          "14": 24
+        },
+        "by_dim8": {
+          "5": 432,
+          "6": 600
+        },
+        "count": 1032
+      },
+      "violation_orbit_count": 8,
+      "violation_orbits": [
+        {
+          "orbit_rep_key8": 1103840806917,
+          "orbit_size": 48,
+          "seed_key8": 1103874492613
+        },
+        {
+          "orbit_rep_key8": 1112430216197,
+          "orbit_size": 72,
+          "seed_key8": 3358803372037
+        },
+        {
+          "orbit_rep_key8": 1116759148549,
+          "orbit_size": 288,
+          "seed_key8": 2227012642837
+        },
+        {
+          "orbit_rep_key8": 5514881271813,
+          "orbit_size": 24,
+          "seed_key8": 6635863419061
+        },
+        {
+          "orbit_rep_key8": 567365323065350,
+          "orbit_size": 72,
+          "seed_key8": 1130332452038806
+        },
+        {
+          "orbit_rep_key8": 567365381670918,
+          "orbit_size": 144,
+          "seed_key8": 1693299614746774
+        },
+        {
+          "orbit_rep_key8": 569564270708742,
+          "orbit_size": 288,
+          "seed_key8": 1140230220974102
+        },
+        {
+          "orbit_rep_key8": 2823580362999814,
+          "orbit_size": 96,
+          "seed_key8": 3386534607202358
+        }
+      ]
+    },
+    {
+      "A_cols": [
+        8,
+        18,
+        20,
+        22,
+        24,
+        27,
+        31,
+        64,
+        65,
+        72,
+        73,
+        128,
+        144,
+        160,
+        162,
+        216,
+        219,
+        224,
+        252
+      ],
+      "complete_wang_scan": {
+        "complete_violation_count": 44,
+        "max_excess": 2,
+        "violations_by_L": {
+          "12": 40,
+          "9": 4
+        },
+        "violations_by_dim8": {
+          "5": 12,
+          "6": 32
+        },
+        "violations_head": [
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 5,
+            "excess": 1,
+            "key8": 1112430216197,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 5,
+            "excess": 1,
+            "key8": 1112430232581,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 5,
+            "excess": 1,
+            "key8": 6614317271045,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 5,
+            "excess": 1,
+            "key8": 6614325660165,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 5,
+            "excess": 1,
+            "key8": 7713828898821,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 5,
+            "excess": 1,
+            "key8": 7713841482245,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 5,
+            "excess": 1,
+            "key8": 8830595893253,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 5,
+            "excess": 1,
+            "key8": 8834890860581,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 5,
+            "excess": 1,
+            "key8": 8837042538549,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 5,
+            "excess": 1,
+            "key8": 8839206799477,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 5,
+            "excess": 1,
+            "key8": 8843497572453,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 5,
+            "excess": 1,
+            "key8": 8845649250421,
+            "occupancy": 8,
+            "point_count": 31
+          },
+          {
+            "L": 9,
+            "cap": 10,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 569564270692358,
+            "occupancy": 11,
+            "point_count": 63
+          },
+          {
+            "L": 9,
+            "cap": 10,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 569564279081478,
+            "occupancy": 11,
+            "point_count": 63
+          },
+          {
+            "L": 9,
+            "cap": 10,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 571784844281894,
+            "occupancy": 11,
+            "point_count": 63
+          },
+          {
+            "L": 9,
+            "cap": 10,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 571793450993766,
+            "occupancy": 11,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 573983867537446,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 573988179298374,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 1131414716688918,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 1694364665915398,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 2823580362999814,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 2823582510483494,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 2824684169594886,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 2824686317086726,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 3386530312226822,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 3386530312235014,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 3386530320615430,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 3386530320623622,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 1,
+            "key8": 3386532459710486,
+            "occupancy": 8,
+            "point_count": 63
+          },
+          {
+            "L": 12,
+            "cap": 7,
+            "dim8": 6,
+            "excess": 2,
+            "key8": 3386534607194134,
+            "occupancy": 9,
+            "point_count": 63
+          }
+        ]
+      },
+      "name": "L14_overlap_cert_round0",
+      "slack0_key_count": 1054,
+      "slack0_orbit_closure_summary": {
+        "by_L": {
+          "12": 8248,
+          "14": 6420,
+          "15": 4104,
+          "16": 1296,
+          "17": 558,
+          "18": 36,
+          "19": 1,
+          "6": 72,
+          "9": 360
+        },
+        "by_dim8": {
+          "0": 1,
+          "1": 36,
+          "2": 210,
+          "3": 2520,
+          "4": 6064,
+          "5": 8376,
+          "6": 3744,
+          "7": 144
+        },
+        "count": 21095
+      },
+      "slack0_orbit_count": 70,
+      "source": "data/transported_overlap/overlap_cut_separator_L14_cert_2r_240s.json",
+      "violation_key_count": 44,
+      "violation_keys_head": [
+        1112430216197,
+        1112430232581,
+        6614317271045,
+        6614325660165,
+        7713828898821,
+        7713841482245,
+        8830595893253,
+        8834890860581,
+        8837042538549,
+        8839206799477,
+        8843497572453,
+        8845649250421,
+        569564270692358,
+        569564279081478,
+        571784844281894,
+        571793450993766,
+        573983867537446,
+        573988179298374,
+        1131414716688918,
+        1694364665915398,
+        2823580362999814,
+        2823582510483494,
+        2824684169594886,
+        2824686317086726,
+        3386530312226822,
+        3386530312235014,
+        3386530320615430,
+        3386530320623622,
+        3386532459710486,
+        3386534607194134,
+        3386534615582774,
+        3386536763066422,
+        3387634118821894,
+        3387634127218726,
+        3949480265648134,
+        3949480269842438,
+        3949482413131798,
+        3949484564809766,
+        3949486708099094,
+        3949486708107270,
+        3949486712293414,
+        3949486712301622,
+        3950581924759574,
+        3950581928962054
+      ],
+      "violation_orbit_closure_summary": {
+        "by_L": {
+          "12": 1752,
+          "9": 288
+        },
+        "by_dim8": {
+          "5": 792,
+          "6": 1248
+        },
+        "count": 2040
+      },
+      "violation_orbit_count": 7,
+      "violation_orbits": [
+        {
+          "orbit_rep_key8": 1112430216197,
+          "orbit_size": 72,
+          "seed_key8": 1112430216197
+        },
+        {
+          "orbit_rep_key8": 5514805643269,
+          "orbit_size": 144,
+          "seed_key8": 6614317271045
+        },
+        {
+          "orbit_rep_key8": 5514805905413,
+          "orbit_size": 576,
+          "seed_key8": 8834890860581
+        },
+        {
+          "orbit_rep_key8": 569564270692358,
+          "orbit_size": 288,
+          "seed_key8": 569564270692358
+        },
+        {
+          "orbit_rep_key8": 569564270708742,
+          "orbit_size": 288,
+          "seed_key8": 573983867537446
+        },
+        {
+          "orbit_rep_key8": 2823580362999814,
+          "orbit_size": 96,
+          "seed_key8": 2823580362999814
+        },
+        {
+          "orbit_rep_key8": 2823580362999846,
+          "orbit_size": 576,
+          "seed_key8": 3386530312235014
+        }
+      ]
+    }
+  ],
+  "union_violation_orbit_closure_summary": {
+    "by_L": {
+      "12": 2304,
+      "14": 24,
+      "9": 288
+    },
+    "by_dim8": {
+      "5": 1152,
+      "6": 1464
+    },
+    "count": 2616
+  }
+}

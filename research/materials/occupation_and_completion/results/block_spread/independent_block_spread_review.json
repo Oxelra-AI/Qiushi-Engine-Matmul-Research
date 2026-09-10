@@ -1,0 +1,174 @@
+{
+  "all_block_spread_pass": true,
+  "brent_spot_check": {
+    "checked": 25,
+    "ok": 25
+  },
+  "capacity_profiles_top15": {
+    "[3, 3, 6, 7, 7, 8, 8, 11]": 2,
+    "[3, 4, 5, 6, 6, 7, 8, 9]": 2,
+    "[3, 4, 5, 6, 6, 8, 10, 12]": 2,
+    "[3, 4, 6, 6, 9, 10, 11, 11]": 2,
+    "[3, 4, 6, 8, 8, 9, 9, 10]": 2,
+    "[3, 4, 7, 7, 8, 8, 8, 9]": 2,
+    "[3, 4, 7, 8, 8, 9, 9, 10]": 2,
+    "[3, 5, 6, 6, 6, 7, 9, 11]": 2,
+    "[3, 6, 7, 7, 8, 9, 9, 10]": 3,
+    "[4, 5, 5, 6, 7, 8, 8, 9]": 3,
+    "[4, 5, 6, 6, 8, 8, 8, 9]": 2,
+    "[4, 5, 6, 7, 8, 8, 10, 12]": 2,
+    "[4, 6, 6, 9, 9, 9, 9, 13]": 2,
+    "[5, 5, 5, 6, 6, 7, 7, 9]": 2,
+    "[5, 7, 7, 8, 9, 10, 10, 13]": 2
+  },
+  "core_check": {
+    "block_structure_errors": [],
+    "contraction_all_match_LambdaT_tensor_I3": true,
+    "contraction_mismatch_head": [],
+    "nnz": 24
+  },
+  "elapsed_sec": 0.079,
+  "failure_examples": [],
+  "field": "F2",
+  "groups": {
+    "R_j_and_C_i_masks": [
+      7,
+      56,
+      448
+    ]
+  },
+  "max_p_capacity3": 2,
+  "meaning": "Independent verification of research_record block-spread necessary conditions on the shared rank-21 E11 core pool; no rank-19 construction or lower bound follows from this check alone.",
+  "min_total_A_weight": 39,
+  "p_capacity3_histogram": {
+    "0": 309,
+    "1": 183,
+    "2": 27
+  },
+  "pool_path": "data/e11_flip_workspace/data/schemes_modp/e11core/mod2-rank21a.npy",
+  "pool_rows": 519,
+  "rank19_consequence_review": {
+    "cases": [
+      {
+        "free_terms_after_cap3": 19,
+        "not_immediately_ruled_out_by_R1_free_count": true,
+        "p": 0,
+        "remaining_slices": 8,
+        "weight_lower_bound_if_possible": 32
+      },
+      {
+        "free_terms_after_cap3": 16,
+        "not_immediately_ruled_out_by_R1_free_count": true,
+        "p": 1,
+        "remaining_slices": 7,
+        "weight_lower_bound_if_possible": 31
+      },
+      {
+        "free_terms_after_cap3": 13,
+        "not_immediately_ruled_out_by_R1_free_count": true,
+        "p": 2,
+        "remaining_slices": 6,
+        "weight_lower_bound_if_possible": 30
+      },
+      {
+        "free_terms_after_cap3": 10,
+        "not_immediately_ruled_out_by_R1_free_count": true,
+        "p": 3,
+        "remaining_slices": 5,
+        "weight_lower_bound_if_possible": 29
+      },
+      {
+        "free_terms_after_cap3": 7,
+        "not_immediately_ruled_out_by_R1_free_count": true,
+        "p": 4,
+        "remaining_slices": 4,
+        "weight_lower_bound_if_possible": 28
+      },
+      {
+        "free_terms_after_cap3": 4,
+        "not_immediately_ruled_out_by_R1_free_count": true,
+        "p": 5,
+        "remaining_slices": 3,
+        "weight_lower_bound_if_possible": 27
+      },
+      {
+        "free_terms_after_cap3": 1,
+        "not_immediately_ruled_out_by_R1_free_count": false,
+        "p": 6,
+        "remaining_slices": 2,
+        "weight_lower_bound_if_possible": 26
+      },
+      {
+        "free_terms_after_cap3": -2,
+        "not_immediately_ruled_out_by_R1_free_count": false,
+        "p": 7,
+        "remaining_slices": 1,
+        "weight_lower_bound_if_possible": 25
+      },
+      {
+        "free_terms_after_cap3": -5,
+        "not_immediately_ruled_out_by_R1_free_count": false,
+        "p": 8,
+        "remaining_slices": 0,
+        "weight_lower_bound_if_possible": 24
+      }
+    ],
+    "conclusion_for_rank19_core": "p_capacity3 <= 5 and total_A_weight >= 32-p >= 27"
+  },
+  "rank_terms_in_pool": 21,
+  "schema": "s0908_independent_block_spread_review_v1",
+  "tensor_convention": "T[3i+j,3j+k,3i+k]=1; E11 core removes A index 0; core slice s=a-1 maps to block R_{a mod 3} x C_{floor(a/3)}.",
+  "term_block_spread_histogram": {
+    "1": 1675,
+    "2": 3701,
+    "3": 1593,
+    "4": 2092,
+    "6": 1830,
+    "9": 8
+  },
+  "total_A_weight_histogram": {
+    "39": 1,
+    "40": 1,
+    "41": 1,
+    "42": 3,
+    "44": 1,
+    "45": 9,
+    "46": 9,
+    "47": 5,
+    "48": 15,
+    "49": 19,
+    "50": 16,
+    "51": 23,
+    "52": 15,
+    "53": 27,
+    "54": 21,
+    "55": 25,
+    "56": 14,
+    "57": 25,
+    "58": 23,
+    "59": 36,
+    "60": 35,
+    "61": 26,
+    "62": 19,
+    "63": 17,
+    "64": 20,
+    "65": 19,
+    "66": 20,
+    "67": 11,
+    "68": 12,
+    "69": 12,
+    "70": 7,
+    "71": 4,
+    "72": 6,
+    "73": 6,
+    "74": 3,
+    "75": 1,
+    "76": 5,
+    "77": 2,
+    "78": 1,
+    "79": 1,
+    "81": 1,
+    "85": 1,
+    "90": 1
+  }
+}

@@ -1,0 +1,750 @@
+{
+  "matching_strata": {
+    "0": {
+      "canonical": [
+        1
+      ],
+      "closed": false,
+      "closure": null,
+      "idx": 0,
+      "k": 1,
+      "latest_run": {
+        "drat_verified_in_summary": null,
+        "exists": true,
+        "final_clauses": 464363,
+        "learned_clause_count": 425226,
+        "path": "workspace/data/matching/k123_batch/idx000",
+        "rounds": 80,
+        "status": "MAX_ROUNDS",
+        "survivor_count": 462,
+        "target": 19
+      },
+      "orbit_size": 1
+    },
+    "1": {
+      "canonical": [
+        1,
+        16
+      ],
+      "closed": false,
+      "closure": null,
+      "idx": 1,
+      "k": 2,
+      "latest_run": {
+        "exists": true,
+        "path": "workspace/data/matching/k123_batch/idx001"
+      },
+      "orbit_size": 36
+    },
+    "10": {
+      "canonical": [
+        1,
+        16,
+        256,
+        438
+      ],
+      "closed": false,
+      "closure": null,
+      "idx": 10,
+      "k": 4,
+      "orbit_size": 192
+    },
+    "11": {
+      "canonical": [
+        1,
+        16,
+        256,
+        511
+      ],
+      "closed": false,
+      "closure": null,
+      "idx": 11,
+      "k": 4,
+      "orbit_size": 96
+    },
+    "12": {
+      "canonical": [
+        1,
+        16,
+        27,
+        256,
+        325
+      ],
+      "closed": true,
+      "closure": {
+        "method": "witness_subset_drat",
+        "run": "workspace/data/matching/k5_batch/idx012",
+        "verification": "workspace/data/matching/k5_batch/idx012/strict_verification.json"
+      },
+      "idx": 12,
+      "k": 5,
+      "orbit_size": 72
+    },
+    "13": {
+      "canonical": [
+        1,
+        16,
+        27,
+        256,
+        360
+      ],
+      "closed": true,
+      "closure": {
+        "method": "fair_seed_solve_drat",
+        "seed_run": "workspace/data/matching/k5_batch/idx013",
+        "verification": "workspace/data/promotion/k5_idx13_model_lowres_3w5/seed_formula_verification_drat.json"
+      },
+      "idx": 13,
+      "k": 5,
+      "orbit_size": 576
+    },
+    "14": {
+      "canonical": [
+        1,
+        16,
+        27,
+        256,
+        432
+      ],
+      "closed": true,
+      "closure": {
+        "method": "witness_subset_drat",
+        "run": "workspace/data/matching/k5_batch/idx014",
+        "verification": "workspace/data/matching/k5_batch/idx014/strict_verification.json"
+      },
+      "idx": 14,
+      "k": 5,
+      "orbit_size": 288
+    },
+    "15": {
+      "canonical": [
+        1,
+        16,
+        27,
+        256,
+        438
+      ],
+      "closed": false,
+      "closure": null,
+      "idx": 15,
+      "k": 5,
+      "latest_run": {
+        "drat_verified_in_summary": null,
+        "exists": true,
+        "final_clauses": null,
+        "learned_clause_count": 160090,
+        "path": "workspace/data/matching/k5_batch/idx015",
+        "rounds": 26,
+        "status": "SOLVER_UNKNOWN",
+        "survivor_count": 265,
+        "target": 15
+      },
+      "orbit_size": 288
+    },
+    "16": {
+      "canonical": [
+        1,
+        16,
+        36,
+        192,
+        325
+      ],
+      "closed": false,
+      "closure": null,
+      "idx": 16,
+      "k": 5,
+      "orbit_size": 144
+    },
+    "17": {
+      "canonical": [
+        1,
+        16,
+        36,
+        192,
+        360
+      ],
+      "closed": false,
+      "closure": null,
+      "idx": 17,
+      "k": 5,
+      "orbit_size": 1152
+    },
+    "18": {
+      "canonical": [
+        1,
+        16,
+        36,
+        192,
+        432
+      ],
+      "closed": false,
+      "closure": null,
+      "idx": 18,
+      "k": 5,
+      "orbit_size": 576
+    },
+    "19": {
+      "canonical": [
+        1,
+        16,
+        36,
+        192,
+        438
+      ],
+      "closed": false,
+      "closure": null,
+      "idx": 19,
+      "k": 5,
+      "orbit_size": 1152
+    },
+    "2": {
+      "canonical": [
+        1,
+        16,
+        27
+      ],
+      "closed": false,
+      "closure": null,
+      "idx": 2,
+      "k": 3,
+      "orbit_size": 18
+    },
+    "20": {
+      "canonical": [
+        1,
+        16,
+        36,
+        192,
+        511
+      ],
+      "closed": false,
+      "closure": null,
+      "idx": 20,
+      "k": 5,
+      "orbit_size": 576
+    },
+    "21": {
+      "canonical": [
+        1,
+        16,
+        36,
+        384,
+        504
+      ],
+      "closed": false,
+      "closure": null,
+      "idx": 21,
+      "k": 5,
+      "orbit_size": 576
+    },
+    "22": {
+      "canonical": [
+        1,
+        16,
+        27,
+        256,
+        325,
+        432
+      ],
+      "closed": true,
+      "closure": {
+        "method": "k6_clique_cover_certificate",
+        "verification": "workspace/data/graph_cert/k6_color_pilot/verification_k6_color_certs.json"
+      },
+      "idx": 22,
+      "k": 6,
+      "orbit_size": 144
+    },
+    "23": {
+      "canonical": [
+        1,
+        16,
+        27,
+        256,
+        325,
+        438
+      ],
+      "closed": true,
+      "closure": {
+        "method": "k6_clique_cover_certificate",
+        "verification": "workspace/data/graph_cert/k6_color_pilot/verification_k6_color_certs.json"
+      },
+      "idx": 23,
+      "k": 6,
+      "orbit_size": 144
+    },
+    "24": {
+      "canonical": [
+        1,
+        16,
+        27,
+        256,
+        360,
+        390
+      ],
+      "closed": true,
+      "closure": {
+        "method": "k6_clique_cover_certificate",
+        "verification": "workspace/data/graph_cert/k6_color_pilot/verification_k6_color_certs.json"
+      },
+      "idx": 24,
+      "k": 6,
+      "orbit_size": 576
+    },
+    "25": {
+      "canonical": [
+        1,
+        16,
+        27,
+        256,
+        360,
+        438
+      ],
+      "closed": true,
+      "closure": {
+        "method": "witness_subset_drat",
+        "run": "workspace/data/smoke/idx25/idx025",
+        "verification": "workspace/data/smoke/idx25/idx025/strict_verification.json"
+      },
+      "idx": 25,
+      "k": 6,
+      "orbit_size": 576
+    },
+    "26": {
+      "canonical": [
+        1,
+        16,
+        36,
+        192,
+        325,
+        432
+      ],
+      "closed": false,
+      "closure": null,
+      "idx": 26,
+      "k": 6,
+      "latest_run": {
+        "drat_verified_in_summary": null,
+        "exists": true,
+        "final_clauses": 351042,
+        "learned_clause_count": 274092,
+        "path": "workspace/data/matching/k6_batch/idx026",
+        "rounds": 80,
+        "status": "MAX_ROUNDS",
+        "survivor_count": 443,
+        "target": 14
+      },
+      "orbit_size": 144
+    },
+    "27": {
+      "canonical": [
+        1,
+        16,
+        36,
+        192,
+        325,
+        438
+      ],
+      "closed": false,
+      "closure": null,
+      "idx": 27,
+      "k": 6,
+      "orbit_size": 288
+    },
+    "28": {
+      "canonical": [
+        1,
+        16,
+        36,
+        192,
+        325,
+        511
+      ],
+      "closed": true,
+      "closure": {
+        "method": "k6_clique_cover_certificate",
+        "verification": "workspace/data/graph_cert/k6_color_pilot/verification_k6_color_certs.json"
+      },
+      "idx": 28,
+      "k": 6,
+      "orbit_size": 144
+    },
+    "29": {
+      "canonical": [
+        1,
+        16,
+        36,
+        192,
+        360,
+        390
+      ],
+      "closed": false,
+      "closure": null,
+      "idx": 29,
+      "k": 6,
+      "orbit_size": 576
+    },
+    "3": {
+      "canonical": [
+        1,
+        16,
+        36
+      ],
+      "closed": false,
+      "closure": null,
+      "idx": 3,
+      "k": 3,
+      "orbit_size": 144
+    },
+    "30": {
+      "canonical": [
+        1,
+        16,
+        36,
+        192,
+        360,
+        438
+      ],
+      "closed": false,
+      "closure": null,
+      "idx": 30,
+      "k": 6,
+      "orbit_size": 1152
+    },
+    "31": {
+      "canonical": [
+        1,
+        16,
+        36,
+        192,
+        360,
+        511
+      ],
+      "closed": false,
+      "closure": null,
+      "idx": 31,
+      "k": 6,
+      "orbit_size": 576
+    },
+    "32": {
+      "canonical": [
+        1,
+        16,
+        27,
+        256,
+        325,
+        432,
+        511
+      ],
+      "closed": true,
+      "closure": {
+        "manifest": "workspace/data/k7_manifest/k7_unified_manifest.json",
+        "method": "k7_graph_or_row_certificate",
+        "strict_graph_cnf_verification": "workspace/data/graph_cert/k7_graph_is_cnf_with_vex/strict_verification_graph_is_cnf.json",
+        "verification": "workspace/data/graph_cert/k7_rerun/verification_k7_certified.json"
+      },
+      "idx": 32,
+      "k": 7,
+      "orbit_size": 24
+    },
+    "33": {
+      "canonical": [
+        1,
+        16,
+        27,
+        256,
+        325,
+        438,
+        504
+      ],
+      "closed": true,
+      "closure": {
+        "manifest": "workspace/data/k7_manifest/k7_unified_manifest.json",
+        "method": "k7_graph_or_row_certificate",
+        "strict_graph_cnf_verification": "workspace/data/graph_cert/k7_graph_is_cnf_with_vex/strict_verification_graph_is_cnf.json",
+        "verification": "workspace/data/graph_cert/k7_rerun/verification_k7_certified.json"
+      },
+      "idx": 33,
+      "k": 7,
+      "orbit_size": 24
+    },
+    "34": {
+      "canonical": [
+        1,
+        16,
+        27,
+        256,
+        360,
+        390,
+        511
+      ],
+      "closed": true,
+      "closure": {
+        "manifest": "workspace/data/k7_manifest/k7_unified_manifest.json",
+        "method": "k7_graph_or_row_certificate",
+        "strict_graph_cnf_verification": "workspace/data/graph_cert/k7_graph_is_cnf_with_vex/strict_verification_graph_is_cnf.json",
+        "verification": "workspace/data/graph_cert/k7_rerun/verification_k7_certified.json"
+      },
+      "idx": 34,
+      "k": 7,
+      "orbit_size": 144
+    },
+    "35": {
+      "canonical": [
+        1,
+        16,
+        27,
+        256,
+        360,
+        438,
+        455
+      ],
+      "closed": true,
+      "closure": {
+        "manifest": "workspace/data/k7_manifest/k7_unified_manifest.json",
+        "method": "k7_graph_or_row_certificate",
+        "strict_graph_cnf_verification": "workspace/data/graph_cert/k7_graph_is_cnf_with_vex/strict_verification_graph_is_cnf.json",
+        "verification": "workspace/data/graph_cert/k7_rerun/verification_k7_certified.json"
+      },
+      "idx": 35,
+      "k": 7,
+      "orbit_size": 144
+    },
+    "36": {
+      "canonical": [
+        1,
+        16,
+        36,
+        192,
+        360,
+        390,
+        511
+      ],
+      "closed": true,
+      "closure": {
+        "manifest": "workspace/data/k7_manifest/k7_unified_manifest.json",
+        "method": "k7_graph_or_row_certificate",
+        "strict_graph_cnf_verification": "workspace/data/graph_cert/k7_graph_is_cnf_with_vex/strict_verification_graph_is_cnf.json",
+        "verification": "workspace/data/graph_cert/k7_rerun/verification_k7_certified.json"
+      },
+      "idx": 36,
+      "k": 7,
+      "orbit_size": 192
+    },
+    "37": {
+      "canonical": [
+        1,
+        16,
+        36,
+        192,
+        360,
+        438,
+        455
+      ],
+      "closed": true,
+      "closure": {
+        "manifest": "workspace/data/k7_manifest/k7_unified_manifest.json",
+        "method": "k7_graph_or_row_certificate",
+        "strict_graph_cnf_verification": "workspace/data/graph_cert/k7_graph_is_cnf_with_vex/strict_verification_graph_is_cnf.json",
+        "verification": "workspace/data/graph_cert/k7_rerun/verification_k7_certified.json"
+      },
+      "idx": 37,
+      "k": 7,
+      "orbit_size": 192
+    },
+    "4": {
+      "canonical": [
+        1,
+        16,
+        256
+      ],
+      "closed": false,
+      "closure": null,
+      "idx": 4,
+      "k": 3,
+      "orbit_size": 288
+    },
+    "5": {
+      "canonical": [
+        1,
+        16,
+        27,
+        256
+      ],
+      "closed": false,
+      "closure": null,
+      "idx": 5,
+      "k": 4,
+      "latest_run": {
+        "drat_verified_in_summary": null,
+        "exists": true,
+        "final_clauses": null,
+        "learned_clause_count": 339265,
+        "path": "workspace/data/matching/k4_batch/idx005",
+        "rounds": 46,
+        "status": "SOLVER_UNKNOWN",
+        "survivor_count": 275,
+        "target": 16
+      },
+      "orbit_size": 288
+    },
+    "6": {
+      "canonical": [
+        1,
+        16,
+        36,
+        192
+      ],
+      "closed": false,
+      "closure": null,
+      "idx": 6,
+      "k": 4,
+      "orbit_size": 576
+    },
+    "7": {
+      "canonical": [
+        1,
+        16,
+        36,
+        384
+      ],
+      "closed": false,
+      "closure": null,
+      "idx": 7,
+      "k": 4,
+      "orbit_size": 576
+    },
+    "8": {
+      "canonical": [
+        1,
+        16,
+        36,
+        448
+      ],
+      "closed": false,
+      "closure": null,
+      "idx": 8,
+      "k": 4,
+      "orbit_size": 576
+    },
+    "9": {
+      "canonical": [
+        1,
+        16,
+        256,
+        432
+      ],
+      "closed": false,
+      "closure": null,
+      "idx": 9,
+      "k": 4,
+      "orbit_size": 96
+    }
+  },
+  "rep2": {
+    "branch": "rep2_adjacent_pair",
+    "closed": false,
+    "interpretation": "Returned violation counts are candidate diagnostics only, not monotone proof-progress measures.",
+    "latest_run": {
+      "drat_verified_in_summary": null,
+      "exists": true,
+      "final_clauses": 254040,
+      "learned_clause_count": 207408,
+      "path": "workspace/data/matching/rep2_production/rep2",
+      "rounds": 120,
+      "status": "MAX_ROUNDS",
+      "survivor_count": 509,
+      "target": 18
+    },
+    "seeded_promotion_runs": [
+      "workspace/data/promotion/rep2_model_lowres_3w5/summary.json",
+      "workspace/data/promotion/rep2_model_excess_3w5/summary.json",
+      "workspace/data/promotion/rep2_model_lowres_8w5/summary.json",
+      "workspace/data/promotion/rep2_prod_lowres_5w8/summary.json"
+    ],
+    "status": "OPEN"
+  },
+  "summary": {
+    "all_closed_for_r_f2_ge_21": false,
+    "by_k": {
+      "1": {
+        "closed": 0,
+        "open": 1,
+        "open_indices": [
+          0
+        ],
+        "total": 1
+      },
+      "2": {
+        "closed": 0,
+        "open": 1,
+        "open_indices": [
+          1
+        ],
+        "total": 1
+      },
+      "3": {
+        "closed": 0,
+        "open": 3,
+        "open_indices": [
+          2,
+          3,
+          4
+        ],
+        "total": 3
+      },
+      "4": {
+        "closed": 0,
+        "open": 7,
+        "open_indices": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "total": 7
+      },
+      "5": {
+        "closed": 3,
+        "open": 7,
+        "open_indices": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "total": 10
+      },
+      "6": {
+        "closed": 5,
+        "open": 5,
+        "open_indices": [
+          26,
+          27,
+          29,
+          30,
+          31
+        ],
+        "total": 10
+      },
+      "7": {
+        "closed": 6,
+        "open": 0,
+        "open_indices": [],
+        "total": 6
+      }
+    },
+    "matching_strata_closed": 14,
+    "matching_strata_open": 24,
+    "matching_strata_total": 38,
+    "rep2_closed": false,
+    "schema": "matching_progress_v1",
+    "scope": "fixed A-support exclusions under the Wang F2 occupation LUT; not a tensor-rank lower bound unless all matching strata and rep2 are closed and external proof layers are bound."
+  }
+}

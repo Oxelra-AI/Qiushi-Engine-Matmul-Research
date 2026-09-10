@@ -1,0 +1,66 @@
+{
+  "all_ok": false,
+  "indices": [
+    489
+  ],
+  "results": [
+    {
+      "cert_index": 489,
+      "certificate_record": "data/dim2_cnf_cert_all/orbit_489/orbit_489_target_18_certificate.json",
+      "cnf_path": "data/dim2_cnf_cert_all/orbit_489/orbit_489_target_18.cnf",
+      "cnf_sha256": "9e9e8120a8d649b2e9827f984c04764b09013077c5ab6c8b5ab1b17c9e3cfeb1",
+      "core_cnf_path": "data/dim2_core_manifests_v2/orbit_489/orbit_489_core.cnf",
+      "core_cnf_sha256": "df7f20106abd73370ea7b8b7873f7fd12570c2731bb2208611041e01137ca87b",
+      "core_cnf_size_bytes": 36834,
+      "core_input_clause_count": 2557,
+      "core_kind_counts": {
+        "global_atleast_sum_ge_target": 179,
+        "global_atmost_sum_le_target": 3,
+        "wang_row": 817
+      },
+      "core_lemmas_path": "data/dim2_core_manifests_v2/orbit_489/orbit_489_core_lemmas.drat",
+      "core_lemmas_sha256": "ff3ca606e3c550a988c5d4caf08456054b880229404e6b153599b043232030e2",
+      "core_lemmas_size_bytes": 576355,
+      "core_wang_row_cap_hist": {
+        "12": 29,
+        "15": 7,
+        "2": 6,
+        "3": 59,
+        "4": 19,
+        "6": 93,
+        "9": 24
+      },
+      "core_wang_row_count": 237,
+      "core_wang_row_dim_hist": {
+        "2": 2,
+        "3": 26,
+        "4": 60,
+        "5": 105,
+        "6": 44
+      },
+      "core_wang_rows_manifest": "data/dim2_core_manifests_v2/orbit_489/orbit_489_core_wang_rows.jsonl",
+      "drat_core_command": [
+        "drat-trim",
+        "data/dim2_cnf_cert_all/orbit_489/orbit_489_target_18.cnf",
+        "data/dim2_cnf_cert_all/orbit_489/orbit_489_target_18.drat",
+        "-c",
+        "data/dim2_core_manifests_v2/orbit_489/orbit_489_core.cnf",
+        "-l",
+        "data/dim2_core_manifests_v2/orbit_489/orbit_489_core_lemmas.drat"
+      ],
+      "drat_trim_returncode": 0,
+      "drat_verified": true,
+      "elapsed_sec": 0.5886499881744385,
+      "mapped_core_clauses": 999,
+      "missing_core_clause_mappings": 1558,
+      "ok": false,
+      "proof_path": "data/dim2_cnf_cert_all/orbit_489/orbit_489_target_18.drat",
+      "proof_sha256": "dfc20639b43dc536c639dff50a097bb8d56d6740c6062ea74b42c253d782f59f",
+      "regenerated_cnf_sha256": "9e9e8120a8d649b2e9827f984c04764b09013077c5ab6c8b5ab1b17c9e3cfeb1",
+      "regenerated_nclauses": 51933,
+      "regenerated_nvars": 28097,
+      "target": 18
+    }
+  ],
+  "schema": "dim2_core_manifest_summary_v1"
+}

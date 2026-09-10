@@ -1,0 +1,68 @@
+{
+  "config": {
+    "max_attempts": 2000,
+    "path_limit": 2000000,
+    "plus_enabled": true,
+    "plus_lim": 20000,
+    "pool_size": 500,
+    "save": true,
+    "target_rank": 19,
+    "threads": 8
+  },
+  "dims": {
+    "U": 8,
+    "V": 9,
+    "W": 9,
+    "nnz": 24
+  },
+  "field": "mod2",
+  "progress": [
+    {
+      "attempts": 560,
+      "found": 560,
+      "npy_path": "data/schemes_modp/e11core/mod2-rank23a.npy",
+      "rank": 23,
+      "saved_npy": true,
+      "time_sec": 1.109945377,
+      "verified": 560
+    },
+    {
+      "attempts": 561,
+      "found": 561,
+      "npy_path": "data/schemes_modp/e11core/mod2-rank22a.npy",
+      "rank": 22,
+      "saved_npy": true,
+      "time_sec": 1.022277285,
+      "verified": 561
+    },
+    {
+      "attempts": 519,
+      "found": 519,
+      "npy_path": "data/schemes_modp/e11core/mod2-rank21a.npy",
+      "rank": 21,
+      "saved_npy": true,
+      "time_sec": 1.023571187,
+      "verified": 519
+    },
+    {
+      "attempts": 2001,
+      "found": 0,
+      "rank": 20,
+      "saved_npy": false,
+      "time_sec": 51.114567837,
+      "verified": 0
+    }
+  ],
+  "result": {
+    "best_rank_achieved": 21,
+    "final_pool_size": 500
+  },
+  "run": {
+    "finished_at": "2026-09-04T17:21:58Z",
+    "last_update": "2026-09-04T17:21:58Z",
+    "started_at": "2026-09-04T17:21:04Z",
+    "status": "finished"
+  },
+  "stem": "e11core",
+  "tensor": "data/tensors/e11core.npy"
+}

@@ -1,0 +1,66 @@
+{
+  "prime": 65521,
+  "tensor": "T333",
+  "tests": {
+    "control_random_r22": {
+      "found": 0,
+      "stats": {
+        "min_rv": 378,
+        "degen": 0,
+        "checked": 500,
+        "elapsed": 123.21
+      },
+      "interpretation": "ALS on random rank-22 tensor calibrates whether ALS can find decompositions at all"
+    },
+    "T333_r23_als": {
+      "found": 0,
+      "stats": {
+        "min_rv": 729,
+        "degen": 200,
+        "checked": 200,
+        "elapsed": 0.55
+      }
+    },
+    "T333_r22_als": {
+      "found": 0,
+      "stats": {
+        "min_rv": 729,
+        "degen": 200,
+        "checked": 200,
+        "elapsed": 0.53
+      }
+    },
+    "T333_r22_homotopy": {
+      "found": 0,
+      "stats": {
+        "best_final_res": 729,
+        "paths_completed": 0,
+        "paths_broken": 50,
+        "elapsed": 3.1
+      }
+    },
+    "T333_r23_homotopy": {
+      "found": 0,
+      "stats": {
+        "best_final_res": 729,
+        "paths_completed": 0,
+        "paths_broken": 50,
+        "elapsed": 3.3
+      }
+    },
+    "T333_r22_newton": {
+      "found": 0,
+      "stats": {
+        "min_res": 729,
+        "checked": 5,
+        "elapsed": 18.79
+      }
+    }
+  },
+  "summary": {
+    "rank22_found_any_method": false,
+    "rank23_found_any_method": false,
+    "control_rank22_random_found": false,
+    "interpretation": "If control_rank22_random_found=false, ALS/Newton is ineffective for this size. If rank23_found but not rank22: evidence (not proof) that T333 rank > 22 over F_p. If rank22_found: candidate for verification and Hensel lifting."
+  }
+}

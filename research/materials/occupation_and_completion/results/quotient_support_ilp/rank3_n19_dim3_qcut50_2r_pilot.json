@@ -1,0 +1,58 @@
+{
+  "base_info": {
+    "base_constraint_rows": 108461,
+    "base_nnz": 745620,
+    "contraction_lb_count": 255,
+    "contraction_rank_hist": {
+      "3": 21,
+      "6": 154,
+      "9": 80
+    },
+    "wang_cap_hist": {
+      "1": 6017,
+      "2": 60027,
+      "3": 38717,
+      "4": 3346,
+      "5": 98
+    },
+    "wang_dim_hist": {
+      "1": 255,
+      "2": 10795,
+      "3": 97155
+    },
+    "wang_nnz": 712725,
+    "wang_rows_in_input_binary": 417197,
+    "wang_rows_skipped_by_dim": 308992,
+    "wang_rows_used": 108205
+  },
+  "binary_variables": true,
+  "build_sec": 0.95,
+  "final_status": "TIME_OR_ITERATION_LIMIT",
+  "final_support": null,
+  "input_binary": "data/wang_native/quotient_binaries/rank3_all_n19.bin",
+  "input_binary_sha256": "6a521514ee4c1dd25718e7266c8b3bc36acc6d2f1bc456c0f40999c533177667",
+  "learned_qcut_count": 0,
+  "learned_qcuts_head": [],
+  "lp_relaxation": null,
+  "mathematical_meaning": "MILP over quotient A-supports satisfying Wang occupation rows, contraction lower bounds, and learned unconditional quotient-rank inequalities. Feasible support is necessary-condition evidence only; infeasible result requires independent solver certificate/replay before theorem use.",
+  "max_wang_dim": 3,
+  "pivot": 273,
+  "pivot_name": "rank3",
+  "rounds": [
+    {
+      "active_constraints": 108461,
+      "active_qcuts": 0,
+      "ilp": {
+        "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+        "mode": "ILP",
+        "solve_sec": 60.197,
+        "status": 1,
+        "success": false
+      },
+      "round": 0
+    }
+  ],
+  "schema": "quotient_support_ilp_v1",
+  "target": 19,
+  "total_elapsed_sec": 61.161
+}

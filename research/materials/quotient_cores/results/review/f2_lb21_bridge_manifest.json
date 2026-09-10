@@ -1,0 +1,207 @@
+{
+  "already_checked_dependencies": {
+    "no_rank1_full_support_certificates": {
+      "rank2_or_rank3_no_rank1_branch": {
+        "cadical_log": {
+          "contains_unsat": true,
+          "exists": true,
+          "exit_line_20": true,
+          "path": "data/wang_capacity_cnf_rank2/t_s20_dim123_branch_rank2.cadical.log",
+          "sha256": "ccbb92c3e80d5a56bb80a51010705674130d40a195eaec03faef2ce79461437d"
+        },
+        "cnf_sha256": "129d6159a63518933bfd61459e20e4b2c33fc8fdb13279709283f2c5fd1aa519",
+        "drat_sha256": "1875971f9df357abff575c0be74422c4b14855b5067419fc16069b31008968c9",
+        "drat_trim": {
+          "clauses": 18547589,
+          "exists": true,
+          "path": "data/wang_capacity_cnf_rank2/t_s20_dim123_branch_rank2.drat_trim.log",
+          "sha256": "3112b41f400b99209dfbd8951790ea56e750f0febcac769def69afce4c42ff42",
+          "vars": 18142,
+          "verification_time_sec": 1702.804,
+          "verified": true
+        },
+        "meaning": "After excluding rank-1 A directions and fixing one rank-2 representative, no length-20 Wang-admissible A-support exists with rank-2/3 directions.",
+        "meta": {
+          "allowed_points": 462,
+          "allowed_rank_hist": {
+            "2": 294,
+            "3": 168
+          },
+          "branch_meaning": "0 unbranched; 1 fixes E11; 2 fixes rank2 and excludes rank1; 3 fixes identity and excludes rank1/rank2",
+          "branch_rank": 2,
+          "cap_hist": {
+            "1": 511,
+            "2": 445679,
+            "3": 378280,
+            "4": 7497,
+            "5": 14
+          },
+          "cnf_path": "data/wang_capacity_cnf_rank2/t_s20_dim123_branch_rank2.cnf",
+          "dims": [
+            1,
+            2,
+            3
+          ],
+          "direct_capacity_clauses": 18512228,
+          "elapsed_sec": 34.8945038318634,
+          "field": "F2",
+          "fixed_point": 17,
+          "global_cardinality_clauses": 35360,
+          "num_clauses": 18547589,
+          "num_vars": 18142,
+          "problem": "T-level Wang occupation branch CNF",
+          "rank_s": 20,
+          "row_var_count_hist": {
+            "0": 161,
+            "1": 1344,
+            "2": 10878,
+            "3": 34370,
+            "4": 16464,
+            "5": 81144,
+            "6": 305564,
+            "7": 382056
+          },
+          "rows_by_L": {
+            "15": 14,
+            "16": 7497,
+            "17": 378280,
+            "18": 445679,
+            "19": 511
+          },
+          "rows_by_dim": {
+            "1": 511,
+            "2": 43435,
+            "3": 788035
+          },
+          "rows_seen": 831981,
+          "rows_used": 812542
+        },
+        "status": {
+          "cadical_exit": 20,
+          "cadical_log": "data/wang_capacity_cnf_rank2/t_s20_dim123_branch_rank2.cadical.log",
+          "cnf": "data/wang_capacity_cnf_rank2/t_s20_dim123_branch_rank2.cnf",
+          "drat": "data/wang_capacity_cnf_rank2/t_s20_dim123_branch_rank2.drat",
+          "drat_trim_exit": 0,
+          "drat_trim_log": "data/wang_capacity_cnf_rank2/t_s20_dim123_branch_rank2.drat_trim.log",
+          "meta": "data/wang_capacity_cnf_rank2/t_s20_dim123_branch_rank2.meta.json",
+          "stage": "complete"
+        }
+      },
+      "rank3_only_branch": {
+        "cadical_log": {
+          "contains_unsat": true,
+          "exists": true,
+          "exit_line_20": true,
+          "path": "data/wang_capacity_cnf/t_s20_dim123_branch_rank3.cadical2.log",
+          "sha256": "4ae276d9863420404ef203ef0eca7d1f9b6e7d649e09f5eeb5f8c8fb389ccd55"
+        },
+        "cnf_sha256": "541bb859660aaa2cb1de0132cc257e0d9b8517fcb8f76fc6720599fd3c801994",
+        "drat_sha256": "6fb2b982bc39ea697d3c6e16b6d3bc437f0d555a8042c909a329348a339f504b",
+        "drat_trim": {
+          "clauses": 668175,
+          "exists": true,
+          "path": "data/wang_capacity_cnf/t_s20_dim123_branch_rank3.drat_trim.log",
+          "sha256": "df992634b8757e0606b57c333eedb7015e4283b732101368324b05971117ba20",
+          "vars": 6088,
+          "verification_time_sec": 5.228,
+          "verified": true
+        },
+        "meaning": "After excluding rank-1 and rank-2 A directions and fixing one rank-3 representative, no length-20 Wang-admissible A-support exists in this rank class.",
+        "meta": {
+          "allowed_points": 168,
+          "allowed_rank_hist": {
+            "3": 168
+          },
+          "branch_meaning": "0 unbranched; 1 fixes E11; 2 fixes rank2 and excludes rank1; 3 fixes identity and excludes rank1/rank2",
+          "branch_rank": 3,
+          "cap_hist": {
+            "1": 511,
+            "2": 445679,
+            "3": 378280,
+            "4": 7497,
+            "5": 14
+          },
+          "cnf_path": "data/wang_capacity_cnf/t_s20_dim123_branch_rank3.cnf",
+          "dims": [
+            1,
+            2,
+            3
+          ],
+          "direct_capacity_clauses": 656334,
+          "elapsed_sec": 8.97830867767334,
+          "field": "F2",
+          "fixed_point": 273,
+          "global_cardinality_clauses": 11840,
+          "num_clauses": 668175,
+          "num_vars": 6088,
+          "problem": "T-level Wang occupation branch CNF",
+          "rank_s": 20,
+          "row_var_count_hist": {
+            "0": 65779,
+            "1": 178920,
+            "2": 249900,
+            "3": 205184,
+            "4": 101430,
+            "5": 28224,
+            "6": 2352,
+            "7": 192
+          },
+          "rows_by_L": {
+            "15": 14,
+            "16": 7497,
+            "17": 378280,
+            "18": 445679,
+            "19": 511
+          },
+          "rows_by_dim": {
+            "1": 511,
+            "2": 43435,
+            "3": 788035
+          },
+          "rows_seen": 831981,
+          "rows_used": 241734
+        }
+      }
+    },
+    "repeated_projected_A_E11_certificate": {
+      "manifest": "data/repeat_branch_certificate/certificate_manifest.json",
+      "primary_cnf_sha256": "673426778d1c211ac35b014a3c1baa6f2b0595a2c242f948074d580816234dc9",
+      "primary_drat_sha256": "3f9c1a06cb4eb5f0e2193e9a5be752a708945eb9ae6bfafa9490a14aeb52b419",
+      "primary_drat_trim_verified": true,
+      "review": "data/review/repeated_certificate_review.json"
+    }
+  },
+  "checks": {
+    "all_existing_dependencies_checked": true,
+    "rank2_branch_rank": 2,
+    "rank2_drat_verified": true,
+    "rank2_fixed_point": 17,
+    "rank3_branch_rank": 3,
+    "rank3_drat_verified": true,
+    "rank3_fixed_point": 273,
+    "repeat_certificate_review_passed": true,
+    "repeat_certificate_statement": "There is no length-19 nonzero projected A-direction multiset for the E11 core over F2 that satisfies the complete Wang occupation consequences and contains a repeated projected direction. Equivalently, any actual rank-19 E11-core decomposition over F2 must have 19 distinct projected A-directions."
+  },
+  "field": "F2",
+  "logical_bridge": [
+    "Any length-20 full decomposition over F2 has nonzero A-factors whose projective A-support satisfies Wang occupation constraints.",
+    "The rank-3-only and rank-2/3 no-rank1 DRAT certificates exclude all length-20 Wang-admissible A-supports with no rank-one A-factor; hence a hypothetical length-20 full decomposition has a rank-one A-factor.",
+    "The standard matrix-multiplication tensor action is transitive on rank-one A directions, so choose coordinates with that factor at E11.",
+    "The one-dimensional Wang rows have capacity one at length 20, so there is no second E11 A-factor; quotienting by <E11> leaves exactly 19 nonzero projected A-factors for the E11 core.",
+    "analysis excludes repeated projected A-directions in any length-19 E11-core support satisfying complete Wang occupation, so only the distinct projected-A E11-core branch remains.",
+    "A proof excluding that distinct branch would prove R_F2(T_<3,3,3>) >= 21.  A rank-19 E11-core decomposition would instead lift to a full rank <=22 decomposition by adding the three rank-one terms for the deleted E11 slice."
+  ],
+  "missing_dependency": {
+    "name": "distinct_projected_A_E11_core_length19_resolution",
+    "needed_for_lower_bound": "Show that no 19-element subset of nonzero E11 quotient directions satisfies the complete core Wang table and fixed-A consequences strongly enough to be an exact E11-core decomposition; a Wang-only UNSAT proof would be enough, but a B/C compatibility proof may be needed.",
+    "needed_for_upper_bound": "If such a 19-point support is found, solve exact B/C rank-one completion and verify the E11-core tensor identity; then add the deleted E11 slice terms to obtain a full rank <=22 decomposition over F2."
+  },
+  "purpose": "Record the exact remaining dependency for proving R_F2(T)>=21 via the E11 core.",
+  "schema": "f2_lb21_bridge_manifest_v1",
+  "scope_limits": [
+    "This manifest is not a proof of R_F2(T)>=21 because the distinct E11-core branch is still open.",
+    "Even a future F2 rank>=21 lower bound would not prove characteristic-zero rank 23 optimality.",
+    "The repeated-branch proof is Wang-only; quotient-rank cuts are not evidence for that particular contradiction, though they remain useful for the distinct branch and candidate completion."
+  ],
+  "tensor": "T_<3,3,3>"
+}

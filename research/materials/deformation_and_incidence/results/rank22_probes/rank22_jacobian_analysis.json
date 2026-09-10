@@ -1,0 +1,82 @@
+{
+  "part1_generic_jacobian_rank": {
+    "summary": "For r=20..24 and primes 65521, 104729, 1000003: generic Jacobian rank = min(25r, 729) consistently. σ_r has the expected dimension (no deficiency for any r ≤ 24).",
+    "data": {
+      "20": {
+        "generic_rank": 500,
+        "expected": 500,
+        "fiber_dim": 40,
+        "match": true
+      },
+      "21": {
+        "generic_rank": 525,
+        "expected": 525,
+        "fiber_dim": 42,
+        "match": true
+      },
+      "22": {
+        "generic_rank": 550,
+        "expected": 550,
+        "fiber_dim": 44,
+        "match": true
+      },
+      "23": {
+        "generic_rank": 575,
+        "expected": 575,
+        "fiber_dim": 46,
+        "match": true
+      },
+      "24": {
+        "generic_rank": 600,
+        "expected": 600,
+        "fiber_dim": 48,
+        "match": true
+      }
+    }
+  },
+  "part2_cn122_truncation": {
+    "summary": "For ALL 23 term-drops from cn122 and serendipitous over F_65521 and F_104729: residual NOT in Jacobian image. No first-order shortening exists from any known rank-23 scheme.",
+    "cn122_jac_rank_range": [
+      514,
+      520
+    ],
+    "cn122_kernel_dim_range": [
+      74,
+      80
+    ],
+    "cn122_in_image_count": "0/23",
+    "serendipitous_jac_rank_range": [
+      518,
+      524
+    ],
+    "serendipitous_kernel_dim_range": [
+      70,
+      76
+    ],
+    "serendipitous_in_image_count": "0/23"
+  },
+  "part3_at_solutions": {
+    "summary": "At 5 random rank-22 solution points over F_65521: Jacobian rank = 550 consistently, fiber_dim = 44."
+  },
+  "part4_shortened_system": {
+    "summary": "After W-elimination: 531 equations in 396 UV variables, effectively 352 independent (= 550 - 198). Expected moduli dimension = 44 - gauge. Gauge (GL3^3 + rescaling) = 49 > 44 => generically discrete decompositions.",
+    "equations": 531,
+    "variables": 396,
+    "effective_equations": 352,
+    "kernel_dim": 44,
+    "gauge_GL3_cubed": 27,
+    "gauge_rescaling": 22,
+    "gauge_total": 49
+  },
+  "scientific_interpretation": {
+    "sigma_22_codimension": 179,
+    "sigma_22_expected_dimension": 550,
+    "T333_on_sigma_23": true,
+    "T333_locally_reachable_from_rank23": false,
+    "first_order_obstruction_at_cn122": true,
+    "first_order_obstruction_at_serendipitous": true,
+    "fiber_dimension_at_generic_rank22": 44,
+    "gauge_exceeds_fiber": true,
+    "consequence": "Any rank-22 decomposition of T333 must be isolated modulo symmetry and fundamentally different from perturbations of known rank-23 schemes. The pairing-defect locus in the rank-23 fiber has expected codimension 59, which in the 90-dimensional fiber gives expected dimension 31; since the gauge orbit has dimension ~70 > 31, the pairing-defect moduli is expected negative-dimensional, suggesting emptiness."
+  }
+}

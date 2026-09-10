@@ -1,0 +1,325 @@
+{
+  "schema": "multi_cert_coverage_v1",
+  "elapsed_sec": 0.115,
+  "certificates": [
+    {
+      "name": "near_miss_primary",
+      "wang_viol": 12,
+      "nterms": 19,
+      "cert_qs": 10,
+      "forced": 111,
+      "escape": 144,
+      "tensor_rhs": 1,
+      "self_parity": 0,
+      "self_contradiction": true,
+      "support_head": [
+        1,
+        2,
+        3,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "fresh_uncond_sep_10r_round8",
+      "wang_viol": 15,
+      "nterms": 19,
+      "cert_qs": 5,
+      "forced": 195,
+      "escape": 60,
+      "tensor_rhs": 1,
+      "self_parity": 0,
+      "self_contradiction": true,
+      "support_head": [
+        2,
+        3,
+        4,
+        10,
+        20
+      ]
+    },
+    {
+      "name": "core_e11_saturation_v3_complete_long_round4",
+      "wang_viol": 29,
+      "nterms": 19,
+      "cert_qs": 10,
+      "forced": 124,
+      "escape": 131,
+      "tensor_rhs": 0,
+      "self_parity": 1,
+      "self_contradiction": true,
+      "support_head": [
+        1,
+        2,
+        3,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "core_e11_saturation_v3_complete_long_round8",
+      "wang_viol": 33,
+      "nterms": 19,
+      "cert_qs": 5,
+      "forced": 255,
+      "escape": 0,
+      "tensor_rhs": 0,
+      "self_parity": 0,
+      "self_contradiction": false,
+      "support_head": [
+        1,
+        2,
+        3,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "core_e11_saturation_v3_complete_long_round13",
+      "wang_viol": 34,
+      "nterms": 19,
+      "cert_qs": 6,
+      "forced": 195,
+      "escape": 60,
+      "tensor_rhs": 1,
+      "self_parity": 0,
+      "self_contradiction": true,
+      "support_head": [
+        1,
+        2,
+        3,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "core_e11_saturation_v3_complete_long_round11",
+      "wang_viol": 35,
+      "nterms": 19,
+      "cert_qs": 4,
+      "forced": 199,
+      "escape": 56,
+      "tensor_rhs": 1,
+      "self_parity": 0,
+      "self_contradiction": true,
+      "support_head": [
+        1,
+        2,
+        3,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "core_e11_saturation_v3_complete_long_round6",
+      "wang_viol": 42,
+      "nterms": 19,
+      "cert_qs": 6,
+      "forced": 167,
+      "escape": 88,
+      "tensor_rhs": 0,
+      "self_parity": 1,
+      "self_contradiction": true,
+      "support_head": [
+        1,
+        2,
+        3,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "core_e11_saturation_v3_complete_long_round9",
+      "wang_viol": 87,
+      "nterms": 19,
+      "cert_qs": 9,
+      "forced": 107,
+      "escape": 148,
+      "tensor_rhs": 0,
+      "self_parity": 1,
+      "self_contradiction": true,
+      "support_head": [
+        4,
+        12,
+        13,
+        28,
+        32
+      ]
+    }
+  ],
+  "cross_results": [
+    {
+      "cert": 0,
+      "cert_name": "near_miss_primary",
+      "support": 0,
+      "support_name": "near_miss_primary",
+      "parity": 0,
+      "tensor_rhs": 1,
+      "contradiction": true
+    },
+    {
+      "cert": 1,
+      "cert_name": "fresh_uncond_sep_10r_round8",
+      "support": 1,
+      "support_name": "fresh_uncond_sep_10r_round8",
+      "parity": 0,
+      "tensor_rhs": 1,
+      "contradiction": true
+    },
+    {
+      "cert": 1,
+      "cert_name": "fresh_uncond_sep_10r_round8",
+      "support": 3,
+      "support_name": "core_e11_saturation_v3_complete_long_round8",
+      "parity": 0,
+      "tensor_rhs": 1,
+      "contradiction": true
+    },
+    {
+      "cert": 1,
+      "cert_name": "fresh_uncond_sep_10r_round8",
+      "support": 7,
+      "support_name": "core_e11_saturation_v3_complete_long_round9",
+      "parity": 1,
+      "tensor_rhs": 1,
+      "contradiction": false
+    },
+    {
+      "cert": 2,
+      "cert_name": "core_e11_saturation_v3_complete_long_round4",
+      "support": 2,
+      "support_name": "core_e11_saturation_v3_complete_long_round4",
+      "parity": 1,
+      "tensor_rhs": 0,
+      "contradiction": true
+    },
+    {
+      "cert": 3,
+      "cert_name": "core_e11_saturation_v3_complete_long_round8",
+      "support": 0,
+      "support_name": "near_miss_primary",
+      "parity": 0,
+      "tensor_rhs": 0,
+      "contradiction": false
+    },
+    {
+      "cert": 3,
+      "cert_name": "core_e11_saturation_v3_complete_long_round8",
+      "support": 1,
+      "support_name": "fresh_uncond_sep_10r_round8",
+      "parity": 0,
+      "tensor_rhs": 0,
+      "contradiction": false
+    },
+    {
+      "cert": 3,
+      "cert_name": "core_e11_saturation_v3_complete_long_round8",
+      "support": 2,
+      "support_name": "core_e11_saturation_v3_complete_long_round4",
+      "parity": 0,
+      "tensor_rhs": 0,
+      "contradiction": false
+    },
+    {
+      "cert": 3,
+      "cert_name": "core_e11_saturation_v3_complete_long_round8",
+      "support": 3,
+      "support_name": "core_e11_saturation_v3_complete_long_round8",
+      "parity": 0,
+      "tensor_rhs": 0,
+      "contradiction": false
+    },
+    {
+      "cert": 3,
+      "cert_name": "core_e11_saturation_v3_complete_long_round8",
+      "support": 4,
+      "support_name": "core_e11_saturation_v3_complete_long_round13",
+      "parity": 0,
+      "tensor_rhs": 0,
+      "contradiction": false
+    },
+    {
+      "cert": 3,
+      "cert_name": "core_e11_saturation_v3_complete_long_round8",
+      "support": 5,
+      "support_name": "core_e11_saturation_v3_complete_long_round11",
+      "parity": 0,
+      "tensor_rhs": 0,
+      "contradiction": false
+    },
+    {
+      "cert": 3,
+      "cert_name": "core_e11_saturation_v3_complete_long_round8",
+      "support": 6,
+      "support_name": "core_e11_saturation_v3_complete_long_round6",
+      "parity": 0,
+      "tensor_rhs": 0,
+      "contradiction": false
+    },
+    {
+      "cert": 3,
+      "cert_name": "core_e11_saturation_v3_complete_long_round8",
+      "support": 7,
+      "support_name": "core_e11_saturation_v3_complete_long_round9",
+      "parity": 0,
+      "tensor_rhs": 0,
+      "contradiction": false
+    },
+    {
+      "cert": 4,
+      "cert_name": "core_e11_saturation_v3_complete_long_round13",
+      "support": 2,
+      "support_name": "core_e11_saturation_v3_complete_long_round4",
+      "parity": 1,
+      "tensor_rhs": 1,
+      "contradiction": false
+    },
+    {
+      "cert": 4,
+      "cert_name": "core_e11_saturation_v3_complete_long_round13",
+      "support": 4,
+      "support_name": "core_e11_saturation_v3_complete_long_round13",
+      "parity": 0,
+      "tensor_rhs": 1,
+      "contradiction": true
+    },
+    {
+      "cert": 4,
+      "cert_name": "core_e11_saturation_v3_complete_long_round13",
+      "support": 6,
+      "support_name": "core_e11_saturation_v3_complete_long_round6",
+      "parity": 0,
+      "tensor_rhs": 1,
+      "contradiction": true
+    },
+    {
+      "cert": 5,
+      "cert_name": "core_e11_saturation_v3_complete_long_round11",
+      "support": 5,
+      "support_name": "core_e11_saturation_v3_complete_long_round11",
+      "parity": 0,
+      "tensor_rhs": 1,
+      "contradiction": true
+    },
+    {
+      "cert": 6,
+      "cert_name": "core_e11_saturation_v3_complete_long_round6",
+      "support": 6,
+      "support_name": "core_e11_saturation_v3_complete_long_round6",
+      "parity": 1,
+      "tensor_rhs": 0,
+      "contradiction": true
+    },
+    {
+      "cert": 7,
+      "cert_name": "core_e11_saturation_v3_complete_long_round9",
+      "support": 7,
+      "support_name": "core_e11_saturation_v3_complete_long_round9",
+      "parity": 1,
+      "tensor_rhs": 0,
+      "contradiction": true
+    }
+  ],
+  "common_forced_count": 18,
+  "varying_directions": 212
+}

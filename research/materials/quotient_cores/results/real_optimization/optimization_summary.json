@@ -1,0 +1,52 @@
+{
+  "iteration": 24,
+  "description": "Real-valued numerical optimization for rank-22 decomposition of T333",
+  "key_results": {
+    "als_rank22_best_truncation": {
+      "drop_term": 1,
+      "relative_residual": 0.01979,
+      "method": "ALS 2000 iterations"
+    },
+    "als_rank22_best_random": {
+      "relative_residual": 0.02838,
+      "method": "ALS 2000 iterations, best of 100"
+    },
+    "lm_rank22_from_drop1_2000nfev": {
+      "relative_residual": 0.0005469,
+      "nfev": 2000,
+      "source": "v3 run, turn 24 task"
+    },
+    "lm_rank22_from_drop1_10000nfev": {
+      "relative_residual": 0.0002231,
+      "nfev": 10000,
+      "optimality": 0.0029,
+      "status": "max nfev exceeded, still decreasing",
+      "source": "v4 run, turn 36 task"
+    },
+    "als_rank23_best_random": {
+      "relative_residual": 0.008787,
+      "method": "ALS 3000 iterations, best of 30",
+      "note": "rank-23 known to exist but ALS from random also does NOT converge"
+    },
+    "als_rank23_from_cn122": {
+      "relative_residual": 5e-12,
+      "note": "exact start, immediate convergence"
+    },
+    "jacobian_verification": {
+      "max_error_vs_finite_diff": 1.61e-08,
+      "generic_jacobian_rank": 550,
+      "note": "matches modular computation over F_p"
+    }
+  },
+  "interpretation": {
+    "main_finding": "LM from cn122 truncation achieves 2.23e-4 residual and is still decreasing at 10000 nfev, but the rate is sublinear. Cannot determine if limit is 0 (rank 22 exists) or positive (local minimum).",
+    "calibration": "Rank-23 from random starts also fails to converge with ALS (best 8.8e-3), so non-convergence at rank 22 is not evidence for rank > 22. T333 has extremely non-convex loss surface.",
+    "missing_comparison": "Rank-23 comparison with LM and control tensor comparison did not complete due to timeout."
+  },
+  "convergence_trajectory": {
+    "nfev_2000": 0.000547,
+    "nfev_10000": 0.000223,
+    "ratio": 2.45,
+    "interpretation": "Factor 2.45 improvement with 5x more evaluations -> sublinear convergence"
+  }
+}

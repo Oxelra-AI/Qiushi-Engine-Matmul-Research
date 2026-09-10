@@ -1,0 +1,2664 @@
+{
+  "schema": "fractional_local_membership_v1",
+  "elapsed_sec": 107.69166779518127,
+  "meaning": "Projection of one complete-Wang LP fractional point to selected 4D dual color models, with column-generation tests for membership/separation against local integer profiles. Membership is projection-specific; separation is a valid local integer cut only when the oracle closes the inequality.",
+  "global_solution_file": "data/local_hull/global_fractional_solution.json",
+  "base_support": [
+    1,
+    2,
+    3,
+    4,
+    8,
+    20,
+    24,
+    31,
+    32,
+    36,
+    64,
+    73,
+    109,
+    127,
+    128,
+    141,
+    160,
+    182,
+    219
+  ],
+  "base_violation_count": 9,
+  "selected_pair_count": 4,
+  "pair_results": [
+    {
+      "pair_index": 0,
+      "violation_indices": [
+        0,
+        1
+      ],
+      "violation_keys": [
+        4417508755461,
+        4436873709717
+      ],
+      "intersection_basis": [
+        137,
+        82,
+        41,
+        4
+      ],
+      "annihilator_basis": [
+        161,
+        66,
+        18,
+        9
+      ],
+      "target_profile": [
+        1.4721808081057461,
+        1.151530499421584,
+        0.4447810386596622,
+        1.291895143478917,
+        0.9591623371046512,
+        1.5213755582774389,
+        0.9240531817578106,
+        0.6865357972992485,
+        1.3547164895087929,
+        1.4470288623252854,
+        1.7949891093910582,
+        0.772013846474952,
+        1.259662996947731,
+        0.0,
+        1.7794771534114175,
+        2.1405971778357094
+      ],
+      "target_sum": 19.000000000000007,
+      "target_min_local_slack": 0.07085734639004748,
+      "target_tight_local_constraints": 0,
+      "near_miss_profile": [
+        5,
+        3,
+        3,
+        2,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "near_miss_local_violation_count": 3,
+      "near_miss_local_violation_indices": [
+        38,
+        53,
+        57
+      ],
+      "local_constraint_L_cap_hist": {
+        "L12_cap7": 25,
+        "L14_cap5": 5,
+        "L3_cap16": 3,
+        "L6_cap13": 9,
+        "L9_cap10": 24
+      },
+      "hull_test": {
+        "status": "membership_found",
+        "target_profile": [
+          1.4721808081057461,
+          1.151530499421584,
+          0.4447810386596622,
+          1.291895143478917,
+          0.9591623371046512,
+          1.5213755582774389,
+          0.9240531817578106,
+          0.6865357972992485,
+          1.3547164895087929,
+          1.4470288623252854,
+          1.7949891093910582,
+          0.772013846474952,
+          1.259662996947731,
+          0.0,
+          1.7794771534114175,
+          2.1405971778357094
+        ],
+        "final_profile_count": 55,
+        "seed_oracle_log_head": [
+          {
+            "phase": "seed",
+            "reason": "max_c0",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 5.0
+          },
+          {
+            "phase": "seed",
+            "reason": "min_c0",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 0.0
+          },
+          {
+            "phase": "seed",
+            "reason": "max_c1",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 7.0
+          },
+          {
+            "phase": "seed",
+            "reason": "min_c1",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 0.0
+          },
+          {
+            "phase": "seed",
+            "reason": "max_c2",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 7.0
+          },
+          {
+            "phase": "seed",
+            "reason": "min_c2",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 0.0
+          },
+          {
+            "phase": "seed",
+            "reason": "max_c3",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 7.0
+          },
+          {
+            "phase": "seed",
+            "reason": "min_c3",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 0.0
+          },
+          {
+            "phase": "seed",
+            "reason": "max_c4",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 7.0
+          },
+          {
+            "phase": "seed",
+            "reason": "min_c4",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 0.0
+          }
+        ],
+        "iteration_log": [
+          {
+            "iteration": 0,
+            "profile_count": 45,
+            "restricted_margin": 0.17103637328298954,
+            "target_value": 0.2195120617785389,
+            "restricted_eta": 0.048475688495549354,
+            "oracle_max": 1.0298705762956013,
+            "full_margin": -0.8103585145170624,
+            "oracle_profile": [
+              0,
+              2,
+              0,
+              5,
+              0,
+              4,
+              0,
+              3,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              3
+            ]
+          },
+          {
+            "iteration": 1,
+            "profile_count": 46,
+            "restricted_margin": 0.11397105843989108,
+            "target_value": 0.8600908633864978,
+            "restricted_eta": 0.7461198049466067,
+            "oracle_max": 1.3416265904478637,
+            "full_margin": -0.48153572706136594,
+            "oracle_profile": [
+              0,
+              2,
+              0,
+              0,
+              0,
+              3,
+              0,
+              0,
+              3,
+              3,
+              4,
+              1,
+              0,
+              0,
+              3,
+              0
+            ]
+          },
+          {
+            "iteration": 2,
+            "profile_count": 47,
+            "restricted_margin": 0.07189164939055737,
+            "target_value": 0.6037539368417721,
+            "restricted_eta": 0.5318622874512148,
+            "oracle_max": 1.196075790672052,
+            "full_margin": -0.5923218538302799,
+            "oracle_profile": [
+              2,
+              0,
+              0,
+              0,
+              4,
+              3,
+              2,
+              1,
+              0,
+              0,
+              0,
+              2,
+              2,
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "iteration": 3,
+            "profile_count": 48,
+            "restricted_margin": 0.04507047828047389,
+            "target_value": 0.37818311692399154,
+            "restricted_eta": 0.33311263864351764,
+            "oracle_max": 0.7140938591344284,
+            "full_margin": -0.3359107422104368,
+            "oracle_profile": [
+              2,
+              0,
+              0,
+              0,
+              3,
+              3,
+              4,
+              2,
+              0,
+              0,
+              0,
+              1,
+              2,
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "iteration": 4,
+            "profile_count": 49,
+            "restricted_margin": 0.01404379578712156,
+            "target_value": 1.0511531372986174,
+            "restricted_eta": 1.0371093415114958,
+            "oracle_max": 1.4064389556686754,
+            "full_margin": -0.355285818370058,
+            "oracle_profile": [
+              0,
+              0,
+              0,
+              0,
+              4,
+              0,
+              3,
+              3,
+              0,
+              0,
+              3,
+              2,
+              0,
+              0,
+              0,
+              4
+            ]
+          },
+          {
+            "iteration": 5,
+            "profile_count": 50,
+            "restricted_margin": 0.008305853590251766,
+            "target_value": -0.42767948406381623,
+            "restricted_eta": -0.435985337654068,
+            "oracle_max": 0.33158808349039215,
+            "full_margin": -0.7592675675542084,
+            "oracle_profile": [
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              4,
+              5,
+              3,
+              0,
+              2,
+              0,
+              0,
+              3
+            ]
+          },
+          {
+            "iteration": 6,
+            "profile_count": 51,
+            "restricted_margin": 0.005307561991952696,
+            "target_value": 0.03670413768102457,
+            "restricted_eta": 0.03139657568907187,
+            "oracle_max": 0.5739519703429434,
+            "full_margin": -0.5372478326619189,
+            "oracle_profile": [
+              0,
+              0,
+              5,
+              7,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              3,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "iteration": 7,
+            "profile_count": 52,
+            "restricted_margin": 0.0026052469867801076,
+            "target_value": 0.4816856354341765,
+            "restricted_eta": 0.47908038844739637,
+            "oracle_max": 0.8851981676816024,
+            "full_margin": -0.40351253224742595,
+            "oracle_profile": [
+              0,
+              0,
+              2,
+              3,
+              0,
+              0,
+              3,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              3,
+              6
+            ]
+          },
+          {
+            "iteration": 8,
+            "profile_count": 53,
+            "restricted_margin": 0.0021483450257516745,
+            "target_value": 0.9046893900042107,
+            "restricted_eta": 0.902541044978459,
+            "oracle_max": 1.2243831909238603,
+            "full_margin": -0.3196938009196496,
+            "oracle_profile": [
+              0,
+              0,
+              1,
+              1,
+              4,
+              5,
+              0,
+              0,
+              2,
+              0,
+              0,
+              2,
+              2,
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "iteration": 9,
+            "profile_count": 54,
+            "restricted_margin": 0.0012071877023296373,
+            "target_value": 0.24669778703048317,
+            "restricted_eta": 0.24549059932815354,
+            "oracle_max": 0.6643290261732755,
+            "full_margin": -0.4176312391427923,
+            "oracle_profile": [
+              0,
+              0,
+              0,
+              4,
+              0,
+              0,
+              0,
+              0,
+              3,
+              2,
+              4,
+              3,
+              0,
+              0,
+              0,
+              3
+            ]
+          },
+          {
+            "iteration": 10,
+            "profile_count": 55,
+            "master": "membership",
+            "residual": 4.6629367034256575e-15
+          }
+        ],
+        "membership_certificate": {
+          "status": "in_convex_hull_of_generated_profiles",
+          "iteration": 10,
+          "profile_count": 55,
+          "max_reconstruction_residual": 4.6629367034256575e-15,
+          "active_combination_size": 15,
+          "active_combination": [
+            [
+              0,
+              0.2035603271451999,
+              [
+                5,
+                2,
+                2,
+                2,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1
+              ]
+            ],
+            [
+              18,
+              0.01139329237375886,
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3,
+                3,
+                3,
+                7,
+                0,
+                0,
+                0,
+                3
+              ]
+            ],
+            [
+              23,
+              0.19591364517545154,
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                2,
+                2,
+                0,
+                3,
+                0,
+                5,
+                5
+              ]
+            ],
+            [
+              27,
+              0.0432605326131596,
+              [
+                4,
+                3,
+                0,
+                3,
+                0,
+                0,
+                0,
+                0,
+                3,
+                0,
+                3,
+                0,
+                3,
+                0,
+                0,
+                0
+              ]
+            ],
+            [
+              30,
+              0.017480083016344405,
+              [
+                0,
+                0,
+                0,
+                0,
+                5,
+                4,
+                1,
+                3,
+                3,
+                0,
+                0,
+                0,
+                1,
+                0,
+                2,
+                0
+              ]
+            ],
+            [
+              38,
+              0.0136449724113763,
+              [
+                0,
+                2,
+                0,
+                3,
+                3,
+                0,
+                0,
+                0,
+                0,
+                3,
+                0,
+                0,
+                0,
+                0,
+                1,
+                7
+              ]
+            ],
+            [
+              45,
+              0.08271615396772992,
+              [
+                0,
+                2,
+                0,
+                5,
+                0,
+                4,
+                0,
+                3,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                3
+              ]
+            ],
+            [
+              46,
+              0.21095299726674416,
+              [
+                0,
+                2,
+                0,
+                0,
+                0,
+                3,
+                0,
+                0,
+                3,
+                3,
+                4,
+                1,
+                0,
+                0,
+                3,
+                0
+              ]
+            ],
+            [
+              48,
+              0.14066852096355417,
+              [
+                2,
+                0,
+                0,
+                0,
+                3,
+                3,
+                4,
+                2,
+                0,
+                0,
+                0,
+                1,
+                2,
+                0,
+                0,
+                2
+              ]
+            ],
+            [
+              49,
+              0.03487001480663906,
+              [
+                0,
+                0,
+                0,
+                0,
+                4,
+                0,
+                3,
+                3,
+                0,
+                0,
+                3,
+                2,
+                0,
+                0,
+                0,
+                4
+              ]
+            ],
+            [
+              50,
+              0.006721162492853103,
+              [
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                4,
+                5,
+                3,
+                0,
+                2,
+                0,
+                0,
+                3
+              ]
+            ],
+            [
+              51,
+              0.00015132123720103773,
+              [
+                0,
+                0,
+                5,
+                7,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                3,
+                1,
+                1,
+                0,
+                0,
+                0
+              ]
+            ],
+            [
+              52,
+              0.01190954777404415,
+              [
+                0,
+                0,
+                2,
+                3,
+                0,
+                0,
+                3,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                3,
+                6
+              ]
+            ],
+            [
+              53,
+              0.013084682635168892,
+              [
+                0,
+                0,
+                1,
+                1,
+                4,
+                5,
+                0,
+                0,
+                2,
+                0,
+                0,
+                2,
+                2,
+                0,
+                0,
+                2
+              ]
+            ],
+            [
+              54,
+              0.01367274612077491,
+              [
+                0,
+                0,
+                0,
+                4,
+                0,
+                0,
+                0,
+                0,
+                3,
+                2,
+                4,
+                3,
+                0,
+                0,
+                0,
+                3
+              ]
+            ]
+          ]
+        },
+        "separation_certificate": null
+      }
+    },
+    {
+      "pair_index": 1,
+      "violation_indices": [
+        0,
+        2
+      ],
+      "violation_keys": [
+        4417508755461,
+        4456163313813
+      ],
+      "intersection_basis": [
+        137,
+        91,
+        32,
+        4
+      ],
+      "annihilator_basis": [
+        131,
+        66,
+        18,
+        9
+      ],
+      "target_profile": [
+        1.9082904446573112,
+        0.7154208628700187,
+        0.8248903906139864,
+        0.9117857915245927,
+        0.9838497247272022,
+        1.4966881706548878,
+        1.3539706930098194,
+        0.2566182860472397,
+        1.169596245959444,
+        1.6321491058746345,
+        1.4927422482919506,
+        1.0742607075740596,
+        0.6690649991655186,
+        0.5905979977822122,
+        1.6378919747262826,
+        2.2821823565208437
+      ],
+      "target_sum": 19.000000000000007,
+      "target_min_local_slack": 1.253126190300442,
+      "target_tight_local_constraints": 0,
+      "near_miss_profile": [
+        5,
+        3,
+        3,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "near_miss_local_violation_count": 2,
+      "near_miss_local_violation_indices": [
+        53,
+        57
+      ],
+      "local_constraint_L_cap_hist": {
+        "L11_cap8": 12,
+        "L12_cap7": 4,
+        "L3_cap16": 3,
+        "L6_cap13": 13,
+        "L9_cap10": 34
+      },
+      "hull_test": {
+        "status": "membership_found",
+        "target_profile": [
+          1.9082904446573112,
+          0.7154208628700187,
+          0.8248903906139864,
+          0.9117857915245927,
+          0.9838497247272022,
+          1.4966881706548878,
+          1.3539706930098194,
+          0.2566182860472397,
+          1.169596245959444,
+          1.6321491058746345,
+          1.4927422482919506,
+          1.0742607075740596,
+          0.6690649991655186,
+          0.5905979977822122,
+          1.6378919747262826,
+          2.2821823565208437
+        ],
+        "final_profile_count": 47,
+        "seed_oracle_log_head": [
+          {
+            "phase": "seed",
+            "reason": "max_c0",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 7.0
+          },
+          {
+            "phase": "seed",
+            "reason": "min_c0",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 0.0
+          },
+          {
+            "phase": "seed",
+            "reason": "max_c1",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 7.0
+          },
+          {
+            "phase": "seed",
+            "reason": "min_c1",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 0.0
+          },
+          {
+            "phase": "seed",
+            "reason": "max_c2",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 7.0
+          },
+          {
+            "phase": "seed",
+            "reason": "min_c2",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 0.0
+          },
+          {
+            "phase": "seed",
+            "reason": "max_c3",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 7.0
+          },
+          {
+            "phase": "seed",
+            "reason": "min_c3",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 0.0
+          },
+          {
+            "phase": "seed",
+            "reason": "max_c4",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 8.0
+          },
+          {
+            "phase": "seed",
+            "reason": "min_c4",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 0.0
+          }
+        ],
+        "iteration_log": [
+          {
+            "iteration": 0,
+            "profile_count": 45,
+            "restricted_margin": 0.06130641634233208,
+            "target_value": 0.0031241100499351804,
+            "restricted_eta": -0.0581823062923969,
+            "oracle_max": 0.7958149554640978,
+            "full_margin": -0.7926908454141626,
+            "oracle_profile": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              5,
+              5,
+              5,
+              3,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "iteration": 1,
+            "profile_count": 46,
+            "restricted_margin": 0.013995305290829652,
+            "target_value": 0.013995305290829652,
+            "restricted_eta": -0.0,
+            "oracle_max": 0.7500000000000017,
+            "full_margin": -0.7360046947091721,
+            "oracle_profile": [
+              6,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "iteration": 2,
+            "profile_count": 47,
+            "master": "membership",
+            "residual": 3.3306690738754696e-15
+          }
+        ],
+        "membership_certificate": {
+          "status": "in_convex_hull_of_generated_profiles",
+          "iteration": 2,
+          "profile_count": 47,
+          "max_reconstruction_residual": 3.3306690738754696e-15,
+          "active_combination_size": 16,
+          "active_combination": [
+            [
+              0,
+              0.2313867572757718,
+              [
+                7,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            ],
+            [
+              3,
+              0.005116412652347205,
+              [
+                0,
+                0,
+                3,
+                0,
+                3,
+                7,
+                3,
+                0,
+                0,
+                0,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            [
+              9,
+              0.05940240275253428,
+              [
+                0,
+                2,
+                2,
+                0,
+                0,
+                8,
+                2,
+                0,
+                1,
+                1,
+                2,
+                1,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            [
+              11,
+              0.020443068559421816,
+              [
+                0,
+                2,
+                2,
+                0,
+                0,
+                2,
+                8,
+                0,
+                1,
+                0,
+                2,
+                1,
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            [
+              14,
+              0.06275260541062527,
+              [
+                0,
+                2,
+                0,
+                0,
+                1,
+                2,
+                2,
+                0,
+                8,
+                0,
+                2,
+                1,
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            [
+              15,
+              0.013803313520518406,
+              [
+                0,
+                2,
+                2,
+                0,
+                1,
+                2,
+                2,
+                1,
+                0,
+                8,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            [
+              18,
+              0.011428215250949487,
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                2,
+                1,
+                1,
+                2,
+                2,
+                8,
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            [
+              21,
+              0.0910225720645529,
+              [
+                0,
+                1,
+                1,
+                0,
+                0,
+                2,
+                2,
+                0,
+                0,
+                2,
+                2,
+                0,
+                0,
+                1,
+                8,
+                0
+              ]
+            ],
+            [
+              22,
+              0.13174915984905763,
+              [
+                0,
+                2,
+                2,
+                1,
+                1,
+                2,
+                2,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                8
+              ]
+            ],
+            [
+              23,
+              0.014590747620336927,
+              [
+                0,
+                0,
+                3,
+                0,
+                0,
+                3,
+                0,
+                0,
+                0,
+                3,
+                0,
+                0,
+                0,
+                0,
+                3,
+                7
+              ]
+            ],
+            [
+              32,
+              0.02512189396388091,
+              [
+                0,
+                0,
+                7,
+                6,
+                0,
+                0,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3,
+                0,
+                0,
+                0
+              ]
+            ],
+            [
+              37,
+              0.028385956424396532,
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3,
+                0,
+                6,
+                3,
+                0,
+                4,
+                3,
+                0
+              ]
+            ],
+            [
+              38,
+              0.12532433454468395,
+              [
+                0,
+                0,
+                0,
+                4,
+                3,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                4,
+                6
+              ]
+            ],
+            [
+              39,
+              0.0266369130307875,
+              [
+                0,
+                0,
+                0,
+                3,
+                0,
+                0,
+                3,
+                0,
+                3,
+                6,
+                0,
+                0,
+                0,
+                4,
+                0,
+                0
+              ]
+            ],
+            [
+              45,
+              0.10473845645898425,
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                5,
+                5,
+                5,
+                3,
+                0,
+                0,
+                0
+              ]
+            ],
+            [
+              46,
+              0.048097190621151434,
+              [
+                6,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1
+              ]
+            ]
+          ]
+        },
+        "separation_certificate": null
+      }
+    },
+    {
+      "pair_index": 2,
+      "violation_indices": [
+        0,
+        3
+      ],
+      "violation_keys": [
+        4417508755461,
+        4456163387397
+      ],
+      "intersection_basis": [
+        128,
+        82,
+        32,
+        4
+      ],
+      "annihilator_basis": [
+        66,
+        18,
+        8,
+        1
+      ],
+      "target_profile": [
+        1.721690596811063,
+        0.8010867608093071,
+        0.9614967596917969,
+        1.386354552695877,
+        1.4639050627139445,
+        0.7297612438287763,
+        0.8339217436404021,
+        1.8888243749606985,
+        1.337840289120134,
+        1.837241712037234,
+        0.42574125330732876,
+        2.031249956286428,
+        0.902020710716267,
+        0.9355894213292721,
+        1.5190411356902933,
+        0.22423442636118218
+      ],
+      "target_sum": 19.000000000000004,
+      "target_min_local_slack": 1.4086735099774437,
+      "target_tight_local_constraints": 0,
+      "near_miss_profile": [
+        5,
+        2,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        3,
+        3,
+        0,
+        0
+      ],
+      "near_miss_local_violation_count": 2,
+      "near_miss_local_violation_indices": [
+        52,
+        60
+      ],
+      "local_constraint_L_cap_hist": {
+        "L11_cap8": 2,
+        "L12_cap7": 12,
+        "L13_cap6": 1,
+        "L3_cap16": 5,
+        "L6_cap13": 16,
+        "L9_cap10": 30
+      },
+      "hull_test": {
+        "status": "membership_found",
+        "target_profile": [
+          1.721690596811063,
+          0.8010867608093071,
+          0.9614967596917969,
+          1.386354552695877,
+          1.4639050627139445,
+          0.7297612438287763,
+          0.8339217436404021,
+          1.8888243749606985,
+          1.337840289120134,
+          1.837241712037234,
+          0.42574125330732876,
+          2.031249956286428,
+          0.902020710716267,
+          0.9355894213292721,
+          1.5190411356902933,
+          0.22423442636118218
+        ],
+        "final_profile_count": 45,
+        "seed_oracle_log_head": [
+          {
+            "phase": "seed",
+            "reason": "max_c0",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 6.0
+          },
+          {
+            "phase": "seed",
+            "reason": "min_c0",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 0.0
+          },
+          {
+            "phase": "seed",
+            "reason": "max_c1",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 10.0
+          },
+          {
+            "phase": "seed",
+            "reason": "min_c1",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 0.0
+          },
+          {
+            "phase": "seed",
+            "reason": "max_c2",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 7.0
+          },
+          {
+            "phase": "seed",
+            "reason": "min_c2",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 0.0
+          },
+          {
+            "phase": "seed",
+            "reason": "max_c3",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 7.0
+          },
+          {
+            "phase": "seed",
+            "reason": "min_c3",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 0.0
+          },
+          {
+            "phase": "seed",
+            "reason": "max_c4",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 7.0
+          },
+          {
+            "phase": "seed",
+            "reason": "min_c4",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 0.0
+          }
+        ],
+        "iteration_log": [
+          {
+            "iteration": 0,
+            "profile_count": 42,
+            "restricted_margin": 0.2523427624504575,
+            "target_value": 0.24046063034272702,
+            "restricted_eta": -0.011882132107730481,
+            "oracle_max": 1.6438240729886857,
+            "full_margin": -1.4033634426459587,
+            "oracle_profile": [
+              0,
+              0,
+              3,
+              0,
+              3,
+              0,
+              0,
+              0,
+              3,
+              0,
+              0,
+              7,
+              0,
+              0,
+              3,
+              0
+            ]
+          },
+          {
+            "iteration": 1,
+            "profile_count": 43,
+            "restricted_margin": 0.15571728852177136,
+            "target_value": 0.25396246757016633,
+            "restricted_eta": 0.09824517904839496,
+            "oracle_max": 2.008390451018078,
+            "full_margin": -1.7544279834479115,
+            "oracle_profile": [
+              6,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              2,
+              1
+            ]
+          },
+          {
+            "iteration": 2,
+            "profile_count": 44,
+            "restricted_margin": 0.005980860087246603,
+            "target_value": -0.17447464711917016,
+            "restricted_eta": -0.18045550720641676,
+            "oracle_max": 1.21555097664841,
+            "full_margin": -1.3900256237675803,
+            "oracle_profile": [
+              0,
+              0,
+              6,
+              0,
+              3,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              4,
+              4,
+              0
+            ]
+          },
+          {
+            "iteration": 3,
+            "profile_count": 45,
+            "master": "membership",
+            "residual": 4.218847493575595e-15
+          }
+        ],
+        "membership_certificate": {
+          "status": "in_convex_hull_of_generated_profiles",
+          "iteration": 3,
+          "profile_count": 45,
+          "max_reconstruction_residual": 4.218847493575595e-15,
+          "active_combination_size": 16,
+          "active_combination": [
+            [
+              0,
+              0.06467148534310573,
+              [
+                6,
+                4,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0
+              ]
+            ],
+            [
+              8,
+              0.018790573594884803,
+              [
+                0,
+                0,
+                0,
+                0,
+                7,
+                6,
+                3,
+                0,
+                0,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            [
+              14,
+              0.01625373966464716,
+              [
+                0,
+                3,
+                3,
+                0,
+                0,
+                3,
+                3,
+                0,
+                0,
+                7,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            [
+              19,
+              0.014994637458854192,
+              [
+                0,
+                1,
+                1,
+                0,
+                0,
+                2,
+                2,
+                0,
+                0,
+                2,
+                2,
+                0,
+                0,
+                1,
+                8,
+                0
+              ]
+            ],
+            [
+              20,
+              0.0018112407371172583,
+              [
+                0,
+                2,
+                2,
+                1,
+                1,
+                2,
+                2,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                8
+              ]
+            ],
+            [
+              21,
+              0.1728989211009369,
+              [
+                0,
+                0,
+                0,
+                1,
+                3,
+                0,
+                0,
+                3,
+                2,
+                6,
+                0,
+                4,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            [
+              23,
+              0.075194681966964,
+              [
+                1,
+                0,
+                0,
+                3,
+                0,
+                3,
+                3,
+                6,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3,
+                0,
+                0
+              ]
+            ],
+            [
+              24,
+              0.014188040072635891,
+              [
+                0,
+                3,
+                0,
+                0,
+                0,
+                7,
+                0,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3,
+                3,
+                0
+              ]
+            ],
+            [
+              26,
+              0.06813600604139627,
+              [
+                0,
+                6,
+                0,
+                7,
+                0,
+                0,
+                0,
+                3,
+                0,
+                0,
+                0,
+                0,
+                3,
+                0,
+                0,
+                0
+              ]
+            ],
+            [
+              35,
+              0.0006248734728857563,
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                5,
+                5,
+                1,
+                5,
+                3,
+                0
+              ]
+            ],
+            [
+              37,
+              0.0650590052538739,
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3,
+                0,
+                5,
+                5,
+                0,
+                0,
+                1,
+                5,
+                0,
+                0
+              ]
+            ],
+            [
+              39,
+              0.023642325043568356,
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                5,
+                0,
+                0,
+                5,
+                0,
+                5,
+                0,
+                3,
+                0
+              ]
+            ],
+            [
+              41,
+              0.07484095055072844,
+              [
+                0,
+                0,
+                0,
+                4,
+                0,
+                0,
+                0,
+                3,
+                0,
+                0,
+                0,
+                0,
+                6,
+                2,
+                4,
+                0
+              ]
+            ],
+            [
+              42,
+              0.15173055981584313,
+              [
+                0,
+                0,
+                3,
+                0,
+                3,
+                0,
+                0,
+                0,
+                3,
+                0,
+                0,
+                7,
+                0,
+                0,
+                3,
+                0
+              ]
+            ],
+            [
+              43,
+              0.20974450046424412,
+              [
+                6,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                2,
+                1
+              ]
+            ],
+            [
+              44,
+              0.027418459418314594,
+              [
+                0,
+                0,
+                6,
+                0,
+                3,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4,
+                4,
+                0
+              ]
+            ]
+          ]
+        },
+        "separation_certificate": null
+      }
+    },
+    {
+      "pair_index": 3,
+      "violation_indices": [
+        1,
+        2
+      ],
+      "violation_keys": [
+        4436873709717,
+        4456163313813
+      ],
+      "intersection_basis": [
+        137,
+        64,
+        59,
+        4
+      ],
+      "annihilator_basis": [
+        131,
+        34,
+        18,
+        9
+      ],
+      "target_profile": [
+        1.4556856660364834,
+        1.1659304736656866,
+        1.2774951692348144,
+        0.46127618072892496,
+        1.268549177683564,
+        1.1386401155232297,
+        1.0692712400534576,
+        0.6146663411788977,
+        1.7103542381837156,
+        1.2670584527325586,
+        0.9519842560676789,
+        1.4393513607161355,
+        1.516023857936,
+        1.3496640618799078,
+        0.7909331159558013,
+        1.5231162924231485
+      ],
+      "target_sum": 19.000000000000007,
+      "target_min_local_slack": 0.2658095419282702,
+      "target_tight_local_constraints": 0,
+      "near_miss_profile": [
+        5,
+        2,
+        3,
+        3,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "near_miss_local_violation_count": 3,
+      "near_miss_local_violation_indices": [
+        46,
+        53,
+        61
+      ],
+      "local_constraint_L_cap_hist": {
+        "L12_cap7": 25,
+        "L14_cap5": 5,
+        "L3_cap16": 3,
+        "L6_cap13": 9,
+        "L9_cap10": 24
+      },
+      "hull_test": {
+        "status": "membership_found",
+        "target_profile": [
+          1.4556856660364834,
+          1.1659304736656866,
+          1.2774951692348144,
+          0.46127618072892496,
+          1.268549177683564,
+          1.1386401155232297,
+          1.0692712400534576,
+          0.6146663411788977,
+          1.7103542381837156,
+          1.2670584527325586,
+          0.9519842560676789,
+          1.4393513607161355,
+          1.516023857936,
+          1.3496640618799078,
+          0.7909331159558013,
+          1.5231162924231485
+        ],
+        "final_profile_count": 50,
+        "seed_oracle_log_head": [
+          {
+            "phase": "seed",
+            "reason": "max_c0",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 5.0
+          },
+          {
+            "phase": "seed",
+            "reason": "min_c0",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 0.0
+          },
+          {
+            "phase": "seed",
+            "reason": "max_c1",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 7.0
+          },
+          {
+            "phase": "seed",
+            "reason": "min_c1",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 0.0
+          },
+          {
+            "phase": "seed",
+            "reason": "max_c2",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 7.0
+          },
+          {
+            "phase": "seed",
+            "reason": "min_c2",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 0.0
+          },
+          {
+            "phase": "seed",
+            "reason": "max_c3",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 7.0
+          },
+          {
+            "phase": "seed",
+            "reason": "min_c3",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 0.0
+          },
+          {
+            "phase": "seed",
+            "reason": "max_c4",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 7.0
+          },
+          {
+            "phase": "seed",
+            "reason": "min_c4",
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "value": 0.0
+          }
+        ],
+        "iteration_log": [
+          {
+            "iteration": 0,
+            "profile_count": 45,
+            "restricted_margin": 0.2766899915099597,
+            "target_value": 0.08975140571020937,
+            "restricted_eta": -0.18693858579975034,
+            "oracle_max": 1.3169300147682441,
+            "full_margin": -1.2271786090580348,
+            "oracle_profile": [
+              0,
+              0,
+              3,
+              0,
+              2,
+              0,
+              0,
+              0,
+              4,
+              0,
+              2,
+              5,
+              2,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "iteration": 1,
+            "profile_count": 46,
+            "restricted_margin": 0.19779244212074315,
+            "target_value": 0.103392633743206,
+            "restricted_eta": -0.09439980837753717,
+            "oracle_max": 0.9837553185652964,
+            "full_margin": -0.8803626848220905,
+            "oracle_profile": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              2,
+              0,
+              0,
+              1,
+              0,
+              0,
+              2,
+              4,
+              4,
+              1,
+              4
+            ]
+          },
+          {
+            "iteration": 2,
+            "profile_count": 47,
+            "restricted_margin": 0.0864272040611927,
+            "target_value": 0.0864272040611927,
+            "restricted_eta": -0.0,
+            "oracle_max": 1.1428571428571457,
+            "full_margin": -1.056429938795953,
+            "oracle_profile": [
+              4,
+              2,
+              3,
+              0,
+              1,
+              0,
+              0,
+              2,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              2
+            ]
+          },
+          {
+            "iteration": 3,
+            "profile_count": 48,
+            "restricted_margin": 0.05191568473230668,
+            "target_value": 0.2894273289480641,
+            "restricted_eta": 0.23751164421575743,
+            "oracle_max": 0.9132959333539674,
+            "full_margin": -0.6238686044059033,
+            "oracle_profile": [
+              1,
+              0,
+              0,
+              0,
+              3,
+              0,
+              3,
+              0,
+              0,
+              3,
+              0,
+              3,
+              3,
+              0,
+              3,
+              0
+            ]
+          },
+          {
+            "iteration": 4,
+            "profile_count": 49,
+            "restricted_margin": 0.03577536991250069,
+            "target_value": 0.19836796097737175,
+            "restricted_eta": 0.16259259106487106,
+            "oracle_max": 0.8447754263789409,
+            "full_margin": -0.6464074654015691,
+            "oracle_profile": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              6,
+              1,
+              4,
+              3,
+              2,
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "iteration": 5,
+            "profile_count": 50,
+            "master": "membership",
+            "residual": 2.1760371282653068e-14
+          }
+        ],
+        "membership_certificate": {
+          "status": "in_convex_hull_of_generated_profiles",
+          "iteration": 5,
+          "profile_count": 50,
+          "max_reconstruction_residual": 2.1760371282653068e-14,
+          "active_combination_size": 16,
+          "active_combination": [
+            [
+              0,
+              0.2170652853843907,
+              [
+                5,
+                2,
+                2,
+                2,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1
+              ]
+            ],
+            [
+              3,
+              0.06246010026215271,
+              [
+                0,
+                0,
+                5,
+                0,
+                3,
+                5,
+                2,
+                0,
+                1,
+                1,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            [
+              5,
+              0.09356854873819576,
+              [
+                0,
+                4,
+                0,
+                0,
+                3,
+                2,
+                5,
+                0,
+                2,
+                2,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            [
+              11,
+              0.008045082411674221,
+              [
+                0,
+                5,
+                4,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                5,
+                2,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            [
+              18,
+              0.06237768339326217,
+              [
+                0,
+                1,
+                0,
+                0,
+                1,
+                2,
+                2,
+                1,
+                1,
+                5,
+                1,
+                5,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            [
+              20,
+              0.030377688670517915,
+              [
+                0,
+                3,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                7,
+                3,
+                3
+              ]
+            ],
+            [
+              30,
+              0.002167429411028321,
+              [
+                0,
+                0,
+                0,
+                0,
+                4,
+                5,
+                0,
+                5,
+                2,
+                0,
+                0,
+                0,
+                2,
+                0,
+                1,
+                0
+              ]
+            ],
+            [
+              34,
+              0.0074222048318544065,
+              [
+                0,
+                0,
+                6,
+                3,
+                3,
+                0,
+                0,
+                3,
+                0,
+                0,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            [
+              35,
+              0.0345825160924012,
+              [
+                0,
+                0,
+                2,
+                0,
+                0,
+                4,
+                3,
+                4,
+                0,
+                0,
+                0,
+                3,
+                0,
+                0,
+                0,
+                3
+              ]
+            ],
+            [
+              37,
+              0.02393430914991381,
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                2,
+                3,
+                0,
+                3,
+                4,
+                4,
+                0
+              ]
+            ],
+            [
+              39,
+              0.0016263318215267765,
+              [
+                0,
+                0,
+                2,
+                3,
+                0,
+                0,
+                0,
+                0,
+                3,
+                6,
+                0,
+                0,
+                0,
+                4,
+                0,
+                1
+              ]
+            ],
+            [
+              45,
+              0.03743807127275059,
+              [
+                0,
+                0,
+                3,
+                0,
+                2,
+                0,
+                0,
+                0,
+                4,
+                0,
+                2,
+                5,
+                2,
+                1,
+                0,
+                0
+              ]
+            ],
+            [
+              46,
+              0.17459488685072774,
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                2,
+                0,
+                0,
+                1,
+                0,
+                0,
+                2,
+                4,
+                4,
+                1,
+                4
+              ]
+            ],
+            [
+              47,
+              0.08189477324046762,
+              [
+                4,
+                2,
+                3,
+                0,
+                1,
+                0,
+                0,
+                2,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                2
+              ]
+            ],
+            [
+              48,
+              0.04278014615265935,
+              [
+                1,
+                0,
+                0,
+                0,
+                3,
+                0,
+                3,
+                0,
+                0,
+                3,
+                0,
+                3,
+                3,
+                0,
+                3,
+                0
+              ]
+            ],
+            [
+              49,
+              0.11966494231647681,
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                6,
+                1,
+                4,
+                3,
+                2,
+                0,
+                0,
+                2
+              ]
+            ]
+          ]
+        },
+        "separation_certificate": null
+      }
+    }
+  ]
+}

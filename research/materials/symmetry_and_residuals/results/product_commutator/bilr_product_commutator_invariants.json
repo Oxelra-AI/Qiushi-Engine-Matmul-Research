@@ -1,0 +1,148 @@
+{
+  "scope": "Product-form Hessian commutator instrument for BILR traceless pure-cyclic residual on gl_3.",
+  "operator_scaling": "H2=2H where H=(1/6) Hess_R(X) K^{-1}; scaling does not affect ranks or bounded-rank compression tests.",
+  "basis_order": [
+    "E00",
+    "E01",
+    "E02",
+    "E10",
+    "E11",
+    "E12",
+    "E20",
+    "E21",
+    "E22"
+  ],
+  "trace_form_det": "-1",
+  "moment_sum_w_mu_mu_equals_K": true,
+  "cube_traces": [
+    "1",
+    "1",
+    "1",
+    "1",
+    "1",
+    "1",
+    "1",
+    "-1",
+    "-1",
+    "-1",
+    "-1"
+  ],
+  "cube_weights": [
+    "1",
+    "1",
+    "1",
+    "1",
+    "1",
+    "1",
+    "1",
+    "-1",
+    "-1",
+    "-1",
+    "-1"
+  ],
+  "convention_tests": [
+    {
+      "free_gradients_are_stored_transposes": true,
+      "mismatch_entries_over_test_directions": 0,
+      "max_abs_mismatch": "0"
+    },
+    {
+      "free_gradients_are_stored_transposes": false,
+      "mismatch_entries_over_test_directions": 90,
+      "max_abs_mismatch": "20"
+    }
+  ],
+  "product_formula_matches_11cube_hessian_with_transposed_stored_free_reps": true,
+  "bilr_commutator_certificate_H2_column_convention": {
+    "x1": [
+      3,
+      0,
+      1,
+      3,
+      -1,
+      1,
+      1,
+      3,
+      -2
+    ],
+    "x2": [
+      -1,
+      3,
+      -1,
+      -1,
+      1,
+      0,
+      -1,
+      2,
+      1
+    ],
+    "rank_over_Q": 4,
+    "first_nonzero_3x3_minor": {
+      "rows": [
+        1,
+        2,
+        3
+      ],
+      "cols": [
+        1,
+        2,
+        6
+      ],
+      "det": "-12800"
+    },
+    "rows_1_2_3_cols_1_2_6_det_in_H2_column_convention": "-12800",
+    "scalar_rank_le2_obstructions": {
+      "trace_C": "0",
+      "trace_C2": "-4864",
+      "trace_C3_rank_le2_requires_zero": "0",
+      "two_trace_C4_minus_trace_C2_squared_rank_le2_requires_zero": "-20480000",
+      "trace_C3_nonzero": false,
+      "quartic_identity_nonzero": true
+    }
+  },
+  "bilr_commutator_image_space_L": {
+    "span_dim": 4,
+    "common_image_dim": 4,
+    "is_image_compressed_to_dim_le2": false,
+    "common_kernel_dim": 5,
+    "is_kernel_compressed_with_common_kernel_dim_ge7": false,
+    "max_basis_commutator_rank": 2,
+    "nonzero_basis_commutators": 18
+  },
+  "bilr_basis_commutator_rank_histogram": {
+    "0": 18,
+    "2": 18
+  },
+  "bilr_random_linear_combo_rank_histogram_200_trials": {
+    "4": 185,
+    "2": 15
+  },
+  "jordan_trace_cube_commutator_image_space_calibration": {
+    "span_dim": 8,
+    "common_image_dim": 8,
+    "is_image_compressed_to_dim_le2": false,
+    "common_kernel_dim": 1,
+    "is_kernel_compressed_with_common_kernel_dim_ge7": false,
+    "max_basis_commutator_rank": 6,
+    "nonzero_basis_commutators": 21
+  },
+  "jordan_basis_commutator_rank_histogram": {
+    "0": 15,
+    "4": 18,
+    "6": 3
+  },
+  "jordan_random_linear_combo_rank_histogram_200_trials": {
+    "6": 200
+  },
+  "interpretation": "The closed product formula exactly reproduces the BILR 11-cube residual Hessian when stored free-rep matrices are transposed into the trace-pairing convention. At BILR, the commutator image space L is high-dimensional, has full common image and no large common kernel, and contains rank-4 operators, so it is far from a rank<=2 compression space. This strengthens the BILR residual Waring-rank certificate but does not exclude special valid (10,4) frames where all 3x3 minors of C(X,Y) vanish; those frames are precisely a possible candidate locus.",
+  "literature_context": {
+    "bounded_rank_spaces": {
+      "eisenbud_harris": "Vector spaces of matrices of low rank, Adv. Math. 1988, citation key \\cite{eisenbud1988vector}; retrieved metadata only in this ARTIFACT.",
+      "huang_landsberg_2026_source_lines": "Knowledge object On Linear spaces of matrices bounded rank, lines 29-40 define compression spaces and state that Atkinson-Lloyd classified rank-2 spaces, with the only primitive rank-2 space the 3x3 skew-symmetric example; lines 288-295 review the compression/primitivity reduction.",
+      "pazzis_theorem4_source_lines": "Pazzis classification theorem lines 106-109: large rank<=r subspaces of M_n are image- or kernel-compression spaces beyond dimension nr-r+1, with boundary alternatives. Useful for context, but not by itself sufficient for arbitrary low-dimensional L."
+    },
+    "trace_cube_waring": {
+      "chiantini_hauenstein_ikenmeyer_landsberg_ottaviani": "\\cite{chiantini2017polynomials}: Proposition 2.6 gives symmetric border rank of tr(X^3) on Mat_3 at least 14; Conjecture 2.8 predicts Waring rank 18 after numerical 18-summand decompositions. This calibrates that pure tr(X^3) is much harder than rank<=10 residuals."
+    }
+  }
+}

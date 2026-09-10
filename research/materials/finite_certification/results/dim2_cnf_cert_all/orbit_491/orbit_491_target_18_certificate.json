@@ -1,0 +1,159 @@
+{
+  "W_basis": [
+    163,
+    84
+  ],
+  "W_rref": [
+    163,
+    84
+  ],
+  "active_quotient_directions": 49,
+  "cache_path": "data/wang_f2_lb20/wang_orbit_closed_cache.pkl",
+  "cache_sha256": "26cce88af2db5bbe6991d5af0c87a4262f3defcb62bb6638944fedecea19595a",
+  "cadical": {
+    "command": [
+      "cadical",
+      "-q",
+      "--binary=false",
+      "-t",
+      "900",
+      "data/dim2_cnf_cert_all/orbit_491/orbit_491_target_18.cnf",
+      "data/dim2_cnf_cert_all/orbit_491/orbit_491_target_18.drat"
+    ],
+    "elapsed_sec": 11.887075424194336,
+    "proof_exists": true,
+    "proof_path": "data/dim2_cnf_cert_all/orbit_491/orbit_491_target_18.drat",
+    "proof_sha256": "04d1ea786f0095253dfe8a8c631241847d3edad90f914f4446efafae97330aab",
+    "proof_size_bytes": 35099473,
+    "returncode": 20,
+    "stderr_tail": "",
+    "stdout_tail": "s UNSATISFIABLE\n"
+  },
+  "cert_index": 491,
+  "cnf_clauses": 300539,
+  "cnf_path": "data/dim2_cnf_cert_all/orbit_491/orbit_491_target_18.cnf",
+  "cnf_sha256": "09892158cece194f43aafc5b38d0fc020264228cae000a4f09d73b91627a5b9c",
+  "cnf_variables": 154160,
+  "copy_variables": 49,
+  "drat_trim": {
+    "command": [
+      "drat-trim",
+      "data/dim2_cnf_cert_all/orbit_491/orbit_491_target_18.cnf",
+      "data/dim2_cnf_cert_all/orbit_491/orbit_491_target_18.drat"
+    ],
+    "elapsed_sec": 14.862977743148804,
+    "returncode": 0,
+    "stderr_tail": "",
+    "stdout_tail": "\nc parsing input formula with 154160 variables and 300539 clauses\n\nc finished parsing\n\nc detected empty clause; start verification via backward checking\n\nc 33417 of 300539 clauses in core                            \n\nc 74932 of 582381 lemmas in core using 1550720 resolution steps\n\nc 2837 RAT lemmas in core; 10334 redundant literals in core lemmas\n\ns VERIFIED\n\nc verification time: 14.846 seconds\n",
+    "verified": true
+  },
+  "encoded_nontrivial_wang_rows": 12937,
+  "equisatisfiable_encoding": "x_q with singleton upper bound u_q is represented by u_q Boolean copies; each Wang row counts all copies whose q lies in the quotient subspace; sum copies = target.",
+  "immediate_empty_rows": 0,
+  "integer_system_rows": 29210,
+  "lut_path": "data/wang_f2_lb20/wang_subspace_lut.pkl",
+  "lut_sha256": "4704acba23a97d40aa65d5a65222dcb679461fdccf3e41dbeed2a634894a3b33",
+  "quotient_dim": 7,
+  "raw_lb": 18,
+  "record_path": "data/dim2_cnf_cert_all/orbit_491/orbit_491_target_18_certificate.json",
+  "row_constraint_clause_hist": {
+    "1": 6937,
+    "105": 168,
+    "11": 294,
+    "14": 742,
+    "143": 189,
+    "17": 266,
+    "20": 987,
+    "213": 21,
+    "219": 36,
+    "23": 147,
+    "25": 84,
+    "313": 84,
+    "33": 798,
+    "39": 7,
+    "46": 210,
+    "48": 21,
+    "543": 7,
+    "59": 1134,
+    "67": 651,
+    "85": 154
+  },
+  "row_copy_pop_hist": {
+    "0": 880,
+    "1": 3031,
+    "10": 210,
+    "11": 1134,
+    "12": 21,
+    "13": 819,
+    "15": 168,
+    "17": 189,
+    "2": 4347,
+    "21": 57,
+    "25": 84,
+    "3": 4466,
+    "33": 7,
+    "4": 3696,
+    "5": 3423,
+    "6": 2933,
+    "7": 1848,
+    "8": 987,
+    "9": 910
+  },
+  "row_meta": {
+    "W_rref": [
+      163,
+      84
+    ],
+    "cap_hist": {
+      "0": 78,
+      "1": 1768,
+      "12": 105,
+      "15": 7,
+      "2": 4158,
+      "3": 9023,
+      "4": 5712,
+      "5": 1414,
+      "6": 5754,
+      "7": 112,
+      "9": 1079
+    },
+    "free_bits": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      8
+    ],
+    "mask_popcount_hist": {
+      "1": 127,
+      "15": 11811,
+      "3": 2667,
+      "31": 2667,
+      "63": 127,
+      "7": 11811
+    },
+    "missing_lut_rows": 0,
+    "negative_cap_rows": 0,
+    "quotient_dim": 7,
+    "quotient_subspace_dim_hist": {
+      "1": 127,
+      "2": 2667,
+      "3": 11811,
+      "4": 11811,
+      "5": 2667,
+      "6": 127
+    },
+    "row_digest": "11fa3e43fa64e3c062a9b677149b1118547c4faf67d3c8010ef92a06a80a8065",
+    "strict_subspaces": 29210,
+    "tautological_source_rows": 0,
+    "unique_rows": 29210
+  },
+  "schema": "dim2_cnf_cert_orbit_v1",
+  "singleton_upper_bound_hist": {
+    "0": 78,
+    "1": 49
+  },
+  "target": 18
+}

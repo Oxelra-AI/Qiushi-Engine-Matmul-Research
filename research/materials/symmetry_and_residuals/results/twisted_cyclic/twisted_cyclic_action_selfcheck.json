@@ -1,0 +1,895 @@
+{
+  "comparison": {
+    "pure_I": {
+      "adapted_h_orbit_dims": [
+        56,
+        56
+      ],
+      "adapted_h_stab_dims": [
+        8,
+        8
+      ],
+      "adapted_trace_quadratic_ranks": [
+        8,
+        8
+      ],
+      "conjugacy_to_pure_rotation_all": true,
+      "cycle_histograms": [
+        {
+          "1": 9,
+          "3": 240
+        },
+        {
+          "1": 9,
+          "3": 240
+        }
+      ],
+      "invariant_dimensions": [
+        249,
+        249
+      ],
+      "iota_Pinv_counts": [
+        0,
+        0
+      ],
+      "order_three_all": true,
+      "preserves_T_all": true,
+      "primes": [
+        65521,
+        1000003
+      ]
+    },
+    "regular_three": {
+      "adapted_h_orbit_dims": [
+        56,
+        56
+      ],
+      "adapted_h_stab_dims": [
+        8,
+        8
+      ],
+      "adapted_trace_quadratic_ranks": [
+        8,
+        8
+      ],
+      "conjugacy_to_pure_rotation_all": true,
+      "cycle_histograms": [
+        {
+          "1": 9,
+          "3": 240
+        },
+        {
+          "1": 9,
+          "3": 240
+        }
+      ],
+      "invariant_dimensions": [
+        249,
+        249
+      ],
+      "iota_Pinv_counts": [
+        0,
+        0
+      ],
+      "order_three_all": true,
+      "preserves_T_all": true,
+      "primes": [
+        65521,
+        1000003
+      ]
+    },
+    "two_plus_one": {
+      "adapted_h_orbit_dims": [
+        56,
+        56
+      ],
+      "adapted_h_stab_dims": [
+        8,
+        8
+      ],
+      "adapted_trace_quadratic_ranks": [
+        8,
+        8
+      ],
+      "conjugacy_to_pure_rotation_all": true,
+      "cycle_histograms": [
+        {
+          "1": 9,
+          "3": 240
+        },
+        {
+          "1": 9,
+          "3": 240
+        }
+      ],
+      "invariant_dimensions": [
+        249,
+        249
+      ],
+      "iota_Pinv_counts": [
+        0,
+        0
+      ],
+      "order_three_all": true,
+      "preserves_T_all": true,
+      "primes": [
+        65521,
+        1000003
+      ]
+    }
+  },
+  "correction_to_previous_script": "The actual order-3 rho_P invariant dimension is 249 for all PGL3 order-3 classes; the earlier 245/243 numbers used the wrong Burnside trace for this action.",
+  "interpretation": "The order-3 cyclic-type actions represented by P=I, diag(1,1,zeta), and diag(1,zeta,zeta^2) are action-conjugate to pure cyclic rotation by Q=(Id,Ad(P),Ad(P)^2), preserve T, and have the same invariant dimension 249 and orbit histogram 9 fixed coordinates plus 240 three-cycles. The fixed-locus cubic is C_P(X)=tr((XP)^3).  The full exterior target has radical KP^{-1}; on the adapted 8-space h_P={tr(XP)=0}, the projected trivector is in the open GL8 orbit and outside sigma_3 by the same dimension argument, so m>=4 transfers in adapted coordinates. The trace-grading quadratic on h_P has rank 8.  These checks show that the apparent new twisted order-3 classes do not create a weaker cyclic skeleton by themselves; the old pure-cyclic proof must be worded as an adapted-coordinate statement, and the same mixed-independent-verification-record and residual-Waring questions remain.",
+  "mathematical_model": "rho_P(X,Y,Z)=(Ad(P)^2Y, Ad(P)^2Z, Ad(P)^2X), fixed locus (X,Ad(P)X,Ad(P)^2X)",
+  "records": [
+    {
+      "F_P_equals_T_after_right_multiply_by_P_on_basis": true,
+      "F_coeff_nonzero_count": 27,
+      "Q_conjugates_to_pure_rotation_on_basis": true,
+      "action_order_three_ok_on_basis": true,
+      "adapted_h_gl8_stabilizer": {
+        "ambient_dim": 56,
+        "excludes_sigma3_by_dimension": true,
+        "map_rank": 56,
+        "orbit_dim": 56,
+        "sigma3_affine_upper": 48,
+        "stab_dim": 8
+      },
+      "adapted_h_trivector_nonzero_count": 8,
+      "adapted_h_trivector_terms": {
+        "(0, 2, 6)": 6,
+        "(0, 2, 7)": 65518,
+        "(0, 3, 4)": 3,
+        "(1, 2, 5)": 65518,
+        "(1, 4, 6)": 3,
+        "(1, 4, 7)": 3,
+        "(3, 5, 6)": 65518,
+        "(3, 5, 7)": 6
+      },
+      "adapted_trace_quadratic_matrix": [
+        [
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          65518
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          65518,
+          6
+        ]
+      ],
+      "adapted_trace_quadratic_rank": 8,
+      "diag_mod_p": [
+        1,
+        1,
+        1
+      ],
+      "fixed_locus_basis_generators_ok": true,
+      "full_exterior_nonzero_count": 8,
+      "invariant_dimension": {
+        "bad_cycle_products": 0,
+        "cycle_length_histogram": {
+          "1": 9,
+          "3": 240
+        },
+        "fixed_space_dimension_from_cycles": 249,
+        "total_basis_tensors": 729
+      },
+      "iota_Pinv_full_exterior_nonzero_count": 0,
+      "label": "pure_I",
+      "preserves_T_on_basis": true,
+      "prime": 65521
+    },
+    {
+      "F_P_equals_T_after_right_multiply_by_P_on_basis": true,
+      "F_coeff_nonzero_count": 27,
+      "Q_conjugates_to_pure_rotation_on_basis": true,
+      "action_order_three_ok_on_basis": true,
+      "adapted_h_gl8_stabilizer": {
+        "ambient_dim": 56,
+        "excludes_sigma3_by_dimension": true,
+        "map_rank": 56,
+        "orbit_dim": 56,
+        "sigma3_affine_upper": 48,
+        "stab_dim": 8
+      },
+      "adapted_h_trivector_nonzero_count": 8,
+      "adapted_h_trivector_terms": {
+        "(0, 2, 6)": 6,
+        "(0, 2, 7)": 65518,
+        "(0, 3, 4)": 3,
+        "(1, 2, 5)": 65518,
+        "(1, 4, 6)": 3,
+        "(1, 4, 7)": 3,
+        "(3, 5, 6)": 65518,
+        "(3, 5, 7)": 6
+      },
+      "adapted_trace_quadratic_matrix": [
+        [
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          65518
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          65518,
+          6
+        ]
+      ],
+      "adapted_trace_quadratic_rank": 8,
+      "diag_mod_p": [
+        1,
+        1,
+        16673
+      ],
+      "fixed_locus_basis_generators_ok": true,
+      "full_exterior_nonzero_count": 8,
+      "invariant_dimension": {
+        "bad_cycle_products": 0,
+        "cycle_length_histogram": {
+          "1": 9,
+          "3": 240
+        },
+        "fixed_space_dimension_from_cycles": 249,
+        "total_basis_tensors": 729
+      },
+      "iota_Pinv_full_exterior_nonzero_count": 0,
+      "label": "two_plus_one",
+      "preserves_T_on_basis": true,
+      "prime": 65521
+    },
+    {
+      "F_P_equals_T_after_right_multiply_by_P_on_basis": true,
+      "F_coeff_nonzero_count": 27,
+      "Q_conjugates_to_pure_rotation_on_basis": true,
+      "action_order_three_ok_on_basis": true,
+      "adapted_h_gl8_stabilizer": {
+        "ambient_dim": 56,
+        "excludes_sigma3_by_dimension": true,
+        "map_rank": 56,
+        "orbit_dim": 56,
+        "sigma3_affine_upper": 48,
+        "stab_dim": 8
+      },
+      "adapted_h_trivector_nonzero_count": 8,
+      "adapted_h_trivector_terms": {
+        "(0, 2, 6)": 6,
+        "(0, 2, 7)": 65518,
+        "(0, 3, 4)": 3,
+        "(1, 2, 5)": 65518,
+        "(1, 4, 6)": 3,
+        "(1, 4, 7)": 3,
+        "(3, 5, 6)": 65518,
+        "(3, 5, 7)": 6
+      },
+      "adapted_trace_quadratic_matrix": [
+        [
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          65518
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          65518,
+          6
+        ]
+      ],
+      "adapted_trace_quadratic_rank": 8,
+      "diag_mod_p": [
+        1,
+        16673,
+        48847
+      ],
+      "fixed_locus_basis_generators_ok": true,
+      "full_exterior_nonzero_count": 8,
+      "invariant_dimension": {
+        "bad_cycle_products": 0,
+        "cycle_length_histogram": {
+          "1": 9,
+          "3": 240
+        },
+        "fixed_space_dimension_from_cycles": 249,
+        "total_basis_tensors": 729
+      },
+      "iota_Pinv_full_exterior_nonzero_count": 0,
+      "label": "regular_three",
+      "preserves_T_on_basis": true,
+      "prime": 65521
+    },
+    {
+      "F_P_equals_T_after_right_multiply_by_P_on_basis": true,
+      "F_coeff_nonzero_count": 27,
+      "Q_conjugates_to_pure_rotation_on_basis": true,
+      "action_order_three_ok_on_basis": true,
+      "adapted_h_gl8_stabilizer": {
+        "ambient_dim": 56,
+        "excludes_sigma3_by_dimension": true,
+        "map_rank": 56,
+        "orbit_dim": 56,
+        "sigma3_affine_upper": 48,
+        "stab_dim": 8
+      },
+      "adapted_h_trivector_nonzero_count": 8,
+      "adapted_h_trivector_terms": {
+        "(0, 2, 6)": 6,
+        "(0, 2, 7)": 1000000,
+        "(0, 3, 4)": 3,
+        "(1, 2, 5)": 1000000,
+        "(1, 4, 6)": 3,
+        "(1, 4, 7)": 3,
+        "(3, 5, 6)": 1000000,
+        "(3, 5, 7)": 6
+      },
+      "adapted_trace_quadratic_matrix": [
+        [
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          1000000
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1000000,
+          6
+        ]
+      ],
+      "adapted_trace_quadratic_rank": 8,
+      "diag_mod_p": [
+        1,
+        1,
+        1
+      ],
+      "fixed_locus_basis_generators_ok": true,
+      "full_exterior_nonzero_count": 8,
+      "invariant_dimension": {
+        "bad_cycle_products": 0,
+        "cycle_length_histogram": {
+          "1": 9,
+          "3": 240
+        },
+        "fixed_space_dimension_from_cycles": 249,
+        "total_basis_tensors": 729
+      },
+      "iota_Pinv_full_exterior_nonzero_count": 0,
+      "label": "pure_I",
+      "preserves_T_on_basis": true,
+      "prime": 1000003
+    },
+    {
+      "F_P_equals_T_after_right_multiply_by_P_on_basis": true,
+      "F_coeff_nonzero_count": 27,
+      "Q_conjugates_to_pure_rotation_on_basis": true,
+      "action_order_three_ok_on_basis": true,
+      "adapted_h_gl8_stabilizer": {
+        "ambient_dim": 56,
+        "excludes_sigma3_by_dimension": true,
+        "map_rank": 56,
+        "orbit_dim": 56,
+        "sigma3_affine_upper": 48,
+        "stab_dim": 8
+      },
+      "adapted_h_trivector_nonzero_count": 8,
+      "adapted_h_trivector_terms": {
+        "(0, 2, 6)": 6,
+        "(0, 2, 7)": 1000000,
+        "(0, 3, 4)": 3,
+        "(1, 2, 5)": 1000000,
+        "(1, 4, 6)": 3,
+        "(1, 4, 7)": 3,
+        "(3, 5, 6)": 1000000,
+        "(3, 5, 7)": 6
+      },
+      "adapted_trace_quadratic_matrix": [
+        [
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          1000000
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1000000,
+          6
+        ]
+      ],
+      "adapted_trace_quadratic_rank": 8,
+      "diag_mod_p": [
+        1,
+        1,
+        499501
+      ],
+      "fixed_locus_basis_generators_ok": true,
+      "full_exterior_nonzero_count": 8,
+      "invariant_dimension": {
+        "bad_cycle_products": 0,
+        "cycle_length_histogram": {
+          "1": 9,
+          "3": 240
+        },
+        "fixed_space_dimension_from_cycles": 249,
+        "total_basis_tensors": 729
+      },
+      "iota_Pinv_full_exterior_nonzero_count": 0,
+      "label": "two_plus_one",
+      "preserves_T_on_basis": true,
+      "prime": 1000003
+    },
+    {
+      "F_P_equals_T_after_right_multiply_by_P_on_basis": true,
+      "F_coeff_nonzero_count": 27,
+      "Q_conjugates_to_pure_rotation_on_basis": true,
+      "action_order_three_ok_on_basis": true,
+      "adapted_h_gl8_stabilizer": {
+        "ambient_dim": 56,
+        "excludes_sigma3_by_dimension": true,
+        "map_rank": 56,
+        "orbit_dim": 56,
+        "sigma3_affine_upper": 48,
+        "stab_dim": 8
+      },
+      "adapted_h_trivector_nonzero_count": 8,
+      "adapted_h_trivector_terms": {
+        "(0, 2, 6)": 6,
+        "(0, 2, 7)": 1000000,
+        "(0, 3, 4)": 3,
+        "(1, 2, 5)": 1000000,
+        "(1, 4, 6)": 3,
+        "(1, 4, 7)": 3,
+        "(3, 5, 6)": 1000000,
+        "(3, 5, 7)": 6
+      },
+      "adapted_trace_quadratic_matrix": [
+        [
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          1000000
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1000000,
+          6
+        ]
+      ],
+      "adapted_trace_quadratic_rank": 8,
+      "diag_mod_p": [
+        1,
+        499501,
+        500501
+      ],
+      "fixed_locus_basis_generators_ok": true,
+      "full_exterior_nonzero_count": 8,
+      "invariant_dimension": {
+        "bad_cycle_products": 0,
+        "cycle_length_histogram": {
+          "1": 9,
+          "3": 240
+        },
+        "fixed_space_dimension_from_cycles": 249,
+        "total_basis_tensors": 729
+      },
+      "iota_Pinv_full_exterior_nonzero_count": 0,
+      "label": "regular_three",
+      "preserves_T_on_basis": true,
+      "prime": 1000003
+    }
+  ],
+  "schema": "twisted_cyclic_action_selfcheck_v1"
+}

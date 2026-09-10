@@ -1,0 +1,589 @@
+{
+  "field_setting": "characteristic zero checked by exact integer ranks and by good-prime modular ranks",
+  "a0": [
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      1,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      -1
+    ]
+  ],
+  "exterior_equation": "S4*(A wedge B wedge C) = omega for the BILR base triple",
+  "bilr_base_exterior_matches_omega": true,
+  "sl3_exterior_jacobian_shape": [
+    84,
+    24
+  ],
+  "sl3_exterior_jacobian_rank_Q": 14,
+  "sl3_exterior_jacobian_rank_mod_65521": 14,
+  "sl3_exterior_jacobian_rank_mod_32003": 14,
+  "kernel_dim": 10,
+  "symmetry_directions": {
+    "internal_SL3_recombination_columns": 8,
+    "centralizer_conjugation_columns": 2,
+    "rank_Q": 10,
+    "rank_mod_65521": 10,
+    "rank_of_J_times_symmetry_dirs_mod_65521": 0,
+    "exact_nonzero_entries_of_J_times_symmetry_dirs": 0,
+    "rank_of_symmetry_dirs_plus_modular_kernel_basis_mod_65521": 10,
+    "equals_full_tangent_kernel": true,
+    "internal_meta": [
+      {
+        "kind": "internal_SL3",
+        "generator": 0,
+        "matrix": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "kind": "internal_SL3",
+        "generator": 1,
+        "matrix": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "kind": "internal_SL3",
+        "generator": 2,
+        "matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "kind": "internal_SL3",
+        "generator": 3,
+        "matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "kind": "internal_SL3",
+        "generator": 4,
+        "matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "kind": "internal_SL3",
+        "generator": 5,
+        "matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "kind": "internal_SL3",
+        "generator": 6,
+        "matrix": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "kind": "internal_SL3",
+        "generator": 7,
+        "matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ]
+        ]
+      }
+    ],
+    "centralizer_meta": [
+      {
+        "kind": "centralizer_conjugation",
+        "generator": "a0"
+      },
+      {
+        "kind": "centralizer_conjugation",
+        "generator": "a0^2"
+      }
+    ]
+  },
+  "linear_truncation_correction": {
+    "internal_examples": [
+      {
+        "label": "nilpotent_E01",
+        "det_I_plus_N": 1,
+        "equals_omega": true,
+        "equals_det_times_omega": true,
+        "max_abs_ext_minus_omega": 0
+      },
+      {
+        "label": "diagonal_H1",
+        "det_I_plus_N": 0,
+        "equals_omega": false,
+        "equals_det_times_omega": true,
+        "max_abs_ext_minus_omega": 1
+      },
+      {
+        "label": "diagonal_H1_plus_H2",
+        "det_I_plus_N": 0,
+        "equals_omega": false,
+        "equals_det_times_omega": true,
+        "max_abs_ext_minus_omega": 1
+      }
+    ],
+    "centralizer_linear_truncation_equals_omega": false,
+    "centralizer_linear_truncation_max_abs_error": 4,
+    "centralizer_finite_conjugation_equals_omega": true,
+    "message": "Tangent directions integrate through SL3 recombination or finite centralizer conjugation. A one-ARTIFACT affine tangent move preserves the exterior equation only in special cases such as det(I+N)=1 for pure internal moves; analysis's affine-linear reading is not used."
+  },
+  "residual_anchor": {
+    "formula": "C_M = tr(X^3) - 3*sum_{k=0}^3 (Ad^k A_M)(Ad^k B_M)(Ad^k C_M) in polynomial coefficients",
+    "identity_internal_M_residual_equals_11_BILR_cubes": true,
+    "identity_residual_mismatch_nonzero_count": 0,
+    "BILR_residual_koszul_ranks_from": {
+      "1000003": 722,
+      "1000033": 722,
+      "65521": 722,
+      "32003": 722
+    },
+    "rank_one_koszul_upper_per_cube": 70,
+    "koszul_rank_722_rules_out_10_cubes_at_BILR_residual": true,
+    "unipotent_internal_move_det": 1,
+    "unipotent_internal_move_preserves_exterior": true,
+    "unipotent_residual_differs_from_BILR_cube_residual_nonzero_coefficients": 53
+  },
+  "rank10_Z4_orbit_pattern_tangent_data": {
+    "V1_fixed_dim": 3,
+    "V2_Ad2_fixed_dim": 5,
+    "residual_internal_tangent_rank_mod_65521": 6,
+    "partitions_of_10_by_Z4_orbit_sizes_4_2_1": [
+      {
+        "pattern": [
+          4,
+          4,
+          2
+        ],
+        "number_of_cube_terms": 10,
+        "parameter_dims_by_orbit": [
+          9,
+          9,
+          5
+        ],
+        "cube_parameter_dim": 23,
+        "with_internal_SL3_parameter_dim": 31,
+        "random_orbit_linear_form_span_dim_mod_65521": 9,
+        "can_be_concise_by_span_test": true,
+        "cube_tangent_rank_mod_65521": 23,
+        "combined_residual_minus_cube_tangent_rank_mod_65521": 29,
+        "highlighted_for_next_exact_system": true
+      },
+      {
+        "pattern": [
+          4,
+          4,
+          1,
+          1
+        ],
+        "number_of_cube_terms": 10,
+        "parameter_dims_by_orbit": [
+          9,
+          9,
+          3,
+          3
+        ],
+        "cube_parameter_dim": 24,
+        "with_internal_SL3_parameter_dim": 32,
+        "random_orbit_linear_form_span_dim_mod_65521": 9,
+        "can_be_concise_by_span_test": true,
+        "cube_tangent_rank_mod_65521": 24,
+        "combined_residual_minus_cube_tangent_rank_mod_65521": 30,
+        "highlighted_for_next_exact_system": true
+      },
+      {
+        "pattern": [
+          4,
+          2,
+          2,
+          2
+        ],
+        "number_of_cube_terms": 10,
+        "parameter_dims_by_orbit": [
+          9,
+          5,
+          5,
+          5
+        ],
+        "cube_parameter_dim": 24,
+        "with_internal_SL3_parameter_dim": 32,
+        "random_orbit_linear_form_span_dim_mod_65521": 7,
+        "can_be_concise_by_span_test": false,
+        "cube_tangent_rank_mod_65521": 24,
+        "combined_residual_minus_cube_tangent_rank_mod_65521": 30,
+        "highlighted_for_next_exact_system": true
+      },
+      {
+        "pattern": [
+          4,
+          2,
+          2,
+          1,
+          1
+        ],
+        "number_of_cube_terms": 10,
+        "parameter_dims_by_orbit": [
+          9,
+          5,
+          5,
+          3,
+          3
+        ],
+        "cube_parameter_dim": 25,
+        "with_internal_SL3_parameter_dim": 33,
+        "random_orbit_linear_form_span_dim_mod_65521": 7,
+        "can_be_concise_by_span_test": false,
+        "cube_tangent_rank_mod_65521": 25,
+        "combined_residual_minus_cube_tangent_rank_mod_65521": 31,
+        "highlighted_for_next_exact_system": true
+      },
+      {
+        "pattern": [
+          4,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "number_of_cube_terms": 10,
+        "parameter_dims_by_orbit": [
+          9,
+          5,
+          3,
+          3,
+          3,
+          3
+        ],
+        "cube_parameter_dim": 26,
+        "with_internal_SL3_parameter_dim": 34,
+        "random_orbit_linear_form_span_dim_mod_65521": 7,
+        "can_be_concise_by_span_test": false,
+        "cube_tangent_rank_mod_65521": 23,
+        "combined_residual_minus_cube_tangent_rank_mod_65521": 29,
+        "highlighted_for_next_exact_system": false
+      },
+      {
+        "pattern": [
+          4,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "number_of_cube_terms": 10,
+        "parameter_dims_by_orbit": [
+          9,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "cube_parameter_dim": 27,
+        "with_internal_SL3_parameter_dim": 35,
+        "random_orbit_linear_form_span_dim_mod_65521": 6,
+        "can_be_concise_by_span_test": false,
+        "cube_tangent_rank_mod_65521": 19,
+        "combined_residual_minus_cube_tangent_rank_mod_65521": 25,
+        "highlighted_for_next_exact_system": false
+      },
+      {
+        "pattern": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "number_of_cube_terms": 10,
+        "parameter_dims_by_orbit": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "cube_parameter_dim": 25,
+        "with_internal_SL3_parameter_dim": 33,
+        "random_orbit_linear_form_span_dim_mod_65521": 5,
+        "can_be_concise_by_span_test": false,
+        "cube_tangent_rank_mod_65521": 19,
+        "combined_residual_minus_cube_tangent_rank_mod_65521": 25,
+        "highlighted_for_next_exact_system": false
+      },
+      {
+        "pattern": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "number_of_cube_terms": 10,
+        "parameter_dims_by_orbit": [
+          5,
+          5,
+          5,
+          5,
+          3,
+          3
+        ],
+        "cube_parameter_dim": 26,
+        "with_internal_SL3_parameter_dim": 34,
+        "random_orbit_linear_form_span_dim_mod_65521": 5,
+        "can_be_concise_by_span_test": false,
+        "cube_tangent_rank_mod_65521": 19,
+        "combined_residual_minus_cube_tangent_rank_mod_65521": 25,
+        "highlighted_for_next_exact_system": false
+      },
+      {
+        "pattern": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "number_of_cube_terms": 10,
+        "parameter_dims_by_orbit": [
+          5,
+          5,
+          5,
+          3,
+          3,
+          3,
+          3
+        ],
+        "cube_parameter_dim": 27,
+        "with_internal_SL3_parameter_dim": 35,
+        "random_orbit_linear_form_span_dim_mod_65521": 5,
+        "can_be_concise_by_span_test": false,
+        "cube_tangent_rank_mod_65521": 19,
+        "combined_residual_minus_cube_tangent_rank_mod_65521": 25,
+        "highlighted_for_next_exact_system": false
+      },
+      {
+        "pattern": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "number_of_cube_terms": 10,
+        "parameter_dims_by_orbit": [
+          5,
+          5,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "cube_parameter_dim": 28,
+        "with_internal_SL3_parameter_dim": 36,
+        "random_orbit_linear_form_span_dim_mod_65521": 5,
+        "can_be_concise_by_span_test": false,
+        "cube_tangent_rank_mod_65521": 18,
+        "combined_residual_minus_cube_tangent_rank_mod_65521": 24,
+        "highlighted_for_next_exact_system": false
+      },
+      {
+        "pattern": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "number_of_cube_terms": 10,
+        "parameter_dims_by_orbit": [
+          5,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "cube_parameter_dim": 29,
+        "with_internal_SL3_parameter_dim": 37,
+        "random_orbit_linear_form_span_dim_mod_65521": 4,
+        "can_be_concise_by_span_test": false,
+        "cube_tangent_rank_mod_65521": 14,
+        "combined_residual_minus_cube_tangent_rank_mod_65521": 20,
+        "highlighted_for_next_exact_system": false
+      },
+      {
+        "pattern": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "number_of_cube_terms": 10,
+        "parameter_dims_by_orbit": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "cube_parameter_dim": 30,
+        "with_internal_SL3_parameter_dim": 38,
+        "random_orbit_linear_form_span_dim_mod_65521": 3,
+        "can_be_concise_by_span_test": false,
+        "cube_tangent_rank_mod_65521": 10,
+        "combined_residual_minus_cube_tangent_rank_mod_65521": 16,
+        "highlighted_for_next_exact_system": false
+      }
+    ],
+    "interpretation": "These are tangent and conciseness data for explicit Z4-stable 10-cube systems. They are not algebraic nonexistence results. Patterns whose sampled orbit forms span <9 cannot give a concise 9-variable residual on the open branch; the non-concise apolar branch still requires the polar-rank equations."
+  }
+}

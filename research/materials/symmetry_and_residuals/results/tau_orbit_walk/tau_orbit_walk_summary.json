@@ -1,0 +1,276 @@
+{
+  "source": "standard 27-term T333 decomposition over F3",
+  "tau": "tau(A,B,C)=(A^T,C^T,B^T)",
+  "move": "clean orbit flip: flip representative pair, replace image pair by exact tau-images of updated pair; exact 729-coordinate replay after each move",
+  "mp_paper_lookup": {
+    "finding": "Moosbauer--Poole use C3 and C3 x Z2 where Z2 is row/column reversal inside each factor, not transpose-type factor-swap tau; their n=3 statement is C3 rank 23, not a single tau-Z2 walk table.",
+    "source_lines": "Knowledge object lines 104, 198, 263, 294"
+  },
+  "seed_summary": {
+    "rank": 27,
+    "tensor_matches_T333_F3": true,
+    "tau_invariant_exact": true,
+    "fixed_count": 9,
+    "free_orbit_count": 9,
+    "fixed_indices_1based": [
+      1,
+      2,
+      3,
+      13,
+      14,
+      15,
+      25,
+      26,
+      27
+    ],
+    "free_orbits_1based": [
+      [
+        4,
+        10
+      ],
+      [
+        5,
+        11
+      ],
+      [
+        6,
+        12
+      ],
+      [
+        7,
+        19
+      ],
+      [
+        8,
+        20
+      ],
+      [
+        9,
+        21
+      ],
+      [
+        16,
+        22
+      ],
+      [
+        17,
+        23
+      ],
+      [
+        18,
+        24
+      ]
+    ],
+    "duplicate_ordered_pair_count": 162,
+    "duplicate_bucket_size_hist_by_component": {
+      "0": {
+        "3": 9
+      },
+      "1": {
+        "3": 9
+      },
+      "2": {
+        "3": 9
+      }
+    }
+  },
+  "one_step": {
+    "tested_duplicate_pairs": 162,
+    "accepted_move_count": 72,
+    "reason_counts": {
+      "filtered_fixed-free": 72,
+      "accepted_free-free-4": 72,
+      "filtered_fixed-fixed": 18
+    },
+    "rank_hist_after_one_step": {
+      "27": 72
+    },
+    "min_rank_after_one_step": 27,
+    "sample_accepted_moves": [
+      {
+        "type": 1,
+        "i": 5,
+        "j": 23,
+        "rank": 27,
+        "class": "free-free-4"
+      },
+      {
+        "type": 1,
+        "i": 9,
+        "j": 18,
+        "rank": 27,
+        "class": "free-free-4"
+      },
+      {
+        "type": 0,
+        "i": 24,
+        "j": 22,
+        "rank": 27,
+        "class": "free-free-4"
+      },
+      {
+        "type": 2,
+        "i": 19,
+        "j": 22,
+        "rank": 27,
+        "class": "free-free-4"
+      },
+      {
+        "type": 2,
+        "i": 24,
+        "j": 21,
+        "rank": 27,
+        "class": "free-free-4"
+      },
+      {
+        "type": 0,
+        "i": 24,
+        "j": 23,
+        "rank": 27,
+        "class": "free-free-4"
+      },
+      {
+        "type": 1,
+        "i": 6,
+        "j": 24,
+        "rank": 27,
+        "class": "free-free-4"
+      },
+      {
+        "type": 0,
+        "i": 11,
+        "j": 10,
+        "rank": 27,
+        "class": "free-free-4"
+      },
+      {
+        "type": 2,
+        "i": 7,
+        "j": 4,
+        "rank": 27,
+        "class": "free-free-4"
+      },
+      {
+        "type": 1,
+        "i": 20,
+        "j": 11,
+        "rank": 27,
+        "class": "free-free-4"
+      },
+      {
+        "type": 0,
+        "i": 5,
+        "j": 6,
+        "rank": 27,
+        "class": "free-free-4"
+      },
+      {
+        "type": 2,
+        "i": 10,
+        "j": 16,
+        "rank": 27,
+        "class": "free-free-4"
+      },
+      {
+        "type": 0,
+        "i": 18,
+        "j": 16,
+        "rank": 27,
+        "class": "free-free-4"
+      },
+      {
+        "type": 1,
+        "i": 7,
+        "j": 16,
+        "rank": 27,
+        "class": "free-free-4"
+      },
+      {
+        "type": 0,
+        "i": 20,
+        "j": 21,
+        "rank": 27,
+        "class": "free-free-4"
+      },
+      {
+        "type": 0,
+        "i": 11,
+        "j": 12,
+        "rank": 27,
+        "class": "free-free-4"
+      },
+      {
+        "type": 2,
+        "i": 4,
+        "j": 7,
+        "rank": 27,
+        "class": "free-free-4"
+      },
+      {
+        "type": 0,
+        "i": 16,
+        "j": 18,
+        "rank": 27,
+        "class": "free-free-4"
+      },
+      {
+        "type": 1,
+        "i": 18,
+        "j": 9,
+        "rank": 27,
+        "class": "free-free-4"
+      },
+      {
+        "type": 0,
+        "i": 9,
+        "j": 7,
+        "rank": 27,
+        "class": "free-free-4"
+      }
+    ]
+  },
+  "walk": {
+    "mode": "clean_tau_freefree4",
+    "allowed_classes": [
+      "free-free-4"
+    ],
+    "restarts_requested": 1,
+    "steps_per_restart": 1,
+    "max_pairs_per_node": 20,
+    "restarts_completed": 1,
+    "total_accepted_moves": 1,
+    "nodes_with_no_accepted_moves": 0,
+    "best_rank": 27,
+    "best_scheme_path": "data/tau_orbit_walk/clean_tau_freefree4_best_rank27.json",
+    "first_rank_le_23_path": null,
+    "first_rank_le_22_path": null,
+    "reason_counts": {
+      "filtered_fixed-free": 9,
+      "filtered_fixed-fixed": 3,
+      "accepted_free-free-4": 8
+    },
+    "restart_summaries_first20": [
+      {
+        "restart": 0,
+        "steps_done": 1,
+        "best_rank": 27,
+        "final_rank": 27,
+        "rank_hist": {
+          "27": 2
+        }
+      }
+    ],
+    "restart_summaries_last5": [
+      {
+        "restart": 0,
+        "steps_done": 1,
+        "best_rank": 27,
+        "final_rank": 27,
+        "rank_hist": {
+          "27": 2
+        }
+      }
+    ],
+    "elapsed_sec": 0.0495915412902832
+  }
+}

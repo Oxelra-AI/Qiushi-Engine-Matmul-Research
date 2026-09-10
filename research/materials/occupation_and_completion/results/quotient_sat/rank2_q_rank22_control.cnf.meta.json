@@ -1,0 +1,43 @@
+{
+  "base_vars": 572,
+  "capacity": true,
+  "cnf_path": "data/quotient_sat/rank2_q_rank22_control.cnf",
+  "known_json": "data/wang_native/three_orbit_controls/rank2_quotient_rank22_control.json",
+  "known_reconstruction_diff": 0,
+  "known_units": true,
+  "known_validation": {
+    "bad_head": [],
+    "num_clauses": 141275,
+    "ok": true
+  },
+  "layers": [
+    "certified:quotient_Brent+Tseytin+XOR",
+    "certified:slice_capacity_ge_matrix_rank",
+    "certified:term_sort_u_integer_nondecreasing",
+    "control:known_base_units"
+  ],
+  "num_clauses": 141275,
+  "num_vars": 30167,
+  "pivot": 17,
+  "problem": "quotient_core_cpd",
+  "rank": 22,
+  "sha256": "232bd9fa69d7493e5f5d784b976d09b6770bce649a2599e9327036c6552ff2a4",
+  "slice_ranks": [
+    6,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "sort_u": true,
+  "status": "ok",
+  "tensor_nnz": 27,
+  "tensor_shape": [
+    8,
+    9,
+    9
+  ]
+}

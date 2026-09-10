@@ -1,0 +1,64 @@
+{
+  "field": "F2",
+  "fixed_dims": {
+    "1": 3,
+    "2": 5,
+    "3": 9,
+    "4": 9,
+    "6": 15,
+    "12": 27
+  },
+  "records": [
+    {
+      "pattern": [
+        12,
+        4,
+        4,
+        2
+      ],
+      "tag": "p12_4_4_2",
+      "vars": 15713,
+      "clauses": 52627,
+      "native_vars": 10568,
+      "regular_clauses": 31383,
+      "xor_equations": 332,
+      "linear_aux_vars": 83,
+      "encode_sec": 0.022,
+      "status": "UNSAT",
+      "solve_sec": 37.059,
+      "cnf": "data/z4xcyclic_general_f2_drat/z4xcyc_general_tseitin_p12_4_4_2.cnf",
+      "proof": "data/z4xcyclic_general_f2_drat/z4xcyc_general_tseitin_p12_4_4_2.drat",
+      "drat_status": "VERIFIED",
+      "drat_verify_sec": 29.56,
+      "proof_bytes": 41219580,
+      "drat_summary": "c 35972 of 52627 clauses in core\nc 429881 of 766577 lemmas in core using 23069939 resolution steps\nc 509 RAT lemmas in core; 125916 redundant literals in core lemmas\ns VERIFIED\nc verification time: 29.550 seconds",
+      "solver_stdout_tail": "7                1 %  variables\nc iterations:                              23                0 %  variables\nc propagations:                     146897577          3968476    per second\nc reductions:                              84             6148    interval\nc reordered:                               10            51647    interval\nc rephased:                                18            28693    interval\nc restarts:                             16204               32    interval\nc strengthened:                          1010                0 %  checks\nc substituted:                           6156               39 %  variables\nc subsumed:                              1265                0 %  checks\nc switched:                                28            18445    interval\nc vivified:                             84217               24 %  checks\nc walks:                                    6            86078    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 2   used 178979 clauses 16.22% accumulated 52.83% tier1\nc focused glue 3   used 125895 clauses 11.41% accumulated 64.24%\nc focused glue 4-6 used 209397 clauses 18.98% accumulated 83.21%\nc focused glue 7   used  49713 clauses  4.51% accumulated 87.72%\nc focused glue 8   used  38590 clauses  3.50% accumulated 91.22% tier2\nc\nc stable glue 3   used 127058 clauses 11.11% accumulated 59.65% tier1\nc stable glue 4   used  80040 clauses  7.00% accumulated 66.64%\nc stable glue 5-8 used 222198 clauses 19.43% accumulated 86.07%\nc stable glue 9   used  43618 clauses  3.81% accumulated 89.88%\nc stable glue 10  used  35424 clauses  3.10% accumulated 92.98% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         25559040 bytes         24 MB\nc process-time:                            37s              37.01 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n"
+    },
+    {
+      "pattern": [
+        12,
+        4,
+        4,
+        1,
+        1
+      ],
+      "tag": "p12_4_4_1_1",
+      "vars": 15690,
+      "clauses": 52628,
+      "native_vars": 10552,
+      "regular_clauses": 31416,
+      "xor_equations": 330,
+      "linear_aux_vars": 81,
+      "encode_sec": 0.027,
+      "status": "UNSAT",
+      "solve_sec": 53.981,
+      "cnf": "data/z4xcyclic_general_f2_drat/z4xcyc_general_tseitin_p12_4_4_1_1.cnf",
+      "proof": "data/z4xcyclic_general_f2_drat/z4xcyc_general_tseitin_p12_4_4_1_1.drat",
+      "drat_status": "VERIFIED",
+      "drat_verify_sec": 47.033,
+      "proof_bytes": 48673568,
+      "drat_summary": "c 30511 of 52628 clauses in core\nc 570160 of 953689 lemmas in core using 34632820 resolution steps\nc 371 RAT lemmas in core; 157335 redundant literals in core lemmas\ns VERIFIED\nc verification time: 47.022 seconds",
+      "solver_stdout_tail": "3                0 %  variables\nc iterations:                              20                0 %  variables\nc propagations:                     190693859          3533117    per second\nc reductions:                             107             6927    interval\nc reordered:                               12            61769    interval\nc rephased:                                20            37061    interval\nc restarts:                             22901               32    interval\nc strengthened:                           750                0 %  checks\nc substituted:                           6240               40 %  variables\nc subsumed:                               826                0 %  checks\nc switched:                                32            23163    interval\nc vivified:                            110248               28 %  checks\nc walks:                                    7           105889    interval\nc\nc ---- [ glue usage ] --------------------------------------------------------\nc\nc focused glue 2   used 230874 clauses 16.11% accumulated 51.63% tier1\nc focused glue 3   used 169375 clauses 11.82% accumulated 63.45%\nc focused glue 4-7 used 322641 clauses 22.51% accumulated 85.96%\nc focused glue 8   used  56854 clauses  3.97% accumulated 89.93%\nc focused glue 9   used  43392 clauses  3.03% accumulated 92.95% tier2\nc\nc stable glue 3   used 178465 clauses 10.76% accumulated 58.05% tier1\nc stable glue 4   used 108898 clauses  6.57% accumulated 64.61%\nc stable glue 5-8 used 328504 clauses 19.81% accumulated 84.42%\nc stable glue 9   used  69600 clauses  4.20% accumulated 88.62%\nc stable glue 10  used  58908 clauses  3.55% accumulated 92.17% tier2\nc\nc ---- [ resources ] ---------------------------------------------------------\nc\nc maximum-resident-set-size:         25559040 bytes         24 MB\nc process-time:                            54s              53.97 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20\n"
+    }
+  ]
+}

@@ -1,0 +1,278 @@
+{
+  "consequences": {
+    "full_n20_A": {
+      "bound": 27,
+      "min_terms_rank_ge2": 4,
+      "min_total_excess": 7,
+      "n": 20
+    },
+    "full_n21_A": {
+      "bound": 27,
+      "min_terms_rank_ge2": 3,
+      "min_total_excess": 6,
+      "n": 21
+    },
+    "full_n22_A": {
+      "bound": 27,
+      "min_terms_rank_ge2": 3,
+      "min_total_excess": 5,
+      "n": 22
+    },
+    "full_n23_A": {
+      "bound": 27,
+      "min_terms_rank_ge2": 2,
+      "min_total_excess": 4,
+      "n": 23
+    },
+    "quotient_n19_B": {
+      "rank1": {
+        "bound": 24,
+        "min_terms_rank_ge2": 3,
+        "min_total_excess": 5,
+        "n": 19
+      },
+      "rank2": {
+        "bound": 24,
+        "min_terms_rank_ge2": 3,
+        "min_total_excess": 5,
+        "n": 19
+      },
+      "rank3": {
+        "bound": 24,
+        "min_terms_rank_ge2": 3,
+        "min_total_excess": 5,
+        "n": 19
+      }
+    },
+    "quotient_n19_C": {
+      "rank1": {
+        "bound": 24,
+        "min_terms_rank_ge2": 3,
+        "min_total_excess": 5,
+        "n": 19
+      },
+      "rank2": {
+        "bound": 24,
+        "min_terms_rank_ge2": 3,
+        "min_total_excess": 5,
+        "n": 19
+      },
+      "rank3": {
+        "bound": 24,
+        "min_terms_rank_ge2": 3,
+        "min_total_excess": 5,
+        "n": 19
+      }
+    }
+  },
+  "full_scheme_controls": [
+    {
+      "exact_over_F2": true,
+      "label": "flipcpd_gg333_rank23_text",
+      "product_rank_sum": 56,
+      "rank_hist_A": {
+        "0": 0,
+        "1": 16,
+        "2": 7,
+        "3": 0
+      },
+      "rank_hist_B": {
+        "0": 0,
+        "1": 17,
+        "2": 6,
+        "3": 0
+      },
+      "rank_hist_C": {
+        "0": 0,
+        "1": 17,
+        "2": 6,
+        "3": 0
+      },
+      "rank_sum_A": 30,
+      "rank_sum_B": 29,
+      "rank_sum_C": 29,
+      "tensor_diff": 0,
+      "terms": 23
+    },
+    {
+      "exact_over_F2": true,
+      "label": "research_record_validation_cn122_rank23",
+      "product_rank_sum": 57,
+      "rank_hist_A": {
+        "0": 0,
+        "1": 14,
+        "2": 9,
+        "3": 0
+      },
+      "rank_hist_B": {
+        "0": 0,
+        "1": 19,
+        "2": 4,
+        "3": 0
+      },
+      "rank_hist_C": {
+        "0": 0,
+        "1": 18,
+        "2": 5,
+        "3": 0
+      },
+      "rank_sum_A": 32,
+      "rank_sum_B": 27,
+      "rank_sum_C": 28,
+      "tensor_diff": 0,
+      "terms": 23
+    }
+  ],
+  "matmul_A_split_rank_by_n": {
+    "2": {
+      "n_cubed": 8,
+      "rank_F2": 8,
+      "shape": [
+        8,
+        8
+      ]
+    },
+    "3": {
+      "n_cubed": 27,
+      "rank_F2": 27,
+      "shape": [
+        27,
+        27
+      ]
+    },
+    "4": {
+      "n_cubed": 64,
+      "rank_F2": 64,
+      "shape": [
+        64,
+        64
+      ]
+    }
+  },
+  "quotient_flattening": {
+    "rank1": {
+      "nnz": 24,
+      "phi_BC_rank": 3,
+      "phi_BC_shape": [
+        24,
+        27
+      ],
+      "phi_B_rank": 24,
+      "phi_B_shape": [
+        27,
+        24
+      ],
+      "phi_C_rank": 24,
+      "phi_C_shape": [
+        24,
+        27
+      ],
+      "pivot": 1,
+      "pivot_matrix_rank": 1,
+      "slice_ranks": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    "rank2": {
+      "nnz": 27,
+      "phi_BC_rank": 3,
+      "phi_BC_shape": [
+        24,
+        27
+      ],
+      "phi_B_rank": 24,
+      "phi_B_shape": [
+        27,
+        24
+      ],
+      "phi_C_rank": 24,
+      "phi_C_shape": [
+        24,
+        27
+      ],
+      "pivot": 17,
+      "pivot_matrix_rank": 2,
+      "slice_ranks": [
+        6,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    "rank3": {
+      "nnz": 30,
+      "phi_BC_rank": 3,
+      "phi_BC_shape": [
+        24,
+        27
+      ],
+      "phi_B_rank": 24,
+      "phi_B_shape": [
+        27,
+        24
+      ],
+      "phi_C_rank": 24,
+      "phi_C_shape": [
+        24,
+        27
+      ],
+      "pivot": 273,
+      "pivot_matrix_rank": 3,
+      "slice_ranks": [
+        6,
+        3,
+        3,
+        3,
+        6,
+        3,
+        3,
+        3
+      ]
+    }
+  },
+  "quotient_scheme_controls": [],
+  "t333_slot_flattening": {
+    "A": {
+      "is_permutation": true,
+      "rank_F2": 27,
+      "shape": [
+        27,
+        27
+      ]
+    },
+    "B": {
+      "is_permutation": true,
+      "rank_F2": 27,
+      "shape": [
+        27,
+        27
+      ]
+    },
+    "C": {
+      "is_permutation": true,
+      "rank_F2": 27,
+      "shape": [
+        27,
+        27
+      ]
+    }
+  },
+  "t333_three_slot_split": {
+    "rank_F2": 27,
+    "shape": [
+      27,
+      27
+    ]
+  }
+}

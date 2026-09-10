@@ -1,0 +1,219 @@
+{
+  "build_sec": 64.054,
+  "certificate_cut_summary": {
+    "aux_vars": 140,
+    "certificate_count": 17,
+    "guard_sizes": [
+      10,
+      5,
+      10,
+      5,
+      6,
+      4,
+      6,
+      9,
+      7,
+      5,
+      6,
+      11,
+      5,
+      6,
+      4,
+      4,
+      8
+    ],
+    "guarded_parity_cuts": 17,
+    "local_inconsistent_cuts": 104
+  },
+  "complete_core_table_meta": {
+    "by_dim8": {
+      "0": 1,
+      "1": 255,
+      "2": 10795,
+      "3": 97155,
+      "4": 200787,
+      "5": 97155,
+      "6": 10795,
+      "7": 255,
+      "8": 1
+    },
+    "by_full_lut_L": {
+      "0": 1,
+      "11": 865,
+      "12": 61232,
+      "13": 8130,
+      "14": 81540,
+      "15": 138902,
+      "16": 83046,
+      "17": 34664,
+      "18": 687,
+      "19": 1,
+      "3": 33,
+      "6": 578,
+      "9": 7520
+    },
+    "constraint_count": 417199,
+    "elapsed_sec": 36.036
+  },
+  "contraction_lower_bounds": 255,
+  "core": "E11 quotient core",
+  "elapsed_sec": 245.1,
+  "field": "F2",
+  "hint_added": true,
+  "initial_threshold_rows": 257299,
+  "initial_threshold_rows_by_L": {
+    "15": 138902,
+    "16": 83046,
+    "17": 34664,
+    "18": 687
+  },
+  "local_trace_cut_size_hist": {},
+  "local_trace_cuts": 0,
+  "meaning": "Adaptive support search with point-level Wang rows, transported overlap cuts, and full stabilizer orbit closures of low-L violated rows from selected seeds.",
+  "orbit_rows_added_beyond_threshold": 1032,
+  "overlap_cut_count": 1152,
+  "overlap_source": "data/transported_overlap/transported_overlap_analysis.json",
+  "parameters": {
+    "cert_cuts": true,
+    "hint_source": "data/transported_overlap/overlap_cut_separator_L15_cert_3r_180s.json",
+    "max_rounds": 2,
+    "max_size5_cuts": null,
+    "overlap_max": 15,
+    "seed": 5521,
+    "seeds": "base,L15",
+    "solver_time": 180.0,
+    "threshold_L": 15,
+    "trace_cuts": "none",
+    "workers": 8
+  },
+  "rank_s": 19,
+  "rounds": [
+    {
+      "round": 0,
+      "solve_sec": 181.046,
+      "status": "UNKNOWN"
+    }
+  ],
+  "schema": "orbit_closed_separator_v1",
+  "seed_profiles": [
+    {
+      "A_cols": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        20,
+        24,
+        31,
+        32,
+        36,
+        64,
+        73,
+        109,
+        127,
+        128,
+        141,
+        160,
+        182,
+        219
+      ],
+      "name": "base",
+      "seed_violation_keys": [
+        4417508755461,
+        4436873709717,
+        4456163313813,
+        4456163387397,
+        6635867678725,
+        7748268402853,
+        2263933239429158,
+        2823584649578518,
+        3389833137899526
+      ],
+      "source": "analysis/54 base",
+      "violation_count": 9,
+      "violations_by_L": {
+        "12": 9
+      },
+      "violations_by_dim8": {
+        "5": 6,
+        "6": 3
+      }
+    },
+    {
+      "A_cols": [
+        2,
+        3,
+        16,
+        20,
+        24,
+        28,
+        31,
+        65,
+        72,
+        96,
+        97,
+        108,
+        114,
+        130,
+        146,
+        159,
+        162,
+        216,
+        252
+      ],
+      "name": "L15_overlap_round0",
+      "seed_violation_keys": [
+        1103874492613,
+        1103924922373,
+        2227012642837,
+        3324372584469,
+        3326520076309,
+        3358803372037,
+        6635863419061,
+        7748264200197,
+        1130332452038806,
+        1131449139398662,
+        1140230220974102,
+        1693299585386502,
+        1693299614746774,
+        1694364670371846,
+        1694366813653014,
+        1694384064571526,
+        1703178010101782,
+        1703178026919958,
+        3386534607202358,
+        3387634118830118,
+        3388733630457878,
+        3389833142085638,
+        3949480269842438,
+        3950581924767798,
+        3950581928962054,
+        3951683588081670,
+        3952785242990614,
+        3952785247201286
+      ],
+      "source": "data/transported_overlap/overlap_cut_separator_L15_cert_3r_180s.json",
+      "violation_count": 28,
+      "violations_by_L": {
+        "12": 26,
+        "14": 2
+      },
+      "violations_by_dim8": {
+        "5": 8,
+        "6": 20
+      }
+    }
+  ],
+  "seed_violation_key_count": 37,
+  "total_rows_initial_after_orbit_closure": 258331,
+  "violation_orbit_closure_by_L": {
+    "12": 1008,
+    "14": 24
+  },
+  "violation_orbit_closure_by_dim8": {
+    "5": 432,
+    "6": 600
+  },
+  "violation_orbit_closure_key_count": 1032
+}

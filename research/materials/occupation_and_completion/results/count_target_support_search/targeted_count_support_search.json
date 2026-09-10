@@ -1,0 +1,454 @@
+{
+  "complete_meta": {
+    "by_dim8": {
+      "0": 1,
+      "1": 255,
+      "2": 10795,
+      "3": 97155,
+      "4": 200787,
+      "5": 97155,
+      "6": 10795,
+      "7": 255,
+      "8": 1
+    },
+    "by_full_lut_L": {
+      "0": 1,
+      "11": 865,
+      "12": 61232,
+      "13": 8130,
+      "14": 81540,
+      "15": 138902,
+      "16": 83046,
+      "17": 34664,
+      "18": 687,
+      "19": 1,
+      "3": 33,
+      "6": 578,
+      "9": 7520
+    },
+    "constraint_count": 417199,
+    "elapsed_sec": 36.218
+  },
+  "core": "E11 quotient distinct projected-A branch",
+  "elapsed_sec": 1055.024,
+  "field": "F2",
+  "lut_coverage_ok": true,
+  "meaning": "Point-level CP-SAT search for actual distinct 19-direction E11 A-supports under targeted orbit counts. Solver statuses are not mathematical proof unless separately certified; any found support is fully rescanned and locally checked.",
+  "overlap_meta": {
+    "base_support": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      20,
+      24,
+      31,
+      32,
+      36,
+      64,
+      73,
+      109,
+      127,
+      128,
+      141,
+      160,
+      182,
+      219
+    ],
+    "center_count_in_file": 1152,
+    "center_count_used": 1152,
+    "certified_overlap_cut": {
+      "d3_cnf_sha256": "a2cfc55f4e3faf27291bb3631de8f73de3a71a528d3af1639238bbbdcdae74b9",
+      "d3_drat_sha256": "21e1d03b0f109fcab8d33b8eb2bcfe681e8dde7eecd8ee5b043fb380e65e6f9f",
+      "d3_drat_trim_verified": true,
+      "d3_meta_path": "data/neighborhood_repair/cnf/current_support_repair_d3.meta.json",
+      "d3_status_path": "data/neighborhood_repair/cnf/current_support_repair_d3.status.json",
+      "d_certified": 3,
+      "excluded_condition": "|S'∩gS| >= 16",
+      "linear_cut": "sum_{p in gS} x_p <= 15",
+      "overlap_max": 15
+    },
+    "group": {
+      "base_support_stabilizer_size_in_generated_group": 1,
+      "orbit_size_from_stabilizer": 1152,
+      "permutation_count": 1152,
+      "unique_transported_center_count": 1152
+    },
+    "source": "data/transported_overlap/transported_overlap_analysis.json"
+  },
+  "parameters": {
+    "counts": [
+      [
+        0,
+        0,
+        3,
+        5,
+        4,
+        7
+      ],
+      [
+        1,
+        0,
+        3,
+        6,
+        2,
+        7
+      ],
+      [
+        1,
+        0,
+        4,
+        5,
+        2,
+        7
+      ],
+      [
+        3,
+        0,
+        15,
+        1,
+        0,
+        0
+      ]
+    ],
+    "include_contractions": true,
+    "include_faces": true,
+    "include_overlap": true,
+    "max_face_cuts": null,
+    "objective": "random",
+    "seed": 700070,
+    "solver_time": 240.0,
+    "workers": 8
+  },
+  "point_orbit_sizes": [
+    6,
+    9,
+    36,
+    72,
+    36,
+    96
+  ],
+  "results": [
+    {
+      "build_sec": 15.685,
+      "constraints": {
+        "complete_wang": {
+          "by_L": {
+            "0": 1,
+            "11": 865,
+            "12": 61232,
+            "13": 8130,
+            "14": 81540,
+            "15": 138900,
+            "16": 82521,
+            "17": 34658,
+            "18": 438,
+            "3": 33,
+            "6": 578,
+            "9": 7520
+          },
+          "by_cap": {
+            "1": 438,
+            "10": 7520,
+            "13": 578,
+            "16": 33,
+            "19": 1,
+            "2": 34658,
+            "3": 82521,
+            "4": 138900,
+            "5": 81540,
+            "6": 8130,
+            "7": 61232,
+            "8": 865
+          },
+          "by_dim8": {
+            "2": 10268,
+            "3": 97155,
+            "4": 200787,
+            "5": 97155,
+            "6": 10795,
+            "7": 255,
+            "8": 1
+          },
+          "rows_added": 416416,
+          "skipped_trivial": 783
+        },
+        "contraction_lower_bounds": 255,
+        "contraction_rank_hist": {
+          "3": 33,
+          "6": 150,
+          "9": 72
+        },
+        "fixed_count_equalities": 6,
+        "overlap_cuts": 1152,
+        "transported_face_cuts": 3456
+      },
+      "elapsed_sec": 257.557,
+      "n": [
+        0,
+        0,
+        3,
+        5,
+        4,
+        7
+      ],
+      "solve_sec": 241.873,
+      "status": "UNKNOWN",
+      "used_hint": {
+        "complete_violations": 2047,
+        "name": "Lge18",
+        "points": [
+          22,
+          23,
+          24,
+          49,
+          51,
+          76,
+          77,
+          78,
+          103,
+          104,
+          130,
+          131,
+          157,
+          184,
+          185,
+          211,
+          212,
+          238,
+          239
+        ]
+      }
+    },
+    {
+      "build_sec": 15.741,
+      "constraints": {
+        "complete_wang": {
+          "by_L": {
+            "0": 1,
+            "11": 865,
+            "12": 61232,
+            "13": 8130,
+            "14": 81540,
+            "15": 138900,
+            "16": 82521,
+            "17": 34658,
+            "18": 438,
+            "3": 33,
+            "6": 578,
+            "9": 7520
+          },
+          "by_cap": {
+            "1": 438,
+            "10": 7520,
+            "13": 578,
+            "16": 33,
+            "19": 1,
+            "2": 34658,
+            "3": 82521,
+            "4": 138900,
+            "5": 81540,
+            "6": 8130,
+            "7": 61232,
+            "8": 865
+          },
+          "by_dim8": {
+            "2": 10268,
+            "3": 97155,
+            "4": 200787,
+            "5": 97155,
+            "6": 10795,
+            "7": 255,
+            "8": 1
+          },
+          "rows_added": 416416,
+          "skipped_trivial": 783
+        },
+        "contraction_lower_bounds": 255,
+        "contraction_rank_hist": {
+          "3": 33,
+          "6": 150,
+          "9": 72
+        },
+        "fixed_count_equalities": 6,
+        "overlap_cuts": 1152,
+        "transported_face_cuts": 3456
+      },
+      "elapsed_sec": 243.791,
+      "n": [
+        1,
+        0,
+        3,
+        6,
+        2,
+        7
+      ],
+      "solve_sec": 228.05,
+      "status": "UNKNOWN",
+      "used_hint": null
+    },
+    {
+      "build_sec": 16.051,
+      "constraints": {
+        "complete_wang": {
+          "by_L": {
+            "0": 1,
+            "11": 865,
+            "12": 61232,
+            "13": 8130,
+            "14": 81540,
+            "15": 138900,
+            "16": 82521,
+            "17": 34658,
+            "18": 438,
+            "3": 33,
+            "6": 578,
+            "9": 7520
+          },
+          "by_cap": {
+            "1": 438,
+            "10": 7520,
+            "13": 578,
+            "16": 33,
+            "19": 1,
+            "2": 34658,
+            "3": 82521,
+            "4": 138900,
+            "5": 81540,
+            "6": 8130,
+            "7": 61232,
+            "8": 865
+          },
+          "by_dim8": {
+            "2": 10268,
+            "3": 97155,
+            "4": 200787,
+            "5": 97155,
+            "6": 10795,
+            "7": 255,
+            "8": 1
+          },
+          "rows_added": 416416,
+          "skipped_trivial": 783
+        },
+        "contraction_lower_bounds": 255,
+        "contraction_rank_hist": {
+          "3": 33,
+          "6": 150,
+          "9": 72
+        },
+        "fixed_count_equalities": 6,
+        "overlap_cuts": 1152,
+        "transported_face_cuts": 3456
+      },
+      "elapsed_sec": 254.668,
+      "n": [
+        1,
+        0,
+        4,
+        5,
+        2,
+        7
+      ],
+      "solve_sec": 238.617,
+      "status": "UNKNOWN",
+      "used_hint": null
+    },
+    {
+      "build_sec": 15.922,
+      "constraints": {
+        "complete_wang": {
+          "by_L": {
+            "0": 1,
+            "11": 865,
+            "12": 61232,
+            "13": 8130,
+            "14": 81540,
+            "15": 138900,
+            "16": 82521,
+            "17": 34658,
+            "18": 438,
+            "3": 33,
+            "6": 578,
+            "9": 7520
+          },
+          "by_cap": {
+            "1": 438,
+            "10": 7520,
+            "13": 578,
+            "16": 33,
+            "19": 1,
+            "2": 34658,
+            "3": 82521,
+            "4": 138900,
+            "5": 81540,
+            "6": 8130,
+            "7": 61232,
+            "8": 865
+          },
+          "by_dim8": {
+            "2": 10268,
+            "3": 97155,
+            "4": 200787,
+            "5": 97155,
+            "6": 10795,
+            "7": 255,
+            "8": 1
+          },
+          "rows_added": 416416,
+          "skipped_trivial": 783
+        },
+        "contraction_lower_bounds": 255,
+        "contraction_rank_hist": {
+          "3": 33,
+          "6": 150,
+          "9": 72
+        },
+        "fixed_count_equalities": 6,
+        "overlap_cuts": 1152,
+        "transported_face_cuts": 3456
+      },
+      "elapsed_sec": 256.701,
+      "n": [
+        3,
+        0,
+        15,
+        1,
+        0,
+        0
+      ],
+      "solve_sec": 240.778,
+      "status": "UNKNOWN",
+      "used_hint": {
+        "complete_violations": 10,
+        "name": "Lge15",
+        "points": [
+          4,
+          8,
+          9,
+          22,
+          24,
+          27,
+          32,
+          36,
+          72,
+          73,
+          96,
+          128,
+          130,
+          131,
+          160,
+          180,
+          195,
+          216,
+          219
+        ]
+      }
+    }
+  ],
+  "schema": "count_target_support_search_v1",
+  "status_counts": {
+    "UNKNOWN": 4
+  }
+}

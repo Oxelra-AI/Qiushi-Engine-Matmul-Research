@@ -1,0 +1,169 @@
+{
+  "base_metadata": "workspace/data/matching/k5_batch/idx014/base_metadata.json",
+  "branch": "matching",
+  "candidate_kind": "higher_rank_only",
+  "drat": "workspace/data/matching/k5_batch/idx014/final.drat",
+  "drat_cadical_exit": 20,
+  "drat_cadical_sec": 6.89,
+  "drat_sha256": "a75a1e0b411fc912e9f427d437066fe8eb7a7dcf66a19e5e0196a9a4661dff14",
+  "drat_trim": {
+    "elapsed_sec": 9.938904047012329,
+    "exit": 0,
+    "verified": true
+  },
+  "final_clauses": 42967,
+  "final_cnf": "workspace/data/matching/k5_batch/idx014/final.cnf",
+  "final_cnf_sha256": "3926713aefa8aaed85d8ecf1b260bd68c1aa8453833f5c82ad7108e1ff021a2d",
+  "final_variables": 4634,
+  "fixed_prefix": [
+    1,
+    16,
+    27,
+    256,
+    432
+  ],
+  "idx": 14,
+  "k": 5,
+  "learned_by_residual": {
+    "10": 12,
+    "11": 8,
+    "12": 1,
+    "2": 8920,
+    "3": 12452,
+    "4": 2912,
+    "5": 2458,
+    "6": 1178,
+    "7": 540,
+    "8": 131,
+    "9": 46
+  },
+  "learned_by_source": {
+    "full_row_direct": 20008,
+    "witness_subset": 8650
+  },
+  "learned_clause_count": 28658,
+  "learned_clause_provenance": "workspace/data/matching/k5_batch/idx014/learned_clauses.jsonl",
+  "learned_clause_provenance_sha256": "47d7c03647e3e1d33c426898e7ae6c88295e4e6eb6fcdd4f943e34f6862e329b",
+  "orbit_size": 288,
+  "round_log": [
+    {
+      "cadical_exit": 10,
+      "cadical_sec": 0.13,
+      "cheap_full_rows_used": 724,
+      "clauses": 14309,
+      "cnf": "workspace/data/matching/k5_batch/idx014/round000.cnf",
+      "lut_violations": 6597,
+      "max_excess": 4,
+      "model_size": 15,
+      "new_by_residual": {
+        "10": 4,
+        "11": 4,
+        "2": 2369,
+        "3": 4037,
+        "4": 935,
+        "5": 762,
+        "6": 354,
+        "7": 167,
+        "8": 43,
+        "9": 14
+      },
+      "new_by_source": {
+        "full_row_direct": 5940,
+        "witness_subset": 2749
+      },
+      "new_clauses": 8689,
+      "result": "SAT_SEPARATED",
+      "round": 0,
+      "skipped_budget": 0,
+      "skipped_duplicate": 4312,
+      "support_size": 20,
+      "variables": 4634,
+      "witness_rows_used": 2749
+    },
+    {
+      "cadical_exit": 10,
+      "cadical_sec": 1.09,
+      "cheap_full_rows_used": 1035,
+      "clauses": 22998,
+      "cnf": "workspace/data/matching/k5_batch/idx014/round001.cnf",
+      "lut_violations": 10165,
+      "max_excess": 4,
+      "model_size": 15,
+      "new_by_residual": {
+        "10": 5,
+        "11": 3,
+        "12": 1,
+        "2": 3693,
+        "3": 4700,
+        "4": 921,
+        "5": 819,
+        "6": 445,
+        "7": 224,
+        "8": 53,
+        "9": 19
+      },
+      "new_by_source": {
+        "full_row_direct": 8007,
+        "witness_subset": 2876
+      },
+      "new_clauses": 10883,
+      "result": "SAT_SEPARATED",
+      "round": 1,
+      "skipped_budget": 0,
+      "skipped_duplicate": 8432,
+      "support_size": 20,
+      "variables": 4634,
+      "witness_rows_used": 2876
+    },
+    {
+      "cadical_exit": 10,
+      "cadical_sec": 6.25,
+      "cheap_full_rows_used": 738,
+      "clauses": 33881,
+      "cnf": "workspace/data/matching/k5_batch/idx014/round002.cnf",
+      "lut_violations": 7008,
+      "max_excess": 4,
+      "model_size": 15,
+      "new_by_residual": {
+        "10": 3,
+        "11": 1,
+        "2": 2858,
+        "3": 3715,
+        "4": 1056,
+        "5": 877,
+        "6": 379,
+        "7": 149,
+        "8": 35,
+        "9": 13
+      },
+      "new_by_source": {
+        "full_row_direct": 6061,
+        "witness_subset": 3025
+      },
+      "new_clauses": 9086,
+      "result": "SAT_SEPARATED",
+      "round": 2,
+      "skipped_budget": 0,
+      "skipped_duplicate": 4908,
+      "support_size": 20,
+      "variables": 4634,
+      "witness_rows_used": 3025
+    },
+    {
+      "cadical_exit": 20,
+      "cadical_sec": 7.02,
+      "clauses": 42967,
+      "cnf": "workspace/data/matching/k5_batch/idx014/round003.cnf",
+      "result": "UNSAT",
+      "round": 3,
+      "variables": 4634
+    }
+  ],
+  "rounds": 4,
+  "schema": "witness_subset_result_v1",
+  "seed_learned_jsonl": null,
+  "seeded_clause_count": 0,
+  "status": "UNSAT",
+  "survivor_count": 164,
+  "target": 15
+}

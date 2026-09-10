@@ -1,0 +1,58 @@
+{
+  "records": [
+    {
+      "idx": 25,
+      "k": 6,
+      "matching": [
+        1,
+        16,
+        27,
+        256,
+        360,
+        438
+      ],
+      "round_log": [
+        {
+          "cadical_exit": 10,
+          "cadical_sec": 0.48,
+          "clauses": 23583,
+          "elapsed_sec": 56.69,
+          "lut_violations": 10105,
+          "max_excess": 6,
+          "model_size": 14,
+          "new_aux_clauses": 1726269,
+          "new_by_residual": {
+            "2": 1115,
+            "3": 3046,
+            "4": 3284,
+            "5": 1719,
+            "6": 581,
+            "7": 199,
+            "8": 57,
+            "9": 18,
+            "10": 9,
+            "11": 1,
+            "12": 2
+          },
+          "new_constraints": 10031,
+          "new_direct_clauses": 8992064,
+          "result": "SAT_SEPARATED",
+          "round": 0,
+          "variables": 3584
+        },
+        {
+          "cadical_exit": 0,
+          "cadical_sec": 120.19,
+          "clauses": 10741916,
+          "result": "UNKNOWN_OR_NO_MODEL",
+          "round": 1,
+          "variables": 797448
+        }
+      ],
+      "rounds": 2,
+      "status": "SOLVER_UNKNOWN",
+      "total_elapsed_sec": 199.99
+    }
+  ],
+  "schema": "iterative_separation_v1"
+}

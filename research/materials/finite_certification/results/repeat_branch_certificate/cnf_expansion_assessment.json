@@ -1,0 +1,1597 @@
+{
+  "capacity_two_points": [
+    1,
+    2,
+    3,
+    4,
+    32,
+    36
+  ],
+  "cardinality_encoding": "seqcounter",
+  "compact_fixed_repeat_qcut_pb_estimate": {
+    "distinct_pb_classes": 17,
+    "estimated_qcut_aux_variables_if_expanded_independently": 642340,
+    "estimated_qcut_clauses": 1229292,
+    "largest_clause_contributors": [
+      {
+        "aux_each": 2840,
+        "bound": 15,
+        "clauses_each": 5459,
+        "count": 64,
+        "kind": "pb",
+        "weight_hist": {
+          "1": 164,
+          "2": 65
+        }
+      },
+      {
+        "aux_each": 2810,
+        "bound": 15,
+        "clauses_each": 5401,
+        "count": 48,
+        "kind": "pb",
+        "weight_hist": {
+          "1": 162,
+          "2": 65
+        }
+      },
+      {
+        "aux_each": 2241,
+        "bound": 12,
+        "clauses_each": 4263,
+        "count": 28,
+        "kind": "pb",
+        "weight_hist": {
+          "1": 162,
+          "2": 64
+        }
+      },
+      {
+        "aux_each": 2456,
+        "bound": 13,
+        "clauses_each": 4692,
+        "count": 24,
+        "kind": "pb",
+        "weight_hist": {
+          "1": 162,
+          "2": 65
+        }
+      },
+      {
+        "aux_each": 2818,
+        "bound": 15,
+        "clauses_each": 5416,
+        "count": 12,
+        "kind": "pb",
+        "weight_hist": {
+          "1": 162,
+          "2": 66
+        }
+      },
+      {
+        "aux_each": 2832,
+        "bound": 15,
+        "clauses_each": 5444,
+        "count": 8,
+        "kind": "pb",
+        "weight_hist": {
+          "1": 164,
+          "2": 64
+        }
+      },
+      {
+        "aux_each": 2469,
+        "bound": 13,
+        "clauses_each": 4717,
+        "count": 8,
+        "kind": "pb",
+        "weight_hist": {
+          "1": 163,
+          "2": 65
+        }
+      },
+      {
+        "aux_each": 2423,
+        "bound": 13,
+        "clauses_each": 4629,
+        "count": 8,
+        "kind": "pb",
+        "weight_hist": {
+          "1": 160,
+          "2": 64
+        }
+      },
+      {
+        "aux_each": 2253,
+        "bound": 12,
+        "clauses_each": 4286,
+        "count": 8,
+        "kind": "pb",
+        "weight_hist": {
+          "1": 163,
+          "2": 64
+        }
+      },
+      {
+        "aux_each": 2247,
+        "bound": 12,
+        "clauses_each": 4274,
+        "count": 8,
+        "kind": "pb",
+        "weight_hist": {
+          "1": 162,
+          "2": 65
+        }
+      },
+      {
+        "aux_each": 2080,
+        "bound": 11,
+        "clauses_each": 3941,
+        "count": 8,
+        "kind": "pb",
+        "weight_hist": {
+          "1": 161,
+          "2": 64
+        }
+      },
+      {
+        "aux_each": 2069,
+        "bound": 11,
+        "clauses_each": 3920,
+        "count": 8,
+        "kind": "pb",
+        "weight_hist": {
+          "1": 160,
+          "2": 64
+        }
+      },
+      {
+        "aux_each": 2826,
+        "bound": 15,
+        "clauses_each": 5431,
+        "count": 4,
+        "kind": "pb",
+        "weight_hist": {
+          "1": 162,
+          "2": 67
+        }
+      },
+      {
+        "aux_each": 1890,
+        "bound": 10,
+        "clauses_each": 3559,
+        "count": 4,
+        "kind": "pb",
+        "weight_hist": {
+          "1": 163,
+          "2": 64
+        }
+      },
+      {
+        "aux_each": 1860,
+        "bound": 10,
+        "clauses_each": 3502,
+        "count": 4,
+        "kind": "pb",
+        "weight_hist": {
+          "1": 160,
+          "2": 64
+        }
+      },
+      {
+        "aux_each": 1728,
+        "bound": 9,
+        "clauses_each": 3235,
+        "count": 4,
+        "kind": "pb",
+        "weight_hist": {
+          "1": 162,
+          "2": 64
+        }
+      },
+      {
+        "aux_each": 1498,
+        "bound": 8,
+        "clauses_each": 2777,
+        "count": 4,
+        "kind": "pb",
+        "weight_hist": {
+          "1": 160,
+          "2": 64
+        }
+      }
+    ],
+    "unique_qcuts": 252
+  },
+  "complete_core_table_meta": {
+    "by_dim8": {
+      "0": 1,
+      "1": 255,
+      "2": 10795,
+      "3": 97155,
+      "4": 200787,
+      "5": 97155,
+      "6": 10795,
+      "7": 255,
+      "8": 1
+    },
+    "by_full_lut_L": {
+      "0": 1,
+      "11": 865,
+      "12": 61232,
+      "13": 8130,
+      "14": 81540,
+      "15": 138902,
+      "16": 83046,
+      "17": 34664,
+      "18": 687,
+      "19": 1,
+      "3": 33,
+      "6": 578,
+      "9": 7520
+    },
+    "constraint_count": 417199,
+    "elapsed_sec": 36.607
+  },
+  "core": "E11",
+  "elapsed_sec": 46.653,
+  "field": "F2",
+  "interpretation": "Full-table proof-producing SAT is not small merely because the ILP has 255 integer variables: cardinality expansion scales over hundreds of thousands of overlapping rows. The compact learned-row fixed-repeat CNF is the present proof target; full-table encoding should be attempted only with this expansion cost in view or with a stronger proof system/row-selection strategy.",
+  "pb_encoding": "best",
+  "point_cap_distribution": {
+    "1": 249,
+    "2": 6
+  },
+  "rank_s": 19,
+  "scenarios": [
+    {
+      "distinct_length_bound_classes": 57,
+      "estimated_wang_aux_variables_if_expanded_independently": 129340,
+      "estimated_wang_clauses": 290434,
+      "fixed_counts": {
+        "1": 2
+      },
+      "largest_classes": [
+        {
+          "aux_each": 0,
+          "bound": 2,
+          "clauses_each": 1,
+          "count": 9272,
+          "kind": "encoded",
+          "n_lits": 3
+        },
+        {
+          "aux_each": 4,
+          "bound": 2,
+          "clauses_each": 8,
+          "count": 466,
+          "kind": "encoded",
+          "n_lits": 4
+        },
+        {
+          "aux_each": 2,
+          "bound": 1,
+          "clauses_each": 5,
+          "count": 441,
+          "kind": "encoded",
+          "n_lits": 3
+        },
+        {
+          "aux_each": 0,
+          "bound": 3,
+          "clauses_each": 0,
+          "count": 336,
+          "kind": "taut",
+          "n_lits": 3
+        },
+        {
+          "aux_each": 48,
+          "bound": 4,
+          "clauses_each": 104,
+          "count": 257,
+          "kind": "encoded",
+          "n_lits": 16
+        },
+        {
+          "aux_each": 0,
+          "bound": 1,
+          "clauses_each": 0,
+          "count": 249,
+          "kind": "taut",
+          "n_lits": 1
+        },
+        {
+          "aux_each": 0,
+          "bound": 3,
+          "clauses_each": 1,
+          "count": 150,
+          "kind": "encoded",
+          "n_lits": 4
+        },
+        {
+          "aux_each": 112,
+          "bound": 4,
+          "clauses_each": 248,
+          "count": 147,
+          "kind": "encoded",
+          "n_lits": 32
+        },
+        {
+          "aux_each": 26,
+          "bound": 2,
+          "clauses_each": 63,
+          "count": 94,
+          "kind": "encoded",
+          "n_lits": 15
+        },
+        {
+          "aux_each": 0,
+          "bound": 0,
+          "clauses_each": 2,
+          "count": 93,
+          "kind": "units",
+          "n_lits": 2
+        },
+        {
+          "aux_each": 52,
+          "bound": 4,
+          "clauses_each": 113,
+          "count": 80,
+          "kind": "encoded",
+          "n_lits": 17
+        },
+        {
+          "aux_each": 116,
+          "bound": 4,
+          "clauses_each": 257,
+          "count": 52,
+          "kind": "encoded",
+          "n_lits": 33
+        },
+        {
+          "aux_each": 399,
+          "bound": 7,
+          "clauses_each": 848,
+          "count": 51,
+          "kind": "encoded",
+          "n_lits": 64
+        },
+        {
+          "aux_each": 58,
+          "bound": 2,
+          "clauses_each": 143,
+          "count": 50,
+          "kind": "encoded",
+          "n_lits": 31
+        },
+        {
+          "aux_each": 24,
+          "bound": 2,
+          "clauses_each": 58,
+          "count": 46,
+          "kind": "encoded",
+          "n_lits": 14
+        },
+        {
+          "aux_each": 135,
+          "bound": 5,
+          "clauses_each": 292,
+          "count": 36,
+          "kind": "encoded",
+          "n_lits": 32
+        },
+        {
+          "aux_each": 189,
+          "bound": 7,
+          "clauses_each": 398,
+          "count": 32,
+          "kind": "encoded",
+          "n_lits": 34
+        },
+        {
+          "aux_each": 0,
+          "bound": 1,
+          "clauses_each": 1,
+          "count": 30,
+          "kind": "encoded",
+          "n_lits": 2
+        },
+        {
+          "aux_each": 290,
+          "bound": 5,
+          "clauses_each": 633,
+          "count": 30,
+          "kind": "encoded",
+          "n_lits": 63
+        },
+        {
+          "aux_each": 56,
+          "bound": 2,
+          "clauses_each": 138,
+          "count": 28,
+          "kind": "encoded",
+          "n_lits": 30
+        }
+      ],
+      "largest_clause_contributors": [
+        {
+          "aux_each": 399,
+          "bound": 7,
+          "clauses_each": 848,
+          "count": 51,
+          "kind": "encoded",
+          "n_lits": 64
+        },
+        {
+          "aux_each": 112,
+          "bound": 4,
+          "clauses_each": 248,
+          "count": 147,
+          "kind": "encoded",
+          "n_lits": 32
+        },
+        {
+          "aux_each": 48,
+          "bound": 4,
+          "clauses_each": 104,
+          "count": 257,
+          "kind": "encoded",
+          "n_lits": 16
+        },
+        {
+          "aux_each": 406,
+          "bound": 7,
+          "clauses_each": 863,
+          "count": 27,
+          "kind": "encoded",
+          "n_lits": 65
+        },
+        {
+          "aux_each": 290,
+          "bound": 5,
+          "clauses_each": 633,
+          "count": 30,
+          "kind": "encoded",
+          "n_lits": 63
+        },
+        {
+          "aux_each": 116,
+          "bound": 4,
+          "clauses_each": 257,
+          "count": 52,
+          "kind": "encoded",
+          "n_lits": 33
+        },
+        {
+          "aux_each": 189,
+          "bound": 7,
+          "clauses_each": 398,
+          "count": 32,
+          "kind": "encoded",
+          "n_lits": 34
+        },
+        {
+          "aux_each": 392,
+          "bound": 7,
+          "clauses_each": 833,
+          "count": 14,
+          "kind": "encoded",
+          "n_lits": 63
+        },
+        {
+          "aux_each": 135,
+          "bound": 5,
+          "clauses_each": 292,
+          "count": 36,
+          "kind": "encoded",
+          "n_lits": 32
+        },
+        {
+          "aux_each": 0,
+          "bound": 2,
+          "clauses_each": 1,
+          "count": 9272,
+          "kind": "encoded",
+          "n_lits": 3
+        },
+        {
+          "aux_each": 52,
+          "bound": 4,
+          "clauses_each": 113,
+          "count": 80,
+          "kind": "encoded",
+          "n_lits": 17
+        },
+        {
+          "aux_each": 285,
+          "bound": 5,
+          "clauses_each": 622,
+          "count": 12,
+          "kind": "encoded",
+          "n_lits": 62
+        },
+        {
+          "aux_each": 58,
+          "bound": 2,
+          "clauses_each": 143,
+          "count": 50,
+          "kind": "encoded",
+          "n_lits": 31
+        },
+        {
+          "aux_each": 26,
+          "bound": 2,
+          "clauses_each": 63,
+          "count": 94,
+          "kind": "encoded",
+          "n_lits": 15
+        },
+        {
+          "aux_each": 140,
+          "bound": 5,
+          "clauses_each": 303,
+          "count": 16,
+          "kind": "encoded",
+          "n_lits": 33
+        },
+        {
+          "aux_each": 175,
+          "bound": 7,
+          "clauses_each": 368,
+          "count": 13,
+          "kind": "encoded",
+          "n_lits": 32
+        },
+        {
+          "aux_each": 56,
+          "bound": 2,
+          "clauses_each": 138,
+          "count": 28,
+          "kind": "encoded",
+          "n_lits": 30
+        },
+        {
+          "aux_each": 456,
+          "bound": 8,
+          "clauses_each": 961,
+          "count": 4,
+          "kind": "encoded",
+          "n_lits": 65
+        },
+        {
+          "aux_each": 448,
+          "bound": 8,
+          "clauses_each": 944,
+          "count": 4,
+          "kind": "encoded",
+          "n_lits": 64
+        },
+        {
+          "aux_each": 4,
+          "bound": 2,
+          "clauses_each": 8,
+          "count": 466,
+          "kind": "encoded",
+          "n_lits": 4
+        }
+      ],
+      "name": "compact_fixed_repeat_p1",
+      "skipped_counts": {
+        "tautological": 591
+      },
+      "token_variables_before_aux": 259,
+      "wang_rows": 12165
+    },
+    {
+      "distinct_length_bound_classes": 118,
+      "estimated_wang_aux_variables_if_expanded_independently": 29960356,
+      "estimated_wang_clauses": 63923442,
+      "fixed_counts": {
+        "1": 2
+      },
+      "largest_classes": [
+        {
+          "aux_each": 44,
+          "bound": 4,
+          "clauses_each": 95,
+          "count": 91728,
+          "kind": "encoded",
+          "n_lits": 15
+        },
+        {
+          "aux_each": 12,
+          "bound": 3,
+          "clauses_each": 25,
+          "count": 49656,
+          "kind": "encoded",
+          "n_lits": 7
+        },
+        {
+          "aux_each": 10,
+          "bound": 2,
+          "clauses_each": 23,
+          "count": 24819,
+          "kind": "encoded",
+          "n_lits": 7
+        },
+        {
+          "aux_each": 36,
+          "bound": 3,
+          "clauses_each": 81,
+          "count": 24744,
+          "kind": "encoded",
+          "n_lits": 15
+        },
+        {
+          "aux_each": 55,
+          "bound": 5,
+          "clauses_each": 116,
+          "count": 23252,
+          "kind": "encoded",
+          "n_lits": 16
+        },
+        {
+          "aux_each": 130,
+          "bound": 5,
+          "clauses_each": 281,
+          "count": 22428,
+          "kind": "encoded",
+          "n_lits": 31
+        },
+        {
+          "aux_each": 175,
+          "bound": 7,
+          "clauses_each": 368,
+          "count": 21820,
+          "kind": "encoded",
+          "n_lits": 32
+        },
+        {
+          "aux_each": 50,
+          "bound": 5,
+          "clauses_each": 105,
+          "count": 21180,
+          "kind": "encoded",
+          "n_lits": 15
+        },
+        {
+          "aux_each": 48,
+          "bound": 4,
+          "clauses_each": 104,
+          "count": 19962,
+          "kind": "encoded",
+          "n_lits": 16
+        },
+        {
+          "aux_each": 168,
+          "bound": 7,
+          "clauses_each": 353,
+          "count": 12120,
+          "kind": "encoded",
+          "n_lits": 31
+        },
+        {
+          "aux_each": 0,
+          "bound": 2,
+          "clauses_each": 1,
+          "count": 9272,
+          "kind": "encoded",
+          "n_lits": 3
+        },
+        {
+          "aux_each": 135,
+          "bound": 5,
+          "clauses_each": 292,
+          "count": 8520,
+          "kind": "encoded",
+          "n_lits": 32
+        },
+        {
+          "aux_each": 108,
+          "bound": 4,
+          "clauses_each": 239,
+          "count": 8256,
+          "kind": "encoded",
+          "n_lits": 31
+        },
+        {
+          "aux_each": 12,
+          "bound": 4,
+          "clauses_each": 23,
+          "count": 7488,
+          "kind": "encoded",
+          "n_lits": 7
+        },
+        {
+          "aux_each": 15,
+          "bound": 3,
+          "clauses_each": 32,
+          "count": 7320,
+          "kind": "encoded",
+          "n_lits": 8
+        },
+        {
+          "aux_each": 182,
+          "bound": 7,
+          "clauses_each": 383,
+          "count": 4968,
+          "kind": "encoded",
+          "n_lits": 33
+        },
+        {
+          "aux_each": 33,
+          "bound": 3,
+          "clauses_each": 74,
+          "count": 4584,
+          "kind": "encoded",
+          "n_lits": 14
+        },
+        {
+          "aux_each": 125,
+          "bound": 5,
+          "clauses_each": 270,
+          "count": 4364,
+          "kind": "encoded",
+          "n_lits": 30
+        },
+        {
+          "aux_each": 16,
+          "bound": 4,
+          "clauses_each": 32,
+          "count": 4180,
+          "kind": "encoded",
+          "n_lits": 8
+        },
+        {
+          "aux_each": 63,
+          "bound": 7,
+          "clauses_each": 128,
+          "count": 4080,
+          "kind": "encoded",
+          "n_lits": 16
+        }
+      ],
+      "largest_clause_contributors": [
+        {
+          "aux_each": 44,
+          "bound": 4,
+          "clauses_each": 95,
+          "count": 91728,
+          "kind": "encoded",
+          "n_lits": 15
+        },
+        {
+          "aux_each": 175,
+          "bound": 7,
+          "clauses_each": 368,
+          "count": 21820,
+          "kind": "encoded",
+          "n_lits": 32
+        },
+        {
+          "aux_each": 130,
+          "bound": 5,
+          "clauses_each": 281,
+          "count": 22428,
+          "kind": "encoded",
+          "n_lits": 31
+        },
+        {
+          "aux_each": 168,
+          "bound": 7,
+          "clauses_each": 353,
+          "count": 12120,
+          "kind": "encoded",
+          "n_lits": 31
+        },
+        {
+          "aux_each": 55,
+          "bound": 5,
+          "clauses_each": 116,
+          "count": 23252,
+          "kind": "encoded",
+          "n_lits": 16
+        },
+        {
+          "aux_each": 135,
+          "bound": 5,
+          "clauses_each": 292,
+          "count": 8520,
+          "kind": "encoded",
+          "n_lits": 32
+        },
+        {
+          "aux_each": 50,
+          "bound": 5,
+          "clauses_each": 105,
+          "count": 21180,
+          "kind": "encoded",
+          "n_lits": 15
+        },
+        {
+          "aux_each": 48,
+          "bound": 4,
+          "clauses_each": 104,
+          "count": 19962,
+          "kind": "encoded",
+          "n_lits": 16
+        },
+        {
+          "aux_each": 399,
+          "bound": 7,
+          "clauses_each": 848,
+          "count": 2400,
+          "kind": "encoded",
+          "n_lits": 64
+        },
+        {
+          "aux_each": 36,
+          "bound": 3,
+          "clauses_each": 81,
+          "count": 24744,
+          "kind": "encoded",
+          "n_lits": 15
+        },
+        {
+          "aux_each": 108,
+          "bound": 4,
+          "clauses_each": 239,
+          "count": 8256,
+          "kind": "encoded",
+          "n_lits": 31
+        },
+        {
+          "aux_each": 182,
+          "bound": 7,
+          "clauses_each": 383,
+          "count": 4968,
+          "kind": "encoded",
+          "n_lits": 33
+        },
+        {
+          "aux_each": 540,
+          "bound": 10,
+          "clauses_each": 1124,
+          "count": 1440,
+          "kind": "encoded",
+          "n_lits": 64
+        },
+        {
+          "aux_each": 550,
+          "bound": 10,
+          "clauses_each": 1145,
+          "count": 1272,
+          "kind": "encoded",
+          "n_lits": 65
+        },
+        {
+          "aux_each": 12,
+          "bound": 3,
+          "clauses_each": 25,
+          "count": 49656,
+          "kind": "encoded",
+          "n_lits": 7
+        },
+        {
+          "aux_each": 156,
+          "bound": 6,
+          "clauses_each": 332,
+          "count": 3660,
+          "kind": "encoded",
+          "n_lits": 32
+        },
+        {
+          "aux_each": 125,
+          "bound": 5,
+          "clauses_each": 270,
+          "count": 4364,
+          "kind": "encoded",
+          "n_lits": 30
+        },
+        {
+          "aux_each": 392,
+          "bound": 7,
+          "clauses_each": 833,
+          "count": 1248,
+          "kind": "encoded",
+          "n_lits": 63
+        },
+        {
+          "aux_each": 150,
+          "bound": 6,
+          "clauses_each": 319,
+          "count": 2592,
+          "kind": "encoded",
+          "n_lits": 31
+        },
+        {
+          "aux_each": 406,
+          "bound": 7,
+          "clauses_each": 863,
+          "count": 888,
+          "kind": "encoded",
+          "n_lits": 65
+        }
+      ],
+      "name": "full_fixed_repeat_p1",
+      "skipped_counts": {
+        "tautological": 592
+      },
+      "token_variables_before_aux": 259,
+      "wang_rows": 417198
+    },
+    {
+      "distinct_length_bound_classes": 85,
+      "estimated_wang_aux_variables_if_expanded_independently": 31189860,
+      "estimated_wang_clauses": 66324090,
+      "fixed_counts": {},
+      "largest_classes": [
+        {
+          "aux_each": 44,
+          "bound": 4,
+          "clauses_each": 95,
+          "count": 91728,
+          "kind": "encoded",
+          "n_lits": 15
+        },
+        {
+          "aux_each": 12,
+          "bound": 3,
+          "clauses_each": 25,
+          "count": 49608,
+          "kind": "encoded",
+          "n_lits": 7
+        },
+        {
+          "aux_each": 55,
+          "bound": 5,
+          "clauses_each": 116,
+          "count": 27504,
+          "kind": "encoded",
+          "n_lits": 16
+        },
+        {
+          "aux_each": 175,
+          "bound": 7,
+          "clauses_each": 368,
+          "count": 26184,
+          "kind": "encoded",
+          "n_lits": 32
+        },
+        {
+          "aux_each": 10,
+          "bound": 2,
+          "clauses_each": 23,
+          "count": 24720,
+          "kind": "encoded",
+          "n_lits": 7
+        },
+        {
+          "aux_each": 36,
+          "bound": 3,
+          "clauses_each": 81,
+          "count": 24000,
+          "kind": "encoded",
+          "n_lits": 15
+        },
+        {
+          "aux_each": 48,
+          "bound": 4,
+          "clauses_each": 104,
+          "count": 23688,
+          "kind": "encoded",
+          "n_lits": 16
+        },
+        {
+          "aux_each": 50,
+          "bound": 5,
+          "clauses_each": 105,
+          "count": 20688,
+          "kind": "encoded",
+          "n_lits": 15
+        },
+        {
+          "aux_each": 130,
+          "bound": 5,
+          "clauses_each": 281,
+          "count": 19944,
+          "kind": "encoded",
+          "n_lits": 31
+        },
+        {
+          "aux_each": 168,
+          "bound": 7,
+          "clauses_each": 353,
+          "count": 12120,
+          "kind": "encoded",
+          "n_lits": 31
+        },
+        {
+          "aux_each": 135,
+          "bound": 5,
+          "clauses_each": 292,
+          "count": 9720,
+          "kind": "encoded",
+          "n_lits": 32
+        },
+        {
+          "aux_each": 0,
+          "bound": 2,
+          "clauses_each": 1,
+          "count": 9272,
+          "kind": "encoded",
+          "n_lits": 3
+        },
+        {
+          "aux_each": 15,
+          "bound": 3,
+          "clauses_each": 32,
+          "count": 8712,
+          "kind": "encoded",
+          "n_lits": 8
+        },
+        {
+          "aux_each": 108,
+          "bound": 4,
+          "clauses_each": 239,
+          "count": 7920,
+          "kind": "encoded",
+          "n_lits": 31
+        },
+        {
+          "aux_each": 12,
+          "bound": 4,
+          "clauses_each": 23,
+          "count": 7488,
+          "kind": "encoded",
+          "n_lits": 7
+        },
+        {
+          "aux_each": 182,
+          "bound": 7,
+          "clauses_each": 383,
+          "count": 7452,
+          "kind": "encoded",
+          "n_lits": 33
+        },
+        {
+          "aux_each": 16,
+          "bound": 4,
+          "clauses_each": 32,
+          "count": 5016,
+          "kind": "encoded",
+          "n_lits": 8
+        },
+        {
+          "aux_each": 63,
+          "bound": 7,
+          "clauses_each": 128,
+          "count": 4896,
+          "kind": "encoded",
+          "n_lits": 16
+        },
+        {
+          "aux_each": 156,
+          "bound": 6,
+          "clauses_each": 332,
+          "count": 4032,
+          "kind": "encoded",
+          "n_lits": 32
+        },
+        {
+          "aux_each": 399,
+          "bound": 7,
+          "clauses_each": 848,
+          "count": 2880,
+          "kind": "encoded",
+          "n_lits": 64
+        }
+      ],
+      "largest_clause_contributors": [
+        {
+          "aux_each": 175,
+          "bound": 7,
+          "clauses_each": 368,
+          "count": 26184,
+          "kind": "encoded",
+          "n_lits": 32
+        },
+        {
+          "aux_each": 44,
+          "bound": 4,
+          "clauses_each": 95,
+          "count": 91728,
+          "kind": "encoded",
+          "n_lits": 15
+        },
+        {
+          "aux_each": 130,
+          "bound": 5,
+          "clauses_each": 281,
+          "count": 19944,
+          "kind": "encoded",
+          "n_lits": 31
+        },
+        {
+          "aux_each": 168,
+          "bound": 7,
+          "clauses_each": 353,
+          "count": 12120,
+          "kind": "encoded",
+          "n_lits": 31
+        },
+        {
+          "aux_each": 55,
+          "bound": 5,
+          "clauses_each": 116,
+          "count": 27504,
+          "kind": "encoded",
+          "n_lits": 16
+        },
+        {
+          "aux_each": 182,
+          "bound": 7,
+          "clauses_each": 383,
+          "count": 7452,
+          "kind": "encoded",
+          "n_lits": 33
+        },
+        {
+          "aux_each": 135,
+          "bound": 5,
+          "clauses_each": 292,
+          "count": 9720,
+          "kind": "encoded",
+          "n_lits": 32
+        },
+        {
+          "aux_each": 48,
+          "bound": 4,
+          "clauses_each": 104,
+          "count": 23688,
+          "kind": "encoded",
+          "n_lits": 16
+        },
+        {
+          "aux_each": 399,
+          "bound": 7,
+          "clauses_each": 848,
+          "count": 2880,
+          "kind": "encoded",
+          "n_lits": 64
+        },
+        {
+          "aux_each": 550,
+          "bound": 10,
+          "clauses_each": 1145,
+          "count": 1908,
+          "kind": "encoded",
+          "n_lits": 65
+        },
+        {
+          "aux_each": 50,
+          "bound": 5,
+          "clauses_each": 105,
+          "count": 20688,
+          "kind": "encoded",
+          "n_lits": 15
+        },
+        {
+          "aux_each": 36,
+          "bound": 3,
+          "clauses_each": 81,
+          "count": 24000,
+          "kind": "encoded",
+          "n_lits": 15
+        },
+        {
+          "aux_each": 540,
+          "bound": 10,
+          "clauses_each": 1124,
+          "count": 1728,
+          "kind": "encoded",
+          "n_lits": 64
+        },
+        {
+          "aux_each": 108,
+          "bound": 4,
+          "clauses_each": 239,
+          "count": 7920,
+          "kind": "encoded",
+          "n_lits": 31
+        },
+        {
+          "aux_each": 156,
+          "bound": 6,
+          "clauses_each": 332,
+          "count": 4032,
+          "kind": "encoded",
+          "n_lits": 32
+        },
+        {
+          "aux_each": 12,
+          "bound": 3,
+          "clauses_each": 25,
+          "count": 49608,
+          "kind": "encoded",
+          "n_lits": 7
+        },
+        {
+          "aux_each": 406,
+          "bound": 7,
+          "clauses_each": 863,
+          "count": 1332,
+          "kind": "encoded",
+          "n_lits": 65
+        },
+        {
+          "aux_each": 392,
+          "bound": 7,
+          "clauses_each": 833,
+          "count": 1248,
+          "kind": "encoded",
+          "n_lits": 63
+        },
+        {
+          "aux_each": 150,
+          "bound": 6,
+          "clauses_each": 319,
+          "count": 2592,
+          "kind": "encoded",
+          "n_lits": 31
+        },
+        {
+          "aux_each": 570,
+          "bound": 10,
+          "clauses_each": 1187,
+          "count": 540,
+          "kind": "encoded",
+          "n_lits": 67
+        }
+      ],
+      "name": "full_no_fixed_repeat_token_model",
+      "skipped_counts": {
+        "tautological": 592
+      },
+      "token_variables_before_aux": 261,
+      "wang_rows": 417198
+    },
+    {
+      "distinct_length_bound_classes": 39,
+      "estimated_wang_aux_variables_if_expanded_independently": 148174,
+      "estimated_wang_clauses": 327158,
+      "fixed_counts": {},
+      "largest_classes": [
+        {
+          "aux_each": 0,
+          "bound": 2,
+          "clauses_each": 1,
+          "count": 9272,
+          "kind": "encoded",
+          "n_lits": 3
+        },
+        {
+          "aux_each": 4,
+          "bound": 2,
+          "clauses_each": 8,
+          "count": 558,
+          "kind": "encoded",
+          "n_lits": 4
+        },
+        {
+          "aux_each": 2,
+          "bound": 1,
+          "clauses_each": 5,
+          "count": 438,
+          "kind": "encoded",
+          "n_lits": 3
+        },
+        {
+          "aux_each": 0,
+          "bound": 3,
+          "clauses_each": 0,
+          "count": 336,
+          "kind": "taut",
+          "n_lits": 3
+        },
+        {
+          "aux_each": 48,
+          "bound": 4,
+          "clauses_each": 104,
+          "count": 303,
+          "kind": "encoded",
+          "n_lits": 16
+        },
+        {
+          "aux_each": 0,
+          "bound": 1,
+          "clauses_each": 0,
+          "count": 249,
+          "kind": "taut",
+          "n_lits": 1
+        },
+        {
+          "aux_each": 0,
+          "bound": 3,
+          "clauses_each": 1,
+          "count": 180,
+          "kind": "encoded",
+          "n_lits": 4
+        },
+        {
+          "aux_each": 112,
+          "bound": 4,
+          "clauses_each": 248,
+          "count": 175,
+          "kind": "encoded",
+          "n_lits": 32
+        },
+        {
+          "aux_each": 52,
+          "bound": 4,
+          "clauses_each": 113,
+          "count": 174,
+          "kind": "encoded",
+          "n_lits": 17
+        },
+        {
+          "aux_each": 116,
+          "bound": 4,
+          "clauses_each": 257,
+          "count": 102,
+          "kind": "encoded",
+          "n_lits": 33
+        },
+        {
+          "aux_each": 189,
+          "bound": 7,
+          "clauses_each": 398,
+          "count": 68,
+          "kind": "encoded",
+          "n_lits": 34
+        },
+        {
+          "aux_each": 399,
+          "bound": 7,
+          "clauses_each": 848,
+          "count": 63,
+          "kind": "encoded",
+          "n_lits": 64
+        },
+        {
+          "aux_each": 406,
+          "bound": 7,
+          "clauses_each": 863,
+          "count": 57,
+          "kind": "encoded",
+          "n_lits": 65
+        },
+        {
+          "aux_each": 196,
+          "bound": 7,
+          "clauses_each": 413,
+          "count": 22,
+          "kind": "encoded",
+          "n_lits": 35
+        },
+        {
+          "aux_each": 16,
+          "bound": 4,
+          "clauses_each": 32,
+          "count": 20,
+          "kind": "encoded",
+          "n_lits": 8
+        },
+        {
+          "aux_each": 175,
+          "bound": 7,
+          "clauses_each": 368,
+          "count": 19,
+          "kind": "encoded",
+          "n_lits": 32
+        },
+        {
+          "aux_each": 182,
+          "bound": 7,
+          "clauses_each": 383,
+          "count": 16,
+          "kind": "encoded",
+          "n_lits": 33
+        },
+        {
+          "aux_each": 20,
+          "bound": 4,
+          "clauses_each": 41,
+          "count": 14,
+          "kind": "encoded",
+          "n_lits": 9
+        },
+        {
+          "aux_each": 77,
+          "bound": 7,
+          "clauses_each": 158,
+          "count": 14,
+          "kind": "encoded",
+          "n_lits": 18
+        },
+        {
+          "aux_each": 392,
+          "bound": 7,
+          "clauses_each": 833,
+          "count": 14,
+          "kind": "encoded",
+          "n_lits": 63
+        }
+      ],
+      "largest_clause_contributors": [
+        {
+          "aux_each": 399,
+          "bound": 7,
+          "clauses_each": 848,
+          "count": 63,
+          "kind": "encoded",
+          "n_lits": 64
+        },
+        {
+          "aux_each": 406,
+          "bound": 7,
+          "clauses_each": 863,
+          "count": 57,
+          "kind": "encoded",
+          "n_lits": 65
+        },
+        {
+          "aux_each": 112,
+          "bound": 4,
+          "clauses_each": 248,
+          "count": 175,
+          "kind": "encoded",
+          "n_lits": 32
+        },
+        {
+          "aux_each": 48,
+          "bound": 4,
+          "clauses_each": 104,
+          "count": 303,
+          "kind": "encoded",
+          "n_lits": 16
+        },
+        {
+          "aux_each": 189,
+          "bound": 7,
+          "clauses_each": 398,
+          "count": 68,
+          "kind": "encoded",
+          "n_lits": 34
+        },
+        {
+          "aux_each": 116,
+          "bound": 4,
+          "clauses_each": 257,
+          "count": 102,
+          "kind": "encoded",
+          "n_lits": 33
+        },
+        {
+          "aux_each": 52,
+          "bound": 4,
+          "clauses_each": 113,
+          "count": 174,
+          "kind": "encoded",
+          "n_lits": 17
+        },
+        {
+          "aux_each": 392,
+          "bound": 7,
+          "clauses_each": 833,
+          "count": 14,
+          "kind": "encoded",
+          "n_lits": 63
+        },
+        {
+          "aux_each": 0,
+          "bound": 2,
+          "clauses_each": 1,
+          "count": 9272,
+          "kind": "encoded",
+          "n_lits": 3
+        },
+        {
+          "aux_each": 196,
+          "bound": 7,
+          "clauses_each": 413,
+          "count": 22,
+          "kind": "encoded",
+          "n_lits": 35
+        },
+        {
+          "aux_each": 570,
+          "bound": 10,
+          "clauses_each": 1187,
+          "count": 6,
+          "kind": "encoded",
+          "n_lits": 67
+        },
+        {
+          "aux_each": 175,
+          "bound": 7,
+          "clauses_each": 368,
+          "count": 19,
+          "kind": "encoded",
+          "n_lits": 32
+        },
+        {
+          "aux_each": 182,
+          "bound": 7,
+          "clauses_each": 383,
+          "count": 16,
+          "kind": "encoded",
+          "n_lits": 33
+        },
+        {
+          "aux_each": 560,
+          "bound": 10,
+          "clauses_each": 1166,
+          "count": 4,
+          "kind": "encoded",
+          "n_lits": 66
+        },
+        {
+          "aux_each": 4,
+          "bound": 2,
+          "clauses_each": 8,
+          "count": 558,
+          "kind": "encoded",
+          "n_lits": 4
+        },
+        {
+          "aux_each": 550,
+          "bound": 10,
+          "clauses_each": 1145,
+          "count": 3,
+          "kind": "encoded",
+          "n_lits": 65
+        },
+        {
+          "aux_each": 77,
+          "bound": 7,
+          "clauses_each": 158,
+          "count": 14,
+          "kind": "encoded",
+          "n_lits": 18
+        },
+        {
+          "aux_each": 2,
+          "bound": 1,
+          "clauses_each": 5,
+          "count": 438,
+          "kind": "encoded",
+          "n_lits": 3
+        },
+        {
+          "aux_each": 689,
+          "bound": 13,
+          "clauses_each": 1418,
+          "count": 1,
+          "kind": "encoded",
+          "n_lits": 66
+        },
+        {
+          "aux_each": 540,
+          "bound": 10,
+          "clauses_each": 1124,
+          "count": 1,
+          "kind": "encoded",
+          "n_lits": 64
+        }
+      ],
+      "name": "compact_no_fixed_repeat_token_model",
+      "skipped_counts": {
+        "tautological": 591
+      },
+      "token_variables_before_aux": 261,
+      "wang_rows": 12165
+    }
+  ],
+  "schema": "core_cnf_expansion_assessment_v1"
+}

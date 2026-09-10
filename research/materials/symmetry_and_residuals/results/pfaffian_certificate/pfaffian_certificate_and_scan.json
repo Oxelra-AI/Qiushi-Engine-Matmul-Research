@@ -1,0 +1,58 @@
+{
+  "scope": "Exact Pfaffian certificate for BILR residual Waring rank >= 11 on gl_3 (dim 9).",
+  "directions": {
+    "X1": [
+      3,
+      0,
+      1,
+      3,
+      -1,
+      1,
+      1,
+      3,
+      -2
+    ],
+    "X2": [
+      -1,
+      3,
+      -1,
+      -1,
+      1,
+      0,
+      -1,
+      2,
+      1
+    ]
+  },
+  "traces": {
+    "tr_C2": "-393984",
+    "tr_C3": "0",
+    "tr_C4": "10427056128",
+    "tr_C3_automatic_zero": true
+  },
+  "Phi_exact": "-134369280000",
+  "Phi_nonzero": true,
+  "Phi_negative": true,
+  "commutator_rank_mod_65521": 4,
+  "theorem": "Strassen/Hessian bound: for k cubes on V (dim n) with nondegenerate K=(1/6)Hess_R(p), the K-skew commutator [H_X,H_Y] has even rank at most 2(k-n). Thus Waring rank <=10 on gl_3 forces rank<=2 and Phi=0 for all X,Y. BILR has Phi!=0, proving Waring rank>=11. The converse Phi=0=>rank<=2 can fail for indefinite K; exact rank<=2 is characterized by the 4x4 Pfaffians of Omega=KC. Also tr(C^3)=0 is automatic and carries no information.",
+  "scaling_note": "C = [6S_{X1}, 6S_{X2}] = 36[S_{X1},S_{X2}]. Phi(C) = 36^4 Phi([S,S]), so Phi(C) != 0 iff true Phi != 0.",
+  "frame_scan": {
+    "prime": 65521,
+    "single_dir_trials": 1000,
+    "single_dir_zeros": 0,
+    "multi_dir_trials": 500,
+    "multi_dir_num_pairs": 9,
+    "multi_dir_all_zeros": 0,
+    "per_direction_zeros": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

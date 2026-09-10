@@ -1,0 +1,431 @@
+{
+  "cn122_rank23_control": {
+    "combined_gauge_augmented_rank": 390,
+    "expected_cn122_extra_kernel_after_scaling_stabilizer": 24,
+    "full_brent_jacobian_rank": 527,
+    "gauge_summary": {
+      "combined_coordinate_pivot_count": 70,
+      "combined_coordinate_pivots_first20": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "combined_gauge_rank": 70,
+      "r": 23,
+      "scaling_coordinate_pivot_count": 46,
+      "scaling_coordinate_pivots_first20": [
+        0,
+        12,
+        18,
+        27,
+        36,
+        47,
+        61,
+        67,
+        72,
+        81,
+        90,
+        104,
+        108,
+        122,
+        134,
+        141,
+        144,
+        156,
+        162,
+        171
+      ],
+      "stabilizer_scaling_intersection_dim": 2,
+      "stabilizer_uv_rank": 26,
+      "term_scaling_rank": 46,
+      "u_span": 9,
+      "uv_pairing_rank": 23,
+      "uv_variable_dim": 414,
+      "v_span": 9
+    },
+    "post_gauge_kernel_dim": 24,
+    "rank": 23,
+    "residual_nnz_after_W_elimination": 0,
+    "shortened_jacobian_rank": 320
+  },
+  "elapsed_sec": 8.276493549346924,
+  "generic_semisimple_termwise_aligned_bound": {
+    "T333_nonzero_coordinate_count_in_eigenbasis": 27,
+    "assumption": "A noncentral semisimple stabilizer element has three difference operators with nine distinct eigenspaces in each factor, so every termwise-aligned summand is a single coordinate tensor in the corresponding eigenbasis.",
+    "first10_support_coordinates": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        2,
+        2
+      ],
+      [
+        1,
+        3,
+        0
+      ],
+      [
+        1,
+        4,
+        1
+      ],
+      [
+        1,
+        5,
+        2
+      ],
+      [
+        2,
+        6,
+        0
+      ],
+      [
+        2,
+        7,
+        1
+      ],
+      [
+        2,
+        8,
+        2
+      ],
+      [
+        3,
+        0,
+        3
+      ]
+    ],
+    "rank22_consequence_under_assumption": "impossible: one coordinate tensor summand covers only one nonzero support coordinate, while T333 has 27 nonzero coordinates.",
+    "remaining_semisimple_exception": "repeated difference eigenvalues give larger eigenspaces; these form separate equality-pattern charts rather than the transverse gauge chart."
+  },
+  "natural_27_exceptional_aligned_control": {
+    "full_style_summary": {
+      "combined_full_rank": 72,
+      "combined_uv_rank": 72,
+      "intersection_full_dim": 8,
+      "intersection_uv_dim": 8,
+      "scaling_full_rank": 54,
+      "scaling_uv_rank": 54,
+      "stabilizer_full_rank": 26,
+      "stabilizer_uv_rank": 26,
+      "u_span": 9,
+      "v_span": 9,
+      "w_span": 9
+    },
+    "interpretation": "The natural decomposition has stabilizer-scaling intersection 8, not 2, so it lies in the termwise-aligned/nontransverse family; it is a control showing why such strata must be separated.",
+    "uv_gauge_summary": {
+      "combined_coordinate_pivot_count": 72,
+      "combined_coordinate_pivots_first20": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        9,
+        10,
+        11,
+        12,
+        15,
+        18,
+        27,
+        28,
+        29,
+        36,
+        45,
+        46,
+        47,
+        55,
+        56
+      ],
+      "combined_gauge_rank": 72,
+      "r": 27,
+      "scaling_coordinate_pivot_count": 54,
+      "scaling_coordinate_pivots_first20": [
+        0,
+        9,
+        18,
+        28,
+        36,
+        47,
+        55,
+        66,
+        73,
+        85,
+        91,
+        104,
+        110,
+        123,
+        128,
+        142,
+        146,
+        161,
+        165,
+        171
+      ],
+      "stabilizer_scaling_intersection_dim": 8,
+      "stabilizer_uv_rank": 26,
+      "term_scaling_rank": 54,
+      "u_span": 9,
+      "uv_pairing_rank": 27,
+      "uv_variable_dim": 486,
+      "v_span": 9
+    }
+  },
+  "prime": 65521,
+  "purpose": "Pilot linear algebra for symmetry-quotient gauge charts of the full-span shortened rank-22 incidence.",
+  "random_controls_summary": {
+    "combined_augmented_ranks": [
+      396
+    ],
+    "combined_gauge_ranks": [
+      68
+    ],
+    "intersections": [
+      2
+    ],
+    "scaling_augmented_ranks": [
+      396
+    ],
+    "shortened_ranks": [
+      352
+    ]
+  },
+  "random_full_span_rank22_controls": [
+    {
+      "chart_row_T_rank": 9,
+      "combined_gauge_augmented_rank": 396,
+      "full_brent_jacobian_rank": 550,
+      "gauge_summary": {
+        "combined_coordinate_pivot_count": 68,
+        "combined_coordinate_pivots_first20": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "combined_gauge_rank": 68,
+        "r": 22,
+        "scaling_coordinate_pivot_count": 44,
+        "scaling_coordinate_pivots_first20": [
+          0,
+          9,
+          18,
+          27,
+          36,
+          45,
+          54,
+          63,
+          72,
+          81,
+          90,
+          99,
+          108,
+          117,
+          126,
+          135,
+          144,
+          153,
+          162,
+          171
+        ],
+        "stabilizer_scaling_intersection_dim": 2,
+        "stabilizer_uv_rank": 26,
+        "term_scaling_rank": 44,
+        "u_span": 9,
+        "uv_pairing_rank": 22,
+        "uv_variable_dim": 396,
+        "v_span": 9
+      },
+      "scaling_gauge_augmented_rank": 396,
+      "shortened_jacobian_rank": 352,
+      "trial": 0
+    },
+    {
+      "chart_row_T_rank": 9,
+      "combined_gauge_augmented_rank": 396,
+      "full_brent_jacobian_rank": 550,
+      "gauge_summary": {
+        "combined_coordinate_pivot_count": 68,
+        "combined_coordinate_pivots_first20": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "combined_gauge_rank": 68,
+        "r": 22,
+        "scaling_coordinate_pivot_count": 44,
+        "scaling_coordinate_pivots_first20": [
+          0,
+          9,
+          18,
+          27,
+          36,
+          45,
+          54,
+          63,
+          72,
+          81,
+          90,
+          99,
+          108,
+          117,
+          126,
+          135,
+          144,
+          153,
+          162,
+          171
+        ],
+        "stabilizer_scaling_intersection_dim": 2,
+        "stabilizer_uv_rank": 26,
+        "term_scaling_rank": 44,
+        "u_span": 9,
+        "uv_pairing_rank": 22,
+        "uv_variable_dim": 396,
+        "v_span": 9
+      },
+      "scaling_gauge_augmented_rank": 396,
+      "shortened_jacobian_rank": 352,
+      "trial": 1
+    },
+    {
+      "chart_row_T_rank": 9,
+      "combined_gauge_augmented_rank": 396,
+      "full_brent_jacobian_rank": 550,
+      "gauge_summary": {
+        "combined_coordinate_pivot_count": 68,
+        "combined_coordinate_pivots_first20": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "combined_gauge_rank": 68,
+        "r": 22,
+        "scaling_coordinate_pivot_count": 44,
+        "scaling_coordinate_pivots_first20": [
+          0,
+          9,
+          18,
+          27,
+          36,
+          45,
+          54,
+          63,
+          72,
+          81,
+          90,
+          99,
+          108,
+          117,
+          126,
+          135,
+          144,
+          153,
+          162,
+          171
+        ],
+        "stabilizer_scaling_intersection_dim": 2,
+        "stabilizer_uv_rank": 26,
+        "term_scaling_rank": 44,
+        "u_span": 9,
+        "uv_pairing_rank": 22,
+        "uv_variable_dim": 396,
+        "v_span": 9
+      },
+      "scaling_gauge_augmented_rank": 396,
+      "shortened_jacobian_rank": 352,
+      "trial": 2
+    }
+  ],
+  "separate_strata": [
+    "lower UV-pairing rank: rank(P(U,V)) < 22, where W-elimination chart is invalid or incomplete",
+    "gauge-nontransverse full-span charts: stabilizer-scaling intersection > 2; by Jordan analysis nonsemisimple projective actions are incompatible with full spans, while semisimple repeated-difference patterns require separate support/eigenspace charts",
+    "transverse full-span full-UV-rank charts: combined UV gauge rank 68 and coordinate slice exists"
+  ],
+  "transverse_rank22_prediction": {
+    "combined_gauge_dim": 68,
+    "effective_noncentral_stabilizer_dim_after_scaling_overlap": 24,
+    "expected_augmented_rank_after_68_coordinate_gauge": 396,
+    "expected_shortened_jacobian_rank_at_smooth_T333_solution_before_gauge": 328,
+    "quotient_variable_dim": 328,
+    "shortened_variable_dim": 396,
+    "term_scaling_dim": 44,
+    "use": "Over an odd prime, solve a square subsystem of 328 residual equations plus 68 gauge equations, then verify all 531 shortened residual equations and open conditions."
+  }
+}

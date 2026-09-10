@@ -1,0 +1,83 @@
+{
+  "A_multiset": [
+    400,
+    260,
+    73,
+    393,
+    292,
+    8,
+    265,
+    274,
+    269,
+    72,
+    392,
+    144,
+    278,
+    9,
+    256,
+    146,
+    448,
+    7,
+    32,
+    268,
+    56,
+    16
+  ],
+  "A_size": 22,
+  "elapsed_sec": 19.235067129135132,
+  "encoding": {
+    "base_vw_vars": 396,
+    "cnf_clauses": 1351977,
+    "cnf_path": "data/tight_cnf_candidates/candidate1/candidate1_tight.cnf",
+    "cnf_vars": 335952,
+    "empty_clause_count": 0,
+    "factor_nullspace_linear_equations": 180,
+    "factor_nullspace_linear_equations_by_rank": {
+      "3": 72,
+      "6": 108
+    },
+    "independence_nonzero_constraints": 10626,
+    "independence_nonzero_constraints_by_rank": {
+      "3": 28,
+      "6": 378,
+      "9": 10220
+    },
+    "product_vars": 1782,
+    "rank": 22,
+    "tight_factor_rigidity": true,
+    "tight_lambda_count": 15,
+    "tight_lambdas": [
+      32,
+      50,
+      64,
+      96,
+      114,
+      157,
+      206,
+      242,
+      253,
+      254,
+      330,
+      334,
+      388,
+      405,
+      419
+    ],
+    "tight_rank_hist": {
+      "3": 2,
+      "6": 3,
+      "9": 10
+    },
+    "xor_terms_total": 4617
+  },
+  "returncode": 20,
+  "sat": false,
+  "schema": "full_fixed_a_completion_tight_v1",
+  "solver": "cadical",
+  "solver_command": [
+    "cadical",
+    "data/tight_cnf_candidates/candidate1/candidate1_tight.cnf"
+  ],
+  "stderr_tail": "",
+  "stdout_tail": "c parsed 1351977 clauses in 0.36 seconds process time\nc \nc --- [ options ] ------------------------------------------------------------\nc \nc all options are set to their default value\nc \nc --- [ solving ] ------------------------------------------------------------\nc \nc time measured in process time since initialization\nc \nc  seconds   reduction conflicts       size tier2         variables\nc          MB    restarts   redundant    glue  trail            remaining\nc           level     rate       size/glu tier1   irredundant\nc \nc *  0.36 162  0 0   0  0    0    0 0.0 0 0 2 6  0% 1103052 322959 96%\nc (  0.45 177  0 0   0  0    0    0 0.0 1 0 2 6  4% 1103052 320529 95%\nc .  0.46 177  0 0   0  0    0    0 0.0 1 0 2 6  4% 1030554 320529 95%\nc c 18.97 2622  0 0   0  0    0    0 0.0 1 0 2 6  4% 1119660 320528 95%\nc P 18.99 2480  0 0   0  0    0    0 0.0 1 0 2 6  4% 1119660 320528 95%\nc ) 18.99 2480  0 0   0  0    0    0 0.0 1 0 2 6  4% 1119660 320528 95%\nc 0 18.99 2480  0 0   0  0    0    0 0.0 1 0 2 6  4% 1119660 320528 95%\nc \nc --- [ result ] -------------------------------------------------------------\nc \ns UNSATISFIABLE\nc \nc --- [ run-time profiling ] -------------------------------------------------\nc \nc process time taken by individual solving procedures\nc (percentage relative to process time for solving)\nc \nc        18.53   99.53% preprocess\nc        18.50   99.36% congruence\nc        18.50   99.36% simplify\nc         0.36    1.95% parse\nc         0.09    0.47% search\nc         0.09    0.47% lucky\nc   =================================\nc        18.62   98.09% solve\nc \nc last line shows process time for solving\nc (percentage relative to total process time)\nc \nc --- [ statistics ] ---------------------------------------------------------\nc \nc fixed:                     15424         4.59 %  of all variables\nc learned_lits:                  5       100.00 %  learned literals\nc minimized:                     0         0.00 %  learned literals\nc shrunken:                      0         0.00 %  learned literals\nc minishrunken:                  0         0.00 %  learned literals\nc propagations:              12993         0.00 M  per second\nc ticks:                    116562         8.97    propagation\nc congruence:                    1         0.00    interval\nc \nc seconds are measured in process time for solving\nc \nc --- [ glue usage ] ---------------------------------------------------------\nc \nc focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1\nc focused glue 3 used 0 clauses 0.000% accumulated 0.000%\nc focused glue 4 used 0 clauses 0.000% accumulated 0.000%\nc focused glue 5 used 0 clauses 0.000% accumulated 0.000%\nc focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2\nc \nc stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1\nc stable glue 3 used 0 clauses 0.000% accumulated 0.000%\nc stable glue 4 used 0 clauses 0.000% accumulated 0.000%\nc stable glue 5 used 0 clauses 0.000% accumulated 0.000%\nc stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2\nc \nc \nc --- [ resources ] ----------------------------------------------------------\nc \nc total process time since initialization:        18.99    seconds\nc total real time since initialization:           18.99    seconds\nc maximum resident set size of process:         2639.01    MB\nc \nc --- [ shutting down ] ------------------------------------------------------\nc \nc exit 20"
+}

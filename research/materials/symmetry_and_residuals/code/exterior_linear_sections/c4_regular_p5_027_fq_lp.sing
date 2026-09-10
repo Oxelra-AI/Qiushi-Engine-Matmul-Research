@@ -1,0 +1,40 @@
+// analysis generated Singular chart
+// family=c4_regular prime=5 pivot=(0, 2, 7)
+LIB "general.lib";
+option(redSB);
+ring r=5,(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14),lp;
+ideal I=
+x14,
+2 + 4*x5*x13 + x4*x14,
+1 + x4,
+3 + 4*x8*x10 + x7*x11,
+1 + 4*x2*x12 + x0*x14,
+4 + x0,
+2 + 4*x2*x4*x12 + x2*x3*x13 + x1*x5*x12 + 4*x1*x3*x14 + 4*x0*x5*x13 + x0*x4*x14,
+4*x1*x3 + x0*x4,
+3 + 4*x2*x7*x9 + x2*x6*x10 + x1*x8*x9 + 4*x1*x6*x11 + 4*x0*x8*x10 + x0*x7*x11,
+2 + x5*x6 + 4*x3*x8,
+1 + x5*x9 + 4*x3*x11,
+1 + 4*x7*x12 + x6*x13,
+2 + 4*x10*x12 + x9*x13;
+
+ideal Fq = x0^5-x0,x1^5-x1,x2^5-x2,x3^5-x3,x4^5-x4,x5^5-x5,x6^5-x6,x7^5-x7,x8^5-x8,x9^5-x9,x10^5-x10,x11^5-x11,x12^5-x12,x13^5-x13,x14^5-x14;
+I = I,Fq;
+
+print("family=c4_regular prime=5 pivot=(0, 2, 7) equations=13 field_equations=True order=lp");
+print("computing std");
+ideal G=std(I);
+print("std_done");
+print("dim");
+dim(G);
+print("vdim");
+vdim(G);
+print("degree");
+degree(G);
+print("ncols_std");
+size(G);
+print("indep");
+indepSet(G);
+print("G");
+G;
+quit;

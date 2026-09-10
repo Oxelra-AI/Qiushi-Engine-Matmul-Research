@@ -1,0 +1,357 @@
+{
+  "assets": {
+    "rank2_or_rank3_no_rank1_branch": {
+      "cnf": {
+        "exists": true,
+        "header": {
+          "clauses": 18547589,
+          "vars": 18142
+        },
+        "path": "data/wang_capacity_cnf_rank2/t_s20_dim123_branch_rank2.cnf",
+        "sha256": "129d6159a63518933bfd61459e20e4b2c33fc8fdb13279709283f2c5fd1aa519",
+        "size": 324786870
+      },
+      "drat": {
+        "exists": true,
+        "path": "data/wang_capacity_cnf_rank2/t_s20_dim123_branch_rank2.drat",
+        "sha256": "1875971f9df357abff575c0be74422c4b14855b5067419fc16069b31008968c9",
+        "size": 489565677
+      },
+      "drat_trim_log": {
+        "clauses": 18547589,
+        "exists": true,
+        "path": "data/wang_capacity_cnf_rank2/t_s20_dim123_branch_rank2.drat_trim.log",
+        "sha256": "3112b41f400b99209dfbd8951790ea56e750f0febcac769def69afce4c42ff42",
+        "text_head": "\nc parsing input formula with 18142 variables and 18547589 clauses\n\nc finished parsing\n\nc detected empty clause; start verification via backward checking\n\nc 478715 of 18547589 clauses in core                            \n\nc 663771 of 1072661 lemmas in core using 177101896 resolution steps\n\nc 8521 RAT lemmas in core; 142039 redundant literals in core lemmas\n\ns VERIFIED\n\nc verification time: 1702.804 seconds\n",
+        "vars": 18142,
+        "verification_time_sec": 1702.804,
+        "verified": true
+      },
+      "meaning": "T-level Wang branch with rank-1 A directions excluded; fixes a rank-2 representative. UNSAT contributes to excluding no-rank-one full supports.",
+      "meta": {
+        "allowed_points": 462,
+        "allowed_rank_hist": {
+          "2": 294,
+          "3": 168
+        },
+        "branch_meaning": "0 unbranched; 1 fixes E11; 2 fixes rank2 and excludes rank1; 3 fixes identity and excludes rank1/rank2",
+        "branch_rank": 2,
+        "cap_hist": {
+          "1": 511,
+          "2": 445679,
+          "3": 378280,
+          "4": 7497,
+          "5": 14
+        },
+        "cnf_path": "data/wang_capacity_cnf_rank2/t_s20_dim123_branch_rank2.cnf",
+        "dims": [
+          1,
+          2,
+          3
+        ],
+        "direct_capacity_clauses": 18512228,
+        "elapsed_sec": 34.8945038318634,
+        "field": "F2",
+        "fixed_point": 17,
+        "global_cardinality_clauses": 35360,
+        "num_clauses": 18547589,
+        "num_vars": 18142,
+        "problem": "T-level Wang occupation branch CNF",
+        "rank_s": 20,
+        "row_var_count_hist": {
+          "0": 161,
+          "1": 1344,
+          "2": 10878,
+          "3": 34370,
+          "4": 16464,
+          "5": 81144,
+          "6": 305564,
+          "7": 382056
+        },
+        "rows_by_L": {
+          "15": 14,
+          "16": 7497,
+          "17": 378280,
+          "18": 445679,
+          "19": 511
+        },
+        "rows_by_dim": {
+          "1": 511,
+          "2": 43435,
+          "3": 788035
+        },
+        "rows_seen": 831981,
+        "rows_used": 812542
+      },
+      "solver_log": {
+        "contains_unsat": true,
+        "exists": true,
+        "path": "data/wang_capacity_cnf_rank2/t_s20_dim123_branch_rank2.cadical.log",
+        "sha256": "ccbb92c3e80d5a56bb80a51010705674130d40a195eaec03faef2ce79461437d",
+        "text_tail": "used 677355 clauses 21.09% accumulated 69.86% tier1\nc focused glue 3 used 206570 clauses 6.433% accumulated 76.29% tier2\nc \nc stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1\nc stable glue 3 used 0 clauses 0.000% accumulated 0.000%\nc stable glue 4 used 0 clauses 0.000% accumulated 0.000%\nc stable glue 5 used 0 clauses 0.000% accumulated 0.000%\nc stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2\nc \nc \nc --- [ resources ] ----------------------------------------------------------\nc \nc total process time since initialization:       275.31    seconds\nc total real time since initialization:          275.34    seconds\nc maximum resident set size of process:         3629.22    MB\nc \nc --- [ shutting down ] ------------------------------------------------------\nc \nc exit 20\n"
+      },
+      "status": {
+        "cadical_exit": 20,
+        "cadical_log": "data/wang_capacity_cnf_rank2/t_s20_dim123_branch_rank2.cadical.log",
+        "cnf": "data/wang_capacity_cnf_rank2/t_s20_dim123_branch_rank2.cnf",
+        "drat": "data/wang_capacity_cnf_rank2/t_s20_dim123_branch_rank2.drat",
+        "drat_trim_exit": 0,
+        "drat_trim_log": "data/wang_capacity_cnf_rank2/t_s20_dim123_branch_rank2.drat_trim.log",
+        "meta": "data/wang_capacity_cnf_rank2/t_s20_dim123_branch_rank2.meta.json",
+        "stage": "complete"
+      }
+    },
+    "rank3_only_no_rank1_rank2_branch": {
+      "cnf": {
+        "exists": true,
+        "header": {
+          "clauses": 668175,
+          "vars": 6088
+        },
+        "path": "data/wang_capacity_cnf/t_s20_dim123_branch_rank3.cnf",
+        "sha256": "541bb859660aaa2cb1de0132cc257e0d9b8517fcb8f76fc6720599fd3c801994",
+        "size": 10552582
+      },
+      "drat": {
+        "exists": true,
+        "path": "data/wang_capacity_cnf/t_s20_dim123_branch_rank3.drat",
+        "sha256": "6fb2b982bc39ea697d3c6e16b6d3bc437f0d555a8042c909a329348a339f504b",
+        "size": 14918610
+      },
+      "drat_trim_log": {
+        "clauses": 668175,
+        "exists": true,
+        "path": "data/wang_capacity_cnf/t_s20_dim123_branch_rank3.drat_trim.log",
+        "sha256": "df992634b8757e0606b57c333eedb7015e4283b732101368324b05971117ba20",
+        "text_head": "\nc parsing input formula with 6088 variables and 668175 clauses\n\nc finished parsing\n\nc detected empty clause; start verification via backward checking\n\nc 36599 of 668175 clauses in core                            \n\nc 29706 of 59456 lemmas in core using 1856052 resolution steps\n\nc 142 RAT lemmas in core; 3161 redundant literals in core lemmas\n\ns VERIFIED\n\nc verification time: 5.228 seconds\n",
+        "vars": 6088,
+        "verification_time_sec": 5.228,
+        "verified": true
+      },
+      "meaning": "T-level Wang branch with rank-1 and rank-2 A directions excluded; fixes a rank-3 representative. UNSAT contributes to excluding no-rank-one full supports.",
+      "meta": {
+        "allowed_points": 168,
+        "allowed_rank_hist": {
+          "3": 168
+        },
+        "branch_meaning": "0 unbranched; 1 fixes E11; 2 fixes rank2 and excludes rank1; 3 fixes identity and excludes rank1/rank2",
+        "branch_rank": 3,
+        "cap_hist": {
+          "1": 511,
+          "2": 445679,
+          "3": 378280,
+          "4": 7497,
+          "5": 14
+        },
+        "cnf_path": "data/wang_capacity_cnf/t_s20_dim123_branch_rank3.cnf",
+        "dims": [
+          1,
+          2,
+          3
+        ],
+        "direct_capacity_clauses": 656334,
+        "elapsed_sec": 8.97830867767334,
+        "field": "F2",
+        "fixed_point": 273,
+        "global_cardinality_clauses": 11840,
+        "num_clauses": 668175,
+        "num_vars": 6088,
+        "problem": "T-level Wang occupation branch CNF",
+        "rank_s": 20,
+        "row_var_count_hist": {
+          "0": 65779,
+          "1": 178920,
+          "2": 249900,
+          "3": 205184,
+          "4": 101430,
+          "5": 28224,
+          "6": 2352,
+          "7": 192
+        },
+        "rows_by_L": {
+          "15": 14,
+          "16": 7497,
+          "17": 378280,
+          "18": 445679,
+          "19": 511
+        },
+        "rows_by_dim": {
+          "1": 511,
+          "2": 43435,
+          "3": 788035
+        },
+        "rows_seen": 831981,
+        "rows_used": 241734
+      },
+      "solver_log": {
+        "contains_unsat": true,
+        "exists": true,
+        "path": "data/wang_capacity_cnf/t_s20_dim123_branch_rank3.cadical2.log",
+        "sha256": "4ae276d9863420404ef203ef0eca7d1f9b6e7d649e09f5eeb5f8c8fb389ccd55",
+        "text_tail": "ed glue 3 used 5707 clauses 12.07% accumulated 65.64%\nc focused glue 4 used 3109 clauses 6.576% accumulated 72.21% tier2\nc \nc stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1\nc stable glue 3 used 0 clauses 0.000% accumulated 0.000%\nc stable glue 4 used 0 clauses 0.000% accumulated 0.000%\nc stable glue 5 used 0 clauses 0.000% accumulated 0.000%\nc stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2\nc \nc \nc --- [ resources ] ----------------------------------------------------------\nc \nc total process time since initialization:         4.95    seconds\nc total real time since initialization:            4.95    seconds\nc maximum resident set size of process:          134.15    MB\nc \nc --- [ shutting down ] ------------------------------------------------------\nc \nc exit 20\n"
+      }
+    },
+    "repeated_projected_A_E11_core_branch": {
+      "cnf": {
+        "exists": true,
+        "header": {
+          "clauses": 53255,
+          "vars": 24895
+        },
+        "path": "data/repeat_branch_certificate/iis_shrink_p1/fixed_repeat_p1_iis.cnf",
+        "sha256": "673426778d1c211ac35b014a3c1baa6f2b0595a2c242f948074d580816234dc9",
+        "size": 821939
+      },
+      "drat": {
+        "exists": true,
+        "path": "data/repeat_branch_certificate/iis_shrink_p1/drat/fixed_repeat_p1_iis.drat",
+        "sha256": "3f9c1a06cb4eb5f0e2193e9a5be752a708945eb9ae6bfafa9490a14aeb52b419",
+        "size": 75596992
+      },
+      "drat_trim_log_old": {
+        "clauses": 53255,
+        "exists": true,
+        "path": "data/repeat_branch_certificate/iis_shrink_p1/drat/fixed_repeat_p1_iis.drat_trim.log",
+        "sha256": "06189eefc71bad881aba868753cce40508d173c2777f57305305788d66c417fe",
+        "text_head": "\nc parsing input formula with 24895 variables and 53255 clauses\n\nc finished parsing\n\nc detected empty clause; start verification via backward checking\n\nc 22334 of 53255 clauses in core                            \n\nc 238291 of 700298 lemmas in core using 9272585 resolution steps\n\nc 7043 RAT lemmas in core; 56820 redundant literals in core lemmas\n\ns VERIFIED\n\nc verification time: 23.735 seconds\n",
+        "vars": 24895,
+        "verification_time_sec": 23.735,
+        "verified": true
+      },
+      "local_replay": {
+        "command": "drat-trim data/repeat_branch_certificate/iis_shrink_p1/fixed_repeat_p1_iis.cnf data/repeat_branch_certificate/iis_shrink_p1/drat/fixed_repeat_p1_iis.drat",
+        "observed_exit_code": 0,
+        "observed_parse": {
+          "clauses": 53255,
+          "vars": 24895
+        },
+        "observed_status": "s VERIFIED",
+        "observed_verification_time_sec": 23.535
+      },
+      "meaning": "Length-19 E11-core projected-A multiset with a repeated projected direction; compact Wang-only proof excludes it up to E11-core stabilizer transport.",
+      "review_file": {
+        "exists": true,
+        "path": "data/review/repeated_certificate_review.json",
+        "sha256": "75c204038592524ccc83752c8ea328fad206bb11cec954976557216c45814ad7",
+        "size": 6179
+      },
+      "review_summary": {
+        "all_load_bearing_checks_pass": true,
+        "sat_proof_status": {
+          "cadical_exit_is_unsat_20": true,
+          "cadical_log_status": "UNSATISFIABLE",
+          "cnf_header": {
+            "clauses": 53255,
+            "vars": 24895
+          },
+          "drat_trim_exit_zero": true,
+          "drat_trim_status": "VERIFIED",
+          "drat_trim_verified": true,
+          "status_self_file_info_note": "status JSON was written after its file_info snapshot, so its internal self exists=false entry is a harmless bookkeeping artifact"
+        },
+        "small_formula_semantics": {
+          "core_constraint_count": 262,
+          "core_constraints_by_kind": {
+            "wang": 262
+          },
+          "encoding_stats": {
+            "hard_total_clauses": 16456,
+            "hard_total_constraints": 2,
+            "wang_clauses": 36799,
+            "wang_constraints": 262
+          },
+          "fixed_multiplicity": 2,
+          "fixed_repeat_label": "E12",
+          "fixed_repeat_point": 1,
+          "hard_total_constraints": 2,
+          "meta_schema": "fixed_repeat_core_cnf_v1",
+          "quotient_rank_or_contraction_rows_used": false,
+          "rank_s": 19,
+          "selected_L": {
+            "12": 68,
+            "15": 102,
+            "16": 19,
+            "17": 70,
+            "9": 3
+          },
+          "selected_dims": {
+            "2": 89,
+            "4": 21,
+            "5": 152
+          },
+          "selected_kind": {
+            "wang": 262
+          },
+          "selected_records_count": 262,
+          "token_variables_before_aux": 259,
+          "uses_only_wang_rows_beyond_total_and_token_bounds": true
+        },
+        "statement_reviewed": "There is no length-19 nonzero projected A-direction multiset for the E11 core over F2 that satisfies the complete Wang occupation consequences and contains a repeated projected direction. Equivalently, any actual rank-19 E11-core decomposition over F2 must have 19 distinct projected A-directions.",
+        "symmetry_transport": {
+          "capacity_two_matches_expected": true,
+          "capacity_two_points": [
+            1,
+            2,
+            3,
+            4,
+            32,
+            36
+          ],
+          "complete_core_table_constraint_count": 417199,
+          "full_stabilizer_orbits": [
+            [
+              1,
+              2,
+              3,
+              4,
+              32,
+              36
+            ]
+          ],
+          "maps_each_capacity_two_point_to_1_all_present": true,
+          "no_transpose_orbits": [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              4,
+              32,
+              36
+            ]
+          ],
+          "selected_rows_preserve_L_under_all_stabilizer_perms": true,
+          "transported_pairs_checked": 301824,
+          "transpose_exchanges_rulings": true,
+          "witness_maps_all_preimage_image_preserve_L": true
+        }
+      }
+    }
+  },
+  "checks": {
+    "bridge_existing_assets_consistent": true,
+    "rank2_allowed_rank_hist_is_rank2_rank3": true,
+    "rank2_meta_rank_s_20": true,
+    "rank2_trim_verified": true,
+    "rank3_allowed_rank_hist_is_rank3_only": true,
+    "rank3_meta_rank_s_20": true,
+    "rank3_trim_verified": true,
+    "repeated_local_replay_verified": true,
+    "repeated_review_passed": true
+  },
+  "elapsed_sec": 1.043219804763794,
+  "field": "F2",
+  "limits": [
+    "This does not resolve the distinct length-19 E11-core branch.",
+    "The large rank2/rank3 DRAT proofs were inspected through old drat-trim logs and hashes in this ARTIFACT; only the compact repeated-core proof was replayed live in earlier research analysis.",
+    "All statements are over F2 exact tensor rank; no border-rank, asymptotic, or other-field conclusion is implied."
+  ],
+  "logical_use": [
+    "The no-rank-one full-support branches show any full length-20 decomposition must contain a rank-one A-factor, modulo correctness of the Wang table and CNF encodings.",
+    "After normalizing one such rank-one factor to E11 and quotienting, the remaining 19 nonzero projected A-factors decompose the E11 core.",
+    "The repeated-projected-A E11 certificate excludes repeated projected directions among those nineteen terms; the still-open branch is a distinct length-19 E11 core, with or without the lift residual rank<=1 condition depending on the lower-bound route."
+  ],
+  "purpose": "Local earlier research check of inherited proof assets after correcting the E11 bridge quantifier direction.",
+  "schema": "s0908_corrected_e11_bridge_asset_check_v1"
+}

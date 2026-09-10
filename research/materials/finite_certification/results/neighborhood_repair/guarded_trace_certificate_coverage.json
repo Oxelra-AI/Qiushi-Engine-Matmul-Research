@@ -1,0 +1,3458 @@
+{
+  "certificate_count": 17,
+  "certificate_file": "data/trace_dependency_cuts/trace_certificate_family_cuts_augmented.json",
+  "core": "E11 quotient core",
+  "elapsed_sec": 0.019,
+  "field": "F2",
+  "hit_record_count": 15,
+  "hit_records": [
+    {
+      "cert_index": 0,
+      "cert_name": "near_miss_primary",
+      "forced_examples": [
+        {
+          "forced_value": 0,
+          "p": 1
+        },
+        {
+          "forced_value": 0,
+          "p": 2
+        },
+        {
+          "forced_value": 0,
+          "p": 3
+        },
+        {
+          "forced_value": 1,
+          "p": 4
+        },
+        {
+          "forced_value": 1,
+          "p": 8
+        }
+      ],
+      "forced_sum": 0,
+      "free_examples": [],
+      "guard_qs": [
+        42,
+        43,
+        57,
+        70,
+        71,
+        87,
+        94,
+        151,
+        186,
+        214
+      ],
+      "guard_weights": {
+        "42": 9,
+        "43": 9,
+        "57": 9,
+        "70": 9,
+        "71": 9,
+        "87": 9,
+        "94": 9,
+        "151": 9,
+        "186": 9,
+        "214": 9
+      },
+      "hit": true,
+      "hit_type": "pure_parity",
+      "local_inconsistent_examples": [],
+      "local_inconsistent_hit": false,
+      "pure_parity_applicable": true,
+      "pure_parity_hit": true,
+      "support_class_counts": {
+        "forced": 19
+      },
+      "target_complete_wang_violations": 12,
+      "target_index": 0,
+      "target_name": "near_miss_primary",
+      "tensor_rhs_parity": 1
+    },
+    {
+      "cert_index": 1,
+      "cert_name": "fresh_uncond_sep_10r_round8",
+      "forced_examples": [
+        {
+          "forced_value": 0,
+          "p": 2
+        },
+        {
+          "forced_value": 0,
+          "p": 3
+        },
+        {
+          "forced_value": 0,
+          "p": 4
+        },
+        {
+          "forced_value": 0,
+          "p": 10
+        },
+        {
+          "forced_value": 0,
+          "p": 20
+        }
+      ],
+      "forced_sum": 0,
+      "free_examples": [],
+      "guard_qs": [
+        53,
+        87,
+        122,
+        127,
+        157
+      ],
+      "guard_weights": {
+        "53": 9,
+        "87": 9,
+        "122": 9,
+        "127": 9,
+        "157": 9
+      },
+      "hit": true,
+      "hit_type": "pure_parity",
+      "local_inconsistent_examples": [],
+      "local_inconsistent_hit": false,
+      "pure_parity_applicable": true,
+      "pure_parity_hit": true,
+      "support_class_counts": {
+        "forced": 19
+      },
+      "target_complete_wang_violations": 15,
+      "target_index": 1,
+      "target_name": "fresh_uncond_sep_10r_round8",
+      "tensor_rhs_parity": 1
+    },
+    {
+      "cert_index": 2,
+      "cert_name": "core_e11_saturation_v3_complete_long_round4",
+      "forced_examples": [
+        {
+          "forced_value": 0,
+          "p": 1
+        },
+        {
+          "forced_value": 1,
+          "p": 2
+        },
+        {
+          "forced_value": 0,
+          "p": 3
+        },
+        {
+          "forced_value": 0,
+          "p": 4
+        },
+        {
+          "forced_value": 0,
+          "p": 8
+        }
+      ],
+      "forced_sum": 1,
+      "free_examples": [],
+      "guard_qs": [
+        70,
+        95,
+        107,
+        133,
+        177,
+        230,
+        234,
+        237,
+        243,
+        249
+      ],
+      "guard_weights": {
+        "70": 9,
+        "95": 9,
+        "107": 9,
+        "133": 9,
+        "177": 9,
+        "230": 9,
+        "234": 9,
+        "237": 9,
+        "243": 9,
+        "249": 9
+      },
+      "hit": true,
+      "hit_type": "pure_parity",
+      "local_inconsistent_examples": [],
+      "local_inconsistent_hit": false,
+      "pure_parity_applicable": true,
+      "pure_parity_hit": true,
+      "support_class_counts": {
+        "forced": 19
+      },
+      "target_complete_wang_violations": 29,
+      "target_index": 5,
+      "target_name": "core_e11_saturation_v3_complete_long_round4",
+      "tensor_rhs_parity": 0
+    },
+    {
+      "cert_index": 3,
+      "cert_name": "core_e11_saturation_v3_complete_long_round8",
+      "forced_examples": [
+        {
+          "forced_value": 0,
+          "p": 1
+        },
+        {
+          "forced_value": 0,
+          "p": 3
+        },
+        {
+          "forced_value": 0,
+          "p": 4
+        },
+        {
+          "forced_value": 0,
+          "p": 8
+        },
+        {
+          "forced_value": 0,
+          "p": 9
+        }
+      ],
+      "forced_sum": 0,
+      "free_examples": [],
+      "guard_qs": [
+        70,
+        71,
+        135,
+        174,
+        234
+      ],
+      "guard_weights": {
+        "70": 9,
+        "71": 9,
+        "135": 9,
+        "174": 9,
+        "234": 9
+      },
+      "hit": true,
+      "hit_type": "local_inconsistent",
+      "local_inconsistent_examples": [
+        {
+          "p": 2,
+          "witness": [
+            70,
+            71,
+            135,
+            174,
+            234
+          ],
+          "witness_size": 5
+        }
+      ],
+      "local_inconsistent_hit": true,
+      "pure_parity_applicable": false,
+      "pure_parity_hit": false,
+      "support_class_counts": {
+        "forced": 18,
+        "inconsistent": 1
+      },
+      "target_complete_wang_violations": 33,
+      "target_index": 6,
+      "target_name": "core_e11_saturation_v3_complete_long_round8",
+      "tensor_rhs_parity": 0
+    },
+    {
+      "cert_index": 4,
+      "cert_name": "core_e11_saturation_v3_complete_long_round13",
+      "forced_examples": [
+        {
+          "forced_value": 0,
+          "p": 1
+        },
+        {
+          "forced_value": 0,
+          "p": 2
+        },
+        {
+          "forced_value": 0,
+          "p": 3
+        },
+        {
+          "forced_value": 0,
+          "p": 4
+        },
+        {
+          "forced_value": 0,
+          "p": 8
+        }
+      ],
+      "forced_sum": 0,
+      "free_examples": [],
+      "guard_qs": [
+        179,
+        214,
+        235,
+        243,
+        246,
+        249
+      ],
+      "guard_weights": {
+        "179": 9,
+        "214": 9,
+        "235": 9,
+        "243": 9,
+        "246": 9,
+        "249": 9
+      },
+      "hit": true,
+      "hit_type": "pure_parity",
+      "local_inconsistent_examples": [],
+      "local_inconsistent_hit": false,
+      "pure_parity_applicable": true,
+      "pure_parity_hit": true,
+      "support_class_counts": {
+        "forced": 19
+      },
+      "target_complete_wang_violations": 34,
+      "target_index": 7,
+      "target_name": "core_e11_saturation_v3_complete_long_round13",
+      "tensor_rhs_parity": 1
+    },
+    {
+      "cert_index": 5,
+      "cert_name": "core_e11_saturation_v3_complete_long_round11",
+      "forced_examples": [
+        {
+          "forced_value": 0,
+          "p": 1
+        },
+        {
+          "forced_value": 0,
+          "p": 2
+        },
+        {
+          "forced_value": 0,
+          "p": 3
+        },
+        {
+          "forced_value": 1,
+          "p": 4
+        },
+        {
+          "forced_value": 0,
+          "p": 8
+        }
+      ],
+      "forced_sum": 0,
+      "free_examples": [],
+      "guard_qs": [
+        43,
+        198,
+        214,
+        235
+      ],
+      "guard_weights": {
+        "43": 9,
+        "198": 9,
+        "214": 9,
+        "235": 9
+      },
+      "hit": true,
+      "hit_type": "pure_parity",
+      "local_inconsistent_examples": [],
+      "local_inconsistent_hit": false,
+      "pure_parity_applicable": true,
+      "pure_parity_hit": true,
+      "support_class_counts": {
+        "forced": 19
+      },
+      "target_complete_wang_violations": 35,
+      "target_index": 8,
+      "target_name": "core_e11_saturation_v3_complete_long_round11",
+      "tensor_rhs_parity": 1
+    },
+    {
+      "cert_index": 6,
+      "cert_name": "core_e11_saturation_v3_complete_long_round6",
+      "forced_examples": [
+        {
+          "forced_value": 0,
+          "p": 1
+        },
+        {
+          "forced_value": 1,
+          "p": 2
+        },
+        {
+          "forced_value": 1,
+          "p": 3
+        },
+        {
+          "forced_value": 1,
+          "p": 4
+        },
+        {
+          "forced_value": 0,
+          "p": 8
+        }
+      ],
+      "forced_sum": 1,
+      "free_examples": [],
+      "guard_qs": [
+        86,
+        117,
+        122,
+        133,
+        149,
+        247
+      ],
+      "guard_weights": {
+        "86": 9,
+        "117": 9,
+        "122": 9,
+        "133": 9,
+        "149": 9,
+        "247": 9
+      },
+      "hit": true,
+      "hit_type": "pure_parity",
+      "local_inconsistent_examples": [],
+      "local_inconsistent_hit": false,
+      "pure_parity_applicable": true,
+      "pure_parity_hit": true,
+      "support_class_counts": {
+        "forced": 19
+      },
+      "target_complete_wang_violations": 42,
+      "target_index": 9,
+      "target_name": "core_e11_saturation_v3_complete_long_round6",
+      "tensor_rhs_parity": 0
+    },
+    {
+      "cert_index": 7,
+      "cert_name": "core_e11_saturation_v3_complete_long_round9",
+      "forced_examples": [
+        {
+          "forced_value": 0,
+          "p": 4
+        },
+        {
+          "forced_value": 1,
+          "p": 12
+        },
+        {
+          "forced_value": 0,
+          "p": 13
+        },
+        {
+          "forced_value": 0,
+          "p": 28
+        },
+        {
+          "forced_value": 1,
+          "p": 32
+        }
+      ],
+      "forced_sum": 1,
+      "free_examples": [],
+      "guard_qs": [
+        46,
+        47,
+        57,
+        58,
+        78,
+        141,
+        167,
+        179,
+        205
+      ],
+      "guard_weights": {
+        "46": 9,
+        "47": 9,
+        "57": 9,
+        "58": 9,
+        "78": 9,
+        "141": 9,
+        "167": 9,
+        "179": 9,
+        "205": 9
+      },
+      "hit": true,
+      "hit_type": "pure_parity",
+      "local_inconsistent_examples": [],
+      "local_inconsistent_hit": false,
+      "pure_parity_applicable": true,
+      "pure_parity_hit": true,
+      "support_class_counts": {
+        "forced": 19
+      },
+      "target_complete_wang_violations": 87,
+      "target_index": 11,
+      "target_name": "core_e11_saturation_v3_complete_long_round9",
+      "tensor_rhs_parity": 0
+    },
+    {
+      "cert_index": 8,
+      "cert_name": "fresh_uncond_sep_10r_round6",
+      "forced_examples": [
+        {
+          "forced_value": 1,
+          "p": 1
+        },
+        {
+          "forced_value": 1,
+          "p": 3
+        },
+        {
+          "forced_value": 0,
+          "p": 9
+        },
+        {
+          "forced_value": 1,
+          "p": 13
+        },
+        {
+          "forced_value": 1,
+          "p": 16
+        }
+      ],
+      "forced_sum": 0,
+      "free_examples": [],
+      "guard_qs": [
+        46,
+        70,
+        78,
+        87,
+        95,
+        118,
+        133
+      ],
+      "guard_weights": {
+        "46": 9,
+        "70": 9,
+        "78": 9,
+        "87": 9,
+        "95": 9,
+        "118": 9,
+        "133": 9
+      },
+      "hit": true,
+      "hit_type": "pure_parity",
+      "local_inconsistent_examples": [],
+      "local_inconsistent_hit": false,
+      "pure_parity_applicable": true,
+      "pure_parity_hit": true,
+      "support_class_counts": {
+        "forced": 19
+      },
+      "target_complete_wang_violations": 108,
+      "target_index": 12,
+      "target_name": "fresh_uncond_sep_10r_round6",
+      "tensor_rhs_parity": 1
+    },
+    {
+      "cert_index": 9,
+      "cert_name": "core_e11_saturation_v3_complete_long_round7",
+      "forced_examples": [
+        {
+          "forced_value": 0,
+          "p": 4
+        },
+        {
+          "forced_value": 0,
+          "p": 18
+        },
+        {
+          "forced_value": 0,
+          "p": 20
+        },
+        {
+          "forced_value": 0,
+          "p": 27
+        },
+        {
+          "forced_value": 0,
+          "p": 32
+        }
+      ],
+      "forced_sum": 0,
+      "free_examples": [],
+      "guard_qs": [
+        106,
+        113,
+        118,
+        159,
+        237
+      ],
+      "guard_weights": {
+        "106": 9,
+        "113": 9,
+        "118": 9,
+        "159": 9,
+        "237": 9
+      },
+      "hit": true,
+      "hit_type": "local_inconsistent",
+      "local_inconsistent_examples": [
+        {
+          "p": 109,
+          "witness": [
+            106,
+            113,
+            118,
+            159,
+            237
+          ],
+          "witness_size": 5
+        }
+      ],
+      "local_inconsistent_hit": true,
+      "pure_parity_applicable": false,
+      "pure_parity_hit": false,
+      "support_class_counts": {
+        "forced": 18,
+        "inconsistent": 1
+      },
+      "target_complete_wang_violations": 151,
+      "target_index": 13,
+      "target_name": "core_e11_saturation_v3_complete_long_round7",
+      "tensor_rhs_parity": 0
+    },
+    {
+      "cert_index": 10,
+      "cert_name": "fresh_uncond_sep_10r_round0",
+      "forced_examples": [
+        {
+          "forced_value": 1,
+          "p": 1
+        },
+        {
+          "forced_value": 0,
+          "p": 2
+        },
+        {
+          "forced_value": 1,
+          "p": 3
+        },
+        {
+          "forced_value": 0,
+          "p": 4
+        },
+        {
+          "forced_value": 1,
+          "p": 13
+        }
+      ],
+      "forced_sum": 0,
+      "free_examples": [],
+      "guard_qs": [
+        43,
+        51,
+        133,
+        186,
+        229,
+        235
+      ],
+      "guard_weights": {
+        "43": 9,
+        "51": 9,
+        "133": 9,
+        "186": 9,
+        "229": 9,
+        "235": 9
+      },
+      "hit": true,
+      "hit_type": "pure_parity",
+      "local_inconsistent_examples": [],
+      "local_inconsistent_hit": false,
+      "pure_parity_applicable": true,
+      "pure_parity_hit": true,
+      "support_class_counts": {
+        "forced": 19
+      },
+      "target_complete_wang_violations": 161,
+      "target_index": 14,
+      "target_name": "fresh_uncond_sep_10r_round0",
+      "tensor_rhs_parity": 1
+    },
+    {
+      "cert_index": 11,
+      "cert_name": "core_e11_saturation_v3_complete_long_round2",
+      "forced_examples": [
+        {
+          "forced_value": 0,
+          "p": 1
+        },
+        {
+          "forced_value": 1,
+          "p": 2
+        },
+        {
+          "forced_value": 0,
+          "p": 3
+        },
+        {
+          "forced_value": 0,
+          "p": 4
+        },
+        {
+          "forced_value": 0,
+          "p": 7
+        }
+      ],
+      "forced_sum": 1,
+      "free_examples": [],
+      "guard_qs": [
+        42,
+        49,
+        51,
+        70,
+        86,
+        106,
+        133,
+        157,
+        197,
+        213,
+        234
+      ],
+      "guard_weights": {
+        "42": 9,
+        "49": 9,
+        "51": 9,
+        "70": 9,
+        "86": 9,
+        "106": 9,
+        "133": 9,
+        "157": 9,
+        "197": 9,
+        "213": 9,
+        "234": 9
+      },
+      "hit": true,
+      "hit_type": "pure_parity",
+      "local_inconsistent_examples": [],
+      "local_inconsistent_hit": false,
+      "pure_parity_applicable": true,
+      "pure_parity_hit": true,
+      "support_class_counts": {
+        "forced": 19
+      },
+      "target_complete_wang_violations": 167,
+      "target_index": 15,
+      "target_name": "core_e11_saturation_v3_complete_long_round2",
+      "tensor_rhs_parity": 0
+    },
+    {
+      "cert_index": 12,
+      "cert_name": "core_e11_saturation_v3_complete_long_round1",
+      "forced_examples": [
+        {
+          "forced_value": 0,
+          "p": 1
+        },
+        {
+          "forced_value": 0,
+          "p": 2
+        },
+        {
+          "forced_value": 0,
+          "p": 3
+        },
+        {
+          "forced_value": 0,
+          "p": 4
+        },
+        {
+          "forced_value": 0,
+          "p": 5
+        }
+      ],
+      "forced_sum": 0,
+      "free_examples": [],
+      "guard_qs": [
+        71,
+        87,
+        106,
+        121,
+        179
+      ],
+      "guard_weights": {
+        "71": 9,
+        "87": 9,
+        "106": 9,
+        "121": 9,
+        "179": 9
+      },
+      "hit": true,
+      "hit_type": "local_inconsistent",
+      "local_inconsistent_examples": [
+        {
+          "p": 192,
+          "witness": [
+            71,
+            87,
+            106,
+            121,
+            179
+          ],
+          "witness_size": 5
+        }
+      ],
+      "local_inconsistent_hit": true,
+      "pure_parity_applicable": false,
+      "pure_parity_hit": false,
+      "support_class_counts": {
+        "forced": 18,
+        "inconsistent": 1
+      },
+      "target_complete_wang_violations": 234,
+      "target_index": 18,
+      "target_name": "core_e11_saturation_v3_complete_long_round1",
+      "tensor_rhs_parity": 0
+    },
+    {
+      "cert_index": 16,
+      "cert_name": "separator_L15_certcuts_6r_180s_round0",
+      "forced_examples": [
+        {
+          "forced_value": 0,
+          "p": 1
+        },
+        {
+          "forced_value": 1,
+          "p": 2
+        },
+        {
+          "forced_value": 0,
+          "p": 3
+        },
+        {
+          "forced_value": 1,
+          "p": 4
+        },
+        {
+          "forced_value": 0,
+          "p": 20
+        }
+      ],
+      "forced_sum": 1,
+      "free_examples": [],
+      "guard_qs": [
+        42,
+        43,
+        57,
+        62,
+        94,
+        157,
+        191,
+        234
+      ],
+      "guard_weights": {
+        "42": 9,
+        "43": 9,
+        "57": 9,
+        "62": 9,
+        "94": 9,
+        "157": 9,
+        "191": 9,
+        "234": 9
+      },
+      "hit": true,
+      "hit_type": "pure_parity",
+      "local_inconsistent_examples": [],
+      "local_inconsistent_hit": false,
+      "pure_parity_applicable": true,
+      "pure_parity_hit": true,
+      "support_class_counts": {
+        "forced": 19
+      },
+      "target_complete_wang_violations": 18,
+      "target_index": 20,
+      "target_name": "separator_L15_certcuts_6r_180s_round0",
+      "tensor_rhs_parity": 0
+    },
+    {
+      "cert_index": 15,
+      "cert_name": "cpsat_L15_certcuts_180s_solution",
+      "forced_examples": [
+        {
+          "forced_value": 0,
+          "p": 1
+        },
+        {
+          "forced_value": 0,
+          "p": 2
+        },
+        {
+          "forced_value": 0,
+          "p": 3
+        },
+        {
+          "forced_value": 0,
+          "p": 4
+        },
+        {
+          "forced_value": 0,
+          "p": 8
+        }
+      ],
+      "forced_sum": 0,
+      "free_examples": [],
+      "guard_qs": [
+        43,
+        55,
+        94,
+        157
+      ],
+      "guard_weights": {
+        "43": 9,
+        "55": 9,
+        "94": 9,
+        "157": 9
+      },
+      "hit": true,
+      "hit_type": "pure_parity",
+      "local_inconsistent_examples": [],
+      "local_inconsistent_hit": false,
+      "pure_parity_applicable": true,
+      "pure_parity_hit": true,
+      "support_class_counts": {
+        "forced": 19
+      },
+      "target_complete_wang_violations": 9,
+      "target_index": 22,
+      "target_name": "cert_source_15_cpsat_L15_certcuts_180s_solution",
+      "tensor_rhs_parity": 1
+    }
+  ],
+  "meaning": "Cross-certificate support consequences recomputed with target saturation guards. A certificate only applies to a target support if every guard contraction q has support weight w(q)=9 on that target.",
+  "schema": "guarded_trace_certificate_coverage_v1",
+  "summary": {
+    "cert_summaries": {
+      "0": {
+        "active_targets": 1,
+        "hit_targets": 1,
+        "local_hits": 0,
+        "parity_hits": 1
+      },
+      "1": {
+        "active_targets": 1,
+        "hit_targets": 1,
+        "local_hits": 0,
+        "parity_hits": 1
+      },
+      "10": {
+        "active_targets": 1,
+        "hit_targets": 1,
+        "local_hits": 0,
+        "parity_hits": 1
+      },
+      "11": {
+        "active_targets": 1,
+        "hit_targets": 1,
+        "local_hits": 0,
+        "parity_hits": 1
+      },
+      "12": {
+        "active_targets": 1,
+        "hit_targets": 1,
+        "local_hits": 1,
+        "parity_hits": 0
+      },
+      "15": {
+        "active_targets": 1,
+        "hit_targets": 1,
+        "local_hits": 0,
+        "parity_hits": 1
+      },
+      "16": {
+        "active_targets": 1,
+        "hit_targets": 1,
+        "local_hits": 0,
+        "parity_hits": 1
+      },
+      "2": {
+        "active_targets": 1,
+        "hit_targets": 1,
+        "local_hits": 0,
+        "parity_hits": 1
+      },
+      "3": {
+        "active_targets": 1,
+        "hit_targets": 1,
+        "local_hits": 1,
+        "parity_hits": 0
+      },
+      "4": {
+        "active_targets": 1,
+        "hit_targets": 1,
+        "local_hits": 0,
+        "parity_hits": 1
+      },
+      "5": {
+        "active_targets": 1,
+        "hit_targets": 1,
+        "local_hits": 0,
+        "parity_hits": 1
+      },
+      "6": {
+        "active_targets": 1,
+        "hit_targets": 1,
+        "local_hits": 0,
+        "parity_hits": 1
+      },
+      "7": {
+        "active_targets": 1,
+        "hit_targets": 1,
+        "local_hits": 0,
+        "parity_hits": 1
+      },
+      "8": {
+        "active_targets": 1,
+        "hit_targets": 1,
+        "local_hits": 0,
+        "parity_hits": 1
+      },
+      "9": {
+        "active_targets": 1,
+        "hit_targets": 1,
+        "local_hits": 1,
+        "parity_hits": 0
+      }
+    },
+    "deduplicated_targets_hit_by_local_inconsistent": 3,
+    "deduplicated_targets_hit_by_pure_parity": 12,
+    "deduplicated_targets_hit_guarded": 15,
+    "deduplicated_targets_with_active_certificate": 15,
+    "targets_hit_by_local_inconsistent": 3,
+    "targets_hit_by_pure_parity": 12,
+    "targets_hit_guarded": 15,
+    "targets_with_active_certificate": 15
+  },
+  "target_count": 23,
+  "target_summaries": [
+    {
+      "A_cols": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        20,
+        24,
+        31,
+        32,
+        64,
+        73,
+        109,
+        127,
+        128,
+        141,
+        160,
+        182,
+        192,
+        219
+      ],
+      "active_certificate_count": 1,
+      "active_guard_size_hist": {
+        "10": 1
+      },
+      "complete_wang_violations": 12,
+      "hit_certificate_count": 1,
+      "inactive_guard_examples": [
+        {
+          "cert_index": 1,
+          "guard_qs": [
+            53,
+            87,
+            122,
+            127,
+            157
+          ],
+          "guard_weights": {
+            "53": 10,
+            "87": 9,
+            "122": 13,
+            "127": 14,
+            "157": 9
+          }
+        },
+        {
+          "cert_index": 2,
+          "guard_qs": [
+            70,
+            95,
+            107,
+            133,
+            177,
+            230,
+            234,
+            237,
+            243,
+            249
+          ],
+          "guard_weights": {
+            "70": 9,
+            "95": 11,
+            "107": 11,
+            "133": 9,
+            "177": 11,
+            "230": 10,
+            "234": 9,
+            "237": 14,
+            "243": 11,
+            "249": 13
+          }
+        },
+        {
+          "cert_index": 3,
+          "guard_qs": [
+            70,
+            71,
+            135,
+            174,
+            234
+          ],
+          "guard_weights": {
+            "70": 9,
+            "71": 9,
+            "135": 13,
+            "174": 14,
+            "234": 9
+          }
+        }
+      ],
+      "local_inconsistent_hit_count": 0,
+      "pure_parity_hit_count": 1,
+      "source": "analysis",
+      "target_index": 0,
+      "target_name": "near_miss_primary"
+    },
+    {
+      "A_cols": [
+        2,
+        3,
+        4,
+        10,
+        20,
+        22,
+        32,
+        36,
+        73,
+        86,
+        96,
+        97,
+        108,
+        162,
+        180,
+        224,
+        233,
+        245,
+        252
+      ],
+      "active_certificate_count": 1,
+      "active_guard_size_hist": {
+        "5": 1
+      },
+      "complete_wang_violations": 15,
+      "hit_certificate_count": 1,
+      "inactive_guard_examples": [
+        {
+          "cert_index": 0,
+          "guard_qs": [
+            42,
+            43,
+            57,
+            70,
+            71,
+            87,
+            94,
+            151,
+            186,
+            214
+          ],
+          "guard_weights": {
+            "42": 12,
+            "43": 9,
+            "57": 13,
+            "70": 14,
+            "71": 11,
+            "87": 9,
+            "94": 11,
+            "151": 12,
+            "186": 12,
+            "214": 10
+          }
+        },
+        {
+          "cert_index": 2,
+          "guard_qs": [
+            70,
+            95,
+            107,
+            133,
+            177,
+            230,
+            234,
+            237,
+            243,
+            249
+          ],
+          "guard_weights": {
+            "70": 14,
+            "95": 10,
+            "107": 10,
+            "133": 12,
+            "177": 12,
+            "230": 13,
+            "234": 9,
+            "237": 13,
+            "243": 11,
+            "249": 14
+          }
+        },
+        {
+          "cert_index": 3,
+          "guard_qs": [
+            70,
+            71,
+            135,
+            174,
+            234
+          ],
+          "guard_weights": {
+            "70": 14,
+            "71": 11,
+            "135": 10,
+            "174": 13,
+            "234": 9
+          }
+        }
+      ],
+      "local_inconsistent_hit_count": 0,
+      "pure_parity_hit_count": 1,
+      "source": "completion/distinct_candidate_completion_repaired.json",
+      "target_index": 1,
+      "target_name": "fresh_uncond_sep_10r_round8"
+    },
+    {
+      "A_cols": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        20,
+        24,
+        36,
+        65,
+        73,
+        128,
+        160,
+        182,
+        189,
+        192,
+        219,
+        224,
+        236
+      ],
+      "active_certificate_count": 0,
+      "active_guard_size_hist": {},
+      "complete_wang_violations": 16,
+      "hit_certificate_count": 0,
+      "inactive_guard_examples": [
+        {
+          "cert_index": 0,
+          "guard_qs": [
+            42,
+            43,
+            57,
+            70,
+            71,
+            87,
+            94,
+            151,
+            186,
+            214
+          ],
+          "guard_weights": {
+            "42": 9,
+            "43": 10,
+            "57": 9,
+            "70": 10,
+            "71": 9,
+            "87": 10,
+            "94": 12,
+            "151": 12,
+            "186": 10,
+            "214": 11
+          }
+        },
+        {
+          "cert_index": 1,
+          "guard_qs": [
+            53,
+            87,
+            122,
+            127,
+            157
+          ],
+          "guard_weights": {
+            "53": 10,
+            "87": 10,
+            "122": 12,
+            "127": 9,
+            "157": 13
+          }
+        },
+        {
+          "cert_index": 2,
+          "guard_qs": [
+            70,
+            95,
+            107,
+            133,
+            177,
+            230,
+            234,
+            237,
+            243,
+            249
+          ],
+          "guard_weights": {
+            "70": 10,
+            "95": 11,
+            "107": 10,
+            "133": 13,
+            "177": 12,
+            "230": 10,
+            "234": 11,
+            "237": 12,
+            "243": 10,
+            "249": 11
+          }
+        }
+      ],
+      "local_inconsistent_hit_count": 0,
+      "pure_parity_hit_count": 0,
+      "source": "completion/distinct_candidate_completion_repaired.json",
+      "target_index": 2,
+      "target_name": "core_e11_saturation_v3_complete_long_round12"
+    },
+    {
+      "A_cols": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        16,
+        20,
+        32,
+        36,
+        65,
+        72,
+        128,
+        180,
+        195,
+        216,
+        227,
+        238,
+        245,
+        252
+      ],
+      "active_certificate_count": 0,
+      "active_guard_size_hist": {},
+      "complete_wang_violations": 28,
+      "hit_certificate_count": 0,
+      "inactive_guard_examples": [
+        {
+          "cert_index": 0,
+          "guard_qs": [
+            42,
+            43,
+            57,
+            70,
+            71,
+            87,
+            94,
+            151,
+            186,
+            214
+          ],
+          "guard_weights": {
+            "42": 11,
+            "43": 11,
+            "57": 12,
+            "70": 10,
+            "71": 12,
+            "87": 10,
+            "94": 9,
+            "151": 12,
+            "186": 13,
+            "214": 12
+          }
+        },
+        {
+          "cert_index": 1,
+          "guard_qs": [
+            53,
+            87,
+            122,
+            127,
+            157
+          ],
+          "guard_weights": {
+            "53": 10,
+            "87": 10,
+            "122": 11,
+            "127": 12,
+            "157": 12
+          }
+        },
+        {
+          "cert_index": 2,
+          "guard_qs": [
+            70,
+            95,
+            107,
+            133,
+            177,
+            230,
+            234,
+            237,
+            243,
+            249
+          ],
+          "guard_weights": {
+            "70": 10,
+            "95": 9,
+            "107": 9,
+            "133": 9,
+            "177": 11,
+            "230": 11,
+            "234": 11,
+            "237": 13,
+            "243": 12,
+            "249": 12
+          }
+        }
+      ],
+      "local_inconsistent_hit_count": 0,
+      "pure_parity_hit_count": 0,
+      "source": "completion/distinct_candidate_completion_repaired.json",
+      "target_index": 3,
+      "target_name": "core_e11_saturation_v3_complete_long_round14"
+    },
+    {
+      "A_cols": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        16,
+        18,
+        32,
+        36,
+        65,
+        72,
+        130,
+        144,
+        146,
+        209,
+        224,
+        227,
+        252
+      ],
+      "active_certificate_count": 0,
+      "active_guard_size_hist": {},
+      "complete_wang_violations": 29,
+      "hit_certificate_count": 0,
+      "inactive_guard_examples": [
+        {
+          "cert_index": 0,
+          "guard_qs": [
+            42,
+            43,
+            57,
+            70,
+            71,
+            87,
+            94,
+            151,
+            186,
+            214
+          ],
+          "guard_weights": {
+            "42": 11,
+            "43": 13,
+            "57": 13,
+            "70": 11,
+            "71": 11,
+            "87": 13,
+            "94": 11,
+            "151": 12,
+            "186": 10,
+            "214": 10
+          }
+        },
+        {
+          "cert_index": 1,
+          "guard_qs": [
+            53,
+            87,
+            122,
+            127,
+            157
+          ],
+          "guard_weights": {
+            "53": 12,
+            "87": 13,
+            "122": 11,
+            "127": 10,
+            "157": 12
+          }
+        },
+        {
+          "cert_index": 2,
+          "guard_qs": [
+            70,
+            95,
+            107,
+            133,
+            177,
+            230,
+            234,
+            237,
+            243,
+            249
+          ],
+          "guard_weights": {
+            "70": 11,
+            "95": 11,
+            "107": 9,
+            "133": 10,
+            "177": 12,
+            "230": 9,
+            "234": 10,
+            "237": 11,
+            "243": 10,
+            "249": 10
+          }
+        }
+      ],
+      "local_inconsistent_hit_count": 0,
+      "pure_parity_hit_count": 0,
+      "source": "completion/distinct_candidate_completion_repaired.json",
+      "target_index": 4,
+      "target_name": "core_e11_saturation_v3_complete_long_round10"
+    },
+    {
+      "A_cols": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        16,
+        18,
+        32,
+        72,
+        96,
+        144,
+        146,
+        160,
+        224,
+        227,
+        243,
+        252,
+        255
+      ],
+      "active_certificate_count": 1,
+      "active_guard_size_hist": {
+        "10": 1
+      },
+      "complete_wang_violations": 29,
+      "hit_certificate_count": 1,
+      "inactive_guard_examples": [
+        {
+          "cert_index": 0,
+          "guard_qs": [
+            42,
+            43,
+            57,
+            70,
+            71,
+            87,
+            94,
+            151,
+            186,
+            214
+          ],
+          "guard_weights": {
+            "42": 12,
+            "43": 12,
+            "57": 14,
+            "70": 9,
+            "71": 11,
+            "87": 12,
+            "94": 11,
+            "151": 11,
+            "186": 11,
+            "214": 10
+          }
+        },
+        {
+          "cert_index": 1,
+          "guard_qs": [
+            53,
+            87,
+            122,
+            127,
+            157
+          ],
+          "guard_weights": {
+            "53": 14,
+            "87": 12,
+            "122": 10,
+            "127": 11,
+            "157": 11
+          }
+        },
+        {
+          "cert_index": 3,
+          "guard_qs": [
+            70,
+            71,
+            135,
+            174,
+            234
+          ],
+          "guard_weights": {
+            "70": 9,
+            "71": 11,
+            "135": 10,
+            "174": 13,
+            "234": 9
+          }
+        }
+      ],
+      "local_inconsistent_hit_count": 0,
+      "pure_parity_hit_count": 1,
+      "source": "completion/distinct_candidate_completion_repaired.json",
+      "target_index": 5,
+      "target_name": "core_e11_saturation_v3_complete_long_round4"
+    },
+    {
+      "A_cols": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        16,
+        27,
+        32,
+        36,
+        64,
+        73,
+        130,
+        137,
+        144,
+        182,
+        227,
+        247,
+        252
+      ],
+      "active_certificate_count": 1,
+      "active_guard_size_hist": {
+        "5": 1
+      },
+      "complete_wang_violations": 33,
+      "hit_certificate_count": 1,
+      "inactive_guard_examples": [
+        {
+          "cert_index": 0,
+          "guard_qs": [
+            42,
+            43,
+            57,
+            70,
+            71,
+            87,
+            94,
+            151,
+            186,
+            214
+          ],
+          "guard_weights": {
+            "42": 9,
+            "43": 9,
+            "57": 10,
+            "70": 9,
+            "71": 9,
+            "87": 15,
+            "94": 13,
+            "151": 11,
+            "186": 10,
+            "214": 10
+          }
+        },
+        {
+          "cert_index": 1,
+          "guard_qs": [
+            53,
+            87,
+            122,
+            127,
+            157
+          ],
+          "guard_weights": {
+            "53": 11,
+            "87": 15,
+            "122": 14,
+            "127": 11,
+            "157": 10
+          }
+        },
+        {
+          "cert_index": 2,
+          "guard_qs": [
+            70,
+            95,
+            107,
+            133,
+            177,
+            230,
+            234,
+            237,
+            243,
+            249
+          ],
+          "guard_weights": {
+            "70": 9,
+            "95": 13,
+            "107": 10,
+            "133": 10,
+            "177": 11,
+            "230": 10,
+            "234": 9,
+            "237": 13,
+            "243": 9,
+            "249": 14
+          }
+        }
+      ],
+      "local_inconsistent_hit_count": 1,
+      "pure_parity_hit_count": 0,
+      "source": "completion/distinct_candidate_completion_repaired.json",
+      "target_index": 6,
+      "target_name": "core_e11_saturation_v3_complete_long_round8"
+    },
+    {
+      "A_cols": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        18,
+        31,
+        32,
+        36,
+        65,
+        72,
+        130,
+        133,
+        144,
+        227,
+        232,
+        252,
+        255
+      ],
+      "active_certificate_count": 1,
+      "active_guard_size_hist": {
+        "6": 1
+      },
+      "complete_wang_violations": 34,
+      "hit_certificate_count": 1,
+      "inactive_guard_examples": [
+        {
+          "cert_index": 0,
+          "guard_qs": [
+            42,
+            43,
+            57,
+            70,
+            71,
+            87,
+            94,
+            151,
+            186,
+            214
+          ],
+          "guard_weights": {
+            "42": 10,
+            "43": 12,
+            "57": 12,
+            "70": 11,
+            "71": 11,
+            "87": 12,
+            "94": 11,
+            "151": 11,
+            "186": 12,
+            "214": 9
+          }
+        },
+        {
+          "cert_index": 1,
+          "guard_qs": [
+            53,
+            87,
+            122,
+            127,
+            157
+          ],
+          "guard_weights": {
+            "53": 11,
+            "87": 12,
+            "122": 13,
+            "127": 11,
+            "157": 11
+          }
+        },
+        {
+          "cert_index": 2,
+          "guard_qs": [
+            70,
+            95,
+            107,
+            133,
+            177,
+            230,
+            234,
+            237,
+            243,
+            249
+          ],
+          "guard_weights": {
+            "70": 11,
+            "95": 9,
+            "107": 12,
+            "133": 11,
+            "177": 10,
+            "230": 10,
+            "234": 11,
+            "237": 10,
+            "243": 9,
+            "249": 9
+          }
+        }
+      ],
+      "local_inconsistent_hit_count": 0,
+      "pure_parity_hit_count": 1,
+      "source": "completion/distinct_candidate_completion_repaired.json",
+      "target_index": 7,
+      "target_name": "core_e11_saturation_v3_complete_long_round13"
+    },
+    {
+      "A_cols": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        16,
+        18,
+        32,
+        36,
+        72,
+        73,
+        128,
+        130,
+        201,
+        224,
+        232,
+        252,
+        255
+      ],
+      "active_certificate_count": 1,
+      "active_guard_size_hist": {
+        "4": 1
+      },
+      "complete_wang_violations": 35,
+      "hit_certificate_count": 1,
+      "inactive_guard_examples": [
+        {
+          "cert_index": 0,
+          "guard_qs": [
+            42,
+            43,
+            57,
+            70,
+            71,
+            87,
+            94,
+            151,
+            186,
+            214
+          ],
+          "guard_weights": {
+            "42": 13,
+            "43": 9,
+            "57": 10,
+            "70": 12,
+            "71": 10,
+            "87": 12,
+            "94": 10,
+            "151": 12,
+            "186": 12,
+            "214": 9
+          }
+        },
+        {
+          "cert_index": 1,
+          "guard_qs": [
+            53,
+            87,
+            122,
+            127,
+            157
+          ],
+          "guard_weights": {
+            "53": 12,
+            "87": 12,
+            "122": 10,
+            "127": 12,
+            "157": 13
+          }
+        },
+        {
+          "cert_index": 2,
+          "guard_qs": [
+            70,
+            95,
+            107,
+            133,
+            177,
+            230,
+            234,
+            237,
+            243,
+            249
+          ],
+          "guard_weights": {
+            "70": 12,
+            "95": 10,
+            "107": 12,
+            "133": 11,
+            "177": 11,
+            "230": 11,
+            "234": 11,
+            "237": 10,
+            "243": 11,
+            "249": 12
+          }
+        }
+      ],
+      "local_inconsistent_hit_count": 0,
+      "pure_parity_hit_count": 1,
+      "source": "completion/distinct_candidate_completion_repaired.json",
+      "target_index": 8,
+      "target_name": "core_e11_saturation_v3_complete_long_round11"
+    },
+    {
+      "A_cols": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        10,
+        24,
+        28,
+        32,
+        36,
+        96,
+        109,
+        125,
+        130,
+        146,
+        168,
+        188,
+        195,
+        216
+      ],
+      "active_certificate_count": 1,
+      "active_guard_size_hist": {
+        "6": 1
+      },
+      "complete_wang_violations": 42,
+      "hit_certificate_count": 1,
+      "inactive_guard_examples": [
+        {
+          "cert_index": 0,
+          "guard_qs": [
+            42,
+            43,
+            57,
+            70,
+            71,
+            87,
+            94,
+            151,
+            186,
+            214
+          ],
+          "guard_weights": {
+            "42": 12,
+            "43": 13,
+            "57": 11,
+            "70": 11,
+            "71": 14,
+            "87": 10,
+            "94": 12,
+            "151": 11,
+            "186": 10,
+            "214": 13
+          }
+        },
+        {
+          "cert_index": 1,
+          "guard_qs": [
+            53,
+            87,
+            122,
+            127,
+            157
+          ],
+          "guard_weights": {
+            "53": 12,
+            "87": 10,
+            "122": 9,
+            "127": 10,
+            "157": 10
+          }
+        },
+        {
+          "cert_index": 2,
+          "guard_qs": [
+            70,
+            95,
+            107,
+            133,
+            177,
+            230,
+            234,
+            237,
+            243,
+            249
+          ],
+          "guard_weights": {
+            "70": 11,
+            "95": 13,
+            "107": 10,
+            "133": 9,
+            "177": 10,
+            "230": 10,
+            "234": 13,
+            "237": 14,
+            "243": 11,
+            "249": 10
+          }
+        }
+      ],
+      "local_inconsistent_hit_count": 0,
+      "pure_parity_hit_count": 1,
+      "source": "completion/distinct_candidate_completion_repaired.json",
+      "target_index": 9,
+      "target_name": "core_e11_saturation_v3_complete_long_round6"
+    },
+    {
+      "A_cols": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        16,
+        28,
+        32,
+        36,
+        64,
+        65,
+        72,
+        128,
+        142,
+        180,
+        212,
+        216,
+        224
+      ],
+      "active_certificate_count": 0,
+      "active_guard_size_hist": {},
+      "complete_wang_violations": 75,
+      "hit_certificate_count": 0,
+      "inactive_guard_examples": [
+        {
+          "cert_index": 0,
+          "guard_qs": [
+            42,
+            43,
+            57,
+            70,
+            71,
+            87,
+            94,
+            151,
+            186,
+            214
+          ],
+          "guard_weights": {
+            "42": 11,
+            "43": 11,
+            "57": 11,
+            "70": 11,
+            "71": 11,
+            "87": 10,
+            "94": 14,
+            "151": 12,
+            "186": 12,
+            "214": 12
+          }
+        },
+        {
+          "cert_index": 1,
+          "guard_qs": [
+            53,
+            87,
+            122,
+            127,
+            157
+          ],
+          "guard_weights": {
+            "53": 11,
+            "87": 10,
+            "122": 10,
+            "127": 12,
+            "157": 15
+          }
+        },
+        {
+          "cert_index": 2,
+          "guard_qs": [
+            70,
+            95,
+            107,
+            133,
+            177,
+            230,
+            234,
+            237,
+            243,
+            249
+          ],
+          "guard_weights": {
+            "70": 11,
+            "95": 12,
+            "107": 9,
+            "133": 10,
+            "177": 11,
+            "230": 13,
+            "234": 13,
+            "237": 12,
+            "243": 14,
+            "249": 11
+          }
+        }
+      ],
+      "local_inconsistent_hit_count": 0,
+      "pure_parity_hit_count": 0,
+      "source": "completion/distinct_candidate_completion_repaired.json",
+      "target_index": 10,
+      "target_name": "core_e11_saturation_v3_complete_long_round5"
+    },
+    {
+      "A_cols": [
+        4,
+        12,
+        13,
+        28,
+        32,
+        36,
+        55,
+        108,
+        109,
+        137,
+        138,
+        160,
+        162,
+        180,
+        182,
+        192,
+        224,
+        227,
+        255
+      ],
+      "active_certificate_count": 1,
+      "active_guard_size_hist": {
+        "9": 1
+      },
+      "complete_wang_violations": 87,
+      "hit_certificate_count": 1,
+      "inactive_guard_examples": [
+        {
+          "cert_index": 0,
+          "guard_qs": [
+            42,
+            43,
+            57,
+            70,
+            71,
+            87,
+            94,
+            151,
+            186,
+            214
+          ],
+          "guard_weights": {
+            "42": 10,
+            "43": 10,
+            "57": 9,
+            "70": 11,
+            "71": 13,
+            "87": 12,
+            "94": 12,
+            "151": 10,
+            "186": 11,
+            "214": 10
+          }
+        },
+        {
+          "cert_index": 1,
+          "guard_qs": [
+            53,
+            87,
+            122,
+            127,
+            157
+          ],
+          "guard_weights": {
+            "53": 10,
+            "87": 12,
+            "122": 13,
+            "127": 10,
+            "157": 14
+          }
+        },
+        {
+          "cert_index": 2,
+          "guard_qs": [
+            70,
+            95,
+            107,
+            133,
+            177,
+            230,
+            234,
+            237,
+            243,
+            249
+          ],
+          "guard_weights": {
+            "70": 11,
+            "95": 10,
+            "107": 10,
+            "133": 11,
+            "177": 11,
+            "230": 13,
+            "234": 12,
+            "237": 9,
+            "243": 9,
+            "249": 9
+          }
+        }
+      ],
+      "local_inconsistent_hit_count": 0,
+      "pure_parity_hit_count": 1,
+      "source": "completion/distinct_candidate_completion_repaired.json",
+      "target_index": 11,
+      "target_name": "core_e11_saturation_v3_complete_long_round9"
+    },
+    {
+      "A_cols": [
+        1,
+        3,
+        9,
+        13,
+        16,
+        18,
+        24,
+        28,
+        32,
+        36,
+        64,
+        109,
+        115,
+        144,
+        146,
+        163,
+        167,
+        171,
+        243
+      ],
+      "active_certificate_count": 1,
+      "active_guard_size_hist": {
+        "7": 1
+      },
+      "complete_wang_violations": 108,
+      "hit_certificate_count": 1,
+      "inactive_guard_examples": [
+        {
+          "cert_index": 0,
+          "guard_qs": [
+            42,
+            43,
+            57,
+            70,
+            71,
+            87,
+            94,
+            151,
+            186,
+            214
+          ],
+          "guard_weights": {
+            "42": 10,
+            "43": 12,
+            "57": 12,
+            "70": 9,
+            "71": 11,
+            "87": 9,
+            "94": 11,
+            "151": 9,
+            "186": 10,
+            "214": 9
+          }
+        },
+        {
+          "cert_index": 1,
+          "guard_qs": [
+            53,
+            87,
+            122,
+            127,
+            157
+          ],
+          "guard_weights": {
+            "53": 13,
+            "87": 9,
+            "122": 10,
+            "127": 11,
+            "157": 11
+          }
+        },
+        {
+          "cert_index": 2,
+          "guard_qs": [
+            70,
+            95,
+            107,
+            133,
+            177,
+            230,
+            234,
+            237,
+            243,
+            249
+          ],
+          "guard_weights": {
+            "70": 9,
+            "95": 9,
+            "107": 10,
+            "133": 9,
+            "177": 14,
+            "230": 11,
+            "234": 14,
+            "237": 11,
+            "243": 12,
+            "249": 10
+          }
+        }
+      ],
+      "local_inconsistent_hit_count": 0,
+      "pure_parity_hit_count": 1,
+      "source": "completion/distinct_candidate_completion_repaired.json",
+      "target_index": 12,
+      "target_name": "fresh_uncond_sep_10r_round6"
+    },
+    {
+      "A_cols": [
+        4,
+        18,
+        20,
+        27,
+        32,
+        36,
+        65,
+        73,
+        92,
+        94,
+        96,
+        97,
+        109,
+        160,
+        162,
+        182,
+        219,
+        222,
+        255
+      ],
+      "active_certificate_count": 1,
+      "active_guard_size_hist": {
+        "5": 1
+      },
+      "complete_wang_violations": 151,
+      "hit_certificate_count": 1,
+      "inactive_guard_examples": [
+        {
+          "cert_index": 0,
+          "guard_qs": [
+            42,
+            43,
+            57,
+            70,
+            71,
+            87,
+            94,
+            151,
+            186,
+            214
+          ],
+          "guard_weights": {
+            "42": 9,
+            "43": 10,
+            "57": 11,
+            "70": 13,
+            "71": 10,
+            "87": 9,
+            "94": 12,
+            "151": 9,
+            "186": 10,
+            "214": 10
+          }
+        },
+        {
+          "cert_index": 1,
+          "guard_qs": [
+            53,
+            87,
+            122,
+            127,
+            157
+          ],
+          "guard_weights": {
+            "53": 10,
+            "87": 9,
+            "122": 10,
+            "127": 10,
+            "157": 13
+          }
+        },
+        {
+          "cert_index": 2,
+          "guard_qs": [
+            70,
+            95,
+            107,
+            133,
+            177,
+            230,
+            234,
+            237,
+            243,
+            249
+          ],
+          "guard_weights": {
+            "70": 13,
+            "95": 9,
+            "107": 10,
+            "133": 12,
+            "177": 11,
+            "230": 12,
+            "234": 9,
+            "237": 9,
+            "243": 9,
+            "249": 11
+          }
+        }
+      ],
+      "local_inconsistent_hit_count": 1,
+      "pure_parity_hit_count": 0,
+      "source": "completion/distinct_candidate_completion_repaired.json",
+      "target_index": 13,
+      "target_name": "core_e11_saturation_v3_complete_long_round7"
+    },
+    {
+      "A_cols": [
+        1,
+        2,
+        3,
+        4,
+        13,
+        16,
+        18,
+        36,
+        48,
+        53,
+        64,
+        68,
+        72,
+        96,
+        128,
+        160,
+        192,
+        224,
+        252
+      ],
+      "active_certificate_count": 1,
+      "active_guard_size_hist": {
+        "6": 1
+      },
+      "complete_wang_violations": 161,
+      "hit_certificate_count": 1,
+      "inactive_guard_examples": [
+        {
+          "cert_index": 0,
+          "guard_qs": [
+            42,
+            43,
+            57,
+            70,
+            71,
+            87,
+            94,
+            151,
+            186,
+            214
+          ],
+          "guard_weights": {
+            "42": 11,
+            "43": 9,
+            "57": 11,
+            "70": 12,
+            "71": 10,
+            "87": 13,
+            "94": 10,
+            "151": 13,
+            "186": 9,
+            "214": 12
+          }
+        },
+        {
+          "cert_index": 1,
+          "guard_qs": [
+            53,
+            87,
+            122,
+            127,
+            157
+          ],
+          "guard_weights": {
+            "53": 10,
+            "87": 13,
+            "122": 9,
+            "127": 9,
+            "157": 15
+          }
+        },
+        {
+          "cert_index": 2,
+          "guard_qs": [
+            70,
+            95,
+            107,
+            133,
+            177,
+            230,
+            234,
+            237,
+            243,
+            249
+          ],
+          "guard_weights": {
+            "70": 12,
+            "95": 12,
+            "107": 10,
+            "133": 9,
+            "177": 11,
+            "230": 10,
+            "234": 11,
+            "237": 10,
+            "243": 11,
+            "249": 11
+          }
+        }
+      ],
+      "local_inconsistent_hit_count": 0,
+      "pure_parity_hit_count": 1,
+      "source": "completion/distinct_candidate_completion_repaired.json",
+      "target_index": 14,
+      "target_name": "fresh_uncond_sep_10r_round0"
+    },
+    {
+      "A_cols": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        27,
+        31,
+        32,
+        61,
+        72,
+        97,
+        108,
+        144,
+        162,
+        180,
+        227,
+        237,
+        251
+      ],
+      "active_certificate_count": 1,
+      "active_guard_size_hist": {
+        "11": 1
+      },
+      "complete_wang_violations": 167,
+      "hit_certificate_count": 1,
+      "inactive_guard_examples": [
+        {
+          "cert_index": 0,
+          "guard_qs": [
+            42,
+            43,
+            57,
+            70,
+            71,
+            87,
+            94,
+            151,
+            186,
+            214
+          ],
+          "guard_weights": {
+            "42": 9,
+            "43": 11,
+            "57": 11,
+            "70": 9,
+            "71": 11,
+            "87": 11,
+            "94": 11,
+            "151": 11,
+            "186": 15,
+            "214": 9
+          }
+        },
+        {
+          "cert_index": 1,
+          "guard_qs": [
+            53,
+            87,
+            122,
+            127,
+            157
+          ],
+          "guard_weights": {
+            "53": 10,
+            "87": 11,
+            "122": 13,
+            "127": 12,
+            "157": 9
+          }
+        },
+        {
+          "cert_index": 2,
+          "guard_qs": [
+            70,
+            95,
+            107,
+            133,
+            177,
+            230,
+            234,
+            237,
+            243,
+            249
+          ],
+          "guard_weights": {
+            "70": 9,
+            "95": 11,
+            "107": 11,
+            "133": 9,
+            "177": 9,
+            "230": 10,
+            "234": 9,
+            "237": 10,
+            "243": 11,
+            "249": 11
+          }
+        }
+      ],
+      "local_inconsistent_hit_count": 0,
+      "pure_parity_hit_count": 1,
+      "source": "completion/distinct_candidate_completion_repaired.json",
+      "target_index": 15,
+      "target_name": "core_e11_saturation_v3_complete_long_round2"
+    },
+    {
+      "A_cols": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        10,
+        18,
+        32,
+        36,
+        64,
+        128,
+        144,
+        146,
+        185,
+        210,
+        219,
+        235,
+        255
+      ],
+      "active_certificate_count": 0,
+      "active_guard_size_hist": {},
+      "complete_wang_violations": 196,
+      "hit_certificate_count": 0,
+      "inactive_guard_examples": [
+        {
+          "cert_index": 0,
+          "guard_qs": [
+            42,
+            43,
+            57,
+            70,
+            71,
+            87,
+            94,
+            151,
+            186,
+            214
+          ],
+          "guard_weights": {
+            "42": 11,
+            "43": 10,
+            "57": 12,
+            "70": 9,
+            "71": 12,
+            "87": 11,
+            "94": 11,
+            "151": 12,
+            "186": 10,
+            "214": 10
+          }
+        },
+        {
+          "cert_index": 1,
+          "guard_qs": [
+            53,
+            87,
+            122,
+            127,
+            157
+          ],
+          "guard_weights": {
+            "53": 10,
+            "87": 11,
+            "122": 11,
+            "127": 11,
+            "157": 10
+          }
+        },
+        {
+          "cert_index": 2,
+          "guard_qs": [
+            70,
+            95,
+            107,
+            133,
+            177,
+            230,
+            234,
+            237,
+            243,
+            249
+          ],
+          "guard_weights": {
+            "70": 9,
+            "95": 10,
+            "107": 11,
+            "133": 10,
+            "177": 9,
+            "230": 12,
+            "234": 14,
+            "237": 11,
+            "243": 11,
+            "249": 13
+          }
+        }
+      ],
+      "local_inconsistent_hit_count": 0,
+      "pure_parity_hit_count": 0,
+      "source": "completion/distinct_candidate_completion_repaired.json",
+      "target_index": 16,
+      "target_name": "core_e11_saturation_v3_complete_long_round3"
+    },
+    {
+      "A_cols": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        20,
+        27,
+        64,
+        65,
+        73,
+        160,
+        162,
+        180,
+        182,
+        192,
+        195,
+        216,
+        219
+      ],
+      "active_certificate_count": 0,
+      "active_guard_size_hist": {},
+      "complete_wang_violations": 201,
+      "hit_certificate_count": 0,
+      "inactive_guard_examples": [
+        {
+          "cert_index": 0,
+          "guard_qs": [
+            42,
+            43,
+            57,
+            70,
+            71,
+            87,
+            94,
+            151,
+            186,
+            214
+          ],
+          "guard_weights": {
+            "42": 9,
+            "43": 9,
+            "57": 10,
+            "70": 11,
+            "71": 11,
+            "87": 9,
+            "94": 11,
+            "151": 10,
+            "186": 11,
+            "214": 9
+          }
+        },
+        {
+          "cert_index": 1,
+          "guard_qs": [
+            53,
+            87,
+            122,
+            127,
+            157
+          ],
+          "guard_weights": {
+            "53": 11,
+            "87": 9,
+            "122": 12,
+            "127": 11,
+            "157": 11
+          }
+        },
+        {
+          "cert_index": 2,
+          "guard_qs": [
+            70,
+            95,
+            107,
+            133,
+            177,
+            230,
+            234,
+            237,
+            243,
+            249
+          ],
+          "guard_weights": {
+            "70": 11,
+            "95": 11,
+            "107": 10,
+            "133": 11,
+            "177": 10,
+            "230": 11,
+            "234": 10,
+            "237": 10,
+            "243": 10,
+            "249": 11
+          }
+        }
+      ],
+      "local_inconsistent_hit_count": 0,
+      "pure_parity_hit_count": 0,
+      "source": "completion/distinct_candidate_completion_repaired.json",
+      "target_index": 17,
+      "target_name": "fresh_uncond_sep_10r_round5"
+    },
+    {
+      "A_cols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        16,
+        28,
+        37,
+        72,
+        76,
+        108,
+        133,
+        192,
+        195,
+        216,
+        219,
+        250,
+        252
+      ],
+      "active_certificate_count": 1,
+      "active_guard_size_hist": {
+        "5": 1
+      },
+      "complete_wang_violations": 234,
+      "hit_certificate_count": 1,
+      "inactive_guard_examples": [
+        {
+          "cert_index": 0,
+          "guard_qs": [
+            42,
+            43,
+            57,
+            70,
+            71,
+            87,
+            94,
+            151,
+            186,
+            214
+          ],
+          "guard_weights": {
+            "42": 10,
+            "43": 11,
+            "57": 12,
+            "70": 10,
+            "71": 9,
+            "87": 9,
+            "94": 13,
+            "151": 11,
+            "186": 11,
+            "214": 9
+          }
+        },
+        {
+          "cert_index": 1,
+          "guard_qs": [
+            53,
+            87,
+            122,
+            127,
+            157
+          ],
+          "guard_weights": {
+            "53": 9,
+            "87": 9,
+            "122": 9,
+            "127": 14,
+            "157": 11
+          }
+        },
+        {
+          "cert_index": 2,
+          "guard_qs": [
+            70,
+            95,
+            107,
+            133,
+            177,
+            230,
+            234,
+            237,
+            243,
+            249
+          ],
+          "guard_weights": {
+            "70": 10,
+            "95": 12,
+            "107": 10,
+            "133": 10,
+            "177": 10,
+            "230": 9,
+            "234": 10,
+            "237": 10,
+            "243": 10,
+            "249": 10
+          }
+        }
+      ],
+      "local_inconsistent_hit_count": 1,
+      "pure_parity_hit_count": 0,
+      "source": "completion/distinct_candidate_completion_repaired.json",
+      "target_index": 18,
+      "target_name": "core_e11_saturation_v3_complete_long_round1"
+    },
+    {
+      "A_cols": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        20,
+        24,
+        31,
+        32,
+        36,
+        64,
+        73,
+        109,
+        127,
+        128,
+        141,
+        160,
+        182,
+        219
+      ],
+      "active_certificate_count": 0,
+      "active_guard_size_hist": {},
+      "complete_wang_violations": 9,
+      "hit_certificate_count": 0,
+      "inactive_guard_examples": [
+        {
+          "cert_index": 0,
+          "guard_qs": [
+            42,
+            43,
+            57,
+            70,
+            71,
+            87,
+            94,
+            151,
+            186,
+            214
+          ],
+          "guard_weights": {
+            "42": 10,
+            "43": 10,
+            "57": 10,
+            "70": 9,
+            "71": 9,
+            "87": 9,
+            "94": 9,
+            "151": 9,
+            "186": 9,
+            "214": 10
+          }
+        },
+        {
+          "cert_index": 1,
+          "guard_qs": [
+            53,
+            87,
+            122,
+            127,
+            157
+          ],
+          "guard_weights": {
+            "53": 10,
+            "87": 9,
+            "122": 13,
+            "127": 13,
+            "157": 9
+          }
+        },
+        {
+          "cert_index": 2,
+          "guard_qs": [
+            70,
+            95,
+            107,
+            133,
+            177,
+            230,
+            234,
+            237,
+            243,
+            249
+          ],
+          "guard_weights": {
+            "70": 9,
+            "95": 11,
+            "107": 11,
+            "133": 9,
+            "177": 11,
+            "230": 10,
+            "234": 10,
+            "237": 14,
+            "243": 12,
+            "249": 14
+          }
+        }
+      ],
+      "local_inconsistent_hit_count": 0,
+      "pure_parity_hit_count": 0,
+      "source": "data/trace_dependency_cuts/aug_separator_support_trace_evaluation.json",
+      "target_index": 19,
+      "target_name": "separator_L15_augcertcuts_4r_240s_round0"
+    },
+    {
+      "A_cols": [
+        1,
+        2,
+        3,
+        4,
+        20,
+        24,
+        31,
+        32,
+        36,
+        64,
+        73,
+        109,
+        127,
+        128,
+        141,
+        160,
+        182,
+        192,
+        219
+      ],
+      "active_certificate_count": 1,
+      "active_guard_size_hist": {
+        "8": 1
+      },
+      "complete_wang_violations": 18,
+      "hit_certificate_count": 1,
+      "inactive_guard_examples": [
+        {
+          "cert_index": 0,
+          "guard_qs": [
+            42,
+            43,
+            57,
+            70,
+            71,
+            87,
+            94,
+            151,
+            186,
+            214
+          ],
+          "guard_weights": {
+            "42": 9,
+            "43": 9,
+            "57": 9,
+            "70": 10,
+            "71": 10,
+            "87": 10,
+            "94": 9,
+            "151": 10,
+            "186": 9,
+            "214": 10
+          }
+        },
+        {
+          "cert_index": 1,
+          "guard_qs": [
+            53,
+            87,
+            122,
+            127,
+            157
+          ],
+          "guard_weights": {
+            "53": 10,
+            "87": 10,
+            "122": 13,
+            "127": 13,
+            "157": 9
+          }
+        },
+        {
+          "cert_index": 2,
+          "guard_qs": [
+            70,
+            95,
+            107,
+            133,
+            177,
+            230,
+            234,
+            237,
+            243,
+            249
+          ],
+          "guard_weights": {
+            "70": 10,
+            "95": 11,
+            "107": 11,
+            "133": 10,
+            "177": 12,
+            "230": 10,
+            "234": 9,
+            "237": 13,
+            "243": 12,
+            "249": 13
+          }
+        }
+      ],
+      "local_inconsistent_hit_count": 0,
+      "pure_parity_hit_count": 1,
+      "source": "data/trace_dependency_cuts/separator_L15_certcuts_6r_180s.json",
+      "target_index": 20,
+      "target_name": "separator_L15_certcuts_6r_180s_round0"
+    },
+    {
+      "A_cols": [
+        1,
+        2,
+        9,
+        13,
+        18,
+        22,
+        31,
+        32,
+        36,
+        45,
+        65,
+        146,
+        160,
+        204,
+        224,
+        227,
+        252,
+        254,
+        255
+      ],
+      "active_certificate_count": 0,
+      "active_guard_size_hist": {},
+      "complete_wang_violations": 18,
+      "hit_certificate_count": 0,
+      "inactive_guard_examples": [
+        {
+          "cert_index": 0,
+          "guard_qs": [
+            42,
+            43,
+            57,
+            70,
+            71,
+            87,
+            94,
+            151,
+            186,
+            214
+          ],
+          "guard_weights": {
+            "42": 13,
+            "43": 15,
+            "57": 14,
+            "70": 10,
+            "71": 10,
+            "87": 9,
+            "94": 9,
+            "151": 12,
+            "186": 10,
+            "214": 13
+          }
+        },
+        {
+          "cert_index": 1,
+          "guard_qs": [
+            53,
+            87,
+            122,
+            127,
+            157
+          ],
+          "guard_weights": {
+            "53": 13,
+            "87": 9,
+            "122": 11,
+            "127": 10,
+            "157": 10
+          }
+        },
+        {
+          "cert_index": 2,
+          "guard_qs": [
+            70,
+            95,
+            107,
+            133,
+            177,
+            230,
+            234,
+            237,
+            243,
+            249
+          ],
+          "guard_weights": {
+            "70": 10,
+            "95": 11,
+            "107": 12,
+            "133": 9,
+            "177": 12,
+            "230": 9,
+            "234": 12,
+            "237": 9,
+            "243": 11,
+            "249": 11
+          }
+        }
+      ],
+      "local_inconsistent_hit_count": 0,
+      "pure_parity_hit_count": 0,
+      "source": "data/trace_dependency_cuts/separator_L15_certcuts_6r_180s.json",
+      "target_index": 21,
+      "target_name": "separator_L15_certcuts_6r_180s_round1"
+    },
+    {
+      "A_cols": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        20,
+        24,
+        31,
+        32,
+        36,
+        64,
+        73,
+        127,
+        128,
+        141,
+        160,
+        182,
+        192,
+        219
+      ],
+      "active_certificate_count": 1,
+      "active_guard_size_hist": {
+        "4": 1
+      },
+      "complete_wang_violations": 9,
+      "hit_certificate_count": 1,
+      "inactive_guard_examples": [
+        {
+          "cert_index": 0,
+          "guard_qs": [
+            42,
+            43,
+            57,
+            70,
+            71,
+            87,
+            94,
+            151,
+            186,
+            214
+          ],
+          "guard_weights": {
+            "42": 10,
+            "43": 9,
+            "57": 9,
+            "70": 10,
+            "71": 9,
+            "87": 9,
+            "94": 9,
+            "151": 10,
+            "186": 10,
+            "214": 10
+          }
+        },
+        {
+          "cert_index": 1,
+          "guard_qs": [
+            53,
+            87,
+            122,
+            127,
+            157
+          ],
+          "guard_weights": {
+            "53": 9,
+            "87": 9,
+            "122": 13,
+            "127": 13,
+            "157": 9
+          }
+        },
+        {
+          "cert_index": 2,
+          "guard_qs": [
+            70,
+            95,
+            107,
+            133,
+            177,
+            230,
+            234,
+            237,
+            243,
+            249
+          ],
+          "guard_weights": {
+            "70": 10,
+            "95": 12,
+            "107": 12,
+            "133": 10,
+            "177": 12,
+            "230": 9,
+            "234": 9,
+            "237": 13,
+            "243": 11,
+            "249": 14
+          }
+        }
+      ],
+      "local_inconsistent_hit_count": 0,
+      "pure_parity_hit_count": 1,
+      "source": "certificate_source_support",
+      "target_index": 22,
+      "target_name": "cert_source_15_cpsat_L15_certcuts_180s_solution"
+    }
+  ]
+}

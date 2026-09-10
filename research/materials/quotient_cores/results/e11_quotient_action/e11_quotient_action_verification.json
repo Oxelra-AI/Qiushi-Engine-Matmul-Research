@@ -1,0 +1,706 @@
+{
+  "correct_action": "A quotient factors transform by q = [U] -> [P^T U Q^{-T}] modulo <E00>, with row0(P)=e0^T and col0(Q)=e0.",
+  "elapsed_sec": 12.141477823257446,
+  "field": "F2",
+  "old_complement_action_for_comparison_only": {
+    "P_old_size": 24,
+    "Q_old_size": 24,
+    "description": "This is the previously used complement-preserving action P[:,0]=e0 and Q^{-T}[:,0]=e0; it acts on the chosen section U00=0 rather than on A/<E00> and should not be used for E11 quotient orbit compression.",
+    "distinct_old_perms": 576,
+    "old_bad_pairs": 0,
+    "old_orbit_sizes_sorted": [
+      6,
+      9,
+      12,
+      12,
+      36,
+      36,
+      72,
+      72
+    ],
+    "old_orbits": [
+      {
+        "orbit": 0,
+        "rank_counts": {
+          "1": 12
+        },
+        "reps": [
+          1,
+          2,
+          3,
+          9,
+          18,
+          65,
+          130,
+          73,
+          146,
+          27,
+          195,
+          219
+        ],
+        "seed": 1,
+        "signature_counts": {
+          "(1, 1, 0, 1)": 2,
+          "(1, 1, 0, 2)": 5,
+          "(1, 1, 0, 3)": 2,
+          "(1, 1, 0, 4)": 2,
+          "(1, 1, 0, 6)": 1
+        },
+        "size": 12,
+        "weight_counts": {
+          "1": 2,
+          "2": 5,
+          "3": 2,
+          "4": 2,
+          "6": 1
+        }
+      },
+      {
+        "orbit": 1,
+        "rank_counts": {
+          "1": 12
+        },
+        "reps": [
+          4,
+          32,
+          12,
+          20,
+          36,
+          96,
+          160,
+          28,
+          224,
+          108,
+          180,
+          252
+        ],
+        "seed": 4,
+        "signature_counts": {
+          "(1, 0, 1, 1)": 2,
+          "(1, 0, 1, 2)": 5,
+          "(1, 0, 1, 3)": 2,
+          "(1, 0, 1, 4)": 2,
+          "(1, 0, 1, 6)": 1
+        },
+        "size": 12,
+        "weight_counts": {
+          "1": 2,
+          "2": 5,
+          "3": 2,
+          "4": 2,
+          "6": 1
+        }
+      },
+      {
+        "orbit": 2,
+        "rank_counts": {
+          "2": 72
+        },
+        "reps": [
+          5,
+          6,
+          33,
+          34,
+          7,
+          13,
+          14,
+          21,
+          22,
+          35,
+          37,
+          38,
+          41,
+          50,
+          69,
+          97,
+          98,
+          134,
+          161,
+          162
+        ],
+        "seed": 5,
+        "signature_counts": {
+          "(2, 1, 1, 2)": 4,
+          "(2, 1, 1, 3)": 16,
+          "(2, 1, 1, 4)": 21,
+          "(2, 1, 1, 5)": 12,
+          "(2, 1, 1, 6)": 14,
+          "(2, 1, 1, 7)": 4,
+          "(2, 1, 1, 8)": 1
+        },
+        "size": 72,
+        "weight_counts": {
+          "2": 4,
+          "3": 16,
+          "4": 21,
+          "5": 12,
+          "6": 14,
+          "7": 4,
+          "8": 1
+        }
+      },
+      {
+        "orbit": 3,
+        "rank_counts": {
+          "1": 9
+        },
+        "reps": [
+          8,
+          16,
+          64,
+          128,
+          24,
+          72,
+          144,
+          192,
+          216
+        ],
+        "seed": 8,
+        "signature_counts": {
+          "(1, 0, 0, 1)": 4,
+          "(1, 0, 0, 2)": 4,
+          "(1, 0, 0, 4)": 1
+        },
+        "size": 9,
+        "weight_counts": {
+          "1": 4,
+          "2": 4,
+          "4": 1
+        }
+      },
+      {
+        "orbit": 4,
+        "rank_counts": {
+          "2": 36
+        },
+        "reps": [
+          10,
+          17,
+          66,
+          129,
+          11,
+          19,
+          25,
+          26,
+          67,
+          74,
+          81,
+          82,
+          131,
+          137,
+          138,
+          145,
+          193,
+          194,
+          75,
+          83
+        ],
+        "seed": 10,
+        "signature_counts": {
+          "(2, 1, 0, 2)": 4,
+          "(2, 1, 0, 3)": 14,
+          "(2, 1, 0, 4)": 12,
+          "(2, 1, 0, 5)": 6
+        },
+        "size": 36,
+        "weight_counts": {
+          "2": 4,
+          "3": 14,
+          "4": 12,
+          "5": 6
+        }
+      },
+      {
+        "orbit": 5,
+        "rank_counts": {
+          "2": 36
+        },
+        "reps": [
+          40,
+          48,
+          68,
+          132,
+          44,
+          52,
+          56,
+          76,
+          84,
+          100,
+          104,
+          112,
+          140,
+          148,
+          164,
+          168,
+          176,
+          196,
+          60,
+          92
+        ],
+        "seed": 40,
+        "signature_counts": {
+          "(2, 0, 1, 2)": 4,
+          "(2, 0, 1, 3)": 14,
+          "(2, 0, 1, 4)": 12,
+          "(2, 0, 1, 5)": 6
+        },
+        "size": 36,
+        "weight_counts": {
+          "2": 4,
+          "3": 14,
+          "4": 12,
+          "5": 6
+        }
+      },
+      {
+        "orbit": 6,
+        "rank_counts": {
+          "3": 72
+        },
+        "reps": [
+          42,
+          49,
+          70,
+          133,
+          43,
+          46,
+          51,
+          53,
+          57,
+          58,
+          71,
+          78,
+          86,
+          102,
+          106,
+          113,
+          135,
+          141,
+          149,
+          165
+        ],
+        "seed": 42,
+        "signature_counts": {
+          "(3, 1, 1, 3)": 4,
+          "(3, 1, 1, 4)": 20,
+          "(3, 1, 1, 5)": 32,
+          "(3, 1, 1, 6)": 12,
+          "(3, 1, 1, 7)": 4
+        },
+        "size": 72,
+        "weight_counts": {
+          "3": 4,
+          "4": 20,
+          "5": 32,
+          "6": 12,
+          "7": 4
+        }
+      },
+      {
+        "orbit": 7,
+        "rank_counts": {
+          "2": 6
+        },
+        "reps": [
+          80,
+          136,
+          88,
+          152,
+          200,
+          208
+        ],
+        "seed": 80,
+        "signature_counts": {
+          "(2, 0, 0, 2)": 2,
+          "(2, 0, 0, 3)": 4
+        },
+        "size": 6,
+        "weight_counts": {
+          "2": 2,
+          "3": 4
+        }
+      }
+    ]
+  },
+  "point_orbits": {
+    "matches_expected_sizes_3_3_9_36_36_36_36_96": true,
+    "num_orbits": 8,
+    "orbits": [
+      {
+        "orbit": 0,
+        "rank_counts": {
+          "1": 3
+        },
+        "reps": [
+          1,
+          2,
+          3
+        ],
+        "seed": 1,
+        "signature_counts": {
+          "(1, 1, 0, 1)": 2,
+          "(1, 1, 0, 2)": 1
+        },
+        "size": 3,
+        "weight_counts": {
+          "1": 2,
+          "2": 1
+        }
+      },
+      {
+        "orbit": 1,
+        "rank_counts": {
+          "1": 3
+        },
+        "reps": [
+          4,
+          32,
+          36
+        ],
+        "seed": 4,
+        "signature_counts": {
+          "(1, 0, 1, 1)": 2,
+          "(1, 0, 1, 2)": 1
+        },
+        "size": 3,
+        "weight_counts": {
+          "1": 2,
+          "2": 1
+        }
+      },
+      {
+        "orbit": 2,
+        "rank_counts": {
+          "2": 9
+        },
+        "reps": [
+          5,
+          6,
+          33,
+          34,
+          7,
+          35,
+          37,
+          38,
+          39
+        ],
+        "seed": 5,
+        "signature_counts": {
+          "(2, 1, 1, 2)": 4,
+          "(2, 1, 1, 3)": 4,
+          "(2, 1, 1, 4)": 1
+        },
+        "size": 9,
+        "weight_counts": {
+          "2": 4,
+          "3": 4,
+          "4": 1
+        }
+      },
+      {
+        "orbit": 3,
+        "rank_counts": {
+          "1": 27,
+          "2": 9
+        },
+        "reps": [
+          8,
+          16,
+          64,
+          128,
+          9,
+          12,
+          18,
+          20,
+          24,
+          65,
+          72,
+          96,
+          130,
+          144,
+          160,
+          192,
+          13,
+          22,
+          28,
+          73
+        ],
+        "seed": 8,
+        "signature_counts": {
+          "(1, 0, 0, 1)": 4,
+          "(1, 0, 0, 2)": 4,
+          "(1, 0, 0, 4)": 1,
+          "(1, 0, 1, 2)": 4,
+          "(1, 0, 1, 3)": 2,
+          "(1, 0, 1, 4)": 2,
+          "(1, 0, 1, 6)": 1,
+          "(1, 1, 0, 2)": 4,
+          "(1, 1, 0, 3)": 2,
+          "(1, 1, 0, 4)": 2,
+          "(1, 1, 0, 6)": 1,
+          "(2, 1, 1, 3)": 4,
+          "(2, 1, 1, 5)": 4,
+          "(2, 1, 1, 8)": 1
+        },
+        "size": 36,
+        "weight_counts": {
+          "1": 4,
+          "2": 12,
+          "3": 8,
+          "4": 5,
+          "5": 4,
+          "6": 2,
+          "8": 1
+        }
+      },
+      {
+        "orbit": 4,
+        "rank_counts": {
+          "2": 36
+        },
+        "reps": [
+          10,
+          17,
+          66,
+          129,
+          11,
+          14,
+          19,
+          21,
+          25,
+          26,
+          67,
+          74,
+          98,
+          131,
+          145,
+          161,
+          193,
+          194,
+          15,
+          23
+        ],
+        "seed": 10,
+        "signature_counts": {
+          "(2, 1, 0, 2)": 4,
+          "(2, 1, 0, 3)": 10,
+          "(2, 1, 0, 4)": 2,
+          "(2, 1, 0, 5)": 2,
+          "(2, 1, 1, 3)": 4,
+          "(2, 1, 1, 4)": 8,
+          "(2, 1, 1, 5)": 2,
+          "(2, 1, 1, 6)": 2,
+          "(2, 1, 1, 7)": 2
+        },
+        "size": 36,
+        "weight_counts": {
+          "2": 4,
+          "3": 14,
+          "4": 10,
+          "5": 4,
+          "6": 2,
+          "7": 2
+        }
+      },
+      {
+        "orbit": 5,
+        "rank_counts": {
+          "2": 36
+        },
+        "reps": [
+          40,
+          48,
+          68,
+          132,
+          41,
+          44,
+          50,
+          52,
+          56,
+          69,
+          76,
+          100,
+          104,
+          134,
+          148,
+          164,
+          176,
+          196,
+          45,
+          54
+        ],
+        "seed": 40,
+        "signature_counts": {
+          "(2, 0, 1, 2)": 4,
+          "(2, 0, 1, 3)": 10,
+          "(2, 0, 1, 4)": 2,
+          "(2, 0, 1, 5)": 2,
+          "(2, 1, 1, 3)": 4,
+          "(2, 1, 1, 4)": 8,
+          "(2, 1, 1, 5)": 2,
+          "(2, 1, 1, 6)": 2,
+          "(2, 1, 1, 7)": 2
+        },
+        "size": 36,
+        "weight_counts": {
+          "2": 4,
+          "3": 14,
+          "4": 10,
+          "5": 4,
+          "6": 2,
+          "7": 2
+        }
+      },
+      {
+        "orbit": 6,
+        "rank_counts": {
+          "3": 36
+        },
+        "reps": [
+          42,
+          49,
+          70,
+          133,
+          43,
+          46,
+          51,
+          53,
+          57,
+          58,
+          71,
+          78,
+          102,
+          106,
+          135,
+          149,
+          165,
+          177,
+          197,
+          198
+        ],
+        "seed": 42,
+        "signature_counts": {
+          "(3, 1, 1, 3)": 4,
+          "(3, 1, 1, 4)": 16,
+          "(3, 1, 1, 5)": 12,
+          "(3, 1, 1, 6)": 4
+        },
+        "size": 36,
+        "weight_counts": {
+          "3": 4,
+          "4": 16,
+          "5": 12,
+          "6": 4
+        }
+      },
+      {
+        "orbit": 7,
+        "rank_counts": {
+          "2": 60,
+          "3": 36
+        },
+        "reps": [
+          80,
+          136,
+          81,
+          82,
+          84,
+          88,
+          112,
+          137,
+          138,
+          140,
+          152,
+          168,
+          200,
+          208,
+          83,
+          85,
+          86,
+          89,
+          90,
+          92
+        ],
+        "seed": 80,
+        "signature_counts": {
+          "(2, 0, 0, 2)": 2,
+          "(2, 0, 0, 3)": 4,
+          "(2, 0, 1, 3)": 4,
+          "(2, 0, 1, 4)": 10,
+          "(2, 0, 1, 5)": 4,
+          "(2, 1, 0, 3)": 4,
+          "(2, 1, 0, 4)": 10,
+          "(2, 1, 0, 5)": 4,
+          "(2, 1, 1, 4)": 4,
+          "(2, 1, 1, 5)": 4,
+          "(2, 1, 1, 6)": 10,
+          "(3, 1, 1, 4)": 4,
+          "(3, 1, 1, 5)": 20,
+          "(3, 1, 1, 6)": 8,
+          "(3, 1, 1, 7)": 4
+        },
+        "size": 96,
+        "weight_counts": {
+          "2": 2,
+          "3": 12,
+          "4": 28,
+          "5": 32,
+          "6": 18,
+          "7": 4
+        }
+      }
+    ],
+    "sizes_sorted": [
+      3,
+      3,
+      9,
+      36,
+      36,
+      36,
+      36,
+      96
+    ]
+  },
+  "purpose": "Resolve E11 quotient-action orbit partition and validate the common group action before orbit compression of A-multisets.",
+  "quotient_action_checks": {
+    "all_explicit_perms_bijective_on_nonzero_points": true,
+    "distinct_explicit_pair_permutations": 576,
+    "explicit_pair_count": 576,
+    "generator_closure_equals_explicit_pairs": true,
+    "permutation_closure_from_explicit_generators_size": 576,
+    "well_defined_failures_head": [],
+    "well_defined_mod_E00": true
+  },
+  "subgroup_generation": {
+    "GL3_size": 168,
+    "P_generator_closure_equals_direct": true,
+    "P_generators_keys": [
+      281,
+      337,
+      161,
+      305
+    ],
+    "P_row_stabilizer_direct_size": 24,
+    "P_row_stabilizer_generator_closure_size": 24,
+    "Q_col_stabilizer_direct_size": 24,
+    "Q_col_stabilizer_generator_closure_size": 24,
+    "Q_generator_closure_equals_direct": true,
+    "Q_generators_keys": [
+      275,
+      277,
+      161,
+      305
+    ]
+  },
+  "tensor_preservation": {
+    "all_preserve_E11_core_tensor": true,
+    "core_nnz": 24,
+    "core_shape": [
+      8,
+      9,
+      9
+    ],
+    "failures_head": [],
+    "tested_pairs_with_R_identity": 576
+  }
+}

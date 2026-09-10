@@ -1,0 +1,701 @@
+{
+  "action_count": 56448,
+  "actual_by_dimension": {
+    "0": 1,
+    "1": 511,
+    "2": 43435,
+    "3": 788035,
+    "4": 3309747,
+    "5": 3309747,
+    "6": 788035,
+    "7": 43435,
+    "8": 511,
+    "9": 1
+  },
+  "arrays_format": "sorted keys split as key = key_low + 2^64 * key_high; lbs aligned with sorted keys",
+  "arrays_path": "data/wang_reexpansion/wang_reexpanded_keys_lbs_split.npz",
+  "arrays_sha256": "d1ebdaef7bab002669bf5f00367e3557daaeba14e77968eaf0e505d689faa710",
+  "cert_path": "data/wang_f2_lb20/cert_matrix_q02_n333.pb.txt",
+  "cert_sha256": "25595a883ce877eecd802139ff4e07646e154b2797ad6fe7f9ec737ab0c6135d",
+  "conflict_count": 0,
+  "conflicts_head": [],
+  "coverage_ok": true,
+  "dim1_rank_lb_counts": {
+    "rank1_lb19": 49,
+    "rank2_lb19": 294,
+    "rank3_lb19": 168
+  },
+  "elapsed_sec": 164.63672971725464,
+  "expected_by_dimension": {
+    "0": 1,
+    "1": 511,
+    "2": 43435,
+    "3": 788035,
+    "4": 3309747,
+    "5": 3309747,
+    "6": 788035,
+    "7": 43435,
+    "8": 511,
+    "9": 1
+  },
+  "expected_subspace_count": 8283458,
+  "orbit_dim_lb_counts": {
+    "0": {
+      "20": 1
+    },
+    "1": {
+      "19": 511
+    },
+    "2": {
+      "17": 98,
+      "18": 43337
+    },
+    "3": {
+      "15": 14,
+      "16": 7497,
+      "17": 378182,
+      "18": 402342
+    },
+    "4": {
+      "14": 8722,
+      "15": 171353,
+      "16": 1336524,
+      "17": 1793148
+    },
+    "5": {
+      "11": 49,
+      "12": 57134,
+      "13": 3234,
+      "14": 490392,
+      "15": 1879689,
+      "16": 867153,
+      "17": 12096
+    },
+    "6": {
+      "9": 10157,
+      "11": 4788,
+      "12": 291158,
+      "13": 58800,
+      "14": 297402,
+      "15": 123186,
+      "16": 2352,
+      "17": 192
+    },
+    "7": {
+      "6": 980,
+      "9": 15827,
+      "12": 25284,
+      "14": 1344
+    },
+    "8": {
+      "3": 49,
+      "6": 294,
+      "9": 168
+    },
+    "9": {
+      "0": 1
+    }
+  },
+  "orbit_size_sum": 8283458,
+  "orbit_summaries_head": [
+    {
+      "basis": [
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "dim": 9,
+      "index": 0,
+      "lb": 0,
+      "orbit_size": 1,
+      "pos": 0,
+      "proof_type": "flatten"
+    },
+    {
+      "basis": [
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "dim": 8,
+      "index": 1,
+      "lb": 3,
+      "orbit_size": 49,
+      "pos": 1,
+      "proof_type": "flatten"
+    },
+    {
+      "basis": [
+        256,
+        160,
+        64,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "dim": 8,
+      "index": 2,
+      "lb": 6,
+      "orbit_size": 294,
+      "pos": 2,
+      "proof_type": "flatten"
+    },
+    {
+      "basis": [
+        256,
+        128,
+        68,
+        32,
+        20,
+        8,
+        2,
+        1
+      ],
+      "dim": 8,
+      "index": 3,
+      "lb": 9,
+      "orbit_size": 168,
+      "pos": 3,
+      "proof_type": "flatten"
+    },
+    {
+      "basis": [
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "dim": 7,
+      "index": 4,
+      "lb": 6,
+      "orbit_size": 98,
+      "pos": 4,
+      "proof_type": "flatten"
+    },
+    {
+      "basis": [
+        160,
+        64,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "dim": 7,
+      "index": 5,
+      "lb": 9,
+      "orbit_size": 441,
+      "pos": 5,
+      "proof_type": "forced_product"
+    },
+    {
+      "basis": [
+        256,
+        64,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "dim": 7,
+      "index": 6,
+      "lb": 6,
+      "orbit_size": 882,
+      "pos": 6,
+      "proof_type": "flatten"
+    },
+    {
+      "basis": [
+        256,
+        96,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "dim": 7,
+      "index": 7,
+      "lb": 9,
+      "orbit_size": 3528,
+      "pos": 7,
+      "proof_type": "flatten"
+    },
+    {
+      "basis": [
+        304,
+        160,
+        64,
+        8,
+        4,
+        2,
+        1
+      ],
+      "dim": 7,
+      "index": 8,
+      "lb": 9,
+      "orbit_size": 98,
+      "pos": 8,
+      "proof_type": "backtracking"
+    },
+    {
+      "basis": [
+        256,
+        160,
+        80,
+        8,
+        4,
+        2,
+        1
+      ],
+      "dim": 7,
+      "index": 9,
+      "lb": 9,
+      "orbit_size": 2352,
+      "pos": 9,
+      "proof_type": "flatten"
+    },
+    {
+      "basis": [
+        256,
+        160,
+        68,
+        16,
+        8,
+        2,
+        1
+      ],
+      "dim": 7,
+      "index": 10,
+      "lb": 12,
+      "orbit_size": 1176,
+      "pos": 10,
+      "proof_type": "forced_product"
+    },
+    {
+      "basis": [
+        128,
+        68,
+        32,
+        20,
+        8,
+        2,
+        1
+      ],
+      "dim": 7,
+      "index": 11,
+      "lb": 12,
+      "orbit_size": 1764,
+      "pos": 11,
+      "proof_type": "forced_product"
+    },
+    {
+      "basis": [
+        256,
+        128,
+        32,
+        20,
+        8,
+        2,
+        1
+      ],
+      "dim": 7,
+      "index": 12,
+      "lb": 9,
+      "orbit_size": 4704,
+      "pos": 12,
+      "proof_type": "flatten"
+    },
+    {
+      "basis": [
+        256,
+        160,
+        68,
+        20,
+        8,
+        2,
+        1
+      ],
+      "dim": 7,
+      "index": 13,
+      "lb": 12,
+      "orbit_size": 3528,
+      "pos": 13,
+      "proof_type": "forced_product"
+    },
+    {
+      "basis": [
+        256,
+        128,
+        96,
+        20,
+        8,
+        2,
+        1
+      ],
+      "dim": 7,
+      "index": 14,
+      "lb": 12,
+      "orbit_size": 14112,
+      "pos": 14,
+      "proof_type": "forced_product"
+    },
+    {
+      "basis": [
+        256,
+        128,
+        84,
+        32,
+        8,
+        2,
+        1
+      ],
+      "dim": 7,
+      "index": 15,
+      "lb": 9,
+      "orbit_size": 4704,
+      "pos": 15,
+      "proof_type": "flatten"
+    },
+    {
+      "basis": [
+        256,
+        148,
+        80,
+        32,
+        12,
+        2,
+        1
+      ],
+      "dim": 7,
+      "index": 16,
+      "lb": 12,
+      "orbit_size": 4704,
+      "pos": 16,
+      "proof_type": "backtracking"
+    },
+    {
+      "basis": [
+        262,
+        128,
+        68,
+        32,
+        20,
+        10,
+        1
+      ],
+      "dim": 7,
+      "index": 17,
+      "lb": 14,
+      "orbit_size": 1344,
+      "pos": 17,
+      "proof_type": "backtracking"
+    },
+    {
+      "basis": [
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "dim": 6,
+      "index": 18,
+      "lb": 9,
+      "orbit_size": 14,
+      "pos": 18,
+      "proof_type": "flatten"
+    },
+    {
+      "basis": [
+        64,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "dim": 6,
+      "index": 19,
+      "lb": 9,
+      "orbit_size": 441,
+      "pos": 19,
+      "proof_type": "degenerate"
+    }
+  ],
+  "orbit_summaries_tail": [
+    {
+      "basis": [
+        276,
+        96,
+        10
+      ],
+      "dim": 3,
+      "index": 476,
+      "lb": 18,
+      "orbit_size": 18816,
+      "pos": 476,
+      "proof_type": "backtracking"
+    },
+    {
+      "basis": [
+        286,
+        163,
+        84
+      ],
+      "dim": 3,
+      "index": 477,
+      "lb": 18,
+      "orbit_size": 192,
+      "pos": 477,
+      "proof_type": "backtracking"
+    },
+    {
+      "basis": [
+        2,
+        1
+      ],
+      "dim": 2,
+      "index": 478,
+      "lb": 17,
+      "orbit_size": 98,
+      "pos": 478,
+      "proof_type": "degenerate"
+    },
+    {
+      "basis": [
+        10,
+        1
+      ],
+      "dim": 2,
+      "index": 479,
+      "lb": 18,
+      "orbit_size": 441,
+      "pos": 479,
+      "proof_type": "degenerate"
+    },
+    {
+      "basis": [
+        16,
+        1
+      ],
+      "dim": 2,
+      "index": 480,
+      "lb": 18,
+      "orbit_size": 882,
+      "pos": 480,
+      "proof_type": "backtracking"
+    },
+    {
+      "basis": [
+        20,
+        1
+      ],
+      "dim": 2,
+      "index": 481,
+      "lb": 18,
+      "orbit_size": 3528,
+      "pos": 481,
+      "proof_type": "degenerate"
+    },
+    {
+      "basis": [
+        84,
+        1
+      ],
+      "dim": 2,
+      "index": 482,
+      "lb": 18,
+      "orbit_size": 1764,
+      "pos": 482,
+      "proof_type": "backtracking"
+    },
+    {
+      "basis": [
+        160,
+        1
+      ],
+      "dim": 2,
+      "index": 483,
+      "lb": 18,
+      "orbit_size": 4704,
+      "pos": 483,
+      "proof_type": "degenerate"
+    },
+    {
+      "basis": [
+        19,
+        10
+      ],
+      "dim": 2,
+      "index": 484,
+      "lb": 18,
+      "orbit_size": 98,
+      "pos": 484,
+      "proof_type": "degenerate"
+    },
+    {
+      "basis": [
+        20,
+        10
+      ],
+      "dim": 2,
+      "index": 485,
+      "lb": 18,
+      "orbit_size": 2352,
+      "pos": 485,
+      "proof_type": "degenerate"
+    },
+    {
+      "basis": [
+        68,
+        10
+      ],
+      "dim": 2,
+      "index": 486,
+      "lb": 18,
+      "orbit_size": 1176,
+      "pos": 486,
+      "proof_type": "degenerate"
+    },
+    {
+      "basis": [
+        84,
+        10
+      ],
+      "dim": 2,
+      "index": 487,
+      "lb": 18,
+      "orbit_size": 3528,
+      "pos": 487,
+      "proof_type": "degenerate"
+    },
+    {
+      "basis": [
+        96,
+        10
+      ],
+      "dim": 2,
+      "index": 488,
+      "lb": 18,
+      "orbit_size": 14112,
+      "pos": 488,
+      "proof_type": "degenerate"
+    },
+    {
+      "basis": [
+        258,
+        10
+      ],
+      "dim": 2,
+      "index": 489,
+      "lb": 18,
+      "orbit_size": 4704,
+      "pos": 489,
+      "proof_type": "degenerate"
+    },
+    {
+      "basis": [
+        275,
+        10
+      ],
+      "dim": 2,
+      "index": 490,
+      "lb": 18,
+      "orbit_size": 4704,
+      "pos": 490,
+      "proof_type": "degenerate"
+    },
+    {
+      "basis": [
+        163,
+        84
+      ],
+      "dim": 2,
+      "index": 491,
+      "lb": 18,
+      "orbit_size": 1344,
+      "pos": 491,
+      "proof_type": "degenerate"
+    },
+    {
+      "basis": [
+        1
+      ],
+      "dim": 1,
+      "index": 492,
+      "lb": 19,
+      "orbit_size": 49,
+      "pos": 492,
+      "proof_type": "backtracking"
+    },
+    {
+      "basis": [
+        10
+      ],
+      "dim": 1,
+      "index": 493,
+      "lb": 19,
+      "orbit_size": 294,
+      "pos": 493,
+      "proof_type": "backtracking"
+    },
+    {
+      "basis": [
+        84
+      ],
+      "dim": 1,
+      "index": 494,
+      "lb": 19,
+      "orbit_size": 168,
+      "pos": 494,
+      "proof_type": "backtracking"
+    },
+    {
+      "basis": [],
+      "dim": 0,
+      "index": 495,
+      "lb": 20,
+      "orbit_size": 1,
+      "pos": 495,
+      "proof_type": "backtracking"
+    }
+  ],
+  "overlap_key_count": 0,
+  "proof_type_count_by_orbit": {
+    "backtracking": 238,
+    "degenerate": 230,
+    "flatten": 14,
+    "forced_product": 14
+  },
+  "purpose": "related analysis independent expansion of Wang F2 T333 certificate orbits using self-contained parser, GL action and RREF code.",
+  "record_count": 496,
+  "subspace_count": 8283458,
+  "top_fields": {
+    "characteristic": 2,
+    "extension_degree": 1,
+    "na": 9,
+    "nb": 9,
+    "nc": 9,
+    "problem_name": "matrix_q02_n333"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "collect_meta": {
+    "active_rows": 14478,
+    "row_signature_hist": {
+      "(1, 19, 0, 0, 'include_dim')": 2,
+      "(1, 19, 1, 1, 'include_dim')": 509,
+      "(4, 14, 4, 13, 'through_fixed')": 18,
+      "(4, 15, 3, 13, 'through_fixed')": 97,
+      "(4, 16, 2, 13, 'through_fixed')": 1496,
+      "(4, 17, 1, 13, 'through_fixed')": 1056,
+      "(6, 11, 7, 61, 'through_fixed')": 44,
+      "(6, 12, 6, 61, 'through_fixed')": 4834,
+      "(6, 13, 5, 61, 'through_fixed')": 1040,
+      "(6, 14, 4, 61, 'through_fixed')": 4002,
+      "(6, 15, 3, 61, 'through_fixed')": 1634,
+      "(6, 16, 2, 61, 'through_fixed')": 16,
+      "(6, 9, 9, 61, 'through_fixed')": 241
+    },
+    "selected_rows_total": 14989,
+    "skipped_vacuous": 511,
+    "source_by_dim": {
+      "include_dim,1": 511,
+      "through_fixed,4": 2667,
+      "through_fixed,6": 11811
+    }
+  },
+  "field": "F2",
+  "fixed_extra": [
+    10
+  ],
+  "fixed_points": [
+    1,
+    10
+  ],
+  "groups": [
+    [
+      4,
+      17
+    ],
+    [
+      6,
+      15
+    ]
+  ],
+  "include_dims": [
+    1
+  ],
+  "lut_meta_brief": {
+    "conflict_count": 0,
+    "coverage_ok": true,
+    "subspace_count": 8283458
+  },
+  "problem": "rep10 fixed-E11 selected dim/lb row subset CP-SAT",
+  "rank_s": 20,
+  "result": {
+    "branches": 342,
+    "conflicts": 0,
+    "elapsed_sec": 0.259871244430542,
+    "solver_walltime": 0.252970867,
+    "status": "OPTIMAL"
+  },
+  "row_summary": {
+    "by_cap_rem": {
+      "1": 1056,
+      "3": 1634
+    },
+    "by_dim": {
+      "4": 1056,
+      "6": 1634
+    },
+    "by_lb": {
+      "15": 1634,
+      "17": 1056
+    },
+    "by_source_dim": {
+      "through_fixed,4": 1056,
+      "through_fixed,6": 1634
+    },
+    "by_var_count": {
+      "13": 1056,
+      "61": 1634
+    },
+    "row_count": 2690
+  },
+  "support": [
+    1,
+    9,
+    10,
+    41,
+    43,
+    57,
+    59,
+    93,
+    95,
+    139,
+    153,
+    203,
+    219,
+    267,
+    303,
+    331,
+    365,
+    395,
+    459,
+    511
+  ],
+  "support_rank1_count": 5,
+  "support_rank_hist": {
+    "1": 5,
+    "2": 8,
+    "3": 7
+  },
+  "through_fixed_dims": [
+    4,
+    6
+  ],
+  "total_elapsed_sec": 10.372518301010132
+}

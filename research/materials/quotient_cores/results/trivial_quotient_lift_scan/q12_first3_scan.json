@@ -1,0 +1,192 @@
+{
+  "elapsed_sec": 360.62731432914734,
+  "field": "F2",
+  "first_witness": null,
+  "meaning": "SAT gives verified E11 rank <=19 and full T333 rank <=22 over F2. UNSAT excludes only the coordinate quotient CPD for that prefix orbit; UNKNOWN is no conclusion.",
+  "purpose": "exact general coset lift scan for coordinate quotient schemes on low-qnnz 4D prefix-span orbits",
+  "qnnz_filter": 12,
+  "records": [
+    {
+      "Wang_L": 11,
+      "Wang_cap_at_rank19": 8,
+      "annihilator_basis": [
+        4,
+        16,
+        32,
+        128
+      ],
+      "annihilator_residual_nnz": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "cnf_clauses": 8505,
+      "cnf_path": null,
+      "cnf_sha256": "47745fe1d33d457f1da1efaf2e8b3df830378b8b093cd227566a6674f4a5d591",
+      "dual_lifts_for_quotient_basis": [
+        4,
+        16,
+        32,
+        128
+      ],
+      "native_xor_clauses": 324,
+      "orbit_id": 445,
+      "orbit_size": 6,
+      "phi_vectors": [
+        1,
+        2,
+        8,
+        64
+      ],
+      "prefix_basis": [
+        1,
+        2,
+        8,
+        64
+      ],
+      "qrank": 12,
+      "quotient_diff": 0,
+      "quotient_flattening_ranks": {
+        "A": 4,
+        "B": 6,
+        "C": 6
+      },
+      "quotient_nnz_coordinate_rank": 12,
+      "residual_rank_budget": 7,
+      "residual_reconstruction_diff": 0,
+      "solve": {
+        "command": "cryptominisat5 --verb 0 -t 8 --maxtime 120 data/trivial_quotient_lift_scan/orbit445_q12_res7.xor.cnf",
+        "elapsed_sec": 120.17206621170044,
+        "returncode": 15,
+        "status": "UNKNOWN",
+        "stderr_tail": "",
+        "stdout_tail": "s INDETERMINATE\n"
+      },
+      "vars": 3037
+    },
+    {
+      "Wang_L": 11,
+      "Wang_cap_at_rank19": 8,
+      "annihilator_basis": [
+        1,
+        2,
+        64,
+        128
+      ],
+      "annihilator_residual_nnz": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "cnf_clauses": 8505,
+      "cnf_path": null,
+      "cnf_sha256": "ddb4a85ed6640049117a6dd742d0f79b7e8f51ce1e3dfc60934b6765495245e1",
+      "dual_lifts_for_quotient_basis": [
+        1,
+        2,
+        64,
+        128
+      ],
+      "native_xor_clauses": 324,
+      "orbit_id": 614,
+      "orbit_size": 6,
+      "phi_vectors": [
+        4,
+        8,
+        16,
+        32
+      ],
+      "prefix_basis": [
+        4,
+        8,
+        16,
+        32
+      ],
+      "qrank": 12,
+      "quotient_diff": 0,
+      "quotient_flattening_ranks": {
+        "A": 4,
+        "B": 6,
+        "C": 6
+      },
+      "quotient_nnz_coordinate_rank": 12,
+      "residual_rank_budget": 7,
+      "residual_reconstruction_diff": 0,
+      "solve": {
+        "command": "cryptominisat5 --verb 0 -t 8 --maxtime 120 data/trivial_quotient_lift_scan/orbit614_q12_res7.xor.cnf",
+        "elapsed_sec": 120.19180011749268,
+        "returncode": 15,
+        "status": "UNKNOWN",
+        "stderr_tail": "",
+        "stdout_tail": "s INDETERMINATE\n"
+      },
+      "vars": 3037
+    },
+    {
+      "Wang_L": 11,
+      "Wang_cap_at_rank19": 8,
+      "annihilator_basis": [
+        8,
+        16,
+        64,
+        128
+      ],
+      "annihilator_residual_nnz": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "cnf_clauses": 8505,
+      "cnf_path": null,
+      "cnf_sha256": "a629908155ff5baa326fb7d3833e6821133ea281af6342092de1994325d8645d",
+      "dual_lifts_for_quotient_basis": [
+        8,
+        16,
+        64,
+        128
+      ],
+      "native_xor_clauses": 324,
+      "orbit_id": 439,
+      "orbit_size": 1,
+      "phi_vectors": [
+        1,
+        2,
+        4,
+        32
+      ],
+      "prefix_basis": [
+        1,
+        2,
+        4,
+        32
+      ],
+      "qrank": 12,
+      "quotient_diff": 0,
+      "quotient_flattening_ranks": {
+        "A": 4,
+        "B": 6,
+        "C": 6
+      },
+      "quotient_nnz_coordinate_rank": 12,
+      "residual_rank_budget": 7,
+      "residual_reconstruction_diff": 0,
+      "solve": {
+        "command": "cryptominisat5 --verb 0 -t 8 --maxtime 120 data/trivial_quotient_lift_scan/orbit439_q12_res7.xor.cnf",
+        "elapsed_sec": 120.22321939468384,
+        "returncode": 15,
+        "status": "UNKNOWN",
+        "stderr_tail": "",
+        "stdout_tail": "s INDETERMINATE\n"
+      },
+      "vars": 3037
+    }
+  ],
+  "representatives_tested": 3,
+  "status_counts": {
+    "UNKNOWN": 3
+  },
+  "witness_found": false
+}

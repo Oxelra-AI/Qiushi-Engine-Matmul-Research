@@ -1,0 +1,285 @@
+{
+  "checked_at_utc": "2026-09-09T01:09:04Z",
+  "conclusion": {
+    "abstract_says_f2_3x3_at_least_20": false,
+    "abstract_says_f2_3x3_at_least_21": false,
+    "frontier_recheck_result": "needs_verification",
+    "latest_version_from_official_abs": 11,
+    "official_abs_url": "https://arxiv.org/abs/2603.07280v11",
+    "pdf_text_contains_21_near_333": true,
+    "pdf_text_contains_at_least_21_anywhere": false
+  },
+  "fetches": [
+    {
+      "content_type": "text/html; charset=utf-8",
+      "name": "abs_latest",
+      "ok": true,
+      "path": "data/frontier_recheck/abs_latest.html",
+      "sha256": "4fab3595f706b1081b94ff6b8115a8c98b423993be114b46a5d4cc13dca423c8",
+      "size_bytes": 42378,
+      "status": 200,
+      "url": "https://arxiv.org/abs/2603.07280"
+    },
+    {
+      "content_type": "text/html; charset=utf-8",
+      "name": "abs_v11",
+      "ok": true,
+      "path": "data/frontier_recheck/abs_v11.html",
+      "sha256": "6c1f40026498ba3024b01a52ecbd465f11b3e539d9f10b2ac21fe91b485caaa0",
+      "size_bytes": 42396,
+      "status": 200,
+      "url": "https://arxiv.org/abs/2603.07280v11"
+    },
+    {
+      "content_type": "application/pdf",
+      "name": "pdf_latest",
+      "ok": true,
+      "path": "data/frontier_recheck/pdf_latest.pdf",
+      "sha256": "a61884b9f60db1e499638f4326e477ff90552722901ae6acd4a314d50b890cb3",
+      "size_bytes": 445021,
+      "status": 200,
+      "url": "https://arxiv.org/pdf/2603.07280"
+    },
+    {
+      "content_type": "application/pdf",
+      "name": "pdf_v11",
+      "ok": true,
+      "path": "data/frontier_recheck/pdf_v11.pdf",
+      "sha256": "a61884b9f60db1e499638f4326e477ff90552722901ae6acd4a314d50b890cb3",
+      "size_bytes": 445021,
+      "status": 200,
+      "url": "https://arxiv.org/pdf/2603.07280v11"
+    }
+  ],
+  "html_fields": {
+    "abs_latest": {
+      "dateline": "[Submitted on 7 Mar 2026 ( v1 ), last revised 29 Aug 2026 (this version, v11)]",
+      "og_description": "We present a general, automated framework for proving lower bounds on the bilinear complexity (tensor rank) of multiplication problems over a finite field $\\mathbb{F}_q$. The framework is parameterized only by the multiplication tensor and by a group of rank-preserving symmetries acting on one argument: it classifies the subspaces of the argument into orbits under the group, runs a dynamic program over the orbits combining four lower-bound techniques, and emits a proof certificate that a verifier rechecks, typically faster than the search. Instantiating the framework for matrix multiplication, we improve the lower bounds for three small formats over $\\mathbb{F}_2$, most notably showing that the bilinear complexity of multiplying two $3 \\times 3$ matrices over $\\mathbb{F}_2$ is at least $20$, raising the bound of $19$ that had stood since Bläser (2003). Instantiating it for polynomial multiplication, we obtain eighteen new lower bounds over $\\mathbb{F}_2$ and $\\mathbb{F}_3$, for the full product, cyclic convolution, and the truncated (modulo $x^N$) and negacyclic (modulo $x^N+1$) products. Every bound is backed by a machine-checkable certificate.",
+      "og_title": "Automated Lower Bounds for Bilinear Complexity over Finite Fields",
+      "og_url": "https://arxiv.org/abs/2603.07280v11",
+      "parsed_abstract": "We present a general, automated framework for proving lower bounds on the bilinear complexity (tensor rank) of multiplication problems over a finite field $\\mathbb{F}_q$. The framework is parameterized only by the multiplication tensor and by a group of rank-preserving symmetries acting on one argument: it classifies the subspaces of the argument into orbits under the group, runs a dynamic program over the orbits combining four lower-bound techniques, and emits a proof certificate that a verifier rechecks, typically faster than the search. Instantiating the framework for matrix multiplication, we improve the lower bounds for three small formats over $\\mathbb{F}_2$, most notably showing that the bilinear complexity of multiplying two $3 \\times 3$ matrices over $\\mathbb{F}_2$ is at least $20$, raising the bound of $19$ that had stood since Bläser (2003). Instantiating it for polynomial multiplication, we obtain eighteen new lower bounds over $\\mathbb{F}_2$ and $\\mathbb{F}_3$, for the full product, cyclic convolution, and the truncated (modulo $x^N$) and negacyclic (modulo $x^N+1$) products. Every bound is backed by a machine-checkable certificate.",
+      "parsed_title": "Automated Lower Bounds for Bilinear Complexity over Finite Fields",
+      "raw_head": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head><script>document.documentElement.classList.add('js');</script>  <title>[2603.07280] Automated Lower Bounds for Bilinear Complexity over Finite Fields</title>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/static/browse/0.3.4/images/icons/apple-touch-icon.png\">\n  <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/static/browse/0.3.4/images/icons/favicon-32x32.png\">\n  <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/static/browse/0.3.4/images/icons/favicon-16x16.png\">\n  <link rel=\"manifest\" href=\"/static/browse/0.3.4/images/icons/site.webmanifest\">\n  <link rel=\"mask-icon\" href=\"/static/browse/0.3.4/images/icons/safari-pinned-tab.svg\" color=\"#5bbad5\">\n  <meta name=\"msapplication-TileColor\" content=\"#da532c\">\n  <meta name=\"theme-color\" content=\"#ffffff\">\n  <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"/static/browse/0.3.4/css/arXiv.css?v=20260318\" />\n  <link rel=\"stylesheet\" type=\"text/css\" media=\"print\" href=\"/static/browse/0.3.4/css/arXiv-print.css?v=20200611\" />\n  <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"/static/browse/0.3.4/css/browse_search.css\" />\n  <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"/static/base/1.0.1/css/arxiv-header-footer.css?v=20260626\" />\n  <script language=\"javascript\" src=\"/static/browse/0.3.4/js/accordion.js\" ></script>\n  <script language=\"javascript\" src=\"/static/browse/0.3.4/js/optin-modal.js?v=20250819\"></script>\n  \n  <link rel=\"canonical\" href=\"https://arxiv.org/abs/2603.07280\"/>\n  <meta name=\"description\" content=\"Abstract page for arXiv paper 2603.07280: Automated Lower Bounds for Bilinear Complexity over Finite Fields\"><meta property=\"og:type\" content=\"website\" />\n<meta property=\"og:site_name\" content=\"arXiv.org\" />\n<meta property=\"og:title\" content=\"Automated Lower Bounds for Bilinear Complexity over Finite Fields\" />\n<meta property=\"og:url\" content=\"https://arxiv.",
+      "version_numbers_seen_in_links": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "abs_v11": {
+      "dateline": "[Submitted on 7 Mar 2026 ( v1 ), last revised 29 Aug 2026 (this version, v11)]",
+      "og_description": "We present a general, automated framework for proving lower bounds on the bilinear complexity (tensor rank) of multiplication problems over a finite field $\\mathbb{F}_q$. The framework is parameterized only by the multiplication tensor and by a group of rank-preserving symmetries acting on one argument: it classifies the subspaces of the argument into orbits under the group, runs a dynamic program over the orbits combining four lower-bound techniques, and emits a proof certificate that a verifier rechecks, typically faster than the search. Instantiating the framework for matrix multiplication, we improve the lower bounds for three small formats over $\\mathbb{F}_2$, most notably showing that the bilinear complexity of multiplying two $3 \\times 3$ matrices over $\\mathbb{F}_2$ is at least $20$, raising the bound of $19$ that had stood since Bläser (2003). Instantiating it for polynomial multiplication, we obtain eighteen new lower bounds over $\\mathbb{F}_2$ and $\\mathbb{F}_3$, for the full product, cyclic convolution, and the truncated (modulo $x^N$) and negacyclic (modulo $x^N+1$) products. Every bound is backed by a machine-checkable certificate.",
+      "og_title": "Automated Lower Bounds for Bilinear Complexity over Finite Fields",
+      "og_url": "https://arxiv.org/abs/2603.07280v11",
+      "parsed_abstract": "We present a general, automated framework for proving lower bounds on the bilinear complexity (tensor rank) of multiplication problems over a finite field $\\mathbb{F}_q$. The framework is parameterized only by the multiplication tensor and by a group of rank-preserving symmetries acting on one argument: it classifies the subspaces of the argument into orbits under the group, runs a dynamic program over the orbits combining four lower-bound techniques, and emits a proof certificate that a verifier rechecks, typically faster than the search. Instantiating the framework for matrix multiplication, we improve the lower bounds for three small formats over $\\mathbb{F}_2$, most notably showing that the bilinear complexity of multiplying two $3 \\times 3$ matrices over $\\mathbb{F}_2$ is at least $20$, raising the bound of $19$ that had stood since Bläser (2003). Instantiating it for polynomial multiplication, we obtain eighteen new lower bounds over $\\mathbb{F}_2$ and $\\mathbb{F}_3$, for the full product, cyclic convolution, and the truncated (modulo $x^N$) and negacyclic (modulo $x^N+1$) products. Every bound is backed by a machine-checkable certificate.",
+      "parsed_title": "Automated Lower Bounds for Bilinear Complexity over Finite Fields",
+      "raw_head": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head><script>document.documentElement.classList.add('js');</script>  <title>[2603.07280v11] Automated Lower Bounds for Bilinear Complexity over Finite Fields</title>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/static/browse/0.3.4/images/icons/apple-touch-icon.png\">\n  <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/static/browse/0.3.4/images/icons/favicon-32x32.png\">\n  <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/static/browse/0.3.4/images/icons/favicon-16x16.png\">\n  <link rel=\"manifest\" href=\"/static/browse/0.3.4/images/icons/site.webmanifest\">\n  <link rel=\"mask-icon\" href=\"/static/browse/0.3.4/images/icons/safari-pinned-tab.svg\" color=\"#5bbad5\">\n  <meta name=\"msapplication-TileColor\" content=\"#da532c\">\n  <meta name=\"theme-color\" content=\"#ffffff\">\n  <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"/static/browse/0.3.4/css/arXiv.css?v=20260318\" />\n  <link rel=\"stylesheet\" type=\"text/css\" media=\"print\" href=\"/static/browse/0.3.4/css/arXiv-print.css?v=20200611\" />\n  <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"/static/browse/0.3.4/css/browse_search.css\" />\n  <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"/static/base/1.0.1/css/arxiv-header-footer.css?v=20260626\" />\n  <script language=\"javascript\" src=\"/static/browse/0.3.4/js/accordion.js\" ></script>\n  <script language=\"javascript\" src=\"/static/browse/0.3.4/js/optin-modal.js?v=20250819\"></script>\n  \n  <link rel=\"canonical\" href=\"https://arxiv.org/abs/2603.07280\"/>\n  <meta name=\"description\" content=\"Abstract page for arXiv paper 2603.07280v11: Automated Lower Bounds for Bilinear Complexity over Finite Fields\"><meta property=\"og:type\" content=\"website\" />\n<meta property=\"og:site_name\" content=\"arXiv.org\" />\n<meta property=\"og:title\" content=\"Automated Lower Bounds for Bilinear Complexity over Finite Fields\" />\n<meta property=\"og:url\" content=\"https://",
+      "version_numbers_seen_in_links": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  },
+  "pdf_text": {
+    "pdf_latest": {
+      "contains_at_least_20_3x3_abstract": true,
+      "contains_at_least_21": false,
+      "contains_rank_21_near_333": true,
+      "pdf": "data/frontier_recheck/pdf_latest.pdf",
+      "returncode": 0,
+      "snippets": [
+        {
+          "pattern": "3\\s*[×x]\\\\?\\s*3|3\\\\times 3|3 × 3",
+          "snippet": "a dynamic program over the orbits combining four lower-bound techniques, and emits a proof certificate that a verifier rechecks, typically faster than the search. Instantiating the framework for matrix multiplication, we improve the lower bounds for three small formats over F2 , most notably showing that the bilinear complexity of multiplying two 3 × 3 matrices over F2 is at least 20, raising the bound of 19 that had stood since Bläser (2003). Instantiating it for polynomial multiplication, we obtain eighteen new lower bounds over F2 and F3 , for the full product, cyclic convolution, and the truncated (modulo xN ) and negacyclic (modulo xN + 1) products. Every bound is backed by a machine-checkable certificate. 1 Introduction A bilinear algorithm for a bilinear map β : A×B → C over a field F computes a fixed set of products of a linear form in the A-variables with a linear form in the B-variables, and then reads off each coordinate of the output as a linear combination of those product",
+          "start": 872
+        },
+        {
+          "pattern": "3\\s*[×x]\\\\?\\s*3|3\\\\times 3|3 × 3",
+          "snippet": "≥ 52 n2 −3n over arbitrary fields [6], and finally R(⟨n, m, n⟩) ≥ 2mn + 2n − m − 2 for m ≥ n ≥ 3 [8] over arbitrary fields, which implies R(⟨3, 3, 3⟩) ≥ 19. Shpilka [30] sharpened the asymptotics over small fields, proving RF2 (⟨n, n, n⟩) ≥ 3n2 − o(n2 ) and RFp (⟨n, n, n⟩) ≥ ( 52 + 2(p33−1) )n2 − o(n2 ). On the upper side Laderman [25] multiplied 3 × 3 matrices with 23 products over Z. Thus the rank of ⟨3, 3, 3⟩ has remained trapped in [19, 23], making it the prototypical open small format. 1.2 Lower bounds for polynomial multiplication For the full product of two degree-(N − 1) polynomials, the output flattening immediately gives the lower bound 2N − 1; see also Fiduccia and Zalcstein [17]. This bound is attained by evaluation– interpolation at 2N −1 points of P1 (Fq ) whenever 2N −1 ≤ q+1 [34, 23]. Kaminski and Bshouty [23] proved that, when q/2 < N − 1 ≤ q + 1, one has RFq (PN ) = 3N − 2 − ⌊q/2⌋. For larger N , classical lower bounds come from the connection between bilinear algorith",
+          "start": 3307
+        },
+        {
+          "pattern": "3\\s*[×x]\\\\?\\s*3|3\\\\times 3|3 × 3",
+          "snippet": "o F2 , while his proof works over arbitrary fields. Over F2 the candidate components of an optimal decomposition form a small finite set, so the case analysis can branch on every one. Second, the breadth of the induction: his proof passes through some hand-crafted subspaces, whereas our argument runs over more subspaces (all subspaces of the first 3 × 3 matrix argument), which makes the analysis tighter. The price is generality: our result holds over F2 alone and for a single format, whereas Bläser’s bound holds over arbitrary fields and for many formats. For polynomial multiplication the same framework yields eighteen new lower bounds over F2 and F3 , for the full product and for the three quotient families Fq [x]/(xN − γ). Theorem 2 (Polynomial multiplication). Write RFq (PN ), RFq (CN ), RFq (TN ), and RFq (C− N ) for the bilinear complexity over Fq of, respectively, the full product of two degree-(N − 1) polynomials, cyclic convolution (modulo xN − 1), the truncated product (modulo xN",
+          "start": 6900
+        },
+        {
+          "pattern": "3\\s*[×x]\\\\?\\s*3|3\\\\times 3|3 × 3",
+          "snippet": "al multiplication over finite fields. Journal of the ACM, 36(1):150–170, 1989. [24] Manuel Kauers and Jakob Moosbauer. Flip graphs for matrix multiplication. In Proceedings of the 2023 International Symposium on Symbolic and Algebraic Computation (ISSAC), pages 381–388. ACM, 2023. [25] Julian D. Laderman. A noncommutative algorithm for multiplying 3 × 3 matrices using 23 multiplications. Bulletin of the American Mathematical Society, 82(1):126–128, 1976. [26] Abraham Lempel and Shmuel Winograd. A new approach to error-correcting codes. IEEE Transactions on Information Theory, 23(4):503–508, 1977. [27] Peter L. Montgomery. Five, six, and seven-term Karatsuba-like formulae. IEEE Transactions on Computers, 54(3):362–369, 2005. [28] V. Ya. Pan. Methods of computing values of polynomials. Russian Mathematical Surveys, 21(1):105–136, 1966. [29] Hugues Randriambololona. Bilinear complexity of algebras and the Chudnovsky–Chudnovsky interpolation method. Journal of Complexity, 28(4):489–517, 2012. [",
+          "start": 41808
+        },
+        {
+          "pattern": "3\\s*[×x]\\\\?\\s*3|3\\\\times 3|3 × 3",
+          "snippet": "counting expression , where is the Gaussian binomial lower bound. There are Nd q dimension-d subspaces of FN q d q coefficient. Since each orbit has size at most the group order, \u0015 lm \u0014 X lm \u0014 \u0015 d−1 d q Y q N −i − 1 \u0001 N d=0 lm , = # Sub(Fq )/G ≥ , (2) |GLl (Fq )| |GLm (Fq )| |H| d q q d−i − 1 i=0 23 † format l × m transpose? 2×2 2×2 2×3 2×4 3×3 3×3 3×4 4×4 yes no no no yes no no yes # orbits over F2 # orbits over F3 10 11 31 86 496 710 158,426 >1.6 × 1011 10 11 31 91 736 1046 >1.6 × 106 † >8.8 × 1015 The exact value is computable but unlikely to improve any matrix bound. Table 9: Number of subspace orbits for matrix multiplication, A = Fl×m . “transpose?” marks q whether the order-two transpose symmetry is included; it applies only to square formats l = m = n. The > entries follow from the exact lower bound in Equation (2). where H = C2 when symmetry is present (l = m = n) and H = C1 otherwise, Qn−1then transpose k and |GLn (Fq )| = k=0 (q − q ). This produces the > entries",
+          "start": 58927
+        },
+        {
+          "pattern": "3\\s*[×x]\\\\?\\s*3|3\\\\times 3|3 × 3",
+          "snippet": "nting expression , where is the Gaussian binomial lower bound. There are Nd q dimension-d subspaces of FN q d q coefficient. Since each orbit has size at most the group order, \u0015 lm \u0014 X lm \u0014 \u0015 d−1 d q Y q N −i − 1 \u0001 N d=0 lm , = # Sub(Fq )/G ≥ , (2) |GLl (Fq )| |GLm (Fq )| |H| d q q d−i − 1 i=0 23 † format l × m transpose? 2×2 2×2 2×3 2×4 3×3 3×3 3×4 4×4 yes no no no yes no no yes # orbits over F2 # orbits over F3 10 11 31 86 496 710 158,426 >1.6 × 1011 10 11 31 91 736 1046 >1.6 × 106 † >8.8 × 1015 The exact value is computable but unlikely to improve any matrix bound. Table 9: Number of subspace orbits for matrix multiplication, A = Fl×m . “transpose?” marks q whether the order-two transpose symmetry is included; it applies only to square formats l = m = n. The > entries follow from the exact lower bound in Equation (2). where H = C2 when symmetry is present (l = m = n) and H = C1 otherwise, Qn−1then transpose k and |GLn (Fq )| = k=0 (q − q ). This produces the > entries of T",
+          "start": 58931
+        },
+        {
+          "pattern": "at least\\s+20",
+          "snippet": "e orbits combining four lower-bound techniques, and emits a proof certificate that a verifier rechecks, typically faster than the search. Instantiating the framework for matrix multiplication, we improve the lower bounds for three small formats over F2 , most notably showing that the bilinear complexity of multiplying two 3 × 3 matrices over F2 is at least 20, raising the bound of 19 that had stood since Bläser (2003). Instantiating it for polynomial multiplication, we obtain eighteen new lower bounds over F2 and F3 , for the full product, cyclic convolution, and the truncated (modulo xN ) and negacyclic (modulo xN + 1) products. Every bound is backed by a machine-checkable certificate. 1 Introduction A bilinear algorithm for a bilinear map β : A×B → C over a field F computes a fixed set of products of a linear form in the A-variables with a linear form in the B-variables, and then reads off each coordinate of the output as a linear combination of those products. The minimum number of such pr",
+          "start": 898
+        },
+        {
+          "pattern": "lower bounds? for three small formats",
+          "snippet": "classifies the subspaces of the first argument up to symmetry (Section 4), runs a dimension-sweeping dynamic program with four lower-bound techniques (Section 5), and produces certificates that an independent verifier rechecks deterministically (Section 6). Our main results concern matrix multiplication, where the framework improves the best known lower bounds for three small formats over F2 . Theorem 1 (Matrix multiplication). RF2 (⟨3, 3, 3⟩) ≥ 20, RF2 (⟨3, 3, 4⟩) ≥ 25, 2 RF2 (⟨3, 4, 4⟩) ≥ 29. The headline result is RF2 (⟨3, 3, 3⟩) ≥ 20, which raises the lower bound of 19 that had stood since Bläser (2003) [8]; the search finds this proof in about 40 minutes on a laptop and the certificate verifies in seconds. The same certificate has since been re-verified independently by Beuchert [5], using a checker written from scratch in a different programming language. The tensor rank improvement over Bläser’s proof [8] has two ingredients. First, our framework fixes the ground field to F2 , while his proof works over arbi",
+          "start": 5902
+        },
+        {
+          "pattern": "<3,\\s*3,\\s*3>|⟨3,\\s*3,\\s*3⟩",
+          "snippet": "16 n⌉, and Bshouty [11] proved RF2 (⟨n, n, n⟩) ≥ 52 n2 − o(n2 ). 2n2 + ⌈ 46 Bläser established the influential bounds R(⟨l, m, n⟩) ≥ lm + mn + l − m + n − 3 over algebraically closed fields [7], R(⟨n, n, n⟩) ≥ 52 n2 −3n over arbitrary fields [6], and finally R(⟨n, m, n⟩) ≥ 2mn + 2n − m − 2 for m ≥ n ≥ 3 [8] over arbitrary fields, which implies R(⟨3, 3, 3⟩) ≥ 19. Shpilka [30] sharpened the asymptotics over small fields, proving RF2 (⟨n, n, n⟩) ≥ 3n2 − o(n2 ) and RFp (⟨n, n, n⟩) ≥ ( 52 + 2(p33−1) )n2 − o(n2 ). On the upper side Laderman [25] multiplied 3 × 3 matrices with 23 products over Z. Thus the rank of ⟨3, 3, 3⟩ has remained trapped in [19, 23], making it the prototypical open small format. 1.2 Lower bounds for polynomial multiplication For the full product of two degree-(N − 1) polynomials, the output flattening immediately gives the lower bound 2N − 1; see also Fiduccia and Zalcstein [17]. This bound is attained by evaluation– interpolation at 2N −1 points of P1 (Fq ) whenever 2N −1",
+          "start": 3098
+        },
+        {
+          "pattern": "<3,\\s*3,\\s*3>|⟨3,\\s*3,\\s*3⟩",
+          "snippet": "m, n⟩) ≥ 2mn + 2n − m − 2 for m ≥ n ≥ 3 [8] over arbitrary fields, which implies R(⟨3, 3, 3⟩) ≥ 19. Shpilka [30] sharpened the asymptotics over small fields, proving RF2 (⟨n, n, n⟩) ≥ 3n2 − o(n2 ) and RFp (⟨n, n, n⟩) ≥ ( 52 + 2(p33−1) )n2 − o(n2 ). On the upper side Laderman [25] multiplied 3 × 3 matrices with 23 products over Z. Thus the rank of ⟨3, 3, 3⟩ has remained trapped in [19, 23], making it the prototypical open small format. 1.2 Lower bounds for polynomial multiplication For the full product of two degree-(N − 1) polynomials, the output flattening immediately gives the lower bound 2N − 1; see also Fiduccia and Zalcstein [17]. This bound is attained by evaluation– interpolation at 2N −1 points of P1 (Fq ) whenever 2N −1 ≤ q+1 [34, 23]. Kaminski and Bshouty [23] proved that, when q/2 < N − 1 ≤ q + 1, one has RFq (PN ) = 3N − 2 − ⌊q/2⌋. For larger N , classical lower bounds come from the connection between bilinear algorithms and linear codes developed by Brockett and Dobkin [10] and",
+          "start": 3364
+        },
+        {
+          "pattern": "<3,\\s*3,\\s*3>|⟨3,\\s*3,\\s*3⟩",
+          "snippet": "sion-sweeping dynamic program with four lower-bound techniques (Section 5), and produces certificates that an independent verifier rechecks deterministically (Section 6). Our main results concern matrix multiplication, where the framework improves the best known lower bounds for three small formats over F2 . Theorem 1 (Matrix multiplication). RF2 (⟨3, 3, 3⟩) ≥ 20, RF2 (⟨3, 3, 4⟩) ≥ 25, 2 RF2 (⟨3, 4, 4⟩) ≥ 29. The headline result is RF2 (⟨3, 3, 3⟩) ≥ 20, which raises the lower bound of 19 that had stood since Bläser (2003) [8]; the search finds this proof in about 40 minutes on a laptop and the certificate verifies in seconds. The same certificate has since been re-verified independently by Beuchert [5], using a checker written from scratch in a different programming language. The tensor rank improvement over Bläser’s proof [8] has two ingredients. First, our framework fixes the ground field to F2 , while his proof works over arbitrary fields. Over F2 the candidate components of an optimal",
+          "start": 5989
+        },
+        {
+          "pattern": "<3,\\s*3,\\s*3>|⟨3,\\s*3,\\s*3⟩",
+          "snippet": "icates that an independent verifier rechecks deterministically (Section 6). Our main results concern matrix multiplication, where the framework improves the best known lower bounds for three small formats over F2 . Theorem 1 (Matrix multiplication). RF2 (⟨3, 3, 3⟩) ≥ 20, RF2 (⟨3, 3, 4⟩) ≥ 25, 2 RF2 (⟨3, 4, 4⟩) ≥ 29. The headline result is RF2 (⟨3, 3, 3⟩) ≥ 20, which raises the lower bound of 19 that had stood since Bläser (2003) [8]; the search finds this proof in about 40 minutes on a laptop and the certificate verifies in seconds. The same certificate has since been re-verified independently by Beuchert [5], using a checker written from scratch in a different programming language. The tensor rank improvement over Bläser’s proof [8] has two ingredients. First, our framework fixes the ground field to F2 , while his proof works over arbitrary fields. Over F2 the candidate components of an optimal decomposition form a small finite set, so the case analysis can branch on every one. Second, t",
+          "start": 6084
+        },
+        {
+          "pattern": "<3,\\s*3,\\s*3>|⟨3,\\s*3,\\s*3⟩",
+          "snippet": "the many small cases where our framework reproduces the exact rank already known. The source code for the search and the verifier, together with all certificates, is available at https://github.com/wcgbg/tensor-rank-lower-bound. Appendix B (Table 8) reports computation details behind each new bound. Several questions remain open. The exact rank of ⟨3, 3, 3⟩ over F2 still lies in [20, 23]. Scaling to ⟨4, 4, 4⟩ is blocked by the sheer number of constraint orbits and will need stronger symmetry reduction. For polynomial multiplication, the full, cyclic, truncated, and negacyclic bounds should extend to larger N with more computation. Finally, a natural next family is multiplication in the extension field Fqn over Fq , computing f · g modulo an irreducible polynomial of degree n over Fq . The rest of the paper is organized as follows. Section 2 sketches the whole framework on a single toy example. Section 3 sets up subspaces, constraints, and their symmetries, instantiated for the matrix and polyno",
+          "start": 8905
+        },
+        {
+          "pattern": "<3,\\s*3,\\s*3>|⟨3,\\s*3,\\s*3⟩",
+          "snippet": "straints, and their symmetries, instantiated for the matrix and polynomial families. The two stages of the search follow: Section 4 enumerates the orbits, and Section 5 gives the dynamic program and its four lower-bound techniques. Section 6 then details the certificates and the verifier. 3 family problem prev LB our LB prev UB Matrix RF2 (⟨3, 3, 3⟩) RF2 (⟨3, 3, 4⟩) RF2 (⟨3, 4, 4⟩) 19 [8] 24 [8] 28 [7] 20 25 29 23 [25] 29 [31] 38 [31] Full RF2 (P6 ) RF2 (P7 ) RF2 (P8 ) RF3 (P6 ) 15 [26, 10, 18] 18 [26, 10, 18] 20 [26, 10, 18] 12 [26, 10, 32] 16 19 21 14 17 [27] 22 [27] 26 [16] 15 [4] Cyclic RF2 (C7 ) RF2 (C8 ) RF2 (C10 ) RF3 (C9 ) 12 [15, 9] 16 [3, 9] 19 [2, 9] 18 [3, 9] 13 19 22 19 13 [35] 22 [13] 27 [29] 27 [13] Truncated RF2 (T6 ) RF2 (T7 ) RF2 (T8 ) RF2 (T9 ) RF2 (T10 ) RF2 (T11 ) RF3 (T8 ) RF3 (T9 ) RF3 (T10 ) 12 [3, 9] 14 [3, 9] 16 [3, 9] 18 [3, 9] 20 [3, 9] 22 [3, 9] 16 [3, 9] 18 [3, 9] 20 [3, 9] 13 16 19 21 24 27 17 19 21 14 [13] 18 [13] 22 [13] 27 [13]∗ 31 [13",
+          "start": 9844
+        },
+        {
+          "pattern": "<3,\\s*3,\\s*3>|⟨3,\\s*3,\\s*3⟩",
+          "snippet": "icolas Estibals, and Paul Zimmermann. Finding optimal formulae for bilinear maps. In Ferruh Özbudak and Francisco Rodrı́guez-Henrı́quez, editors, Arithmetic of Finite Fields (WAIFI 2012), volume 7369 of Lecture Notes in Computer Science, pages 168–186. Springer, 2012. [5] Stefan Beuchert. Independent Verification of the Wang F2 -Certificate for R(⟨3, 3, 3⟩) ≥ 20. Zenodo, version 5, https://doi.org/10.5281/zenodo.20752782, 2026. 13 [6] Markus Bläser. A 5/2n2 -lower bound for the rank of n×n-matrix multiplication over arbitrary fields. In Proceedings of the 40th Annual IEEE Symposium on Foundations of Computer Science (FOCS), pages 45–50. IEEE Computer Society, 1999. [7] Markus Bläser. Lower bounds for the multiplicative complexity of matrix multiplication. Computational Complexity, 8(3):203–226, 1999. [8] Markus Bläser. On the complexity of the multiplication of matrices of small formats. Journal of Complexity, 19(1):43–60, 2003. [9] Markus Bläser. A complete characterization of the algeb",
+          "start": 38668
+        },
+        {
+          "pattern": "<3,\\s*3,\\s*3>|⟨3,\\s*3,\\s*3⟩",
+          "snippet": "orts what our framework proves, not the stronger inherited bound. The tables also serve as regression tests for the implementation: in no entry does a bound we prove exceed the best known upper bound, and in many small cases it matches the exact rank already known. format prev LB our LB prev UB ⟨2, 2, 2⟩ ⟨2, 2, 3⟩ ⟨2, 2, 4⟩ ⟨2, 3, 3⟩ ⟨2, 3, 4⟩ ⟨3, 3, 3⟩ ⟨3, 3, 4⟩ ⟨3, 4, 4⟩ 7 [21] 11 [21] 14 [21] 15 [21] 19 [22] 19 [8] 24 [8] 28 [7] 7 11 14 15 19 20 25 29 7 [33] 11 (⟨2, 2, 2 : 7⟩ + ⟨2, 2, 1 : 4⟩) 14 (⟨2, 2, 2 : 7⟩ + ⟨2, 2, 2 : 7⟩) 15 [21] 20 [21] 23 [25] 29 [31] 38 [31] Table 3: Matrix multiplication tensor rank over F2 ; boxed entries are new. 16 over F2 over F3 N prev LB our LB prev UB prev LB our LB prev UB 1 2 3 4 5 6 7 8 1 3 [17] 6 [26, 10, 19] 9 [23] 13 [26, 10, 18] 15 [26, 10, 18] 18 [26, 10, 18] 20 [26, 10, 18] 1 3 6 9 13 16 19 21 1 3 [34] 6 [23] 9 [23] 13 [27] 17 [27] 22 [27] 26 [16] 1 3 [17] 6 [26, 10, 18] 9 [23] 12 [23] 12 [26, 10, 32] 1 3 6 9 12 14 1 3 [34]",
+          "start": 45467
+        }
+      ],
+      "text_path": "data/frontier_recheck/pdf_latest.txt",
+      "text_sha256": "730337c8f081316fac85ef760c7b818039406f20bb9aaf5d7696c23747a10ca0",
+      "text_size": 61625
+    },
+    "pdf_v11": {
+      "contains_at_least_20_3x3_abstract": true,
+      "contains_at_least_21": false,
+      "contains_rank_21_near_333": true,
+      "pdf": "data/frontier_recheck/pdf_v11.pdf",
+      "returncode": 0,
+      "snippets": [
+        {
+          "pattern": "3\\s*[×x]\\\\?\\s*3|3\\\\times 3|3 × 3",
+          "snippet": "a dynamic program over the orbits combining four lower-bound techniques, and emits a proof certificate that a verifier rechecks, typically faster than the search. Instantiating the framework for matrix multiplication, we improve the lower bounds for three small formats over F2 , most notably showing that the bilinear complexity of multiplying two 3 × 3 matrices over F2 is at least 20, raising the bound of 19 that had stood since Bläser (2003). Instantiating it for polynomial multiplication, we obtain eighteen new lower bounds over F2 and F3 , for the full product, cyclic convolution, and the truncated (modulo xN ) and negacyclic (modulo xN + 1) products. Every bound is backed by a machine-checkable certificate. 1 Introduction A bilinear algorithm for a bilinear map β : A×B → C over a field F computes a fixed set of products of a linear form in the A-variables with a linear form in the B-variables, and then reads off each coordinate of the output as a linear combination of those product",
+          "start": 872
+        },
+        {
+          "pattern": "3\\s*[×x]\\\\?\\s*3|3\\\\times 3|3 × 3",
+          "snippet": "≥ 52 n2 −3n over arbitrary fields [6], and finally R(⟨n, m, n⟩) ≥ 2mn + 2n − m − 2 for m ≥ n ≥ 3 [8] over arbitrary fields, which implies R(⟨3, 3, 3⟩) ≥ 19. Shpilka [30] sharpened the asymptotics over small fields, proving RF2 (⟨n, n, n⟩) ≥ 3n2 − o(n2 ) and RFp (⟨n, n, n⟩) ≥ ( 52 + 2(p33−1) )n2 − o(n2 ). On the upper side Laderman [25] multiplied 3 × 3 matrices with 23 products over Z. Thus the rank of ⟨3, 3, 3⟩ has remained trapped in [19, 23], making it the prototypical open small format. 1.2 Lower bounds for polynomial multiplication For the full product of two degree-(N − 1) polynomials, the output flattening immediately gives the lower bound 2N − 1; see also Fiduccia and Zalcstein [17]. This bound is attained by evaluation– interpolation at 2N −1 points of P1 (Fq ) whenever 2N −1 ≤ q+1 [34, 23]. Kaminski and Bshouty [23] proved that, when q/2 < N − 1 ≤ q + 1, one has RFq (PN ) = 3N − 2 − ⌊q/2⌋. For larger N , classical lower bounds come from the connection between bilinear algorith",
+          "start": 3307
+        },
+        {
+          "pattern": "3\\s*[×x]\\\\?\\s*3|3\\\\times 3|3 × 3",
+          "snippet": "o F2 , while his proof works over arbitrary fields. Over F2 the candidate components of an optimal decomposition form a small finite set, so the case analysis can branch on every one. Second, the breadth of the induction: his proof passes through some hand-crafted subspaces, whereas our argument runs over more subspaces (all subspaces of the first 3 × 3 matrix argument), which makes the analysis tighter. The price is generality: our result holds over F2 alone and for a single format, whereas Bläser’s bound holds over arbitrary fields and for many formats. For polynomial multiplication the same framework yields eighteen new lower bounds over F2 and F3 , for the full product and for the three quotient families Fq [x]/(xN − γ). Theorem 2 (Polynomial multiplication). Write RFq (PN ), RFq (CN ), RFq (TN ), and RFq (C− N ) for the bilinear complexity over Fq of, respectively, the full product of two degree-(N − 1) polynomials, cyclic convolution (modulo xN − 1), the truncated product (modulo xN",
+          "start": 6900
+        },
+        {
+          "pattern": "3\\s*[×x]\\\\?\\s*3|3\\\\times 3|3 × 3",
+          "snippet": "al multiplication over finite fields. Journal of the ACM, 36(1):150–170, 1989. [24] Manuel Kauers and Jakob Moosbauer. Flip graphs for matrix multiplication. In Proceedings of the 2023 International Symposium on Symbolic and Algebraic Computation (ISSAC), pages 381–388. ACM, 2023. [25] Julian D. Laderman. A noncommutative algorithm for multiplying 3 × 3 matrices using 23 multiplications. Bulletin of the American Mathematical Society, 82(1):126–128, 1976. [26] Abraham Lempel and Shmuel Winograd. A new approach to error-correcting codes. IEEE Transactions on Information Theory, 23(4):503–508, 1977. [27] Peter L. Montgomery. Five, six, and seven-term Karatsuba-like formulae. IEEE Transactions on Computers, 54(3):362–369, 2005. [28] V. Ya. Pan. Methods of computing values of polynomials. Russian Mathematical Surveys, 21(1):105–136, 1966. [29] Hugues Randriambololona. Bilinear complexity of algebras and the Chudnovsky–Chudnovsky interpolation method. Journal of Complexity, 28(4):489–517, 2012. [",
+          "start": 41808
+        },
+        {
+          "pattern": "3\\s*[×x]\\\\?\\s*3|3\\\\times 3|3 × 3",
+          "snippet": "counting expression , where is the Gaussian binomial lower bound. There are Nd q dimension-d subspaces of FN q d q coefficient. Since each orbit has size at most the group order, \u0015 lm \u0014 X lm \u0014 \u0015 d−1 d q Y q N −i − 1 \u0001 N d=0 lm , = # Sub(Fq )/G ≥ , (2) |GLl (Fq )| |GLm (Fq )| |H| d q q d−i − 1 i=0 23 † format l × m transpose? 2×2 2×2 2×3 2×4 3×3 3×3 3×4 4×4 yes no no no yes no no yes # orbits over F2 # orbits over F3 10 11 31 86 496 710 158,426 >1.6 × 1011 10 11 31 91 736 1046 >1.6 × 106 † >8.8 × 1015 The exact value is computable but unlikely to improve any matrix bound. Table 9: Number of subspace orbits for matrix multiplication, A = Fl×m . “transpose?” marks q whether the order-two transpose symmetry is included; it applies only to square formats l = m = n. The > entries follow from the exact lower bound in Equation (2). where H = C2 when symmetry is present (l = m = n) and H = C1 otherwise, Qn−1then transpose k and |GLn (Fq )| = k=0 (q − q ). This produces the > entries",
+          "start": 58927
+        },
+        {
+          "pattern": "3\\s*[×x]\\\\?\\s*3|3\\\\times 3|3 × 3",
+          "snippet": "nting expression , where is the Gaussian binomial lower bound. There are Nd q dimension-d subspaces of FN q d q coefficient. Since each orbit has size at most the group order, \u0015 lm \u0014 X lm \u0014 \u0015 d−1 d q Y q N −i − 1 \u0001 N d=0 lm , = # Sub(Fq )/G ≥ , (2) |GLl (Fq )| |GLm (Fq )| |H| d q q d−i − 1 i=0 23 † format l × m transpose? 2×2 2×2 2×3 2×4 3×3 3×3 3×4 4×4 yes no no no yes no no yes # orbits over F2 # orbits over F3 10 11 31 86 496 710 158,426 >1.6 × 1011 10 11 31 91 736 1046 >1.6 × 106 † >8.8 × 1015 The exact value is computable but unlikely to improve any matrix bound. Table 9: Number of subspace orbits for matrix multiplication, A = Fl×m . “transpose?” marks q whether the order-two transpose symmetry is included; it applies only to square formats l = m = n. The > entries follow from the exact lower bound in Equation (2). where H = C2 when symmetry is present (l = m = n) and H = C1 otherwise, Qn−1then transpose k and |GLn (Fq )| = k=0 (q − q ). This produces the > entries of T",
+          "start": 58931
+        },
+        {
+          "pattern": "at least\\s+20",
+          "snippet": "e orbits combining four lower-bound techniques, and emits a proof certificate that a verifier rechecks, typically faster than the search. Instantiating the framework for matrix multiplication, we improve the lower bounds for three small formats over F2 , most notably showing that the bilinear complexity of multiplying two 3 × 3 matrices over F2 is at least 20, raising the bound of 19 that had stood since Bläser (2003). Instantiating it for polynomial multiplication, we obtain eighteen new lower bounds over F2 and F3 , for the full product, cyclic convolution, and the truncated (modulo xN ) and negacyclic (modulo xN + 1) products. Every bound is backed by a machine-checkable certificate. 1 Introduction A bilinear algorithm for a bilinear map β : A×B → C over a field F computes a fixed set of products of a linear form in the A-variables with a linear form in the B-variables, and then reads off each coordinate of the output as a linear combination of those products. The minimum number of such pr",
+          "start": 898
+        },
+        {
+          "pattern": "lower bounds? for three small formats",
+          "snippet": "classifies the subspaces of the first argument up to symmetry (Section 4), runs a dimension-sweeping dynamic program with four lower-bound techniques (Section 5), and produces certificates that an independent verifier rechecks deterministically (Section 6). Our main results concern matrix multiplication, where the framework improves the best known lower bounds for three small formats over F2 . Theorem 1 (Matrix multiplication). RF2 (⟨3, 3, 3⟩) ≥ 20, RF2 (⟨3, 3, 4⟩) ≥ 25, 2 RF2 (⟨3, 4, 4⟩) ≥ 29. The headline result is RF2 (⟨3, 3, 3⟩) ≥ 20, which raises the lower bound of 19 that had stood since Bläser (2003) [8]; the search finds this proof in about 40 minutes on a laptop and the certificate verifies in seconds. The same certificate has since been re-verified independently by Beuchert [5], using a checker written from scratch in a different programming language. The tensor rank improvement over Bläser’s proof [8] has two ingredients. First, our framework fixes the ground field to F2 , while his proof works over arbi",
+          "start": 5902
+        },
+        {
+          "pattern": "<3,\\s*3,\\s*3>|⟨3,\\s*3,\\s*3⟩",
+          "snippet": "16 n⌉, and Bshouty [11] proved RF2 (⟨n, n, n⟩) ≥ 52 n2 − o(n2 ). 2n2 + ⌈ 46 Bläser established the influential bounds R(⟨l, m, n⟩) ≥ lm + mn + l − m + n − 3 over algebraically closed fields [7], R(⟨n, n, n⟩) ≥ 52 n2 −3n over arbitrary fields [6], and finally R(⟨n, m, n⟩) ≥ 2mn + 2n − m − 2 for m ≥ n ≥ 3 [8] over arbitrary fields, which implies R(⟨3, 3, 3⟩) ≥ 19. Shpilka [30] sharpened the asymptotics over small fields, proving RF2 (⟨n, n, n⟩) ≥ 3n2 − o(n2 ) and RFp (⟨n, n, n⟩) ≥ ( 52 + 2(p33−1) )n2 − o(n2 ). On the upper side Laderman [25] multiplied 3 × 3 matrices with 23 products over Z. Thus the rank of ⟨3, 3, 3⟩ has remained trapped in [19, 23], making it the prototypical open small format. 1.2 Lower bounds for polynomial multiplication For the full product of two degree-(N − 1) polynomials, the output flattening immediately gives the lower bound 2N − 1; see also Fiduccia and Zalcstein [17]. This bound is attained by evaluation– interpolation at 2N −1 points of P1 (Fq ) whenever 2N −1",
+          "start": 3098
+        },
+        {
+          "pattern": "<3,\\s*3,\\s*3>|⟨3,\\s*3,\\s*3⟩",
+          "snippet": "m, n⟩) ≥ 2mn + 2n − m − 2 for m ≥ n ≥ 3 [8] over arbitrary fields, which implies R(⟨3, 3, 3⟩) ≥ 19. Shpilka [30] sharpened the asymptotics over small fields, proving RF2 (⟨n, n, n⟩) ≥ 3n2 − o(n2 ) and RFp (⟨n, n, n⟩) ≥ ( 52 + 2(p33−1) )n2 − o(n2 ). On the upper side Laderman [25] multiplied 3 × 3 matrices with 23 products over Z. Thus the rank of ⟨3, 3, 3⟩ has remained trapped in [19, 23], making it the prototypical open small format. 1.2 Lower bounds for polynomial multiplication For the full product of two degree-(N − 1) polynomials, the output flattening immediately gives the lower bound 2N − 1; see also Fiduccia and Zalcstein [17]. This bound is attained by evaluation– interpolation at 2N −1 points of P1 (Fq ) whenever 2N −1 ≤ q+1 [34, 23]. Kaminski and Bshouty [23] proved that, when q/2 < N − 1 ≤ q + 1, one has RFq (PN ) = 3N − 2 − ⌊q/2⌋. For larger N , classical lower bounds come from the connection between bilinear algorithms and linear codes developed by Brockett and Dobkin [10] and",
+          "start": 3364
+        },
+        {
+          "pattern": "<3,\\s*3,\\s*3>|⟨3,\\s*3,\\s*3⟩",
+          "snippet": "sion-sweeping dynamic program with four lower-bound techniques (Section 5), and produces certificates that an independent verifier rechecks deterministically (Section 6). Our main results concern matrix multiplication, where the framework improves the best known lower bounds for three small formats over F2 . Theorem 1 (Matrix multiplication). RF2 (⟨3, 3, 3⟩) ≥ 20, RF2 (⟨3, 3, 4⟩) ≥ 25, 2 RF2 (⟨3, 4, 4⟩) ≥ 29. The headline result is RF2 (⟨3, 3, 3⟩) ≥ 20, which raises the lower bound of 19 that had stood since Bläser (2003) [8]; the search finds this proof in about 40 minutes on a laptop and the certificate verifies in seconds. The same certificate has since been re-verified independently by Beuchert [5], using a checker written from scratch in a different programming language. The tensor rank improvement over Bläser’s proof [8] has two ingredients. First, our framework fixes the ground field to F2 , while his proof works over arbitrary fields. Over F2 the candidate components of an optimal",
+          "start": 5989
+        },
+        {
+          "pattern": "<3,\\s*3,\\s*3>|⟨3,\\s*3,\\s*3⟩",
+          "snippet": "icates that an independent verifier rechecks deterministically (Section 6). Our main results concern matrix multiplication, where the framework improves the best known lower bounds for three small formats over F2 . Theorem 1 (Matrix multiplication). RF2 (⟨3, 3, 3⟩) ≥ 20, RF2 (⟨3, 3, 4⟩) ≥ 25, 2 RF2 (⟨3, 4, 4⟩) ≥ 29. The headline result is RF2 (⟨3, 3, 3⟩) ≥ 20, which raises the lower bound of 19 that had stood since Bläser (2003) [8]; the search finds this proof in about 40 minutes on a laptop and the certificate verifies in seconds. The same certificate has since been re-verified independently by Beuchert [5], using a checker written from scratch in a different programming language. The tensor rank improvement over Bläser’s proof [8] has two ingredients. First, our framework fixes the ground field to F2 , while his proof works over arbitrary fields. Over F2 the candidate components of an optimal decomposition form a small finite set, so the case analysis can branch on every one. Second, t",
+          "start": 6084
+        },
+        {
+          "pattern": "<3,\\s*3,\\s*3>|⟨3,\\s*3,\\s*3⟩",
+          "snippet": "the many small cases where our framework reproduces the exact rank already known. The source code for the search and the verifier, together with all certificates, is available at https://github.com/wcgbg/tensor-rank-lower-bound. Appendix B (Table 8) reports computation details behind each new bound. Several questions remain open. The exact rank of ⟨3, 3, 3⟩ over F2 still lies in [20, 23]. Scaling to ⟨4, 4, 4⟩ is blocked by the sheer number of constraint orbits and will need stronger symmetry reduction. For polynomial multiplication, the full, cyclic, truncated, and negacyclic bounds should extend to larger N with more computation. Finally, a natural next family is multiplication in the extension field Fqn over Fq , computing f · g modulo an irreducible polynomial of degree n over Fq . The rest of the paper is organized as follows. Section 2 sketches the whole framework on a single toy example. Section 3 sets up subspaces, constraints, and their symmetries, instantiated for the matrix and polyno",
+          "start": 8905
+        },
+        {
+          "pattern": "<3,\\s*3,\\s*3>|⟨3,\\s*3,\\s*3⟩",
+          "snippet": "straints, and their symmetries, instantiated for the matrix and polynomial families. The two stages of the search follow: Section 4 enumerates the orbits, and Section 5 gives the dynamic program and its four lower-bound techniques. Section 6 then details the certificates and the verifier. 3 family problem prev LB our LB prev UB Matrix RF2 (⟨3, 3, 3⟩) RF2 (⟨3, 3, 4⟩) RF2 (⟨3, 4, 4⟩) 19 [8] 24 [8] 28 [7] 20 25 29 23 [25] 29 [31] 38 [31] Full RF2 (P6 ) RF2 (P7 ) RF2 (P8 ) RF3 (P6 ) 15 [26, 10, 18] 18 [26, 10, 18] 20 [26, 10, 18] 12 [26, 10, 32] 16 19 21 14 17 [27] 22 [27] 26 [16] 15 [4] Cyclic RF2 (C7 ) RF2 (C8 ) RF2 (C10 ) RF3 (C9 ) 12 [15, 9] 16 [3, 9] 19 [2, 9] 18 [3, 9] 13 19 22 19 13 [35] 22 [13] 27 [29] 27 [13] Truncated RF2 (T6 ) RF2 (T7 ) RF2 (T8 ) RF2 (T9 ) RF2 (T10 ) RF2 (T11 ) RF3 (T8 ) RF3 (T9 ) RF3 (T10 ) 12 [3, 9] 14 [3, 9] 16 [3, 9] 18 [3, 9] 20 [3, 9] 22 [3, 9] 16 [3, 9] 18 [3, 9] 20 [3, 9] 13 16 19 21 24 27 17 19 21 14 [13] 18 [13] 22 [13] 27 [13]∗ 31 [13",
+          "start": 9844
+        },
+        {
+          "pattern": "<3,\\s*3,\\s*3>|⟨3,\\s*3,\\s*3⟩",
+          "snippet": "icolas Estibals, and Paul Zimmermann. Finding optimal formulae for bilinear maps. In Ferruh Özbudak and Francisco Rodrı́guez-Henrı́quez, editors, Arithmetic of Finite Fields (WAIFI 2012), volume 7369 of Lecture Notes in Computer Science, pages 168–186. Springer, 2012. [5] Stefan Beuchert. Independent Verification of the Wang F2 -Certificate for R(⟨3, 3, 3⟩) ≥ 20. Zenodo, version 5, https://doi.org/10.5281/zenodo.20752782, 2026. 13 [6] Markus Bläser. A 5/2n2 -lower bound for the rank of n×n-matrix multiplication over arbitrary fields. In Proceedings of the 40th Annual IEEE Symposium on Foundations of Computer Science (FOCS), pages 45–50. IEEE Computer Society, 1999. [7] Markus Bläser. Lower bounds for the multiplicative complexity of matrix multiplication. Computational Complexity, 8(3):203–226, 1999. [8] Markus Bläser. On the complexity of the multiplication of matrices of small formats. Journal of Complexity, 19(1):43–60, 2003. [9] Markus Bläser. A complete characterization of the algeb",
+          "start": 38668
+        },
+        {
+          "pattern": "<3,\\s*3,\\s*3>|⟨3,\\s*3,\\s*3⟩",
+          "snippet": "orts what our framework proves, not the stronger inherited bound. The tables also serve as regression tests for the implementation: in no entry does a bound we prove exceed the best known upper bound, and in many small cases it matches the exact rank already known. format prev LB our LB prev UB ⟨2, 2, 2⟩ ⟨2, 2, 3⟩ ⟨2, 2, 4⟩ ⟨2, 3, 3⟩ ⟨2, 3, 4⟩ ⟨3, 3, 3⟩ ⟨3, 3, 4⟩ ⟨3, 4, 4⟩ 7 [21] 11 [21] 14 [21] 15 [21] 19 [22] 19 [8] 24 [8] 28 [7] 7 11 14 15 19 20 25 29 7 [33] 11 (⟨2, 2, 2 : 7⟩ + ⟨2, 2, 1 : 4⟩) 14 (⟨2, 2, 2 : 7⟩ + ⟨2, 2, 2 : 7⟩) 15 [21] 20 [21] 23 [25] 29 [31] 38 [31] Table 3: Matrix multiplication tensor rank over F2 ; boxed entries are new. 16 over F2 over F3 N prev LB our LB prev UB prev LB our LB prev UB 1 2 3 4 5 6 7 8 1 3 [17] 6 [26, 10, 19] 9 [23] 13 [26, 10, 18] 15 [26, 10, 18] 18 [26, 10, 18] 20 [26, 10, 18] 1 3 6 9 13 16 19 21 1 3 [34] 6 [23] 9 [23] 13 [27] 17 [27] 22 [27] 26 [16] 1 3 [17] 6 [26, 10, 18] 9 [23] 12 [23] 12 [26, 10, 32] 1 3 6 9 12 14 1 3 [34]",
+          "start": 45467
+        }
+      ],
+      "text_path": "data/frontier_recheck/pdf_v11.txt",
+      "text_sha256": "730337c8f081316fac85ef760c7b818039406f20bb9aaf5d7696c23747a10ca0",
+      "text_size": 61625
+    }
+  },
+  "schema": "wang_latest_frontier_recheck_v1"
+}

@@ -1,0 +1,100 @@
+{
+  "invertible_A_facts": {
+    "forced_profile_invertible_A_count": 3,
+    "forced_profile_rank_sum": 27,
+    "inverse_missing_count": 0,
+    "inverse_missing_head": [],
+    "rank3_matrix_count": 168,
+    "saturated_A_split_rank": 27
+  },
+  "meaning": "Finite support for the shortened lower-bound endpoint: orbit 479 is not needed for rank-one-difference containment, and the A-split product formula matches all elementary basis tensors.",
+  "product_formula_elementary_basis_check": {
+    "checks": 531441,
+    "failure_count": 0,
+    "failures_head": []
+  },
+  "rankone_shared_side_lemma_check": {
+    "bad_pair_count": 0,
+    "bad_pair_head": [],
+    "bad_triple_count": 0,
+    "bad_triple_head": [],
+    "rankone_point_count": 49
+  },
+  "schema": "s0908_short_saturation_checks_v1",
+  "short_endpoint": "In a saturated decomposition, complementary projection identities plus the product formula imply at most one invertible A-factor. The forced profile has three invertible A-factors, so it is impossible once the line, dim2(484--491), affine-plane, and split-flattening premises are established.",
+  "sources": {
+    "wang_orbit_cache": "data/wang_f2_lb20/wang_orbit_closed_cache.pkl"
+  },
+  "weak_dim2_premise": {
+    "bad_pair_head": [],
+    "bad_pair_not_excluded_484_491_but_sum_not_rankone_count": 0,
+    "excluded_orbits_needed_for_rankone_difference": [
+      484,
+      485,
+      486,
+      487,
+      488,
+      489,
+      490,
+      491
+    ],
+    "high_rank_pair_count": 106491,
+    "high_rank_vertex_count": 462,
+    "not_required_for_rankone_difference": [
+      479
+    ],
+    "orbit479_pair_count": 441,
+    "orbit_hist_for_high_rank_pairs": {
+      "479": 441,
+      "481": 3528,
+      "482": 1764,
+      "483": 4704,
+      "484": 294,
+      "485": 7056,
+      "486": 3528,
+      "487": 10584,
+      "488": 42336,
+      "489": 14112,
+      "490": 14112,
+      "491": 4032
+    },
+    "orbit_rankpattern": {
+      "479": {
+        "[1, 2, 2]": 441
+      },
+      "481": {
+        "[1, 2, 2]": 3528
+      },
+      "482": {
+        "[1, 3, 3]": 1764
+      },
+      "483": {
+        "[1, 2, 3]": 4704
+      },
+      "484": {
+        "[2, 2, 2]": 294
+      },
+      "485": {
+        "[2, 2, 2]": 7056
+      },
+      "486": {
+        "[2, 2, 2]": 3528
+      },
+      "487": {
+        "[2, 3, 3]": 10584
+      },
+      "488": {
+        "[2, 2, 3]": 42336
+      },
+      "489": {
+        "[2, 2, 2]": 14112
+      },
+      "490": {
+        "[2, 3, 3]": 14112
+      },
+      "491": {
+        "[3, 3, 3]": 4032
+      }
+    }
+  }
+}

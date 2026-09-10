@@ -1,0 +1,238 @@
+{
+  "base_info": {
+    "base_constraint_rows": 417453,
+    "base_nnz": 7481700,
+    "contraction_lb_count": 255,
+    "contraction_rank_hist": {
+      "3": 25,
+      "6": 142,
+      "9": 88
+    },
+    "wang_cap_hist": {
+      "1": 6469,
+      "10": 5100,
+      "13": 390,
+      "16": 25,
+      "2": 61438,
+      "3": 94398,
+      "4": 132624,
+      "5": 65612,
+      "6": 6698,
+      "7": 43956,
+      "8": 487
+    },
+    "wang_dim_hist": {
+      "1": 255,
+      "2": 10795,
+      "3": 97155,
+      "4": 200787,
+      "5": 97155,
+      "6": 10795,
+      "7": 255
+    },
+    "wang_nnz": 7448805,
+    "wang_rows": 417197
+  },
+  "binary_variables": true,
+  "build_sec": 3.884,
+  "final_status": "TIME_OR_ITERATION_LIMIT",
+  "final_support": null,
+  "input_binary": "data/wang_native/quotient_binaries/rank2_all_n19.bin",
+  "input_binary_sha256": "138a25c3184bcd41fcf9346d31294d64d219b9536215004d71f0e0dfbc24db29",
+  "learned_qcut_count": 0,
+  "learned_qcuts_head": [],
+  "lp_relaxation": {
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "mode": "LP",
+    "solve_sec": 16.471,
+    "status": 0,
+    "success": true,
+    "x_fractional": 104,
+    "x_max": 0.72580702,
+    "x_min": 0.0,
+    "x_nonzero": 104,
+    "x_sum": 19.0,
+    "x_top_head": [
+      {
+        "p": 189,
+        "value": 0.72580702
+      },
+      {
+        "p": 160,
+        "value": 0.67356741
+      },
+      {
+        "p": 9,
+        "value": 0.63538893
+      },
+      {
+        "p": 25,
+        "value": 0.61087565
+      },
+      {
+        "p": 78,
+        "value": 0.56971377
+      },
+      {
+        "p": 14,
+        "value": 0.55956472
+      },
+      {
+        "p": 77,
+        "value": 0.55411671
+      },
+      {
+        "p": 39,
+        "value": 0.52871276
+      },
+      {
+        "p": 231,
+        "value": 0.51458111
+      },
+      {
+        "p": 66,
+        "value": 0.48343987
+      },
+      {
+        "p": 132,
+        "value": 0.47993063
+      },
+      {
+        "p": 198,
+        "value": 0.47128724
+      },
+      {
+        "p": 159,
+        "value": 0.41086332
+      },
+      {
+        "p": 11,
+        "value": 0.39425688
+      },
+      {
+        "p": 108,
+        "value": 0.38632431
+      },
+      {
+        "p": 117,
+        "value": 0.38154723
+      },
+      {
+        "p": 110,
+        "value": 0.37956294
+      },
+      {
+        "p": 170,
+        "value": 0.36224143
+      },
+      {
+        "p": 121,
+        "value": 0.33012622
+      },
+      {
+        "p": 197,
+        "value": 0.31427996
+      },
+      {
+        "p": 74,
+        "value": 0.29298071
+      },
+      {
+        "p": 127,
+        "value": 0.28886716
+      },
+      {
+        "p": 249,
+        "value": 0.28322169
+      },
+      {
+        "p": 183,
+        "value": 0.27679386
+      },
+      {
+        "p": 46,
+        "value": 0.26530737
+      },
+      {
+        "p": 245,
+        "value": 0.26419552
+      },
+      {
+        "p": 104,
+        "value": 0.24775513
+      },
+      {
+        "p": 33,
+        "value": 0.24242408
+      },
+      {
+        "p": 143,
+        "value": 0.23907965
+      },
+      {
+        "p": 192,
+        "value": 0.23514016
+      },
+      {
+        "p": 125,
+        "value": 0.23179323
+      },
+      {
+        "p": 111,
+        "value": 0.22370612
+      },
+      {
+        "p": 242,
+        "value": 0.21716735
+      },
+      {
+        "p": 45,
+        "value": 0.19972364
+      },
+      {
+        "p": 216,
+        "value": 0.19829672
+      },
+      {
+        "p": 155,
+        "value": 0.19591832
+      },
+      {
+        "p": 26,
+        "value": 0.18547722
+      },
+      {
+        "p": 115,
+        "value": 0.18499606
+      },
+      {
+        "p": 38,
+        "value": 0.18253109
+      },
+      {
+        "p": 88,
+        "value": 0.18242008
+      }
+    ]
+  },
+  "mathematical_meaning": "MILP over quotient A-supports satisfying Wang occupation rows, contraction lower bounds, and learned unconditional quotient-rank inequalities. Feasible support is necessary-condition evidence only; infeasible result requires independent solver certificate/replay before theorem use.",
+  "pivot": 17,
+  "pivot_name": "rank2",
+  "rounds": [
+    {
+      "active_constraints": 417453,
+      "active_qcuts": 0,
+      "ilp": {
+        "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+        "mode": "ILP",
+        "solve_sec": 61.735,
+        "status": 1,
+        "success": false
+      },
+      "round": 0
+    }
+  ],
+  "schema": "quotient_support_ilp_v1",
+  "target": 19,
+  "total_elapsed_sec": 82.104
+}
