@@ -1,0 +1,401 @@
+\subsection{Initial Research Objective}\label{route:problem}
+
+The original goal was to improve the exact bilinear complexity of ordinary
+$3\times3$ matrix multiplication: construct an algorithm with at most
+22 products or establish the optimality of the known 23-product bound.
+The goal concerns exact identities in the bilinear model. In this model
+each counted product multiplies a linear form in one input by a linear
+form in the other.
+
+Strassen's seven-product $2\times2$ algorithm established the power of
+bilinear reorganization~\cite{strassen1969gaussian}. Laderman supplied the
+23-product $3\times3$ construction~\cite{laderman1976noncommutative};
+Bl\"aser developed lower bounds for small
+formats~\cite{blaser2003}. SAT-based algorithm discovery and AlphaTensor
+show that machine search can discover exact multiplication
+schemes~\cite{heule2019waysa,alphatensor2022}. A new candidate must satisfy all coefficient
+identities, and a lower bound must cover all permitted decompositions.
+
+Two broad directions developed alongside each other. One explored
+finite-field restrictions, combinatorial supports, and certificates.
+The other explored characteristic-zero deformations, rank-one-span
+representations, and symmetry. Their relationship was not a contest
+between fixed methods: each could supply examples, constraints, or
+counterchecks for the other.
+
+Figure~\ref{fig:research-route} summarizes these connections. Qiushi Engine
+developed examples, formulations, and tests in both directions; their
+mathematical consequences determined which questions remained productive.
+
+\subsection{Tensor Conventions and Verification Controls}\label{route:controls}
+
+Qiushi Engine first established a common mathematical convention.
+Matrices were flattened in row-major order, the tensor was generated
+from the multiplication rule, and known schemes were checked against
+all 729 tensor entries. The same convention had to survive transposition,
+cyclic permutation, quotient maps, and changes of basis.
+
+This is not only implementation detail. A matrix representing a linear
+functional and a matrix representing a vector transform contragrediently.
+A quotient class is not generally a vector in an invariant coordinate
+complement. Confusing either pair changes the encoded mathematical
+problem while leaving arrays of plausible dimensions.
+
+Known exact decompositions served as positive controls. Altered candidates
+and deliberately inconsistent instances tested rejection. Such controls
+can falsify an encoding quickly; passing them alone does not prove that
+the encoding covers every legal decomposition. The final proof therefore
+also requires an explicit map from a hypothetical decomposition to the
+integer constraints and from those constraints to the checked formulas.
+
+\subsection{Deformation, Pairing Defects, and the Limits of Numerical Evidence}
+\label{route:deformation}
+
+One natural construction route starts near a known rank-23 scheme.
+The research examined tangent directions, second-order compatibility,
+and continuation toward a rank-defective pairing. The motivation was to
+identify a redundant product that could be removed while preserving the
+target tensor.
+
+The first important negative lesson concerned compactness. Several
+apparently promising trajectories decreased a residual while the
+factor amplitudes grew. Large terms cancelled rather than converging
+to a finite exact rank-22 decomposition. Regularization exposed a
+residual--amplitude tradeoff instead of establishing an exact solution.
+The observed tradeoff identified a failure mechanism in these trajectories.
+Other components of the exact solution space remained to be studied.
+
+The representation was then revised. Pairing defects were formulated
+as incidence conditions; full-span requirements and exceptional strata
+were separated from numerical conditioning. Rank-one-span formulations
+ask whether the nine-dimensional slice space lies inside a span generated
+by the desired number of rank-one matrices. Completion charts attempted
+to enforce this geometry more directly.
+
+Several overextensions were corrected along the way. A tangent
+calculation at a full-rank pairing is not automatically a tangent-cone
+calculation on a rank-defect variety. A parameter count is not an
+existence theorem. Local numerical failure, even around many known
+schemes, does not control disconnected or exceptional components.
+No characteristic-zero rank-22 construction or global rank-23
+optimality proof resulted from this line.
+
+\subsection{Quotient Cores and the Binary-Field Reframing}\label{route:cores}
+
+Wang's certified lower-bound framework supplied a different entry point:
+study what remains after removing directions from a factor
+space~\cite{wangautomated}. The lower-bound-20 certificate was treated
+as a fixed mathematical input, with its quotient semantics reconstructed
+under the tensor convention used throughout the research.
+
+The $E_{11}$ core provided a useful two-sided research question.
+After removing that first-factor direction, the tensor has shape
+$8\times9\times9$. Its rank-19 construction would embed back into the
+full tensor, with three additional rank-one products restoring the
+deleted slice. Thus a complete core witness would yield a full
+rank-at-most-22 construction over $\FF$.
+
+The converse was more delicate. Excluding one core family does not
+automatically exclude every full 20-term decomposition. A lower-bound
+argument must justify the reduction to that family, its symmetry
+normalization, multiplicities after projection, and coverage of all
+remaining branches. The research repeatedly returned to these
+obligations rather than identifying a difficult subproblem with the
+whole theorem.
+
+The core had 255 nonzero first-factor directions and a complete
+417,199-subspace occupation surface. These are finite, exact objects,
+but their possible supports still form a large combinatorial space.
+Reframing the goal over $\FF$ made exact tests available throughout
+the search; identifying useful structure remained the central difficulty.
+
+\subsection{Occupation Constraints and Factor Completion}\label{route:completion}
+
+For a decomposition of length $n$, a certified quotient bound $L(W)$
+implies
+\[
+ m(W)\le n-L(W).
+\]
+This inequality records how many first factors can occupy a subspace.
+It deliberately forgets the second and third factors. A support
+satisfying every such inequality can therefore remain unrealizable.
+
+Qiushi Engine examined fixed-first-factor SAT formulations, shared
+factor conditions from contractions, and lift-back problems from
+smaller quotient tensors. A useful distinction emerged among three
+levels:
+\[
+ \begin{gathered}
+ \text{admissible projected support}\\
+ \downarrow\\
+ \text{compatible lift to the full factor space}\\
+ \downarrow\\
+ \text{complete bilinear decomposition}.
+ \end{gathered}
+\]
+Each arrow needs additional conditions. Solving an earlier level is
+not a witness at a later one.
+
+Residual-capacity searches and learned violated rows reduced some
+instances, but a constraint valid only after choosing a prefix could
+not be reused globally without its conditioning hypotheses. Quotient
+lift-bit formulations also required the same coordinate map in the
+row exporter and the branch solver. A mismatch once produced an
+apparent exclusion that was withdrawn when the semantics were
+reconstructed.
+
+Repeated projected directions formed a separately treated branch;
+the distinct-direction branch remained difficult. The eventual
+full-tensor proof did not require the exact rank of the entire
+$E_{11}$ core to be determined.
+
+\subsection{Symmetry-Restricted Constructions and Their Scope}
+\label{route:symmetry}
+
+The characteristic-zero line explored inner and outer tensor symmetries,
+cyclic decompositions, transpose-invariant families, and mixed
+symmetry types. Exterior and symmetric components, residual cubics,
+commutator or Pfaffian tests, and rank-one-span conditions offered
+smaller algebraic descriptions than unrestricted Brent equations.
+
+This line generated local obstructions and exact test instruments.
+Its main caution was equally important: a result for a chosen frame,
+seed orbit, or symmetry skeleton cannot be promoted to an unrestricted
+rank bound. Finite-field reductions must retain their field scope;
+changes of frame may preserve one exterior component while changing
+the residual symmetric component that a lower-bound test consumes.
+
+Several apparent shortcuts did not survive scrutiny. A direct-sum
+rank inference was too broad. Some tests used a dual action in the
+wrong coordinates. A proposed restriction on a transpose family
+failed when compared with a correctly transported known construction.
+The corrected calculations distinguished invariants of the complete
+tensor from properties of one chosen representation.
+
+These explorations supplied local algebraic descriptions and tests
+for symmetry-based construction. The binary-field proof ultimately
+followed a different route, using constraints on every hypothetical
+20-term decomposition rather than a selected symmetry family.
+
+\subsection{Relaxations and Information Loss}\label{route:relaxation}
+
+The difficult distinct-support core branch motivated coding-theoretic,
+linear, pair-correlation, and semidefinite relaxations. Orbit-averaged
+pair variables and moment matrices compressed large labelled systems.
+Exact square inequalities could sometimes turn a numerical suggestion
+into a reusable, auditable condition.
+
+These experiments clarified a hierarchy of evidence. A fractional
+occupation vector is not an integer support. An integer pair-count
+profile need not arise from a labelled point set. A positive
+semidefinite numerical matrix does not itself provide the required
+factor decomposition. Conversely, an ill-conditioned conic solve
+does not establish exact infeasibility.
+
+Some intermediate conclusions had to be narrowed after missing
+triangle constraints, forced kernels, normalization factors, or
+different row families were identified. A cut that separates one
+saved fractional point does not eliminate all feasible supports.
+The sustained lesson was that each compression must state what
+information it retains and what remains to be reconstructed.
+
+No complete core exclusion emerged from these relaxations. The
+research therefore kept their useful constraints without treating
+ever larger relaxations as the only possible next step.
+
+\subsection{Full-Tensor Rank Constraints}\label{route:full}
+
+The split flattening reorganizes the full multiplication tensor into
+a $27\times27$ permutation matrix $P$. A simple tensor
+$A_t\otimes B_t\otimes C_t$ becomes a matrix $M_t$ of rank
+$\rk(A_t)$ when the other two factors are nonzero. Consequently,
+\[
+ 27=\rk(P)\le\sum_{t=1}^{n}\rk(A_t).
+\]
+At $n=20$, the excess above twenty rank-one first factors must total
+at least seven. At least four first factors must therefore have
+matrix rank at least two.
+
+This bound supplied information that first-factor occupation alone
+had not expressed sharply. It also suggested a more economical
+question: which low-dimensional quotient raises constrain pairs
+of high-rank factors strongly enough to determine their geometry?
+
+The eventual proof needs eight two-dimensional quotient orbits.
+Each consists of planes whose three nonzero matrices all have rank
+at least two. Raising their quotient lower bounds from 18 to 19
+means that two high-rank first factors cannot span such a plane
+in a 20-term decomposition. Their sum must therefore have rank one.
+
+\subsection{Affine Geometry and the Forced Rank Profile}\label{route:geometry}
+
+A family of matrices with pairwise rank-one differences lies in a
+common affine row or column coset, by classical matrix
+geometry~\cite{hua1945geometries,wan1996geometry}. This identification
+turned the pairwise rank condition into a small affine configuration
+whose occupation could be analyzed explicitly.
+
+In the relevant normalized coset, eight first-row labels form
+$\FF^3$. Four corresponding matrices have rank two and four have
+rank three. Certified affine-plane caps permit at most three chosen
+points on any four-point affine plane. Every five-point subset of
+$\FF^3$ contains such a plane, so at most four high-rank factors
+can occur.
+
+Flattening demands at least four. Among four, all four rank-three
+points would themselves form a forbidden affine plane. To supply
+the required rank excess, the only remaining possibility is
+one rank-two and three rank-three factors. The complete profile is
+\[
+ (n_1,n_2,n_3)=(16,1,3),\qquad
+ n_1+2n_2+3n_3=27.
+\]
+This equality was the decisive interface between combinatorial
+geometry and algebraic rigidity.
+
+\subsection{Saturation and Cross-Factor Rigidity}\label{route:saturation}
+
+For an invertible matrix $P=\sum_t M_t$, equality
+$\sum_t\rk(M_t)=\rk(P)$ makes the column spaces a direct sum.
+Resolving a vector in that direct sum gives
+\[
+ M_tP^{-1}M_s=\delta_{ts}M_t.
+\]
+For the multiplication tensor, direct index contraction yields
+\[
+ M(A,B,C)P^{-1}M(A',B',C')
+   =M\bigl(A(B'C^T)A',B,C'\bigr).
+\]
+The diagonal identity for an invertible $A_t$ forces
+$B_tC_t^T=A_t^{-1}$, so $B_t$ and $C_t$ are invertible.
+If two first factors $A_t,A_s$ are invertible, the off-diagonal
+identity requires $A_tB_sC_t^TA_s=0$, impossible for a product
+of invertible matrices.
+
+Thus a saturated decomposition permits at most one invertible
+first factor. The affine profile requires three. This is the
+contradiction proving the lower bound 21.
+
+Qiushi Engine had changed the final obligation: a potentially large
+terminal enumeration became an exact cross-factor identity. An unnecessary
+additional quotient orbit was also removed from the assumptions.
+The final argument retains the eight essential finite raises
+and eliminates the larger terminal search from its dependency chain.
+
+\subsection{Certification of the Finite Premises}\label{route:certificates}
+
+Each essential quotient has 127 nonzero directions and 29,210
+nonzero proper subspaces. At target length 18, its occupation
+variables are nonnegative integers, constrained to sum to 18.
+Their capacities come from the verified upstream quotient table.
+
+Two encoding approaches were developed. Bounded Boolean copies
+represent each integer multiplicity as a sum of binary variables.
+Monotone unary counts represent whether a multiplicity reaches
+each possible level. The latter exposes the count semantics
+directly. Both must allow multiplicity two when the quotient
+permits it; replacing multiplicities by distinct-support bits
+would change the mathematical question.
+
+An earlier cardinality encoding accidentally reused auxiliary
+variables. The resulting contradiction was an error in the
+formula, not an exclusion of a tensor decomposition. Its apparent
+lower-bound conclusion was withdrawn. The original SAT verification
+boundary therefore has two parts:
+\[
+ \text{correct mathematical encoding}
+ \qquad+\qquad
+ \text{correct proof of formula unsatisfiability}.
+\]
+DRAT establishes the second part. Explicit semantic reconstruction,
+positive controls, and separate encoders address the first.
+
+All eight final clausal proofs are retained. Their formulas can
+be regenerated and compared byte for byte. The source certificate
+can be reverified, and its orbit representatives independently
+expanded to the complete 8,283,458-subspace table. The structural
+argument then derives the contradiction from these finite premises.
+
+The accompanying Lean development proves the finite premises by integer
+branch certificates on the actual quotient objects and connects them to
+the structural contradiction. It also checks the orbit classification,
+occupation systems, calibration controls, and Boolean encoding semantics.
+These formal counterparts preserve the mathematical lessons of the
+computational work while making the complete theorem a kernel-checked
+dependency chain (Section~\ref{sec:lean}).
+
+\subsection{Corrections and Methodological Consequences}\label{route:corrections}
+
+\begin{longtable}{@{}L{3.3cm}L{5.1cm}L{5.8cm}@{}}
+\toprule
+Issue & Why the apparent inference failed & Retained scientific consequence\\
+\midrule
+\endfirsthead
+\toprule Issue & Why the apparent inference failed & Retained scientific consequence\\\midrule
+\endhead
+\bottomrule\endfoot
+Near-zero numerical residual & Coefficients could diverge while cancelling
+& Require a finite exact identity; distinguish tested degeneration from impossibility\\
+Auxiliary-variable collision & The Boolean formula contradicted itself for encoding reasons
+& Withdraw the claim; verify variable allocation and semantic forward maps\\
+Lookup decoding & A packed subspace key was read with the wrong bit convention
+& Reconstruct canonical row spaces and compare the entire expanded table\\
+Quotient coordinates & A projection and a lift used different coordinate maps
+& Keep the quotient map, complement, and induced action explicit\\
+Local symmetry exclusion & A seed, orbit, or frame did not cover all decompositions
+& State exact hypotheses and retain uncovered branches\\
+Relaxation feasibility & Fractional or averaged moments need not realize a discrete support
+& Separate continuous, integral, labelled, and factor-complete objects\\
+Product indexing & An elementary formula did not match the actual permutation contraction
+& Construct the permutation matrix independently and check the elementary products\\
+Unnecessary finite premise & One extra pair orbit already had rank-one differences
+& Remove it from the shortest proof instead of proving a stronger statement unnecessarily\\
+\end{longtable}
+
+The useful outcome of correction was a change in subsequent practice.
+The cardinality error led to explicit assignment maps and separate
+count encodings. Coordinate mismatches led to reconstruction from the
+tensor and its maps. Discovering that one finite premise was unnecessary
+led to a shorter argument. In each case the retained knowledge was more
+specific than an instruction to check carefully: it identified the
+mathematical relation that later computations had to preserve.
+
+\subsection{Results, Reusable Methods, and Open Problems}\label{route:outcome}
+
+The established result is
+\[
+ R_{\FF}(\Tmmm)\ge21.
+\]
+The final proof combines certified quotient bounds, affine rank-one
+geometry, rank-additive split flattening, and a tensor-specific product
+identity. It also shows that a zero-excess rank-22 decomposition in
+one factor slot can have at most one invertible factor in that slot.
+When all 22 factors in that slot are nonzero, the surviving rank profiles
+are $(17,5,0)$ and $(18,3,1)$. With zero factors allowed, the alternative
+reduction to a zero-excess length-21 decomposition is retained as in
+Section~\ref{sec:outlook}.
+
+The lower bound and these structural consequences have completed Lean
+proofs within the hypotheses recorded in \qpath{formalization/COVERAGE.md}.
+The main theorem has no remaining finite-bound assumptions.
+
+The exact binary-field rank remains in $[21,23]$. Constructing a
+rank-22 algorithm, controlling positive-excess decompositions, and
+extending the mechanism to other fields are natural next questions.
+The quotient and symmetry materials preserve routes to those questions
+alongside the completed lower-bound proof.
+
+The Meta-Trace records a second outcome: the development of a research
+method through accumulated understanding. Qiushi Engine constructed
+representations, used counterexamples and calculation to identify their
+limits, and carried the useful distinctions into later reasoning. The
+separation between support and completion became a question about how
+to recover factor coupling; the forced equality supplied the answer.
+
+Documenting this development together with its mathematical artifacts
+allows more than replay of the accepted proof. Readers can inspect
+the hypotheses behind an experiment, understand why its outcome changed
+the route, adapt an intermediate method, or revisit a remaining question
+with its earlier obstacles made explicit. The proof establishes the
+result; the Meta-Trace preserves the reasoning history from which
+further research can proceed.

@@ -1,0 +1,81 @@
+\section{Relation to Contemporaneous Work}\label{app:comparison}
+
+Qiushi Engine independently developed the structural proof presented here.
+Wang's contemporaneous preprint establishes the same numerical lower
+bound~\cite{wang2026twentyone}. We became aware of that work during release
+preparation, after the research and original scientific report had been completed.
+
+The comparison below concerns Wang's published binary proof and its
+reproduction package, and the proof and research record documented here.
+It distinguishes shared mathematics from differences in the finite
+premises, deductions, and research contributions.
+
+\paragraph{Shared mathematical foundation.}
+Both proofs inherit certified restriction bounds and use occupation
+capacities. Both obtain rank-one differences between high-rank first
+factors and place them in a common affine row or column coset. These are
+substantive common reductions, not merely similar terminology. Restriction
+by an annihilator and quotienting the coefficient space describe the same
+operation in dual conventions. D'Ambrosio provides an earlier precedent
+for capacity arguments and tight restrictions~\cite{dambrosio2026}.
+
+\begin{longtable}{@{}L{2.1cm}L{5.7cm}L{6.4cm}@{}}
+\toprule
+Aspect & Wang's binary proof & Qiushi Engine's structural proof\\
+\midrule
+\endfirsthead
+\toprule Aspect & Wang's binary proof & Qiushi Engine's structural proof\\\midrule
+\endhead
+\bottomrule\endfoot
+Finite premises
+& Rank-one-span searches and backtracking strengthen a restriction table.
+& A frozen earlier table supports eight additional quotient bounds,
+certified by CNF/DRAT refutations and by closed Lean integer branch
+certificates.\\
+After coset reduction
+& Classify 35 higher-rank configurations and test their rank-one
+completions against the strengthened table.
+& Combine affine-plane caps with the full-tensor rank sum to force
+exactly the profile $(16,1,3)$ and equality at rank sum 27.\\
+Decisive deduction
+& Exhaustive capacity-constrained enumeration excludes every first-factor
+profile; no second- or third-factor completion is needed.
+& Equality gives $M_tP^{-1}M_s=\delta_{ts}M_t$. The tensor product formula
+then couples all three factors and contradicts the required invertibility.\\
+Verification
+& Check restriction certificates and the complete profile enumeration.
+& The original computational route checks the inherited certificate and
+regenerated CNF/DRAT pairs. The Lean route checks integer branch
+certificates and the structural deduction, with all dependencies
+kernel-rechecked.\\
+Further results
+& Also establishes $R_{\mathbb F_3}(\langle2,3,3\rangle)=15$.
+& The saturation lemma also constrains zero-excess rank-22 decompositions:
+at most one first factor is invertible. With all 22 factors in the slot
+nonzero, the profiles are $(17,5,0)$ and $(18,3,1)$; the zero-factor
+alternative is retained in Section~\ref{sec:outlook}.\\
+\end{longtable}
+
+The distinction is therefore more than replacing the last line of a
+proof. The computations producing the finite premises differ; the use of
+the common coset reduction differs; and the final contradiction changes
+from first-factor capacity infeasibility to cross-factor algebra.
+The common numerical conclusion does not make these mechanisms identical.
+
+\paragraph{Research development and open materials.}
+Wang supplies a reproducible theorem package, including code and
+certificates. Our report also documents how the structural proof
+developed: rank-22 construction and deformation, quotient cores,
+support-versus-completion tests, corrections, the return to the full
+tensor, and recognition of saturation. Appendix~\ref{app:research-record}
+integrates this development into an evidence-linked Meta-Trace, supported
+by the thematic research archive. This is a contribution in the
+documentation and study of autonomous mathematical research, alongside
+the structural argument.
+
+Readers interested in rank-one-span searches, symmetry-reduced profile
+enumeration, or the ternary rectangular case will find complementary
+methods in Wang's article~\cite{wang2026twentyone}. Read alongside the
+saturation argument and Meta-Trace here, that work offers another
+perspective on how finite-field constraints can lead to tensor-rank
+lower bounds.

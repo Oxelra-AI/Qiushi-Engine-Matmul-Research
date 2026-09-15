@@ -4,9 +4,10 @@
 
 **长程自主数学研究：从算法搜索到结构性证明。**
 
-[中文完整译本（含全部附录）](reports/zh/main.pdf) ·
-[英文完整报告](reports/en/main.pdf) ·
+[中文报告（含 Lean 证明与全部附录）](reports/zh-lean/main.pdf) ·
+[英文报告（含 Lean 证明）](reports/en-lean/main.pdf) ·
 [研究材料](research/materials/README.md) ·
+[Lean 形式化证明](formalization/README.md) ·
 [证明复验](reproducibility/README.md) ·
 [完整下载](https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research/releases/latest) ·
 [英文导航](README.md)
@@ -19,6 +20,12 @@ Qiushi Engine 独立自主地完成数学研究，从形成研究路线、开展
 到构建完整证明。报告讲清证据与研究记忆如何持续积累、如何推动表示方式的改变，
 以及系统怎样从寻找算法，转向以代数结构解释 20 次算法为何不可能存在。
 开放材料不仅呈现最终成果，也为研究、复用和继续发展这一长程自主科研过程提供依据。
+
+**完整的 Lean 形式化证明。** 主下界、全部有限前提以及
+[覆盖表](formalization/COVERAGE.md)列明的报告数学结果均已有闭合的 Lean 证明。
+13,438 个注册模块完成了与源码对应的编译；六组独立执行的内核重检通过，
+覆盖 89 个终端结果及其完整依赖。[形式化目录](formalization/README.md)提供源码、
+有限证书、固定依赖和复现命令。
 
 ## 问题与贡献
 
@@ -41,10 +48,12 @@ Qiushi Engine 独立自主地完成数学研究，从形成研究路线、开展
 
 图中假设存在二元域上的 20 项分解；有限计算认证与后续代数推导分开表示。
 
-本项工作提供三类相互关联的成果：
+本项工作提供四类相互关联的成果：
 
 - **结构性证明机制**：有限几何迫使秩不等式取等，等号条件连接三个因子并导出矛盾。
 - **可复验的有限前提**：八个商下界的编码、证书与独立检查路径支撑完整数学论证。
+- **完整的 Lean 证明**：从张量定义、有限下界到结构性推导形成闭合证明链，
+  不将计算前提作为公理；同时提供可复用的饱和、商空间语义及有限几何结果。
 - **开放的研究过程**：经整理的 Meta-Trace 与研究材料呈现 Qiushi Engine 如何提出问题、
   形成方法、开展实验、修正判断，并逐步发展出证明。
 
@@ -88,6 +97,7 @@ Qiushi Engine 独立自主地完成数学研究，从形成研究路线、开展
 3. [研究地图](research/README.md)：各方向的结果及未解决问题。
 4. [证据地图](evidence/README.md)：区分继承前提、计算证书和符号证明。
 5. [复验说明](reproducibility/README.md)：依赖、命令和检查范围。
+6. [Lean 工程](formalization/README.md)：形式化定义、完整证明、覆盖表和内核复验。
 
 ## 开放研究材料
 
@@ -104,9 +114,10 @@ Qiushi Engine 独立自主地完成数学研究，从形成研究路线、开展
 历史实验与最终证明分开维护。探索材料供阅读、分析与改编；最终定理的有限输入
 和维护中的复验入口位于 `proof/`。使用方法见[研究材料复用说明](reproducibility/research-materials.md)。
 
-每种语言各维护一个完整 PDF 和一个 LaTeX 主文件，正文与附录使用连续页码和同一份参考文献。
-中文稿是英文定稿的逐节完整翻译，图示沿用英文原图，公式、数据和引用一一对应；
-源码与编译说明见[中文报告目录](reports/zh/README.md)。
+原[英文报告](reports/en/main.pdf)与[中文报告](reports/zh/main.pdf)保持发布时的版本。
+另设 [英文 Lean 版](reports/en-lean/README.md)和[中文 Lean 版](reports/zh-lean/README.md)，
+连贯呈现数学论证、形式化证明及研究轨迹。每个版本各有一个完整 PDF 和一个 LaTeX 主文件，
+正文与附录连续编排。中文稿逐节对应英文稿，沿用英文图示，公式、数据和引用一一对应。
 
 研究记录保留重要失败、撤回结论和开放问题，说明每一次关键转向的数学依据。
 
@@ -134,6 +145,19 @@ make integrity
 ~~~sh
 make verify-full
 ~~~
+
+Lean 工程提供另一条端到端验证路径。安装 Elan 和 Python 3.11 或更新版本，
+在 `formalization/` 中执行：
+
+~~~sh
+lake exe cache get
+python3 tools/build.py . --all --jobs 4 --fresh-lean
+~~~
+
+随后按[说明](formalization/README.md)对完成的构建执行六组内核重检。
+有限前提由 Lean 中的整数分支证明建立，不将历史 DRAT 文件当作公理。
+最终证明仅依赖 Lean 的三项标准公理 `propext`、`Classical.choice` 和 `Quot.sound`；
+[核验记录](formalization/verification-results.json)给出对应源码、依赖版本和实际结果。
 
 报告编译与数学复验相互独立：
 

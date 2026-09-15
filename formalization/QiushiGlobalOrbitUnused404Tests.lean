@@ -1,0 +1,19 @@
+import QiushiGlobalOrbitUnused404
+
+namespace QiushiMatmul.GlobalOrbit.Unused
+
+example : QuotientRankAtLeast (spanCodes (frozenWangTable.basis 404))
+    (frozenWangTable.lower 404) := rep404
+
+example : QuotientRankAtLeast (spanCodes [309,162,68,10]) 17 := plane404UnusedGen_lb17
+
+run_cmd do
+  for name in #[``rep404, ``QiushiMatmul.plane404UnusedGen_lb17,
+      ``QiushiMatmul.plane404UnusedGenNoModel, ``QiushiMatmul.plane404UnusedGenSourceQRA] do
+    let axioms ← Lean.collectAxioms name
+    for ax in axioms do
+      unless #[``propext, ``Classical.choice, ``Quot.sound].contains ax do
+        throwError "Unexpected axiom {ax} in {name}"
+    Lean.logInfo m!"UNUSED_NODE_AXIOMS {name}: {axioms}"
+
+end QiushiMatmul.GlobalOrbit.Unused

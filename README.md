@@ -4,9 +4,10 @@
 
 **Long-horizon autonomous mathematical research: from algorithm search to structural proof.**
 
-[English report](reports/en/main.pdf) ·
-[中文报告](reports/zh/main.pdf) ·
+[Report with Lean proofs](reports/en-lean/main.pdf) ·
+[中文报告（含 Lean 证明）](reports/zh-lean/main.pdf) ·
 [Research materials](research/materials/README.md) ·
+[Lean proof](formalization/README.md) ·
 [Reproduce the finite proof](reproducibility/README.md) ·
 [Downloads](https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research/releases/latest) ·
 [中文](README.zh-CN.md)
@@ -24,6 +25,14 @@ evidence and research memory informed changes of representation, turning
 algorithm search into an algebraic explanation of why a 20-product algorithm
 cannot exist. Both the result and the process that produced it are open to
 inspection and reuse.
+
+**Complete Lean formalization.** The lower bound, its
+finite premises and the report's mathematical results listed in the
+[coverage map](formalization/COVERAGE.md) have closed Lean proofs.
+All 13,438 registered modules passed source-matched compilation; six fresh
+kernel replays checked 89 terminal results and their complete dependencies.
+The [formalization](formalization/README.md) provides the sources, finite
+certificates, pinned dependencies and reproduction commands.
 
 ## The Question and the Contribution
 
@@ -54,12 +63,16 @@ The diagram assumes a hypothetical 20-term decomposition over the binary
 field. Certified finite premises and subsequent algebraic deductions are
 separated; neither branch alone supplies the final contradiction.
 
-The work brings together three contributions:
+The work brings together four contributions:
 
 - **A structural proof mechanism:** finite geometry forces equality in a
   rank bound; equality couples all three factors and produces the contradiction.
 - **Checkable finite premises:** eight quotient bounds with separate encoding
   and verification paths support the written mathematical argument.
+- **A complete Lean proof:** the tensor specification, finite bounds and
+  structural deductions are connected without assumed computational premises.
+  General saturation, quotient semantics and finite-geometry results are also
+  available for reuse.
 - **An open research trajectory:** the documented trajectory and accompanying
   materials expose how Qiushi Engine formulated, tested, revised, and developed
   the ideas that led to the proof.
@@ -114,22 +127,27 @@ question. The account explains how those outcomes informed later research.
 
 | Question | Material |
 | --- | --- |
-| What is proved, and why? | [Main report](reports/en/main.pdf) |
-| How did Qiushi Engine conduct the research? | Section 2 and the Meta-Trace in Appendix B of the [same report](reports/en/main.pdf) |
+| What is proved, and why? | [Report with Lean formalization](reports/en-lean/main.pdf) |
+| How did Qiushi Engine conduct the research? | Section 2 and the Meta-Trace in Appendix B of the [same report](reports/en-lean/main.pdf) |
 | Which routes failed or remained open? | [Research guide](research/guide.md) and [corrections](research/corrections.md) |
 | Where are the notes, plans, programs and experiment records? | [Thematic material collection](research/materials/README.md) and [artifact catalog](research/catalog.json) |
 | What is inherited, computed, or proved symbolically? | [Evidence map](evidence/README.md) |
 | Can the finite computations be checked? | [Reproduction guide](reproducibility/README.md) |
-| Is a Chinese translation available? | [Complete Chinese report](reports/zh/main.pdf), translated section by section from the English report |
-| Can the documents be rebuilt? | [English sources](reports/en/README.md) and [Chinese sources](reports/zh/README.md) |
+| Can the theorem be checked by Lean? | [Formalization](formalization/README.md), [coverage](formalization/COVERAGE.md) and [verification results](formalization/STATUS.md) |
+| Is a Chinese translation available? | [Complete Chinese report with Lean formalization](reports/zh-lean/main.pdf), translated section by section from the English report |
+| Where are the original reports? | [English](reports/en/main.pdf) and [Chinese](reports/zh/main.pdf), preserved unchanged |
+| Can the documents be rebuilt? | [English sources](reports/en-lean/README.md) and [Chinese sources](reports/zh-lean/README.md) |
 
 ## Structure
 
 ~~~text
-reports/en/       One report with integrated Meta-Trace, LaTeX sources and figures
-reports/zh/       Complete Chinese translation with matching equations and original figures
+reports/en/       Original English report, preserved unchanged
+reports/zh/       Original Chinese report, preserved unchanged
+reports/en-lean/  English report integrating the mathematical proof and Lean formalization
+reports/zh-lean/  Complete Chinese translation of the Lean-integrated report
 research/         Guides, corrections, catalog and eight thematic material collections
 proof/            Frozen finite inputs, encoders, certificates and verification
+formalization/    Lean theorem, finite certificates, supporting results and kernel replay
 evidence/         Input identities, rendering receipts and verification scope
 reproducibility/  Dependencies, commands and third-party notices
 tools/            Document building, source packaging and release checks
@@ -142,7 +160,7 @@ installation is included or required.
 
 ## Start Here
 
-Read the [report](reports/en/main.pdf) for the argument and the
+Read the [report](reports/en-lean/main.pdf) for the argument and the
 [research guide](research/guide.md) for its development. The
 [release downloads](https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research/releases/latest)
 include the complete research archive with actual proof data, both PDFs,
@@ -167,6 +185,21 @@ The full replay additionally needs the documented pinned upstream verifier:
 ~~~sh
 make verify-full
 ~~~
+
+The Lean proof is a separate, end-to-end verification path. From
+`formalization/`, after installing Elan and Python 3.11 or later:
+
+~~~sh
+lake exe cache get
+python3 tools/build.py . --all --jobs 4 --fresh-lean
+~~~
+
+Then run the [six-group replay](formalization/README.md) against the completed
+build. The finite premises are established by Lean integer-branch proofs;
+the historical DRAT files need not be trusted as axioms. The accepted proofs
+use only Lean's standard `propext`, `Classical.choice` and `Quot.sound` axioms.
+The [verification record](formalization/verification-results.json) identifies
+the checked sources and dependency versions.
 
 Report building is separate from mathematical verification:
 

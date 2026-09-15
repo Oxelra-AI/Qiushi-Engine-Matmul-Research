@@ -1,0 +1,846 @@
+{
+  "basis": [
+    264,
+    32,
+    2,
+    1
+  ],
+  "plane": 269,
+  "target_exact": 15,
+  "branch": {
+    "closed": true,
+    "tree": {
+      "type": "branch",
+      "depth": 0,
+      "path": "",
+      "label": 2,
+      "value": 1.5,
+      "floor": 1,
+      "left": {
+        "type": "branch",
+        "depth": 1,
+        "path": "L",
+        "label": 1,
+        "value": 2.5,
+        "floor": 2,
+        "left": {
+          "type": "leaf",
+          "status": "lp_infeasible",
+          "farkas_ok": true,
+          "depth": 2,
+          "path": "LL",
+          "lower": {},
+          "upper": {
+            "1": 1,
+            "0": 2
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "status": "lp_infeasible",
+          "farkas_ok": true,
+          "depth": 2,
+          "path": "LR",
+          "lower": {
+            "0": 3
+          },
+          "upper": {
+            "1": 1
+          }
+        }
+      },
+      "right": {
+        "type": "leaf",
+        "status": "lp_infeasible",
+        "farkas_ok": true,
+        "depth": 1,
+        "path": "R",
+        "lower": {
+          "1": 2
+        },
+        "upper": {}
+      }
+    },
+    "nodes": 5,
+    "leaves": 3,
+    "max_depth": 2,
+    "failed_farkas": 0,
+    "integer_feasible": 0,
+    "cutoff": 0,
+    "rounding_fail": 0,
+    "live_labels": [
+      1,
+      2,
+      3,
+      8,
+      9,
+      10,
+      11,
+      12,
+      14,
+      16,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "dead_labels": [
+      4,
+      5,
+      6,
+      7,
+      13,
+      15,
+      17,
+      21,
+      25,
+      31
+    ],
+    "dead_label_witness_rows": {
+      "4": 0,
+      "5": 1,
+      "6": 2,
+      "7": 3,
+      "13": 4,
+      "15": 5,
+      "17": 6,
+      "21": 7,
+      "25": 9,
+      "31": 10
+    },
+    "cert_count": 3,
+    "certs_all_ok": true,
+    "certs": [
+      {
+        "ok": true,
+        "leaf_index": 0,
+        "path": "LL",
+        "depth": 2,
+        "lower": {},
+        "upper": {
+          "1": 1,
+          "0": 2
+        },
+        "int_rhs": -4,
+        "ray_method": "pilot_highs",
+        "used_count": 14,
+        "row_type_counts": {
+          "occ": 11,
+          "total_ge": 1,
+          "branch_upper": 2
+        },
+        "used_rows": [
+          {
+            "multiplier": 1,
+            "rhs": 3,
+            "type": "occ",
+            "row": 123,
+            "U_basis": [
+              260,
+              132,
+              64,
+              32,
+              12,
+              2,
+              1
+            ],
+            "orbit": 11,
+            "lb": 12,
+            "cap": 3,
+            "mask": 50529412
+          },
+          {
+            "multiplier": 3,
+            "rhs": 3,
+            "type": "occ",
+            "row": 134,
+            "U_basis": [
+              260,
+              148,
+              84,
+              32,
+              12,
+              2,
+              1
+            ],
+            "orbit": 14,
+            "lb": 12,
+            "cap": 3,
+            "mask": 78655492
+          },
+          {
+            "multiplier": 3,
+            "rhs": 3,
+            "type": "occ",
+            "row": 155,
+            "U_basis": [
+              264,
+              128,
+              76,
+              32,
+              28,
+              2,
+              1
+            ],
+            "orbit": 14,
+            "lb": 12,
+            "cap": 3,
+            "mask": 205556800
+          },
+          {
+            "multiplier": 1,
+            "rhs": 3,
+            "type": "occ",
+            "row": 171,
+            "U_basis": [
+              264,
+              140,
+              68,
+              32,
+              28,
+              2,
+              1
+            ],
+            "orbit": 14,
+            "lb": 12,
+            "cap": 3,
+            "mask": 302784832
+          },
+          {
+            "multiplier": 4,
+            "rhs": 3,
+            "type": "occ",
+            "row": 172,
+            "U_basis": [
+              264,
+              136,
+              64,
+              32,
+              28,
+              2,
+              1
+            ],
+            "orbit": 14,
+            "lb": 12,
+            "cap": 3,
+            "mask": 303186112
+          },
+          {
+            "multiplier": 5,
+            "rhs": 3,
+            "type": "occ",
+            "row": 182,
+            "U_basis": [
+              264,
+              140,
+              72,
+              32,
+              28,
+              2,
+              1
+            ],
+            "orbit": 10,
+            "lb": 12,
+            "cap": 3,
+            "mask": 554439232
+          },
+          {
+            "multiplier": 1,
+            "rhs": 3,
+            "type": "occ",
+            "row": 193,
+            "U_basis": [
+              260,
+              132,
+              80,
+              32,
+              12,
+              2,
+              1
+            ],
+            "orbit": 14,
+            "lb": 12,
+            "cap": 3,
+            "mask": 805521412
+          },
+          {
+            "multiplier": 3,
+            "rhs": 3,
+            "type": "occ",
+            "row": 199,
+            "U_basis": [
+              264,
+              128,
+              64,
+              32,
+              28,
+              2,
+              1
+            ],
+            "orbit": 10,
+            "lb": 12,
+            "cap": 3,
+            "mask": 1086374080
+          },
+          {
+            "multiplier": 3,
+            "rhs": 3,
+            "type": "occ",
+            "row": 214,
+            "U_basis": [
+              260,
+              148,
+              68,
+              32,
+              12,
+              2,
+              1
+            ],
+            "orbit": 11,
+            "lb": 12,
+            "cap": 3,
+            "mask": 1211106052
+          },
+          {
+            "multiplier": 2,
+            "rhs": 6,
+            "type": "occ",
+            "row": 310,
+            "U_basis": [
+              256,
+              128,
+              68,
+              32,
+              20,
+              8,
+              2,
+              1
+            ],
+            "orbit": 3,
+            "lb": 9,
+            "cap": 6,
+            "mask": 760393042
+          },
+          {
+            "multiplier": 2,
+            "rhs": 6,
+            "type": "occ",
+            "row": 328,
+            "U_basis": [
+              256,
+              132,
+              68,
+              32,
+              20,
+              8,
+              2,
+              1
+            ],
+            "orbit": 3,
+            "lb": 9,
+            "cap": 6,
+            "mask": 1387081042
+          },
+          {
+            "multiplier": 8,
+            "rhs": -15,
+            "type": "total_ge"
+          },
+          {
+            "multiplier": 4,
+            "rhs": 1,
+            "type": "branch_upper",
+            "label": 2,
+            "bound": 1
+          },
+          {
+            "multiplier": 8,
+            "rhs": 2,
+            "type": "branch_upper",
+            "label": 1,
+            "bound": 2
+          }
+        ]
+      },
+      {
+        "ok": true,
+        "leaf_index": 1,
+        "path": "LR",
+        "depth": 2,
+        "lower": {
+          "0": 3
+        },
+        "upper": {
+          "1": 1
+        },
+        "int_rhs": -2,
+        "ray_method": "pilot_highs",
+        "used_count": 9,
+        "row_type_counts": {
+          "occ": 7,
+          "total_ge": 1,
+          "branch_lower": 1
+        },
+        "used_rows": [
+          {
+            "multiplier": 1,
+            "rhs": 1,
+            "type": "occ",
+            "row": 26,
+            "U_basis": [
+              264,
+              144,
+              32,
+              2,
+              1
+            ],
+            "orbit": 114,
+            "lb": 14,
+            "cap": 1,
+            "mask": 524288
+          },
+          {
+            "multiplier": 1,
+            "rhs": 1,
+            "type": "occ",
+            "row": 31,
+            "U_basis": [
+              264,
+              192,
+              32,
+              2,
+              1
+            ],
+            "orbit": 114,
+            "lb": 14,
+            "cap": 1,
+            "mask": 8388608
+          },
+          {
+            "multiplier": 1,
+            "rhs": 3,
+            "type": "occ",
+            "row": 68,
+            "U_basis": [
+              264,
+              64,
+              32,
+              4,
+              2,
+              1
+            ],
+            "orbit": 23,
+            "lb": 12,
+            "cap": 3,
+            "mask": 385
+          },
+          {
+            "multiplier": 1,
+            "rhs": 3,
+            "type": "occ",
+            "row": 72,
+            "U_basis": [
+              264,
+              72,
+              32,
+              4,
+              2,
+              1
+            ],
+            "orbit": 23,
+            "lb": 12,
+            "cap": 3,
+            "mask": 1537
+          },
+          {
+            "multiplier": 1,
+            "rhs": 4,
+            "type": "occ",
+            "row": 224,
+            "U_basis": [
+              264,
+              152,
+              32,
+              4,
+              2,
+              1
+            ],
+            "orbit": 25,
+            "lb": 11,
+            "cap": 4,
+            "mask": 6291457
+          },
+          {
+            "multiplier": 1,
+            "rhs": 4,
+            "type": "occ",
+            "row": 226,
+            "U_basis": [
+              264,
+              200,
+              32,
+              4,
+              2,
+              1
+            ],
+            "orbit": 25,
+            "lb": 11,
+            "cap": 4,
+            "mask": 100663297
+          },
+          {
+            "multiplier": 1,
+            "rhs": 9,
+            "type": "occ",
+            "row": 365,
+            "U_basis": [
+              256,
+              128,
+              80,
+              32,
+              8,
+              4,
+              2,
+              1
+            ],
+            "orbit": 2,
+            "lb": 6,
+            "cap": 9,
+            "mask": 2013788167
+          },
+          {
+            "multiplier": 1,
+            "rhs": -15,
+            "type": "total_ge"
+          },
+          {
+            "multiplier": 4,
+            "rhs": -3,
+            "type": "branch_lower",
+            "label": 1,
+            "bound": 3
+          }
+        ]
+      },
+      {
+        "ok": true,
+        "leaf_index": 2,
+        "path": "R",
+        "depth": 1,
+        "lower": {
+          "1": 2
+        },
+        "upper": {},
+        "int_rhs": -1,
+        "ray_method": "pilot_highs",
+        "used_count": 16,
+        "row_type_counts": {
+          "occ": 10,
+          "total_ge": 1,
+          "nonneg": 4,
+          "branch_lower": 1
+        },
+        "used_rows": [
+          {
+            "multiplier": 1,
+            "rhs": 3,
+            "type": "occ",
+            "row": 68,
+            "U_basis": [
+              264,
+              64,
+              32,
+              4,
+              2,
+              1
+            ],
+            "orbit": 23,
+            "lb": 12,
+            "cap": 3,
+            "mask": 385
+          },
+          {
+            "multiplier": 1,
+            "rhs": 3,
+            "type": "occ",
+            "row": 72,
+            "U_basis": [
+              264,
+              72,
+              32,
+              4,
+              2,
+              1
+            ],
+            "orbit": 23,
+            "lb": 12,
+            "cap": 3,
+            "mask": 1537
+          },
+          {
+            "multiplier": 1,
+            "rhs": 3,
+            "type": "occ",
+            "row": 123,
+            "U_basis": [
+              260,
+              132,
+              64,
+              32,
+              12,
+              2,
+              1
+            ],
+            "orbit": 11,
+            "lb": 12,
+            "cap": 3,
+            "mask": 50529412
+          },
+          {
+            "multiplier": 1,
+            "rhs": 3,
+            "type": "occ",
+            "row": 136,
+            "U_basis": [
+              256,
+              148,
+              80,
+              32,
+              8,
+              2,
+              1
+            ],
+            "orbit": 14,
+            "lb": 12,
+            "cap": 3,
+            "mask": 89139202
+          },
+          {
+            "multiplier": 1,
+            "rhs": 3,
+            "type": "occ",
+            "row": 189,
+            "U_basis": [
+              264,
+              132,
+              72,
+              32,
+              20,
+              2,
+              1
+            ],
+            "orbit": 10,
+            "lb": 12,
+            "cap": 3,
+            "mask": 604586512
+          },
+          {
+            "multiplier": 1,
+            "rhs": 3,
+            "type": "occ",
+            "row": 199,
+            "U_basis": [
+              264,
+              128,
+              64,
+              32,
+              28,
+              2,
+              1
+            ],
+            "orbit": 10,
+            "lb": 12,
+            "cap": 3,
+            "mask": 1086374080
+          },
+          {
+            "multiplier": 1,
+            "rhs": 3,
+            "type": "occ",
+            "row": 214,
+            "U_basis": [
+              260,
+              148,
+              68,
+              32,
+              12,
+              2,
+              1
+            ],
+            "orbit": 11,
+            "lb": 12,
+            "cap": 3,
+            "mask": 1211106052
+          },
+          {
+            "multiplier": 1,
+            "rhs": 6,
+            "type": "occ",
+            "row": 310,
+            "U_basis": [
+              256,
+              128,
+              68,
+              32,
+              20,
+              8,
+              2,
+              1
+            ],
+            "orbit": 3,
+            "lb": 9,
+            "cap": 6,
+            "mask": 760393042
+          },
+          {
+            "multiplier": 2,
+            "rhs": 6,
+            "type": "occ",
+            "row": 328,
+            "U_basis": [
+              256,
+              132,
+              68,
+              32,
+              20,
+              8,
+              2,
+              1
+            ],
+            "orbit": 3,
+            "lb": 9,
+            "cap": 6,
+            "mask": 1387081042
+          },
+          {
+            "multiplier": 1,
+            "rhs": 9,
+            "type": "occ",
+            "row": 365,
+            "U_basis": [
+              256,
+              128,
+              80,
+              32,
+              8,
+              4,
+              2,
+              1
+            ],
+            "orbit": 2,
+            "lb": 6,
+            "cap": 9,
+            "mask": 2013788167
+          },
+          {
+            "multiplier": 3,
+            "rhs": -15,
+            "type": "total_ge"
+          },
+          {
+            "multiplier": 2,
+            "rhs": 0,
+            "type": "nonneg",
+            "label": 9
+          },
+          {
+            "multiplier": 2,
+            "rhs": 0,
+            "type": "nonneg",
+            "label": 11
+          },
+          {
+            "multiplier": 2,
+            "rhs": 0,
+            "type": "nonneg",
+            "label": 12
+          },
+          {
+            "multiplier": 2,
+            "rhs": 0,
+            "type": "nonneg",
+            "label": 14
+          },
+          {
+            "multiplier": 2,
+            "rhs": -2,
+            "type": "branch_lower",
+            "label": 2,
+            "bound": 2
+          }
+        ]
+      }
+    ],
+    "used_occ_row_count": 30,
+    "source_requirements": [
+      {
+        "orbit": 2,
+        "lb": 6,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 3,
+        "lb": 9,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 10,
+        "lb": 12,
+        "used_row_count": 3
+      },
+      {
+        "orbit": 11,
+        "lb": 12,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 14,
+        "lb": 12,
+        "used_row_count": 6
+      },
+      {
+        "orbit": 23,
+        "lb": 12,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 25,
+        "lb": 11,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 103,
+        "lb": 15,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 114,
+        "lb": 14,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 120,
+        "lb": 15,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 130,
+        "lb": 15,
+        "used_row_count": 4
+      },
+      {
+        "orbit": 141,
+        "lb": 15,
+        "used_row_count": 2
+      }
+    ],
+    "elapsed_sec": 0.033
+  }
+}

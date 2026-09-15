@@ -1,0 +1,112 @@
+{
+  "schema_version": 2,
+  "verified_at_utc": "2026-09-14T06:41:49.590585+00:00",
+  "toolchain": {
+    "version": "4.33.1",
+    "target": "x86_64-unknown-linux-gnu",
+    "commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "mode": "Release",
+    "compiler_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550"
+  },
+  "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "manifest_canonical_sha256": "66feddcd751a79eb4fed12e504d60ab19f905056be350471ac233937dff88f00",
+  "input_environment_sha256": "3666edf796bb456313cef1b76a7011786ec9a0402b50be117d2dc7a1a558e904",
+  "private_environment_sha256": "282385320fa2b782ce631a8e7be40349338088d1d8e254cff0cc45e25c428bbc",
+  "core_object_sha256": {
+    "QiushiDefs": "979c6b19033023c4c7e7ae71cd90bb5b9a5eb37b7b769cc3d4eb8e99ca552648",
+    "QiushiBilinearSemantics": "712805121c3c42608ae70322770af0aed0e465cf13b44ad81d505c8452d73bd7"
+  },
+  "dependency_source_sha256": {
+    "QiushiDefs": "d849993843ef66a9d8a1288137dfc4b685760c3efbcbc2fbb6e6888a4fb47428",
+    "QiushiBilinearSemantics": "9033eef06967474f0f44cd0a6733992a4bbcc55e6442180bf914a84916b172f4"
+  },
+  "builds": [
+    {
+      "source": "QiushiQuotientRestriction.lean",
+      "source_sha256": "48c0352090cd5078f8f31ec5852cad38a17406f647e5771a830ad4a12c2c780f",
+      "olean_sha256": "f91c0e32312d68c1279a525ba1f0006d55f546f8e530829d4970344945da80ae",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seconds": 8.453298153355718,
+      "exit_code": 0
+    },
+    {
+      "source": "tests/QuotientRestriction.lean",
+      "source_sha256": "df8c8f10df55fbf23afc79720193d2829ca14c0f88b5faa54b9b751e0301e11e",
+      "olean_sha256": "634b6b13884ad5f2e61373fc0fc6882e3fa102a7de5524f45fab7d8926ec733d",
+      "log_sha256": "eb14763aaad1579f4251f0f209902acddc3cd5b98b59fac3f3b5822eddd32730",
+      "seconds": 4.9539017379283905,
+      "exit_code": 0
+    }
+  ],
+  "exact_type_tests_passed": true,
+  "axiom_guard_declarations": 24,
+  "printed_axioms": {
+    "QiushiMatmul.QuotientRestriction.matrixDual_trace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QiushiMatmul.QuotientRestriction.mem_iff_annihilator": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QiushiMatmul.QuotientRestriction.inputAnnihilator_involutive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QiushiMatmul.QuotientRestriction.restrictCoefficient_surjective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QiushiMatmul.QuotientRestriction.quotientEquiv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QiushiMatmul.QuotientRestriction.quotientEquiv_mk": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QiushiMatmul.QuotientRestriction.quotient_identity_iff_restricted_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QiushiMatmul.QuotientRestriction.toRestricted": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QiushiMatmul.QuotientRestriction.toQuotient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QiushiMatmul.QuotientRestriction.nonempty_quotient_iff_restricted": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QiushiMatmul.QuotientRestriction.rankAtMost_iff_restricted": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QiushiMatmul.QuotientRestriction.quotientRankAtLeast_iff_restricted": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QiushiMatmul.QuotientRestriction.quotientRankAtLeast_iff_restricted_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "builder_sha256": "5d7e0ab9724c2b61b8bc0ad4de4027ca97933f78c2d6316cef30ab22ee4a7e5f",
+  "scope": "Arbitrary matrix subspace quotient/restriction equivalence only"
+}

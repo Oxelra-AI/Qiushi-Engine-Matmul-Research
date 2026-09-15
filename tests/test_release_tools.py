@@ -47,6 +47,35 @@ class ReleaseToolsTests(unittest.TestCase):
             (root / 'outside-link').symlink_to(ROOT, target_is_directory=True)
             self.assertEqual(check_release.public_files(root), {'outside-link'})
 
+    def test_local_paper_and_lean_cache_cannot_enter_release(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            for relative in ('paper/main.tex', 'paper/main.pdf',
+                             'formalization/.lake/lib/Proof.olean',
+                             'formalization/.local/audit/report.json'):
+                path = root / relative
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text('local only')
+            (root / 'formalization/Main.lean').write_text('import Mathlib')
+            self.assertEqual(check_release.public_files(root), {'formalization/Main.lean'})
+
+    def test_package_rejects_paper_even_when_manifest_lists_it(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            (root / 'paper').mkdir()
+            (root / 'paper/main.tex').write_text('not approved for publication')
+            manifest(root, ['paper/main.tex'])
+            with patch.object(package_release.subprocess, 'run'):
+                with self.assertRaisesRegex(ValueError, 'Unsafe'):
+                    package_release.package(root, root / 'dist/release.zip')
+
+    def test_lean_compiled_outputs_are_not_public_sources(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            for suffix in ('.lean', '.olean', '.olean.private', '.olean.server', '.ilean', '.ir'):
+                (root / ('Main' + suffix)).write_text('content')
+            self.assertEqual(check_release.public_files(root), {'Main.lean'})
+
     def test_markdown_and_html_links(self):
         links = check_release.local_links(
             '[Report](reports/main.pdf) <img src="figures/a.png" width="500"> '

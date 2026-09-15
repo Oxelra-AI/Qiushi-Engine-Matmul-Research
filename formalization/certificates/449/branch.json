@@ -1,0 +1,410 @@
+{
+  "basis": [
+    316,
+    160,
+    1
+  ],
+  "plane": 449,
+  "target_exact": 16,
+  "branch": {
+    "closed": true,
+    "tree": {
+      "type": "leaf",
+      "status": "lp_infeasible",
+      "farkas_ok": true,
+      "depth": 0,
+      "path": "",
+      "lower": {},
+      "upper": {}
+    },
+    "nodes": 1,
+    "leaves": 1,
+    "max_depth": 0,
+    "failed_farkas": 0,
+    "integer_feasible": 0,
+    "cutoff": 0,
+    "rounding_fail": 0,
+    "live_labels": [
+      1,
+      2,
+      3,
+      4,
+      12,
+      13,
+      14,
+      16,
+      22,
+      24,
+      28,
+      32,
+      36,
+      49,
+      60
+    ],
+    "dead_labels": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      15,
+      17,
+      18,
+      19,
+      20,
+      21,
+      23,
+      25,
+      26,
+      27,
+      29,
+      30,
+      31,
+      33,
+      34,
+      35,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      61,
+      62,
+      63
+    ],
+    "dead_label_witness_rows": {
+      "5": 0,
+      "6": 7,
+      "7": 1,
+      "8": 8,
+      "9": 9,
+      "10": 12,
+      "11": 39,
+      "15": 10,
+      "17": 13,
+      "18": 14,
+      "19": 16,
+      "20": 15,
+      "21": 17,
+      "23": 18,
+      "25": 19,
+      "26": 22,
+      "27": 20,
+      "29": 21,
+      "30": 24,
+      "31": 25,
+      "33": 27,
+      "34": 2,
+      "35": 3,
+      "37": 4,
+      "38": 5,
+      "39": 32,
+      "40": 35,
+      "41": 38,
+      "42": 42,
+      "43": 45,
+      "44": 47,
+      "45": 55,
+      "46": 59,
+      "47": 63,
+      "48": 67,
+      "50": 69,
+      "51": 71,
+      "52": 74,
+      "53": 80,
+      "54": 86,
+      "55": 6,
+      "56": 102,
+      "57": 112,
+      "58": 118,
+      "59": 124,
+      "61": 129,
+      "62": 135,
+      "63": 139
+    },
+    "cert_count": 1,
+    "certs_all_ok": true,
+    "certs": [
+      {
+        "ok": true,
+        "leaf_index": 0,
+        "path": "",
+        "depth": 0,
+        "lower": {},
+        "upper": {},
+        "int_rhs": -9,
+        "ray_method": "pilot_highs",
+        "used_count": 9,
+        "row_type_counts": {
+          "occ": 8,
+          "total_ge": 1
+        },
+        "used_rows": [
+          {
+            "multiplier": 1,
+            "rhs": 1,
+            "type": "occ",
+            "row": 183,
+            "U_basis": [
+              272,
+              128,
+              32,
+              12,
+              1
+            ],
+            "orbit": 149,
+            "lb": 15,
+            "cap": 1,
+            "mask": 2129952
+          },
+          {
+            "multiplier": 1,
+            "rhs": 1,
+            "type": "occ",
+            "row": 347,
+            "U_basis": [
+              284,
+              128,
+              66,
+              32,
+              1
+            ],
+            "orbit": 149,
+            "lb": 15,
+            "cap": 1,
+            "mask": 281479271710720
+          },
+          {
+            "multiplier": 1,
+            "rhs": 1,
+            "type": "occ",
+            "row": 352,
+            "U_basis": [
+              272,
+              140,
+              78,
+              44,
+              1
+            ],
+            "orbit": 149,
+            "lb": 15,
+            "cap": 1,
+            "mask": 281749856714752
+          },
+          {
+            "multiplier": 2,
+            "rhs": 4,
+            "type": "occ",
+            "row": 1564,
+            "U_basis": [
+              258,
+              144,
+              48,
+              8,
+              6,
+              1
+            ],
+            "orbit": 30,
+            "lb": 12,
+            "cap": 4,
+            "mask": 1283457100
+          },
+          {
+            "multiplier": 2,
+            "rhs": 4,
+            "type": "occ",
+            "row": 1914,
+            "U_basis": [
+              258,
+              130,
+              72,
+              34,
+              24,
+              4,
+              1
+            ],
+            "orbit": 10,
+            "lb": 12,
+            "cap": 4,
+            "mask": 382808890246768642
+          },
+          {
+            "multiplier": 2,
+            "rhs": 4,
+            "type": "occ",
+            "row": 2012,
+            "U_basis": [
+              262,
+              128,
+              66,
+              32,
+              22,
+              12,
+              1
+            ],
+            "orbit": 10,
+            "lb": 12,
+            "cap": 4,
+            "mask": 738883088492303392
+          },
+          {
+            "multiplier": 2,
+            "rhs": 7,
+            "type": "occ",
+            "row": 2481,
+            "U_basis": [
+              288,
+              160,
+              64,
+              24,
+              4,
+              2,
+              1
+            ],
+            "orbit": 7,
+            "lb": 9,
+            "cap": 7,
+            "mask": 131973607618567
+          },
+          {
+            "multiplier": 2,
+            "rhs": 7,
+            "type": "occ",
+            "row": 2612,
+            "U_basis": [
+              260,
+              144,
+              64,
+              48,
+              8,
+              2,
+              1
+            ],
+            "orbit": 7,
+            "lb": 9,
+            "cap": 7,
+            "mask": 1837468757916647449
+          },
+          {
+            "multiplier": 4,
+            "rhs": -16,
+            "type": "total_ge"
+          }
+        ]
+      }
+    ],
+    "used_occ_row_count": 56,
+    "source_requirements": [
+      {
+        "orbit": 7,
+        "lb": 9,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 10,
+        "lb": 12,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 30,
+        "lb": 12,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 149,
+        "lb": 15,
+        "used_row_count": 3
+      },
+      {
+        "orbit": 164,
+        "lb": 16,
+        "used_row_count": 3
+      },
+      {
+        "orbit": 175,
+        "lb": 16,
+        "used_row_count": 3
+      },
+      {
+        "orbit": 196,
+        "lb": 16,
+        "used_row_count": 3
+      },
+      {
+        "orbit": 201,
+        "lb": 16,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 212,
+        "lb": 16,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 213,
+        "lb": 16,
+        "used_row_count": 5
+      },
+      {
+        "orbit": 217,
+        "lb": 16,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 235,
+        "lb": 16,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 311,
+        "lb": 16,
+        "used_row_count": 6
+      },
+      {
+        "orbit": 320,
+        "lb": 16,
+        "used_row_count": 3
+      },
+      {
+        "orbit": 322,
+        "lb": 17,
+        "used_row_count": 6
+      },
+      {
+        "orbit": 340,
+        "lb": 16,
+        "used_row_count": 6
+      },
+      {
+        "orbit": 344,
+        "lb": 16,
+        "used_row_count": 6
+      },
+      {
+        "orbit": 374,
+        "lb": 17,
+        "used_row_count": 1
+      }
+    ],
+    "elapsed_sec": 0.03
+  }
+}

@@ -9,8 +9,9 @@ import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
 IDENTIFIERS = re.compile(r'\bS[0-9]{4}A[0-9]{2}\b|\b[Ss]tep[ _-]*[0-9]+\b')
-PRIVATE_DIRS = {'.git', 'build', 'dist', '.venv', '__pycache__'}
-GENERATED_SUFFIXES = {'.pyc', '.aux', '.bbl', '.blg', '.fls', '.fdb_latexmk', '.out', '.toc'}
+PRIVATE_DIRS = {'.git', 'build', 'dist', '.venv', '__pycache__', '.lake', '.local', 'paper'}
+GENERATED_SUFFIXES = {'.pyc', '.aux', '.bbl', '.blg', '.fls', '.fdb_latexmk', '.out', '.toc',
+                      '.olean', '.ilean', '.ir'}
 
 
 def digest(path):
@@ -32,7 +33,8 @@ def public_files(root):
                 dirs.remove(name)
         for name in names:
             path = Path(directory) / name
-            if name not in PRIVATE_DIRS and path.suffix not in GENERATED_SUFFIXES:
+            if (name not in PRIVATE_DIRS and path.suffix not in GENERATED_SUFFIXES
+                    and not name.endswith(('.olean.private', '.olean.server'))):
                 files.add(path.relative_to(root).as_posix())
     return files
 
@@ -63,14 +65,14 @@ def main():
         if not path.is_file() or digest(path) != row['sha256'] or path.stat().st_size != row['bytes']:
             failures.append('missing or changed: ' + row['path'])
     failures.extend(membership_failures(ROOT, seen | {'evidence/release-manifest.json'}))
-    for language in ('en', 'zh'):
+    for language in ('en', 'zh', 'en-lean', 'zh-lean'):
         text = subprocess.check_output(
             ['pdftotext', '-layout', str(ROOT / 'reports' / language / 'main.pdf'), '-'],
             text=True)
         if IDENTIFIERS.search(text):
             failures.append('internal research identifier in rendered ' + language)
     if any((ROOT / 'reports' / lang / ('supplement.' + ext)).exists()
-           for lang in ('en', 'zh') for ext in ('tex', 'pdf')):
+           for lang in ('en', 'zh', 'en-lean', 'zh-lean') for ext in ('tex', 'pdf')):
         failures.append('obsolete standalone supplement must not be in the unified release')
     if (ROOT / 'meta-trace').exists():
         failures.append('raw transcript directory must not be in this release')
