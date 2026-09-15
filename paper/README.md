@@ -5,9 +5,9 @@ over F2**
 
 - [Paper](main.pdf): mathematical article with four integrated appendices.
 - [LaTeX master](main.tex): a single, self-contained AMS article.
-- [arXiv submission package](https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research/releases/download/lean-formalization/Qiushi_Matmul_F2_arxiv.zip): only the LaTeX inputs,
+- [arXiv submission package](https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research/releases/download/paper-submission/Qiushi_Matmul_F2_arxiv.zip): only the LaTeX inputs,
   bibliography, resolved references, and the two printed data tables.
-- [Complete source package](https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research/releases/download/lean-formalization/Qiushi_Matmul_F2_paper_source.zip): manuscript, bibliography,
+- [Complete source package](https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research/releases/download/paper-submission/Qiushi_Matmul_F2_paper_source.zip): manuscript, bibliography,
   finite tables, worked-example data, and manuscript checks.
 
 The paper develops the argument from quotient occupation and affine geometry
