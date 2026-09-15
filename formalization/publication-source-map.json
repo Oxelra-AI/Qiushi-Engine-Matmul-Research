@@ -1,0 +1,460 @@
+{
+  "schema": "qiushi.matmul.publication-source-map.v1",
+  "checked_at_utc": "2026-09-15T02:55:34+00:00",
+  "status": "pass",
+  "scope": "Comment-only publication redaction. This is source/object equivalence evidence, not a new kernel replay.",
+  "original_source_commit": "88d609a694f8b574d05da082b2a94ae2f89fbd7e",
+  "original_acceptance": {
+    "file": "verification-results.json",
+    "sha256": "287582bbfb5a7f9ccf65cb9f1daa7befa1672269b9f199571b89c616aff275e4",
+    "source_digest": "06acd3e79ff5d45067141bda4f11f4348743be70da23b498309da426674b130a",
+    "replay_groups": 6,
+    "terminal_roots": 89,
+    "unchanged": true
+  },
+  "publication_source": {
+    "source_digest": "8c48c697979c98f2ee37b849de8ee74c4767a75cafbb40a35dc9b012be23824b",
+    "digest_format": "SHA-256 of the UTF-8 JSON map from registered module names to source SHA-256 values, sorted keys, separators comma and colon, no whitespace",
+    "registered_modules": 13438,
+    "lean_lines_including_comments_and_blanks": 1346703,
+    "lean_source_bytes": 89793752,
+    "changed_modules": 22,
+    "noncomment_characters_identical": true,
+    "comparison_method": "Erase nested Lean block/line comment contents while retaining newlines; preserve every noncomment character, including string whitespace; also compare imports and line counts.",
+    "mathematical_corrections_preserved": true
+  },
+  "compilation": {
+    "toolchain": "leanprover/lean4:v4.33.1",
+    "lean_binary_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+    "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "environment": "Pinned accepted fresh-build dependencies, isolated new outputs",
+    "lean_flags": [
+      "--threads=1",
+      "-s262144"
+    ],
+    "maximum_parallel_jobs": 4,
+    "default_timeout_seconds": 300,
+    "all_changed_modules_compiled": true,
+    "accepted_artifacts_modified": false
+  },
+  "object_comparison": {
+    "whole_olean_byte_identical": 13,
+    "whole_olean_bytes_different": 9,
+    "kernel_payload_identical": 22,
+    "private_parts": "Absent before and after in all 22 changed modules",
+    "server_parts": "Absent before and after in all 22 changed modules; metadata is in the monolithic .olean files",
+    "metadata_comparison_method": "For each differing .olean, Lean.readModuleData and Lean.saveModuleData serialize the complete ModuleData with only entries replaced by an empty array, using the same module name. Compare resulting bytes. Separately serialize and compare every named extension entry, requiring unchanged extension names/order.",
+    "kernel_payload_fields": [
+      "isModule",
+      "imports",
+      "constNames",
+      "constants",
+      "extraConstNames"
+    ],
+    "constant_payload_scope": "Full ConstantInfo values, including types, definition/proof bodies, safety fields, constructors and recursors; not only pretty-printed statements.",
+    "allowed_changed_metadata_extensions": [
+      "Lean.Linter.lintLogExt",
+      "Lean.docStringExt",
+      "_private.Lean.DocString.Extension.0.Lean.moduleDocExt"
+    ],
+    "comparison_driver_sha256": "b13f2ace4847e50174267f7d0648229447b5f9e94a5b15dd27d7e7638d9245a2"
+  },
+  "interface_checks": [
+    {
+      "group": "main",
+      "roots": 6,
+      "exact_types_and_axioms_identical": true,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "interface_sha256": "b43f37fcb65d67f6bebd6c8bc5d9886e5b88bcfdf8b71a49ad8a8dd999b77d70"
+    },
+    {
+      "group": "calibration",
+      "roots": 7,
+      "exact_types_and_axioms_identical": true,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "interface_sha256": "ee42e881cd6bae6a3a3b4300c6812016e2c9df27cf9f10512313615f1bb93b67"
+    },
+    {
+      "group": "classification",
+      "roots": 12,
+      "exact_types_and_axioms_identical": true,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "interface_sha256": "6d7d93b6ec6982fbeffee5abdc9847ac0a71f1ad7224503339e4db3f2de68cb1"
+    },
+    {
+      "group": "occupation",
+      "roots": 8,
+      "exact_types_and_axioms_identical": true,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "interface_sha256": "db309ea5eb112e8e6d97d6d74ed2eb9fa58c5510ff0a90406449a33672fa3594"
+    },
+    {
+      "group": "structure",
+      "roots": 51,
+      "exact_types_and_axioms_identical": true,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "interface_sha256": "ad094bb218c5891fc0279299ad4de2925e075da400828a95881b6398911f6375"
+    },
+    {
+      "group": "encoding",
+      "roots": 5,
+      "exact_types_and_axioms_identical": true,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "interface_sha256": "9951c8857bb88d64d62f2810d27f083f6fcf5d284ad61c64c210d0773b731c74"
+    }
+  ],
+  "fresh_kernel_replays_performed": 0,
+  "replay_relation": "The prior six replay receipts attest the original source-built artifacts. The publication sources compile to identical kernel payloads, with the documented metadata differences. No claim is made that the old replay ran on these redacted source bytes.",
+  "privacy": {
+    "lean_files_scanned": 13438,
+    "publication_audit_failures": 0,
+    "original_comment_text_included": false,
+    "private_host_paths_included": false,
+    "public_history_requirement": "Publish the sanitized tree without the unsanitized ancestor commits; a later redaction commit does not clean Git history."
+  },
+  "changed_modules": [
+    {
+      "module": "QiushiBSlotDeletion",
+      "source_sha256_before": "d9532daad12199ad77afda915ff9e403b3e11de7216732da320cc97bcac7a73f",
+      "source_sha256_after": "b9592cc006404c7a96821de4abd86f90de316a55fc1bc8ae47b87724710eeaf2",
+      "lines_before_and_after": 120,
+      "compile_exit_code": 0,
+      "compile_seconds": 4.972,
+      "olean_sha256_before": "2b62850dccd4a25de8adcab905ce519832536bff607c55ef130a71c7ed1fc64e",
+      "olean_sha256_after": "d3239c0b55c6133b665a04d73499712273a022e2d76c5d966937d3a4664ac542",
+      "olean_byte_identical": false,
+      "kernel_payload_sha256_before_and_after": "2ba6760197ab376c4de6d2f7388f12f1b424026e484c650081898d1668f11680",
+      "kernel_constants": 26,
+      "changed_metadata_extensions": [
+        "_private.Lean.DocString.Extension.0.Lean.moduleDocExt",
+        "Lean.Linter.lintLogExt"
+      ],
+      "kernel_payload_identical": true
+    },
+    {
+      "module": "QiushiCodeSpanCore",
+      "source_sha256_before": "4ef899dc0802469a7693a772bd131624a3636443f7f8e859ebbfa3e01cedb247",
+      "source_sha256_after": "3da56ef3d4138c53249057ccf78ea7f5cd8a588081518721f1cae1f28bedbfa5",
+      "lines_before_and_after": 22,
+      "compile_exit_code": 0,
+      "compile_seconds": 4.471,
+      "olean_sha256_before": "a8ec80f53e34aa00630c85f2833017512543923668445c660ebb32fb0018288c",
+      "olean_sha256_after": "1469b8fd958fa9e1c9ccbb50a994b713b02579939610a48d2b931d4c4c916ad2",
+      "olean_byte_identical": false,
+      "kernel_payload_sha256_before_and_after": "69bdb05b67340890d325647ecd97b08049054c6fc74c721957f0c898432bb8e4",
+      "kernel_constants": 2,
+      "changed_metadata_extensions": [
+        "_private.Lean.DocString.Extension.0.Lean.moduleDocExt"
+      ],
+      "kernel_payload_identical": true
+    },
+    {
+      "module": "QiushiDefs",
+      "source_sha256_before": "d849993843ef66a9d8a1288137dfc4b685760c3efbcbc2fbb6e6888a4fb47428",
+      "source_sha256_after": "8e7aaf8f1256ea7f2e3525cf95f0b168caa4c65f8118657169878fd490ddaa2b",
+      "lines_before_and_after": 122,
+      "compile_exit_code": 0,
+      "compile_seconds": 4.721,
+      "olean_sha256_before": "979c6b19033023c4c7e7ae71cd90bb5b9a5eb37b7b769cc3d4eb8e99ca552648",
+      "olean_sha256_after": "91b906e33db03c5abb0d1b8aab96d3740ed054f24df05f73c4f4253990f426e4",
+      "olean_byte_identical": false,
+      "kernel_payload_sha256_before_and_after": "fdb6b9fdbee08210ca761dbbffe98ea88820ac526a0638eb652a278188441d7d",
+      "kernel_constants": 59,
+      "changed_metadata_extensions": [
+        "_private.Lean.DocString.Extension.0.Lean.moduleDocExt"
+      ],
+      "kernel_payload_identical": true
+    },
+    {
+      "module": "QiushiOccupationSoundness",
+      "source_sha256_before": "4b17cac6d410bd1fba299f238b73645ec737c9cfcd96235723f0b30accc31dbb",
+      "source_sha256_after": "2621256f7b0f6202efeb9bbc646c8de0c72db9b6753f82215884830ab0604800",
+      "lines_before_and_after": 161,
+      "compile_exit_code": 0,
+      "compile_seconds": 5.423,
+      "olean_sha256_before": "7df4c85ae38ba6e1f7fbe5774002e24f47c2114d3c6879ef0284c92da2181905",
+      "olean_sha256_after": "b4aa6674ea271a68ffdb0a7c15bcd53bcee3a92a3e91388b102275df7cf2e942",
+      "olean_byte_identical": false,
+      "kernel_payload_sha256_before_and_after": "5457a4378a328489fa8f1bdaf226ee8610d3c9dbe10d2da804633539f676161d",
+      "kernel_constants": 142,
+      "changed_metadata_extensions": [
+        "_private.Lean.DocString.Extension.0.Lean.moduleDocExt"
+      ],
+      "kernel_payload_identical": true
+    },
+    {
+      "module": "QiushiOrbit486Data",
+      "source_sha256_before": "77ce76a90f4c7356e8b98647704c9e65cdee621f5a54c7769625de895adf2b9b",
+      "source_sha256_after": "3014326b3adcb54aa64bbe3c3bbdc7129e789b1ba7aa9aa865d7a8887934fc7f",
+      "lines_before_and_after": 587,
+      "compile_exit_code": 0,
+      "compile_seconds": 8.176,
+      "olean_sha256_before": "21290ef33f8b07113ef3dfff31fe44ce8b3ba5ff43a87ced1729cff2ab503208",
+      "olean_sha256_after": "21290ef33f8b07113ef3dfff31fe44ce8b3ba5ff43a87ced1729cff2ab503208",
+      "olean_byte_identical": true,
+      "kernel_payload_identical": true
+    },
+    {
+      "module": "QiushiOrbit486FullBridgeAlg",
+      "source_sha256_before": "ad3efb9095f6ed5c28377612fbbf1a9a92c8e43cc9dc8bbc2e405f7b70c7a88f",
+      "source_sha256_after": "f35ccd1360e0d04ccdd88f98a055a7a970b316a4cb2a0ea9ecf975c8723cfd6b",
+      "lines_before_and_after": 414,
+      "compile_exit_code": 0,
+      "compile_seconds": 9.978,
+      "olean_sha256_before": "f1dfeddca40428f32f9a37f0c26cdcd039e6b6489e2926569962600e34d40420",
+      "olean_sha256_after": "f1dfeddca40428f32f9a37f0c26cdcd039e6b6489e2926569962600e34d40420",
+      "olean_byte_identical": true,
+      "kernel_payload_identical": true
+    },
+    {
+      "module": "QiushiOrbit486Leaf0000",
+      "source_sha256_before": "6e5b97b6d4afbdb835a44643e7b6821582975683db0eb1ab2ca67e2f951ae59b",
+      "source_sha256_after": "cea6822d894a3eda57da79d1e8a0e9ecefa2520bcecc4edfab58911287ae7c61",
+      "lines_before_and_after": 169,
+      "compile_exit_code": 0,
+      "compile_seconds": 11.48,
+      "olean_sha256_before": "8848f28e3c5bad9158ecf03b1f737dbbf02df9e280c6f2e03355c80bc8603ca4",
+      "olean_sha256_after": "8848f28e3c5bad9158ecf03b1f737dbbf02df9e280c6f2e03355c80bc8603ca4",
+      "olean_byte_identical": true,
+      "kernel_payload_identical": true
+    },
+    {
+      "module": "QiushiOrbit486Leaf0001",
+      "source_sha256_before": "2cc9e50d8c1757bd4407fb2bc73c7ce49b5650b88acd6cccdd2ceeb604b5d7bc",
+      "source_sha256_after": "9bf3737df935de3cd45e9aec814908adfdb69fab0e4868fe8b49ee869684774c",
+      "lines_before_and_after": 169,
+      "compile_exit_code": 0,
+      "compile_seconds": 11.433,
+      "olean_sha256_before": "49af7392055850ff6d146e41b44601b8df7d52790210e324cafd16141ec89dac",
+      "olean_sha256_after": "49af7392055850ff6d146e41b44601b8df7d52790210e324cafd16141ec89dac",
+      "olean_byte_identical": true,
+      "kernel_payload_identical": true
+    },
+    {
+      "module": "QiushiOrbit486Leaf0002",
+      "source_sha256_before": "7eb67e0926edf78ea2b0e81c525aa554e8b6a1ca3760135d91bafab10aba1ac8",
+      "source_sha256_after": "e3989a636b1b57c0c98fecd09586b88ebe8f60425a1610c22418e08ae5e9c62a",
+      "lines_before_and_after": 169,
+      "compile_exit_code": 0,
+      "compile_seconds": 11.581,
+      "olean_sha256_before": "28985b352252291744d5f2ee93de0641db0cdc97710662435d86f296181151e1",
+      "olean_sha256_after": "28985b352252291744d5f2ee93de0641db0cdc97710662435d86f296181151e1",
+      "olean_byte_identical": true,
+      "kernel_payload_identical": true
+    },
+    {
+      "module": "QiushiOrbit486Leaf0003",
+      "source_sha256_before": "ab6eafaace7742df79fe171312cecce767f661db3ccc9127561c06c08be0799f",
+      "source_sha256_after": "c427bbb794bd9b9ee866ed8dce928e7a085da4057a16f18a3aa3be38a4b3cc93",
+      "lines_before_and_after": 169,
+      "compile_exit_code": 0,
+      "compile_seconds": 11.731,
+      "olean_sha256_before": "c01a8c75918178ab97ab3d9e4c5385d6185d6a2d391077b2d3124eaf1df319dc",
+      "olean_sha256_after": "c01a8c75918178ab97ab3d9e4c5385d6185d6a2d391077b2d3124eaf1df319dc",
+      "olean_byte_identical": true,
+      "kernel_payload_identical": true
+    },
+    {
+      "module": "QiushiOrbit486Leaf0004",
+      "source_sha256_before": "448b0f0c7d21f1cd7c3ab8b9557dfe8ed57fadc45ef56811bb4846410ce54707",
+      "source_sha256_after": "8afc543051057432f6d700296977a93dafe4041cd29477d9d9d7708d316b6796",
+      "lines_before_and_after": 169,
+      "compile_exit_code": 0,
+      "compile_seconds": 11.731,
+      "olean_sha256_before": "9a97ea969a75de33967cf6532b869764ef95eb6798e99c647a3ea13d0dfe11e6",
+      "olean_sha256_after": "9a97ea969a75de33967cf6532b869764ef95eb6798e99c647a3ea13d0dfe11e6",
+      "olean_byte_identical": true,
+      "kernel_payload_identical": true
+    },
+    {
+      "module": "QiushiOrbit486Leaf0005",
+      "source_sha256_before": "4c16f7fa255f868cc41d214cb70d31640c57fb187d530ce6f59fd460487b4361",
+      "source_sha256_after": "de23947f8ba2bf7caa026902e252d9b06004ec73302c0d8fbaac9847ecba6b2a",
+      "lines_before_and_after": 169,
+      "compile_exit_code": 0,
+      "compile_seconds": 11.784,
+      "olean_sha256_before": "da6268bdc0e866205d30aa0931cdbd73c339f095c2a5754ab2066fc3b2227788",
+      "olean_sha256_after": "da6268bdc0e866205d30aa0931cdbd73c339f095c2a5754ab2066fc3b2227788",
+      "olean_byte_identical": true,
+      "kernel_payload_identical": true
+    },
+    {
+      "module": "QiushiOrbit486Leaf0006",
+      "source_sha256_before": "8a1c64874b734511dafcace66d24037b6691ee40d7b4004072190df1d6cb50e0",
+      "source_sha256_after": "0e562abdc8feed55b8c932e00390fd7e0939cb8a7bca3801ef0f38bc3df00065",
+      "lines_before_and_after": 168,
+      "compile_exit_code": 0,
+      "compile_seconds": 11.682,
+      "olean_sha256_before": "1d92abe88122112a7c52aee99409119e2415bd3e572e8373eeab4b64cd854082",
+      "olean_sha256_after": "1d92abe88122112a7c52aee99409119e2415bd3e572e8373eeab4b64cd854082",
+      "olean_byte_identical": true,
+      "kernel_payload_identical": true
+    },
+    {
+      "module": "QiushiOrbit486Leaf0007",
+      "source_sha256_before": "06e29777480fd04d466a879323579cc85b72b6072146f063d3091db26d7d1d61",
+      "source_sha256_after": "a1b598afd0805cae874a10dad95781d8e17ec295d6bb1232e89f70b3ca6ac8bb",
+      "lines_before_and_after": 168,
+      "compile_exit_code": 0,
+      "compile_seconds": 11.43,
+      "olean_sha256_before": "b89b3de65c2cec4e42e76e72e725f21f6eebc5c2f7e0016c28a1ba1e05756874",
+      "olean_sha256_after": "b89b3de65c2cec4e42e76e72e725f21f6eebc5c2f7e0016c28a1ba1e05756874",
+      "olean_byte_identical": true,
+      "kernel_payload_identical": true
+    },
+    {
+      "module": "QiushiOrbit486Leaf0008",
+      "source_sha256_before": "ab2df407c41116af2f27daa2a9c06b896dacbc5f1179e91a9527984257838d06",
+      "source_sha256_after": "4b50179a985d43026ac26df1f939dfaffa6bc4c9ae1617731a6963410ca7ea0f",
+      "lines_before_and_after": 168,
+      "compile_exit_code": 0,
+      "compile_seconds": 11.732,
+      "olean_sha256_before": "8fada26ea9a6640c716e29d93c1acc9279433e3d0adcee4783804b0f3324b304",
+      "olean_sha256_after": "8fada26ea9a6640c716e29d93c1acc9279433e3d0adcee4783804b0f3324b304",
+      "olean_byte_identical": true,
+      "kernel_payload_identical": true
+    },
+    {
+      "module": "QiushiOrbit486Leaf0009",
+      "source_sha256_before": "d9bb4a09e9b23e49129c85c5987ed750c18e11f0d44a2765c8510572ed0a0afb",
+      "source_sha256_after": "2f1d74092c30b46500071d56f68eb0123500b92099e0641d3015c0bde7044d73",
+      "lines_before_and_after": 167,
+      "compile_exit_code": 0,
+      "compile_seconds": 11.684,
+      "olean_sha256_before": "89bea5a518e121a790a76a64a3e8f5c66c651b247764b6af1937f8629efece35",
+      "olean_sha256_after": "89bea5a518e121a790a76a64a3e8f5c66c651b247764b6af1937f8629efece35",
+      "olean_byte_identical": true,
+      "kernel_payload_identical": true
+    },
+    {
+      "module": "QiushiOrbit486QuotientLabels",
+      "source_sha256_before": "0e9973c6024d8f04f61414b210f992829e0b0e8570ba509c76179355cd336ced",
+      "source_sha256_after": "7bfceb8662404fa6616811c6fdf9bbdc13333c7442204b873b49003f67ffd638",
+      "lines_before_and_after": 1144,
+      "compile_exit_code": 0,
+      "compile_seconds": 577.863,
+      "olean_sha256_before": "a3db81fd82a9f69c968c40f53b3acc5b306e863beb8a002f5b6007cc45d98936",
+      "olean_sha256_after": "67544cc62e5873471a96bc24143423f797962444f861258816d1c05c613b7212",
+      "olean_byte_identical": false,
+      "kernel_payload_sha256_before_and_after": "313675119095724b3b92160a6c140e53b4e85e79152e13ae1d600d22a3aaf532",
+      "kernel_constants": 161,
+      "changed_metadata_extensions": [
+        "Lean.Linter.lintLogExt"
+      ],
+      "kernel_payload_identical": true,
+      "previous_compile_attempt": {
+        "compile_exit_code": null,
+        "timed_out": true,
+        "seconds": 300.542,
+        "timeout_seconds": 300
+      },
+      "final_timeout_seconds": 900
+    },
+    {
+      "module": "QiushiOrbit486Tree",
+      "source_sha256_before": "f8e03b589c206f588bf2f0692d81100b51aa8a5b8fd16d8a8dd5905f5cfdd650",
+      "source_sha256_after": "b2a56af217d6ad65d5321c824112b3f4009efa41e0f36c9bd54c2fc18e181ec2",
+      "lines_before_and_after": 69,
+      "compile_exit_code": 0,
+      "compile_seconds": 4.471,
+      "olean_sha256_before": "b0b67e54612279cc1fc94f158397e75257a44b5ee32ec82790c1b61884a8b70d",
+      "olean_sha256_after": "b0b67e54612279cc1fc94f158397e75257a44b5ee32ec82790c1b61884a8b70d",
+      "olean_byte_identical": true,
+      "kernel_payload_identical": true
+    },
+    {
+      "module": "QiushiProfileForcingStep47",
+      "source_sha256_before": "449cd44cc58f79b6d95845ab91d798c5e446cac81524134e957c76a59ebd65f9",
+      "source_sha256_after": "0a82194d7dfcd1b18e9311c40ad4ad7ab6559d5bc549786edc1aa57957b17dd0",
+      "lines_before_and_after": 164,
+      "compile_exit_code": 0,
+      "compile_seconds": 5.973,
+      "olean_sha256_before": "d7ddd8263e3963cf7ad8aabde71f48e3138ded133c86569c9dbc626d97317ad5",
+      "olean_sha256_after": "8625bd81b5e2c2a2d9fc70c0ea041a1cf49b4411fac70c4072e46c16c0e911e9",
+      "olean_byte_identical": false,
+      "kernel_payload_sha256_before_and_after": "828e554d61b855de06c22133334aa0ded14fc2c298b96c790868097bf88ad964",
+      "kernel_constants": 29,
+      "changed_metadata_extensions": [
+        "Lean.docStringExt",
+        "_private.Lean.DocString.Extension.0.Lean.moduleDocExt"
+      ],
+      "kernel_payload_identical": true
+    },
+    {
+      "module": "QiushiSaturationShared",
+      "source_sha256_before": "58d94a4609471e1f1bbd5ab067dccbb7fffda8606fb58bc2f7fef4fa87bca7fb",
+      "source_sha256_after": "76d538b92e02a17ad3d3af718f988a6782d23eee957fdb7d0683eeb57e2ffe05",
+      "lines_before_and_after": 471,
+      "compile_exit_code": 0,
+      "compile_seconds": 18.042,
+      "olean_sha256_before": "7b497548c2602bbd3d4c5ffec1c76a43c6c5b4789fd10722ab9d43ac7b9fd955",
+      "olean_sha256_after": "f4a7570e7bc3d0e7b5582f53a4fb87dc57342360167c14dca8a007b9f0a25de3",
+      "olean_byte_identical": false,
+      "kernel_payload_sha256_before_and_after": "e5e27a6c5a57617ca19b56515e41eb5b59a9d38a4f98ac508e490299c6a7e538",
+      "kernel_constants": 53,
+      "changed_metadata_extensions": [
+        "_private.Lean.DocString.Extension.0.Lean.moduleDocExt"
+      ],
+      "kernel_payload_identical": true
+    },
+    {
+      "module": "QiushiStep81Qdim2Generated",
+      "source_sha256_before": "d6221dbeee96d952ed426de80a296e4db4ef295b2926cb59b5f5ed02baffc180",
+      "source_sha256_after": "d525f151a59b0427174e58e41a914c28b9f0be45f1d96eec8989a667ce44eb4e",
+      "lines_before_and_after": 1284,
+      "compile_exit_code": 0,
+      "compile_seconds": 48.886,
+      "olean_sha256_before": "0f64470bf0e3ccd12a74838c5152a11e479afcf656070f4d475a0c307f0773f8",
+      "olean_sha256_after": "fcd5d8ee18c03cc95c7651e144bfb3f0f2cc4da7ee5481006d65d9bbffa1fdb7",
+      "olean_byte_identical": false,
+      "kernel_payload_sha256_before_and_after": "a15cec7feb6ce41a4526bf3d08551a4ca18e28819090fa6d77e812fc9f881ab1",
+      "kernel_constants": 479,
+      "changed_metadata_extensions": [
+        "_private.Lean.DocString.Extension.0.Lean.moduleDocExt"
+      ],
+      "kernel_payload_identical": true
+    },
+    {
+      "module": "QiushiWeightedCover",
+      "source_sha256_before": "6d67fa88ac5550f2a2e5cdb6fb6506eec817d76220ecf9457706c10b15ddf2f2",
+      "source_sha256_after": "003605d6d43ae082ab4438a2fab0b1a4623ae0ba66cfeb1b256838d6a8d7af9b",
+      "lines_before_and_after": 203,
+      "compile_exit_code": 0,
+      "compile_seconds": 5.172,
+      "olean_sha256_before": "84edbd2af0d9080d57ce4be0747a12925b619c113570cc570481c158e36f3e7e",
+      "olean_sha256_after": "f9cc28ea9df0f1deb8412f36f14a51c0f832f6889355c6afe6bf244aee2c83cb",
+      "olean_byte_identical": false,
+      "kernel_payload_sha256_before_and_after": "9ec6dd784aabca89251875f450d2cf1aba9ee95457f936adbb8cd0b3d2fca6cf",
+      "kernel_constants": 7,
+      "changed_metadata_extensions": [
+        "_private.Lean.DocString.Extension.0.Lean.moduleDocExt",
+        "Lean.Linter.lintLogExt"
+      ],
+      "kernel_payload_identical": true
+    }
+  ]
+}

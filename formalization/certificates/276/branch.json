@@ -1,0 +1,176 @@
+{
+  "basis": [
+    272,
+    96,
+    2,
+    1
+  ],
+  "branch": {
+    "tree": {
+      "type": "branch",
+      "path": "",
+      "label": 4,
+      "floor": 1,
+      "left": {
+        "type": "leaf",
+        "path": "L"
+      },
+      "right": {
+        "type": "leaf",
+        "path": "R"
+      }
+    },
+    "certs": [
+      {
+        "path": "L",
+        "lower": {},
+        "upper": {
+          "3": 1
+        },
+        "used_rows": [
+          {
+            "type": "occ",
+            "row": 50,
+            "multiplier": 2
+          },
+          {
+            "type": "occ",
+            "row": 56,
+            "multiplier": 1
+          },
+          {
+            "type": "occ",
+            "row": 63,
+            "multiplier": 1
+          },
+          {
+            "type": "occ",
+            "row": 97,
+            "multiplier": 1
+          },
+          {
+            "type": "occ",
+            "row": 102,
+            "multiplier": 2
+          },
+          {
+            "type": "occ",
+            "row": 105,
+            "multiplier": 1
+          },
+          {
+            "type": "occ",
+            "row": 116,
+            "multiplier": 2
+          },
+          {
+            "type": "occ",
+            "row": 123,
+            "multiplier": 1
+          },
+          {
+            "type": "occ",
+            "row": 124,
+            "multiplier": 1
+          },
+          {
+            "type": "occ",
+            "row": 125,
+            "multiplier": 1
+          },
+          {
+            "type": "occ",
+            "row": 139,
+            "multiplier": 1
+          },
+          {
+            "type": "occ",
+            "row": 158,
+            "multiplier": 1
+          },
+          {
+            "type": "occ",
+            "row": 205,
+            "multiplier": 2
+          },
+          {
+            "type": "occ",
+            "row": 208,
+            "multiplier": 2
+          },
+          {
+            "type": "total_ge",
+            "multiplier": 7
+          },
+          {
+            "type": "branch_upper",
+            "label": 4,
+            "bound": 1,
+            "multiplier": 6
+          }
+        ],
+        "rhs": -1
+      },
+      {
+        "path": "R",
+        "lower": {
+          "3": 2
+        },
+        "upper": {},
+        "used_rows": [
+          {
+            "type": "occ",
+            "row": 35,
+            "multiplier": 3
+          },
+          {
+            "type": "occ",
+            "row": 37,
+            "multiplier": 1
+          },
+          {
+            "type": "occ",
+            "row": 63,
+            "multiplier": 1
+          },
+          {
+            "type": "occ",
+            "row": 76,
+            "multiplier": 1
+          },
+          {
+            "type": "occ",
+            "row": 96,
+            "multiplier": 3
+          },
+          {
+            "type": "occ",
+            "row": 104,
+            "multiplier": 3
+          },
+          {
+            "type": "occ",
+            "row": 205,
+            "multiplier": 1
+          },
+          {
+            "type": "occ",
+            "row": 206,
+            "multiplier": 3
+          },
+          {
+            "type": "total_ge",
+            "multiplier": 4
+          },
+          {
+            "type": "branch_lower",
+            "label": 4,
+            "bound": 2,
+            "multiplier": 8
+          }
+        ],
+        "rhs": -4
+      }
+    ]
+  }
+}

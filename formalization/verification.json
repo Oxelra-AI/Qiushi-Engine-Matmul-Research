@@ -1,0 +1,160 @@
+{
+  "version": 1,
+  "groups": [
+    {
+      "id": "main",
+      "title": "Matrix multiplication and global quotient lower bounds",
+      "modules": ["QiushiReport"],
+      "roots": [
+        "QiushiMatmul.rank_ge_21",
+        "QiushiMatmul.rank_between_21_and_23",
+        "QiushiMatmul.bilinear_mul_requires_21",
+        "QiushiMatmul.FrozenRegistry.all_representatives",
+        "QiushiMatmul.FrozenRegistry.L0_rank_sound",
+        "QiushiMatmul.FrozenRegistry.coverage_with_rank_bound"
+      ]
+    },
+    {
+      "id": "calibration",
+      "title": "Complete occupation controls and exact capacities",
+      "modules": ["QiushiCalibrationClosed"],
+      "roots": [
+        "QiushiMatmul.Calibration.exactL0",
+        "QiushiMatmul.Calibration.target19_feasible",
+        "QiushiMatmul.Calibration.projected23_feasible",
+        "QiushiMatmul.Calibration.projectedFixture_feasible",
+        "QiushiMatmul.Calibration.actual_cap_distribution",
+        "QiushiMatmul.Calibration.actual_seven_boolean_caps",
+        "QiushiMatmul.Calibration.actual_orbit489_unique_cap_two"
+      ]
+    },
+    {
+      "id": "classification",
+      "title": "Two-plane classification and exact frozen values",
+      "modules": [
+        "QiushiPlaneOrbitFrozenClassification",
+        "QiushiFrozenLabelConsistency",
+        "QiushiFrozenL0LinesAffine"
+      ],
+      "roots": [
+        "QiushiMatmul.PlaneOrbit.FullClassification.frozen_classification",
+        "QiushiMatmul.PlaneOrbit.FullClassification.frozen_orbit_sizes",
+        "QiushiMatmul.PlaneOrbit.FullClassification.frozen_representatives_inequivalent",
+        "QiushiMatmul.FrozenLabel.frozen_labels_consistent",
+        "QiushiMatmul.FrozenLabel.all_representatives_exact",
+        "QiushiMatmul.FrozenLabel.L0_exact_of_orbit",
+        "QiushiMatmul.FrozenL0Report.normalized_L0_exact",
+        "QiushiMatmul.FrozenL0Report.first_row_L0_exact",
+        "QiushiMatmul.FrozenL0Report.all_high_representative_L0_exact",
+        "QiushiMatmul.FrozenL0Report.nonzero_line_L0_exact",
+        "QiushiMatmul.FrozenL0Report.one_dimensional_L0_exact",
+        "QiushiMatmul.FrozenL0Report.affine_hyperplane_L0_exact"
+      ]
+    },
+    {
+      "id": "occupation",
+      "title": "Eight full occupation systems have no integer model",
+      "modules": ["QiushiFullOccupation"],
+      "roots": [
+        "QiushiMatmul.FrozenOccupation.plane484_no_model",
+        "QiushiMatmul.FrozenOccupation.plane485_no_model",
+        "QiushiMatmul.FrozenOccupation.plane486_no_model",
+        "QiushiMatmul.FrozenOccupation.plane487_no_model",
+        "QiushiMatmul.FrozenOccupation.plane488_no_model",
+        "QiushiMatmul.FrozenOccupation.plane489_no_model",
+        "QiushiMatmul.FrozenOccupation.plane490_no_model",
+        "QiushiMatmul.FrozenOccupation.plane491_no_model"
+      ]
+    },
+    {
+      "id": "structure",
+      "title": "Structural lemmas, quotient geometry and further consequences",
+      "modules": [
+        "QiushiAllHighPlaneCount",
+        "QiushiCalibrationProjection",
+        "QiushiCalibrationControls",
+        "QiushiCalibrationRowsAll",
+        "QiushiE11SubspaceCount",
+        "QiushiFrozenLabelSmall",
+        "QiushiPlaneQuotientCount",
+        "QiushiNormalizedCosetCount",
+        "QiushiTailCoverageChecks",
+        "QiushiTailE11ScopeChecks",
+        "QiushiTailPaddedChecks",
+        "QiushiCyclicSlotTransport",
+        "QiushiFirstRowQuotient",
+        "QiushiLength21OccupationCaps",
+        "QiushiRank23BilinearSemantics",
+        "QiushiFullTrilinearSymmetry",
+        "QiushiGeneralHua",
+        "QiushiGeneralSaturation",
+        "QiushiQuotientRestriction"
+      ],
+      "roots": [
+        "QiushiMatmul.AllHighCount.all_high_plane_count",
+        "QiushiMatmul.Calibration.projected_A_not_mem",
+        "QiushiMatmul.Calibration.quotientMass_eq_pointMass",
+        "QiushiMatmul.CalibrationRows.rowBasis484_complete",
+        "QiushiMatmul.CalibrationRows.rowBasis485_complete",
+        "QiushiMatmul.CalibrationRows.rowBasis486_complete",
+        "QiushiMatmul.CalibrationRows.rowBasis487_complete",
+        "QiushiMatmul.CalibrationRows.rowBasis488_complete",
+        "QiushiMatmul.CalibrationRows.rowBasis489_complete",
+        "QiushiMatmul.CalibrationRows.rowBasis490_complete",
+        "QiushiMatmul.CalibrationRows.rowBasis491_complete",
+        "QiushiMatmul.E11SubspaceCount.e11_nonzero_proper_subspace_count",
+        "QiushiMatmul.E11SubspaceCount.e11_occupation_index_complete",
+        "QiushiMatmul.FrozenLabel.small_representative_exact",
+        "QiushiMatmul.FullSubspaceCount.plane_quotient_nonzero_card",
+        "QiushiMatmul.NormalizedCosetCount.affine_hyperplane_complete",
+        "QiushiMatmul.NormalizedCosetCount.affine_hyperplane_count",
+        "QiushiMatmul.TailCoverage.all_slot_split_bounds",
+        "QiushiMatmul.TailCoverage.e11_quotient_lifts_by_three",
+        "QiushiMatmul.TailCoverage.e11_quotient_rank19_gives_full_rank22",
+        "QiushiMatmul.TailCoverage.length21_all_high_pair_plane_cap",
+        "QiushiMatmul.TailCoverage.length21_all_line_cap",
+        "QiushiMatmul.TailCoverage.length22_B_profiles",
+        "QiushiMatmul.TailCoverage.length22_C_profiles",
+        "QiushiMatmul.TailE11Scope.e11_direction_count",
+        "QiushiMatmul.TailPadded.length22_A_profiles_or_zero_excess_length21",
+        "QiushiMatmul.TailPadded.length22_B_profiles_of_nonzero_B",
+        "QiushiMatmul.TailPadded.length22_C_profiles_of_nonzero_C",
+        "QiushiMatmul.TailPadded.zero_B_excess_at_most_one_invertible",
+        "QiushiMatmul.TailPadded.zero_C_excess_at_most_one_invertible",
+        "QiushiMatmul.cycleEntryDecomp_thrice",
+        "QiushiMatmul.firstRowSupportedTensor_inclusion",
+        "QiushiMatmul.firstRowTensorEquiv_tensor",
+        "QiushiMatmul.firstRow_quotient_decomp_iff",
+        "QiushiMatmul.firstRow_quotient_rankAtLeast_iff",
+        "QiushiMatmul.normalizedFirstRowDecompEquiv",
+        "QiushiMatmul.length21_affine_hyperplane_cap",
+        "QiushiMatmul.length21_named_line_cap",
+        "QiushiMatmul.length21_named_plane_cap",
+        "QiushiMatmul.rank23_bilinear_algorithm",
+        "QiushiMatmul.FullTrilinearSymmetry.trilinear_action",
+        "QiushiMatmul.FullTrilinearSymmetry.input_trilinear_action",
+        "QiushiMatmul.FullTrilinearSymmetry.coefficient_pairing_pullback",
+        "QiushiMatmul.set_affine_row_or_column_coset",
+        "QiushiMatmul.GeneralSaturation.rank_additive_saturation",
+        "QiushiMatmul.GeneralSaturation.complete_orthogonal_idempotents",
+        "QiushiMatmul.QuotientRestriction.quotientEquiv",
+        "QiushiMatmul.QuotientRestriction.nonempty_quotient_iff_restricted",
+        "QiushiMatmul.QuotientRestriction.quotientRankAtLeast_iff_restricted",
+        "QiushiMatmul.FullSubspaceCount.mat3_all_subspace_count",
+        "QiushiMatmul.FullSubspaceCount.mat3_two_plane_count"
+      ]
+    },
+    {
+      "id": "encoding",
+      "title": "Integer multiplicities and Boolean occupation encodings",
+      "modules": ["QiushiOccupationCNF", "QiushiExactPrefixCNF"],
+      "roots": [
+        "Qiushi.CNF.bounded_integer_iff_copies",
+        "Qiushi.CNF.copy_occupation",
+        "Qiushi.CNF.occupation_cnf_equisatisfiable",
+        "Qiushi.CNF.singleton_occupation_cnf_equisatisfiable",
+        "Qiushi.CNF.exactPrefixCNF_correct"
+      ]
+    }
+  ]
+}

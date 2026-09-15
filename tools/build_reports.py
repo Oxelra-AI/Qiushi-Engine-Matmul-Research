@@ -16,6 +16,7 @@ TARGETS = {
     'en': ('en', 'main', 'xelatex'),
     'zh': ('zh', 'main', 'xelatex'),
 }
+EDITIONS = {'original': 'report-build.json', 'lean': 'lean-report-build.json'}
 BAD_LOG = re.compile(
     r'Overfull \\[hv]box|Missing character:|'
     r'LaTeX Warning: (?:Citation|Reference).*undefined|'
@@ -50,10 +51,20 @@ def check_pdf(pdf, log):
             'layout_and_reference_warnings': 0}
 
 
-def build(target):
+def report_directory(language, edition='original'):
+    if language not in TARGETS or edition not in EDITIONS:
+        raise ValueError('Unsupported report language or edition')
+    return ROOT / 'reports' / (language + ('-lean' if edition == 'lean' else ''))
+
+
+def report_receipt(edition='original'):
+    return ROOT / 'evidence' / EDITIONS[edition]
+
+
+def build(target, edition='original'):
     language, stem, engine = TARGETS[target]
-    directory = ROOT / 'reports' / language
-    base = ROOT / 'build/reports' / target
+    directory = report_directory(language, edition)
+    base = ROOT / 'build/reports' / directory.name
     base.mkdir(parents=True, exist_ok=True)
     output = Path(tempfile.mkdtemp(prefix='render-', dir=base))
     sources = [{'path': str(p.relative_to(ROOT)), 'sha256': digest(p)}
@@ -88,13 +99,14 @@ def build(target):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--language', choices=tuple(TARGETS) + ('all',), default='all')
+    parser.add_argument('--edition', choices=tuple(EDITIONS), default='original')
     args = parser.parse_args()
-    receipt = ROOT / 'evidence/report-build.json'
+    receipt = report_receipt(args.edition)
     previous = json.loads(receipt.read_text()) if receipt.exists() else {}
     records = previous.get('reports', [])
     targets = TARGETS if args.language == 'all' else (args.language,)
     for target in targets:
-        record = build(target)
+        record = build(target, args.edition)
         records = [r for r in records if r['pdf'] != record['pdf']] + [record]
         records.sort(key=lambda r: r['pdf'])
         # A reproducible rebuild should not invalidate the frozen release manifest.

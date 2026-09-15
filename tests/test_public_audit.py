@@ -21,6 +21,18 @@ class PublicAuditTests(unittest.TestCase):
         sample = ('S' + '0904' + 'A01').encode()
         self.assertIn('execution-identifier', audit_public.inspect_bytes('note.md', sample))
 
+    def test_lean_sources_and_dependency_records_are_inspected(self):
+        sample = ('S' + '0904' + 'A01').encode()
+        for suffix in ('.lean', '.toml', '.log', '.inc'):
+            with self.subTest(suffix=suffix):
+                self.assertIn('execution-identifier',
+                              audit_public.inspect_bytes('source' + suffix, sample))
+
+    def test_local_lean_proof_names_are_not_execution_records(self):
+        self.assertEqual(audit_public.inspect_bytes('Proof.lean', b'have step' + b'1 : True := True.intro'), [])
+        self.assertIn('numbered-execution-record',
+                      audit_public.inspect_bytes('Proof.lean', b'-- imported from Step' + b' 75'))
+
     def test_compressed_png_metadata_is_checked(self):
         sample = ('S' + '0904' + 'A01').encode()
         data = b'\x89PNG\r\n\x1a\n' + chunk(b'zTXt', b'Comment\0\0' + zlib.compress(sample)) + chunk(b'IEND', b'')

@@ -12,7 +12,7 @@ import subprocess
 import tempfile
 import zipfile
 
-from build_reports import ROOT, TARGETS, check_pdf
+from build_reports import ROOT, TARGETS, EDITIONS, check_pdf, report_directory, report_receipt
 
 
 def digest(path):
@@ -65,12 +65,13 @@ def verified_zip(path, payload):
             raise ValueError('Archive payload changed')
 
 
-def package(stem, destination, language='en'):
+def package(stem, destination, language='en', edition='original'):
     if language not in TARGETS:
         raise ValueError('Unsupported report language')
-    directory = ROOT / 'reports' / language
-    receipt = json.loads((ROOT / 'evidence/report-build.json').read_text())
-    report = next(r for r in receipt['reports'] if r['pdf'] == f'reports/{language}/{stem}.pdf')
+    directory = report_directory(language, edition)
+    receipt = json.loads(report_receipt(edition).read_text())
+    pdf_path = (directory / (stem + '.pdf')).relative_to(ROOT).as_posix()
+    report = next(r for r in receipt['reports'] if r['pdf'] == pdf_path)
     for row in report['sources']:
         path = ROOT / row['path']
         if not path.is_file() or digest(path) != row['sha256']:
@@ -83,6 +84,8 @@ def package(stem, destination, language='en'):
     original_text = subprocess.check_output(
         ['pdftotext', '-layout', str(ROOT / report['pdf']), '-'], text=True).split()
     archive_stem = stem if language == 'en' else language
+    if edition == 'lean':
+        archive_stem += '-lean'
     output = destination / ('qiushi-matmul-' + archive_stem + '-source.zip')
     with tempfile.TemporaryDirectory(prefix='matmul-tex-') as td:
         tree = Path(td)
@@ -132,6 +135,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, default=ROOT / 'dist/report-sources')
     parser.add_argument('--language', choices=tuple(TARGETS) + ('all',), default='en')
+    parser.add_argument('--edition', choices=tuple(EDITIONS), default='original')
     args = parser.parse_args()
     destination = args.output.resolve()
     destination.mkdir(parents=True, exist_ok=True)
@@ -140,7 +144,7 @@ def main():
     records = previous.get('packages', [])
     languages = TARGETS if args.language == 'all' else (args.language,)
     for language in languages:
-        record = package('main', destination, language)
+        record = package('main', destination, language, args.edition)
         records = [r for r in records if r['archive'] != record['archive']] + [record]
         records.sort(key=lambda r: r['archive'])
         print(json.dumps({k: record[k] for k in ('archive', 'bytes', 'standalone_pdf_text_matches')}),

@@ -1,0 +1,153 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,booktabs,array,microtype}
+\usepackage[margin=28mm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{listings}
+\lstset{basicstyle=\small\ttfamily,breaklines=true,columns=fullflexible,
+  keepspaces=true,frame=none,aboveskip=8pt,belowskip=8pt}
+\setlength{\parindent}{1.2em}
+\setlength{\parskip}{3pt}
+\title{Formal Verification of a Structural Lower Bound\protect\\
+  for Binary $3\times3$ Matrix Multiplication}
+\author{Qiushi Engine Matmul Research}
+\date{Companion to the research report of 9 September 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+This companion describes the Lean formalization of the structural proof that
+every exact bilinear algorithm for $3\times3$ matrix multiplication over
+$\mathbb F_2$ requires at least 21 products. The formal proof connects the
+ordinary matrix-multiplication specification to finite quotient bounds,
+occupation geometry, a forced rank profile, and an algebraic contradiction
+obtained from equality in a split-flattening rank bound. Its finite premises
+are proved within Lean. The
+project also provides reusable results on quotient semantics, rank-additive
+matrix saturation, tensor symmetry and finite subspace geometry. Sources,
+certificate inputs, fixed dependencies and verification commands accompany
+the mathematical argument.
+\end{abstract}
+
+\section{The Mathematical Statement}
+Let $T_{333}$ be the tensor of ordinary $3\times3$ matrix multiplication over
+$\mathbb F_2$. An exact bilinear algorithm computes products of a linear form
+in the first input and a linear form in the second, then linearly combines
+these products to recover the output. The formalization proves
+\begin{equation}
+  21\le R_{\mathbb F_2}(T_{333})\le23.
+\end{equation}
+The lower bound rules out all such algorithms using at most 20 products.
+The upper bound is supplied by an
+explicit 23-term decomposition, whose 729 tensor coordinates are checked.
+
+The ordinary multiplication statement is exposed by
+\texttt{bilinear\_mul\_requires\_21}. Here \texttt{Mat3} denotes
+$3\times3$ matrices over \texttt{ZMod 2}:
+\begin{lstlisting}
+theorem bilinear_mul_requires_21 (r : Nat)
+    (A B C : Fin r -> Mat3)
+    (h : forall X Y : Mat3,
+      X * Y = bilinearAlgorithm A B C X Y) : 21 <= r
+\end{lstlisting}
+This display uses ASCII equivalents for Lean notation. It quantifies over
+every input matrix. Proved equivalences connect the tensor identity to the
+bilinear algorithm statement, and the finite quotient bounds are established
+within the proof.
+
+\section{From Finite Bounds to Algebraic Rigidity}
+Suppose a 20-term decomposition existed. Quotient-rank bounds constrain the
+number of first factors in each matrix subspace. The strengthened
+two-plane bounds, together with the finite geometry of rank-one differences,
+force the first-factor matrix-rank profile
+\begin{equation}
+  (n_1,n_2,n_3)=(16,1,3).
+\end{equation}
+The resulting rank sum is $16+2+9=27$, exactly the rank of the full split
+flattening. If $P=\sum_t M_t$ is that flattening, equality in rank
+subadditivity gives
+\begin{equation}
+  M_tP^{-1}M_s=\delta_{ts}M_t.
+\end{equation}
+For the matrix-multiplication tensor, the product formula turns these
+identities into constraints coupling all three tensor factors. They allow
+at most one invertible first factor. The forced profile requires three,
+which gives the contradiction.
+
+Lean follows this structural argument while reorganizing intermediate
+definitions and lemmas for reuse. The finite prerequisites are connected
+to the same matrix space and quotient definitions as the final theorem.
+
+\section{Finite Certificates and Coverage}
+The finite proof uses exact integer branch certificates. At each leaf,
+nonnegative combinations of occupation inequalities yield a contradiction;
+proved integer splits cover the remaining possibilities. Transports,
+quotient coordinates and the resulting rank lower bounds are proved in Lean.
+The generator translates each certificate into proof terms checked by Lean.
+
+\begin{center}
+\begin{tabular}{@{}p{0.32\linewidth}p{0.60\linewidth}@{}}
+\toprule
+Mathematical component & Formalized result \\
+\midrule
+Main theorem & Lower bound 21 and ordinary bilinear semantics on all inputs \\
+Finite prerequisites & Eight strengthened quotient bounds and all 496 frozen representative bounds \\
+Finite geometry & Actual subspace coverage, two-plane orbits, exact labels and row bindings \\
+Structural algebra & General saturation, quotient/restriction equivalence, tensor symmetry and cross-factor identities \\
+Further consequences & Rank-23 witness, E11 three-term lifting implication and appropriately qualified profile restrictions \\
+Encoding semantics & Integer multiplicity copies and disjoint sequential-counter CNF equivalence \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The precise declarations and hypotheses appear in \texttt{COVERAGE.md}.
+In particular, the E11 lifting theorem is an implication from a hypothetical
+core witness. Statements
+about decompositions with zero summands retain the required alternatives.
+The historical Python, SAT and DRAT artifacts remain separately reproducible;
+the Lean proof establishes its finite premises with integer certificates
+rather than formalizing the implementation or bytes of those programs.
+
+\section{Kernel Verification}
+The project pins Lean 4.33.1 and a specific Mathlib revision. All 13,438
+registered modules have successful source-matched compilation outputs.
+An additional six-group verification checks 89 terminal declarations and
+their complete transitive dependencies using the unchanged official
+\texttt{Lean.Environment.replay}, starting from an empty kernel environment.
+The groups cover the main theorem and global bounds, calibration,
+classification, full occupation systems, structural results and Boolean
+encodings. All six checks passed.
+
+Exact terminal types and their transitive axiom dependencies were checked
+as well. The only axioms are the standard
+\texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}.
+\path{verification-results.json} records the checked inputs and outcomes,
+and \path{verification.json} specifies the terminal declarations.
+
+\section{Reproduction and Reuse}
+The project runs without Qiushi Engine or language-model access. From
+\texttt{formalization/}, with Elan and Python 3.11 or later installed:
+\begin{lstlisting}
+lake exe cache get
+python3 tools/build.py . --all --jobs 4 --fresh-lean
+\end{lstlisting}
+Use the build directory printed by the completed command to run
+\begin{lstlisting}
+python3 tools/verify_all.py \
+  --environment "$BUILD_DIR/environment.json" \
+  --jobs 2 --timeout 43200
+\end{lstlisting}
+The large finite checks may take hours. The documented timeout is a ceiling,
+not a guaranteed duration. Compiler and replay logs are kept locally and are
+not prerequisites for another reader to rebuild the proofs.
+
+The general algebraic interfaces can be reused separately from the full
+finite computation. Quotient semantics, rank-additive saturation and tensor
+symmetry provide components for extending the argument to other settings;
+the certificate interfaces connect finite computations to their mathematical
+consequences. The accompanying research
+trajectory explains how Qiushi Engine moved from algorithm search, through
+failed support-only approaches, to the equality-case argument. The written
+proof explains why the result holds; the trajectory explains how the
+understanding developed; Lean checks the formal chain connecting its claims.
+
+\end{document}

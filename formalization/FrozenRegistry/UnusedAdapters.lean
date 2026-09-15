@@ -1,0 +1,107 @@
+import QiushiGlobalOrbitUnused181
+import QiushiGlobalOrbitUnused184
+import QiushiGlobalOrbitUnused203
+import QiushiGlobalOrbitUnused273
+import QiushiGlobalOrbitUnused284
+import QiushiGlobalOrbitUnused291
+import QiushiFrozenRank24
+import QiushiFrozenRank27
+import QiushiFrozenRank28
+import QiushiFrozenRank33
+import QiushiFrozenRank109
+import QiushiFrozenRank162
+import QiushiGlobalOrbitUnused88
+import QiushiGlobalOrbitUnused289
+import QiushiGlobalOrbitUnused87
+import QiushiGlobalOrbitUnused92
+import QiushiGlobalOrbitUnused240
+import QiushiGlobalOrbitUnused248
+import QiushiGlobalOrbitUnused249
+import QiushiGlobalOrbitUnused301
+import QiushiGlobalOrbitUnused302
+import QiushiGlobalOrbitUnused304
+import QiushiGlobalOrbitUnused308
+import QiushiGlobalOrbitUnused309
+import QiushiGlobalOrbitUnused312
+import QiushiGlobalOrbitUnused305
+import QiushiGlobalOrbitUnused306
+import QiushiGlobalOrbitUnused307
+import QiushiFrozenRank260
+import QiushiFrozenRank314
+import QiushiFrozenRank316
+import QiushiFrozenRank318
+import QiushiGlobalOrbitUnused354
+import QiushiGlobalOrbitUnused355
+import QiushiGlobalOrbitUnused356
+import QiushiFrozenRank357
+import QiushiFrozenRank358
+import QiushiFrozenRank359
+import QiushiFrozenRank366
+import QiushiGlobalOrbitUnused337
+import QiushiGlobalOrbitUnused339
+import QiushiGlobalOrbitUnused353
+import QiushiGlobalOrbitUnused386
+import QiushiGlobalOrbitUnused387
+import QiushiGlobalOrbitUnused388
+import QiushiGlobalOrbitUnused389
+import QiushiGlobalOrbitUnused390
+import QiushiGlobalOrbitUnused392
+import FrozenRegistry.Btp261Final
+import FrozenRegistry.Btp263Final
+import FrozenRegistry.Btp265Final
+
+import QiushiGlobalOrbitUnused321
+import QiushiGlobalOrbitUnused328
+import QiushiGlobalOrbitUnused333
+import QiushiFrozenRank361
+import QiushiFrozenRank362
+import QiushiFrozenRank363
+import QiushiFrozenRank365
+import QiushiFrozenRank367
+import QiushiFrozenRank368
+import QiushiFrozenRank369
+import QiushiGlobalOrbitUnused371
+import QiushiGlobalOrbitUnused372
+import QiushiGlobalOrbitUnused376
+import QiushiGlobalOrbitUnused378
+import QiushiGlobalOrbitUnused379
+import QiushiGlobalOrbitUnused380
+import QiushiGlobalOrbitUnused382
+import QiushiGlobalOrbitUnused383
+import QiushiGlobalOrbitUnused394
+import QiushiGlobalOrbitUnused395
+import QiushiGlobalOrbitUnused396
+import QiushiGlobalOrbitUnused398
+import QiushiGlobalOrbitUnused399
+import QiushiGlobalOrbitUnused401
+import QiushiGlobalOrbitUnused402
+import QiushiGlobalOrbitUnused403
+import QiushiGlobalOrbitUnused404
+import QiushiGlobalOrbitUnused406
+import QiushiGlobalOrbitUnused407
+import QiushiGlobalOrbitUnused408
+
+namespace QiushiMatmul.FrozenRegistry.UnusedAdapters
+
+theorem bound024 : QuotientRankAtLeast (spanCodes [160,80,8,4,2,1]) 11 :=
+  FrozenRank.span024_lb11
+
+theorem bound181 : QuotientRankAtLeast (spanCodes [258,84,32,10,1]) 15 :=
+  plane181UnusedGen_lb15
+
+theorem bound184 : QuotientRankAtLeast (spanCodes [386,84,32,10,1]) 15 :=
+  plane184UnusedGen_lb15
+
+theorem bound203 : QuotientRankAtLeast (spanCodes [272,176,68,10,1]) 16 :=
+  plane203UnusedGen_lb16
+
+theorem bound273 : QuotientRankAtLeast (spanCodes [156,80,2,1]) 16 :=
+  plane273UnusedGen_lb16
+
+theorem bound284 : QuotientRankAtLeast (spanCodes [68,20,10,1]) 17 :=
+  plane284UnusedGen_lb17
+
+theorem bound291 : QuotientRankAtLeast (spanCodes [84,32,10,1]) 16 :=
+  plane291UnusedGen_lb16
+
+end QiushiMatmul.FrozenRegistry.UnusedAdapters

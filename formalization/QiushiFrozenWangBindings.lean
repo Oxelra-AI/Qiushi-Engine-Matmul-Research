@@ -1,0 +1,16 @@
+import QiushiFrozenWangPlane484
+import QiushiFrozenWangPlane485
+import QiushiFrozenWangPlane486
+import QiushiFrozenWangPlane487
+import QiushiFrozenWangPlane488
+import QiushiFrozenWangPlane489
+import QiushiFrozenWangPlane490
+import QiushiFrozenWangPlane491
+
+-- Generated numeric bindings; no tensor-rank or pickle theorem.
+set_option maxHeartbeats 8000000
+set_option maxRecDepth 100000
+namespace QiushiMatmul.FrozenWang
+
+
+end QiushiMatmul.FrozenWang

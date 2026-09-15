@@ -1,0 +1,323 @@
+{
+  "schema": 1,
+  "node": 355,
+  "result": "PASS",
+  "lean_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "jobs": 2,
+  "lean_num_threads": 1,
+  "modules": 31,
+  "batch_modules": 93,
+  "check_width": 128,
+  "predecessors": [
+    3,
+    10,
+    11,
+    14,
+    17,
+    35,
+    55,
+    56,
+    78,
+    164,
+    187,
+    194,
+    201,
+    216,
+    235,
+    236,
+    238
+  ],
+  "statements": {
+    "QiushiMatmul.GlobalOrbit.Unused.rep355": "QuotientRankAtLeast (spanCodes (frozenWangTable.basis 355)) (frozenWangTable.lower 355)",
+    "QiushiMatmul.plane355UnusedGen_lb17": "QuotientRankAtLeast (spanCodes [164,96,20,1]) 17"
+  },
+  "observed_axioms": {
+    "QiushiMatmul.GlobalOrbit.Unused.rep355": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QiushiMatmul.plane355UnusedGen_lb17": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "python_tests": {
+    "batch_passed": 6,
+    "source_sha256": "4047f8a47e7c8ac0e4db3e27146e09df38428e61ca89dae9e5fcc4eba7739492",
+    "log_sha256": "949084d011d171a3933f3265e3d2761e6948ba90f2c58eb73315c60b4a5903a6"
+  },
+  "certificate_sha256": {
+    "branch.json": "9ac5d285e9861dfba29f7109c54ae2c3c03e05d7ee38b2d6721cfdd762e4411f",
+    "closed-predecessors.json": "18165cde212facc9c52078ebb9154089455f173008f80a377d41d4daf4d188df",
+    "generation.json": "a9a7df8cbef9ecbd2b06f78643ef371bd547bd5dcd9357c630f9c35a84b6bda8",
+    "source-modules.json": "8a08fe3e5ed3e0cde1964abb477311d85cf8d508d575efdf5a0309b8e2b02f36",
+    "sources.json": "2f9b852710d3e6384d444b543220040a572ed58af79f668eca815a9c7d95ffc9",
+    "tables.json": "fd395ea904d8edfe587339142a0b398396737ccb6042d0f2fe4a9b5497d81731",
+    "transport-witnesses.json": "070da4b0876450756fb58e9576565ad4ad91a6944df46aa263d3bc54bd0220b3"
+  },
+  "helper_sha256": {
+    "global_orbit_unused_certificate.py": "72d6d3bc7b351514db4c029e895f57a3bf5b001896ce3fd8b42bdab95701a62a",
+    "generate_certificate.py": "061e1bd4efb9a458db26578d5c4904e85eef0c02cacacb5799cdd93c77fca1b5",
+    "generate_global_orbit_checks.py": "c9a41f9db6b520752767fbd491aa19a51b0622ab2c8ed3b4efcefbe54daffad1",
+    "generate_finite_orbits.py": "831ce645c67a21b524417268a0d6c3fe07fc885eb4885e5544b09af426fa5921",
+    "build_global_orbits.py": "d627c3d171abff0f1ff1814d7f841188e217f213aa04312b185ba172e1abff89"
+  },
+  "environment_sha256": "9cfa94eee1355e67343292d89010e6a071a42c43bdccd6a0bc4c7486d6a72db6",
+  "private_build_receipt_sha256": "6a24159575c93c102d1943b369556c5027585a300598323e51c0b5168c6d3260",
+  "external_direct_imports": {
+    "QiushiBranch262Dispatch": {
+      "object_sha256": "a3101d4ccb9aa41adc567e7c2091649c01271c0fdfab4028f44f1979b9f471f3"
+    },
+    "QiushiCertifiedTransport": {
+      "object_sha256": "c85599b9fec38135152247ea0634425d42a8f11c6116761ee99cad8c434d69be"
+    },
+    "QiushiFiniteBlocks": {
+      "object_sha256": "f1a9910998c74a6edbcb4e9c3bf8419598535ad023057359864b88037f76c8e8"
+    },
+    "QiushiFlattenSeeds": {
+      "object_sha256": "24c3f758650b4c8fcc9c012736b627c3247c9bc2a157bdc5b8366966e0341cbe"
+    },
+    "QiushiFrozenWangData": {
+      "object_sha256": "b827c698d62037d3c42356f0e742aff22334038613bcfaeefb19a3389a0d32b2"
+    },
+    "QiushiGenericPlaneExtraction": {
+      "object_sha256": "4ab354fdecf435731d57cf841b7989768a11da873ac7d51f49aa1042e3644297"
+    },
+    "QiushiOrbit10FP": {
+      "object_sha256": "af94cf40df9509dcff06fd2cb0eb2220ac6d6e7cf06c66f9f11b4e4f0fc73241"
+    },
+    "QiushiOrbit11FP": {
+      "object_sha256": "883d5ffcb4529adf73378971f78b10c423ae13def785530f5abf45d0bc72d6be"
+    },
+    "QiushiOrbit14FP": {
+      "object_sha256": "01c74da79fd8f357e4ef82c1eb9ffbc5fc2fe93b61f46d9394d1ab16f552a800"
+    },
+    "QiushiOrbit35FP": {
+      "object_sha256": "ebbbdffe7de88ead920844692ec6bec6ca5f327ea12a0f6aea874d7f3d68d90d"
+    },
+    "QiushiPlane274GenBindings01": {
+      "object_sha256": "bf4f496672dd8ac9f7fe365f01ccf910c205126afc03f0d2006db09349af4b5a"
+    },
+    "QiushiPlane292GenBindings00": {
+      "object_sha256": "94d251d82759e335daa6bd2d21f511e2034109bf99453bcc61baf4944177ee17"
+    },
+    "QiushiStep81Qdim2Generated": {
+      "object_sha256": "0f64470bf0e3ccd12a74838c5152a11e479afcf656070f4d475a0c307f0773f8"
+    },
+    "QiushiWcOrbit164Dispatch": {
+      "object_sha256": "4394d15a9e0bc0dbde28a1b649e19baedd45e68eae3042516e5423dad8095157"
+    },
+    "QiushiWcOrbit194Dispatch": {
+      "object_sha256": "93a2fb0a27e3b6d2dfb429afa5ce623fafc01249e311b9f231ef27d7ff84790a"
+    },
+    "QiushiWcOrbit201Dispatch": {
+      "object_sha256": "71016e1cdff9a76226d27154b8dc85a9ba5fcf0f43e6c9227e6d7be9acf4db63"
+    },
+    "QiushiWcOrbit216Dispatch": {
+      "object_sha256": "54dcf7c9476b8314c9530922c7f00f95d8dfa704943384ccbe48c1893ce0c1ae"
+    },
+    "QiushiWcOrbit235Dispatch": {
+      "object_sha256": "4f9558e8fd75d7d7eaeb59bacaaab1d52f9bd9eddae76f9e54b48e198036ddb4"
+    },
+    "QiushiWcOrbit236Dispatch": {
+      "object_sha256": "029bb01eb08fd1323e46617fb092dbe59b9a480b4ab1d35016b4b196abc28a09"
+    },
+    "QiushiWcOrbit238Dispatch": {
+      "object_sha256": "fec18f495a86961464692a0f79676f86e18ce17a111eae03ece6b4568d84ca72"
+    },
+    "QiushiWcOrbit78Dispatch": {
+      "object_sha256": "4dc9d53b9c54f72733b974af7c08973c76e3881e90801aef82e38e5099cc27c2"
+    }
+  },
+  "sources": {
+    "QiushiGlobalOrbitUnused355.lean": {
+      "source_sha256": "96bae49f150b8012a8696d93f6fe7b3c1d512c387e54957f249fee0aac50b6b3",
+      "object_sha256": "bff109c223ffe2db3fc4ec65de2d6f7080887e6a9962aa5ae39c0af2319628e1",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355Bindings00.lean": {
+      "source_sha256": "6b8661831c0a08b5748e926fe52282a3871579f004668c13967141979d30c154",
+      "object_sha256": "8a8d20dfbf7f7d9a50258aebc0b69642e1d6a2d6dc6a83b879f5764313a9e3bb",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355Bindings01.lean": {
+      "source_sha256": "64c069f8331b8c248cc1692d912356bed755b5dca7eba7896284a7ff996b0675",
+      "object_sha256": "3b12ab14b1492a53db3f9f45f1bd143662600fac38502460420c4033f0d0f2f7",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355Bindings02.lean": {
+      "source_sha256": "ad09fe1a3aec8bdc3a8d8d44a5c6ac91adf0f84a737eacf596e6588633566b46",
+      "object_sha256": "545f9f933e77c5503805e9e16f663698953d412cedf7741505a96b56c403d5b7",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355Bool.lean": {
+      "source_sha256": "a591209e7959f13f1a11fe26f102f60389019106161ae315bed8a51b31b86310",
+      "object_sha256": "dda9fb1b6eef91f346273c87f708ad20f7b6e7e19f93b9ff883a751b5521d90e",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355CheckProperties.lean": {
+      "source_sha256": "1e026191e9c318a065bb0597a03a5092bdc2466bff6905d166b07e82c1db9efc",
+      "object_sha256": "6afbcfb8d2a8fc107a7040c8ca3dfeadd1ed451755050d5c0aaa1454a497fb2b",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355Data.lean": {
+      "source_sha256": "114c941bdb75c0c5729f7b4c7636926edb4491c2d0248bb16cc4fd64324f7e68",
+      "object_sha256": "ae56ba00609e8d7f40afba084939f304625ba1d18772eb7368453d2f7e7655f8",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355DeadAll.lean": {
+      "source_sha256": "12225d17b3ae7919a9a6332d0a533c19902f1fc4d45bba3b4604a81c6fd1a470",
+      "object_sha256": "b53d7394ec1f16f436e096a4875cb0bb7ce44e4afc9e0494b59e20032cd5e440",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355DeadBlock0.lean": {
+      "source_sha256": "b491b7ac8b9ad27f87be8a6ba8eb699a311fa80089d952366dc8a278742b18c1",
+      "object_sha256": "6563d8d55884fbe5356c9370520eca71b153f1b5fda4a128338ba771a88c23ac",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355DeadBlock1.lean": {
+      "source_sha256": "5578ac47c9e7d474d8b250a8b73016487152b0d2eb9345815c4d0fd47c22430d",
+      "object_sha256": "29226a8158adc653eea221c8a70adc56a15cf526792463d5319bb71ba05b7e5f",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355DeadBlock2.lean": {
+      "source_sha256": "6d0a686e4ceeb13b67c1cdd87ec49391977eb85bab829b091d475defce5fa577",
+      "object_sha256": "5a712a00f3e74eb60c3778e39610575194e8db5f118d0d0ad6219e450c6f013d",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355DeadBlock3.lean": {
+      "source_sha256": "3f3cd4848be32cb1f5164c0c244caf7f76efccfcbffee6303fa1cd3669143b26",
+      "object_sha256": "4fb347e469628d93d977e5ea94e4cc26e708af84d17a9c0aba58541a41bec91a",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355DeadSourceAll.lean": {
+      "source_sha256": "8bc3bf67bf3bebda664b64bb117a70dd1a89b29f7424719704d1d055065d02a6",
+      "object_sha256": "069720216b5a07e069306a49210e99d7d935ba5786b87b264965aa583cf1ceac",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355DeadSourceBlock0.lean": {
+      "source_sha256": "42f1159faf4eb0554a12940b9abaefed651bed49a1171aa377833419ebc81b8a",
+      "object_sha256": "a3af65691056dd24a10ace7ed0cd88c7c5ee4bc807ac86109a0b319163561d48",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355Dispatch.lean": {
+      "source_sha256": "ce723c809543d398ea792d905f3ea66f7477e7a575bd1b9f00518664913ed0fc",
+      "object_sha256": "caab8f188247f3ad2e44dde1569dfb7ed214f070e44dba39d2b9c96963c37ce4",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355Final.lean": {
+      "source_sha256": "8b4adc1646a8870129f439d8a39965c50c4a9df3d5980beb560039a391ec4360",
+      "object_sha256": "667b6b394ec78c24b8178815175800910350ab320b70947db6deebbbcb08b73e",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355IndicatorAll.lean": {
+      "source_sha256": "426ece53ac5e5a0d7fbecc8346bbe5f0ee05bc7ad6065f02a114f0950345ea80",
+      "object_sha256": "08bf025422ee25a5a91eba894c75cf9d06981c0a2b280c9f457417b29c927324",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355IndicatorBlock0.lean": {
+      "source_sha256": "0a0860a1c251e87419ff24793c7721c7ba335d0ecf1ef2048eeb97577f5f574a",
+      "object_sha256": "8ab77efed3a8c6b17463d83c7014ed15d3f74db00ce613f26e43d6d847dd8d51",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355Leaf0000.lean": {
+      "source_sha256": "96d166de6c92ae71cd2bc9fc5a9e470a60336852f6fe9a0a851a52f38372949d",
+      "object_sha256": "a8f8d86f34ad87622978a4b6f887ccd9c13f4cc766cbbaee339282ef4ff0161d",
+      "log_sha256": "25a983cb5a6d1a47360d87bb394e55234e01969b06d3d78cc0ab665ee2c2744c",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355SectionAll.lean": {
+      "source_sha256": "4b3ea92323ce8aeb87e2d9e61e81064bffcf0068f05e5300980980fc5635b412",
+      "object_sha256": "0542854a5dff7b07c4e2a29dacab53a8cbde9a0d02b999ab246a82153a36d46d",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355SectionBlock0.lean": {
+      "source_sha256": "7830d83a464aa7f66bdb486625b801a94c1203b0ef027e0e487360eadf476440",
+      "object_sha256": "94e3d814e5e2b49be0f8752588f53f0d217925e6c3f295911e984aa150146e9b",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355SectionBlock1.lean": {
+      "source_sha256": "5a5e925ce43d90b8df51c5f079ba11758ed719874edf5992128eb27a20ddee68",
+      "object_sha256": "d8f1fa42a46079517a21c05f5b261fb69ec9f03e0d5a5761e976299f935bd614",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355SectionBlock2.lean": {
+      "source_sha256": "4356ea077ad3a31aa1fe3379812938dd67ac91abbc26862b54cc40b7219c05ac",
+      "object_sha256": "036eebd20255e403e3274e197d5d60efbb5fc1268809126e845befc8827c7f67",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355SectionBlock3.lean": {
+      "source_sha256": "d7fd549a56cc9d94bcceddc5c522e7e1881a6a8ba3f1570380709b194c55e9b8",
+      "object_sha256": "39c6bac2965c0b165fb256be766e5d8d360f56bbfca8fa84973be7dfaf606380",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355SourceAll.lean": {
+      "source_sha256": "fbb3d1012cdb31268a0bcde9d6d8317fcf44afe333cf709b3e65de4e93fa8576",
+      "object_sha256": "b2431f31d7455bc6b31726904347233e2f4ccdd81d56340964d319cc0096f8af",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355SourceBlock0.lean": {
+      "source_sha256": "cfd8ec9fddd3b95b7770d81bb58b46a5fb2488faaf2bb5b1a3e23109811586e0",
+      "object_sha256": "4587bc01314bc5706e06190324f6875f5ad6cf4b435f60204e665ea2f3ed64cd",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355Sources00.lean": {
+      "source_sha256": "53c32cd7f8044c8234896e454267e8e69bfb99f940ee3323249812f20c7447ac",
+      "object_sha256": "2c62bc4a2cd3e4fe797ec43153e2b858b095663f61e7a488f45bd537f85f72d2",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355Sources01.lean": {
+      "source_sha256": "c9087b29f76a450b04450099f841c4de99e36c240875b26ee9f71ebdfb50cffe",
+      "object_sha256": "8b5388defe394872f2abbf6732551f26f87c5247e473461d24e93268a9ea68c3",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355Sources02.lean": {
+      "source_sha256": "22d73b200d8c4a7e865f828c9a7b9d72ff6573336ae57ae932f160bd165305f1",
+      "object_sha256": "9daa633848e6e78c5cb8083331d61604e684843b97b8789dafb56a852abd24fa",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355Tests.lean": {
+      "source_sha256": "4632f9324a67d94cfc215acc5372a565a2eed2dc727cd857d17ad5279ccdd352",
+      "object_sha256": "ac6f462a1fac432690b8f819c889bf12d181427e910b1b65b98e0a41746bb91e",
+      "log_sha256": "ae3f6c9b00c413c9a71ed694653dedea139ce2d3bc4c07f99a8e21a58c685820",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused355Tree.lean": {
+      "source_sha256": "4a2ace9ecd8003770440c14472fc306822712a982fcf3e21a92662cc0d0a4391",
+      "object_sha256": "54e2a470b0729f8e36fe131562bc85245ebfcda836deff738ac3360b68af8b94",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    }
+  }
+}

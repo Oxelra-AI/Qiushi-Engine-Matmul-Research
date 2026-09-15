@@ -1,0 +1,392 @@
+Qiushi.CNF.bit_false : Eq.{1} (Qiushi.CNF.bit false) 0
+'Qiushi.CNF.bit_false' does not depend on any axioms
+Qiushi.CNF.bit_true : Eq.{1} (Qiushi.CNF.bit true) 1
+'Qiushi.CNF.bit_true' does not depend on any axioms
+Qiushi.CNF.bit_le_one : ∀ (b : Bool), LE.le.{0} (Qiushi.CNF.bit b) 1
+'Qiushi.CNF.bit_le_one' does not depend on any axioms
+@Qiushi.CNF.copyCount_le.{u_1} : ∀ {Q : Type u_1} {cap : Q → ℕ} (y : Qiushi.CNF.Copies.{u_1} cap) (q : Q),
+  LE.le.{0} (Qiushi.CNF.copyCount.{u_1} y q) (cap q)
+'Qiushi.CNF.copyCount_le' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Qiushi.CNF.threshold_sum : ∀ (n x : ℕ), Eq.{1} (∑ j, Qiushi.CNF.bit (decide (LT.lt.{0} (↑j) x))) (min.{0} n x)
+'Qiushi.CNF.threshold_sum' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Qiushi.CNF.copyCount_threshold.{u_1} : ∀ {Q : Type u_1} (cap x : Q → ℕ),
+  (∀ (q : Q), LE.le.{0} (x q) (cap q)) →
+    Eq.{u_1 + 1} (Qiushi.CNF.copyCount.{u_1} (Qiushi.CNF.thresholdCopies.{u_1} cap x)) x
+'Qiushi.CNF.copyCount_threshold' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Qiushi.CNF.bounded_iff_copies.{u_1} : ∀ {Q : Type u_1} (cap x : Q → ℕ),
+  (∀ (q : Q), LE.le.{0} (x q) (cap q)) ↔ ∃ y, Eq.{u_1 + 1} (Qiushi.CNF.copyCount.{u_1} y) x
+'Qiushi.CNF.bounded_iff_copies' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Qiushi.CNF.bounded_integer_iff_copies.{u_1} : ∀ {Q : Type u_1} (cap : Q → ℕ) (x : Q → ℤ),
+  (∀ (q : Q), LE.le.{0} 0 (x q) ∧ LE.le.{0} (x q) ↑(cap q)) ↔
+    ∃ y, ∀ (q : Q), Eq.{1} (↑(Qiushi.CNF.copyCount.{u_1} y q)) (x q)
+'Qiushi.CNF.bounded_integer_iff_copies' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Qiushi.CNF.bounded_system_iff_copies.{u_1} : ∀ {Q : Type u_1} (cap : Q → ℕ) (P : (Q → ℕ) → Prop),
+  (∃ x, (∀ (q : Q), LE.le.{0} (x q) (cap q)) ∧ P x) ↔ ∃ y, P (Qiushi.CNF.copyCount.{u_1} y)
+'Qiushi.CNF.bounded_system_iff_copies' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Qiushi.CNF.row_sum_copies.{u_1} : ∀ {Q : Type u_1} [DecidableEq.{u_1 + 1} Q] {cap : Q → ℕ} (row : Finset.{u_1} Q)
+  (y : Qiushi.CNF.Copies.{u_1} cap),
+  Eq.{1} (∑ q ∈ row, Qiushi.CNF.copyCount.{u_1} y q)
+    (∑ p ∈ Finset.sigma.{u_1, 0} row fun _q => Finset.univ.{0},
+      Qiushi.CNF.bit (y (Sigma.fst.{u_1, 0} p) (Sigma.snd.{u_1, 0} p)))
+'Qiushi.CNF.row_sum_copies' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Qiushi.CNF.occupation_iff_copies.{u_1,
+    u_2} : ∀ {Q : Type u_1} {R : Type u_2} [inst : Fintype.{u_1} Q] (cap : Q → ℕ) (rows : R → Finset.{u_1} Q)
+  (rhs : R → ℤ) (target : ℕ),
+  (∃ x, (∀ (q : Q), LE.le.{0} (x q) (cap q)) ∧ Qiushi.CNF.Occupation.{u_1, u_2} rows rhs target x) ↔
+    ∃ y, Qiushi.CNF.Occupation.{u_1, u_2} rows rhs target (Qiushi.CNF.copyCount.{u_1} y)
+'Qiushi.CNF.occupation_iff_copies' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Qiushi.CNF.threshold_monotone.{u_1} : ∀ {Q : Type u_1} (cap x : Q → ℕ) (q : Q) (i j : Fin (cap q)),
+  LE.le.{0} i j →
+    Eq.{1} (Qiushi.CNF.thresholdCopies.{u_1} cap x q j) true → Eq.{1} (Qiushi.CNF.thresholdCopies.{u_1} cap x q i) true
+'Qiushi.CNF.threshold_monotone' depends on axioms: [propext]
+Qiushi.CNF.prefix_zero : ∀ (x : ℕ → Bool), Eq.{1} (Qiushi.CNF.prefixCount x 0) 0
+'Qiushi.CNF.prefix_zero' does not depend on any axioms
+Qiushi.CNF.prefix_succ : ∀ (x : ℕ → Bool) (i : ℕ),
+  Eq.{1} (Qiushi.CNF.prefixCount x (HAdd.hAdd.{0, 0, 0} i 1))
+    (HAdd.hAdd.{0, 0, 0} (Qiushi.CNF.prefixCount x i) (ite.{1} (Eq.{1} (x i) true) 1 0))
+'Qiushi.CNF.prefix_succ' does not depend on any axioms
+Qiushi.CNF.prefix_le : ∀ (x : ℕ → Bool) (n : ℕ), LE.le.{0} (Qiushi.CNF.prefixCount x n) n
+'Qiushi.CNF.prefix_le' depends on axioms: [propext, Quot.sound.{u}]
+Qiushi.CNF.thresholds_forward : ∀ (x : ℕ → Bool) (n K : ℕ), Qiushi.CNF.Forward x (Qiushi.CNF.thresholds x) n K
+'Qiushi.CNF.thresholds_forward' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Qiushi.CNF.forward_forces : ∀ {x : ℕ → Bool} {y : ℕ → ℕ → Bool} {n K : ℕ},
+  Qiushi.CNF.Forward x y n K →
+    ∀ (i : ℕ),
+      LE.le.{0} i n →
+        ∀ (j : ℕ),
+          LT.lt.{0} j K →
+            LE.le.{0} (HAdd.hAdd.{0, 0, 0} j 1) (Qiushi.CNF.prefixCount x i) →
+              Eq.{1} (y i (HAdd.hAdd.{0, 0, 0} j 1)) true
+'Qiushi.CNF.forward_forces' depends on axioms: [propext, Quot.sound.{u}]
+Qiushi.CNF.forward_atmost_iff : ∀ (x : ℕ → Bool) (n k : ℕ),
+  (∃ y, Qiushi.CNF.Forward x y n (HAdd.hAdd.{0, 0, 0} k 1) ∧ Eq.{1} (y n (HAdd.hAdd.{0, 0, 0} k 1)) false) ↔
+    LE.le.{0} (Qiushi.CNF.prefixCount x n) k
+'Qiushi.CNF.forward_atmost_iff' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Qiushi.CNF.sat_ofClauses.{u_1} : ∀ {V : Type u_1} (a : V → Bool) (cs : List.{u_1} (Std.Sat.CNF.Clause.{u_1} V)),
+  Std.Sat.CNF.Sat.{u_1} a (Qiushi.CNF.ofClauses.{u_1} cs) ↔
+    ∀ (c : Std.Sat.CNF.Clause.{u_1} V), Membership.mem.{u_1, u_1} cs c → Eq.{1} (Std.Sat.CNF.Clause.eval.{u_1} a c) true
+'Qiushi.CNF.sat_ofClauses' depends on axioms: [propext, Quot.sound.{u}]
+@Qiushi.CNF.clause_imp.{u_1} : ∀ {V : Type u_1} (a : V → Bool) (u v : V),
+  Eq.{1}
+      (Std.Sat.CNF.Clause.eval.{u_1} a
+        (List.cons.{u_1} (Prod.mk.{u_1, 0} u false) (List.cons.{u_1} (Prod.mk.{u_1, 0} v true) List.nil.{u_1})))
+      true ↔
+    Eq.{1} (a u) true → Eq.{1} (a v) true
+'Qiushi.CNF.clause_imp' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Qiushi.CNF.clause_inc.{u_1} : ∀ {V : Type u_1} (a : V → Bool) (u v w : V),
+  Eq.{1}
+      (Std.Sat.CNF.Clause.eval.{u_1} a
+        (List.cons.{u_1} (Prod.mk.{u_1, 0} u false)
+          (List.cons.{u_1} (Prod.mk.{u_1, 0} v false) (List.cons.{u_1} (Prod.mk.{u_1, 0} w true) List.nil.{u_1}))))
+      true ↔
+    Eq.{1} (a u) true → Eq.{1} (a v) true → Eq.{1} (a w) true
+'Qiushi.CNF.clause_inc' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Qiushi.CNF.sat_forwardStep : ∀ (x : ℕ → Bool) (y : ℕ → ℕ → Bool) (i K : ℕ),
+  (∀ (c : Std.Sat.CNF.Clause.{0} Qiushi.CNF.CounterVar),
+      Membership.mem.{0, 0} (Qiushi.CNF.forwardStep i K) c →
+        Eq.{1} (Std.Sat.CNF.Clause.eval.{0} (Qiushi.CNF.assign x y) c) true) ↔
+    (Eq.{1} (x i) true → Eq.{1} (y (HAdd.hAdd.{0, 0, 0} i 1) 1) true) ∧
+      (Ne.{1} i 0 →
+        (∀ (j : ℕ),
+            LT.lt.{0} j K →
+              Eq.{1} (y i (HAdd.hAdd.{0, 0, 0} j 1)) true →
+                Eq.{1} (y (HAdd.hAdd.{0, 0, 0} i 1) (HAdd.hAdd.{0, 0, 0} j 1)) true) ∧
+          ∀ (j : ℕ),
+            LT.lt.{0} j (HSub.hSub.{0, 0, 0} K 1) →
+              Eq.{1} (x i) true →
+                Eq.{1} (y i (HAdd.hAdd.{0, 0, 0} j 1)) true →
+                  Eq.{1} (y (HAdd.hAdd.{0, 0, 0} i 1) (HAdd.hAdd.{0, 0, 0} j 2)) true)
+'Qiushi.CNF.sat_forwardStep' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Qiushi.CNF.sat_forwardCNF : ∀ (x : ℕ → Bool) (y : ℕ → ℕ → Bool) (n K : ℕ),
+  Std.Sat.CNF.Sat.{0} (Qiushi.CNF.assign x y) (Qiushi.CNF.forwardCNF n K) ↔ Qiushi.CNF.Forward x y n K
+'Qiushi.CNF.sat_forwardCNF' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Qiushi.CNF.sat_atMostCNF : ∀ (x : ℕ → Bool) (y : ℕ → ℕ → Bool) (n k : ℕ),
+  Std.Sat.CNF.Sat.{0} (Qiushi.CNF.assign x y) (Qiushi.CNF.atMostCNF n k) ↔
+    Qiushi.CNF.Forward x y n (HAdd.hAdd.{0, 0, 0} k 1) ∧ Eq.{1} (y n (HAdd.hAdd.{0, 0, 0} k 1)) false
+'Qiushi.CNF.sat_atMostCNF' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Qiushi.CNF.atMostCNF_correct : ∀ (x : ℕ → Bool) (n k : ℕ),
+  (∃ y, Std.Sat.CNF.Sat.{0} (Qiushi.CNF.assign x y) (Qiushi.CNF.atMostCNF n k)) ↔
+    LE.le.{0} (Qiushi.CNF.prefixCount x n) k
+'Qiushi.CNF.atMostCNF_correct' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Qiushi.CNF.sat_conjoin.{u_1} : ∀ {V : Type u_1} (a : V → Bool) (fs : List.{u_1} (Std.Sat.CNF.{u_1} V)),
+  Std.Sat.CNF.Sat.{u_1} a (Qiushi.CNF.conjoin.{u_1} fs) ↔
+    ∀ (f : Std.Sat.CNF.{u_1} V), Membership.mem.{u_1, u_1} fs f → Std.Sat.CNF.Sat.{u_1} a f
+'Qiushi.CNF.sat_conjoin' depends on axioms: [propext, Quot.sound.{u}]
+@Qiushi.CNF.shared_comp_embed.{u_1, u_2,
+    u_3} : ∀ {P : Type u_1} {R : Type u_2} {A : R → Type u_3} (x : P → Bool) (ys : (r : R) → A r → Bool) (r : R),
+  Eq.{max (u_1 + 1) (u_3 + 1)}
+    (Function.comp.{max (u_3 + 1) (u_1 + 1), max (max (u_3 + 1) (u_2 + 1)) (u_1 + 1), 1}
+      (Qiushi.CNF.sharedAssignment.{u_1, u_2, u_3} x ys) (Qiushi.CNF.embedCounter.{u_1, u_2, u_3} r))
+    (Sum.elim.{u_1, u_3, 1} x (ys r))
+'Qiushi.CNF.shared_comp_embed' depends on axioms: [Quot.sound.{u}]
+@Qiushi.CNF.auxiliary_blocks_disjoint.{u_1, u_2,
+    u_3} : ∀ {P : Type u_1} {R : Type u_2} {A : R → Type u_3} {r s : R},
+  Ne.{u_2 + 1} r s →
+    ∀ (a : A r) (b : A s),
+      Ne.{max (max (u_1 + 1) (u_2 + 1)) (u_3 + 1)} (Qiushi.CNF.embedCounter.{u_1, u_2, u_3} r (Sum.inr.{u_1, u_3} a))
+        (Qiushi.CNF.embedCounter.{u_1, u_2, u_3} s (Sum.inr.{u_1, u_3} b))
+'Qiushi.CNF.auxiliary_blocks_disjoint' does not depend on any axioms
+@Qiushi.CNF.sat_familyCNF.{u_1,
+    u_2} : ∀ {P : Type u_1} {m : ℕ} {A : Fin m → Type u_2}
+  (fs : (r : Fin m) → Std.Sat.CNF.{max u_2 u_1} (Sum.{u_1, u_2} P (A r)))
+  (a : Qiushi.CNF.SharedVars.{u_1, 0, u_2} P A → Bool),
+  Std.Sat.CNF.Sat.{max u_1 u_2} a (Qiushi.CNF.familyCNF.{u_1, u_2} fs) ↔
+    ∀ (r : Fin m),
+      Std.Sat.CNF.Sat.{max u_2 u_1}
+        (Function.comp.{(max u_2 u_1) + 1, max (u_1 + 1) (u_2 + 1), 1} a (Qiushi.CNF.embedCounter.{u_1, 0, u_2} r))
+        (fs r)
+'Qiushi.CNF.sat_familyCNF' depends on axioms: [propext, Quot.sound.{u}]
+@Qiushi.CNF.disjoint_extensions_iff.{u_1,
+    u_2} : ∀ {P : Type u_1} {m : ℕ} {A : Fin m → Type u_2}
+  (fs : (r : Fin m) → Std.Sat.CNF.{max u_2 u_1} (Sum.{u_1, u_2} P (A r))) (x : P → Bool),
+  (∃ a,
+      (∀ (p : P), Eq.{1} (a (Sum.inl.{u_1, u_2} p)) (x p)) ∧
+        Std.Sat.CNF.Sat.{max u_1 u_2} a (Qiushi.CNF.familyCNF.{u_1, u_2} fs)) ↔
+    ∀ (r : Fin m), ∃ y, Std.Sat.CNF.Sat.{max u_2 u_1} (Sum.elim.{u_1, u_2, 1} x y) (fs r)
+'Qiushi.CNF.disjoint_extensions_iff' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Qiushi.CNF.duplicate_cnf.{u_1} : ∀ {V : Type u_1} (a : V → Bool) (f : Std.Sat.CNF.{u_1} V),
+  Std.Sat.CNF.Sat.{u_1} a (HAppend.hAppend.{u_1, u_1, u_1} f f) ↔ Std.Sat.CNF.Sat.{u_1} a f
+'Qiushi.CNF.duplicate_cnf' depends on axioms: [propext, Quot.sound.{u}]
+@Qiushi.CNF.omit_satisfied_cnf.{u_1} : ∀ {V : Type u_1} (a : V → Bool) (f g : Std.Sat.CNF.{u_1} V),
+  Std.Sat.CNF.Sat.{u_1} a g →
+    (Std.Sat.CNF.Sat.{u_1} a (HAppend.hAppend.{u_1, u_1, u_1} f g) ↔ Std.Sat.CNF.Sat.{u_1} a f)
+'Qiushi.CNF.omit_satisfied_cnf' depends on axioms: [propext, Quot.sound.{u}]
+@Qiushi.CNF.clauses_subset_preserves_sat.{u_1} : ∀ {V : Type u_1} (a : V → Bool) (f g : Std.Sat.CNF.{u_1} V),
+  (∀ (c : Std.Sat.CNF.Clause.{u_1} V),
+      Membership.mem.{u_1, u_1} (Std.Sat.CNF.clauses.{u_1} f) c →
+        Membership.mem.{u_1, u_1} (Std.Sat.CNF.clauses.{u_1} g) c) →
+    Std.Sat.CNF.Sat.{u_1} a g → Std.Sat.CNF.Sat.{u_1} a f
+'Qiushi.CNF.clauses_subset_preserves_sat' depends on axioms: [propext, Quot.sound.{u}]
+@Qiushi.CNF.sat_dedupCNF.{u_1} : ∀ {V : Type u_1} [inst : DecidableEq.{u_1 + 1} V] (a : V → Bool)
+  (f : Std.Sat.CNF.{u_1} V), Std.Sat.CNF.Sat.{u_1} a (Qiushi.CNF.dedupCNF.{u_1} f) ↔ Std.Sat.CNF.Sat.{u_1} a f
+'Qiushi.CNF.sat_dedupCNF' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Qiushi.CNF.eval_dedup_literals.{u_1} : ∀ {V : Type u_1} [inst : DecidableEq.{u_1 + 1} V] (a : V → Bool)
+  (c : Std.Sat.CNF.Clause.{u_1} V),
+  Eq.{1} (Std.Sat.CNF.Clause.eval.{u_1} a (List.dedup.{u_1} c)) (Std.Sat.CNF.Clause.eval.{u_1} a c)
+'Qiushi.CNF.eval_dedup_literals' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Qiushi.CNF.tautological_clause.{u_1} : ∀ {V : Type u_1} (a : V → Bool) (c : Std.Sat.CNF.Clause.{u_1} V) (p : V),
+  Membership.mem.{u_1, u_1} c (Prod.mk.{u_1, 0} p true) →
+    Membership.mem.{u_1, u_1} c (Prod.mk.{u_1, 0} p false) → Eq.{1} (Std.Sat.CNF.Clause.eval.{u_1} a c) true
+'Qiushi.CNF.tautological_clause' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Qiushi.CNF.prefix_sum : ∀ (x : ℕ → Bool) (n : ℕ),
+  Eq.{1} (Qiushi.CNF.prefixCount x n) (∑ i ∈ Finset.range n, Qiushi.CNF.bit (x i))
+'Qiushi.CNF.prefix_sum' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Qiushi.CNF.prefix_complement : ∀ (x : ℕ → Bool) (n : ℕ),
+  Eq.{1} (HAdd.hAdd.{0, 0, 0} (Qiushi.CNF.prefixCount x n) (Qiushi.CNF.prefixCount (fun i => !x i) n)) n
+'Qiushi.CNF.prefix_complement' depends on axioms: [propext, Quot.sound.{u}]
+Qiushi.CNF.prefix_eq_zero : ∀ (x : ℕ → Bool) (n : ℕ),
+  Eq.{1} (Qiushi.CNF.prefixCount x n) 0 ↔ ∀ (i : ℕ), LT.lt.{0} i n → Eq.{1} (x i) false
+'Qiushi.CNF.prefix_eq_zero' depends on axioms: [propext, Quot.sound.{u}]
+Qiushi.CNF.rowCNF_correct : ∀ (x : ℕ → Bool) (n : ℕ) (cap : ℤ),
+  (∃ y, Std.Sat.CNF.Sat.{0} (Qiushi.CNF.assign x y) (Qiushi.CNF.rowCNF n cap)) ↔
+    LE.le.{0} (↑(Qiushi.CNF.prefixCount x n)) cap
+'Qiushi.CNF.rowCNF_correct' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Qiushi.CNF.eval_flip_clause : ∀ (x : ℕ → Bool) (y : ℕ → ℕ → Bool) (c : Std.Sat.CNF.Clause.{0} Qiushi.CNF.CounterVar),
+  Eq.{1} (Std.Sat.CNF.Clause.eval.{0} (Qiushi.CNF.assign x y) (List.map.{0, 0} Qiushi.CNF.flipPrimaryLiteral c))
+    (Std.Sat.CNF.Clause.eval.{0} (Qiushi.CNF.assign (fun i => !x i) y) c)
+'Qiushi.CNF.eval_flip_clause' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Qiushi.CNF.sat_flipPrimary : ∀ (x : ℕ → Bool) (y : ℕ → ℕ → Bool) (f : Std.Sat.CNF.{0} Qiushi.CNF.CounterVar),
+  Std.Sat.CNF.Sat.{0} (Qiushi.CNF.assign x y) (Qiushi.CNF.flipPrimary f) ↔
+    Std.Sat.CNF.Sat.{0} (Qiushi.CNF.assign (fun i => !x i) y) f
+'Qiushi.CNF.sat_flipPrimary' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Qiushi.CNF.atLeastCNF_correct : ∀ (x : ℕ → Bool) (n k : ℕ),
+  (∃ y, Std.Sat.CNF.Sat.{0} (Qiushi.CNF.assign x y) (Qiushi.CNF.atLeastCNF n k)) ↔
+    LE.le.{0} k (Qiushi.CNF.prefixCount x n)
+'Qiushi.CNF.atLeastCNF_correct' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Qiushi.CNF.exact_two_counters : ∀ (x : ℕ → Bool) (n k : ℕ),
+  (∃ upper lower,
+      Std.Sat.CNF.Sat.{0} (Qiushi.CNF.assign x upper) (Qiushi.CNF.rowCNF n ↑k) ∧
+        Std.Sat.CNF.Sat.{0} (Qiushi.CNF.assign x lower) (Qiushi.CNF.atLeastCNF n k)) ↔
+    Eq.{1} (Qiushi.CNF.prefixCount x n) k
+'Qiushi.CNF.exact_two_counters' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Qiushi.CNF.previous_thresholds : ∀ (x : ℕ → Bool) (i j : ℕ),
+  Eq.{1} (Qiushi.CNF.previous (Qiushi.CNF.thresholds x) i j) (Qiushi.CNF.thresholds x i j)
+'Qiushi.CNF.previous_thresholds' depends on axioms: [propext]
+Qiushi.CNF.thresholds_reverse : ∀ (x : ℕ → Bool) (n K : ℕ), Qiushi.CNF.Reverse x (Qiushi.CNF.thresholds x) n K
+'Qiushi.CNF.thresholds_reverse' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Qiushi.CNF.reverse_bounds : ∀ {x : ℕ → Bool} {y : ℕ → ℕ → Bool} {n K : ℕ},
+  Qiushi.CNF.Reverse x y n K →
+    ∀ (i : ℕ),
+      LE.le.{0} i n →
+        LT.lt.{0} 0 i →
+          ∀ (j : ℕ),
+            LT.lt.{0} j K →
+              Eq.{1} (y i (HAdd.hAdd.{0, 0, 0} j 1)) true →
+                LE.le.{0} (HAdd.hAdd.{0, 0, 0} j 1) (Qiushi.CNF.prefixCount x i)
+'Qiushi.CNF.reverse_bounds' depends on axioms: [propext, Quot.sound.{u}]
+@Qiushi.CNF.clause_or.{u_1} : ∀ {V : Type u_1} (a : V → Bool) (u v w : V),
+  Eq.{1}
+      (Std.Sat.CNF.Clause.eval.{u_1} a
+        (List.cons.{u_1} (Prod.mk.{u_1, 0} u false)
+          (List.cons.{u_1} (Prod.mk.{u_1, 0} v true) (List.cons.{u_1} (Prod.mk.{u_1, 0} w true) List.nil.{u_1}))))
+      true ↔
+    Eq.{1} (a u) true → Eq.{1} (a v) true ∨ Eq.{1} (a w) true
+'Qiushi.CNF.clause_or' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Qiushi.CNF.sat_reverseStep : ∀ (x : ℕ → Bool) (y : ℕ → ℕ → Bool) (i K : ℕ),
+  (∀ (c : Std.Sat.CNF.Clause.{0} Qiushi.CNF.CounterVar),
+      Membership.mem.{0, 0} (Qiushi.CNF.reverseStep i K) c →
+        Eq.{1} (Std.Sat.CNF.Clause.eval.{0} (Qiushi.CNF.assign x y) c) true) ↔
+    ∀ (j : ℕ),
+      LT.lt.{0} j K →
+        (Eq.{1} (y (HAdd.hAdd.{0, 0, 0} i 1) (HAdd.hAdd.{0, 0, 0} j 1)) true →
+            Eq.{1} (Qiushi.CNF.previous y i (HAdd.hAdd.{0, 0, 0} j 1)) true ∨ Eq.{1} (x i) true) ∧
+          (Eq.{1} (y (HAdd.hAdd.{0, 0, 0} i 1) (HAdd.hAdd.{0, 0, 0} j 1)) true →
+            Eq.{1} (Qiushi.CNF.previous y i (HAdd.hAdd.{0, 0, 0} j 1)) true ∨ Eq.{1} (Qiushi.CNF.previous y i j) true)
+'Qiushi.CNF.sat_reverseStep' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Qiushi.CNF.sat_reverseCNF : ∀ (x : ℕ → Bool) (y : ℕ → ℕ → Bool) (n K : ℕ),
+  Std.Sat.CNF.Sat.{0} (Qiushi.CNF.assign x y) (Qiushi.CNF.reverseCNF n K) ↔ Qiushi.CNF.Reverse x y n K
+'Qiushi.CNF.sat_reverseCNF' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Qiushi.CNF.sat_exactPrefixCNF : ∀ (x : ℕ → Bool) (y : ℕ → ℕ → Bool) (n k : ℕ),
+  Std.Sat.CNF.Sat.{0} (Qiushi.CNF.assign x y) (Qiushi.CNF.exactPrefixCNF n k) ↔
+    Qiushi.CNF.Forward x y n (HAdd.hAdd.{0, 0, 0} k 1) ∧
+      Qiushi.CNF.Reverse x y n (HAdd.hAdd.{0, 0, 0} k 1) ∧
+        Eq.{1} (y n k) true ∧ Eq.{1} (y n (HAdd.hAdd.{0, 0, 0} k 1)) false
+'Qiushi.CNF.sat_exactPrefixCNF' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Qiushi.CNF.exactPrefixCNF_correct : ∀ (x : ℕ → Bool) (n k : ℕ),
+  LT.lt.{0} 0 n →
+    ((∃ y, Std.Sat.CNF.Sat.{0} (Qiushi.CNF.assign x y) (Qiushi.CNF.exactPrefixCNF n k)) ↔
+      Eq.{1} (Qiushi.CNF.prefixCount x n) k)
+'Qiushi.CNF.exactPrefixCNF_correct' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Qiushi.CNF.prefix_fin_sum : ∀ (x : ℕ → Bool) (n : ℕ), Eq.{1} (Qiushi.CNF.prefixCount x n) (∑ i, Qiushi.CNF.bit (x ↑i))
+'Qiushi.CNF.prefix_fin_sum' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Qiushi.CNF.setSignal_count.{u_1} : ∀ {P : Type u_1} (a : P → Bool) (s : Finset.{u_1} P),
+  Eq.{1} (Qiushi.CNF.prefixCount (Qiushi.CNF.setSignal.{u_1} a s) (Finset.card.{u_1} s)) (∑ p ∈ s, Qiushi.CNF.bit (a p))
+'Qiushi.CNF.setSignal_count' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Qiushi.CNF.sat_finiteRowCNF.{u_1} : ∀ {P : Type u_1} (a : P → Bool) (s : Finset.{u_1} P) (cap : ℤ) (negated : Bool)
+  (y : Prod.{0, 0} ℕ ℕ → Bool),
+  Std.Sat.CNF.Sat.{u_1} (Sum.elim.{u_1, 0, 1} (Qiushi.CNF.optionalValue.{u_1} a) y)
+      (Qiushi.CNF.finiteRowCNF.{u_1} s cap negated) ↔
+    Std.Sat.CNF.Sat.{0} (Qiushi.CNF.assign (Qiushi.CNF.setSignal.{u_1} a s) fun i j => y (Prod.mk.{0, 0} i j))
+      (ite.{1} (Eq.{1} negated true) (Qiushi.CNF.flipPrimary (Qiushi.CNF.rowCNF (Finset.card.{u_1} s) cap))
+        (Qiushi.CNF.rowCNF (Finset.card.{u_1} s) cap))
+'Qiushi.CNF.sat_finiteRowCNF' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Qiushi.CNF.exists_uncurry : ∀ (P : (ℕ → ℕ → Bool) → Prop), (∃ y, P fun i j => y (Prod.mk.{0, 0} i j)) ↔ ∃ y, P y
+'Qiushi.CNF.exists_uncurry' does not depend on any axioms
+@Qiushi.CNF.finiteRowCNF_correct.{u_1} : ∀ {P : Type u_1} (a : P → Bool) (s : Finset.{u_1} P) (cap : ℤ)
+  (negated : Bool),
+  (∃ y,
+      Std.Sat.CNF.Sat.{u_1} (Sum.elim.{u_1, 0, 1} (Qiushi.CNF.optionalValue.{u_1} a) y)
+        (Qiushi.CNF.finiteRowCNF.{u_1} s cap negated)) ↔
+    LE.le.{0}
+      (ite.{1} (Eq.{1} negated true) (HSub.hSub.{0, 0, 0} ↑(Finset.card.{u_1} s) ↑(∑ p ∈ s, Qiushi.CNF.bit (a p)))
+        ↑(∑ p ∈ s, Qiushi.CNF.bit (a p)))
+      cap
+'Qiushi.CNF.finiteRowCNF_correct' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Qiushi.CNF.booleanSystemCNF_correct.{u_1} : ∀ {P : Type u_1} [inst : Fintype.{u_1} P] {r : ℕ}
+  (rows : Fin r → Finset.{u_1} P) (rhs : Fin r → ℤ) (target : ℕ) (a : P → Bool),
+  (∃ v,
+      (∀ (p : Option.{u_1} P), Eq.{1} (v (Sum.inl.{u_1, 0} p)) (Qiushi.CNF.optionalValue.{u_1} a p)) ∧
+        Std.Sat.CNF.Sat.{u_1} v (Qiushi.CNF.booleanSystemCNF.{u_1} rows rhs target)) ↔
+    Eq.{1} (∑ p, Qiushi.CNF.bit (a p)) target ∧ ∀ (i : Fin r), LE.le.{0} (∑ p ∈ rows i, ↑(Qiushi.CNF.bit (a p))) (rhs i)
+'Qiushi.CNF.booleanSystemCNF_correct' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Qiushi.CNF.copy_total.{u_1} : ∀ {Q : Type u_1} [inst : Fintype.{u_1} Q] {cap : Q → ℕ}
+  (y : Qiushi.CNF.Copies.{u_1} cap),
+  Eq.{1} (∑ q, Qiushi.CNF.copyCount.{u_1} y q) (∑ p, Qiushi.CNF.bit (Qiushi.CNF.copyValue.{u_1} y p))
+'Qiushi.CNF.copy_total' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Qiushi.CNF.copy_row_int.{u_1} : ∀ {Q : Type u_1} [DecidableEq.{u_1 + 1} Q] {cap : Q → ℕ} (row : Finset.{u_1} Q)
+  (y : Qiushi.CNF.Copies.{u_1} cap),
+  Eq.{1} (∑ q ∈ row, ↑(Qiushi.CNF.copyCount.{u_1} y q))
+    (∑ p ∈ Finset.sigma.{u_1, 0} row fun _q => Finset.univ.{0}, ↑(Qiushi.CNF.bit (Qiushi.CNF.copyValue.{u_1} y p)))
+'Qiushi.CNF.copy_row_int' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Qiushi.CNF.copy_occupation.{u_1} : ∀ {Q : Type u_1} [inst : Fintype.{u_1} Q] [DecidableEq.{u_1 + 1} Q] {cap : Q → ℕ}
+  {r : ℕ} (rows : Fin r → Finset.{u_1} Q) (rhs : Fin r → ℤ) (target : ℕ) (y : Qiushi.CNF.Copies.{u_1} cap),
+  Qiushi.CNF.Occupation.{u_1, 0} rows rhs target (Qiushi.CNF.copyCount.{u_1} y) ↔
+    Eq.{1} (∑ p, Qiushi.CNF.bit (Qiushi.CNF.copyValue.{u_1} y p)) target ∧
+      ∀ (i : Fin r),
+        LE.le.{0} (∑ p ∈ Qiushi.CNF.expandedRows.{u_1} cap rows i, ↑(Qiushi.CNF.bit (Qiushi.CNF.copyValue.{u_1} y p)))
+          (rhs i)
+'Qiushi.CNF.copy_occupation' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Qiushi.CNF.sat_occupationCNF.{u_1} : ∀ {Q : Type u_1} [inst : Fintype.{u_1} Q] (cap : Q → ℕ) {r : ℕ}
+  (rows : Fin r → Finset.{u_1} Q) (rhs : Fin r → ℤ) (target : ℕ)
+  (v :
+    (Qiushi.CNF.SharedVars.{u_1, 0, 0} (Option.{u_1} (Qiushi.CNF.CopyVar.{u_1} cap)) fun x => Prod.{0, 0} ℕ ℕ) → Bool),
+  Std.Sat.CNF.Sat.{u_1} v (Qiushi.CNF.occupationCNF.{u_1} cap rows rhs target) ↔
+    Eq.{1} (v (Sum.inl.{u_1, 0} none.{u_1})) false ∧
+      Std.Sat.CNF.Sat.{u_1} v (Qiushi.CNF.booleanSystemCNF.{u_1} (Qiushi.CNF.expandedRows.{u_1} cap rows) rhs target)
+'Qiushi.CNF.sat_occupationCNF' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Qiushi.CNF.occupationCNF_for_copies.{u_1} : ∀ {Q : Type u_1} [inst : Fintype.{u_1} Q] [DecidableEq.{u_1 + 1} Q]
+  (cap : Q → ℕ) {r : ℕ} (rows : Fin r → Finset.{u_1} Q) (rhs : Fin r → ℤ) (target : ℕ)
+  (y : Qiushi.CNF.Copies.{u_1} cap),
+  (∃ v,
+      (∀ (q : Q) (j : Fin (cap q)), Eq.{1} (v (Sum.inl.{u_1, 0} (some.{u_1} (Sigma.mk.{u_1, 0} q j)))) (y q j)) ∧
+        Std.Sat.CNF.Sat.{u_1} v (Qiushi.CNF.occupationCNF.{u_1} cap rows rhs target)) ↔
+    Qiushi.CNF.Occupation.{u_1, 0} rows rhs target (Qiushi.CNF.copyCount.{u_1} y)
+'Qiushi.CNF.occupationCNF_for_copies' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Qiushi.CNF.occupation_cnf_equisatisfiable.{u_1} : ∀ {Q : Type u_1} [inst : Fintype.{u_1} Q] [DecidableEq.{u_1 + 1} Q]
+  (cap : Q → ℕ) {r : ℕ} (rows : Fin r → Finset.{u_1} Q) (rhs : Fin r → ℤ) (target : ℕ),
+  (∃ x, (∀ (q : Q), LE.le.{0} (x q) (cap q)) ∧ Qiushi.CNF.Occupation.{u_1, 0} rows rhs target x) ↔
+    ∃ v, Std.Sat.CNF.Sat.{u_1} v (Qiushi.CNF.occupationCNF.{u_1} cap rows rhs target)
+'Qiushi.CNF.occupation_cnf_equisatisfiable' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Qiushi.CNF.occupation_count_le_total.{u_1,
+    u_2} : ∀ {Q : Type u_1} {R : Type u_2} [inst : Fintype.{u_1} Q] {rows : R → Finset.{u_1} Q} {rhs : R → ℤ}
+  {target : ℕ} {x : Q → ℕ}, Qiushi.CNF.Occupation.{u_1, u_2} rows rhs target x → ∀ (q : Q), LE.le.{0} (x q) target
+'Qiushi.CNF.occupation_count_le_total' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Qiushi.CNF.singleton_caps_entailed.{u_1,
+    u_2} : ∀ {Q : Type u_1} {R : Type u_2} [inst : Fintype.{u_1} Q] [inst_1 : DecidableEq.{u_1 + 1} Q]
+  {rows : R → Finset.{u_1} Q} {rhs : R → ℤ} {target : ℕ} {cap : Q → ℤ},
+  Qiushi.CNF.SingletonCapSource.{u_1, u_2} rows rhs target cap →
+    ∀ {x : Q → ℕ},
+      Qiushi.CNF.Occupation.{u_1, u_2} rows rhs target x →
+        ∀ (q : Q), LE.le.{0} (x q) (Qiushi.CNF.clippedCaps.{u_1} cap target q)
+'Qiushi.CNF.singleton_caps_entailed' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Qiushi.CNF.singleton_occupation_cnf_equisatisfiable.{u_1} : ∀ {Q : Type u_1} [inst : Fintype.{u_1} Q]
+  [inst_1 : DecidableEq.{u_1 + 1} Q] {r : ℕ} (rows : Fin r → Finset.{u_1} Q) (rhs : Fin r → ℤ) (target : ℕ)
+  (cap : Q → ℤ),
+  Qiushi.CNF.SingletonCapSource.{u_1, 0} rows rhs target cap →
+    ((∃ x, Qiushi.CNF.Occupation.{u_1, 0} rows rhs target x) ↔
+      ∃ v,
+        Std.Sat.CNF.Sat.{u_1} v
+          (Qiushi.CNF.occupationCNF.{u_1} (Qiushi.CNF.clippedCaps.{u_1} cap target) rows rhs target))
+'Qiushi.CNF.singleton_occupation_cnf_equisatisfiable' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@[reducible] def Qiushi.CNF.Copies.{u_1} : {Q : Type u_1} → (Q → ℕ) → Type u_1 :=
+fun {Q} cap => (q : Q) → Fin (cap q) → Bool
+def Qiushi.CNF.copyCount.{u_1} : {Q : Type u_1} → {cap : Q → ℕ} → Qiushi.CNF.Copies.{u_1} cap → Q → ℕ :=
+fun {Q} {cap} y q => ∑ j, Qiushi.CNF.bit (y q j)
+def Qiushi.CNF.Occupation.{u_1, u_2} : {Q : Type u_1} →
+  {R : Type u_2} → [Fintype.{u_1} Q] → (R → Finset.{u_1} Q) → (R → ℤ) → ℕ → (Q → ℕ) → Prop :=
+fun {Q} {R} [Fintype.{u_1} Q] rows rhs target x =>
+  Eq.{1} (∑ q, x q) target ∧ ∀ (r : R), LE.le.{0} (∑ q ∈ rows r, ↑(x q)) (rhs r)
+def Qiushi.CNF.Forward : (ℕ → Bool) → (ℕ → ℕ → Bool) → ℕ → ℕ → Prop :=
+fun x y n K =>
+  ∀ (i : ℕ),
+    LT.lt.{0} i n →
+      (Eq.{1} (x i) true → Eq.{1} (y (HAdd.hAdd.{0, 0, 0} i 1) 1) true) ∧
+        (Ne.{1} i 0 →
+          (∀ (j : ℕ),
+              LT.lt.{0} j K →
+                Eq.{1} (y i (HAdd.hAdd.{0, 0, 0} j 1)) true →
+                  Eq.{1} (y (HAdd.hAdd.{0, 0, 0} i 1) (HAdd.hAdd.{0, 0, 0} j 1)) true) ∧
+            ∀ (j : ℕ),
+              LT.lt.{0} j (HSub.hSub.{0, 0, 0} K 1) →
+                Eq.{1} (x i) true →
+                  Eq.{1} (y i (HAdd.hAdd.{0, 0, 0} j 1)) true →
+                    Eq.{1} (y (HAdd.hAdd.{0, 0, 0} i 1) (HAdd.hAdd.{0, 0, 0} j 2)) true)
+def Qiushi.CNF.Reverse : (ℕ → Bool) → (ℕ → ℕ → Bool) → ℕ → ℕ → Prop :=
+fun x y n K =>
+  ∀ (i : ℕ),
+    LT.lt.{0} i n →
+      ∀ (j : ℕ),
+        LT.lt.{0} j K →
+          (Eq.{1} (y (HAdd.hAdd.{0, 0, 0} i 1) (HAdd.hAdd.{0, 0, 0} j 1)) true →
+              Eq.{1} (Qiushi.CNF.previous y i (HAdd.hAdd.{0, 0, 0} j 1)) true ∨ Eq.{1} (x i) true) ∧
+            (Eq.{1} (y (HAdd.hAdd.{0, 0, 0} i 1) (HAdd.hAdd.{0, 0, 0} j 1)) true →
+              Eq.{1} (Qiushi.CNF.previous y i (HAdd.hAdd.{0, 0, 0} j 1)) true ∨ Eq.{1} (Qiushi.CNF.previous y i j) true)
+def Qiushi.CNF.SingletonCapSource.{u_1, u_2} : {Q : Type u_1} →
+  {R : Type u_2} → [DecidableEq.{u_1 + 1} Q] → (R → Finset.{u_1} Q) → (R → ℤ) → ℕ → (Q → ℤ) → Prop :=
+fun {Q} {R} [DecidableEq.{u_1 + 1} Q] rows rhs target cap =>
+  ∀ (q : Q), Eq.{1} (cap q) ↑target ∨ ∃ i, Eq.{u_1 + 1} (rows i) (singleton.{u_1, u_1} q) ∧ Eq.{1} (rhs i) (cap q)
+def Qiushi.CNF.clippedCaps.{u_1} : {Q : Type u_1} → (Q → ℤ) → ℕ → Q → ℕ :=
+fun {Q} cap target q => (min.{0} (cap q) ↑target).toNat
+def Qiushi.CNF.occupationCNF.{u_1} : {Q : Type u_1} →
+  [Fintype.{u_1} Q] →
+    (cap : Q → ℕ) →
+      {r : ℕ} →
+        (Fin r → Finset.{u_1} Q) →
+          (Fin r → ℤ) →
+            ℕ →
+              Std.Sat.CNF.{u_1}
+                (Qiushi.CNF.SharedVars.{u_1, 0, 0} (Option.{u_1} (Qiushi.CNF.CopyVar.{u_1} cap)) fun x =>
+                  Prod.{0, 0} ℕ ℕ) :=
+fun {Q} [Fintype.{u_1} Q] cap {r} rows rhs target =>
+  Std.Sat.CNF.add.{u_1} (List.cons.{u_1} (Prod.mk.{u_1, 0} (Sum.inl.{u_1, 0} none.{u_1}) false) List.nil.{u_1})
+    (Qiushi.CNF.booleanSystemCNF.{u_1} (Qiushi.CNF.expandedRows.{u_1} cap rows) rhs target)

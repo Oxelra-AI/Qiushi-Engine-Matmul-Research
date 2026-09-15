@@ -1,0 +1,31 @@
+\begin{tikzpicture}[x=1cm,y=1cm,
+  box/.style={draw=ReportRule,fill=white,align=center,text width=6.2cm,
+    inner sep=8pt,font=\sffamily\small,minimum height=1.45cm},
+  flow/.style={-{Stealth[length=2.2mm]},thick,draw=ReportPrimary}]
+  \node[box] (finite) at (0,0)
+    {\textbf{Certified finite premises}\\Line bounds; eight 2-plane raises;\\affine-plane bounds};
+  \node[box] (split) at (7.15,0)
+    {\textbf{Full-tensor split flattening}\\$\sum_t\rk(A_t)\ge\rk(P)=27$\\At least four high-rank first factors};
+  \draw[dashed,ReportRule] (-3.38,-1.08) -- (10.53,-1.08);
+  \node[box,text width=13.35cm] (geometry) at (3.575,-2.15)
+    {\textbf{High-rank factors share an affine row or column coset}\\
+     Pairwise differences have rank one;\\
+     the normalized lower block has rank two};
+  \node[box,text width=13.35cm] (profile) at (3.575,-4.3)
+    {\textbf{Affine-plane caps force the profile $(16,1,3)$}\\
+     Exactly four high-rank first factors, three invertible\\
+     $\sum_t\rk(A_t)=16+2+9=27$: equality in the rank bound};
+  \node[box,text width=13.35cm] (sat) at (3.575,-6.45)
+    {\textbf{Equality forces cross-factor identities}\\
+     $M_tP^{-1}M_s=\delta_{ts}M_t$\\
+     $M_tP^{-1}M_s=M(A_tB_sC_t^TA_s,B_t,C_s)$};
+  \node[box,text width=13.35cm,draw=ProofRed] (end) at (3.575,-8.6)
+    {\textbf{Contradiction: at most one invertible first factor, but three are required}\\
+     Diagonal identities force $B_t,C_t$ to be invertible when $A_t$ is invertible\\
+     Off-diagonal identities would make an invertible product zero};
+  \draw[flow] (finite.south) -- (finite.south |- geometry.north);
+  \draw[flow] (split.south) -- (split.south |- geometry.north);
+  \draw[flow] (geometry) -- (profile);
+  \draw[flow] (profile) -- (sat);
+  \draw[flow] (sat) -- (end);
+\end{tikzpicture}

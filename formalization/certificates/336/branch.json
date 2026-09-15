@@ -1,0 +1,698 @@
+{
+  "basis": [
+    256,
+    98,
+    16,
+    1
+  ],
+  "plane": 336,
+  "target_exact": 15,
+  "branch": {
+    "closed": true,
+    "tree": {
+      "type": "branch",
+      "depth": 0,
+      "path": "",
+      "label": 2,
+      "value": 1.5,
+      "floor": 1,
+      "left": {
+        "type": "leaf",
+        "status": "lp_infeasible",
+        "farkas_ok": true,
+        "depth": 1,
+        "path": "L",
+        "lower": {},
+        "upper": {
+          "1": 1
+        }
+      },
+      "right": {
+        "type": "leaf",
+        "status": "lp_infeasible",
+        "farkas_ok": true,
+        "depth": 1,
+        "path": "R",
+        "lower": {
+          "1": 2
+        },
+        "upper": {}
+      }
+    },
+    "nodes": 3,
+    "leaves": 2,
+    "max_depth": 1,
+    "failed_farkas": 0,
+    "integer_feasible": 0,
+    "cutoff": 0,
+    "rounding_fail": 0,
+    "live_labels": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      16,
+      17,
+      19,
+      24,
+      25,
+      29
+    ],
+    "dead_labels": [
+      6,
+      7,
+      15,
+      18,
+      20,
+      21,
+      22,
+      23,
+      26,
+      27,
+      28,
+      30,
+      31
+    ],
+    "dead_label_witness_rows": {
+      "6": 0,
+      "7": 1,
+      "15": 2,
+      "18": 3,
+      "20": 4,
+      "21": 5,
+      "22": 6,
+      "23": 7,
+      "26": 8,
+      "27": 9,
+      "28": 10,
+      "30": 11,
+      "31": 12
+    },
+    "cert_count": 2,
+    "certs_all_ok": true,
+    "certs": [
+      {
+        "ok": true,
+        "leaf_index": 0,
+        "path": "L",
+        "depth": 1,
+        "lower": {},
+        "upper": {
+          "1": 1
+        },
+        "int_rhs": -4,
+        "ray_method": "pilot_highs",
+        "used_count": 13,
+        "row_type_counts": {
+          "occ": 11,
+          "total_ge": 1,
+          "branch_upper": 1
+        },
+        "used_rows": [
+          {
+            "multiplier": 5,
+            "rhs": 1,
+            "type": "occ",
+            "row": 17,
+            "U_basis": [
+              256,
+              64,
+              34,
+              16,
+              1
+            ],
+            "orbit": 114,
+            "lb": 14,
+            "cap": 1,
+            "mask": 256
+          },
+          {
+            "multiplier": 3,
+            "rhs": 3,
+            "type": "occ",
+            "row": 99,
+            "U_basis": [
+              256,
+              128,
+              98,
+              16,
+              8,
+              1
+            ],
+            "orbit": 40,
+            "lb": 12,
+            "cap": 3,
+            "mask": 557064
+          },
+          {
+            "multiplier": 5,
+            "rhs": 3,
+            "type": "occ",
+            "row": 116,
+            "U_basis": [
+              256,
+              132,
+              96,
+              16,
+              8,
+              2,
+              1
+            ],
+            "orbit": 10,
+            "lb": 12,
+            "cap": 3,
+            "mask": 6684697
+          },
+          {
+            "multiplier": 1,
+            "rhs": 3,
+            "type": "occ",
+            "row": 180,
+            "U_basis": [
+              256,
+              130,
+              68,
+              38,
+              16,
+              14,
+              1
+            ],
+            "orbit": 10,
+            "lb": 12,
+            "cap": 3,
+            "mask": 304155712
+          },
+          {
+            "multiplier": 2,
+            "rhs": 3,
+            "type": "occ",
+            "row": 183,
+            "U_basis": [
+              256,
+              130,
+              70,
+              36,
+              16,
+              12,
+              1
+            ],
+            "orbit": 14,
+            "lb": 12,
+            "cap": 3,
+            "mask": 339806752
+          },
+          {
+            "multiplier": 5,
+            "rhs": 3,
+            "type": "occ",
+            "row": 193,
+            "U_basis": [
+              256,
+              128,
+              66,
+              32,
+              16,
+              12,
+              1
+            ],
+            "orbit": 10,
+            "lb": 12,
+            "cap": 3,
+            "mask": 547397792
+          },
+          {
+            "multiplier": 2,
+            "rhs": 3,
+            "type": "occ",
+            "row": 204,
+            "U_basis": [
+              256,
+              130,
+              74,
+              40,
+              16,
+              6,
+              1
+            ],
+            "orbit": 14,
+            "lb": 12,
+            "cap": 3,
+            "mask": 805521412
+          },
+          {
+            "multiplier": 3,
+            "rhs": 3,
+            "type": "occ",
+            "row": 205,
+            "U_basis": [
+              256,
+              136,
+              64,
+              34,
+              16,
+              6,
+              1
+            ],
+            "orbit": 14,
+            "lb": 12,
+            "cap": 3,
+            "mask": 810025732
+          },
+          {
+            "multiplier": 1,
+            "rhs": 6,
+            "type": "occ",
+            "row": 293,
+            "U_basis": [
+              256,
+              128,
+              64,
+              34,
+              16,
+              8,
+              1
+            ],
+            "orbit": 5,
+            "lb": 9,
+            "cap": 6,
+            "mask": 285774088
+          },
+          {
+            "multiplier": 4,
+            "rhs": 6,
+            "type": "occ",
+            "row": 331,
+            "U_basis": [
+              256,
+              130,
+              66,
+              32,
+              16,
+              10,
+              6,
+              1
+            ],
+            "orbit": 3,
+            "lb": 9,
+            "cap": 6,
+            "mask": 1263219892
+          },
+          {
+            "multiplier": 4,
+            "rhs": 6,
+            "type": "occ",
+            "row": 340,
+            "U_basis": [
+              256,
+              132,
+              68,
+              36,
+              16,
+              12,
+              2,
+              1
+            ],
+            "orbit": 3,
+            "lb": 9,
+            "cap": 6,
+            "mask": 1637752417
+          },
+          {
+            "multiplier": 9,
+            "rhs": -15,
+            "type": "total_ge"
+          },
+          {
+            "multiplier": 9,
+            "rhs": 1,
+            "type": "branch_upper",
+            "label": 2,
+            "bound": 1
+          }
+        ]
+      },
+      {
+        "ok": true,
+        "leaf_index": 1,
+        "path": "R",
+        "depth": 1,
+        "lower": {
+          "1": 2
+        },
+        "upper": {},
+        "int_rhs": -5,
+        "ray_method": "pilot_highs",
+        "used_count": 16,
+        "row_type_counts": {
+          "occ": 14,
+          "total_ge": 1,
+          "branch_lower": 1
+        },
+        "used_rows": [
+          {
+            "multiplier": 3,
+            "rhs": 1,
+            "type": "occ",
+            "row": 16,
+            "U_basis": [
+              256,
+              66,
+              32,
+              16,
+              1
+            ],
+            "orbit": 114,
+            "lb": 14,
+            "cap": 1,
+            "mask": 128
+          },
+          {
+            "multiplier": 3,
+            "rhs": 1,
+            "type": "occ",
+            "row": 21,
+            "U_basis": [
+              256,
+              72,
+              42,
+              16,
+              1
+            ],
+            "orbit": 142,
+            "lb": 14,
+            "cap": 1,
+            "mask": 4096
+          },
+          {
+            "multiplier": 4,
+            "rhs": 3,
+            "type": "occ",
+            "row": 67,
+            "U_basis": [
+              256,
+              98,
+              16,
+              8,
+              4,
+              1
+            ],
+            "orbit": 40,
+            "lb": 12,
+            "cap": 3,
+            "mask": 42
+          },
+          {
+            "multiplier": 7,
+            "rhs": 3,
+            "type": "occ",
+            "row": 95,
+            "U_basis": [
+              256,
+              128,
+              98,
+              16,
+              4,
+              1
+            ],
+            "orbit": 40,
+            "lb": 12,
+            "cap": 3,
+            "mask": 163842
+          },
+          {
+            "multiplier": 5,
+            "rhs": 3,
+            "type": "occ",
+            "row": 116,
+            "U_basis": [
+              256,
+              132,
+              96,
+              16,
+              8,
+              2,
+              1
+            ],
+            "orbit": 10,
+            "lb": 12,
+            "cap": 3,
+            "mask": 6684697
+          },
+          {
+            "multiplier": 3,
+            "rhs": 3,
+            "type": "occ",
+            "row": 141,
+            "U_basis": [
+              256,
+              136,
+              72,
+              42,
+              16,
+              6,
+              1
+            ],
+            "orbit": 14,
+            "lb": 12,
+            "cap": 3,
+            "mask": 55062532
+          },
+          {
+            "multiplier": 2,
+            "rhs": 3,
+            "type": "occ",
+            "row": 193,
+            "U_basis": [
+              256,
+              128,
+              66,
+              32,
+              16,
+              12,
+              1
+            ],
+            "orbit": 10,
+            "lb": 12,
+            "cap": 3,
+            "mask": 547397792
+          },
+          {
+            "multiplier": 3,
+            "rhs": 3,
+            "type": "occ",
+            "row": 217,
+            "U_basis": [
+              256,
+              130,
+              66,
+              32,
+              16,
+              12,
+              1
+            ],
+            "orbit": 14,
+            "lb": 12,
+            "cap": 3,
+            "mask": 1094787232
+          },
+          {
+            "multiplier": 6,
+            "rhs": 3,
+            "type": "occ",
+            "row": 226,
+            "U_basis": [
+              256,
+              136,
+              64,
+              34,
+              16,
+              4,
+              1
+            ],
+            "orbit": 10,
+            "lb": 12,
+            "cap": 3,
+            "mask": 1344800002
+          },
+          {
+            "multiplier": 2,
+            "rhs": 6,
+            "type": "occ",
+            "row": 240,
+            "U_basis": [
+              256,
+              66,
+              32,
+              16,
+              8,
+              4,
+              1
+            ],
+            "orbit": 5,
+            "lb": 9,
+            "cap": 6,
+            "mask": 10922
+          },
+          {
+            "multiplier": 2,
+            "rhs": 6,
+            "type": "occ",
+            "row": 251,
+            "U_basis": [
+              256,
+              128,
+              96,
+              16,
+              4,
+              2,
+              1
+            ],
+            "orbit": 5,
+            "lb": 9,
+            "cap": 6,
+            "mask": 491527
+          },
+          {
+            "multiplier": 5,
+            "rhs": 6,
+            "type": "occ",
+            "row": 320,
+            "U_basis": [
+              256,
+              130,
+              64,
+              34,
+              16,
+              10,
+              6,
+              1
+            ],
+            "orbit": 3,
+            "lb": 9,
+            "cap": 6,
+            "mask": 885738292
+          },
+          {
+            "multiplier": 1,
+            "rhs": 6,
+            "type": "occ",
+            "row": 331,
+            "U_basis": [
+              256,
+              130,
+              66,
+              32,
+              16,
+              10,
+              6,
+              1
+            ],
+            "orbit": 3,
+            "lb": 9,
+            "cap": 6,
+            "mask": 1263219892
+          },
+          {
+            "multiplier": 4,
+            "rhs": 6,
+            "type": "occ",
+            "row": 340,
+            "U_basis": [
+              256,
+              132,
+              68,
+              36,
+              16,
+              12,
+              2,
+              1
+            ],
+            "orbit": 3,
+            "lb": 9,
+            "cap": 6,
+            "mask": 1637752417
+          },
+          {
+            "multiplier": 11,
+            "rhs": -15,
+            "type": "total_ge"
+          },
+          {
+            "multiplier": 10,
+            "rhs": -2,
+            "type": "branch_lower",
+            "label": 2,
+            "bound": 2
+          }
+        ]
+      }
+    ],
+    "used_occ_row_count": 34,
+    "source_requirements": [
+      {
+        "orbit": 3,
+        "lb": 9,
+        "used_row_count": 3
+      },
+      {
+        "orbit": 5,
+        "lb": 9,
+        "used_row_count": 3
+      },
+      {
+        "orbit": 10,
+        "lb": 12,
+        "used_row_count": 4
+      },
+      {
+        "orbit": 14,
+        "lb": 12,
+        "used_row_count": 5
+      },
+      {
+        "orbit": 40,
+        "lb": 12,
+        "used_row_count": 3
+      },
+      {
+        "orbit": 114,
+        "lb": 14,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 142,
+        "lb": 14,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 179,
+        "lb": 15,
+        "used_row_count": 3
+      },
+      {
+        "orbit": 183,
+        "lb": 15,
+        "used_row_count": 6
+      },
+      {
+        "orbit": 231,
+        "lb": 15,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 233,
+        "lb": 15,
+        "used_row_count": 3
+      }
+    ],
+    "elapsed_sec": 0.017
+  }
+}

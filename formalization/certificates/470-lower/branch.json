@@ -1,0 +1,340 @@
+{
+  "basis": [
+    259,
+    84,
+    10
+  ],
+  "plane": 470,
+  "target_exact": 16,
+  "branch": {
+    "closed": true,
+    "tree": {
+      "type": "leaf",
+      "status": "lp_infeasible",
+      "farkas_ok": true,
+      "depth": 0,
+      "path": "",
+      "lower": {},
+      "upper": {}
+    },
+    "nodes": 1,
+    "leaves": 1,
+    "max_depth": 0,
+    "failed_farkas": 0,
+    "integer_feasible": 0,
+    "cutoff": 0,
+    "rounding_fail": 0,
+    "live_labels": [
+      2,
+      3,
+      10,
+      29,
+      37
+    ],
+    "dead_labels": [
+      1,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "dead_label_witness_rows": {
+      "1": 1,
+      "4": 3,
+      "5": 25,
+      "6": 26,
+      "7": 0,
+      "8": 1,
+      "9": 1,
+      "11": 9,
+      "12": 11,
+      "13": 10,
+      "14": 16,
+      "15": 2,
+      "16": 7,
+      "17": 3,
+      "18": 4,
+      "19": 32,
+      "20": 10,
+      "21": 3,
+      "22": 4,
+      "23": 5,
+      "24": 6,
+      "25": 7,
+      "26": 13,
+      "27": 14,
+      "28": 19,
+      "30": 27,
+      "31": 30,
+      "32": 38,
+      "33": 39,
+      "34": 40,
+      "35": 43,
+      "36": 38,
+      "38": 55,
+      "39": 41,
+      "40": 44,
+      "41": 45,
+      "42": 50,
+      "43": 53,
+      "44": 57,
+      "45": 60,
+      "46": 65,
+      "47": 70,
+      "48": 73,
+      "49": 80,
+      "50": 92,
+      "51": 98,
+      "52": 108,
+      "53": 121,
+      "54": 131,
+      "55": 145,
+      "56": 159,
+      "57": 179,
+      "58": 190,
+      "59": 202,
+      "60": 206,
+      "61": 226,
+      "62": 238,
+      "63": 257
+    },
+    "cert_count": 1,
+    "certs_all_ok": true,
+    "certs": [
+      {
+        "ok": true,
+        "leaf_index": 0,
+        "path": "",
+        "depth": 0,
+        "lower": {},
+        "upper": {},
+        "int_rhs": -11,
+        "ray_method": "pilot_highs",
+        "used_count": 3,
+        "row_type_counts": {
+          "occ": 2,
+          "total_ge": 1
+        },
+        "used_rows": [
+          {
+            "multiplier": 1,
+            "rhs": 1,
+            "type": "occ",
+            "row": 561,
+            "U_basis": [
+              259,
+              133,
+              84,
+              53,
+              10
+            ],
+            "orbit": 187,
+            "lb": 15,
+            "cap": 1,
+            "mask": 36028866006876160
+          },
+          {
+            "multiplier": 1,
+            "rhs": 4,
+            "type": "occ",
+            "row": 1689,
+            "U_basis": [
+              256,
+              68,
+              16,
+              8,
+              2,
+              1
+            ],
+            "orbit": 30,
+            "lb": 12,
+            "cap": 4,
+            "mask": 1927
+          },
+          {
+            "multiplier": 1,
+            "rhs": -16,
+            "type": "total_ge"
+          }
+        ]
+      }
+    ],
+    "used_occ_row_count": 52,
+    "source_requirements": [
+      {
+        "orbit": 30,
+        "lb": 12,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 150,
+        "lb": 16,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 159,
+        "lb": 16,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 161,
+        "lb": 16,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 164,
+        "lb": 16,
+        "used_row_count": 3
+      },
+      {
+        "orbit": 166,
+        "lb": 16,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 175,
+        "lb": 16,
+        "used_row_count": 3
+      },
+      {
+        "orbit": 178,
+        "lb": 16,
+        "used_row_count": 3
+      },
+      {
+        "orbit": 187,
+        "lb": 15,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 194,
+        "lb": 16,
+        "used_row_count": 3
+      },
+      {
+        "orbit": 196,
+        "lb": 16,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 201,
+        "lb": 16,
+        "used_row_count": 4
+      },
+      {
+        "orbit": 213,
+        "lb": 16,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 216,
+        "lb": 16,
+        "used_row_count": 3
+      },
+      {
+        "orbit": 235,
+        "lb": 16,
+        "used_row_count": 7
+      },
+      {
+        "orbit": 236,
+        "lb": 16,
+        "used_row_count": 3
+      },
+      {
+        "orbit": 238,
+        "lb": 16,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 241,
+        "lb": 16,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 242,
+        "lb": 16,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 244,
+        "lb": 16,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 245,
+        "lb": 16,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 311,
+        "lb": 16,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 319,
+        "lb": 16,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 344,
+        "lb": 16,
+        "used_row_count": 2
+      }
+    ],
+    "elapsed_sec": 0.018
+  }
+}

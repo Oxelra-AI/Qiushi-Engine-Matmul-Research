@@ -168,8 +168,27 @@ class TranslationTests(unittest.TestCase):
                  patch.object(sys, 'argv', ['package_reports.py', '--language', 'zh',
                                            '--output', td]), patch('builtins.print'):
                 package_reports.main()
-            package.assert_called_once_with('main', root, 'zh')
+            package.assert_called_once_with('main', root, 'zh', 'original')
             self.assertIn(old, json.loads(receipt.read_text())['packages'])
+
+    def test_lean_build_preserves_original_receipt(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            (root / 'evidence').mkdir()
+            original = root / 'evidence/report-build.json'
+            original.write_text(json.dumps({'reports': [{'pdf': 'reports/en/main.pdf'}]}))
+            before = original.read_bytes()
+            new = {'target': 'en', 'pdf': 'reports/en-lean/main.pdf',
+                   'sha256': 'new', 'validation': {}}
+            with patch.object(build_reports, 'ROOT', root), \
+                 patch.object(build_reports, 'build', return_value=new) as build, \
+                 patch.object(sys, 'argv', ['build_reports.py', '--edition', 'lean',
+                                           '--language', 'en']), patch('builtins.print'):
+                build_reports.main()
+            build.assert_called_once_with('en', 'lean')
+            self.assertEqual(original.read_bytes(), before)
+            receipt = root / 'evidence/lean-report-build.json'
+            self.assertEqual(json.loads(receipt.read_text())['reports'], [new])
 
     def test_explanatory_record_names_match_producers(self):
         materials = ROOT / 'research/materials'

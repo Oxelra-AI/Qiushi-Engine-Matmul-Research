@@ -1,0 +1,546 @@
+{
+  "basis": [
+    160,
+    20,
+    1
+  ],
+  "plane": 439,
+  "target_exact": 16,
+  "branch": {
+    "closed": true,
+    "tree": {
+      "type": "leaf",
+      "status": "lp_infeasible",
+      "farkas_ok": true,
+      "depth": 0,
+      "path": "",
+      "lower": {},
+      "upper": {}
+    },
+    "nodes": 1,
+    "leaves": 1,
+    "max_depth": 0,
+    "failed_farkas": 0,
+    "integer_feasible": 0,
+    "cutoff": 0,
+    "rounding_fail": 0,
+    "live_labels": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      9,
+      10,
+      14,
+      16,
+      20,
+      30,
+      34,
+      40
+    ],
+    "dead_labels": [
+      5,
+      6,
+      7,
+      11,
+      12,
+      13,
+      15,
+      17,
+      18,
+      19,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      31,
+      32,
+      33,
+      35,
+      36,
+      37,
+      38,
+      39,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "dead_label_witness_rows": {
+      "5": 9,
+      "6": 0,
+      "7": 1,
+      "11": 23,
+      "12": 2,
+      "13": 3,
+      "15": 4,
+      "17": 8,
+      "18": 6,
+      "19": 7,
+      "21": 5,
+      "22": 8,
+      "23": 10,
+      "24": 12,
+      "25": 14,
+      "26": 16,
+      "27": 19,
+      "28": 21,
+      "29": 24,
+      "31": 27,
+      "32": 28,
+      "33": 29,
+      "35": 30,
+      "36": 46,
+      "37": 30,
+      "38": 31,
+      "39": 48,
+      "41": 32,
+      "42": 34,
+      "43": 35,
+      "44": 36,
+      "45": 52,
+      "46": 38,
+      "47": 62,
+      "48": 40,
+      "49": 44,
+      "50": 53,
+      "51": 56,
+      "52": 63,
+      "53": 75,
+      "54": 78,
+      "55": 82,
+      "56": 88,
+      "57": 91,
+      "58": 98,
+      "59": 107,
+      "60": 111,
+      "61": 115,
+      "62": 121,
+      "63": 124
+    },
+    "cert_count": 1,
+    "certs_all_ok": true,
+    "certs": [
+      {
+        "ok": true,
+        "leaf_index": 0,
+        "path": "",
+        "depth": 0,
+        "lower": {},
+        "upper": {},
+        "int_rhs": -12,
+        "ray_method": "pilot_highs",
+        "used_count": 12,
+        "row_type_counts": {
+          "occ": 11,
+          "total_ge": 1
+        },
+        "used_rows": [
+          {
+            "multiplier": 1,
+            "rhs": 1,
+            "type": "occ",
+            "row": 140,
+            "U_basis": [
+              160,
+              18,
+              8,
+              6,
+              1
+            ],
+            "orbit": 103,
+            "lb": 15,
+            "cap": 1,
+            "mask": 76
+          },
+          {
+            "multiplier": 2,
+            "rhs": 1,
+            "type": "occ",
+            "row": 143,
+            "U_basis": [
+              132,
+              36,
+              20,
+              1
+            ],
+            "orbit": 323,
+            "lb": 15,
+            "cap": 1,
+            "mask": 512
+          },
+          {
+            "multiplier": 1,
+            "rhs": 1,
+            "type": "occ",
+            "row": 149,
+            "U_basis": [
+              136,
+              40,
+              16,
+              4,
+              1
+            ],
+            "orbit": 103,
+            "lb": 15,
+            "cap": 1,
+            "mask": 10242
+          },
+          {
+            "multiplier": 2,
+            "rhs": 1,
+            "type": "occ",
+            "row": 156,
+            "U_basis": [
+              160,
+              64,
+              20,
+              2,
+              1
+            ],
+            "orbit": 112,
+            "lb": 15,
+            "cap": 1,
+            "mask": 98305
+          },
+          {
+            "multiplier": 1,
+            "rhs": 1,
+            "type": "occ",
+            "row": 221,
+            "U_basis": [
+              128,
+              76,
+              32,
+              20,
+              1
+            ],
+            "orbit": 187,
+            "lb": 15,
+            "cap": 1,
+            "mask": 538968192
+          },
+          {
+            "multiplier": 1,
+            "rhs": 1,
+            "type": "occ",
+            "row": 236,
+            "U_basis": [
+              260,
+              160,
+              20,
+              12,
+              1
+            ],
+            "orbit": 192,
+            "lb": 15,
+            "cap": 1,
+            "mask": 42949672992
+          },
+          {
+            "multiplier": 1,
+            "rhs": 2,
+            "type": "occ",
+            "row": 706,
+            "U_basis": [
+              160,
+              72,
+              18,
+              6,
+              1
+            ],
+            "orbit": 114,
+            "lb": 14,
+            "cap": 2,
+            "mask": 4718596
+          },
+          {
+            "multiplier": 1,
+            "rhs": 2,
+            "type": "occ",
+            "row": 753,
+            "U_basis": [
+              130,
+              70,
+              34,
+              20,
+              8,
+              1
+            ],
+            "orbit": 34,
+            "lb": 14,
+            "cap": 2,
+            "mask": 574886152
+          },
+          {
+            "multiplier": 1,
+            "rhs": 2,
+            "type": "occ",
+            "row": 767,
+            "U_basis": [
+              256,
+              160,
+              16,
+              4,
+              1
+            ],
+            "orbit": 111,
+            "lb": 14,
+            "cap": 2,
+            "mask": 10737418242
+          },
+          {
+            "multiplier": 1,
+            "rhs": 2,
+            "type": "occ",
+            "row": 781,
+            "U_basis": [
+              258,
+              130,
+              34,
+              20,
+              1
+            ],
+            "orbit": 121,
+            "lb": 14,
+            "cap": 2,
+            "mask": 554050781440
+          },
+          {
+            "multiplier": 1,
+            "rhs": 4,
+            "type": "occ",
+            "row": 1978,
+            "U_basis": [
+              256,
+              128,
+              68,
+              32,
+              20,
+              12,
+              1
+            ],
+            "orbit": 11,
+            "lb": 12,
+            "cap": 4,
+            "mask": 723426564029161632
+          },
+          {
+            "multiplier": 2,
+            "rhs": -16,
+            "type": "total_ge"
+          }
+        ]
+      }
+    ],
+    "used_occ_row_count": 59,
+    "source_requirements": [
+      {
+        "orbit": 11,
+        "lb": 12,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 34,
+        "lb": 14,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 103,
+        "lb": 15,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 111,
+        "lb": 14,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 112,
+        "lb": 15,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 114,
+        "lb": 14,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 121,
+        "lb": 14,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 159,
+        "lb": 16,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 161,
+        "lb": 16,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 164,
+        "lb": 16,
+        "used_row_count": 4
+      },
+      {
+        "orbit": 166,
+        "lb": 16,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 175,
+        "lb": 16,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 178,
+        "lb": 16,
+        "used_row_count": 4
+      },
+      {
+        "orbit": 187,
+        "lb": 15,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 192,
+        "lb": 15,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 194,
+        "lb": 16,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 196,
+        "lb": 16,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 201,
+        "lb": 16,
+        "used_row_count": 3
+      },
+      {
+        "orbit": 213,
+        "lb": 16,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 218,
+        "lb": 16,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 235,
+        "lb": 16,
+        "used_row_count": 3
+      },
+      {
+        "orbit": 236,
+        "lb": 16,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 238,
+        "lb": 16,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 288,
+        "lb": 16,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 293,
+        "lb": 16,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 297,
+        "lb": 16,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 310,
+        "lb": 16,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 323,
+        "lb": 15,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 340,
+        "lb": 16,
+        "used_row_count": 4
+      },
+      {
+        "orbit": 342,
+        "lb": 16,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 343,
+        "lb": 16,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 344,
+        "lb": 16,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 347,
+        "lb": 16,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 348,
+        "lb": 16,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 352,
+        "lb": 16,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 370,
+        "lb": 16,
+        "used_row_count": 2
+      }
+    ],
+    "elapsed_sec": 0.054
+  }
+}

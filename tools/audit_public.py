@@ -26,7 +26,7 @@ RULES = {
 }
 TEXT = {'.md', '.txt', '.py', '.cpp', '.c', '.h', '.hpp', '.json', '.jsonl',
         '.csv', '.qmm', '.tex', '.bib', '.bbl', '.bst', '.cff', '.sh', '.sage',
-        '.wl', '.sing', '.dimacs', '.set'}
+        '.wl', '.sing', '.dimacs', '.set', '.lean', '.toml', '.log', '.inc'}
 
 
 def matches(text):
@@ -94,7 +94,12 @@ def inspect_bytes(name, data):
     suffix = Path(name).suffix.lower()
     if suffix in TEXT or Path(name).name in {'LICENSE', 'Makefile'}:
         text = data.decode('utf-8')
-        errors.extend(matches(text))
+        found = matches(text)
+        if (suffix == '.lean' and 'numbered-execution-record' in found
+                and not re.search(r'\bSteps?[ _-]+\d+\b', text, re.I)):
+            # Numbered local proof variables are ordinary Lean names.
+            found.remove('numbered-execution-record')
+        errors.extend(found)
         if suffix == '.json':
             json.loads(text)
         if suffix == '.py':

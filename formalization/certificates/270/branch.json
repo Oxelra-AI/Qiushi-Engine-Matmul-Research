@@ -1,0 +1,203 @@
+{
+  "basis": [
+    320,
+    32,
+    2,
+    1
+  ],
+  "plane": 270,
+  "target_exact": 14,
+  "branch": {
+    "closed": true,
+    "tree": {
+      "type": "leaf",
+      "status": "lp_infeasible",
+      "farkas_ok": true,
+      "depth": 0,
+      "path": "",
+      "lower": {},
+      "upper": {}
+    },
+    "nodes": 1,
+    "leaves": 1,
+    "max_depth": 0,
+    "failed_farkas": 0,
+    "integer_feasible": 0,
+    "cutoff": 0,
+    "rounding_fail": 0,
+    "live_labels": [
+      1,
+      2,
+      4,
+      6,
+      8,
+      16,
+      20,
+      22,
+      24,
+      28,
+      30
+    ],
+    "dead_labels": [
+      3,
+      5,
+      7,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      17,
+      18,
+      19,
+      21,
+      23,
+      25,
+      26,
+      27,
+      29,
+      31
+    ],
+    "dead_label_witness_rows": {
+      "3": 0,
+      "5": 1,
+      "7": 2,
+      "9": 3,
+      "10": 4,
+      "11": 5,
+      "12": 6,
+      "13": 8,
+      "14": 9,
+      "15": 11,
+      "17": 12,
+      "18": 13,
+      "19": 14,
+      "21": 15,
+      "23": 17,
+      "25": 18,
+      "26": 21,
+      "27": 24,
+      "29": 26,
+      "31": 27
+    },
+    "cert_count": 1,
+    "certs_all_ok": true,
+    "certs": [
+      {
+        "ok": true,
+        "leaf_index": 0,
+        "path": "",
+        "depth": 0,
+        "lower": {},
+        "upper": {},
+        "int_rhs": -1,
+        "ray_method": "pilot_highs",
+        "used_count": 3,
+        "row_type_counts": {
+          "occ": 2,
+          "total_ge": 1
+        },
+        "used_rows": [
+          {
+            "multiplier": 1,
+            "rhs": 2,
+            "type": "occ",
+            "row": 33,
+            "U_basis": [
+              320,
+              32,
+              4,
+              2,
+              1
+            ],
+            "orbit": 89,
+            "lb": 12,
+            "cap": 2,
+            "mask": 1
+          },
+          {
+            "multiplier": 1,
+            "rhs": 11,
+            "type": "occ",
+            "row": 368,
+            "U_basis": [
+              256,
+              128,
+              64,
+              32,
+              16,
+              8,
+              2,
+              1
+            ],
+            "orbit": 1,
+            "lb": 3,
+            "cap": 11,
+            "mask": 715827882
+          },
+          {
+            "multiplier": 1,
+            "rhs": -14,
+            "type": "total_ge"
+          }
+        ]
+      }
+    ],
+    "used_occ_row_count": 22,
+    "source_requirements": [
+      {
+        "orbit": 1,
+        "lb": 3,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 89,
+        "lb": 12,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 111,
+        "lb": 14,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 119,
+        "lb": 14,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 121,
+        "lb": 14,
+        "used_row_count": 4
+      },
+      {
+        "orbit": 126,
+        "lb": 14,
+        "used_row_count": 1
+      },
+      {
+        "orbit": 131,
+        "lb": 14,
+        "used_row_count": 2
+      },
+      {
+        "orbit": 137,
+        "lb": 14,
+        "used_row_count": 4
+      },
+      {
+        "orbit": 142,
+        "lb": 14,
+        "used_row_count": 4
+      },
+      {
+        "orbit": 143,
+        "lb": 14,
+        "used_row_count": 2
+      }
+    ],
+    "elapsed_sec": 0.006
+  }
+}

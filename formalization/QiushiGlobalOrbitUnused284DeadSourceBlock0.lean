@@ -1,0 +1,11 @@
+import QiushiGlobalOrbitUnused284CheckProperties
+set_option maxHeartbeats 80000000
+set_option maxRecDepth 100000
+set_option synthInstance.maxSize 512
+namespace QiushiMatmul
+theorem plane284UnusedGenDeadSourceBlock0 : forall offset : Fin 32,
+    forall hlt : 0 * 32 + offset.val < 33,
+    plane284UnusedGenDeadSourceProperty (Fin.mk (0 * 32 + offset.val) hlt) := by
+  simp only [plane284UnusedGenDeadSourceProperty, plane284UnusedGenConfig, plane284UnusedGenOccSys]
+  decide +kernel
+end QiushiMatmul

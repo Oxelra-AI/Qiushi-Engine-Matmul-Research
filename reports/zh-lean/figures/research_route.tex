@@ -1,0 +1,21 @@
+\begin{tikzpicture}[x=1cm,y=1cm,
+  route/.style={draw=ReportRule,fill=white,align=center,text width=6.2cm,
+    inner sep=8pt,font=\sffamily\small,minimum height=1.45cm},
+  flow/.style={-{Stealth[length=2.2mm]},thick,draw=ReportPrimary}]
+  \node[route] (broad) at (0,0)
+    {\textbf{Exact algorithm search}\\Known rank-23 schemes;\\deformation and symmetry};
+  \node[route] (core) at (7.15,0)
+    {\textbf{Finite-field restrictions}\\Core supports; occupation;\\factor completion};
+  \node[route] (lesson) at (0,-2.15)
+    {\textbf{Mathematical lessons}\\Finite exactness;\\support versus factor compatibility};
+  \node[route] (full) at (7.15,-2.15)
+    {\textbf{Return to the full tensor}\\High-rank pairs; affine cosets;\\rank-sum equality};
+  \node[route,text width=13.35cm,draw=ProofGreen] (result) at (3.575,-4.3)
+    {\textbf{Structural lower-bound proof over $\FF$}\\Eight certified quotient raises
+    $\longrightarrow$ affine profile $(16,1,3)$\\
+    Saturation $\longrightarrow$ cross-factor identities $\longrightarrow$ contradiction};
+  \draw[flow] (broad) -- (lesson);
+  \draw[flow] (core) -- (full);
+  \draw[flow] (lesson.east) -- (full.west);
+  \draw[flow] (full.south) -- (full.south |- result.north);
+\end{tikzpicture}

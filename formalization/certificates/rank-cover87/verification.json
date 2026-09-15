@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "node": 87,
+  "result": "PASS",
+  "lean_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "jobs": 2,
+  "lean_num_threads": 1,
+  "modules": 2,
+  "predecessors": [
+    5
+  ],
+  "statements": {
+    "QiushiMatmul.GlobalOrbit.Unused.rep087": "QuotientRankAtLeast (spanCodes (frozenWangTable.basis 87)) (frozenWangTable.lower 87)",
+    "QiushiMatmul.GlobalOrbit.Unused.node87_bound": "QuotientRankAtLeast (spanCodes [64,8,4,2,1]) 11"
+  },
+  "observed_axioms": {
+    "QiushiMatmul.GlobalOrbit.Unused.sources087_rank": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QiushiMatmul.GlobalOrbit.Unused.sources087_contain": [
+      "propext"
+    ],
+    "QiushiMatmul.GlobalOrbit.Unused.sources087_cover": [
+      "propext",
+      "Quot.sound"
+    ],
+    "QiushiMatmul.GlobalOrbit.Unused.node87_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QiushiMatmul.GlobalOrbit.Unused.rep087": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "python_tests": {
+    "passed": 5,
+    "test_source_sha256": "f4ab0603d648d39d2a697b2e4a58c45292167a825ac1cc1d48c3d7ff0645f3e7",
+    "log_sha256": "0ceeedbf7b53ebab52ac8f813b496756d39b57c95f218bd5d03437715d5afe07"
+  },
+  "cover_sha256": "155de091571f1ad598414a8e91009619c2680cd55b43540feb4962ab029f6aeb",
+  "environment_sha256": "8d646b81d91941b993c4b88f1a9683d753d4fa22ac7d8220c33a072373176c98",
+  "private_build_receipt_sha256": "a02fa5e2741cc0e87c411d2926fec265e09cb30f21b99edef3d169455c57eb61",
+  "external_direct_imports": {
+    "QiushiCertifiedTransport": {
+      "object_sha256": "c85599b9fec38135152247ea0634425d42a8f11c6116761ee99cad8c434d69be"
+    },
+    "QiushiFrozenRankCover": {
+      "object_sha256": "777f5165785f5848133fd17ec2accd0abb1d3f8476e1e602be1a9126389e6635"
+    },
+    "QiushiFrozenWangData": {
+      "object_sha256": "b827c698d62037d3c42356f0e742aff22334038613bcfaeefb19a3389a0d32b2"
+    },
+    "QiushiOrbit5FP": {
+      "object_sha256": "1dc841c36c4afb77c11bb50e3d4c5bd157a7eb216149f566390a05dc8290e94b"
+    }
+  },
+  "sources": {
+    "QiushiGlobalOrbitUnused87.lean": {
+      "source_sha256": "6b605d8474b949ee20ea6c069703552a1586a4183e93a1e9d3dc99688f531ad1",
+      "object_sha256": "b99734cdb87621d0371e62a66601a7e4a923cc7b3a94a904018da8a28d40e46e",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "PASS"
+    },
+    "QiushiGlobalOrbitUnused87Tests.lean": {
+      "source_sha256": "e6ae7e9d38d49bb7bf804d068a91200784e7a61abdb5ed3126be7ee819e32ef8",
+      "object_sha256": "2cf3e85e516997ddbd5c6dd7c02c814ce1590f8a5f0ae5e716742ceeffc82e70",
+      "log_sha256": "7d056d7b7df3b518a7dbbd0c15349573d77cc319552d5a5d812881edcd29ed6e",
+      "result": "PASS"
+    }
+  }
+}

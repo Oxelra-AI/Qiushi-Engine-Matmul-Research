@@ -1,4 +1,5 @@
 import importlib.util
+import json
 from pathlib import Path
 import re
 import sys
@@ -14,6 +15,43 @@ import build_reports
 
 
 class ReportReleaseTests(unittest.TestCase):
+    def test_lean_reports_are_self_contained_and_source_matched(self):
+        receipt = json.loads((ROOT / 'evidence/lean-report-build.json').read_text())
+        self.assertEqual({r['pdf'] for r in receipt['reports']},
+                         {'reports/en-lean/main.pdf', 'reports/zh-lean/main.pdf'})
+        for record in receipt['reports']:
+            self.assertEqual(build_reports.digest(ROOT / record['pdf']), record['sha256'])
+            for source in record['sources']:
+                self.assertEqual(build_reports.digest(ROOT / source['path']), source['sha256'])
+        for language in ('en', 'zh'):
+            directory = ROOT / 'reports' / (language + '-lean')
+            files = package_reports.dependencies(directory, 'main.tex')
+            self.assertIn('sections/research_record.tex', files)
+            self.assertIn('latex/authors.tex', files)
+            for part in ('latex/authors.tex', 'refs.bib', 'figures/proof_structure.tex',
+                         'figures/research_route.tex'):
+                self.assertEqual((directory / part).read_bytes(),
+                                 (ROOT / 'reports' / language / part).read_bytes())
+            text = (directory / 'main.tex').read_text()
+            self.assertIn(r'\subsection{Lean', text)
+            self.assertIn(r'\texttt{bilinear\_mul\_requires\_21}', text)
+
+    def test_lean_edition_has_separate_sources_and_receipt(self):
+        for language in ('en', 'zh'):
+            self.assertEqual(build_reports.report_directory(language),
+                             ROOT / 'reports' / language)
+            self.assertEqual(build_reports.report_directory(language, 'lean'),
+                             ROOT / 'reports' / (language + '-lean'))
+        self.assertEqual(build_reports.report_receipt(), ROOT / 'evidence/report-build.json')
+        self.assertEqual(build_reports.report_receipt('lean'),
+                         ROOT / 'evidence/lean-report-build.json')
+
+    def test_unknown_report_edition_rejected(self):
+        with self.assertRaises(ValueError):
+            build_reports.report_directory('en', '../private')
+        with self.assertRaises(ValueError):
+            build_reports.report_directory('../private', 'lean')
+
     def test_keywords_describe_research_topics(self):
         main = (ROOT / 'reports/en/main.tex').read_text()
         abstract = main.split(r'\begin{abstract}', 1)[1].split(r'\end{abstract}', 1)[0]
