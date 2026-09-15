@@ -4,6 +4,7 @@
 
 **长程自主数学研究：从算法搜索到结构性证明。**
 
+[数学论文](paper/main.pdf) ·
 [中文报告（含 Lean 证明与全部附录）](reports/zh-lean/main.pdf) ·
 [英文报告（含 Lean 证明）](reports/en-lean/main.pdf) ·
 [研究材料](research/materials/README.md) ·
@@ -91,6 +92,9 @@ Qiushi Engine 独立自主地完成数学研究，从形成研究路线、开展
 
 ## 阅读顺序
 
+专业数学论证见[论文](paper/main.pdf)，[论文目录](paper/README.md)提供 LaTeX 源码、
+投稿源码包及数学数据检查方法。研究报告进一步解释问题背景和研究形成过程。
+
 1. 报告正文：问题背景、核心思想、研究发展、完整证明及复验依据。
 2. 同一报告的附录 B：将原始研究整合成一条数学研究路线，说明假设、尝试、
    纠错、表示变化及关键推导。
@@ -127,7 +131,7 @@ Qiushi Engine 独立自主地完成数学研究，从形成研究路线、开展
 ## 实际使用
 
 [Release 下载页](https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research/releases/latest)
-提供含实际证明数据的完整研究包、中英文 PDF，以及各自独立的 LaTeX 源码包。
+提供含实际证明数据的完整研究包、数学论文、中英文报告，以及各自独立的 LaTeX 源码包。
 使用 Git 时，先安装 Git LFS，再获取完整文件：
 
 ~~~sh

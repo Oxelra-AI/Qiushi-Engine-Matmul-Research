@@ -26,7 +26,7 @@ RULES = {
 }
 TEXT = {'.md', '.txt', '.py', '.cpp', '.c', '.h', '.hpp', '.json', '.jsonl',
         '.csv', '.qmm', '.tex', '.bib', '.bbl', '.bst', '.cff', '.sh', '.sage',
-        '.wl', '.sing', '.dimacs', '.set', '.lean', '.toml', '.log', '.inc'}
+        '.wl', '.sing', '.dimacs', '.set', '.lean', '.toml', '.log', '.inc', '.mjs'}
 
 
 def matches(text):

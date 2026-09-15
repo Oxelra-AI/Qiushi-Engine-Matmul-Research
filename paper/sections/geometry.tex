@@ -1,0 +1,167 @@
+\section{From occupation to the profile \texorpdfstring{$(16,1,3)$}{(16,1,3)}}\label{sec:geometry}
+
+Assume there is a decomposition of length at most $20$. By the line
+bounds and the observation after Proposition~\ref{prop:frozen}, a
+minimal such decomposition has length exactly $20$ and every factor
+in every term is nonzero. Fix this decomposition for the section.
+
+\subsection{Split flattening and distinct first factors}
+Define the $A$-split flattening by
+\[
+ \Phi_A(T)[(i,b),(j,c)]=T[3i+j,b,c],
+ \quad 0\leq i,j<3,\quad 0\leq b,c<9.
+\]
+It is a $27\times27$ matrix. For $P=\Phi_A(\T)$, a row
+$(i,3u+v)$ has its unique nonzero entry in column $(u,3i+v)$.
+This correspondence is a bijection, so $P$ is a permutation matrix
+of rank $27$. For a simple tensor, write
+\begin{equation}\label{eq:M}
+ M(A,B,C)=\Phi_A(A\otimes B\otimes C)
+          =A\otimes\bigl(\operatorname{vec}(B)
+                           \operatorname{vec}(C)^T\bigr).
+\end{equation}
+Here the Kronecker product on the right is a matrix product construction,
+and vectorization is row-major. Since $B,C$ are nonzero, their outer
+product has rank one and $\rank M(A,B,C)=\rank A$. Therefore
+\begin{equation}\label{eq:budget}
+ 27=\rank P\leq\sum_{t=1}^{20}\rank A_t,
+ \qquad \sum_{t=1}^{20}(\rank A_t-1)\geq7.
+\end{equation}
+The first inequality also holds with zero factors, using
+$\rank M(A,B,C)\leq\rank A$.
+
+The line cap is $20-19=1$. Since a line over $\F$ has just one
+nonzero element, Lemma~\ref{lem:occupation} implies that the twenty
+$A_t$ are pairwise distinct. Let
+\[
+ \mathcal H=\{A_t:\rank A_t\geq2\}.
+\]
+Every term contributes at most two to the excess in~\eqref{eq:budget},
+so $|\mathcal H|\geq4$.
+
+\begin{lemma}\label{lem:pair}
+Distinct $a,b\in\mathcal H$ satisfy $\rank(a-b)=1$.
+\end{lemma}
+\begin{proof}
+The span $W=\langle a,b\rangle$ is a plane containing two first
+factors. If $a+b$ also had rank at least two,
+Corollary~\ref{cor:raises} would give $m(W)\leq20-19=1$, a
+contradiction. Since $a+b\ne0$ and subtraction equals addition in
+$\F$, its rank must be one.
+\end{proof}
+
+\subsection{Affine matrix geometry}
+\begin{lemma}[Affine row or column coset]\label{lem:coset}
+Let $\mathcal H\subseteq\Mat$ contain at least four distinct matrices,
+and suppose $\rank(a-b)=1$ for all distinct $a,b\in\mathcal H$.
+Then either
+\[
+ \mathcal H\subseteq p+\{uw^T:w\in\F^3\}
+ \quad\text{or}\quad
+ \mathcal H\subseteq p+\{wv^T:w\in\F^3\}
+\]
+for a matrix $p$ and a nonzero vector $u$ or $v$.
+\end{lemma}
+\begin{proof}
+Two nonzero rank-one matrices $u_1v_1^T,u_2v_2^T$ have a rank-one
+sum only if $u_1=u_2$ or $v_1=v_2$. Otherwise each pair is linearly
+independent over $\F$, and
+\[
+ u_1v_1^T+u_2v_2^T
+  =\begin{pmatrix}u_1&u_2\end{pmatrix}
+    \begin{pmatrix}v_1^T\\v_2^T\end{pmatrix}
+\]
+has rank two: the second map is surjective onto $\F^2$ and the first
+is injective from $\F^2$.
+
+Fix distinct $a,b,c\in\mathcal H$ and write
+$a+b=u_1v_1^T$, $a+c=u_2v_2^T$. Their sum $b+c$ has rank one,
+so they share a left or right factor. They cannot share both, since
+$b\ne c$. Suppose they share the left factor $u$, with $v_1\ne v_2$.
+For any other $d\in\mathcal H$, write $a+d=u'v'^T$. The rank-one
+conditions for $b+d$ and $c+d$ force $u'=u$: otherwise they would
+require both $v'=v_1$ and $v'=v_2$. Thus every difference from $a$
+has left factor $u$, proving the column-coset alternative. The case of
+a shared right factor is identical after transposition.
+\end{proof}
+
+Apply the lemma to the high-rank factors. The symmetry
+\eqref{eq:transpose} exchanges the two alternatives, so it suffices to
+consider a column coset. Left multiplication sends its common nonzero
+column to $e_0$. Subtracting a first-row matrix from the base point
+does not change the coset, so its elements can be written
+\begin{equation}\label{eq:coset-block}
+ \begin{pmatrix}w^T\\D\end{pmatrix},
+ \qquad w\in\F^3,\quad D\in\F^{2\times3}.
+\end{equation}
+
+If $\rank D=0$, no element has rank at least two. If $\rank D=1$,
+exactly six first rows lie outside its one-dimensional row space.
+Those six matrices have rank two; the other two have rank one.
+Distinctness of the first factors would then bound the entire rank
+excess by six, contradicting~\eqref{eq:budget}. Hence $\rank D=2$.
+
+A right change of basis sends the row space of $D$ to
+$\langle e_1^T,e_2^T\rangle$, and a left action
+$\operatorname{diag}(1,K)$, $K\in\GL_2(\F)$, puts the two lower
+rows into that ordered basis. Both transformations preserve the
+first-row direction and extend to tensor symmetries. We may therefore
+assume
+\begin{equation}\label{eq:normalized-coset}
+ \mathcal H\subseteq p+R,\qquad
+ p=\begin{pmatrix}0&0&0\\0&1&0\\0&0&1\end{pmatrix},\qquad
+ R=\{e_0w^T:w\in\F^3\}.
+\end{equation}
+The eight labels $w$ identify this coset with affine $3$-space over
+$\F$. Four matrices have rank two and four have rank three; the latter
+labels are precisely $w_0=1$.
+
+\subsection{Affine-plane capacities}
+Every affine plane $\pi=w_*+D_0\subset\F^3$, with $\dim D_0=2$,
+corresponds to the linear three-space
+\[
+ K_\pi=\Span\{p+e_0w^T:w\in\pi\}\leq S=\langle p,R\rangle.
+\]
+Indeed $K_\pi=\langle p+e_0w_*^T,\ e_0D_0^T\rangle$.
+The first generator is outside $R$, so its dimension is three and
+$K_\pi\cap(p+R)$ is exactly the four indicated coset elements.
+Conversely, each three-space in $S$ other than $R$ meets $p+R$ in
+such an affine plane. There are $7\cdot2=14$ of them.
+Proposition~\ref{prop:frozen}(iii) and occupation give
+\begin{equation}\label{eq:plane-cap}
+ |\mathcal H\cap K_\pi|\leq m(K_\pi)\leq3.
+\end{equation}
+
+\begin{lemma}\label{lem:five}
+Every five-element subset of $\F^3$ contains a four-point affine plane.
+\end{lemma}
+\begin{proof}
+The ten unordered pair sums take only seven possible nonzero values.
+Two distinct pairs therefore have the same sum. They cannot share a
+point, since that would make their other endpoints equal. Their four
+distinct endpoints have sum zero. Translating one endpoint to zero
+leaves $0,u,v,u+v$ with distinct nonzero $u,v$, the points of an
+affine plane.
+\end{proof}
+
+\begin{proposition}[Forced profile]\label{prop:profile}
+In a hypothetical minimal length-$20$ decomposition, the counts of first
+factors of matrix ranks one, two, and three are respectively
+\begin{equation}\label{eq:profile}
+ (n_1,n_2,n_3)=(16,1,3),\qquad
+ \sum_t\rank A_t=27.
+\end{equation}
+\end{proposition}
+\begin{proof}
+Equations~\eqref{eq:plane-cap} and Lemma~\ref{lem:five} imply
+$|\mathcal H|\leq4$. The budget gives the reverse inequality.
+The four rank-three labels $w_0=1$ themselves form an affine plane,
+so at most three of the selected factors have rank three. With four
+high-rank factors the excess in~\eqref{eq:budget} is $4+n_3$.
+It is at least seven, forcing $n_3=3$, $n_2=1$, and $n_1=16$.
+Their rank sum is $16+2+9=27$.
+\end{proof}
+
+The fourteen bounds $17$ thus turn the rank budget into an exact
+equality. The next section extracts the algebraic consequences of that
+equality for the complete summands.

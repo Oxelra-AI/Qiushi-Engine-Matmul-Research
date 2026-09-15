@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "checked_on": "2026-09-15",
+  "status": "pass",
+  "scope": "All terminal roots in verification.json and their complete proof dependencies, on the source-matched fresh build.",
+  "method": "Six separately completed official Lean Environment.replay runs from an empty kernel environment, with exact-type and transitive-axiom checks.",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "source_build": {
+    "status": "pass",
+    "registered_modules": 13438,
+    "compiled_modules": 13438,
+    "mode": "Fresh-source compilation with source-matched assembly",
+    "digest_format": "SHA-256 of the UTF-8 JSON map from registered module names to source SHA-256 values, sorted keys, separators comma and colon, no whitespace",
+    "source_digest": "06acd3e79ff5d45067141bda4f11f4348743be70da23b498309da426674b130a"
+  },
+  "root_manifest_sha256": "d27e325fd46309c2292957c386e18445a6261b41c31322c7abb7c9d789ffe901",
+  "replay_driver_sha256": "1ded23ab9f39433c8603725c89cae0fa836c2df633618fe92734b05db9f91b3f",
+  "kernel_replay_source_sha256": "5ea88ea9b6c374ad74b8c6f5d36117cec00ec64202aff37f7cff0c6765fb746d",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "terminal_roots": 89,
+  "groups": [
+    {
+      "id": "main",
+      "status": "pass",
+      "roots": 6,
+      "declarations": 143943,
+      "seconds": 13913.845,
+      "receipt_sha256": "cc1f753ceadd22c1bd4f94e0632be73648c6e3ce499182d63d01241c822f53d7"
+    },
+    {
+      "id": "calibration",
+      "status": "pass",
+      "roots": 7,
+      "declarations": 37629,
+      "seconds": 10631.735,
+      "receipt_sha256": "d27a828b9dbb7406f6a7fbd81ec55abdb38e7cc0945f85cbb1a5fe5842d18383"
+    },
+    {
+      "id": "classification",
+      "status": "pass",
+      "roots": 12,
+      "declarations": 33687,
+      "seconds": 3914.665,
+      "receipt_sha256": "70ed494977f88a615bb7a1d43c1530d14d2a16a34c20ef051a25af7eb8dca540"
+    },
+    {
+      "id": "occupation",
+      "status": "pass",
+      "roots": 8,
+      "declarations": 47338,
+      "seconds": 2830.106,
+      "receipt_sha256": "01203d30f53f5570e998ca2c892f84dbe691a9c51cc6d9d3c5e13c58be0a2120"
+    },
+    {
+      "id": "structure",
+      "status": "pass",
+      "roots": 51,
+      "declarations": 36421,
+      "seconds": 1862.878,
+      "receipt_sha256": "844033d93dfc82f4093ca023e12820909cbfff4f48242b63d866251232a18d3d"
+    },
+    {
+      "id": "encoding",
+      "status": "pass",
+      "roots": 5,
+      "declarations": 6713,
+      "seconds": 5.121,
+      "receipt_sha256": "46ffc67beccd131f9a5b7811ad32596e6ac46587e1700bc9119a6a310c713ae5"
+    }
+  ]
+}

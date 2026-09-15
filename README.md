@@ -4,6 +4,7 @@
 
 **Long-horizon autonomous mathematical research: from algorithm search to structural proof.**
 
+[Mathematical paper](paper/main.pdf) ·
 [Report with Lean proofs](reports/en-lean/main.pdf) ·
 [中文报告（含 Lean 证明）](reports/zh-lean/main.pdf) ·
 [Research materials](research/materials/README.md) ·
@@ -127,7 +128,7 @@ question. The account explains how those outcomes informed later research.
 
 | Question | Material |
 | --- | --- |
-| What is proved, and why? | [Report with Lean formalization](reports/en-lean/main.pdf) |
+| What is proved, and why? | [Mathematical paper](paper/main.pdf) and [report with Lean formalization](reports/en-lean/main.pdf) |
 | How did Qiushi Engine conduct the research? | Section 2 and the Meta-Trace in Appendix B of the [same report](reports/en-lean/main.pdf) |
 | Which routes failed or remained open? | [Research guide](research/guide.md) and [corrections](research/corrections.md) |
 | Where are the notes, plans, programs and experiment records? | [Thematic material collection](research/materials/README.md) and [artifact catalog](research/catalog.json) |
@@ -136,11 +137,12 @@ question. The account explains how those outcomes informed later research.
 | Can the theorem be checked by Lean? | [Formalization](formalization/README.md), [coverage](formalization/COVERAGE.md) and [verification results](formalization/STATUS.md) |
 | Is a Chinese translation available? | [Complete Chinese report with Lean formalization](reports/zh-lean/main.pdf), translated section by section from the English report |
 | Where are the original reports? | [English](reports/en/main.pdf) and [Chinese](reports/zh/main.pdf), preserved unchanged |
-| Can the documents be rebuilt? | [English sources](reports/en-lean/README.md) and [Chinese sources](reports/zh-lean/README.md) |
+| Can the documents be rebuilt? | [Paper sources](paper/README.md), [English report sources](reports/en-lean/README.md) and [Chinese report sources](reports/zh-lean/README.md) |
 
 ## Structure
 
 ~~~text
+paper/            Mathematical paper, LaTeX sources and manuscript data
 reports/en/       Original English report, preserved unchanged
 reports/zh/       Original Chinese report, preserved unchanged
 reports/en-lean/  English report integrating the mathematical proof and Lean formalization
@@ -160,11 +162,12 @@ installation is included or required.
 
 ## Start Here
 
-Read the [report](reports/en-lean/main.pdf) for the argument and the
+Read the [paper](paper/main.pdf) for the mathematical argument, the
+[report](reports/en-lean/main.pdf) for a broader account, and the
 [research guide](research/guide.md) for its development. The
 [release downloads](https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research/releases/latest)
-include the complete research archive with actual proof data, both PDFs,
-and standalone English and Chinese LaTeX packages.
+include the complete research archive with actual proof data, the paper and
+reports, and standalone LaTeX packages.
 
 For a working Git checkout, install Git LFS and fetch the large-file contents:
 

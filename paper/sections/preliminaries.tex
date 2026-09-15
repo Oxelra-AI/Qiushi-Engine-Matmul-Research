@@ -1,0 +1,96 @@
+\section{Tensor conventions and occupation}\label{sec:preliminaries}
+
+Let $V=\Mat$, equipped with the nondegenerate coordinate pairing
+\[
+ \langle A,X\rangle=\sum_{i,j=0}^2 A_{ij}X_{ij}=\tr(A^TX).
+\]
+All matrix and vector coordinates are indexed by $0,1,2$. Write
+$e_0=(1,0,0)^T$, $e_1=(0,1,0)^T$, $e_2=(0,0,1)^T$ and
+$E_{ij}=e_i e_j^T$. Throughout the paper,
+\begin{equation}\label{eq:tensor}
+ \T=\sum_{i,j,k=0}^2 E_{ij}\otimes E_{jk}\otimes E_{ik}
+   \in V\otimes V\otimes V.
+\end{equation}
+Thus its coefficient at $(3i+j,3j+k,3i+k)$ is $1$, and all other
+coefficients are zero. Its contraction against $X,Y,Z$ is
+$\tr(XYZ^T)$.
+
+\begin{definition}
+A decomposition of length $r$ is an identity
+\begin{equation}\label{eq:decomp}
+ \T=\sum_{t=1}^r A_t\otimes B_t\otimes C_t,
+ \qquad A_t,B_t,C_t\in V.
+\end{equation}
+The tensor rank $R_{\F}(\T)$ is the least such $r$. Unless explicitly
+excluded, zero summands and repeated factors are permitted in a
+length-$r$ expression. A minimal expression has no zero summands.
+\end{definition}
+
+By contraction of~\eqref{eq:decomp}, the corresponding algorithm is
+\begin{equation}\label{eq:algorithm}
+ XY=\sum_{t=1}^r\langle A_t,X\rangle
+                      \langle B_t,Y\rangle C_t
+ \qquad(X,Y\in V).
+\end{equation}
+Conversely, evaluating~\eqref{eq:algorithm} on pairs of matrix units
+recovers every coefficient of~\eqref{eq:decomp}. Matrix rank
+$\rank(A_t)$ and tensor rank $R_{\F}(\T)$ will always be distinguished.
+
+For a linear subspace $W\leq V$, put
+\[
+ q_W:V\longrightarrow V/W,\qquad
+ T_W=(q_W\otimes\id\otimes\id)\T.
+\]
+The dual of $V/W$ is naturally $W^\perp$ under the coordinate pairing.
+Consequently $T_W$ represents multiplication with its first input
+restricted to $W^\perp$, not to $W$. Indeed, a linear functional on
+$V/W$ pulls back to a functional vanishing on $W$, and every such
+functional factors uniquely through $q_W$. Applying this identification
+in the first tensor slot proves the assertion, including equality of
+the two tensor ranks.
+
+\begin{lemma}[Occupation inequality]\label{lem:occupation}
+For a length-$r$ decomposition, let
+$m(W)=|\{t:A_t\in W\}|$. Then
+\begin{equation}\label{eq:occupation}
+ m(W)\leq r-R_{\F}(T_W).
+\end{equation}
+More generally, if $W\leq U$ and $T_W$ has a length-$r$
+decomposition, at most $r-R_{\F}(T_U)$ first factors, counted with
+multiplicity in $V/W$, belong to $U/W$.
+\end{lemma}
+\begin{proof}
+Applying $q_W$ to~\eqref{eq:decomp} kills every indexed term
+with first factor in $W$. Discarding these terms gives a decomposition
+of $T_W$ with at most $r-m(W)$ terms. For the
+second assertion apply the induced map $V/W\to V/U$ instead.
+\end{proof}
+
+\subsection{Tensor symmetries}
+For $U,V_0,H\in\GL_3(\F)$ the coefficient transformation
+\begin{equation}\label{eq:symmetry}
+ (A,B,C)\longmapsto
+ (U^TAV_0^{-T},\ V_0^TBH^{-T},\ U^{-1}CH)
+\end{equation}
+preserves~\eqref{eq:tensor}. To check the contragredient factors,
+consider the input transformation
+\[
+ (X,Y,Z)\longmapsto
+ (UXV_0^{-1},\ V_0YH^{-1},\ U^{-T}ZH^T).
+\]
+It preserves $\tr(XYZ^T)$ by cancellation and cyclicity of trace.
+Pullback under the coordinate pairing gives~\eqref{eq:symmetry}.
+The transformation
+\begin{equation}\label{eq:transpose}
+ (A,B,C)\longmapsto(A^T,C,B)
+\end{equation}
+is also a symmetry, as follows directly by exchanging $i$ and $j$ in
+the transformed sum~\eqref{eq:tensor}. These symmetries preserve the
+matrix ranks of the factors and quotient tensor ranks.
+
+The induced group on $V$ consists of $A\mapsto PAQ$ and
+$A\mapsto PA^TQ$, for invertible $P,Q$. We denote it by $G$.
+It has $2\cdot168^2=56{,}448$ elements. Its action on subspaces is the
+one used in the frozen catalogue. Each of these first-factor actions
+extends to a symmetry of the complete tensor by~\eqref{eq:symmetry}
+and~\eqref{eq:transpose}.

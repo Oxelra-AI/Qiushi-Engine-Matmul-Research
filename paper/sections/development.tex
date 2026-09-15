@@ -1,0 +1,185 @@
+\section{Qiushi Engine and the development of the proof}\label{sec:development}
+
+Qiushi Engine developed the structural proof through sustained
+autonomous research on exact matrix multiplication. Its research
+planning, construction, computation, and critical review operate with
+persistent mathematical memory, as described in its earlier work on
+an optical experimental platform~\cite{qiushi-optics}. Here the system
+began with the search for a shorter algorithm. The eventual lower-bound
+proof grew from a different question exposed by that search: which
+constraints on candidate factors express compatibility with the full
+multiplication tensor?
+
+The public research trajectory~\cite{qiushi-report} brings together
+the relevant notes, programs, results, and corrections. It is organized
+by mathematical question rather than as a transcript or a strictly
+linear chronology. The following three developments explain how the
+representations changed and what was retained from each.
+
+\subsection{From numerical dependence to an exact deletion criterion}
+A general $22$-term ansatz contains $22(9+9+9)=594$ coefficients
+subject to $729$ cubic tensor-coordinate identities. The early search
+also considered real-coefficient deformations of known $23$-term
+schemes. The aim was to reach a configuration in which one product
+could be eliminated. A nearly dependent first--second factor pairing
+initially appeared to offer such a route.
+
+The difficulty can be stated exactly. For a numerical decomposition
+$\mathcal D=\sum_{t=0}^{22}u_t\otimes v_t\otimes w_t$ over
+$\mathbb R$, normalize the nonzero pairing columns by setting
+\[
+ d_t=\frac{u_t\otimes v_t}{\|u_t\otimes v_t\|_2},\qquad
+ \widetilde w_t=\|u_t\otimes v_t\|_2 w_t,\qquad
+ D=[d_0\ \cdots\ d_{22}].
+\]
+Let $\lambda$ be a unit right singular vector for
+$\sigma_{\min}(D)$, and choose $k$ with $\lambda_k\ne0$.
+If $D\lambda$ were zero, the $k$-th pairing column could be
+eliminated by replacing each remaining output vector with
+$\widetilde w_t-(\lambda_t/\lambda_k)\widetilde w_k$.
+For an approximate dependence the same operation gives a $22$-term
+tensor $\mathcal D_{22}$, with exact error relative to the current
+tensor
+\begin{equation}\label{eq:deletion-diagnostic}
+ \|\mathcal D-\mathcal D_{22}\|_F
+   =\frac{\|D\lambda\|_2\,\|\widetilde w_k\|_2}{|\lambda_k|}
+   =\frac{\sigma_{\min}(D)\,\|\widetilde w_k\|_2}{|\lambda_k|}.
+\end{equation}
+Thus a small pairing singular value alone is insufficient. The output
+factor may grow at the compensating rate.
+
+To compare the result with the target tensor, write
+$E=\|\mathcal D-\mathcal D_{22}\|_F$ and
+$\varepsilon=\|\T-\mathcal D\|_F$, using the real tensor with the
+coefficients in~\eqref{eq:tensor}. The triangle inequalities give
+\begin{equation}\label{eq:deletion-target}
+ |E-\varepsilon|\leq\|\T-\mathcal D_{22}\|_F
+                  \leq E+\varepsilon.
+\end{equation}
+Table~\ref{tab:continuation} reports both quantities for a continuation
+from the integer $23$-term scheme \code{serendipitous\_8d34} in
+Perminov's FastMatrixMultiplication collection~\cite{perminov-code}.
+The output vectors were transposed from the source's column-major
+convention to~\eqref{eq:tensor}; the source version and conversion
+are specified in Appendix~\ref{app:trajectory-sources}.
+The parameter $t$ labels saved continuation points, not elapsed time.
+The same column, labelled $10$ in the data, is eliminated at each
+point. Across these samples the pairing singular value falls by two
+orders of magnitude, but output growth keeps the deletion error of
+order one. The target residual remains below $4\times10^{-12}$.
+Thus~\eqref{eq:deletion-target} shows that the deleted representation
+is still about one unit from the target at each of these points.
+
+\begin{table}[htbp]
+\centering
+\caption{Pairing dependence and compensating output growth in a
+recorded real-coefficient continuation. Here $E$ is the deletion error
+in~\eqref{eq:deletion-diagnostic}, and $\varepsilon$ is the target
+residual before deletion. Values are rounded from the archived data.}
+\label{tab:continuation}
+\small
+\begin{tabular}{rrrrrr}
+\toprule
+$t$ & $\sigma_{\min}(D)$ & $|\lambda_{10}|$ & $\|\widetilde w_{10}\|_2$ & $E$ & $\varepsilon$\\
+\midrule
+10 & $5.265\times10^{-3}$ & $0.7084$ & $1.400\times10^2$ & $1.040$ & $1.997\times10^{-14}$\\
+20 & $7.051\times10^{-4}$ & $0.7076$ & $1.064\times10^3$ & $1.061$ & $1.902\times10^{-13}$\\
+60 & $4.745\times10^{-5}$ & $0.7075$ & $1.779\times10^4$ & $1.193$ & $3.645\times10^{-12}$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Qiushi's correction separated projective proximity from the tensor
+contribution it was meant to remove. The retained lesson was an exact
+one: a change to the first two factor lists must be assessed together
+with the output coefficients. The archive includes the continuation
+analysis, its corrected interpretation, and the data used in
+Table~\ref{tab:continuation}; the source links are collected in
+Appendix~\ref{app:trajectory-sources}.
+
+\subsection{Quotient cores and the completion problem}
+The finite-field search made a coordinate quotient a natural target.
+Taking $W=\langle E_{00}\rangle$ in the first factor gives an
+$8\times9\times9$ core. This is the $E_{11}$ core of the research
+report, whose historical name uses one-based indices; the present
+paper uses indices $0,1,2$. A $19$-term decomposition of this core,
+embedded in the coordinate complement, would need only the three
+deleted terms
+\begin{equation}\label{eq:core-restoration}
+ \sum_{k=0}^2 E_{00}\otimes E_{0k}\otimes E_{0k}
+\end{equation}
+to recover $\T$. It would therefore give a $22$-product algorithm.
+The smaller object retained a direct route to the original problem.
+
+Occupation constraints organized candidate first factors into finite
+configurations. Their feasibility, however, did not solve completion.
+For fixed first factors $a_t\in V/W$, the remaining obligation is
+\begin{equation}\label{eq:core-completion}
+ \sum_t a_t B_t[j,k]C_t[i,l]
+   =\delta_{kl}\,q_W(E_{ij})
+ \qquad(0\leq i,j,k,l<3).
+\end{equation}
+Each pair $B_t,C_t$ must satisfy all these equations simultaneously.
+Occupation records where the $a_t$ lie, but omits these products and
+their shared coefficients. Fixed-factor solving, contractions, lift
+conditions, and relaxations examined different parts of this gap.
+
+The gap also appeared in verification. An early cardinality encoding
+reused auxiliary variables between constraints and produced a
+spurious contradiction. Qiushi identified the collision, withdrew the
+affected exclusion, and rebuilt the encoding with disjoint counters.
+The mathematical requirement was then explicit: every legal
+multiplicity vector must extend to a simultaneous Boolean assignment.
+This requirement survives in the formal copy and counter semantics
+described in Appendix~\ref{app:certificate-realizations}.
+
+The quotient search consequently left two distinct assets: the
+restoration formula for upper bounds and valid occupation constraints
+for lower bounds. The latter did not have to solve completion directly.
+They could instead force a configuration in which the full tensor
+itself supplied additional equations.
+
+\subsection{Returning to the full tensor}
+The split flattening introduced information absent from a quotient
+support: each complete algorithm term contributes an image space of
+dimension $\rank A_t$, and these spaces together must span dimension
+$27$. After the geometric reduction, the profile $(16,1,3)$ used
+exactly this dimension. There was no remaining dimensional overlap.
+Qiushi then used the uniqueness of components in that direct sum to
+obtain the saturation identities, and expanded their products in the
+coordinates of matrix multiplication.
+
+This was a change in the kind of conclusion being sought. Earlier
+finite work had considered excluding completions of the surviving
+profile by additional support systems. The saturation argument instead
+gave a statement about every complete decomposition at rank sum $27$:
+at most one first factor is invertible. It replaced the terminal
+support exclusions by Proposition~\ref{prop:invertibility}. The
+research note on the shortened proof also identified that the proposed
+strengthening of orbit $479$ was unnecessary for the coset reduction:
+its high-rank pair already has rank-one difference. That step requires
+only the eight all-high plane raises. The existing bound
+$R_{\F}(T_{W_{479}})\geq17$ still enters the line
+cover~\eqref{eq:line-cover}.
+
+The same statement then returned information to the constructive
+problem. It restricts saturated $22$-term algorithms through
+Corollary~\ref{cor:profiles}, while positive rank excess identifies
+where the argument must be extended.
+
+\subsection{Research memory and formal development}
+Qiushi Engine's Meta-Trace links the history of questions, the evidence
+for claims, and changes in the research trajectory~\cite{qiushi-optics}.
+For this study, the accompanying record contains the deletion
+diagnostic, the core restoration map,
+the distinction between occupation and completion, the counter
+correction, and the saturation argument, together with the notes,
+programs, and computed data supporting them. Superseded interpretations
+are retained alongside the evidence that corrected them.
+
+The subsequent Lean development and manuscript preparation included
+additional Codex assistance in proof completion, integration, and
+verification. Formalization preserved the structural argument while
+rebuilding its finite premises as proved quotient statements and
+integer certificates. The library also includes the occupation,
+substitution, and saturation lemmas used in the proof.

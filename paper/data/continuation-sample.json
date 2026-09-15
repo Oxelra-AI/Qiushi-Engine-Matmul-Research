@@ -1,0 +1,45 @@
+{
+  "scheme": "serendipitous_8d34",
+  "column_label": 10,
+  "field": "real numerical coefficients",
+  "repository": "https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research",
+  "revision": "01b4a6baf3788bf3f14af98a653ea22dafa0691c",
+  "sources": [
+    "research/materials/exact_baselines/results/fmm_r23_schemes/puiseux_analysis.json",
+    "research/materials/exact_baselines/results/fmm_r23_schemes/cancellation_analysis.json",
+    "research/materials/exact_baselines/results/fmm_r23_schemes/serendipitous_8d34_continuation_ranked0_further.json"
+  ],
+  "normalization": "Multiply the coordinate-normalized pairing norm by the absorbed output norm to obtain the output norm for a unit pairing column.",
+  "samples": [
+    {
+      "t": 10,
+      "sigma_min": 0.005264817093994557,
+      "lambda_k": 0.708442790154636,
+      "pairing_norm": 1.3278272907419877,
+      "absorbed_output_norm": 105.40338951287218,
+      "unit_pairing_output_norm": 139.95749713189952,
+      "deletion_error": 1.0400989798652365,
+      "target_residual": 1.9965277599756e-14
+    },
+    {
+      "t": 20,
+      "sigma_min": 0.0007050626305041785,
+      "lambda_k": -0.7075533316429362,
+      "pairing_norm": 1.477498072482454,
+      "absorbed_output_norm": 720.4152934887863,
+      "unit_pairing_output_norm": 1064.4122075165633,
+      "deletion_error": 1.0606653059350057,
+      "target_residual": 1.9021426663950114e-13
+    },
+    {
+      "t": 60,
+      "sigma_min": 0.00004745007821923557,
+      "lambda_k": -0.7074879881473788,
+      "pairing_norm": 1.6074277308664209,
+      "absorbed_output_norm": 11070.323480423385,
+      "unit_pairing_output_norm": 17794.74495209422,
+      "deletion_error": 1.1934648418261578,
+      "target_residual": 3.645387814811203e-12
+    }
+  ]
+}

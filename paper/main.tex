@@ -1,0 +1,115 @@
+% Build from this directory: latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
+\documentclass[11pt,reqno]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=28mm,headheight=14pt]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{microtype}
+\usepackage{booktabs,longtable,array}
+\usepackage{enumitem}
+\usepackage[sort,nocompress]{cite}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\makeatletter
+\renewcommand{\@setauthors}{%
+  \begin{center}
+    \footnotesize\scshape
+    \vspace{1ex}
+    \authors\par
+    \vspace{1.2ex}
+    \normalfont\footnotesize
+    \def\address##1##2{##2\par}%
+    \addresses
+    \vspace{0.5ex}
+    \PaperCorrespondence\par
+  \end{center}%
+  \global\let\addresses\@empty
+}
+\makeatother
+\numberwithin{equation}{section}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\F}{\mathbb F_2}
+\newcommand{\Mat}{M_3(\F)}
+\newcommand{\T}{T_{\langle3,3,3\rangle}}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\Span}{span}
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\code}[1]{\texttt{\small #1}}
+\newcommand{\qbinom}[2]{\genfrac{[}{]}{0pt}{}{#1}{#2}_2}
+\setlist[enumerate]{label=\textup{(\roman*)},leftmargin=*,itemsep=3pt}
+\setlength{\emergencystretch}{1.5em}
+\title[A structural lower bound for binary matrix multiplication]
+{A structural proof of the lower bound 21\\
+for $3\times3$ matrix multiplication over $\mathbb F_2$}
+\author[Shuxing Yang et al.]{\mbox{Shuxing Yang}, \mbox{Rui Zhao},
+\mbox{Junyao Wu}, \mbox{Yize Wang}, \mbox{Wenhao Li}, \mbox{Fujia Chen},
+\mbox{Taowen Deng}\\
+\mbox{Shenzhan Hong}, \mbox{Yaqi Li}, \mbox{Zichen Li},
+\mbox{Jincheng Mi}, \mbox{Yuang Pan}, \mbox{Kaihao Zhu}, \mbox{Junjie Yang}\\
+\mbox{Hongsheng Chen\textsuperscript{*}},
+\mbox{Yihao Yang\textsuperscript{*}}}
+\address{College of Information Science and Electronic Engineering,
+Zhejiang University\\Qiushi Engine Team}
+\newcommand{\PaperCorrespondence}{\textsuperscript{*}Corresponding authors:
+\mbox{Hongsheng Chen (\href{mailto:hansomchen@zju.edu.cn}{hansomchen@zju.edu.cn})};
+\mbox{Yihao Yang (\href{mailto:yangyihao@zju.edu.cn}{yangyihao@zju.edu.cn})}.}
+\date{}
+\subjclass[2020]{Primary 68Q17; Secondary 15A69, 05B25, 68V20}
+\keywords{Matrix multiplication; algebraic complexity; tensor rank;
+bilinear complexity; finite fields; computer-assisted proof; formal verification}
+\hypersetup{
+  pdftitle={A structural proof of the lower bound 21 for 3x3 matrix multiplication over F2},
+  pdfauthor={Shuxing Yang, Rui Zhao, Junyao Wu, Yize Wang, Wenhao Li, Fujia Chen, Taowen Deng, Shenzhan Hong, Yaqi Li, Zichen Li, Jincheng Mi, Yuang Pan, Kaihao Zhu, Junjie Yang, Hongsheng Chen, Yihao Yang},
+  pdfsubject={A structural proof of the binary matrix multiplication rank lower bound 21}}
+\begin{document}
+\begin{abstract}
+The exact bilinear complexity of $3\times3$ matrix multiplication
+remains unknown, even over $\mathbb F_2$: algorithms with $23$ scalar
+multiplications are known, but ruling out shorter ones requires
+constraints on every possible decomposition. We give a structural proof
+of the lower bound $21$, also established by Wang through
+capacity-constrained profile enumeration. Our proof converts information
+about one tensor factor into algebraic relations coupling all three.
+Certified quotient-rank bounds and finite geometry force any
+hypothetical $20$-term decomposition to have first-factor matrix-rank
+profile $(16,1,3)$. The sum of these ranks is $27$, equal to the rank of
+a split flattening of the multiplication tensor. Equality in rank
+subadditivity makes the normalized flattened summands pairwise
+annihilating idempotents. A matrix-multiplication-specific product
+identity then shows that such a decomposition has at most one
+invertible first factor, contradicting the three required by the
+profile. The same obstruction restricts saturated $22$-term
+decompositions. The complete proof, including the finite quotient
+bounds, is formalized in Lean. Qiushi Engine developed the structural
+argument through autonomous research on shorter algorithms; the
+accompanying research trajectory records the numerical diagnostics,
+quotient constructions, and corrections that led to the proof.
+\end{abstract}
+\maketitle
+\raggedbottom
+\input{sections/introduction}
+\input{sections/preliminaries}
+\input{sections/finite}
+\input{sections/geometry}
+\input{sections/saturation}
+\input{sections/consequences}
+\input{sections/formalization}
+\input{sections/development}
+\appendix
+\input{sections/finite-data}
+\input{sections/catalogue}
+\input{sections/upper-bound}
+\input{sections/formalization-details}
+\bibliographystyle{unsrturl}
+\bibliography{references}
+\end{document}

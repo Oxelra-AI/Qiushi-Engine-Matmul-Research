@@ -1,0 +1,165 @@
+\section{Explicit finite premises}\label{app:finite-data}
+
+\subsection{Matrix codes and representative planes}
+For $0\leq v<512$ define $\operatorname{mat}(v)_{ij}$ to be the bit
+at position $3i+j$ of $v$. Thus the least significant bit represents
+$E_{00}$, and code $272$ represents $\operatorname{diag}(0,1,1)$.
+A displayed tuple of codes denotes their $\F$-linear span. The frozen
+RREF convention chooses pivots from bit $8$ down to bit $0$.
+The following ranks are the sorted ranks of the three nonzero elements,
+not necessarily the ranks in basis order.
+
+\begin{table}[htbp]
+\centering
+\caption{The eight all-high planes. Every inherited label is $18$;
+every improved quotient lower bound is $19$.}
+\label{tab:planes}
+\begin{tabular}{rcrr}
+\toprule
+Index & Basis codes & Rank multiset & Orbit size\\
+\midrule
+484 & $(19,10)$ & $(2,2,2)$ & 98\\
+485 & $(20,10)$ & $(2,2,2)$ & $2{,}352$\\
+486 & $(68,10)$ & $(2,2,2)$ & $1{,}176$\\
+487 & $(84,10)$ & $(2,3,3)$ & $3{,}528$\\
+488 & $(96,10)$ & $(2,2,3)$ & $14{,}112$\\
+489 & $(258,10)$ & $(2,2,2)$ & $4{,}704$\\
+490 & $(275,10)$ & $(2,3,3)$ & $4{,}704$\\
+491 & $(163,84)$ & $(3,3,3)$ & $1{,}344$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Their orbit sizes sum to $32{,}018$. There are $43{,}435$ two-planes
+in total. The six other orbit representatives have bases
+$(2,1)$, $(10,1)$, $(16,1)$, $(20,1)$, $(84,1)$, and $(160,1)$,
+with indices $478$--$483$. Each contains a rank-one matrix and is
+outside the hypothesis of Corollary~\ref{cor:raises}.
+
+The total number of subspaces is obtained by counting ordered bases:
+each $d$-space has $\prod_{j=0}^{d-1}(2^d-2^j)$ ordered bases,
+whereas $V$ has $\prod_{j=0}^{d-1}(2^9-2^j)$ independent
+ordered $d$-tuples. Thus
+\[
+ \sum_{d=0}^9 \qbinom{9}{d}=8{,}283{,}458,
+ \qquad
+ \qbinom{n}{d}=\prod_{j=0}^{d-1}\frac{2^n-2^j}{2^d-2^j}.
+\]
+Similarly $\qbinom{9}{2}=43{,}435$, and
+$\sum_{d=1}^6\qbinom{7}{d}=29{,}210$. These count actual subspaces;
+the formal orbit classification supplies the separate coverage claim.
+
+\subsection{The normalized hyperplanes}
+The spaces $S=(272,4,2,1)$ and $R=(4,2,1)$ have dimensions four
+and three. Their frozen values are $14$ and $15$. The other fourteen
+hyperplanes of $S$ are listed below; each has frozen value $17$.
+The index is the suffix in the formal name \code{affineHyperplane}.
+\begin{center}
+\begin{tabular}{rc@{\qquad}rc}
+\toprule
+Index & Basis codes & Index & Basis codes\\
+\midrule
+0 & $(272,4,2)$ & 7 & $(276,2,1)$\\
+1 & $(273,4,2)$ & 8 & $(272,5,2)$\\
+2 & $(272,4,1)$ & 9 & $(273,5,2)$\\
+3 & $(274,4,1)$ & 10 & $(272,6,1)$\\
+4 & $(272,4,3)$ & 11 & $(274,6,1)$\\
+5 & $(273,4,3)$ & 12 & $(272,5,3)$\\
+6 & $(272,2,1)$ & 13 & $(273,5,3)$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Equivalently these are
+$\{\alpha p+e_0w^T:a\cdot w=b\alpha\}$ for
+$a\in\F^3\setminus0$ and $b\in\F$. This formula proves that
+the list exhausts the fourteen affine-plane spans used in the proof.
+
+The line representatives in the small premise interface are
+$(1)$, $(17)$, and $(273)$, of matrix ranks one, two, and three.
+They are respectively equivalent to the frozen line representatives
+$(1)$, $(10)$, and $(84)$, all with label $19$.
+
+\subsection{Integer branch-certificate sizes}
+Table~\ref{tab:branches} describes the Lean integer branch certificates.
+A zero-forcing row has target-level
+bound $18$ and removes its quotient directions by nonnegativity.
+Source rows retain their proved labels in~\eqref{eq:retained}.
+All systems begin with $127$ nonzero directions and $29{,}210$ rows;
+retaining fewer rows is a weakening, so infeasibility of the retained
+system proves infeasibility of the full one. The coefficient tests,
+row bindings, and exhaustive branches are part of the formal proof.
+\input{data/branch-summary}
+
+\subsection{Substitution and a source bound of twelve}
+\label{app:source-substitution}
+The substitution rule used for the source bounds has a useful
+formulation in terms of slices. Let $D$ be a finite-dimensional
+$\F$-vector space, let $\beta,\gamma$ be finite index sets, and write
+a tensor as $S:\beta\times\gamma\to D$. Its second-factor slices
+are the functions $S_b:c\mapsto S(b,c)$.
+
+\begin{lemma}[Substitution with a surviving flattening]
+\label{lem:source-substitution}
+Choose $b_1,\ldots,b_k\in\beta$ such that the slices $S_{b_l}$
+are linearly independent, and $c_1,\ldots,c_f\in\gamma$.
+Suppose that for every nonzero $y\in\F^f$ there exist $b\in\beta$
+and $\phi\in D^*$ satisfying
+\begin{equation}\label{eq:substitution-witness}
+ \phi\left(\sum_j y_j S(b_l,c_j)\right)=0\quad(1\leq l\leq k),
+ \qquad
+ \phi\left(\sum_j y_j S(b,c_j)\right)\ne0.
+\end{equation}
+Then $R_{\F}(S)\geq k+f$.
+\end{lemma}
+\begin{proof}
+Consider a decomposition $S(b,c)=\sum_{t=1}^r a_t B_t(b)C_t(c)$.
+If $k>0$, the nonzero slice at $b_1$ forces $B_{t_0}(b_1)=1$
+for some $t_0$.
+Replace the slice family by
+\[
+ S'(b,c)=S(b,c)+B_{t_0}(b)S(b_1,c).
+\]
+The $t_0$-th term cancels, leaving a decomposition with at most $r-1$
+terms. The other selected slices remain independent: a relation among
+them would give a relation among the original $k$ selected slices,
+with the coefficient of $S_{b_1}$ adjusted accordingly.
+For a witness in~\eqref{eq:substitution-witness}, the added multiple
+of $S_{b_1}$ vanishes under $\phi$. Hence the same condition holds
+for $S'$ and its $k-1$ remaining selected slices.
+
+Iterate $k$ times. In the final family, no nonzero linear combination
+of the $f$ selected columns vanishes, since the surviving witness
+detects it at some $b$. These columns are therefore independent in
+the flattening with column index $c$ and row space $D\otimes\F^\beta$.
+Its rank is at least $f$, whereas a decomposition with at most $r-k$
+terms gives rank at most $r-k$. Thus $r\geq k+f$.
+\end{proof}
+
+For a source actually used in the formal development, set
+\[
+ J=\begin{pmatrix}0&0&1\\0&1&0\\1&0&0\end{pmatrix},
+ \qquad K=E_{22},\qquad W=H_J\cap H_K.
+\]
+This is $W_{11}$ in the catalogue. Quotient coordinates are
+$X\mapsto(\langle J,X\rangle,\langle K,X\rangle)$, so its slice
+family, with $b=(j,k)$ and $c=(i,l)$, is
+\begin{equation}\label{eq:source-twelve-slices}
+ S((j,k),(i,l))=
+    (\delta_{i+j,2}\delta_{kl},\ \delta_{i,2}\delta_{j,2}\delta_{kl}).
+\end{equation}
+Choose the six slices with $j=0,1$ and all $k$, and the six columns
+with $i=0,2$ and all $l$. The slices are independent: in the first
+component, each has a different nonzero coordinate $(i,l)=(2-j,k)$.
+
+Write a combination of the selected columns as $y=(a,b)\in\F^3\oplus\F^3$,
+where $a$ corresponds to $i=0$ and $b$ to $i=2$.
+If $b\ne0$, the second coordinate functional annihilates all six
+selected slice evaluations and detects $b_k\ne0$ in a slice $(2,k)$.
+If $b=0$ and $a\ne0$, the first coordinate functional instead
+annihilates those evaluations and detects $a_k\ne0$ in a slice
+$(2,k)$. This proves~\eqref{eq:substitution-witness} for every
+nonzero $y$. Lemma~\ref{lem:source-substitution} yields
+$R_{\F}(T_{W_{11}})\geq6+6=12$.
+This example and~\eqref{eq:three-hyperplane-bound} illustrate the two
+complementary operations used in the source proofs: preserving a
+flattening through substitution, and combining quotient capacities.

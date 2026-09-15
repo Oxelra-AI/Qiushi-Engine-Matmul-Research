@@ -1,0 +1,118 @@
+\section{Saturated decompositions and further consequences}\label{sec:consequences}
+
+For a length-$r$ decomposition define the $A$-slot excess by
+\[
+ \Delta_A=\sum_{t=1}^r\rank A_t-27.
+\]
+The split bound shows that $\Delta_A\geq0$. A decomposition is
+\emph{saturated in the $A$-slot} if $\Delta_A=0$.
+
+\begin{corollary}[Zero terms and saturated profiles]\label{cor:profiles}
+In an arbitrary length decomposition saturated in the $A$-slot,
+including one with zero summands, at most one $A_t$ is invertible.
+If its length is $22$ and all $A_t$ are nonzero, its $A$-slot
+matrix-rank profile is either
+\begin{equation}\label{eq:22profiles}
+ (17,5,0)\quad\text{or}\quad(18,3,1).
+\end{equation}
+Without the nonzero-$A_t$ hypothesis, either these profiles hold or
+deleting a zero first factor gives a saturated length-$21$
+decomposition.
+\end{corollary}
+\begin{proof}
+For arbitrary factors,
+\[
+ 27\leq\sum_t\rank M(A_t,B_t,C_t)
+       \leq\sum_t\rank A_t=27.
+\]
+Hence each individual rank deficit is zero. In particular if $A_t\ne0$,
+neither $B_t$ nor $C_t$ can be zero. Removing all terms with $A_t=0$
+leaves nonzero factors and preserves the rank sum, so
+Proposition~\ref{prop:invertibility} applies.
+
+For $22$ nonzero first factors, write $n_j$ for the count of rank $j$.
+Then $n_1+n_2+n_3=22$ and $n_1+2n_2+3n_3=27$, whence
+$n_2+2n_3=5$. Since $n_3\leq1$, the only possibilities
+are~\eqref{eq:22profiles}. If a first factor is zero, deletion leaves
+length $21$ and the same rank sum. Two such zero factors would produce
+length $20$, contrary to Theorem~\ref{thm:main}.
+\end{proof}
+
+The cyclic symmetry
+\[
+ (A,B,C)\longmapsto(B,C^T,A^T)
+\]
+follows by relabelling $i,j,k$ in~\eqref{eq:tensor}, and its third
+iterate is the identity. Transpose preserves matrix rank. Thus the
+split bound, the invertibility obstruction, and
+Corollary~\ref{cor:profiles} hold separately in the $B$- and $C$-slots.
+Saturation in one slot does not imply saturation in either other slot.
+
+\subsection{Positive rank excess}
+At length $21$, the three occupation capacities driving the
+length-$20$ argument change as follows:
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+Subspace family & Length $20$ & Length $21$\\
+\midrule
+Lines with bound $19$ & $1$ & $2$\\
+All-high planes with bound $19$ & $1$ & $2$\\
+Affine-plane spans with bound $17$ & $3$ & $4$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Repeated first factors and two high-rank factors in an all-high plane
+are no longer immediately excluded. Four coset labels forming an affine
+plane are also allowed. The argument therefore no longer forces the
+profile or rank equality. At positive excess the hypotheses of
+Lemma~\ref{lem:saturation} are unavailable.
+
+The excess has a precise linear-algebraic meaning. For nonzero
+summands set $U_t=\im M_t$. The addition map
+\[
+ \Sigma:\bigoplus_t U_t\longrightarrow\F^{27},\qquad
+ (u_t)_t\longmapsto\sum_t u_t
+\]
+is surjective because $\sum_tM_t=P$ is invertible. Rank--nullity gives
+\begin{equation}\label{eq:excess-kernel}
+ \dim\ker\Sigma=\sum_t\dim U_t-27=\Delta_A.
+\end{equation}
+Zero excess means that components are unique, which is exactly what
+produces the identities in Lemma~\ref{lem:saturation}. Positive excess
+measures the remaining linear relations between these components.
+Extending the method to length $21$ therefore requires stronger
+occupation bounds or cross-factor relations that remain effective
+when this kernel has small positive dimension.
+The interval $21$--$23$ leaves both improved constructions and stronger
+lower bounds to be determined.
+
+\subsection{Global frozen-table soundness}
+The full catalogue extends the selected quotient bounds to a single
+lower-bound function on all subspaces of $V$.
+
+\begin{proposition}\label{prop:global}
+For every frozen representative and every subspace $W\leq V$,
+\[
+ R_{\F}(T_{W_i})\geq\ell_i\quad(0\leq i<496),
+ \qquad R_{\F}(T_W)\geq L_0(W).
+\]
+\end{proposition}
+\begin{proof}[Computer-assisted proof]
+The completed registry supplies a closed proof at each of the $496$
+listed bases and labels. Its bindings check equal spans, containment
+with quotient monotonicity, or invertible tensor transport to the
+individual source proofs. The entry $W_{495}=0$, labelled $20$, may
+now use Theorem~\ref{thm:main}, since $T_0=\T$. For each $G$-image,
+tensor symmetry preserves the quotient rank. Taking the maximum in
+\eqref{eq:L0} gives the second inequality.
+\end{proof}
+
+With universal soundness available, there is also a direct link from
+any short quotient decomposition to the full occupation system. At
+length $r\leq18$, its nonzero first-factor multiplicities satisfy the
+caps $r-L_0(U)$. Increasing any one multiplicity by $18-r$ preserves
+every enlarged cap $18-L_0(U)$ and makes the total $18$. This explains
+the padding argument for the full systems used in the research report.
+The proof above instead extracts the retained system from separately
+established source bounds, as in the Lean main-theorem dependency graph.

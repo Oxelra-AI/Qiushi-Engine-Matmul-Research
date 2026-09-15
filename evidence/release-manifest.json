@@ -1,9 +1,9 @@
 {
   "schema": "qiushi.matmul.public-release.v1",
-  "prepared_at_utc": "2026-09-15T03:58:16.332Z",
+  "prepared_at_utc": "2026-09-15T14:46:47.333Z",
   "raw_research_transcripts_included": false,
-  "publication_approved": false,
-  "document_layout": "Original English/Chinese reports preserved; separate Lean-integrated English/Chinese reports with complete appendices",
+  "document_layout": "Mathematical paper with four appendices; original English/Chinese reports preserved; separate Lean-integrated English/Chinese reports",
+  "release_url": "https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research/releases/tag/lean-formalization",
   "primary_replay_record": "evidence/verification.json",
   "lean_verification_record": "formalization/verification-results.json",
   "lean_publication_source_map": "formalization/publication-source-map.json",
@@ -15,8 +15,8 @@
     },
     {
       "path": ".gitignore",
-      "sha256": "2c6f50c8749382108fb4a86d46c4423eec938eb6f58cca919bc061330390d9b7",
-      "bytes": 112
+      "sha256": "685c7a208fc908523fdf16f41fbfaec6d6a03590bd1dcd07d8acbf92e043eb1a",
+      "bytes": 171
     },
     {
       "path": "AGENTS.md",
@@ -25,13 +25,13 @@
     },
     {
       "path": "CITATION.cff",
-      "sha256": "e0f4ebb1386216864e416b4f463e75aae7c31c8ce89a06d127e08a6dc0500de5",
-      "bytes": 1079
+      "sha256": "af38675f9531cc80fb91c9b45f13120f64ee3ef9561dbc281970e40bb17340eb",
+      "bytes": 1117
     },
     {
       "path": "LICENSE",
-      "sha256": "51020f9b003490da1396b277ac3601ebf31a6f73f6ce40adfbaf23957cb6c139",
-      "bytes": 2822
+      "sha256": "babbd8e112d05c824ae751ccf56dcd9b826e8b4a057133ebf6619ac5b7cea425",
+      "bytes": 2832
     },
     {
       "path": "Makefile",
@@ -40,13 +40,13 @@
     },
     {
       "path": "README.md",
-      "sha256": "6dfc18fcdb96b55ebe758bf3b5ad6e47c1231044c5afd347a198ec0b01ebd0f6",
-      "bytes": 12657
+      "sha256": "0c539adf089664362238576882990eead3239d86032122910865cd5675e3bb01",
+      "bytes": 12915
     },
     {
       "path": "README.zh-CN.md",
-      "sha256": "52b0c4714de60e28822c0e7006810eae285e3fd541807c56c17a9cb5dcbde5ed",
-      "bytes": 10526
+      "sha256": "5513f6327e4030c4ab12c1c24fd6a14aae3760b764efceabd3d855413416d097",
+      "bytes": 10789
     },
     {
       "path": "evidence/README.md",
@@ -70774,6 +70774,136 @@
       "bytes": 7339
     },
     {
+      "path": "paper/README.md",
+      "sha256": "b0c960d41451ad8ee40860083520b327d18b1ddb55cc16746c9d48b841c9f15c",
+      "bytes": 3480
+    },
+    {
+      "path": "paper/data/artifact-sources.json",
+      "sha256": "6869a2cee32303841604be8fe029497733dbbb232a889f576435909f43135fc9",
+      "bytes": 2414
+    },
+    {
+      "path": "paper/data/branch-summary.json",
+      "sha256": "9cb02fb40669c5d44bbe8f239147b69da5b933c3f0a12961028be9b3ceb764e8",
+      "bytes": 847
+    },
+    {
+      "path": "paper/data/branch-summary.tex",
+      "sha256": "d24c15d6e5b0a5563be467b19d907d388124d0e6be96ab60b4ea4f57f43c9c48",
+      "bytes": 560
+    },
+    {
+      "path": "paper/data/continuation-sample.json",
+      "sha256": "da8262049005123822545f7145e3adc82d19bda8285284dce0bd0bfe246e441c",
+      "bytes": 1758
+    },
+    {
+      "path": "paper/data/formalization-verification.json",
+      "sha256": "ae9a5885a880d06c5f53abc9d4e291a2e8e10edce0d10c1faee7b3499e1451fe",
+      "bytes": 2666
+    },
+    {
+      "path": "paper/data/frozen-catalogue.json",
+      "sha256": "daf5878cac46e486b1bfaf793e3edfad9c6f56a31fe804e593f4145af9cab507",
+      "bytes": 56827
+    },
+    {
+      "path": "paper/data/frozen-catalogue.tex",
+      "sha256": "c948238fe423403096a969112abedcb7da7318bd312734b763e5dfcbb7cd925b",
+      "bytes": 15567
+    },
+    {
+      "path": "paper/data/source-examples.json",
+      "sha256": "f38c6d96d458edc9cff4e802fcbb4d29a1556534aa77afb921a494e2ef8e4e78",
+      "bytes": 1339
+    },
+    {
+      "path": "paper/main.pdf",
+      "sha256": "06560925cefcaedcc131f7315c2a09c84f6720ea7b0c5835b0c4f5a5694f46eb",
+      "bytes": 541873
+    },
+    {
+      "path": "paper/main.tex",
+      "sha256": "fb43a21244d65e422e7de3c19596171a2c67d4aaa24e23bc340b2e0a5081b001",
+      "bytes": 5005
+    },
+    {
+      "path": "paper/references.bib",
+      "sha256": "9bac52709688940c82a9ab8eebc7677b2c4ee4ed82f22e34161b2a0f3211b8d2",
+      "bytes": 8340
+    },
+    {
+      "path": "paper/sections/catalogue.tex",
+      "sha256": "b9a3c48ba97b652349218e0d7ad7f268aeeaa1bcc2894047c761b7466ce1f152",
+      "bytes": 1078
+    },
+    {
+      "path": "paper/sections/consequences.tex",
+      "sha256": "89c3999327730e05d757aa7e77fc4f298fa221a1030ca74f1a647652009156f5",
+      "bytes": 4959
+    },
+    {
+      "path": "paper/sections/development.tex",
+      "sha256": "699678628d64598aa48d9e2e0cf0656345213fd92908d4635902ce6b53729502",
+      "bytes": 9618
+    },
+    {
+      "path": "paper/sections/finite-data.tex",
+      "sha256": "342670f243301ac452f55fdf4d841ede9bee6b4035182f0e8cb4ef8343e5229e",
+      "bytes": 7140
+    },
+    {
+      "path": "paper/sections/finite.tex",
+      "sha256": "f5856794a18550fac4abfbdbd9b63be859ff3a4163652083e672559a0d9b37f4",
+      "bytes": 14429
+    },
+    {
+      "path": "paper/sections/formalization-details.tex",
+      "sha256": "887d6d1fbafd450f0134e3ce9ee37d22688d1fb504cc533637970310674c4249",
+      "bytes": 12017
+    },
+    {
+      "path": "paper/sections/formalization.tex",
+      "sha256": "1e0016c7fe25ba473185234bddd3f8efec0c640982d92c775c157107d5131b6c",
+      "bytes": 3515
+    },
+    {
+      "path": "paper/sections/geometry.tex",
+      "sha256": "7b2fca05144835830cc2743a5501120031955b2ca44e44402efaf7d4dfd290e5",
+      "bytes": 6948
+    },
+    {
+      "path": "paper/sections/introduction.tex",
+      "sha256": "b18f9ba2b60b0a262b1e985d9481c2887fe1f976acef70a07a4d5d7bf8b04525",
+      "bytes": 8637
+    },
+    {
+      "path": "paper/sections/preliminaries.tex",
+      "sha256": "fd6b0eb9dbe01f9dd48feb7cf5fd2c842deb286cd46dd5bbf538275581360852",
+      "bytes": 3791
+    },
+    {
+      "path": "paper/sections/saturation.tex",
+      "sha256": "9b6c475c3924391044a69d63282c93c707214a45d836625ed629b0bba33f4e51",
+      "bytes": 3835
+    },
+    {
+      "path": "paper/sections/upper-bound.tex",
+      "sha256": "38e7dbf2e9a809a752def57e960b6cbba397aee9a9bc8d8652d8697631f6a9db",
+      "bytes": 1770
+    },
+    {
+      "path": "paper/tools/check-manuscript.mjs",
+      "sha256": "0a08e586e942b350bf9db2904f1f124e951df8caf7e92e7572d19975aaebfd67",
+      "bytes": 15265
+    },
+    {
+      "path": "paper/tools/prepare-data.mjs",
+      "sha256": "9c38603b8889d6b3bd60b470a1f8a62099aa71409bbcbe677d1f1278be3bceb1",
+      "bytes": 5138
+    },
+    {
       "path": "proof/README.md",
       "sha256": "71e9f47dd89d55da0ae20e0294e52f5f383d7bc3049535dd355535dd4430a0f3",
       "bytes": 1679
@@ -93950,8 +94080,8 @@
     },
     {
       "path": "tests/test_release_tools.py",
-      "sha256": "1a994254b24aeaa176d2666a3246ade2f9511ad0ea0045f7c951b2959422cfdc",
-      "bytes": 10063
+      "sha256": "5efc5a31d2db127779b035ebcda2e482c8ec28c28bcffc2f98b90301560b0edd",
+      "bytes": 10360
     },
     {
       "path": "tests/test_report_release.py",
@@ -93975,8 +94105,8 @@
     },
     {
       "path": "tools/audit_public.py",
-      "sha256": "2d7b1d25f766d8e89a416bc84baf18cba461d65e82d7cfd606229b18653074ae",
-      "bytes": 8086
+      "sha256": "9d1c028ff89131b16a0cd079cbab8d8dfa5665e666e251ec0b5e7966a55b78e3",
+      "bytes": 8094
     },
     {
       "path": "tools/build_reports.py",
@@ -93990,8 +94120,8 @@
     },
     {
       "path": "tools/check_release.py",
-      "sha256": "58ddbe3a5561acf979e60445ad8fd78d7062a6a781ac0c65767de20d71e625dd",
-      "bytes": 5037
+      "sha256": "49f3f16087da0e480d68da47216cc0323036a17f5ba43e6c765441df7cf4fb5f",
+      "bytes": 5148
     },
     {
       "path": "tools/package_release.py",
