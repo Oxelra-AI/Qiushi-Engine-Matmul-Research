@@ -73,9 +73,9 @@ bilinear complexity; finite fields; computer-assisted proof; formal verification
   pdfsubject={A structural proof of the binary matrix multiplication rank lower bound 21}}
 \begin{document}
 \begin{abstract}
-The exact bilinear complexity of $3\times3$ matrix multiplication over
-$\mathbb F_2$ lies between $21$ and $23$. We give a structural proof of
-the lower bound $21$ that converts occupation constraints on a single
+We prove that the tensor rank of $3\times3$ matrix multiplication over
+$\mathbb F_2$ is at least $21$. The structural proof, independently
+developed by Qiushi Engine, converts occupation constraints on a single
 tensor factor into algebraic relations coupling all three factors.
 Certified quotient-rank bounds and finite geometry force any
 hypothetical $20$-term decomposition to have first-factor matrix-rank
@@ -88,11 +88,9 @@ for matrix multiplication implies that at most one first factor can be
 invertible, contradicting the three forced by the profile. The same
 obstruction constrains $22$-term decompositions attaining the
 split-rank bound. The complete proof, including the finite quotient
-bounds, is formalized in Lean. Qiushi Engine independently developed
-the structural argument through long-horizon autonomous research on
-shorter algorithms. The public research trajectory documents the
-numerical diagnostics, quotient constructions, and corrections that
-led from algorithm search to the structural proof.
+bounds, is formalized in Lean. The accompanying research trajectory
+records Qiushi Engine's long-horizon autonomous research, from numerical
+experiments and quotient constructions to the structural proof.
 \end{abstract}
 \maketitle
 \raggedbottom
