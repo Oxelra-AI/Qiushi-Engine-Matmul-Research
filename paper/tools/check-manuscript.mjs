@@ -120,7 +120,7 @@ assert(/^[a-f0-9]{40}$/.test(sources.formalization.revision));
 const formalizationRelease = `${sources.formalization.repository}/releases/tag/${sources.formalization.release_tag}`;
 assert.equal(sources.formalization.release_url, formalizationRelease);
 const formalizationCitation = read('references.bib').match(/@misc\{qiushi-lean,[\s\S]*?\n\}/)?.[0];
-assert(formalizationCitation?.includes(`\\href{${formalizationRelease}}{`), 'formalization citation and release differ');
+assert(formalizationCitation?.includes(`url = {${formalizationRelease}}`), 'formalization citation and release differ');
 const formalizationRecord = JSON.parse(read(sources.formalization.manuscript_verification_record));
 assert.equal(sources.formalization.registered_source_digest, formalizationRecord.source_build.source_digest);
 assert.equal(sources.formalization.toolchain, formalizationRecord.toolchain);
@@ -258,15 +258,21 @@ for (const match of tex.matchAll(/\\cite(?:\[[^\]]*\])?\{([^}]+)\}/g))
 assert.deepEqual([...citedKeys].sort(), [...bib].sort(), 'uncited bibliography entry');
 const resolvedKeys = [...read('main.bbl').matchAll(/\\bibitem\{([^}]+)\}/g)].map(m => m[1]);
 assert.deepEqual([...resolvedKeys].sort(), [...bib].sort(), 'resolved bibliography differs');
-const fixedBibliographyLinks = [...bibliography.matchAll(/\\href\{(https:\/\/github\.com\/[^}]+)\}/g)].map(m => m[1]);
-assert.equal(fixedBibliographyLinks.length, 4);
+const fixedBibliographyLinks = [
+  ...bibliography.matchAll(/\\href\{(https:\/\/github\.com\/[^}]+)\}/g),
+  ...bibliography.matchAll(/\burl\s*=\s*\{(https:\/\/github\.com\/[^}]+)\}/g),
+].map(m => m[1]);
+assert.equal(fixedBibliographyLinks.length, 5);
+const reportUrl = `${sources.research_archive.repository}/blob/${sources.formalization.release_tag}/${sources.research_archive.report}`;
+assert.equal(sources.research_archive.report_url, reportUrl);
+const replayUrl = `https://github.com/leanprover/lean4/blob/${sources.formalization.toolchain.split(':')[1]}/src/Lean/Replay.lean`;
 for (const link of fixedBibliographyLinks) {
-  if (link === formalizationRelease) continue;
+  if ([formalizationRelease, reportUrl, replayUrl].includes(link)) continue;
   const parts = new URL(link).pathname.split('/').filter(Boolean);
   assert(['blob', 'tree'].includes(parts[2]));
   assert(/^[a-f0-9]{40}$/.test(parts[3]), `unfixed bibliography artifact: ${link}`);
 }
-assert(fixedBibliographyLinks.includes(`${sources.research_archive.repository}/blob/${sources.research_archive.revision}/${sources.research_archive.report}`));
+assert(fixedBibliographyLinks.includes(reportUrl));
 assert(fixedBibliographyLinks.includes(`${sources.continuation_start.repository}/tree/${sources.continuation_start.revision}`));
 const visibleSources = (tex + '\n' + bibliography).replace(/\\href\{[^}]*\}/g, '');
 assert(!/\b[0-9a-f]{40}\b/.test(visibleSources), 'commit identifier in printed manuscript text');
