@@ -47,27 +47,31 @@ class ReleaseToolsTests(unittest.TestCase):
             (root / 'outside-link').symlink_to(ROOT, target_is_directory=True)
             self.assertEqual(check_release.public_files(root), {'outside-link'})
 
-    def test_local_paper_and_lean_cache_cannot_enter_release(self):
+    def test_paper_sources_are_public_but_build_caches_are_not(self):
         with tempfile.TemporaryDirectory() as td:
             root = Path(td)
             for relative in ('paper/main.tex', 'paper/main.pdf',
+                             'paper/main.log', 'paper/main.aux', 'paper/main.synctex.gz',
                              'formalization/.lake/lib/Proof.olean',
                              'formalization/.local/audit/report.json'):
                 path = root / relative
                 path.parent.mkdir(parents=True, exist_ok=True)
                 path.write_text('local only')
             (root / 'formalization/Main.lean').write_text('import Mathlib')
-            self.assertEqual(check_release.public_files(root), {'formalization/Main.lean'})
+            self.assertEqual(check_release.public_files(root),
+                             {'paper/main.tex', 'paper/main.pdf', 'formalization/Main.lean'})
 
-    def test_package_rejects_paper_even_when_manifest_lists_it(self):
+    def test_package_includes_manifested_paper(self):
         with tempfile.TemporaryDirectory() as td:
             root = Path(td)
             (root / 'paper').mkdir()
-            (root / 'paper/main.tex').write_text('not approved for publication')
+            (root / 'paper/main.tex').write_text('public mathematical paper')
             manifest(root, ['paper/main.tex'])
             with patch.object(package_release.subprocess, 'run'):
-                with self.assertRaisesRegex(ValueError, 'Unsafe'):
-                    package_release.package(root, root / 'dist/release.zip')
+                package_release.package(root, root / 'dist/release.zip')
+            with zipfile.ZipFile(root / 'dist/release.zip') as archive:
+                self.assertEqual(archive.read('Qiushi-Engine-Matmul-Research/paper/main.tex'),
+                                 b'public mathematical paper')
 
     def test_lean_compiled_outputs_are_not_public_sources(self):
         with tempfile.TemporaryDirectory() as td:

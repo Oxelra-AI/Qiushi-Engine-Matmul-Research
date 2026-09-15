@@ -1,0 +1,20 @@
+\section{The complete frozen catalogue}\label{app:catalogue}
+
+Table~\ref{tab:catalogue} gives every pair $(W_i,\ell_i)$ used in
+definition~\eqref{eq:L0}. Parentheses enclose basis codes in the convention
+of Appendix~\ref{app:finite-data}; the empty tuple is the zero space.
+The dimension is the number of basis vectors. The labels are frozen
+lower bounds, not asserted exact ranks. In particular entries
+$484$--$491$ remain labelled $18$ here even though their quotient ranks
+are at least $19$.
+
+Together with the explicitly defined group $G$, this catalogue specifies
+all eight systems~\eqref{eq:integer-system} without an external lookup
+file. For any superspace row $U$, find a $G$-image of a listed basis
+spanning $U$ and use its label. The proved coverage and consistency make
+this procedure total and independent of the representative found.
+The local source package also includes the same catalogue as structured
+JSON. Its transcription is checked against all $496$ formal registry
+entries and the literal Lean basis and label definitions.
+
+\input{data/frozen-catalogue}

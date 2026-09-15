@@ -1,0 +1,296 @@
+\section{The finite quotient bounds}\label{sec:finite}
+
+The structural proof needs three families of quotient bounds: $19$
+for every line, $19$ for every two-plane containing no nonzero rank-one
+matrix, and $17$ for the affine-plane spans specified below. Their
+role is to limit how many first factors a short decomposition can
+place in those spaces. We first identify the spaces and then explain
+how their bounds are built from contractions, substitution, and
+finite occupation certificates.
+
+\subsection{The quotient catalogue}
+Let $(W_i,\ell_i)_{i=0}^{495}$ be the catalogue in
+Appendix~\ref{app:catalogue}. Define
+\begin{equation}\label{eq:L0}
+ L_0(W)=\max\bigl(\{\ell_i:W=gW_i\text{ for some }g\in G\}
+                    \cup\{0\}\bigr).
+\end{equation}
+The catalogue is the frozen table inherited from~\cite{wang20}, not
+Wang's later strengthened table. The maximum makes the definition
+unambiguous even before orbit coverage and label consistency are proved.
+It defines a numeric function on actual subspaces.
+
+\begin{proposition}[Finite classification and direct bounds]\label{prop:frozen}
+The catalogue covers every subspace of $V$ under $G$, and its labels
+agree on overlapping orbits. The following values and bounds hold:
+\begin{enumerate}
+\item $L_0(0)=20$. For every nonzero $a\in V$,
+$L_0(\langle a\rangle)=19$ and $R_{\F}(T_{\langle a\rangle})\geq19$.
+\item The two-dimensional subspaces of $V$ have fourteen $G$-orbits.
+Exactly eight consist of planes whose three nonzero matrices have
+rank at least two. Their representatives are $W_{484},\ldots,W_{491}$
+in Table~\ref{tab:planes}, and $L_0(W_i)=18$ for these indices.
+\item Put $p=\operatorname{diag}(0,1,1)$,
+$R=\{e_0w^T:w\in\F^3\}$, and $S=\langle p,R\rangle$.
+Then $L_0(S)=14$ and $L_0(R)=15$. Every three-dimensional
+subspace $K\leq S$ other than $R$ has $L_0(K)=17$ and
+$R_{\F}(T_K)\geq17$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}[Computer-assisted proof]
+The orbit coverage, label consistency, exact numeric values, and
+two-plane classification are checked against the finite definition
+\eqref{eq:L0}. Separately, closed quotient-rank proofs establish the
+three line bounds and the normalized affine-hyperplane bounds.
+Exact tensor symmetries transport them to the families stated here.
+The lower-bound rules and representative source proofs are given in
+Section~\ref{sec:source-bounds} and Appendix~\ref{app:source-substitution}.
+These proofs precede Theorem~\ref{thm:main} in the dependency graph.
+Appendix~\ref{app:finite-data} specifies the small spaces, and
+Section~\ref{sec:formalization} identifies the formal interfaces.
+\end{proof}
+
+The labels specify lower bounds rather than exact quotient ranks; the
+values $18$ in (ii) will be strengthened while $L_0$ remains fixed.
+The line bounds already imply the full-tensor bound $20$: in any
+minimal decomposition select a nonzero first factor $a$.
+Lemma~\ref{lem:occupation} and the line bound give $1\leq r-19$,
+hence $r\geq20$.
+
+\subsection{Deriving the source bounds}\label{sec:source-bounds}
+A source bound is a previously proved inequality for a quotient
+$T_U$, used to constrain a decomposition of $T_W$ with $W\leq U$.
+The following rules establish these inequalities recursively.
+
+For $L\in V$, write $H_L=\{X:\langle L,X\rangle=0\}$.
+If $W\leq H_L$, contraction by $L$ is well defined on $V/W$.
+Applied to $T_W$, it gives the matrix
+\begin{equation}\label{eq:source-contraction}
+ C_L[(j,k),(i,l)]=L_{ij}\delta_{kl},\qquad
+ \rank C_L=3\rank L.
+\end{equation}
+Indeed, $C_L=L^T\otimes I_3$ in the displayed ordering. Each
+simple tensor contracts to a matrix of rank at most one, so
+\begin{equation}\label{eq:contraction-bound}
+ R_{\F}(T_W)\geq3\rank L.
+\end{equation}
+This gives basic bounds $3$, $6$, and $9$. Several annihilating
+functionals can also be assembled into an ordinary flattening of
+$T_W$. A nonsingular minor of order $d$ gives a lower bound $d$;
+the finite proofs specify a minor and check a left inverse over $\F$.
+
+Occupation can strengthen these initial bounds without finding a
+larger minor. For example, let
+\begin{equation}\label{eq:source-example}
+ F=\begin{pmatrix}0&0&0\\0&1&0\\0&0&1\end{pmatrix},\qquad
+ G_0=\begin{pmatrix}0&0&0\\0&0&1\\0&1&1\end{pmatrix},\qquad
+ W=H_F\cap H_{G_0}.
+\end{equation}
+The matrices $F,G_0,F+G_0$ all have rank two. Their three
+hyperplanes therefore have quotient rank at least $6$. Every $X\in V$
+belongs to at least one of them: among the binary values
+$\langle F,X\rangle$, $\langle G_0,X\rangle$, and their sum,
+one is zero. In a length-$r$ decomposition of $T_W$, let $m_1,m_2,m_3$
+count first factors in these hyperplanes modulo $W$. By coverage and
+Lemma~\ref{lem:occupation},
+\begin{equation}\label{eq:three-hyperplane-bound}
+ r\leq m_1+m_2+m_3\leq3(r-6),
+ \qquad\text{hence}\qquad r\geq9.
+\end{equation}
+This proves the catalogue bound for $W_8$: the annihilator of its
+displayed basis is precisely $\langle F,G_0\rangle$. The example
+shows why several small contraction bounds can give more information
+than any one of them separately.
+
+Some source bounds require substitution, a standard method in
+bilinear complexity~\cite{blaser}. Regard a quotient tensor
+as a family of second-factor slices $S_b$. A nonzero slice forces
+some summand to have a nonzero coefficient there. Subtracting suitable
+multiples of that slice from the others removes this summand, at the
+cost of modifying the remaining slices. If $k$ selected slices are
+independent and a flattening of rank at least $f$ survives all these
+modifications, every decomposition has length at least $k+f$.
+Appendix~\ref{app:source-substitution} gives the precise survival
+condition and a complete $6+6=12$ example used among the source
+bounds. The condition is essential: the residual after substitution,
+rather than the original tensor, must retain the lower bound.
+
+The recursive occupation step generalizes~\eqref{eq:three-hyperplane-bound}.
+Suppose $W\leq U_v$, $R_{\F}(T_{U_v})\geq\lambda_v$, and
+nonnegative weights $y_v$ cover each quotient class at least $c>0$
+times:
+\begin{equation}\label{eq:weighted-cover}
+ \sum_{v:X\in U_v}y_v\geq c\quad(X\in V).
+\end{equation}
+Summing the occupation inequalities then gives
+\begin{equation}\label{eq:weighted-bound}
+ cr\leq\sum_v y_v m(U_v/W)
+       \leq\sum_v y_v(r-\lambda_v).
+\end{equation}
+Thus a cover and previously established source bounds can exclude a
+proposed length. More general exclusions split into exhaustive integer
+branches before taking such nonnegative combinations; these are the
+certificates described next.
+
+For a concrete source used in the raise for $W_{484}$, consider
+\[
+ U=W_{450}=\Span(\operatorname{mat}(68),\operatorname{mat}(19),
+ \operatorname{mat}(10)),
+\]
+with matrix codes as in
+Appendix~\ref{app:finite-data}. Its certificate uses ten superspaces
+with proved bound $17$ and eight with bound $9$. The first ten have
+weights $4,4,2,2,2,2,2,2,2,2$; the others have weight one.
+They give a $4$-fold cover of $V/U$, checked on its $64$ classes.
+Equation~\eqref{eq:weighted-bound} therefore reads
+\[
+ 4r\leq32r-(24\cdot17+8\cdot9)=32r-480.
+\]
+No $r\leq17$ satisfies this inequality, so $R_{\F}(T_U)\geq18$.
+Since $W_{484}\leq U$, this is one of the bounds that forces
+occupation to vanish when a length-$18$ decomposition of
+$T_{W_{484}}$ is considered. The bound-$17$ sources are obtained by
+the same contraction, substitution, and occupation rules.
+
+Finally, source statements pass between equivalent representatives
+using the tensor symmetries of Section~\ref{sec:preliminaries}.
+Containment has a fixed direction:
+\begin{equation}\label{eq:quotient-monotonicity}
+ W\leq gU\quad\Longrightarrow\quad
+ R_{\F}(T_W)\geq R_{\F}(T_{gU})=R_{\F}(T_U)
+ \qquad(g\in G).
+\end{equation}
+The implication follows by applying $V/W\to V/gU$ to a
+decomposition.
+
+These rules give concrete routes to the two remaining families in
+Proposition~\ref{prop:frozen}. For the line $W=\langle E_{00}\rangle$,
+the $255$ planes containing $W$ partition the nonzero classes of $V/W$.
+Fifteen of these planes have proved bound $17$, from the types
+$W_{478},W_{479}$; the other $240$ have proved bound $18$, from
+$W_{480},\ldots,W_{483}$. The zero class belongs to every plane, so
+the same cover applies to decompositions with zero first factors.
+Equation~\eqref{eq:weighted-bound} gives
+\begin{equation}\label{eq:line-cover}
+ r\leq15(r-17)+240(r-18)=255r-4575,
+ \qquad\text{hence}\qquad r\geq19.
+\end{equation}
+The rank-two and rank-three line bounds follow by containment and
+symmetry from the raises for $W_{484}$ and $W_{488}$ proved below.
+
+For the fourteen affine-plane spans, three representatives suffice:
+the coded bases $(272,4,2)$, $(273,4,2)$, and $(272,4,1)$ in
+Appendix~\ref{app:finite-data}. The first is contained in a symmetry
+image of $W_{262}=(132,12,2,1)$, whose bound $17$ transfers
+by~\eqref{eq:quotient-monotonicity}. The other two are symmetry-equivalent
+to $W_{415}$ and $W_{416}$. Their integer occupation certificates exclude length $16$
+using respectively $101$ and $373$ source rows on the $63$ nonzero
+quotient classes, with the branch rule described next. The remaining
+eleven spans are symmetry images of the third representative.
+Appendix~\ref{app:source-interfaces} locates these proofs and their
+source-bound dependencies.
+
+\subsection{The eight occupation systems}
+For $i=484,\ldots,491$, put $Q_i=V/W_i$. Index nonnegative
+integer weights by its nonzero classes $Q_i^*=Q_i\setminus\{0\}$,
+and impose
+\begin{equation}\label{eq:integer-system}
+ \begin{aligned}
+ x_q&\in\mathbb Z_{\geq0} &&(q\in Q_i^*),\\
+ \sum_{q\in Q_i^*}x_q&=18,\\
+ \sum_{q\in(U/W_i)\setminus\{0\}}x_q
+       &\leq18-L_0(U) &&(W_i<U<V).
+ \end{aligned}
+\end{equation}
+Every quotient has dimension seven, so this specifies $127$ variables
+and $29{,}210$ proper nonzero quotient-subspace rows. The definition of
+$L_0$ and the complete catalogue make every coefficient and bound in
+these systems explicit.
+
+\begin{proposition}[Finite occupation exclusions]\label{prop:integer}
+For each $i=484,\ldots,491$, system~\eqref{eq:integer-system}
+has no integer solution. Its retained source rows have proved
+quotient bounds $R_{\F}(T_{U_v})\geq\lambda_v$, and its
+zero-forcing rows have proved bounds at least $18$.
+\end{proposition}
+
+\begin{proof}[Integer-certificate proof]
+Let $J\subseteq Q_i^*$ be the quotient directions retained after
+zero-forcing, and let $U_v$ be the retained superspaces. A row
+with $L_0(U)\geq18$ forces all its nonnegative summands to zero. After
+these eliminations, the retained variables $z_j$ satisfy
+\begin{equation}\label{eq:retained}
+ z_j\geq0\ (j\in J),\qquad \sum_{j\in J}z_j\geq18,\qquad
+ \sum_j a_{vj}z_j\leq18-\lambda_v,
+\end{equation}
+where $a_{vj}=1$ exactly when $j\in U_v/W_i$, and is zero otherwise.
+The proved row label satisfies
+$\lambda_v\leq L_0(U_v)$. Replacing equality of the total by a lower
+bound weakens the system and is sufficient for the certificates.
+Table~\ref{tab:branches} records the retained sizes.
+
+At an internal vertex the integer branch tree splits on
+$z_j\leq k$ or $z_j\geq k+1$. These alternatives are exhaustive over
+$\mathbb Z$. At a leaf, take the retained inequalities, the
+nonnegativity and total inequalities as needed, and the branch
+inequalities along its path, all written as $a_v\cdot z\leq b_v$.
+The leaf supplies nonnegative integer multipliers $y_v$ with
+\begin{equation}\label{eq:farkas}
+ \sum_v y_v a_v=0,\qquad \sum_v y_v b_v<0.
+\end{equation}
+Multiplying and adding the inequalities would give
+$0\leq\sum_v y_vb_v<0$. Thus no leaf admits a solution; induction up
+the exhaustive branch tree excludes every integer solution of the
+retained system.
+
+In the eight concrete certificates, Lean checks each coefficient
+cancellation and strict negative right-hand side in~\eqref{eq:farkas},
+and combines the leaves through explicit integer case splits. For all
+$5{,}917$ source and zero-forcing rows, the data specify a basis of
+$U_v$, verify $W_i<U_v<V$, and check the membership coefficients
+and the bound $\lambda_v\leq L_0(U_v)$. Hence any
+solution of the full system would restrict to a solution excluded by
+the corresponding branch tree. The resulting eight statements quantify
+over arbitrary nonnegative integer weights on the actual quotient;
+they assume neither tensor realizability nor distinct support.
+
+For the rank interpretation, every selected source bound
+$R_{\F}(T_{U_v})\geq\lambda_v$ and zero-forcing bound at least $18$
+has its own closed proof, connected by checked quotient transports.
+Applying Lemma~\ref{lem:occupation} to these proved quotients shows
+that a hypothetical short decomposition satisfies the retained
+system. Numeric comparisons with $L_0$ establish the full-system
+exclusion; the source proofs establish its tensor-rank interpretation.
+\end{proof}
+
+\begin{corollary}[Two-dimensional raises]\label{cor:raises}
+If $W\leq V$ is two-dimensional and all three nonzero matrices in $W$
+have rank at least two, then $R_{\F}(T_W)\geq19$.
+\end{corollary}
+\begin{proof}
+First take $W=W_i$ and suppose $T_W$ has a decomposition of length
+$r\leq18$. There is at least one zero-forcing superspace $D>W$
+with a directly proved bound $R_{\F}(T_D)\geq18$. Quotienting to
+$V/D$ already excludes $r<18$. If $r=18$, occupation in each
+zero-forcing superspace is at most zero. Hence every excluded direction
+and the zero quotient class have multiplicity zero. The retained
+nonnegative multiplicities have total $18$, and the proved source
+bounds give every row in~\eqref{eq:retained} by
+Lemma~\ref{lem:occupation}. The checked branch tree excludes this
+vector. Finally, classification and tensor symmetries transfer the
+bound to every all-high plane.
+\end{proof}
+
+\subsection{The Boolean and integer realizations}
+The research report certified the eight exclusions by CNF/DRAT
+refutations checked with DRAT-trim~\cite{drat-trim}, using the earlier
+certified quotient table~\cite{qiushi-report}.
+The Lean proof establishes the needed source bounds within Lean
+and uses integer branch certificates.
+Both routes apply occupation to the same quotient tensors and prove
+the same eight raises; their proof objects and dependency orders differ.
+The main theorem uses the selected source bounds and integer
+certificates above; the aggregate catalogue theorem is established
+afterward in Proposition~\ref{prop:global}. Appendix~\ref{app:certificate-realizations}
+describes the Boolean encoding and its relation to the formal proof.

@@ -1,0 +1,169 @@
+\section{Introduction}\label{sec:introduction}
+
+Matrix multiplication is a basic example of a bilinear map whose
+algebraic structure permits fewer products than its entrywise formula
+suggests. Strassen's seven-product algorithm for $2\times2$ matrices
+established this possibility~\cite{strassen}. For $3\times3$ matrices,
+the usual formula uses $27$ products, whereas Laderman's algorithm uses
+$23$~\cite{laderman}. The minimum remains unknown. Its determination
+asks both for efficient constructions and for structural obstructions
+that apply to every possible bilinear algorithm.
+
+A construction specifies linear forms in both inputs and the
+coefficients combining their products into the output. Quotient-rank
+bounds constrain a smaller set of data: the positions and
+multiplicities of the first-input forms. In this paper we combine
+these constraints with a split flattening of the complete
+multiplication tensor. At a hypothetical length of twenty, the two
+sets of conditions force equality in matrix-rank subadditivity.
+The equality case then yields relations among all three factor lists,
+strong enough to exclude the decomposition.
+
+Write $\T$ for the $3\times3$ multiplication tensor and
+$R_{\F}(\T)$ for its exact tensor rank over the two-element field $\F$.
+This rank is the least number of products of a linear form in the first
+input with a linear form in the second, with linear operations otherwise
+free~\cite{bcs}. We prove the following statement without imposing symmetry or
+support conditions on the algorithm.
+
+\begin{theorem}\label{thm:main}
+Every exact bilinear algorithm for $3\times3$ matrix multiplication over
+$\F$ uses at least $21$ scalar multiplications. Equivalently,
+\begin{equation}\label{eq:main-bound}
+ R_{\F}(\T)\geq21.
+\end{equation}
+\end{theorem}
+
+Together with the explicit $23$-term decomposition in
+Appendix~\ref{app:upper}, this gives
+$21\leq R_{\F}(\T)\leq23$.
+Wang~\cite{wang21} obtained the same numerical lower bound by
+capacity-constrained profile enumeration. The proof here identifies a
+different obstruction: finite geometry forces a rank equality, and
+that equality supplies cross-factor relations which contradict the
+forced first-factor configuration.
+
+\subsection{The equality mechanism}
+Consider a decomposition
+$\T=\sum_{t=1}^{r}A_t\otimes B_t\otimes C_t$, with the factors
+represented by $3\times3$ coefficient matrices. For a subspace
+$W\leq M_3(\F)$, quotienting the first tensor factor by $W$ removes
+every term with $A_t\in W$. A lower bound for the quotient rank
+therefore gives an upper bound on the number of such terms. We call
+these \emph{occupation bounds}.
+
+A second constraint retains the row and column indices of $A_t$.
+Splitting these indices gives a $27\times27$ matrix $P$ for the
+multiplication tensor and matrices $M_t$ for its summands. The matrix
+$P$ is a permutation matrix, while $\rank M_t=\rank A_t$ for
+nonzero factors. Hence
+\begin{equation}\label{eq:intro-budget}
+ P=\sum_tM_t,\qquad 27\leq\sum_t\rank A_t.
+\end{equation}
+This lower bound on the sum of matrix ranks is not by itself a lower
+bound of $21$ on the number of terms. Its role is to combine with
+occupation geometry.
+
+At length $20$, eight strengthened quotient bounds force the
+first factors of rank at least two to have pairwise rank-one
+differences. Such matrices lie in a common affine row or column coset.
+The coset is an affine $3$-space over $\F$, where further occupation
+bounds allow at most three selected points in every affine plane.
+These constraints, together with~\eqref{eq:intro-budget}, force the
+matrix-rank profile
+\begin{equation}\label{eq:intro-profile}
+ (n_1,n_2,n_3)=(16,1,3),\qquad
+ \sum_t\rank A_t=16+2+9=27.
+\end{equation}
+
+The last equality is decisive. The images of the $M_t$ span the
+$27$-dimensional space, and their dimensions sum to $27$; they
+therefore form a direct sum. Uniqueness of its components implies
+\begin{equation}\label{eq:intro-saturation}
+ M_tP^{-1}M_s=\delta_{ts}M_t.
+\end{equation}
+For the multiplication tensor, the product on the left can be computed
+explicitly:
+\begin{equation}\label{eq:intro-product}
+ M(A,B,C)P^{-1}M(A',B',C')
+   =M(AB'C^TA',B,C').
+\end{equation}
+The diagonal identities show that an invertible $A_t$ requires
+invertible $B_t$ and $C_t$. An off-diagonal identity would then make a
+product of invertible matrices zero if two first factors were
+invertible. The required three in~\eqref{eq:intro-profile} are
+impossible.
+
+The resulting obstruction is useful separately from the finite
+classification: in \emph{any} decomposition whose first-factor matrix
+ranks sum to $27$, at most one first factor is invertible
+(Proposition~\ref{prop:invertibility} and
+Corollary~\ref{cor:profiles}). For a saturated $22$-term
+decomposition with nonzero first factors, this leaves only the profiles
+$(17,5,0)$ and $(18,3,1)$. Thus the equality argument gives both the
+final contradiction at length $20$ and restrictions on possible shorter
+algorithms beyond the known upper bound.
+
+\subsection{Background and related methods}
+Bl\"aser's substitution argument gives the classical lower bound
+$19$ for $3\times3$ multiplication~\cite{blaser}.
+On the constructive side, SAT methods have produced many inequivalent
+$23$-term algorithms~\cite{heule}, while reinforcement learning has
+extended the search for exact decompositions across matrix
+formats~\cite{alphatensor}. These developments make small
+matrix-multiplication tensors a meeting point of algebraic complexity,
+computational search, and automated mathematical reasoning.
+
+Wang's automated finite-field framework~\cite{wang20} raised the
+binary lower bound to $20$ using symmetry classes of restrictions and
+recursive lower-bound certificates. We use its earlier,
+$496$-representative quotient catalogue with the numeric labels fixed.
+The capacity viewpoint also appears in D'Ambrosio's determination of
+the binary rank of $\langle2,3,4\rangle$~\cite{dambrosio}.
+
+Wang's proof of $21$~\cite{wang21} and ours share the occupation
+bounds and the affine rank-one coset reduction. His argument
+strengthens a restriction table by rank-one-span searches and
+backtracking, then excludes rank-one completions of the remaining
+high-rank configurations by exhaustive enumeration. Here integer
+occupation certificates establish eight additional quotient bounds;
+affine-plane capacities force~\eqref{eq:intro-profile}, and
+\eqref{eq:intro-saturation}--\eqref{eq:intro-product} give an algebraic
+contradiction involving all three factor lists.
+A public review draft in Tahir's repository~\cite{tahir} gives another
+counting approach, using singular first factors and
+branch-and-bound exclusions of seven normal forms.
+
+The row/column-coset lemma is a special case of the matrix-adjacency
+geometry initiated by Hua~\cite{hua}; we give an elementary proof.
+The rank-additivity lemma is proved over an arbitrary field.
+Their combination with the finite quotient bounds is what converts
+first-factor occupation into the cross-factor obstruction for $\T$.
+
+\subsection{Formal proof and research development}
+The accompanying Lean development proves the tensor conventions,
+the occupation and geometric arguments, the saturation identities, and
+the finite lower bounds used by the proof. Its final theorem has no
+assumed finite-bound premises. The development also proves the full
+$496$-representative quotient catalogue and its transport to arbitrary
+subspaces. The finite computations enter through exact integer branch
+certificates whose leaves and exhaustive splits are checked within Lean.
+
+Qiushi Engine developed the structural argument during sustained
+autonomous research on exact matrix multiplication.
+The mathematical progression was from shorter-algorithm searches to
+quotient cores, from admissible first-factor supports to the question
+of factor compatibility, and finally to equality in the full tensor's
+rank bound. Section~\ref{sec:development} explains these transitions
+and their role in the discovery. The accompanying research
+trajectory~\cite{qiushi-report} connects them to the supporting notes,
+programs, counterexamples, and results, preserving intermediate
+knowledge as well as the final proof.
+
+The exposition follows the proof. Section~\ref{sec:preliminaries} fixes
+the tensor and quotient conventions; Section~\ref{sec:finite} states
+and certifies the finite premises. Sections~\ref{sec:geometry}
+and~\ref{sec:saturation} establish the profile and its contradiction.
+The remaining sections give consequences, the formalization, and the
+research development. The appendices specify the finite data, a
+$23$-term witness, and the formal interfaces and verification record.

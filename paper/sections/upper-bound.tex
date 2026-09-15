@@ -1,0 +1,44 @@
+\clearpage
+\section{An explicit 23-term witness}\label{app:upper}
+
+For completeness, the following triples of row-major codes give a
+length-$23$ decomposition in convention~\eqref{eq:tensor}. They are
+the reduction modulo two of the integer scheme
+\nolinkurl{gg-333-rank23-rec-0-0-0-z.txt} from the flip-cpd
+collection of Khoruzhii, Gel{\ss}, and Pokutta~\cite{flip-cpd}.
+Product order and row-major output coordinates are preserved.
+Appendix~\ref{app:trajectory-sources} fixes the source version.
+This is the witness used by the formal declaration
+\code{rank23\_entry\_identity}.
+
+\begin{center}
+\begin{tabular}{rrrr@{\qquad}rrrr}
+\toprule
+$t$ & $A_t$ & $B_t$ & $C_t$ & $t$ & $A_t$ & $B_t$ & $C_t$\\
+\midrule
+1 & 400 & 304 & 418 & 13 & 284 & 264 & 12\\
+2 & 260 & 193 & 10 & 14 & 9 & 67 & 66\\
+3 & 73 & 7 & 64 & 15 & 256 & 432 & 130\\
+4 & 393 & 12 & 68 & 16 & 146 & 40 & 4\\
+5 & 292 & 448 & 8 & 17 & 448 & 4 & 320\\
+6 & 8 & 2 & 210 & 18 & 7 & 8 & 5\\
+7 & 265 & 72 & 65 & 19 & 32 & 128 & 24\\
+8 & 146 & 16 & 2 & 20 & 384 & 52 & 288\\
+9 & 269 & 65 & 3 & 21 & 268 & 9 & 9\\
+10 & 72 & 2 & 192 & 22 & 56 & 256 & 40\\
+11 & 392 & 260 & 36 & 23 & 16 & 16 & 432\\
+12 & 144 & 288 & 390 & & & &\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+To check the witness, decode each integer into its nine bits and compute
+\[
+ \sum_{t=1}^{23} A_t[i,j]B_t[u,v]C_t[w,z]\pmod2.
+\]
+For every choice of the six indices in $\{0,1,2\}$ this equals
+$1$ precisely when $u=j$, $w=i$, and $z=v$, and is zero otherwise.
+These are all $729$ tensor coordinates. This finite identity is checked
+by reduction in Lean, and it can also be reproduced directly from the
+table. Bilinearity then gives~\eqref{eq:algorithm} for all input pairs.
+Together with Theorem~\ref{thm:main}, it proves the interval $[21,23]$.

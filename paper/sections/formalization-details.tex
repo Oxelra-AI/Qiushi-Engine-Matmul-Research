@@ -1,0 +1,211 @@
+\section{Formal interfaces and verification record}\label{app:formalization}
+
+\subsection{Statements and dependencies}
+The formal project uses Lean $4.33.1$ and Mathlib, with dependency
+versions fixed in the accompanying source package.
+Definitions use the tensor convention~\eqref{eq:tensor}.
+The declaration
+\code{tensorEntry\_identity\_iff\_bilinearAlgorithm}
+proves its equivalence with~\eqref{eq:algorithm} on all inputs.
+In the namespace \code{QiushiMatmul}, the two principal statements are
+\[
+ \begin{aligned}
+ \code{rank\_ge\_21}&:\ \code{RankAtLeast 21},\\
+ \code{rank\_between\_21\_and\_23}
+   &:\ \code{RankAtLeast 21}\ \wedge\
+       \code{TensorEntryRankAtMost 23}.
+ \end{aligned}
+\]
+Here \code{RankAtLeast n} quantifies over every length $r$ and
+every entrywise decomposition of that length, allowing zero summands,
+and asserts $n\leq r$.
+
+The closed definition \code{provedFinitePremises} supplies the line,
+all-high plane, and normalized affine-plane bounds to
+\code{rank\_ge\_21\_of\_premises}.
+The plane bounds are \code{plane484\_rank\_ge\_19} and
+\code{plane485Gen\_lb19} through \code{plane491Gen\_lb19}.
+The first is the named-space version of \code{plane484Gen\_lb19}
+at \code{spanCodes [19, 10]}. Their proofs use separately established
+source bounds and checked tensor transports.
+
+\subsection{Locating the source bounds}\label{app:source-interfaces}
+All paths in this subsection are relative to the accompanying
+\nolinkurl{formalization/} directory~\cite{qiushi-lean}.
+
+For the source-bound rules in Section~\ref{sec:source-bounds},
+\nolinkurl{contraction_seed_invertible_minor} proves the contraction
+bound from an explicit inverse minor; its multi-contraction versions
+handle stacked flattenings.
+\nolinkurl{weighted_cover_quotient_decomp_false} proves the cover
+inequality, and \code{step81o8s2Span\_lb} is the source bound $9$
+in~\eqref{eq:three-hyperplane-bound}.
+\code{no\_short\_of\_deletions} is
+Lemma~\ref{lem:source-substitution}; \code{orbit11\_lb12}
+is its worked application to $W_{11}$.
+The concrete weighted bound for $W_{450}$ is
+\nolinkurl{step108_orbit450_lb18_unconditional}.
+The interface \code{generic\_plane\_qra} combines source bounds,
+quotient membership, zero-forcing coverage, and an integer-system
+exclusion to obtain each plane raise.
+
+The line-cover proof~\eqref{eq:line-cover} is in
+\nolinkurl{QiushiLineCoverageFinal.lean}, with its $255$ planes,
+labels, and membership tests in \nolinkurl{QiushiLineCoverageDefs.lean}
+and the eight coverage chunks it imports. The bound-$17$ inputs are
+\code{orbit478\_lb17\_mono} and \code{orbit479\_lb17\_graded},
+transported by containment from the bounds for $W_{412}$ and $W_{417}$.
+The four bound-$18$ inputs are \code{plane480Gen\_lb18} through
+\code{plane483Gen\_lb18}. Combining them gives
+\code{line\_rank1\_ge19} in \nolinkurl{QiushiFinalTheorem.lean}.
+The rank-two and rank-three line transfers are in
+\nolinkurl{QiushiLineFromPlane.lean}: the matrices of codes $25$ in
+$W_{484}$ and $106$ in $W_{488}$ are sent to codes $17$ and $273$,
+respectively.
+
+The three affine-span proofs are collected in
+\nolinkurl{QiushiRemainingPremises.lean} as
+\code{affineHyperplane0\_rank\_ge\_17} through
+\code{affineHyperplane2\_rank\_ge\_17}.
+For $(272,4,2)$, \nolinkurl{QiushiMonoOrbit414From262.lean}
+uses the bound in \nolinkurl{QiushiBranch262Extraction.lean}
+and the transformation $X\mapsto P^TXQ^{-T}$ with matrix codes
+$P=161$, $Q=84$; the preimages of the three generators have codes
+$136,1,2$ in $W_{262}$.
+For $(273,4,2)$ and $(272,4,1)$, the files
+\nolinkurl{QiushiBranch415Extraction.lean} and
+\nolinkurl{QiushiBranch416Extraction.lean} connect the quotient
+decompositions to the $101$-row and $373$-row integer systems.
+Their respective \nolinkurl{Dispatch} modules provide the source
+bounds and membership proofs, and the \nolinkurl{NoModel} modules
+assemble the branch refutations. The eleven further affine spans are
+transported in \nolinkurl{QiushiFinitePremisesReducer.lean}.
+
+\subsection{Catalogue and occupation interfaces}
+In the namespace \code{FrozenRegistry}, the theorem
+\code{all\_representatives} proves the listed bounds.
+The declarations \code{L0\_rank\_sound} and
+\code{coverage\_with\_rank\_bound} combine them with orbit coverage
+and consistent labels, as in Proposition~\ref{prop:global}.
+
+Supplementary declarations prove the fourteen two-plane orbits,
+subspace counts, quotient/restriction equivalence, all
+$233{,}680$ row bindings in the eight full occupation systems,
+target-$19$ occupation controls, projections of $23$-term
+decompositions, and exact singleton capacities.
+In the namespace \code{FrozenOccupation},
+\code{plane484\_no\_model} through \code{plane491\_no\_model}
+exclude arbitrary integer models of~\eqref{eq:integer-system}.
+These are separate from the tensor-rank statements and do not identify
+occupation feasibility with decomposition existence.
+
+\subsection{Recorded kernel checks}
+All $13{,}438$ registered modules passed fresh-source compilation.
+The $89$ terminal declarations and their dependencies were then replayed
+in the following six groups:
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+Group & Roots & Replayed declarations\\
+\midrule
+Main theorem and global finite bounds & 6 & $143{,}943$\\
+Complete calibration & 7 & $37{,}629$\\
+Orbit classification and exact labels & 12 & $33{,}687$\\
+Full occupation systems & 8 & $47{,}338$\\
+Structural results and consequences & 51 & $36{,}421$\\
+Boolean encodings & 5 & $6{,}713$\\
+\bottomrule
+\end{tabular}
+\end{center}
+All six groups passed. Their dependency closures overlap, so the
+right-hand column is not additive.
+Each run used the official
+\code{Lean.Environment.replay} from an empty kernel environment,
+with constructor and recursor checks~\cite{lean-replay}.
+Root types and transitive axioms were also audited.
+These executions recheck the proof using Lean's kernel; they do not
+constitute a second implementation of the kernel.
+
+\subsection{Certificate realizations}\label{app:certificate-realizations}
+The main formal theorem uses integer branch certificates with
+proved quotient semantics. In the Boolean realization, a singleton
+cap $c_q$ is encoded by $x_q=\sum_{j=1}^{c_q}y_{qj}$, where the
+$y_{qj}$ are Boolean copies. Every legal integer count is represented
+by choosing exactly $x_q$ true copies; conversely, summing the copies
+recovers the count. Each occupation row becomes a cardinality
+constraint. Sequential counters~\cite{sinz} with disjoint
+auxiliary-variable sets encode all rows simultaneously, including
+the two inequalities imposing the total. Thus the integer system
+and its Boolean encoding are equisatisfiable.
+
+Seven quotients have only singleton caps $0$ and $1$; orbit $489$
+has one direction with cap $2$, represented by two copies. The Lean
+development proves the generic Boolean-copy and disjoint-counter
+semantics as well as the concrete integer exclusions. The historical
+CNF/DRAT certificates give a separate computational realization of
+the eight exclusions: their exact DIMACS and DRAT files are checked
+by the original proof package, whereas Lean checks the integer
+branch certificates. Feasible target-$19$ occupation vectors and
+projected $23$-term controls check consistency of the constraints;
+they do not construct rank-$19$ quotient decompositions.
+
+The
+\href{https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research/blob/lean-formalization/formalization/README.md}{build instructions}
+and
+\href{https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research/blob/lean-formalization/formalization/verification-results.json}{verification record}
+for the proof library~\cite{qiushi-lean} identify the same sources,
+certificate data, and dependencies.
+The manuscript's LaTeX package includes the finite catalogue and
+verification summary, and can be built independently of the
+formalization.
+
+\subsection{Sources for the research trajectory}\label{app:trajectory-sources}
+The following links fix the research materials underlying
+Section~\ref{sec:development} to a single repository revision.
+The manuscript data file \nolinkurl{data/artifact-sources.json}
+also lists the upstream schemes and their coordinate conversions.
+
+The numerical example uses the
+\href{https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research/blob/01b4a6baf3788bf3f14af98a653ea22dafa0691c/research/materials/exact_baselines/results/fmm_r23_schemes/puiseux_analysis.json}{pairing singular values}
+and the
+\href{https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research/blob/01b4a6baf3788bf3f14af98a653ea22dafa0691c/research/materials/exact_baselines/results/fmm_r23_schemes/cancellation_analysis.json}{absorbed-factor data}.
+The latter normalize a pairing column by a nonzero coordinate;
+Table~\ref{tab:continuation} converts to unit Euclidean norm before
+applying~\eqref{eq:deletion-diagnostic}. The target residuals are
+the recorded \nolinkurl{solve.brent_residual_norm} values at
+$t=10,20,60$ in the
+\href{https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research/blob/01b4a6baf3788bf3f14af98a653ea22dafa0691c/research/materials/exact_baselines/results/fmm_r23_schemes/serendipitous_8d34_continuation_ranked0_further.json}{saved continuation states},
+which also contain all $621$ coefficients at each point.
+The
+\href{https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research/blob/01b4a6baf3788bf3f14af98a653ea22dafa0691c/research/materials/deformation_and_incidence/notes/corrected_cancellation.md}{corrected cancellation analysis}
+records the change in interpretation. The manuscript source includes
+the selected values and the arithmetic used for the displayed table.
+
+The continuation starts from the
+\href{https://github.com/dronperminov/FastMatrixMultiplication/blob/e703f18cbc157cec8ef68cc60bc9de0a149661ae/schemes/results/serendipitous_base/3x3x3_m23_8d34d377660f8f8d8b32cd4b6a1e1c40a5093dd0_ZT.json}{integer scheme in Perminov's collection}~\cite{perminov-code}.
+The first two coefficient vectors are retained; the third is
+reindexed by $w^{\rm new}_{3i+k}=w^{\rm source}_{3k+i}$.
+The
+\href{https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research/blob/01b4a6baf3788bf3f14af98a653ea22dafa0691c/research/materials/exact_baselines/code/fmm_to_qmm.py}{conversion program}
+and the
+\href{https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research/blob/01b4a6baf3788bf3f14af98a653ea22dafa0691c/research/materials/exact_baselines/results/fmm_r23_schemes/serendipitous_8d34.qmm}{converted scheme}
+specify the exact starting point. Appendix~\ref{app:upper} uses a
+different construction, the
+\href{https://github.com/khoruzhii/flip-cpd/blob/9eeb17f487f14103d7128cf290ae61535d8983b1/data/schemes_paper/gg-333-rank23-rec-0-0-0-z.txt}{general $3\times3$ integer scheme in flip-cpd}~\cite{flip-cpd}.
+Reducing its coefficients modulo two and reading
+$a_1,\ldots,a_9$, $b_1,\ldots,b_9$, and $c_1,\ldots,c_9$
+in row-major order gives exactly the printed triples.
+
+The
+\href{https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research/blob/01b4a6baf3788bf3f14af98a653ea22dafa0691c/research/materials/quotient_cores/notes/core_bridge_review.md}{core-bridge analysis}
+explains the relation between quotient construction and full-tensor
+bounds. The
+\href{https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research/blob/01b4a6baf3788bf3f14af98a653ea22dafa0691c/research/materials/finite_certification/notes/seqcounter_error.md}{counter correction}
+isolates the incompatible auxiliary-variable allocation and checks
+the corrected cardinality constraint. The
+\href{https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research/blob/01b4a6baf3788bf3f14af98a653ea22dafa0691c/research/materials/structural_obstruction/notes/short_saturated_lower_bound_route.md}{shortened saturation proof}
+records the replacement of the terminal support exclusions by saturation
+and the removal of the proposed orbit-$479$ strengthening from the
+coset reduction. These notes describe research states at
+the time they were written; the theorem and its final dependencies are
+given in the present paper and formalization.

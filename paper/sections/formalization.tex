@@ -1,0 +1,66 @@
+\section{Lean formalization}\label{sec:formalization}
+
+The Lean~4 formalization~\cite{lean4} follows the mathematical argument from the definition
+of multiplication to the lower bound. It includes the finite
+computations that establish the quotient premises, as well as the
+geometric and algebraic deductions. In particular, the statements connecting quotient tensors to finite
+integer systems are proved together with the certificate exclusions,
+so the same formal argument covers their mathematical interpretation
+and their application to the main theorem.
+
+\subsection{Mathematical statements}
+The field is represented by \code{ZMod 2}, and each factor is an
+actual $3\times3$ matrix. The entrywise definition
+of~\eqref{eq:tensor} is proved equivalent to the algorithm
+identity~\eqref{eq:algorithm} for every pair of input matrices.
+The final declaration \code{bilinear\_mul\_requires\_21} states that
+every such algorithm has at least $21$ products. Zero summands are
+allowed in the quantified family; no minimality, distinctness, or
+symmetry condition is assumed.
+
+The tensor-rank statement is \code{QiushiMatmul.rank\_ge\_21}.
+Its proof combines the structural argument with a closed collection of
+finite premises: bound $19$ for the three line types and the eight
+all-high plane types, and bound $17$ for the fourteen normalized
+affine-plane spans. The explicit upper-bound witness then gives
+\code{rank\_between\_21\_and\_23}. These declarations formalize
+Theorem~\ref{thm:main} and its stated interval.
+
+\subsection{Finite proofs and reusable components}
+The integer certificates of Section~\ref{sec:finite} are expanded
+into Lean proofs. Each leaf proves a contradiction by an exact
+nonnegative combination of inequalities. Each internal node applies an
+exhaustive integer split. Quotient membership and the source rank
+bounds are proved before these certificates are applied to a
+hypothetical decomposition. Thus the final theorem derives its finite
+premises within the same proof system as the saturation argument.
+
+The development uses Mathlib's finite fields, matrices, subspaces,
+linear maps, dimension theory, and rank
+identities~\cite{mathlib}. The problem-specific components include
+quotient/annihilator equivalence, occupation extraction, symmetry
+transport, affine-coset geometry, and the multiplication-specific
+product formula. Rank-additive saturation is formulated over any
+field. It can be reused independently of the binary finite data.
+The complete frozen-table theorem proves all $496$ representative
+bounds and transports them to arbitrary subspaces; its logical place
+is after the main theorem, as in
+Proposition~\ref{prop:global}.
+
+\subsection{Kernel verification}
+The final theorems and their full transitive proof dependencies passed
+Lean's unchanged kernel replay procedure from empty
+environments~\cite{lean-replay}. Their axiom dependencies are confined to
+\[
+ \{\code{propext},\ \code{Classical.choice},\ \code{Quot.sound}\}.
+\]
+The main theorem uses no additional axiom for a quotient bound and no
+external solver-success assumption. Its finite proofs are checked
+proof terms, not trusted outputs of the certificate generators.
+
+Appendix~\ref{app:formalization} lists the principal interfaces, the
+pinned dependencies, and the replay groups.
+The accompanying formalization package~\cite{qiushi-lean} contains the
+sources, certificate data, generators, and commands for reproduction.
+Neither a running Qiushi Engine nor access to a language model is
+needed to check the proof.

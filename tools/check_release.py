@@ -9,7 +9,8 @@ import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
 IDENTIFIERS = re.compile(r'\bS[0-9]{4}A[0-9]{2}\b|\b[Ss]tep[ _-]*[0-9]+\b')
-PRIVATE_DIRS = {'.git', 'build', 'dist', '.venv', '__pycache__', '.lake', '.local', 'paper'}
+PRIVATE_DIRS = {'.git', 'build', 'dist', '.venv', '__pycache__', '.lake', '.local'}
+PAPER_BUILD_OUTPUTS = {'paper/main.log', 'paper/main.synctex.gz'}
 GENERATED_SUFFIXES = {'.pyc', '.aux', '.bbl', '.blg', '.fls', '.fdb_latexmk', '.out', '.toc',
                       '.olean', '.ilean', '.ir'}
 
@@ -34,6 +35,7 @@ def public_files(root):
         for name in names:
             path = Path(directory) / name
             if (name not in PRIVATE_DIRS and path.suffix not in GENERATED_SUFFIXES
+                    and path.relative_to(root).as_posix() not in PAPER_BUILD_OUTPUTS
                     and not name.endswith(('.olean.private', '.olean.server'))):
                 files.add(path.relative_to(root).as_posix())
     return files
@@ -100,7 +102,7 @@ def main():
     result = {'schema': 'qiushi.matmul.public-check.v1',
               'all_ok': not failures, 'hashed_files': len(seen),
               'raw_transcripts_included': False,
-              'publication_approved': False, 'failures': failures}
+              'failures': failures}
     output = ROOT / 'build/public-check.json'
     output.parent.mkdir(exist_ok=True)
     output.write_text(json.dumps(result, indent=2) + '\n')

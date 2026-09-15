@@ -1,0 +1,102 @@
+\section{Saturation and the cross-factor contradiction}\label{sec:saturation}
+
+The equality in Proposition~\ref{prop:profile} is the point at which
+the first-factor geometry constrains the other two factors. We first
+record the linear-algebra statement responsible for this transition.
+
+\begin{lemma}[Rank-additive saturation]\label{lem:saturation}
+Let $k$ be a field and let $P,M_1,\ldots,M_r$ be $n\times n$
+matrices over $k$. Suppose $P$ is invertible and
+\[
+ P=\sum_{t=1}^r M_t,\qquad \sum_{t=1}^r\rank M_t=n.
+\]
+Then, for all $s,t$,
+\begin{equation}\label{eq:saturation}
+ M_tP^{-1}M_s=\delta_{ts}M_t.
+\end{equation}
+Consequently $E_t=M_tP^{-1}$ satisfy
+$\sum_tE_t=I$, $E_t^2=E_t$, and $E_tE_s=0$ for $t\ne s$.
+\end{lemma}
+\begin{proof}
+Let $U_t=\im M_t$. Since $P$ is surjective and is the sum of the
+$M_t$, the subspaces $U_t$ span $k^n$. Their dimensions sum to $n$,
+so the sum is direct. For $x\in k^n$, put $z=P^{-1}M_sx$. Then
+\[
+ \sum_t M_tz=Pz=M_sx\in U_s.
+\]
+Uniqueness of components in $\bigoplus_tU_t$ gives $M_tz=0$ if
+$t\ne s$ and $M_sz=M_sx$. This is~\eqref{eq:saturation}.
+Right multiplication by $P^{-1}$ gives the idempotent identities;
+their sum is $PP^{-1}=I$.
+\end{proof}
+
+Orthogonality here means pairwise annihilation, not orthogonality for
+an inner product. The lemma allows zero summands and arbitrary fields.
+
+\begin{lemma}[Product formula]\label{lem:product}
+For the convention~\eqref{eq:tensor}, and arbitrary $A,B,C,A',B',C'
+\in\Mat$,
+\begin{equation}\label{eq:product}
+ M(A,B,C)P^{-1}M(A',B',C')
+   =M(AB'C^TA',B,C').
+\end{equation}
+\end{lemma}
+\begin{proof}
+Since $P$ is a permutation matrix, $P^{-1}=P^T$. For composite
+indices as in Section~\ref{sec:geometry},
+\[
+ P^{-1}[(k,d),(m,e)]=T[3m+k,e,d].
+\]
+The $((i,b),(j,c))$ entry of the left-hand side
+of~\eqref{eq:product} is therefore $B[b]C'[c]$ times
+\[
+ \sum_{k,m=0}^2 A[i,k]A'[m,j]
+       \sum_{d,e=0}^{8} C[d]T[3m+k,e,d]B'[e].
+\]
+The inner sum has nonzero tensor coefficients only at
+$e=3k+h$, $d=3m+h$, for $0\leq h<3$, so it equals
+\[
+ \sum_{h=0}^2 C[m,h]B'[k,h]=(B'C^T)[k,m].
+\]
+The full entry is thus
+$B[b]C'[c](AB'C^TA')[i,j]$, as claimed.
+\end{proof}
+
+If $B$ and $C$ are nonzero, the map $X\mapsto M(X,B,C)$ is
+injective. To see this, choose entries $B[b]\ne0$ and $C[c]\ne0$.
+The entries with these fixed $b,c$ recover all entries of $X$ up to
+the same nonzero scalar. In particular $M(X,B,C)=0$ implies $X=0$.
+
+\begin{proposition}[Invertibility obstruction at saturation]
+\label{prop:invertibility}
+In a decomposition of $\T$ with nonzero factors and
+$\sum_t\rank A_t=27$, at most one first factor is invertible.
+\end{proposition}
+\begin{proof}
+Set $M_t=M(A_t,B_t,C_t)$. Their sum is $P$, and their ranks sum to
+$27$. Lemmas~\ref{lem:saturation} and~\ref{lem:product}, followed by
+the preceding injectivity observation, give
+\begin{align}
+ A_tB_tC_t^TA_t&=A_t,\label{eq:diagonal}\\
+ A_tB_sC_t^TA_s&=0\quad(t\ne s).\label{eq:offdiagonal}
+\end{align}
+For an invertible $A_t$, multiplying~\eqref{eq:diagonal} on both
+sides by $A_t^{-1}$ yields
+\begin{equation}\label{eq:inverse}
+ B_tC_t^T=A_t^{-1}.
+\end{equation}
+Thus both $B_t$ and $C_t$ are invertible. If $A_t$ and $A_s$ are
+invertible at two distinct indices, all four factors in
+$A_tB_sC_t^TA_s$ are invertible by~\eqref{eq:inverse}. Their product
+cannot be zero, contradicting~\eqref{eq:offdiagonal}.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+The line quotient bounds exclude minimal decompositions shorter than
+$20$. If a minimal length-$20$ decomposition existed,
+Proposition~\ref{prop:profile} would give rank sum $27$ and three
+invertible first factors. Proposition~\ref{prop:invertibility} permits
+at most one. Hence there is no decomposition of length at most $20$,
+and~\eqref{eq:algorithm} gives the asserted lower bound for bilinear
+algorithms.
+\end{proof}

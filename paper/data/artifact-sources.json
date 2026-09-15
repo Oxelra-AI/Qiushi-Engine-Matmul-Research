@@ -1,0 +1,38 @@
+{
+  "research_archive": {
+    "repository": "https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research",
+    "revision": "01b4a6baf3788bf3f14af98a653ea22dafa0691c",
+    "report": "reports/en/main.pdf"
+  },
+  "continuation_start": {
+    "repository": "https://github.com/dronperminov/FastMatrixMultiplication",
+    "revision": "e703f18cbc157cec8ef68cc60bc9de0a149661ae",
+    "path": "schemes/results/serendipitous_base/3x3x3_m23_8d34d377660f8f8d8b32cd4b6a1e1c40a5093dd0_ZT.json",
+    "coefficient_domain": "integers, embedded in the reals for continuation",
+    "conversion": "Keep u and v; set w_new[3*i+k] = w_source[3*k+i]. Preserve term order.",
+    "converted_path": "research/materials/exact_baselines/results/fmm_r23_schemes/serendipitous_8d34.qmm",
+    "conversion_program": "research/materials/exact_baselines/code/fmm_to_qmm.py"
+  },
+  "upper_bound_witness": {
+    "repository": "https://github.com/khoruzhii/flip-cpd",
+    "revision": "9eeb17f487f14103d7128cf290ae61535d8983b1",
+    "path": "data/schemes_paper/gg-333-rank23-rec-0-0-0-z.txt",
+    "conversion": "Reduce coefficients modulo two. Read a1..a9, b1..b9 and c1..c9 in row-major order. Preserve product order m1..m23.",
+    "converted_path": "research/materials/occupation_and_completion/results/wang_native/controls/full_rank23_flipcpd_text_support.json",
+    "conversion_program": "research/materials/occupation_and_completion/code/extract_known_supports.py"
+  },
+  "formalization": {
+    "repository": "https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research",
+    "revision": "cf24ad88b448ec27a12557d45d4c0645816f573e",
+    "release_tag": "lean-formalization",
+    "release_url": "https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research/releases/tag/lean-formalization",
+    "directory": "formalization",
+    "entry_point": "formalization/README.md",
+    "verification_record": "formalization/verification-results.json",
+    "manuscript_verification_record": "data/formalization-verification.json",
+    "registered_source_digest": "06acd3e79ff5d45067141bda4f11f4348743be70da23b498309da426674b130a",
+    "digest_definition": "source_build.digest_format in the manuscript verification record",
+    "toolchain": "leanprover/lean4:v4.33.1",
+    "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474"
+  }
+}
