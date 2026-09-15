@@ -20,21 +20,14 @@ The main theorem is **closed without finite-bound hypotheses**.
 `rank_between_21_and_23`, and `bilinear_mul_requires_21` for ordinary
 matrix multiplication on all inputs over `ZMod 2`.
 
-The complete 8,455-module local source closure passed a clean build.
-`tests/Statements.lean` checked the public interfaces and their transitive
-axioms: only `propext`, `Classical.choice` and `Quot.sound` occur.
-All 496 frozen representative bounds, their unconditional global rank-soundness
-theorem, and the complete calibration statements have passed their source and
-axiom checks. Fresh kernel replay has also passed for quotient/restriction
-equivalence, general saturation, three-parameter symmetry, affine geometry,
-subspace counts and the rank-23 construction. All 13,438 registered modules
-now have successful fresh-source build outputs matching the current sources,
-including calibration and both report entries. All six independent replay
-groups have now passed: 89 terminal declarations and their complete proof
-dependencies were checked from an empty kernel environment. This includes the
-unconditional main theorem, all finite bounds and complete calibration.
-See [STATUS.md](STATUS.md) for verification results
-and [COVERAGE.md](COVERAGE.md) for exact statement scopes.
+The proof includes all 496 frozen representative bounds, quotient/restriction
+equivalence, saturation, tensor symmetry, finite geometry, calibration and
+encoding semantics. All 13,438 registered modules passed source-matched
+compilation. Six kernel replay groups checked 89 terminal declarations and
+their complete dependencies from an empty environment. Their only axioms are
+`propext`, `Classical.choice` and `Quot.sound`.
+See [STATUS.md](STATUS.md) for the verification results and
+[COVERAGE.md](COVERAGE.md) for the statements, hypotheses and Lean declarations.
 
 | Component | Entry point |
 | --- | --- |
@@ -146,9 +139,7 @@ The semantic code-to-matrix and six-bases-per-plane arguments are in
 The generator is not a proof oracle: Lean checks every rank lookup and pair
 count before deriving the count of actual subspaces.
 
-The intended axiom boundary is `propext`, `Classical.choice` and `Quot.sound`.
-No result may be marked complete based only on filenames, generated source,
-an external certificate check, or the absence of placeholder text.
+## Kernel Verification
 
 After a normal Lake build, audit the compiled statement, its transitive axioms
 and its dependency closure with the matching Lean distribution:
@@ -180,10 +171,8 @@ python3 tools/audit.py --project . --toolchain "$(lake env lean --print-prefix)"
   --root QiushiMatmul.FrozenRegistry.coverage_with_rank_bound --timeout 43200
 ```
 
-The supplementary geometry, calibration and encoding results have separate
-roots listed in `COVERAGE.md`; the combined command is not their acceptance.
-
-For all report-level groups, use the same fresh build environment:
+For all six report-level groups, including supplementary geometry, calibration
+and encoding results, use the same fresh build environment:
 
 ```sh
 python3 tools/verify_all.py --environment "$BUILD_DIR/environment.json" \
@@ -196,28 +185,22 @@ structural results and consequences, and Boolean encodings. Each group uses the
 existing root replayer and its complete dependency closure. Grouping avoids
 loading both large report entry points into one process. `--jobs` bounds the
 number of simultaneous replays; use one on memory-constrained machines.
-`--group encoding` checks only that group and is not report-wide acceptance.
-The command does not rebuild sources or replace the source build above.
+`--group encoding` selects the encoding group for a shorter, focused check.
+The command checks the artifacts produced by the preceding source build.
 The large main and calibration groups exceeded two-hour replay budgets on the
 validation host. The commands above allow twelve hours per subprocess; this
 is a timeout ceiling, not an expected duration. Finite computational proofs
 are reduced again by the kernel, so full replay can take substantially longer
 than checking a small structural lemma.
 
-The default mode invokes `leanchecker --fresh`. A timeout or a concurrent
-artifact change is a failed audit, not a successful verification. Named
-definitions and the reported statement must also be compared with the
-mathematical claim.
-
-For a narrower declaration-level audit, add `--replay-scope roots`. This
-replays every selected declaration and its complete dependency closure from
-an empty environment using the pinned distribution's `Lean.Environment.replay`.
-It rejects unsafe/partial dependencies and additional axioms; it does not
-assume imported proof bodies are valid. The audit records the scope, checks
-the exact root types and axioms, and fails on timeout or artifact changes.
-Unlike the default whole-module mode, this does not replay unrelated library
-declarations. Report-level coverage is provided by all six groups together,
-with the precise mathematical statements listed in `COVERAGE.md`.
+`tools/audit.py` supports two modes. Its default invokes `leanchecker --fresh`
+for whole-module replay. `--replay-scope roots`, used by `verify_all.py`, checks
+the selected declarations and their complete dependencies with the pinned
+distribution's `Lean.Environment.replay`. Both use the official Lean kernel.
+Root replay includes imported proof bodies and checks exact types and axioms;
+it omits unrelated library declarations. Unsafe/partial dependencies, additional
+axioms, timeouts and changes to compiled inputs cause a failed check. The six
+groups together cover the statements in `COVERAGE.md`.
 
 The replay-driver regression tests include deliberately invalid proof terms,
 extra and transitive extra axioms, missing dependencies, unsafe/partial

@@ -21,7 +21,7 @@ $\mathbb F_2$ requires at least 21 products. The formal proof connects the
 ordinary matrix-multiplication specification to finite quotient bounds,
 occupation geometry, a forced rank profile, and an algebraic contradiction
 obtained from equality in a split-flattening rank bound. Its finite premises
-are proved within Lean, rather than assumed from an external solver. The
+are proved within Lean. The
 project also provides reusable results on quotient semantics, rank-additive
 matrix saturation, tensor symmetry and finite subspace geometry. Sources,
 certificate inputs, fixed dependencies and verification commands accompany
@@ -36,8 +36,8 @@ these products to recover the output. The formalization proves
 \begin{equation}
   21\le R_{\mathbb F_2}(T_{333})\le23.
 \end{equation}
-The lower bound rules out all such algorithms using at most 20 products; it
-does not construct a 21-product algorithm. The upper bound is supplied by an
+The lower bound rules out all such algorithms using at most 20 products.
+The upper bound is supplied by an
 explicit 23-term decomposition, whose 729 tensor coordinates are checked.
 
 The ordinary multiplication statement is exposed by
@@ -49,10 +49,10 @@ theorem bilinear_mul_requires_21 (r : Nat)
     (h : forall X Y : Mat3,
       X * Y = bilinearAlgorithm A B C X Y) : 21 <= r
 \end{lstlisting}
-This display uses ASCII equivalents for Lean notation. Its quantification
-is over every input matrix, not a set of test inputs. The tensor identity
-and the bilinear algorithm statement are related by proved equivalences.
-Neither this theorem nor \texttt{rank\_ge\_21} assumes any finite quotient bound.
+This display uses ASCII equivalents for Lean notation. It quantifies over
+every input matrix. Proved equivalences connect the tensor identity to the
+bilinear algorithm statement, and the finite quotient bounds are established
+within the proof.
 
 \section{From Finite Bounds to Algebraic Rigidity}
 Suppose a 20-term decomposition existed. Quotient-rank bounds constrain the
@@ -75,16 +75,14 @@ which gives the contradiction.
 
 Lean follows this structural argument while reorganizing intermediate
 definitions and lemmas for reuse. The finite prerequisites are connected
-to the same matrix space and quotient definitions as the final theorem;
-they are not isolated Boolean calculations with assumed interpretations.
+to the same matrix space and quotient definitions as the final theorem.
 
 \section{Finite Certificates and Coverage}
 The finite proof uses exact integer branch certificates. At each leaf,
 nonnegative combinations of occupation inequalities yield a contradiction;
 proved integer splits cover the remaining possibilities. Transports,
 quotient coordinates and the resulting rank lower bounds are proved in Lean.
-Certificate generation need not be trusted to announce correctness, since
-its output must supply a valid proof term.
+The generator translates each certificate into proof terms checked by Lean.
 
 \begin{center}
 \begin{tabular}{@{}p{0.32\linewidth}p{0.60\linewidth}@{}}
@@ -103,7 +101,7 @@ Encoding semantics & Integer multiplicity copies and disjoint sequential-counter
 
 The precise declarations and hypotheses appear in \texttt{COVERAGE.md}.
 In particular, the E11 lifting theorem is an implication from a hypothetical
-core witness; it does not assert that such a witness exists. Statements
+core witness. Statements
 about decompositions with zero summands retain the required alternatives.
 The historical Python, SAT and DRAT artifacts remain separately reproducible;
 the Lean proof establishes its finite premises with integer certificates
@@ -122,10 +120,8 @@ encodings. All six checks passed.
 Exact terminal types and their transitive axiom dependencies were checked
 as well. The only axioms are the standard
 \texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}.
-Thus the finite premises do not enter as added axioms. The verification
-uses the official Lean kernel; it is not a second implementation of that
-kernel. \texttt{verification-results.json} records the checked inputs and
-outcomes, and \texttt{verification.json} specifies the terminal declarations.
+\path{verification-results.json} records the checked inputs and outcomes,
+and \path{verification.json} specifies the terminal declarations.
 
 \section{Reproduction and Reuse}
 The project runs without Qiushi Engine or language-model access. From
@@ -145,10 +141,10 @@ not a guaranteed duration. Compiler and replay logs are kept locally and are
 not prerequisites for another reader to rebuild the proofs.
 
 The general algebraic interfaces can be reused separately from the full
-finite computation. Their contribution is more than an additional executable
-check of one result: they turn the structural mechanism and its finite
-prerequisites into explicit mathematical components whose statements and
-dependencies can be inspected and extended. The accompanying research
+finite computation. Quotient semantics, rank-additive saturation and tensor
+symmetry provide components for extending the argument to other settings;
+the certificate interfaces connect finite computations to their mathematical
+consequences. The accompanying research
 trajectory explains how Qiushi Engine moved from algorithm search, through
 failed support-only approaches, to the equality-case argument. The written
 proof explains why the result holds; the trajectory explains how the

@@ -58,36 +58,20 @@ groups passed on the source-matched build. Declaration names below are in
 | Disjoint sequential counters encode the occupation system | `Qiushi.CNF.occupation_cnf_equisatisfiable`, `Qiushi.CNF.singleton_occupation_cnf_equisatisfiable` | Compiled for an actual `Std.Sat.CNF`; the singleton-cap version states its cap-source hypothesis explicitly |
 | Transparent exact-prefix encoding | `Qiushi.CNF.exactPrefixCNF_correct` | Compiled with the necessary positive input-length hypothesis; the alternative two-counter encoding handles empty inputs |
 
-The six groups in `verification.json` select 89 terminal declarations and
-their complete dependencies. All groups passed fresh kernel replay from an
-empty environment, including the main theorem, all 496 representative bounds,
-calibration, classification, full occupation systems, supplementary structural
-results and encoding semantics. Every checked root's transitive axioms are
-contained in `{propext, Classical.choice, Quot.sound}`. All 13,438 registered
-modules have source-matched successful build outputs. [STATUS.md](STATUS.md)
-and [verification-results.json](verification-results.json) record the outcomes.
+The six groups in `verification.json` check 89 terminal declarations and their
+complete dependencies. [STATUS.md](STATUS.md) and
+[verification-results.json](verification-results.json) record their successful
+kernel replay and standard-axiom checks.
 
 ## Scope Notes
 
-- `TensorEntryDecomp` permits zero summands. The padded-decomposition results
-  now make that case explicit. The lower bound 21 alone cannot exclude a
-  length-21 decomposition padded to length 22.
-- The E11 count, dimension partition and complete semantic row index have
-  compiled; 14 further declarations passed the standard-axiom checks. This
-  does not certify the ordering or numeric lower-bound values of a historical
-  saved Python cache. Such values are not assumed by the count theorem.
-- Discussion that a necessary condition does not yet prove existence is not
-  a constructed mathematical counterexample. Neither a rank-21/rank-22
-  construction nor a core-rank-19 witness is claimed by these proofs.
-- The main theorem and all eight finite premises passed a clean 8,455-module
-  local-source build, followed by the combined main/registry fresh replay.
-  No finite-bound assumption remains in the main theorem.
-- `QiushiReport.lean` and its exact-statement tests passed using the clean core
-  imports, including the full occupation results, normalized-coset counts and
-  encoding semantics. The 32,018 all-high count also passed parent integration;
-  individual orbit cardinalities and the full 14-orbit partition have passed
-  parent compilation. The combined entry point and its exact-type/axiom tests
-  passed with the new classification and exact frozen values integrated.
+- `TensorEntryDecomp` permits zero summands. The padded length-22 theorem
+  retains the possible length-21 decomposition obtained by deleting a zero
+  term; the two-profile classification assumes nonzero factors in that slot.
+- E11 lifting is conditional on a core decomposition. The formalization
+  proves this implication and the core's dimension and subspace counts.
+- Occupation feasibility controls test the necessary counting conditions;
+  a tensor construction additionally requires compatible factors in all slots.
 - The mathematically defined frozen orbit expansion and the universal
   counter-CNF semantics are not formal proofs of equality with the saved
   Python cache or DIMACS bytes. PySAT's implementation and the original DRAT
