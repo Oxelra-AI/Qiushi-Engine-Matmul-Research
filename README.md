@@ -136,15 +136,15 @@ question. The account explains how those outcomes informed later research.
 | Can the finite computations be checked? | [Reproduction guide](reproducibility/README.md) |
 | Can the theorem be checked by Lean? | [Formalization](formalization/README.md), [coverage](formalization/COVERAGE.md) and [verification results](formalization/STATUS.md) |
 | Is a Chinese translation available? | [Complete Chinese report with Lean formalization](reports/zh-lean/main.pdf), translated section by section from the English report |
-| Where are the original reports? | [English](reports/en/main.pdf) and [Chinese](reports/zh/main.pdf), preserved unchanged |
+| Where are the reports without the Lean chapters? | [Original English edition](reports/en/main.pdf) and [original Chinese edition](reports/zh/main.pdf) |
 | Can the documents be rebuilt? | [Paper sources](paper/README.md), [English report sources](reports/en-lean/README.md) and [Chinese report sources](reports/zh-lean/README.md) |
 
 ## Structure
 
 ~~~text
 paper/            Mathematical paper, LaTeX sources and manuscript data
-reports/en/       Original English report, preserved unchanged
-reports/zh/       Original Chinese report, preserved unchanged
+reports/en/       Original English report without the Lean chapters
+reports/zh/       Original Chinese report without the Lean chapters
 reports/en-lean/  English report integrating the mathematical proof and Lean formalization
 reports/zh-lean/  Complete Chinese translation of the Lean-integrated report
 research/         Guides, corrections, catalog and eight thematic material collections
