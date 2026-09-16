@@ -49,7 +49,7 @@ Laderman 算法适配到 $\FF$ 后可达到上界 23\cite{laderman1976noncommuta
 定理将二元域上的精确秩限制在 $[21,23]$ 内。同一饱和恒等式还约束了第一因子秩和恰好为 27 的秩 22 分解：其中至多有一个第一因子可逆。第\ref{sec:outlook}节推导这一结论，并说明现有占据下界为何不能在长度 21 时强迫秩不等式取等。
 
 \textbf{与已有工作的关系。}\quad
-展平的秩和约束 $\sum_t\rk(A_t)\ge\rk(\Phi_A(T))$ 来自矩阵秩的次可加性；展平是代数复杂度中的标准工具\cite{burgisser1997algebraic,blaser1999focs}。两两之差为秩一矩阵的矩阵族包含于共同仿射行陪集或列陪集的结构定理，属于华罗庚矩阵几何的内容\cite{hua1945geometries,wan1996geometry,pazzis2015hua}。秩可加分解与幂等恒等式是经典线性代数；相关恒等式见文献\cite{cochran1934distribution,tian2001rank}，本文则在所需底域上直接证明引理\ref{lem:saturation}。本文的具体路线将八个商下界的 CNF/DRAT 认证、零超额时的秩可加性，以及张量特有的乘积恒等式\eqref{eq:product}结合起来，以结构性矛盾取代最后对第一因子秩型的枚举。
+展平的秩和约束 $\sum_t\rk(A_t)\ge\rk(\Phi_A(T))$ 来自矩阵秩的次可加性；展平是代数复杂度中的标准工具\cite{burgisser1997algebraic,blaser1999focs}。两两之差为秩一矩阵的矩阵族包含于共同仿射行陪集或列陪集的结构定理，属于华罗庚矩阵几何的内容\cite{hua1945geometries,wan1996geometry,pazzis2015hua}。实二次型的 Cochran 定理\cite{cochran1934distribution}及幂等矩阵理论\cite{tian2001rank}中也有相关的秩可加性现象。下文直接证明引理\ref{lem:saturation}，该引理适用于任意域。本文的具体路线将八个商下界的 CNF/DRAT 认证、零超额时的秩可加性，以及张量特有的乘积恒等式\eqref{eq:product}结合起来，以结构性矛盾取代最后对第一因子秩型的枚举。
 
 \input{sections/research_process}
 
@@ -237,8 +237,6 @@ $\AG(3,2)$ 中十四个四点仿射平面各提供一个“至多 3 个”的约
 \begin{proof}
   由于 $\sum_t\rk(M_t)=n=\rk(P)$，列空间 $\operatorname{col}(M_t)$ 构成直和，且其和等于 $k^n$；行空间同理。对任意 $x$，令 $z=P^{-1}M_sx$，于是 $Pz=M_sx$。因此 $\sum_tM_tz=M_sx$，由直和分解的唯一性，当 $t\ne s$ 时有 $M_tz=0$，而 $M_sz=M_sx$。
 \end{proof}
-
-这是一个初等的秩可加性引理；相关的幂等秩恒等式已有经典研究\cite{cochran1934distribution,tian2001rank}。
 
 下面利用矩阵乘法张量的特殊结构。分裂展平项 $M_t=M(A_t,B_t,C_t)$ 的行、列分别由 $(i,b)$ 和 $(j,c)$ 编号，其中 $0\le i,j<3$，$0\le b,c<9$。我们显式计算其乘积。
 

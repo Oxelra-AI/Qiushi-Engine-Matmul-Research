@@ -99,7 +99,7 @@ Section~\ref{sec:outlook} derives this consequence and explains why the
 current occupation bounds do not force equality at length~21.
 
 \noindent\textbf{Relation to prior work.}\quad
-The flattening rank-sum constraint $\sum_t\rk(A_t)\ge\rk(\Phi_A(T))$ follows from subadditivity of matrix rank; flattenings are standard tools in algebraic complexity~\cite{burgisser1997algebraic,blaser1999focs}. The structure theorem that matrices with pairwise rank-one differences lie in a common affine row or column coset belongs to Hua's geometry of matrices~\cite{hua1945geometries,wan1996geometry,pazzis2015hua}. Rank-additive decompositions and idempotent identities are classical linear algebra; related identities appear in~\cite{cochran1934distribution,tian2001rank}, and Lemma~\ref{lem:saturation} is proved directly below over the field needed here. The specific route presented here combines CNF/DRAT certification of eight quotient bounds with rank-additivity at zero excess and the tensor-specific product identity~\eqref{eq:product}, obtaining a structural contradiction rather than a final enumeration of first-factor profiles.
+The flattening rank-sum constraint $\sum_t\rk(A_t)\ge\rk(\Phi_A(T))$ follows from subadditivity of matrix rank; flattenings are standard tools in algebraic complexity~\cite{burgisser1997algebraic,blaser1999focs}. The structure theorem that matrices with pairwise rank-one differences lie in a common affine row or column coset belongs to Hua's geometry of matrices~\cite{hua1945geometries,wan1996geometry,pazzis2015hua}. Related rank-additivity phenomena arise in Cochran's theorem for real quadratic forms~\cite{cochran1934distribution} and in the theory of idempotent matrices~\cite{tian2001rank}. Lemma~\ref{lem:saturation} is proved directly below over an arbitrary field. The specific route presented here combines CNF/DRAT certification of eight quotient bounds with rank-additivity at zero excess and the tensor-specific product identity~\eqref{eq:product}, obtaining a structural contradiction rather than a final enumeration of first-factor profiles.
 
 
 \input{sections/research_process}
@@ -309,8 +309,6 @@ Equation~\eqref{eq:profile} says that equality holds in the rank inequality~\eqr
 \begin{proof}
   Since $\sum_t\rk(M_t)=n=\rk(P)$, the column spaces $\operatorname{col}(M_t)$ form a direct sum equal to~$k^n$, and similarly for the row spaces.  For any $x$, write $Pz=M_sx$ for $z=P^{-1}M_sx$.  Then $\sum_t M_tz=M_sx$, and by uniqueness of the direct-sum decomposition, $M_tz=0$ for $t\ne s$ and $M_sz=M_sx$.
 \end{proof}
-
-This is an elementary rank-additivity lemma; related idempotent rank identities are classical~\cite{cochran1934distribution,tian2001rank}.
 
 Now we exploit the specific structure of the matrix-multiplication tensor.  The split-flattened term $M_t=M(A_t,B_t,C_t)$ has rows and columns indexed by pairs $(i,b)$ and $(j,c)$ with $0\le i,j<3$ and $0\le b,c<9$.  We compute the product explicitly.
 

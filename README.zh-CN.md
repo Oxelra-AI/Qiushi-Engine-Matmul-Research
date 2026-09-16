@@ -118,7 +118,7 @@ Qiushi Engine 独立自主地完成数学研究，从形成研究路线、开展
 历史实验与最终证明分开维护。探索材料供阅读、分析与改编；最终定理的有限输入
 和维护中的复验入口位于 `proof/`。使用方法见[研究材料复用说明](reproducibility/research-materials.md)。
 
-原[英文报告](reports/en/main.pdf)与[中文报告](reports/zh/main.pdf)保持发布时的版本。
+未加入 Lean 章节的原版[英文报告](reports/en/main.pdf)与[中文报告](reports/zh/main.pdf)也单独保留。
 另设 [英文 Lean 版](reports/en-lean/README.md)和[中文 Lean 版](reports/zh-lean/README.md)，
 连贯呈现数学论证、形式化证明及研究轨迹。每个版本各有一个完整 PDF 和一个 LaTeX 主文件，
 正文与附录连续编排。中文稿逐节对应英文稿，沿用英文图示，公式、数据和引用一一对应。
