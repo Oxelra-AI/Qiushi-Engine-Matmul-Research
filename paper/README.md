@@ -3,7 +3,8 @@
 **A structural proof of the lower bound 21 for 3 x 3 matrix multiplication
 over F2**
 
-- [Paper](main.pdf): mathematical article with four integrated appendices.
+- [arXiv:2609.18722](https://arxiv.org/abs/2609.18722): published preprint.
+- [Paper PDF](main.pdf): mathematical article with four integrated appendices.
 - [LaTeX master](main.tex): a single, self-contained AMS article.
 - [arXiv submission package](https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research/releases/download/paper-revised/Qiushi_Matmul_F2_arxiv.zip): only the LaTeX inputs,
   bibliography, resolved references, and the two printed data tables.

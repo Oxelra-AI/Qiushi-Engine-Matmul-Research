@@ -4,7 +4,8 @@
 
 **Long-horizon autonomous mathematical research: from algorithm search to structural proof.**
 
-[Mathematical paper](paper/main.pdf) ·
+[arXiv:2609.18722](https://arxiv.org/abs/2609.18722) ·
+[Paper PDF](paper/main.pdf) ·
 [Report with Lean proofs](reports/en-lean/main.pdf) ·
 [中文报告（含 Lean 证明）](reports/zh-lean/main.pdf) ·
 [Research materials](research/materials/README.md) ·
@@ -227,7 +228,14 @@ positive-excess decompositions, and transfer to other fields remain research
 questions. The report also derives conditional restrictions on saturated
 rank-22 decompositions.
 
-The authors are listed in the report and CITATION.cff.
+## Citation
+
+For the mathematical result, cite **A Structural Proof of the Lower Bound 21
+for 3 x 3 Matrix Multiplication over F2**, [arXiv:2609.18722](https://arxiv.org/abs/2609.18722).
+[CITATION.cff](CITATION.cff) provides the complete author list and paper metadata
+for GitHub's citation export. For the proof library, data, or research trajectory,
+also identify the repository release used.
+
 Original code is available under **MIT**; the original report, figures,
 research records, and data are available under **CC BY 4.0**. Both permit
 reuse, modification, and commercial use under their respective notice and
