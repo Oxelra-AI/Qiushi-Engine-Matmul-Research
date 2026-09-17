@@ -2,7 +2,7 @@
   "schema": "qiushi.matmul.publication-source-map.v1",
   "checked_at_utc": "2026-09-15T02:55:34+00:00",
   "status": "pass",
-  "scope": "Comment-only publication redaction. This is source/object equivalence evidence, not a new kernel replay.",
+  "scope": "Comment-only source revisions with compiled kernel-payload equivalence; not a new kernel replay.",
   "original_source_commit": "88d609a694f8b574d05da082b2a94ae2f89fbd7e",
   "original_acceptance": {
     "file": "verification-results.json",
@@ -128,14 +128,7 @@
     }
   ],
   "fresh_kernel_replays_performed": 0,
-  "replay_relation": "The prior six replay receipts attest the original source-built artifacts. The publication sources compile to identical kernel payloads, with the documented metadata differences. No claim is made that the old replay ran on these redacted source bytes.",
-  "privacy": {
-    "lean_files_scanned": 13438,
-    "publication_audit_failures": 0,
-    "original_comment_text_included": false,
-    "private_host_paths_included": false,
-    "public_history_requirement": "Publish the sanitized tree without the unsanitized ancestor commits; a later redaction commit does not clean Git history."
-  },
+  "replay_relation": "The six replay receipts attest the original source-built artifacts. This record establishes that the publication sources compile to identical kernel payloads, with the documented metadata differences; it records compilation and equivalence checks, not a new replay.",
   "changed_modules": [
     {
       "module": "QiushiBSlotDeletion",

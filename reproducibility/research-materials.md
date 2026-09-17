@@ -19,11 +19,10 @@ artifacts, not additional tests that run automatically with the final proof.
   silently promoted to valid data.
 - Python sources are syntax-checked, not imported or executed during catalog
   validation. Import-time execution can launch a search or write files.
-- Research identifiers and machine-specific references are removed from the
-  public copies, including embedded cache metadata. Mathematical data are
-  preserved; the [redaction receipt](../evidence/cache-metadata-redaction.json)
-  distinguishes changed labels from unchanged numerical payloads. A fresh
-  proof replay checks the resulting public files.
+- The [cache metadata record](../evidence/cache-metadata.json) binds the
+  published certificate paths and cache hashes to unchanged mathematical
+  payloads. The [recorded proof replay](../evidence/verification.json) checks
+  the published proof inputs.
 - The maintained PDF, LaTeX source archive and repository archive are checked
   as separate release artifacts.
 
@@ -36,8 +35,8 @@ Read its linked notes, scientific inputs and dependencies first. Work in a
 fresh directory or isolated environment; never run the entire archive as a
 test suite. Historical sources may require additional libraries, replacement
 of data paths, reconstruction of a large search input, or an explicitly chosen
-resource limit. Their archived names and references are scientific rather than
-original execution identifiers; they are not all maintained command-line tools.
+resource limit. Files are named by mathematical topic and experiment; they are
+not all maintained command-line tools.
 
 For a new run, keep the archived inputs read-only and write results to a new
 directory. Record the exact code, parameters, inputs, environment and new

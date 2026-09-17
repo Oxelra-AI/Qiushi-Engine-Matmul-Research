@@ -13,12 +13,11 @@
 | Public snapshot identity | [Release manifest](release-manifest.json) |
 | Research development and corrections | Appendix B of the report and [thematic research map](../research/README.md) |
 | Included notes, plans, programs and experiment records | [Artifact catalog](../research/catalog.json) and [coverage receipt](research-coverage.json) |
-| Redacted historical labels and cache metadata | [Check labels](proof-metadata-redaction.json) and [binary cache labels](cache-metadata-redaction.json); mathematical data are preserved |
+| Proof-input and cache consistency | [Proof-input metadata](proof-input-metadata.json) and [cache metadata](cache-metadata.json); recorded path and label changes preserve the mathematical payloads |
 
 Appendix C of the [report](../reports/en/main.pdf) briefly compares the
 structural argument with contemporaneous work.
 
-No private transcript or execution-control database is included.
 `make privacy` inspects the current public files; it does not rely on an old
 scan receipt. The release packaging command includes this check.
 Hash identity proves that specified bytes agree; it does not prove

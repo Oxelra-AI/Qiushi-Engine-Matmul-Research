@@ -52,6 +52,21 @@ class ResearchMaterialsTests(unittest.TestCase):
         self.assertIn('proof note is invalid', withdrawals[0].read_text().lower())
         self.assertIn('CardEnc', withdrawals[0].read_text())
 
+    def test_metadata_records_match_published_proof_inputs(self):
+        coverage = json.loads((ROOT / 'evidence/research-coverage.json').read_text())
+        caches = json.loads((ROOT / coverage['cache_metadata']).read_text())
+        self.assertTrue(caches['mathematical_payload_unchanged'])
+        for row in caches['caches']:
+            self.assertEqual(hashlib.sha256((ROOT / row['path']).read_bytes()).hexdigest(),
+                             row['sha256'])
+            self.assertTrue(row['all_other_encoded_bytes_unchanged'])
+            self.assertTrue((ROOT / 'proof' / row['public_certificate_path']).is_file())
+        proof = json.loads((ROOT / coverage['proof_input_metadata']).read_text())
+        self.assertEqual(hashlib.sha256((ROOT / proof['path']).read_bytes()).hexdigest(),
+                         proof['sha256'])
+        self.assertTrue(proof['mathematical_values_encoding_logic_and_proof_bytes_unchanged'])
+        self.assertTrue(proof['data_equal_except_check_labels_and_cache_hashes'])
+
     def test_paths_work_on_case_insensitive_filesystems(self):
         catalog = json.loads((ROOT / 'research/catalog.json').read_text())
         paths = [r['path'] for r in catalog['files']]

@@ -4,7 +4,8 @@
 
 **长程自主数学研究：从算法搜索到结构性证明。**
 
-[数学论文](paper/main.pdf) ·
+[arXiv:2609.18722](https://arxiv.org/abs/2609.18722) ·
+[论文 PDF](paper/main.pdf) ·
 [中文报告（含 Lean 证明与全部附录）](reports/zh-lean/main.pdf) ·
 [英文报告（含 Lean 证明）](reports/en-lean/main.pdf) ·
 [研究材料](research/materials/README.md) ·
@@ -62,7 +63,7 @@ Qiushi Engine 独立自主地完成数学研究，从形成研究路线、开展
 
 ## 研究记忆与轨迹
 
-报告以不涉及私有部署的方式，简要介绍系统的研究、知识、记忆与工具能力，
+报告简要介绍系统的研究、知识、记忆与工具能力，
 并联系团队[首篇自主光学发现论文](https://arxiv.org/abs/2604.27092)。
 本研究的数学工具环境包括 Python、C++、数值与符号计算、约束求解和精确证明检查。
 
@@ -175,6 +176,13 @@ make source-zh
 `make reports-en` 或 `make reports-zh` 可单独编译一种语言。
 数学复验不需要 Qiushi Engine 或模型调用。直接下载压缩包时，应选择 **Releases**
 中的完整研究 ZIP，不应假定 GitHub 自动生成的源码压缩包包含 LFS 实体数据。
+
+## 引用
+
+引用数学结果时，请引用论文 **A Structural Proof of the Lower Bound 21 for
+3 x 3 Matrix Multiplication over F2**，即 [arXiv:2609.18722](https://arxiv.org/abs/2609.18722)。
+[CITATION.cff](CITATION.cff) 提供完整作者列表及论文信息，支持 GitHub 的引用导出。
+使用证明库、数据或研究轨迹时，还请注明所用的仓库发布版本。
 
 原创代码采用 **MIT**；原创报告、图表、研究记录和数据采用 **CC BY 4.0**。
 两者均允许使用、修改和商业使用，须遵守相应的许可声明与署名要求。
